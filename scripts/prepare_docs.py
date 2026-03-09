@@ -3,6 +3,7 @@
 Prepare docs directory for MkDocs build.
 - Copies lecture content into docs/lectures/
 - Generates docs/index.md with a listing of all lectures
+- Preprocesses math formulas for reliable MathJax rendering
 - Updates the nav section in mkdocs.yml (preserving other config)
 """
 
@@ -53,6 +54,209 @@ def get_video_id(dirname: str) -> str:
     return dirname
 
 
+def _escape_pipe_in_math(line: str) -> str:
+    """Escape | as \\| inside $...$ inline math within markdown table rows.
+
+    In markdown tables, | is the cell delimiter. When inline math like $|G\\rangle$
+    appears in a table cell, the | gets parsed as a cell boundary, breaking the formula.
+    Only escapes bare | (not already-escaped \\|).
+    """
+    if not line.lstrip().startswith('|'):
+        return line  # not a table row
+
+    # Find all $...$ (inline math) spans and escape | inside them
+    parts = []
+    pos = 0
+    text = line
+    while pos < len(text):
+        # Find next $ that isn't \$
+        dollar = text.find('$', pos)
+        if dollar == -1:
+            parts.append(text[pos:])
+            break
+        if dollar > 0 and text[dollar - 1] == '\\':
+            parts.append(text[pos:dollar + 1])
+            pos = dollar + 1
+            continue
+        # Check for $$ (skip display math delimiters)
+        if dollar + 1 < len(text) and text[dollar + 1] == '$':
+            parts.append(text[pos:dollar + 2])
+            pos = dollar + 2
+            continue
+        # Found opening $, find closing $
+        close = text.find('$', dollar + 1)
+        if close == -1:
+            parts.append(text[pos:])
+            break
+        # Extract math content and escape bare | (not already \|)
+        parts.append(text[pos:dollar])  # text before $
+        math_content = text[dollar + 1:close]
+        # Use regex to escape | that isn't preceded by \
+        escaped_math = re.sub(r'(?<!\\)\|', r'\\|', math_content)
+        parts.append(f'${escaped_math}$')
+        pos = close + 1
+
+    return ''.join(parts)
+
+
+def preprocess_math(content: str) -> str:
+    """Preprocess math blocks for reliable arithmatex rendering.
+
+    pymdownx.arithmatex in generic mode sometimes fails to recognize $$ display
+    math when it is indented (e.g. inside list items) or lacks blank lines around
+    it. The \\[...\\] delimiters are handled much more reliably.
+
+    This function handles:
+    1. Single-line $$...$$ on its own line (possibly indented) → \\[...\\] or \\(...\\)
+    2. Multi-line $$ blocks (opening/closing $$ on separate lines) → \\[...\\]
+    3. Multi-line $$ where opening $$ has content → \\[...\\]
+    4. Inline $$...$$ (text before/after on the same line) → \\(...\\)
+    5. | inside $...$ in markdown table rows → escaped \\|
+    """
+    lines = content.split('\n')
+    result = []
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.strip()
+
+        # Pattern 1: Single-line display math $$...$$ on its own line
+        single_line_match = re.match(r'^(\s*)\$\$(.+)\$\$\s*$', line)
+        if single_line_match:
+            indent = single_line_match.group(1)
+            formula = single_line_match.group(2).strip()
+
+            if indent:
+                # Indented (inside list items) - use inline math to stay within list
+                result.append(f'{indent}\\({formula}\\)')
+            else:
+                # Non-indented - use \[...\] with blank lines for display math
+                if result and result[-1].strip() != '':
+                    result.append('')
+                result.append(f'\\[{formula}\\]')
+                if i + 1 < len(lines) and lines[i + 1].strip() != '':
+                    result.append('')
+            i += 1
+            continue
+
+        # Pattern 2a: Multi-line display math block ($$ alone on its own line)
+        open_match = re.match(r'^(\s*)\$\$\s*$', line)
+        if open_match:
+            indent = open_match.group(1)
+            math_lines = []
+            j = i + 1
+            found_close = False
+            while j < len(lines):
+                close_match = re.match(r'^\s*\$\$\s*$', lines[j])
+                if close_match:
+                    found_close = True
+                    break
+                math_lines.append(lines[j])
+                j += 1
+
+            if found_close:
+                math_content = ' '.join(ml.strip() for ml in math_lines)
+                if indent:
+                    result.append(f'{indent}\\({math_content}\\)')
+                else:
+                    if result and result[-1].strip() != '':
+                        result.append('')
+                    result.append(f'\\[')
+                    result.extend(math_lines)
+                    result.append(f'\\]')
+                    if j + 1 < len(lines) and lines[j + 1].strip() != '':
+                        result.append('')
+                i = j + 1
+                continue
+            result.append(line)
+            i += 1
+            continue
+
+        # Pattern 2b: Multi-line $$ with content on opening line
+        # e.g., $$\frac{...  (content continues on next lines until $$)
+        # Limit search to 20 lines and stop at blank lines to avoid runaway matching
+        open_content_match = re.match(r'^(\s*)\$\$(.+)$', line)
+        if open_content_match and not line.rstrip().endswith('$$'):
+            indent = open_content_match.group(1)
+            first_content = open_content_match.group(2)
+            math_lines = [first_content]
+            j = i + 1
+            found_close = False
+            max_search = min(j + 20, len(lines))
+            while j < max_search:
+                # Stop at blank lines (unclosed $$ shouldn't span across paragraphs)
+                if lines[j].strip() == '':
+                    break
+                # Check for closing $$ at end of line
+                if lines[j].rstrip().endswith('$$'):
+                    # Content before closing $$
+                    close_content = lines[j].rstrip()[:-2]
+                    if close_content.strip():
+                        math_lines.append(close_content)
+                    found_close = True
+                    break
+                # Check for $$ alone on its own line
+                close_match = re.match(r'^\s*\$\$\s*$', lines[j])
+                if close_match:
+                    found_close = True
+                    break
+                math_lines.append(lines[j])
+                j += 1
+
+            if found_close:
+                if indent:
+                    math_content = ' '.join(ml.strip() for ml in math_lines)
+                    result.append(f'{indent}\\({math_content}\\)')
+                else:
+                    if result and result[-1].strip() != '':
+                        result.append('')
+                    result.append(f'\\[')
+                    result.extend(math_lines)
+                    result.append(f'\\]')
+                    if j + 1 < len(lines) and lines[j + 1].strip() != '':
+                        result.append('')
+                i = j + 1
+                continue
+            # If no closing found, it's a broken/unclosed $$
+            # Convert to inline math to prevent bleeding
+            remaining = open_content_match.group(2).rstrip()
+            result.append(f'{indent}\\({remaining}\\)')
+            i += 1
+            continue
+
+        # Pattern 3: Inline $$...$$ mixed with other text on the same line
+        if '$$' in stripped and not stripped.startswith('$$'):
+            line = re.sub(r'\$\$(.+?)\$\$', r'\\(\1\\)', line)
+            result.append(line)
+            i += 1
+            continue
+
+        # Pattern 4: Escape | inside $...$ in table rows
+        if stripped.startswith('|') and '$' in stripped:
+            line = _escape_pipe_in_math(line)
+
+        result.append(line)
+        i += 1
+
+    return '\n'.join(result)
+
+
+def preprocess_docs_math(docs_dir: Path):
+    """Apply math preprocessing to all markdown files in docs directory."""
+    count = 0
+    for md_file in docs_dir.rglob('*.md'):
+        with open(md_file, 'r', encoding='utf-8') as f:
+            original = f.read()
+        processed = preprocess_math(original)
+        if processed != original:
+            with open(md_file, 'w', encoding='utf-8') as f:
+                f.write(processed)
+            count += 1
+            print(f"  Preprocessed math in {md_file.relative_to(docs_dir.parent)}")
+    return count
+
+
 def main():
     # Clean and recreate docs/lectures
     if DOCS_LECTURES.exists():
@@ -82,6 +286,11 @@ def main():
         dst = DOCS_LECTURES / lec["dir_name"]
         shutil.copytree(src, dst, dirs_exist_ok=True)
         print(f"  Copied {src.name} -> docs/lectures/{lec['dir_name']}")
+
+    # Preprocess math formulas in copied docs for reliable rendering
+    processed = preprocess_docs_math(DOCS_DIR)
+    if processed:
+        print(f"  Math preprocessing applied to {processed} file(s)")
 
     # Generate index.md
     index_lines = [
