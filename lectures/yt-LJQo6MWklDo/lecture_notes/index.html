@@ -4987,10 +4987,10 @@
 <p>尽管字幕因语音识别产生大量误差（如"陆归"实为"度量"，"硬寿"实为"映射"），结合板书截图可还原以下数学结构：</p>
 <p><strong>板书中的文字公式：</strong>
 - <strong>(1) 保正定度量</strong><br />
-  对应数学条件：$<span class="arithmatex">\(g(Zf, Zg) = g(f, g) \quad \text{或} \quad \langle Zf, Zg \rangle = \langle f, g \rangle\)</span>$</p>
+  对应数学条件：<span class="arithmatex">\(g(Zf, Zg) = g(f, g) \quad \text{或} \quad \langle Zf, Zg \rangle = \langle f, g \rangle\)</span></p>
 <ul>
 <li><strong>(2) <span class="arithmatex">\(U\)</span> 保(复)内积</strong><br />
-  对应酉群条件：$<span class="arithmatex">\((U\psi, U\phi)_{\mathbb{C}} = (\psi, \phi)_{\mathbb{C}}\)</span>$</li>
+  对应酉群条件：<span class="arithmatex">\((U\psi, U\phi)_{\mathbb{C}} = (\psi, \phi)_{\mathbb{C}}\)</span></li>
 </ul>
 <p><strong>符号说明：</strong>
 | 字幕原文 | 实际术语 | 数学含义 |
@@ -5005,13 +5005,13 @@
 <hr />
 <h3 id="2-理论背景知识">2. 理论背景知识<a class="headerlink" href="#2-理论背景知识" title="Permanent link">&para;</a></h3>
 <h4 id="1-实内积空间与正交群-ov">(1) 实内积空间与正交群 <span class="arithmatex">\(O(V)\)</span><a class="headerlink" href="#1-实内积空间与正交群-ov" title="Permanent link">&para;</a></h4>
-<p>在实向量空间 <span class="arithmatex">\(V\)</span> 上配备一个<strong>正定度量</strong>（内积）<span class="arithmatex">\(g\)</span> 后，空间具有欧几里得几何结构。正交群 <span class="arithmatex">\(O(V)\)</span> 由所有满足以下条件的线性算符 <span class="arithmatex">\(Z\)</span> 组成：
-$<span class="arithmatex">\(g(Zu, Zv) = g(u, v), \quad \forall u,v \in V\)</span>$
-这等价于 <span class="arithmatex">\(Z^T G Z = G\)</span>（其中 <span class="arithmatex">\(G\)</span> 是度量矩阵）。在标准正交基下，<span class="arithmatex">\(G=I\)</span>，即 <span class="arithmatex">\(Z^T Z = I\)</span>。这类变换包括<strong>旋转</strong>和<strong>反射</strong>，它们保持图形的形状和大小不变（刚体运动）。</p>
+<p>在实向量空间 <span class="arithmatex">\(V\)</span> 上配备一个<strong>正定度量</strong>（内积）<span class="arithmatex">\(g\)</span> 后，空间具有欧几里得几何结构。正交群 <span class="arithmatex">\(O(V)\)</span> 由所有满足以下条件的线性算符 <span class="arithmatex">\(Z\)</span> 组成：</p>
+<div class="arithmatex">\[g(Zu, Zv) = g(u, v), \quad \forall u,v \in V\]</div>
+<p>这等价于 <span class="arithmatex">\(Z^T G Z = G\)</span>（其中 <span class="arithmatex">\(G\)</span> 是度量矩阵）。在标准正交基下，<span class="arithmatex">\(G=I\)</span>，即 <span class="arithmatex">\(Z^T Z = I\)</span>。这类变换包括<strong>旋转</strong>和<strong>反射</strong>，它们保持图形的形状和大小不变（刚体运动）。</p>
 <h4 id="2-复内积空间与酉群-uv">(2) 复内积空间与酉群 <span class="arithmatex">\(U(V)\)</span><a class="headerlink" href="#2-复内积空间与酉群-uv" title="Permanent link">&para;</a></h4>
-<p>当空间为复向量空间时，内积变为<strong>埃尔米特内积</strong>（对第一个变量共轭线性，对第二个变量线性）。酉群 <span class="arithmatex">\(U(V)\)</span> 要求变换 <span class="arithmatex">\(U\)</span> 保持这个复内积：
-$<span class="arithmatex">\((U\psi, U\phi) = (\psi, \phi)\)</span>$
-这等价于 <span class="arithmatex">\(U^\dagger U = I\)</span>。酉变换在量子力学中至关重要，因为它保持概率幅的归一化和跃迁概率，是量子态演化的对称性。</p>
+<p>当空间为复向量空间时，内积变为<strong>埃尔米特内积</strong>（对第一个变量共轭线性，对第二个变量线性）。酉群 <span class="arithmatex">\(U(V)\)</span> 要求变换 <span class="arithmatex">\(U\)</span> 保持这个复内积：</p>
+<div class="arithmatex">\[(U\psi, U\phi) = (\psi, \phi)\]</div>
+<p>这等价于 <span class="arithmatex">\(U^\dagger U = I\)</span>。酉变换在量子力学中至关重要，因为它保持概率幅的归一化和跃迁概率，是量子态演化的对称性。</p>
 <h4 id="3-两者的统一视角">(3) 两者的统一视角<a class="headerlink" href="#3-两者的统一视角" title="Permanent link">&para;</a></h4>
 <p>两者都是<strong>等距群</strong>（Isometry Group）的特例：在配备内积的向量空间上，保持内积不变的线性变换自动保持范数（长度），反之亦然（极化恒等式）。因此，<span class="arithmatex">\(O(V)\)</span> 是实欧几里得空间的等距群，<span class="arithmatex">\(U(V)\)</span> 是复酉空间的等距群。</p>
 <hr />
@@ -5186,7 +5186,7 @@ $<span class="arithmatex">\((U\psi, U\phi) = (\psi, \phi)\)</span>$
 <li><span class="arithmatex">\(O(m) = \{Z \in GL(m,\mathbb{R}) \mid Z \text{ 保正定度规}\}\)</span></li>
 <li><span class="arithmatex">\(U(m) = \{U \in GL(m,\mathbb{C}) \mid U \text{ 保(复)内积}\}\)</span></li>
 <li><strong>伴随算符定义</strong>：
-  $<span class="arithmatex">\(\forall A: V \to V, \exists A^\dagger: V \to V \text{ s.t. } (f, Ag) = (A^\dagger f, g), \forall f,g \in V\)</span>$</li>
+  <span class="arithmatex">\(\forall A: V \to V, \exists A^\dagger: V \to V \text{ s.t. } (f, Ag) = (A^\dagger f, g), \forall f,g \in V\)</span></li>
 <li><strong>示意图</strong>：右侧方框表示空间 <span class="arithmatex">\(V\)</span>，内部有向量 <span class="arithmatex">\(f, g\)</span> 及其像 <span class="arithmatex">\(Uf, Ug\)</span> 的示意图，标注映射关系。</li>
 </ul>
 <h3 id="图2教师与黑板">图2（教师与黑板）：<a class="headerlink" href="#图2教师与黑板" title="Permanent link">&para;</a></h3>
@@ -5195,7 +5195,7 @@ $<span class="arithmatex">\((U\psi, U\phi) = (\psi, \phi)\)</span>$
 <ul>
 <li><strong>命题标题</strong>：<code>Claim 5-6</code>（或简写为 <code>Clm 5-6</code>）</li>
 <li><strong>核心公式</strong>：
-  $<span class="arithmatex">\(U \text{ 酉} \Longleftrightarrow U^\dagger U = \delta\)</span>$
+  <span class="arithmatex">\(U \text{ 酉} \Longleftrightarrow U^\dagger U = \delta\)</span>
   （教师手指向 <span class="arithmatex">\(U^\dagger U\)</span> 部分，强调伴随算符与恒等映射的关系）</li>
 <li><strong>符号</strong>：<span class="arithmatex">\(\delta\)</span> 代表恒等算符（Identity），在黑板右侧可能写有 "unitary" 字样。</li>
 </ul>
@@ -5222,17 +5222,17 @@ $<span class="arithmatex">\((U\psi, U\phi) = (\psi, \phi)\)</span>$
 - <strong>Unitary operator</strong>（酉算符）/ <strong>酉算符</strong>
 - <strong>Unitary matrix</strong>（酉矩阵）/ <strong>酉矩阵</strong>
 - 左侧图示：向量空间 <span class="arithmatex">\((V, (\cdot,\cdot))\)</span> 中，向量 <span class="arithmatex">\(f, g\)</span> 经算符 <span class="arithmatex">\(U\)</span> 映射为 <span class="arithmatex">\(Uf, Ug\)</span></p>
-<p><strong>核心命题（Claim 5-6）：</strong>
-$<span class="arithmatex">\(U \text{ 是酉算符} \iff U^\dagger U = \delta \ (\text{或 } I)\)</span>$</p>
-<p><strong>证明过程（板书中标记为 <span class="arithmatex">\((\Leftarrow)\)</span> 方向）：</strong>
-$<span class="arithmatex">\((Uf, Ug) = (U^\dagger U f, g) = (\delta f, g) = (f, g)\)</span>$</p>
+<p><strong>核心命题（Claim 5-6）：</strong></p>
+<div class="arithmatex">\[U \text{ 是酉算符} \iff U^\dagger U = \delta \ (\text{或 } I)\]</div>
+<p><strong>证明过程（板书中标记为 <span class="arithmatex">\((\Leftarrow)\)</span> 方向）：</strong></p>
+<div class="arithmatex">\[(Uf, Ug) = (U^\dagger U f, g) = (\delta f, g) = (f, g)\]</div>
 <p><strong>符号说明：</strong>
 | 符号 | 含义 | 说明 |
 |------|------|------|
 | <span class="arithmatex">\(U\)</span> | 酉算符（Unitary Operator） | 希尔伯特空间上的线性算符 |
 | <span class="arithmatex">\(U^\dagger\)</span> | <span class="arithmatex">\(U\)</span> 的厄米共轭/伴随（Adjoint） | 满足 <span class="arithmatex">\((Uf, g) = (f, U^\dagger g)\)</span> |
 | <span class="arithmatex">\(f, g\)</span> | 态矢量/函数 | 希尔伯特空间中的向量 |
-| <span class="arithmatex">\((\cdot, \cdot)\)</span> | 内积（Inner Product） | 如 <span class="arithmatex">\((f,g) = \int f^* g \, d\tau\)</span> 或 <span class="arithmatex">\(\langle f | g \rangle\)</span> |
+| <span class="arithmatex">\((\cdot, \cdot)\)</span> | 内积（Inner Product） | 如 <span class="arithmatex">\((f,g) = \int f^* g \, d\tau\)</span> 或 <span class="arithmatex">\(\langle f \| g \rangle\)</span> |
 | <span class="arithmatex">\(\delta\)</span> 或 <span class="arithmatex">\(I\)</span> | 恒等算符（Identity Operator） | 满足 <span class="arithmatex">\(If = f\)</span> 对所有 <span class="arithmatex">\(f\)</span> 成立；板书中可能用 <span class="arithmatex">\(\delta\)</span> 表示（类似Kronecker delta的算符推广）|
 | <span class="arithmatex">\(Uf\)</span> | 算符作用 | <span class="arithmatex">\(U\)</span> 作用于向量 <span class="arithmatex">\(f\)</span> 的结果 |</p>
 <hr />
@@ -5249,9 +5249,9 @@ $<span class="arithmatex">\((Uf, Ug) = (U^\dagger U f, g) = (\delta f, g) = (f, 
 - <strong>若 <span class="arithmatex">\(U^\dagger U = I\)</span></strong>：则上式 <span class="arithmatex">\(= (f, Ig) = (f, g)\)</span>，证得内积保持
 - <strong>反之</strong>：若 <span class="arithmatex">\((Uf, Ug) = (f, g)\)</span> 对所有 <span class="arithmatex">\(f,g\)</span> 成立，则 <span class="arithmatex">\((f, (U^\dagger U - I)g) = 0\)</span>，由 <span class="arithmatex">\(f\)</span> 的任意性得 <span class="arithmatex">\(U^\dagger U = I\)</span></p>
 <h4 id="3吊上来的数学操作">（3）"吊上来"的数学操作<a class="headerlink" href="#3吊上来的数学操作" title="Permanent link">&para;</a></h4>
-<p>字幕中提到的"<strong>U就可以吊上来</strong>"是形象化的说法，指<strong>内积中算符的移位规则</strong>：
-$<span class="arithmatex">\((Uf, g) = (f, U^\dagger g)\)</span>$
-这类似于矩阵运算中 <span class="arithmatex">\((Ax)^T y = x^T A^T y\)</span> 的厄米推广。将左侧的 <span class="arithmatex">\(U\)</span> 移到右侧时，需要取其伴随（厄米共轭）。</p>
+<p>字幕中提到的"<strong>U就可以吊上来</strong>"是形象化的说法，指<strong>内积中算符的移位规则</strong>：</p>
+<div class="arithmatex">\[(Uf, g) = (f, U^\dagger g)\]</div>
+<p>这类似于矩阵运算中 <span class="arithmatex">\((Ax)^T y = x^T A^T y\)</span> 的厄米推广。将左侧的 <span class="arithmatex">\(U\)</span> 移到右侧时，需要取其伴随（厄米共轭）。</p>
 <hr />
 <h3 id="3-通俗语言解释_1">3. 通俗语言解释<a class="headerlink" href="#3-通俗语言解释_1" title="Permanent link">&para;</a></h3>
 <p><strong>核心概念：酉算符就像"刚体旋转"</strong></p>
@@ -5317,30 +5317,30 @@ $<span class="arithmatex">\((Uf, g) = (f, U^\dagger g)\)</span>$
 </tr>
 </tbody>
 </table>
-<p><strong>关键公式重构</strong>：
-$$
+<p><strong>关键公式重构</strong>：</p>
+<div class="arithmatex">\[
 \langle U^* J U f, g \rangle = \langle J U f, U g \rangle
-$$
-这里利用了 <span class="arithmatex">\(U\)</span> 的酉性（Unitarity）和<strong>内积对第一个变量的反线性（Conjugate Linearity）</strong>。</p>
+\]</div>
+<p>这里利用了 <span class="arithmatex">\(U\)</span> 的酉性（Unitarity）和<strong>内积对第一个变量的反线性（Conjugate Linearity）</strong>。</p>
 <hr />
 <h2 id="2-理论背景知识_2">2. 理论背景知识<a class="headerlink" href="#2-理论背景知识_2" title="Permanent link">&para;</a></h2>
 <h3 id="21-内积的反线性conjugate-linearity">2.1 内积的反线性（Conjugate Linearity）<a class="headerlink" href="#21-内积的反线性conjugate-linearity" title="Permanent link">&para;</a></h3>
-<p>在复希尔伯特空间中，内积 <span class="arithmatex">\(\langle \cdot, \cdot \rangle\)</span> 对<strong>第一个变量</strong>是反线性的（物理惯例）：
-$$
+<p>在复希尔伯特空间中，内积 <span class="arithmatex">\(\langle \cdot, \cdot \rangle\)</span> 对<strong>第一个变量</strong>是反线性的（物理惯例）：</p>
+<div class="arithmatex">\[
 \langle \alpha u, v \rangle = \alpha^* \langle u, v \rangle, \quad \langle u + w, v \rangle = \langle u, v \rangle + \langle w, v \rangle
-$$
-<em>注：数学界有时采用第二个变量反线性的约定，物理（量子力学）通常采用第一个变量反线性。</em></p>
+\]</div>
+<p><em>注：数学界有时采用第二个变量反线性的约定，物理（量子力学）通常采用第一个变量反线性。</em></p>
 <h3 id="22-伴随算符adjoint-operator">2.2 伴随算符（Adjoint Operator）<a class="headerlink" href="#22-伴随算符adjoint-operator" title="Permanent link">&para;</a></h3>
-<p>对于算符 <span class="arithmatex">\(A\)</span>，其伴随 <span class="arithmatex">\(A^*\)</span> 满足：
-$$
+<p>对于算符 <span class="arithmatex">\(A\)</span>，其伴随 <span class="arithmatex">\(A^*\)</span> 满足：</p>
+<div class="arithmatex">\[
 \langle A u, v \rangle = \langle u, A^* v \rangle
-$$
-这是量子力学中"厄米算符"（自伴算符）定义的基础。</p>
+\]</div>
+<p>这是量子力学中"厄米算符"（自伴算符）定义的基础。</p>
 <h3 id="23-酉变换unitary-transformation">2.3 酉变换（Unitary Transformation）<a class="headerlink" href="#23-酉变换unitary-transformation" title="Permanent link">&para;</a></h3>
-<p>若 <span class="arithmatex">\(U\)</span> 是酉算符，则 <span class="arithmatex">\(U^* U = U U^* = I\)</span>，保持内积不变：
-$$
+<p>若 <span class="arithmatex">\(U\)</span> 是酉算符，则 <span class="arithmatex">\(U^* U = U U^* = I\)</span>，保持内积不变：</p>
+<div class="arithmatex">\[
 \langle U \psi, U \phi \rangle = \langle \psi, \phi \rangle
-$$</p>
+\]</div>
 <hr />
 <h2 id="3-通俗概念解释_1">3. 通俗概念解释<a class="headerlink" href="#3-通俗概念解释_1" title="Permanent link">&para;</a></h2>
 <p><strong>这段推导的核心逻辑</strong>：</p>
@@ -5451,12 +5451,12 @@ $$</p>
 <ol>
 <li>
 <p><strong><span class="arithmatex">\((\Leftarrow)\)</span> 方向</strong>：假设 <span class="arithmatex">\(U^\dagger U = \delta\)</span>，则对任意 <span class="arithmatex">\(f, g\)</span>：
-   $<span class="arithmatex">\((Uf, Ug) = (U^\dagger Uf, g) = (\delta f, g) = (f, g)\)</span>$
+   <span class="arithmatex">\((Uf, Ug) = (U^\dagger Uf, g) = (\delta f, g) = (f, g)\)</span>
    说明 <span class="arithmatex">\(U\)</span> <strong>保持内积不变</strong>。</p>
 </li>
 <li>
 <p><strong><span class="arithmatex">\((\Rightarrow)\)</span> 方向</strong>：假设 <span class="arithmatex">\(U\)</span> 保持内积（即 <span class="arithmatex">\((Uf, Ug) = (f, g)\)</span>），则：
-   $<span class="arithmatex">\(0 = (Uf, Ug) - (f, g) = (U^\dagger Uf, g) - (f, g) = ((U^\dagger U - \delta)f, g)\)</span>$
+   <span class="arithmatex">\(0 = (Uf, Ug) - (f, g) = (U^\dagger Uf, g) - (f, g) = ((U^\dagger U - \delta)f, g)\)</span>
    若此等式对<strong>所有</strong> <span class="arithmatex">\(f, g\)</span> 成立，则必须有 <span class="arithmatex">\(U^\dagger U - \delta = 0\)</span>（零算符），即 <span class="arithmatex">\(U^\dagger U = \delta\)</span>。</p>
 </li>
 </ol>
@@ -5527,7 +5527,7 @@ $$</p>
 </tr>
 <tr>
 <td><span class="arithmatex">\((\cdot, \cdot)\)</span></td>
-<td>内积（Inner Product），在量子力学中常写作 $\langle \cdot</td>
+<td>内积（Inner Product），在量子力学中常写作 <span class="arithmatex">\(\langle \cdot \| \cdot \rangle\)</span></td>
 </tr>
 <tr>
 <td><span class="arithmatex">\(\forall\)</span></td>
@@ -5569,8 +5569,8 @@ $$</p>
 - 提取公因子得到 <span class="arithmatex">\(((U^\dagger U - \delta)f, g)\)</span></p>
 <h4 id="3-零算符的判定第三张图">3. 零算符的判定（第三张图）<a class="headerlink" href="#3-零算符的判定第三张图" title="Permanent link">&para;</a></h4>
 <div class="arithmatex">\[((U^\dagger U - \delta)f, g) = 0,\ \forall f, g \in V \implies (U^\dagger U - \delta)f = 0,\ \forall f \in V\]</div>
-<p>进而得出：
-$<span class="arithmatex">\(U^\dagger U - \delta = 0 \quad \text{（零算符）}\)</span>$</p>
+<p>进而得出：</p>
+<div class="arithmatex">\[U^\dagger U - \delta = 0 \quad \text{（零算符）}\]</div>
 <table>
 <thead>
 <tr>
@@ -5593,8 +5593,8 @@ $<span class="arithmatex">\(U^\dagger U - \delta = 0 \quad \text{（零算符）
 <hr />
 <h3 id="二理论背景补充">二、理论背景补充<a class="headerlink" href="#二理论背景补充" title="Permanent link">&para;</a></h3>
 <h4 id="1-幺正算符unitary-operator">1. 幺正算符（Unitary Operator）<a class="headerlink" href="#1-幺正算符unitary-operator" title="Permanent link">&para;</a></h4>
-<p>在量子力学和表示论中，<strong>幺正算符</strong>是保持概率幅（即保持内积）的线性变换：
-$<span class="arithmatex">\((Uf, Ug) = (f, g), \quad \forall f, g \in V\)</span>$</p>
+<p>在量子力学和表示论中，<strong>幺正算符</strong>是保持概率幅（即保持内积）的线性变换：</p>
+<div class="arithmatex">\[(Uf, Ug) = (f, g), \quad \forall f, g \in V\]</div>
 <p>这等价于以下两个条件之一：
 - <span class="arithmatex">\(U^\dagger U = UU^\dagger = I\)</span>（即 <span class="arithmatex">\(U\)</span> 可逆且 <span class="arithmatex">\(U^{-1} = U^\dagger\)</span>）
 - <span class="arithmatex">\(U\)</span> 保持范数：<span class="arithmatex">\(\|Uf\| = \|f\|\)</span>（对单一向量长度守恒，结合极化恒等式可推出保持内积）</p>
@@ -5620,8 +5620,8 @@ $<span class="arithmatex">\((Uf, Ug) = (f, g), \quad \forall f, g \in V\)</span>
 <blockquote>
 <p>"如果有一个 <span class="arithmatex">\(f' \in V\)</span>（大 <span class="arithmatex">\(V\)</span> 的一个元素），满足 <span class="arithmatex">\((f', g) = 0\)</span> 对<strong>任意</strong>的 <span class="arithmatex">\(g\)</span> 都成立（<span class="arithmatex">\(\forall g\)</span>），那么把 <span class="arithmatex">\(g\)</span> 取为 <span class="arithmatex">\(f'\)</span> 本身，就推出 <span class="arithmatex">\(f' = 0\)</span> 了。所以说这个东西就推出了……考虑第二个，利用内积性质……这个式子是 for all <span class="arithmatex">\(f\)</span>（对所有 <span class="arithmatex">\(f\)</span>），所以当然也是 for all <span class="arithmatex">\(f\)</span>。好了，有一个算符作用到任意 <span class="arithmatex">\(f\)</span> 都得零，那么根据零算符的定义……那个零元就是这么定义的：有一个算符作用到任何元素都得零，那个算符就是零元，就是所谓零算符。那么就得到了 <span class="arithmatex">\(U^\dagger U - \delta = 0\)</span>。"</p>
 </blockquote>
-<p><strong>最终结论</strong>：
-$<span class="arithmatex">\(U^\dagger U = \delta \quad \text{（即 } U^\dagger U = I\text{）}\)</span>$</p>
+<p><strong>最终结论</strong>：</p>
+<div class="arithmatex">\[U^\dagger U = \delta \quad \text{（即 } U^\dagger U = I\text{）}\]</div>
 <p>这正是<strong>幺正算符</strong>的定义性方程。</p>
 <hr />
 <h2 id="段落-8">段落 8<a class="headerlink" href="#段落-8" title="Permanent link">&para;</a></h2>
@@ -5656,8 +5656,8 @@ $<span class="arithmatex">\(U^\dagger U = \delta \quad \text{（即 } U^\dagger 
 - 正交归一基底定义：<span class="arithmatex">\((e_i, e_j) = \delta_{ij}\)</span></p>
 <h3 id="公式符号逐一解释">公式符号逐一解释<a class="headerlink" href="#公式符号逐一解释" title="Permanent link">&para;</a></h3>
 <h4 id="1-群定义公式">(1) 群定义公式<a class="headerlink" href="#1-群定义公式" title="Permanent link">&para;</a></h4>
-<div class="arithmatex">\[O(m) = \{Z \in GL(m, \mathbb{R}) \mid Z\text{保正定度规}\}$$
-$$U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
+<div class="arithmatex">\[O(m) = \{Z \in GL(m, \mathbb{R}) \mid Z\text{保正定度规}\}\]</div>
+<div class="arithmatex">\[U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
 <ul>
 <li><strong><span class="arithmatex">\(GL(m, \mathbb{R})\)</span></strong>：<span class="arithmatex">\(m\)</span> 维实一般线性群，即所有 <span class="arithmatex">\(m\times m\)</span> 可逆实矩阵的集合</li>
 <li><strong><span class="arithmatex">\(GL(m, \mathbb{C})\)</span></strong>：<span class="arithmatex">\(m\)</span> 维复一般线性群，即所有 <span class="arithmatex">\(m\times m\)</span> 可逆复矩阵的集合  </li>
@@ -5904,9 +5904,9 @@ $$U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
 <td>抽象的线性算符，作用于希尔伯特空间中的态矢量</td>
 </tr>
 <tr>
-<td>$</td>
-<td>G\rangle$</td>
+<td><span class="arithmatex">\(\|G\rangle\)</span></td>
 <td>态矢量（ket）</td>
+<td>狄拉克符号表示的量子态，可能代表基态、本征态或一般态</td>
 </tr>
 <tr>
 <td><span class="arithmatex">\(A\)</span></td>
@@ -5914,9 +5914,9 @@ $$U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
 <td>在特定基底下，算符的<strong>矩阵表示</strong></td>
 </tr>
 <tr>
-<td>$\hat{A}</td>
-<td>G\rangle$</td>
+<td><span class="arithmatex">\(\hat{A}\|G\rangle\)</span></td>
 <td>算符作用</td>
+<td>算符对态的作用，产生新的态 <span class="arithmatex">\(\|G'\rangle\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -5933,7 +5933,7 @@ $$U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
 - 满足代数关系：<span class="arithmatex">\([\hat{x}, \hat{p}] = i\hbar\)</span></p>
 <p><strong>② 矩阵表示（具体表象）</strong>
 - 选定一组基 <span class="arithmatex">\(\{|n\rangle\}\)</span> 后，算符变为矩阵：
-  $<span class="arithmatex">\(A_{mn} = \langle m|\hat{A}|n\rangle\)</span>$
+  <span class="arithmatex">\(A_{mn} = \langle m|\hat{A}|n\rangle\)</span>
 - 此时常省略帽子，直接写矩阵 <span class="arithmatex">\(A\)</span></p>
 <h3 id="22-加不加-hat-的惯例">2.2 "加不加 hat" 的惯例<a class="headerlink" href="#22-加不加-hat-的惯例" title="Permanent link">&para;</a></h3>
 <ul>
@@ -5985,7 +5985,7 @@ $$U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
 <tr>
 <td>本征值</td>
 <td>小写</td>
-<td>$\hat{A}</td>
+<td><span class="arithmatex">\(\hat{A}\|a_n\rangle = a_n\|a_n\rangle\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -6010,8 +6010,8 @@ $$U(m) = \{U \in GL(m, \mathbb{C}) \mid U\text{保(复)内积}\}\]</div>
 <h2 id="板书内容识别">板书内容识别<a class="headerlink" href="#板书内容识别" title="Permanent link">&para;</a></h2>
 <p>从截图中可以看到黑板上的核心公式：</p>
 <div class="arithmatex">\[\tilde{A}_{ij} := (e_i, \hat{A} e_j)\]</div>
-<p>或等价写法：
-$<span class="arithmatex">\(\tilde{A}_{ij} = \langle e_i | \hat{A} | e_j \rangle\)</span>$</p>
+<p>或等价写法：</p>
+<div class="arithmatex">\[\tilde{A}_{ij} = \langle e_i | \hat{A} | e_j \rangle\]</div>
 <hr />
 <h2 id="1-公式符号详解">1. 公式符号详解<a class="headerlink" href="#1-公式符号详解" title="Permanent link">&para;</a></h2>
 <table>
@@ -6034,9 +6034,9 @@ $<span class="arithmatex">\(\tilde{A}_{ij} = \langle e_i | \hat{A} | e_j \rangle
 <td style="text-align: left;">希尔伯特空间 <span class="arithmatex">\(\mathcal{H}\)</span> 的一组正交归一基（orthonormal basis）</td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="arithmatex">\((\cdot, \cdot)\)</span> 或 $\langle \cdot</td>
-<td style="text-align: left;">\cdot \rangle$</td>
+<td style="text-align: left;"><span class="arithmatex">\((\cdot, \cdot)\)</span> 或 <span class="arithmatex">\(\langle \cdot \| \cdot \rangle\)</span></td>
 <td style="text-align: left;">内积</td>
+<td style="text-align: left;">希尔伯特空间的内积运算</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\hat{A}e_j\)</span></td>
@@ -6077,18 +6077,18 @@ $<span class="arithmatex">\(\tilde{A}_{ij} = \langle e_i | \hat{A} | e_j \rangle
 <tbody>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((e_i, \hat{A}e_j)\)</span></td>
-<td style="text-align: left;">$\langle e_i</td>
-<td style="text-align: left;">\hat{A}</td>
+<td style="text-align: left;"><span class="arithmatex">\(\langle e_i \| \hat{A} \| e_j \rangle\)</span></td>
+<td style="text-align: left;">bra-ket 记法</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(e_j\)</span></td>
-<td style="text-align: left;">$</td>
-<td style="text-align: left;">e_j\rangle =</td>
+<td style="text-align: left;"><span class="arithmatex">\(\|e_j\rangle = \|j\rangle\)</span></td>
+<td style="text-align: left;">ket（列矢）</td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((e_i, \cdot)\)</span></td>
-<td style="text-align: left;">$\langle e_i</td>
-<td style="text-align: left;">= \langle i</td>
+<td style="text-align: left;"><span class="arithmatex">\(\langle e_i\| = \langle i\|\)</span></td>
+<td style="text-align: left;">bra（行矢）</td>
 </tr>
 </tbody>
 </table>
@@ -6111,9 +6111,9 @@ $<span class="arithmatex">\(\tilde{A}_{ij} = \langle e_i | \hat{A} | e_j \rangle
 <ul>
 <li><strong>抽象算符</strong> <span class="arithmatex">\(\hat{A}\)</span> 本身是一个"黑箱"，我们不知道它内部如何运作</li>
 <li><strong>矩阵元</strong> <span class="arithmatex">\(\tilde{A}_{ij}\)</span> 把这个黑箱拆解成可计算的数字</li>
-<li>一旦有了所有矩阵元，我们就能完全重建算符的作用：
-$<span class="arithmatex">\(\hat{A}|\psi\rangle = \sum_{i,j} \tilde{A}_{ij} \langle e_j|\psi\rangle |e_i\rangle\)</span>$</li>
+<li>一旦有了所有矩阵元，我们就能完全重建算符的作用：</li>
 </ul>
+<div class="arithmatex">\[\hat{A}|\psi\rangle = \sum_{i,j} \tilde{A}_{ij} \langle e_j|\psi\rangle |e_i\rangle\]</div>
 <hr />
 <h2 id="4-课程上下文分析">4. 课程上下文分析<a class="headerlink" href="#4-课程上下文分析" title="Permanent link">&para;</a></h2>
 <h3 id="梁灿彬教授讲解要点">梁灿彬教授讲解要点<a class="headerlink" href="#梁灿彬教授讲解要点" title="Permanent link">&para;</a></h3>
@@ -6208,8 +6208,8 @@ $<span class="arithmatex">\(\hat{A}|\psi\rangle = \sum_{i,j} \tilde{A}_{ij} \lan
 <hr />
 <h3 id="公式-②算符乘积的矩阵表示">公式 ②：算符乘积的矩阵表示<a class="headerlink" href="#公式-②算符乘积的矩阵表示" title="Permanent link">&para;</a></h3>
 <div class="arithmatex">\[\widetilde{\hat{A}\hat{B}} = \tilde{A}\tilde{B}\]</div>
-<p>或按字幕中提到的写法：
-$<span class="arithmatex">\((\hat{A}\hat{B})^{\sim} = \tilde{A}\tilde{B}\)</span>$</p>
+<p>或按字幕中提到的写法：</p>
+<div class="arithmatex">\[(\hat{A}\hat{B})^{\sim} = \tilde{A}\tilde{B}\]</div>
 <table>
 <thead>
 <tr>
@@ -6253,8 +6253,8 @@ $<span class="arithmatex">\((\hat{A}\hat{B})^{\sim} = \tilde{A}\tilde{B}\)</span
 <td>希尔伯特空间的一组<strong>正交归一基矢</strong></td>
 </tr>
 <tr>
-<td><span class="arithmatex">\((\cdot, \cdot)\)</span> 或 $\langle \cdot</td>
-<td>\cdot \rangle$</td>
+<td><span class="arithmatex">\((\cdot, \cdot)\)</span> 或 <span class="arithmatex">\(\langle \cdot \| \cdot \rangle\)</span></td>
+<td>内积（Dirac 记号/括号记号）</td>
 </tr>
 <tr>
 <td><span class="arithmatex">\(\hat{A}e_j\)</span></td>
@@ -6269,10 +6269,10 @@ $<span class="arithmatex">\((\hat{A}\hat{B})^{\sim} = \tilde{A}\tilde{B}\)</span
 <div class="arithmatex">\[\tilde{A} = \begin{pmatrix} A_{11} &amp; A_{12} &amp; \cdots \\ A_{21} &amp; A_{22} &amp; \cdots \\ \vdots &amp; \vdots &amp; \ddots \end{pmatrix}\]</div>
 <p>这是量子力学<strong>表象理论</strong>的核心——"波函数"和"矩阵"都是抽象态矢和算符在具体基底下的表示。</p>
 <h3 id="2-伴随算符adjointhermitian-conjugate">2. 伴随算符（Adjoint/Hermitian Conjugate）<a class="headerlink" href="#2-伴随算符adjointhermitian-conjugate" title="Permanent link">&para;</a></h3>
-<p>对于任意算符 <span class="arithmatex">\(\hat{A}\)</span>，存在<strong>伴随算符</strong> <span class="arithmatex">\(\hat{A}^\dagger\)</span>（读作"A dagger"），定义为：
-$<span class="arithmatex">\((\psi, \hat{A}\phi) = (\hat{A}^\dagger\psi, \phi) \quad \forall \psi, \phi \in \mathcal{H}\)</span>$</p>
-<p>在矩阵表示下，这对应于<strong>厄米共轭</strong>（转置+复共轭）：
-$<span class="arithmatex">\(\widetilde{A^\dagger} = (\tilde{A})^\dagger = (\tilde{A}^*)^T\)</span>$</p>
+<p>对于任意算符 <span class="arithmatex">\(\hat{A}\)</span>，存在<strong>伴随算符</strong> <span class="arithmatex">\(\hat{A}^\dagger\)</span>（读作"A dagger"），定义为：</p>
+<div class="arithmatex">\[(\psi, \hat{A}\phi) = (\hat{A}^\dagger\psi, \phi) \quad \forall \psi, \phi \in \mathcal{H}\]</div>
+<p>在矩阵表示下，这对应于<strong>厄米共轭</strong>（转置+复共轭）：</p>
+<div class="arithmatex">\[\widetilde{A^\dagger} = (\tilde{A})^\dagger = (\tilde{A}^*)^T\]</div>
 <h3 id="3-为什么这些显然的性质需要证明">3. 为什么这些"显然"的性质需要证明？<a class="headerlink" href="#3-为什么这些显然的性质需要证明" title="Permanent link">&para;</a></h3>
 <p>讲师反复强调"这个要证明"，是因为：
 - <strong>范畴论视角</strong>：算符属于抽象范畴，矩阵属于具体范畴，需要验证映射是<strong>函子性的</strong>（保持结构）
@@ -6378,14 +6378,14 @@ $<span class="arithmatex">\(\widetilde{A^\dagger} = (\tilde{A})^\dagger = (\tild
 <hr />
 <h2 id="理论背景">理论背景<a class="headerlink" href="#理论背景" title="Permanent link">&para;</a></h2>
 <h3 id="1-矩阵元的内积表示">1. 矩阵元的内积表示<a class="headerlink" href="#1-矩阵元的内积表示" title="Permanent link">&para;</a></h3>
-<p>在量子力学或泛函分析中，线性算子的矩阵元定义为：
-$<span class="arithmatex">\(A_{ij} = \langle e_i | A | e_j \rangle = (e_i, A e_j)\)</span>$</p>
+<p>在量子力学或泛函分析中，线性算子的矩阵元定义为：</p>
+<div class="arithmatex">\[A_{ij} = \langle e_i | A | e_j \rangle = (e_i, A e_j)\]</div>
 <p>这是<strong>狄拉克符号</strong>与<strong>数学内积符号</strong>的对应。</p>
 <h3 id="2-厄米共轭hermitian-conjugate的性质">2. 厄米共轭（Hermitian Conjugate）的性质<a class="headerlink" href="#2-厄米共轭hermitian-conjugate的性质" title="Permanent link">&para;</a></h3>
-<p>公式后半部分 <span class="arithmatex">\((A e_i, e_j)\)</span> 暗示了内积的一个重要性质：
-$<span class="arithmatex">\((e_i, A e_j) = (A^\dagger e_i, e_j)\)</span>$</p>
-<p>若 <span class="arithmatex">\(A\)</span> 是<strong>厄米算子</strong>（自伴算子），即 <span class="arithmatex">\(A = A^\dagger\)</span>，则：
-$<span class="arithmatex">\((e_i, A e_j) = (A e_i, e_j)\)</span>$</p>
+<p>公式后半部分 <span class="arithmatex">\((A e_i, e_j)\)</span> 暗示了内积的一个重要性质：</p>
+<div class="arithmatex">\[(e_i, A e_j) = (A^\dagger e_i, e_j)\]</div>
+<p>若 <span class="arithmatex">\(A\)</span> 是<strong>厄米算子</strong>（自伴算子），即 <span class="arithmatex">\(A = A^\dagger\)</span>，则：</p>
+<div class="arithmatex">\[(e_i, A e_j) = (A e_i, e_j)\]</div>
 <p>这正是板书中等式成立的条件——<strong><span class="arithmatex">\(A\)</span> 为厄米算子</strong>。</p>
 <hr />
 <h2 id="通俗解释">通俗解释<a class="headerlink" href="#通俗解释" title="Permanent link">&para;</a></h2>
@@ -6441,7 +6441,7 @@ $<span class="arithmatex">\((e_i, A e_j) = (A e_i, e_j)\)</span>$</p>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\((\cdot, \cdot)\)</span></td>
-<td style="text-align: left;"><strong>内积</strong>（inner product），即 $(u,v) = \langle u</td>
+<td style="text-align: left;"><strong>内积</strong>（inner product），即 <span class="arithmatex">\((u,v) = \langle u \| v \rangle\)</span></td>
 </tr>
 <tr>
 <td style="text-align: left;"><span class="arithmatex">\(\hat{A}\)</span></td>
@@ -6479,8 +6479,8 @@ $<span class="arithmatex">\((e_i, A e_j) = (A e_i, e_j)\)</span>$</p>
 </tbody>
 </table>
 <h4 id="关键性质厄米算符的矩阵元">关键性质：厄米算符的矩阵元<a class="headerlink" href="#关键性质厄米算符的矩阵元" title="Permanent link">&para;</a></h4>
-<p>当 <span class="arithmatex">\(\hat{A}\)</span> 为<strong>厄米算符</strong>（Hermitian operator，即 <span class="arithmatex">\(\hat{A}^\dagger = \hat{A}\)</span>）时：
-$<span class="arithmatex">\(A_{ij} = (e_i, A e_j) = (A e_i, e_j) = (e_j, A e_i)^* = A_{ji}^*\)</span>$</p>
+<p>当 <span class="arithmatex">\(\hat{A}\)</span> 为<strong>厄米算符</strong>（Hermitian operator，即 <span class="arithmatex">\(\hat{A}^\dagger = \hat{A}\)</span>）时：</p>
+<div class="arithmatex">\[A_{ij} = (e_i, A e_j) = (A e_i, e_j) = (e_j, A e_i)^* = A_{ji}^*\]</div>
 <p>即矩阵元满足 <strong><span class="arithmatex">\(A_{ij} = A_{ji}^*\)</span></strong>（厄米性条件）</p>
 <hr />
 <h3 id="3-通俗解释_2">3. 通俗解释<a class="headerlink" href="#3-通俗解释_2" title="Permanent link">&para;</a></h3>
@@ -6597,12 +6597,12 @@ $<span class="arithmatex">\(A_{ij} = (e_i, A e_j) = (A e_i, e_j) = (e_j, A e_i)^
 <hr />
 <h2 id="三理论背景知识">三、理论背景知识<a class="headerlink" href="#三理论背景知识" title="Permanent link">&para;</a></h2>
 <h3 id="1-厄米共轭算符的定义">1. 厄米共轭算符的定义<a class="headerlink" href="#1-厄米共轭算符的定义" title="Permanent link">&para;</a></h3>
-<p>在希尔伯特空间中，算符 <span class="arithmatex">\(A\)</span> 的<strong>厄米共轭</strong>（Hermitian conjugate / adjoint）<span class="arithmatex">\(\tilde{A}\)</span> 由内积关系定义：
-$<span class="arithmatex">\((\tilde{A}\psi, \phi) = (\psi, A\phi) \quad \forall \psi, \phi\)</span>$</p>
+<p>在希尔伯特空间中，算符 <span class="arithmatex">\(A\)</span> 的<strong>厄米共轭</strong>（Hermitian conjugate / adjoint）<span class="arithmatex">\(\tilde{A}\)</span> 由内积关系定义：</p>
+<div class="arithmatex">\[(\tilde{A}\psi, \phi) = (\psi, A\phi) \quad \forall \psi, \phi\]</div>
 <p>这是<strong>抽象定义</strong>，不依赖于具体基的选择。</p>
 <h3 id="2-矩阵表示与基的选择">2. 矩阵表示与基的选择<a class="headerlink" href="#2-矩阵表示与基的选择" title="Permanent link">&para;</a></h3>
-<p>当选定一组正交归一基 <span class="arithmatex">\(\{e_i\}\)</span> 后，算符 <span class="arithmatex">\(A\)</span> 的<strong>矩阵元</strong>为：
-$<span class="arithmatex">\(A_{ij} = (e_i, Ae_j)\)</span>$</p>
+<p>当选定一组正交归一基 <span class="arithmatex">\(\{e_i\}\)</span> 后，算符 <span class="arithmatex">\(A\)</span> 的<strong>矩阵元</strong>为：</p>
+<div class="arithmatex">\[A_{ij} = (e_i, Ae_j)\]</div>
 <blockquote>
 <p>注意：不同教材有"行-列"约定差异，有的定义为 <span class="arithmatex">\((Ae_j, e_i)\)</span>。</p>
 </blockquote>
@@ -6694,8 +6694,8 @@ $<span class="arithmatex">\(A_{ij} = (e_i, Ae_j)\)</span>$</p>
 <p>这与转置的性质 <span class="arithmatex">\((AB)^T = B^T A^T\)</span> 完全类似，只是多了一层复共轭。</p>
 <hr />
 <h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">&para;</a></h2>
-<p>这段课程的核心是建立<strong>抽象算符的厄米共轭</strong>与<strong>具体矩阵表示</strong>之间的桥梁，证明：
-$<span class="arithmatex">\(\boxed{(\hat{A}^\dagger)_{ij} = (A_{ji})^* = A_{ji}^*}\)</span>$</p>
+<p>这段课程的核心是建立<strong>抽象算符的厄米共轭</strong>与<strong>具体矩阵表示</strong>之间的桥梁，证明：</p>
+<div class="arithmatex">\[\boxed{(\hat{A}^\dagger)_{ij} = (A_{ji})^* = A_{ji}^*}\]</div>
 <p>这是量子力学和泛函分析中的基础性结果。</p>
 <hr />
 <h2 id="段落-16">段落 16<a class="headerlink" href="#段落-16" title="Permanent link">&para;</a></h2>
@@ -6714,8 +6714,8 @@ $<span class="arithmatex">\(\boxed{(\hat{A}^\dagger)_{ij} = (A_{ji})^* = A_{ji}^
 <h3 id="核心公式算符的厄米共轭hermitian-conjugate与矩阵表示">核心公式：算符的厄米共轭（Hermitian Conjugate）与矩阵表示<a class="headerlink" href="#核心公式算符的厄米共轭hermitian-conjugate与矩阵表示" title="Permanent link">&para;</a></h3>
 <p>从字幕"<strong>A跌个儿</strong>"（A†，读作"A dagger"）、"<strong>A transport 再加个榜</strong>"（A^T 再加共轭，即 A^† = (A^T)*）可以还原出：</p>
 <div class="arithmatex">\[\hat{A}^\dagger = (\hat{A}^T)^*\]</div>
-<p>或等价地写为：
-$<span class="arithmatex">\(\hat{A}^\dagger = (\hat{A}^*)^T\)</span>$</p>
+<p>或等价地写为：</p>
+<div class="arithmatex">\[\hat{A}^\dagger = (\hat{A}^*)^T\]</div>
 <table>
 <thead>
 <tr>
@@ -6757,8 +6757,8 @@ $<span class="arithmatex">\(\hat{A}^\dagger = (\hat{A}^*)^T\)</span>$</p>
 </tr>
 </tbody>
 </table>
-<p><strong>关键关系式：</strong>
-$<span class="arithmatex">\(\boxed{A^\dagger = (A^T)^* = (A^*)^T}\)</span>$</p>
+<p><strong>关键关系式：</strong></p>
+<div class="arithmatex">\[\boxed{A^\dagger = (A^T)^* = (A^*)^T}\]</div>
 <hr />
 <h2 id="2-理论背景知识_6">2. 理论背景知识<a class="headerlink" href="#2-理论背景知识_6" title="Permanent link">&para;</a></h2>
 <h3 id="21-为什么需要表象representation">2.1 为什么需要"表象"（Representation）？<a class="headerlink" href="#21-为什么需要表象representation" title="Permanent link">&para;</a></h3>
@@ -6809,10 +6809,10 @@ $<span class="arithmatex">\(\boxed{A^\dagger = (A^T)^* = (A^*)^T}\)</span>$</p>
 </tbody>
 </table>
 <h3 id="23-矩阵元的具体计算">2.3 矩阵元的具体计算<a class="headerlink" href="#23-矩阵元的具体计算" title="Permanent link">&para;</a></h3>
-<p>选定正交归一基 <span class="arithmatex">\(\{\|n\rangle\}\)</span> 后：
-$<span class="arithmatex">\(A_{mn} = \langle m\|\hat{A}\|n\rangle\)</span>$</p>
-<p>则厄米共轭的矩阵元：
-$<span class="arithmatex">\((A^\dagger)_{mn} = A_{nm}^* = \langle n\|\hat{A}\|m\rangle^*\)</span>$</p>
+<p>选定正交归一基 <span class="arithmatex">\(\{\|n\rangle\}\)</span> 后：</p>
+<div class="arithmatex">\[A_{mn} = \langle m\|\hat{A}\|n\rangle\]</div>
+<p>则厄米共轭的矩阵元：</p>
+<div class="arithmatex">\[(A^\dagger)_{mn} = A_{nm}^* = \langle n\|\hat{A}\|m\rangle^*\]</div>
 <hr />
 <h2 id="3-通俗解释_3">3. 通俗解释<a class="headerlink" href="#3-通俗解释_3" title="Permanent link">&para;</a></h2>
 <h3 id="核心要点抽象算符--具体矩阵">核心要点：<strong>抽象算符 → 具体矩阵</strong><a class="headerlink" href="#核心要点抽象算符--具体矩阵" title="Permanent link">&para;</a></h3>

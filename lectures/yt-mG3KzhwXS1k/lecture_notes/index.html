@@ -2029,15 +2029,15 @@
 <h3 id="1-核心概念与理论背景">1. 核心概念与理论背景<a class="headerlink" href="#1-核心概念与理论背景" title="Permanent link">&para;</a></h3>
 <p>这段视频主要探讨了量子力学数学基础中的一个经典“痛点”：<strong>希尔伯特空间（Hilbert Space）与狄拉克符号（Dirac Notation）的严谨性问题</strong>。</p>
 <h4 id="11-希尔伯特空间与平方可积函数">1.1 希尔伯特空间与平方可积函数<a class="headerlink" href="#11-希尔伯特空间与平方可积函数" title="Permanent link">&para;</a></h4>
-<p>在量子力学中，系统的状态通常由波函数 <span class="arithmatex">\(\psi(x)\)</span> 描述。为了保证概率解释的合理性（即粒子在全空间出现的总概率为1），波函数必须满足<strong>平方可积</strong>条件：
-$$ \int_{-\infty}^{\infty} |\psi(x)|^2 dx &lt; \infty $$
-所有满足这一条件的函数构成了一个数学空间，即 <span class="arithmatex">\(L^2\)</span> 空间，它是<strong>希尔伯特空间</strong>的一个具体实现。希尔伯特空间是一个完备的内积空间，量子力学中的态矢量（State Vector）就是这个空间中的元素。</p>
+<p>在量子力学中，系统的状态通常由波函数 <span class="arithmatex">\(\psi(x)\)</span> 描述。为了保证概率解释的合理性（即粒子在全空间出现的总概率为1），波函数必须满足<strong>平方可积</strong>条件：</p>
+<div class="arithmatex">\[\int_{-\infty}^{\infty} |\psi(x)|^2 dx &lt; \infty\]</div>
+<p>所有满足这一条件的函数构成了一个数学空间，即 <span class="arithmatex">\(L^2\)</span> 空间，它是<strong>希尔伯特空间</strong>的一个具体实现。希尔伯特空间是一个完备的内积空间，量子力学中的态矢量（State Vector）就是这个空间中的元素。</p>
 <h4 id="12-动量表象与平面波的悖论">1.2 动量表象与平面波的“悖论”<a class="headerlink" href="#12-动量表象与平面波的悖论" title="Permanent link">&para;</a></h4>
-<p>在量子力学中，动量算符的本征态（即动量表象的基矢）是<strong>平面波</strong>，其形式为：
-$$ \psi_p(x) = \frac{1}{\sqrt{2\pi\hbar}} e^{i p x / \hbar} $$
-然而，平面波在全空间上的积分是发散的：
-$$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2\pi\hbar} dx \to \infty $$
-这意味着<strong>平面波不是平方可积的</strong>，因此它<strong>严格来说并不属于希尔伯特空间</strong>。</p>
+<p>在量子力学中，动量算符的本征态（即动量表象的基矢）是<strong>平面波</strong>，其形式为：</p>
+<div class="arithmatex">\[\psi_p(x) = \frac{1}{\sqrt{2\pi\hbar}} e^{i p x / \hbar}\]</div>
+<p>然而，平面波在全空间上的积分是发散的：</p>
+<div class="arithmatex">\[\int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2\pi\hbar} dx \to \infty\]</div>
+<p>这意味着<strong>平面波不是平方可积的</strong>，因此它<strong>严格来说并不属于希尔伯特空间</strong>。</p>
 <h4 id="13-老师的比喻非委员常委">1.3 老师的比喻：“非委员常委”<a class="headerlink" href="#13-老师的比喻非委员常委" title="Permanent link">&para;</a></h4>
 <p>老师用了一个非常生动的比喻来解释这个矛盾：
 * <strong>希尔伯特空间</strong>就像是一个“委员会”，只有平方可积的函数才能成为“委员”。
@@ -2053,7 +2053,7 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 <p><strong>右侧板书</strong>：
   可见类似 <code>Pf (B) ∀ A</code> 的字样，表示某个定理（Claim）的证明（Proof）。
   下方有公式：
-  $$ (\text{Exp} A)^T \eta (\text{Exp} A) $$
+  <span class="arithmatex">\((\text{Exp} A)^T \eta (\text{Exp} A)\)</span>
   这通常出现在李群的讨论中，例如证明某个矩阵指数（<span class="arithmatex">\(\text{Exp} A\)</span>）属于某个特定的群（如洛伦兹群或正交群），其中 <span class="arithmatex">\(\eta\)</span> 可能是度规张量，<span class="arithmatex">\(T\)</span> 表示矩阵转置。</p>
 </li>
 <li>
@@ -2193,25 +2193,25 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 <ul>
 <li>
 <p><strong>条件 (a) 第二槽的加法线性：</strong>
-    $<span class="arithmatex">\(\langle f, g + h \rangle = \langle f, g \rangle + \langle f, h \rangle\)</span>$
+    <span class="arithmatex">\(\langle f, g + h \rangle = \langle f, g \rangle + \langle f, h \rangle\)</span>
     <em>解释：</em> 保持第一个输入 <span class="arithmatex">\(f\)</span> 不变，对第二个输入 <span class="arithmatex">\(g+h\)</span> 进行内积，等于分别内积后相加。</p>
 </li>
 <li>
 <p><strong>条件 (b) 第二槽的数乘线性：</strong>
-    $<span class="arithmatex">\(\langle f, c g \rangle = c \langle f, g \rangle\)</span>$
+    <span class="arithmatex">\(\langle f, c g \rangle = c \langle f, g \rangle\)</span>
     <em>解释：</em> 第二个输入乘上复数 <span class="arithmatex">\(c\)</span>，可以把 <span class="arithmatex">\(c\)</span> 直接提取到内积外面。
     <em>(注：结合(a)和(b)，说明内积对<strong>第二个变量</strong>是严格线性的。)</em></p>
 </li>
 <li>
 <p><strong>条件 (c) 共轭对称性（Hermitian对称性）：</strong>
-    $<span class="arithmatex">\(\langle f, g \rangle = \overline{\langle g, f \rangle}\)</span>$
+    <span class="arithmatex">\(\langle f, g \rangle = \overline{\langle g, f \rangle}\)</span>
     <em>解释：</em> 交换两个输入的位置，内积的结果不再是相等（实空间度规是对称的），而是取<strong>复共轭</strong>（视频中称为“取个拔”，即加上横线表示共轭）。这说明它关于两个槽是<strong>不对称</strong>的。</p>
 </li>
 <li>
 <p><strong>推论：第一槽的共轭线性（反线性）：</strong>
     视频最后推导了对第一槽的性质：
-    $<span class="arithmatex">\(\langle f + g, h \rangle = \langle f, h \rangle + \langle g, h \rangle\)</span>$
-    $<span class="arithmatex">\(\langle c f, g \rangle = \overline{c} \langle f, g \rangle\)</span>$
+    <span class="arithmatex">\(\langle f + g, h \rangle = \langle f, h \rangle + \langle g, h \rangle\)</span>
+    <span class="arithmatex">\(\langle c f, g \rangle = \overline{c} \langle f, g \rangle\)</span>
     <em>推导过程（视频口述）：</em>
     <span class="arithmatex">\(\langle c f, g \rangle = \overline{\langle g, c f \rangle}\)</span> （利用条件c交换位置取共轭）
     <span class="arithmatex">\(= \overline{c \langle g, f \rangle}\)</span> （利用条件b把第二槽的 <span class="arithmatex">\(c\)</span> 提出来）
@@ -2249,7 +2249,7 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 <h3 id="注解_4">注解<a class="headerlink" href="#注解_4" title="Permanent link">&para;</a></h3>
 <h3 id="1-板书公式识别与解释">1. 板书公式识别与解释<a class="headerlink" href="#1-板书公式识别与解释" title="Permanent link">&para;</a></h3>
 <p>根据截图，黑板上正在推导内积（特别是复内积）的性质。可见的公式部分如下：</p>
-<div class="arithmatex">\[ (f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = \dots \]</div>
+<div class="arithmatex">\[(f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = \dots\]</div>
 <p><strong>符号含义：</strong>
 *   <strong><span class="arithmatex">\(f, g, h\)</span></strong>：通常代表向量空间（如希尔伯特空间或函数空间）中的向量或函数。
 *   <strong><span class="arithmatex">\((\cdot, \cdot)\)</span></strong>：表示内积（Inner Product）。在物理学（特别是量子力学）和数学中，内积用于衡量两个状态或函数的重叠程度。
@@ -2290,8 +2290,8 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 *   主推导公式：<span class="arithmatex">\((f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = (f, h) + (g, h)\)</span> （最后一部分在画面边缘，根据逻辑补全）</p>
 <p>字幕中的“F这个在家呢被调回来了”显然是语音识别错误，实际应该是描述公式中的 <span class="arithmatex">\(f+g\)</span> 以及内积中前后项交换（“调回来”）带来复共轭的操作。</p>
 <h3 id="2-公式识别与解释">2. 公式识别与解释<a class="headerlink" href="#2-公式识别与解释" title="Permanent link">&para;</a></h3>
-<p><strong>核心公式：</strong>
-$$ (f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = (f, h) + (g, h) $$</p>
+<p><strong>核心公式：</strong></p>
+<div class="arithmatex">\[(f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = (f, h) + (g, h)\]</div>
 <p><strong>符号含义：</strong>
 *   <span class="arithmatex">\(f, g, h\)</span>：通常代表向量空间（如希尔伯特空间）中的向量或函数。
 *   <span class="arithmatex">\((\cdot, \cdot)\)</span>：表示内积（Inner Product）。
@@ -2330,16 +2330,16 @@ $$ (f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = (f, 
 <p><strong>推导过程还原：</strong>
 字幕中提到的推导实际上是证明内积对第一个变量的性质。
 假设有函数（或向量）<span class="arithmatex">\(f, g, h\)</span>，以及复数 <span class="arithmatex">\(c\)</span>。
-板书截图展示了加法分配律的证明片段：
-$$ (f+g, h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = \overline{(h, f)} + \overline{(h, g)} = (f, h) + (g, h) $$</p>
-<p>字幕中老师口述的重点是<strong>数乘</strong>的性质（即“如果数乘呢，这个f第一槽的被一个复数相乘”）：
-$$ (cf, g) $$
-根据内积的共轭对称性（交换两个位置要取复共轭，即字幕中的“调过来”和“扒一下”指代加共轭横线 <span class="arithmatex">\(\bar{}\)</span> ）：
-$$ (cf, g) = \overline{(g, cf)} $$
-根据内积对第二个变量的线性性质（常数 <span class="arithmatex">\(c\)</span> 可以直接提出来）：
-$$ \overline{(g, cf)} = \overline{c(g, f)} $$
-最后，复共轭作用在乘积上：
-$$ \overline{c(g, f)} = \bar{c} \overline{(g, f)} = \bar{c} (f, g) $$</p>
+板书截图展示了加法分配律的证明片段：</p>
+<div class="arithmatex">\[(f+g, h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = \overline{(h, f)} + \overline{(h, g)} = (f, h) + (g, h)\]</div>
+<p>字幕中老师口述的重点是<strong>数乘</strong>的性质（即“如果数乘呢，这个f第一槽的被一个复数相乘”）：</p>
+<div class="arithmatex">\[(cf, g)\]</div>
+<p>根据内积的共轭对称性（交换两个位置要取复共轭，即字幕中的“调过来”和“扒一下”指代加共轭横线 <span class="arithmatex">\(\bar{}\)</span> ）：</p>
+<div class="arithmatex">\[(cf, g) = \overline{(g, cf)}\]</div>
+<p>根据内积对第二个变量的线性性质（常数 <span class="arithmatex">\(c\)</span> 可以直接提出来）：</p>
+<div class="arithmatex">\[\overline{(g, cf)} = \overline{c(g, f)}\]</div>
+<p>最后，复共轭作用在乘积上：</p>
+<div class="arithmatex">\[\overline{c(g, f)} = \bar{c} \overline{(g, f)} = \bar{c} (f, g)\]</div>
 <p><strong>符号含义：</strong>
 *   <span class="arithmatex">\((\cdot, \cdot)\)</span>：表示两个向量或函数的内积（Inner Product）。
 *   <span class="arithmatex">\(f, g, h\)</span>：内积空间中的向量（在量子力学中通常是态矢或波函数）。
@@ -2363,9 +2363,9 @@ $$ \overline{c(g, f)} = \bar{c} \overline{(g, f)} = \bar{c} (f, g) $$</p>
 <p>结论就是：从内积的左边（第一槽）往外提复数，必须给这个复数加上共轭（打个星号或者加个横线）。</p>
 <h3 id="4-截图板书内容描述">4. 截图板书内容描述<a class="headerlink" href="#4-截图板书内容描述" title="Permanent link">&para;</a></h3>
 <p>截图中，老师正在黑板上书写内积的性质推导。
-可以看到黑板上写着：
-$$ ... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ... $$
-这正是利用共轭对称性和第二变量的线性，来证明内积对第一变量的加法分配律的过程。老师正背对镜头，用粉笔继续书写等式的右半部分。</p>
+可以看到黑板上写着：</p>
+<div class="arithmatex">\[... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ...\]</div>
+<p>这正是利用共轭对称性和第二变量的线性，来证明内积对第一变量的加法分配律的过程。老师正背对镜头，用粉笔继续书写等式的右半部分。</p>
 <hr />
 <h2 id="段落-8">段落 8<a class="headerlink" href="#段落-8" title="Permanent link">&para;</a></h2>
 <p><strong>时间：</strong> 00:13:21 ~ 00:17:55</p>
@@ -2387,19 +2387,19 @@ $$ ... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ... $$
 内积是一个映射 <span class="arithmatex">\((\cdot, \cdot): V \times V \rightarrow \mathbb{C}\)</span>，满足以下条件（设 <span class="arithmatex">\(f, g, h \in V\)</span>，<span class="arithmatex">\(c \in \mathbb{C}\)</span>）：</p>
 <ul>
 <li><strong>(a) 对第二变元的加法线性：</strong>
-    $<span class="arithmatex">\((f, g+h) = (f, g) + (f, h)\)</span>$</li>
+    <span class="arithmatex">\((f, g+h) = (f, g) + (f, h)\)</span></li>
 <li><strong>(b) 对第二变元的数乘线性：</strong>
-    $<span class="arithmatex">\((f, cg) = c(f, g)\)</span>$
+    <span class="arithmatex">\((f, cg) = c(f, g)\)</span>
     <em>(注：物理学中通常约定内积对第二个变元是线性的，对第一个变元是共轭线性的；而数学中常约定对第一个变元线性。这里老师采用的是物理学约定。)</em></li>
 <li><strong>(c) 共轭对称性（厄米对称性）：</strong>
-    $<span class="arithmatex">\((f, g) = \overline{(g, f)}\)</span>$
+    <span class="arithmatex">\((f, g) = \overline{(g, f)}\)</span>
     <em>推论（板书右侧推导）：</em>
     由 (c) 和 (a)(b) 可推导出对第一变元的<strong>共轭线性（反线性）</strong>：
-    $<span class="arithmatex">\((cf, g) = \overline{(g, cf)} = \overline{c(g, f)} = \bar{c}\overline{(g, f)} = \bar{c}(f, g)\)</span>$
+    <span class="arithmatex">\((cf, g) = \overline{(g, cf)} = \overline{c(g, f)} = \bar{c}\overline{(g, f)} = \bar{c}(f, g)\)</span>
     <em>(字幕中的“C的疤”即指复共轭 <span class="arithmatex">\(\bar{c}\)</span>，“共俄先行/反线性”即指共轭线性。)</em></li>
 <li><strong>(d) 正定性：</strong>
-    $<span class="arithmatex">\((f, f) \ge 0\)</span>$
-    并且 $<span class="arithmatex">\((f, f) = 0 \iff f = 0\)</span>$
+    <span class="arithmatex">\((f, f) \ge 0\)</span>
+    并且 <span class="arithmatex">\((f, f) = 0 \iff f = 0\)</span>
     <em>(字幕中提到“自我内基...要求大于等于零”，且“当且紧当这个f是零那个时候才成立”。)</em></li>
 </ul>
 <p><strong>板书右下角的一个重要推论：</strong>
