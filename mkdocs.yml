@@ -1,0 +1,84 @@
+site_name: Lecture Annotation
+site_description: 课程注解 - 自动生成的课程笔记与深度解析
+site_url: https://k-l-lambda.github.io/lecture-annotation/
+repo_url: https://github.com/k-l-lambda/lecture-annotation
+repo_name: k-l-lambda/lecture-annotation
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到亮色模式
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  # Math support
+  - pymdownx.arithmatex:
+      generic: true
+  # Details/summary (collapsible blocks)
+  - pymdownx.details
+  - pymdownx.superfences
+  # Better emphasis and formatting
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Table of contents with CJK-friendly slugify
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  # Admonitions
+  - admonition
+  # Attributes
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/k-l-lambda/lecture-annotation
+
+copyright: Lecture Annotation Project
+
+nav:
+  - 首页: index.md
+  - 课程:
+    - 李群李代数 第24讲 酉群（续）: lectures/yt-mG3KzhwXS1k/lecture_notes.md
