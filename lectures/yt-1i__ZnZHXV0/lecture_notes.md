@@ -61,6 +61,7 @@
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 好吧我们来回到课堂
 那真是
 今天还是比较辛苦这个电调的这个
@@ -148,6 +149,7 @@ W
 W
 OK这是我的一个相应作用项
 然后谈矛盾
+</pre>
 
 </details>
 
@@ -258,6 +260,7 @@ $$\langle\Omega|T\{\psi(x)\bar{\psi}(y)A_\mu(z)\}|\Omega\rangle = \frac{\langle 
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 好为了看宣传指标干清楚的咱们不妨给它加个名字比如管它叫
 德尔特
 干嘛去镇得他行地肉猎
@@ -288,6 +291,7 @@ W是吧
 显然菩萨
 我们
 给我菩萨把手臂是吧
+</pre>
 
 </details>
 
@@ -427,6 +431,7 @@ Wick转动 → 欧几里得积分
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我们把这个菩萨啊
 X和普赛巴索兵我们要想一个连通的一个
 增量函数
@@ -529,6 +534,7 @@ OK
 所以呢给大家简单介绍一下
 所谓动量空间的格林函数就是对坐标空间的格林函数呢
 做一个复列变换
+</pre>
 
 </details>
 
@@ -661,6 +667,7 @@ $$\tilde{G}(p_1, p_2, \cdots) = \int d^4x_1\, d^4x_2 \cdots e^{i(p_1\cdot x_1 + 
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 东梁空间高粱说我们
 可以举个刚才我们讲过的一个例子
 我们刚才还讲过一个非常简单的例子是这个
@@ -768,6 +775,7 @@ D F T P 四好那我们现在看怎么做这有点复杂积分重录有点多
 看一下指数因子每一个
 都包含一个
 这个
+</pre>
 
 </details>
 
@@ -881,6 +889,7 @@ $$\int d^4z \, e^{iz\cdot(p_1+p_2+p_3+p_4)} = (2\pi)^4\delta^{(4)}(p_1+p_2+p_3+p
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 这是有一个
 塞在这儿
 负的IP点Z
@@ -939,6 +948,7 @@ OK然后呢
 一个的辅助IP三点X三
 你的父的爱
 P4X4
+</pre>
 
 </details>
 
@@ -1099,6 +1109,7 @@ $\delta^{(4)}(p_1+p_2+p_3+p_4)=0$ 表示：
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 没问题吧然后再剩下四个
 这个动量的这个
 应该的
@@ -1146,6 +1157,7 @@ X三X四
 我们整体的话我们把它叫
 我们这样定义这个动量空间的格林很舒服
 我们管这样一个音字
+</pre>
 
 </details>
 
@@ -1275,6 +1287,7 @@ $$\prod_{i=1}^{4}\frac{d^4p_i}{(2\pi)^4}$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 管他家
 注意
 QT是代表动量空间
@@ -1346,6 +1359,7 @@ OK
 你拔
 Y这个算符的位置的位置的位置从外移成零
 OK
+</pre>
 
 </details>
 
@@ -1503,6 +1517,7 @@ $$= \langle 0 | \phi(0) e^{iP\cdot(x-y)} \phi(0) | 0 \rangle = G_2(x-y, 0)$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 所以你用那种时空平不变性的你去发现是FYY呢去等价它是个X点Y的函数
 OK所以你做负列变化的时候
 你等于一个额外的一个多多余的因为你对
@@ -1531,6 +1546,7 @@ OK所以你做负列变化的时候
 两点关联函数
 是吧
 胡表示
+</pre>
 
 </details>
 
@@ -1685,11 +1701,13 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 不是什么意思我们也会看到
 他也叫就文献上叫歌说也叫
 开伦
 这个这个这个名字上有这个X应该是
 应该是德国人很勒赫嘛
+</pre>
 
 </details>
 
@@ -1759,6 +1777,7 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 谱的英文叫spectre
 怎么叫光谱是吧
 光谱
@@ -1772,6 +1791,7 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 它越来越围绕论越来越围绕展开
 所以说呢
 再有些
+</pre>
 
 </details>
 
@@ -1860,6 +1880,7 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 这有些场合比如强强作用你的胃论你用不了的时候呢
 这个定理呢它依然适用
 塞维尔的一个论证
@@ -1911,6 +1932,7 @@ Composite 操作器
 一个基本的一个思想就是说
 我能从这里面插一个单位算符
 OK我利用我的这个完备性关系
+</pre>
 
 </details>
 
@@ -2028,6 +2050,7 @@ $$\hat{1} = \sum_n |n\rangle\langle n|$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 完备关系是说我的黑客空间里面所有的态子组成一组完备的机是吧我现在考虑有的
 含亮
 完整含量的
@@ -2130,6 +2153,7 @@ OK
 多粒子碳
 好现在目前来说我们每一步都是严格的
 OK
+</pre>
 
 </details>
 
@@ -2206,6 +2230,7 @@ $$ \langle\Omega|\phi(x)\phi(y)|\Omega\rangle = \sum_X \int d\Pi_X \, \langle\Om
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 就是说我现在应该
 怎么往下做首先我们现在考察的居居诊员
 比如我们考察这样一个据证员
@@ -2246,6 +2271,7 @@ OK
 代表S这样一个多粒子态的一个四动量
 OK
 好的
+</pre>
 
 </details>
 
@@ -2351,6 +2377,7 @@ $$\langle 0 | \hat{\phi}(x) | X \rangle = e^{-ip_X \cdot x} \langle 0 | \hat{\ph
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 类似的话呢你也可以对这样一个剧院员
 也可以多点手脚
 现在
@@ -2422,6 +2449,7 @@ DPAX求和
 跳跳X
 哦对啊
 这样一个聚整圆的某平方
+</pre>
 
 </details>
 
@@ -2529,6 +2557,7 @@ $\langle\Omega|\phi(0)|X\rangle \neq 0$ 的物理含义：
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 OK
 那我们现在看一下这个等式
 非常平庸是吧
@@ -2553,6 +2582,7 @@ OK这显然
 菲塔P零
 气的平方
 我肯定
+</pre>
 
 </details>
 
@@ -2648,6 +2678,7 @@ $$ \rho(p^2) \equiv \theta(p^0) \sum_X (2\pi) \delta(p^2 - m_X^2) |\langle \Omeg
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 因为这个PX代表是一个物理态的
 这个嗯
 四动量是吧所以说呢
@@ -2678,6 +2709,7 @@ OK
 它必须是实的
 并且呢
 是
+</pre>
 
 </details>
 
@@ -2798,6 +2830,7 @@ $$ \rho(p^2) = 2\pi \delta(p^2 - m^2) Z + \text{连续部分} \quad (p^2 \geq (2
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 并且是镇定的OK
 因为它每一项呢
 飞机函数呢都是正的
@@ -2866,6 +2899,7 @@ OK
 罗
 批平方OK
 好
+</pre>
 
 </details>
 
@@ -2982,6 +3016,7 @@ $$ \langle\Omega|\phi(x)\phi(y)|\Omega\rangle = \int\frac{d^4p}{(2\pi)^3}\, e^{-
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 到目前来说呢我们其实
 没有用任何具体的一些理论的一些知识跟根本根本根本没有用围绕论是吧
 所有的东西呢
@@ -2991,6 +3026,7 @@ $$ \langle\Omega|\phi(x)\phi(y)|\Omega\rangle = \int\frac{d^4p}{(2\pi)^3}\, e^{-
 如果不要这个普函数的话我们发现这个我们非常眼熟其实是吧
 那我们简单回忆一下为什么眼熟
 再插一遍我要插一遍黑板
+</pre>
 
 </details>
 
@@ -3044,6 +3080,7 @@ $$ \text{积分} \to \int d^4p \, \frac{e^{-ip(x-y)}}{p^2 - m^2 + i\epsilon} $$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 回一下我们的这个
 好多好几课之前大概在第十集讲的时候
 我们讲克莱恩高级厂轮量化的时候
@@ -3056,6 +3093,7 @@ $$ \text{积分} \to \int d^4p \, \frac{e^{-ip(x-y)}}{p^2 - m^2 + i\epsilon} $$
 客户端高端场论
 我们定两两关关两两数
 冬哥
+</pre>
 
 </details>
 
@@ -3146,9 +3184,11 @@ $$D(p) = \frac{i}{p^2 - m^2 + i\epsilon}$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 两点
 关联
 含数
+</pre>
 
 </details>
 
@@ -3224,6 +3264,7 @@ $$ D(x-y) \equiv \langle \Omega | \phi(x)\phi(y) | \Omega \rangle $$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我们当时DX
 叫为什么
 等于
@@ -3259,6 +3300,7 @@ M方代表它对的是一个粒子质量是M的一个
 第四批
 引一个多多引一个额外的一个P零积分
 但是呢
+</pre>
 
 </details>
 
@@ -3353,6 +3395,7 @@ $$\rho(M^2) = \delta(M^2 - m^2)$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 你需要
 引入一个
 得了函数
@@ -3371,6 +3414,7 @@ OK
 这种形式四大函数它得了函数还有指数一个函数
 和我们刚才
 大家看呢
+</pre>
 
 </details>
 
@@ -3404,12 +3448,14 @@ $$\delta(x^2 - a^2) = \frac{1}{2|a|}\left[\delta(x - a) + \delta(x + a)\right] \
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 是是不是长得非常非常的
 长得非常非常类似是吧
 那看一下刚才写的
 啊
 柔性他
 启陵
+</pre>
 
 </details>
 
@@ -3474,10 +3520,12 @@ $$\rho(p^2) = \sum_X (2\pi)^4 \delta^4(p-P_X) \left| \langle \Omega | \phi(0) | 
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 嗨小黄
 没错
 第四批都是他批款
 柔软风
+</pre>
 
 </details>
 
@@ -3516,11 +3564,13 @@ $$\langle \Omega | \phi(x)\phi(y) | \Omega \rangle = \int_0^\infty d\mu^2 \, \rh
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 这点非常重要所以我好
 那我从这里面我可以这样写一下大家看对不对
 我可以把它
 这一箱
 写成这种形式它等于
+</pre>
 
 </details>
 
@@ -3608,6 +3658,7 @@ $$\langle \Omega | \phi(x) | n \rangle = e^{-ip_n\cdot x} \langle \Omega | \phi(
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我做点手脚它等于
 我演了一个
 新的一个积分
@@ -3624,6 +3675,7 @@ Dm方的几分m方是一个正的一个实变量
 然后指出因子一的负的IP点
 x减y
 然后呢CTP0
+</pre>
 
 </details>
 
@@ -3746,6 +3798,7 @@ $$\rho(M^2) = \sum_X (2\pi)^4 \delta^4(p-P_X) \left|\langle\Omega|\phi(0)|X\rang
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 然后呢我换成一个得了函数我要求
 P方等于大的CAPITALM方OK所以这是为什么我能够
 引入一个
@@ -3781,6 +3834,7 @@ DM方
 那这个形式呢大家看一下
 把它这个形式完全就是我的一个自由理论的一个
 聊聊过来还是完全一样一模一样是吧
+</pre>
 
 </details>
 
@@ -3891,6 +3945,7 @@ $$\rho(M^2) = \sum_X (2\pi)^4 \delta^4(p-P_X) |\langle\Omega|\phi(0)|X\rangle|^2
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 那好
 那我现在可以把它换一下
 可以把它换成
@@ -3908,6 +3963,7 @@ x
 不好意思
 现在是要定义的一个东西
 啊
+</pre>
 
 </details>
 
@@ -4005,6 +4061,7 @@ $$D(x-y; M^2) = \int \frac{d^4p}{(2\pi)^4} \frac{i}{p^2-M^2+i\epsilon} e^{-ip\cd
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 好的啊
 让我们已经非常快接近我们的
 最后结果了
@@ -4033,6 +4090,7 @@ $$D(x-y; M^2) = \int \frac{d^4p}{(2\pi)^4} \frac{i}{p^2-M^2+i\epsilon} e^{-ip\cd
 说我们能
 真正感兴趣的格林汉说
 OK
+</pre>
 
 </details>
 
@@ -4141,11 +4199,13 @@ $$\tilde{G}_F(p^2) = \int_0^\infty dM^2 \, \frac{\rho(M^2)}{p^2-M^2+i\epsilon}$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我们知道它怎么定义是吧
 它等于
 它等于
 我们的利用那边的二师
 还有一个方
+</pre>
 
 </details>
 
@@ -4238,11 +4298,13 @@ $$\tilde{D}_F(p^2) = \int_0^\infty dM^2 \, \rho(M^2) \frac{i}{p^2 - M^2 + i\epsi
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 M平方是个不变质量你可以这样理解是个质量平方的一个
 参数
 然后嗯
 你可以写成一个
 两项
+</pre>
 
 </details>
 
@@ -4332,6 +4394,7 @@ Z │    ● (极点)
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 你有一个普密度函数是吧
 罗
 M方的函数
@@ -4372,6 +4435,7 @@ DX点Y
 DM平方积分
 揉一个普函数
 再成立一个
+</pre>
 
 </details>
 
@@ -4484,6 +4548,7 @@ $$\boxed{D_F(x-y) \equiv \langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle = \int_
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 飞慢传播字
 我用F下标的分散传播帽子这个分散传播帽子质量呢
 是capital m
@@ -4516,6 +4581,7 @@ CTA P0
 迪帕克斯
 二排的四次方
 那个四度的动量成分得了函数
+</pre>
 
 </details>
 
@@ -4616,6 +4682,7 @@ $$\int_0^\infty dM^2 \, \rho(M^2) = 1 \quad \text{（场算符对易关系的谱
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 关键一点呢是
 这个这个克莱刚的厂这个标量厂呢
 他必须有能力呢
@@ -4695,6 +4762,7 @@ OK这是给大家一点直觉
 哦凯
 我们做一个
 变换
+</pre>
 
 </details>
 
@@ -4842,6 +4910,7 @@ $$\tilde{G}^{(2)}(p) = \int_0^\infty dM^2 \, \frac{\rho(M^2)}{p^2 - M^2 + i\epsi
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我们考虑这样一个
 动量空间的两点关联还是说D四X
 这点爱心是特别的
@@ -4851,6 +4920,7 @@ XY
 这是他海参画绘画
 唱唱符OK
 它等于
+</pre>
 
 </details>
 
@@ -4939,6 +5009,7 @@ $$\tilde{D}(p) = \int_0^\infty dM^2 \, \rho(M^2) \, \frac{i}{p^2 - M^2 + i\epsil
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 还是根据我们这个本来是出发
 根据我们这边的老师处方
 那做布雷变换的话显然只是
@@ -4951,6 +5022,7 @@ $$\tilde{D}(p) = \int_0^\infty dM^2 \, \rho(M^2) \, \frac{i}{p^2 - M^2 + i\epsil
 MUF
 罗艾姆范
 然后这个D四X
+</pre>
 
 </details>
 
@@ -5073,6 +5145,7 @@ $$\int d^4x \, e^{ip\cdot x} D_F(x; M^2) = \frac{i}{p^2 - M^2 + i\epsilon}$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 易的IP点X
 对一个坐标空间的
 煮完完成薄子
@@ -5081,6 +5154,7 @@ $$\int d^4x \, e^{ip\cdot x} D_F(x; M^2) = \frac{i}{p^2 - M^2 + i\epsilon}$$
 第二项积分号
 它显然就是一个简单的一个动量空间传播系统分散传播系统
 然后它的这个
+</pre>
 
 </details>
 
@@ -5181,6 +5255,7 @@ D̃(p) = ∫ dM² ρ(M²) · i/(p²-M²+iε)
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我再写一部它可以写成这种形式
 领导无穷
 给一把
@@ -5197,6 +5272,7 @@ D̃(p) = ∫ dM² ρ(M²) · i/(p²-M²+iε)
 也看出来这是我们非常熟悉的一个分板长模子
 其中的这个
 粒子的这个质量是capital mOK它在这个区间呢是分离的ISOLATE的但是在这个多粒子态的预制打开以后呢它可以是个连续参数OK
+</pre>
 
 </details>
 
@@ -5306,10 +5382,12 @@ $$\int_0^{\infty} dM^2 \, \rho(M^2) = 1 \quad \text{（归一化条件，若}\ph
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 好像我们
 就往下看
 啊
 唉
+</pre>
 
 </details>
 
@@ -5373,6 +5451,7 @@ $$\langle\Omega|\phi_H(x)\phi_H(y)|\Omega\rangle = \int_0^{\infty} dM^2 \, \rho(
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 好的
 那我们
 现在再考虑这样一个再这样一个
@@ -5463,6 +5542,7 @@ OK
 重量空间的这样一个
 两个两个就这个表示OK
 嗯
+</pre>
 
 </details>
 
@@ -5615,6 +5695,7 @@ $Z$ 量化了**场算符的"强度"**：
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 那我们现在看这ZWE现在这很重要我们要看一下
 到底这是怎么来的OK
 他为什么
@@ -5625,6 +5706,7 @@ $Z$ 量化了**场算符的"强度"**：
 子和子是子和子之间存在的
 啊啊啊
 哼
+</pre>
 
 </details>
 
@@ -5703,6 +5785,7 @@ $$\tilde{D}(p) = \underbrace{\frac{iZ}{p^2 - m_{\text{phys}}^2 + i\epsilon}}_{\t
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 好不好我们还回到我们的定义看一下我们的谱函数的定义
 我们都能看清楚
 啊像普函数
@@ -5749,6 +5832,7 @@ Omega-3
 OK
 所以等于这东西
 这个假设是由
+</pre>
 
 </details>
 
@@ -5920,6 +6004,7 @@ $$\rho(p^2) \supset Z \cdot \delta(p^2 - M^2)$$
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 单粒子胎
 物理的单离子太主导
 哦凯
@@ -5949,6 +6034,7 @@ C脑膜是吧
 一个number是吧
 那这个东西就很好往下做了
 啊
+</pre>
 
 </details>
 
@@ -6077,9 +6163,11 @@ $$\langle \Omega | \phi(x) | q \rangle = e^{-iq\cdot x} \langle \Omega | \phi(0)
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 那等于什么呢
 它等于
 汽车哥
+</pre>
 
 </details>
 
@@ -6148,6 +6236,7 @@ Z 就是**单粒子成分的纯度**——相互作用越强，Z 越小，单粒
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我可以把它第三去呢
 换成一个第四Q
 我想做二拍的三次方
@@ -6214,6 +6303,7 @@ OK 把它放到人王形势
 一个非常SARP的非常非常窄的一个
 稳定粒子
 这是非常非常重要的
+</pre>
 
 </details>
 
@@ -6341,6 +6431,7 @@ $$\tilde{G}^{(2)}(p) \approx \frac{iZ}{p^2 - m_{\text{phys}}^2 + i\epsilon} + \t
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我们在
 这个东西我们现在再给大家
 讲一下这个ZFACT刚才我们定义呢是
@@ -6354,6 +6445,7 @@ OK然后我给他默认了这个单例子它的质量呢是物理质量
 对于自由场呢
 对于自由
 对于自由的克莱恩刚能场论呢
+</pre>
 
 </details>
 
@@ -6452,6 +6544,7 @@ $$\text{自由场：} \quad \langle 0|\phi_{\text{free}}(0)|p\rangle = 1 \quad \
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 我们回忆一下
 是自由理论真空
 一个克莱恩高等的自由场
@@ -6489,6 +6582,7 @@ Z就叫厂
 这个Z还有名词叫波含肉同化元素
 叫微无方程
 重新正常化
+</pre>
 
 </details>
 
@@ -6647,6 +6741,7 @@ $$\boxed{\text{自由场：}\langle 0|\phi(0)|p\rangle = 1 \quad \text{vs.} \qua
 
 <details><summary>📝 原始字幕</summary>
 
+<pre>
 发个字
 它为什么叫这个东西这是从量子力学里面的
 一个启发我们有时间想跟大家讲一讲他为什么
@@ -6658,6 +6753,7 @@ $$\boxed{\text{自由场：}\langle 0|\phi(0)|p\rangle = 1 \quad \text{vs.} \qua
 我想我们要不
 休息一会儿我们再来讲
 好我们先休息一会儿吧
+</pre>
 
 </details>
 
