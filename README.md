@@ -7,13 +7,12 @@ This repo publishes annotated course notes built from:
 - extracted key frames
 - LLM explanations of formulas and concepts
 
-Current site content includes courses such as:
-- 量子场论（贾宇）
-- 李群李代数（梁灿彬）
-
 ## Site
 
 Published with MkDocs + GitHub Pages.
+
+Website:
+- https://k-l-lambda.github.io/lecture-annotation/
 
 ## Repository Structure
 
@@ -58,18 +57,3 @@ git push origin main
 - Do not hand-edit generated homepage/nav unless you also update the generator
 - Math in lecture notes is preprocessed for reliable MkDocs/MathJax rendering
 - Large frame assets are tracked with Git LFS
-
-## Source Pipeline
-
-Lecture notes are generated from the `lecture_annotator` pipeline in:
-- `/home/camus/work/stream-polyglot/lecture_annotator/`
-
-That pipeline handles:
-- download
-- transcription
-- frame extraction
-- multimodal annotation
-
-## License
-
-No license specified yet.
