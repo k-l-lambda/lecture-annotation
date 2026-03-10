@@ -4,26 +4,20 @@
 
 ---
 
-## 课程列表
+## 李群李代数
 
-### 1. [李群李代数 第25讲 酉群（续）](lectures/yt-LJQo6MWklDo/lecture_notes.md)
+| 讲次 | 主题 | 视频 |
+|------|------|------|
+| 第24讲 | [酉群（续）](lectures/yt-mG3KzhwXS1k/lecture_notes.md) | [🎬](https://youtu.be/mG3KzhwXS1k) |
+| 第25讲 | [酉群（续）](lectures/yt-LJQo6MWklDo/lecture_notes.md) | [🎬](https://youtu.be/LJQo6MWklDo) |
 
-🎬 [原始视频](https://youtu.be/LJQo6MWklDo)
+## 量子场论
 
----
-
-### 2. [量子场论 第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图](lectures/yt-bfqAcaTjxjI/lecture_notes.md)
-
-🎬 [原始视频](https://youtu.be/bfqAcaTjxjI)
-
----
-
-### 3. [李群李代数 第24讲 酉群（续）](lectures/yt-mG3KzhwXS1k/lecture_notes.md)
-
-🎬 [原始视频](https://youtu.be/mG3KzhwXS1k)
+| 讲次 | 主题 | 视频 |
+|------|------|------|
+| 第64讲 | [Gell Mann Low公式的应用及真空泡泡图](lectures/yt-bfqAcaTjxjI/lecture_notes.md) | [🎬](https://youtu.be/bfqAcaTjxjI) |
 
 ---
-
 
 ## 关于
 
