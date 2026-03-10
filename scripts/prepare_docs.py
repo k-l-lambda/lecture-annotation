@@ -54,6 +54,34 @@ def get_video_id(dirname: str) -> str:
     return dirname
 
 
+# Course series configuration: maps title prefix to display name
+# Lectures are grouped by matching the longest prefix.
+COURSE_SERIES = {
+    "李群李代数": "李群李代数-梁灿彬",
+    "量子场论": "量子场论-贾宇",
+}
+
+
+def extract_series(title: str) -> tuple:
+    """Extract course series and lecture label from title.
+
+    Returns (series_display_name, lecture_label).
+    e.g. "李群李代数 第25讲 酉群（续）" -> ("李群李代数-梁灿彬", "第25讲 酉群（续）")
+    """
+    for prefix, display in sorted(COURSE_SERIES.items(), key=lambda x: -len(x[0])):
+        if title.startswith(prefix):
+            rest = title[len(prefix):].strip()
+            return display, rest
+    # Unknown series
+    return "其他", title
+
+
+def extract_lecture_number(label: str) -> int:
+    """Extract numeric lecture number for sorting. e.g. '第25讲 ...' -> 25."""
+    m = re.search(r'第(\d+)讲', label)
+    return int(m.group(1)) if m else 999
+
+
 def _escape_pipe_in_math(line: str) -> str:
     """Escape | as \\| inside $...$ inline math within markdown table rows.
 
@@ -292,6 +320,20 @@ def main():
     if processed:
         print(f"  Math preprocessing applied to {processed} file(s)")
 
+    # Group lectures by course series
+    from collections import OrderedDict
+    series_groups = OrderedDict()
+    for lec in lectures:
+        series_name, lecture_label = extract_series(lec["title"])
+        lec["series"] = series_name
+        lec["lecture_label"] = lecture_label
+        lec["lecture_num"] = extract_lecture_number(lecture_label)
+        series_groups.setdefault(series_name, []).append(lec)
+
+    # Sort lectures within each series by lecture number
+    for series_name in series_groups:
+        series_groups[series_name].sort(key=lambda x: x["lecture_num"])
+
     # Generate index.md
     index_lines = [
         "# 📚 课程注解",
@@ -300,27 +342,35 @@ def main():
         "",
         "---",
         "",
-        "## 课程列表",
-        "",
     ]
 
     if not lectures:
         index_lines.append("*暂无课程内容。*")
     else:
-        for i, lec in enumerate(lectures, 1):
-            title = lec["title"]
-            dir_name = lec["dir_name"]
-            video_url = lec["video_url"]
-
-            index_lines.append(f"### {i}. [{title}](lectures/{dir_name}/lecture_notes.md)")
+        for series_name, group in series_groups.items():
+            index_lines.append(f"## {series_name}")
             index_lines.append("")
-            if video_url:
-                index_lines.append(f"🎬 [原始视频]({video_url})")
-                index_lines.append("")
-            index_lines.append("---")
+            index_lines.append("| 讲次 | 主题 | 视频 |")
+            index_lines.append("|------|------|------|")
+            for lec in group:
+                label = lec["lecture_label"]
+                # Extract "第XX讲" and the rest
+                m = re.match(r'(第\d+讲)\s*(.*)', label)
+                if m:
+                    num_part = m.group(1)
+                    topic = m.group(2)
+                    # Clean up topic: remove 【...】 brackets
+                    topic = re.sub(r'【[^】]*】\s*', '', topic)
+                else:
+                    num_part = label
+                    topic = ""
+                link = f"lectures/{lec['dir_name']}/lecture_notes.md"
+                video_link = f"[🎬]({lec['video_url']})" if lec["video_url"] else ""
+                index_lines.append(f"| {num_part} | [{topic or label}]({link}) | {video_link} |")
             index_lines.append("")
 
     index_lines.extend([
+        "---",
         "",
         "## 关于",
         "",
@@ -345,16 +395,17 @@ def main():
     with open(mkdocs_yml, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Build new nav block
+    # Build new nav block grouped by course series
     nav_lines = [
         "nav:",
         "  - 首页: index.md",
     ]
 
     if lectures:
-        nav_lines.append("  - 课程:")
-        for lec in lectures:
-            nav_lines.append(f"    - {lec['title']}: lectures/{lec['dir_name']}/lecture_notes.md")
+        for series_name, group in series_groups.items():
+            nav_lines.append(f"  - {series_name}:")
+            for lec in group:
+                nav_lines.append(f"    - {lec['lecture_label']}: lectures/{lec['dir_name']}/lecture_notes.md")
 
     new_nav = "\n".join(nav_lines) + "\n"
 
