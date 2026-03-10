@@ -1,8 +1,8 @@
 site_name: Lecture Annotation
 site_description: 课程注解 - 自动生成的课程笔记与深度解析
 site_url: https://k-l-lambda.github.io/lecture-annotation/
-repo_url: https://github.com/k-l-lambda/lecture-annotation
-repo_name: k-l-lambda/lecture-annotation
+repo_url: https://k-l-lambda.github.io/
+repo_name: 🏠 Blog
 
 docs_dir: docs
 site_dir: site
@@ -34,7 +34,7 @@ theme:
     - content.code.copy
     - toc.follow
   icon:
-    repo: fontawesome/brands/github
+    repo: fontawesome/solid/house
 
 plugins:
   - search:
@@ -82,7 +82,6 @@ copyright: Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">st
 
 nav:
   - 首页: index.md
-  - 🏠 Blog: https://k-l-lambda.github.io/
   - 李群李代数-梁灿彬:
     - 第24讲 酉群（续）: lectures/yt-mG3KzhwXS1k/lecture_notes.md
     - 第25讲 酉群（续）: lectures/yt-LJQo6MWklDo/lecture_notes.md
