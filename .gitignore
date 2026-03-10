@@ -3,3 +3,5 @@ site/
 
 # Generated docs (built from lectures/ by prepare_docs.py)
 docs/lectures/
+
+*.pyc
