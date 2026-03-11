@@ -1,0 +1,2559 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-PE5KYG9U4LM/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-GyD0_xA0fyU/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-zYIIy2y-OnQ/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>第28讲 酉群（续） - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#李群李代数-第28讲-酉群续" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第28讲 酉群（续）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-必要理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 必要理论背景补充
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-理论背景知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 理论背景知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-理论背景知识_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 理论背景知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-截图中的板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 截图中的板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-必要的理论背景知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 必要的理论背景知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-截图中的板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 截图中的板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 6
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-必要理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 必要理论背景补充
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-理论背景知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 理论背景知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-理论背景知识_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 理论背景知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-截图中的板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 截图中的板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-板书ppt-公式解析_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-必要的理论背景知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 必要的理论背景知识
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-截图中的板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 截图中的板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 6
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 6">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="李群李代数-第28讲-酉群续">李群李代数 第28讲 酉群（续）<a class="headerlink" href="#李群李代数-第28讲-酉群续" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 6 个段落）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 段落 1</a></li>
+<li><a href="#段落-2">00:05:00 段落 2</a></li>
+<li><a href="#段落-3">00:06:12 段落 3</a></li>
+<li><a href="#段落-4">00:11:12 段落 4</a></li>
+<li><a href="#段落-5">00:16:04 段落 5</a></li>
+<li><a href="#段落-6">00:21:05 段落 6</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:05:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+好,這個是關於維術
+那你可以驗證一下
+比如說剛才我們講那個
+我們把那U溫泉擦進去留下
+U溫泉
+這個U溫泉剛才說了就是這麼一個流行
+當然是一為了
+一為的10流行原中
+那麼對不對呢
+M等於1的平方就1對點
+那麼當然其他的M為級
+你也可以驗證
+總之這個就解決了
+那麼我們剛才講完那個
+李群
+有群
+作為李群來講的時候
+舉了一個例就是U溫泉
+現在又講了有群的理代數了
+那麼我們也舉一個例
+就舉這個U溫泉
+它的理代數
+這就是Example 2
+是講
+U溫泉的理代數
+於華語溫了
+那麼你猜猜這怎麼回事呢
+它無非就是這個航等源
+一等於溫
+這是十軸就是虛軸
+航等源的切實量
+那麼就是說航等源切於這個
+你這下水量都沒用的
+你得切於這個流行
+這個流行就這個原軸
+那就是這些切實
+長得短的
+往這個方向的等等
+那麼實際上你真求
+什麼很簡單
+你看看
+整個U溫泉的元素
+都可以這麼寫
+那麼有一個參數
+非它來決定
+那麼整個這個東西
+不就是Exponential
+跨胡
+富埃非他嗎
+那麼這個東西其實是什麼呢
+就是一個單參子群
+就是說這個理群本身
+是這個圈
+你可以認為單參子群
+也是這個圈
+所以就充當一個單參的參數
+你要驗證它真實單參子群
+得滿足這個條件界的嗎
+現在那個T也好
+先說T吧 參數T吧
+現在叫Fate
+那麼你再加一個S
+那叫FatePine
+你驗證一下肯定是滿足的
+所以它是個單參子群
+那麼有了單參子群了
+你求這個單參子群
+做了一條曲線
+在航檔源的切實
+它就應該是
+理彈數的一個元
+這個理彈數就以為的
+找出一個元來
+那麼就可以充當基始了
+那麼你在城上長數
+那不就是整個理彈數
+就出來了嗎
+那好 那我們現在就求那個
+單參子群的切實
+那麼就應該是D100D
+現在那個參數我們寄作Fate
+那麼應該在Fate維靈的地方
+就是很長元處
+求這個單參子群
+到切實 那太容易了
+那麼就是Minus i
+一圖的iMinus iF
+然後再Fate維靈去處取職
+那麼就是腐i
+那麼這個腐i本身
+你就可以看成一個
+一乘一的腐劇戰
+它就是UF1
+花UF1
+這個理彈數裡面的一個元素
+那麼由於是以為的
+其他元素無非就是
+用一個長數去承他
+就是了
+那麼所以呢
+這個花UF1
+就可以寫成腐i作為基始
+成上摩承數寄到F2
+長時數
+L1跑變全R1
+這個就是
+有群
+M1的那個有群的理彈數
+那邊是理群
+這邊是理彈數
+我們寄這麼一個簡單的例子
+關於U2
+這個群
+U2群
+這個例子我們後面
+講別的問題的時候
+我覺得下一屆
+好了
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000144.0_transition.jpg" src="frames/frame_000144.0_transition.jpg" /></p>
+<p><img alt="frame_000167.0_transition.jpg" src="frames/frame_000167.0_transition.jpg" /></p>
+<p><img alt="frame_000256.0_transition.jpg" src="frames/frame_000256.0_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>这段课程视频（梁灿彬教授主讲）深入讲解了<strong>李群 <span class="arithmatex">\(U(1)\)</span> 与其李代数 <span class="arithmatex">\(\mathfrak{u}(1)\)</span> 的对应关系</strong>，是理解"群-代数"局部同构的经典范例。以下从公式、理论、直观三个层面进行注解。</p>
+<hr />
+<h3 id="1-板书ppt-公式解析">1. 板书/PPT 公式解析<a class="headerlink" href="#1-板书ppt-公式解析" title="Permanent link">&para;</a></h3>
+<p>根据截图与字幕，黑板上出现的核心公式及其符号含义如下：</p>
+<h4 id="公式①u1-群的参数化表示">公式①：<span class="arithmatex">\(U(1)\)</span> 群的参数化表示<a class="headerlink" href="#公式①u1-群的参数化表示" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[U(1) = \left\{ e^{-i\theta} \,\big|\, \theta \in \mathbb{R} \right\}\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(U(1)\)</span></strong>：1阶酉群（Unitary group of degree 1），由所有模为1的复数（即 <span class="arithmatex">\(e^{-i\theta}\)</span>）组成，在乘法下构成群。</li>
+<li><strong><span class="arithmatex">\(\theta\)</span></strong>：实参数（字幕中的"非它"），对应圆心角。</li>
+<li><strong>几何意义</strong>：该集合对应复平面上的<strong>单位圆</strong>（截图中所画的圆），群乘法对应圆上点的旋转相加。</li>
+</ul>
+<h4 id="公式②单参数子群one-parameter-subgroup的验证条件">公式②：单参数子群（One-parameter subgroup）的验证条件<a class="headerlink" href="#公式②单参数子群one-parameter-subgroup的验证条件" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\gamma(t+s) = \gamma(t)\gamma(s)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\gamma(\theta) = e^{-i\theta}\)</span></strong>：从李代数到李群的指数映射曲线。</li>
+<li><strong>验证</strong>：<span class="arithmatex">\(e^{-i(\theta_1+\theta_2)} = e^{-i\theta_1} \cdot e^{-i\theta_2}\)</span>，满足同态条件，证明这是一个单参数子群。</li>
+</ul>
+<h4 id="公式③李代数生成元的计算切向量">公式③：李代数生成元的计算（切向量）<a class="headerlink" href="#公式③李代数生成元的计算切向量" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\left.\frac{d}{d\theta}e^{-i\theta}\right|_{\theta=0} = -i\]</div>
+<ul>
+<li><strong>左侧</strong>：在单位元（<span class="arithmatex">\(\theta=0\)</span>，即 <span class="arithmatex">\(e^0=1\)</span>）处对群元素求切向量（速度向量）。</li>
+<li><strong>右侧</strong>：<span class="arithmatex">\(-i\)</span>（字幕中的"腐i"），作为 <span class="arithmatex">\(1\times 1\)</span> 的反对称（反厄米）矩阵，是李代数 <span class="arithmatex">\(\mathfrak{u}(1)\)</span> 的<strong>基矢</strong>。</li>
+</ul>
+<h4 id="公式④李代数-mathfraku1-的完整结构">公式④：李代数 <span class="arithmatex">\(\mathfrak{u}(1)\)</span> 的完整结构<a class="headerlink" href="#公式④李代数-mathfraku1-的完整结构" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\mathfrak{u}(1) = \left\{ -i\lambda \,\big|\, \lambda \in \mathbb{R} \right\} \cong \mathbb{R}\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\mathfrak{u}(1)\)</span></strong>（字幕"花UF1"）：<span class="arithmatex">\(U(1)\)</span> 的李代数，由所有纯虚数（反厄米 <span class="arithmatex">\(1\times 1\)</span> 矩阵）组成。</li>
+<li><strong><span class="arithmatex">\(\lambda\)</span></strong>：任意实数（字幕中的"L1跑變全R1"）。</li>
+<li><strong>维度</strong>：1维实向量空间，与实数轴 <span class="arithmatex">\(\mathbb{R}\)</span> 同构。</li>
+</ul>
+<hr />
+<h3 id="2-必要理论背景补充">2. 必要理论背景补充<a class="headerlink" href="#2-必要理论背景补充" title="Permanent link">&para;</a></h3>
+<h4 id="1-李群与李代数的微分-积分关系">(1) 李群与李代数的"微分-积分"关系<a class="headerlink" href="#1-李群与李代数的微分-积分关系" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>李群</strong> <span class="arithmatex">\(U(1)\)</span> 是<strong>全局</strong>的、弯曲的流形（圆）。</li>
+<li><strong>李代数</strong> <span class="arithmatex">\(\mathfrak{u}(1)\)</span> 是<strong>局部</strong>的、线性的切空间（在恒等元 <span class="arithmatex">\(e=1\)</span> 处的切线，即虚轴）。</li>
+<li><strong>指数映射</strong> <span class="arithmatex">\(\exp: \mathfrak{u}(1) \to U(1)\)</span> 将切空间"卷"回流形：<span class="arithmatex">\(\exp(-i\lambda) = e^{-i\lambda} \in U(1)\)</span>。</li>
+</ul>
+<h4 id="2-单参数子群与切向量">(2) 单参数子群与切向量<a class="headerlink" href="#2-单参数子群与切向量" title="Permanent link">&para;</a></h4>
+<ul>
+<li>每个李代数元素 <span class="arithmatex">\(X \in \mathfrak{g}\)</span> 通过指数映射生成一条<strong>单参数子群</strong> <span class="arithmatex">\(\gamma(t) = \exp(tX)\)</span>。</li>
+<li>反之，对任意单参数子群 <span class="arithmatex">\(\gamma(t)\)</span>，其在 <span class="arithmatex">\(t=0\)</span> 处的导数 <span class="arithmatex">\(\gamma'(0)\)</span> 给出一个李代数元素。</li>
+<li><strong>本例对应</strong>：<span class="arithmatex">\(X = -i\)</span>，<span class="arithmatex">\(\gamma(\theta) = e^{-i\theta}\)</span>，<span class="arithmatex">\(\gamma'(0) = -i\)</span>。</li>
+</ul>
+<h4 id="3-物理意义">(3) 物理意义<a class="headerlink" href="#3-物理意义" title="Permanent link">&para;</a></h4>
+<ul>
+<li>在量子力学中，<span class="arithmatex">\(U(1)\)</span> 是<strong>相位对称性</strong>群；<span class="arithmatex">\(\mathfrak{u}(1)\)</span> 的生成元 <span class="arithmatex">\(-i\)</span>（或 <span class="arithmatex">\(i\)</span>）与<strong>电荷</strong>、<strong>粒子数</strong>等守恒量通过诺特定理相联系。</li>
+</ul>
+<hr />
+<h3 id="3-通俗语言解释核心概念">3. 通俗语言解释核心概念<a class="headerlink" href="#3-通俗语言解释核心概念" title="Permanent link">&para;</a></h3>
+<p><strong>把 <span class="arithmatex">\(U(1)\)</span> 想象成一个"钟表盘"（单位圆）：</strong>
+- <strong>李群</strong>就是钟表盘上的所有刻度点，你可以做"旋转"操作（乘法）。
+- <strong>恒等元</strong>是12点位置（数字1，对应复数 <span class="arithmatex">\(1+0i\)</span>）。
+- <strong>李代数</strong>就是你在12点位置<strong>瞬间的运动方向</strong>——切线方向。对于圆来说，这个方向是垂直的（纯虚轴方向）。
+- <strong>指数映射</strong>就像把切线（直线）卷起来贴在圆上：切线上走 <span class="arithmatex">\(\lambda\)</span> 步，对应圆上转 <span class="arithmatex">\(\lambda\)</span> 弧度。</p>
+<p><strong>为什么是 <span class="arithmatex">\(-i\)</span>？</strong>
+- 复数 <span class="arithmatex">\(e^{-i\theta} = \cos\theta - i\sin\theta\)</span>。
+- 对 <span class="arithmatex">\(\theta\)</span> 求导得 <span class="arithmatex">\(-i e^{-i\theta}\)</span>，在 <span class="arithmatex">\(\theta=0\)</span> 处就是 <span class="arithmatex">\(-i\)</span>。
+- 这表示在恒等元处，"沿着群参数增加方向"的切向量指向 <span class="arithmatex">\(-i\)</span> 方向（向下，若实轴水平向右）。</p>
+<hr />
+<h3 id="4-截图板书内容描述">4. 截图板书内容描述<a class="headerlink" href="#4-截图板书内容描述" title="Permanent link">&para;</a></h3>
+<p><strong>截图1（左）：</strong>
+- 梁灿彬教授手指黑板右侧的公式，正在讲解 <span class="arithmatex">\(U(1)\)</span> 的定义。
+- 黑板右侧清晰写出：<strong><span class="arithmatex">\(U(1) = \{ e^{-i\theta} \mid \theta = 0 \dots \}\)</span></strong>（参数集）。
+- 下方画有<strong>复平面单位圆</strong>：实轴（标有 <span class="arithmatex">\(e=1\)</span>，即恒等元位置）与虚轴，圆上示意性标出一点。</p>
+<p><strong>截图2（中）：</strong>
+- 教授转身面向学生，黑板上可见左侧有<strong>单参数子群的乘法条件</strong> <span class="arithmatex">\(\gamma(t+s) = \gamma(t)\gamma(s)\)</span> 的部分表达式。
+- 右侧 <span class="arithmatex">\(U(1)\)</span> 定义与单位圆图示保持可见。</p>
+<p><strong>截图3（右）：</strong>
+- 教授正在书写求导过程，黑板上可见：
+  <span class="arithmatex">\(\left.\frac{d}{d\theta}e^{-i\theta}\right|_{\theta=0} = -i e^{-i\theta}\big|_{\theta=0} = -i\)</span>
+- 这对应字幕中"單參子群的切實...就是Minus i"的推导过程，明确展示了如何从群流形提取出李代数元素 <span class="arithmatex">\(-i\)</span>。</p>
+<hr />
+<p><strong>总结：</strong> 本段通过 <span class="arithmatex">\(U(1)\)</span> 这一最简单非平凡李群，示范了"群（圆）→ 单参数子群（指数曲线）→ 切向量（求导得 <span class="arithmatex">\(-i\)</span>）→ 李代数（虚轴）"的完整逻辑链，为后续讲解更复杂的 <span class="arithmatex">\(U(2)\)</span>、<span class="arithmatex">\(SU(2)\)</span> 等李群奠定了直观基础。</p>
+<hr />
+<h2 id="段落-2">段落 2<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:05:00 ~ 00:06:05</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+這個理彈數
+有暫時又高一節了
+現在在
+發生回來
+再看這個理群
+就是有群
+它是個理群了
+這個理群
+我們剛才已經從
+它的特末能來看
+這個特末能
+不就是
+只能取這些點
+那麼已經感覺到它是
+有可能是連通流行
+現在我們就來證明
+果然如此
+這就是
+L1
+U of M
+is connected
+Connected
+就是連通的
+這句話就是說
+U of M
+這個有群
+是連通流行
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000300.0_parastart.jpg" src="frames/frame_000300.0_parastart.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>这段课程视频（梁灿彬教授主讲）聚焦于<strong>李群 <span class="arithmatex">\(U(1)\)</span> 的拓扑性质——连通性（connectedness）</strong>，并可能涉及利用单参数子群证明这一性质的方法。以下从公式、理论、直观三个层面进行注解。</p>
+<hr />
+<h3 id="1-板书ppt-公式解析_1">1. 板书/PPT 公式解析<a class="headerlink" href="#1-板书ppt-公式解析_1" title="Permanent link">&para;</a></h3>
+<p>根据字幕与截图，当前段落核心命题与辅助公式如下：</p>
+<h4 id="核心命题u1-的连通性">核心命题：<span class="arithmatex">\(U(1)\)</span> 的连通性<a class="headerlink" href="#核心命题u1-的连通性" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[U(1) \text{ is connected}\]</div>
+<p>或等价表述：</p>
+<div class="arithmatex">\[U(1) \cong S^1 \text{ 为连通流形}\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(U(1)\)</span></strong>：1阶酉群（Unitary group of degree 1），即所有模为1的复数构成的乘法群 <span class="arithmatex">\(U(1) = \{z \in \mathbb{C} \mid |z| = 1\}\)</span>，拓扑上同胚于圆周 <span class="arithmatex">\(S^1\)</span>。
+- <strong>connected</strong>：拓扑学中的<strong>连通性</strong>，指空间不能被分解为两个非空、不相交的开集之并。
+- <strong>流形（manifold）</strong>：局部具有欧氏空间结构的拓扑空间，<span class="arithmatex">\(U(1)\)</span> 作为李群是一维紧致光滑流形。</p>
+<h4 id="截图中的辅助公式单参数子群">截图中的辅助公式（单参数子群）<a class="headerlink" href="#截图中的辅助公式单参数子群" title="Permanent link">&para;</a></h4>
+<p>黑板上可见的残留或辅助公式：</p>
+<div class="arithmatex">\[\gamma(t+\varepsilon) = \gamma(t)\gamma(\varepsilon)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\gamma\)</span></strong>：从实数轴 <span class="arithmatex">\(\mathbb{R}\)</span> 到李群 <span class="arithmatex">\(G\)</span> 的连续群同态，称为<strong>单参数子群</strong>（one-parameter subgroup）。</li>
+<li><strong>函数方程</strong>：表明 <span class="arithmatex">\(\gamma\)</span> 保持群结构（将实数加法映射为李群乘法），是连接李代数（切空间）与李群的指数映射的积分曲线。</li>
+</ul>
+<h4 id="其他标注">其他标注<a class="headerlink" href="#其他标注" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>"<span class="arithmatex">\(m^2\)</span> 个 eqs"</strong>：指在讨论李群表示或结构常数时，<span class="arithmatex">\(m\)</span> 维矩阵表示所需满足的约束方程数量（eqs = equations）。</li>
+</ul>
+<hr />
+<h3 id="2-理论背景知识">2. 理论背景知识<a class="headerlink" href="#2-理论背景知识" title="Permanent link">&para;</a></h3>
+<h4 id="李群的连通性connectedness">李群的连通性（Connectedness）<a class="headerlink" href="#李群的连通性connectedness" title="Permanent link">&para;</a></h4>
+<p>李群 <span class="arithmatex">\(G\)</span> 兼具群结构和微分流形结构，其<strong>连通性</strong>是整体拓扑不变量：
+- <strong>定义</strong>：若流形 <span class="arithmatex">\(M\)</span> 不能表示为 <span class="arithmatex">\(M = U \cup V\)</span>，其中 <span class="arithmatex">\(U, V\)</span> 为非空不相交开集，则称 <span class="arithmatex">\(M\)</span> 连通。对李群而言，连通等价于<strong>道路连通</strong>（path-connected），即任意两点可用连续路径连接。
+-</p>
+<hr />
+<h2 id="段落-3">段落 3<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:06:12 ~ 00:11:12</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+這個證明有點意思
+假如說
+這是U of M
+證明一個流行
+它有個空檔源
+我們叫做i
+所謂它是連通的
+那就是
+for any
+U of M
+就是說
+人家隨便給你一個群元
+叫做U
+你都能夠
+找到一條線
+一條連續曲線
+使它能夠從i
+連到這個U
+去
+如果證明這條了
+那麼就
+是了
+連通的了
+那麼這條線
+你當然也可以換長一些
+這條線我記得
+Game of T吧
+所以就是說
+我們現在
+大證的是什麼呢
+就是for any U
+in U of M
+存在著
+要證明存在著
+一條曲線
+Game of T
+such that
+Game of Zero
+等於i
+Game of
+比如說7萬吧
+它等於U
+如果對認譯一個群元U
+能找到一條曲線
+滿足這個的話
+那這個流行
+就是連通的了
+那麼現在
+我們
+來證明
+真能找找
+你現在不就
+所以現在
+這個時候帶障的答問號
+你現在
+給的不就是
+一個
+有具戰
+有群的群元
+就是有具戰
+那麼根據數學
+你可以查有關的數學數
+也就現行單數的
+可以證明
+對於
+認譯
+認譯一個有具戰
+都可以用一種
+有變化
+來給它對繳化
+粗略實際上
+戲劇的還有
+我先把那粗略的說一下
+這不是認譯
+一個有具戰嗎
+總可以通過一個有變化
+給它對繳化
+什麼就有變化呢
+就是
+我先在寫一遍
+Foreign EU in UofM
+就是說對於
+認譯的一個有具戰
+所謂可以
+通過有變化
+就是舉存在另外一個
+有具戰
+我記得W
+它也是有具戰
+FudgeZ
+UW和它的粒
+去加鞋這個U的時候
+W和W的粒
+去加鞋這個U
+之後會等於一個大低
+這個大低
+就是一個對繳具戰
+那不就對繳化了嗎
+怎麼對繳化呢
+通過這樣一個變化
+這個變化
+所用的具戰
+是有具戰
+所以這樣一個
+被變化的是有具戰
+這人家給的
+你只要給了我一個有具戰U
+我說我一定能夠繳繳
+一個有具戰W
+那麼這樣做變化
+叫了有變化
+就把U就變成一個對繳具戰了
+還沒完
+而且這個對繳具戰
+是這樣
+它的對繳源是這樣的
+我把那個對繳具戰寫出來
+對繳源都是1
+然後是i
+51
+1i
+5m
+這樣一個對繳源
+這樣一個對繳具戰
+其中
+這個5m
+你知道5m
+是實數
+那麼當然這個
+但i它還是個伏手
+是個伏的對繳具戰
+但是這些是實數
+那麼現在
+我說
+我引進這麼一個伏伏
+大塊
+代表這樣一個
+實的單位具戰
+就是用這些一個
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000372.0_paragraph.jpg" src="frames/frame_000372.0_paragraph.jpg" /></p>
+<p><img alt="frame_000430.0_transition.jpg" src="frames/frame_000430.0_transition.jpg" /></p>
+<p><img alt="frame_000474.0_transition.jpg" src="frames/frame_000474.0_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>这段课程视频（梁灿彬教授主讲）深入讲解了<strong>李群 <span class="arithmatex">\(U(m)\)</span>（<span class="arithmatex">\(m\)</span> 阶酉群）的拓扑性质——连通性（connectedness）</strong>，并展示了如何通过<strong>酉对角化</strong>构造显式的连接路径。以下从公式、理论、直观三个层面进行注解。</p>
+<hr />
+<h3 id="1-板书ppt-公式解析_2">1. 板书/PPT 公式解析<a class="headerlink" href="#1-板书ppt-公式解析_2" title="Permanent link">&para;</a></h3>
+<p>根据截图与字幕，黑板上出现的核心命题与构造公式如下（字幕中的语音识别误差已修正）：</p>
+<h4 id="公式①连通性的路径定义截图3">公式①：连通性的路径定义（截图3）<a class="headerlink" href="#公式①连通性的路径定义截图3" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\forall U \in U(m),\ \exists \gamma(t) \text{ s.t. } \gamma(0)=I,\ \gamma(1)=U\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(\forall U \in U(m)\)</span></strong>：对于任意一个属于 <span class="arithmatex">\(m\)</span> 阶酉群 <span class="arithmatex">\(U(m)\)</span> 的矩阵 <span class="arithmatex">\(U\)</span>（字幕："認譯一個有具战" → 任意一个酉矩阵）
+- <strong><span class="arithmatex">\(\exists \gamma(t)\)</span></strong>：存在一条连续曲线（单参数子群）<span class="arithmatex">\(\gamma(t)\)</span>（字幕："Game of T" → <span class="arithmatex">\(\gamma(t)\)</span>，参数 <span class="arithmatex">\(t\)</span> 通常取值于 <span class="arithmatex">\([0,1]\)</span> 或 <span class="arithmatex">\([0,\tau]\)</span>）
+- <strong><span class="arithmatex">\(\gamma(0)=I\)</span></strong>：曲线起点为<strong>单位矩阵</strong> <span class="arithmatex">\(I\)</span>（字幕："空檔源" → 单位元/恒等元）
+- <strong><span class="arithmatex">\(\gamma(1)=U\)</span></strong>：曲线终点为目标群元 <span class="arithmatex">\(U\)</span></p>
+<h4 id="公式②酉对角化spectral-theorem">公式②：酉对角化（Spectral Theorem）<a class="headerlink" href="#公式②酉对角化spectral-theorem" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[D = W U W^{-1} = \text{diag}\left(e^{i\phi_1}, e^{i\phi_2}, \dots, e^{i\phi_m}\right)\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(D\)</span></strong>：对角矩阵（字幕："大低" → 对角矩阵；"對繳具战"）
+- <strong><span class="arithmatex">\(W\)</span></strong>：酉矩阵（字幕："有具战" → 酉矩阵），满足 <span class="arithmatex">\(W^\dagger W = I\)</span>，即 <span class="arithmatex">\(W^{-1} = W^\dagger\)</span>
+- <strong><span class="arithmatex">\(W^{-1}\)</span>（或 <span class="arithmatex">\(W^\dagger\)</span>）</strong>：<span class="arithmatex">\(W\)</span> 的逆矩阵（字幕："粒" → 逆）
+- <strong><span class="arithmatex">\(\text{diag}(\dots)\)</span></strong>：对角矩阵，对角元为 <span class="arithmatex">\(e^{i\phi_k}\)</span>（字幕："對繳源都是1 然後是i 51..." 指对角元为 <span class="arithmatex">\(e^{i\phi_1}, \dots, e^{i\phi_m}\)</span>）
+- <strong><span class="arithmatex">\(\phi_k \in \mathbb{R}\)</span></strong>：实数相位角（字幕："5m" 应为 <span class="arithmatex">\(\phi_m\)</span>，强调这些是实数）</p>
+<h4 id="公式③显式路径构造隐含于证明中">公式③：显式路径构造（隐含于证明中）<a class="headerlink" href="#公式③显式路径构造隐含于证明中" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\gamma(t) = W^{-1}\, \text{diag}\left(e^{it\phi_1}, e^{it\phi_2}, \dots, e^{it\phi_m}\right)\, W,\quad t\in[0,1]\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(t\)</span></strong>：实参数，从 <span class="arithmatex">\(0\)</span> 变化到 <span class="arithmatex">\(1\)</span>（字幕："實的單位具戰" 可能指参数 <span class="arithmatex">\(t\)</span> 是实数，或指构造的矩阵是单参数的）
+- <strong><span class="arithmatex">\(i\)</span></strong>：虚数单位
+- 当 <span class="arithmatex">\(t=0\)</span> 时，<span class="arithmatex">\(\gamma(0) = W^{-1} I W = I\)</span>；当 <span class="arithmatex">\(t=1\)</span> 时，<span class="arithmatex">\(\gamma(1) = W^{-1} D W = U\)</span></p>
+<hr />
+<h3 id="2-理论背景知识_1">2. 理论背景知识<a class="headerlink" href="#2-理论背景知识_1" title="Permanent link">&para;</a></h3>
+<h4 id="谱定理spectral-theorem-for-unitary-matrices">谱定理（Spectral Theorem for Unitary Matrices）<a class="headerlink" href="#谱定理spectral-theorem-for-unitary-matrices" title="Permanent link">&para;</a></h4>
+<p>这是线性代数中的核心定理：<strong>任意酉矩阵 <span class="arithmatex">\(U\)</span> 都可以被酉对角化</strong>。即总存在一个酉矩阵 <span class="arithmatex">\(W\)</span>（可视为基变换），使得 <span class="arithmatex">\(W U W^{-1}\)</span> 成为对角矩阵。由于 <span class="arithmatex">\(U\)</span> 是酉的，其对角元的模必须为 1，因此可表示为 <span class="arithmatex">\(e^{i\phi_k}\)</span>（相位因子）。</p>
+<h4 id="单参数子群one-parameter-subgroup">单参数子群（One-parameter Subgroup）<a class="headerlink" href="#单参数子群one-parameter-subgroup" title="Permanent link">&para;</a></h4>
+<p>李群 <span class="arithmatex">\(U(m)\)</span> 的李代数 <span class="arithmatex">\(\mathfrak{u}(m)\)</span> 由反厄米矩阵（<span class="arithmatex">\(A^\dagger = -A\)</span>）构成。通过指数映射 <span class="arithmatex">\(\exp(tA)\)</span> 可以生成从单位元出发的单参数子群。本证明中构造的 <span class="arithmatex">\(\gamma(t)\)</span> 本质上是一族单参数子群的"共轭"（由 <span class="arithmatex">\(W\)</span> 和 <span class="arithmatex">\(W^{-1}\)</span> 夹逼）。</p>
+<h4 id="连通性的拓扑定义">连通性的拓扑定义<a class="headerlink" href="#连通性的拓扑定义" title="Permanent link">&para;</a></h4>
+<p>一个拓扑空间是<strong>道路连通（path-connected）</strong>的，如果对于任意两点，都存在一条连续曲线连接它们。对于李群，证明其连通性通常等价于证明：任意群元 <span class="arithmatex">\(U\)</span> 都位于从单位元 <span class="arithmatex">\(I\)</span> 出发的某条单参数子群的像上（或可通过有限条这样的路径连接）。</p>
+<hr />
+<h3 id="3-通俗语言解释核心概念_1">3. 通俗语言解释核心概念<a class="headerlink" href="#3-通俗语言解释核心概念_1" title="Permanent link">&para;</a></h3>
+<p><strong>证明策略的直观理解：</strong>
+想象 <span class="arithmatex">\(U(m)\)</span> 是一个复杂的"多维岛屿"。要证明这个岛屿是连通的（没有孤立的湖泊或飞地），你需要证明：<strong>从任意地点 <span class="arithmatex">\(U\)</span> 都能走回大本营 <span class="arithmatex">\(I\)</span></strong>。</p>
+<p><strong>第一步：简化问题（对角化）</strong>
+直接处理一个复杂的 <span class="arithmatex">\(m \times m\)</span> 酉矩阵 <span class="arithmatex">\(U\)</span> 很困难。证明中利用"酉变换"（一种保持结构的旋转）<span class="arithmatex">\(W\)</span>，把 <span class="arithmatex">\(U\)</span> "旋转"到一个标准坐标系中，使其变成简单的<strong>对角矩阵</strong> <span class="arithmatex">\(D\)</span>。对角矩阵就像 <span class="arithmatex">\(m\)</span> 个独立的"旋钮"，每个旋钮只是做一个相位旋转（<span class="arithmatex">\(e^{i\phi_k}\)</span>），互不干扰。</p>
+<p><strong>第二步：构造简单路径</strong>
+对于每个独立的旋钮 <span class="arithmatex">\(e^{i\phi_k}\)</span>，我们可以轻松地构造一条"慢慢旋转"的路径：从 <span class="arithmatex">\(1\)</span>（不旋转）开始，随着时间 <span class="arithmatex">\(t\)</span> 从 <span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(1\)</span>，逐渐旋转到 <span class="arithmatex">\(e^{i\phi_k}\)</span>（即路径 <span class="arithmatex">\(e^{it\phi_k}\)</span>）。这相当于 <span class="arithmatex">\(m\)</span> 个独立的 <span class="arithmatex">\(U(1)\)</span> 路径。</p>
+<p><strong>第三步：翻译回原坐标系</strong>
+通过逆变换 <span class="arithmatex">\(W^{-1}\)</span>，把这组简单的"旋钮转动"路径 <span class="arithmatex">\(\text{diag}(e^{it\phi_k})\)</span> 翻译回原来的坐标系，就得到了连接 <span class="arithmatex">\(I\)</span> 和 <span class="arithmatex">\(U\)</span> 的连续曲线 <span class="arithmatex">\(\gamma(t)\)</span>。由于酉变换是连续的，这条路径在 <span class="arithmatex">\(U(m)\)</span> 中保持连续。</p>
+<hr />
+<h3 id="4-截图中的板书内容描述">4. 截图中的板书内容描述<a class="headerlink" href="#4-截图中的板书内容描述" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>截图1</strong>：黑板左上角清晰书写着 <strong>"Claim: <span class="arithmatex">\(U(m)\)</span> is connected."</strong>（命题：<span class="arithmatex">\(U(m)\)</span> 是连通的），下方标有 <strong>"Pf."</strong>（Proof，证明）字样，表明进入证明环节。教授背对镜头，正在书写。</li>
+<li><strong>截图2</strong>：黑板右侧绘有一个<strong>椭圆形示意图</strong>，代表流形 <span class="arithmatex">\(U(m)\)</span>。椭圆内部左侧标有字母 <strong><span class="arithmatex">\(I\)</span></strong>（单位元），右侧标有字母 <strong><span class="arithmatex">\(U\)</span></strong>（任意群元），两者之间用一条<strong>平滑曲线</strong>连接，直观展示了"存在连续路径连接单位元与任意群元"这一核心思想。</li>
+<li><strong>截图3</strong>：黑板中央书写着连通性的严格数学定义：
+  <span class="arithmatex">\(\forall U \in U(m),\ \exists \gamma(t) \text{ s.t. } \gamma(0)=I,\ \gamma(1)=U\)</span>
+  这正是道路连通性的标准定义：对于任意 <span class="arithmatex">\(U\)</span>，存在曲线 <span class="arithmatex">\(\gamma\)</span> 连接 <span class="arithmatex">\(I\)</span> 和 <span class="arithmatex">\(U\)</span>。教授正用手指向该公式进行讲解。</li>
+</ul>
+<hr />
+<h2 id="段落-4">段落 4<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:11:12 ~ 00:15:57</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+5m
+小5m
+到小5m
+做對繳源
+不是單位具戰對繳具戰
+這個大塊是這樣一個具戰
+其他是零
+那不就是對繳具
+這個也是零
+那麼這個不就是
+對繳具戰
+而且這些都實數
+所以這個我另大塊
+是這麼一個
+實的對繳具戰
+那麼你就很容易證明
+這個大地
+是等於
+Exponential
+就是這個E了
+ofi
+就是這個i了
+大塊
+你直觀的感覺
+如果第一是這麼一個具戰
+犯是這麼一個實舉戰
+它是不是
+就可以寫成這個呢
+那麼這是直觀感就是對的
+嚴格證明你自己寫一寫
+就是一道息體
+所以
+就等於Exponential
+i5
+然後
+這個具戰等式
+左成一個W粒
+右成一個W
+那麼這個就成
+又自己了
+而這個呢
+就是左成一個W粒
+Exponential
+i大塊
+然後右成一個W
+那麼這個
+令我們上次講的
+一個公式
+它跟它就可以進來Exponential裡面了嗎
+就是Exponential
+克服呢
+這個i可以寫的前頭
+然後是W粒
+5W
+你要注意W也好
+換也好
+W粒也好
+它都是具戰
+那個順序別交換
+i5所謂
+所以可以交換
+跟它都行
+那麼我們就發現
+哦原來這個U啊
+是可以寫成這麼一個
+這麼一個東西的Exponential的
+現在我問你
+你希望這個東西
+是什麼呢
+我管它叫做A的話
+我說我很希望這個A
+滿足這一條
+為什麼
+你自己感覺感覺
+待會兒再
+再講吧
+但是現在呢
+我得先證明
+如果你把這個具戰叫大A的話
+你答一真的滿足這個
+反而比具戰
+我來證這個
+那麼
+為此這個大A你來
+求第二個
+究竟該是這裡面
+這麼多東西來第二個
+就是I
+W inverse 5
+W
+擴起來
+求第二個
+就是Transpose之後啊
+再加報
+那麼
+這個包還擺在那
+這個I的Transpose
+就它自己
+然後剩這三個東西啊
+求Transpose
+具戰聯城的那個轉距
+一個倒過來
+轉距相成
+就是W
+這個W先寫前面
+有個Transpose
+第二個就是Fine
+Fine也有個Transpose
+然後就是W
+Ni
+也有個Transpose
+但是
+這個Fine是什麼
+Fine是一個對腳具戰
+那麼轉距跟不轉一樣
+所以這個氣不一樣了
+那麼這個在往下走
+那麼這麼多具戰的相連城
+再取Bah
+就等於每一個先取Bah
+再連城
+那麼I
+取Bah就是Fine
+然後就是W
+Transpose的Bah
+然後就是Fine的Bah
+但是Fine是10具戰
+8不8是一樣的
+也就不8了
+那麼這個W inverse
+Transpose
+再來一個Bah
+好
+這個又等於什麼呢
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000693.0_transition.jpg" src="frames/frame_000693.0_transition.jpg" /></p>
+<p><img alt="frame_000733.0_transition.jpg" src="frames/frame_000733.0_transition.jpg" /></p>
+<p><img alt="frame_000800.0_transition.jpg" src="frames/frame_000800.0_transition.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>这段课程视频（梁灿彬教授主讲）深入讲解了<strong><span class="arithmatex">\(U(m)\)</span> 连通性的构造性证明</strong>，核心是通过<strong>酉对角化</strong>将任意酉矩阵 <span class="arithmatex">\(U\)</span> 显式地表示为矩阵指数 <span class="arithmatex">\(U = e^{iA}\)</span>，从而构造出连接单位元 <span class="arithmatex">\(I\)</span> 与 <span class="arithmatex">\(U\)</span> 的连续路径。以下从公式、理论、直观三个层面进行注解。</p>
+<hr />
+<h3 id="1-板书ppt-公式解析_3">1. 板书/PPT 公式解析<a class="headerlink" href="#1-板书ppt-公式解析_3" title="Permanent link">&para;</a></h3>
+<p>根据截图与字幕（语音识别误差已修正），黑板上出现的核心公式如下：</p>
+<h4 id="公式①特征相位矩阵截图1-2">公式①：特征相位矩阵（截图1-2）<a class="headerlink" href="#公式①特征相位矩阵截图1-2" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\Phi \equiv \begin{bmatrix} \phi_1 &amp; &amp; 0 \\ &amp; \ddots &amp; \\ 0 &amp; &amp; \phi_m \end{bmatrix}\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\Phi\)</span>（大写Phi）</strong>：<strong>实对角矩阵</strong>，对角元为 <span class="arithmatex">\(\phi_1, \dots, \phi_m \in \mathbb{R}\)</span>，代表酉矩阵 <span class="arithmatex">\(U\)</span> 经对角化后的<strong>特征相位</strong>（eigenphases）。</li>
+<li><strong>"实对角"的关键性</strong>：由于 <span class="arithmatex">\(U\)</span> 的酉性，其特征值模为1，可写为 <span class="arithmatex">\(e^{i\phi_j}\)</span>，故相位 <span class="arithmatex">\(\phi_j\)</span> 必为实数。这保证了后续构造的生成元 <span class="arithmatex">\(A\)</span> 具有厄米性。</li>
+</ul>
+<h4 id="公式②指数映射的共轭分解截图3">公式②：指数映射的共轭分解（截图3）<a class="headerlink" href="#公式②指数映射的共轭分解截图3" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[U = W^\dagger \left(\text{Exp}\, i\Phi\right) W = \text{Exp}\left(i W^\dagger \Phi W\right)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(U\)</span></strong>：<span class="arithmatex">\(m\)</span> 阶酉群 <span class="arithmatex">\(U(m)\)</span> 中的任意元素（<span class="arithmatex">\(U^\dagger U = I\)</span>）。</li>
+<li><strong><span class="arithmatex">\(W\)</span></strong>：<strong>酉矩阵</strong>（<span class="arithmatex">\(W \in U(m)\)</span>），满足 <span class="arithmatex">\(W^\dagger = W^{-1}\)</span>，其列向量为 <span class="arithmatex">\(U\)</span> 的归一化特征向量。</li>
+<li><strong><span class="arithmatex">\(\text{Exp}\)</span></strong>：<strong>矩阵指数映射</strong>，<span class="arithmatex">\(\text{Exp}(X) = \sum_{n=0}^\infty \frac{X^n}{n!}\)</span>。</li>
+<li><strong>关键等式</strong>：第二等号利用了指数映射的<strong>共轭不变性</strong>——对于酉矩阵 <span class="arithmatex">\(W\)</span>，有 <span class="arithmatex">\(W^\dagger e^{i\Phi} W = e^{i W^\dagger \Phi W}\)</span>。这相当于把"在 <span class="arithmatex">\(W\)</span> 基下的转动"转化为"在标准基下由 <span class="arithmatex">\(W^\dagger \Phi W\)</span> 生成的转动"。</li>
+</ul>
+<h4 id="公式③厄米生成元-a-的定义与验证">公式③：厄米生成元 <span class="arithmatex">\(A\)</span> 的定义与验证<a class="headerlink" href="#公式③厄米生成元-a-的定义与验证" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[A := W^\dagger \Phi W\]</div>
+<p><span class="arithmatex">\(A^\dagger = A\)</span></p>
+<hr />
+<h2 id="段落-5">段落 5<a class="headerlink" href="#段落-5" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:16:04 ~ 00:21:05</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+關鍵就是W是什麼
+它也是有群
+有具戰
+有具戰技的嗎
+那個是擦掉了
+有具戰的
+如果寫U的話
+就是U的格
+U成U這個具戰是等於
+單位具戰的
+換句話說
+這個U的格
+它就是U的力了對不對
+因為只有你
+因為你跟U相成
+是I
+那麼好了
+這個W
+現在就充當那個U
+那麼Transpose
+再加Bah
+就是Dagger
+它的Dagger
+就是它的力
+所以這就是W
+這個Fine就照超
+那麼這個的力完以後
+再求
+一個力
+就沒有力了
+就這樣
+多棒
+What's this
+This is nothing but
+Matrix A
+它就是具戰A
+那不是等於Fa了嗎
+那我了萬天
+這個A
+就是個
+理代數源
+也就是說
+理群的很等原
+得
+一個切實
+那麼
+我們不是要找
+一條曲線嗎
+使得怎麼樣
+怎麼樣
+你現在看這個曲線怎麼找
+這個曲線
+就是這個A
+生出來的那個
+單餐子群
+你可以取
+現在我就取Gamoff性
+我說我找到了
+Gamoff性是什麼呢
+就等於ExpoNancer
+A就這個A
+那麼它為什麼對頭了
+那你驗證一下
+Gamoff 0
+怎麼樣
+0
+這個是0
+那麼ExpoNancer of 0
+就是
+I
+這個對頭了吧
+那麼Gamoff 1
+就是T1
+T1就是ExpoNancer A了
+ExpoNancer A
+拿出了
+這
+ExpoNancer A就是 U
+就不覺得對頭了嗎
+找找了
+這麼一條曲線叫Gamoff T
+找找了使得它
+果然滿足我們那個要求
+那就是說
+任意一個群員
+都可以有一條曲線
+連曲曲線
+把它跟行等圓連到一起
+你換這一點
+有這麼連換
+這一點
+那不就連通了嗎
+我們就證明完了
+這個CAM
+這個CAM說
+The unitary group U of M
+is connected
+連通的
+其實我們這個證明
+比這個CAM
+還要強
+剛才我們說
+能找找一條線就行
+而這個問題沒有了
+就完了
+能找找滿足這個要求的一條線就行
+可是我們現在找找那條線
+不是一般的阿貓阿狗
+它是一條好線什麼意思
+當餐子群
+它比較特別
+你要找一條線
+也連通了
+但是我找找的是
+這麼好一條線
+那就說
+這個
+有群裡面任何一個群員
+它總能屬於某一個
+單餐子群的
+我記得
+上次有一個同學
+就問了一個很好的問題
+就是說
+隨便給一個理群
+我們就在那個
+連通分支離開問題吧
+那麼在連通分支離
+連通分支
+當然是含有那個
+橫等圓
+那個連通分支了
+就這個
+在那個連通分支離
+我隨便取一個群員
+我是不是一定
+可以
+是某個單餐子群裡
+為了一個元素呢
+就說
+隨便一個理群
+叫做G
+你可能還有另外一塊
+你那塊要給一個元素
+這叫小G
+你說想跟它
+有它連續出現
+那做夢
+不可能
+人家沒完這麼一個傻問題
+人家說我叫來個G
+是
+那麼
+因為它是連通分支嘛
+找一條線就連它
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000964.0_paragraph.jpg" src="frames/frame_000964.0_paragraph.jpg" /></p>
+<p><img alt="frame_001011.0_transition.jpg" src="frames/frame_001011.0_transition.jpg" /></p>
+<h3 id="注解_4">注解<a class="headerlink" href="#注解_4" title="Permanent link">&para;</a></h3>
+<p>这段课程视频（梁灿彬教授主讲）的核心贡献是给出了 <strong><span class="arithmatex">\(U(m)\)</span> 连通性的构造性证明</strong>，并揭示了更深层的结构：<strong><span class="arithmatex">\(U(m)\)</span> 中任意元素都落在某个单参数子群上</strong>。以下从公式、理论、直观三个层面进行注解。</p>
+<hr />
+<h3 id="1-板书ppt-公式解析_4">1. 板书/PPT 公式解析<a class="headerlink" href="#1-板书ppt-公式解析_4" title="Permanent link">&para;</a></h3>
+<p>根据截图与字幕（语音识别误差已修正），黑板上出现的核心公式与逻辑链条如下：</p>
+<h4 id="公式①酉对角化spectral-decomposition">公式①：酉对角化（Spectral Decomposition）<a class="headerlink" href="#公式①酉对角化spectral-decomposition" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[U = W \Phi W^\dagger \quad \text{其中} \quad \Phi = \text{diag}(e^{i\phi_1}, e^{i\phi_2}, \dots, e^{i\phi_m})\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(U \in U(m)\)</span></strong>：任意 <span class="arithmatex">\(m\)</span> 阶酉矩阵（目标群元）。
+- <strong><span class="arithmatex">\(W \in U(m)\)</span></strong>：酉矩阵（对角化矩阵），满足 <span class="arithmatex">\(W^\dagger = W^{-1}\)</span>（即字幕中反复提到的“<span class="arithmatex">\(W\)</span> 的 Dagger 就是它的逆”）。
+- <strong><span class="arithmatex">\(\Phi\)</span></strong>：相位对角矩阵，对角元为模为1的复数 <span class="arithmatex">\(e^{i\phi_k}\)</span>（<span class="arithmatex">\(\phi_k \in \mathbb{R}\)</span>），代表 <span class="arithmatex">\(U\)</span> 的本征值。
+- <strong><span class="arithmatex">\(W^\dagger\)</span></strong>：厄米特共轭（Hermitian conjugate），即转置加复共轭（字幕中“Transpose 再加 Bah（共轭）就是 Dagger”）。</p>
+<h4 id="公式②李代数元的显式构造">公式②：李代数元的显式构造<a class="headerlink" href="#公式②李代数元的显式构造" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[A \equiv i W \begin{bmatrix} \phi_1 &amp; &amp; 0 \\ &amp; \ddots &amp; \\ 0 &amp; &amp; \phi_m \end{bmatrix} W^\dagger = i W \tilde{\Phi} W^\dagger\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(A\)</span></strong>：李代数 <span class="arithmatex">\(\mathfrak{u}(m)\)</span> 的元素（李代数元）。
+- <strong><span class="arithmatex">\(\tilde{\Phi} \equiv \text{diag}(\phi_1, \dots, \phi_m)\)</span></strong>：实对角矩阵（相位角）。
+- <strong><span class="arithmatex">\(i\)</span></strong>：虚数单位。此构造确保 <span class="arithmatex">\(A\)</span> 满足反厄米特性（anti-Hermitian）：<span class="arithmatex">\(A^\dagger = -A\)</span>（黑板上可见 <span class="arithmatex">\(A^\dagger = (iW\tilde{\Phi}W^\dagger)^\dagger = -iW\tilde{\Phi}W^\dagger = -A\)</span>），这正是酉群李代数 <span class="arithmatex">\(\mathfrak{u}(m)\)</span> 的定义性质。</p>
+<h4 id="公式③单参数子群one-parameter-subgroup">公式③：单参数子群（One-Parameter Subgroup）<a class="headerlink" href="#公式③单参数子群one-parameter-subgroup" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\gamma(t) \equiv \exp(tA), \quad t \in \mathbb{R}\]</div>
+<p><strong>符号说明：</strong>
+- <strong><span class="arithmatex">\(\gamma(t)\)</span></strong>：单参数子群（字幕中“Gamoff 性”即 <span class="arithmatex">\(\gamma(t)\)</span>）。
+- <strong><span class="arithmatex">\(\exp\)</span></strong>：矩阵指数映射（Matrix exponential）。
+- <strong><span class="arithmatex">\(t\)</span></strong>：实参数，可视为“时间”或“路径参数”。</p>
+<h4 id="公式④连通路径的验证">公式④：连通路径的验证<a class="headerlink" href="#公式④连通路径的验证" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\gamma(0) = I, \quad \gamma(1) = \exp(A) = U\]</div>
+<p><strong>逻辑验证：</strong>
+- 当 <span class="arithmatex">\(t=0\)</span> 时，<span class="arithmatex">\(\exp(0) = I\)</span>（单位矩阵，即群的恒等元）。
+- 当 <span class="arithmatex">\(t=1\)</span> 时，利用指数映射性质：
+  <span class="arithmatex">\(\exp(A) = \exp(iW\tilde{\Phi}W^\dagger) = W \exp(i\tilde{\Phi}) W^\dagger = W \Phi W^\dagger = U\)</span>
+  这正是字幕中“ExpoNancer A 就是 U”的数学表达。</p>
+<hr />
+<h3 id="2-必要的理论背景知识">2. 必要的理论背景知识<a class="headerlink" href="#2-必要的理论背景知识" title="Permanent link">&para;</a></h3>
+<h4 id="1-李代数-mathfrakum-与指数映射">(1) 李代数 <span class="arithmatex">\(\mathfrak{u}(m)\)</span> 与指数映射<a class="headerlink" href="#1-李代数-mathfrakum-与指数映射" title="Permanent link">&para;</a></h4>
+<p>酉群 <span class="arithmatex">\(U(m)\)</span> 是<strong>紧李群</strong>（compact Lie group），其李代数 <span class="arithmatex">\(\mathfrak{u}(m)\)</span> 由所有 <span class="arithmatex">\(m \times m\)</span> <strong>反厄米特矩阵</strong>（<span class="arithmatex">\(A^\dagger = -A\)</span>）组成。指数映射 <span class="arithmatex">\(\exp: \mathfrak{u}(m) \to U(m)\)</span> 将李代数元映射到李群元。对于紧李群，指数映射是<strong>满射</strong>（surjective），即群中每个元素都能写成某个李代数元的指数。本段证明正是构造性地展示了这一满射性。</p>
+<h4 id="2-单参数子群one-parameter-subgroup">(2) 单参数子群（One-Parameter Subgroup）<a class="headerlink" href="#2-单参数子群one-parameter-subgroup" title="Permanent link">&para;</a></h4>
+<p>在李群 <span class="arithmatex">\(G\)</span> 中，单参数子群是指一个连续群同态 <span class="arithmatex">\(\gamma: (\mathbb{R}, +) \to G\)</span>。几何上，它是群流形上的一条“直线”（更准确地说是测地线或单参数子流形），满足 <span class="arithmatex">\(\gamma(t+s) = \gamma(t)\gamma(s)\)</span>。本段证明的关键在于：<strong>对于 <span class="arithmatex">\(U(m)\)</span>，连接恒等元 <span class="arithmatex">\(I\)</span> 与任意群元 <span class="arithmatex">\(U\)</span> 的路径可以被选为一条单参数子群</strong>，而非任意的“阿猫阿狗”曲线。</p>
+<h4 id="3-连通分支与指数映射的局限性教授最后提到的问题">(3) 连通分支与指数映射的局限性（教授最后提到的问题）<a class="headerlink" href="#3-连通分支与指数映射的局限性教授最后提到的问题" title="Permanent link">&para;</a></h4>
+<p>教授最后提及的学生问题涉及<strong>非连通李群</strong>（如 <span class="arithmatex">\(O(n)\)</span> 正交群）。对于非连通李群，只有包含恒等元的那一支（identity component）能通过指数映射覆盖。即使在一个连通分支内，对于<strong>非紧李群</strong>（如 <span class="arithmatex">\(SL(2,\mathbb{R})\)</span>），指数映射也可能不是满射（即存在群元不能写成任何李代数元的指数）。但 <span class="arithmatex">\(U(m)\)</span> 作为紧李群，其恒等连通分支就是整个群，且指数映射满射，故任意 <span class="arithmatex">\(U\)</span> 都属于某个单参数子群。</p>
+<hr />
+<h3 id="3-通俗语言解释核心概念_2">3. 通俗语言解释核心概念<a class="headerlink" href="#3-通俗语言解释核心概念_2" title="Permanent link">&para;</a></h3>
+<p><strong>“好线” vs “阿猫阿狗”：</strong>
+教授用生动的语言区分了两种连通路径：
+- <strong>“阿猫阿狗”路径</strong>：任意一条连续曲线，只要能从 <span class="arithmatex">\(I\)</span> 连到 <span class="arithmatex">\(U\)</span> 即可，可能弯弯曲曲，没有群结构意义。
+- <strong>“好线”（单参数子群）</strong>：一条笔直的、有代数结构的“高速公路”。你可以把它想象成“匀速旋转”——一旦确定了旋转轴（由 <span class="arithmatex">\(A\)</span> 决定），剩下的就是按时间 <span class="arithmatex">\(t\)</span> 匀速“转过去”。这种路径满足 <span class="arithmatex">\(\gamma(t)\)</span> 在任意时刻 <span class="arithmatex">\(t\)</span> 都构成一个子群（一维子群）。</p>
+<p><strong>为什么 <span class="arithmatex">\(A\)</span> 是“生成元”？</strong>
+如果把 <span class="arithmatex">\(U\)</span> 看作一个复杂的旋转（高维空间中的转动），那么 <span class="arithmatex">\(A\)</span> 就是这个旋转的“对数”（<span class="arithmatex">\(\log U\)</span>）。通过谱分解，我们把 <span class="arithmatex">\(U\)</span> 拆解成 <span class="arithmatex">\(m\)</span> 个独立的 <span class="arithmatex">\(U(1)\)</span> 转动（相位 <span class="arithmatex">\(e^{i\phi_k}\)</span>），每个相位对应一个“角速度” <span class="arithmatex">\(\phi_k\)</span>。矩阵 <span class="arithmatex">\(A\)</span> 就是这些角速度在原始坐标系下的“合成”。因此 <span class="arithmatex">\(\exp(tA)\)</span> 就是“以恒定角速度 <span class="arithmatex">\(A\)</span> 旋转 <span class="arithmatex">\(t\)</span> 秒”，自然在 <span class="arithmatex">\(t=1\)</span> 时到达 <span class="arithmatex">\(U\)</span>。</p>
+<p><strong>连通性的直观：</strong>
+既然任意 <span class="arithmatex">\(U\)</span> 都能通过“匀速转动” <span class="arithmatex">\(\exp(tA)\)</span> 从 <span class="arithmatex">\(I\)</span> 到达，说明 <span class="arithmatex">\(U(m)\)</span> 内部没有“孤岛”，从单位元可以“走直线”到达任何一点，因此是连通的。</p>
+<hr />
+<h3 id="4-截图中的板书内容描述_1">4. 截图中的板书内容描述<a class="headerlink" href="#4-截图中的板书内容描述_1" title="Permanent link">&para;</a></h3>
+<p><strong>截图1（左侧）：</strong>
+- 黑板右侧画有复平面示意图，标注实轴、虚轴，并画出单位圆（<span class="arithmatex">\(|z|=1\)</span>），圆上可能标有 <span class="arithmatex">\(e=1\)</span>（或 <span class="arithmatex">\(e^{i\phi}\)</span>），示意 <span class="arithmatex">\(U(1)\)</span> 的拓扑结构。
+- 左侧有手写公式痕迹，可见 <span class="arithmatex">\(W^\dagger\)</span> 等符号，对应教授讲解 <span class="arithmatex">\(W\)</span> 的酉性质（<span class="arithmatex">\(W^\dagger = W^{-1}\)</span>）。</p>
+<p><strong>截图2（右侧）：</strong>
+- 黑板顶部写有 "<span class="arithmatex">\(U(m) := \{m\text{维复空间上酉算符}\} = \{m\times m\text{酉矩阵}\}\)</span>" 的定义。
+- 中部正在推导 <span class="arithmatex">\(A^\dagger\)</span> 的计算：
+  <span class="arithmatex">\(A^\dagger = (iW\tilde{\Phi}W^\dagger)^\dagger = -i (W^\dagger)^\dagger \tilde{\Phi}^\dagger W^\dagger = -i W \tilde{\Phi} W^\dagger = -A\)</span>
+  这验证了 <span class="arithmatex">\(A\)</span> 的反厄米特性，即 <span class="arithmatex">\(A\)</span> 确实是李代数 <span class="arithmatex">\(\mathfrak{u}(m)\)</span> 的元素。
+- 左侧可见 <span class="arithmatex">\(U^\dagger U = I\)</span> 和 <span class="arithmatex">\(U^\dagger = U^{-1}\)</span> 的基本定义，以及 <span class="arithmatex">\(U(m)\)</span> 作为流形的示意图（圆圈代表 <span class="arithmatex">\(U(m)\)</span>，点代表群元）。</p>
+<hr />
+<h2 id="段落-6">段落 6<a class="headerlink" href="#段落-6" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:21:05 ~ 00:26:03</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那是不足為怪的
+但是能找到一個
+單餐子群連過去
+這就是一個問號對吧
+現在對於有群
+我們就掌出來是有的
+就單餐子群
+那麼我們就好奇了
+這個結論對任何理群都對嘛
+任何理群可以不連通
+還有那句話
+它總有一個離子群
+就是連通分支吧
+在連通分支離
+這個對嗎
+答案是不對
+沒有那麼一般
+我給你舉個反例
+挺有意思的一個反例
+這是我偶然好多年前
+偶然在一本英文書裡
+看他一句話
+他就說了這麼一句
+但是他還不說
+我還真想不起這個反例
+就是
+GLQ
+一般相信群
+M等1
+這是很簡單的一個群
+他在居戰
+就是他的群員
+就是二成二居戰
+是吧
+那麼我現在給你
+這麼一個二成二居戰
+非常簡單
+-1
+你算的行列是
+等於正1
+這個
+首先他為仗就屬於他了
+沒問題是個元素
+還仗1的挺好
+跟那個很等元
+都是同樣的行列是
+是吧
+但是
+就是這個元素
+他就不再任何
+一個單參子群上頭
+那麼內書就一句話
+但是有這個東西
+就比什麼都強了
+那後來我回去睡著的劍
+我把它正出來了
+現在就出城一道媳婷
+這個媳婷本來是比較難的
+但是我加了好幾步的提示
+那麼難也變得不難了
+我今天就把它作為媳婷
+那麼
+有興趣帳一帳
+這個重要的就是
+你覺得卻有反力
+那麼有什麼規律可行為有呢
+為什麼有群就有這麼好的性質
+像這個GL2就沒有
+關鍵就在於
+這個有群跟它不同
+那個不同
+第一個不同想到了
+就是它是非聯通的
+有群聯通
+但是現在不談這個非聯通問題
+我老說你非聯通的
+我就取那個聯通
+含那個很等原點聯通分支
+所以那肯定
+肯定問題不在那
+根本的區別
+就是這個有群
+是compact緊製的
+緊製流行
+這個比如說
+U1也看出來了
+是緊製的
+這個你像那個
+U11記得嗎
+四條線
+其中一關看這個離子群
+這種張口的就非緊製的
+那是U11群
+但是這個U1群
+它是緊製的
+那麼由於
+就是說有這麼一個定理
+就是任何緊製的聯通離群
+它的指數應射
+一定是到上應射
+指數應射什麼意思
+那不就是這個離群裡
+什麼的指數應射
+很等原來出一個
+隨便一個水量
+就決定一個單纏子群
+指數應射到這
+參數就唯一的那點
+那麼所謂指數應射到上
+不到上
+就是說會
+所謂不到上
+可能存在這麼一個點
+這個點就沒有單纏子群果然
+所以就找不著一個水量
+使得它的指數應射到它
+所以說指數應射到上不到上
+就跟剛才說的
+隨便給個點
+能不能有單纏子群
+經過它是一樣的
+那麼剛才我們說了
+你要有這個好性質的話
+那個條件是什麼
+就是謹峻的
+聯通離群
+那麼偏偏這個
+它就是非謹峻的
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001425.0_transition.jpg" src="frames/frame_001425.0_transition.jpg" /></p>
+<p><img alt="frame_001471.0_formula.jpg" src="frames/frame_001471.0_formula.jpg" /></p>
+<p><img alt="frame_001517.0_transition.jpg" src="frames/frame_001517.0_transition.jpg" /></p>
+<h3 id="注解_5">注解<a class="headerlink" href="#注解_5" title="Permanent link">&para;</a></h3>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
