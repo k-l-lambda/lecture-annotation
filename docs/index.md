@@ -4,6 +4,17 @@
 
 ---
 
+## 李群李代数-梁灿彬
+
+| 讲次 | 主题 | 视频 |
+|------|------|------|
+| 第24讲 | [酉群（续）](lectures/yt-mG3KzhwXS1k/lecture_notes.md) | [🎬](https://youtu.be/mG3KzhwXS1k) |
+| 第25讲 | [酉群（续）](lectures/yt-LJQo6MWklDo/lecture_notes.md) | [🎬](https://youtu.be/LJQo6MWklDo) |
+| 第26讲 | [酉群（续）](lectures/yt-0T4wKkyWVeM/lecture_notes.md) | [🎬](https://youtu.be/0T4wKkyWVeM) |
+| 第27讲 | [酉群（续）](lectures/yt-GyD0_xA0fyU/lecture_notes.md) | [🎬](https://youtu.be/GyD0_xA0fyU) |
+| 第28讲 | [酉群（续）](lectures/yt-PE5KYG9U4LM/lecture_notes.md) | [🎬](https://youtu.be/PE5KYG9U4LM) |
+| 第29讲 | [酉群（续）](lectures/yt-zYIIy2y-OnQ/lecture_notes.md) | [🎬](https://youtu.be/zYIIy2y-OnQ) |
+
 ## 量子场论-贾宇
 
 | 讲次 | 主题 | 视频 |
@@ -11,13 +22,6 @@
 | 第64讲 | [Gell Mann Low公式的应用及 真空泡泡图](lectures/yt-bfqAcaTjxjI/lecture_notes.md) | [🎬](https://youtu.be/bfqAcaTjxjI) |
 | 第65讲 | [两点关联函数 Kallen Lehmann谱表示](lectures/yt-1i__ZnZHXV0/lecture_notes.md) | [🎬](https://youtu.be/1i__ZnZHXV0) |
 | 第66讲 | [场强重整化常数 LSZ约化公式](lectures/yt-9fTHodxfvm0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=9fTHodxfvm0) |
-
-## 李群李代数-梁灿彬
-
-| 讲次 | 主题 | 视频 |
-|------|------|------|
-| 第24讲 | [酉群（续）](lectures/yt-mG3KzhwXS1k/lecture_notes.md) | [🎬](https://youtu.be/mG3KzhwXS1k) |
-| 第25讲 | [酉群（续）](lectures/yt-LJQo6MWklDo/lecture_notes.md) | [🎬](https://youtu.be/LJQo6MWklDo) |
 
 ---
 
