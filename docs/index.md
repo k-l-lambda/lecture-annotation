@@ -22,6 +22,7 @@
 | 第64讲 | [Gell Mann Low公式的应用及 真空泡泡图](lectures/yt-bfqAcaTjxjI/lecture_notes.md) | [🎬](https://youtu.be/bfqAcaTjxjI) |
 | 第65讲 | [两点关联函数 Kallen Lehmann谱表示](lectures/yt-1i__ZnZHXV0/lecture_notes.md) | [🎬](https://youtu.be/1i__ZnZHXV0) |
 | 第66讲 | [场强重整化常数 LSZ约化公式](lectures/yt-9fTHodxfvm0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=9fTHodxfvm0) |
+| 第67讲 | [Z2的定义 振幅的软光子极限 eikonal近似 软定理](lectures/yt-_2G-v6mio3g/lecture_notes.md) |  |
 
 ---
 
