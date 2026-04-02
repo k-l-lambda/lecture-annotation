@@ -8,6 +8,16 @@ window.MathJax = {
   options: {
     ignoreHtmlClass: ".*|",
     processHtmlClass: "arithmatex"
+  },
+  startup: {
+    ready() {
+      MathJax.startup.defaultReady();
+      document.querySelectorAll('.arithmatex').forEach((el) => {
+        if (el.children.length === 1 && el.children[0].tagName === 'CODE') {
+          el.textContent = el.children[0].textContent;
+        }
+      });
+    }
   }
 };
 
