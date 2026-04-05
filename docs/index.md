@@ -4,6 +4,13 @@
 
 ---
 
+## 其他
+
+| 讲次 | 主题 | 视频 |
+|------|------|------|
+| 《基于对称性的物理学》第2课 狭义相对论核心思想 | [《基于对称性的物理学》第2课 狭义相对论核心思想](lectures/yt-02NJOnDcSpM/lecture_notes.md) |  |
+| 《基于对称性的物理学》第1课 对称性：物理学的终极秘密 | [《基于对称性的物理学》第1课 对称性：物理学的终极秘密](lectures/yt-GsHnm-Q7wHQ/lecture_notes.md) |  |
+
 ## 李群李代数-梁灿彬
 
 | 讲次 | 主题 | 视频 |
@@ -24,6 +31,7 @@
 | 第66讲 | [场强重整化常数 LSZ约化公式](lectures/yt-9fTHodxfvm0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=9fTHodxfvm0) |
 | 第67讲 | [Z2的定义 振幅的软光子极限 eikonal近似 软定理](lectures/yt-_2G-v6mio3g/lecture_notes.md) |  |
 | 第68讲 | [第68讲](lectures/yt-Yln20-XZcbU/lecture_notes.md) | [🎬](https://youtu.be/Yln20-XZcbU) |
+| 第69讲 | [紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例](lectures/yt-W22-Yy0UFP0/lecture_notes.md) |  |
 
 ---
 
