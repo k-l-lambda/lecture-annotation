@@ -57,6 +57,7 @@ def get_video_id(dirname: str) -> str:
 # Course series configuration: maps title prefix to display name
 # Lectures are grouped by matching the longest prefix.
 COURSE_SERIES = {
+    "基于对称性的物理学": "基于对称性的物理学",
     "李群李代数": "李群李代数-梁灿彬",
     "量子场论": "量子场论-贾宇",
 }
