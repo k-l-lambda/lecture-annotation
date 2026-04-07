@@ -13,6 +13,7 @@
 | 《基于对称性的物理学》第6课 旋转矩阵和四元数：解构三维空间旋转 | [《基于对称性的物理学》第6课 旋转矩阵和四元数：解构三维空间旋转](lectures/yt-Ec8TA0r5I20/lecture_notes.md) |  |
 | 《基于对称性的物理学》第5课 二维旋转的两种数学表示 | [《基于对称性的物理学》第5课 二维旋转的两种数学表示](lectures/yt-FdgRvHwxQ3o/lecture_notes.md) |  |
 | 《基于对称性的物理学》第1课 对称性：物理学的终极秘密 | [《基于对称性的物理学》第1课 对称性：物理学的终极秘密](lectures/yt-GsHnm-Q7wHQ/lecture_notes.md) |  |
+| 《基于对称性的物理学》第8课 李代数李群的抽象定义及其表示 | [《基于对称性的物理学》第8课 李代数李群的抽象定义及其表示](lectures/yt-dY8XXo0r4Es/lecture_notes.md) |  |
 | 《基于对称性的物理学》第4课 群论：对称性的语言 | [《基于对称性的物理学》第4课 群论：对称性的语言](lectures/yt-xiEGTlJDStw/lecture_notes.md) |  |
 | 《基于对称性的物理学》第3课 理解闵可夫斯基时空 | [《基于对称性的物理学》第3课 理解闵可夫斯基时空](lectures/yt-yqzjq6goYWQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yqzjq6goYWQ) |
 
