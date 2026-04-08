@@ -18,6 +18,7 @@
 | 第8课 李代数李群的抽象定义及其表示 | [第8课 李代数李群的抽象定义及其表示](lectures/yt-dY8XXo0r4Es/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=dY8XXo0r4Es) |
 | 第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道 | [第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道](lectures/yt-V3bRPmsJ-Ik/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=V3bRPmsJ-Ik) |
 | 第10课 洛伦兹群O1,3：揭示时空对称性的数学结构 | [第10课 洛伦兹群O1,3：揭示时空对称性的数学结构](lectures/yt-JRZfJJi6YuA/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=JRZfJJi6YuA) |
+| 第11课 洛伦兹群表示论：从生成元到外尔旋量 | [第11课 洛伦兹群表示论：从生成元到外尔旋量](lectures/yt-yIiK6C0CqJQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yIiK6C0CqJQ) |
 
 ## 李群李代数-梁灿彬
 
