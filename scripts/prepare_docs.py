@@ -57,6 +57,7 @@ def get_video_id(dirname: str) -> str:
 # Course series configuration: maps title prefix to display name
 # Lectures are grouped by matching the longest prefix.
 COURSE_SERIES = {
+    "《基于对称性的物理学》": "基于对称性的物理学",
     "基于对称性的物理学": "基于对称性的物理学",
     "李群李代数": "李群李代数-梁灿彬",
     "量子场论": "量子场论-贾宇",
@@ -78,8 +79,8 @@ def extract_series(title: str) -> tuple:
 
 
 def extract_lecture_number(label: str) -> int:
-    """Extract numeric lecture number for sorting. e.g. '第25讲 ...' -> 25."""
-    m = re.search(r'第(\d+)讲', label)
+    """Extract numeric lecture number for sorting. e.g. '第25讲 ...' -> 25, '第3课 ...' -> 3."""
+    m = re.search(r'第(\d+)[讲课]', label)
     return int(m.group(1)) if m else 999
 
 
@@ -366,7 +367,8 @@ def main():
                     num_part = label
                     topic = ""
                 link = f"lectures/{lec['dir_name']}/lecture_notes.md"
-                video_link = f"[🎬]({lec['video_url']})" if lec["video_url"] else ""
+                video_url = lec["video_url"] or (f"https://www.youtube.com/watch?v={lec['video_id']}" if lec["video_id"] else "")
+                video_link = f"[🎬]({video_url})" if video_url else ""
                 index_lines.append(f"| {num_part} | [{topic or label}]({link}) | {video_link} |")
             index_lines.append("")
 

@@ -8,16 +8,15 @@
 
 | 讲次 | 主题 | 视频 |
 |------|------|------|
-| 《基于对称性的物理学》第1课 对称性：物理学的终极秘密 | [《基于对称性的物理学》第1课 对称性：物理学的终极秘密](lectures/yt-GsHnm-Q7wHQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=GsHnm-Q7wHQ) |
-| 《基于对称性的物理学》第2课 狭义相对论核心思想 | [《基于对称性的物理学》第2课 狭义相对论核心思想](lectures/yt-02NJOnDcSpM/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=02NJOnDcSpM) |
-| 《基于对称性的物理学》第3课 理解闵可夫斯基时空 | [《基于对称性的物理学》第3课 理解闵可夫斯基时空](lectures/yt-yqzjq6goYWQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yqzjq6goYWQ) |
-| 《基于对称性的物理学》第4课 群论：对称性的语言 | [《基于对称性的物理学》第4课 群论：对称性的语言](lectures/yt-xiEGTlJDStw/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=xiEGTlJDStw) |
-| 《基于对称性的物理学》第5课 二维旋转的两种数学表示 | [《基于对称性的物理学》第5课 二维旋转的两种数学表示](lectures/yt-FdgRvHwxQ3o/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=FdgRvHwxQ3o) |
-| 《基于对称性的物理学》第6课 旋转矩阵和四元数：解构三维空间旋转 | [《基于对称性的物理学》第6课 旋转矩阵和四元数：解构三维空间旋转](lectures/yt-Ec8TA0r5I20/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=Ec8TA0r5I20) |
-| 《基于对称性的物理学》第7课 从李群到李代数：连续对称性的生成元 | [《基于对称性的物理学》第7课 从李群到李代数：连续对称性的生成元](lectures/yt-AbzcH_RIfkU/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=AbzcH_RIfkU) |
-| 《基于对称性的物理学》第8课 李代数李群的抽象定义及其表示 | [《基于对称性的物理学》第8课 李代数李群的抽象定义及其表示](lectures/yt-dY8XXo0r4Es/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=dY8XXo0r4Es) |
-| 《基于对称性的物理学》第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道 | [《基于对称性的物理学》第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道](lectures/yt-V3bRPmsJ-Ik/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=V3bRPmsJ-Ik) |
-
+| 第1课 对称性：物理学的终极秘密 | [第1课 对称性：物理学的终极秘密](lectures/yt-GsHnm-Q7wHQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=GsHnm-Q7wHQ) |
+| 第2课 狭义相对论核心思想 | [第2课 狭义相对论核心思想](lectures/yt-02NJOnDcSpM/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=02NJOnDcSpM) |
+| 第3课 理解闵可夫斯基时空 | [第3课 理解闵可夫斯基时空](lectures/yt-yqzjq6goYWQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yqzjq6goYWQ) |
+| 第4课 群论：对称性的语言 | [第4课 群论：对称性的语言](lectures/yt-xiEGTlJDStw/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=xiEGTlJDStw) |
+| 第5课 二维旋转的两种数学表示 | [第5课 二维旋转的两种数学表示](lectures/yt-FdgRvHwxQ3o/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=FdgRvHwxQ3o) |
+| 第6课 旋转矩阵和四元数：解构三维空间旋转 | [第6课 旋转矩阵和四元数：解构三维空间旋转](lectures/yt-Ec8TA0r5I20/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=Ec8TA0r5I20) |
+| 第7课 从李群到李代数：连续对称性的生成元 | [第7课 从李群到李代数：连续对称性的生成元](lectures/yt-AbzcH_RIfkU/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=AbzcH_RIfkU) |
+| 第8课 李代数李群的抽象定义及其表示 | [第8课 李代数李群的抽象定义及其表示](lectures/yt-dY8XXo0r4Es/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=dY8XXo0r4Es) |
+| 第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道 | [第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道](lectures/yt-V3bRPmsJ-Ik/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=V3bRPmsJ-Ik) |
 
 ## 李群李代数-梁灿彬
 
@@ -37,9 +36,9 @@
 | 第64讲 | [Gell Mann Low公式的应用及 真空泡泡图](lectures/yt-bfqAcaTjxjI/lecture_notes.md) | [🎬](https://youtu.be/bfqAcaTjxjI) |
 | 第65讲 | [两点关联函数 Kallen Lehmann谱表示](lectures/yt-1i__ZnZHXV0/lecture_notes.md) | [🎬](https://youtu.be/1i__ZnZHXV0) |
 | 第66讲 | [场强重整化常数 LSZ约化公式](lectures/yt-9fTHodxfvm0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=9fTHodxfvm0) |
-| 第67讲 | [Z2的定义 振幅的软光子极限 eikonal近似 软定理](lectures/yt-_2G-v6mio3g/lecture_notes.md) |  |
+| 第67讲 | [Z2的定义 振幅的软光子极限 eikonal近似 软定理](lectures/yt-_2G-v6mio3g/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=_2G-v6mio3g) |
 | 第68讲 | [第68讲](lectures/yt-Yln20-XZcbU/lecture_notes.md) | [🎬](https://youtu.be/Yln20-XZcbU) |
-| 第69讲 | [紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例](lectures/yt-W22-Yy0UFP0/lecture_notes.md) |  |
+| 第69讲 | [紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例](lectures/yt-W22-Yy0UFP0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=W22-Yy0UFP0) |
 
 ---
 
