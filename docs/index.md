@@ -19,6 +19,10 @@
 | 第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道 | [第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道](lectures/yt-V3bRPmsJ-Ik/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=V3bRPmsJ-Ik) |
 | 第10课 洛伦兹群O1,3：揭示时空对称性的数学结构 | [第10课 洛伦兹群O1,3：揭示时空对称性的数学结构](lectures/yt-JRZfJJi6YuA/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=JRZfJJi6YuA) |
 | 第11课 洛伦兹群表示论：从生成元到外尔旋量 | [第11课 洛伦兹群表示论：从生成元到外尔旋量](lectures/yt-yIiK6C0CqJQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yIiK6C0CqJQ) |
+| 第12课 旋量形式体系和范德瓦尔登记号 | [第12课 旋量形式体系和范德瓦尔登记号](lectures/yt-tG4rh6bvmT4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=tG4rh6bvmT4) |
+| 第13课 旋量对称性与场表示：从微观粒子到时空场论 | [第13课 旋量对称性与场表示：从微观粒子到时空场论](lectures/yt-r_iCQ3U8KJ4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=r_iCQ3U8KJ4) |
+| 第14课 庞加莱群：基本粒子的数学指纹 | [第14课 庞加莱群：基本粒子的数学指纹](lectures/yt-MCmp3QUStKE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=MCmp3QUStKE) |
+| 第15课 物理学的万能框架：拉格朗日形式体系 | [第15课 物理学的万能框架：拉格朗日形式体系](lectures/yt-T8Zxp9Nr34Y/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=T8Zxp9Nr34Y) |
 
 ## 李群李代数-梁灿彬
 
