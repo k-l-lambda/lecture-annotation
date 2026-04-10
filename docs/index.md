@@ -46,6 +46,12 @@
 | 第68讲 | [第68讲](lectures/yt-Yln20-XZcbU/lecture_notes.md) | [🎬](https://youtu.be/Yln20-XZcbU) |
 | 第69讲 | [紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例](lectures/yt-W22-Yy0UFP0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=W22-Yy0UFP0) |
 
+## 其他
+
+| 讲次 | 主题 | 视频 |
+|------|------|------|
+| 《现代经典物理学》第1课 物理定律的几何剧本 | [《现代经典物理学》第1课 物理定律的几何剧本](lectures/yt-BYKhAbcMMg8/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=BYKhAbcMMg8) |
+
 ---
 
 ## 关于
