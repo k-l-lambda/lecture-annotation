@@ -8,21 +8,21 @@
 
 | 讲次 | 主题 | 视频 |
 |------|------|------|
-| 第1课 对称性：物理学的终极秘密 | [第1课 对称性：物理学的终极秘密](lectures/yt-GsHnm-Q7wHQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=GsHnm-Q7wHQ) |
-| 第2课 狭义相对论核心思想 | [第2课 狭义相对论核心思想](lectures/yt-02NJOnDcSpM/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=02NJOnDcSpM) |
-| 第3课 理解闵可夫斯基时空 | [第3课 理解闵可夫斯基时空](lectures/yt-yqzjq6goYWQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yqzjq6goYWQ) |
-| 第4课 群论：对称性的语言 | [第4课 群论：对称性的语言](lectures/yt-xiEGTlJDStw/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=xiEGTlJDStw) |
-| 第5课 二维旋转的两种数学表示 | [第5课 二维旋转的两种数学表示](lectures/yt-FdgRvHwxQ3o/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=FdgRvHwxQ3o) |
-| 第6课 旋转矩阵和四元数：解构三维空间旋转 | [第6课 旋转矩阵和四元数：解构三维空间旋转](lectures/yt-Ec8TA0r5I20/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=Ec8TA0r5I20) |
-| 第7课 从李群到李代数：连续对称性的生成元 | [第7课 从李群到李代数：连续对称性的生成元](lectures/yt-AbzcH_RIfkU/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=AbzcH_RIfkU) |
-| 第8课 李代数李群的抽象定义及其表示 | [第8课 李代数李群的抽象定义及其表示](lectures/yt-dY8XXo0r4Es/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=dY8XXo0r4Es) |
-| 第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道 | [第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道](lectures/yt-V3bRPmsJ-Ik/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=V3bRPmsJ-Ik) |
-| 第10课 洛伦兹群O1,3：揭示时空对称性的数学结构 | [第10课 洛伦兹群O1,3：揭示时空对称性的数学结构](lectures/yt-JRZfJJi6YuA/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=JRZfJJi6YuA) |
-| 第11课 洛伦兹群表示论：从生成元到外尔旋量 | [第11课 洛伦兹群表示论：从生成元到外尔旋量](lectures/yt-yIiK6C0CqJQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yIiK6C0CqJQ) |
-| 第12课 旋量形式体系和范德瓦尔登记号 | [第12课 旋量形式体系和范德瓦尔登记号](lectures/yt-tG4rh6bvmT4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=tG4rh6bvmT4) |
-| 第13课 旋量对称性与场表示：从微观粒子到时空场论 | [第13课 旋量对称性与场表示：从微观粒子到时空场论](lectures/yt-r_iCQ3U8KJ4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=r_iCQ3U8KJ4) |
-| 第14课 庞加莱群：基本粒子的数学指纹 | [第14课 庞加莱群：基本粒子的数学指纹](lectures/yt-MCmp3QUStKE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=MCmp3QUStKE) |
-| 第15课 物理学的万能框架：拉格朗日形式体系 | [第15课 物理学的万能框架：拉格朗日形式体系](lectures/yt-T8Zxp9Nr34Y/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=T8Zxp9Nr34Y) |
+| 第1课 | [对称性：物理学的终极秘密](lectures/yt-GsHnm-Q7wHQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=GsHnm-Q7wHQ) |
+| 第2课 | [狭义相对论核心思想](lectures/yt-02NJOnDcSpM/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=02NJOnDcSpM) |
+| 第3课 | [理解闵可夫斯基时空](lectures/yt-yqzjq6goYWQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yqzjq6goYWQ) |
+| 第4课 | [群论：对称性的语言](lectures/yt-xiEGTlJDStw/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=xiEGTlJDStw) |
+| 第5课 | [二维旋转的两种数学表示](lectures/yt-FdgRvHwxQ3o/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=FdgRvHwxQ3o) |
+| 第6课 | [旋转矩阵和四元数：解构三维空间旋转](lectures/yt-Ec8TA0r5I20/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=Ec8TA0r5I20) |
+| 第7课 | [从李群到李代数：连续对称性的生成元](lectures/yt-AbzcH_RIfkU/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=AbzcH_RIfkU) |
+| 第8课 | [李代数李群的抽象定义及其表示](lectures/yt-dY8XXo0r4Es/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=dY8XXo0r4Es) |
+| 第9课 | [SU2李代数有限维不可约表示：通向量子力学的隐秘通道](lectures/yt-V3bRPmsJ-Ik/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=V3bRPmsJ-Ik) |
+| 第10课 | [洛伦兹群O1,3：揭示时空对称性的数学结构](lectures/yt-JRZfJJi6YuA/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=JRZfJJi6YuA) |
+| 第11课 | [洛伦兹群表示论：从生成元到外尔旋量](lectures/yt-yIiK6C0CqJQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=yIiK6C0CqJQ) |
+| 第12课 | [旋量形式体系和范德瓦尔登记号](lectures/yt-tG4rh6bvmT4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=tG4rh6bvmT4) |
+| 第13课 | [旋量对称性与场表示：从微观粒子到时空场论](lectures/yt-r_iCQ3U8KJ4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=r_iCQ3U8KJ4) |
+| 第14课 | [庞加莱群：基本粒子的数学指纹](lectures/yt-MCmp3QUStKE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=MCmp3QUStKE) |
+| 第15课 | [物理学的万能框架：拉格朗日形式体系](lectures/yt-T8Zxp9Nr34Y/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=T8Zxp9Nr34Y) |
 
 ## 李群李代数-梁灿彬
 
@@ -46,14 +46,14 @@
 | 第68讲 | [第68讲](lectures/yt-Yln20-XZcbU/lecture_notes.md) | [🎬](https://youtu.be/Yln20-XZcbU) |
 | 第69讲 | [紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例](lectures/yt-W22-Yy0UFP0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=W22-Yy0UFP0) |
 
-## 其他
+## 现代经典物理学
 
 | 讲次 | 主题 | 视频 |
 |------|------|------|
-| 《现代经典物理学》第1课 物理定律的几何剧本 | [《现代经典物理学》第1课 物理定律的几何剧本](lectures/yt-BYKhAbcMMg8/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=BYKhAbcMMg8) |
-| 《现代经典物理学》第2课 张量的几何视角 | [《现代经典物理学》第2课 张量的几何视角](lectures/yt-XT8CoS4083U/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=XT8CoS4083U) |
-| 《现代经典物理学》第3课 张量的分量表示 | [《现代经典物理学》第3课 张量的分量表示](lectures/yt-cssdpuXtJsg/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=cssdpuXtJsg) |
-| 《现代经典物理学》第4课 张量微积分的几何视角 | [《现代经典物理学》第4课 张量微积分的几何视角](lectures/yt-RYaLL-k_T64/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=RYaLL-k_T64) |
+| 第1课 | [物理定律的几何剧本](lectures/yt-BYKhAbcMMg8/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=BYKhAbcMMg8) |
+| 第2课 | [张量的几何视角](lectures/yt-XT8CoS4083U/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=XT8CoS4083U) |
+| 第3课 | [张量的分量表示](lectures/yt-cssdpuXtJsg/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=cssdpuXtJsg) |
+| 第4课 | [张量微积分的几何视角](lectures/yt-RYaLL-k_T64/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=RYaLL-k_T64) |
 
 ---
 

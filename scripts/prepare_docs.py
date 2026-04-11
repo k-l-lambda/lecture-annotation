@@ -59,6 +59,7 @@ def get_video_id(dirname: str) -> str:
 COURSE_SERIES = {
     "《基于对称性的物理学》": "基于对称性的物理学",
     "基于对称性的物理学": "基于对称性的物理学",
+    "《现代经典物理学》": "现代经典物理学",
     "李群李代数": "李群李代数-梁灿彬",
     "量子场论": "量子场论-贾宇",
 }
@@ -356,8 +357,8 @@ def main():
             index_lines.append("|------|------|------|")
             for lec in group:
                 label = lec["lecture_label"]
-                # Extract "第XX讲" and the rest
-                m = re.match(r'(第\d+讲)\s*(.*)', label)
+                # Extract "第XX讲" or "第XX课" and the rest
+                m = re.match(r'(第\d+[讲课])\s*(.*)', label)
                 if m:
                     num_part = m.group(1)
                     topic = m.group(2)
