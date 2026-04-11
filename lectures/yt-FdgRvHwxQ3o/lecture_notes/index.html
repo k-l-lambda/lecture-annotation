@@ -1,0 +1,3256 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-FdgRvHwxQ3o/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-xiEGTlJDStw/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-Ec8TA0r5I20/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第5课 二维旋转的两种数学表示 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第5课-二维旋转的两种数学表示" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第5课 二维旋转的两种数学表示
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：从二维长度守恒变换到正交条件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：从二维长度守恒变换到正交条件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-二维旋转矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 二维旋转矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-反射矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 反射矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-正交条件核心推导结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 正交条件（核心推导结果）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#正交群-o2-与特殊正交群-so2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        正交群 O(2) 与特殊正交群 SO(2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四板书ppt内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、板书/PPT内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节要点总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：由O2到SO2：行列式与旋转的物理意义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：由O2到SO2：行列式与旋转的物理意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式解析新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式解析（新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式解析（新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-行列式约束与-o2--so2-的筛选" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 行列式约束与 O(2) → SO(2) 的筛选
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-欧拉公式复数表示旋转" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 欧拉公式（复数表示旋转）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-复数旋转的实例计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 复数旋转的实例计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt-截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1o2-与-so2-的定义已部分出现补充新细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：O(2) 与 SO(2) 的定义（已部分出现，补充新细节）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2欧拉公式与复数旋转全新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：欧拉公式与复数旋转（全新内容）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心新概念详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心新概念详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心新概念详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-行列式的物理意义手性handednesschirality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 行列式的物理意义：手性（handedness/chirality）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-u1-群复数版本的旋转群" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. U(1) 群：复数版本的"旋转群"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-为什么复数表示更优雅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 为什么复数表示更"优雅"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#李群视角进阶" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        李群视角（进阶）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节要点总结_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：复数描述旋转与SO2和U1的同构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：复数描述旋转与SO2和U1的同构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式解析新内容_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式解析（新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式解析（新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-欧拉公式与复数旋转" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 欧拉公式与复数旋转
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-复数矩阵的同构映射核心新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 复数→矩阵的同构映射（核心新内容）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-欧拉公式的矩阵形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 欧拉公式的矩阵形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-任意复数的矩阵表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 任意复数的矩阵表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#同构isomorphism的严格定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同构（Isomorphism）的严格定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么要关心这个同构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么要关心这个同构？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么-j-矩阵长得那么奇怪" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 \(J\) 矩阵长得那么奇怪？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四板书ppt截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、板书/PPT截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本段里程碑意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本段里程碑意义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：从二维长度守恒变换到正交条件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：从二维长度守恒变换到正交条件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-二维旋转矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 二维旋转矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-反射矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 反射矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-正交条件核心推导结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 正交条件（核心推导结果）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#正交群-o2-与特殊正交群-so2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        正交群 O(2) 与特殊正交群 SO(2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四板书ppt内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、板书/PPT内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节要点总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：由O2到SO2：行列式与旋转的物理意义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：由O2到SO2：行列式与旋转的物理意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式解析新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式解析（新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式解析（新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-行列式约束与-o2--so2-的筛选" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 行列式约束与 O(2) → SO(2) 的筛选
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-欧拉公式复数表示旋转" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 欧拉公式（复数表示旋转）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-复数旋转的实例计算" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 复数旋转的实例计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt-截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1o2-与-so2-的定义已部分出现补充新细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：O(2) 与 SO(2) 的定义（已部分出现，补充新细节）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2欧拉公式与复数旋转全新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：欧拉公式与复数旋转（全新内容）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心新概念详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心新概念详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心新概念详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-行列式的物理意义手性handednesschirality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 行列式的物理意义：手性（handedness/chirality）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-u1-群复数版本的旋转群" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. U(1) 群：复数版本的"旋转群"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-为什么复数表示更优雅" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 为什么复数表示更"优雅"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#李群视角进阶" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        李群视角（进阶）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节要点总结_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：复数描述旋转与SO2和U1的同构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：复数描述旋转与SO2和U1的同构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式解析新内容_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式解析（新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式解析（新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-欧拉公式与复数旋转" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 欧拉公式与复数旋转
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-复数矩阵的同构映射核心新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 复数→矩阵的同构映射（核心新内容）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-欧拉公式的矩阵形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 欧拉公式的矩阵形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-任意复数的矩阵表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 任意复数的矩阵表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#同构isomorphism的严格定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同构（Isomorphism）的严格定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么要关心这个同构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么要关心这个同构？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么-j-矩阵长得那么奇怪" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 \(J\) 矩阵长得那么奇怪？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四板书ppt截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、板书/PPT截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本段里程碑意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本段里程碑意义
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第5课-二维旋转的两种数学表示">《基于对称性的物理学》第5课 二维旋转的两种数学表示<a class="headerlink" href="#基于对称性的物理学第5课-二维旋转的两种数学表示" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 3 个段落）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 从二维长度守恒变换到正交条件</a></li>
+<li><a href="#段落-2">00:05:00 由O2到SO2：行列式与旋转的物理意义</a></li>
+<li><a href="#段落-3">00:10:00 复数描述旋转与SO2和U1的同构</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：从二维长度守恒变换到正交条件<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:05:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎收听基于对称性的物理学正门课的第五讲我是你们活泼好奇的主持人周亦今天我们终于要正式踏入群论的世界来聊聊一个非常基础又重要的概念二维旋转群也就是我们常说的SO二群听起来是不是既熟悉又有点神秘大家好我是赛很高兴和周亦一起带领大家深入这个迷人的主题二维旋转群SO二确实是理解对称性物理的敲门砖它虽然简单但蕴含着深刻的物理思想今天我们会从最直观的几何变换开始一步步揭示它的数学结构太棒了赛老师一说到二维旋转我脑子里立刻就浮现出平面上一个点绕着圆点转圈圈的画面那我们今天
+到底要探索什么样的变换呢没错周亦我们首先要思考一个问题在二维平面上有哪些变换能让一个向量的长度保持不变你觉得用哪些呢让向量长度不变啊我想到的最直接的就是旋转了一个向量转来转去它的长度肯定不会变还有呢是不是还有反射比如沿着坐标轴翻转一下长度也不会变完全正确旋转和反射是两种最主要的变换当然还有一种叫做平移它也能保持向量长度不变但平移的数学描述方式有点不同我们暂时先不讨论它今天我们主要聚焦在旋转和反射好的那这两种变换是不是也意味着他们能把单位圆映射到单位圆自己呢对你抓住了重点
+群可以作用于不同类型的对象上比如它可以作用于几何形场单位圆上也可以作用于向量上明白了那我们怎么用数学语言来描述这些旋转和反射呢我猜肯定会问到矩阵吧当然对于二维旋转我们通常用一个二乘二的旋转矩阵来表示它的形式是这样的而下西塔等于COSINSITA 换行SINSITA 换行COSINSITA这个矩阵描述了向量让圆点旋转角度C塔的操作这个矩阵我可太熟悉了在很多物理课上都见过了那反射矩阵呢反射矩阵也很简洁比如沿着X轴反射矩阵是PX等于负一零一沿着Y轴反射矩阵是
+变量变量
+T是A的转值好的A是一个列向量A上T就是行向量没错那么A撇A上TO可以写成OA上TO根据矩阵成法的性质A上T等于B上TA上T所以OA上T就变成了A上TO上TO完全正确现在我们要求A上TO上TOA等于A上TA为了让这个等式对任何向量A都成立那个中间的O上TO就必须使单位矩阵爱哇原来是这样通过一步步的推导我们就得到了这个核心条件O上TO等于爱也就是O的转制矩阵成以O本身等于单位
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.0_parastart.jpg" src="../frames/frame_000000.0_parastart.jpg" /></p>
+<p><img alt="frame_000240.0_formulatransition.jpg" src="../frames/frame_000240.0_formulatransition.jpg" /></p>
+<p><img alt="frame_000300.0_formulatransitionpar.jpg" src="../frames/frame_000300.0_formulatransitionpar.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解。</p>
+<hr />
+<h2 id="一核心公式解析">一、核心公式解析<a class="headerlink" href="#一核心公式解析" title="Permanent link">&para;</a></h2>
+<h3 id="1-二维旋转矩阵">1. 二维旋转矩阵<a class="headerlink" href="#1-二维旋转矩阵" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[R_\theta = \begin{bmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{bmatrix}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(R_\theta\)</span></td>
+<td style="text-align: left;">旋转角度为 <span class="arithmatex">\(\theta\)</span> 的变换矩阵</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\theta\)</span></td>
+<td style="text-align: left;">旋转角度（逆时针为正方向）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\cos\theta, \sin\theta\)</span></td>
+<td style="text-align: left;">三角函数，决定变换后的坐标分量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：将平面上任意向量 <span class="arithmatex">\(\mathbf{a} = (x, y)^T\)</span> 绕原点逆时针旋转 <span class="arithmatex">\(\theta\)</span> 角度，新坐标为：</p>
+<div class="arithmatex">\[\begin{cases} x' = x\cos\theta - y\sin\theta \\ y' = x\sin\theta + y\cos\theta \end{cases}\]</div>
+<hr />
+<h3 id="2-反射矩阵">2. 反射矩阵<a class="headerlink" href="#2-反射矩阵" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>沿X轴反射</strong>：<span class="arithmatex">\(P_x = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}\)</span>（注意：字幕中"负一零一"应为笔误，正确是 <span class="arithmatex">\(\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}\)</span>）</li>
+<li><strong>沿Y轴反射</strong>：<span class="arithmatex">\(P_y = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}\)</span></li>
+</ul>
+<hr />
+<h3 id="3-正交条件核心推导结果">3. 正交条件（核心推导结果）<a class="headerlink" href="#3-正交条件核心推导结果" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{O^T O = I}\]</div>
+<p>或等价写作 <span class="arithmatex">\(O^T = O^{-1}\)</span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(O\)</span></td>
+<td style="text-align: left;">正交变换矩阵（Orthogonal matrix）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(O^T\)</span></td>
+<td style="text-align: left;">矩阵 <span class="arithmatex">\(O\)</span> 的转置（行变列、列变行）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(I\)</span></td>
+<td style="text-align: left;">2×2单位矩阵 <span class="arithmatex">\(\begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>推导回顾</strong>（见PPT截图）：
+- 长度不变要求：<span class="arithmatex">\(\mathbf{a}' \cdot \mathbf{a}' = \mathbf{a} \cdot \mathbf{a}\)</span>
+- 设变换 <span class="arithmatex">\(\mathbf{a}' = O\mathbf{a}\)</span>
+- 代入得：<span class="arithmatex">\((O\mathbf{a})^T (O\mathbf{a}) = \mathbf{a}^T O^T O \mathbf{a} = \mathbf{a}^T \mathbf{a}\)</span>
+- 故必须满足 <span class="arithmatex">\(O^T O = I\)</span></p>
+<hr />
+<h2 id="二理论背景补充">二、理论背景补充<a class="headerlink" href="#二理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="正交群-o2-与特殊正交群-so2">正交群 O(2) 与特殊正交群 SO(2)<a class="headerlink" href="#正交群-o2-与特殊正交群-so2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">群</th>
+<th style="text-align: left;">定义</th>
+<th style="text-align: left;">几何意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>O(2)</strong></td>
+<td style="text-align: left;">满足 <span class="arithmatex">\(O^T O = I\)</span> 的所有 2×2 实矩阵</td>
+<td style="text-align: left;">保持长度不变的线性变换（旋转+反射）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SO(2)</strong></td>
+<td style="text-align: left;">O(2) 中满足 <span class="arithmatex">\(\det(O) = +1\)</span> 的子集</td>
+<td style="text-align: left;"><strong>纯旋转</strong>（保持定向，即"手性"不变）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键区分</strong>：反射矩阵的行列式 <span class="arithmatex">\(\det(P) = -1\)</span>，会将右手系变为左手系（镜像翻转），而旋转保持定向。</p>
+<hr />
+<h2 id="三通俗解释">三、通俗解释<a class="headerlink" href="#三通俗解释" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>"长度不变"的数学本质</strong></p>
+</blockquote>
+<p>想象你用手机拍一张照片：
+- <strong>旋转照片</strong> → 照片中物体的相对距离不变 ✓
+- <strong>镜子反射</strong> → 距离也不变，但左右颠倒了 ✓
+- <strong>任意拉伸</strong> → 距离改变 ✗</p>
+<p>正交条件 <span class="arithmatex">\(O^T O = I\)</span> 就是数学上严格表述"<strong>只做刚体运动，不拉伸不压缩</strong>"的约束。</p>
+<blockquote>
+<p><strong>为什么转置会冒出来？</strong></p>
+</blockquote>
+<p>因为点积 <span class="arithmatex">\(\mathbf{a} \cdot \mathbf{b}\)</span> 写成矩阵形式是 <span class="arithmatex">\(\mathbf{a}^T \mathbf{b}\)</span>（行向量乘列向量）。要检验变换后长度是否不变，自然需要把转置"渗透"进变换内部，于是 <span class="arithmatex">\(O^T\)</span> 就出现了。</p>
+<hr />
+<h2 id="四板书ppt内容描述">四、板书/PPT内容描述<a class="headerlink" href="#四板书ppt内容描述" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">截图</th>
+<th style="text-align: left;">内容概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>图1：二维旋转的两种数学表示</strong></td>
+<td style="text-align: left;">信息图展示 SO(2) 矩阵表示与 U(1) 复数表示的等价性。左侧：旋转矩阵 <span class="arithmatex">\(R_\theta\)</span> 及 <span class="arithmatex">\(\det=+1\)</span> 条件；右侧：欧拉公式 <span class="arithmatex">\(e^{i\theta} = \cos\theta + i\sin\theta\)</span>；底部：虚数单位 <span class="arithmatex">\(i = \begin{bmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{bmatrix}\)</span> 的矩阵表示作为桥梁</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>图2-3：从几何到代数的推导</strong></td>
+<td style="text-align: left;">标题"从几何到代数：长度不变的数学本质"。展示三步推导：① 写出 <span class="arithmatex">\((O\mathbf{a})^T O\mathbf{a}\)</span>；② 重组为 <span class="arithmatex">\(\mathbf{a}^T O^T O \mathbf{a}\)</span>；③ 得出核心条件 <span class="arithmatex">\(O^T O = I\)</span>（公式3.7），并说明此条件定义所有保长线性变换</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="五本节要点总结">五、本节要点总结<a class="headerlink" href="#五本节要点总结" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>SO(2) 是二维平面绕原点的旋转群</strong>——最简单的连续李群</li>
+<li><strong>正交条件 <span class="arithmatex">\(O^T O = I\)</span></strong> 是"保长变换"的代数刻画</li>
+<li><strong>旋转 vs 反射</strong>：前者行列式为+1（保定向），后者为−1（反定向）</li>
+<li><strong>群作用的多样性</strong>：同一群可作用于向量、点、单位圆、函数等不同对象</li>
+</ol>
+<hr />
+<h2 id="段落-2">段落 2：由O2到SO2：行列式与旋转的物理意义<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:05:00 ~ 00:10:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+这真是太棒了对这个条件就是我们定义正交群O2的关键所有满足O上TO等于爱的二乘二矩阵就构成了正交群O2你可以自己验证一下前面提到的旋转矩阵和反射矩阵他们都满足这个条件我可以想象如果把旋转矩阵R下C塔带入R下C塔上TR下C塔会发现Q三一平方C塔加上三一平方C塔刚好是一所以它确实是单位矩阵那反射矩阵PX和PY也能满足这个条件所以说O二群包含了所有的二维旋转和反射明白了那我们今天的主角是SO二群
+我们怎么从O2中把旋转单独提取出来呢这个问题问得很好要区分旋转和反射我们需要引入一个非常重要的概念矩阵的行列是我们可以利用O上TO等于I这个条件来推导出DATO的值行列是我记得行列是可以告诉我们一个线性变换对面积的缩放比例对吧是的我们对O上TO等于I两边去行列是DATI当然是E而DATO上TO等于DATO我们知道矩阵的转制不改变它的行列是所以DATO上TO等于DATO那么DATO上TO就变成了DATO的平方了所以我们得到DATO的平方等于E
+哪个是旋转呢
+物理含义吗当然有它意味着这个变换能保持系统的方向性不变比如说一个右手坐标系经过SO二变换后仍然是一个右手坐标系而反射会把右手坐标系变成左手坐标系改变了系统的手性这真是太有意思了SO二不仅是数学上的一个群它还对应着物理世界中一个非常重要的对称性就是保持方向性的旋转对称是的这是我们理解对称性和守恒定律的基础接下来我们换个角度看看有没有其他方法来描述二维旋转可能会让你大吃一惊哦换个角度难道还有比矩阵更简洁的描述方式吗我很好奇当然有在二维平面上我们还可以利用负数来描述旋转负数虚数单位A的那个负数吗这要怎么和旋转联系起来呢
+我们可以把二维平面上的一个点AAB看作一个负数Z等于A加IB而单位负数也就是摩长为一的负数Z它满足Z平方等于Z乘以Z星等于一其中Z星是Z的负供额哦我明白了单位负数在负平面上正好落在单位圆上精准这些单位负数配上普通的负数成法也构成了一个群我们称之为U一群这里的U代表U一群对于负数来说有条件UDEGGERU等于一就简化成了U一群听起来和SO一群有点像那它怎么描述旋转呢关键就在于O拉共识我们知道一个单位负数可以写成一上IC塔等于C塔加IC塔这个意义上
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000300.0_formulatransitionpar.jpg" src="../frames/frame_000300.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_000360.0_formulatransition.jpg" src="../frames/frame_000360.0_formulatransition.jpg" /></p>
+<p><img alt="frame_000600.0_formulatransitionpar.jpg" src="../frames/frame_000600.0_formulatransitionpar.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦于<strong>新出现的内容</strong>。</p>
+<hr />
+<h2 id="一核心公式解析新内容">一、核心公式解析（新内容）<a class="headerlink" href="#一核心公式解析新内容" title="Permanent link">&para;</a></h2>
+<h3 id="1-行列式约束与-o2--so2-的筛选">1. 行列式约束与 O(2) → SO(2) 的筛选<a class="headerlink" href="#1-行列式约束与-o2--so2-的筛选" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\det(O^T O) = \det(I) = 1 \Rightarrow [\det(O)]^2 = 1 \Rightarrow \det(O) = \pm 1\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\det(O)\)</span></td>
+<td style="text-align: left;">矩阵 <span class="arithmatex">\(O\)</span> 的行列式（determinant）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\det(O) = +1\)</span></td>
+<td style="text-align: left;"><strong>旋转</strong>（保持手性/方向性）→ 属于 SO(2)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\det(O) = -1\)</span></td>
+<td style="text-align: left;"><strong>反射</strong>（反转手性/方向性）→ 属于 O(2) 但不属于 SO(2)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键推导逻辑</strong>：
+- 利用性质：<span class="arithmatex">\(\det(AB) = \det(A)\det(B)\)</span> 和 <span class="arithmatex">\(\det(O^T) = \det(O)\)</span>
+- 因此 <span class="arithmatex">\(\det(O^T O) = \det(O)^2 = 1\)</span></p>
+<hr />
+<h3 id="2-欧拉公式复数表示旋转">2. 欧拉公式（复数表示旋转）<a class="headerlink" href="#2-欧拉公式复数表示旋转" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[R_\theta = e^{i\theta} = \cos\theta + i\sin\theta \quad \text{（公式 3.12）}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(e^{i\theta}\)</span></td>
+<td style="text-align: left;">欧拉公式，单位复数的指数形式</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(i\)</span></td>
+<td style="text-align: left;">虚数单位，<span class="arithmatex">\(i^2 = -1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\cos\theta + i\sin\theta\)</span></td>
+<td style="text-align: left;">欧拉公式的三角展开（实部+虚部）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(R_\theta^*\)</span></td>
+<td style="text-align: left;">复共轭，<span class="arithmatex">\(R_\theta^* = e^{-i\theta} = \cos\theta - i\sin\theta\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>单位复数条件验证</strong>：</p>
+<div class="arithmatex">\[R_\theta^* R_\theta = e^{-i\theta} e^{i\theta} = e^0 = 1\]</div>
+<hr />
+<h3 id="3-复数旋转的实例计算">3. 复数旋转的实例计算<a class="headerlink" href="#3-复数旋转的实例计算" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[z' = e^{i90°} z = (\cos 90° + i\sin 90°)(3+5i) = i(3+5i) = -5 + 3i\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">步骤</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(e^{i90°} = i\)</span></td>
+<td style="text-align: left;">90°旋转对应乘以虚数单位 <span class="arithmatex">\(i\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(i \times (3+5i) = 3i + 5i^2 = 3i - 5\)</span></td>
+<td style="text-align: left;">利用 <span class="arithmatex">\(i^2 = -1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">结果 <span class="arithmatex">\(-5 + 3i\)</span></td>
+<td style="text-align: left;">原复数 <span class="arithmatex">\(3+5i\)</span> 逆时针旋转90°后的新位置</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二板书ppt-截图内容描述">二、板书/PPT 截图内容描述<a class="headerlink" href="#二板书ppt-截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1o2-与-so2-的定义已部分出现补充新细节">截图1：O(2) 与 SO(2) 的定义（已部分出现，补充新细节）<a class="headerlink" href="#截图1o2-与-so2-的定义已部分出现补充新细节" title="Permanent link">&para;</a></h3>
+<p><strong>右侧新增计算框</strong>：
+- 展示 <span class="arithmatex">\(R_\theta^T R_\theta = I\)</span> 的具体矩阵乘法验证
+- 展示 <span class="arithmatex">\(P_x^T P_x = I\)</span> 和 <span class="arithmatex">\(P_y^T P_y = I\)</span> 的验证
+- <strong>关键新信息</strong>：明确标注 <span class="arithmatex">\(\det R_\theta = +1\)</span>，而 <span class="arithmatex">\(\det P_x = \det P_y = -1\)</span></p>
+<p><strong>Venn 图示意</strong>：
+<div class="highlight"><pre><span></span><code>O(2) (旋转与反射)
+    └── SO(2) (仅旋转)  [子集关系]
+</code></pre></div></p>
+<hr />
+<h3 id="截图2欧拉公式与复数旋转全新内容">截图2：欧拉公式与复数旋转（全新内容）<a class="headerlink" href="#截图2欧拉公式与复数旋转全新内容" title="Permanent link">&para;</a></h3>
+<p><strong>左侧文字</strong>：
+- 标题："旋转的优雅表达：欧拉公式"
+- 公式 3.12：<span class="arithmatex">\(R_\theta = e^{i\theta} = \cos(\theta) + i\sin(\theta)\)</span>
+- 验证：<span class="arithmatex">\(R_\theta^* R_\theta = e^{-i\theta}e^{i\theta} = 1\)</span>
+- 实例：将 <span class="arithmatex">\(z = 3+5i\)</span> 旋转 90° 的完整计算过程</p>
+<p><strong>右侧图示</strong>：
+- 复平面坐标系（Re 实轴水平，Im 虚轴垂直）
+- 向量 <span class="arithmatex">\(z\)</span> 和旋转后的 <span class="arithmatex">\(z'\)</span> 用箭头表示
+- 直观展示 90° 旋转的几何效果</p>
+<hr />
+<h2 id="三核心新概念详解">三、核心新概念详解<a class="headerlink" href="#三核心新概念详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-行列式的物理意义手性handednesschirality">1. 行列式的物理意义：手性（handedness/chirality）<a class="headerlink" href="#1-行列式的物理意义手性handednesschirality" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>手性</strong></td>
+<td style="text-align: left;">坐标系的"左右手"属性</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右手系</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\hat{x} \times \hat{y} = \hat{z}\)</span>（符合日常习惯）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>左手系</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\hat{x} \times \hat{y} = -\hat{z}\)</span>（镜像反转）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>通俗理解</strong>：
+- 旋转 = 你原地转身，还是面对原来的世界（右手拿笔，右手仍在右边）
+- 反射 = 你照镜子，左右互换（右手看起来在左边）</p>
+<blockquote>
+<p>这是物理学中极其重要的概念——<strong>宇称（parity）对称性</strong>的基础。</p>
+</blockquote>
+<hr />
+<h3 id="2-u1-群复数版本的旋转群">2. U(1) 群：复数版本的"旋转群"<a class="headerlink" href="#2-u1-群复数版本的旋转群" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">对比</th>
+<th style="text-align: left;">SO(2)</th>
+<th style="text-align: left;">U(1)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>元素</strong></td>
+<td style="text-align: left;">2×2 实正交矩阵，<span class="arithmatex">\(\det=+1\)</span></td>
+<td style="text-align: left;">单位复数，<span class="arithmatex">\(\|z\|=1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>群运算</strong></td>
+<td style="text-align: left;">矩阵乘法</td>
+<td style="text-align: left;">复数乘法</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>条件</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(O^T O = I\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(U^\dagger U = 1\)</span>（即 <span class="arithmatex">\(U^* U = 1\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>参数</strong></td>
+<td style="text-align: left;">一个角度 <span class="arithmatex">\(\theta\)</span></td>
+<td style="text-align: left;">一个角度 <span class="arithmatex">\(\theta\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>本质</strong></td>
+<td style="text-align: left;"><strong>同构</strong>（isomorphic）——数学上完全等价</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>U(1) 的 U</strong>：Unitary（酉/幺正），即 <span class="arithmatex">\(U^\dagger U = I\)</span></p>
+</blockquote>
+<hr />
+<h3 id="3-为什么复数表示更优雅">3. 为什么复数表示更"优雅"？<a class="headerlink" href="#3-为什么复数表示更优雅" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方面</th>
+<th style="text-align: left;">矩阵表示</th>
+<th style="text-align: left;">复数表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">两个旋转的合成</td>
+<td style="text-align: left;">矩阵乘法（4个元素相乘）</td>
+<td style="text-align: left;">指数相加：<span class="arithmatex">\(e^{i\theta_1} \cdot e^{i\theta_2} = e^{i(\theta_1+\theta_2)}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">逆元</td>
+<td style="text-align: left;">求逆矩阵</td>
+<td style="text-align: left;">取负指数：<span class="arithmatex">\((e^{i\theta})^{-1} = e^{-i\theta}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">参数直观性</td>
+<td style="text-align: left;">需看四个矩阵元</td>
+<td style="text-align: left;">直接读角度 <span class="arithmatex">\(\theta\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心洞见</strong>：复数乘法天然编码了"角度相加"这一旋转的本质特性。</p>
+<hr />
+<h2 id="四理论背景补充">四、理论背景补充<a class="headerlink" href="#四理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="李群视角进阶">李群视角（进阶）<a class="headerlink" href="#李群视角进阶" title="Permanent link">&para;</a></h3>
+<p>SO(2) 和 U(1) 都是<strong>一维紧致李群</strong>：
+- "一维"：只需要一个参数 <span class="arithmatex">\(\theta \in [0, 2\pi)\)</span>
+- "紧致"：参数空间是有界的（圆周 <span class="arithmatex">\(S^1\)</span>）
+- 它们是<strong>阿贝尔群</strong>（交换群）：旋转顺序不影响结果</p>
+<p>这在量子力学中至关重要——U(1) 对称性对应<strong>电荷守恒</strong>（诺特定理）。</p>
+<hr />
+<h2 id="五本节要点总结_1">五、本节要点总结<a class="headerlink" href="#五本节要点总结_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>从 O(2) 到 SO(2)</strong>：用 <span class="arithmatex">\(\det(O) = +1\)</span> 筛选出保持手性的纯旋转</li>
+<li><strong>行列式的深层意义</strong>：不仅是面积缩放因子，更是方向性的"签名"</li>
+<li><strong>复数表示的等价性</strong>：U(1) ≅ SO(2)，但计算更简洁</li>
+<li><strong>欧拉公式的威力</strong>：<span class="arithmatex">\(e^{i\theta}\)</span> 将几何旋转转化为代数指数运算</li>
+</ol>
+<hr />
+<h2 id="段落-3">段落 3：复数描述旋转与SO2和U1的同构<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:10:00 ~ 00:16:55</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+IC塔就可以看作一个旋转操作符ORA公式E上I CTA加上I CTA这真是数学中最美的公式之一确实如此当张一个负数Z乘以一上I CTA时就相当于把Z在负平面上绕圆点逆时针旋转了C塔角这太神奇了用一个简单的负数成法就能实现旋转能举个例子吗当然比如我们有一个负数Z等于三加五I现在我们想把它旋转九十度我们知道九十度的E上I CTA就是一上I除二也就是COXIN九十度加I所以就是把三加五I成I吗对
+变量是三斗号五变量三变量三变量三变量三变量三变量三变量三变量三变量三变量三变量三变量三变量三变量三变量
+他们之间有什么联系吗他们是完全不同的东西还是书图同归呢这个问题问到点子上了也是今天非常重要的一个部分这两种描述其实是等价的他们之间存在着一种同构关系同构听起来很高级我们可以通过把负数映射到实数矩阵来建立这种联系我们定义实数一对应单位矩阵I等于零零一而虚数单位I对应矩阵J等于零负一一这很有趣你可以验证一下这两个指征满足I平方等于负I也就是负一对应的指征以及IJ等于J这和负数的运算规则一平方等于负一一乘以一完全一致
+简单是把负数的世界搬到了质证的世界里没错有了这个印设我们就可以把ORA公式中的R下C塔等于QC塔加IC塔也写成句称形式它就变成了QC塔乘以I加C塔乘以J那不就是QC塔乘以0换行0一加C塔乘以0一换行一吗对你把它加起来就会发现它正是我们最初提到的那个旋转矩阵R下C塔等于QC塔复C塔换行C塔换行C塔简直是完美重合太不可思议了这两种看似不同的描述竟然能通过这种方式连接起来不止如此我们还可以把一个普通的负数Z等于A加IB也表示成一个矩阵
+A复B换行B好的一个负数变成了一个二乘二的矩阵现在我们用选转矩阵R下C塔去做用于这个代表负数的矩阵Z也就是计算R下C塔乘以Z你会发现计算结果A撇附B撇A撇中的A撇还B撇正好是A撇等于A减CA减CA加CB这不就是旋转矩阵作用在列向量A换B上得到的结果吗完全正确这正是我们最初用矩阵描述向量旋转时得到的结果所以两种描述SOL群的矩阵形式和U1群的负数形式他们做的事情是完全一样的所以我们可以说SOR群和U1群
+是同构的对吗是的他们之间存在一个同构映射这意味着他们在数学结构上是完全相同的只是用了不同的语言来表达这是一个非常重要的发现也是群论中经常出现的现象这节课真是信息量巨大但又非常清晰我们从二维平面上保持长度不变的变换开始引出了正交群O二然后通过行列式条件筛选出了只饱含旋转的SO二特殊正交群接着我们又从负数的角度引入了单位负数群U一来描述旋转最后我们惊喜地发现SO二和U一这两个群竟然是同构的总结得非常到位之爱对于我们后续学习更复杂的群比如三维旋转
+转群乃至于粒子物理中的规范群都有着至关重要的意义它是我们探索自然界深层对称性的基础听起来未来的旅程会更加精彩非常感谢赛老师今天深入前处的讲解让我对SO2群有了更深刻的理解也很高兴能和大家一起探索今天的课程就到这里希望大家能好好消化这些内容特别是SO2和U1的同构性它是我们这门课的一个重要里程碑是的大家课后可以自己再推导一下那些矩阵乘法和行列式加深理解预告一下下节课将把视野投向三维空间去探索三维旋转群那会是更有趣的挑战期待与大家在三维旋转的世界里相遇好的那我们下节课再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000600.0_formulatransitionpar.jpg" src="../frames/frame_000600.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_000780.0_formula.jpg" src="../frames/frame_000780.0_formula.jpg" /></p>
+<p><img alt="frame_000900.0_transition.jpg" src="../frames/frame_000900.0_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦于<strong>新出现的内容</strong>。</p>
+<hr />
+<h2 id="一核心公式解析新内容_1">一、核心公式解析（新内容）<a class="headerlink" href="#一核心公式解析新内容_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-欧拉公式与复数旋转">1. 欧拉公式与复数旋转<a class="headerlink" href="#1-欧拉公式与复数旋转" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[R_\theta = e^{i\theta} = \cos\theta + i\sin\theta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(e^{i\theta}\)</span></td>
+<td style="text-align: left;">欧拉公式，单位复数（模为1）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(i\)</span></td>
+<td style="text-align: left;">虚数单位，<span class="arithmatex">\(i^2 = -1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\theta\)</span></td>
+<td style="text-align: left;">旋转角度（弧度制）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\cos\theta + i\sin\theta\)</span></td>
+<td style="text-align: left;">欧拉公式的三角函数展开</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：当复数 <span class="arithmatex">\(z\)</span> 乘以 <span class="arithmatex">\(e^{i\theta}\)</span> 时，相当于在复平面上将 <span class="arithmatex">\(z\)</span> 绕原点<strong>逆时针旋转 <span class="arithmatex">\(\theta\)</span> 角</strong>。</p>
+<p><strong>实例验证</strong>（旋转90°）：</p>
+<div class="arithmatex">\[z = 3 + 5i \rightarrow z' = e^{i\pi/2} \cdot z = i(3+5i) = 3i + 5i^2 = -5 + 3i\]</div>
+<hr />
+<h3 id="2-复数矩阵的同构映射核心新内容">2. 复数→矩阵的同构映射（核心新内容）<a class="headerlink" href="#2-复数矩阵的同构映射核心新内容" title="Permanent link">&para;</a></h3>
+<p>这是本段最重要的构造——<strong>将复数嵌入到实矩阵中</strong>：</p>
+<div class="arithmatex">\[1 \leftrightarrow I = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{bmatrix}, \quad i \leftrightarrow J = \begin{bmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{bmatrix}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(I\)</span></td>
+<td style="text-align: left;">2×2单位矩阵，对应实数1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(J\)</span></td>
+<td style="text-align: left;"><strong>辛矩阵</strong>，对应虚数单位 <span class="arithmatex">\(i\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>验证自洽性</strong>：
+- <span class="arithmatex">\(J^2 = \begin{bmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{bmatrix}\begin{bmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{bmatrix} = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} = -I\)</span> ✓
+- 这与 <span class="arithmatex">\(i^2 = -1\)</span> 完全对应</p>
+<hr />
+<h3 id="3-欧拉公式的矩阵形式">3. 欧拉公式的矩阵形式<a class="headerlink" href="#3-欧拉公式的矩阵形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[R_\theta = \cos\theta \cdot I + \sin\theta \cdot J = \begin{bmatrix} \cos\theta &amp; -\sin\theta \\ \sin\theta &amp; \cos\theta \end{bmatrix}\]</div>
+<p><strong>惊人发现</strong>：这正是我们最初定义的<strong>二维旋转矩阵</strong>！</p>
+<hr />
+<h3 id="4-任意复数的矩阵表示">4. 任意复数的矩阵表示<a class="headerlink" href="#4-任意复数的矩阵表示" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[z = a + bi \leftrightarrow Z = \begin{bmatrix} a &amp; -b \\ b &amp; a \end{bmatrix}\]</div>
+<p><strong>验证旋转作用的一致性</strong>：
+- 矩阵乘法：<span class="arithmatex">\(R_\theta \cdot Z\)</span> 作用于列向量 <span class="arithmatex">\(\begin{bmatrix} a \\ b \end{bmatrix}\)</span>
+- 复数乘法：<span class="arithmatex">\(e^{i\theta} \cdot z\)</span>
+- 两者结果完全对应：<span class="arithmatex">\(\begin{bmatrix} a' \\ b' \end{bmatrix} = \begin{bmatrix} a\cos\theta - b\sin\theta \\ a\sin\theta + b\cos\theta \end{bmatrix}\)</span></p>
+<hr />
+<h2 id="二理论背景补充_1">二、理论背景补充<a class="headerlink" href="#二理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="同构isomorphism的严格定义">同构（Isomorphism）的严格定义<a class="headerlink" href="#同构isomorphism的严格定义" title="Permanent link">&para;</a></h3>
+<p>两个群 <span class="arithmatex">\(G\)</span> 和 <span class="arithmatex">\(H\)</span> 同构，意味着存在<strong>双射映射</strong> <span class="arithmatex">\(\Pi: G \rightarrow H\)</span>，满足：</p>
+<div class="arithmatex">\[\Pi(g_1 \cdot g_2) = \Pi(g_1) \cdot \Pi(g_2)\]</div>
+<p>即：<strong>群乘法结构被保持</strong>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">群</th>
+<th style="text-align: left;">元素形式</th>
+<th style="text-align: left;">群运算</th>
+<th style="text-align: left;">几何意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SO(2)</strong></td>
+<td style="text-align: left;">2×2旋转矩阵</td>
+<td style="text-align: left;">矩阵乘法</td>
+<td style="text-align: left;">实线性代数描述</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>U(1)</strong></td>
+<td style="text-align: left;">单位复数 <span class="arithmatex">\(e^{i\theta}\)</span></td>
+<td style="text-align: left;">复数乘法</td>
+<td style="text-align: left;">复分析描述</td>
+</tr>
+</tbody>
+</table>
+<p><strong>本课的核心定理</strong>：<span class="arithmatex">\(\boxed{SO(2) \cong U(1)}\)</span></p>
+<hr />
+<h2 id="三通俗解释_1">三、通俗解释<a class="headerlink" href="#三通俗解释_1" title="Permanent link">&para;</a></h2>
+<h3 id="为什么要关心这个同构">为什么要关心这个同构？<a class="headerlink" href="#为什么要关心这个同构" title="Permanent link">&para;</a></h3>
+<p>想象两种"语言"：
+- <strong>英语（矩阵语言）</strong>：用2×2实矩阵说话，适合计算机图形学、机器人学
+- <strong>法语（复数语言）</strong>：用复数 <span class="arithmatex">\(e^{i\theta}\)</span> 说话，适合量子力学、电动力学</p>
+<p><strong>同构告诉我们</strong>：这两种语言描述的是<strong>完全相同的数学结构</strong>！你可以随时"翻译"，哪种方便用哪种。</p>
+<h3 id="为什么-j-矩阵长得那么奇怪">为什么 <span class="arithmatex">\(J\)</span> 矩阵长得那么奇怪？<a class="headerlink" href="#为什么-j-矩阵长得那么奇怪" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J = \begin{bmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{bmatrix}\]</div>
+<p>这个矩阵有个名字——<strong>标准辛形式</strong>。它编码了复数乘法中的"旋转90度"操作：
+- 乘以 <span class="arithmatex">\(i\)</span>：逆时针转90°
+- 乘以 <span class="arithmatex">\(J\)</span>：同样的几何效果，但用矩阵实现</p>
+<hr />
+<h2 id="四板书ppt截图描述">四、板书/PPT截图描述<a class="headerlink" href="#四板书ppt截图描述" title="Permanent link">&para;</a></h2>
+<p>根据字幕推断，板书应包含：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">截图位置</th>
+<th style="text-align: left;">内容描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">第一张</td>
+<td style="text-align: left;"><strong>欧拉公式</strong> <span class="arithmatex">\(e^{i\theta} = \cos\theta + i\sin\theta\)</span>，配复平面旋转示意图（点 <span class="arithmatex">\(z\)</span> 旋转到 <span class="arithmatex">\(z'\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">第二张</td>
+<td style="text-align: left;"><strong>同构映射表</strong>：<span class="arithmatex">\(1 \leftrightarrow I\)</span>，<span class="arithmatex">\(i \leftrightarrow J\)</span>，以及验证 <span class="arithmatex">\(J^2 = -I\)</span> 的矩阵乘法</td>
+</tr>
+<tr>
+<td style="text-align: left;">第三张</td>
+<td style="text-align: left;"><strong>SO(2) ↔ U(1) 同构</strong>的双向箭头图，强调"数学结构相同，语言不同"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="五本段里程碑意义">五、本段里程碑意义<a class="headerlink" href="#五本段里程碑意义" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">重要性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">SO(2) ≅ U(1)</td>
+<td style="text-align: left;">最简单的<strong>紧致李群</strong>同构实例</td>
+</tr>
+<tr>
+<td style="text-align: left;">复数矩阵表示</td>
+<td style="text-align: left;">为后续<strong>四元数→SU(2)</strong>、<strong>泡利矩阵</strong>埋下伏笔</td>
+</tr>
+<tr>
+<td style="text-align: left;">行列式=+1的筛选</td>
+<td style="text-align: left;">区分"正常旋转"与"反射"的代数判据</td>
+</tr>
+</tbody>
+</table>
+<p><strong>下节课预告</strong>：三维旋转群 SO(3)，将不再有简单的复数对应物，需要引入<strong>四元数</strong>或<strong>3×3矩阵</strong>——复杂度陡增，但同构思想依然适用。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

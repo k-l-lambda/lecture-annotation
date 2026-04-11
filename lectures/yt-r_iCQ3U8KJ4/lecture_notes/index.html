@@ -1,0 +1,4044 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-r_iCQ3U8KJ4/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-tG4rh6bvmT4/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-MCmp3QUStKE/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第13课 旋量对称性与场表示：从微观粒子到时空场论 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第13课-旋量对称性与场表示从微观粒子到时空场论" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第13课 旋量对称性与场表示：从微观粒子到时空场论
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：引入主题：空间反演与左右手旋量的互换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：引入主题：空间反演与左右手旋量的互换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述与公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述与公式解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 板书/PPT 内容描述与公式解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图-1总览图旋量对称性与场表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 1：总览图（旋量对称性与场表示）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-2空间反演下的生成元行为核心公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 2：空间反演下的生成元行为（核心公式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-3boost-变换的矩阵形式与手征性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 3：Boost 变换的矩阵形式与手征性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-必要理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 必要理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 必要理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为何-j-不变而-k-变号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为何 \(J\) 不变而 \(K\) 变号？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#复化洛伦兹代数与-sl2mathbbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复化洛伦兹代数与 \(SL(2,\mathbb{C})\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 通俗语言解释核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#左手与右手的镜像隐喻" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "左手"与"右手"的镜像隐喻
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么宇称守恒需要左右开弓" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么宇称守恒需要"左右开弓"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#手征性-vs-螺旋度身份证-vs-运动状态" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手征性 vs 螺旋度：身份证 vs 运动状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-本段新出现的关键概念总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 本段新出现的关键概念总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：狄拉克旋量、马约拉纳旋量及其宇称变换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：狄拉克旋量、马约拉纳旋量及其宇称变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-新公式与符号详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 新公式与符号详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 新公式与符号详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-狄拉克旋量的构造与表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 狄拉克旋量的构造与表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-空间反演下的变换规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 空间反演下的变换规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-马约拉纳旋量的条件字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 马约拉纳旋量的条件（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-可约表示的数学本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 可约表示的数学本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-马约拉纳旋量的拓扑意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 马约拉纳旋量的拓扑意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-空间反演的表示论困境与解决" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 空间反演的表示论困境与解决
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-通俗语言解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 通俗语言解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 通俗语言解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#可约表示独立运行的双引擎" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "可约表示"：独立运行的双引擎
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#马约拉纳旋量左右手是镜像同一人" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        马约拉纳旋量：左右手是镜像同一人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#空间反演调换抽屉而非改变内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        空间反演：调换抽屉，而非改变内容
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：电荷共轭：手征转换与反粒子的物理意义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：电荷共轭：手征转换与反粒子的物理意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 板书/PPT 内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图-1探索电荷共轭直觉操作的失效" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 1：探索电荷共轭——直觉操作的失效
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-2--3确立纯粹的电荷共轭变换-psic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 2 &amp; 3：确立纯粹的电荷共轭变换 (\(\Psi^C\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-公式解析新出现的公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 公式解析（新出现的公式）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 公式解析（新出现的公式）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-3241直观的错误电荷共轭尝试" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.241)：直观的（错误）电荷共轭尝试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3242标准狄拉克旋量的-boost-变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.242)：标准狄拉克旋量的 Boost 变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3243直观对象的异常-boost-变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.243)：直观对象的异常 Boost 变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3244正确的电荷共轭变换定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.244)：正确的电荷共轭变换定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-必要的理论背景知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 必要的理论背景知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 必要的理论背景知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-epsilon-矩阵与旋量复共轭的协变性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 \(\epsilon\) 矩阵与旋量复共轭的协变性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-电荷共轭与反粒子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 电荷共轭与反粒子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-与空间反演parity的对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 与空间反演（Parity）的对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#电荷共轭名字的误导性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "电荷共轭"名字的误导性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：从有限维到无穷维：场的洛伦兹表示与生成元
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：从有限维到无穷维：场的洛伦兹表示与生成元">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 板书/PPT 内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图-1--2跨越物理视界从静态常数到动态场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 1 &amp; 2：跨越物理视界——从静态常数到动态场
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-3坐标域的主宰无穷维微分算子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 3：坐标域的主宰——无穷维微分算子
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-公式解析新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 公式解析（新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 公式解析（新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-3246坐标变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.246)：坐标变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3247场的主动变换本书约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.247)：场的主动变换（本书约定）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#维格纳约定被动变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        维格纳约定（被动变换）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3248无穷维生成元微分算子形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.248)：无穷维生成元（微分算子形式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3175洛伦兹代数lie-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.175)：洛伦兹代数（Lie Algebra）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主动变换-vs-被动变换的深层差异" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主动变换 vs 被动变换的深层差异
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#无穷维表示的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        无穷维表示的
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：平移生成元、庞加莱群引入与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：平移生成元、庞加莱群引入与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-公式识别与详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 公式识别与详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 公式识别与详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-a无穷小平移的泰勒展开一维" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 A：无穷小平移的泰勒展开（一维）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-b空间平移生成元动量算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 B：空间平移生成元（动量算符）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-c有限平移的指数表示字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 C：有限平移的指数表示（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-d时间平移生成元字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 D：时间平移生成元（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-理论背景补充_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#庞加莱群poincaré-group的构成" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        庞加莱群（Poincaré Group）的构成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么平移是无穷维表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么平移是"无穷维表示"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-通俗语言解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 通俗语言解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 通俗语言解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#平移对称性物理定律与位置无关" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "平移对称性"：物理定律与位置无关
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：引入主题：空间反演与左右手旋量的互换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：引入主题：空间反演与左右手旋量的互换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述与公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述与公式解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 板书/PPT 内容描述与公式解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图-1总览图旋量对称性与场表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 1：总览图（旋量对称性与场表示）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-2空间反演下的生成元行为核心公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 2：空间反演下的生成元行为（核心公式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-3boost-变换的矩阵形式与手征性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 3：Boost 变换的矩阵形式与手征性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-必要理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 必要理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 必要理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为何-j-不变而-k-变号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为何 \(J\) 不变而 \(K\) 变号？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#复化洛伦兹代数与-sl2mathbbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        复化洛伦兹代数与 \(SL(2,\mathbb{C})\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-通俗语言解释核心概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 通俗语言解释核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 通俗语言解释核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#左手与右手的镜像隐喻" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "左手"与"右手"的镜像隐喻
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么宇称守恒需要左右开弓" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么宇称守恒需要"左右开弓"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#手征性-vs-螺旋度身份证-vs-运动状态" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手征性 vs 螺旋度：身份证 vs 运动状态
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-本段新出现的关键概念总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 本段新出现的关键概念总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：狄拉克旋量、马约拉纳旋量及其宇称变换
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：狄拉克旋量、马约拉纳旋量及其宇称变换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-新公式与符号详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 新公式与符号详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 新公式与符号详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-狄拉克旋量的构造与表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 狄拉克旋量的构造与表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-空间反演下的变换规则" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 空间反演下的变换规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-马约拉纳旋量的条件字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 马约拉纳旋量的条件（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-可约表示的数学本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (1) 可约表示的数学本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-马约拉纳旋量的拓扑意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (2) 马约拉纳旋量的拓扑意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-空间反演的表示论困境与解决" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (3) 空间反演的表示论困境与解决
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-通俗语言解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 通俗语言解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 通俗语言解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#可约表示独立运行的双引擎" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "可约表示"：独立运行的双引擎
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#马约拉纳旋量左右手是镜像同一人" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        马约拉纳旋量：左右手是镜像同一人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#空间反演调换抽屉而非改变内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        空间反演：调换抽屉，而非改变内容
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：电荷共轭：手征转换与反粒子的物理意义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：电荷共轭：手征转换与反粒子的物理意义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 板书/PPT 内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图-1探索电荷共轭直觉操作的失效" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 1：探索电荷共轭——直觉操作的失效
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-2--3确立纯粹的电荷共轭变换-psic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 2 &amp; 3：确立纯粹的电荷共轭变换 (\(\Psi^C\))
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-公式解析新出现的公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 公式解析（新出现的公式）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 公式解析（新出现的公式）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-3241直观的错误电荷共轭尝试" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.241)：直观的（错误）电荷共轭尝试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3242标准狄拉克旋量的-boost-变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.242)：标准狄拉克旋量的 Boost 变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3243直观对象的异常-boost-变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.243)：直观对象的异常 Boost 变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3244正确的电荷共轭变换定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.244)：正确的电荷共轭变换定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-必要的理论背景知识" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 必要的理论背景知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 必要的理论背景知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-epsilon-矩阵与旋量复共轭的协变性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 \(\epsilon\) 矩阵与旋量复共轭的协变性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-电荷共轭与反粒子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 电荷共轭与反粒子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-与空间反演parity的对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 与空间反演（Parity）的对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#电荷共轭名字的误导性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "电荷共轭"名字的误导性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：从有限维到无穷维：场的洛伦兹表示与生成元
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：从有限维到无穷维：场的洛伦兹表示与生成元">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 板书/PPT 内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图-1--2跨越物理视界从静态常数到动态场" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 1 &amp; 2：跨越物理视界——从静态常数到动态场
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图-3坐标域的主宰无穷维微分算子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图 3：坐标域的主宰——无穷维微分算子
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-公式解析新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 公式解析（新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 公式解析（新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-3246坐标变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.246)：坐标变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3247场的主动变换本书约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.247)：场的主动变换（本书约定）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#维格纳约定被动变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        维格纳约定（被动变换）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3248无穷维生成元微分算子形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.248)：无穷维生成元（微分算子形式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3175洛伦兹代数lie-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 (3.175)：洛伦兹代数（Lie Algebra）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#主动变换-vs-被动变换的深层差异" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主动变换 vs 被动变换的深层差异
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#无穷维表示的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        无穷维表示的
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：平移生成元、庞加莱群引入与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：平移生成元、庞加莱群引入与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-板书ppt-内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 板书/PPT 内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-公式识别与详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 公式识别与详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 公式识别与详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-a无穷小平移的泰勒展开一维" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 A：无穷小平移的泰勒展开（一维）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-b空间平移生成元动量算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 B：空间平移生成元（动量算符）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-c有限平移的指数表示字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 C：有限平移的指数表示（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-d时间平移生成元字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 D：时间平移生成元（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-理论背景补充_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#庞加莱群poincaré-group的构成" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        庞加莱群（Poincaré Group）的构成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么平移是无穷维表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么平移是"无穷维表示"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-通俗语言解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 通俗语言解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 通俗语言解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#平移对称性物理定律与位置无关" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "平移对称性"：物理定律与位置无关
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第13课-旋量对称性与场表示从微观粒子到时空场论">《基于对称性的物理学》第13课 旋量对称性与场表示：从微观粒子到时空场论<a class="headerlink" href="#基于对称性的物理学第13课-旋量对称性与场表示从微观粒子到时空场论" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 5 个段落，<a href="https://www.youtube.com/watch?v=r_iCQ3U8KJ4">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 引入主题：空间反演与左右手旋量的互换</a></li>
+<li><a href="#段落-2">00:04:42 狄拉克旋量、马约拉纳旋量及其宇称变换</a></li>
+<li><a href="#段落-3">00:09:12 电荷共轭：手征转换与反粒子的物理意义</a></li>
+<li><a href="#段落-4">00:13:36 从有限维到无穷维：场的洛伦兹表示与生成元</a></li>
+<li><a href="#段落-5">00:19:43 平移生成元、庞加莱群引入与课程总结</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：引入主题：空间反演与左右手旋量的互换<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:04:42</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+嘿大家好欢迎回到我们的基于对称性的物理学博客课堂我是你们活泼好奇的乔伊
+大家好我是赛很高兴和大家一起继续探索物理世界中的对称之美赛今天已经是我们这门课的第十三讲了时间过得真快
+我们聊到了洛伦兹群的表示那些什么左手手争右手争的悬亮听起来就特别酷是啊乔伊今天我们就要深入探讨这些悬亮在一些核心对称性电换下的行为比如空间繁衍和电核供恶
+最后我们还会聊聊物理学中非常重要的无穷为表示这可是理解场论的班将哦听起来就很伤脑但也很让人期待那我们是不是就从悬亮与空间繁衍开始聊起呢上次你提到左手手和右手我一直有个疑问为什么他们会这样命名呢
+没错这个问题提得非常好
+其实这个命名的原因正是我们今天要讲的空间繁衍变换来揭示的
+空间繁衍你是指像镜子一样把左右颠倒过来吗可以这么理解在物理学里空间繁衍又叫语秤
+我们通常用大写字母P来表示
+他会把一个三维空间坐标 x,y,z
+变成父X父外父子
+它就像你说的把一个右手戏变成了左手戏那这个变换对我们之前说的那些洛伦兹群的生成源比如J和K会有什么影响呢好的我们之前其实提到过在空间繁衍下洛伦兹群的生成源J也就是转动生成源他自己是不变的但K也就是Boost生成源会变好变成副K哦J不变K变好这是什么特别的呢当然特别了
+还记得我们定义过两个组合型的生成源N正和N码
+N正负就是二分之一乘括号J加减虚数单位I乘K括号我想起来了它们分别对应着二分之一零和零零二分之一这两种表示的生成源
+对集了
+现在你想象一下当空间反射发生时,J不变,K变成了副K
+那么n正就会变成j减虚数单位i乘k
+这不就是恩赋吗
+哇!所以在空间反射变换下,恩正变成了恩父,反过来,恩父变成了恩政,完全正确
+这意味着在空间反射变换下原本按照二分之一零表示变换的选量会变成按照零二分之一表示变换的选量反之亦然
+忽然开朗原来这就是他们被称为左手手针和右手手针的原因啊就像右手坐标系在空间反射下会变成左手坐标系一样这两个悬亮表示也会相互转换
+嗯,就是这个道理
+虽然习惯上叫作左手和右手旋转量但要提醒大家这里的手争性和粒子物里常说的螺旋度是不同的概念虽然它们有联系手争性是洛伦兹群表示的性质而螺旋度是动量方向上的四旋分量那对于具体的波斯的变换我们怎么直观的看到这种交换呢我们可以看波斯的变换的矩阵形式对于二分之一表示它的波斯的变量矩阵是一上虚数单位I成F键到K键而对于零二分之一表示它是一上负虚数单位I成F键到K键它们之间就差一个副号所以原来是K
+他们之间就差一个副号对当空间反应发生时生成元K变成了副K所以原本的意上叙数单位I成F键头DOTK键头就变成了意上副叙数单位I成F键头DOTK键头这恰好是零二分之一表示的BOST变换反之亦然这就很清晰地展示了空间反应却是把这两种手蒸旋量相互转换了明白了那如果一个物理系统在空间反应下是不变的是不是意味着它必须同时包含这两种手蒸旋量呢没错周爱你抓住了重点
+如果要描述一个在空间反应下保持不变的物理系统我们就需要同时拥有左手手证和右手手证炫亮
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.3_parastart.jpg" src="../frames/frame_000000.3_parastart.jpg" /></p>
+<p><img alt="frame_000123.6_formula.jpg" src="../frames/frame_000123.6_formula.jpg" /></p>
+<p><img alt="frame_000193.5_transition.jpg" src="../frames/frame_000193.5_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>这段视频深入探讨了<strong>空间反演（Parity）对称性</strong>对洛伦兹群旋量表示的影响，揭示了"左手"与"右手"旋量命名的数学本质。以下是针对该片段的深度注解：</p>
+<hr />
+<h2 id="1-板书ppt-内容描述与公式解析">1. 板书/PPT 内容描述与公式解析<a class="headerlink" href="#1-板书ppt-内容描述与公式解析" title="Permanent link">&para;</a></h2>
+<h3 id="截图-1总览图旋量对称性与场表示">截图 1：总览图（旋量对称性与场表示）<a class="headerlink" href="#截图-1总览图旋量对称性与场表示" title="Permanent link">&para;</a></h3>
+<p>该图以"DNA 双螺旋"视觉化比喻展示了旋量的对称性结构：
+- <strong>左侧</strong>：展示空间反演（<span class="arithmatex">\(\mathbb{P}\)</span>）将左手旋量 <span class="arithmatex">\((1/2,0)\)</span>（蓝色左旋螺旋）与右手旋量 <span class="arithmatex">\((0,1/2)\)</span>（橙色右旋螺旋）互换
+- <strong>中间</strong>：旋量类型对比表，明确外尔旋量（Weyl）、狄拉克旋量（Dirac）和马约拉纳旋量（Majorana）的洛伦兹群表示归属
+- <strong>右侧</strong>：预告无穷维表示与庞加莱群（Poincaré group）的关系，指出场表示是有限维旋量表示与无穷维时空表示（<span class="arithmatex">\(P_\mu = i\partial_\mu\)</span>）的结合</p>
+<h3 id="截图-2空间反演下的生成元行为核心公式">截图 2：空间反演下的生成元行为（核心公式）<a class="headerlink" href="#截图-2空间反演下的生成元行为核心公式" title="Permanent link">&para;</a></h3>
+<p><strong>公式 (3.230) - 宇称变换下的生成元：</strong></p>
+<div class="arithmatex">\[J_i \xrightarrow{P} J_i, \quad K_i \xrightarrow{P} -K_i\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(J_i\)</span></strong>：洛伦兹群的<strong>转动生成元</strong>（角动量算符），<span class="arithmatex">\(i=1,2,3\)</span> 对应空间三个方向。在空间反演（镜像变换）下，转动方向不变（右手定则的叉积在坐标反演下保持不变），故 <span class="arithmatex">\(J_i\)</span> 不变。</li>
+<li><strong><span class="arithmatex">\(K_i\)</span></strong>：洛伦兹群的<strong>Boost生成元</strong>（推动变换），描述参考系的速度变换。作为"速度"类矢量，在空间反演下方向反转（极矢量性质），故变为 <span class="arithmatex">\(-K_i\)</span>。</li>
+</ul>
+<p><strong>公式 (3.231) - 手征生成元的定义：</strong></p>
+<div class="arithmatex">\[N_i^{\pm} = \frac{1}{2}(J_i \pm iK_i)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(N_i^{+}\)</span></strong>：对应 <span class="arithmatex">\((1/2,0)\)</span> 表示（左手旋量）的生成元</li>
+<li><strong><span class="arithmatex">\(N_i^{-}\)</span></strong>：对应 <span class="arithmatex">\((0,1/2)\)</span> 表示（右手旋量）的生成元</li>
+<li><strong><span class="arithmatex">\(i\)</span></strong>：虚数单位，此处引入复组合是为了将洛伦兹代数 <span class="arithmatex">\(\mathfrak{so}(3,1)\)</span> 分解为两个 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的直和（复化后的同构关系）</li>
+</ul>
+<p><strong>图示逻辑</strong>：箭头显示在空间反演 <span class="arithmatex">\(P\)</span> 作用下，<span class="arithmatex">\(N^+\)</span>（蓝色）与 <span class="arithmatex">\(N^-\)</span>（橙色）发生互换，直观展示 <span class="arithmatex">\((1/2,0) \leftrightarrow (0,1/2)\)</span> 的表示转换。</p>
+<h3 id="截图-3boost-变换的矩阵形式与手征性">截图 3：Boost 变换的矩阵形式与手征性<a class="headerlink" href="#截图-3boost-变换的矩阵形式与手征性" title="Permanent link">&para;</a></h3>
+<p><strong>公式 (3.232) 与 (3.233) - 有限 Boost 变换的互换：</strong></p>
+<div class="arithmatex">\[(\Lambda_K)_{(1/2,0)} = e^{\vec{\phi}\cdot\vec{K}} \xrightarrow{P} e^{-\vec{\phi}\cdot\vec{K}} = (\Lambda_K)_{(0,1/2)}\]</div>
+<div class="arithmatex">\[(\Lambda_K)_{(0,1/2)} = e^{-\vec{\phi}\cdot\vec{K}} \xrightarrow{P} e^{\vec{\phi}\cdot\vec{K}} = (\Lambda_K)_{(1/2,0)}\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\vec{\phi}\)</span></strong>：快度（rapidity）矢量，方向为 Boost 方向，大小 <span class="arithmatex">\(\phi = \text{arctanh}(v/c)\)</span> 与速度相关</li>
+<li><strong><span class="arithmatex">\(e^{\vec{\phi}\cdot\vec{K}}\)</span></strong>：有限 Lorentz Boost 的指数映射形式（基于生成元的李群元素）</li>
+<li><strong>关键观察</strong>：两种表示的 Boost 矩阵仅差一个负号（指数上的 <span class="arithmatex">\(\pm\)</span>），当 <span class="arithmatex">\(K \to -K\)</span> 时，左手表示的变换矩阵恰好变成右手表示的变换矩阵</li>
+</ul>
+<p><strong>注释框 - 螺旋度 vs 手征性</strong>：
+- <strong>手征性（Chirality）</strong>：洛伦兹群表示的<strong>内禀属性</strong>，由 <span class="arithmatex">\((1/2,0)\)</span> 或 <span class="arithmatex">\((0,1/2)\)</span> 标记，在空间反演下互换（如左右手坐标系）
+- <strong>螺旋度（Helicity）</strong>：粒子<strong>运动状态</strong>的属性，定义为 <span class="arithmatex">\(\vec{S}\cdot\hat{p}\)</span>（自旋在动量方向的投影），是庞加莱群的卡西米尔算符，与手征性概念不同但存在关联（对无质量粒子二者等价）</p>
+<hr />
+<h2 id="2-必要理论背景补充">2. 必要理论背景补充<a class="headerlink" href="#2-必要理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="为何-j-不变而-k-变号">为何 <span class="arithmatex">\(J\)</span> 不变而 <span class="arithmatex">\(K\)</span> 变号？<a class="headerlink" href="#为何-j-不变而-k-变号" title="Permanent link">&para;</a></h3>
+<p>从群论看，Lorentz 变换可写为 <span class="arithmatex">\(x'^\mu = \Lambda^\mu_\nu x^\nu\)</span>。空间反演 <span class="arithmatex">\(P = \text{diag}(1, -1, -1, -1)\)</span>。
+- <strong>转动</strong> <span class="arithmatex">\(J_i\)</span> 生成空间旋转，其李代数元素 <span class="arithmatex">\(\omega_{jk} = -\omega_{kj}\)</span>（空间-空间分量）在坐标反演下：<span class="arithmatex">\(x^j \to -x^j, x^k \to -x^k\)</span>，但微分算符 <span class="arithmatex">\(\partial_j \to -\partial_j\)</span>，双重负号使得 <span class="arithmatex">\(J_i \sim x^j\partial_k - x^k\partial_j\)</span> 保持不变（轴矢量）。
+- <strong>Boost</strong> <span class="arithmatex">\(K_i\)</span> 生成时空转动，<span class="arithmatex">\(\omega_{0i}\)</span>（时间-空间分量），仅空间坐标变号，故 <span class="arithmatex">\(K_i \sim x^0\partial_i - x^i\partial_0\)</span> 获得一个负号（极矢量）。</p>
+<h3 id="复化洛伦兹代数与-sl2mathbbc">复化洛伦兹代数与 <span class="arithmatex">\(SL(2,\mathbb{C})\)</span><a class="headerlink" href="#复化洛伦兹代数与-sl2mathbbc" title="Permanent link">&para;</a></h3>
+<p>公式 <span class="arithmatex">\(N_i^{\pm} = \frac{1}{2}(J_i \pm iK_i)\)</span> 实现了李代数同构：</p>
+<div class="arithmatex">\[\mathfrak{so}(3,1) \otimes \mathbb{C} \cong \mathfrak{su}(2) \oplus \mathfrak{su}(2)\]</div>
+<p>这使得我们可以用两个独立的 <span class="arithmatex">\(SU(2)\)</span> 表示 <span class="arithmatex">\((j_1, j_2)\)</span> 来标记 Lorentz 群的有限维表示。旋量对应 <span class="arithmatex">\((1/2,0)\)</span> 和 <span class="arithmatex">\((0,1/2)\)</span>，分别是 <span class="arithmatex">\(SL(2,\mathbb{C})\)</span> 的左手和右手基本表示。</p>
+<hr />
+<h2 id="3-通俗语言解释核心概念">3. 通俗语言解释核心概念<a class="headerlink" href="#3-通俗语言解释核心概念" title="Permanent link">&para;</a></h2>
+<h3 id="左手与右手的镜像隐喻">"左手"与"右手"的镜像隐喻<a class="headerlink" href="#左手与右手的镜像隐喻" title="Permanent link">&para;</a></h3>
+<p>想象你面对镜子举起右手，镜中人举起的是左手。<strong>空间反演就是物理学的"镜像"操作</strong>：
+- 左手旋量 <span class="arithmatex">\((1/2,0)\)</span> 经过镜像（<span class="arithmatex">\(P\)</span> 变换）后，其数学描述变成了右手旋量 <span class="arithmatex">\((0,1/2)\)</span> 的描述
+- 就像坐标系从右手系变成左手系，旋量的"手性"也在空间反演下翻转</p>
+<h3 id="为什么宇称守恒需要左右开弓">为什么宇称守恒需要"左右开弓"？<a class="headerlink" href="#为什么宇称守恒需要左右开弓" title="Permanent link">&para;</a></h3>
+<p>如果一个物理定律在镜子内外看起来一样（宇称守恒），那么描述它的方程不能偏袒左手或右手旋量。就像你不能只用左手坐标系来描述镜像对称的物体，你必须<strong>同时包含左右手旋量</strong>（组合成狄拉克旋量 <span class="arithmatex">\((1/2,0) \oplus (0,1/2)\)</span>），这样当 <span class="arithmatex">\(P\)</span> 变换交换它们时，整体方程保持不变。</p>
+<h3 id="手征性-vs-螺旋度身份证-vs-运动状态">手征性 vs 螺旋度：身份证 vs 运动状态<a class="headerlink" href="#手征性-vs-螺旋度身份证-vs-运动状态" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>手征性</strong>像是粒子的"身份证"：左旋中微子永远携带"左手"身份证，无论它朝哪个方向运动</li>
+<li><strong>螺旋度</strong>像是粒子的"运动姿态"：描述自旋方向与运动方向的关系（顺时针或逆时针旋转）。对无质量粒子，身份证决定了姿态（左手身份证=左旋运动），但对有质量粒子，通过洛伦兹变换可以超过去，螺旋度会改变，但手征性不变。</li>
+</ul>
+<hr />
+<h2 id="4-本段新出现的关键概念总结">4. 本段新出现的关键概念总结<a class="headerlink" href="#4-本段新出现的关键概念总结" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>数学本质</th>
+<th>物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>空间反演 (<span class="arithmatex">\(P\)</span>)</strong></td>
+<td><span class="arithmatex">\((x,y,z) \to (-x,-y,-z)\)</span>，<span class="arithmatex">\(J\to J\)</span>，<span class="arithmatex">\(K\to -K\)</span></td>
+<td>镜像对称性，区分极矢量与轴矢量</td>
+</tr>
+<tr>
+<td><strong>手征生成元互换</strong></td>
+<td><span class="arithmatex">\(N^+ \leftrightarrow N^-\)</span></td>
+<td><span class="arithmatex">\((1/2,0)\)</span> 与 <span class="arithmatex">\((0,1/2)\)</span> 表示的相互映射</td>
+</tr>
+<tr>
+<td><strong>Boost 矩阵符号差</strong></td>
+<td><span class="arithmatex">\(e^{\vec{\phi}\cdot\vec{K}} \leftrightarrow e^{-\vec{\phi}\cdot\vec{K}}\)</span></td>
+<td>左右旋量在速度变换下的相反响应</td>
+</tr>
+<tr>
+<td><strong>宇称不变性条件</strong></td>
+<td>需同时包含左右旋量</td>
+<td>狄拉克旋量的构造动机（双分量直和）</td>
+</tr>
+</tbody>
+</table>
+<p>这段内容为后续理解<strong>狄拉克方程的宇称对称性</strong>以及<strong>弱相互作用中宇称不守恒</strong>（只耦合左手旋量）奠定了数学基础。</p>
+<hr />
+<h2 id="段落-2">段落 2：狄拉克旋量、马约拉纳旋量及其宇称变换<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:04:42 ~ 00:09:12</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+最简单的方法就是把它们组合起来形成一个更大的对象我们称之为迪拉克选料迪拉克斯宾纳迪拉克选料听起来很耳熟它长什么样呢一个迪拉克选料我们通常用大写的C来表示它就是一个四分亮的猎象料上面是左手手针选料KL或者K下A下面是右手针选料CR或者X上A那它和我们之前说的四十辆有什么区别吗这是一个非常好的问题
+迪拉克悬量不是四十辆
+因为它的变换方式和四十量完全不同
+四十辆是按照洛伦兹群的二分之一二分之一表示变换的
+而迪拉克悬量是按照二分之一零直合也就是圈合零二分之一这个表示变换的
+这其实是一个可约表示因为它就是把两种手蒸旋量变换矩阵简单地平成一个分块对角矩阵也就是上面这个左手蒸旋量按二分之一零表示变换下面这个右手蒸旋量按零二分之一这个表示变换我明白了就是说它的不同分量是独立变换的
+那还有一种叫马乔拉纳玄亮的它又是什么呢马乔拉纳玄亮是迪拉克玄亮的一个特例
+如果迪拉克旋律PSI中的左手手蒸旋律KL和右手手蒸旋律CR之间存在某种特定的联系比如C二就是KL的某种供鄂形式那么它就变成了马祖拉纳旋律
+简单来说,马杜拉纳玄亮就是一种自身反粒子的玄亮,自身反粒子这个概念好深奥啊,我们再实现不深究,直到它是一个特例就好
+回到迪拉克旋流在空间繁殖下的行为这其实很有趣我们知道空间繁殖会交换二分之一零和零二分之一表示那是不是意味着如果一个迪拉克旋流赛等于上分量凯尔下分量塞尔经过空间繁殖它的凯尔和塞尔就会互换位置完全正确
+在空间繁衍后这个迪拉克悬量会变成赛P等于上分量赛尔下分量凯尔
+它依然包含了相同的左手和右手旋亮只是他们的位置点倒了这告诉我们空间繁衍并没有把左手旋亮变成右手旋亮它只是把他们的位置对掉了不对呀我刚才尝试了推倒迪拉克旋亮空间繁衍所服从的变换结果和书中公式三点二三九不一样呀
+就是图中红色的部分是我的理解有问题吗你的理解没有问题首先你的推到结果说明迪拉克选量在空间繁衍后不再是迪拉克选量因为赛P服从的变换和赛服从的变换关系不一样那咋办我们注意到虽然PSIP服从的整体值和变换和PSI服从的整体值和变换关系不一样但是PSIP第一个分量的变换和PSI第二个分量的变换矩阵是一样的
+而PCP第二个分量的变换和PSA第一个分量的变换矩阵是一样的虽然迪拉克旋量空间繁衍不再是迪拉克旋量但是希望迪拉克旋量空间繁衍后不要丢失原来迪拉克旋量的信息对的
+所以我们退而求其次,仅经要求在空间繁衍,拍二体下保持自
+所有迪拉克旋律在空间繁衍变换后的表现必须和变换前的表现一样
+变换后的迪拉克旋量虽然形式上不一样但必须依然是用变换前的变量组成的我明白了所以要求迪拉克旋量空间繁衍仅仅是将第一个分量和第二个分量挑换一下位置就像你说的把一个右手变成了左手但组成这个手本身还是那双手形象的比喻好的赛既然我们已经聊了空间繁衍那接下来是不是该聊聊另一种重要的变量了
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000431.6_formula.jpg" src="../frames/frame_000431.6_formula.jpg" /></p>
+<p><img alt="frame_000507.5_transition.jpg" src="../frames/frame_000507.5_transition.jpg" /></p>
+<p><img alt="frame_000520.8_transition.jpg" src="../frames/frame_000520.8_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>这段视频深入探讨了<strong>狄拉克旋量的数学构造</strong>、<strong>马约拉纳旋量的物理内涵</strong>，以及<strong>空间反演对称性在狄拉克旋量上的具体实现方式</strong>。以下是针对该片段的深度注解：</p>
+<hr />
+<h2 id="1-板书ppt-内容描述">1. 板书/PPT 内容描述<a class="headerlink" href="#1-板书ppt-内容描述" title="Permanent link">&para;</a></h2>
+<p>截图展示了标题为<strong>"空间反演下的对角分块翻转"</strong>的板书，核心内容分为三个层次：</p>
+<p><strong>上层区域</strong>：展示狄拉克旋量的分块对角变换结构。一个四分量的狄拉克旋量 <span class="arithmatex">\(\Psi\)</span> 被表示为列向量 <span class="arithmatex">\(\begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix}\)</span>，其洛伦兹变换由分块对角矩阵 <span class="arithmatex">\(\Lambda_{(1/2,0)} \oplus \Lambda_{(0,1/2)}\)</span> 作用。</p>
+<p><strong>中层区域（公式 3.238 - 3.239）</strong>：
+- <strong>公式 3.238</strong>：<span class="arithmatex">\((0,1/2) \stackrel{P}{\leftrightarrow} (1/2,0)\)</span>，表明空间反演 <span class="arithmatex">\(P\)</span> 导致两种手性表示互换
+- <strong>公式 3.239</strong>：展示空间反演后的变换行为。反演后的对象 <span class="arithmatex">\(\Psi^P\)</span> 在洛伦兹变换下服从 <span class="arithmatex">\(\begin{pmatrix} \Lambda_{(0,1/2)} &amp; 0 \\ 0 &amp; \Lambda_{(1/2,0)} \end{pmatrix}\)</span> 的变换规则，即对角块位置互换</p>
+<p><strong>下层区域（公式 3.240 与图示）</strong>：
+- <strong>公式 3.240</strong>：<span class="arithmatex">\(\Psi = \begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix} \rightarrow \Psi^P = \begin{pmatrix} \xi_R \\ \chi_L \end{pmatrix}\)</span>
+- <strong>图示</strong>：两个堆叠的色块（蓝色"Left-Chiral (L)"在上，橙色"Right-Chiral (R)"在下）经过标记为 <span class="arithmatex">\(\mathcal{P}\)</span> 的箭头后，变为橙色在上、蓝色在下，形象展示"位置对调"而非"手性转换"</p>
+<hr />
+<h2 id="2-新公式与符号详解">2. 新公式与符号详解<a class="headerlink" href="#2-新公式与符号详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-狄拉克旋量的构造与表示">(1) 狄拉克旋量的构造与表示<a class="headerlink" href="#1-狄拉克旋量的构造与表示" title="Permanent link">&para;</a></h3>
+<p><strong>公式形式</strong>：</p>
+<div class="arithmatex">\[\Psi = \begin{pmatrix} \xi_L \\ \xi_R \end{pmatrix} \quad \text{或} \quad \Psi = \begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix}\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(\Psi\)</span>（大写Psi）：<strong>狄拉克旋量</strong>（Dirac spinor），四分量的列向量
+- <span class="arithmatex">\(\xi_L\)</span>（或 <span class="arithmatex">\(\chi_L\)</span>）：<strong>左手外尔旋量</strong>（Left-handed Weyl spinor），两分量的复旋量，按洛伦兹群 <span class="arithmatex">\((1/2,0)\)</span> 表示变换
+- <span class="arithmatex">\(\xi_R\)</span>：<strong>右手外尔旋量</strong>（Right-handed Weyl spinor），按 <span class="arithmatex">\((0,1/2)\)</span> 表示变换
+- 下标 <span class="arithmatex">\(L/R\)</span>：手性（Chirality）标记，对应洛伦兹群的不同表示</p>
+<p><strong>关键区别</strong>：
+- <strong>四矢量</strong>（4-vector）：按 <span class="arithmatex">\((1/2,1/2)\)</span> 表示变换（不可约表示）
+- <strong>狄拉克旋量</strong>：按 <span class="arithmatex">\((1/2,0) \oplus (0,1/2)\)</span> 表示变换（<strong>可约表示</strong>，reducible representation）</p>
+<h3 id="2-空间反演下的变换规则">(2) 空间反演下的变换规则<a class="headerlink" href="#2-空间反演下的变换规则" title="Permanent link">&para;</a></h3>
+<p><strong>公式 3.239 的数学实质</strong>：</p>
+<div class="arithmatex">\[\Psi^P \rightarrow (\Psi^P)' = \begin{pmatrix} \Lambda_{(0,1/2)} &amp; 0 \\ 0 &amp; \Lambda_{(1/2,0)} \end{pmatrix} \begin{pmatrix} \xi_R \\ \chi_L \end{pmatrix}\]</div>
+<p><strong>深层含义</strong>：
+- 空间反演后，旋量 <span class="arithmatex">\(\Psi^P = \begin{pmatrix} \xi_R \\ \chi_L \end{pmatrix}\)</span> 的第一个分量 <span class="arithmatex">\(\xi_R\)</span> 现在按 <span class="arithmatex">\(\Lambda_{(0,1/2)}\)</span> 变换（原来是右手，现在处于"上层位置"但保持右手的变换规则）
+- <strong>矛盾点</strong>：这与原始狄拉克旋量的变换规则 <span class="arithmatex">\(\begin{pmatrix} \Lambda_{(1/2,0)} &amp; 0 \\ 0 &amp; \Lambda_{(0,1/2)} \end{pmatrix}\)</span> 不同，因此严格来说 <span class="arithmatex">\(\Psi^P\)</span> 不再是"狄拉克旋量"，而是属于<strong>不同的表示空间</strong></p>
+<h3 id="3-马约拉纳旋量的条件字幕中提及">(3) 马约拉纳旋量的条件（字幕中提及）<a class="headerlink" href="#3-马约拉纳旋量的条件字幕中提及" title="Permanent link">&para;</a></h3>
+<p><strong>物理条件</strong>：</p>
+<div class="arithmatex">\[\xi_R = C (\xi_L)^c \quad \text{或} \quad \xi_R = \epsilon \xi_L^*\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(C\)</span>：<strong>电荷共轭矩阵</strong>（Charge conjugation matrix）
+- <span class="arithmatex">\((\cdot)^c\)</span> 或 "共轭形式"：指电荷共轭操作，通常涉及复共轭与旋量度规的缩并
+- <span class="arithmatex">\(\epsilon\)</span>：二维反对称张量（Levi-Civita符号），用于提升/降低旋量指标</p>
+<hr />
+<h2 id="3-理论背景补充">3. 理论背景补充<a class="headerlink" href="#3-理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-可约表示的数学本质">(1) 可约表示的数学本质<a class="headerlink" href="#1-可约表示的数学本质" title="Permanent link">&para;</a></h3>
+<p>狄拉克旋量构成的 <span class="arithmatex">\((1/2,0) \oplus (0,1/2)\)</span> 表示被称为<strong>可约表示</strong>，因为变换矩阵始终保持分块对角形式：</p>
+<div class="arithmatex">\[\Lambda_{Dirac} = \begin{pmatrix} \Lambda_{(1/2,0)} &amp; 0 \\ 0 &amp; \Lambda_{(0,1/2)} \end{pmatrix}\]</div>
+<p>这意味着左手和右手分量<strong>独立变换</strong>，互不耦合。这与四矢量（<span class="arithmatex">\(j=1\)</span> 表示）或单个外尔旋量（不可约表示）形成对比。数学上，这对应于洛伦兹群 <span class="arithmatex">\(SO(3,1) \cong SL(2,\mathbb{C}) \times SL(2,\mathbb{C})\)</span> 的两个 <span class="arithmatex">\(SU(2)\)</span> 子群的直积表示。</p>
+<h3 id="2-马约拉纳旋量的拓扑意义">(2) 马约拉纳旋量的拓扑意义<a class="headerlink" href="#2-马约拉纳旋量的拓扑意义" title="Permanent link">&para;</a></h3>
+<p>马约拉纳旋量是狄拉克旋量的<strong>实子流形</strong>。在粒子物理中：
+- <strong>狄拉克旋量</strong>：描述有区别的粒子与反粒子（如电子与正电子），有四个独立复分量（8个实自由度）
+- <strong>马约拉纳旋量</strong>：满足 <span class="arithmatex">\(\Psi = \Psi^c\)</span>（自身电荷共轭），描述<strong>自身反粒子</strong>的费米子（如假想中的马约拉纳中微子）。这约束条件将独立自由度减半（4个实自由度）</p>
+<p>数学上，这相当于在复向量空间中选取了一个<strong>实结构</strong>（real structure），使得 <span class="arithmatex">\(\xi_R\)</span> 不是独立变量，而是 <span class="arithmatex">\(\xi_L\)</span> 的"镜像"。</p>
+<h3 id="3-空间反演的表示论困境与解决">(3) 空间反演的表示论困境与解决<a class="headerlink" href="#3-空间反演的表示论困境与解决" title="Permanent link">&para;</a></h3>
+<p>学生困惑的核心在于：<strong>空间反演不是洛伦兹群的连续子群元素</strong>，而是离散对称性。在洛伦兹群的表示论中：
+- 连续洛伦兹变换保持 <span class="arithmatex">\((1/2,0)\)</span> 和 <span class="arithmatex">\((0,1/2)\)</span> 不变（各自独立变换）
+- 空间反演 <span class="arithmatex">\(P\)</span> 将这两个表示<strong>互换</strong></p>
+<p>因此，<span class="arithmatex">\(\Psi^P\)</span> 严格属于 <span class="arithmatex">\((0,1/2) \oplus (1/2,0)\)</span> 表示，与原始的 <span class="arithmatex">\((1/2,0) \oplus (0,1/2)\)</span> 在数学上是不同的对象（尽管作为向量空间同构）。</p>
+<p><strong>解决方案</strong>（视频中提到的"退而求其次"）：
+不要求 <span class="arithmatex">\(\Psi^P\)</span> 与 <span class="arithmatex">\(\Psi\)</span> 属于同一表示，而是要求<strong>物理等价性</strong>：<span class="arithmatex">\(\Psi^P\)</span> 必须能用 <span class="arithmatex">\(\Psi\)</span> 的原始分量（<span class="arithmatex">\(\xi_L\)</span> 和 <span class="arithmatex">\(\xi_R\)</span>）重新组合表示。这导致 <span class="arithmatex">\(\Psi^P = \begin{pmatrix} \xi_R \\ \xi_L \end{pmatrix}\)</span>，即简单的分量位置交换。</p>
+<hr />
+<h2 id="4-通俗语言解释">4. 通俗语言解释<a class="headerlink" href="#4-通俗语言解释" title="Permanent link">&para;</a></h2>
+<h3 id="可约表示独立运行的双引擎">"可约表示"：独立运行的双引擎<a class="headerlink" href="#可约表示独立运行的双引擎" title="Permanent link">&para;</a></h3>
+<p>想象狄拉克旋量是一辆<strong>双引擎飞机</strong>，左翼引擎是左手旋量，右翼引擎是右手旋量。这两个引擎各自独立运转（分块对角变换），互不影响。这就是"可约"的含义——它可以被"约化"为两个独立工作的部分。而四矢量就像单引擎飞机，所有部件必须协同工作（不可约）。</p>
+<h3 id="马约拉纳旋量左右手是镜像同一人">马约拉纳旋量：左右手是镜像同一人<a class="headerlink" href="#马约拉纳旋量左右手是镜像同一人" title="Permanent link">&para;</a></h3>
+<p>如果说狄拉克旋量是一对<strong>双胞胎</strong>（左手哥哥和右手弟弟，各自独立生活），那么马约拉纳旋量就是<strong>一个人和他的镜中倒影</strong>。右手分量不是独立的人，而是左手分量的"镜像变换"（电荷共轭）。这个人是"自身反粒子"——就像镜子里的你不再是另一个人，而是你自己的一种特殊映射。</p>
+<h3 id="空间反演调换抽屉而非改变内容">空间反演：调换抽屉，而非改变内容<a class="headerlink" href="#空间反演调换抽屉而非改变内容" title="Permanent link">&para;</a></h3>
+<p>空间反演对狄拉克旋量的作用，就像<strong>把文件柜的上下抽屉对调</strong>：
+- 原来上层放左手文件 <span class="arithmatex">\(\xi_L\)</span>，下层放右手文件 <span class="arithmatex">\(\xi_R\)</span>
+- 反演后，上层放 <span class="arithmatex">\(\xi_R\)</span>，下层放 <span class="arithmatex">\(\xi_L\)</span></p>
+<p><strong>关键点</strong>：抽屉里的文件内容（旋量本身的变换性质）没有变——右手文件 <span class="arithmatex">\(\xi_R\)</span> 即使被移到上层，它依然是"右手型"的（按 <span class="arithmatex">\((0,1/2)\)</span> 变换）。只是现在它占据了原来左手文件的位置。这就是为什么视频强调"空间反演并没有把左手旋量变成右手旋量，它只是把他们的位置对掉了"。</p>
+<p>学生发现的"与公式 3.239 不一致"正是因为：当右手文件移到上层后，它在上层环境下表现出的"变换规则"（如何响应洛伦兹 boost）与原来左手文件的规则不同，因此严格来说，这个对调后的文件柜不再是"标准狄拉克文件柜"，而是一个"镜像版本"。但为了物理描述的连续性，我们接受这种形式上的变化，只要信息不丢失。</p>
+<hr />
+<h2 id="段落-3">段落 3：电荷共轭：手征转换与反粒子的物理意义<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:09:12 ~ 00:13:36</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+你刚才提到空间繁衍仅仅是将迪拉克旋亮的两个分量挑换了一下位置,并不会把其中的左手旋亮变成右手旋亮
+那有没有一种变换能做到这一点呢有的乔伊我们之前在讨论指标升降的时候偶然提到过一个变换他能把左手悬亮KL变成右手悬亮KL同时把右手悬亮CL变成左手悬亮CL
+这个变换是通过对悬量进行复供额然后和一个叫做EPSILEN的所谓悬量度归矩阵相成来实现的就是那个KLTOEPSILENKLSTAREQUASKR的操作
+当时我以为它只是个计算机场,最初我们是把它当作数学工具来用的
+但现在我们可以从一个更深刻的物理视角来理解它
+我们称这个操作为电鹤供额 Charge Tangulation
+通常用大写C来表示也就是KLCEQUALS EPSILENCELSTAR
+电鹤共恶,听起来好像只和电鹤有关,这个名字确实有点误导性
+我们先来看看它对迪拉克旋量有什么影响如果我们直观的把迪拉克旋量PSY等于上分量KL下分量C2中的每个分量都进行这种变成香粉手蒸的操作也就是PSY2的等于上分量KLC下分量C2C等于上分量KL下分量CL这样看起来他确实把左手和右手旋量原位互换了是的
+但问题是这个PCE二的对象他在BOST的变换下的行为和我们原本的迪拉克选量PCE还是不一样
+它按照洛伦兹群的另一种表示进行变换也就是说和迪拉克玄亮的空间反应类似它也不是一个标准的迪拉克玄亮
+为了让电荷供额后的对象仍然能像迪拉克旋量一样变换我们需要稍微调整一下正确的电荷供额变换是这样定义的PSY等于上粉量 KL 下粉量 C2变换到PSY C等于上粉量 C2C 下粉量 KL C等于上粉量 CL 下粉量 K2 一这里面不仅做了手针性转换还把上下两个分量也调换了位置就像空间繁衍那样没错这样一来电荷供额后的PSYC才能保持它作为迪拉克旋量的变换性质
+所以电荷供偶这个操作它不仅是把左手旋量变成右手旋量它还涉及了分量的重新排列那为什么它会被叫做电荷供额呢你刚才说名字有点误导这是一个非常关键的点虽然名字叫电荷供额但这个操作的物理意义远不止于翻转电荷它实际上会翻转所有用来描述一个基本粒子的标签所有标签比如呢比如电荷重子数青子数等等我们知道组成物质的基本粒子比如电子它有电荷有字旋有质量
+电荷供额就是把这些粒子的所有这些量子数都翻转
+所以电子的电荷共额就是正电子哦所以电荷共额其实是把粒子变成了它的反粒子可以这么理解
+从玄亮的角度来看电鹤共鹅不仅把左手玄亮变成了右手玄亮它还通过那个EPSLON玄亮度归矩阵把自寻方向也反弹了所以记住电鹤共鹅是一个非常强大的对称性操作它翻转的是一个粒子所有的内在量子数哇这比我粗处想的要深刻多了它不仅仅是电鹤的翻转而是整个粒子性质的翻转
+赛义我们聊了这么多有限微表示比如单分量双分量四分量悬量但现实世界中我们处理的往往是电磁场量子场这些在时空中变化的常对象这些场怎么用洛伦子群来表示呢它们不像是简单的固定分量的对象
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000675.4_formula.jpg" src="../frames/frame_000675.4_formula.jpg" /></p>
+<p><img alt="frame_000714.1_transition.jpg" src="../frames/frame_000714.1_transition.jpg" /></p>
+<p><img alt="frame_000759.4_transition.jpg" src="../frames/frame_000759.4_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>这段视频深入探讨了<strong>电荷共轭（Charge Conjugation, C）</strong>这一离散对称性，揭示了它与空间反演的本质区别，以及为何简单的"手性翻转"并不足以构成物理上正确的电荷共轭操作。以下是针对该片段的深度注解：</p>
+<hr />
+<h2 id="1-板书ppt-内容描述_1">1. 板书/PPT 内容描述<a class="headerlink" href="#1-板书ppt-内容描述_1" title="Permanent link">&para;</a></h2>
+<h3 id="截图-1探索电荷共轭直觉操作的失效">截图 1：探索电荷共轭——直觉操作的失效<a class="headerlink" href="#截图-1探索电荷共轭直觉操作的失效" title="Permanent link">&para;</a></h3>
+<p>该图展示了** naive（直观）电荷共轭操作的问题<strong>：
+- **左侧</strong>：公式 (3.241) 展示了对狄拉克旋量 <span class="arithmatex">\(\Psi = \begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix}\)</span> 进行"直观"电荷共轭操作 <span class="arithmatex">\(\Psi \to \tilde{\Psi} = \begin{pmatrix} \chi_L^C \\ \xi_R^C \end{pmatrix}\)</span>，其中 <span class="arithmatex">\(\chi_L^C = \epsilon \chi_L^*\)</span> 被等同于 <span class="arithmatex">\(\chi_R\)</span>，<span class="arithmatex">\(\xi_R^C = (-\epsilon) \xi_R^*\)</span> 被等同于 <span class="arithmatex">\(\xi_L\)</span>。
+- <strong>右侧</strong>：通过对比标准狄拉克旋量的 Boost 变换（公式 3.242，分块对角形式）与直观对象的 Boost 变换（公式 3.243，非对角错误形式），用红色大叉标记了这种直觉操作的失败——变换后的对象不再按狄拉克旋量的方式变换。
+- <strong>底部注释</strong>：明确指出该操作实际上是"空间反演和电荷共轭的双重操作"，破坏了对象的同一性。</p>
+<h3 id="截图-2--3确立纯粹的电荷共轭变换-psic">截图 2 &amp; 3：确立纯粹的电荷共轭变换 (<span class="arithmatex">\(\Psi^C\)</span>)<a class="headerlink" href="#截图-2--3确立纯粹的电荷共轭变换-psic" title="Permanent link">&para;</a></h3>
+<p>这两张图展示了<strong>正确的电荷共轭定义</strong>：
+- <strong>核心公式 (3.244)</strong>：展示了从 <span class="arithmatex">\(\Psi = \begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix}\)</span> 到 <span class="arithmatex">\(\Psi^C\)</span> 的映射。图中用红蓝箭头形象地表示：不仅上下分量内部发生了手性转换（<span class="arithmatex">\(\chi_L \to \chi_L^C\)</span> 变为右手，<span class="arithmatex">\(\xi_R \to \xi_R^C\)</span> 变为左手），<strong>上下分量的位置也发生了交换</strong>。
+- <strong>结果</strong>：<span class="arithmatex">\(\Psi^C = \begin{pmatrix} \xi_R^C \\ \chi_L^C \end{pmatrix} = \begin{pmatrix} \xi_L \\ \chi_R \end{pmatrix}\)</span>（假设 <span class="arithmatex">\(\xi_R^C \equiv \xi_L\)</span> 等）。
+- <strong>物理意义框</strong>：强调电荷共轭翻转的是"所有粒子标签"（电荷、重子数、轻子数等），而不仅是电荷。
+- <strong>Advanced Tip</strong>：解释 <span class="arithmatex">\(\epsilon\)</span> 矩阵实现自旋翻转（Spin Flip）——将自旋投影 <span class="arithmatex">\(+1/2\)</span> 翻转为 <span class="arithmatex">\(-1/2\)</span>。</p>
+<hr />
+<h2 id="2-公式解析新出现的公式">2. 公式解析（新出现的公式）<a class="headerlink" href="#2-公式解析新出现的公式" title="Permanent link">&para;</a></h2>
+<h3 id="公式-3241直观的错误电荷共轭尝试">公式 (3.241)：直观的（错误）电荷共轭尝试<a class="headerlink" href="#公式-3241直观的错误电荷共轭尝试" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Psi \to \tilde{\Psi} = \begin{pmatrix} \chi_L^C \\ \xi_R^C \end{pmatrix} = \begin{pmatrix} \chi_R \\ \xi_L \end{pmatrix}\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(\chi_L\)</span>：左手外尔旋量（Left-handed Weyl spinor），属于 <span class="arithmatex">\((1/2, 0)\)</span> 表示。
+- <span class="arithmatex">\(\xi_R\)</span>：右手外尔旋量（Right-handed Weyl spinor），属于 <span class="arithmatex">\((0, 1/2)\)</span> 表示。
+- <span class="arithmatex">\(\chi_L^C \equiv \epsilon \chi_L^*\)</span>：左手旋量的电荷共轭操作，结果是一个右手旋量（记作 <span class="arithmatex">\(\chi_R\)</span>）。
+- <span class="arithmatex">\(\xi_R^C \equiv (-\epsilon) \xi_R^*\)</span>：右手旋量的电荷共轭操作，结果是一个左手旋量（记作 <span class="arithmatex">\(\xi_L\)</span>）。
+- <span class="arithmatex">\(\epsilon\)</span>：二维反对称 Levi-Civita 符号（<span class="arithmatex">\(\epsilon_{12} = -\epsilon_{21} = 1\)</span>），在旋量空间中充当"度规"，负责在复共轭时保持洛伦兹协变性。</p>
+<p><strong>问题所在</strong>：这种操作仅对分量内部做了手性转换，但保持了 <span class="arithmatex">\(\chi\)</span> 在上、<span class="arithmatex">\(\xi\)</span> 在下的位置。这导致 <span class="arithmatex">\(\tilde{\Psi}\)</span> 在洛伦兹 Boost 下按照错误的表示变换（见公式 3.243）。</p>
+<h3 id="公式-3242标准狄拉克旋量的-boost-变换">公式 (3.242)：标准狄拉克旋量的 Boost 变换<a class="headerlink" href="#公式-3242标准狄拉克旋量的-boost-变换" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Psi' = \begin{pmatrix} e^{\frac{1}{2}\vec{\theta}\cdot\vec{\sigma}} &amp; 0 \\ 0 &amp; e^{-\frac{1}{2}\vec{\theta}\cdot\vec{\sigma}} \end{pmatrix} \begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix}\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(\vec{\theta}\)</span>：Boost 参数（快度）。
+- <span class="arithmatex">\(\vec{\sigma}\)</span>：泡利矩阵。
+- 矩阵的分块对角结构表明：左手分量只与左手分量混合，右手分量只与右手分量混合，这是狄拉克旋量的标准变换规则。</p>
+<h3 id="公式-3243直观对象的异常-boost-变换">公式 (3.243)：直观对象的异常 Boost 变换<a class="headerlink" href="#公式-3243直观对象的异常-boost-变换" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\tilde{\Psi}' = \begin{pmatrix} e^{-\frac{1}{2}\vec{\theta}\cdot\vec{\sigma}} &amp; 0 \\ 0 &amp; e^{\frac{1}{2}\vec{\theta}\cdot\vec{\sigma}} \end{pmatrix} \begin{pmatrix} \chi_R \\ \xi_L \end{pmatrix} \quad \text{（错误）}\]</div>
+<p><strong>关键问题</strong>：该变换矩阵将原本属于右手分量的指数 <span class="arithmatex">\(e^{-\frac{1}{2}\vec{\theta}\cdot\vec{\sigma}}\)</span> 错误地作用在了现在的"上分量"（由 <span class="arithmatex">\(\chi_L\)</span> 变来的 <span class="arithmatex">\(\chi_R\)</span>）上。这破坏了狄拉克旋量的协变性——它不再是洛伦兹群的标准表示。</p>
+<h3 id="公式-3244正确的电荷共轭变换定义">公式 (3.244)：正确的电荷共轭变换定义<a class="headerlink" href="#公式-3244正确的电荷共轭变换定义" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Psi = \begin{pmatrix} \chi_L \\ \xi_R \end{pmatrix} \xrightarrow{\quad C \quad} \Psi^C = \begin{pmatrix} \xi_R^C \\ \chi_L^C \end{pmatrix} = \begin{pmatrix} \xi_L \\ \chi_R \end{pmatrix}\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(\Psi^C\)</span>：电荷共轭后的狄拉克旋量，仍是一个标准的狄拉克旋量（四分量对象）。
+- <span class="arithmatex">\(\xi_R^C = -\epsilon \xi_R^* \equiv \xi_L\)</span>：原右手分量的电荷共轭，变为左手旋量。
+- <span class="arithmatex">\(\chi_L^C = \epsilon \chi_L^* \equiv \chi_R\)</span>：原左手分量的电荷共轭，变为右手旋量。
+- <strong>位置交换</strong>：关键之处在于 <span class="arithmatex">\(\xi_R^C\)</span> 现在位于<strong>上分量</strong>位置，而 <span class="arithmatex">\(\chi_L^C\)</span> 位于<strong>下分量</strong>位置。</p>
+<p><strong>为何正确</strong>：这种"手性翻转 + 位置交换"的组合，使得 <span class="arithmatex">\(\Psi^C\)</span> 在洛伦兹变换下仍保持标准狄拉克旋量的分块对角变换规则（如公式 3.242），从而保证了对象的同一性。</p>
+<hr />
+<h2 id="3-必要的理论背景知识">3. 必要的理论背景知识<a class="headerlink" href="#3-必要的理论背景知识" title="Permanent link">&para;</a></h2>
+<h3 id="31-epsilon-矩阵与旋量复共轭的协变性">3.1 <span class="arithmatex">\(\epsilon\)</span> 矩阵与旋量复共轭的协变性<a class="headerlink" href="#31-epsilon-矩阵与旋量复共轭的协变性" title="Permanent link">&para;</a></h3>
+<p>在洛伦兹群 <span class="arithmatex">\(SL(2,\mathbb{C})\)</span> 的旋量表示中，单纯的复共轭 <span class="arithmatex">\(\chi_L^*\)</span> 并不保持协变性——它会变换为某种"非标准"的表示。为了构造一个合法的旋量，需要引入 <span class="arithmatex">\(\epsilon\)</span> 矩阵（在数学上对应于 <span class="arithmatex">\(SU(2)\)</span> 的不变张量）：</p>
+<div class="arithmatex">\[\chi_L^C = \epsilon \chi_L^*\]</div>
+<p>这个操作将 <span class="arithmatex">\((1/2,0)\)</span> 表示映射到 <span class="arithmatex">\((0,1/2)\)</span> 表示，即左手变右手。<span class="arithmatex">\(\epsilon\)</span> 的存在确保了 <span class="arithmatex">\(\chi_L^C\)</span> 按照右手旋量的规则变换。</p>
+<h3 id="32-电荷共轭与反粒子">3.2 电荷共轭与反粒子<a class="headerlink" href="#32-电荷共轭与反粒子" title="Permanent link">&para;</a></h3>
+<p>在量子场论中，电荷共轭算符 <span class="arithmatex">\(\hat{C}\)</span> 作用在单粒子态 <span class="arithmatex">\(|p, s, q, \dots\rangle\)</span> 上时，会翻转所有<strong>内禀量子数</strong>：
+- 电荷 <span class="arithmatex">\(q \to -q\)</span>
+- 重子数 <span class="arithmatex">\(B \to -B\)</span>
+- 轻子数 <span class="arithmatex">\(L \to -L\)</span>
+- 手性（Chirality）<span class="arithmatex">\(L \leftrightarrow R\)</span></p>
+<p>因此，电子（电荷 <span class="arithmatex">\(-e\)</span>，左手或右手）的电荷共轭态是正电子（电荷 <span class="arithmatex">\(+e\)</span>，相应手性）。字幕中强调的"翻转所有标签"正是指这一点——它不仅是电磁相互作用的对称性，而是所有基本粒子属性的"镜像"。</p>
+<h3 id="33-与空间反演parity的对比">3.3 与空间反演（Parity）的对比<a class="headerlink" href="#33-与空间反演parity的对比" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>空间反演 <span class="arithmatex">\(\mathbb{P}\)</span></strong>：仅交换 <span class="arithmatex">\(\chi_L \leftrightarrow \xi_R\)</span> 的位置（上下互换），不改变分量内部的手性标记（<span class="arithmatex">\(\chi\)</span> 仍是左手，<span class="arithmatex">\(\xi\)</span> 仍是右手，只是位置换了）。</li>
+<li><strong>电荷共轭 <span class="arithmatex">\(C\)</span></strong>：不仅交换位置，还将 <span class="arithmatex">\(\chi_L\)</span> 变成 <span class="arithmatex">\(\chi_R\)</span>（右手），<span class="arithmatex">\(\xi_R\)</span> 变成 <span class="arithmatex">\(\xi_L\)</span>（左手）。它是"手性翻转 + 位置交换"的组合。</li>
+</ul>
+<hr />
+<h2 id="4-核心概念通俗解释">4. 核心概念通俗解释<a class="headerlink" href="#4-核心概念通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="电荷共轭名字的误导性">"电荷共轭"名字的误导性<a class="headerlink" href="#电荷共轭名字的误导性" title="Permanent link">&para;</a></h3>
+<p>虽然名为"电荷"共轭，但它远不止翻转电荷。可以将其理解为<strong>"反粒子生成器"</strong>：
+- 想象粒子是一张身份证，上面有"电荷"、"手性"、"轻子数"等栏目。
+- 空间反演（Parity）只是交换了身份证的左右手（位置），但上面的文字内容不变。
+- 电荷共轭（C）则是将身份证上的<strong>所有文字</strong>（电荷、轻子数等）取反，同时把手性（左右</p>
+<hr />
+<h2 id="段落-4">段落 4：从有限维到无穷维：场的洛伦兹表示与生成元<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:13:36 ~ 00:19:43</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+朱伟你提到了一个非常核心的问题
+前面我们讨论的有限微表示它们作用于像悬量这样分量式长数不随时间空间变化的物理对象但物理学中的场比如你说的电磁场它在时空中的每个点都有一个值而且这个值是变化的
+所以我们需要一种新的表示方式那就是无穷为表示无穷为听起来就很大是的
+我们之前处理的变换形式比如FIA变换到FIPA等于MAB of LEMDA成FIB
+这里的MAB OFLAMDA是洛伦兹变换LAMDA的特定有限微表示矩阵,作用于例如像YER选量这样的双分量对象
+与该矩阵相成的结过仅仅是该对象的个分量发生混合并乘以常数因子就像一个二分量悬量经过变换后它的两个分量会相互混合但它们仍然是两个分量
+但现在如果我们的对象FY是时空坐标X的函数也就是FY of X
+那么洛伦字变换不仅会作用于F的分量本身还会作用于它的坐标X因为X也会被罗伦字变换改变变成LAMDAX比如X上MYU等于LAMDA上MYU下MYU所以我们得到一个完整的场变换也就是FYA的变换到MAB的变换我注意到教科书中提到完整场变换的另一种所谓的VEGNA约定下的不同表示将LAMDAX改成了LAMDAX这个如何理解这两种约定的核心区别在于坐标参数随便变动的方向
+在本书的约定下意思是
+原厂在旧位置X的分量经过混合后成为了新厂在新位置LAMDAX的值
+而在维格纳约定下意思是
+为了得到新场在固定点X的值我们需要去寻找原场在变换前位置朗达尼X的值那为何本书不采用维格纳约定呢在大多数物理著作中采用维格纳约定是为了保证对称操作的复合规律与群成法一致
+而我们这里选择不采用该约定是因为它更倾向于从无穷小变换生成源的角度来直接构建物理量的表示
+这种方式在处理微分算子时往往更直观哦我明白了我们继续好我们继续所以一个场的变换会包含两部分
+一部分是有限为表示,作用于场的内部结构或分量
+另一部分是作用于时空坐标的变换
+而这部分变换就需要用到吴琼伟表示了为什么作用于坐标的变换会是吴琼伟的呢因为一个函数FIX它是一个在时空上分布的对象
+你可以把它想象成在一个无穷为的函数空间里
+我们需要无穷多个基函数才能描述任意一个函数
+所以作用于函数也就是场的变换,自然就需要无穷为的表示原来是这样
+那这种无穷为表现具体是怎样的呢
+罗伦字群的无穷尾表示通常是由微分算子给出的比如对于罗伦字群的生成源它的无穷尾形式是MINF下等于虚促单位I成括号X下成偏下减X下成偏下这里的偏下就是对时空坐标X上的偏长数而X下就是对X上用时空做归降指标的结果微分算子
+这和量子力学里动量算子是微分算子有点像啊没错它们都是作用于函数空间上的算子通过繁琐但本质上是简单的计算你可以验证这些微分算子确实满足罗伦子倍数而且它们能按预期变换坐标就是满足以前学过的反乘张亮写法的那个罗伦子倍数吗对需要你将刚才说过的微分算子形式的罗伦子群的乌琼为表示带入这个公式验证这个需要你课后动手去验证的其实就是暴力验证好的我课后一定完成这个验证
+那一个完整的场的变换是不是就是有限为和无穷为表示的结合呢?完全正确
+一个场VAFX的完整变换会包含有限微表示矩阵对分量的作用以及无限微表示算子对坐标函数的作用最终我们可以把这两个部分的生成源合并起来形成一个总的生成源M下MYUNYU等于MFIN下MYUNYU加MINF下MYUNYU
+所以这个M下就是常表示的生成源了没错这种罗伦兹群生成源的表示我们就称之为常表示它能够完整地描述一个场在罗伦兹变换下的行为可以解释一下这些变换中Omega上缩并M下吗还记得这个反称张亮M的具体表达是吗记得这个反称张亮M一共有六个非零的独立分量刚好防止了三个旋转上三个Boost生成源所以如果对应选择一个作为参数的反称张亮Omega
+这两个反称张亮的双重缩柄恰好就是这六个生成源的先行组合可用来表示任意一个生成源进而可用其指数对应其群表示我明白了听起来很连贯
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000816.4_parastart.jpg" src="../frames/frame_000816.4_parastart.jpg" /></p>
+<p><img alt="frame_000885.6_transition.jpg" src="../frames/frame_000885.6_transition.jpg" /></p>
+<p><img alt="frame_001019.8_transition.jpg" src="../frames/frame_001019.8_transition.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>这段视频标志着课程从<strong>有限维旋量表示</strong>向<strong>场论无穷维表示</strong>的关键跃迁，核心在于理解"场"作为时空坐标函数的双重变换特性（内部指标混合+坐标映射）。以下是针对该片段的深度注解：</p>
+<hr />
+<h2 id="1-板书ppt-内容描述_2">1. 板书/PPT 内容描述<a class="headerlink" href="#1-板书ppt-内容描述_2" title="Permanent link">&para;</a></h2>
+<h3 id="截图-1--2跨越物理视界从静态常数到动态场">截图 1 &amp; 2：跨越物理视界——从静态常数到动态场<a class="headerlink" href="#截图-1--2跨越物理视界从静态常数到动态场" title="Permanent link">&para;</a></h3>
+<p>板书以三维时空网格（<span class="arithmatex">\(x\)</span>-<span class="arithmatex">\(y\)</span>-<span class="arithmatex">\(t\)</span>坐标系）为背景，直观展示坐标变换的两种哲学观点：</p>
+<p><strong>左侧文字区</strong>：
+- <strong>静态有限维表示的局限</strong>：公式 (3.245) <span class="arithmatex">\(\Phi_a \to \Phi'_a = M_{ab}(\Lambda)\Phi_b\)</span>，强调此变换仅涉及分量混合与常数因子相乘，适用于不随时空变化的"刚性"对象（如单粒子自旋）。
+- <strong>引入动态坐标依赖</strong>：明确物理对象在时空中是动态变化的函数 <span class="arithmatex">\(\Phi(x)\)</span>，其中 <span class="arithmatex">\(x\)</span> 是 <span class="arithmatex">\((t,x,y,z)\)</span> 的简写。
+- <strong>坐标变换</strong>：公式 (3.246) <span class="arithmatex">\(x'^\mu = \Lambda^\mu_{\ \nu} x^\nu\)</span>。</p>
+<p><strong>右侧公式区</strong>：
+- <strong>本书约定（主动变换）</strong>：公式 (3.247) <span class="arithmatex">\(\Phi_a(x) \to M_{ab}(\Lambda)\Phi_b(\Lambda x)\)</span>，红框标注 <span class="arithmatex">\(\Lambda x\)</span>。旁注解释："原场在'旧位置'<span class="arithmatex">\(x\)</span>的分量，经过混合后，成为了新场在'新位置'<span class="arithmatex">\(\Lambda x\)</span>的值"。
+- <strong>维格纳约定（被动变换）</strong>：蓝框标注 <span class="arithmatex">\(\Lambda^{-1}x\)</span>，公式为 <span class="arithmatex">\(\Phi_a(x) \to M_{ab}(\Lambda)\Phi_b(\Lambda^{-1}x)\)</span>。旁注解释："为了得到新场在固定点<span class="arithmatex">\(x\)</span>的值，我们需要去寻找原场在'变换前位置'<span class="arithmatex">\(\Lambda^{-1}x\)</span>的值"。</p>
+<h3 id="截图-3坐标域的主宰无穷维微分算子">截图 3：坐标域的主宰——无穷维微分算子<a class="headerlink" href="#截图-3坐标域的主宰无穷维微分算子" title="Permanent link">&para;</a></h3>
+<p>板书阐释坐标变换在函数空间上的数学实现：</p>
+<p><strong>核心公式</strong>：
+- 公式 (3.248)：<span class="arithmatex">\(M^{\text{inf}}_{\mu\nu} = i(x_\mu \partial_\nu - x_\nu \partial_\mu)\)</span>，标注为"无穷维微分算子"。
+- 公式 (3.175)：洛伦兹代数对易关系 <span class="arithmatex">\([M_{\mu\nu}, M_{\rho\sigma}] = i(\eta_{\nu\rho}M_{\mu\sigma} - \eta_{\mu\rho}M_{\nu\sigma} - \eta_{\nu\sigma}M_{\mu\rho} + \eta_{\mu\sigma}M_{\nu\rho})\)</span>。</p>
+<p><strong>右侧图示</strong>：
+- 函数图像 <span class="arithmatex">\(\Psi(x)\)</span> 展示"无穷多基函数展开"概念，暗示函数空间需要无限多个基矢（如傅里叶模式）来描述。</p>
+<p><strong>Theory Insights 框</strong>：
+- 解释"何为无穷维"：<span class="arithmatex">\(\Phi_a(x)\)</span> 是坐标函数，函数空间需要无穷多个基函数展开（如傅里叶变换），因此该空间是无穷维的。
+- 符号说明：<span class="arithmatex">\(\partial_\nu \equiv \frac{\partial}{\partial x^\nu}\)</span>。</p>
+<hr />
+<h2 id="2-公式解析新内容">2. 公式解析（新内容）<a class="headerlink" href="#2-公式解析新内容" title="Permanent link">&para;</a></h2>
+<h3 id="公式-3246坐标变换">公式 (3.246)：坐标变换<a class="headerlink" href="#公式-3246坐标变换" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[x'^\mu = \Lambda^\mu_{\ \nu} x^\nu\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(x^\mu\)</span></strong>：四维时空坐标 <span class="arithmatex">\((x^0, x^1, x^2, x^3) = (t, x, y, z)\)</span>，使用自然单位制 <span class="arithmatex">\(c=1\)</span>。</li>
+<li><strong><span class="arithmatex">\(\Lambda^\mu_{\ \nu}\)</span></strong>：洛伦兹变换矩阵的 <span class="arithmatex">\((\mu,\nu)\)</span> 分量，满足 <span class="arithmatex">\(\Lambda^T \eta \Lambda = \eta\)</span>（<span class="arithmatex">\(\eta\)</span> 为闵可夫斯基度规）。</li>
+<li><strong>物理意义</strong>：描述时空点坐标在洛伦兹 boost 或旋转下的线性齐次变换。</li>
+</ul>
+<h3 id="公式-3247场的主动变换本书约定">公式 (3.247)：场的主动变换（本书约定）<a class="headerlink" href="#公式-3247场的主动变换本书约定" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Phi_a(x) \xrightarrow{\Lambda} M_{ab}(\Lambda)\Phi_b(\Lambda x)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\Phi_a(x)\)</span></strong>：定义在时空点 <span class="arithmatex">\(x\)</span> 上的多分量场（如狄拉克旋量、矢量场），<span class="arithmatex">\(a\)</span> 为内部指标（如旋量指标 <span class="arithmatex">\(1,2,3,4\)</span>）。</li>
+<li><strong><span class="arithmatex">\(M_{ab}(\Lambda)\)</span></strong>：洛伦兹群在有限维表示（如旋量表示、矢量表示）下的变换矩阵，仅混合内部指标。</li>
+<li><strong><span class="arithmatex">\(\Lambda x\)</span></strong>：坐标函数的复合，表示场值随坐标点一起被"推前"（push-forward）到变换后的位置。</li>
+<li><strong>变换结构</strong>：先对旧位置 <span class="arithmatex">\(x\)</span> 的场值进行内部旋转（<span class="arithmatex">\(M_{ab}\)</span>），再将结果赋给新位置 <span class="arithmatex">\(\Lambda x\)</span>。这对应<strong>主动变换</strong>（Active Transformation）——物理场本身被旋转/ boost，而坐标系保持不变。</li>
+</ul>
+<h3 id="维格纳约定被动变换">维格纳约定（被动变换）<a class="headerlink" href="#维格纳约定被动变换" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Phi_a(x) \xrightarrow{\Lambda} M_{ab}(\Lambda)\Phi_b(\Lambda^{-1}x)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\Lambda^{-1}x\)</span></strong>：逆变换后的坐标。</li>
+<li><strong>物理意义</strong>：<strong>被动变换</strong>（Passive Transformation）——观察者变换参考系（坐标系），新坐标 <span class="arithmatex">\(x\)</span> 对应原坐标系中的 <span class="arithmatex">\(\Lambda^{-1}x\)</span>。场本身未动，只是描述方式改变。</li>
+<li><strong>群乘法一致性</strong>：维格纳约定保证变换的复合顺序与群乘法严格一致（先 <span class="arithmatex">\(\Lambda_1\)</span> 后 <span class="arithmatex">\(\Lambda_2\)</span> 对应矩阵乘积 <span class="arithmatex">\(M(\Lambda_2)M(\Lambda_1)\)</span>），适用于强调群表示数学结构的场合。</li>
+</ul>
+<h3 id="公式-3248无穷维生成元微分算子形式">公式 (3.248)：无穷维生成元（微分算子形式）<a class="headerlink" href="#公式-3248无穷维生成元微分算子形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[M^{\text{inf}}_{\mu\nu} = i(x_\mu \partial_\nu - x_\nu \partial_\mu)\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(M^{\text{inf}}_{\mu\nu}\)</span></strong>：洛伦兹群在函数空间上的无穷维表示生成元，上标 "inf" 表示 infinite-dimensional。</li>
+<li><strong><span class="arithmatex">\(x_\mu\)</span></strong>：协变坐标 <span class="arithmatex">\(x_\mu = \eta_{\mu\nu}x^\nu\)</span>（注意指标位置）。</li>
+<li><strong><span class="arithmatex">\(\partial_\nu\)</span></strong>：偏导数算符 <span class="arithmatex">\(\frac{\partial}{\partial x^\nu}\)</span>，作用于场函数 <span class="arithmatex">\(\Phi(x)\)</span>。</li>
+<li><strong><span class="arithmatex">\(i\)</span></strong>：虚数单位，保证生成元为厄米算符（满足量子力学幺正性要求）。</li>
+<li><strong>反对称性</strong>：<span class="arithmatex">\(M^{\text{inf}}_{\mu\nu} = -M^{\text{inf}}_{\nu\mu}\)</span>，对应洛伦兹群的 6 个独立生成元（3 个旋转 <span class="arithmatex">\(J_i = \frac{1}{2}\epsilon_{ijk}M^{\text{inf}}_{jk}\)</span>，3 个 boost <span class="arithmatex">\(K_i = M^{\text{inf}}_{0i}\)</span>）。</li>
+</ul>
+<h3 id="公式-3175洛伦兹代数lie-algebra">公式 (3.175)：洛伦兹代数（Lie Algebra）<a class="headerlink" href="#公式-3175洛伦兹代数lie-algebra" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[[M_{\mu\nu}, M_{\rho\sigma}] = i(\eta_{\nu\rho}M_{\mu\sigma} - \eta_{\mu\rho}M_{\nu\sigma} - \eta_{\nu\sigma}M_{\mu\rho} + \eta_{\mu\sigma}M_{\nu\rho})\]</div>
+<ul>
+<li><strong><span class="arithmatex">\([\cdot, \cdot]\)</span></strong>：对易子 <span class="arithmatex">\([A,B] = AB - BA\)</span>。</li>
+<li><strong><span class="arithmatex">\(\eta_{\mu\nu}\)</span></strong>：闵可夫斯基度规 <span class="arithmatex">\(\text{diag}(+,-,-,-)\)</span>。</li>
+<li><strong>验证任务</strong>：将微分算子形式 (3.248) 代入此式，可验证其满足相同的李代数关系，证明该微分算子确实是洛伦兹群的合法表示。</li>
+</ul>
+<hr />
+<h2 id="3-理论背景补充_1">3. 理论背景补充<a class="headerlink" href="#3-理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="主动变换-vs-被动变换的深层差异">主动变换 vs 被动变换的深层差异<a class="headerlink" href="#主动变换-vs-被动变换的深层差异" title="Permanent link">&para;</a></h3>
+<p>这两种约定对应着对"对称性"的两种哲学理解：</p>
+<table>
+<thead>
+<tr>
+<th>特征</th>
+<th>本书约定（主动）</th>
+<th>维格纳约定（被动）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>变换对象</strong></td>
+<td>物理场本身</td>
+<td>坐标系/观察者参考系</td>
+</tr>
+<tr>
+<td><strong>场值映射</strong></td>
+<td><span class="arithmatex">\(\Phi'(x') = M\Phi(x)\)</span>，其中 <span class="arithmatex">\(x'=\Lambda x\)</span></td>
+<td><span class="arithmatex">\(\Phi'(x) = M\Phi(\Lambda^{-1}x)\)</span></td>
+</tr>
+<tr>
+<td><strong>直观图像</strong></td>
+<td>旋转一个温度分布图，热点移动到新的空间位置</td>
+<td>旋转温度计坐标轴，读数对应原图中不同位置的值</td>
+</tr>
+<tr>
+<td><strong>微分几何对应</strong></td>
+<td>推前（Push-forward）映射 <span class="arithmatex">\(\phi_*\)</span></td>
+<td>拉回（Pull-back）映射 <span class="arithmatex">\(\phi^*\)</span></td>
+</tr>
+<tr>
+<td><strong>适用场景</strong></td>
+<td>场论拉格朗日量的构造、微分算子直观处理</td>
+<td>群表示论的严格数学表述、态的变换</td>
+</tr>
+</tbody>
+</table>
+<p><strong>课程选择主动变换的原因</strong>：当处理微分算子（如狄拉克算子 <span class="arithmatex">\(i\gamma^\mu \partial_\mu\)</span>）时，主动变换更直接地体现为"对场求导后再变换"与"变换后再对场求导"的对比，便于构建协变导数和相互作用项。</p>
+<h3 id="无穷维表示的">无穷维表示的<a class="headerlink" href="#无穷维表示的" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="段落-5">段落 5：平移生成元、庞加莱群引入与课程总结<a class="headerlink" href="#段落-5" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:19:43 ~ 00:23:26</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那除了罗伦兹变换,还有没有其他重要的时空变换呢?
+比如,我们能不能把整个系统平移到另一个位置?当然有
+你提到了一个非常重要的概念平移
+平移就是把整个系统移动到时空中的另一个位置
+平仪本身并不属于洛伦兹群因为洛伦兹群只包含转动和BOOST
+但是自然规律应该是与位置无关的所以平移对称性也非常重要那平移的表示又是什么样的呢洛伦兹群加上平移就构成了更广义的庞加莱群
+我们会在下一节详细讨论庞加莱群
+但在这里我们可以先引入平移的无穷为表示优势无穷为表示是的因为平移也是作用在时空坐标上的
+一个函数沿X轴的无穷小平椅可以用泰勒级数展台来表示
+Five of X加X等于Five of X加PANX五的X乘X哦就是函数在那个方向上的变化率乘以平移的距离对
+在物理学中我们通常会定义平移的生成源P下I被定义成负虚数单位I成偏下I为什么会一个负虚数单位I呢这依然是我们曾经反复提到过的一个惯例主要是为了让算子满足某些量子力学中的对异关系并且让指数形势的变换看起来更简洁
+有了这个定义一个任意的有限平移就可以写成FIX加A等于意义上负叙数单位I乘A上I空间缩拼P下I乘FIX这个含指数形式的意义上负叙数单位I乘A上I空间缩拼P下I乘FIX怎么理解呢你可以把它看作是FIX加A的泰勒级数展开
+当指数函数展开成极数时,你会发现它正好就是函数在X加A处的泰勒展开时
+这非常巧妙的把微分散子和平移联系起来了这太酷了所以P下I描述了空间平移那有没有时间平移的生成源呢当然有
+对于时间平移我们有P下令等于虚数单位I乘偏下令
+这些平移生成源和罗伦兹群的生成源一起就构成了庞加莱群的全部生成源好的在今天我们从空间繁衍开始理解了左手和右手手蒸旋梁的名称由来认识了迪拉克旋梁又深入探讨了电荷共落的物理意义
+最后还接触到了描述场的无穷为表示和平移生成源信息量非常大但你讲得特别清晰很高兴能帮助大家理解这些抽象但有非常基础的概念这些对称性变化和表示理论是理解粒子物理和量子场论的基石没错特别是无穷为表示和平移感觉一下子把我们带到了更广阔的物理世界
+我特别期待我们下一节课关于庞加莱群的讨论了下节课我们就会把罗伦兹群和平仪结合起来正式介绍庞加莱群
+那将是自然界完整的时空对称群非常精彩好的
+那今天我们的基于对称性的物理学第十三课就到这里了感谢赛德精彩讲解也感谢大家的收听感谢大家
+下期再见拜拜
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001209.0_transition.jpg" src="../frames/frame_001209.0_transition.jpg" /></p>
+<p><img alt="frame_001255.8_formula.jpg" src="../frames/frame_001255.8_formula.jpg" /></p>
+<p><img alt="frame_001279.3_formula.jpg" src="../frames/frame_001279.3_formula.jpg" /></p>
+<h3 id="注解_4">注解<a class="headerlink" href="#注解_4" title="Permanent link">&para;</a></h3>
+<p>这段视频完成了从<strong>洛伦兹对称性</strong>（转动与boost）向<strong>完整时空对称性</strong>的关键拓展，引入了<strong>时空平移</strong>这一连续对称性，并揭示了其与泰勒展开的深刻数学联系。这标志着课程正式进入<strong>庞加莱群（Poincaré Group）</strong>的范畴——即自然界最基础的时空对称群。</p>
+<hr />
+<h2 id="1-板书ppt-内容描述_3">1. 板书/PPT 内容描述<a class="headerlink" href="#1-板书ppt-内容描述_3" title="Permanent link">&para;</a></h2>
+<p>截图展示了一块标题为<strong>"时空平移与泰勒展开的数学共鸣"</strong>的板书，内容分为理论阐述、数学公式与几何图示三个部分：</p>
+<p><strong>左侧文字与公式区</strong>：
+- <strong>核心命题</strong>：自然规律必须与位置无关。平移操作不混合场的内禀分量（如旋量的左右手分量），因此不需要有限维矩阵表示，仅需对时空坐标进行<strong>无穷维操作</strong>（函数空间的变换）。
+- <strong>公式 (3.251)</strong>：一维无穷小平移的泰勒展开
+  <span class="arithmatex">\(\Phi(x) \to \Phi(x+\epsilon) = \Phi(x) + \partial_x \Phi(x) \cdot \epsilon\)</span>
+- <strong>公式 (3.252)</strong>：平移生成元的物理学定义（引入额外的 <span class="arithmatex">\(-i\)</span> 因子）
+  <span class="arithmatex">\(P_i \equiv -i\partial_i\)</span></p>
+<p><strong>右侧几何图示</strong>：
+- 绘制了函数 <span class="arithmatex">\(\Phi(x)\)</span> 的曲线图，展示在位置 <span class="arithmatex">\(x\)</span> 处函数值为 <span class="arithmatex">\(\Phi(x)\)</span>，向右平移无穷小量 <span class="arithmatex">\(\epsilon\)</span> 后，函数值的变化量近似为切线斜率 <span class="arithmatex">\(\partial_x \Phi(x)\)</span> 乘以 <span class="arithmatex">\(\epsilon\)</span>（图中标注为 <span class="arithmatex">\(\partial_x \Phi(x)\epsilon\)</span>）。</p>
+<p><strong>注释框（Limit Note）</strong>：
+- 强调对于无穷小量 <span class="arithmatex">\(\epsilon\)</span>，应用 <span class="arithmatex">\(\epsilon^2 \approx 0\)</span> 的近似，从而忽略泰勒展开中的所有高阶项。</p>
+<hr />
+<h2 id="2-公式识别与详解">2. 公式识别与详解<a class="headerlink" href="#2-公式识别与详解" title="Permanent link">&para;</a></h2>
+<h3 id="公式-a无穷小平移的泰勒展开一维">公式 A：无穷小平移的泰勒展开（一维）<a class="headerlink" href="#公式-a无穷小平移的泰勒展开一维" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Phi(x+\epsilon) = \Phi(x) + \partial_x \Phi(x) \cdot \epsilon \quad (\epsilon^2 \approx 0)\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(\Phi(x)\)</span>：定义在时空上的场（可以是标量场、旋量场分量或矢量场），是坐标 <span class="arithmatex">\(x\)</span> 的函数。
+- <span class="arithmatex">\(\epsilon\)</span>（epsilon）：沿 <span class="arithmatex">\(x\)</span> 方向的<strong>无穷小平移参数</strong>（无穷小量）。
+- <span class="arithmatex">\(\partial_x \Phi(x)\)</span>：场对 <span class="arithmatex">\(x\)</span> 的偏导数，即函数在该点的变化率（斜率）。</p>
+<p><strong>物理意义</strong>：将场在平移后的新坐标处的值，用原坐标处的值加上一阶修正来近似。这是平移变换在函数空间（无穷维空间）中的线性近似表示。</p>
+<hr />
+<h3 id="公式-b空间平移生成元动量算符">公式 B：空间平移生成元（动量算符）<a class="headerlink" href="#公式-b空间平移生成元动量算符" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[P_i \equiv -i\partial_i \equiv -i\frac{\partial}{\partial x^i}\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(P_i\)</span>：第 <span class="arithmatex">\(i\)</span> 个空间方向（<span class="arithmatex">\(i=1,2,3\)</span> 对应 <span class="arithmatex">\(x,y,z\)</span>）的<strong>平移生成元</strong>（Generator of Translation），在量子力学中对应<strong>动量算符</strong>。
+- <span class="arithmatex">\(-i\)</span>：虚数单位 <span class="arithmatex">\(i\)</span> 与负号。这是物理学中的标准惯例，目的是使 <span class="arithmatex">\(P_i\)</span> 成为<strong>厄米算符</strong>（Hermitian，对应可观测的物理量动量），且使得有限平移的指数表示为<strong>幺正算符</strong>（Unitary，保持概率守恒）。
+- <span class="arithmatex">\(\partial_i\)</span>：对空间坐标 <span class="arithmatex">\(x^i\)</span> 的偏微分算符。</p>
+<p><strong>关键细节</strong>：字幕中提到引入 <span class="arithmatex">\(-i\)</span> 是为了满足特定的<strong>对易关系</strong>（李代数关系）并使指数形式更简洁，这指的是量子力学中 <span class="arithmatex">\([x_i, P_j] = i\delta_{ij}\)</span> 的正则对易关系。</p>
+<hr />
+<h3 id="公式-c有限平移的指数表示字幕中提及">公式 C：有限平移的指数表示（字幕中提及）<a class="headerlink" href="#公式-c有限平移的指数表示字幕中提及" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[f(x+a) = \exp\left(-i a^i P_i\right) f(x) = \exp\left(a^i \partial_i\right) f(x)\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(a^i\)</span>：<strong>有限平移</strong>的位移矢量（宏观距离，非无穷小）。
+- <span class="arithmatex">\(\exp\left(-i a^i P_i\right)\)</span>：有限平移算符，由无穷小生成元 <span class="arithmatex">\(P_i\)</span> 通过指数映射（李群理论）生成。
+- 当指数函数展开为幂级数 <span class="arithmatex">\(\sum_{n=0}^{\infty} \frac{(a^i \partial_i)^n}{n!}\)</span> 时，它正好重构了函数 <span class="arithmatex">\(f(x+a)\)</span> 的完整泰勒级数展开。</p>
+<p><strong>数学共鸣</strong>：这揭示了微分算子 <span class="arithmatex">\(\partial_i\)</span>（生成元）与平移几何操作之间的深刻同构——<strong>微分是平移的无穷小生成元，指数化微分产生有限平移</strong>。</p>
+<hr />
+<h3 id="公式-d时间平移生成元字幕中提及">公式 D：时间平移生成元（字幕中提及）<a class="headerlink" href="#公式-d时间平移生成元字幕中提及" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[P_0 = i\partial_t \quad (\text{或写作 } H = i\partial_t \text{，即哈密顿量})\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(P_0\)</span>：时间平移生成元，在量子力学中对应<strong>能量算符/哈密顿量</strong> <span class="arithmatex">\(H\)</span>。
+- 符号为正 <span class="arithmatex">\(i\)</span>（与空间的 <span class="arithmatex">\(-i\)</span> 形成对比），这取决于度规符号约定（mostly minus 约定 <span class="arithmatex">\(\eta_{\mu\nu} = \text{diag}(+,-,-,-)\)</span>）。在此约定下，<span class="arithmatex">\(P_\mu = (P_0, P_i) = (i\partial_t, -i\partial_i) = i\partial_\mu\)</span> 构成协变四矢量。</p>
+<hr />
+<h2 id="3-理论背景补充_2">3. 理论背景补充<a class="headerlink" href="#3-理论背景补充_2" title="Permanent link">&para;</a></h2>
+<h3 id="庞加莱群poincaré-group的构成">庞加莱群（Poincaré Group）的构成<a class="headerlink" href="#庞加莱群poincaré-group的构成" title="Permanent link">&para;</a></h3>
+<p>洛伦兹群（Lorentz Group）仅包含保持原点不变的<strong>转动</strong>（Rotation）和<strong>boost</strong>（时空转动），而<strong>庞加莱群</strong>是洛伦兹群与<strong>时空平移群</strong>的半直积：</p>
+<div class="arithmatex">\[\text{Poincaré Group} = \text{Lorentz Group} \ltimes \text{Translation Group}\]</div>
+<ul>
+<li><strong>洛伦兹变换</strong>：改变参考系的相对速度或方向（"怎么看"）。</li>
+<li><strong>平移变换</strong>：改变观测的原点（"从哪看"）。</li>
+<li><strong>物理意义</strong>：庞加莱群是<strong>狭义相对论中孤立系统的完整对称群</strong>，其守恒量对应于能量、动量和角动量（通过诺特定理）。</li>
+</ul>
+<h3 id="为什么平移是无穷维表示">为什么平移是"无穷维表示"？<a class="headerlink" href="#为什么平移是无穷维表示" title="Permanent link">&para;</a></h3>
+<p>与洛伦兹群作用在有限维旋量空间（如4分量狄拉克旋量）不同，平移作用在<strong>场的定义域</strong>（时空坐标）上：
+- 场 <span class="arithmatex">\(\Phi(x)\)</span> 属于无穷维的函数空间（希尔伯特空间）。
+- 平移不改变场的内禀指标（如旋量的 <span class="arithmatex">\(L/R\)</span> 分量不混合），而是改变函数的宗量：<span class="arithmatex">\(\Phi(x) \to \Phi(x+a)\)</span>。
+- 因此，平移的表示是作用在函数空间上的<strong>微分算符</strong>（无穷维矩阵），而非有限维数值矩阵。</p>
+<hr />
+<h2 id="4-通俗语言解释_1">4. 通俗语言解释<a class="headerlink" href="#4-通俗语言解释_1" title="Permanent link">&para;</a></h2>
+<h3 id="平移对称性物理定律与位置无关">"平移对称性"：物理定律与位置无关<a class="headerlink" href="#平移对称性物理定律与位置无关" title="Permanent link">&para;</a></h3>
+<p>想象你在宇宙飞船里做实验。无论你在地球、火星还是银河系边缘，只要实验</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,4707 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-V3bRPmsJ-Ik/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-dY8XXo0r4Es/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-JRZfJJi6YuA/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第9课-su2李代数有限维不可约表示通向量子力学的隐秘通道" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入与卡西米尔算符的作用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入与卡西米尔算符的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-二次卡西米尔算符的定义式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 二次卡西米尔算符的定义式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mathfraksu2-代数的基本对易关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. \(\mathfrak{su}(2)\) 代数的基本对易关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-二维表示自旋-12表示的具体实现" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 二维表示（自旋-1/2表示）的具体实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-卡西米尔算符在表示空间中的矩阵形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 卡西米尔算符在表示空间中的矩阵形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1su2李代数的有限维不可约表示全景" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：SU(2)李代数的有限维不可约表示全景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2与3全局标签卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2与3：全局标签——卡西米尔算符
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-舒尔引理schurs-lemma与卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 舒尔引理（Schur's Lemma）与卡西米尔算符
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-为什么su2只有一个独立的卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 为什么SU(2)只有一个独立的卡西米尔算符？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-特征值-jj1-的物理起源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 特征值 \(j(j+1)\) 的物理起源
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#姓氏与家族成员的比喻" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "姓氏"与"家族成员"的比喻
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#皮肤比喻的深化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "皮肤"比喻的深化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：加当生成元J3与基态标签的建立
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：加当生成元J3与基态标签的建立">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-嘉当生成元的矩阵表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 嘉当生成元的矩阵表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-嘉当生成元的约束条件推导过程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 嘉当生成元的约束条件（推导过程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-态矢量的双标签标记体系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 态矢量的双标签标记体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景深化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景深化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景深化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-嘉当子代数cartan-subalgebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 嘉当子代数（Cartan Subalgebra）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-为何选择-j_3-为对角形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 为何选择 \(J_3\) 为对角形式？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-权重weight与等间隔性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 权重（Weight）与等间隔性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三图像内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、图像内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、图像内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1--2局部标签嘉当生成元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1 &amp; 2：局部标签——嘉当生成元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图3态矢量的标记体系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图3：态矢量的标记体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解读" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解读
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解读">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#姓氏与名字的类比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "姓氏"与"名字"的类比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#升降算符的预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        升降算符的预告
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关于左矢的说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于"左矢"的说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：升降算符、最高最低权与J的量子化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：升降算符、最高最低权与J的量子化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-升降算符的定义复化生成元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 升降算符的定义（复化生成元）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-关键对易关系the-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 关键对易关系（The Rules）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-阶梯作用方程action-on-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 阶梯作用方程（Action on States）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-最高最低权条件termination-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 最高/最低权条件（Termination Conditions）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-卡西米尔算符的分解式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 卡西米尔算符的分解式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-特征值-b-的两种表达式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 特征值 \(b\) 的两种表达式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-最高权与最低权的对称关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 最高权与最低权的对称关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-角动量量子化条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 角动量量子化条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-李代数的复化与表示论" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 李代数的复化与表示论
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-最高权表示highest-weight-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 最高权表示（Highest Weight Representation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-与量子力学角动量代数的同构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 与量子力学角动量代数的同构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言解释爬楼梯的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言解释：爬楼梯的
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：归一化系数的求解与标准记号|j,m⟩
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：归一化系数的求解与标准记号|j,m⟩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-升降算符的归一化条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 升降算符的归一化条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-归一化常数的推导公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 归一化常数的推导公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-升降算符的显式作用公式本段最重要的结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 升降算符的显式作用公式（本段最重要的结果）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-标记法的简化约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 标记法的简化约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-归一化的物理必要性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 归一化的物理必要性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-与谐振子的类比概念辅助" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 与谐振子的类比（概念辅助）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-表示构造的完备性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 表示构造的完备性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四板书ppt-截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、板书/PPT 截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：从平凡表示到二维表示的显式矩阵构造
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：从平凡表示到二维表示的显式矩阵构造">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-平凡表示trivial-representationj0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 平凡表示（Trivial Representation，\(j=0\)）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-自旋-12表示spin-12-representationj12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 自旋-1/2表示（Spin-1/2 Representation，\(j=1/2\)）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-自旋-1表示spin-1-representationj1的预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 自旋-1表示（Spin-1 Representation，\(j=1\)）的预告
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景与深层联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景与深层联系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景与深层联系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-表示的唯一性与完备性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 表示的"唯一性"与"完备性"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-从抽象代数到具体矩阵的表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从抽象代数到具体矩阵的"表示"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-阶梯算法的威力" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 阶梯算法的威力
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗语言总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗语言总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 6：三维表示、一般结论与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 6：三维表示、一般结论与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-自旋-1j1表示的生成元矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 自旋-1（\(j=1\)）表示的生成元矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-表示的维度与-j-的对应关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 表示的维度与 \(j\) 的对应关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1显式构造3维表示j1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：显式构造3维表示（\(j=1\)）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2su2李代数的有限维不可约表示全景" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：SU(2)李代数的有限维不可约表示全景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-矩阵的漂亮结构从何而来" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 矩阵的"漂亮"结构从何而来？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-从抽象群到具体矩阵的对应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从抽象群到具体矩阵的对应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-为什么这些矩阵长得相似" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 为什么这些矩阵"长得相似"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-表示论物理学的翻译字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 表示论：物理学的"翻译字典"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-不可约表示的完备性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 不可约表示的完备性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入与卡西米尔算符的作用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入与卡西米尔算符的作用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-二次卡西米尔算符的定义式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 二次卡西米尔算符的定义式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mathfraksu2-代数的基本对易关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. \(\mathfrak{su}(2)\) 代数的基本对易关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-二维表示自旋-12表示的具体实现" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 二维表示（自旋-1/2表示）的具体实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-卡西米尔算符在表示空间中的矩阵形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 卡西米尔算符在表示空间中的矩阵形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1su2李代数的有限维不可约表示全景" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：SU(2)李代数的有限维不可约表示全景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2与3全局标签卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2与3：全局标签——卡西米尔算符
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-舒尔引理schurs-lemma与卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 舒尔引理（Schur's Lemma）与卡西米尔算符
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-为什么su2只有一个独立的卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 为什么SU(2)只有一个独立的卡西米尔算符？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-特征值-jj1-的物理起源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 特征值 \(j(j+1)\) 的物理起源
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#姓氏与家族成员的比喻" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "姓氏"与"家族成员"的比喻
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#皮肤比喻的深化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "皮肤"比喻的深化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：加当生成元J3与基态标签的建立
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：加当生成元J3与基态标签的建立">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-嘉当生成元的矩阵表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 嘉当生成元的矩阵表示
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-嘉当生成元的约束条件推导过程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 嘉当生成元的约束条件（推导过程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-态矢量的双标签标记体系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 态矢量的双标签标记体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景深化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景深化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景深化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-嘉当子代数cartan-subalgebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 嘉当子代数（Cartan Subalgebra）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-为何选择-j_3-为对角形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 为何选择 \(J_3\) 为对角形式？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-权重weight与等间隔性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 权重（Weight）与等间隔性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三图像内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、图像内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、图像内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1--2局部标签嘉当生成元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1 &amp; 2：局部标签——嘉当生成元
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图3态矢量的标记体系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图3：态矢量的标记体系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解读" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解读
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解读">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#姓氏与名字的类比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "姓氏"与"名字"的类比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#升降算符的预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        升降算符的预告
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关于左矢的说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关于"左矢"的说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：升降算符、最高最低权与J的量子化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：升降算符、最高最低权与J的量子化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-升降算符的定义复化生成元" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 升降算符的定义（复化生成元）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-关键对易关系the-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 关键对易关系（The Rules）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-阶梯作用方程action-on-states" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 阶梯作用方程（Action on States）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-最高最低权条件termination-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 最高/最低权条件（Termination Conditions）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-卡西米尔算符的分解式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 卡西米尔算符的分解式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-特征值-b-的两种表达式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 特征值 \(b\) 的两种表达式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-最高权与最低权的对称关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 最高权与最低权的对称关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-角动量量子化条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 角动量量子化条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-李代数的复化与表示论" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 李代数的复化与表示论
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-最高权表示highest-weight-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 最高权表示（Highest Weight Representation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-与量子力学角动量代数的同构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 与量子力学角动量代数的同构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言解释爬楼梯的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言解释：爬楼梯的
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：归一化系数的求解与标准记号|j,m⟩
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：归一化系数的求解与标准记号|j,m⟩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-升降算符的归一化条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 升降算符的归一化条件
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-归一化常数的推导公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 归一化常数的推导公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-升降算符的显式作用公式本段最重要的结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 升降算符的显式作用公式（本段最重要的结果）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-标记法的简化约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 标记法的简化约定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-归一化的物理必要性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 归一化的物理必要性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-与谐振子的类比概念辅助" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 与谐振子的类比（概念辅助）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-表示构造的完备性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 表示构造的完备性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四板书ppt-截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、板书/PPT 截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：从平凡表示到二维表示的显式矩阵构造
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：从平凡表示到二维表示的显式矩阵构造">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-平凡表示trivial-representationj0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 平凡表示（Trivial Representation，\(j=0\)）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-自旋-12表示spin-12-representationj12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 自旋-1/2表示（Spin-1/2 Representation，\(j=1/2\)）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-自旋-1表示spin-1-representationj1的预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 自旋-1表示（Spin-1 Representation，\(j=1\)）的预告
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景与深层联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景与深层联系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景与深层联系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-表示的唯一性与完备性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 表示的"唯一性"与"完备性"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-从抽象代数到具体矩阵的表示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从抽象代数到具体矩阵的"表示"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-阶梯算法的威力" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 阶梯算法的威力
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗语言总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗语言总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 6：三维表示、一般结论与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 6：三维表示、一般结论与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式与符号解析本段新内容_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式与符号解析（本段新内容）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式与符号解析（本段新内容）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-自旋-1j1表示的生成元矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 自旋-1（\(j=1\)）表示的生成元矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-表示的维度与-j-的对应关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 表示的维度与 \(j\) 的对应关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1显式构造3维表示j1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：显式构造3维表示（\(j=1\)）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2su2李代数的有限维不可约表示全景" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：SU(2)李代数的有限维不可约表示全景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-矩阵的漂亮结构从何而来" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 矩阵的"漂亮"结构从何而来？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-从抽象群到具体矩阵的对应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从抽象群到具体矩阵的对应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-为什么这些矩阵长得相似" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 为什么这些矩阵"长得相似"？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-表示论物理学的翻译字典" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 表示论：物理学的"翻译字典"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-不可约表示的完备性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 不可约表示的完备性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第9课-su2李代数有限维不可约表示通向量子力学的隐秘通道">《基于对称性的物理学》第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道<a class="headerlink" href="#基于对称性的物理学第9课-su2李代数有限维不可约表示通向量子力学的隐秘通道" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 6 个段落）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 课程引入与卡西米尔算符的作用</a></li>
+<li><a href="#段落-2">00:05:00 加当生成元J3与基态标签的建立</a></li>
+<li><a href="#段落-3">00:11:00 升降算符、最高最低权与J的量子化</a></li>
+<li><a href="#段落-4">00:20:00 归一化系数的求解与标准记号|j,m⟩</a></li>
+<li><a href="#段落-5">00:27:00 从平凡表示到二维表示的显式矩阵构造</a></li>
+<li><a href="#段落-6">00:32:00 三维表示、一般结论与课程总结</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程引入与卡西米尔算符的作用<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:05:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+基于对称性的物理学的听众朋友们大家好欢迎收听我们的第九课我是你们活泼好奇的Zoe大家好我是你们诚稳的SY很高兴在此和大家一起探索物理学的奥秘上次我们聊到SU二里群的生成元感觉有点像在猜谜用一些特定的矩阵来识别他们在理括号下的行为今天是不是要更系统地讲讲这些生成元到底能长成什么样或者说它们有哪些表现形式呢没错Zoe你这个问题问得特别好今天我们就要深入探讨SU二里群的表示论简单来说就是把抽象的群元素或者理带数元素映射成我们熟悉的矩阵这些矩阵作用在某个实量空间上这就像给一个抽象的概念找到它在现实世界中的各种具体性
+哦听起来有点像我们给一个角色设计各种不同的皮肤或者造型但核心的角色还是那个角色非常形象的比喻就是这个意思我们今天要讲的就是怎么系统地找出SU二里群所有的皮肤也就是它的各种表示人最开始我们用的二乘二有句证其实只是其中一种特殊的表示那这可真是让人期待那我们从哪里开始呢好的要理解SU二里群的表示我们首先需要一些特殊的工具来给这些表示贴标签第一个非常重要的概念叫做卡西米尔算符卡西米尔算符听起来有点神秘它有什么特别之处吗它的特别之处在于它能与给定李代数的所有生成元都对应也就是说不管你拿它和哪个生成元
+进行理括号运算结果都是零这性质可太厉害了他就像一个老好人跟谁都和睦相处那对于我们正在研究的小写SU二里代数他的卡西米尔算符张什么样呢对于小写SU二里代数最常见的卡西米尔算符是二次的我们把它记作J平方它的形式是J平方等于J一平方加J二平方加J三平方这里的J一J二J三就是我们之前讨论过的三个生成源赛老师听一下我这里有一个疑问为何我们这里要用二次的卡西米尔算符存在一次的卡西米尔算符吗这是个好问题Joy以小写SU二里代数如果存在一次卡西米尔算符这意味着这种卡西米尔算符只能是J一J二J三的线性组合
+三种生成源相互之间满足JI和JJ的理括号等于I称EPSLONIJK缩并JK这意味着这三个生成元之间不对应这意味着一定存在某个生成元和这种作为生成元线性组合的一次卡西米尔算符不对应进而和卡西米尔算符定义矛盾因为它要和所有生成元对应哦我明白了所以至少对小写SU2里带数而言卡西米尔算符最低应该是二次的那么J1平方加J2平方加J3平方那这个算符有什么用呢它能帮我们做什么它的核心作用就是标记不同的表示如果你把这个卡西米尔算符作用在某个表示的食量空间上的任何一个元素上你会得到一个数值这个数值就是我们用来区分
+标签哦我明白了就像不同家族有不同的姓氏一样这个J平方的值就是表示的姓氏可以这么理解我们来取个例子我们之前提到过一个三维表示他的卡西米尔算符J平方算出来就是一个三乘三的对角矩阵对角线上都是二也就是说他的姓氏是二而我们最开始用的那个二维表示也就是由波利矩阵SigmaI定义的JI等于二分之一SigmaI他的卡西米尔算符J平方算出来是四分之三所以他的姓氏就是四分之三你看不同的表示卡西米尔算符的值就不同明白了所以J平方这个算符是用来给家族贴标签的那个家族里面的成员比如某个具体的适量我们怎么给他贴标签呢
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.0_parastart.jpg" src="../frames/frame_000000.0_parastart.jpg" /></p>
+<p><img alt="frame_000180.0_formulatransition.jpg" src="../frames/frame_000180.0_formulatransition.jpg" /></p>
+<p><img alt="frame_000240.0_formulatransition.jpg" src="../frames/frame_000240.0_formulatransition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段的深度注解：</p>
+<hr />
+<h2 id="一公式与符号解析">一、公式与符号解析<a class="headerlink" href="#一公式与符号解析" title="Permanent link">&para;</a></h2>
+<p>本段核心围绕 <strong>卡西米尔算符（Casimir Operator）</strong> 展开，涉及的公式及其物理含义如下：</p>
+<h3 id="1-二次卡西米尔算符的定义式">1. 二次卡西米尔算符的定义式<a class="headerlink" href="#1-二次卡西米尔算符的定义式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J^2 = J_1^2 + J_2^2 + J_3^2\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(J^2\)</span></td>
+<td><strong>二次卡西米尔算符</strong>（总角动量平方算符），是 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 李代数中最重要的不变量</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(J_1, J_2, J_3\)</span></td>
+<td><span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的三个生成元（基），对应三维空间中的三个独立转动生成元</td>
+</tr>
+<tr>
+<td>下标平方</td>
+<td>表示算符的复合（矩阵乘法或算符乘积），即 <span class="arithmatex">\(J_i^2 = J_i \cdot J_i\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：这类似于经典力学中角动量矢量的模长平方 <span class="arithmatex">\(|\mathbf{J}|^2 = J_x^2 + J_y^2 + J_z^2\)</span>，但在量子/代数层面，它是与所有生成元对易的"守恒量"。</p>
+<h3 id="2-mathfraksu2-代数的基本对易关系">2. <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 代数的基本对易关系<a class="headerlink" href="#2-mathfraksu2-代数的基本对易关系" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[[J_i, J_j] = i\epsilon_{ijk}J_k\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\([\cdot, \cdot]\)</span></td>
+<td><strong>李括号</strong>（对易子），<span class="arithmatex">\([A,B] = AB - BA\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(i\)</span></td>
+<td>虚数单位</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\epsilon_{ijk}\)</span></td>
+<td><strong>列维-奇维塔符号</strong>（Levi-Civita symbol），完全反对称张量。当 <span class="arithmatex">\((i,j,k)\)</span> 为 <span class="arithmatex">\((1,2,3)\)</span> 的偶排列时为 <span class="arithmatex">\(+1\)</span>，奇排列时为 <span class="arithmatex">\(-1\)</span>，有重复指标时为 <span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td>爱因斯坦求和约定</td>
+<td>右侧对重复指标 <span class="arithmatex">\(k\)</span> 求和（<span class="arithmatex">\(k=1,2,3\)</span>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：这个非零的对易关系表明三个生成元彼此"不对易"，这是 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 代数非阿贝尔性的核心，也是<strong>不存在一次卡西米尔算符</strong>的数学根源。</p>
+<h3 id="3-二维表示自旋-12表示的具体实现">3. 二维表示（自旋-1/2表示）的具体实现<a class="headerlink" href="#3-二维表示自旋-12表示的具体实现" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J_i = \frac{1}{2}\sigma_i\]</div>
+<p>其中 <span class="arithmatex">\(\sigma_i\)</span> 为 <strong>泡利矩阵（Pauli Matrices）</strong>：</p>
+<div class="arithmatex">\[\sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \quad \sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \quad \sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}\]</div>
+<p><strong>计算验证</strong>：在此表示下，</p>
+<div class="arithmatex">\[J^2 = \left(\frac{1}{2}\right)^2 (\sigma_1^2 + \sigma_2^2 + \sigma_3^2) = \frac{1}{4}(I + I + I) = \frac{3}{4}I_2\]</div>
+<p>其中 <span class="arithmatex">\(I_2\)</span> 为 <span class="arithmatex">\(2\times 2\)</span> 单位矩阵。</p>
+<h3 id="4-卡西米尔算符在表示空间中的矩阵形式">4. 卡西米尔算符在表示空间中的矩阵形式<a class="headerlink" href="#4-卡西米尔算符在表示空间中的矩阵形式" title="Permanent link">&para;</a></h3>
+<p><strong>三维表示（自旋-1）</strong>：</p>
+<div class="arithmatex">\[J^2_{3\text{-dim}} = 2 \cdot \mathbb{I}_3 = \begin{pmatrix} 2 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 \\ 0 &amp; 0 &amp; 2 \end{pmatrix}\]</div>
+<p><strong>二维表示（自旋-1/2）</strong>：</p>
+<div class="arithmatex">\[J^2_{2\text{-dim}} = \frac{3}{4} \cdot \mathbb{I}_2 = \begin{pmatrix} 3/4 &amp; 0 \\ 0 &amp; 3/4 \end{pmatrix}\]</div>
+<p><strong>关键观察</strong>：卡西米尔算符在不可约表示中必为<strong>单位矩阵的常数倍</strong>（舒尔引理），这个常数 <span class="arithmatex">\(j(j+1)\)</span> 就是该表示的"标签"。</p>
+<hr />
+<h2 id="二板书ppt截图内容描述">二、板书/PPT截图内容描述<a class="headerlink" href="#二板书ppt截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1su2李代数的有限维不可约表示全景">截图1：SU(2)李代数的有限维不可约表示全景<a class="headerlink" href="#截图1su2李代数的有限维不可约表示全景" title="Permanent link">&para;</a></h3>
+<p>这是一张信息图，展示了 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 表示论的完整结构：</p>
+<ul>
+<li><strong>中心视觉</strong>：一个螺旋上升的"阶梯"结构，象征表示空间的构造。</li>
+<li><strong>左侧</strong>：标注"阶梯构造与表示分类"，说明通过升降算符 <span class="arithmatex">\(J_{\pm}\)</span> 以步长1改变磁量子数 <span class="arithmatex">\(m\)</span>，构建完整的矢量空间。</li>
+<li><strong>右上角</strong>：展示基矢量 <span class="arithmatex">\(|j,m\rangle\)</span> 的球面表示，其中 <span class="arithmatex">\(j\)</span> 为表示标签（总角动量量子数），<span class="arithmatex">\(m\)</span> 为 <span class="arithmatex">\(J_3\)</span> 的特征值（磁量子数）。</li>
+<li><strong>底部表格</strong>：列出关键数据对应关系：</li>
+<li>当 <span class="arithmatex">\(j=0\)</span>：维度为1，<span class="arithmatex">\(J^2=0\)</span></li>
+<li>当 <span class="arithmatex">\(j=1/2\)</span>：维度为2，<span class="arithmatex">\(J^2=2\)</span>（注：此处应为 <span class="arithmatex">\(j(j+1)=3/4\)</span>，截图标注可能有笔误或采用不同归一化）</li>
+<li>当 <span class="arithmatex">\(j=1\)</span>：维度为3，<span class="arithmatex">\(J^2=2\)</span></li>
+</ul>
+<h3 id="截图2与3全局标签卡西米尔算符">截图2与3：全局标签——卡西米尔算符<a class="headerlink" href="#截图2与3全局标签卡西米尔算符" title="Permanent link">&para;</a></h3>
+<p>这两张为同一页PPT，详细解释卡西米尔算符的数学构造：</p>
+<ul>
+<li><strong>顶部</strong>：给出泡利矩阵的具体形式及 <span class="arithmatex">\(J_i = \frac{1}{2}\sigma_i\)</span> 的关系。</li>
+<li><strong>中部</strong>：强调卡西米尔算符的核心性质——与所有生成元对易（<span class="arithmatex">\([J^2, J_i] = 0\)</span>）。</li>
+<li><strong>底部表格</strong>：对比两个具体表示中 <span class="arithmatex">\(J^2\)</span> 的矩阵形式，直观展示"单位矩阵的常数倍"这一关键特征。</li>
+</ul>
+<hr />
+<h2 id="三理论背景补充">三、理论背景补充<a class="headerlink" href="#三理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-舒尔引理schurs-lemma与卡西米尔算符">1. 舒尔引理（Schur's Lemma）与卡西米尔算符<a class="headerlink" href="#1-舒尔引理schurs-lemma与卡西米尔算符" title="Permanent link">&para;</a></h3>
+<p>卡西米尔算符之所以能成为表示的"标签"，其数学基础是<strong>舒尔引理</strong>：</p>
+<blockquote>
+<p>在一个不可约表示空间中，任何与所有生成元对易的算符必为单位算符的常数倍。</p>
+</blockquote>
+<p>这意味着 <span class="arithmatex">\(J^2\)</span> 在整个表示空间中是"各向同性"的——它不会混合表示空间内的不同基矢，只是将每个基矢缩放相同的倍数。</p>
+<h3 id="2-为什么su2只有一个独立的卡西米尔算符">2. 为什么SU(2)只有一个独立的卡西米尔算符？<a class="headerlink" href="#2-为什么su2只有一个独立的卡西米尔算符" title="Permanent link">&para;</a></h3>
+<p>李代数独立的卡西米尔算符个数等于其<strong>秩（rank）</strong>（即最大对易子代数的维数）。<span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的秩为1，因此只有一个独立的卡西米尔算符（即 <span class="arithmatex">\(J^2\)</span>）。</p>
+<p><strong>一次卡西米尔不存在性的证明</strong>：
+假设存在一次卡西米尔 <span class="arithmatex">\(C = aJ_1 + bJ_2 + cJ_3\)</span>。根据定义，它必须与所有生成元对易，特别地 <span class="arithmatex">\([C, J_1] = 0\)</span>。
+计算得：</p>
+<div class="arithmatex">\[[aJ_1 + bJ_2 + cJ_3, J_1] = b[J_2,J_1] + c[J_3,J_1] = -ibJ_3 + icJ_2 = 0\]</div>
+<p>这要求 <span class="arithmatex">\(b=c=0\)</span>。同理，与 <span class="arithmatex">\(J_2, J_3\)</span> 对易要求 <span class="arithmatex">\(a=0\)</span>。因此唯一与所有生成元对易的线性组合是零算符，无物理意义。</p>
+<h3 id="3-特征值-jj1-的物理起源">3. 特征值 <span class="arithmatex">\(j(j+1)\)</span> 的物理起源<a class="headerlink" href="#3-特征值-jj1-的物理起源" title="Permanent link">&para;</a></h3>
+<p>在完整的理论中，卡西米尔算符的特征值并非任意，而是量子化的：</p>
+<div class="arithmatex">\[J^2 |j,m\rangle = j(j+1) |j,m\rangle\]</div>
+<p>其中 <span class="arithmatex">\(j\)</span> 取非负半整数 <span class="arithmatex">\(0, \frac{1}{2}, 1, \frac{3}{2}, \dots\)</span>。这解释了为什么三维表示（<span class="arithmatex">\(j=1\)</span>）的特征值是 <span class="arithmatex">\(1\times(1+1)=2\)</span>，而二维表示（<span class="arithmatex">\(j=1/2\)</span>）的特征值是 <span class="arithmatex">\(\frac{1}{2}\times\frac{3}{2}=\frac{3}{4}\)</span>。</p>
+<hr />
+<h2 id="四核心概念通俗解释">四、核心概念通俗解释<a class="headerlink" href="#四核心概念通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="姓氏与家族成员的比喻">"姓氏"与"家族成员"的比喻<a class="headerlink" href="#姓氏与家族成员的比喻" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>表示（Representation）</strong>：如同一个"家族"（如"史密斯家族"）。不同的表示就是不同的家族（二维家族、三维家族等）。</li>
+<li><strong>卡西米尔算符 <span class="arithmatex">\(J^2\)</span></strong>：如同家族的<strong>姓氏</strong>。所有属于同一家族的成员（基矢量）共享同一个姓氏（相同的 <span class="arithmatex">\(J^2\)</span> 特征值）。</li>
+<li><strong>生成元 <span class="arithmatex">\(J_3\)</span></strong>：如同家族成员的<strong>名字</strong>（如"约翰"、"玛丽"）。在同一个家族（表示）内，不同的成员通过 <span class="arithmatex">\(J_3\)</span> 的特征值 <span class="arithmatex">\(m\)</span> 来区分（如 <span class="arithmatex">\(m = -j, -j+1, \dots, j\)</span>）。</li>
+<li><strong>升降算符 <span class="arithmatex">\(J_{\pm}\)</span></strong>：如同家族内部的"辈分"关系，可以将一个成员变成另一个成员（改变 <span class="arithmatex">\(m\)</span> 值），但不会改变家族姓氏（不改变 <span class="arithmatex">\(J^2\)</span> 值）。</li>
+</ul>
+<h3 id="皮肤比喻的深化">"皮肤"比喻的深化<a class="headerlink" href="#皮肤比喻的深化" title="Permanent link">&para;</a></h3>
+<p>课程中提到的"给角色设计不同皮肤"非常贴切：
+- <strong>抽象群元素</strong>是角色的"灵魂"（代数关系）。
+- <strong>矩阵表示</strong>是角色的"皮肤"（具体外观）。
+- <strong>卡西米尔算符的值</strong>是皮肤的"色号"或"系列编号"——它告诉你这是"史诗皮肤"（<span class="arithmatex">\(j=1\)</span>）还是"传说皮肤"（<span class="arithmatex">\(j=1/2\)</span>），而具体的矩阵元（如 <span class="arithmatex">\(J_3\)</span> 的对角元）则是皮肤上的具体纹理细节。</p>
+<p>这种"标签化"是物理学中<strong>分类学</strong>的强大工具：只要测量出 <span class="arithmatex">\(J^2\)</span> 的值，就能立即确定系统处于哪个"表示家族"中，从而预测其所有可能的内部状态数（维度 <span class="arithmatex">\(2j+1\)</span>）。</p>
+<hr />
+<h2 id="段落-2">段落 2：加当生成元J3与基态标签的建立<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:05:00 ~ 00:11:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+这是我们要引入的第二个重要概念加当生成源卡顿生成器但是在进入下一个主题前我要提醒一下同学们在课后一定要动手计算一下前面提及的三维表示和二维表示的卡西米尔算符看看是否的确能写成单位矩阵的倍数体会一下这种表示的标签数好的课后我一定会认真计算的我们继续讨论加当生成源吧它又有什么特点之处呢加当生成源是所有可以同时对角化的生成源对于小写SUR里代数只有一个这样的生成源按照惯例我们选择J3作为我们的加当生成元只有一个那听起来简单多了它的作用又是什么呢
+J3是用来区分不同表示这个大分类的家当生成元J3就是用来区分这个表示内部的基时量也就是说J3是姓氏而J3是名字差不多是这个意思我们来看看J3在不同表示里的样子在三维表示中它的矩阵形式是这样的对角线上是一零负一而在二维表示中也就是炮力矩阵那个都是对角矩阵这些是方便标记对所以对于每个表示我们都会用J3的特征时量作为这个表示所作用的时量空间的基时量这意味着每个基时量都可以有两个数字来标记我现在有一个疑问我知道J3我们这里是直接选择的
+但为何要这样选择你可以给出一个合理的计算过程吗好吧我打算尽可能直从家当生成源的定义出发给出一个合理的计算过程先考虑SU二群它的生成源也就是离代数上的元素必须满足J等于J并且J的G必须是零而家当生成源按定义必须是已经对角化的以三维表示为例不妨设为J等于矩阵A零零换行零B零换行零零C家当生成源作为一个特殊的生成源也必须满足前面这个而米无忌的条件所以可以直接带入得到A加B加C等于零其中ABC都是必须是实数到这一步还是无法确定ABC吧对的后面我们将会发现家当生成源
+必须是等间隔的所以可以把B等于A加Delta和C等于B加Delta依次带入可得Delta等于A进而可算出B等于A其中A是实数我发现了J3可以写成A成句证一零零换行零零换行零零复一那这个A应该如何处理其实这个A的纸不重要因为后面我将发现需要对表示空间上的基实量进行归一化这个A纸将会被吸收掉基于某种方便性这里的A举一这样就得到前面的三维表示中的加当生成的表示矩阵J3我明白了对二维表示的我们也可以得到对应的加当生成的表示矩阵J3我们通常继续吧
+我们用一个抽象的符号来表示这些基数量写成右是B逗号M或者读成B逗号M太其中B就是我们前面说的卡西米尔算符J平方的特征值它标记了整个表示而M呢就是加当生成元J3的特征值它标记了表示内部的具体基数量此外我们还需要注意目前我们设计的时量仅仅是刚才所谓的右是至于左是我们目前尚未定义所以量子力学中常出现的左是A逗号N成右是B逗号N太M在后面的推导中仅仅学成A逗号N太M目前我们仅仅把B逗号M太理解成一个时量即可所以B逗号M太就是一个抽象的人名了带着姓氏和名字
+用这个符号怎么表示呢好的比如二维表示它的J平方特征值是四分之一和二分之一所以它的基石量就是四分之一逗号二分之一太和四分之一逗号负二分之一太类似的三维表示的J平方特征值是二零负一那么它的基石量就是二逗号一太二逗号零太和二逗号负一太这样一看确实清晰多了我们有了标记表示的姓氏B也有了标记表示内元素的名字M那我们怎么从一个名字变到另一个名字呢有没有什么算符能让M的值变化恭喜你已经换到了表示论里一个非常核心且强大的工具升降算符或者也叫阶梯算符
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000300.0_parastart.jpg" src="../frames/frame_000300.0_parastart.jpg" /></p>
+<p><img alt="frame_000420.0_formulatransition.jpg" src="../frames/frame_000420.0_formulatransition.jpg" /></p>
+<p><img alt="frame_000540.0_formulatransition.jpg" src="../frames/frame_000540.0_formulatransition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:05:00 ~ 00:11:00）的深度注解：</p>
+<hr />
+<h2 id="一公式与符号解析本段新内容">一、公式与符号解析（本段新内容）<a class="headerlink" href="#一公式与符号解析本段新内容" title="Permanent link">&para;</a></h2>
+<p>本段核心引入<strong>嘉当生成元（Cartan Generator）</strong> <span class="arithmatex">\(J_3\)</span> 及<strong>态矢量的双标签标记体系</strong> <span class="arithmatex">\(|b, m\rangle\)</span>。</p>
+<h3 id="1-嘉当生成元的矩阵表示">1. 嘉当生成元的矩阵表示<a class="headerlink" href="#1-嘉当生成元的矩阵表示" title="Permanent link">&para;</a></h3>
+<p><strong>三维表示（自旋-1表示）：</strong></p>
+<div class="arithmatex">\[J_3 = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 \end{pmatrix}\]</div>
+<p><strong>二维表示（自旋-1/2表示/泡利矩阵 <span class="arithmatex">\(\sigma_z\)</span> 的归一化形式）：</strong></p>
+<div class="arithmatex">\[J_3 = \begin{pmatrix} \frac{1}{2} &amp; 0 \\ 0 &amp; -\frac{1}{2} \end{pmatrix}\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(J_3\)</span></td>
+<td>嘉当生成元，<span class="arithmatex">\(\mathfrak{su}(2)\)</span> 李代数中唯一（因秩为1）的可同时对角化生成元</td>
+</tr>
+<tr>
+<td>对角元 <span class="arithmatex">\(\{1, 0, -1\}\)</span> 或 <span class="arithmatex">\(\{\frac{1}{2}, -\frac{1}{2}\}\)</span></td>
+<td><span class="arithmatex">\(J_3\)</span> 的本征值，称为<strong>磁量子数</strong>或<strong>权重</strong>，标记表示内部不同基态</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-嘉当生成元的约束条件推导过程">2. 嘉当生成元的约束条件（推导过程）<a class="headerlink" href="#2-嘉当生成元的约束条件推导过程" title="Permanent link">&para;</a></h3>
+<p>视频中提及的推导涉及以下关键方程：</p>
+<p><strong>厄米性（Hermiticity）与无迹（Traceless）条件：</strong></p>
+<div class="arithmatex">\[J = J^\dagger, \quad \text{Tr}(J) = 0\]</div>
+<p><strong>对角化假设：</strong></p>
+<div class="arithmatex">\[J_3 = \begin{pmatrix} a &amp; 0 &amp; 0 \\ 0 &amp; b &amp; 0 \\ 0 &amp; 0 &amp; c \end{pmatrix}\]</div>
+<p><strong>等间隔条件（来自表示论权重格点）：</strong></p>
+<div class="arithmatex">\[b = a + \delta, \quad c = b + \delta \implies a + b + c = 0 \Rightarrow \delta = -a\]</div>
+<p>最终归一化取 <span class="arithmatex">\(a=1\)</span>，得到 <span class="arithmatex">\(J_3 = \text{diag}(1, 0, -1)\)</span>。</p>
+<h3 id="3-态矢量的双标签标记体系">3. 态矢量的双标签标记体系<a class="headerlink" href="#3-态矢量的双标签标记体系" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[|b, m\rangle \quad \text{（视频中读作"右矢 $b$ 逗号 $m$ 态"）}\]</div>
+<p><strong>本征值方程组：</strong></p>
+<div class="arithmatex">\[\begin{cases} J^2 |b, m\rangle = b |b, m\rangle \\ J_3 |b, m\rangle = m |b, m\rangle \end{cases}\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>类比（视频中的"姓氏-名字"比喻）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(b\)</span>（或常记为 <span class="arithmatex">\(j(j+1)\)</span>）</td>
+<td>卡西米尔算符 <span class="arithmatex">\(J^2\)</span> 的本征值，标记<strong>整个表示</strong>（representation）</td>
+<td><strong>姓氏</strong>：决定"家族"（如三维表示 <span class="arithmatex">\(j=1\)</span>，二维表示 <span class="arithmatex">\(j=1/2\)</span>）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(m\)</span></td>
+<td>嘉当生成元 <span class="arithmatex">\(J_3\)</span> 的本征值，标记表示内的<strong>具体基矢量</strong></td>
+<td><strong>名字</strong>：决定家族中的具体成员（如 <span class="arithmatex">\(m=1, 0, -1\)</span>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>具体示例：</strong>
+- <strong>二维表示</strong>（自旋-1/2）：<span class="arithmatex">\(|3/4, 1/2\rangle\)</span>, <span class="arithmatex">\(|3/4, -1/2\rangle\)</span>（注：此处 <span class="arithmatex">\(b=j(j+1)=3/4\)</span>）
+- <strong>三维表示</strong>（自旋-1）：<span class="arithmatex">\(|2, 1\rangle\)</span>, <span class="arithmatex">\(|2, 0\rangle\)</span>, <span class="arithmatex">\(|2, -1\rangle\)</span>（注：此处 <span class="arithmatex">\(b=j(j+1)=2\)</span>）</p>
+<hr />
+<h2 id="二理论背景深化">二、理论背景深化<a class="headerlink" href="#二理论背景深化" title="Permanent link">&para;</a></h2>
+<h3 id="1-嘉当子代数cartan-subalgebra">1. 嘉当子代数（Cartan Subalgebra）<a class="headerlink" href="#1-嘉当子代数cartan-subalgebra" title="Permanent link">&para;</a></h3>
+<p>对于李代数 <span class="arithmatex">\(\mathfrak{g}\)</span>，<strong>嘉当子代数</strong> <span class="arithmatex">\(\mathfrak{h}\)</span> 是其极大交换子代数（即其中元素两两对易）。<span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的秩（rank）为1，意味着其嘉当子代数是1维的，仅由一个生成元（通常选 <span class="arithmatex">\(J_3\)</span>）张成。</p>
+<p><strong>关键性质</strong>：由于 <span class="arithmatex">\([J_3, J^2] = 0\)</span>，<span class="arithmatex">\(J^2\)</span> 与 <span class="arithmatex">\(J_3\)</span> 可同时对角化，因此可以用两者的本征值 <span class="arithmatex">\((b, m)\)</span> 共同标记态矢量。</p>
+<h3 id="2-为何选择-j_3-为对角形式">2. 为何选择 <span class="arithmatex">\(J_3\)</span> 为对角形式？<a class="headerlink" href="#2-为何选择-j_3-为对角形式" title="Permanent link">&para;</a></h3>
+<p>在有限维酉表示中，厄米算符（自伴算符）必可对角化。嘉当生成元的定义就是"可以同时对角化的生成元"。选择 <span class="arithmatex">\(J_3\)</span> 为对角矩阵意味着：
+- 我们选择了<strong>物理上的 <span class="arithmatex">\(z\)</span> 轴方向</strong>作为量子化轴；
+- 基矢量变成了 <span class="arithmatex">\(J_3\)</span> 的本征矢量，物理上对应具有确定角动量投影的态。</p>
+<h3 id="3-权重weight与等间隔性">3. 权重（Weight）与等间隔性<a class="headerlink" href="#3-权重weight与等间隔性" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(J_3\)</span> 的本征值 <span class="arithmatex">\(m\)</span> 称为该表示的<strong>权重</strong>。对于 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的不可约表示，权重总是<strong>等间隔分布</strong>的，间隔为1（在 <span class="arithmatex">\(J_3\)</span> 的归一化约定下）。这是由升降算符（<span class="arithmatex">\(J_\pm\)</span>）的代数结构决定的，也是视频中推导 <span class="arithmatex">\(a, b, c\)</span> 必须等间隔的深层原因。</p>
+<hr />
+<h2 id="三图像内容描述">三、图像内容描述<a class="headerlink" href="#三图像内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1--2局部标签嘉当生成元">截图1 &amp; 2：局部标签——嘉当生成元<a class="headerlink" href="#截图1--2局部标签嘉当生成元" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>："局部标签：嘉当生成元 / The Local Label: Cartan Generators"</li>
+<li><strong>核心图示</strong>：一个标有 "Family (Representation)" 的椭圆，内部排列着标有数字的圆点（<span class="arithmatex">\(1, 0, -1, \frac{1}{2}, -\frac{1}{2}\)</span>），形象化表示同一表示（家族）内不同基态由 <span class="arithmatex">\(J_3\)</span> 的本征值标记。</li>
+<li><strong>公式区</strong>：</li>
+<li>右侧列出 <span class="arithmatex">\(J_3\)</span> 在三维和二维表示中的具体对角矩阵形式；</li>
+<li>标注"对角线元素标记基矢量"，强调矩阵元与态标签的对应关系。</li>
+<li><strong>关键文字</strong>："嘉当生成元 <span class="arithmatex">\(J_3\)</span> 在给定的表示<strong>内部</strong>为不同的基矢量提供标签"，区分于卡西米尔算符标记整个表示。</li>
+</ul>
+<h3 id="截图3态矢量的标记体系">截图3：态矢量的标记体系<a class="headerlink" href="#截图3态矢量的标记体系" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>："态矢量的标记体系"</li>
+<li><strong>核心公式</strong>：</li>
+<li>顶部显示内积符号 <span class="arithmatex">\(\langle a,n|b,m\rangle = \langle a,n|^\dagger |b,m\rangle\)</span>（注：视频提及"左矢"尚未定义，此处为量子力学标准记号预告）；</li>
+<li>中央方框突出本征值方程 <span class="arithmatex">\(J^2|b,m\rangle = b|b,m\rangle\)</span> 和 <span class="arithmatex">\(J_3|b,m\rangle = m|b,m\rangle\)</span>。</li>
+<li><strong>结构说明</strong>：</li>
+<li>用箭头清晰标注 <span class="arithmatex">\(|b,m\rangle\)</span> 中 <span class="arithmatex">\(b\)</span> 来自卡西米尔算符（表示的标签），<span class="arithmatex">\(m\)</span> 来自嘉当生成元 <span class="arithmatex">\(J_3\)</span>（态的标签）；</li>
+<li>左右两侧分别列出二维和三维表示的 <span class="arithmatex">\(J^2\)</span> 和 <span class="arithmatex">\(J_3\)</span> 矩阵，并用红色箭头连接到对应的具体态矢量示例（如 <span class="arithmatex">\(|3/4, 1/2\rangle\)</span> 等）。</li>
+</ul>
+<hr />
+<h2 id="四核心概念通俗解读">四、核心概念通俗解读<a class="headerlink" href="#四核心概念通俗解读" title="Permanent link">&para;</a></h2>
+<h3 id="姓氏与名字的类比">"姓氏"与"名字"的类比<a class="headerlink" href="#姓氏与名字的类比" title="Permanent link">&para;</a></h3>
+<p>视频中将 <span class="arithmatex">\((b, m)\)</span> 比作<strong>姓氏</strong>和<strong>名字</strong>是非常精妙的比喻：
+- <strong>姓氏 <span class="arithmatex">\(b\)</span>（卡西米尔本征值）</strong>：决定了你属于哪个"家族"（表示）。比如"张"氏家族有三口人（三维表示），"李"氏家族有两口人（二维表示）。同一个家族内，姓氏相同。
+- <strong>名字 <span class="arithmatex">\(m\)</span>（嘉当本征值）</strong>：决定了你在家族中的具体身份。张氏家族内部有老大（<span class="arithmatex">\(m=1\)</span>）、老二（<span class="arithmatex">\(m=0\)</span>）、老三（<span class="arithmatex">\(m=-1\)</span>）。</p>
+<h3 id="升降算符的预告">升降算符的预告<a class="headerlink" href="#升降算符的预告" title="Permanent link">&para;</a></h3>
+<p>视频结尾提及的"升降算符"（Ladder Operators）<span class="arithmatex">\(J_\pm\)</span>，其物理意义是<strong>在家族内部改变名字，但不改变姓氏</strong>：
+- <span class="arithmatex">\(J_+\)</span> 像"大哥"：把老二变成老大（<span class="arithmatex">\(m=0 \to m=1\)</span>）；
+- <span class="arithmatex">\(J_-\)</span> 像"小弟"：把老二变成老三（<span class="arithmatex">\(m=0 \to m=-1\)</span>）。
+它们无法把你从一个家族（表示）变到另一个家族（表示），这正是卡西米尔算符 <span class="arithmatex">\(J^2\)</span> 作为"不变量"的核心体现。</p>
+<h3 id="关于左矢的说明">关于"左矢"的说明<a class="headerlink" href="#关于左矢的说明" title="Permanent link">&para;</a></h3>
+<p>视频中提到"左矢 <span class="arithmatex">\(\langle a,n|\)</span> 尚未定义"，这是狄拉克符号（Dirac Notation）的严谨性体现：
+- <strong>右矢 <span class="arithmatex">\(|b,m\rangle\)</span></strong>：列矢量，代表量子态；
+- <strong>左矢 <span class="arithmatex">\(\langle b,m|\)</span></strong>：行矢量，是右矢的厄米共轭（<span class="arithmatex">\(\dagger\)</span>），用于计算内积（概率幅）。
+目前阶段可暂时将 <span class="arithmatex">\(|b,m\rangle\)</span> 理解为抽象的"人名标签"，后续课程将完善对偶空间（左矢空间）的严格定义。</p>
+<hr />
+<h2 id="段落-3">段落 3：升降算符、最高最低权与J的量子化<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:11:00 ~ 00:20:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+升降算符听起来就像电梯一样能把M值升高或降低完全正确我们定义两个新的算符J正和J副J正等于J一加IJ二而J副等于J一减IJ二这里的I是虚数单位把J一和J二组合起来了而且还带了虚数这有什么玄机吗玄机就在于他们的对一关系我们可以通过之前学过的SUR里群生成员的对一关系JI和JJ的理括号等于IJK也就是J一和J二的理括号等于IJ三等等推导出这两个新算符的对一关系最关键的两个是J三和J正副的理括号等于正副J正副的理括号等于二J三好的
+给我们一个答案吧
+配合成B逗号M太是J三的一个新的特征写量并且特征值是M加减一对吧对的既然J正复乘B逗号M太作为J三的一个特征始量特征值恰好是M加减一这意味着J正复乘B逗号M太的派标签是M加减一表示标签依然是B所以这个太对应B逗号M加减一太当然这个太不一定满足规一化条件所以需要添加一个有待决定的参数C我明白了这说明J正复乘B逗号M一定等于某个长数C加B逗号M加一太对你太厉害了的确如此这说明如果J正用在M的特征始量B逗号M太上那么得到的始量仍然是J三的特征始量但是它的特征值
+M加一这就像是J正把M值往上提了一格那J副呢没错J副作用在B都好M太上得到的始量J三的特征值就变成了M减一所以J正副才被称为升降算符可以让我们在J三的特征值之间爬楼梯这真是太巧妙了那我们是不是可以无限地爬下去或者一直爬上去呢这个问题问得非常好答案是不能因为我们讨论的是有限为表示这个意味着我们的食量空间是有限的不可能有无限多个线性无关的特征食量所以这个爬楼的过程必须停止向上总是有一个最高的特征值我们把它叫做J当J正作用在这个最高的特征食量B都好J太上时
+必须得到零否则如果它能产生一个M值为J加一的新食量那J就不是最高的了这很合理那向下爬呢同样道理向下爬也必须有一个最低的特征值我们把它叫做K当J副作用在这个最低的特征食量B都好K开上时它也必须得到零好的最高点是J最低点是K那这两个值和我们之前的标签B有什么关系吗有非常重要的关系利用J正B都好J台等于0这个条件以及J平方等于J一平方加J二平方加J三平方和阶梯算法的一个关键的公式可以推导出一个公式可以给我讲讲吗可以的我们可以先计算J复称J结果根据这两个
+它等于括号J一减J二括号称括号J一加IJ二括号等于J一平方加J二平方加I成括号J一J二减J二J一括号我注意到第一第二项根据二次卡西米尔算符应该等于J平方减J三平方而第三项的括号部分恰好等于一个理括号对应的这个J一和J二的理括号等于J三把这三项全部加起来最后J二乘J正等于J二乘J三乘J三现在可以用J二乘J正对吧根据最大特征值J二乘J正就用在B二乘正对
+然后将J负成J正的表达式带入于是继续等于括号J平方减J三平方减J三括号作用在B都好J太根据这三个算子的特征值可以继续等于括号B减J平方减J括号B都好J太我看到结果了那么一定有B等于J成括号J加一括号一个如此简洁的公式那最低的特征值K呢它和J有什么关系吗完全类似地利用J负B都好K太等于零我们也能推导出B等于K成括号K减一括号当然这个推导过程虽然和前面类似但我还是希望同学们在课后再动手过一遍好的
+这个表达式和前面的表达式都是B的表达式那么其中的J和K一定存在确定的关系对吧是的我们可以把这两个关于B的表示式一比较也就是这两个表达式相减得到括号J加K括号成括号J减K加一括号等于0由于J大于K所以第二因此不为零于是我们就能得出另一个非常重要的结论K等于负J也就是最低的特征值就是最高特征值的负数这太对称了没错这非常漂亮地体现了SU二里群的对称性现在我们来总结一下对于一个给定的SU二里群表示它的卡西米尔算符特征值B可以用最高J3特征值J来表示即B等于J1特征值M呢
+它从最高的J一直向下以整数不长变化直到最低的负J这就带来了一个极其重要的洞察从最高值J到最低值负J中间的不长都是一所以J减卦号负J瓜号必须是一个正数也就是二J所以二J必须是一个正数完全正确这意味着J的取值可以是零二分之一二分之三等等它只能是整数或者半整数哇这简直是把J的取值给量子化了这和我们量子力学里讲的角动量量子化是不是有关系没错对你抓住了核心这正是量子力学中角动量量子化的直接来源SU二里群和它的小写SU二里代数在数学上与量子力学中的角动量代数是同构的
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000660.0_formulaparastart.jpg" src="../frames/frame_000660.0_formulaparastart.jpg" /></p>
+<p><img alt="frame_000840.0_transition.jpg" src="../frames/frame_000840.0_transition.jpg" /></p>
+<p><img alt="frame_001080.0_transition.jpg" src="../frames/frame_001080.0_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:11:00 ~ 00:20:00）的深度注解：</p>
+<hr />
+<h2 id="一公式与符号解析本段新内容_1">一、公式与符号解析（本段新内容）<a class="headerlink" href="#一公式与符号解析本段新内容_1" title="Permanent link">&para;</a></h2>
+<p>本段核心引入<strong>升降算符（Ladder Operators）</strong>的构造及其代数性质，并通过"阶梯算法"（Step-wise Algorithm）建立卡西米尔算符特征值 <span class="arithmatex">\(b\)</span> 与最高权 <span class="arithmatex">\(j\)</span> 的定量关系。</p>
+<h3 id="1-升降算符的定义复化生成元">1. 升降算符的定义（复化生成元）<a class="headerlink" href="#1-升降算符的定义复化生成元" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J_+ = J_1 + iJ_2, \quad J_- = J_1 - iJ_2\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(J_+\)</span></td>
+<td><strong>升算符</strong>（Raising Operator），作用后将 <span class="arithmatex">\(J_3\)</span> 的特征值 <span class="arithmatex">\(m\)</span> 提升 1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(J_-\)</span></td>
+<td><strong>降算符</strong>（Lowering Operator），作用后将 <span class="arithmatex">\(J_3\)</span> 的特征值 <span class="arithmatex">\(m\)</span> 降低 1</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(i\)</span></td>
+<td>虚数单位，此处通过复线性组合实现李代数 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的<strong>复化</strong>（complexification），得到 <span class="arithmatex">\(\mathfrak{sl}(2,\mathbb{C})\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-关键对易关系the-rules">2. 关键对易关系（The Rules）<a class="headerlink" href="#2-关键对易关系the-rules" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[[J_3, J_{\pm}] = \pm J_{\pm}, \quad [J_+, J_-] = 2J_3\]</div>
+<table>
+<thead>
+<tr>
+<th>关系</th>
+<th>物理/数学意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\([J_3, J_+] = +J_+\)</span></td>
+<td><span class="arithmatex">\(J_+\)</span> 是 <span class="arithmatex">\(J_3\)</span> 的"本征算符"，本征值为 <span class="arithmatex">\(+1\)</span>，对应 <span class="arithmatex">\(m\)</span> 增加</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([J_3, J_-] = -J_-\)</span></td>
+<td><span class="arithmatex">\(J_-\)</span> 是 <span class="arithmatex">\(J_3\)</span> 的"本征算符"，本征值为 <span class="arithmatex">\(-1\)</span>，对应 <span class="arithmatex">\(m\)</span> 减少</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([J_+, J_-] = 2J_3\)</span></td>
+<td>升降算符之间的封闭关系，是构造卡西米尔算符的关键</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-阶梯作用方程action-on-states">3. 阶梯作用方程（Action on States）<a class="headerlink" href="#3-阶梯作用方程action-on-states" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J_{\pm}|b,m\rangle = C_{\pm}^{(b,m)}|b,m\pm 1\rangle\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(C_{\pm}^{(b,m)}\)</span></td>
+<td><strong>归一化常数</strong>（通常为复数），由表示的具体归一化约定决定，满足 <span class="arithmatex">\(\|C_+\|^2 = b - m(m+1)\)</span> 等关系</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\|b,m\pm 1\rangle\)</span></td>
+<td>新的归一化本征态，保持卡西米尔算符特征值 <span class="arithmatex">\(b\)</span> 不变，仅改变磁量子数 <span class="arithmatex">\(m\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-最高最低权条件termination-conditions">4. 最高/最低权条件（Termination Conditions）<a class="headerlink" href="#4-最高最低权条件termination-conditions" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J_+|b,j\rangle = 0, \quad J_-|b,k\rangle = 0\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(j\)</span></td>
+<td><strong>最高权</strong>（Highest Weight），<span class="arithmatex">\(m\)</span> 能取到的最大值，对应"楼梯的顶端"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(k\)</span></td>
+<td><strong>最低权</strong>（Lowest Weight），<span class="arithmatex">\(m\)</span> 能取到的最小值，对应"楼梯的底端"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="5-卡西米尔算符的分解式">5. 卡西米尔算符的分解式<a class="headerlink" href="#5-卡西米尔算符的分解式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J_-J_+ = J^2 - J_3^2 - J_3\]</div>
+<p><strong>推导说明</strong>：利用 <span class="arithmatex">\(J_{\pm}\)</span> 定义展开：</p>
+<div class="arithmatex">\[J_-J_+ = (J_1-iJ_2)(J_1+iJ_2) = J_1^2+J_2^2 + i[J_1,J_2] = (J^2-J_3^2) + i(iJ_3) = J^2 - J_3^2 - J_3\]</div>
+<h3 id="6-特征值-b-的两种表达式">6. 特征值 <span class="arithmatex">\(b\)</span> 的两种表达式<a class="headerlink" href="#6-特征值-b-的两种表达式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[b = j(j+1) \quad \text{和} \quad b = k(k-1)\]</div>
+<p><strong>推导逻辑</strong>：
+- <strong>上限</strong>：对最高态 <span class="arithmatex">\(|b,j\rangle\)</span> 作用 <span class="arithmatex">\(J_-J_+\)</span>，因 <span class="arithmatex">\(J_+|b,j\rangle=0\)</span>，得 <span class="arithmatex">\(0 = (b - j^2 - j)|b,j\rangle\)</span>，故 <span class="arithmatex">\(b=j(j+1)\)</span>
+- <strong>下限</strong>：对最低态 <span class="arithmatex">\(|b,k\rangle\)</span> 作用 <span class="arithmatex">\(J_+J_- = J^2 - J_3^2 + J_3\)</span>，因 <span class="arithmatex">\(J_-|b,k\rangle=0\)</span>，得 <span class="arithmatex">\(0 = (b - k^2 + k)|b,k\rangle\)</span>，故 <span class="arithmatex">\(b=k(k-1)\)</span></p>
+<h3 id="7-最高权与最低权的对称关系">7. 最高权与最低权的对称关系<a class="headerlink" href="#7-最高权与最低权的对称关系" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[k = -j\]</div>
+<p><strong>推导</strong>：
+联立 <span class="arithmatex">\(j(j+1) = k(k-1)\)</span>，因式分解得 <span class="arithmatex">\((j+k)(j-k+1)=0\)</span>。由于 <span class="arithmatex">\(j \geq k\)</span> 且 <span class="arithmatex">\(j-k+1 \neq 0\)</span>（否则 <span class="arithmatex">\(j=k-1\)</span> 与 <span class="arithmatex">\(j\geq k\)</span> 矛盾），必有 <span class="arithmatex">\(j+k=0\)</span>。</p>
+<h3 id="8-角动量量子化条件">8. 角动量量子化条件<a class="headerlink" href="#8-角动量量子化条件" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[2j \in \mathbb{Z}_{\geq 0} \Rightarrow j = 0, \frac{1}{2}, 1, \frac{3}{2}, 2, \ldots\]</div>
+<p><strong>物理意义</strong>：从 <span class="arithmatex">\(j\)</span> 到 <span class="arithmatex">\(-j\)</span> 以整数步长递减，总步数 <span class="arithmatex">\(j - (-j) = 2j\)</span> 必须为非负整数，因此 <span class="arithmatex">\(j\)</span> 只能取整数或半整数。</p>
+<hr />
+<h2 id="二理论背景补充">二、理论背景补充<a class="headerlink" href="#二理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-李代数的复化与表示论">1. 李代数的复化与表示论<a class="headerlink" href="#1-李代数的复化与表示论" title="Permanent link">&para;</a></h3>
+<p>实李代数 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的生成元 <span class="arithmatex">\(J_1, J_2, J_3\)</span> 是反厄米的（在量子力学中通常乘以 <span class="arithmatex">\(i\)</span> 变为厄米）。通过引入复组合 <span class="arithmatex">\(J_{\pm}\)</span>，我们实际上将实李代数复化为 <span class="arithmatex">\(\mathfrak{sl}(2,\mathbb{C})\)</span>。这是研究有限维不可约表示的标准技巧，因为复单李代数的表示论更为简洁。</p>
+<h3 id="2-最高权表示highest-weight-representation">2. 最高权表示（Highest Weight Representation）<a class="headerlink" href="#2-最高权表示highest-weight-representation" title="Permanent link">&para;</a></h3>
+<p>SU(2) 的每一个有限维不可约表示都由唯一的最高权 <span class="arithmatex">\(j\)</span> 标记。给定 <span class="arithmatex">\(j\)</span> 后，整个表示空间由 <span class="arithmatex">\(\{|j,m\rangle\}\)</span> 张成，其中 <span class="arithmatex">\(m = j, j-1, \ldots, -j\)</span>，共 <span class="arithmatex">\(2j+1\)</span> 个态。这对应于物理中自旋为 <span class="arithmatex">\(j\)</span> 的粒子具有 <span class="arithmatex">\(2j+1\)</span> 个磁量子态。</p>
+<h3 id="3-与量子力学角动量代数的同构">3. 与量子力学角动量代数的同构<a class="headerlink" href="#3-与量子力学角动量代数的同构" title="Permanent link">&para;</a></h3>
+<p>本段推导的代数结构 <span class="arithmatex">\(\{J^2, J_3, J_{\pm}\}\)</span> 与量子力学中的角动量算符 <span class="arithmatex">\(\{\hat{J}^2, \hat{J}_z, \hat{J}_{\pm}\}\)</span> 完全同构：
+- <span class="arithmatex">\(J^2 \leftrightarrow \hat{J}^2/\hbar^2\)</span>，本征值 <span class="arithmatex">\(j(j+1)\)</span>
+- <span class="arithmatex">\(J_3 \leftrightarrow \hat{J}_z/\hbar\)</span>，本征值 <span class="arithmatex">\(m\)</span>
+- <span class="arithmatex">\(J_{\pm} \leftrightarrow \hat{J}_{\pm}/\hbar = (\hat{J}_x \pm i\hat{J}_y)/\hbar\)</span></p>
+<p>因此，这里的 <span class="arithmatex">\(j\)</span> 就是<strong>总角动量量子数</strong>，<span class="arithmatex">\(m\)</span> 是<strong>磁量子数</strong>，而 <span class="arithmatex">\(j\)</span> 的整数/半整数量子化正是泡利不相容原理和费米子/玻色子统计的根源。</p>
+<hr />
+<h2 id="三通俗语言解释爬楼梯的">三、通俗语言解释：爬楼梯的<a class="headerlink" href="#三通俗语言解释爬楼梯的" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="段落-4">段落 4：归一化系数的求解与标准记号|j,m⟩<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:20:00 ~ 00:27:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+所以我们在这里推导出的这些结论直接对应了量子角动量的性质有一些具体例子吗有的我们可以看看一些例子当J等于零时M只能是零这是一个一维的表示对应的J平方值B等于J括号J加一括号等于零当J等于二分之一时M可以是二分之一负二分之一这是二乘二分之一加二维的表示对应的J平方值B等于二分之一乘二分之一加一括号等于四分之一当J等于一时M可以是一零加一等于三维的表示对应的J平方值B等于一乘二分之一加一括号等于二我发现J等于二分之一的二维表示
+正好是我们博客开头提过过的J等于一的三维表示J平方值是二也对上了这真的是从理论上推导出了我们之前看到的那些具体例子对这就是表示论的强大之处它能从根本上解释这些表示为什么是这样以及还有哪些其他可能的表示赛我们现在知道J和M的曲值范围了也知道阶梯算符能改变M那我们具体怎么用它们来构造出J一J二J三这些生成远的剧情形式呢比如J正成B都号M太到底等于什么它只是简单的等于B都号M加一太吗当然我已经知道其中的B目前就是等于J括号J加一括号我们不能简单的写J正成B都号M太等于
+B都好M加一态因为在物理中我们通常希望基石二是归一化的当这正作用在一个归一化的基石二上时结果通常不是归一化的所以我们需要引入一个长数C写成J正成B多M态等于C成B多M加一态这个C就是我们现在要计算的只有计算出它我们才能真正利用阶梯算符来显示的构造矩件考虑到归一化确实很重要那这个C怎么算呢首先我们希望确保B到M态和B到M加一态都是归一化的任何合一化的偏离都吸收到长数C种所以我们可以假设B到M态和B到M加一态都已经是归一化的然后求满足条件的长数C所以我们可以通过计算
+算太适量的模平方来计算C对吧对的所以我们有跨号J正作用于B到M太跨号DEGGER成J正作用于B到M太等于C平方乘B到M加一太根据刚才的B到M加一太已归一化的假设继续等于C平方哦现在可以剩下C平方的表达是继续下去了是的现在C平方继续等于B多号M太大格尔成J正大格尔成J正正正其中J正大格尔等于JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
+可继续等于B逗号M太大格成括号B减M平方减M括号M太对的我注意到第一项成最后一项根据假设应该也是规划的中间的括号项中的B等于J成括号J加一括号所以最终得到C平方等于J成括号J加一括号减M成括号M加一括号为了方便起见我们通常选择C是实数且为正数所以C等于J括号J加一括号M加一括号开平方这个C的表达式也太漂亮了它只依赖于J和M这两个标签没错有了它我们就可以完整的写出J正成B逗号M太等于J成括号J加一括号J加一括号
+乘括号m加一括号开平方乘B逗号M加一太你还可以验证一下当M等于J时这个市字中的根号部分正好是零也就是J正B逗号J太等于零和我们之前的结论完全一致同样的对于下降算符J副我们也能计算出一个类似的长数结果是J副成B逗号M太等于J括号J加一括号减M括号M减一括号开平方对了我注意到前面的B等于J括号J加一括号M太所以B逗号M太实际应该读成J括号J加一括号豆号M太对吧但是这样读的确很麻烦
+由于B和J括号J加一括号中的J是一一对应的关系所以我们以后直接用J代替B你的意思是以后我们直接用J逗号M太代替B也就是J括号J加一括号M太对的我们从现在开始就正式启用这个约定太棒了有了这个约定以及这些公式我们就可以从一个基时量出发通过反复作用升降算数得到所有的基时量并且知道它们之间具体的数值关系了对现在我们拥有了构造SU二里群所有有限为不可约表示的全部工具那我们是不是可以马上看看一些具体的例子了我迫不及待地想知道它们长什么样当然我们从最简单的表示开始首先是J等于零的情况所以这是一个
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001200.0_formulatransitionpar.jpg" src="../frames/frame_001200.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_001320.0_transition.jpg" src="../frames/frame_001320.0_transition.jpg" /></p>
+<p><img alt="frame_001500.0_transition.jpg" src="../frames/frame_001500.0_transition.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:20:00 ~ 00:27:00）的深度注解：</p>
+<hr />
+<h2 id="一公式与符号解析本段新内容_2">一、公式与符号解析（本段新内容）<a class="headerlink" href="#一公式与符号解析本段新内容_2" title="Permanent link">&para;</a></h2>
+<p>本段核心任务是<strong>计算升降算符的归一化常数</strong>，建立 <span class="arithmatex">\(J_\pm\)</span> 作用在归一化基矢上的精确矩阵元，并正式引入标准的 <span class="arithmatex">\(|j,m\rangle\)</span> 标记法。</p>
+<h3 id="1-升降算符的归一化条件">1. 升降算符的归一化条件<a class="headerlink" href="#1-升降算符的归一化条件" title="Permanent link">&para;</a></h3>
+<p>由于物理态要求归一化 <span class="arithmatex">\(\langle j,m|j,m\rangle = 1\)</span>，升降算符作用后通常不再归一化，因此引入复常数 <span class="arithmatex">\(C\)</span>：</p>
+<div class="arithmatex">\[J_+ |j,m\rangle = C_{j,m}^+ |j,m+1\rangle\]</div>
+<p><strong>符号说明：</strong>
+- <span class="arithmatex">\(C_{j,m}^+\)</span>：升算符的归一化常数（一般为实数，取正根）
+- <span class="arithmatex">\(|j,m\rangle\)</span>：已归一化的共同本征态（<span class="arithmatex">\(J^2\)</span> 和 <span class="arithmatex">\(J_3\)</span> 的本征态）
+- 假设 <span class="arithmatex">\(|j,m+1\rangle\)</span> 也已归一化，所有非归一化因子都吸收进 <span class="arithmatex">\(C\)</span></p>
+<h3 id="2-归一化常数的推导公式">2. 归一化常数的推导公式<a class="headerlink" href="#2-归一化常数的推导公式" title="Permanent link">&para;</a></h3>
+<p>通过计算模方 <span class="arithmatex">\(|C|^2 = \langle j,m|J_- J_+|j,m\rangle\)</span>（利用 <span class="arithmatex">\(J_+^\dagger = J_-\)</span>），并利用代数关系：</p>
+<div class="arithmatex">\[J_- J_+ = J^2 - J_3^2 - \hbar J_3\]</div>
+<p>（在自然单位制 <span class="arithmatex">\(\hbar=1\)</span> 下）得到：</p>
+<div class="arithmatex">\[|C_{j,m}^+|^2 = j(j+1) - m(m+1)\]</div>
+<p><strong>关键步骤解释：</strong>
+- <span class="arithmatex">\(J_- J_+\)</span> 是"先升后降"的复合操作，其本征值可通过卡西米尔算符 <span class="arithmatex">\(J^2\)</span> 和 <span class="arithmatex">\(J_3\)</span> 表示
+- 代入本征值方程：<span class="arithmatex">\(J^2|j,m\rangle = j(j+1)|j,m\rangle\)</span>，<span class="arithmatex">\(J_3|j,m\rangle = m|j,m\rangle\)</span>
+- 展开得：<span class="arithmatex">\(j(j+1) - m^2 - m = j(j+1) - m(m+1)\)</span></p>
+<h3 id="3-升降算符的显式作用公式本段最重要的结果">3. 升降算符的显式作用公式（本段最重要的结果）<a class="headerlink" href="#3-升降算符的显式作用公式本段最重要的结果" title="Permanent link">&para;</a></h3>
+<p>选择 <span class="arithmatex">\(C\)</span> 为实数且为正（相位约定），得到标准结果：</p>
+<div class="arithmatex">\[
+\boxed{
+\begin{aligned}
+J_+ |j,m\rangle &amp;= \sqrt{j(j+1) - m(m+1)} \, |j,m+1\rangle \\
+J_- |j,m\rangle &amp;= \sqrt{j(j+1) - m(m-1)} \, |j,m-1\rangle
+\end{aligned}
+}
+\]</div>
+<p><strong>等价形式（利用阶乘表示）：</strong></p>
+<div class="arithmatex">\[J_+ |j,m\rangle = \sqrt{(j-m)(j+m+1)} |j,m+1\rangle\]</div>
+<div class="arithmatex">\[J_- |j,m\rangle = \sqrt{(j+m)(j-m+1)} |j,m-1\rangle\]</div>
+<p><strong>物理验证：</strong>
+- 当 <span class="arithmatex">\(m=j\)</span>（最高权态）时，<span class="arithmatex">\(J_+|j,j\rangle = \sqrt{j(j+1)-j(j+1)}|j,j+1\rangle = 0\)</span>，符合"顶端无法上升"的边界条件
+- 当 <span class="arithmatex">\(m=-j\)</span>（最低权态）时，<span class="arithmatex">\(J_-|j,-j\rangle = 0\)</span>，同理</p>
+<h3 id="4-标记法的简化约定">4. 标记法的简化约定<a class="headerlink" href="#4-标记法的简化约定" title="Permanent link">&para;</a></h3>
+<p>由于卡西米尔算符的本征值 <span class="arithmatex">\(b = j(j+1)\)</span> 与量子数 <span class="arithmatex">\(j\)</span> 一一对应，<strong>从此放弃 <span class="arithmatex">\(b\)</span> 标记，改用标准记法</strong>：</p>
+<div class="arithmatex">\[|b,m\rangle \equiv |j(j+1),m\rangle \triangleq |j,m\rangle\]</div>
+<p><strong>意义：</strong> 用更简洁的 <span class="arithmatex">\(|j,m\rangle\)</span> 双标签完全确定一个基矢，其中 <span class="arithmatex">\(j\)</span> 标记不可约表示（表示的"大小"），<span class="arithmatex">\(m\)</span> 标记表示内的具体状态（磁量子数）。</p>
+<hr />
+<h2 id="二理论背景补充_1">二、理论背景补充<a class="headerlink" href="#二理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-归一化的物理必要性">1. 归一化的物理必要性<a class="headerlink" href="#1-归一化的物理必要性" title="Permanent link">&para;</a></h3>
+<p>在量子力学中，概率诠释要求 <span class="arithmatex">\(|\langle \psi|\psi\rangle|^2 = 1\)</span>。如果升降算符不保持归一化，计算跃迁概率时需要额外处理模长，而上述公式确保了：</p>
+<div class="arithmatex">\[\langle j,m+1|J_+|j,m\rangle = \sqrt{j(j+1)-m(m+1)}\]</div>
+<p>这正是 <span class="arithmatex">\(SU(2)\)</span> 群表示矩阵元的标准形式（Wigner-Eckart 定理的基础）。</p>
+<h3 id="2-与谐振子的类比概念辅助">2. 与谐振子的类比（概念辅助）<a class="headerlink" href="#2-与谐振子的类比概念辅助" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>谐振子</strong>：<span class="arithmatex">\(a^\dagger|n\rangle = \sqrt{n+1}|n+1\rangle\)</span>，系数 <span class="arithmatex">\(\sqrt{n+1}\)</span> 随能级线性增长</li>
+<li><strong>角动量</strong>：系数 <span class="arithmatex">\(\sqrt{(j-m)(j+m+1)}\)</span> 随 <span class="arithmatex">\(m\)</span> 变化是非线性的，反映 <span class="arithmatex">\(SU(2)\)</span> 紧李代数的有限维表示特性（梯子有顶端和底端，而谐振子能级无限）</li>
+</ul>
+<h3 id="3-表示构造的完备性">3. 表示构造的完备性<a class="headerlink" href="#3-表示构造的完备性" title="Permanent link">&para;</a></h3>
+<p>有了这些公式，<strong>可以从单个最高权态 <span class="arithmatex">\(|j,j\rangle\)</span> 出发</strong>，通过反复作用 <span class="arithmatex">\(J_-\)</span> 生成整个表示空间的基矢：</p>
+<div class="arithmatex">\[|j,j\rangle \xrightarrow{J_-} |j,j-1\rangle \xrightarrow{J_-} \cdots \xrightarrow{J_-} |j,-j\rangle\]</div>
+<p>这构成了 <span class="arithmatex">\(2j+1\)</span> 维不可约表示的完整基。</p>
+<hr />
+<h2 id="三通俗语言解释">三、通俗语言解释<a class="headerlink" href="#三通俗语言解释" title="Permanent link">&para;</a></h2>
+<p>想象一个<strong>有固定横档数的梯子</strong>（比如 <span class="arithmatex">\(2j+1\)</span> 级）：</p>
+<ol>
+<li>
+<p><strong>梯子高度标签 <span class="arithmatex">\(j\)</span></strong>：决定梯子有多少级（表示的维数）。<span class="arithmatex">\(j=1/2\)</span> 是2级梯子（上、下），<span class="arithmatex">\(j=1\)</span> 是3级梯子（上、中、下）。</p>
+</li>
+<li>
+<p><strong>当前位置标签 <span class="arithmatex">\(m\)</span></strong>：你在第几级横档上，从 <span class="arithmatex">\(-j\)</span>（地面）到 <span class="arithmatex">\(+j\)</span>（顶端）。</p>
+</li>
+<li>
+<p><strong>升降算符 <span class="arithmatex">\(J_\pm\)</span></strong>：向上或向下爬一级的"动作"。</p>
+</li>
+<li><strong>关键区别</strong>：爬梯子的"力度"（系数 <span class="arithmatex">\(\sqrt{j(j+1)-m(m\pm1)}\)</span>）<strong>不是恒定的</strong>！</li>
+<li>在梯子中间（<span class="arithmatex">\(m\approx 0\)</span>）时，系数约为 <span class="arithmatex">\(\sqrt{j(j+1)}\)</span>，较大；</li>
+<li>
+<p>接近顶端（<span class="arithmatex">\(m\approx j\)</span>）时，系数变小，直到 <span class="arithmatex">\(m=j\)</span> 时变为 <span class="arithmatex">\(\sqrt{0}=0\)</span>，你自然停在那里无法继续上升。</p>
+</li>
+<li>
+<p><strong>归一化</strong>：确保每级横档的"宽度"相同（概率守恒），虽然爬梯子的"力度"不同，但每级横档本身都是标准宽度（归一化）。</p>
+</li>
+</ol>
+<hr />
+<h2 id="四板书ppt-截图描述">四、板书/PPT 截图描述<a class="headerlink" href="#四板书ppt-截图描述" title="Permanent link">&para;</a></h2>
+<p><strong>第一张截图（量子化条件）：</strong>
+- 标题为"量子化条件 (The Quantization Condition)"
+- 核心公式框：<span class="arithmatex">\(b = j(j+1)\)</span>，标注"对应卡西米尔算符 <span class="arithmatex">\(J^2\)</span> 的值"
+- 三点结论：
+  1. 最大值是 <span class="arithmatex">\(j\)</span>，最小值是 <span class="arithmatex">\(-j\)</span>
+  2. 每次应用阶梯算符，特征值改变 1
+  3. 因此最大值与最小值的差必须是整数 <span class="arithmatex">\(\Rightarrow 2j = \text{整数}\)</span>
+- 右侧表格"允许的表示"：列出 <span class="arithmatex">\(j=0, 1/2, 1, 3/2\)</span> 对应的维数（<span class="arithmatex">\(2j+1\)</span>）和 <span class="arithmatex">\(m\)</span> 取值
+- 底部数轴图：标注允许的 <span class="arithmatex">\(j\)</span> 值（<span class="arithmatex">\(0, 0.5, 1, 1.5, \dots\)</span>）</p>
+<p><strong>第二张与第三张截图（归一化常数的计算）：</strong>
+- 标题"归一化常数的计算"
+- 目标明确：求解 <span class="arithmatex">\(J_+|b,m\rangle = C|b,m+1\rangle\)</span> 中的常数 <span class="arithmatex">\(C\)</span>
+- 推导流程用红蓝箭头标注：
+  - 从 <span class="arithmatex">\(\langle b,m+1|b,m+1\rangle = 1\)</span>（归一化假设）
+  - 到 <span class="arithmatex">\(|C|^2 = \langle b,m|J_- J_+|b,m\rangle\)</span>
+  - 利用 <span class="arithmatex">\(J_- J_+ = J^2 - J_3^2 - J_3\)</span>（式3.106）
+  - 代入本征值得到 <span class="arithmatex">\(|C|^2 = j(j+1) - m^2 - m\)</span>
+- <strong>最终公式框（蓝色粗框）</strong>：
+  <span class="arithmatex">\(J_\pm |j(j+1),m\rangle = \sqrt{j(j+1)-m(m\pm1)} |j(j+1),m\pm1\rangle\)</span>
+- 右下角标注约定：<span class="arithmatex">\(|b,m\rangle = |j(j+1),m\rangle \triangleq |j,m\rangle\)</span>（Computer Modern 字体标注）</p>
+<p>这些板书清晰地展示了从抽象代数关系到具体可计算矩阵元的推导链条，是 <span class="arithmatex">\(SU(2)\)</span> 表示论从理论到应用的关键转折点。</p>
+<hr />
+<h2 id="段落-5">段落 5：从平凡表示到二维表示的显式矩阵构造<a class="headerlink" href="#段落-5" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:27:00 ~ 00:32:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+J1J2J3都必须是一乘一的矩阵也就是一个数字唯一能满足我们之前说的对一关系JL和JM的理括号等于IXLN所并JN的就只有数字零也就是说J1等于零J2等于零J3等于零那这个表示就什么都没做啊没错所以它被称为频繁表示群元素U等于一上零等于一它什么都不会改变好的那下一个J值呢J等于二分之一怎么样J一二分之一是下一个可能的值根据二加一加一的公式这是一个二乘二分之一等于二维的表示在这个表示中J三的特征值是二分之一和负二分之一所以我们可以直接写出J三的剧情形式它就是二分之一乘以一个对角线上是一负一的矩阵也就是二分之一乘以零行零负一
+这不就是炮力矩阵SIGMAZ吗哦原来J三就是二分之一SIGMAZ正是那么对应的基始就是二分之一倒号二分之一太等于劣时量一零和二分之一倒号负二分之一太等于劣时量零一接下来我们就可以用阶梯丧幅来构造J一和J二了我们知道J一等于二分之一括号J副加J证括号而J二等于二分之一I括号J副减J证括号好的那我们来算算看J一怎么作用在积时量上好的我们以J一乘二分之一倒好二分之一太为例根据公式它等于二分之一乘括号J副加J证括号乘二分之一二分之一太加J证乘二分之一太
+因为二分之一已经是J三的最大特征值了所以J正成二分之一二分之一态必须是零对吧对的那么就只剩下二分之一乘J负乘二分之一二分之一态了我们用刚才推导出的J负的作用公式带入J等于二分之一M等于二分之一得到二分之一乘括号二分之一加一括号减二分之一减一括号开平方等于一也就是大CTU打等于一对吧对的所以J负成二分之一逗号二分之一态直接等于二分之一逗号二分之一态等于二分之一乘二分之一逗号二分之一态等于二分之一列向两零一明白了那另一个
+J1乘二分之一逗号负二分之一泰呢和前面类似的过程我们也可以算出J1乘二分之一逗号负二分之一泰等于二分之一乘二分之一逗号二分之一逗号等于二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二分之一逗号二零
+它竟然就是我们熟悉的抛力矩阵之前我们只是直接拿来用现在我们知道它是怎么来的了是的这就是表示论的魅力它把我们之前已知的东西通过严谨的数学推到变得可知其足已然那除了二维表示还有没有其他的表示呢比如三维的当然有下一个就是J等于一的三维表示它的J三特征值是一零负一我们可以直接写出J三的矩阵形式矩阵一零零零换行零零零换行零负一是不是也和前面一样用阶梯算符的作用得到J一和J二非常正确通过运用阶梯算符的作用共识作用在一斗号一太一斗号一太这三个基数量上
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001620.0_formulatransitionpar.jpg" src="../frames/frame_001620.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_001680.0_formula.jpg" src="../frames/frame_001680.0_formula.jpg" /></p>
+<p><img alt="frame_001740.0_formulatransition.jpg" src="../frames/frame_001740.0_formulatransition.jpg" /></p>
+<h3 id="注解_4">注解<a class="headerlink" href="#注解_4" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:27:00 ~ 00:32:00）的深度注解：</p>
+<hr />
+<h2 id="一公式与符号解析本段新内容_3">一、公式与符号解析（本段新内容）<a class="headerlink" href="#一公式与符号解析本段新内容_3" title="Permanent link">&para;</a></h2>
+<p>本段核心任务是<strong>显式构造SU(2)群的前三个不可约表示</strong>（<span class="arithmatex">\(j=0, 1/2, 1\)</span>），将抽象的代数关系转化为具体的矩阵形式，并揭示其与泡利矩阵的深刻联系。</p>
+<h3 id="1-平凡表示trivial-representationj0">1. 平凡表示（Trivial Representation，<span class="arithmatex">\(j=0\)</span>）<a class="headerlink" href="#1-平凡表示trivial-representationj0" title="Permanent link">&para;</a></h3>
+<p><strong>对易关系的约束解：</strong></p>
+<div class="arithmatex">\[J_1 = J_2 = J_3 = 0 \quad (\text{零矩阵})\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(J_i\)</span></td>
+<td>李代数 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 的生成元，此处为 <span class="arithmatex">\(1\times 1\)</span> 矩阵（即数字）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td>数字零，唯一满足 <span class="arithmatex">\([J_l, J_m] = i\varepsilon_{lmn}J_n\)</span> 的 <span class="arithmatex">\(1\times 1\)</span> 解（因数字对易子恒为零）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>群元表示：</strong></p>
+<div class="arithmatex">\[U = e^{i\theta \cdot J} = e^0 = \mathbb{1} = 1\]</div>
+<p><strong>物理意义</strong>：这是"什么都不做"的表示，任何群元都映射为数字1，对应单态（singlet）在旋转下不变。</p>
+<hr />
+<h3 id="2-自旋-12表示spin-12-representationj12">2. 自旋-1/2表示（Spin-1/2 Representation，<span class="arithmatex">\(j=1/2\)</span>）<a class="headerlink" href="#2-自旋-12表示spin-12-representationj12" title="Permanent link">&para;</a></h3>
+<p><strong>维数公式验证：</strong></p>
+<div class="arithmatex">\[\text{dim} = 2j + 1 = 2\times\frac{1}{2} + 1 = 2\]</div>
+<p>表示空间为二维复向量空间 <span class="arithmatex">\(\mathbb{C}^2\)</span>。</p>
+<p><strong>嘉当生成元 <span class="arithmatex">\(J_3\)</span> 的矩阵形式：</strong></p>
+<div class="arithmatex">\[J_3 = \frac{1}{2}\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} = \frac{1}{2}\sigma_z\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\sigma_z\)</span></td>
+<td>泡利Z矩阵（Pauli matrix），<span class="arithmatex">\(\sigma_z = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(1/2, -1/2\)</span></td>
+<td><span class="arithmatex">\(J_3\)</span> 的本征值（磁量子数 <span class="arithmatex">\(m\)</span>），对应自旋向上/向下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>基矢量的列向量表示：</strong></p>
+<div class="arithmatex">\[\left|\frac{1}{2}, \frac{1}{2}\right\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \left|\frac{1}{2}, -\frac{1}{2}\right\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}\]</div>
+<p><strong>横向生成元 <span class="arithmatex">\(J_1, J_2\)</span> 的构造（泡利矩阵的推导）：</strong></p>
+<p>利用升降算符的线性组合（<strong>注意</strong>：此处 <span class="arithmatex">\(i\)</span> 为虚数单位，字幕中"二分之一I"应理解为 <span class="arithmatex">\(\frac{1}{2i}\)</span>）：</p>
+<div class="arithmatex">\[J_1 = \frac{1}{2}(J_+ + J_-), \quad J_2 = \frac{1}{2i}(J_- - J_+) = \frac{i}{2}(J_+ - J_-)\]</div>
+<p><strong>关键计算步骤</strong>（以 <span class="arithmatex">\(J_1\)</span> 作用在最高权态为例）：</p>
+<div class="arithmatex">\[J_1\left|\frac{1}{2}, \frac{1}{2}\right\rangle = \frac{1}{2}\left(J_+ + J_-\right)\left|\frac{1}{2}, \frac{1}{2}\right\rangle\]</div>
+<p>根据最高权性质 <span class="arithmatex">\(J_+\left|\frac{1}{2}, \frac{1}{2}\right\rangle = 0\)</span> 及之前推导的归一化系数公式 <span class="arithmatex">\(J_-\left|j,m\right\rangle = \sqrt{(j+m)(j-m+1)}\left|j,m-1\right\rangle\)</span>：</p>
+<div class="arithmatex">\[J_-\left|\frac{1}{2}, \frac{1}{2}\right\rangle = \sqrt{\left(\frac{1}{2}+\frac{1}{2}\right)\left(\frac{1}{2}-\frac{1}{2}+1\right)}\left|\frac{1}{2}, -\frac{1}{2}\right\rangle = 1\cdot\left|\frac{1}{2}, -\frac{1}{2}\right\rangle\]</div>
+<p>因此：</p>
+<div class="arithmatex">\[J_1\left|\frac{1}{2}, \frac{1}{2}\right\rangle = \frac{1}{2}\left|\frac{1}{2}, -\frac{1}{2}\right\rangle = \frac{1}{2}\begin{pmatrix} 0 \\ 1 \end{pmatrix}\]</div>
+<p>同理计算 <span class="arithmatex">\(J_1\)</span> 作用在 <span class="arithmatex">\(\left|\frac{1}{2}, -\frac{1}{2}\right\rangle\)</span> 上，可得：</p>
+<div class="arithmatex">\[J_1 = \frac{1}{2}\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix} = \frac{1}{2}\sigma_x\]</div>
+<p>类似地：</p>
+<div class="arithmatex">\[J_2 = \frac{1}{2}\begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix} = \frac{1}{2}\sigma_y\]</div>
+<p><strong>结论</strong>：<span class="arithmatex">\(J_i = \frac{1}{2}\sigma_i\)</span>，即自旋-1/2表示的生成元是<strong>泡利矩阵的一半</strong>。</p>
+<hr />
+<h3 id="3-自旋-1表示spin-1-representationj1的预告">3. 自旋-1表示（Spin-1 Representation，<span class="arithmatex">\(j=1\)</span>）的预告<a class="headerlink" href="#3-自旋-1表示spin-1-representationj1的预告" title="Permanent link">&para;</a></h3>
+<p><strong>维数</strong>：<span class="arithmatex">\(\text{dim} = 2\times 1 + 1 = 3\)</span>（三维表示）</p>
+<p><strong><span class="arithmatex">\(J_3\)</span> 的矩阵形式</strong>（本征值为 <span class="arithmatex">\(m = 1, 0, -1\)</span>）：</p>
+<div class="arithmatex">\[J_3 = \begin{pmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 \end{pmatrix}\]</div>
+<p><strong>基矢</strong>：<span class="arithmatex">\(\left|1,1\right\rangle, \left|1,0\right\rangle, \left|1,-1\right\rangle\)</span>（通常对应矢量场的三个分量或角动量三重态）。</p>
+<hr />
+<h2 id="二板书ppt截图描述">二、板书/PPT截图描述<a class="headerlink" href="#二板书ppt截图描述" title="Permanent link">&para;</a></h2>
+<p><strong>截图1（j=0表示）：</strong>
+- 标题："显式构造：1维表示（<span class="arithmatex">\(j=0\)</span>）"
+- 核心内容：<span class="arithmatex">\(j=0 \Rightarrow m=0\)</span>，矢量空间一维
+- 关键公式：满足李代数对易关系的唯一 <span class="arithmatex">\(1\times 1\)</span> 矩阵是 <span class="arithmatex">\((0)\)</span>
+- 群元变换：<span class="arithmatex">\(U = e^0 = 1\)</span>，标注为"恒等变换（Trivial Representation）"
+- 右侧示意图：复平面上单位圆上的点"1"，表示该表示将所有群元映射到1</p>
+<p><strong>截图2（j=1/2表示Part 1）：</strong>
+- 标题："显式构造：2维表示（<span class="arithmatex">\(j=1/2\)</span>）- Part 1"
+- 左侧"基矢量"：列出 <span class="arithmatex">\(|1/2,1/2\rangle = \binom{1}{0}\)</span> 和 <span class="arithmatex">\(|1/2,-1/2\rangle = \binom{0}{1}\)</span>
+- 右侧"对角生成元"：展示 <span class="arithmatex">\(J_3\)</span> 矩阵推导过程
+  - 先写 <span class="arithmatex">\(J_3 = \text{diag}(1/2, -1/2)\)</span>
+  - 分解为 <span class="arithmatex">\(\frac{1}{2}\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}\)</span>
+- 中间推导：展示 <span class="arithmatex">\(J_3\)</span> 作用在基矢上得到本征值的过程
+- 右侧能量示意图：两个能级，分别标记 <span class="arithmatex">\(m=1/2\)</span>（上）和 <span class="arithmatex">\(m=-1/2\)</span>（下），暗示塞曼分裂</p>
+<p><strong>截图3（j=1/2表示Part 2）：</strong>
+- 标题："显式构造：2维表示（<span class="arithmatex">\(j=1/2\)</span>）- Part 2：推导泡利矩阵"
+- 策略（Strategy）：给出 <span class="arithmatex">\(J_1 = \frac{1}{2}(J_+ + J_-)\)</span> 和 <span class="arithmatex">\(J_2 = \frac{i}{2}(J_- - J_+)\)</span> 的公式
+- 左侧计算框：展示 <span class="arithmatex">\(J_1|1/2,1/2\rangle = \frac{1}{2}|1/2,-1/2\rangle\)</span> 的具体推导
+- 右侧结果（Result）：红色箭头指向最终矩阵
+  - <span class="arithmatex">\(J_1 = \frac{1}{2}\begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}\)</span>
+  - <span class="arithmatex">\(J_2 = \frac{1}{2}\begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}\)</span>
+- 底部结论："我们重现了泡利矩阵 <span class="arithmatex">\(\sigma_i\)</span>"</p>
+<hr />
+<h2 id="三理论背景与深层联系">三、理论背景与深层联系<a class="headerlink" href="#三理论背景与深层联系" title="Permanent link">&para;</a></h2>
+<h3 id="1-表示的唯一性与完备性">1. 表示的"唯一性"与"完备性"<a class="headerlink" href="#1-表示的唯一性与完备性" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><span class="arithmatex">\(j=0\)</span> 的唯一性</strong>：对于 <span class="arithmatex">\(1\times 1\)</span> 矩阵，对易子 <span class="arithmatex">\([A,B]=AB-BA=0\)</span> 恒成立，因此李代数关系 <span class="arithmatex">\([J_l,J_m]=i\varepsilon_{lmn}J_n\)</span> 迫使所有 <span class="arithmatex">\(J_n=0\)</span>。这是数学上最"平庸"但物理上重要的表示（如单态标量场在旋转下不变）。</li>
+<li><strong><span class="arithmatex">\(j=1/2\)</span> 的基本性</strong>：这是SU(2)群的<strong>最小非平凡表示</strong>。电子、夸克等费米子的自旋都对应此表示。泡利矩阵 <span class="arithmatex">\(\sigma_i\)</span> 是物理中的"标准"写法，而数学上更强调 <span class="arithmatex">\(J_i = \sigma_i/2\)</span> 满足 <span class="arithmatex">\([J_i,J_j]=i\varepsilon_{ijk}J_k\)</span> 的归一化关系。</li>
+</ul>
+<h3 id="2-从抽象代数到具体矩阵的表示">2. 从抽象代数到具体矩阵的"表示"<a class="headerlink" href="#2-从抽象代数到具体矩阵的表示" title="Permanent link">&para;</a></h3>
+<p>"表示"（Representation）一词的精髓在于：将抽象的群元 <span class="arithmatex">\(g\)</span> 映射为具体的线性变换（矩阵）<span class="arithmatex">\(D(g)\)</span>，使得群乘法对应矩阵乘法。本段展示的正是：
+- <strong><span class="arithmatex">\(j=0\)</span></strong>：所有旋转都映射为数字1（恒等变换）
+- <strong><span class="arithmatex">\(j=1/2\)</span></strong>：旋转映射为 <span class="arithmatex">\(2\times 2\)</span> 幺正矩阵（SU(2)群本身）
+- <strong><span class="arithmatex">\(j=1\)</span></strong>：旋转映射为 <span class="arithmatex">\(3\times 3\)</span> 实正交矩阵（SO(3)的矢量表示）</p>
+<h3 id="3-阶梯算法的威力">3. 阶梯算法的威力<a class="headerlink" href="#3-阶梯算法的威力" title="Permanent link">&para;</a></h3>
+<p>通过先确定对角元（<span class="arithmatex">\(J_3\)</span>的本征值），再利用升降算符"填充"非对角元（<span class="arithmatex">\(J_1,J_2\)</span>），这种<strong>从 Cartan 子代数出发构造整个表示</strong>的方法，是研究半单李代数表示论的标准范式（最高权理论）。</p>
+<hr />
+<h2 id="四通俗语言总结">四、通俗语言总结<a class="headerlink" href="#四通俗语言总结" title="Permanent link">&para;</a></h2>
+<p>想象"旋转"是一种抽象的游戏规则。我们要用具体的数字或矩阵来"表示"这种规则：</p>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(j=0\)</span>（平凡表示）</strong>：就像一面完全圆的球，无论你从哪个角度看，它看起来都一样（数字1）。它"感知"不到旋转。</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(j=1/2\)</span>（自旋-1/2）</strong>：这是最简单的"有感知的"表示。想象一个电子，它只有两种状态：自旋向上 <span class="arithmatex">\(\binom{1}{0}\)</span> 和自旋向下 <span class="arithmatex">\(\binom{0}{1}\)</span>。旋转操作会在这两种状态之间"搅拌"。</p>
+</li>
+<li><span class="arithmatex">\(J_3\)</span> 告诉你在z轴方向测量时，得到 $+1/</li>
+</ol>
+<hr />
+<h2 id="段落-6">段落 6：三维表示、一般结论与课程总结<a class="headerlink" href="#段落-6" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:32:00 ~ 00:34:32</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+我们也能推导出J一和J二的矩阵形式最终的结果呢比如J一的就证形式是根号二分之一乘矩阵零一零换行一零一零而J二的矩阵形式是根号二分之一乘矩阵零父爱零换行爱零父爱换行零零零这些矩阵也太漂亮了而且它们的结构看起来也很相似所以SU二里群的表示不只有二乘二矩阵还可以是三乘三甚至更高维的矩阵没错转SU二里群作为一个抽象的表示可以有各种维度的表示我们今天推导出的J等于零二分之一一三分之二等等这些指对应着一二三四等等
+每一个都确定了一个不可约表示这些表示在物理学中无处不在尤其是在量子力学中描述粒子的自宣角动量等方面是理解微观世界对称性的基石听起来真是太有用了今天我们从卡西米尔算符和加当生成元开始了表示和表示内部元素的标签然后通过升降算符我们知道了这必须是整数或半整数并且推导出了这些表示的精确作用形式最后我们甚至能够显示出这些表示的矩阵
+今天真是收获满满从抽象的群论到具体的矩阵再到量子力学的核心概念这条线索被彻底打冲了很高兴你有所收获理解表示论就像是掌握了一把钥匙能打开对称性在物理世界中各种应用的大门好的那今天的基于对称性的物理学第九课就到这里了非常感谢赛义的精彩讲解也谢谢周伟的提问和总结各位听众我们下期节目再见再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001920.0_formulatransitionpar.jpg" src="../frames/frame_001920.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_001980.0_formula.jpg" src="../frames/frame_001980.0_formula.jpg" /></p>
+<p><img alt="frame_002040.0_transition.jpg" src="../frames/frame_002040.0_transition.jpg" /></p>
+<h3 id="注解_5">注解<a class="headerlink" href="#注解_5" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:32:00 ~ 00:34:32）的深度注解：</p>
+<hr />
+<h2 id="一公式与符号解析本段新内容_4">一、公式与符号解析（本段新内容）<a class="headerlink" href="#一公式与符号解析本段新内容_4" title="Permanent link">&para;</a></h2>
+<p>本段核心内容是<strong>显式写出 <span class="arithmatex">\(j=1\)</span>（3维）表示中生成元 <span class="arithmatex">\(J_1\)</span> 和 <span class="arithmatex">\(J_2\)</span> 的矩阵形式</strong>，并建立表示维度与量子数 <span class="arithmatex">\(j\)</span> 的普遍对应关系。</p>
+<h3 id="1-自旋-1j1表示的生成元矩阵">1. 自旋-1（<span class="arithmatex">\(j=1\)</span>）表示的生成元矩阵<a class="headerlink" href="#1-自旋-1j1表示的生成元矩阵" title="Permanent link">&para;</a></h3>
+<p>对于3维表示（对应自旋为1的粒子），生成元的矩阵形式为：</p>
+<div class="arithmatex">\[J_1 = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 &amp; 1 &amp; 0 \\ 1 &amp; 0 &amp; 1 \\ 0 &amp; 1 &amp; 0 \end{pmatrix}, \quad J_2 = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 &amp; -i &amp; 0 \\ i &amp; 0 &amp; -i \\ 0 &amp; i &amp; 0 \end{pmatrix}\]</div>
+<p><strong>符号说明：</strong>
+- <span class="arithmatex">\(J_1, J_2\)</span>：SU(2)李代数的生成元（角动量算符的 <span class="arithmatex">\(x, y\)</span> 分量），满足对易关系 <span class="arithmatex">\([J_i, J_j] = i\varepsilon_{ijk}J_k\)</span>
+- <span class="arithmatex">\(\frac{1}{\sqrt{2}}\)</span>：归一化因子，确保矩阵元与升降算符的归一化条件一致（<span class="arithmatex">\(J_\pm = J_1 \pm iJ_2\)</span>）
+- 矩阵元中的 <span class="arithmatex">\(i\)</span>：虚数单位（字幕中"父爱"为"-i"的语音识别误差，"爱"为"i"的误差）
+- 矩阵结构：三对角矩阵，仅当磁量子数 <span class="arithmatex">\(m\)</span> 相差 <span class="arithmatex">\(\pm 1\)</span> 时矩阵元非零，反映升降算符的跃迁选择定则</p>
+<h3 id="2-表示的维度与-j-的对应关系">2. 表示的维度与 <span class="arithmatex">\(j\)</span> 的对应关系<a class="headerlink" href="#2-表示的维度与-j-的对应关系" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\text{维度} = 2j + 1 \quad (j = 0, \tfrac{1}{2}, 1, \tfrac{3}{2}, \dots)\]</div>
+<p><strong>对应表：</strong></p>
+<table>
+<thead>
+<tr>
+<th>量子数 <span class="arithmatex">\(j\)</span></th>
+<th>表示维度</th>
+<th>物理对应</th>
+<th>基矢 <span class="arithmatex">\(\|j,m\rangle\)</span> 的 <span class="arithmatex">\(m\)</span> 取值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0\)</span></td>
+<td>1</td>
+<td>标量粒子（如希格斯玻色子）</td>
+<td><span class="arithmatex">\(\{0\}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tfrac{1}{2}\)</span></td>
+<td>2</td>
+<td>费米子（电子、夸克）</td>
+<td><span class="arithmatex">\(\{\tfrac{1}{2}, -\tfrac{1}{2}\}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(1\)</span></td>
+<td>3</td>
+<td>矢量玻色子（光子、W/Z玻色子）</td>
+<td><span class="arithmatex">\(\{1, 0, -1\}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tfrac{3}{2}\)</span></td>
+<td>4</td>
+<td>高自旋费米子（如 <span class="arithmatex">\(\Delta\)</span> 重子）</td>
+<td><span class="arithmatex">\(\{\tfrac{3}{2}, \tfrac{1}{2}, -\tfrac{1}{2}, -\tfrac{3}{2}\}\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二截图内容描述">二、截图内容描述<a class="headerlink" href="#二截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1显式构造3维表示j1">截图1：显式构造3维表示（<span class="arithmatex">\(j=1\)</span>）<a class="headerlink" href="#截图1显式构造3维表示j1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>："显式构造：3维表示 (<span class="arithmatex">\(j=1\)</span>)"</li>
+<li><strong>内容</strong>：展示三个 <span class="arithmatex">\(3\times 3\)</span> 矩阵，分别对应生成元 <span class="arithmatex">\(J_1, J_2, J_3\)</span></li>
+<li><span class="arithmatex">\(J_1\)</span> 和 <span class="arithmatex">\(J_2\)</span> 为实对称/厄米矩阵，非对角元仅在次对角线及其平行线上</li>
+<li><span class="arithmatex">\(J_3\)</span> 为对角矩阵：<span class="arithmatex">\(\text{diag}(1, 0, -1)\)</span>，直接对应磁量子数 <span class="arithmatex">\(m\)</span> 的本征值</li>
+<li><strong>总结框</strong>：强调这是一个通用框架，掌握后可构造SU(2)的所有有限维不可约表示</li>
+</ul>
+<h3 id="截图2su2李代数的有限维不可约表示全景">截图2：SU(2)李代数的有限维不可约表示全景<a class="headerlink" href="#截图2su2李代数的有限维不可约表示全景" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>核心结构图</strong>：展示"阶梯"状的多层结构，每层对应一个 <span class="arithmatex">\(j\)</span> 值</li>
+<li>左侧：卡西米尔算符 <span class="arithmatex">\(J^2\)</span> 的特征值 <span class="arithmatex">\(j(j+1)\)</span> 随 <span class="arithmatex">\(j\)</span> 增长</li>
+<li>中间：升降算符 <span class="arithmatex">\(J_\pm\)</span> 在不同 <span class="arithmatex">\(m\)</span> 态之间的跃迁（以球体和流线表示）</li>
+<li>右侧：基矢量 <span class="arithmatex">\(|j,m\rangle\)</span> 的球面表示（布洛赫球的高维推广）</li>
+<li><strong>表格</strong>：列出 <span class="arithmatex">\(j=0, \tfrac{1}{2}, 1\)</span> 的量子数、维度、<span class="arithmatex">\(J_3\)</span> 本征值范围及卡西米尔值</li>
+</ul>
+<hr />
+<h2 id="三理论背景补充_1">三、理论背景补充<a class="headerlink" href="#三理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-矩阵的漂亮结构从何而来">1. 矩阵的"漂亮"结构从何而来？<a class="headerlink" href="#1-矩阵的漂亮结构从何而来" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(J_1\)</span> 和 <span class="arithmatex">\(J_2\)</span> 的矩阵呈现<strong>对称三对角形式</strong>（Symmetric Tridiagonal），这并非偶然：
+- <strong>物理原因</strong>：在 <span class="arithmatex">\(|j,m\rangle\)</span> 基底下，<span class="arithmatex">\(J_3\)</span> 是对角的（好量子数），而 <span class="arithmatex">\(J_1, J_2\)</span> 只能通过升降算符 <span class="arithmatex">\(J_\pm\)</span> 改变 <span class="arithmatex">\(m\)</span> 值，因此只有 <span class="arithmatex">\(m\)</span> 相差 <span class="arithmatex">\(\pm 1\)</span> 的矩阵元非零
+- <strong>数学原因</strong>：这是李代数 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 在<strong>盖尔范德-蔡特林基</strong>（Gelfand-Tsetlin basis）下的标准实现，与经典正交多项式（如切比雪夫多项式）有深刻联系</p>
+<h3 id="2-从抽象群到具体矩阵的对应">2. 从抽象群到具体矩阵的对应<a class="headerlink" href="#2-从抽象群到具体矩阵的对应" title="Permanent link">&para;</a></h3>
+<p>SU(2)作为<strong>抽象李群</strong>，其元素是 <span class="arithmatex">\(2\times 2\)</span> 幺正矩阵，但其<strong>表示</strong>可以是任意维度的：
+- <strong>基本表示</strong>（Fundamental）：<span class="arithmatex">\(j=\tfrac{1}{2}\)</span>，即原始的 <span class="arithmatex">\(2\times 2\)</span> 泡利矩阵
+- <strong>伴随表示</strong>（Adjoint）：<span class="arithmatex">\(j=1\)</span>，即本段讨论的 <span class="arithmatex">\(3\times 3\)</span> 矩阵，对应SU(2)群在自身李代数上的作用
+- <strong>高阶表示</strong>：通过张量积构造（如两个自旋-1/2粒子耦合可得自旋-1和自旋-0）</p>
+<hr />
+<h2 id="四核心概念通俗解释_1">四、核心概念通俗解释<a class="headerlink" href="#四核心概念通俗解释_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-为什么这些矩阵长得相似">1. 为什么这些矩阵"长得相似"？<a class="headerlink" href="#1-为什么这些矩阵长得相似" title="Permanent link">&para;</a></h3>
+<p>观察 <span class="arithmatex">\(J_1\)</span> 和 <span class="arithmatex">\(J_2\)</span> 的矩阵，你会发现它们像是"错位的梯子"：
+- <span class="arithmatex">\(J_1\)</span> 全是实数，像实轴上的跳跃
+- <span class="arithmatex">\(J_2\)</span> 全是虚数，像相位旋转</p>
+<p>这反映了 <span class="arithmatex">\(J_1\)</span> 和 <span class="arithmatex">\(J_2\)</span> 通过酉变换（相位旋转）相互联系。在量子力学中，选择 <span class="arithmatex">\(J_3\)</span> 对角化（<span class="arithmatex">\(z\)</span> 轴量子化）后，<span class="arithmatex">\(J_1\)</span> 和 <span class="arithmatex">\(J_2\)</span> 必然呈现这种<strong>实部-虚部对称</strong>的结构，就像把角动量分解为 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(y\)</span> 平面上的投影。</p>
+<h3 id="2-表示论物理学的翻译字典">2. 表示论：物理学的"翻译字典"<a class="headerlink" href="#2-表示论物理学的翻译字典" title="Permanent link">&para;</a></h3>
+<p>本段总结的"从抽象群论到具体矩阵"的线索，本质上是<strong>表示论</strong>的核心思想：
+- <strong>抽象层面</strong>：SU(2)是一个满足特定乘法规则的群，我们不知道它具体"长什么样"
+- <strong>表示层面</strong>：通过把群元素写成矩阵（线性变换），我们给抽象群找到了<strong>具体的化身</strong>
+- <strong>物理层面</strong>：不同的 <span class="arithmatex">\(j\)</span> 值对应不同种类的粒子。自旋-1/2的电子用 <span class="arithmatex">\(2\times 2\)</span> 矩阵描述，自旋-1的光子用 <span class="arithmatex">\(3\times 3\)</span> 矩阵描述——<strong>表示的维度就是粒子内部自由度的数量</strong></p>
+<h3 id="3-不可约表示的完备性">3. 不可约表示的完备性<a class="headerlink" href="#3-不可约表示的完备性" title="Permanent link">&para;</a></h3>
+<p>课程强调SU(2)的表示"不只有 <span class="arithmatex">\(2\times 2\)</span> 矩阵，还可以是 <span class="arithmatex">\(3\times 3\)</span> 甚至更高维"，这暗示了一个深刻定理：<strong>SU(2)的所有有限维不可约表示完全由半整数 <span class="arithmatex">\(j\)</span> 分类</strong>，且任何表示都可以分解为这些不可约表示的直和。这正是量子力学中<strong>角动量耦合理论</strong>的数学基础（如两个电子的自旋可以组合成单态和三重态）。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

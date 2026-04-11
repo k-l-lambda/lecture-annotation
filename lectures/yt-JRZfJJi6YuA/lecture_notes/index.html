@@ -1,0 +1,3045 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-JRZfJJi6YuA/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-V3bRPmsJ-Ik/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-yIiK6C0CqJQ/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第10课 洛伦兹群O1,3：揭示时空对称性的数学结构 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第10课-洛伦兹群o13揭示时空对称性的数学结构" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入与洛伦兹群的定义条件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入与洛伦兹群的定义条件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-闵可夫斯基内积minkowski-inner-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 闵可夫斯基内积（Minkowski Inner Product）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-度规矩阵metric-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 度规矩阵（Metric Tensor）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-洛伦兹变换的定义条件核心公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 洛伦兹变换的定义条件（核心公式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-变换矩阵的指标记法约定板书蓝框标注" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 变换矩阵的指标记法约定（板书蓝框标注）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么叫-o13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么叫 \(O(1,3)\)？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#洛伦兹变换的物理意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洛伦兹变换的物理意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释从具体到抽象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释：从"具体"到"抽象"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节关键收获" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节关键收获
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：洛伦兹变换的四类划分与固有正时群
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：洛伦兹变换的四类划分与固有正时群">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图洛伦兹群的定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（洛伦兹群的定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图分类依据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（分类依据）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图四个连通分量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（四个连通分量）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二新公式与符号详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、新公式与符号详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、新公式与符号详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-洛伦兹变换的矩阵定义式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 洛伦兹变换的矩阵定义式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-行列式约束推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 行列式约束推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-时间分量约束00分量方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 时间分量约束（00分量方程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景与核心概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景与核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景与核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-连通分量connected-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 连通分量（Connected Components）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-固有保时洛伦兹群-l_uparrowrestricted-lorentz-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 固有保时洛伦兹群 \(L_+^\uparrow\)（Restricted Lorentz Group）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-离散对称变换空间反射与时间反射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 离散对称变换：空间反射与时间反射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：四维矩阵表示与旋转、Boost生成元构造
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：四维矩阵表示与旋转、Boost生成元构造">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：由生成元得到有限Boost变换及全课总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：由生成元得到有限Boost变换及全课总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一截图板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图boost生成元汇总" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图：Boost生成元汇总
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图指数映射exponentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图：指数映射（Exponentiation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图最终结果洛伦兹推进矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图：最终结果——洛伦兹推进矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式与符号详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式与符号详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式与符号详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-六个生成元的完备集" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 六个生成元的完备集
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入与洛伦兹群的定义条件
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入与洛伦兹群的定义条件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-闵可夫斯基内积minkowski-inner-product" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 闵可夫斯基内积（Minkowski Inner Product）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-度规矩阵metric-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 度规矩阵（Metric Tensor）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-洛伦兹变换的定义条件核心公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 洛伦兹变换的定义条件（核心公式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-变换矩阵的指标记法约定板书蓝框标注" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 变换矩阵的指标记法约定（板书蓝框标注）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么叫-o13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么叫 \(O(1,3)\)？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#洛伦兹变换的物理意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        洛伦兹变换的物理意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释从具体到抽象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释：从"具体"到"抽象"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节关键收获" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节关键收获
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：洛伦兹变换的四类划分与固有正时群
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：洛伦兹变换的四类划分与固有正时群">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图洛伦兹群的定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（洛伦兹群的定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图分类依据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（分类依据）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图四个连通分量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（四个连通分量）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二新公式与符号详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、新公式与符号详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、新公式与符号详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-洛伦兹变换的矩阵定义式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 洛伦兹变换的矩阵定义式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-行列式约束推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 行列式约束推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-时间分量约束00分量方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 时间分量约束（00分量方程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景与核心概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景与核心概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景与核心概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-连通分量connected-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 连通分量（Connected Components）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-固有保时洛伦兹群-l_uparrowrestricted-lorentz-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 固有保时洛伦兹群 \(L_+^\uparrow\)（Restricted Lorentz Group）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-离散对称变换空间反射与时间反射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 离散对称变换：空间反射与时间反射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：四维矩阵表示与旋转、Boost生成元构造
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：四维矩阵表示与旋转、Boost生成元构造">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：由生成元得到有限Boost变换及全课总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：由生成元得到有限Boost变换及全课总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一截图板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图boost生成元汇总" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图：Boost生成元汇总
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图指数映射exponentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图：指数映射（Exponentiation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图最终结果洛伦兹推进矩阵" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图：最终结果——洛伦兹推进矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式与符号详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式与符号详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式与符号详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-六个生成元的完备集" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 六个生成元的完备集
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第10课-洛伦兹群o13揭示时空对称性的数学结构">《基于对称性的物理学》第10课 洛伦兹群O1,3：揭示时空对称性的数学结构<a class="headerlink" href="#基于对称性的物理学第10课-洛伦兹群o13揭示时空对称性的数学结构" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 4 个段落）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 课程引入与洛伦兹群的定义条件</a></li>
+<li><a href="#段落-2">00:06:00 洛伦兹变换的四类划分与固有正时群</a></li>
+<li><a href="#段落-3">00:12:00 四维矩阵表示与旋转、Boost生成元构造</a></li>
+<li><a href="#段落-4">00:19:00 由生成元得到有限Boost变换及全课总结</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程引入与洛伦兹群的定义条件<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:06:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎收听基于对唱性的物理学我是你们的活泼主持人周亦大家好我是你们的知识向导赛很高兴再次和大家见面赛今天我们迎来第十课了时间过得真快你知道吗我看到我们这课的开拼引用了一句毕加索的话他说为了达到抽象始终有必要从具体的现实开始你必须始终从某些东西开始之后你可以移除现实的所有痕迹这句话可真有意思这句引用选得非常好它其实完美的概括了我们今天这节课以及整个理理论学习的精髓我们今天要探讨的洛伦兹群O一三听起来可能有点抽象但它正是从我们熟悉的现实也就是狭义相对论中的时空变换开始的没错
+我们前面课程里也提过不少次了狭义相对论是我们描述宇宙最基础的理论之一那么今天赛我们是不是就要深入挖一挖这些时空变换背后的抽象结构到底是什么了完全正确今天这节课我们会从罗伦子群最核心的定义开始然后一步步推到出它的一些具体表现形式也就是所谓的表示最终我们会看到这些看起来很复杂的变换其实可以被一些更基本的生成元所描述听起来有点像在解破一个复杂的机械先看它整体怎么动再拆开看每个零件是什么对吧差不多就是这个意思而且这个过程会展现出理理论的强大之处通过理解这些抽象结构我们就能获得描述物理系统的新工具甚至能描述那些传统
+简单来说罗伦兹群是所有能保持明科夫斯基空间内积不变的几何这个概念我们之前好像提到过就是那个X上零平方减X上一平方减X上二平方减X上三平方嘛对就是它这个内积或者说时空隔在狭义相对论里是一个非常重要的概念它在任何观念参考系下都保持不变我们用A塔下这个度归矩阵来表示它那个矩阵我记得对角线上是一一一一一所以罗伦兹群就是指那些变化它们作用在一个
+变量上长度不变是吗金P就是这个意思我们就是因为这个度规矩阵A塔下有一个正好和三个副号所以才把这个群叫作O1O3就这样了这个名字的含义是这样来的那我们怎么用数学语言来描述这个保持不变的条件呢好的假设我们有一个罗伦子变换我们通常用大写希腊字母RAMDA来表示它它把一个四维向量X上MUE变成一个新的向量X上MUE等于RAMDA上MUE上MUE上MUE如果这个变换要保持内积不变那么X上SIGMASIGMAROSET
+缩写X上MYU上SIGMA缩写X新X新最后必须等于X上MYU上MYU上MYU上MYU最后必须等于X上MYU上MYU最后必须等于X上MYU上MYU最后必须等于X上MYU最后必须等于X上MYU最后必须等于X上MYU最后必须等于X最后必须等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X最后等于X
+左上右下可以改成括号的转制括号下上注意这里左上交换了为了符号上的简洁我们特别针对变换句状往往省略转制符号看到变换句状左指标交换了就意味着转制了原来如此那么变换句状的逆句状也有这样的约定对吧是的只要你看见了变换句状的指标相比标准技法而言出现左下交换并且上下交换那么即使没有求逆符号的逆句状也必须注意这种技法只能是针对变换句状的可以省略转制符或求逆符的情况你必须老实地添加转制符或求逆符这样可以完全明白我们继续吧
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.0_parastart.jpg" src="../frames/frame_000000.0_parastart.jpg" /></p>
+<p><img alt="frame_000060.0_formula.jpg" src="../frames/frame_000060.0_formula.jpg" /></p>
+<p><img alt="frame_000180.0_transition.jpg" src="../frames/frame_000180.0_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解。</p>
+<hr />
+<h2 id="一板书ppt-公式详解">一、板书/PPT 公式详解<a class="headerlink" href="#一板书ppt-公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-闵可夫斯基内积minkowski-inner-product">1. 闵可夫斯基内积（Minkowski Inner Product）<a class="headerlink" href="#1-闵可夫斯基内积minkowski-inner-product" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[x^\mu x_\mu = x^\mu \eta_{\mu\nu} x^\nu = (x^0)^2 - (x^1)^2 - (x^2)^2 - (x^3)^2\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x^\mu\)</span></td>
+<td style="text-align: left;">四维时空坐标（逆变矢量），<span class="arithmatex">\(\mu = 0,1,2,3\)</span>，其中 <span class="arithmatex">\(x^0 = ct\)</span> 为时间分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x_\mu\)</span></td>
+<td style="text-align: left;">协变矢量，通过度规降指标得到：<span class="arithmatex">\(x_\mu = \eta_{\mu\nu}x^\nu\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_{\mu\nu}\)</span></td>
+<td style="text-align: left;">闵可夫斯基度规（Minkowski metric）</td>
+</tr>
+<tr>
+<td style="text-align: left;">重复指标求和</td>
+<td style="text-align: left;">爱因斯坦求和约定：重复的上下指标表示对该指标求和</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键特征</strong>：时间分量带正号，三个空间分量带负号——这与欧几里得内积 <span class="arithmatex">\((x^1)^2+(x^2)^2+(x^3)^2\)</span> 形成鲜明对比，是狭义相对论"时空"与"空间"本质区别的数学体现。</p>
+<hr />
+<h3 id="2-度规矩阵metric-tensor">2. 度规矩阵（Metric Tensor）<a class="headerlink" href="#2-度规矩阵metric-tensor" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\eta_{\mu\nu} = \text{diag}(1, -1, -1, -1)\]</div>
+<p>即：</p>
+<div class="arithmatex">\[\eta_{\mu\nu} = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix}\]</div>
+<p><strong>符号约定</strong>：本课程采用<strong>东海岸约定</strong>（mostly minus），即 <span class="arithmatex">\((+,-,-,-)\)</span>。另有西海岸约定 <span class="arithmatex">\((-,+,+,+)\)</span>，需注意文献区分。</p>
+<hr />
+<h3 id="3-洛伦兹变换的定义条件核心公式">3. 洛伦兹变换的定义条件（核心公式）<a class="headerlink" href="#3-洛伦兹变换的定义条件核心公式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Lambda^T \eta \Lambda = \eta\]</div>
+<p><strong>推导过程</strong>（板书红框标注）：</p>
+<p>设变换 <span class="arithmatex">\(x'^\mu = \Lambda^\mu_{\;\;\nu} x^\nu\)</span>，要求内积不变：</p>
+<div class="arithmatex">\[\underbrace{x'^\sigma \eta_{\sigma\rho} x'^\rho}_{\text{变换后的内积}} = \underbrace{x^\mu \eta_{\mu\nu} x^\nu}_{\text{原内积}}\]</div>
+<p>代入变换：</p>
+<div class="arithmatex">\[(\Lambda^\sigma_{\;\;\mu}x^\mu)\eta_{\sigma\rho}(\Lambda^\rho_{\;\;\nu}x^\nu) = x^\mu \underbrace{(\Lambda^\sigma_{\;\;\mu}\eta_{\sigma\rho}\Lambda^\rho_{\;\;\nu})}_{\stackrel{!}{=} \eta_{\mu\nu}} x^\nu\]</div>
+<p>因此得到<strong>矩阵形式</strong>：</p>
+<div class="arithmatex">\[\Lambda^T \eta \Lambda = \eta\]</div>
+<hr />
+<h3 id="4-变换矩阵的指标记法约定板书蓝框标注">4. 变换矩阵的指标记法约定（板书蓝框标注）<a class="headerlink" href="#4-变换矩阵的指标记法约定板书蓝框标注" title="Permanent link">&para;</a></h3>
+<p>PPT中展示了两种等价的指标写法：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">写法</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">记忆诀窍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^\mu_{\;\;\nu}\)</span></td>
+<td style="text-align: left;">标准记法，上指标为行，下指标为列</td>
+<td style="text-align: left;">正常顺序</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda_\nu^{\;\;\mu}\)</span></td>
+<td style="text-align: left;"><strong>转置</strong>的简写约定</td>
+<td style="text-align: left;">左右指标交换 = 转置</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^{\;\;\mu}_\nu\)</span></td>
+<td style="text-align: left;"><strong>逆矩阵</strong>的简写约定</td>
+<td style="text-align: left;">上下+左右都交换 = 求逆</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>重要警告</strong>：这种简写<strong>仅适用于变换矩阵</strong>！普通张量必须显式写出转置符号 <span class="arithmatex">\(T\)</span> 或逆符号 <span class="arithmatex">\(^{-1}\)</span>。</p>
+</blockquote>
+<hr />
+<h2 id="二理论背景补充">二、理论背景补充<a class="headerlink" href="#二理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="为什么叫-o13">为什么叫 <span class="arithmatex">\(O(1,3)\)</span>？<a class="headerlink" href="#为什么叫-o13" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号部分</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(O\)</span></td>
+<td style="text-align: left;">Orthogonal（正交），即保持内积不变的变换</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1,3)\)</span></td>
+<td style="text-align: left;">度规的符号差（signature）：1个正特征值，3个负特征值</td>
+</tr>
+</tbody>
+</table>
+<p>这与欧几里得空间的 <span class="arithmatex">\(O(4)\)</span>（4个正特征值）形成对比。数学上，<span class="arithmatex">\(O(p,q)\)</span> 称为<strong>伪正交群</strong>（pseudo-orthogonal group）。</p>
+<h3 id="洛伦兹变换的物理意义">洛伦兹变换的物理意义<a class="headerlink" href="#洛伦兹变换的物理意义" title="Permanent link">&para;</a></h3>
+<p>保持 <span class="arithmatex">\(s^2 = (ct)^2 - x^2 - y^2 - z^2\)</span> 不变，正是狭义相对论的<strong>光速不变原理</strong>的数学表达：
+- 光子世界线：<span class="arithmatex">\(s^2 = 0\)</span>（类光）
+- 有质量粒子：<span class="arithmatex">\(s^2 &gt; 0\)</span>（类时）
+- 超光速情形：<span class="arithmatex">\(s^2 &lt; 0\)</span>（类空）</p>
+<hr />
+<h2 id="三通俗解释从具体到抽象">三、通俗解释：从"具体"到"抽象"<a class="headerlink" href="#三通俗解释从具体到抽象" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">毕加索的比喻</th>
+<th style="text-align: left;">物理对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>具体的现实</strong></td>
+<td style="text-align: left;">狭义相对论中的时空变换（洛伦兹boost、旋转）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>移除痕迹</strong></td>
+<td style="text-align: left;">发现这些变换共享的抽象结构——群 <span class="arithmatex">\(O(1,3)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>抽象的成果</strong></td>
+<td style="text-align: left;">用6个生成元（3个旋转 <span class="arithmatex">\(J_i\)</span> + 3个boost <span class="arithmatex">\(K_i\)</span>）描述所有可能变换</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心洞见</strong>：就像拆解机械钟表——
+- 先看整体：时针、分针、秒针各自转动（<strong>有限变换</strong>）
+- 再拆零件：每个指针背后都是同样的发条结构（<strong>生成元</strong>）
+- 最终发现：所有转动都由"旋转"这一基本操作生成</p>
+<hr />
+<h2 id="四截图内容描述">四、截图内容描述<a class="headerlink" href="#四截图内容描述" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">截图</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>图1（课程总览）</strong></td>
+<td style="text-align: left;">标题"洛伦兹群 <span class="arithmatex">\(O(1,3)\)</span>"，展示四连通分量（<span class="arithmatex">\(L_+^\uparrow\)</span>, <span class="arithmatex">\(L_-^\uparrow\)</span>, <span class="arithmatex">\(L_+^\downarrow\)</span>, <span class="arithmatex">\(L_-^\downarrow\)</span>）的2×2分类，以及6个生成元的可视化（旋转用球体，boost用火箭/双曲面）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>图2（引言）</strong></td>
+<td style="text-align: left;">毕加索的公牛素描+名言，列出本节课三目标：推导向量表示→构建李代数→发现隐藏结构</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>图3（定义推导）</strong></td>
+<td style="text-align: left;">核心公式推导流程，红框标注 <span class="arithmatex">\(\Lambda^T\eta\Lambda=\eta\)</span>，蓝框展示指标简写约定</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="五本节关键收获">五、本节关键收获<a class="headerlink" href="#五本节关键收获" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>洛伦兹群 = 所有保持"时空距离" <span class="arithmatex">\(s^2\)</span> 不变的线性变换</strong></p>
+</blockquote>
+<p>这个定义条件 <span class="arithmatex">\(\Lambda^T\eta\Lambda=\eta\)</span> 看似简单的矩阵方程，实则：
+1. <strong>约束了变换的形式</strong>（不是任意 <span class="arithmatex">\(4\times4\)</span> 矩阵）
+2. <strong>决定了群的维数</strong>（6个独立参数）
+3. <strong>蕴含了物理定律的对称性</strong>（相对论性协变性）</p>
+<p>下节课将由此出发，用<strong>李理论</strong>"解剖"这个群，找出那6个生成元。</p>
+<hr />
+<h2 id="段落-2">段落 2：洛伦兹变换的四类划分与固有正时群<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:06:00 ~ 00:12:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+根据刚才的变换句证的转致省略约定前面这个恒等式可以改写成句证形式那就是拉姆达转致成A成LAMDA等于A这个公式看起来简洁又强大所以只要一个四乘四句证满足这个条件它就是一个洛伦字变换完全正确这就是洛伦字变换的定义方式它有点像一个身份验证只要通过了这个验证的句证才能被称为洛伦字变换明白了那接下来我们是不是要根据这个定义来进行分类了对很有趣的是我们对这个定义条件取行列是可以得到DTRAMDA等于DTTA等于DTTA所以有DTTA等于DTA这个意味着DTTA变换至少必须是PLUS
+变量线元素也只能是大于等于一或者小于等于负一等等为什么不能在负一和等于呢我们还是先算一下拉姆达下零上西格玛缩并A塔下西格玛罗缩并拉姆达上罗下零先对拉姆达罗这两个指标进行双重一加三分解一共得到四项中间两项的度归分量为零第一项的度归时间分量为零第四项的度归空间分量为零所以等于拉姆达上零上零下零减去拉姆达上零上J然后根据
+按照变换矩阵的转制约继续等于RAMDA上零下零的平方减去RAMDA上I下零的平方对空间指标I球合最后还必须等于A塔下零零等于一所以RAMDA上零下零等于正复开根好一加对RAMDA上I下零的空间指标I球合我明白了所以只能落在大于一或小于负一的区间它不能是零也不能是小数正是如此所以结合DATARAMDA和RAMDA上零下零的符号我们可以把所有的洛伦子变换分成四类四类听起来有点复杂其实不难理解第一类是DATARAMDA等于正一且RAMDA上零大于一我们叫它L正上减头第二类是DATARAMDA上零大于L负一
+第三类是戴塔拉姆达等于正一且拉姆达上零下零小于负一叫L正下箭头最后一类是戴塔拉姆达等于负一且拉姆达上零下零小于负一叫L负下箭头这符号有点多那这四类有什么特别的物理意义吗我们为什么要这样分类这个是一个非常好的问题其实是不能平滑连结的也就是说你不能通过连续的微小变化从一类跳到另一类它们之间存在间隙就像我们不能从一个正数通过连续变化直接变成负数中间总要经过零点但这里零点被排除了差不多就是这个意思而在这四类中只有L正上箭头这一类包含了单位变换它当然是什么都不变连续的所以所有能通过无穷小变换
+变换一步步累积而成的变换都属于L正上箭头这一类所以L正上箭头是最特殊最好用的一类因为它可以跟单位变换连续连接起来完全正确这一类在专业上被称为固有等实物轮子群固有指的是它不改变空间的定向比如右手坐标系等于大于一这表示它不改变时间的方向明白了就是不翻转空间也不翻转时间那其他三类呢它们怎么来的这些是其他三类的变换在结合一些特殊的离散变换得到的这些离散变换包括空间反射LMP和时间反射LMPT
+时间反射就是把时间对应变为负的对吗对你记得很清楚LMP就是一个对角线上是一负一负一的矩阵而LMP是对角线上是负一一一的矩阵通过这两个离散变化我们就能从L正上箭头跳到其他三个类别所以整个洛伦子群O1三其实可以看作是L正上箭头加上它和LPRAMDAT的各种组合正是如此L正上箭头以及对L正上箭头进行L负上箭头对L正上箭头进行L下箭头对L正上箭头同时反应对L副下箭头刚好构成L副下箭头
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000360.0_formulatransitionpar.jpg" src="../frames/frame_000360.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_000480.0_transition.jpg" src="../frames/frame_000480.0_transition.jpg" /></p>
+<p><img alt="frame_000600.0_transition.jpg" src="../frames/frame_000600.0_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>根据您提供的字幕文本与截图，这段内容的核心是<strong>从洛伦兹变换的定义出发，通过数学约束导出其四大分类（连通分量）</strong>。以下是深度注解：</p>
+<hr />
+<h2 id="一截图板书内容描述">一、截图板书内容描述<a class="headerlink" href="#一截图板书内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="第一张截图洛伦兹群的定义">第一张截图（洛伦兹群的定义）<a class="headerlink" href="#第一张截图洛伦兹群的定义" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：洛伦兹群的定义</li>
+<li><strong>核心内容</strong>：说明 <span class="arithmatex">\(O(1,3)\)</span> 是保持闵可夫斯基空间内积不变的所有变换的集合</li>
+<li><strong>关键公式</strong>：展示内积定义 <span class="arithmatex">\(x^\mu x_\mu = (x^0)^2 - (x^1)^2 - (x^2)^2 - (x^3)^2\)</span>，度规矩阵 <span class="arithmatex">\(\eta_{\mu\nu} = \text{diag}(1,-1,-1,-1)\)</span></li>
+<li><strong>推导过程</strong>：通过坐标变换 <span class="arithmatex">\(x'^\mu = \Lambda^\mu_{\ \nu} x^\nu\)</span> 保持内积不变，推导出<strong>定义条件</strong>（红框标出）：
+  <span class="arithmatex">\(\Lambda^T \eta \Lambda = \eta\)</span></li>
+<li><strong>注释</strong>：右侧有蓝色手写圈注，说明变换矩阵的转置约定 <span class="arithmatex">\(\Lambda^\mu_{\ \nu} = (\Lambda^T)_\nu^{\ \mu} \equiv \Lambda_\nu^{\ \mu}\)</span></li>
+</ul>
+<h3 id="第二张截图分类依据">第二张截图（分类依据）<a class="headerlink" href="#第二张截图分类依据" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：洛伦兹变换的分类依据</li>
+<li><strong>左右分栏</strong>：</li>
+<li><strong>左侧（行列式约束）</strong>：对 <span class="arithmatex">\(\Lambda^T \eta \Lambda = \eta\)</span> 取行列式，利用 <span class="arithmatex">\(\det(\eta) = -1\)</span> 推导出 <span class="arithmatex">\(\det(\Lambda)^2 = 1\)</span>，得到<strong>约束1</strong>：<span class="arithmatex">\(\det(\Lambda) = \pm 1\)</span></li>
+<li><strong>右侧（时间分量约束）</strong>：考察 <span class="arithmatex">\(\mu=\nu=0\)</span> 分量方程，展开双重缩并后得到 <span class="arithmatex">\((\Lambda^0_0)^2 - \sum_i (\Lambda^i_0)^2 = 1\)</span>，移项得 <span class="arithmatex">\(\Lambda^0_0 = \pm\sqrt{1 + \sum_i (\Lambda^i_0)^2}\)</span>，从而得到<strong>约束2</strong>：<span class="arithmatex">\(\Lambda^0_0 \geq 1\)</span> 或 <span class="arithmatex">\(\Lambda^0_0 \leq -1\)</span>（红箭头指向此结果）</li>
+</ul>
+<h3 id="第三张截图四个连通分量">第三张截图（四个连通分量）<a class="headerlink" href="#第三张截图四个连通分量" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：四个连通分量</li>
+<li><strong>表格形式</strong>：以 <span class="arithmatex">\(\det(\Lambda)\)</span>（列：<span class="arithmatex">\(+1, -1\)</span>）和 <span class="arithmatex">\(\Lambda^0_0\)</span>（行：<span class="arithmatex">\(\geq 1, \leq -1\)</span>）为轴，将洛伦兹群分为四块：</li>
+<li><strong>左上（红框）</strong>：<span class="arithmatex">\(L_+^\uparrow\)</span>（固有保时，Proper Orthochronous），<span class="arithmatex">\(\det=+1, \Lambda^0_0 \geq 1\)</span>，包含单位元 <span class="arithmatex">\(Id\)</span></li>
+<li><strong>右上</strong>：<span class="arithmatex">\(L_-^\uparrow\)</span>，<span class="arithmatex">\(\det=-1, \Lambda^0_0 \geq 1\)</span></li>
+<li><strong>左下</strong>：<span class="arithmatex">\(L_+^\downarrow\)</span>，<span class="arithmatex">\(\det=+1, \Lambda^0_0 \leq -1\)</span></li>
+<li><strong>右下</strong>：<span class="arithmatex">\(L_-^\downarrow\)</span>，<span class="arithmatex">\(\det=-1, \Lambda^0_0 \leq -1\)</span></li>
+<li><strong>注释</strong>：右侧文字说明只有 <span class="arithmatex">\(L_+^\uparrow\)</span> 包含单位元，因此只有这个类别可以通过无穷小变换生成。</li>
+</ul>
+<hr />
+<h2 id="二新公式与符号详解">二、新公式与符号详解<a class="headerlink" href="#二新公式与符号详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-洛伦兹变换的矩阵定义式">1. 洛伦兹变换的矩阵定义式<a class="headerlink" href="#1-洛伦兹变换的矩阵定义式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Lambda^T \eta \Lambda = \eta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义与说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda\)</span></td>
+<td style="text-align: left;"><strong>洛伦兹变换矩阵</strong>（<span class="arithmatex">\(4\times 4\)</span> 实矩阵），<span class="arithmatex">\(\Lambda^\mu_{\ \nu}\)</span> 表示新坐标 <span class="arithmatex">\(x'^\mu\)</span> 对旧坐标 <span class="arithmatex">\(x^\nu\)</span> 的偏导数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^T\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda\)</span> 的转置矩阵，指标记法中为 <span class="arithmatex">\((\Lambda^T)_\mu^{\ \nu} = \Lambda^\nu_{\ \mu}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta\)</span></td>
+<td style="text-align: left;">闵可夫斯基度规矩阵，<span class="arithmatex">\(\eta = \text{diag}(1, -1, -1, -1)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>物理意义</strong></td>
+<td style="text-align: left;">此式是洛伦兹变换的<strong>身份验证</strong>条件：只有保持闵可夫斯基度规不变的矩阵才是洛伦兹变换。类似于正交矩阵满足 <span class="arithmatex">\(R^T I R = I\)</span>，这里将单位矩阵 <span class="arithmatex">\(I\)</span> 替换为度规 <span class="arithmatex">\(\eta\)</span>。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-行列式约束推导">2. 行列式约束推导<a class="headerlink" href="#2-行列式约束推导" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\det(\Lambda^T \eta \Lambda) = \det(\eta) \implies \det(\Lambda)^2 \cdot \det(\eta) = \det(\eta) \implies \det(\Lambda)^2 = 1\]</div>
+<p><strong>结果</strong>：</p>
+<div class="arithmatex">\[\det(\Lambda) = \pm 1\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\det(\Lambda) = +1\)</span></strong>：称为<strong>固有</strong>（Proper）变换，保持空间定向（右手坐标系不会变成左手坐标系）</li>
+<li><strong><span class="arithmatex">\(\det(\Lambda) = -1\)</span></strong>：包含空间反射（镜像），改变空间定向</li>
+</ul>
+<h3 id="3-时间分量约束00分量方程">3. 时间分量约束（00分量方程）<a class="headerlink" href="#3-时间分量约束00分量方程" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Lambda^\mu_{\ 0} \eta_{\mu\sigma} \Lambda^\sigma_{\ 0} = \eta_{00} = 1\]</div>
+<p>展开后（利用 <span class="arithmatex">\(\eta_{00}=1, \eta_{ij}=-\delta_{ij}\)</span>）：</p>
+<div class="arithmatex">\[(\Lambda^0_{\ 0})^2 - \sum_{i=1}^3 (\Lambda^i_{\ 0})^2 = 1\]</div>
+<p><strong>移项结果</strong>：</p>
+<div class="arithmatex">\[\Lambda^0_{\ 0} = \pm \sqrt{1 + \sum_{i=1}^3 (\Lambda^i_{\ 0})^2}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^0_{\ 0}\)</span></td>
+<td style="text-align: left;">变换矩阵的<strong>时间-时间分量</strong>，表示新时间坐标与原时间坐标的"混合"程度，也决定了时间流向是否改变</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^i_{\ 0}\)</span> (<span class="arithmatex">\(i=1,2,3\)</span>)</td>
+<td style="text-align: left;">变换矩阵的<strong>时间-空间分量</strong>，与参考系之间的相对速度有关（在纯洛伦兹 boost 中，<span class="arithmatex">\(\Lambda^i_{\ 0} \propto v^i\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>约束</strong></td>
+<td style="text-align: left;">由于根号内 <span class="arithmatex">\(\geq 1\)</span>，故 <span class="arithmatex">\(\Lambda^0_{\ 0} \geq 1\)</span>（保时）或 <span class="arithmatex">\(\Lambda^0_{\ 0} \leq -1\)</span>（反时），<strong>绝对不能落在 <span class="arithmatex">\((-1, 1)\)</span> 区间</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三理论背景与核心概念">三、理论背景与核心概念<a class="headerlink" href="#三理论背景与核心概念" title="Permanent link">&para;</a></h2>
+<h3 id="1-连通分量connected-components">1. 连通分量（Connected Components）<a class="headerlink" href="#1-连通分量connected-components" title="Permanent link">&para;</a></h3>
+<p>洛伦兹群 <span class="arithmatex">\(O(1,3)\)</span> 作为一个<strong>李群</strong>，其流形结构是不连通的，由<strong>四个互不连通的片（连通分支）</strong>组成。这类似于二维平面去掉原点后分成四个象限，你无法在不经过原点（被排除的点）的情况下从第一象限连续走到第三象限。</p>
+<p><strong>分类逻辑</strong>：
+- 第一标签（上下箭头 <span class="arithmatex">\(\uparrow/\downarrow\)</span>）：由 <span class="arithmatex">\(\Lambda^0_{\ 0}\)</span> 的符号决定
+  - <span class="arithmatex">\(\uparrow\)</span>（上箭头）：<span class="arithmatex">\(\Lambda^0_{\ 0} \geq 1\)</span>，<strong>保时</strong>（Orthochronous），保持时间流向（未来还是未来，过去还是过去）
+  - <span class="arithmatex">\(\downarrow\)</span>（下箭头）：<span class="arithmatex">\(\Lambda^0_{\ 0} \leq -1\)</span>，<strong>反时</strong>，时间流向反转（未来变过去）</p>
+<ul>
+<li>第二标签（正负号 <span class="arithmatex">\(\pm\)</span>）：由 <span class="arithmatex">\(\det(\Lambda)\)</span> 决定</li>
+<li><span class="arithmatex">\(+\)</span>：固有（Proper），空间定向不变</li>
+<li><span class="arithmatex">\(-\)</span>：非固有（Improper），包含空间反射</li>
+</ul>
+<h3 id="2-固有保时洛伦兹群-l_uparrowrestricted-lorentz-group">2. 固有保时洛伦兹群 <span class="arithmatex">\(L_+^\uparrow\)</span>（Restricted Lorentz Group）<a class="headerlink" href="#2-固有保时洛伦兹群-l_uparrowrestricted-lorentz-group" title="Permanent link">&para;</a></h3>
+<p>这是最重要的一类：
+- <strong>连通性</strong>：它是包含单位元 <span class="arithmatex">\(I\)</span>（恒等变换，什么都不做）的那个连通分支
+- <strong>生成方式</strong>：所有 <span class="arithmatex">\(L_+^\uparrow\)</span> 中的变换都可以通过<strong>无穷小变换</strong>（如缓慢的加速、微小的旋转）一步步累积而成。换句话说，它是"连续变化"能到达的所有变换的集合。
+- <strong>物理对应</strong>：实际的物理过程（如粒子加速、刚体转动）只能产生这类变换。</p>
+<h3 id="3-离散对称变换空间反射与时间反射">3. 离散对称变换：空间反射与时间反射<a class="headerlink" href="#3-离散对称变换空间反射与时间反射" title="Permanent link">&para;</a></h3>
+<p>其他三类无法通过连续变化从 <span class="arithmatex">\(L_+^\uparrow\)</span> 得到，必须通过<strong>离散跳跃</strong>（像翻硬币一样突然翻转）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">离散变换</th>
+<th style="text-align: left;">矩阵形式</th>
+<th style="text-align: left;">作用效果</th>
+<th style="text-align: left;">与 <span class="arithmatex">\(L_+^\uparrow\)</span> 组合生成</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>空间反射</strong> <span class="arithmatex">\(P\)</span> (Parity)</td>
+<td style="text-align: left;"><span class="arithmatex">\(\text{diag}(1, -1, -1, -1)\)</span></td>
+<td style="text-align: left;">镜像翻转：<span class="arithmatex">\(\vec{x} \to -\vec{x}\)</span>，时间不变</td>
+<td style="text-align: left;"><span class="arithmatex">\(L_-^\uparrow\)</span>（保时但空间反向）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>时间反射</strong> <span class="arithmatex">\(T\)</span> (Time reversal)</td>
+<td style="text-align: left;"><span class="arithmatex">\(\text{diag}(-1, 1, 1, 1)\)</span></td>
+<td style="text-align: left;">时间倒流：<span class="arithmatex">\(t \to -t\)</span>，空间不变</td>
+<td style="text-align: left;"><span class="arithmatex">\(L_+^\downarrow\)</span>（反时但空间正向）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>时空反演</strong> <span class="arithmatex">\(PT\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\text{diag}(-1, -1, -1, -1) = -I\)</span></td>
+<td style="text-align: left;">同时翻转</td>
+<td style="text-align: left;"><span class="arithmatex">\(L_-^\downarrow\)</span>（反时且空间反向）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>群结构</strong>：</p>
+<div class="arithmatex">\[O(1,3) = L_+^\uparrow \cup P \cdot L_+^\uparrow \cup T \cdot L_+^\uparrow \cup (PT) \cdot L_+^\uparrow\]</div>
+<hr />
+<h2 id="四通俗解释">四、通俗解释<a class="headerlink" href="#四通俗解释" title="Permanent link">&para;</a></h2>
+<p>想象洛伦兹群是一个"时空变形器"的集合，这些变形器可以改变你的坐标系（旋转或加速），但有严格规则：</p>
+<ol>
+<li>
+<p><strong>行列式规则</strong>：变形器要么保持你的"手性"（右手坐标系仍是右手，<span class="arithmatex">\(\det=+1\)</span>），要么把你变成镜像世界（左手坐标系，<span class="arithmatex">\(\det=-1\)</span>）。前者像正常旋转，后者像照镜子。</p>
+</li>
+<li>
+<p><strong>时间分量规则</strong>：变形器对时间轴的"拉伸"必须足够强（<span class="arithmatex">\(\Lambda^0_{\ 0}\)</span> 的绝对值必须 <span class="arithmatex">\(\geq 1\)</span>），不能太小。这就像你不能"轻微地"改变时间流向——要么保持时间向前（<span class="arithmatex">\(\geq 1\)</span>），要么完全倒转（<span class="arithmatex">\(\leq -1\)</span>），没有中间状态。</p>
+</li>
+<li>
+<p><strong>四大门派</strong>：</p>
+</li>
+<li><strong><span class="arithmatex">\(L_+^\uparrow\)</span>（正规军）</strong>：正常物理过程，慢慢加速、旋转，时间正常流逝，空间不翻转。这是唯一可以通过"渐进调整"实现的类别。</li>
+<li><strong><span class="arithmatex">\(L_-^\uparrow\)</span>（镜像世界）</strong>：在正规军基础上加一面镜子（空间反射），时间正常但左右颠倒。</li>
+<li><strong><span class="arithmatex">\(L_+^\downarrow\)</span>（时间倒流）</strong>：在正规军基础上让时间倒流（如电影倒放），但空间不翻转。</li>
+<li><strong><span class="arithmatex">\(L_-^\downarrow\)</span>（完全反转）</strong>：时空全部反转，相当于既照镜子又倒放电影。</li>
+</ol>
+<p><strong>关键洞察</strong>：你无法通过慢慢调整速度或旋转，从"正常世界"（<span class="arithmatex">\(L_+^\uparrow\)</span>）连续地变成"镜像世界"或"时间倒流世界"——必须经过一次"离散跳跃"（如突然翻转镜子或倒放按钮）。这就是为什么这四类是<strong>不连通</strong>的。</p>
+<hr />
+<h2 id="段落-3">段落 3：四维矩阵表示与旋转、Boost生成元构造<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:12:00 ~ 00:19:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+哦我明白了接下来我们要讲什么我们今天和接下来的课程会主要关注L正上减头这一类变化因为他们可以通过理理论也就是通过他们对应的梨袋鼠来研究我们可以通过生成源来理解他们好的那我们现在已经理解了L正上减头的定义和分类特别是知道了L正上减头的重要性接下来是不是要看看这些变换具体长什么样子了是的接下来我们要构造L正上减头的一种具体表示我们知道罗伦子群作用在四维向量上所以它会有四成四的实据证来表示一个普通的四成四据证有十六个参数但我们罗伦子群的定义条件L AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+算法是从这个变量组中得到的
+所以SO三群是洛伦兹群的一个子群可以这么说所以旋转变换的矩阵形式就是左上角十一然后右下角是一个三乘三的旋转矩阵二下三乘三明白了我记得在第七课中我们推导过的旋转生成元J一J二这三呢他们在这种四乘四的表示下会变成什么样不熟悉的同学建议先看看第七课从李群到李代数连续对称性的生成元但内容第七课中的三乘三旋转生成元在我们这里的对应形式也很简单就是左上角有一个零然后右下角是三乘三的旋转生成元比如这一它就会变成一个四乘四的矩阵除了右下角行二列三和行三列二位置的父爱和爱之外其他地方都是零好的
+变量源的变量源从无穷小变量开始从无穷小变量开始
+听起来像是要做的乐展开正是这个思路带入后只保留E字想得到A塔加上A塔加上A塔等于A塔最后就得到一个非常重要的条件K转至A塔等于A塔等于A塔这个条件就是描述Boost的生成源的吗对所有满足这个条件的聚诊K都是洛伦兹群的生成源我们现在就要利用它来找出Boost的具体形式因为沿X轴Boost时Y和Z左轴的Boost是不变的所以生成源K一的聚诊形式会比较特殊它应该只有X上零和X上一相关的部分是零对不对我们只需要解一个二乘二聚诊小K一的方程
+带入K转至K等于负一塔K不难解会发现大K一左上角的二乘二子矩阵小K一是B乘矩阵零一换行一这个还有一个参数B没有确定咋办这个参数根据我们一右的知识的确无法确定我将提前引入一些知识来也好后面我们会学到洛伦兹群的复化力代数可以分解为两个相互对应的小SU二复本其生成元定义为N正复等于二分之一成扩号加减虚数I成不死的生成元K扩号根据物理上可观测的要求小SU二对应的必须是恶米的进而N正复也必须是恶米的
+验证旋转生成源J已经是恶米的那么必须要求K也是恶米的也就是要求K必须是反恶米的也就是KDEGGER等于负K后面我就理解了那么必须要求小K1等于负K1然后将你前面已经求解得到的小K1矩阵带入自然就可以推导出B是一个纯细数非常正确现在是剩下一个实数系数S这个系数不重要被某些规律化步骤中吸收掉基于某种考虑S取一即可我明白了所以小K1等于巨证0爱换行爱0我们继续好的所以沿X轴K1的完整生成源大K1就是一个四乘四矩阵只有行一列一和行一列零位置是爱其他都是零
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000720.0_formulatransitionpar.jpg" src="../frames/frame_000720.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_000960.0_transition.jpg" src="../frames/frame_000960.0_transition.jpg" /></p>
+<p><img alt="frame_001080.0_formulatransition.jpg" src="../frames/frame_001080.0_formulatransition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="段落-4">段落 4：由生成元得到有限Boost变换及全课总结<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:19:00 ~ 00:23:11</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+明白了那以此类推沿Y轴和Z轴的BUS生成源K2和K3也就很容易写出来了没错这样我们就找到了另外三个生成源它们分别对应着沿XYZ轴的Boost 现在我们有了三个旋转生成源大JI和三个Boost生成源大KI总共六个生成源这正好对应了洛伦兹群的六个参数太棒了我们终于把这六个基本零件都找齐了那我们怎么从这些生成源得到有限的Boost变换矩阵呢很好我们知道从生成源得到有限的变换是通过指数函数E上IFI大K来实现的我们还是以X轴的Boost为例就是计算E上IFI大K一这个我们之前在SU二的时候也算过用极数展开的方法对完全一样的方法
+带入然后利用i小K一平方等于二乘二单位矩阵这个性质可真方便能让极数展开变得很简单没错G数展开后分成两组偶次密一组G次密一组我们会发现这里的两极数展开不再是口三五复五了而是变成了双曲与弦F和双曲正弦F这真是个惊喜所以Boost变换矩阵里出现的是双曲与弦F和双曲正弦F这不是三角函数对这就是Boost变换的特点所以沿X轴的Boost完全四乘四变换矩阵LAMDA1就会是这样左上角是二乘二小矩阵双曲与弦F和副双曲正弦F和副曲正弦F
+二乘二单位矩阵这矩阵看起来就很有相对论的味道了我知道在这里通常被称为速度和我们平时说的速度V有关你说的非常对和速度V之间有一个关系就是VC等于双曲线且F所以我们通过生成源成功地推导出了我们熟悉的罗伦子变换矩阵今天这课真是信息量巨大我们从罗伦之群的抽象定义开始理解了它为什么叫O1然后分类了它的四种连通分量特别强调了L正上箭头的重要性是的然后我们深入到它的一个具体表示也就是四乘四的实矩阵表示我们发现可以被六个生成元所描述三个对应空间旋转另外三个对应时空混合的Boost
+我们还亲手推导了这些生成元的具体形式以及他们如何通过直数印设生成了我们熟知的旋转矩阵和BUS的矩阵特别是BUS的矩阵中双取函数的出现真是太酷了没错这些生成元和他们的利括号关系正是我们接下来理解陆轮子群历代数的关键通过历代数我们能发现陆轮子群更深层次的结构比如它包含两个小SU二历代数的副本这会为我们打开通向更多更奇妙的表示的大门这听起来就像我们今天只是看到了冰山一角后面还有更精彩的等着我们完全可以这么说你就掌握了描述时空对称性的核心工具好的那今天的第十分钟就到这里了谢谢谢谢谢谢大家为我们带来的精彩讲解
+能帮助大家更好地理解洛伦兹群别忘了如果你有任何疑问或者想讨论的内容欢迎在评论期给我们留言我们下期节目再见下期再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001140.0_parastart.jpg" src="../frames/frame_001140.0_parastart.jpg" /></p>
+<p><img alt="frame_001200.0_transition.jpg" src="../frames/frame_001200.0_transition.jpg" /></p>
+<p><img alt="frame_001260.0_formulatransition.jpg" src="../frames/frame_001260.0_formulatransition.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>根据您提供的字幕文本（00:19:00 ~ 00:23:11）及截图，这段内容的核心是<strong>从李代数生成元出发，通过指数映射推导有限的洛伦兹Boost变换矩阵</strong>，并揭示双曲函数出现的数学根源。</p>
+<hr />
+<h2 id="一截图板书内容描述_1">一、截图板书内容描述<a class="headerlink" href="#一截图板书内容描述_1" title="Permanent link">&para;</a></h2>
+<h3 id="第一张截图boost生成元汇总">第一张截图：Boost生成元汇总<a class="headerlink" href="#第一张截图boost生成元汇总" title="Permanent link">&para;</a></h3>
+<p>展示了三个沿坐标轴的<strong>Boost生成元</strong>（Boost Generators）<span class="arithmatex">\(K_1, K_2, K_3\)</span> 的 <span class="arithmatex">\(4\times 4\)</span> 矩阵形式：
+- <strong><span class="arithmatex">\(K_1\)</span>（x-boost）</strong>：非零元位于 <span class="arithmatex">\((0,1)\)</span> 和 <span class="arithmatex">\((1,0)\)</span> 位置，值为 <span class="arithmatex">\(i\)</span>
+- <strong><span class="arithmatex">\(K_2\)</span>（y-boost）</strong>：非零元位于 <span class="arithmatex">\((0,2)\)</span> 和 <span class="arithmatex">\((2,0)\)</span> 位置，值为 <span class="arithmatex">\(i\)</span><br />
+- <strong><span class="arithmatex">\(K_3\)</span>（z-boost）</strong>：非零元位于 <span class="arithmatex">\((0,3)\)</span> 和 <span class="arithmatex">\((3,0)\)</span> 位置，值为 <span class="arithmatex">\(i\)</span></p>
+<p><strong>关键观察</strong>：这些矩阵是<strong>对称</strong>的（除因子 <span class="arithmatex">\(i\)</span> 外），且非零元素仅出现在第0行和第0列（时间-空间混合分量），这与旋转生成元的反对称性形成鲜明对比。</p>
+<h3 id="第二张截图指数映射exponentiation">第二张截图：指数映射（Exponentiation）<a class="headerlink" href="#第二张截图指数映射exponentiation" title="Permanent link">&para;</a></h3>
+<p>详细推导了从生成元 <span class="arithmatex">\(K_1\)</span> 到有限变换的指数映射过程：
+- 左侧展示级数展开：<span class="arithmatex">\(\Lambda_1(\phi) = e^{i\phi k_1} = \sum_{n=0}^{\infty} \frac{(i\phi k_1)^n}{n!}\)</span>
+- 中间展示分离奇偶项的技巧，利用 <span class="arithmatex">\((ik_1)^2 = I\)</span>（单位矩阵）将级数重组为双曲函数
+- 右侧框出 <span class="arithmatex">\(2\times 2\)</span> 子矩阵 <span class="arithmatex">\(k_1 = \begin{pmatrix} 0 &amp; i \\ i &amp; 0 \end{pmatrix}\)</span> 及其与 <span class="arithmatex">\(4\times 4\)</span> 矩阵 <span class="arithmatex">\(K_1\)</span> 的关系（直和结构）
+- 最终结果呈现为 <span class="arithmatex">\(2\times 2\)</span> 矩阵：<span class="arithmatex">\(\begin{pmatrix} \cosh\phi &amp; -\sinh\phi \\ -\sinh\phi &amp; \cosh\phi \end{pmatrix}\)</span></p>
+<h3 id="第三张截图最终结果洛伦兹推进矩阵">第三张截图：最终结果——洛伦兹推进矩阵<a class="headerlink" href="#第三张截图最终结果洛伦兹推进矩阵" title="Permanent link">&para;</a></h3>
+<p>展示了完整的 <span class="arithmatex">\(4\times 4\)</span> Boost变换矩阵 <span class="arithmatex">\(\Lambda_1(\phi)\)</span>：
+- <strong>左上角 <span class="arithmatex">\(2\times 2\)</span> 块</strong>：时空混合部分，包含 <span class="arithmatex">\(\cosh\phi\)</span> 和 <span class="arithmatex">\(-\sinh\phi\)</span>，描述时间坐标 <span class="arithmatex">\(t\)</span> 与空间坐标 <span class="arithmatex">\(x\)</span> 的相互转化
+- <strong>右下角 <span class="arithmatex">\(2\times 2\)</span> 块</strong>：单位矩阵 <span class="arithmatex">\(\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}\)</span>，表示 <span class="arithmatex">\(y, z\)</span> 坐标在沿 <span class="arithmatex">\(x\)</span> 方向的Boost下保持不变
+- 标注强调这是<strong>狭义相对论的核心变换矩阵</strong></p>
+<hr />
+<h2 id="二核心公式与符号详解">二、核心公式与符号详解<a class="headerlink" href="#二核心公式与符号详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-六个生成元的完备集">1. 六个生成元的完备集<a class="headerlink" href="#1-六个生成元的完备集" title="Permanent link">&para;</a></h3>
+<p>洛伦兹群 <span class="arithmatex">\(O(1,3)\)</span> 是一个<strong>6维李群</strong>，其李代数 <span class="arithmatex">\(so(1,3)\)</span> 由六个生成元张成：
+- <strong>三个旋转生成元</strong> <span class="arithmatex">\(J_i\)</span>（<span class="arithmatex">\(i=1,2,3\)</span>）：对应空间旋转，生成元为<strong>反对称</strong>实矩阵（如 <span class="arithmatex">\(J_1\)</span> 在 <span class="arithmatex">\(yz\)</span> 平面旋转）
+- <strong>三个Boost生成元</strong> <span class="arithmatex">\(K_i\)</span>（<span class="arithmatex">\(i=1,2,3\)</span>）：对应时空混合的惯性系变换，生成元为<strong>对称</strong>纯虚矩阵（如截图所示）</p>
+<p><strong>符号说明</strong>：
+- $K_1</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
