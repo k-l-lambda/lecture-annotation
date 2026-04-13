@@ -55,6 +55,7 @@
 | 第3课 | [张量的分量表示](lectures/yt-cssdpuXtJsg/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=cssdpuXtJsg) |
 | 第4课 | [张量微积分的几何视角](lectures/yt-RYaLL-k_T64/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=RYaLL-k_T64) |
 | 第5课 | [解读应力张量](lectures/yt-VQLgViI2p20/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=VQLgViI2p20) |
+| 第6课 | [狭义相对论的几何观](lectures/yt-qwCgsYJ5MRE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=qwCgsYJ5MRE) |
 
 ---
 
