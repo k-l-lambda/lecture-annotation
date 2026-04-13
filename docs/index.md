@@ -56,6 +56,7 @@
 | 第4课 | [张量微积分的几何视角](lectures/yt-RYaLL-k_T64/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=RYaLL-k_T64) |
 | 第5课 | [解读应力张量](lectures/yt-VQLgViI2p20/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=VQLgViI2p20) |
 | 第6课 | [狭义相对论的几何观](lectures/yt-qwCgsYJ5MRE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=qwCgsYJ5MRE) |
+| 第7课 | [时空中的粒子动力学](lectures/yt-h-cGRfMg0o0/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=h-cGRfMg0o0) |
 
 ---
 
