@@ -60,6 +60,7 @@
 | 第8课 | [掌握时空语言：张量和指标体操](lectures/yt-WrFbRjuOdNw/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=WrFbRjuOdNw) |
 | 第9课 | [洛伦兹变换：重塑时空认知](lectures/yt-vb7k2MXbLGE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=vb7k2MXbLGE) |
 | 第10课 | [闵氏时空上微分和电动力学几何本质](lectures/yt-YWU5tM5-4RI/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=YWU5tM5-4RI) |
+| 第11课 | [闵氏时空的体积、积分与守恒律](lectures/yt-wRx8DncELqc/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=wRx8DncELqc) |
 
 ---
 
