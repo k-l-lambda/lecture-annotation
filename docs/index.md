@@ -62,6 +62,7 @@
 | 第10课 | [闵氏时空上微分和电动力学几何本质](lectures/yt-YWU5tM5-4RI/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=YWU5tM5-4RI) |
 | 第11课 | [闵氏时空的体积、积分与守恒律](lectures/yt-wRx8DncELqc/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=wRx8DncELqc) |
 | 第12课 | [应力 能量张量和4 动量守恒](lectures/yt-xh4YtPDDEK8/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=xh4YtPDDEK8) |
+| 第13课 | [统计物理学与动理学理论](lectures/yt-c5LLj0IMkmQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=c5LLj0IMkmQ) |
 
 ---
 
