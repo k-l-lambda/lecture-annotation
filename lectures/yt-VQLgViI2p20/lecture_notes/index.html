@@ -1,0 +1,3457 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-VQLgViI2p20/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-RYaLL-k_T64/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-qwCgsYJ5MRE/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第5课 解读应力张量 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#现代经典物理学第5课-解读应力张量" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第5课 解读应力张量
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程导入与应力张量的定义、物理意义及对称性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程导入与应力张量的定义、物理意义及对称性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心概念与公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心概念与公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心概念与公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-有向面积矢量directed-area-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 有向面积矢量（Directed Area Vector）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-应力张量的数学定义线性映射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 应力张量的数学定义：线性映射
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-应力张量的物理本质动量流密度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 应力张量的物理本质：动量流密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-对称性证明角动量守恒的约束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 对称性证明：角动量守恒的约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：应力张量的应用：完美流体、动量守恒与电磁应力
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：应力张量的应用：完美流体、动量守恒与电磁应力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理想流体的应力张量与动量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理想流体的应力张量与动量守恒
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理想流体的应力张量与动量守恒">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-完美流体的应力张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 完美流体的应力张量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-动量守恒定律的形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 动量守恒定律的形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理想流体动力学习题-113-详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理想流体动力学（习题 1.13 详解）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理想流体动力学（习题 1.13 详解）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-动量密度与对流应力张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 动量密度与对流应力张量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-质量守恒连续性方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 质量守恒（连续性方程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-随体导数物质导数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 随体导数（物质导数）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-欧拉方程流体的牛顿第二定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 欧拉方程（流体的牛顿第二定律）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四电磁应力张量习题-114-预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、电磁应力张量（习题 1.14 预告）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、电磁应力张量（习题 1.14 预告）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-麦克斯韦应力张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 麦克斯韦应力张量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-场动量与力密度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 场动量与力密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：话题切换：几何化单位与相对论单位制简化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：话题切换：几何化单位与相对论单位制简化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心概念与公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心概念与公式解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心概念与公式解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-几何化单位制的核心设定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 几何化单位制的核心设定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-质能方程的简化与量纲恢复" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 质能方程的简化与量纲恢复
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1983年国际单位制si的变革" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 1983年国际单位制（SI）的变革
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-几何化的深层含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. "几何化"的深层含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-用秒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 用"秒"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：相对论粒子的能量动量关系与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：相对论粒子的能量动量关系与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式详解相对论性能量与动量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式详解（相对论性能量与动量）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式详解（相对论性能量与动量）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-相对论总能量total-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 相对论总能量（Total Energy）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-相对论动量relativistic-momentum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 相对论动量（Relativistic Momentum）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-无质量粒子的能量-动量关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 无质量粒子的能量-动量关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程导入与应力张量的定义、物理意义及对称性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程导入与应力张量的定义、物理意义及对称性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心概念与公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心概念与公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心概念与公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-有向面积矢量directed-area-vector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 有向面积矢量（Directed Area Vector）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-应力张量的数学定义线性映射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 应力张量的数学定义：线性映射
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-应力张量的物理本质动量流密度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 应力张量的物理本质：动量流密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-对称性证明角动量守恒的约束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 对称性证明：角动量守恒的约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：应力张量的应用：完美流体、动量守恒与电磁应力
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：应力张量的应用：完美流体、动量守恒与电磁应力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理想流体的应力张量与动量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理想流体的应力张量与动量守恒
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理想流体的应力张量与动量守恒">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-完美流体的应力张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 完美流体的应力张量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-动量守恒定律的形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 动量守恒定律的形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理想流体动力学习题-113-详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理想流体动力学（习题 1.13 详解）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理想流体动力学（习题 1.13 详解）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-动量密度与对流应力张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 动量密度与对流应力张量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-质量守恒连续性方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 质量守恒（连续性方程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-随体导数物质导数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 随体导数（物质导数）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-欧拉方程流体的牛顿第二定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 欧拉方程（流体的牛顿第二定律）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四电磁应力张量习题-114-预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、电磁应力张量（习题 1.14 预告）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、电磁应力张量（习题 1.14 预告）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-麦克斯韦应力张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 麦克斯韦应力张量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-场动量与力密度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 场动量与力密度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：话题切换：几何化单位与相对论单位制简化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：话题切换：几何化单位与相对论单位制简化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心概念与公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心概念与公式解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心概念与公式解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-几何化单位制的核心设定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 几何化单位制的核心设定
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-质能方程的简化与量纲恢复" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 质能方程的简化与量纲恢复
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1983年国际单位制si的变革" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 1983年国际单位制（SI）的变革
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-几何化的深层含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. "几何化"的深层含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-用秒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 用"秒"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：相对论粒子的能量动量关系与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：相对论粒子的能量动量关系与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式详解相对论性能量与动量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式详解（相对论性能量与动量）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式详解（相对论性能量与动量）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-相对论总能量total-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 相对论总能量（Total Energy）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-相对论动量relativistic-momentum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 相对论动量（Relativistic Momentum）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-无质量粒子的能量-动量关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 无质量粒子的能量-动量关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="现代经典物理学第5课-解读应力张量">《现代经典物理学》第5课 解读应力张量<a class="headerlink" href="#现代经典物理学第5课-解读应力张量" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 4 个段落，<a href="https://www.youtube.com/watch?v=VQLgViI2p20">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:01 课程导入与应力张量的定义、物理意义及对称性</a></li>
+<li><a href="#段落-2">00:06:26 应力张量的应用：完美流体、动量守恒与电磁应力</a></li>
+<li><a href="#段落-3">00:16:01 话题切换：几何化单位与相对论单位制简化</a></li>
+<li><a href="#段落-4">00:18:44 相对论粒子的能量动量关系与课程总结</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程导入与应力张量的定义、物理意义及对称性<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:01 ~ 00:06:26</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎收听我们现代经典物理学课程的第五讲我是你们的主持人乔伊
+今天非常开心能和大家一起探索物理世界的奥秘
+坐在我身边的当然还是我们知识渊博的赛老师
+塞老师跟同学们打个招呼吧
+大家好,我是赛,很高兴能和周一起继续我们的物理学之旅
+今天我们要聊的话题会把我们之前学过的概念,比如守恒定律,带到一个更深层次的理解
+没测
+赛老师,我们今天的课程内容主要会围绕应力张量,动量守恒以及几何化单位和相对论性粒子这两个大方向展开
+听起来就特别硬核,同学们可要准备好
+是的朱我们首先要深入了解一个非常重要的改面,叫做应力张亮
+它听起来可能有点抽象但实际上它描述的是我们日常生活中随处可见的利是怎样传递的
+哇,听起来很实用
+那塞老师,您能给我们一个直观的例子,让我们对应力张亮有过初步的感受吗?
+当然可以,诸位,你把手掌心相对,轻轻的按压在一起,感受一下
+是不是能感觉到你的左手对右手有一个力的作用
+嗯,感受到了,有一个向外的压力
+对
+现在你试着让双手互相滑动一下,就像搓手一样
+除了压力你是不是还能感觉到一种沿着手掌表面切向的力是的这个力让我感觉手掌要错开一样很好
+我们所说的应力张量其实就是用来描述这种力在物体内部如何分布和传递的
+我们知道粒是一个尺量,它有大小和方向
+但这里更特别的是,这个力是作用在一个微小面积上的面积面积不就是个标量吗?它怎么也能是食量呢?这个问题问得好
+这里我们说的面积其实是一个有方向的面积
+我们可以用一个单位法向量来表示这个面积的方向
+比如如果你的手掌在YC平面上
+那么垂直于它的X方向就是它的法向量方向哦我明白了所以这个有方向的面积就是指它不仅有大小还指明了这个面积的朝向完全正确
+那么现在我们把这个LIF和一个有方向的面积 sigma联系起来
+你会发现LIF是这个面积Sigma的线性函数
+既然是线性函数那么中间就必须有一个桥梁来连接它们这个桥梁就是我们的应力张量T所以用数学表达式来说就是LF等于应力张量T作用在这个有方向的面积SIGMA上对吧准确地说我们可以写成FI等于TIGMASIGMA
+这里的TIJ就是应力张量的分量
+他告诉我们在某个方向上比如EJ方向的单位面积上会产生一个在另一个方向上比如EI方向的力这样一来应力张量的分量TJK就有了具体的物理意义了他表示的是在垂直于EK方向的单位面积上所产生的力在EJ方向上的分量非常棒诸位而且应力张量TJK还有一个更深刻的物理含义
+它既是代表了单位时间内从负XK侧穿越到正XK侧垂直于EK的单位面积上的动量的D这个分量
+换句话说应力张亮就是动量流密度或者动量通量动量通量这个概念很重要啊他把我们之前学的动量和力的概念通过张亮联系起来了那赛老师应力张亮有什么特别的性质吗比如他是不是对称的这是一个非常好的问题
+从定义上来看应力张量是不是对称的其实并不明显但是我们可以通过一个思想实验来证明它必须是对称的思想实验听起来很有意思想象一下我们有一个边长为L的微小立方体
+周围的戒指会对这个立方体的每个面施加力和力举
+我们主要关注剪切力
+也就是那些平行于表面的力剪切力就是像我们刚才搓手时感受到的那种力对吧
+比如作用在立方体前后面的剪切力它们的大小是TXY乘以L平方它们方向相反这对力贡献的绕Z轴的力矩TXYL三次方
+同样左右面上的剪切力TYX乘以L平方也会产生一个绕Z轴的力矩负TYXL三次方听起来像是在掰一个魔方一样是的
+如果我们把所有这些减切力产生的力矩加起来得到TXY减TYXL三次方总力矩会导致较动量变化IDOMAGZ百DT等于六分之一ROL五次方DOMEGAZ百DT如果这个时候TXY和TYX不相等也就是TXY减TYX不为零那么DOMEGAZ百DT正比于一出以L平方然后让立方体的边长L趋近于零这个微小立方体就会以一个无限大的角加速度旋转起来这听起来就非常不物理了没错这在物理上是不可能发生的
+所以为了避免这种不物理的情况我们必须得出结论TXY必须等于TYX
+同理对于应力张亮的其他分量也必须满足类似的对称性
+所以应力张亮总是对称的原来如此这个对称性证明非常巧妙
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000145.9_transition.jpg" src="../frames/frame_000145.9_transition.jpg" /></p>
+<p><img alt="frame_000170.8_transition.jpg" src="../frames/frame_000170.8_transition.jpg" /></p>
+<p><img alt="frame_000365.9_transition.jpg" src="../frames/frame_000365.9_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:00:01 ~ 00:06:26）的深度注解。本段核心在于<strong>从直观力学经验出发，严格构建应力张量（Stress Tensor）的数学定义及其对称性</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述" title="Permanent link">&para;</a></h2>
+<p><strong>截图 1（内部作用力：从直观感受到数学描述）</strong>
+- <strong>图像</strong>：三维直角坐标系中，展示两只手在 <span class="arithmatex">\(y\)</span>-<span class="arithmatex">\(z\)</span> 平面（即垂直于 <span class="arithmatex">\(x\)</span> 轴的平面）上接触。标注了作用力 <span class="arithmatex">\(\mathbf{F}\)</span> 被分解为：
+  - <strong>法向分量</strong>（Normal）：沿 <span class="arithmatex">\(x\)</span> 方向（垂直于接触面）
+  - <strong>切向分量</strong>（Tangential）：沿 <span class="arithmatex">\(y\)</span> 或 <span class="arithmatex">\(z\)</span> 方向（平行于接触面，即"剪切"方向）
+- <strong>关键标注</strong>：明确指出面积元 <span class="arithmatex">\(\Sigma = A\mathbf{e}_x\)</span> 是一个<strong>矢量</strong>，其方向由单位法向量 <span class="arithmatex">\(\mathbf{e}_x\)</span> 定义。
+- <strong>核心问题</strong>：如何建立力 <span class="arithmatex">\(\mathbf{F}\)</span> 与作用面 <span class="arithmatex">\(\Sigma\)</span> 之间的数学关系？</p>
+<p><strong>截图 2（应力张量的定义：连接作用力与作用面的线性算子）</strong>
+- <strong>无分量形式</strong>：<span class="arithmatex">\(\mathbf{F}(\cdot) = \mathbf{T}(\cdot, \Sigma)\)</span> 或简写为 <span class="arithmatex">\(\mathbf{F} = \mathbf{T} \cdot \Sigma\)</span>
+- <strong>分量形式</strong>（爱因斯坦求和约定）：<span class="arithmatex">\(F_i = T_{ij}\Sigma_j\)</span>
+- <strong>物理注解</strong>：强调根据牛顿第三定律，改变面积方向（<span class="arithmatex">\(\Sigma \to -\Sigma\)</span>）时，力 <span class="arithmatex">\(\mathbf{F}\)</span> 也反向，这要求 <span class="arithmatex">\(\mathbf{T}\)</span> 必须是面积矢量的线性函数。</p>
+<p><strong>截图 3（对称性证明：避免非物理的无限旋转）</strong>
+- <strong>总力矩</strong>（绕 <span class="arithmatex">\(z\)</span> 轴）：<span class="arithmatex">\(N_z = (T_{xy} - T_{yx})L^3\)</span>
+- <strong>角动量变化</strong>：<span class="arithmatex">\(N_z = I \frac{d\Omega_z}{dt} = \frac{1}{6}\rho L^5 \frac{d\Omega_z}{dt}\)</span>
+  - 其中 <span class="arithmatex">\(I = \frac{1}{6}\rho L^5\)</span> 为边长 <span class="arithmatex">\(L\)</span>、密度 <span class="arithmatex">\(\rho\)</span> 的立方体转动惯量。
+- <strong>联立方程</strong>：<span class="arithmatex">\((T_{xy} - T_{yx})L^3 = \frac{1}{6}\rho L^5 \frac{d\Omega_z}{dt}\)</span>
+- <strong>极限分析</strong>：当 <span class="arithmatex">\(L \to 0\)</span> 时，若 <span class="arithmatex">\(T_{xy} \neq T_{yx}\)</span>，则角加速度 <span class="arithmatex">\(\frac{d\Omega_z}{dt} \propto \frac{1}{L^2} \to \infty\)</span>（非物理发散）。
+- <strong>结论</strong>：必须有 <span class="arithmatex">\(T_{yx} = T_{xy}\)</span>，推广得应力张量对称 <span class="arithmatex">\(T_{ij} = T_{ji}\)</span>。</p>
+<hr />
+<h2 id="二核心概念与公式详解">二、核心概念与公式详解<a class="headerlink" href="#二核心概念与公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-有向面积矢量directed-area-vector">1. 有向面积矢量（Directed Area Vector）<a class="headerlink" href="#1-有向面积矢量directed-area-vector" title="Permanent link">&para;</a></h3>
+<p><strong>新概念</strong>：在三维连续介质中，面积元不再是标量，而是<strong>伪矢量</strong>（Pseudovector）。</p>
+<div class="arithmatex">\[\Sigma = A \, \mathbf{n}\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\Sigma\)</span>（或 <span class="arithmatex">\(d\mathbf{A}\)</span>）</strong>：有向面积矢量，方向由曲面外法线单位矢量 <span class="arithmatex">\(\mathbf{n}\)</span> 决定，大小为面积 <span class="arithmatex">\(A\)</span>。</li>
+<li><strong>物理意义</strong>：决定"力穿过哪个方向的面"。例如，<span class="arithmatex">\(y\)</span>-<span class="arithmatex">\(z\)</span> 平面的面元方向为 <span class="arithmatex">\(\mathbf{e}_x\)</span>（<span class="arithmatex">\(x\)</span> 方向）。</li>
+</ul>
+<h3 id="2-应力张量的数学定义线性映射">2. 应力张量的数学定义：线性映射<a class="headerlink" href="#2-应力张量的数学定义线性映射" title="Permanent link">&para;</a></h3>
+<p><strong>核心公式</strong>（分量形式）：</p>
+<div class="arithmatex">\[F_i = T_{ij} \Sigma_j \quad \text{（爱因斯坦求和约定：对重复指标 $j$ 求和）}\]</div>
+<p><strong>符号释义</strong>：
+- <strong><span class="arithmatex">\(F_i\)</span></strong>：作用在面元上的力在 <span class="arithmatex">\(i\)</span> 方向的分量（<span class="arithmatex">\(i = x, y, z\)</span>）。
+- <strong><span class="arithmatex">\(\Sigma_j\)</span></strong>：面元矢量在 <span class="arithmatex">\(j\)</span> 方向的分量（即面元法向为 <span class="arithmatex">\(j\)</span> 方向）。
+- <strong><span class="arithmatex">\(T_{ij}\)</span></strong>：应力张量的 <span class="arithmatex">\((i,j)\)</span> 分量，表示<strong>在法向沿 <span class="arithmatex">\(j\)</span> 方向的单位面积上，产生的力在 <span class="arithmatex">\(i\)</span> 方向的分量</strong>。</p>
+<p><strong>无分量形式</strong>：</p>
+<div class="arithmatex">\[\mathbf{F} = \mathbf{T} \cdot \Sigma\]</div>
+<p>这表示应力张量 <span class="arithmatex">\(\mathbf{T}\)</span> 是一个<strong>二阶张量（线性算子）</strong>，它将一个矢量（有向面积）线性映射为另一个矢量（力）。</p>
+<h3 id="3-应力张量的物理本质动量流密度">3. 应力张量的物理本质：动量流密度<a class="headerlink" href="#3-应力张量的物理本质动量流密度" title="Permanent link">&para;</a></h3>
+<p><strong>深层解读</strong>：
+<span class="arithmatex">\(T_{ij}\)</span> 不仅是"单位面积上的力"，更是<strong>动量通量</strong>（Momentum Flux）。</p>
+<ul>
+<li><strong>解释</strong>：<span class="arithmatex">\(T_{ij}\)</span> 表示单位时间内，沿 <span class="arithmatex">\(j\)</span> 方向穿过单位面积的动量的 <span class="arithmatex">\(i\)</span> 分量。</li>
+<li><strong>联系</strong>：力等于动量变化率（<span class="arithmatex">\(\mathbf{F} = d\mathbf{p}/dt\)</span>），因此应力张量描述了动量如何在介质内部"流动"或"传递"。</li>
+<li><strong>对角元</strong>（<span class="arithmatex">\(T_{xx}, T_{yy}, T_{zz}\)</span>）：正应力（压力/张力）。</li>
+<li><strong>非对角元</strong>（<span class="arithmatex">\(T_{xy}, T_{yx}\)</span> 等）：剪切应力（Shear Stress），对应字幕中"搓手"时感受到的切向力。</li>
+</ul>
+<h3 id="4-对称性证明角动量守恒的约束">4. 对称性证明：角动量守恒的约束<a class="headerlink" href="#4-对称性证明角动量守恒的约束" title="Permanent link">&para;</a></h3>
+<p><strong>关键公式推导</strong>：</p>
+<p>考虑边长为 <span class="arithmatex">\(L\)</span> 的微小立方体，仅考虑 <span class="arithmatex">\(x\)</span>-<span class="arithmatex">\(y\)</span> 平面内的剪切应力 <span class="arithmatex">\(T_{xy}\)</span> 和 <span class="arithmatex">\(T_{yx}\)</span>：</p>
+<ol>
+<li><strong>力矩计算</strong>（绕 <span class="arithmatex">\(z\)</span> 轴）：</li>
+<li>作用在垂直于 <span class="arithmatex">\(x\)</span> 的面（前后）上的剪切力：<span class="arithmatex">\(\pm T_{xy} L^2\)</span>，力臂 <span class="arithmatex">\(L/2\)</span>，产生力矩 <span class="arithmatex">\(T_{xy} L^3\)</span>。</li>
+<li>作用在垂直于 <span class="arithmatex">\(y\)</span> 的面（左右）上的剪切力：<span class="arithmatex">\(\pm T_{yx} L^2\)</span>，产生力矩 <span class="arithmatex">\(-T_{yx} L^3\)</span>。</li>
+<li>
+<p><strong>净力矩</strong>：<span class="arithmatex">\(N_z = (T_{xy} - T_{yx})L^3\)</span></p>
+</li>
+<li>
+<p><strong>转动动力学</strong>：
+   <span class="arithmatex">\(N_z = I \frac{d\Omega_z}{dt} = \frac{1}{6}\rho L^5 \frac{d\Omega_z}{dt}\)</span>
+   （立方体绕中心轴的转动惯量 <span class="arithmatex">\(I = \frac{1}{6} M L^2 = \frac{1}{6} \rho L^5\)</span>）</p>
+</li>
+<li>
+<p><strong>极限分析</strong>（<span class="arithmatex">\(L \to 0\)</span>）：
+   <span class="arithmatex">\(\frac{d\Omega_z}{dt} = \frac{6(T_{xy} - T_{yx})}{\rho L^2}\)</span>
+   若 <span class="arithmatex">\(T_{xy} \neq T_{yx}\)</span>，当 <span class="arithmatex">\(L \to 0\)</span> 时，角加速度 <span class="arithmatex">\(\to \infty\)</span>，这意味着微小的不对称会导致无限大的旋转——这在物理上是不可能的（违背角动量守恒的局域形式）。</p>
+</li>
+</ol>
+<p><strong>结论</strong>：</p>
+<div class="arithmatex">\[T_{ij} = T_{ji}\]</div>
+<p>应力张量必须是对称张量。这一结论依赖于介质没有<strong>内禀角动量</strong>（即非极性流体/固体），是经典连续介质力学的基本假设。</p>
+<hr />
+<h2 id="三通俗语言总结">三、通俗语言总结<a class="headerlink" href="#三通俗语言总结" title="Permanent link">&para;</a></h2>
+<p><strong>什么是应力张量？</strong>
+想象你是一只蚂蚁，站在一块果冻内部。你想知道"穿过你脚下这片小区域的力有多大"。但"这片区域"是有朝向的（你可以面朝北站着，也可以面朝东站）。应力张量就是一本"说明书"：你告诉它"我面朝哪个方向（输入面积矢量）"，它就告诉你"在这个面上会有多大的力，指向哪个方向（输出力矢量）"。</p>
+<p><strong>为什么它必须对称？</strong>
+想象你掰一个魔方。如果你前后推的力和左右推的力不对称（比如前面向上推，左面向下推，但不匹配），这个魔方就会自己疯狂旋转。当你把魔方缩得无限小时，如果这种不对称存在，它会转得无限快——这显然不可能。所以，为了让物体保持"正常"，不同方向上的剪切力必须平衡，这就是应力张量对称性的直观来源。</p>
+<p><strong>动量通量是什么意思？</strong>
+你可以把应力想象成"动量的快递流"。<span class="arithmatex">\(T_{xy}\)</span> 就是在问："有多少 <span class="arithmatex">\(x\)</span> 方向的动量正在沿着 <span class="arithmatex">\(y\)</span> 方向运送？" 力就是动量的流动，所以应力张量本质上描述了动量在材料内部是如何"运输"的。</p>
+<hr />
+<h2 id="段落-2">段落 2：应力张量的应用：完美流体、动量守恒与电磁应力<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:06:26 ~ 00:16:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那应力张量在实际中有哪些应用呢?应用非常广泛
+比如在电磁场中电场和磁场也会产生应力
+我们还可以用它来描述流体中的应力
+就是我们所说的完美流体
+听起来像理想气体一样,差不多是这个意思
+完美流体是一种非常理想化的介质它只能承受各项同性压力
+但不能承受任何减切应力
+也就是说它的应力张量只有对角线上的分量是非零的并且都等于压力P也就是说TXX等于TYY等于TCZ等于P而其他分量都是零完全正确
+我们可以用一个简洁的表达式来表示它
+txi等于p乘以 gxi
+这里的GXI是欧吉里德度归张量的分量那么完美流体作用在任何表面上的力是什么情况我们不妨考虑一个面积为A法向为N的作用面SIGMA等于AN
+完美流体施加在此面上的力就是FJ等于TJK,SIGMAK等于PGJK,括号ANK等于PANJ
+这表明完美流体作用在任何表面上的力都只会是垂直于这个表面压力而没有切向的剪切力
+明白了,所以音力张量不仅描述了力,还描述了动量通量
+那它和我们之前学过的动量守恒定律有什么关系呢关系非常密切
+盈利张亮在牛顿动量守恒定律中扮演着核心角色
+因为根据前面张亮的动量视角的定义代表了单位时间内单位面积上从一个方向流向另一个方向的动量分量所以音力张量就是动量流密度或动量通量这个我记住了
+那么我们可以把动量守恒定律写成一个积分形式
+在一个三维空间区域V内总动量随时间的变化率加上动量流出这个区域的净速率必须等于零也就是低白滴点积分VGDL加上积分偏VTDSigma等于零其中G是动量密度非常好这就是动量守恒的积分形式
+如果我们把时间导数移到积分号里面并对表面积分应用高丝散度定理我们就可以得到动量守恒的微分形式微分形式是不是就更方便我们分析局部区域的物理现象了是的
+微分形式就是偏G百偏T加Nabla.T等于零或偏GJ百偏T加TJK分好K等于零
+这个方程非常重要它告诉我们某个物理量这里是动量的密度随时间的变化率加上这个物理量的通量的散度必须等于零
+这是一个非常标准的矩形守恒定律形式这就解释了为什么应力张量在流体力学弹性力学和等离子体物理中都这么重要它确实是连接力和动量守恒的关键没错
+在课后的习题一百一十三中我们甚至会看到如何用应力张亮推导出完美流体的欧腊方程
+这其实就是牛顿第二定律在流体中的体现
+它把流体的加速和压力的梯度联系起来非常强大好那我们先来看第一道题习题十一三是关于理想流体的好的乔伊第一个问题考虑一个密度为R压力为P速度为V随时间和空间变化的理想流体
+解释为什么流体的动量密度是 g 等于 r  v
+并解释为什么它的动量通量应力张量是T等于PG加肉V加肉V或TJ等于PJ加肉VJ好像第二个问题是关于流体质量守恒的对这第二个问题要求您解释为什么该流体的质量守恒定律是偏肉百T等于NABRA.V等于零有点挑战性第三个问题呢这第三个问题要求您解释为什么微分算子DYDT也就是偏BYT加V.
+描述了由一个局部随流体移动其速度为V的人所测量到的变化率
+这个算子有时被称为流体的平流时间倒数对流时间倒数或物质倒数还有吗第四个问题
+要求您证明前面提到的质量守恒微分定律,也就是偏ROL百偏T加NEBLAR.ROV等于零
+还可以写成ROLE分之一DV百DT等于NEBRA.V
+这表明流体速度长的散度等于其密度在流体局部静止坐标器中测量分数变化率的负值第五个就一定要证明流体的动量守恒为分定律的另一种形式对吧对
+这第五个问题就是要求证明流体的动量守恒为分定律也就是偏居百偏梯加上NABRA.T等于零
+可以改写成DV百DT等于minusRU分之一NabraP
+这被称为流体的欧拉方程
+此外还要解释为什么这个欧拉方程是以单位质量为基础写的牛顿第二运动定律F等于MA这个流体的牛顿第二定律听起来好酷确实很酷它告诉我们流体的加速度也就是DV百D梯是由压强梯度引起的
+压强高的地方会把流体推向压强低的地方从而产生加速度接下来的习题一点一四一下子跳到了电磁应力张亮了
+题目一说电场和磁场都能产生压强和张力比如电场一会产生一个垂直于自身的压强还会沿着自身方向产生一个张力
+然后它让我们验证一个复杂的电磁应力张量表达式
+电厂磁场也能产生压强和张力吗?这太神奇了
+诗的乐趣这听起来可能有点反直觉,但电磁场确实可以对物质施加力和扭曲,就像机械应力一样
+电场和磁场免身就携带能量和动量
+当它们作用在物体上时就会表现出压强和张力
+题目给出的那个电磁应力张量表达式就是用来精确描述这些力和动量传递的
+它包含了电厂和磁厂各自的贡献以及它们如何组合在一起
+此题就要促验证这个印利张亮的具体表达是
+T等于二分之E零大括号一平方加C平方B平方的核乘上度归张量计减二倍的E张量级E加C平方B张量级B大括号也就是说这个音力张量T
+它综合描述了电场和磁场对物体推拉的作用力,对吧
+那题目二接着问
+考虑电磁场与带电荷和电流的物质相互作用计算这个电磁音力张量的散度并用MAX为方程组来求导
+他还说结果应该是电磁场对物质施加的力密度的复制为什么会这样呢这个是一个非常深刻的问题
+他把电磁场力以及动量守恒联系在了一起
+简单来说音力张亮的散度,它衡量的是音力在空间中的不均匀性,也就是音力梯度
+当这个梯度存在时它就会对物质产生一个静力
+题目要求我们证明的就是电磁音力张亮的散度正好对应着电磁场对物质作用的力密度哦原来音力张亮的散度就是电磁场作用于物质上的力
+那他还提到要用动量守恒来解释为什么会这样是的
+这就是关键所在
+根据动量守恒定律物质动量的变化率应该等于作用在物质上的静力
+而电磁场通过音力张量将自身的动量传递给物质
+所以电磁音力张亮的散度自然就体现了这种动量传递也就是电磁场对物质湿扎的力
+这是一个非常优雅的物理图像展现了动量如何在场和物质之间传递哇赛今天真是大开眼界
+从流体的质量守恒动量守恒到电磁场的应力张量
+这些习题虽然没有直接解答,但通过你的讲解,我感觉把它们背后的大概念都拎出来了是的
+应力张亮的内容我们就先聊到这里
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000476.0_transition.jpg" src="../frames/frame_000476.0_transition.jpg" /></p>
+<p><img alt="frame_000591.9_formula.jpg" src="../frames/frame_000591.9_formula.jpg" /></p>
+<p><img alt="frame_000720.8_formula.jpg" src="../frames/frame_000720.8_formula.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:06:26 ~ 00:16:00）的深度注解。本段核心在于<strong>应力张量在连续介质（理想流体）与电磁场中的具体应用</strong>，以及<strong>动量守恒定律的微分形式与欧拉方程的推导</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述_1">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述_1" title="Permanent link">&para;</a></h2>
+<p><strong>截图 1（实例一：理想流体）</strong>
+- <strong>左侧</strong>定义了<strong>理想流体（Perfect Fluid）</strong>：一种只能施加各向同性压强 <span class="arithmatex">\(P\)</span> 而不能产生剪切应力的介质。典型例子为空气、水（非理想例子为蜂蜜）。
+- <strong>右侧</strong>给出应力张量形式：
+  - 笛卡尔坐标系下：<span class="arithmatex">\(T_{xx} = T_{yy} = T_{zz} = P\)</span>，非对角分量为零
+  - 简洁表达式：<span class="arithmatex">\(T_{ij} = P\delta_{ij}\)</span> 或坐标无关形式 <span class="arithmatex">\(\mathbf{T} = P\mathbf{g}\)</span>
+- <strong>下方验证</strong>：对于面积矢量 <span class="arithmatex">\(\mathbf{\Sigma} = A\mathbf{n}\)</span>，流体施加的力 <span class="arithmatex">\(F_j = T_{jk}\Sigma_k = PA n_j\)</span>，表明力始终垂直于作用面。</p>
+<p><strong>截图 2（动量守恒定律的两种形式）</strong>
+- <strong>左侧（积分形式）</strong>：区域 <span class="arithmatex">\(V_3\)</span> 内总动量 <span class="arithmatex">\(\int_{V_3} \mathbf{G} dV\)</span> 的变化率加上净流出速率 <span class="arithmatex">\(\int_{\partial V_3} \mathbf{T} \cdot d\mathbf{\Sigma}\)</span> 等于零：
+  <span class="arithmatex">\(\frac{d}{dt}\int_{V_3} \mathbf{G} dV + \int_{\partial V_3} \mathbf{T} \cdot d\mathbf{\Sigma} = 0\)</span>
+- <strong>右侧（微分形式）</strong>：应用高斯散度定理得到：
+  <span class="arithmatex">\(\frac{\partial \mathbf{G}}{\partial t} + \nabla \cdot \mathbf{T} = 0 \quad \text{或分量形式} \quad \frac{\partial G_j}{\partial t} + T_{jk,k} = 0\)</span>
+- <strong>底部评注</strong>：强调这是守恒律的标准形式——某量密度的时间变化率加上其通量的散度为零。</p>
+<p><strong>截图 3（应用大师课：欧拉方程推导）</strong>
+- <strong>标题</strong>：理想流体动力学方程推导（三）- 欧拉方程
+- <strong>推导步骤</strong>：将 <span class="arithmatex">\(\mathbf{G} = \rho \mathbf{v}\)</span> 和 <span class="arithmatex">\(\mathbf{T} = P\mathbf{g} + \rho \mathbf{v} \otimes \mathbf{v}\)</span> 代入微分守恒律，结合质量守恒简化。
+- <strong>最终结果</strong>：
+  <span class="arithmatex">\(\rho \frac{d\mathbf{v}}{dt} = -\nabla P \quad \text{或} \quad \frac{d\mathbf{v}}{dt} = -\frac{1}{\rho}\nabla P\)</span>
+- <strong>物理本质框</strong>：指出这是<strong>牛顿第二定律 <span class="arithmatex">\(F=ma\)</span> 的单位质量形式</strong>，左侧为单位质量加速度，右侧为单位质量所受压力梯度力。</p>
+<hr />
+<h2 id="二理想流体的应力张量与动量守恒">二、理想流体的应力张量与动量守恒<a class="headerlink" href="#二理想流体的应力张量与动量守恒" title="Permanent link">&para;</a></h2>
+<h3 id="1-完美流体的应力张量">1. 完美流体的应力张量<a class="headerlink" href="#1-完美流体的应力张量" title="Permanent link">&para;</a></h3>
+<p><strong>新概念</strong>：完美流体（Perfect Fluid）是一种<strong>无粘性</strong>的理想化模型，其内部只能承受<strong>各向同性压力</strong>（isotropic pressure），无法承受剪切应力（shear stress）。</p>
+<p><strong>新公式</strong>：</p>
+<div class="arithmatex">\[T_{ij} = P\delta_{ij} \quad \text{或张量形式} \quad \mathbf{T} = P\mathbf{g}\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(P\)</span></strong>：流体静压强（标量，各方向相等）</li>
+<li><strong><span class="arithmatex">\(\delta_{ij}\)</span></strong>（或 <span class="arithmatex">\(\mathbf{g}\)</span>）：欧几里得度规张量分量（笛卡尔坐标系下即为单位矩阵 <span class="arithmatex">\(\mathbf{I}\)</span>，对角线为1，其余为0）</li>
+<li><strong>物理意义</strong>：应力张量退化为单位矩阵的标量倍数，表示无论取何种朝向的表面，流体施加的力总是垂直于该表面，大小为 <span class="arithmatex">\(P \times \text{面积}\)</span>，无切向分量。</li>
+</ul>
+<p><strong>力的计算验证</strong>：
+对于法向为 <span class="arithmatex">\(\mathbf{n}\)</span>、面积为 <span class="arithmatex">\(A\)</span> 的作用面（面积矢量 <span class="arithmatex">\(\Sigma_k = A n_k\)</span>），流体施加的力为：</p>
+<div class="arithmatex">\[F_j = T_{jk}\Sigma_k = P\delta_{jk}(A n_k) = P A n_j\]</div>
+<p>这表明力 <span class="arithmatex">\(\mathbf{F} = PA\mathbf{n}\)</span> 确实垂直于表面，与压强定义完全一致。</p>
+<h3 id="2-动量守恒定律的形式">2. 动量守恒定律的形式<a class="headerlink" href="#2-动量守恒定律的形式" title="Permanent link">&para;</a></h3>
+<p><strong>新概念</strong>：应力张量作为<strong>动量流密度（momentum flux density）</strong>，其通量进出直接对应动量变化。</p>
+<p><strong>积分形式</strong>（全局守恒）：</p>
+<div class="arithmatex">\[\frac{d}{dt}\int_V \mathbf{G} \, dV + \oint_{\partial V} \mathbf{T} \cdot d\mathbf{\Sigma} = 0\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\mathbf{G}\)</span></strong>：动量密度（单位体积内的动量）</li>
+<li><strong>第一项</strong>：体积 <span class="arithmatex">\(V\)</span> 内总动量随时间的变化率</li>
+<li><strong>第二项</strong>：通过边界 <span class="arithmatex">\(\partial V\)</span> 流出的净动量流（应力张量对面积积分）</li>
+</ul>
+<p><strong>微分形式</strong>（局域守恒，通过高斯散度定理得到）：</p>
+<div class="arithmatex">\[\frac{\partial \mathbf{G}}{\partial t} + \nabla \cdot \mathbf{T} = 0 \quad \text{或分量式} \quad \frac{\partial G_j}{\partial t} + \frac{\partial T_{jk}}{\partial x_k} = 0\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\nabla \cdot \mathbf{T}\)</span></strong>（或 <span class="arithmatex">\(T_{jk,k}\)</span>）：应力张量的散度，表示单位体积内动量的净流出率</li>
+<li><strong>物理图像</strong>：某点动量密度的减少（<span class="arithmatex">\(\partial \mathbf{G}/\partial t &lt; 0\)</span>）必然伴随着动量向外的流动（<span class="arithmatex">\(\nabla \cdot \mathbf{T} &gt; 0\)</span>），这是<strong>连续性方程</strong>在动量守恒中的体现。</li>
+</ul>
+<hr />
+<h2 id="三理想流体动力学习题-113-详解">三、理想流体动力学（习题 1.13 详解）<a class="headerlink" href="#三理想流体动力学习题-113-详解" title="Permanent link">&para;</a></h2>
+<p>本段引入<strong>非静态</strong>流体（速度场 <span class="arithmatex">\(\mathbf{v}(\mathbf{x},t)\)</span> 随时间空间变化），此时应力张量需包含<strong>对流动量输运</strong>。</p>
+<h3 id="1-动量密度与对流应力张量">1. 动量密度与对流应力张量<a class="headerlink" href="#1-动量密度与对流应力张量" title="Permanent link">&para;</a></h3>
+<p><strong>新公式</strong>：
+- <strong>动量密度</strong>：<span class="arithmatex">\(\mathbf{g} = \rho \mathbf{v}\)</span>（质量密度 <span class="arithmatex">\(\times\)</span> 速度，即单位体积流体的动量）
+- <strong>完整应力张量</strong>（含静压与对流）：
+  <span class="arithmatex">\(T_{ij} = P\delta_{ij} + \rho v_i v_j \quad \text{或} \quad \mathbf{T} = P\mathbf{I} + \rho \mathbf{v} \otimes \mathbf{v}\)</span></p>
+<ul>
+<li><strong><span class="arithmatex">\(\rho\)</span></strong>：流体质量密度</li>
+<li><strong><span class="arithmatex">\(v_i v_j\)</span></strong>：速度并矢（dyadic product），表示流体宏观运动携带的动量通量</li>
+<li><strong>分解</strong>：第一项 <span class="arithmatex">\(P\delta_{ij}\)</span> 是热力学压力产生的弹性应力；第二项 <span class="arithmatex">\(\rho v_i v_j\)</span> 是"动量对流动量流"（单位时间内，流体携带动量穿过单位面积的量）</li>
+</ul>
+<h3 id="2-质量守恒连续性方程">2. 质量守恒（连续性方程）<a class="headerlink" href="#2-质量守恒连续性方程" title="Permanent link">&para;</a></h3>
+<p><strong>新公式</strong>：</p>
+<div class="arithmatex">\[\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \mathbf{v}) = 0\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\nabla \cdot (\rho \mathbf{v})\)</span></strong>：质量流密度的散度</li>
+<li><strong>物理意义</strong>：密度随时间的增加必须由质量的流入来补偿。利用随体导数（见下文）可改写为：
+  <span class="arithmatex">\(\frac{1}{\rho}\frac{D\rho}{Dt} = -\nabla \cdot \mathbf{v}\)</span>
+  这表明：<strong>速度场的散度 <span class="arithmatex">\(\nabla \cdot \mathbf{v}\)</span> 等于流体密度在随体坐标系中相对变化率的负值</strong>。若 <span class="arithmatex">\(\nabla \cdot \mathbf{v} &gt; 0\)</span>（流体膨胀），则密度必然减小。</li>
+</ul>
+<h3 id="3-随体导数物质导数">3. 随体导数（物质导数）<a class="headerlink" href="#3-随体导数物质导数" title="Permanent link">&para;</a></h3>
+<p><strong>新概念</strong>：<span class="arithmatex">\(\frac{D}{Dt}\)</span> 描述<strong>跟随流体微团一起运动的观察者</strong>所看到的物理量变化率（而非固定于实验室坐标系的观察者）。</p>
+<p><strong>新公式</strong>：</p>
+<div class="arithmatex">\[\frac{D}{Dt} = \frac{\partial}{\partial t} + \mathbf{v} \cdot \nabla\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\frac{\partial}{\partial t}\)</span></strong>：局部导数（当地变化，固定点处的时间变化）</li>
+<li><strong><span class="arithmatex">\(\mathbf{v} \cdot \nabla\)</span></strong>：对流导数（位变导数，因流体微团移动到不同位置而产生的变化）</li>
+<li><strong>别名</strong>：平流时间导数、物质导数（Substantial Derivative）</li>
+</ul>
+<h3 id="4-欧拉方程流体的牛顿第二定律">4. 欧拉方程（流体的牛顿第二定律）<a class="headerlink" href="#4-欧拉方程流体的牛顿第二定律" title="Permanent link">&para;</a></h3>
+<p><strong>推导逻辑</strong>：将 <span class="arithmatex">\(\mathbf{G} = \rho\mathbf{v}\)</span> 和 <span class="arithmatex">\(T_{ij} = P\delta_{ij} + \rho v_i v_j\)</span> 代入微分动量守恒律 <span class="arithmatex">\(\partial_t G_j + T_{jk,k} = 0\)</span>，结合质量守恒方程，最终化简得到：</p>
+<p><strong>新公式</strong>（欧拉方程）：</p>
+<div class="arithmatex">\[\frac{D\mathbf{v}}{Dt} = -\frac{1}{\rho}\nabla P \quad \text{或等价地} \quad \rho \frac{D\mathbf{v}}{Dt} = -\nabla P\]</div>
+<ul>
+<li><strong>左侧 <span class="arithmatex">\(\frac{D\mathbf{v}}{Dt}\)</span></strong>：流体微团的<strong>加速度</strong>（随体导数作用于速度）</li>
+<li><strong>右侧 <span class="arithmatex">\(-\frac{1}{\rho}\nabla P\)</span></strong>：单位质量流体所受的<strong>压力梯度力</strong>（负号表示流体被从高压区推向低压区）</li>
+<li><strong>本质</strong>：这是<strong><span class="arithmatex">\(F=ma\)</span> 的单位质量形式</strong>。左侧是 <span class="arithmatex">\(a\)</span>，右侧是 <span class="arithmatex">\(F/m\)</span>。它表明流体加速的唯一原因是压力的空间不均匀性（忽略重力、粘性等）。</li>
+</ul>
+<hr />
+<h2 id="四电磁应力张量习题-114-预告">四、电磁应力张量（习题 1.14 预告）<a class="headerlink" href="#四电磁应力张量习题-114-预告" title="Permanent link">&para;</a></h2>
+<h3 id="1-麦克斯韦应力张量">1. 麦克斯韦应力张量<a class="headerlink" href="#1-麦克斯韦应力张量" title="Permanent link">&para;</a></h3>
+<p><strong>新概念</strong>：电磁场本身携带能量和动量，可对物质施加机械力（辐射压力、电场张力）。描述这种作用的工具是<strong>麦克斯韦应力张量</strong>。</p>
+<p><strong>新公式</strong>（电磁应力张量）：</p>
+<div class="arithmatex">\[T_{ij} = \epsilon_0 \left[ \frac{1}{2}(E^2 + c^2 B^2)\delta_{ij} - E_i E_j - c^2 B_i B_j \right]\]</div>
+<p>（注：不同教材符号约定可能相反，此处假设 <span class="arithmatex">\(T_{ij}\)</span> 为作用于介质的力）</p>
+<ul>
+<li><strong><span class="arithmatex">\(\epsilon_0\)</span></strong>：真空介电常数</li>
+<li><strong><span class="arithmatex">\(E, B\)</span></strong>：电场强度和磁感应强度</li>
+<li><strong><span class="arithmatex">\(E^2 = \mathbf{E} \cdot \mathbf{E}\)</span></strong>：电场模平方</li>
+<li><strong>结构分析</strong>：</li>
+<li>对角项 <span class="arithmatex">\(\frac{1}{2}\epsilon_0(E^2 + c^2 B^2)\)</span>：各向同性"压强"背景</li>
+<li><span class="arithmatex">\(-\epsilon_0 E_i E_j\)</span> 和 <span class="arithmatex">\(-\frac{1}{\mu_0} B_i B_j\)</span>（其中 <span class="arithmatex">\(c^2 = 1/\mu_0\epsilon_0\)</span>）：沿场方向的负贡献，表示<strong>张力</strong>（场线像橡皮筋一样被拉伸）</li>
+</ul>
+<h3 id="2-场动量与力密度">2. 场动量与力密度<a class="headerlink" href="#2-场动量与力密度" title="Permanent link">&para;</a></h3>
+<p><strong>核心关系</strong>：电磁场通过应力张量将动量传递给物质。</p>
+<p><strong>新物理图像</strong>：</p>
+<div class="arithmatex">\[\nabla \cdot \mathbf{T}_{\text{EM}} = -\mathbf{f}_{\text{ Lorentz}}\]</div>
+<ul>
+<li><strong>左侧</strong>：电磁应力张量的散度，表示电磁动量流的空间不均匀性</li>
+<li><strong>右侧</strong>：电磁场对物质施加的<strong>力密度</strong>（单位体积的洛伦兹力 <span class="arithmatex">\(\mathbf{f} = \rho_e \mathbf{E} + \mathbf{J} \times \mathbf{B}\)</span>）的负</li>
+</ul>
+<hr />
+<h2 id="段落-3">段落 3：话题切换：几何化单位与相对论单位制简化<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:16:01 ~ 00:18:43</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+接下来我们要稍微转换一下话题
+聊聊在相对论物理中如何让我们的计算变得更简洁以及粒子在相对论速度下的能量和动量听起来是要进入相对论的世界了
+撒老师您提到集合化单位这是什么意思呢集合化单位固名CE就是把一些物理常数设为一从而简化方程
+在相对论中最重要的常数就是光速C光速C不是一个固定的值吗怎么能把它设为一呢这是一个非常深刻的物理思想
+光速C的场定性是狭义相对论的一个基本原理
+在一九八三年国际单位制甚至重新定义了米十七余秒通过光速C精确关联起来
+这意味着光速C已经不再是一个需要测量量,而是一个定义量原来是这样
+那我们把C设为一有什么好处呢?最大的好处就是很多相对乱方程会变得非常简洁
+比如我们都知道智能方程是e等于 mc平方
+如果把C设为一,它就变成了E等于M哇,一下子就简单多了
+那如果我需要把它转换回SI单位怎么办呢这就用到我们物理学中一个很重要的工具量钢分析
+比如E等于M在几何化单位下是成立的
+但我们知道,能量一的量钢是焦二千克米平方秒伏二次方
+质量M的亮钢是千克两边亮钢不符
+为了让两边亮钢匹配,我们必须在右边乘以一个具有米平方秒乘二次方亮钢的阴子
+而西平方正好具有这个亮纲
+所以我们就能很自然地恢复出一等于MC平方太巧妙了所以几何化单位只是为了计算方便并不是真的把光速变成一了就是这个意思
+这种单位制在处理相对论问题时非常普遍
+它能帮助我们更清晰地看到物理定律的本质
+在课后的习题一点一五中就有很多练习比如把普朗克时间洛伦自立定律等从几何化单位转换回SI单位
+甚至还有一些有趣的思考题比如你有多高用秒来表示你有多高用秒来表示这个太有意思了
+我的身高除以光速,就是我身高对应的光传播时间,对吧,完全正确,这正是几何化单位思维的体现
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001001.5_formula.jpg" src="../frames/frame_001001.5_formula.jpg" /></p>
+<p><img alt="frame_001009.6_formula.jpg" src="../frames/frame_001009.6_formula.jpg" /></p>
+<p><img alt="frame_001073.6_transition.jpg" src="../frames/frame_001073.6_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:16:01 ~ 00:18:43）的深度注解。本段核心在于<strong>引入相对论计算中的"几何化单位制"（Geometrized Units），通过将光速 <span class="arithmatex">\(c\)</span> 设为无量纲的 1 来简化方程，并用量纲分析实现与 SI 单位的转换</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述_2">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述_2" title="Permanent link">&para;</a></h2>
+<p><strong>截图（附录：几何化单位制）</strong>
+- <strong>标题</strong>：附录：几何化单位制（Geometrized Units）
+- <strong>核心思想栏</strong>：
+  - 强调狭义相对论基本原理：光速 <span class="arithmatex">\(c\)</span> 在所有参考系中恒定不变
+  - 关键设定：将 <span class="arithmatex">\(c = 2.99792458 \times 10^8 \, \text{m/s}\)</span> 设为 1（无量纲）
+  - 等价描述：这定义了时间与长度的换算关系——<span class="arithmatex">\(1\,\text{秒} = 2.99792458 \times 10^8\,\text{米}\)</span>（即光在真空中1秒内行进的距离）
+- <strong>优点栏</strong>：极大简化了相对论物理中的方程形式
+- <strong>单位换算栏</strong>：
+  - 说明恢复 SI 单位的方法：根据量纲分析补回适当的 <span class="arithmatex">\(c\)</span> 的幂次
+  - <strong>示例图示</strong>：展示质能方程的转换流程
+    - 左侧：能量 <span class="arithmatex">\(E\)</span>（单位 <span class="arithmatex">\(\mathrm{kg \cdot m^2 \cdot s^{-2}}\)</span>）
+    - 中间：双向箭头标注"<span class="arithmatex">\(\times c^2\)</span>（单位 <span class="arithmatex">\(\mathrm{m^2 \cdot s^{-2}}\)</span>）"
+    - 右侧：质量 <span class="arithmatex">\(m\)</span>（单位 <span class="arithmatex">\(\mathrm{kg}\)</span>）
+  - <strong>结论</strong>：恢复后的方程为 <span class="arithmatex">\(E = mc^2\)</span></p>
+<hr />
+<h2 id="二核心概念与公式解析">二、核心概念与公式解析<a class="headerlink" href="#二核心概念与公式解析" title="Permanent link">&para;</a></h2>
+<h3 id="1-几何化单位制的核心设定">1. 几何化单位制的核心设定<a class="headerlink" href="#1-几何化单位制的核心设定" title="Permanent link">&para;</a></h3>
+<p><strong>公式</strong>：</p>
+<div class="arithmatex">\[c = 1\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(c\)</span>：真空中的光速（speed of light in vacuum），在 SI 单位制中精确值为 <span class="arithmatex">\(299,792,458\,\mathrm{m/s}\)</span>。在几何化单位制中，它是一个无量纲的纯数 1。</p>
+<p><strong>物理含义</strong>：
+这不是说光速真的变成了 <span class="arithmatex">\(1\,\mathrm{m/s}\)</span>，而是<strong>选择了这样一种单位制</strong>：长度的单位（米）和时间的单位（秒）不再独立，而是通过光速建立固定关系。在这种单位制下，<span class="arithmatex">\(c\)</span> 作为转换因子被吸收进单位定义中，方程中不再显式出现。</p>
+<h3 id="2-质能方程的简化与量纲恢复">2. 质能方程的简化与量纲恢复<a class="headerlink" href="#2-质能方程的简化与量纲恢复" title="Permanent link">&para;</a></h3>
+<p><strong>公式对比</strong>：
+- <strong>SI 单位制</strong>：<span class="arithmatex">\(E = mc^2\)</span>
+- <strong>几何化单位制</strong>：<span class="arithmatex">\(E = m\)</span></p>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(E\)</span>：能量（Energy）
+- <span class="arithmatex">\(m\)</span>：静止质量（rest mass）
+- <span class="arithmatex">\(c^2\)</span>：光速的平方，在几何化单位制中其数值为 1，因此方程简化为 <span class="arithmatex">\(E=m\)</span></p>
+<p><strong>量纲分析（Dimensional Analysis）原理</strong>：
+当需要从几何化单位制转换回 SI 单位制时，需保证方程两边的量纲（物理量的单位构成）一致。</p>
+<ul>
+<li>能量 <span class="arithmatex">\(E\)</span> 的量纲：<span class="arithmatex">\([E] = \mathrm{M \cdot L^2 \cdot T^{-2}}\)</span>（质量×长度²/时间²，即焦耳 <span class="arithmatex">\(\mathrm{J}\)</span>）</li>
+<li>质量 <span class="arithmatex">\(m\)</span> 的量纲：<span class="arithmatex">\([m] = \mathrm{M}\)</span>（质量）</li>
+</ul>
+<p>为了使 <span class="arithmatex">\(E = m\)</span> 在量纲上平衡，必须在质量项旁乘以一个具有 <span class="arithmatex">\(\mathrm{L^2 \cdot T^{-2}}\)</span> 量纲的因子。由于 <span class="arithmatex">\([c] = \mathrm{L \cdot T^{-1}}\)</span>，则 <span class="arithmatex">\([c^2] = \mathrm{L^2 \cdot T^{-2}}\)</span>，恰好匹配。因此恢复为：</p>
+<div class="arithmatex">\[E = mc^2\]</div>
+<hr />
+<h2 id="三理论背景补充">三、理论背景补充<a class="headerlink" href="#三理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-1983年国际单位制si的变革">1. 1983年国际单位制（SI）的变革<a class="headerlink" href="#1-1983年国际单位制si的变革" title="Permanent link">&para;</a></h3>
+<p>视频中提到"1983年国际单位制重新定义了米"，这是单位制史上的重要事件：
+- <strong>旧定义</strong>（1960-1983）：1米等于氪-86原子特定能级跃迁辐射波长的 <span class="arithmatex">\(1,650,763.73\)</span> 倍（基于原子物理）。
+- <strong>新定义</strong>（1983至今）：<strong>1米是光在真空中于 <span class="arithmatex">\(1/299,792,458\)</span> 秒时间间隔内所经路径的长度</strong>。</p>
+<p>这一变革的深刻意义在于：它将<strong>光速 <span class="arithmatex">\(c\)</span> 从一个需要精密测量的物理常数，转变为一个固定的定义值</strong>（精确等于 <span class="arithmatex">\(299,792,458\,\mathrm{m/s}\)</span>）。这与几何化单位制的思想一脉相承——既然 <span class="arithmatex">\(c\)</span> 是时空的几何属性（ Lorentz 不变性），它就不应被视为可变参数，而应成为单位制的基础。</p>
+<h3 id="2-几何化的深层含义">2. "几何化"的深层含义<a class="headerlink" href="#2-几何化的深层含义" title="Permanent link">&para;</a></h3>
+<p>"几何化单位制"（Geometrized Units）一词源于广义相对论，通常指<strong>同时设 <span class="arithmatex">\(G = c = 1\)</span></strong>（有时还包括 <span class="arithmatex">\(\hbar = 1\)</span>）。其名称反映了这样的物理观：
+- 在相对论中，时间和空间不再是绝对背景，而是构成了四维时空（Spacetime）。
+- 当 <span class="arithmatex">\(c=1\)</span> 时，时间的量纲与长度的量纲相同（秒与米通过 <span class="arithmatex">\(c\)</span> 等价），时空真正成为一个统一的几何流形，物理定律表现为该流形上的几何关系（如 Einstein 场方程 <span class="arithmatex">\(G_{\mu\nu} = 8\pi T_{\mu\nu}\)</span> 在几何化单位制下形式极为简洁）。</p>
+<h3 id="3-用秒">3. 用"秒"<a class="headerlink" href="#3-用秒" title="Permanent link">&para;</a></h3>
+<hr />
+<h2 id="段落-4">段落 4：相对论粒子的能量动量关系与课程总结<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:18:44 ~ 00:22:10</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+接下来我们聊聊在相对论中运动粒子的能量和动量好的这部分内容也常常让人觉得有点反直觉是的一个静止质量为M的粒子当它以速度微运动时它的相对论能量E和动量P
+就和我们牛顿力学中的表达式不一样了怎么不一样呢它的总能量E包括了它的净值质量能量表达式是E等于M处以开根号E减V平方除C平方
+如果我们把C设为一就成了E等于M处于开根号E减V平方这里的V是粒子的速度对吧
+而且这个能量E还包含了粒子的净值质量没错而它的相对论动量P表达式是P等于E乘于V或者写成P等于M乘于V处于开根号E减V平方处C平方看起来比牛顿力学复杂多了
+牛顿力学里,动量p就是m乘以v
+但是当粒子的速度V远小于光速C时也就是所谓的低速极限
+这些相对论表达式就会退化回我们熟悉的牛顿形式
+比如E会近似等于二分之一MV平方这里是动能而P就是MV也就是说牛顿力学是相对论力学在低速情况下的一个特例完全正确
+另外还有一类特殊的粒子它们的静止质量是零比如光子和引粒子静止质量为零那它们怎么会有能量和动量呢它们总是一光速运动
+对于这些粒子,它们的动量大小P就等于它们的能量翼
+所以光子不仅有能量还有动量这个在光电效应里好像有提到过是的
+而且在粒子相互作用的过程中比如核反应或者粒子碰撞
+总能量一和总动量P都是守恒的
+这和牛顿力学中的守恒定律是类似的
+但这里的E和P都是相对论性的好的赛老师今天我们从音力张量和动量守恒一路聊到了集化化单位和相对论性例子内容非常丰富而且缓缓扣扣是的就
+今天的课程我们深入理解了应力张量如何描述物质内部力的传递以及它作为动量通量在动量守恒中的核心作用
+我们还探讨了如何通过几何化单位简化相对论方程并回顾了相对论粒子能量和动量的基本概念
+这些概念对于我们理解更复杂的物理现象比如弹性力学流体力学甚至是广义相对论都打下了非常坚实的基础
+没错
+希望同学们能通过今天的学习对这些概念有更深刻的认识
+课后可以尝试完成课本中的习题特别是习题一百一十三和一百一十五它们能帮助大家更好地掌握这些知识点
+好的同学们今天的现代经典物理学第五奖就到这里了感谢赛老师的精彩讲解也感谢大家的收听我们下周同一时间再见
+再见
+再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001124.3_parastart.jpg" src="../frames/frame_001124.3_parastart.jpg" /></p>
+<p><img alt="frame_001234.0_transition.jpg" src="../frames/frame_001234.0_transition.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>以下是针对该课程片段（00:18:44 ~ 00:22:10）的深度注解。本段核心在于<strong>建立相对论性粒子的能量-动量关系，引入静止质量为零的极端情况（光子），并强调守恒定律在相对论框架下的延续性</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述_3">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述_3" title="Permanent link">&para;</a></h2>
+<p><strong>截图 1（巩固与思考：单位制换算练习）</strong>
+- <strong>标题</strong>：巩固与思考：单位制换算练习
+- <strong>问题设置</strong>：源自习题 1.15，要求将几何化单位制（<span class="arithmatex">\(c=1\)</span>）下的方程转换为国际单位制（SI）形式
+- <strong>具体条目</strong>：
+  - (a) 普朗克时间 <span class="arithmatex">\(t_p = \sqrt{G\hbar}\)</span>（<span class="arithmatex">\(G\)</span> 为牛顿引力常数，<span class="arithmatex">\(\hbar\)</span> 为约化普朗克常数），要求计算其数值（秒与米）
+  - (b) 电子-正电子湮灭能量 <span class="arithmatex">\(E = 2m\)</span>（静止质量均为 <span class="arithmatex">\(m\)</span>）
+  - (c) 洛伦兹力定律 <span class="arithmatex">\(m\frac{d\mathbf{v}}{dt} = e(\mathbf{E} + \mathbf{v} \times \mathbf{B})\)</span>
+  - (d) 光子动量 <span class="arithmatex">\(\mathbf{p} = \hbar\omega\mathbf{n}\)</span>（<span class="arithmatex">\(\omega\)</span> 为角频率，<span class="arithmatex">\(\mathbf{n}\)</span> 为传播方向）
+- <strong>开放性问题</strong>："你的身高是多少'秒'？"、"你的年龄是多少'米'？"（旨在强化时空统一观念）</p>
+<p><strong>截图 2（特殊情况：零静止质量粒子的能量与动量）</strong>
+- <strong>标题</strong>：特殊情况：零静止质量粒子的能量与动量
+- <strong>适用对象</strong>：静止质量 <span class="arithmatex">\(m = 0\)</span> 的粒子，如光子（photon）或引力子（graviton）
+- <strong>图示</strong>：左侧为波动图案（象征波粒二象性），右侧为弯曲时空网格（暗示引力子与时空几何的关联）
+- <strong>核心特性</strong>：
+  - 始终光速运动：<span class="arithmatex">\(v = c = 1\)</span>（几何化单位）
+  - 动量-能量关系：<span class="arithmatex">\(\mathbf{p} = E\mathbf{v}\)</span>（速度方向）
+- <strong>关键结论</strong>（蓝色框突出）：<span class="arithmatex">\(|\mathbf{p}| = E\)</span>（几何化单位下动量大小等于能量）</p>
+<hr />
+<h2 id="二公式详解相对论性能量与动量">二、公式详解（相对论性能量与动量）<a class="headerlink" href="#二公式详解相对论性能量与动量" title="Permanent link">&para;</a></h2>
+<p>本段引入了描述高速运动粒子的核心动力学量，需区分<strong>总能量</strong>、<strong>静止能量</strong>与<strong>动能</strong>。</p>
+<h3 id="1-相对论总能量total-energy">1. 相对论总能量（Total Energy）<a class="headerlink" href="#1-相对论总能量total-energy" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[E = \frac{M c^2}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma M c^2\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(E\)</span>：粒子的<strong>相对论总能量</strong>（Relativistic Total Energy），包含静止能量和动能
+- <span class="arithmatex">\(M\)</span>：<strong>静止质量</strong>（Rest Mass，字幕中"净值质量"应为笔误），粒子在自身静止参考系中测得的质量（不变量）
+- <span class="arithmatex">\(v\)</span>：粒子相对于观测者参考系的速度
+- <span class="arithmatex">\(c\)</span>：真空中的光速
+- <span class="arithmatex">\(\gamma = \frac{1}{\sqrt{1 - v^2/c^2}}\)</span>：<strong>洛伦兹因子</strong>（Lorentz Factor），描述时间膨胀和长度收缩的相对论效应强度</p>
+<p><strong>几何化单位形式</strong>（设 <span class="arithmatex">\(c=1\)</span>）：</p>
+<div class="arithmatex">\[E = \frac{M}{\sqrt{1 - v^2}} = \gamma M\]</div>
+<p><strong>物理内涵</strong>：即使粒子静止（<span class="arithmatex">\(v=0\)</span>），其能量 <span class="arithmatex">\(E = Mc^2\)</span> 也不为零，这就是著名的<strong>质能等价</strong>（Mass-Energy Equivalence）。牛顿力学中认为"静止物体无能量"的观念被彻底修正。</p>
+<h3 id="2-相对论动量relativistic-momentum">2. 相对论动量（Relativistic Momentum）<a class="headerlink" href="#2-相对论动量relativistic-momentum" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{p} = \frac{M \mathbf{v}}{\sqrt{1 - \frac{v^2}{c^2}}} = \gamma M \mathbf{v}\]</div>
+<p>或等价表示为（利用 <span class="arithmatex">\(E\)</span> 的定义）：</p>
+<div class="arithmatex">\[\mathbf{p} = \frac{E}{c^2} \mathbf{v}\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(\mathbf{p}\)</span>：<strong>相对论动量</strong>（Relativistic Momentum），三维矢量，方向与速度 <span class="arithmatex">\(\mathbf{v}\)</span> 相同
+- 其余符号同上</p>
+<p><strong>关键区别</strong>：与牛顿力学 <span class="arithmatex">\(\mathbf{p} = M\mathbf{v}\)</span> 不同，相对论动量随速度增加而<strong>超线性增长</strong>（因 <span class="arithmatex">\(\gamma\)</span> 因子），当 <span class="arithmatex">\(v \to c\)</span> 时，动量趋向无穷大，这解释了为何有质量物体无法达到光速。</p>
+<h3 id="3-无质量粒子的能量-动量关系">3. 无质量粒子的能量-动量关系<a class="headerlink" href="#3-无质量粒子的能量-动量关系" title="Permanent link">&para;</a></h3>
+<p>对于 <span class="arithmatex">\(M = 0\)</span> 的粒子（光子、引力子）：</p>
+<div class="arithmatex">\[|\mathbf{p}| = \frac{E}{c} \quad \text{或几何化单位下} \quad |\mathbf{p}| = E\]</div>
+<p><strong>推导逻辑</strong>：当 <span class="arithmatex">\(M=0\)</span> 时，上述能量和动量公式看似出现 <span class="arithmatex">\(0/0\)</span> 不定形式，但实际上这类粒子<strong>必须以光速 <span class="arithmatex">\(c\)</span> 运动</strong>。通过极限过程或量子理论（<span class="arithmatex">\(E = \hbar\omega\)</span>, <span class="arithmatex">\(p = \hbar k\)</span>）可</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

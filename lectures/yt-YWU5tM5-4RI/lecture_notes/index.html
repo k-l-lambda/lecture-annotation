@@ -1,0 +1,5766 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-YWU5tM5-4RI/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-vb7k2MXbLGE/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-wRx8DncELqc/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第10课 闵氏时空上微分和电动力学几何本质 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#现代经典物理学第10课-闵氏时空上微分和电动力学几何本质" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第10课 闵氏时空上微分和电动力学几何本质
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：导数、梯度、散度与波动算子导入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：导数、梯度、散度与波动算子导入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-1方向导数的极限定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 1：方向导数的极限定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-2梯度与方向导数的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 2：梯度与方向导数的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3抽象指标记法分号与逗号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 3：抽象指标记法（分号与逗号）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-4度规张量的协变导数为零" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 4：度规张量的协变导数为零
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-5矢量散度的缩并形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 5：矢量散度的缩并形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-6欧氏空间-vs-闵可夫斯基时空的梯度的散度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 6：欧氏空间 vs 闵可夫斯基时空的"梯度的散度"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么闵可夫斯基时空看起来和欧氏空间一样" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么闵可夫斯基时空"看起来"和欧氏空间一样？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-槽位slot概念的深层含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 "槽位"（slot）概念的深层含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四本节核心要点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、本节核心要点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：列维奇维塔张量与电磁学主题引入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：列维奇维塔张量与电磁学主题引入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-1达朗贝尔算子波动算子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 1：达朗贝尔算子（波动算子）□
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-2波动方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 2：波动方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3列维-奇维塔张量的分量定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 3：列维-奇维塔张量的分量定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-4逆变分量的符号反转关键细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 4：逆变分量的符号反转（关键细节！）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么闵可夫斯基时空需要4d-levi-civita张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么闵可夫斯基时空需要4D Levi-Civita张量？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-右手正交归一基底的精确定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 "右手正交归一基底"的精确定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗概念解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗概念解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、通俗概念解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-达朗贝尔算子相对论的波动探测器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 达朗贝尔算子：相对论的"波动探测器"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-levi-civita张量时空的定向罗盘" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Levi-Civita张量：时空的"定向罗盘"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四段落要点总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、段落要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：电磁场张量与洛伦兹力的相对论表达
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：电磁场张量与洛伦兹力的相对论表达">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppt-1相对论电动力学基础标题页" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 1：相对论电动力学基础（标题页）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-2电磁场张量-f-的构造关键板书" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 2：电磁场张量 \(F\) 的构造（关键板书）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-3推导经典洛伦兹力完整推导链" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 3：推导经典洛伦兹力（完整推导链）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-1相对论性洛伦兹力协变形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 1：相对论性洛伦兹力（协变形式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-2电磁场张量的分量定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 2：电磁场张量的分量定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3降指标后的四维力" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 3：降指标后的四维力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-413分解展开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 4：1+3分解展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-5从固有时到坐标时" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 5：从固有时到坐标时
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-6经典洛伦兹力与功率方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 6：经典洛伦兹力与功率方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二关键理论背景" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、关键理论背景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、关键理论背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-电磁场张量的几何本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 电磁场张量的几何本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-参考系依赖性与观测者分解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 参考系依赖性与观测者分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-13分解的物理意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 1+3分解的物理意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心洞见电场和磁场是同一块硬币的两面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心洞见：电场和磁场是"同一块硬币的两面"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#推导流程的可视化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推导流程的可视化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四补充说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、补充说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：观测者分解下的电场磁场定义与重构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：观测者分解下的电场磁场定义与重构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppt-1投影方程连接几何与观测核心公式页" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 1：投影方程——连接几何与观测（核心公式页）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-2详细推导过程板书手稿风格" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 2：详细推导过程（板书手稿风格）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式1电场投影方程几何定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式1：电场投影方程（几何定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式2磁场投影方程几何定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式2：磁场投影方程（几何定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式3逆关系重构电磁场张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3：逆关系（重构电磁场张量）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二31分解证明的技术细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、3+1分解证明的技术细节
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、3+1分解证明的技术细节">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#证明策略概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        证明策略概述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#电场证明详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        电场证明详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#磁场证明详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        磁场证明详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心物理洞察" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心物理洞察
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心物理洞察">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-关键结论电场和磁场是观测者依赖的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔑 关键结论：电场和磁场是"观测者依赖的"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通俗解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与经典电磁学的联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与经典电磁学的联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四练习218的提示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、练习2.18的提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：麦克斯维方程、四维势与规范变换总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：麦克斯维方程、四维势与规范变换总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppt-1几何化麦克斯韦方程组核心公式页" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 1：几何化麦克斯韦方程组（核心公式页）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-2电磁势与规范变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 2：电磁势与规范变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-麦克斯韦方程组的几何形式高斯单位制" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 麦克斯韦方程组的几何形式（高斯单位制）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-比安基恒等式bianchi-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 比安基恒等式（Bianchi Identity）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-电磁四维势与场强关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 电磁四维势与场强关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-规范变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 规范变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-洛伦兹规范与波动方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 洛伦兹规范与波动方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#微分形式视角进阶" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        微分形式视角（进阶）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31分解与经典极限" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3+1分解与经典极限
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#几何化意味着什么" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "几何化"意味着什么？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么自动满足是魔法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么"自动满足"是魔法？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#规范自由度的物理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规范自由度的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四课程脉络总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、课程脉络总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：导数、梯度、散度与波动算子导入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：导数、梯度、散度与波动算子导入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-1方向导数的极限定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 1：方向导数的极限定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-2梯度与方向导数的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 2：梯度与方向导数的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3抽象指标记法分号与逗号" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 3：抽象指标记法（分号与逗号）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-4度规张量的协变导数为零" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 4：度规张量的协变导数为零
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-5矢量散度的缩并形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 5：矢量散度的缩并形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-6欧氏空间-vs-闵可夫斯基时空的梯度的散度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 6：欧氏空间 vs 闵可夫斯基时空的"梯度的散度"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么闵可夫斯基时空看起来和欧氏空间一样" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么闵可夫斯基时空"看起来"和欧氏空间一样？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-槽位slot概念的深层含义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 "槽位"（slot）概念的深层含义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗语言总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗语言总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四本节核心要点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、本节核心要点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：列维奇维塔张量与电磁学主题引入
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：列维奇维塔张量与电磁学主题引入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-1达朗贝尔算子波动算子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 1：达朗贝尔算子（波动算子）□
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-2波动方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 2：波动方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3列维-奇维塔张量的分量定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 3：列维-奇维塔张量的分量定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-4逆变分量的符号反转关键细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 4：逆变分量的符号反转（关键细节！）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-为什么闵可夫斯基时空需要4d-levi-civita张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么闵可夫斯基时空需要4D Levi-Civita张量？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-右手正交归一基底的精确定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 "右手正交归一基底"的精确定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗概念解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗概念解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、通俗概念解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-达朗贝尔算子相对论的波动探测器" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 达朗贝尔算子：相对论的"波动探测器"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-levi-civita张量时空的定向罗盘" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Levi-Civita张量：时空的"定向罗盘"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四段落要点总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、段落要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：电磁场张量与洛伦兹力的相对论表达
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：电磁场张量与洛伦兹力的相对论表达">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppt-1相对论电动力学基础标题页" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 1：相对论电动力学基础（标题页）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-2电磁场张量-f-的构造关键板书" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 2：电磁场张量 \(F\) 的构造（关键板书）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-3推导经典洛伦兹力完整推导链" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 3：推导经典洛伦兹力（完整推导链）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式-1相对论性洛伦兹力协变形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 1：相对论性洛伦兹力（协变形式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-2电磁场张量的分量定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 2：电磁场张量的分量定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-3降指标后的四维力" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 3：降指标后的四维力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-413分解展开" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 4：1+3分解展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-5从固有时到坐标时" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 5：从固有时到坐标时
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式-6经典洛伦兹力与功率方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式 6：经典洛伦兹力与功率方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二关键理论背景" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、关键理论背景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、关键理论背景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-电磁场张量的几何本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 电磁场张量的几何本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-参考系依赖性与观测者分解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 参考系依赖性与观测者分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-13分解的物理意义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 1+3分解的物理意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心洞见电场和磁场是同一块硬币的两面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心洞见：电场和磁场是"同一块硬币的两面"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#推导流程的可视化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        推导流程的可视化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四补充说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、补充说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：观测者分解下的电场磁场定义与重构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：观测者分解下的电场磁场定义与重构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppt-1投影方程连接几何与观测核心公式页" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 1：投影方程——连接几何与观测（核心公式页）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-2详细推导过程板书手稿风格" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 2：详细推导过程（板书手稿风格）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式1电场投影方程几何定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式1：电场投影方程（几何定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式2磁场投影方程几何定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式2：磁场投影方程（几何定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式3逆关系重构电磁场张量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3：逆关系（重构电磁场张量）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二31分解证明的技术细节" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、3+1分解证明的技术细节
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、3+1分解证明的技术细节">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#证明策略概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        证明策略概述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#电场证明详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        电场证明详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#磁场证明详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        磁场证明详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心物理洞察" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心物理洞察
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心物理洞察">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-关键结论电场和磁场是观测者依赖的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔑 关键结论：电场和磁场是"观测者依赖的"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        通俗解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与经典电磁学的联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与经典电磁学的联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四练习218的提示" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、练习2.18的提示
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：麦克斯维方程、四维势与规范变换总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：麦克斯维方程、四维势与规范变换总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#截图板书内容描述_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图板书内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="截图板书内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ppt-1几何化麦克斯韦方程组核心公式页" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 1：几何化麦克斯韦方程组（核心公式页）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ppt-2电磁势与规范变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PPT 2：电磁势与规范变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-麦克斯韦方程组的几何形式高斯单位制" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 麦克斯韦方程组的几何形式（高斯单位制）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-比安基恒等式bianchi-identity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 比安基恒等式（Bianchi Identity）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-电磁四维势与场强关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 电磁四维势与场强关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-规范变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 规范变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-洛伦兹规范与波动方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 洛伦兹规范与波动方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二理论背景补充_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#微分形式视角进阶" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        微分形式视角（进阶）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31分解与经典极限" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3+1分解与经典极限
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#几何化意味着什么" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "几何化"意味着什么？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么自动满足是魔法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么"自动满足"是魔法？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#规范自由度的物理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        规范自由度的物理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四课程脉络总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、课程脉络总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="现代经典物理学第10课-闵氏时空上微分和电动力学几何本质">《现代经典物理学》第10课 闵氏时空上微分和电动力学几何本质<a class="headerlink" href="#现代经典物理学第10课-闵氏时空上微分和电动力学几何本质" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 5 个段落，<a href="https://www.youtube.com/watch?v=YWU5tM5-4RI">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 导数、梯度、散度与波动算子导入</a></li>
+<li><a href="#段落-2">00:05:40 列维奇维塔张量与电磁学主题引入</a></li>
+<li><a href="#段落-3">00:08:56 电磁场张量与洛伦兹力的相对论表达</a></li>
+<li><a href="#段落-4">00:15:12 观测者分解下的电场磁场定义与重构</a></li>
+<li><a href="#段落-5">00:20:41 麦克斯维方程、四维势与规范变换总结</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：导数、梯度、散度与波动算子导入<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:05:39</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好,我是你们活泼好奇的Zoe
+大家好,我是陈稳,但乐于分享的赛
+欢迎大家收听现代经典物理学博客的第十期
+哇,赛第十七了,感觉我们这门课越学越深入,也越来越烧脑了
+今天我们要聊的主题听起来就很有分量方向导兽梯度还有那个听起来有点神秘的列威其尾他张亮对吧没错
+这部分内容是咱们理解电动学的基础
+我们先从始量和张量的导数开始聊起
+大家还记得在欧基里的空间里我们是怎么定义方向导数和梯度的吗记得一点点方向导数嘛就是沿着某个方向球导数看函数在这个方向上怎么变化
+梯度呢,它是一个始量,指向函数增长最快的方向,大嫂就是增长率,说得很好
+在明科夫斯基时空中这些定义方式其实跟欧吉里的空间是完全一样的
+如果之前没仔细看咱们教材的一点七节也就是现代经典物理学专栏第四课的内容,我建议你现在可以回去补一补哦原来是一样的,那我就放心多了
+不过赛咱们书里提到了一个符号是纳布拉夏四十辆A作用在张量T上
+这后面还跟着一个极限的定义是
+对,就是那个和OG里的空间类似的极限定义仪式
+张亮T在时空位置XP加上X龙四十亮A和时空位置XP的差值也是一个同界张亮然后除以X龙
+最后取Epsilon去向零的极限
+简单来说就是看张亮T在40辆A方向上的变化率,只不过这个变化率是一个同阶张亮而已
+明白了
+那梯度呢
+书里说梯度纳布拉T是一个张量
+当把四十辆A插入其最后一个槽位时就产生了方向导数这个插入槽位是什么意思啊好的问题
+简单说,梯度NABLAT本身是一个更高阶的涨量
+你可以把它想象成一个有空位的容器
+当你把一个40辆A放到它的最后一个空位,也就是草位里,它就能给你吐出那个芳香导数
+此外还要注意的是在这里纳布拉本身也是一个类似四十量形式的算符哦听起来有点像函数里的自变量位置
+那在咱们那种带锁影的技法里,梯度是不是就是T下Alpha Beta Gamma分号Mute这样
+那个分号后面跟的MUE就是表示沿着X上MUE的梯度分量没错你抓住了重点
+在洛伦兹基底也就是我们冠性参考系相关的基地史量中这个分号就简化成了一个逗号表示沿着X上M的偏导数
+所以踢下阿尔法贝塔格玛分号MUE就变成了踢下阿尔法贝塔格玛逗号MUE它就等于偏踢下阿尔法贝塔格玛百天X上MUE好的这个符号上的变化挺关键的
+那这些方向导数和梯度有没有什么成绩法则之类的,就像我们危机分离学的那样,当然有,他们服从所有我们熟悉的成绩微分法则
+比如说两个张量S和T的张量计S全程T沿着A方向的导数就等于括号那不拉下A作用于S括号全程T
+加上S全程纳布拉夏A作用于T这个很直观跟我们学过的炼式法则很像
+那有没有什么特殊的张亮它的梯度是零的有一个非常重要的例子度归张亮G
+它的提度是0也就是G下AlphaBeta分号Mue等于0
+这表明时空的几何结构在维分操作下是平坦的至少在局部是这样这个有点意思那时量的散度呢它跟梯度有什么关系时量的散度比如纳布拉DOTA其实就是它的梯度进行缩并的结果
+用索应技法就是S下Alpha分号Beta,乘G上AlphaBeta
+或者更简洁地写成S上Alpha下分号Alpha
+这表示你把梯度的两个锁印缩并起来好的我理解了现在我们再来聊聊那个拉普拉斯算子和波动算子在欧吉里德空间里张亮梯度的散度就是拉普拉斯算子对吧对
+比如TABC分号JK缩并记JK它就等于TABC逗号JK缩并丢塔JK等于偏平方TABC百片XJ片XJ
+但在明科夫斯基时空中由于度归张亮记上的特殊性特别是记上零零等于负一并且记上JK等于Delta上JK梯度的散度就变成了另一个非常重要的算字啊我知道了就是那个波动算子或者叫达伦伯丁符号是一个方框BOX没错正是它
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000037.9_formula.jpg" src="../frames/frame_000037.9_formula.jpg" /></p>
+<p><img alt="frame_000060.3_formula.jpg" src="../frames/frame_000060.3_formula.jpg" /></p>
+<p><img alt="frame_000089.9_formula.jpg" src="../frames/frame_000089.9_formula.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解。</p>
+<hr />
+<h2 id="截图板书内容描述">截图板书内容描述<a class="headerlink" href="#截图板书内容描述" title="Permanent link">&para;</a></h2>
+<p><strong>PPT 1：课程标题页</strong>
+- 标题："闵可夫斯基时空中的几何与场"
+- 副标题："方向导数、列维-奇维塔张量与相对论电动力学"
+- 配图：三维网格曲面上的 <span class="arithmatex">\(\nabla F\)</span> 符号（红色），形象化展示梯度/导数概念</p>
+<p><strong>PPT 2-3：核心定义页（关键板书）</strong>
+- 左侧：方向导数与梯度的数学定义
+- 右侧：几何示意图——曲面 <span class="arithmatex">\(P\)</span> 点处的切向量 <span class="arithmatex">\(\vec{A}\)</span>，以及沿该方向的无穷小位移 <span class="arithmatex">\(\vec{x}_P + \epsilon\vec{A}\)</span></p>
+<hr />
+<h2 id="一核心公式详解">一、核心公式详解<a class="headerlink" href="#一核心公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="公式-1方向导数的极限定义">公式 1：方向导数的极限定义<a class="headerlink" href="#公式-1方向导数的极限定义" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\nabla_{\vec{A}} T \equiv \lim_{\epsilon \to 0} \frac{1}{\epsilon}\left[T(\vec{x}_P + \epsilon\vec{A}) - T(\vec{x}_P)\right]\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\nabla_{\vec{A}} T\)</span></td>
+<td style="text-align: left;">张量 <span class="arithmatex">\(T\)</span> 沿向量 <span class="arithmatex">\(\vec{A}\)</span> 方向的<strong>方向导数</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{x}_P\)</span></td>
+<td style="text-align: left;">时空点 <span class="arithmatex">\(P\)</span> 的位置矢量（四维）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon\)</span></td>
+<td style="text-align: left;">无穷小参数，趋于0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{A}\)</span></td>
+<td style="text-align: left;">四维方向矢量（切向量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T(\cdot)\)</span></td>
+<td style="text-align: left;">张量场在对应位置的取值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：这是方向导数的"本质定义"——沿 <span class="arithmatex">\(\vec{A}\)</span> 方向走一小步，看张量变化多少，归一化到单位"步长"。</p>
+<hr />
+<h3 id="公式-2梯度与方向导数的关系">公式 2：梯度与方向导数的关系<a class="headerlink" href="#公式-2梯度与方向导数的关系" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\nabla_{\vec{A}} T = \vec{\nabla}T(\ldots, \vec{A})\]</div>
+<p>或写为槽位形式：<span class="arithmatex">\(\nabla_{\vec{A}} T = (\nabla T)(\_, \_, \ldots, \vec{A})\)</span></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{\nabla}T\)</span></td>
+<td style="text-align: left;">张量 <span class="arithmatex">\(T\)</span> 的<strong>梯度</strong>，是一个<strong>更高一阶的张量</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((\ldots, \vec{A})\)</span></td>
+<td style="text-align: left;">将 <span class="arithmatex">\(\vec{A}\)</span> "插入"梯度的<strong>最后一个槽位</strong>（slot）</td>
+</tr>
+<tr>
+<td style="text-align: left;">槽位（slot）</td>
+<td style="text-align: left;">抽象指标记法中张量的"空位"，等待被矢量填充</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键理解</strong>：梯度 <span class="arithmatex">\(\nabla T\)</span> 本身不依赖于具体方向，它是一个"通用"的导数容器；填入具体方向 <span class="arithmatex">\(\vec{A}\)</span> 后，才给出该方向的具体变化率。</p>
+<hr />
+<h3 id="公式-3抽象指标记法分号与逗号">公式 3：抽象指标记法（分号与逗号）<a class="headerlink" href="#公式-3抽象指标记法分号与逗号" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[T_{\alpha\beta\gamma;\mu} \equiv \frac{\partial T_{\alpha\beta\gamma}}{\partial x^\mu} \equiv T_{\alpha\beta\gamma,\mu}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_{\alpha\beta\gamma}\)</span></td>
+<td style="text-align: left;">三阶协变张量（3个下标 = 3个槽位）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>分号 <span class="arithmatex">\(;\mu\)</span></strong></td>
+<td style="text-align: left;"><strong>协变导数</strong>（covariant derivative），含克里斯托费尔联络项</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>逗号 <span class="arithmatex">\(,\mu\)</span></strong></td>
+<td style="text-align: left;"><strong>普通偏导数</strong> <span class="arithmatex">\(\partial_\mu\)</span>，仅适用于<strong>洛伦兹基底（惯性系）</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\equiv\)</span></td>
+<td style="text-align: left;">在平直时空惯性系中二者等价</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>重要区分</strong>：分号是"广义"的导数（弯曲时空也适用），逗号是"狭义"的简化（仅闵可夫斯基时空惯性系）。</p>
+</blockquote>
+<hr />
+<h3 id="公式-4度规张量的协变导数为零">公式 4：度规张量的协变导数为零<a class="headerlink" href="#公式-4度规张量的协变导数为零" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[g_{\alpha\beta;\mu} = 0\]</div>
+<p>这是<strong>列维-奇维塔联络</strong>（Levi-Civita connection）的核心性质，称为<strong>度规相容条件</strong>（metric compatibility）。</p>
+<hr />
+<h3 id="公式-5矢量散度的缩并形式">公式 5：矢量散度的缩并形式<a class="headerlink" href="#公式-5矢量散度的缩并形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\nabla \cdot \vec{S} = S^\alpha_{\ ;\alpha} = g^{\alpha\beta} S_{\alpha;\beta}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(S^\alpha_{\ ;\alpha}\)</span></td>
+<td style="text-align: left;">梯度 <span class="arithmatex">\(S_{\alpha;\beta}\)</span> 对两个指标缩并（trace）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(g^{\alpha\beta}\)</span></td>
+<td style="text-align: left;">逆度规张量，用于升降指标</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="公式-6欧氏空间-vs-闵可夫斯基时空的梯度的散度">公式 6：欧氏空间 vs 闵可夫斯基时空的"梯度的散度"<a class="headerlink" href="#公式-6欧氏空间-vs-闵可夫斯基时空的梯度的散度" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">空间</th>
+<th style="text-align: left;">结果</th>
+<th style="text-align: left;">公式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>欧几里得空间</strong></td>
+<td style="text-align: left;"><strong>拉普拉斯算子</strong> <span class="arithmatex">\(\nabla^2\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T_{ABC;JK}\delta^{JK} = \partial_J\partial_J T_{ABC}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>闵可夫斯基时空</strong></td>
+<td style="text-align: left;"><strong>达朗贝尔算子</strong> <span class="arithmatex">\(\Box\)</span></td>
+<td style="text-align: left;">因 <span class="arithmatex">\(g^{00}=-1, g^{jk}=\delta^{jk}\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="arithmatex">\[\Box T \equiv \nabla_\mu \nabla^\mu T = -\frac{\partial^2 T}{\partial t^2} + \nabla^2_{\text{空间}} T\]</div>
+<p>这就是<strong>波动方程</strong>的算子形式！相对论中电磁波、引力波都服从 <span class="arithmatex">\(\Box \phi = 0\)</span>。</p>
+<hr />
+<h2 id="二理论背景补充">二、理论背景补充<a class="headerlink" href="#二理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="21-为什么闵可夫斯基时空看起来和欧氏空间一样">2.1 为什么闵可夫斯基时空"看起来"和欧氏空间一样？<a class="headerlink" href="#21-为什么闵可夫斯基时空看起来和欧氏空间一样" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方面</th>
+<th style="text-align: left;">欧氏空间 <span class="arithmatex">\(\mathbb{E}^3\)</span></th>
+<th style="text-align: left;">闵可夫斯基时空 <span class="arithmatex">\(\mathbb{M}^4\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">度规符号</td>
+<td style="text-align: left;"><span class="arithmatex">\((+,+,+)\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\((-,+,+,+)\)</span> 或 <span class="arithmatex">\((+,-,-,-)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">距离公式</td>
+<td style="text-align: left;"><span class="arithmatex">\(ds^2 = dx^2+dy^2+dz^2\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(ds^2 = -c^2dt^2+dx^2+dy^2+dz^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">微积分定义</td>
+<td style="text-align: left;">完全相同！</td>
+<td style="text-align: left;">完全相同！（因都是<strong>平直空间</strong>）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键洞察</strong>：方向导数、梯度的<em>定义</em>只依赖于空间的<strong>仿射结构</strong>（平移不变性），与度规的具体符号无关。差异只在<strong>缩并、求长度</strong>时显现。</p>
+<h3 id="22-槽位slot概念的深层含义">2.2 "槽位"（slot）概念的深层含义<a class="headerlink" href="#22-槽位slot概念的深层含义" title="Permanent link">&para;</a></h3>
+<p>这是<strong>抽象指标记法</strong>（Penrose抽象指标）的核心：
+- 张量不是"带数字的数组"，而是<strong>多线性映射</strong>
+- 每个下标 <span class="arithmatex">\(\alpha, \beta, \gamma\ldots\)</span> 代表一个"输入口"
+- <span class="arithmatex">\(\nabla T\)</span> 比 <span class="arithmatex">\(T\)</span> 多一个槽位（导数带来的新自由度）</p>
+<p>比喻：<span class="arithmatex">\(T\)</span> 是一台三输入机器，<span class="arithmatex">\(\nabla T\)</span> 是四输入机器——多出的那个槽位用来"询问"：你想沿哪个方向求导？</p>
+<hr />
+<h2 id="三通俗语言总结">三、通俗语言总结<a class="headerlink" href="#三通俗语言总结" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">一句话解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>方向导数</strong></td>
+<td style="text-align: left;">"沿这条路走，场变化有多快？"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>梯度</strong></td>
+<td style="text-align: left;">"所有方向变化率的完整信息包"——比方向导数更"高级"，不预设方向</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>分号 vs 逗号</strong></td>
+<td style="text-align: left;">分号是"专业版"导数（哪都能用），逗号是"简化版"（仅限惯性系）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>度规导数为零</strong></td>
+<td style="text-align: left;">"时空的几何背景是刚性的，不随微分操作而变形"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>达朗贝尔算子</strong></td>
+<td style="text-align: left;">相对论版的"拉普拉斯"，把时间导数也纳入，且带负号——自然导出波动方程</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="四本节核心要点">四、本节核心要点<a class="headerlink" href="#四本节核心要点" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>闵可夫斯基时空的微积分</strong>在定义层面与欧氏空间<strong>形式相同</strong>，这是平直时空的特权</li>
+<li><strong>梯度是比方向导数更基本的对象</strong>——梯度是张量，方向导数是梯度的"投影"</li>
+<li><strong>符号记法的层次</strong>：抽象槽位 <span class="arithmatex">\(\to\)</span> 分号协变导数 <span class="arithmatex">\(\to\)</span> 逗号偏导数（越来越具体，适用范围越来越窄）</li>
+<li><strong>度规相容条件</strong> <span class="arithmatex">\(g_{\alpha\beta;\mu}=0\)</span> 保证了"长度测量"在微分下保持一致</li>
+<li><strong>闵可夫斯基度规的符号</strong> <span class="arithmatex">\((-+++)\)</span> 导致"梯度的散度"变成波动算子——这是相对论场论的数学根源</li>
+</ol>
+<hr />
+<h2 id="段落-2">段落 2：列维奇维塔张量与电磁学主题引入<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:05:40 ~ 00:08:55</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+踢下 alphabetical grammar 都好,去上
+展开来就是负偏平方题下阿尔法贝塔伽玛百偏T平方加偏平方题下阿尔法贝塔伽玛百偏X上J偏X上KDelta上JK
+当这个波动算子作用于一个账量上等于零时我们就得到了波动方程这个太重要了这个意味着在相对论里很多物理量的行为都可能由波动方程来描述
+那接下来,我们是不是要聊聊那个列维奇维塔张亮了
+这个名字听起来就很特别,是的
+就像Ouchirid空间有度规张量G来描述几何,Minkofski时空也有他自己的度规张量
+同样也有一个非常重要的张量就是列为奇维塔张量EPSL看来也应该和欧吉里德空间中的情况一样
+它在所有槽位上都是完全反对称的,对吧,对的
+完全反对称的意思是如果你交换任意两个锁印,这个张亮的分量就会变号
+如果任何两个锁影相同那么它的分量就直接是零哦明白了那么在明科夫斯基时空中它的值是怎么定义的呢
+它是在作用于任何一组右手手性的正交规一四维史料史其职为正一
+这里的正教规一有点讲究
+要求其中一个时量是内时且指向未来的而另外三个是内空时量并且它们满足右手定则明白了就是说它能帮我们定义时空中的体积或者方向的概念有点像三维空间里的插成
+那它的分量在洛伦兹基底里怎么表示呢在任何右手洛伦兹基底中EPSLON只有当所有索影都不同时才飞灵
+具体来说如果阿尔法贝塔加玛德尔塔是零一二三的偶置换对应的EPSLON下阿尔法贝塔加玛德尔塔会是正义
+如果是旗帜换,就是负一
+如果有人和缩影重复就是零我看到书里有个特别的例子Epsilon下0123等于正一那它的逆变分量Epsilon上0123呢
+根据我们之前学过的若含时间为则负号反转的规则
+Epsilon上0123就变成了负1
+这个细节在计算中非常重要
+好的理解了列为奇维塔张亮他在后面的电磁学里是不是会扮演重要角色啊绝对的他在电磁场张亮的定义和麦克斯维方程组的推导中都至关重要
+那我们接下来就进入今天最重要的部分之一了就是电场与磁场的性质麦克斯维方程组
+在,我们现在要用相对论的视角来看电磁学了,对吧
+没错我们会采用高斯丹位置因为这是相对论学者包括像杰克逊这样的经典教材作者常用的做法光速C我们就设为一好的
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000409.9_formula.jpg" src="../frames/frame_000409.9_formula.jpg" /></p>
+<p><img alt="frame_000430.7_formula.jpg" src="../frames/frame_000430.7_formula.jpg" /></p>
+<p><img alt="frame_000498.3_formula.jpg" src="../frames/frame_000498.3_formula.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦<strong>波动算子</strong>和<strong>列维-奇维塔张量</strong>这两个核心新概念。</p>
+<hr />
+<h2 id="截图板书内容描述_1">截图板书内容描述<a class="headerlink" href="#截图板书内容描述_1" title="Permanent link">&para;</a></h2>
+<p><strong>PPT 4：列维-奇维塔张量 ε（核心板书）</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">区域</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>标题</strong></td>
+<td style="text-align: left;">列维-奇维塔张量 <span class="arithmatex">\(\epsilon\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>定义框</strong></td>
+<td style="text-align: left;">"在所有槽位上完全反对称的张量。作用于右手正交归一基底时，<span class="arithmatex">\(\epsilon(\vec{A},\vec{B},\vec{C},\vec{D}) = +1\)</span>"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>三维示意图</strong></td>
+<td style="text-align: left;">闵可夫斯基时空的1-2-3空间轴与0-时间轴构成的四维超立方体，标注"右手定则"红色旋转箭头（0→1→2→3方向）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>左下：分量规则</strong></td>
+<td style="text-align: left;">三行公式：偶置换=+1，奇置换=-1，重复索引=0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右下：符号反转规则</strong></td>
+<td style="text-align: left;">绿色高亮框：说明由于 <span class="arithmatex">\(g^{00}=-1\)</span>，逆变量分量符号反转：<span class="arithmatex">\(\epsilon_{0123}=+1 \Rightarrow \epsilon^{0123}=-1\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="一核心公式详解_1">一、核心公式详解<a class="headerlink" href="#一核心公式详解_1" title="Permanent link">&para;</a></h2>
+<h3 id="公式-1达朗贝尔算子波动算子">公式 1：达朗贝尔算子（波动算子）□<a class="headerlink" href="#公式-1达朗贝尔算子波动算子" title="Permanent link">&para;</a></h3>
+<p>字幕中提到的"波动算子"即<strong>达朗贝尔算子</strong>（d'Alembertian），是闵可夫斯基时空中的核心微分算子：</p>
+<div class="arithmatex">\[\Box = \partial^\alpha \partial_\alpha = -\frac{\partial^2}{\partial t^2} + \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2}\]</div>
+<p>或采用字幕中的<strong>高斯单位制（<span class="arithmatex">\(c=1\)</span>）</strong>写法：</p>
+<div class="arithmatex">\[\Box = -\partial_t^2 + \nabla^2 = \eta^{\alpha\beta}\partial_\alpha\partial_\beta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Box\)</span></td>
+<td style="text-align: left;">达朗贝尔算子（读作"d'Alembertian"或"box"）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\partial_\alpha = \frac{\partial}{\partial x^\alpha}\)</span></td>
+<td style="text-align: left;">对坐标 <span class="arithmatex">\(x^\alpha\)</span> 的偏导数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta^{\alpha\beta}\)</span></td>
+<td style="text-align: left;">闵可夫斯基度规（对角元为 <span class="arithmatex">\((-1,+1,+1,+1)\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\alpha,\beta = 0,1,2,3\)</span></td>
+<td style="text-align: left;">时空指标（0=时间，1,2,3=空间）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：这是洛伦兹标量算子——在所有惯性参考系中形式相同，是相对论波动方程的自然载体。</p>
+<hr />
+<h3 id="公式-2波动方程">公式 2：波动方程<a class="headerlink" href="#公式-2波动方程" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\Box \phi = 0 \quad \text{或} \quad \eta^{\alpha\beta}\partial_\alpha\partial_\beta \phi = 0\]</div>
+<p>展开形式（字幕中的"负偏平方"即指此）：</p>
+<div class="arithmatex">\[-\frac{\partial^2\phi}{\partial t^2} + \frac{\partial^2\phi}{\partial x^j \partial x^k}\delta^{jk} = 0\]</div>
+<p><strong>物理意义</strong>：描述无源场（如自由电磁波、引力波、 Klein-Gordon 场等）的传播，是相对论场论的"通用语言"。</p>
+<hr />
+<h3 id="公式-3列维-奇维塔张量的分量定义">公式 3：列维-奇维塔张量的分量定义<a class="headerlink" href="#公式-3列维-奇维塔张量的分量定义" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\epsilon_{\alpha\beta\gamma\delta} = \begin{cases} +1 &amp; \text{若 } (\alpha,\beta,\gamma,\delta) \text{ 是 } (0,1,2,3) \text{ 的偶置换} \\ -1 &amp; \text{若 } (\alpha,\beta,\gamma,\delta) \text{ 是 } (0,1,2,3) \text{ 的奇置换} \\ 0 &amp; \text{若有任意两个指标相同} \end{cases}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon_{\alpha\beta\gamma\delta}\)</span></td>
+<td style="text-align: left;">四阶完全反对称张量（4D Levi-Civita symbol）</td>
+</tr>
+<tr>
+<td style="text-align: left;">下标 <span class="arithmatex">\(\alpha\beta\gamma\delta\)</span></td>
+<td style="text-align: left;">协变分量（与基底"共变"）</td>
+</tr>
+<tr>
+<td style="text-align: left;">偶置换</td>
+<td style="text-align: left;">通过偶数次两两交换得到，如 <span class="arithmatex">\((0,1,2,3)\to(1,0,3,2)\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">奇置换</td>
+<td style="text-align: left;">通过奇数次两两交换得到，如 <span class="arithmatex">\((0,1,2,3)\to(1,0,2,3)\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="公式-4逆变分量的符号反转关键细节">公式 4：逆变分量的符号反转（关键细节！）<a class="headerlink" href="#公式-4逆变分量的符号反转关键细节" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\epsilon_{0123} = +1 \quad \xrightarrow{\text{指标上升}} \quad \epsilon^{0123} = -1\]</div>
+<p><strong>推导依据</strong>：</p>
+<div class="arithmatex">\[\epsilon^{\alpha\beta\gamma\delta} = \eta^{\alpha\mu}\eta^{\beta\nu}\eta^{\gamma\rho}\eta^{\delta\sigma}\epsilon_{\mu\nu\rho\sigma}\]</div>
+<p>由于 <span class="arithmatex">\(\eta^{00} = -1\)</span>，而 <span class="arithmatex">\(\eta^{ii} = +1\)</span>，提升四个指标引入因子 <span class="arithmatex">\((-1)^1 = -1\)</span>（仅时间指标贡献负号）。</p>
+<blockquote>
+<p>⚠️ <strong>计算警示</strong>：这个负号在电磁场张量 <span class="arithmatex">\(F^{\mu\nu}\)</span> 与 <span class="arithmatex">\(F_{\mu\nu}\)</span> 的转换、以及麦克斯韦方程的协变形式中至关重要，极易遗漏！</p>
+</blockquote>
+<hr />
+<h2 id="二理论背景补充_1">二、理论背景补充<a class="headerlink" href="#二理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="21-为什么闵可夫斯基时空需要4d-levi-civita张量">2.1 为什么闵可夫斯基时空需要4D Levi-Civita张量？<a class="headerlink" href="#21-为什么闵可夫斯基时空需要4d-levi-civita张量" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">空间类型</th>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">Levi-Civita 用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">欧几里得空间 <span class="arithmatex">\(\mathbb{E}^3\)</span></td>
+<td style="text-align: left;">3D</td>
+<td style="text-align: left;">叉积 <span class="arithmatex">\(\vec{a}\times\vec{b}\)</span>，体积元 <span class="arithmatex">\(dV = \epsilon_{ijk}dx^i dy^j dz^k\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">闵可夫斯基时空 <span class="arithmatex">\(\mathbb{M}^4\)</span></td>
+<td style="text-align: left;">4D</td>
+<td style="text-align: left;"><strong>4-体积元</strong>、<strong>对偶化</strong>（Hodge对偶）、电磁场张量的构造</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心功能</strong>：<span class="arithmatex">\(\epsilon_{\alpha\beta\gamma\delta}\)</span> 是定义"时空定向"和"4维体积测量"的几何工具。在相对论电动力学中，它将用于：
+- 构造电磁场张量的<strong>对偶张量</strong> <span class="arithmatex">\(\tilde{F}^{\mu\nu} = \frac{1}{2}\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}\)</span>
+- 写出协变形式的<strong>齐次麦克斯韦方程</strong></p>
+<hr />
+<h3 id="22-右手正交归一基底的精确定义">2.2 "右手正交归一基底"的精确定义<a class="headerlink" href="#22-右手正交归一基底的精确定义" title="Permanent link">&para;</a></h3>
+<p>字幕中强调的"正交归一"在闵可夫斯基时空中有特殊内涵：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">要求</th>
+<th style="text-align: left;">数学表达</th>
+<th style="text-align: left;">物理解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">时轴类时</td>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{e}_0 \cdot \vec{e}_0 = \eta_{00} = -1\)</span></td>
+<td style="text-align: left;">时间方向，指向未来</td>
+</tr>
+<tr>
+<td style="text-align: left;">空轴类空</td>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{e}_i \cdot \vec{e}_i = \eta_{ii} = +1\)</span></td>
+<td style="text-align: left;">三个正交空间方向</td>
+</tr>
+<tr>
+<td style="text-align: left;">右手定则</td>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon(\vec{e}_0,\vec{e}_1,\vec{e}_2,\vec{e}_3) = +1\)</span></td>
+<td style="text-align: left;">时空定向（可类比为4D的"右手系"）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注意：这与欧几里得空间的"右手系"不同——时间维度的参与使得"定向"概念更微妙。</p>
+</blockquote>
+<hr />
+<h2 id="三通俗概念解释">三、通俗概念解释<a class="headerlink" href="#三通俗概念解释" title="Permanent link">&para;</a></h2>
+<h3 id="31-达朗贝尔算子相对论的波动探测器">3.1 达朗贝尔算子：相对论的"波动探测器"<a class="headerlink" href="#31-达朗贝尔算子相对论的波动探测器" title="Permanent link">&para;</a></h3>
+<p>想象你在池塘边扔石子——水波向四周扩散。经典物理用 <span class="arithmatex">\(\nabla^2\)</span>（拉普拉斯算子）描述空间中的波动，但这只适用于<strong>静止观察者</strong>。</p>
+<p>相对论要求所有惯性观察者看到<strong>同样的物理定律</strong>。达朗贝尔算子 <span class="arithmatex">\(\Box\)</span> 就是"升级后的波动探测器"：
+- 它自动混合了<strong>时间变化</strong>和<strong>空间变化</strong>
+- 对光波而言，<span class="arithmatex">\(\Box\phi=0\)</span> 保证所有惯性系中光速相同
+- 它是连接"局部事件"与"因果传播"的数学桥梁</p>
+<h3 id="32-levi-civita张量时空的定向罗盘">3.2 Levi-Civita张量：时空的"定向罗盘"<a class="headerlink" href="#32-levi-civita张量时空的定向罗盘" title="Permanent link">&para;</a></h3>
+<p>三维空间中，<span class="arithmatex">\(\epsilon_{ijk}\)</span> 告诉你三个向量是否构成右手系（如 <span class="arithmatex">\(\hat{x}\times\hat{y}=\hat{z}\)</span>）。</p>
+<p>四维时空中，<span class="arithmatex">\(\epsilon_{\alpha\beta\gamma\delta}\)</span> 做类似的事，但多了时间维度：
+- 它回答："这四个向量（一个时间+三个空间）是否正确地指向未来且构成右手系？"
+- 值为+1：是标准定向；为-1：镜像/反向；为0：有退化（某两个方向重合）</p>
+<p><strong>符号反转的直觉</strong>：当指标"上楼"（逆变），时间分量的负号"传染"给整个张量——这是闵可夫斯基度规 <span class="arithmatex">\((-+++)\)</span> 签名留下的"指纹"。</p>
+<hr />
+<h2 id="四段落要点总结">四、段落要点总结<a class="headerlink" href="#四段落要点总结" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">新概念</th>
+<th style="text-align: left;">核心要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>达朗贝尔算子 <span class="arithmatex">\(\Box\)</span></strong></td>
+<td style="text-align: left;">相对论标量波动算子，<span class="arithmatex">\(\Box\phi=0\)</span> 是场论的基本方程</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4D Levi-Civita 张量</strong></td>
+<td style="text-align: left;">完全反对称4阶张量，定义时空定向与4-体积</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>符号反转规则</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon^{0123} = -\epsilon_{0123}\)</span>，源于 <span class="arithmatex">\(g^{00}=-1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右手正交归一基底</strong></td>
+<td style="text-align: left;">时轴类时指向未来 + 三空轴类空 + 右手定向</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>高斯单位制</strong></td>
+<td style="text-align: left;">设 <span class="arithmatex">\(c=1\)</span>，简化相对论电动力学公式</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>预告衔接</strong>：下一段将进入<strong>电磁场张量 <span class="arithmatex">\(F_{\mu\nu}\)</span></strong> 与<strong>麦克斯韦方程组的协变形式</strong>，Levi-Civita 张量将在其中扮演关键角色（特别是齐次方程 <span class="arithmatex">\(\partial_{[\mu}F_{\nu\rho]}=0\)</span> 或其对偶形式）。</p>
+<hr />
+<h2 id="段落-3">段落 3：电磁场张量与洛伦兹力的相对论表达<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:08:56 ~ 00:15:12</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那我们先从一个带电粒子在电磁场中运动开始舒利给出了作用在粒子上的四维电磁力是DP上阿尔法百迪套等于QF上阿尔法贝塔缩并U下贝塔
+这个 f 上 alpha beta 是什么
+这个 f 上 alfa beta 就是电磁场张量
+它是一个反对称的二解张亮包含了电厂和磁场的所有信息
+它是一个几何量与参考系无关原来电场和磁场是藏在这个张量里的
+那我们怎么从这个四维力回到我们熟悉的洛伦兹力呢就是Q括号三十两E加三数度V插成三十两B括号那个这需要我们把F上字母表展开
+我们引入一个技法定义F上零J等于负F上J零等于正F下J零等于负F下零J等于EJ
+这对应了电厂的分量
+而F上IJ等于F下IJ等于EPSLONIJK缩并BK这部分就对应了磁场的分量明白了所以电场和磁场其实是电磁场张量在特定参考系下的不同分量
+完全正确
+当我们把这些分量以及四维速度U等于Gamma,GammaF带入四维力方程
+再做一些代数转换,你就会发现它能分解成两个我们非常熟悉的三维方程
+一个是DP100dt等于Q括号E加上V插成B括号
+就是洛伦自立
+另一个是低滑体EBBT等于QVDOTE
+表示电场对粒子做工哦我有点糊涂您可以详细讲讲这个推导过程吗我们首先根据前面给出的几何化的坐标无关的洛伦兹表达是降指标得到DP下ALFA百D套等于G下ALFAGMA缩并DP上GMA百D套等于Q成G下ALFAGMA缩并F上GMABETA缩并U下BETA结果是QF下ALFABETAU上BETA
+注意阿尔法指标降下来了同时贝塔指标成对升降相当于没有变哦现在可以进行一加三分解展开对吧
+对的
+展开后得到时间向QF下Alpha0乘U上0加空间向QF下AlphaJ空间缩并U上J
+然后将四速度 u进行1+3分解,就是 gamma 和 gamma 乘空间尺量 v
+将其带入,并且把前面的电磁张量F的分量也带入
+得到 gamma 乘 q 乘上,注意这里有两种情况
+如果alpha等于0那么就是负的1下j,v上j
+此外第一项F下零零为零而消失
+如果alpha是空间指标,那么对应一下alpha加Y下alphaJK空间双重缩柄V上JV上K
+下一步就是把Dt百Dt等于洛伦兹因子Gamma带入对吧
+对的带入之后可以消除掉落人自因子伽马然后在生指标后可得DP上ALFA百DT等于Q乘上同样是两种情况如果ALFA等于零那么就是正的一下JV上J
+这里注意由于P的时间指标零提升后要变号所以这里就是正好了此外第二种情况是一上Alpha加Y上Alpha下JK空间双重缩并V上JB上K
+下面的两种情况,试得不是恰好对应两组方程
+是的第一组方程左边的P是上零恰好是能量话题大意所以D话题大意摆DT等于DP上零摆DT等于Q成E下J缩并V上J这个结果恰好是Q成空间速度向量V点成空间电场向量B
+第二组方程呢第二组方程就是DP上I百DT等于Q乘括号E上I加F总上IJK空间双重缩并V上JB上K括号
+可以等加底改写成空间史量等是第三维史量P百DT等于Q成括号电场史量E加空间速度V加磁场史量B括号这个推导真的把相对论和经典电学连接起来了所以E和B就是我们在所选的电场和磁场了对但是这里有一个非常重要的几何解释电场和磁场B它们是空间史量但是我们也可以把它们看作是位于该参考系同时性三维面的四维史量W这个三维面是与观测者的四维速度正交的我看到书里有张图W和BW
+所以这个下标W就表示这些场是由特定观测者W测量的是吗 完全正确在观测者W的静止系中EW的时间分量是零空间分量就是我们说的电场分量E下J等于F下J零磁场同理然后书里给出了两个非常漂亮的公式二点四七A用观测者的四维速度W和电磁场张量F来表示电场EW和磁场BW是的E上Alpha等于F上AlphaBetaW下二分之一E上AlphaBetaGammaDeltaSobbinF下GammaBeta
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000536.2_parastart.jpg" src="../frames/frame_000536.2_parastart.jpg" /></p>
+<p><img alt="frame_000596.7_transition.jpg" src="../frames/frame_000596.7_transition.jpg" /></p>
+<p><img alt="frame_000779.5_transition.jpg" src="../frames/frame_000779.5_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦<strong>电磁场张量的分量展开</strong>和<strong>经典洛伦兹力的推导</strong>这两个核心内容。</p>
+<hr />
+<h2 id="截图板书内容描述_2">截图板书内容描述<a class="headerlink" href="#截图板书内容描述_2" title="Permanent link">&para;</a></h2>
+<h3 id="ppt-1相对论电动力学基础标题页"><strong>PPT 1：相对论电动力学基础（标题页）</strong><a class="headerlink" href="#ppt-1相对论电动力学基础标题页" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">元素</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>标题</strong></td>
+<td style="text-align: left;">相对论电动力学基础</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>左侧：物理设定</strong></td>
+<td style="text-align: left;">• 单位制：高斯单位制（Gaussian units），<span class="arithmatex">\(c=1\)</span><br>• 对象：电荷 <span class="arithmatex">\(q\)</span>，静止质量 <span class="arithmatex">\(m\)</span><br>• 运动状态：四维速度 <span class="arithmatex">\(\vec{u}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右侧：核心公式</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{dp^\alpha}{d\tau} = qF^{\alpha\beta}u_\beta\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>公式标注</strong></td>
+<td style="text-align: left;">四维力的变化（4-Force）→ 电磁场张量（EM Tensor）→ 四维速度（4-Velocity）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="ppt-2电磁场张量-f-的构造关键板书"><strong>PPT 2：电磁场张量 <span class="arithmatex">\(F\)</span> 的构造（关键板书）</strong><a class="headerlink" href="#ppt-2电磁场张量-f-的构造关键板书" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">区域</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>矩阵形式</strong></td>
+<td style="text-align: left;">4×4 反对称矩阵，分块展示：</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle F^{\alpha\beta} = \begin{pmatrix} 0 &amp; E^1 &amp; E^2 &amp; E^3 \\ -E^1 &amp; 0 &amp; -B^3 &amp; B^2 \\ -E^2 &amp; B^3 &amp; 0 &amp; -B^1 \\ -E^3 &amp; -B^2 &amp; B^1 &amp; 0 \end{pmatrix}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>红色框标注</strong></td>
+<td style="text-align: left;">上排：<span class="arithmatex">\(E^1, E^2, E^3\)</span>（电场分量）<br>左列：<span class="arithmatex">\(-E^1, -E^2, -E^3\)</span>（电场反对称）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>绿色框标注</strong></td>
+<td style="text-align: left;">右下角 3×3 块：磁场分量构成的反对称矩阵</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右侧公式</strong></td>
+<td style="text-align: left;">电场分量：<span class="arithmatex">\(F^{0j} = -F^{j0} = +F_{j0} = -F_{0j} = E^j\)</span><br>磁场分量：<span class="arithmatex">\(F^{ij} = F_{ij} = \epsilon_{ijk}B^k\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="ppt-3推导经典洛伦兹力完整推导链"><strong>PPT 3：推导经典洛伦兹力（完整推导链）</strong><a class="headerlink" href="#ppt-3推导经典洛伦兹力完整推导链" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">步骤</th>
+<th style="text-align: left;">公式内容</th>
+<th style="text-align: left;">关键标注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>第一步：降指标</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{dp_\alpha}{d\tau} = g_{\alpha\gamma}\frac{dp^\gamma}{d\tau} = qg_{\alpha\gamma}F^{\gamma\beta}u_\beta = qF_{\alpha\beta}u^\beta\)</span></td>
+<td style="text-align: left;">用度规降指标</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第二步：1+3分解展开</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(= qF_{\alpha 0}u^0 + qF_{\alpha j}u^j\)</span></td>
+<td style="text-align: left;">对右边进行1+3分解展开</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第三步：代入分量</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(= \gamma q\begin{cases} -E_j v^j &amp; \text{if } \alpha=0 \\ E_\alpha + \epsilon_{\alpha jk}v^j B^k &amp; \text{if } \alpha\neq 0 \end{cases}\)</span></td>
+<td style="text-align: left;">根据 <span class="arithmatex">\(\vec{u}=(\gamma, \gamma\vec{v})\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第四步：换时元</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\frac{dp^\alpha}{dt} = q\begin{cases} E_j v^j &amp; \text{if } \alpha=0 \\ E^\alpha + \epsilon^\alpha_{\ jk}v^j B^k &amp; \text{if } \alpha\neq 0 \end{cases}\)</span></td>
+<td style="text-align: left;">根据 <span class="arithmatex">\(dt/d\tau=\gamma\)</span>，提升指标注意 <span class="arithmatex">\(\alpha=0\)</span> 时要变号</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>第五步：最终形式</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\begin{cases} \frac{d\mathcal{E}}{dt} = \frac{dp^0}{dt} = qE_j v^j = q\vec{v}\cdot\vec{E} \\ \frac{dp^i}{dt} = q(E^i + \epsilon^i_{\ jk}v^j B^k) \Leftrightarrow \frac{d\vec{p}}{dt} = q(\vec{E}+\vec{v}\times\vec{B}) \end{cases}\)</span></td>
+<td style="text-align: left;">对左边进行1+3分解展开</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>底部结论</strong></td>
+<td style="text-align: left;"><strong>证明了相对论方程与经典洛伦兹力定律的一致性。</strong></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="一核心公式详解_2">一、核心公式详解<a class="headerlink" href="#一核心公式详解_2" title="Permanent link">&para;</a></h2>
+<h3 id="公式-1相对论性洛伦兹力协变形式">公式 1：相对论性洛伦兹力（协变形式）<a class="headerlink" href="#公式-1相对论性洛伦兹力协变形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\frac{dp^\alpha}{d\tau} = qF^{\alpha\beta}u_\beta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(p^\alpha\)</span></td>
+<td style="text-align: left;">四维动量</td>
+<td style="text-align: left;"><span class="arithmatex">\((\mathcal{E}, p^1, p^2, p^3)\)</span>，能量+三维动量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\tau\)</span></td>
+<td style="text-align: left;">固有时（proper time）</td>
+<td style="text-align: left;">粒子自身携带的时钟时间，洛伦兹不变量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(q\)</span></td>
+<td style="text-align: left;">粒子电荷</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F^{\alpha\beta}\)</span></td>
+<td style="text-align: left;"><strong>电磁场张量</strong>（Faraday张量）</td>
+<td style="text-align: left;">二阶反对称张量，包含全部电磁场信息</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(u_\beta\)</span></td>
+<td style="text-align: left;">四维速度的协变分量</td>
+<td style="text-align: left;"><span class="arithmatex">\(u_\beta = g_{\beta\gamma}u^\gamma = (-\gamma, \gamma\vec{v})\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心意义</strong>：这是<strong>几何化、坐标无关</strong>的洛伦兹力表达式。等式左边是四维力（固有时变化率），右边是电磁场与粒子运动状态的耦合。</p>
+<hr />
+<h3 id="公式-2电磁场张量的分量定义">公式 2：电磁场张量的分量定义<a class="headerlink" href="#公式-2电磁场张量的分量定义" title="Permanent link">&para;</a></h3>
+<p><strong>电场分量</strong>（混合时空分量）：</p>
+<div class="arithmatex">\[F^{0j} = -F^{j0} = +F_{j0} = -F_{0j} = E^j\]</div>
+<p><strong>磁场分量</strong>（纯空间分量）：</p>
+<div class="arithmatex">\[F^{ij} = F_{ij} = \epsilon_{ijk}B^k\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon_{ijk}\)</span></td>
+<td style="text-align: left;">三维列维-奇维塔符号（完全反对称）</td>
+</tr>
+<tr>
+<td style="text-align: left;">上标/下标位置</td>
+<td style="text-align: left;">上标：逆变分量；下标：协变分量；度规符号 <span class="arithmatex">\((-,+,+,+)\)</span> 下 <span class="arithmatex">\(F^{0j}=-F_{0j}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键洞察</strong>：电场和磁场<strong>不是独立的物理实体</strong>，而是同一个几何对象 <span class="arithmatex">\(F^{\alpha\beta}\)</span> 在不同参考系下的不同"投影"。这解释了为什么：
+- 静止电荷只感受到电场
+- 运动电荷同时感受到电场和磁场
+- 电场和磁场可以相互转化（洛伦兹变换）</p>
+<hr />
+<h3 id="公式-3降指标后的四维力">公式 3：降指标后的四维力<a class="headerlink" href="#公式-3降指标后的四维力" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\frac{dp_\alpha}{d\tau} = qF_{\alpha\beta}u^\beta\]</div>
+<p><strong>推导逻辑</strong>：
+- 用度规 <span class="arithmatex">\(g_{\alpha\gamma}\)</span> 降第一个指标：<span class="arithmatex">\(p_\alpha = g_{\alpha\gamma}p^\gamma\)</span>
+- 同时升第二个指标：<span class="arithmatex">\(u^\beta = g^{\beta\delta}u_\delta\)</span>
+- 结果：<span class="arithmatex">\(F_{\alpha\beta} = g_{\alpha\gamma}g_{\beta\delta}F^{\gamma\delta}\)</span></p>
+<p><strong>为什么这样做？</strong> 降指标后便于进行 <strong>1+3分解</strong>（时间/空间分离），直接对应物理观测。</p>
+<hr />
+<h3 id="公式-413分解展开">公式 4：1+3分解展开<a class="headerlink" href="#公式-413分解展开" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[qF_{\alpha\beta}u^\beta = qF_{\alpha 0}u^0 + qF_{\alpha j}u^j\]</div>
+<p>这是将四维缩并分解为：
+- <strong>时间项</strong>：<span class="arithmatex">\(F_{\alpha 0}u^0\)</span>（含固有时/能量变化）
+- <strong>空间项</strong>：<span class="arithmatex">\(F_{\alpha j}u^j\)</span>（含空间动量变化）</p>
+<p>代入 <span class="arithmatex">\(u^0 = \gamma\)</span>，<span class="arithmatex">\(u^j = \gamma v^j\)</span> 和电磁场张量分量，得到：</p>
+<div class="arithmatex">\[\gamma q \begin{cases} -E_j v^j &amp; \alpha = 0 \\ E_\alpha + \epsilon_{\alpha jk}v^j B^k &amp; \alpha \neq 0 \end{cases}\]</div>
+<hr />
+<h3 id="公式-5从固有时到坐标时">公式 5：从固有时到坐标时<a class="headerlink" href="#公式-5从固有时到坐标时" title="Permanent link">&para;</a></h3>
+<p>利用 <span class="arithmatex">\(\displaystyle\frac{dt}{d\tau} = \gamma\)</span>（洛伦兹因子），将方程两边除以 <span class="arithmatex">\(\gamma\)</span>：</p>
+<div class="arithmatex">\[\frac{dp^\alpha}{dt} = q\begin{cases} E_j v^j &amp; \alpha = 0 \\ E^\alpha + \epsilon^\alpha_{\ jk}v^j B^k &amp; \alpha \neq 0 \end{cases}\]</div>
+<p><strong>注意变号</strong>：当 <span class="arithmatex">\(\alpha=0\)</span> 时，<span class="arithmatex">\(p^0 = g^{00}p_0 = -p_0\)</span>（度规符号导致），所以 <span class="arithmatex">\(-E_j v^j\)</span> 变为 <span class="arithmatex">\(+E_j v^j\)</span>。</p>
+<hr />
+<h3 id="公式-6经典洛伦兹力与功率方程">公式 6：经典洛伦兹力与功率方程<a class="headerlink" href="#公式-6经典洛伦兹力与功率方程" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\frac{d\mathcal{E}}{dt} = q\vec{v}\cdot\vec{E}}\]</div>
+<div class="arithmatex">\[\boxed{\frac{d\vec{p}}{dt} = q(\vec{E} + \vec{v}\times\vec{B})}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方程</th>
+<th style="text-align: left;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">功率方程</td>
+<td style="text-align: left;">电场对粒子做功的功率（磁场不做功，因 <span class="arithmatex">\(\vec{v}\perp\vec{v}\times\vec{B}\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">洛伦兹力</td>
+<td style="text-align: left;">总电磁力 = 电场力 + 磁场力</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二关键理论背景">二、关键理论背景<a class="headerlink" href="#二关键理论背景" title="Permanent link">&para;</a></h2>
+<h3 id="1-电磁场张量的几何本质">1. 电磁场张量的几何本质<a class="headerlink" href="#1-电磁场张量的几何本质" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(F^{\alpha\beta}\)</span> 是一个<strong>二形式（2-form）</strong>，即反对称的 <span class="arithmatex">\((2,0)\)</span> 型张量。它可以看作：
+- 闵可夫斯基时空中的<strong>面积元</strong>
+- 电磁场的"强度"度量
+- 满足<strong>比安基恒等式</strong>：<span class="arithmatex">\(\partial_{[\alpha}F_{\beta\gamma]} = 0\)</span>（齐次麦克斯韦方程）</p>
+<h3 id="2-参考系依赖性与观测者分解">2. 参考系依赖性与观测者分解<a class="headerlink" href="#2-参考系依赖性与观测者分解" title="Permanent link">&para;</a></h3>
+<p>字幕中提到的关键概念：<strong><span class="arithmatex">\(E_W\)</span> 和 <span class="arithmatex">\(B_W\)</span> 是观测者 <span class="arithmatex">\(W\)</span> 测量的场</strong></p>
+<p>给定观测者的四维速度 <span class="arithmatex">\(W^\alpha\)</span>（满足 <span class="arithmatex">\(W^\alpha W_\alpha = -1\)</span>），可以构造：
+- <strong>电场四维矢量</strong>：<span class="arithmatex">\(E^\alpha = F^{\alpha\beta}W_\beta\)</span>
+- <strong>磁场四维矢量</strong>：<span class="arithmatex">\(B^\alpha = \frac{1}{2}\epsilon^{\alpha\beta\gamma\delta}W_\beta F_{\gamma\delta}\)</span></p>
+<p>在观测者 <span class="arithmatex">\(W\)</span> 的静止系中：
+- <span class="arithmatex">\(E^\alpha\)</span> 的时间分量为零，空间分量为 <span class="arithmatex">\(\vec{E}\)</span>
+- <span class="arithmatex">\(B^\alpha\)</span> 同理</p>
+<p>这正是字幕中提到的"位于同时性三维面的四维矢量"——这些矢量与 <span class="arithmatex">\(W^\alpha\)</span> 正交（<span class="arithmatex">\(E^\alpha W_\alpha = 0\)</span>），所以是"纯空间"的。</p>
+<h3 id="3-13分解的物理意义">3. 1+3分解的物理意义<a class="headerlink" href="#3-13分解的物理意义" title="Permanent link">&para;</a></h3>
+<p>这是<strong>相对论性物理</strong>与<strong>牛顿物理</strong>的桥梁：
+- <strong>协变方程</strong>（如 <span class="arithmatex">\(dp^\alpha/d\tau = qF^{\alpha\beta}u_\beta\)</span>）：所有参考系形式相同
+- <strong>1+3分解</strong>：选定特定参考系后，分离时间和空间分量，得到可测量的物理量</p>
+<hr />
+<h2 id="三通俗解释">三、通俗解释<a class="headerlink" href="#三通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="核心洞见电场和磁场是同一块硬币的两面">核心洞见：电场和磁场是"同一块硬币的两面"<a class="headerlink" href="#核心洞见电场和磁场是同一块硬币的两面" title="Permanent link">&para;</a></h3>
+<p>想象你坐在一列匀速运动的火车上观察一个带电粒子：
+- <strong>地面观测者</strong>：看到粒子运动，感受到电场和磁场的共同作用
+- <strong>火车观测者</strong>（与粒子同速）：看到粒子静止，只感受到电场</p>
+<p>电磁场张量 <span class="arithmatex">\(F^{\alpha\beta}\)</span> 就是描述这个<strong>完整几何对象</strong>的数学工具。不同的观测者（不同的四维速度）从中"读取"出不同的电场和磁场分量，就像从不同角度观察一个三维物体看到不同的二维投影。</p>
+<h3 id="推导流程的可视化">推导流程的可视化<a class="headerlink" href="#推导流程的可视化" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>协变方程（几何真理）
+    ↓
+降指标 + 1+3分解（选择参考系）
+    ↓
+代入电磁场张量分量（揭示E和B的角色）
+    ↓
+换时元 dt/dτ = γ（连接固有时与实验室时间）
+    ↓
+经典方程（可实验验证的形式）
+</code></pre></div>
+<p>这个推导证明了：<strong>经典电动力学是相对论电动力学在低速（v&lt;&lt;c，即γ≈1）下的近似</strong>，但相对论形式揭示了更深层的几何结构。</p>
+<hr />
+<h2 id="四补充说明">四、补充说明<a class="headerlink" href="#四补充说明" title="Permanent link">&para;</a></h2>
+<p>字幕中提到的"二点四七A"公式（教材公式编号）：</p>
+<div class="arithmatex">\[E^\alpha = F^{\alpha\beta}W_\beta\]</div>
+<p>这是用<strong>观测者依赖的方式</strong>定义电场，强调了电磁场的测量本质——场不是绝对的，而是与"谁测量、如何测量"密切相关。这是相对论与经典物理的深刻区别之一。</p>
+<hr />
+<h2 id="段落-4">段落 4：观测者分解下的电场磁场定义与重构<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:15:12 ~ 00:20:41</p>
+<p><details><summary>📝 原始字幕</summary></p>
+<pre>
+
+这两个公式非常重要它们是几何的与坐标系无关的这意味着无论你选择哪个落伦字系这些分量都是相等的我现在想看看这个两个关系是如何证明出来的可以给我讲教吗可以的我们先证明第一个等式它可以对左边进行一加三分解得到两个等价的等式其中时间分量对应一W上零等于F上零贝塔缩平W下贝塔继续进行一加三分解得到F上零乘W下零加F上零J缩平W下J其中反乘张量F零零分量等于零所以W的空间分量J为零
+自动成立对应的空间分量呢空间分量W上
+i等于 f 上 i beta 缩并下 beta
+再次进行一加三分解得到F上I零W下零加F上IJ缩并W下J
+同样,W的空间分量J为零,所以只剩下第一项
+F上零W下等于副F上零W上零
+由于W上零等于1所以最后等于F上I零
+这也对上了太棒了第一个等式证明了那么第二个等式呢第二个等式也先对等式左边进行一加三分解
+其中时间分量等加于
+BW上零等于二分之一X上零BETAGAMADELTA 缩并F下GAMMADELTA W下BETA
+然后继续进行一加三分解油
+二分之一 Epsilon 上零,零,Gamma Delta,Sobin F 下Gamma Delta,W 下零
+加二分之一X 龙上零J 伽马德尔塔 缩并F 下伽马德尔塔 W 下J
+这里Epsilon上零,零,Gamma Delta有重复指标,自然为零
+同时W空间分量J为0
+所以最后就是零
+磁场只有空间分量所以这个时间分量等于零自动满足下面最后就是证明磁场空间分量的情况对吧对的磁场空间分量BW上I等于二分之一EPSL上I贝塔GAMMADELTA缩并F下GAMMADELTA成W下BETA
+继续一加分解得到二分之一上E零加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加加
+根据著名的Epsilon Delta关系可得
+二分之一
+括号:雕塔上L下J成雕塔上M下K
+剪雕塔上L下K 乘雕塔上M下J 括号 缩并F下JK
+等于二分之一括号F下LM减F下ML括号
+根据全返程性,最后有F下LM
+这也对上全部正币
+证明完后,我心里就有底了,这个结果,这个太棒了
+它直接告诉我们电场和磁场本身并不是独立于观测者的它们是电磁场张量F在以四维速度W运动的特定观测者进行时空三加一分解后的产物
+不同的观测者会看到不同的电场和磁场没错乔伊你总结得非常好这是一个非常深刻的物理洞察
+电磁厂商量F是一个客观存在的几何量
+但我们日常说的电场和磁场却是依赖于观测者如何切分时空的那反过来呢我们能用电场和磁场来表示电磁场张亮吗当然可以
+方程2.47b就给出了逆关系
+F上阿尔法贝塔等于W上阿尔法乘E,W上贝塔,简E,W上阿尔法,W上贝塔
+加 EPSLON上Alpha Beta下Gamma Delta,索并W上Gamma,索并BW上Delta
+这同样是一个几何的与参考系无关的方程
+练习2.18就是让大家推倒并验证这两个互腻的柿子
+证明的过程也是和前面的证明类似反复利用一加三分解好的这些公式真是把电磁场的相对论本质展现得淋漓尽致
+
+</pre>
+
+</details>
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000912.4_formulatransitionpar.jpg" src="../frames/frame_000912.4_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_000989.1_transition.jpg" src="../frames/frame_000989.1_transition.jpg" /></p>
+<p><img alt="frame_001155.3_formula.jpg" src="../frames/frame_001155.3_formula.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦<strong>电磁场的3+1分解证明</strong>以及<strong>电场/磁场的观测者依赖性</strong>这一核心物理洞察。</p>
+<hr />
+<h2 id="截图板书内容描述_3">截图板书内容描述<a class="headerlink" href="#截图板书内容描述_3" title="Permanent link">&para;</a></h2>
+<h3 id="ppt-1投影方程连接几何与观测核心公式页"><strong>PPT 1：投影方程——连接几何与观测（核心公式页）</strong><a class="headerlink" href="#ppt-1投影方程连接几何与观测核心公式页" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">元素</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>标题</strong></td>
+<td style="text-align: left;">投影方程：连接几何与观测</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>上方公式（电场投影）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\boxed{E_{\vec{w}}^\alpha = F^{\alpha\beta} w_\beta}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>下方公式（磁场投影）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\boxed{B_{\vec{w}}^\alpha = \frac{1}{2}\epsilon^{\alpha\beta\gamma\delta} F_{\gamma\delta} w_\beta}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>关键说明文字</strong></td>
+<td style="text-align: left;">"这是一个与坐标系无关的几何方程（Frame-independent geometric equation）"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>性质说明</strong></td>
+<td style="text-align: left;">• 意义：无需具体基底，仅凭观测者速度 <span class="arithmatex">\(\vec{w}\)</span> 和张量 <span class="arithmatex">\(F\)</span> 即可计算观测到的场<br>• 性质：在观测者静止系中自动满足 <span class="arithmatex">\(E_{\vec{w}}^0 = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="ppt-2详细推导过程板书手稿风格"><strong>PPT 2：详细推导过程（板书手稿风格）</strong><a class="headerlink" href="#ppt-2详细推导过程板书手稿风格" title="Permanent link">&para;</a></h3>
+<p>此页展示了完整的<strong>3+1分解证明</strong>，分为上下两部分：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">区域</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>顶部参考公式</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(F^{0j} = -F^{j0} = +F_{j0} = -F_{0j} = E^j\)</span>，<span class="arithmatex">\(F^{ij} = F_{ij} = \epsilon_{ijk}B^k\)</span>（标注为2.45）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>上半部分：电场证明</strong></td>
+<td style="text-align: left;">对 <span class="arithmatex">\(E_{\vec{w}}^\alpha = F^{\alpha\beta}w_\beta\)</span> 进行3+1分解：<br>• 时间分量：<span class="arithmatex">\(E_{\vec{w}}^0 = F^{00}w_0 + F^{0j}w_j = 0\)</span>（因 <span class="arithmatex">\(F^{00}=0\)</span> 且 <span class="arithmatex">\(w_j=0\)</span>）<br>• 空间分量：<span class="arithmatex">\(E_{\vec{w}}^i = F^{i0}w_0 + F^{ij}w_j = F^{i0}w_0 = -F^{0i} = E^i\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>下半部分：磁场证明</strong></td>
+<td style="text-align: left;">对 <span class="arithmatex">\(B_{\vec{w}}^\alpha = \frac{1}{2}\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta}w_\beta\)</span> 进行3+1分解：<br>• 时间分量：双重缩并后为零（<span class="arithmatex">\(\epsilon^{00\gamma\delta}=0\)</span> 且 <span class="arithmatex">\(w_j=0\)</span>）<br>• 空间分量：利用 <span class="arithmatex">\(\epsilon^{i0jk} = \epsilon^{ijk}\)</span> 化简，最终通过<strong>著名的<span class="arithmatex">\(\epsilon\)</span>-<span class="arithmatex">\(\delta\)</span>关系</strong>得到 <span class="arithmatex">\(F_{lm}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>关键步骤标注</strong></td>
+<td style="text-align: left;">"著名的<span class="arithmatex">\(\epsilon\)</span>-<span class="arithmatex">\(\delta\)</span>关系"：<span class="arithmatex">\(\epsilon_{lmi}\epsilon^{ijk} = \frac{1}{2}(\delta^j_l\delta^m_k - \delta^l_k\delta^m_j)\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="一核心公式详解_3">一、核心公式详解<a class="headerlink" href="#一核心公式详解_3" title="Permanent link">&para;</a></h2>
+<h3 id="公式1电场投影方程几何定义"><strong>公式1：电场投影方程（几何定义）</strong><a class="headerlink" href="#公式1电场投影方程几何定义" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[E_{\vec{w}}^\alpha = F^{\alpha\beta} w_\beta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(E_{\vec{w}}^\alpha\)</span></td>
+<td style="text-align: left;"><strong>观测者 <span class="arithmatex">\(\vec{w}\)</span> 测得的电场</strong>的四维矢量（上标 <span class="arithmatex">\(\alpha = 0,1,2,3\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F^{\alpha\beta}\)</span></td>
+<td style="text-align: left;">电磁场张量（反对称，<span class="arithmatex">\(F^{\alpha\beta} = -F^{\beta\alpha}\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(w_\beta\)</span></td>
+<td style="text-align: left;">观测者的<strong>四维速度</strong>的协变分量（<span class="arithmatex">\(w^\alpha w_\alpha = -1\)</span>，类时单位矢量）</td>
+</tr>
+<tr>
+<td style="text-align: left;">缩并 <span class="arithmatex">\(w_\beta\)</span></td>
+<td style="text-align: left;">将张量 <span class="arithmatex">\(F\)</span> 投影到观测者的世界线上</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：这是<strong>纯几何方程</strong>，不依赖于任何坐标系选择。</p>
+<hr />
+<h3 id="公式2磁场投影方程几何定义"><strong>公式2：磁场投影方程（几何定义）</strong><a class="headerlink" href="#公式2磁场投影方程几何定义" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[B_{\vec{w}}^\alpha = \frac{1}{2}\epsilon^{\alpha\beta\gamma\delta} F_{\gamma\delta} w_\beta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(B_{\vec{w}}^\alpha\)</span></td>
+<td style="text-align: left;"><strong>观测者 <span class="arithmatex">\(\vec{w}\)</span> 测得的磁场</strong>的四维矢量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon^{\alpha\beta\gamma\delta}\)</span></td>
+<td style="text-align: left;"><strong>四维列维-奇维塔张量</strong>（完全反对称，<span class="arithmatex">\(\epsilon^{0123} = +1\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F_{\gamma\delta}\)</span></td>
+<td style="text-align: left;">电磁场张量的协变分量</td>
+</tr>
+<tr>
+<td style="text-align: left;">因子 <span class="arithmatex">\(\frac{1}{2}\)</span></td>
+<td style="text-align: left;">补偿双重计数（<span class="arithmatex">\(F_{\gamma\delta}\)</span> 反对称）</td>
+</tr>
+<tr>
+<td style="text-align: left;">结构</td>
+<td style="text-align: left;">这是 <span class="arithmatex">\(F\)</span> 的<strong>霍奇对偶</strong>与 <span class="arithmatex">\(w\)</span> 的缩并，提取"垂直于 <span class="arithmatex">\(\vec{w}\)</span> 的磁部分"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="公式3逆关系重构电磁场张量"><strong>公式3：逆关系（重构电磁场张量）</strong><a class="headerlink" href="#公式3逆关系重构电磁场张量" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[F^{\alpha\beta} = w^\alpha E_{\vec{w}}^\beta - w^\beta E_{\vec{w}}^\alpha + \epsilon^{\alpha\beta}{}_{\gamma\delta} w^\gamma B_{\vec{w}}^\delta\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">项</th>
+<th style="text-align: left;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(w^\alpha E_{\vec{w}}^\beta - w^\beta E_{\vec{w}}^\alpha\)</span></td>
+<td style="text-align: left;">电场的"提升"——构造包含 <span class="arithmatex">\(E\)</span> 的反对称张量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon^{\alpha\beta}{}_{\gamma\delta} w^\gamma B_{\vec{w}}^\delta\)</span></td>
+<td style="text-align: left;">磁场的"提升"——利用列维-奇维塔张量构造磁部分</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心洞察</strong>：给定<strong>任意观测者</strong> <span class="arithmatex">\(\vec{w}\)</span>，其测得的 <span class="arithmatex">\((\vec{E}_{\vec{w}}, \vec{B}_{\vec{w}})\)</span> 可<strong>完全重构</strong> <span class="arithmatex">\(F^{\alpha\beta}\)</span>。</p>
+<hr />
+<h2 id="二31分解证明的技术细节">二、3+1分解证明的技术细节<a class="headerlink" href="#二31分解证明的技术细节" title="Permanent link">&para;</a></h2>
+<h3 id="证明策略概述"><strong>证明策略概述</strong><a class="headerlink" href="#证明策略概述" title="Permanent link">&para;</a></h3>
+<p>所谓"<strong>3+1分解</strong>"（或"1+3分解"），是指将四维时空分解为：
+- <strong>1维时间方向</strong>：沿观测者四维速度 <span class="arithmatex">\(\vec{w}\)</span> 的方向
+- <strong>3维空间</strong>：垂直于 <span class="arithmatex">\(\vec{w}\)</span> 的超平面（观测者的"同时面"）</p>
+<p>在观测者<strong>自身的静止系</strong>中：</p>
+<div class="arithmatex">\[w^\alpha = (1, 0, 0, 0), \quad w_\alpha = (-1, 0, 0, 0)\]</div>
+<p>即 <span class="arithmatex">\(w^0 = 1\)</span>，<span class="arithmatex">\(w^i = 0\)</span>（空间分量为零）。</p>
+<hr />
+<h3 id="电场证明详解"><strong>电场证明详解</strong><a class="headerlink" href="#电场证明详解" title="Permanent link">&para;</a></h3>
+<p><strong>时间分量</strong>：</p>
+<div class="arithmatex">\[E_{\vec{w}}^0 = F^{0\beta}w_\beta = F^{00}w_0 + F^{0j}w_j = 0 + 0 = 0\]</div>
+<ul>
+<li><span class="arithmatex">\(F^{00} = 0\)</span>（反对称张量的对角元）</li>
+<li><span class="arithmatex">\(w_j = 0\)</span>（在静止系中）</li>
+</ul>
+<p><strong>→ 自动满足</strong>：电场无时间分量（纯空间矢量）。</p>
+<p><strong>空间分量</strong>：</p>
+<div class="arithmatex">\[E_{\vec{w}}^i = F^{i\beta}w_\beta = F^{i0}w_0 + F^{ij}w_j = F^{i0} \cdot (-1) + 0 = -F^{i0} = F^{0i} = E^i\]</div>
+<ul>
+<li>利用 <span class="arithmatex">\(F^{i0} = -F^{0i}\)</span> 和 <span class="arithmatex">\(w_0 = -1\)</span>（因 <span class="arithmatex">\(w_0 = \eta_{00}w^0 = -1\)</span>）</li>
+<li>与经典定义 <span class="arithmatex">\(E^i = F^{0i}\)</span> 一致 ✓</li>
+</ul>
+<hr />
+<h3 id="磁场证明详解"><strong>磁场证明详解</strong><a class="headerlink" href="#磁场证明详解" title="Permanent link">&para;</a></h3>
+<p><strong>时间分量</strong>：</p>
+<div class="arithmatex">\[B_{\vec{w}}^0 = \frac{1}{2}\epsilon^{0\beta\gamma\delta}F_{\gamma\delta}w_\beta\]</div>
+<p>分解为 <span class="arithmatex">\(\beta=0\)</span> 和 <span class="arithmatex">\(\beta=j\)</span> 两项：
+- <span class="arithmatex">\(\beta=0\)</span>：<span class="arithmatex">\(\epsilon^{00\gamma\delta} = 0\)</span>（重复指标）
+- <span class="arithmatex">\(\beta=j\)</span>：<span class="arithmatex">\(w_j = 0\)</span></p>
+<p><strong>→ 自动为零</strong>：磁场无时间分量。</p>
+<p><strong>空间分量</strong>（核心计算）：</p>
+<div class="arithmatex">\[B_{\vec{w}}^i = \frac{1}{2}\epsilon^{i\beta\gamma\delta}F_{\gamma\delta}w_\beta = \frac{1}{2}\epsilon^{i0jk}F_{jk} \cdot w_0 = \frac{1}{2}\epsilon^{ijk}F_{jk}\]</div>
+<p>其中用到了：
+- <span class="arithmatex">\(\epsilon^{i0jk} = -\epsilon^{0ijk} = \epsilon^{ijk}\)</span>（三维列维-奇维塔符号）
+- <span class="arithmatex">\(w_0 = -1\)</span></p>
+<p>再利用<strong><span class="arithmatex">\(\epsilon\)</span>-<span class="arithmatex">\(\delta\)</span>恒等式</strong>：</p>
+<div class="arithmatex">\[\epsilon_{lmi}\epsilon^{ijk} = \delta_l^j\delta_m^k - \delta_l^k\delta_m^j\]</div>
+<p>可以验证这与经典关系 <span class="arithmatex">\(F_{jk} = \epsilon_{jkm}B^m\)</span> 自洽，最终得到：</p>
+<div class="arithmatex">\[B_{\vec{w}}^i = B^i\]</div>
+<hr />
+<h2 id="三核心物理洞察">三、核心物理洞察<a class="headerlink" href="#三核心物理洞察" title="Permanent link">&para;</a></h2>
+<h3 id="-关键结论电场和磁场是观测者依赖的"><strong>🔑 关键结论：电场和磁场是"观测者依赖的"</strong><a class="headerlink" href="#-关键结论电场和磁场是观测者依赖的" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>电磁场张量 <span class="arithmatex">\(F^{\alpha\beta}\)</span></strong></td>
+<td style="text-align: left;"><strong>绝对的、几何的、与观测者无关</strong>——是时空中的客观存在</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>电场 <span class="arithmatex">\(\vec{E}\)</span> 和磁场 <span class="arithmatex">\(\vec{B}\)</span></strong></td>
+<td style="text-align: left;"><strong>相对的、依赖于观测者的3+1分解</strong>——是 <span class="arithmatex">\(F\)</span> 在特定参考系下的"投影"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="通俗解释"><strong>通俗解释</strong><a class="headerlink" href="#通俗解释" title="Permanent link">&para;</a></h3>
+<p>想象 <span class="arithmatex">\(F^{\alpha\beta}\)</span> 如同一个<strong>四维的"电磁实体"</strong>，它本身不区分电和磁。不同的观测者（以不同四维速度 <span class="arithmatex">\(\vec{w}\)</span> 运动）会"切片"这个实体 differently：</p>
+<ul>
+<li><strong>静止观测者</strong>：看到特定的 <span class="arithmatex">\(\vec{E}\)</span> 和 <span class="arithmatex">\(\vec{B}\)</span> 组合</li>
+<li><strong>运动观测者</strong>：由于洛伦兹变换（即投影到不同的 <span class="arithmatex">\(w^\alpha\)</span>），会看到<strong>不同的</strong> <span class="arithmatex">\(\vec{E}'\)</span> 和 <span class="arithmatex">\(\vec{B}'\)</span></li>
+</ul>
+<p>这正是<strong>电磁场的相对论统一</strong>：纯电场在某参考系中，在另一参考系可能呈现为电场+磁场的混合。</p>
+<h3 id="与经典电磁学的联系"><strong>与经典电磁学的联系</strong><a class="headerlink" href="#与经典电磁学的联系" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">经典概念</th>
+<th style="text-align: left;">相对论对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{E} = -\nabla\phi - \partial_t\vec{A}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(F_{\alpha\beta} = \partial_\alpha A_\beta - \partial_\beta A_\alpha\)</span> 的投影</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{B} = \nabla \times \vec{A}\)</span></td>
+<td style="text-align: left;">同上</td>
+</tr>
+<tr>
+<td style="text-align: left;">洛伦兹力 <span class="arithmatex">\(\vec{F} = q(\vec{E} + \vec{v}\times\vec{B})\)</span></td>
+<td style="text-align: left;">四维力 <span class="arithmatex">\(f^\alpha = qF^{\alpha\beta}u_\beta\)</span> 的空间投影</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="四练习218的提示">四、练习2.18的提示<a class="headerlink" href="#四练习218的提示" title="Permanent link">&para;</a></h2>
+<p>课程提到的<strong>互逆关系证明</strong>需要验证：</p>
+<div class="arithmatex">\[\text{若 } E_{\vec{w}}^\alpha = F^{\alpha\beta}w_\beta \text{ 和 } B_{\vec{w}}^\alpha = \frac{1}{2}\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta}w_\beta\]</div>
+<div class="arithmatex">\[\text{则 } F^{\alpha\beta} = w^\alpha E_{\vec{w}}^\beta - w^\beta E_{\vec{w}}^\alpha + \epsilon^{\alpha\beta}{}_{\gamma\delta}w^\gamma B_{\vec{w}}^\delta\]</div>
+<p><strong>证明要点</strong>：
+1. 将逆关系右边代入，利用 <span class="arithmatex">\(w_\alpha w^\alpha = -1\)</span> 和 <span class="arithmatex">\(w_\alpha E_{\vec{w}}^\alpha = 0\)</span>（正交性）
+2. 利用 <span class="arithmatex">\(\epsilon\)</span>-张量的恒等式：<span class="arithmatex">\(\epsilon^{\alpha\beta\gamma\delta}\epsilon_{\gamma\delta\mu\nu} = -2(\delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu)\)</span>
+3. 验证两边相等</p>
+<hr />
+<h2 id="五总结">五、总结<a class="headerlink" href="#五总结" title="Permanent link">&para;</a></h2>
+<p>这段内容揭示了相对论电动力学的<strong>最深层次结构</strong>：</p>
+<blockquote>
+<p><strong>电磁场张量 <span class="arithmatex">\(F\)</span> 是几何实体；电场和磁场是其"影子"——影子的形状取决于观测者如何"照亮"它。</strong></p>
+</blockquote>
+<p>这种表述不仅数学上优雅（坐标系无关），物理上也更本质：它解释了为什么不同惯性系中的观测者会"看到"不同的电磁现象，而所有这些观察都源于同一个客观的几何对象。</p>
+<hr />
+<h2 id="段落-5">段落 5：麦克斯维方程、四维势与规范变换总结<a class="headerlink" href="#段落-5" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:20:41 ~ 00:27:28</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那接下来我们是不是要聊聊麦克斯维方程组了
+他在相对论里长什么样?是的
+现在我们终于可以给出麦克斯维方程组的几何化与参考系无关的形式了
+在高斯单位之下它只有两个简洁的方程哦我看到了第一个是F上AlphaBeta下分号Beta自缩病等于四派J上Alpha
+第二个是EPSL上Alpha Beta Gamma Delta缩柄F Gamma Delta分号BETA等于零没错第一个方程是关于电磁场的圆也就是电荷电流四维向量J
+第二个方程则描述了电磁场的无缘部分
+这个J是什么?这个J是电荷电流四维向量
+在任何关信息中,它的时间分量J上零就是电荷密度R,E空间分量J上I就是电流密度J,I
+我注意还有一个恒等是F下Alpha Beta分号加F下Beta Gamma分号Alpha
+加f下gamma alpha分号beta等于0
+这是什么意思
+其实这个恒等始是和前面哪个无圆等始是等价的
+都是意味着不存在此单即子的物理事实您可以证明一下这个等价性吗
+可以的,我们先看含Epsilon的这个等式中的自由指标Alpha
+对α等于零的情况,贝塔伽马塔这三个指标只可能有六个可能组合,因为其他的组合都是零
+这六个组合可以分成三组,因为张亮EPSLON和F都是全反称张亮,所以每组的两项都相等
+将这三组都加起来得到F下2F下3F下2F下1F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3F下3FF下3FF下3FFFF
+而且它以一种非常优雅和对称的方式呈现了电磁学的基本定律
+练习二点二零就要求大家把这两个几何方程通过三加一分解推导出我们平时在电动力学教材里看到的哪四条熟悉的麦克斯维方程组这个练习肯定很有趣能让我们把抽象的理论和具体的应用练习起来
+那电磁场的事呢,书里提到了一个练习二点二十一,嗯这是一个非常重要的概念
+电磁场张量F下阿尔法数据可以表示为四维十量式A的反对称化七度
+F下AlphaBeta等于A下Alpha分号Alpha也就是说只要我们找到一个四维是A就能得到电磁场张量F是的而且这个表达方式有一个非常厉害的性质麦克斯维方程组的第二组也就是APSON上AlphaBetaGammaDelta缩并F下GammaDelta等于0对于任何这样的四维是A都会自动满足这简直是魔法那书里还提到了规范变换说A新等于AO的加NEBRAPSI这种形式的变换不影响电磁场量这个PSI是一个标量场我们叫它规范变换的生成源这个性质叫做规范不变形它是物理可观察量而四维是A并不是唯一的它有这种自由度
+那罗伦字规范又是什么罗伦字规范就是我们选择一个特定的PSY来让NABLAR.A等于零在这个规范下第一组MAXWAY方程组会变得非常简洁直接变成BOXA等于负四拍J也就是A上ARF分号下ARF字错并等于负四拍J上ARF这又是一个波动方程所以在罗伦字规范下四维是A本身就满足一个波动方程
+而它的圆就是电鹤电流四维时2G,这简直太漂亮了
+确实如此
+这极大地简化了电磁场问题的求解
+练习二点二亿的B部分就是让大家把这些关于事的方程通过三加一分解回到我们熟悉的标量式F等于四维式A的低零个分量A上零
+还有三维尺寸是A等于四维是A的三维空间部分好的赛今天的内容真的非常丰富从方向导数梯度到列为奇宇塔张量再到电磁场的相对论本质和麦克斯维方程组的几何形式最后还提到了电磁式和规范变换
+感觉我们把整个电磁学舆论都提升到了一个新的高度是的JOE核心思想就是在相对论框架下电场和磁场不再是独立的实体
+它们是电磁场张量在特定观测者切分时空后显现出的不同侧面
+而MAX四维方程组也变得更加简洁和优雅
+嗯这些概念真的需要好好消化尤其是那些练习我觉得是巩固理解的最好方式比如练习二点一九让我们把电荷逆度和电流密度也看作是依赖于观测者的集合对象这个也很重要
+没错
+这些练习不仅仅是计算更是对基本概念的深入理解和几何直观的培养我强烈建议大家在课后一定要认真完成它们
+好的那今天的现代经典物理学第时刻就到这里了感谢赛事老师的精彩讲解谢谢周亦的提问和总结也感谢各位同学的收听大家再见下期再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001241.5_parastart.jpg" src="../frames/frame_001241.5_parastart.jpg" /></p>
+<p><img alt="frame_001340.3_transition.jpg" src="../frames/frame_001340.3_transition.jpg" /></p>
+<p><img alt="frame_001504.3_transition.jpg" src="../frames/frame_001504.3_transition.jpg" /></p>
+<h3 id="注解_4">注解<a class="headerlink" href="#注解_4" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦<strong>麦克斯韦方程组的几何化形式</strong>、<strong>电磁四维势与规范变换</strong>这两个核心内容。</p>
+<hr />
+<h2 id="截图板书内容描述_4">截图板书内容描述<a class="headerlink" href="#截图板书内容描述_4" title="Permanent link">&para;</a></h2>
+<h3 id="ppt-1几何化麦克斯韦方程组核心公式页"><strong>PPT 1：几何化麦克斯韦方程组（核心公式页）</strong><a class="headerlink" href="#ppt-1几何化麦克斯韦方程组核心公式页" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">元素</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>标题</strong></td>
+<td style="text-align: left;">几何化麦克斯韦方程组</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>左侧方程（源方程）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\boxed{F^{\alpha\beta}{}_{;\beta} = 4\pi J^\alpha}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右侧方程（无源方程）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\boxed{\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta;\beta} = 0}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>下方恒等式</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(F_{\alpha\beta;\gamma} + F_{\beta\gamma;\alpha} + F_{\gamma\alpha;\beta} = 0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span class="arithmatex">\(J^\alpha\)</span> 定义</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(J^0 = \rho_e\)</span>（电荷密度），<span class="arithmatex">\(J^i = j^i\)</span>（电流密度）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>标注说明</strong></td>
+<td style="text-align: left;">红色箭头指向"源（Source）：电荷-电流四维向量"；蓝色箭头指向"恒等式（Identity）：无磁单极子"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>练习标注</strong></td>
+<td style="text-align: left;">练习 2.20：证明麦克斯韦方程组的参考系相关版本</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="ppt-2电磁势与规范变换"><strong>PPT 2：电磁势与规范变换</strong><a class="headerlink" href="#ppt-2电磁势与规范变换" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">元素</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>标题</strong></td>
+<td style="text-align: left;">电磁势与规范变换</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>顶部回顾</strong></td>
+<td style="text-align: left;">两个麦克斯韦方程（同上）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>核心定义</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\boxed{F_{\alpha\beta} = A_{\beta;\alpha} - A_{\alpha;\beta}}\)</span>（或写为 <span class="arithmatex">\(F = \mathrm{d}A\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>规范不变性</strong></td>
+<td style="text-align: left;">变换 <span class="arithmatex">\(\vec{A}_{\text{new}} = \vec{A}_{\text{old}} + \vec{\nabla}\psi\)</span> 不改变物理场</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>洛伦兹规范条件</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\nabla \cdot \vec{A} = 0\)</span>（即 <span class="arithmatex">\(A^\mu{}_{;\mu} = 0\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>波动方程</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\boxed{\Box \vec{A} = -4\pi \vec{J}}\)</span>，即 <span class="arithmatex">\(A^{\alpha;\mu}{}_\mu = -4\pi J^\alpha\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3+1分解</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\phi \equiv A^0\)</span>（标量势），<span class="arithmatex">\(\mathbf{A} \equiv \vec{A}\)</span> 的空间部分</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>配图</strong></td>
+<td style="text-align: left;">同心圆波纹图（示意电磁波传播）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="一公式详解">一、公式详解<a class="headerlink" href="#一公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-麦克斯韦方程组的几何形式高斯单位制">1. 麦克斯韦方程组的几何形式（高斯单位制）<a class="headerlink" href="#1-麦克斯韦方程组的几何形式高斯单位制" title="Permanent link">&para;</a></h3>
+<h4 id="方程一源方程非齐次"><strong>方程一：源方程（非齐次）</strong><a class="headerlink" href="#方程一源方程非齐次" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[F^{\alpha\beta}{}_{;\beta} = 4\pi J^\alpha\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F^{\alpha\beta}\)</span></td>
+<td style="text-align: left;"><strong>电磁场张量</strong>（Faraday张量），二阶反对称张量，描述统一的电磁场</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\({}_{;\beta}\)</span></td>
+<td style="text-align: left;"><strong>协变导数</strong>，即 <span class="arithmatex">\(\nabla_\beta\)</span>，保证方程在任意坐标系下形式不变</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\({}_{;\beta}\)</span> 缩并</td>
+<td style="text-align: left;">对 <span class="arithmatex">\(\beta\)</span> 求和（爱因斯坦求和约定），即四维散度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(J^\alpha\)</span></td>
+<td style="text-align: left;"><strong>电荷-电流四维矢量</strong>，<span class="arithmatex">\(J^\alpha = (\rho_e, \vec{j})\)</span>，其中 <span class="arithmatex">\(\rho_e\)</span> 为电荷密度，<span class="arithmatex">\(\vec{j}\)</span> 为三维电流密度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(4\pi\)</span></td>
+<td style="text-align: left;">高斯单位制中的常数（若用SI单位制则形式不同）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：电荷和电流是电磁场的源。这个方程统一了高斯定律和安培-麦克斯韦定律。</p>
+<hr />
+<h4 id="方程二无源方程齐次"><strong>方程二：无源方程（齐次）</strong><a class="headerlink" href="#方程二无源方程齐次" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta;\beta} = 0\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon^{\alpha\beta\gamma\delta}\)</span></td>
+<td style="text-align: left;"><strong>列维-奇维塔张量</strong>（Levi-Civita symbol），四维完全反对称张量，<span class="arithmatex">\(\epsilon^{0123} = +1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F_{\gamma\delta}\)</span></td>
+<td style="text-align: left;">电磁场张量的协变分量（下指标）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\({}_{;\beta}\)</span></td>
+<td style="text-align: left;">协变导数后再与 <span class="arithmatex">\(\epsilon\)</span> 和 <span class="arithmatex">\(F\)</span> 缩并</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：由于 <span class="arithmatex">\(\epsilon\)</span> 的完全反对称性，这个方程自动保证 <span class="arithmatex">\(F\)</span> 可以表示为某个四维势的外微分。</p>
+<p><strong>物理意义</strong>：不存在磁单极子（magnetic monopole）。这个方程统一了法拉第电磁感应定律和磁场无源（高斯磁定律）。</p>
+<hr />
+<h3 id="2-比安基恒等式bianchi-identity">2. 比安基恒等式（Bianchi Identity）<a class="headerlink" href="#2-比安基恒等式bianchi-identity" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[F_{\alpha\beta;\gamma} + F_{\beta\gamma;\alpha} + F_{\gamma\alpha;\beta} = 0\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">循环求和</td>
+<td style="text-align: left;">对 <span class="arithmatex">\((\alpha,\beta,\gamma)\)</span> 进行循环排列</td>
+</tr>
+<tr>
+<td style="text-align: left;">分号 <span class="arithmatex">\({}_{;\gamma}\)</span></td>
+<td style="text-align: left;">协变导数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>与无源方程的等价性</strong>：在无挠时空（如闵可夫斯基时空）中，此恒等式与含 <span class="arithmatex">\(\epsilon\)</span> 的无源方程完全等价。两者都表达"无磁单极子"这一物理事实。</p>
+<p><strong>证明思路</strong>（板书提及）：
+- 取 <span class="arithmatex">\(\alpha = 0\)</span>，则 <span class="arithmatex">\(\beta,\gamma,\delta\)</span> 只能从 <span class="arithmatex">\(\{1,2,3\}\)</span> 中选取
+- 由于完全反对称性，非零组合只有 <span class="arithmatex">\((1,2,3)\)</span> 的轮换
+- 展开后恰好得到三个空间分量之间的循环关系</p>
+<hr />
+<h3 id="3-电磁四维势与场强关系">3. 电磁四维势与场强关系<a class="headerlink" href="#3-电磁四维势与场强关系" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[F_{\alpha\beta} = A_{\beta;\alpha} - A_{\alpha;\beta} \equiv 2A_{[\beta;\alpha]}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_\alpha\)</span></td>
+<td style="text-align: left;"><strong>电磁四维势</strong>（4-vector potential），<span class="arithmatex">\(A_\alpha = (\phi, \vec{A})\)</span>，其中 <span class="arithmatex">\(\phi\)</span> 为标量势，<span class="arithmatex">\(\vec{A}\)</span> 为三维矢量势</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\({}_{;\alpha}\)</span></td>
+<td style="text-align: left;">协变导数（在平直时空中即为普通偏导 <span class="arithmatex">\(\partial_\alpha\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">反对称化 <span class="arithmatex">\([\cdots]\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(A_{[\beta;\alpha]} = \frac{1}{2}(A_{\beta;\alpha} - A_{\alpha;\beta})\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：无论 <span class="arithmatex">\(A_\alpha\)</span> 取何值，由此构造的 <span class="arithmatex">\(F_{\alpha\beta}\)</span> <strong>自动满足</strong>无源方程！这是微分形式语言中 <span class="arithmatex">\(\mathrm{d}^2 = 0\)</span>（外微分的幂零性）的体现。</p>
+<hr />
+<h3 id="4-规范变换">4. 规范变换<a class="headerlink" href="#4-规范变换" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\vec{A}_{\text{new}} = \vec{A}_{\text{old}} + \vec{\nabla}\psi\]</div>
+<p>更准确的四维形式：</p>
+<div class="arithmatex">\[A_\alpha^{\text{(new)}} = A_\alpha^{\text{(old)}} + \psi_{;\alpha}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\psi\)</span></td>
+<td style="text-align: left;"><strong>规范函数/标量场</strong>（gauge function），任意光滑标量函数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{\nabla}\psi\)</span> 或 <span class="arithmatex">\(\psi_{;\alpha}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\psi\)</span> 的梯度/四维梯度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>规范不变性</strong>：<span class="arithmatex">\(F_{\alpha\beta}\)</span> 在规范变换下不变，因为：</p>
+<div class="arithmatex">\[F'_{\alpha\beta} = (A_\beta + \psi_{;\beta})_{;\alpha} - (A_\alpha + \psi_{;\alpha})_{;\beta} = A_{\beta;\alpha} - A_{\alpha;\beta} + \psi_{;\beta\alpha} - \psi_{;\alpha\beta} = F_{\alpha\beta}\]</div>
+<p>（协变导数的对称性：<span class="arithmatex">\(\psi_{;\beta\alpha} = \psi_{;\alpha\beta}\)</span>）</p>
+<p><strong>物理意义</strong>：四维势 <span class="arithmatex">\(A_\alpha\)</span> 不是直接可观测的物理量，存在"规范自由度"；只有 <span class="arithmatex">\(F_{\alpha\beta}\)</span>（即 <span class="arithmatex">\(\vec{E}\)</span> 和 <span class="arithmatex">\(\vec{B}\)</span>）是物理可观测的。</p>
+<hr />
+<h3 id="5-洛伦兹规范与波动方程">5. 洛伦兹规范与波动方程<a class="headerlink" href="#5-洛伦兹规范与波动方程" title="Permanent link">&para;</a></h3>
+<p><strong>洛伦兹规范条件</strong>：</p>
+<div class="arithmatex">\[\nabla \cdot \vec{A} = 0 \quad \text{或} \quad A^\mu{}_{;\mu} = 0\]</div>
+<p>在此规范下，源方程简化为：</p>
+<div class="arithmatex">\[\Box A^\alpha = -4\pi J^\alpha\]</div>
+<p>或写为：</p>
+<div class="arithmatex">\[A^{\alpha;\mu}{}_\mu = -4\pi J^\alpha\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Box\)</span></td>
+<td style="text-align: left;"><strong>达朗贝尔算子</strong>（d'Alembertian / wave operator），<span class="arithmatex">\(\Box = \partial^\mu \partial_\mu = -\partial_t^2 + \nabla^2\)</span>（度规号差相关）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A^{\alpha;\mu}{}_\mu\)</span></td>
+<td style="text-align: left;">对 <span class="arithmatex">\(A^\alpha\)</span> 先取逆变分量，再求两次协变导数并缩并</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：四维势的每个分量都满足有源的波动方程！这是电磁场理论的精髓——电磁扰动以波的形式传播，传播速度为光速（隐含于 <span class="arithmatex">\(\Box\)</span> 中）。</p>
+<hr />
+<h2 id="二理论背景补充_2">二、理论背景补充<a class="headerlink" href="#二理论背景补充_2" title="Permanent link">&para;</a></h2>
+<h3 id="微分形式视角进阶">微分形式视角（进阶）<a class="headerlink" href="#微分形式视角进阶" title="Permanent link">&para;</a></h3>
+<p>在微分几何语言中，上述内容可更优雅地表述：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">张量语言</th>
+<th style="text-align: left;">微分形式语言</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">电磁势</td>
+<td style="text-align: left;"><span class="arithmatex">\(A_\alpha\)</span></td>
+<td style="text-align: left;">1-形式 <span class="arithmatex">\(A = A_\alpha dx^\alpha\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">场强</td>
+<td style="text-align: left;"><span class="arithmatex">\(F_{\alpha\beta}\)</span></td>
+<td style="text-align: left;">2-形式 <span class="arithmatex">\(F = \mathrm{d}A = \frac{1}{2}F_{\alpha\beta}dx^\alpha \wedge dx^\beta\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">无源方程</td>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta;\beta}=0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathrm{d}F = 0\)</span>（<span class="arithmatex">\(F\)</span> 是闭形式）</td>
+</tr>
+<tr>
+<td style="text-align: left;">源方程</td>
+<td style="text-align: left;"><span class="arithmatex">\(F^{\alpha\beta}{}_{;\beta}=4\pi J^\alpha\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\star\mathrm{d}\star F = 4\pi J\)</span> 或 <span class="arithmatex">\(\mathrm{d}\star F = 4\pi \star J\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">规范变换</td>
+<td style="text-align: left;"><span class="arithmatex">\(A_\alpha \to A_\alpha + \psi_{;\alpha}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(A \to A + \mathrm{d}\psi\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">洛伦兹规范</td>
+<td style="text-align: left;"><span class="arithmatex">\(A^\mu{}_{;\mu}=0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathrm{d}\star A = 0\)</span> 或 <span class="arithmatex">\(\delta A = 0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键洞见</strong>：<span class="arithmatex">\(\mathrm{d}^2 = 0\)</span>（外微分的幂零性）自动保证 <span class="arithmatex">\(\mathrm{d}F = \mathrm{d}(\mathrm{d}A) = 0\)</span>，即无源方程恒成立。</p>
+<hr />
+<h3 id="31分解与经典极限">3+1分解与经典极限<a class="headerlink" href="#31分解与经典极限" title="Permanent link">&para;</a></h3>
+<p>练习 2.20 和 2.21 要求将几何方程还原为熟悉的矢量形式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">几何方程</th>
+<th style="text-align: left;">3+1分解结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F^{\alpha\beta}{}_{;\beta} = 4\pi J^\alpha\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\nabla \cdot \vec{E} = 4\pi\rho\)</span>（高斯定律）<br><span class="arithmatex">\(\nabla \times \vec{B} = \partial_t \vec{E} + 4\pi\vec{j}\)</span>（安培-麦克斯韦定律）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon^{\alpha\beta\gamma\delta}F_{\gamma\delta;\beta} = 0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\nabla \cdot \vec{B} = 0\)</span>（磁场无源）<br><span class="arithmatex">\(\nabla \times \vec{E} = -\partial_t \vec{B}\)</span>（法拉第定律）</td>
+</tr>
+</tbody>
+</table>
+<p>练习 2.21 的 B 部分：将 <span class="arithmatex">\(A^\alpha = (\phi, \vec{A})\)</span> 代入，验证：
+- <span class="arithmatex">\(\vec{E} = -\nabla\phi - \partial_t \vec{A}\)</span>
+- <span class="arithmatex">\(\vec{B} = \nabla \times \vec{A}\)</span></p>
+<hr />
+<h2 id="三核心概念通俗解释">三、核心概念通俗解释<a class="headerlink" href="#三核心概念通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="几何化意味着什么">"几何化"意味着什么？<a class="headerlink" href="#几何化意味着什么" title="Permanent link">&para;</a></h3>
+<p>传统电动力学中，麦克斯韦方程组是<strong>四个方程</strong>，依赖于特定的参考系（实验室系），电场 <span class="arithmatex">\(\vec{E}\)</span> 和磁场 <span class="arithmatex">\(\vec{B}\)</span> 看起来是独立的。</p>
+<p><strong>几何化后</strong>：
+- 只有一个<strong>绝对对象</strong>：电磁场张量 <span class="arithmatex">\(F\)</span>（一个几何实体）
+- 只有两个<strong>协变方程</strong>：源方程 + 无源方程
+- <strong>参考系无关</strong>：在任何坐标系下形式相同
+- <span class="arithmatex">\(\vec{E}\)</span> 和 <span class="arithmatex">\(\vec{B}\)</span> 只是 <span class="arithmatex">\(F\)</span> 被特定观测者"切片"后看到的不同侧面</p>
+<blockquote>
+<p>类比：一个三维物体，从不同角度投影看到不同的二维形状。<span class="arithmatex">\(F\)</span> 是物体，<span class="arithmatex">\(\vec{E}\)</span> 和 <span class="arithmatex">\(\vec{B}\)</span> 是不同观测者的投影。</p>
+</blockquote>
+<hr />
+<h3 id="为什么自动满足是魔法">为什么"自动满足"是魔法？<a class="headerlink" href="#为什么自动满足是魔法" title="Permanent link">&para;</a></h3>
+<p>讲师提到：只要 <span class="arithmatex">\(F = \mathrm{d}A\)</span>（场强是势的外微分），无源方程就<strong>自动满足</strong>。</p>
+<p>这类似于：
+- 如果你定义速度为位置的导数 <span class="arithmatex">\(v = dx/dt\)</span>，那么"速度是位置的函数"就自动成立
+- 更深层的：这是拓扑约束——电磁场是"恰当形式"，其"闭性"（<span class="arithmatex">\(\mathrm{d}F=0\)</span>）由构造保证</p>
+<p>这不是巧合，而是反映了<strong>电磁场的无源性是结构性的</strong>，而非动力学约束。</p>
+<hr />
+<h3 id="规范自由度的物理">规范自由度的物理<a class="headerlink" href="#规范自由度的物理" title="Permanent link">&para;</a></h3>
+<p>四维势 <span class="arithmatex">\(A_\alpha\)</span> 的规范自由度类似于：
+- <strong>经典力学中</strong>：势能的零点可以任意选择（只影响势能绝对值，不影响力 <span class="arithmatex">\(\vec{F}=-\nabla U\)</span>）
+- <strong>电磁学中</strong>：<span class="arithmatex">\(A_\alpha\)</span> 的"零点"有无穷多种选择，形成等价类</p>
+<p><strong>洛伦兹规范</strong>是从无穷多等价选择中，挑选出一个满足 <span class="arithmatex">\(A^\mu{}_{;\mu}=0\)</span> 的"方便"代表。这类似于选择坐标系的原点——不改变物理，但简化计算。</p>
+<hr />
+<h2 id="四课程脉络总结">四、课程脉络总结<a class="headerlink" href="#四课程脉络总结" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">时间</th>
+<th style="text-align: left;">内容</th>
+<th style="text-align: left;">核心进展</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">前期</td>
+<td style="text-align: left;">3+1分解、投影方程</td>
+<td style="text-align: left;">建立观测者视角</td>
+</tr>
+<tr>
+<td style="text-align: left;">本段</td>
+<td style="text-align: left;">麦克斯韦方程组几何化</td>
+<td style="text-align: left;"><strong>理论巅峰</strong>：从4个方程到2个，从参考系依赖到协变</td>
+</tr>
+<tr>
+<td style="text-align: left;">本段</td>
+<td style="text-align: left;">四维势与规范变换</td>
+<td style="text-align: left;"><strong>求解工具</strong>：引入 <span class="arithmatex">\(A_\alpha\)</span>，揭示规范结构</td>
+</tr>
+<tr>
+<td style="text-align: left;">本段</td>
+<td style="text-align: left;">洛伦兹规范与波动方程</td>
+<td style="text-align: left;"><strong>实用化</strong>：将场方程转化为可求解的波动方程</td>
+</tr>
+<tr>
+<td style="text-align: left;">后续（练习）</td>
+<td style="text-align: left;">3+1分解还原经典形式</td>
+<td style="text-align: left;"><strong>验证与巩固</strong>：连接抽象理论与实验观测</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>关键引用</strong>（来自字幕）：</p>
+<blockquote>
+<p>"电场和磁场不再是独立的实体，它们是电磁场张量在特定观测者切分时空后显现出的不同侧面"</p>
+</blockquote>
+<p>这正是现代经典物理学的核心范式——<strong>几何优先，观测者依赖的分解次之</strong>。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,5002 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-ggNqDCZwJuc/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-NLFv1ZeAvkg/lecture_notes/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第16课 热平衡分布函数：从理论到宇宙观测 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#现代经典物理学第16课-热平衡分布函数从理论到宇宙观测" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第16课 热平衡分布函数：从理论到宇宙观测
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入：热平衡、平均静止系与能量化学势定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入：热平衡、平均静止系与能量化学势定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#核心概念热平衡与参考系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心概念：热平衡与参考系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心概念：热平衡与参考系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-平均静止系mean-rest-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 平均静止系（Mean Rest Frame）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-相对论-vs-非相对论能量与化学势的双重定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 相对论 vs 非相对论：能量与化学势的双重定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 相对论 vs 非相对论：能量与化学势的双重定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#板书公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        板书公式详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#低速极限牛顿领域" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        低速极限（牛顿领域）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-热平衡的两个旋钮温度与化学势" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 热平衡的两个"旋钮"：温度与化学势
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#板书截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        板书截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么需要这种区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要这种区分？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与后续内容的衔接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与后续内容的衔接
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：费米-狄拉克与玻色-爱因斯坦分布及经典极限、光子分布
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：费米-狄拉克与玻色-爱因斯坦分布及经典极限、光子分布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-通用形式相对论非相对论等价表达" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 通用形式：相对论/非相对论等价表达
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-费米-狄拉克分布fermi-dirac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 费米-狄拉克分布（Fermi-Dirac）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-玻色-爱因斯坦分布bose-einstein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 玻色-爱因斯坦分布（Bose-Einstein）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-经典极限麦克斯韦-玻尔兹曼分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 经典极限：麦克斯韦-玻尔兹曼分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-光子分布普朗克分布黑体辐射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 光子分布：普朗克分布/黑体辐射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二关键物理概念深度解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、关键物理概念深度解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、关键物理概念深度解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-玻色子的化学势约束tildemu-leq-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 玻色子的化学势约束：\(\tilde{\mu} \leq 0\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-玻色-爱因斯坦凝聚bec的预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 玻色-爱因斯坦凝聚（BEC）的预告
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-光子的两种情境对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 光子的两种情境对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1费米子-vs-玻色子分布对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：费米子 vs 玻色子分布对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2光子集合的特殊情况" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：光子集合的特殊情况
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-第四种分布lynden-bell统计1967" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 第四种分布：Lynden-Bell统计（1967）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-标准分布函数与比强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 标准分布函数与比强度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五总结性要点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、总结性要点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：练习3.4：麦克斯韦速度分布与不同维度推广
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：练习3.4：麦克斯韦速度分布与不同维度推广">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式324麦克斯韦速度分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.24：麦克斯韦速度分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键数学工具高斯积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键数学工具：高斯积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三子问题详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、子问题详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、子问题详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-粒子数密度与化学势的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a) 粒子数密度与化学势的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-平均能量能量均分定理的微观证明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (b) 平均能量：能量均分定理的微观证明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-麦克斯韦速度分布的导出" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (c) 麦克斯韦速度分布的导出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-降维打击二维与一维的速度分布-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (d) 降维打击：二维与一维的速度分布 ⭐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：练习3.5与3.6：相对论速度分布、辐射过程和弱反应
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：练习3.5与3.6：相对论速度分布、辐射过程和弱反应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1练习35-麦克斯韦-尤特纳速度分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：练习3.5 麦克斯韦-尤特纳速度分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2练习36下" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：练习3.6（下）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式325麦克斯韦-尤特纳速度分布相对论版本" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.25：麦克斯韦-尤特纳速度分布（相对论版本）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式326爱因斯坦ab系数平衡方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.26：爱因斯坦AB系数平衡方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式327发射率与吸收系数基尔霍夫定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.27：发射率与吸收系数（基尔霍夫定律）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式328弱核反应中的质子生成率含泡利阻塞" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.28：弱核反应中的质子生成率（含泡利阻塞）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心概念深度解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心概念深度解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心概念深度解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-超相对论极限下的速度尖峰现象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 超相对论极限下的"速度尖峰"现象
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-泡利阻塞效应pauli-blocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 泡利阻塞效应（Pauli Blocking）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-从原子物理到宇宙学的神奇练习" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 从原子物理到宇宙学的"神奇练习"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四修正贝塞尔函数-k_2-的物理角色" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、修正贝塞尔函数 \(K_2\) 的物理角色
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：练习3.7：宇宙微波背景辐射、多普勒偶极与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：练习3.7：宇宙微波背景辐射、多普勒偶极与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图练习37-完整题目设置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图：练习3.7 完整题目设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式329cmb静止系中的普朗克分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.29：CMB静止系中的普朗克分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式330参考系无关的协变形式核心创新" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.30：参考系无关的协变形式（核心创新）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式331地球系中的观测温度多普勒效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.31：地球系中的观测温度（多普勒效应）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三关键物理概念详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、关键物理概念详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、关键物理概念详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-多普勒偶极各向异性dipole-anisotropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 多普勒偶极各向异性（Dipole Anisotropy）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-从温度变化测地球绝对速度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从温度变化测地球绝对速度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-历史背景诺贝尔物理学奖与cmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 历史背景：诺贝尔物理学奖与CMB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四公式推导脉络课程隐含的逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、公式推导脉络（课程隐含的逻辑）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五课程总结的核心思想" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、课程总结的核心思想
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入：热平衡、平均静止系与能量化学势定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入：热平衡、平均静止系与能量化学势定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#核心概念热平衡与参考系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心概念：热平衡与参考系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="核心概念：热平衡与参考系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-平均静止系mean-rest-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 平均静止系（Mean Rest Frame）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-相对论-vs-非相对论能量与化学势的双重定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 相对论 vs 非相对论：能量与化学势的双重定义
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 相对论 vs 非相对论：能量与化学势的双重定义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#板书公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        板书公式详解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#低速极限牛顿领域" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        低速极限（牛顿领域）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-热平衡的两个旋钮温度与化学势" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 热平衡的两个"旋钮"：温度与化学势
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#板书截图描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        板书截图描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么需要这种区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么需要这种区分？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#与后续内容的衔接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        与后续内容的衔接
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：费米-狄拉克与玻色-爱因斯坦分布及经典极限、光子分布
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：费米-狄拉克与玻色-爱因斯坦分布及经典极限、光子分布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-通用形式相对论非相对论等价表达" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 通用形式：相对论/非相对论等价表达
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-费米-狄拉克分布fermi-dirac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 费米-狄拉克分布（Fermi-Dirac）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-玻色-爱因斯坦分布bose-einstein" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 玻色-爱因斯坦分布（Bose-Einstein）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-经典极限麦克斯韦-玻尔兹曼分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 经典极限：麦克斯韦-玻尔兹曼分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-光子分布普朗克分布黑体辐射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 光子分布：普朗克分布/黑体辐射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二关键物理概念深度解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、关键物理概念深度解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、关键物理概念深度解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-玻色子的化学势约束tildemu-leq-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 玻色子的化学势约束：\(\tilde{\mu} \leq 0\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-玻色-爱因斯坦凝聚bec的预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 玻色-爱因斯坦凝聚（BEC）的预告
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-光子的两种情境对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 光子的两种情境对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1费米子-vs-玻色子分布对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：费米子 vs 玻色子分布对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2光子集合的特殊情况" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：光子集合的特殊情况
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-第四种分布lynden-bell统计1967" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 第四种分布：Lynden-Bell统计（1967）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-标准分布函数与比强度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 标准分布函数与比强度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五总结性要点" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、总结性要点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：练习3.4：麦克斯韦速度分布与不同维度推广
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：练习3.4：麦克斯韦速度分布与不同维度推广">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式324麦克斯韦速度分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.24：麦克斯韦速度分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键数学工具高斯积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键数学工具：高斯积分
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三子问题详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、子问题详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、子问题详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-粒子数密度与化学势的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (a) 粒子数密度与化学势的关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-平均能量能量均分定理的微观证明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (b) 平均能量：能量均分定理的微观证明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-麦克斯韦速度分布的导出" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (c) 麦克斯韦速度分布的导出
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-降维打击二维与一维的速度分布-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (d) 降维打击：二维与一维的速度分布 ⭐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：练习3.5与3.6：相对论速度分布、辐射过程和弱反应
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：练习3.5与3.6：相对论速度分布、辐射过程和弱反应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1练习35-麦克斯韦-尤特纳速度分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：练习3.5 麦克斯韦-尤特纳速度分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2练习36下" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：练习3.6（下）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式325麦克斯韦-尤特纳速度分布相对论版本" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.25：麦克斯韦-尤特纳速度分布（相对论版本）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式326爱因斯坦ab系数平衡方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.26：爱因斯坦AB系数平衡方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式327发射率与吸收系数基尔霍夫定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.27：发射率与吸收系数（基尔霍夫定律）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式328弱核反应中的质子生成率含泡利阻塞" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.28：弱核反应中的质子生成率（含泡利阻塞）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心概念深度解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心概念深度解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心概念深度解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-超相对论极限下的速度尖峰现象" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 超相对论极限下的"速度尖峰"现象
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-泡利阻塞效应pauli-blocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 泡利阻塞效应（Pauli Blocking）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-从原子物理到宇宙学的神奇练习" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 从原子物理到宇宙学的"神奇练习"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四修正贝塞尔函数-k_2-的物理角色" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、修正贝塞尔函数 \(K_2\) 的物理角色
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 5：练习3.7：宇宙微波背景辐射、多普勒偶极与课程总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 5：练习3.7：宇宙微波背景辐射、多普勒偶极与课程总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt截图内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图练习37-完整题目设置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图：练习3.7 完整题目设置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式329cmb静止系中的普朗克分布" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.29：CMB静止系中的普朗克分布
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式330参考系无关的协变形式核心创新" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.30：参考系无关的协变形式（核心创新）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式331地球系中的观测温度多普勒效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3.31：地球系中的观测温度（多普勒效应）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三关键物理概念详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、关键物理概念详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、关键物理概念详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-多普勒偶极各向异性dipole-anisotropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 多普勒偶极各向异性（Dipole Anisotropy）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-从温度变化测地球绝对速度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 从温度变化测地球绝对速度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-历史背景诺贝尔物理学奖与cmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 历史背景：诺贝尔物理学奖与CMB
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四公式推导脉络课程隐含的逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、公式推导脉络（课程隐含的逻辑）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五课程总结的核心思想" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、课程总结的核心思想
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="现代经典物理学第16课-热平衡分布函数从理论到宇宙观测">《现代经典物理学》第16课 热平衡分布函数：从理论到宇宙观测<a class="headerlink" href="#现代经典物理学第16课-热平衡分布函数从理论到宇宙观测" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 5 个段落，<a href="https://www.youtube.com/watch?v=ggNqDCZwJuc">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 课程引入：热平衡、平均静止系与能量化学势定义</a></li>
+<li><a href="#段落-2">00:03:18 费米-狄拉克与玻色-爱因斯坦分布及经典极限、光子分布</a></li>
+<li><a href="#段落-3">00:12:41 练习3.4：麦克斯韦速度分布与不同维度推广</a></li>
+<li><a href="#段落-4">00:16:57 练习3.5与3.6：相对论速度分布、辐射过程和弱反应</a></li>
+<li><a href="#段落-5">00:23:41 练习3.7：宇宙微波背景辐射、多普勒偶极与课程总结</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程引入：热平衡、平均静止系与能量化学势定义<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:03:17</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎收听现代经典物理学的第十六课我是你们活泼好奇的主持人周亦
+大家好,我是你们的知识向导赛
+上一节课我们探讨了向空间中的分布函数以及那个神奇的连接经典和量子的平均占据数ETA
+今天我们将进入第三十三节一起聊聊热平衡分布函数并看看它们在宏观甚至是宇宙学层面的奇妙应用
+太棒了
+一听到热平衡或者统计平衡,我就觉得像是一大群粒子经过漫长而混乱的碰撞,最终安定下来的状态
+书里在开头提到如果大量全铜粒子在某个事件话题大辟的领域内处于热平衡就会存在一个特殊的参考系
+赛,这到底是个什么样的参考系呢?
+这个特殊的惯性参考系被称为粒子的平均静止系
+在这个参考系里观察,你会发现分布函数是各相同性的
+也就是说平均占据数ETA仅仅是粒子动量的浮值也就是P项量的绝对值的函数
+完全不依赖于粒子的运动方向
+这个很符合直觉呀
+既然都已经达到平衡了,肯定是没有哪个方向是特殊的嘛
+这就等效地说ETH其实完全就是粒子能量的函数了没错但要注意一旦跨入相对论领域我们就必须严格区分两种不同的能量定义以及两种对应的化学式定义
+这里,你看书里的公式3:20
+这里的解释非常关键好的,我看看
+书中用话题大意表示包含净值质量贡献的能量而用大意表示不包含净值质量的能量也就是单纯的动能对他们的关系就是大意横等于话题大意减M
+也就等于根号下括号m平方加p适量平方括号减m
+如果在低速牛顿极限下,我们可以把后面的部分进行太列展开
+这个大意就会趋近于我们初高中就非常熟悉的p适量平方出于2m原来如此
+类似的对相对论能量的处理在化学式这个指标上也一样根据公式三点二一带波浪号的MUE是包含静止质量的化学式而普通的MUE横等于带波浪号的MUE减M就是不包含静止质量的化学式
+如果是在牛顿或非相对论领域,我们统一只用大义和普通的化学式总结得很漂亮
+只要明确了温度梯和化学式MUEL这两个核心参数热平衡状态就完全确定
+简单来说温度梯决定了每个粒子的平均能量及分布的宽度
+而化学式MUE则决定了粒子的平均密度及分布的高度那具体的分布函数公式长什么样呢
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.3_parastart.jpg" src="../frames/frame_000000.3_parastart.jpg" /></p>
+<p><img alt="frame_000104.7_formula.jpg" src="../frames/frame_000104.7_formula.jpg" /></p>
+<p><img alt="frame_000166.6_transition.jpg" src="../frames/frame_000166.6_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解。</p>
+<hr />
+<h2 id="核心概念热平衡与参考系">核心概念：热平衡与参考系<a class="headerlink" href="#核心概念热平衡与参考系" title="Permanent link">&para;</a></h2>
+<h3 id="1-平均静止系mean-rest-frame">1. 平均静止系（Mean Rest Frame）<a class="headerlink" href="#1-平均静止系mean-rest-frame" title="Permanent link">&para;</a></h3>
+<p>当大量全同粒子在<strong>大体积</strong>内达到热平衡时，存在一个特殊的惯性参考系——<strong>粒子的平均静止系</strong>。</p>
+<p><strong>关键特征</strong>：在此参考系中，分布函数是<strong>各向同性</strong>的，即平均占据数 <span class="arithmatex">\(\bar{\eta}\)</span> 仅依赖于动量的模 <span class="arithmatex">\(|p|\)</span>，与方向无关。</p>
+<blockquote>
+<p>物理直觉：热平衡意味着"混沌最大"，没有任何特殊方向，系统具有旋转对称性。</p>
+</blockquote>
+<hr />
+<h2 id="2-相对论-vs-非相对论能量与化学势的双重定义">2. 相对论 vs 非相对论：能量与化学势的双重定义<a class="headerlink" href="#2-相对论-vs-非相对论能量与化学势的双重定义" title="Permanent link">&para;</a></h2>
+<p>这是本段最核心的<strong>新概念</strong>——必须严格区分两种能量标度和两种化学势。</p>
+<h3 id="板书公式详解">板书公式详解<a class="headerlink" href="#板书公式详解" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公式</th>
+<th style="text-align: left;">符号说明</th>
+<th style="text-align: left;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>(3.20)</strong> <span class="arithmatex">\(E \equiv \mathcal{E} - m = \sqrt{m^2 + p^2} - m\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathcal{E}\)</span>: 包含静止质量的相对论总能量；<span class="arithmatex">\(E\)</span>: 不含静止质量的<strong>动能</strong>；<span class="arithmatex">\(m\)</span>: 粒子静止质量（自然单位制 <span class="arithmatex">\(c=1\)</span>）</td>
+<td style="text-align: left;">从相对论总能量中扣除"静能" <span class="arithmatex">\(mc^2\)</span>，得到纯动能</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>(3.21)</strong> <span class="arithmatex">\(\mu \equiv \tilde{\mu} - m\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\tilde{\mu}\)</span>: 包含静止质量贡献的相对论化学势；<span class="arithmatex">\(\mu\)</span>: 不含静止质量的<strong>有效化学势</strong></td>
+<td style="text-align: left;">化学势的同样分解</td>
+</tr>
+</tbody>
+</table>
+<h3 id="低速极限牛顿领域">低速极限（牛顿领域）<a class="headerlink" href="#低速极限牛顿领域" title="Permanent link">&para;</a></h3>
+<p>当 <span class="arithmatex">\(p \ll m\)</span>（即速度远小于光速），对公式(3.20)进行泰勒展开：</p>
+<div class="arithmatex">\[\sqrt{m^2 + p^2} - m = m\sqrt{1+\frac{p^2}{m^2}} - m \approx m\left(1 + \frac{p^2}{2m^2}\right) - m = \frac{p^2}{2m}\]</div>
+<p>这正是我们熟悉的<strong>经典动能表达式</strong>。</p>
+<hr />
+<h2 id="3-热平衡的两个旋钮温度与化学势">3. 热平衡的两个"旋钮"：温度与化学势<a class="headerlink" href="#3-热平衡的两个旋钮温度与化学势" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">参数</th>
+<th style="text-align: left;">控制物理量</th>
+<th style="text-align: left;">形象比喻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>温度 <span class="arithmatex">\(T\)</span></strong>（或 <span class="arithmatex">\(\beta = 1/k_BT\)</span>）</td>
+<td style="text-align: left;">粒子平均能量、分布的<strong>宽度</strong></td>
+<td style="text-align: left;">决定分布"有多胖"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>化学势 <span class="arithmatex">\(\mu\)</span></strong></td>
+<td style="text-align: left;">粒子平均密度、分布的<strong>高度</strong></td>
+<td style="text-align: left;">决定分布"有多高"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>关键洞见：一旦 <span class="arithmatex">\((T, \mu)\)</span> 确定，热平衡状态就完全确定。这是统计热力学的基本结论。</p>
+</blockquote>
+<hr />
+<h2 id="板书截图描述">板书截图描述<a class="headerlink" href="#板书截图描述" title="Permanent link">&para;</a></h2>
+<p><strong>第二张图</strong>展示了清晰的"分层结构"：</p>
+<div class="highlight"><pre><span></span><code>┌─────────────────┬─────────────────┐
+│    能量体系      │    化学势体系    │
+├─────────────────┼─────────────────┤
+│   相对论领域     │   相对论领域     │
+│  ℰ (含静止质量m) │  μ̃ (含静止质量) │
+│       ↓ 减去m    │       ↓ 减去m   │
+├─────────────────┼─────────────────┤
+│   牛顿领域       │   牛顿领域       │
+│  E = ℰ - m      │  μ = μ̃ - m      │
+│  = √(m²+p²) - m │                 │
+│  → p²/2m (低速) │                 │
+└─────────────────┴─────────────────┘
+</code></pre></div>
+<p>图中还包含一个<strong>小插图</strong>：显示相对论能量曲线 <span class="arithmatex">\(\mathcal{E}(p)\)</span> 在低速区域趋近于抛物线 <span class="arithmatex">\(E = p^2/2m\)</span>。</p>
+<hr />
+<h2 id="理论背景补充">理论背景补充<a class="headerlink" href="#理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="为什么需要这种区分">为什么需要这种区分？<a class="headerlink" href="#为什么需要这种区分" title="Permanent link">&para;</a></h3>
+<p>在<strong>宇宙学</strong>和<strong>高能物理</strong>中，粒子经常处于相对论性 regime（如早期宇宙、中子星内部）。此时：
+- 使用 <span class="arithmatex">\(\mathcal{E}\)</span> 和 <span class="arithmatex">\(\tilde{\mu}\)</span> 更自然（洛伦兹协变）
+- 但在处理粒子数守恒、化学平衡时，扣除共同的静止质量 <span class="arithmatex">\(m\)</span> 更便于与经典热力学对接</p>
+<h3 id="与后续内容的衔接">与后续内容的衔接<a class="headerlink" href="#与后续内容的衔接" title="Permanent link">&para;</a></h3>
+<p>本段为后续讨论<strong>费米-狄拉克分布</strong>、<strong>玻色-爱因斯坦分布</strong>以及它们在<strong>宇宙微波背景辐射(CMB)</strong>、<strong>中微子退耦</strong>等宇宙学应用奠定理论基础。第一张概览图已预告了三大统计分布的对比。</p>
+<hr />
+<h2 id="段落-2">段落 2：费米-狄拉克与玻色-爱因斯坦分布及经典极限、光子分布<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:03:18 ~ 00:12:41</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+是不是要区分粒子的脾气性格呀哈哈粒子的脾气确实不一样我们来看教科书中最经典的两个坟部公示三百二十二A的费米迪拉克坟部和三百二十二B的博斯爱因斯坦坟部
+我们先看费米子,他可是遵守泡不相容原理的乖孩子
+此外还得先声明一下后面这个两个关系我将在第四章给出优雅的论证这里大家只要直接接受这个平均暂居数的表达是即可对于非女性来说
+一等于一除括号一的大一减六括号除括号KB乘T括号次方加一括号在这段公式里需要注意的应该是分母里的那个加一对吧这里的KB就是我们常见的波尔兹曼长数一与中地因为分母是指数向一加一并且其中指数向范围是从零到正无穷所以这使得整个一的组织始终被死死地限制在零和一之间
+这也完美契合了费米子的特性
+一个量子态上最多只能容纳一个非密子哦,真的是这样那波色子就是在分母那里变成减号对吧他是出了名的喜欢扎堆
+波色子的一塔等于一除括号E的括号大一减m括号除括号KB乘T括号字方减一括号是的
+因为分母是简一才考虑到平均占据数依它的非负性
+否则,ATA可取负值,这在物理上是不可能的
+所以这里的指数项的范围只能是一到正五穷
+也就是说对波斯子而言动能的曲质范围只能在画曲师MEO到正无穷
+所以当动能低到化学数的时候分母可以变得非常小
+所以平均占据数依它的值就可以从零一直延伸到无穷大我明白了费米子的平均占据数依它的范围是数学上自然的体现而波色子的动能不能小于化学式这是物理合法性的要求在这个情况下波色子的平均占据数依它的值就可以从零一直延伸到无穷大是的
+图是三百二十二C向我们展示了如果我们想要采用包蚕静止质量的方式去书写分布函数的形式是完全一样的就是把大意换成花体大意普通的MEE换成带波浪号的MEE就可以了对吧是的
+这里还有个另外一个极具启发性的物理极限赵艾你注意到书上怎么描述所谓经典粒子领域的吗它是如何从这些复杂的量子分布里退化出来的我看到了书中说当化学是MU远小于负的KB成T的时候这些粒子就会变得像经典粒子一样也就是处于可区分经典粒子的领域
+对在公式层面当MYL远小于F的KB乘T时同时考虑到动能亦非负型
+那么指数上的这一项就会变得非常巨大
+既然指数箱这么大分母里的那个加一或者减一就像大象旁边的一只蚂蚁变得微不足道了这时候无论是费米子还是波色子它们的分布函数书图同归都会退化成公式三百二十二D所写的波尔兹曼分布也就是一塔约等于E的副括号大义减MU括号除以括号KB成T括号词方完全正确也正是在非相对论状态下所有粒子平均占数都远小于一的情况这群粒子仿佛成了可以标记可以区分的经典小球
+这就是由复杂到相对简单的美妙退化这简直是物理世界里大到质简的完美体现呀
+对了我不禁想插一句关于经典例子书上的角落里还提到了另一种非常小众的情况是吗哈哈你读书真自写
+既然你提到了,我就说一下
+小柱六指出在一九六七年伦森贝尔在研究星团的剧烈池域时确定了第四种热分布类型
+它对应的是服从类似费米子那种不相容原理的可区分经典例子
+也就说明物理学总有很多意想不到的特殊分支等待我们在特定场景下去挖掘太有趣了那我们再接着看分布性质的话书上说温度梯越高粒子的典型能量就越大
+而对于波色子有个奇怪的数学限制化学式MU必须始终为负数或者零换句话说带波浪号的MU绝对不能超过粒子的净质质量M这是为什么呢所以前面我们刚刚提到由于平均占据数A塔非负这个物理合法性
+对波色子而言,动能异的取质范围只能在化学时MUE到正无穷
+而就是说波色子的化学是MUE始终小于动能E这也不能说明波色子的化学是MUE必须始终为负数或者零压但我们必须注意平均占据数A塔非负这个物理合法性必须对任意动能E都成立
+也就是说无论动能易是取零还是一直大到正无穷都必须成立哦我明白了按这个强大的物理和法性要求波瑟子的化学是MUE必须始终小于等于动能易的下限零所以说波瑟子的化学是MUE必须始终为负数或者零
+这也就是为什么对于波色子化学式缪最多只能极其接近于零而不能跨越它
+那万一它极其接近零呢,比如只差一点点,这就引出了一个令人惊叹的量子现象
+当波色子的化学式谬极其接近于零并且存在大量极低能量的粒子对这些极低能量的粒子而言那个分母就会趋近于零
+这会导致什么结果这会导致这些大量挤低能量的粒子像找了膜一样全部试图挤进那个最低的能量态
+占据数会变得庞大无比这正是量子力学中会导致的波色爱因斯坦凝聚啊教科书里提到我们会在第四十九节详细研究它我已经迫不及待了当然除此之外我们还要特意讲一种极其普遍而且我们天天见面的无质量波色子就是光子
+如果光子可以在一个温度为T的盒子里完全自由地产生和烟灭,它们的化学式带波浪号的MUE其实会直接等于零
+关于这个结论我将会在第五十五节看到书中的确只是简单的解释说这是因为它们只受四动量守恒的约束这就对应了著名的黑体辐射也就是普朗克分布是的
+来看看公式3点23
+光子的平均占据数I塔等于一除括号E的括号H成New括号除括号KB成T括号次方减一括号
+这个公式仅仅是用花体大义等于普朗克常数H成光子频率NUE代替了原先的能量示示带波浪号的NUE直接取零的结果这也是很多天体物理学模型的基础
+比如根据上堂课提到标准分布函数花体大N和平均占据数的关系可直接写出标准分布函数花体大N的表达式此外根据标准分布函数花体大N和比强度INU的关系也可以写出比强度INU的表达式只不过再说
+此外根据标准分布函数花体大N和比强度INU的关系也可以写出比强度INU的表达式只不过在书中比强度INU的表达式中多插入了一个因子C的辅二次方这是为了方便比强度INU以普通单位表示而已哇那如果是另外一种情况呢比如书中提到的把固定数量的光子放在一个盒子里而且这个盒子的壁面不能发射也不能
+那如果是另外一种情况呢比如书中提到的把固定数量的光子放在一个盒子里而且这个盒子的壁面不能发射也不能吸收光子只能让光子发生散射并与壁面交换能量会怎么样这是一个非常好的一个温度梯等于壁面温度的波色爱因斯坦分布
+也就是对应咱们前面说的公式3.22b
+但关键的区别在于,此时因为光子不能被产生和应面,数量是固定的,所以化学式普通的MUE不再是零了
+这个非零化学式MUE完全由盒子里存在的光子总数量来决定简单来说就是里面塞的光子越多这个化学式就越大
+前面提及的黑体服饰的公式可以说是现代物理发展的第一大工程了那么理论基础知识算是告落一段落赛我们现在是不是可以进入挑战环节了
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000198.3_parastart.jpg" src="../frames/frame_000198.3_parastart.jpg" /></p>
+<p><img alt="frame_000320.8_transition.jpg" src="../frames/frame_000320.8_transition.jpg" /></p>
+<p><img alt="frame_000629.3_transition.jpg" src="../frames/frame_000629.3_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦于<strong>费米-狄拉克分布、玻色-爱因斯坦分布及其物理极限</strong>。</p>
+<hr />
+<h2 id="一核心公式详解">一、核心公式详解<a class="headerlink" href="#一核心公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-通用形式相对论非相对论等价表达">1. 通用形式：相对论/非相对论等价表达<a class="headerlink" href="#1-通用形式相对论非相对论等价表达" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta = \frac{1}{e^{(E-\mu)/(k_B T)} \pm 1} = \frac{1}{e^{(\tilde{E}-\tilde{\mu})/(k_B T)} \pm 1}} \tag{3.22}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta\)</span> (<span class="arithmatex">\(\bar{\eta}\)</span>)</td>
+<td style="text-align: left;">平均占据数（平均粒子数）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(E\)</span></td>
+<td style="text-align: left;">相对论总能量 = 静止能量 + 动能 = <span class="arithmatex">\(mc^2 + E_{\text{kin}}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\tilde{E}\)</span></td>
+<td style="text-align: left;">非相对论能量（<strong>扣除静止质量后</strong>）= <span class="arithmatex">\(E - mc^2 = E_{\text{kin}}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mu\)</span></td>
+<td style="text-align: left;">相对论化学势</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\tilde{\mu}\)</span></td>
+<td style="text-align: left;">非相对论化学势 = <span class="arithmatex">\(\mu - mc^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(k_B\)</span></td>
+<td style="text-align: left;">玻尔兹曼常数（<span class="arithmatex">\(1.381 \times 10^{-16}\)</span> erg/K 或 <span class="arithmatex">\(1.381 \times 10^{-23}\)</span> J/K）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T\)</span></td>
+<td style="text-align: left;">系统温度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\pm\)</span></td>
+<td style="text-align: left;">费米子取 <span class="arithmatex">\(+\)</span>，玻色子取 <span class="arithmatex">\(-\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>关键洞察</strong>：通过重新定义能量零点（扣除静止质量），相对论与非相对论形式在数学上完全等价。这是"花体<span class="arithmatex">\(\tilde{E}\)</span>"和"带波浪号的<span class="arithmatex">\(\tilde{\mu}\)</span>"的物理意义。</p>
+</blockquote>
+<hr />
+<h3 id="2-费米-狄拉克分布fermi-dirac">2. 费米-狄拉克分布（Fermi-Dirac）<a class="headerlink" href="#2-费米-狄拉克分布fermi-dirac" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta = \frac{1}{e^{(E-\mu)/(k_B T)} + 1}} \tag{3.22a}\]</div>
+<p><strong>核心特征</strong>：
+- <strong>分母中的 <span class="arithmatex">\(+1\)</span></strong> 是关键
+- 指数项范围：<span class="arithmatex">\([0, +\infty)\)</span> → 分母范围：<span class="arithmatex">\([2, +\infty)\)</span>
+- <strong>平均占据数范围</strong>：<span class="arithmatex">\(0 \leq \eta \leq 1\)</span></p>
+<p><strong>物理诠释</strong>：费米子遵守<strong>泡利不相容原理</strong>——每个量子态最多容纳一个粒子。这就像"乖孩子"排队，每人占一个座位，绝不共享。</p>
+<blockquote>
+<p>当 <span class="arithmatex">\(E \ll \mu\)</span>（低温）：<span class="arithmatex">\(\eta \approx 1\)</span>（态被填满）
+当 <span class="arithmatex">\(E \gg \mu\)</span>（高温）：<span class="arithmatex">\(\eta \approx e^{-(E-\mu)/k_BT} \ll 1\)</span>（态几乎空置）</p>
+</blockquote>
+<hr />
+<h3 id="3-玻色-爱因斯坦分布bose-einstein">3. 玻色-爱因斯坦分布（Bose-Einstein）<a class="headerlink" href="#3-玻色-爱因斯坦分布bose-einstein" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta = \frac{1}{e^{(E-\mu)/(k_B T)} - 1}} \tag{3.22b}\]</div>
+<p><strong>核心特征</strong>：
+- <strong>分母中的 <span class="arithmatex">\(-1\)</span></strong> 是关键
+- <strong>物理合法性约束</strong>：为保证 <span class="arithmatex">\(\eta \geq 0\)</span>，必须要求 <span class="arithmatex">\(E &gt; \mu\)</span>（严格大于，否则分母为零或负）
+- 对于非相对论情况：<span class="arithmatex">\(E_{\text{kin}} \geq 0\)</span>，故 <strong><span class="arithmatex">\(\tilde{\mu} \leq 0\)</span></strong>（化学势必须非正！）
+- <strong>平均占据数范围</strong>：<span class="arithmatex">\(0 \leq \eta &lt; +\infty\)</span>（无上限！）</p>
+<p><strong>物理诠释</strong>：玻色子"喜欢扎堆"——多个粒子可以占据同一量子态。当 <span class="arithmatex">\(\tilde{\mu} \to 0^-\)</span> 时，低能态的占据数可以<strong>发散</strong>。</p>
+<hr />
+<h3 id="4-经典极限麦克斯韦-玻尔兹曼分布">4. 经典极限：麦克斯韦-玻尔兹曼分布<a class="headerlink" href="#4-经典极限麦克斯韦-玻尔兹曼分布" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta \approx e^{-(E-\mu)/(k_B T)}} \tag{3.22d}\]</div>
+<p><strong>退化条件</strong>：<span class="arithmatex">\(e^{(E-\mu)/k_BT} \gg 1\)</span>，即 <strong><span class="arithmatex">\(\mu \ll -k_BT\)</span></strong>（化学势为负且绝对值很大）</p>
+<p><strong>物理图像</strong>：
+- 指数项"像大象"，<span class="arithmatex">\(\pm 1\)</span>"像蚂蚁"
+- 量子统计差异消失，费米子与玻色子"殊途同归"
+- 平均占据数 <span class="arithmatex">\(\eta \ll 1\)</span>：粒子变得<strong>可区分</strong>，像经典小球</p>
+<blockquote>
+<p>"由复杂到相对简单的美妙退化"——这是物理学中"大数简并"的完美体现。</p>
+</blockquote>
+<hr />
+<h3 id="5-光子分布普朗克分布黑体辐射">5. 光子分布：普朗克分布/黑体辐射<a class="headerlink" href="#5-光子分布普朗克分布黑体辐射" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta = \frac{1}{e^{h\nu/(k_B T)} - 1}} \tag{3.23}\]</div>
+<p><strong>特殊之处</strong>：
+- 光子能量 <span class="arithmatex">\(\mathcal{E} = h\nu\)</span>（<span class="arithmatex">\(\nu\)</span>为频率）
+- <strong>化学势 <span class="arithmatex">\(\tilde{\mu} = 0\)</span></strong>（光子数不守恒！）</p>
+<p><strong>为什么 <span class="arithmatex">\(\tilde{\mu} = 0\)</span>？</strong>
+- 光子可被自由产生和湮灭（壁面完美发射/吸收）
+- 系统仅受<strong>四动量守恒</strong>约束，无粒子数守恒
+- 这是热平衡中的"化学平衡"条件</p>
+<hr />
+<h2 id="二关键物理概念深度解析">二、关键物理概念深度解析<a class="headerlink" href="#二关键物理概念深度解析" title="Permanent link">&para;</a></h2>
+<h3 id="1-玻色子的化学势约束tildemu-leq-0">1. 玻色子的化学势约束：<span class="arithmatex">\(\tilde{\mu} \leq 0\)</span><a class="headerlink" href="#1-玻色子的化学势约束tildemu-leq-0" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">论证步骤</th>
+<th style="text-align: left;">逻辑</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">前提</td>
+<td style="text-align: left;">平均占据数 <span class="arithmatex">\(\eta \geq 0\)</span> 必须对所有动能成立</td>
+</tr>
+<tr>
+<td style="text-align: left;">约束</td>
+<td style="text-align: left;">分母 <span class="arithmatex">\(e^{(E-\mu)/k_BT} - 1 &gt; 0\)</span> → <span class="arithmatex">\(E &gt; \mu\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">非相对论</td>
+<td style="text-align: left;"><span class="arithmatex">\(E_{\text{kin}} \geq 0\)</span>，故需 <span class="arithmatex">\(\tilde{\mu} &lt; E_{\text{kin}}\)</span> 对所有 <span class="arithmatex">\(E_{\text{kin}} \geq 0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">结论</td>
+<td style="text-align: left;"><strong><span class="arithmatex">\(\tilde{\mu} \leq 0\)</span></strong>（必须小于动能下限）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>这是"强大的物理合法性要求"——数学可能性必须服从物理实在性。</p>
+</blockquote>
+<h3 id="2-玻色-爱因斯坦凝聚bec的预告">2. 玻色-爱因斯坦凝聚（BEC）的预告<a class="headerlink" href="#2-玻色-爱因斯坦凝聚bec的预告" title="Permanent link">&para;</a></h3>
+<p>当 <span class="arithmatex">\(\tilde{\mu} \to 0^-\)</span>（极其接近零）：
+- 低能粒子（<span class="arithmatex">\(E_{\text{kin}} \sim |\tilde{\mu}|\)</span>）的分母 <span class="arithmatex">\(\to 0\)</span>
+- 占据数 <span class="arithmatex">\(\eta \to +\infty\)</span>
+- <strong>宏观数量粒子"挤"入基态</strong></p>
+<p>这正是<strong>玻色-爱因斯坦凝聚</strong>——纯粹的量子统计效应，将在第49节详述。</p>
+<h3 id="3-光子的两种情境对比">3. 光子的两种情境对比<a class="headerlink" href="#3-光子的两种情境对比" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">情境</th>
+<th style="text-align: left;">壁面性质</th>
+<th style="text-align: left;">化学势</th>
+<th style="text-align: left;">分布类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>黑体辐射</strong></td>
+<td style="text-align: left;">完美发射/吸收</td>
+<td style="text-align: left;"><span class="arithmatex">\(\tilde{\mu} = 0\)</span></td>
+<td style="text-align: left;">普朗克分布 (3.23)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>散射盒</strong></td>
+<td style="text-align: left;">仅散射，不发射/吸收</td>
+<td style="text-align: left;"><span class="arithmatex">\(\tilde{\mu} \neq 0\)</span>（由光子总数决定）</td>
+<td style="text-align: left;">玻色-爱因斯坦分布 (3.22b)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键区别</strong>：光子数是否守恒决定了化学势是否为零。</p>
+<hr />
+<h2 id="三板书ppt截图内容描述">三、板书/PPT截图内容描述<a class="headerlink" href="#三板书ppt截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1费米子-vs-玻色子分布对比">截图1：费米子 vs 玻色子分布对比<a class="headerlink" href="#截图1费米子-vs-玻色子分布对比" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────────┐
+│  通用相对论/非相对论等价形式                               │
+│  (3.22) η = 1/[e^(E-μ)/kT ± 1] = 1/[e^(Ẽ-μ̃)/kT ± 1]    │
+│                    「将在第4章给出优雅的论证」              │
+├─────────────────────────┬───────────────────────────────┤
+│        费米子(Fermions)  │        玻色子(Bosons)          │
+│  ┌ Occupation Number    │  ┌ Occupation Number          │
+│  │    ↑                  │  │    ↑  ↗∞（发散）            │
+│  │  1 ━┓                 │  │    │ /                      │
+│  │    │  ╲                │  │    │/                       │
+│  │    │   ╲____           │  │    └────────→ Energy       │
+│  │    └────────→ Energy   │  │                              │
+│  └ 费米-狄拉克分布         │  └ 玻色-爱因斯坦分布            │
+│                         │                                │
+│  (3.22a) η=1/[e^(E-μ)/kT+1] │ (3.22b) η=1/[e^(E-μ)/kT-1] │
+│                         │                                │
+│  【平均占据数范围: 0≤η≤1】 │ 【平均占据数范围: 0≤η&lt;∞】     │
+│        （绿色底）         │        （红色底）               │
+└─────────────────────────┴───────────────────────────────┘
+                    玻尔兹曼常数 k_B 数值
+</code></pre></div>
+<h3 id="截图2光子集合的特殊情况">截图2：光子集合的特殊情况<a class="headerlink" href="#截图2光子集合的特殊情况" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>                    ┌─────────┐
+                    │ 光子集合 │
+                    │(特殊情况)│
+                    └────┬────┘
+           ┌─────────────┼─────────────┐
+           ▼             ▼             ▼
+    ┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+    │壁面完美发射/│  │   公式框    │  │壁面仅散射并 │
+    │   吸收      │  │ η=1/[exp((ℰ-μ̃)/kT)-1] │  │  交换能量   │
+    └─────────────┘  └─────────────┘  └─────────────┘
+           │                                │
+           ▼                                ▼
+    ┌─────────────┐                  ┌─────────────┐
+    │ • 黑体辐射   │                  │ • 数量守恒   │
+    │ • 完全自由   │                  │ • 非零化学势  │
+    │   产生/湮灭  │                  │ • μ由光子总数 │
+    │ • 相对论化学势│                  │   决定       │
+    │   消失: μ̃=0 │                  │ • 遵循有非零μ̃ │
+    │ • 导出普朗克 │                  │   的玻色-    │
+    │   形式       │                  │   爱因斯坦分布│
+    │   (令ℰ=hν)  │                  │              │
+    └─────────────┘                  │  【盒子图示】 │
+                                     │  可发射/吸收 │
+                                     │    vs 只能散射│
+                                     └─────────────┘
+
+    左下：普朗克分布曲线（不同温度T₁&lt;T₂&lt;T₃）
+    公式：N = (2/h³)∫... ,  I_ν = (2hc²/λ⁵)/(exp(hc/λkT)-1)
+</code></pre></div>
+<hr />
+<h2 id="四理论背景补充">四、理论背景补充<a class="headerlink" href="#四理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-第四种分布lynden-bell统计1967">1. 第四种分布：Lynden-Bell统计（1967）<a class="headerlink" href="#1-第四种分布lynden-bell统计1967" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">属性</th>
+<th style="text-align: left;">特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">提出者</td>
+<td style="text-align: left;">Donald Lynden-Bell（研究星团剧烈弛豫）</td>
+</tr>
+<tr>
+<td style="text-align: left;">粒子性质</td>
+<td style="text-align: left;"><strong>可区分的经典粒子</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">统计性质</td>
+<td style="text-align: left;">服从<strong>类似泡利不相容原理</strong>的排斥</td>
+</tr>
+<tr>
+<td style="text-align: left;">物理场景</td>
+<td style="text-align: left;">恒星在相空间中的分布（Vlasov方程的准稳态）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>这提醒我们：物理学总有"意想不到的特殊分支"在特定场景下显现。</p>
+</blockquote>
+<h3 id="2-标准分布函数与比强度">2. 标准分布函数与比强度<a class="headerlink" href="#2-标准分布函数与比强度" title="Permanent link">&para;</a></h3>
+<p>根据 <span class="arithmatex">\(\mathcal{N}\)</span>（标准分布函数）与 <span class="arithmatex">\(\eta\)</span> 的关系，以及 <span class="arithmatex">\(\mathcal{N}\)</span> 与比强度 <span class="arithmatex">\(I_\nu\)</span> 的关系：</p>
+<div class="arithmatex">\[\mathcal{N} = \frac{2}{h^3}\eta, \quad I_\nu = \frac{c^2}{2\nu^2}\mathcal{N} = \frac{2h\nu^3}{c^2}\frac{1}{e^{h\nu/k_BT}-1}\]</div>
+<blockquote>
+<p>书中 <span class="arithmatex">\(I_\nu\)</span> 表达式多出的 <span class="arithmatex">\(c^2/\nu^2\)</span> 因子是为了用<strong>普通单位</strong>表示，而非自然单位。</p>
+</blockquote>
+<hr />
+<h2 id="五总结性要点">五、总结性要点<a class="headerlink" href="#五总结性要点" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">核心记忆点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>费米子</strong></td>
+<td style="text-align: left;">"+1"约束 → <span class="arithmatex">\(0 \leq \eta \leq 1\)</span> → 不相容原理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>玻色子</strong></td>
+<td style="text-align: left;">"-1"允许发散 → <span class="arithmatex">\(\tilde{\mu} \leq 0\)</span> → 喜欢扎堆</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>经典极限</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mu \ll -k_BT\)</span> → 量子差异消失 → 麦克斯韦-玻尔兹曼</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>光子特殊性</strong></td>
+<td style="text-align: left;">数不守恒 → <span class="arithmatex">\(\tilde{\mu}=0\)</span> → 普朗克分布</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>BEC预告</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\tilde{\mu} \to 0^-\)</span> → 低能态宏观占据 → 量子相变</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="段落-3">段落 3：练习3.4：麦克斯韦速度分布与不同维度推广<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:12:41 ~ 00:16:56</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+我看课后的这四个练习题各顶各的硬核啊
+没错这些习题不仅要求催导更重要的是帮大家实物理直觉
+让我们先来看看练习3.4MAXV速度分布
+这道题考察的是处于热平衡静止质量不为零的经典例子
+温度很低,所以是非相对论的,也就是波尔兹曼分布
+题目的第一步A让我们证明物理空间中的总粒子数密度N正比于E的跨号除KB乘T跨号次方我想想密度N是分布函数花体大N在动量空间体积圆上的积分既然是处于热平衡且各项同性
+题目提示我们在动量空间使用球坐标
+在这个坐标系下,动量空间的体积微元D花体大V下标P
+等于四派乘P平方乘P其中P是动量的绝对值这正是破题的关键药你只要把波尔兹曼分布的指数表达式带进去完成积分立马就能看到前置系数里分离出了E的括号没有除KB成T括号次方的音符漂亮那B小题让我们求每个粒子的平均能量平均E
+书本上的定义是平均E等于粒子能量E也就是跨号P平方出于二M跨号在分布函数花体大N下的数学期盼也就是等于N的负一次方乘积分括号P平方出于二M括号成花体大N成D花体大V下标P算出来的答案是平均E等于二分之三乘KB乘T
+是的你不觉得这个结果非常眼熟吗太眼熟了这不就是经典热力学里我们中学生都要背的理想气体单原子分子平均动能结论吗三个空间自由度每个贡献二分之一KB乘T没错
+这就证明了我们宏观测量热力学现象完全可以从微观向空间的严格积分中被完美推导出来接下来最关键的是C小题要求推到概率分布P的V我看到了这里把积分变量从动量P换成了速率V给出了公式三二四
+Pf等于括号四除根号派括号
+括号V平方除V下标O的三次方括号
+乘以的括号负V平方除V下标O平方括号次方
+其中峰值速率V下标O等于根号下括号二乘KB乘T除M括号
+书上还贴心的加了个侧柱呢
+哈哈对,书里提醒大家记住解这种积分的大招,我们要去求这一类的概率归一化,必然会遇到高丝积分
+由于从零到五穷大积分一的负X平方次方底X就等于根号排出一二
+只要记数这个结果通过使用分布积分法你可以非常快速地推导出麦克斯维速度分布的系数真的非常实用
+接下来课后挑战里的D小题非常有启发性
+他问如果粒子被强制限制在二维平面甚至一维直线上运动它们的速度分布是什么峰值速率又是多少
+这就是一个典型的降尾打击视角
+大家可以把刚才咱们用的三维动量体积圆四派乘P平方的形式在二维中换成极坐标的面积圆二派乘P在一维里则变成了简单的DP
+然后重新做一遍刚才的计算看看峰值速率会如何随着维度的降低而发生偏移很有意思的把三维的自由度拆分为一维二维感觉数学和物理的双重思维都跟着升华了
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000761.7_parastart.jpg" src="../frames/frame_000761.7_parastart.jpg" /></p>
+<p><img alt="frame_000846.3_formula.jpg" src="../frames/frame_000846.3_formula.jpg" /></p>
+<p><img alt="frame_000895.3_formula.jpg" src="../frames/frame_000895.3_formula.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦于<strong>麦克斯韦速度分布的推导与维度效应</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述" title="Permanent link">&para;</a></h2>
+<p>截图展示了<strong>练习3.4：从玻尔兹曼分布推导麦克斯韦速度分布</strong>的完整题目，包含四个子问题(a)-(d)。右侧配有速度分布曲线图，显示概率分布 <span class="arithmatex">\(P(v)\)</span> 在峰值速率 <span class="arithmatex">\(v_0\)</span> 处达到最大。</p>
+<hr />
+<h2 id="二核心公式详解">二、核心公式详解<a class="headerlink" href="#二核心公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="公式324麦克斯韦速度分布">公式3.24：麦克斯韦速度分布<a class="headerlink" href="#公式324麦克斯韦速度分布" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{P(v) = \frac{4}{\sqrt{\pi}} \left(\frac{v^2}{v_0^3}\right) e^{-v^2/v_0^2}, \quad v_0 = \sqrt{\frac{2k_B T}{m}}} \tag{3.24}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(P(v)\)</span></td>
+<td style="text-align: left;">速率 <span class="arithmatex">\(v\)</span> 的概率密度函数（归一化：<span class="arithmatex">\(\int_0^\infty P(v)dv = 1\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(v\)</span></td>
+<td style="text-align: left;">粒子速率（速度的大小，标量，<span class="arithmatex">\(v \geq 0\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(v_0\)</span></td>
+<td style="text-align: left;"><strong>峰值速率</strong>（最概然速率），分布函数取最大值处的速率</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(m\)</span></td>
+<td style="text-align: left;">粒子静止质量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(k_B\)</span></td>
+<td style="text-align: left;">玻尔兹曼常数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T\)</span></td>
+<td style="text-align: left;">系统温度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结构解析</strong>：该分布由三部分组成
+- <strong>前置系数</strong> <span class="arithmatex">\(\frac{4}{\sqrt{\pi}}\)</span>：归一化常数，确保概率总和为1
+- <strong>相空间因子</strong> <span class="arithmatex">\(\frac{v^2}{v_0^3} \propto v^2\)</span>：来自三维动量空间的球坐标体积元 <span class="arithmatex">\(4\pi p^2 dp\)</span>
+- <strong>玻尔兹曼因子</strong> <span class="arithmatex">\(e^{-v^2/v_0^2} = e^{-mv^2/(2k_B T)}\)</span>：能量越高速率概率指数衰减</p>
+<hr />
+<h3 id="关键数学工具高斯积分">关键数学工具：高斯积分<a class="headerlink" href="#关键数学工具高斯积分" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}\]</div>
+<p><strong>推广形式</strong>（用于计算任意矩）：</p>
+<div class="arithmatex">\[\int_0^\infty x^{2n} e^{-x^2} dx = \frac{(2n-1)!!}{2^{n+1}}\sqrt{\pi}\]</div>
+<blockquote>
+<p>课程提示：通过<strong>分部积分法</strong>可从基础高斯积分快速导出高阶矩，这是处理此类分布的"大招"。</p>
+</blockquote>
+<hr />
+<h2 id="三子问题详解">三、子问题详解<a class="headerlink" href="#三子问题详解" title="Permanent link">&para;</a></h2>
+<h3 id="a-粒子数密度与化学势的关系">(a) 粒子数密度与化学势的关系<a class="headerlink" href="#a-粒子数密度与化学势的关系" title="Permanent link">&para;</a></h3>
+<p><strong>目标</strong>：证明 <span class="arithmatex">\(n \propto e^{\mu/(k_B T)}\)</span></p>
+<p><strong>推导要点</strong>：
+- 分布函数：<span class="arithmatex">\(\mathcal{N} = e^{\mu/(k_B T)} \cdot e^{-E/(k_B T)} = e^{(\mu-E)/(k_B T)}\)</span>
+- 非相对论能量：<span class="arithmatex">\(E = p^2/(2m)\)</span>
+- 数密度：<span class="arithmatex">\(n = \int \mathcal{N} \, d\mathcal{V}_p = \int_0^\infty e^{\mu/(k_B T)} e^{-p^2/(2mk_B T)} \cdot 4\pi p^2 dp\)</span></p>
+<p><strong>结果</strong>：积分后所有 <span class="arithmatex">\(T\)</span> 和 <span class="arithmatex">\(m\)</span> 的依赖都进入前置因子，仅保留 <span class="arithmatex">\(e^{\mu/(k_B T)}\)</span> 作为化学势的显式依赖。</p>
+<hr />
+<h3 id="b-平均能量能量均分定理的微观证明">(b) 平均能量：能量均分定理的微观证明<a class="headerlink" href="#b-平均能量能量均分定理的微观证明" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\bar{E} = \frac{3}{2}k_B T}\]</div>
+<p><strong>物理意义</strong>：
+| 维度 | 自由度 | 每自由度贡献 | 总平均能量 |
+|:---|:---|:---|:---|
+| 3D | 3（<span class="arithmatex">\(p_x, p_y, p_z\)</span>） | <span class="arithmatex">\(\frac{1}{2}k_B T\)</span> | <span class="arithmatex">\(\frac{3}{2}k_B T\)</span> |</p>
+<p><strong>课程强调</strong>：这是<strong>从微观统计严格推导宏观热力学</strong>的典范——中学背的理想气体公式在此得到第一性原理证明。</p>
+<hr />
+<h3 id="c-麦克斯韦速度分布的导出">(c) 麦克斯韦速度分布的导出<a class="headerlink" href="#c-麦克斯韦速度分布的导出" title="Permanent link">&para;</a></h3>
+<p><strong>关键步骤</strong>：变量替换 <span class="arithmatex">\(p = mv\)</span>（动量→速率）</p>
+<div class="arithmatex">\[\mathcal{N} \cdot 4\pi p^2 dp \quad \xrightarrow{p=mv} \quad P(v)dv\]</div>
+<p>经过归一化条件 <span class="arithmatex">\(\int_0^\infty P(v)dv = 1\)</span> 确定系数，即得公式(3.24)。</p>
+<p><strong>峰值速率 <span class="arithmatex">\(v_0\)</span> 的物理</strong>：对 <span class="arithmatex">\(P(v)\)</span> 求导令 <span class="arithmatex">\(\frac{dP}{dv}=0\)</span>，可得 <span class="arithmatex">\(v_{peak} = v_0 = \sqrt{\frac{2k_B T}{m}}\)</span></p>
+<blockquote>
+<p>注意区分三种特征速率：
+- <strong>最概然速率</strong> <span class="arithmatex">\(v_0 = \sqrt{2k_B T/m}\)</span>（分布峰值）
+- <strong>平均速率</strong> <span class="arithmatex">\(\bar{v} = \sqrt{8k_B T/(\pi m)}\)</span>（稍大）
+- <strong>方均根速率</strong> <span class="arithmatex">\(v_{rms} = \sqrt{3k_B T/m}\)</span>（最大）</p>
+</blockquote>
+<hr />
+<h3 id="d-降维打击二维与一维的速度分布-">(d) 降维打击：二维与一维的速度分布 ⭐<a class="headerlink" href="#d-降维打击二维与一维的速度分布-" title="Permanent link">&para;</a></h3>
+<p>这是本段最具启发性的<strong>"降维"视角</strong>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">动量空间体积元</th>
+<th style="text-align: left;">速率分布形式</th>
+<th style="text-align: left;">峰值速率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>3D</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(d\mathcal{V}_p = 4\pi p^2 dp\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(v) \propto v^2 e^{-v^2/v_0^2}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(v_0^{(3)} = \sqrt{2k_B T/m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2D</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(d\mathcal{V}_p = 2\pi p \, dp\)</span>（极坐标面积元）</td>
+<td style="text-align: left;"><span class="arithmatex">\(P(v) \propto v \cdot e^{-v^2/v_0^2}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(v_0^{(2)} = \sqrt{k_B T/m}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1D</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(d\mathcal{V}_p = dp\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(P(v) \propto e^{-v^2/v_0^2}\)</span>（半高斯）</td>
+<td style="text-align: left;"><span class="arithmatex">\(v_0^{(1)} = 0\)</span>（单调递减）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心发现</strong>：随着维度降低，<strong>相空间因子 <span class="arithmatex">\(v^{(d-1)}\)</span> 的幂次降低</strong>，导致：
+- 分布曲线形状从"右偏峰"（3D）→"对称峰"（2D）→"单调递减"（1D）
+- <strong>峰值速率向低速方向移动</strong>：<span class="arithmatex">\(v_0^{(3)} &gt; v_0^{(2)} &gt; v_0^{(1)}=0\)</span></p>
+<p><strong>物理直觉</strong>：低维空间中"高速态"的相空间体积占比更小，系统更倾向于占据低能态。</p>
+<hr />
+<h2 id="四核心概念总结">四、核心概念总结<a class="headerlink" href="#四核心概念总结" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>玻尔兹曼分布</strong></td>
+<td style="text-align: left;">经典极限（<span class="arithmatex">\(\eta \ll 1\)</span>）下的量子分布，化学势 <span class="arithmatex">\(\mu \to -\infty\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>麦克斯韦分布</strong></td>
+<td style="text-align: left;">玻尔兹曼分布在动量空间的具体形式，描述热平衡经典粒子的速率统计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>维度效应</strong></td>
+<td style="text-align: left;">相空间体积元的维度依赖 <span class="arithmatex">\(p^{d-1}\)</span> 直接决定分布函数的形态</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>能量均分定理</strong></td>
+<td style="text-align: left;">每个二次自由度贡献 <span class="arithmatex">\(\frac{1}{2}k_B T\)</span>，微观统计→宏观热力学的桥梁</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="段落-4">段落 4：练习3.5与3.6：相对论速度分布、辐射过程和弱反应<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:16:57 ~ 00:23:40</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那如果我们的粒子不听话,速度不是慢吞吞的,而是非常快的情况呢?
+接下来就是练习三点五麦克斯维尤特纳速度分布这就是相对论版本的麦克斯维分布对吧哈哈对一旦我们突破了牛顿力学由于低速产生的束缚粒子的能量就不再是简单的P平方处于二M了
+为了严谨我们需要用带有洛伦兹因子的相对论能量来写布尔兹曼分布
+这样一套推倒下来它的概率分布就写在方程3点25里了
+在推导过程中由于引入了洛伦兹因子所以增加了积分的复杂性
+而这种复杂积分一部分可以划成一个叫做K二的第二类二阶修正贝塞尔函数
+我的天哪,公式变得好复杂
+P of V等于括号二除V下标O平方括号除K二的括号二除V下标O平方括号
+这里面的V下标O和刚才的定义一样,在成语后面一大串带着洛伦子因子,跟号下一减V平方的分数因子,还有复杂指数项因子是的
+别看公式吓人,你看土3.6的曲线
+在这个拓展到相对论领域的图标里当达到了超相对论状态也就是热能KB成梯远远大于粒子净值质量M的时候曲线发生了惊人的变化我看到了当温度高到一定程度粒子的速度几乎都挤到了非常接近光速的V等于E附近经典的高四中型曲线此刻已经被生硬的挤成了贴着光速上线的一根陡峭的尖峰对当温度高耸入云粒子全都变成标车档以近光速狂奔谁也没法在那块狭窄的速度区域里了明白了我们快马加鞭来看看练习三六辐射过程这题其实又回到了统计物理与原子物理交界的领域 设定了一个具有两个能级电子的系统它们之间H成然后电子还以各种月签这题其实是引出了非常著名的AB系数理论
+然后电子还已发生各种越迁这题其实是引出了爱因斯坦非常著名的AB系数理论的核心概念
+假设电子以单位时间概率A从高能级U越迁到低能级L
+产生一个特定沼态的光子
+忽略碱病毒利用波尔兹曼分布和平晶光子占据数表大势
+在平衡状态下,因为电子和光子都在相同的温度梯下,你会得到功时3点26
+A乘N下标U加A乘N下标U乘A塔下标G等于A乘N下标L乘A塔下标G
+也就是A乘高能级电子数密度加相A乘高能级电子密度和光子平均占据数的积积等于A乘低能级电子密度和光子占据数的积积这长城的一个等式物理意义是什么这三项非常优雅的分别指带了单位体积内的辐射行为
+低效是自发发射
+第二项是受机发射而等号右边内唯一的项则是受机吸收的速率
+第二和第三项习惯上就用爱因斯坦B系数表示
+只有它们互相平衡热力学的天平才不会倾斜但是我读到绞住期的时候发现作者提醒我们想要让这三项过程在非热力学平衡乃至平衡态下都真的适用并且时间可逆
+如果想要给出极其严格和充分的推导是需要借助量子电动力学的我们的作者FORN一贯严禁
+确实如果要算真正的散射截面自发越迁的根本之根源量子电动理学也就是QED是无论如何也逃不掉的工具
+而在随后的小题中又进也引出了物理学史上赫赫有名的基尔护肤定律我看到了也就是把定义出的经典发射率J上标I下标NEWHATOMEGA除以经典吸收系数CAP下标I
+题中要求证明它们的笔直其实等于单级化模式的黑体辐射强度没错,这在说明什么
+发射能力强的物质必定吸收能力也强,这就是热平衡赋予它们的铁律
+更厉害的是这个庞大练习的最后一文一小题直接乏力把视野拉到了宇宙学里的弱相互作用了
+讲的是中子加中微子转变成电子和质子的弱核反应我的天这视野真是开阔
+这是一个非常长的积分公式,方程3.28
+DNA下标P除以dt,这是在算质子的生成率对吧
+它等于中子密度n下标n
+乘以一个包含了三个括号连成的巨大积分
+是的
+如果你仔细拆解,其实逻辑很明确
+第一项:D花体大V下标Pnew处于H的三次方成A下标New
+这是中微子的向空间密度和分布
+第二项里那个含有迪拉克德尔塔函数以及长数大W的项是能量守恒的约束条件
+而最有趣的是第三项第三项我看到了是括号二乘D花体大V下标PE除H三次方乘括号一减A塔下标E括号
+这个一减去电子平均占据数函数,这是什么意思?
+叫泡力阻塞效应
+因为生成的电子可是标准的非米子,它要服从泡力不相容原理
+如果目标状态已经满圆了,A塔接近1
+电子就出不来,转化过程就会被阻塞
+所以反应率必须乘以这个剩余空位概率括号一键A塔下标一括号
+哇不仅跨界到了宇宙学衰变居然还把费米子占据术带来的反向限制考虑得这么轻巧这简直是一道神奇练习还没完呢重头戏在压轴
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001053.6_formulatransition.jpg" src="../frames/frame_001053.6_formulatransition.jpg" /></p>
+<p><img alt="frame_001095.3_formula.jpg" src="../frames/frame_001095.3_formula.jpg" /></p>
+<p><img alt="frame_001295.5_formula.jpg" src="../frames/frame_001295.5_formula.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦于<strong>麦克斯韦-尤特纳速度分布、爱因斯坦AB系数理论、基尔霍夫定律以及弱核反应中的泡利阻塞效应</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述_1">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述_1" title="Permanent link">&para;</a></h2>
+<h3 id="截图1练习35-麦克斯韦-尤特纳速度分布">截图1：练习3.5 麦克斯韦-尤特纳速度分布<a class="headerlink" href="#截图1练习35-麦克斯韦-尤特纳速度分布" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：练习3.5：麦克斯韦-尤特纳（Maxwell-Jüttner）速度分布</li>
+<li><strong>核心公式</strong>：方程(3.25)的完整表达式，包含修正贝塞尔函数 <span class="arithmatex">\(K_2\)</span></li>
+<li><strong>右侧曲线图</strong>：图3.6展示三种温度 regimes 下的速度分布曲线</li>
+<li>虚线：经典麦克斯韦分布（<span class="arithmatex">\(k_BT \ll m\)</span>）</li>
+<li>中间曲线：过渡区域（<span class="arithmatex">\(k_BT \approx m\)</span>）</li>
+<li>最右侧尖峰：超相对论极限（<span class="arithmatex">\(k_BT \gg m\)</span>），速度几乎挤到 <span class="arithmatex">\(v \approx c\)</span>（即 <span class="arithmatex">\(v=1\)</span> 以自然单位表示）</li>
+</ul>
+<h3 id="截图2练习36下">截图2：练习3.6（下）<a class="headerlink" href="#截图2练习36下" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：练习3.6（下）：谱线宽度、极化、Kirchhoff定律与更一般推广</li>
+<li><strong>子问题(c)</strong>：基尔霍夫定律的证明，公式(3.27)定义发射率 <span class="arithmatex">\(j\)</span> 和吸收系数 <span class="arithmatex">\(\kappa\)</span></li>
+<li><strong>子问题(d)</strong>：推广到电子连续动量分布</li>
+<li><strong>子问题(e)</strong>：弱核反应 <span class="arithmatex">\(\nu + n \rightarrow e + p\)</span>，公式(3.28)的完整积分表达式</li>
+</ul>
+<hr />
+<h2 id="二核心公式详解_1">二、核心公式详解<a class="headerlink" href="#二核心公式详解_1" title="Permanent link">&para;</a></h2>
+<h3 id="公式325麦克斯韦-尤特纳速度分布相对论版本">公式3.25：麦克斯韦-尤特纳速度分布（相对论版本）<a class="headerlink" href="#公式325麦克斯韦-尤特纳速度分布相对论版本" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{P(v) = \frac{2/v_0^2}{K_2(2/v_0^2)} \cdot \frac{v^2}{(1-v^2)^{5/2}} \cdot \exp\left[-\frac{2/v_0^2}{\sqrt{1-v^2}}\right]} \tag{3.25}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(v\)</span></td>
+<td style="text-align: left;">粒子速度（以光速 <span class="arithmatex">\(c=1\)</span> 为单位，故 <span class="arithmatex">\(0 \leq v &lt; 1\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(v_0\)</span></td>
+<td style="text-align: left;">特征热速度，<span class="arithmatex">\(v_0 = \sqrt{2k_BT/m}\)</span>（与经典定义相同）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(K_2\)</span></td>
+<td style="text-align: left;"><strong>第二类二阶修正贝塞尔函数</strong>（Modified Bessel function of the second kind, order 2）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\((1-v^2)^{-5/2}\)</span></td>
+<td style="text-align: left;">洛伦兹因子 <span class="arithmatex">\(\gamma = (1-v^2)^{-1/2}\)</span> 的高次幂，来自相对论相空间体积元</td>
+</tr>
+<tr>
+<td style="text-align: left;">指数项</td>
+<td style="text-align: left;"><span class="arithmatex">\(\exp[-\gamma m c^2 / k_BT]\)</span>，即相对论玻尔兹曼因子</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键物理</strong>：
+- 分母中的 <span class="arithmatex">\(K_2(2/v_0^2)\)</span> 是归一化常数，确保 <span class="arithmatex">\(\int_0^1 P(v)dv = 1\)</span>
+- 当 <span class="arithmatex">\(v_0 \ll 1\)</span>（低温非相对论极限），此分布退化为经典麦克斯韦分布
+- 当 <span class="arithmatex">\(v_0 \gg 1\)</span>（高温超相对论极限），分布尖锐地峰值于 <span class="arithmatex">\(v \to 1^-\)</span></p>
+<hr />
+<h3 id="公式326爱因斯坦ab系数平衡方程">公式3.26：爱因斯坦AB系数平衡方程<a class="headerlink" href="#公式326爱因斯坦ab系数平衡方程" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[A_{UL} n_U + A_{UL} n_U \bar{\eta}_\nu = A_{LU} n_L \bar{\eta}_\nu\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(n_U, n_L\)</span></td>
+<td style="text-align: left;">高能级(U)和低能级(L)的电子数密度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_{UL}\)</span></td>
+<td style="text-align: left;"><strong>自发发射系数</strong>：单位时间内原子自发从 <span class="arithmatex">\(U \to L\)</span> 跃迁的概率</td>
+</tr>
+<tr>
+<td style="text-align: left;">第二项中的系数</td>
+<td style="text-align: left;"><strong>受激发射系数</strong> <span class="arithmatex">\(B_{UL}\)</span>（与 <span class="arithmatex">\(A_{UL}\)</span> 相关）</td>
+</tr>
+<tr>
+<td style="text-align: left;">右边系数</td>
+<td style="text-align: left;"><strong>受激吸收系数</strong> <span class="arithmatex">\(B_{LU}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\bar{\eta}_\nu\)</span></td>
+<td style="text-align: left;">频率为 <span class="arithmatex">\(\nu\)</span> 的光子平均占据数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义的三项平衡</strong>：
+| 项 | 过程 | 方向 | 关键特征 |
+|:---|:---|:---|:---|
+| <span class="arithmatex">\(A_{UL} n_U\)</span> | <strong>自发发射</strong>（Spontaneous emission） | <span class="arithmatex">\(U \to L\)</span> + 光子产生 | 与光子场是否存在无关 |
+| <span class="arithmatex">\(\propto n_U \bar{\eta}_\nu\)</span> | <strong>受激发射</strong>（Stimulated emission） | <span class="arithmatex">\(U \to L\)</span> + 光子产生 | 入射光子"克隆"自身，激光原理 |
+| <span class="arithmatex">\(\propto n_L \bar{\eta}_\nu\)</span> | <strong>受激吸收</strong>（Stimulated absorption） | <span class="arithmatex">\(L \to U\)</span> + 光子湮灭 | 吸收光子跃迁到高能级 |</p>
+<blockquote>
+<p>在热平衡下，利用玻尔兹曼分布 <span class="arithmatex">\(n_U/n_L = e^{-h\nu/k_BT}\)</span> 和普朗克分布 <span class="arithmatex">\(\bar{\eta}_\nu\)</span>，可导出著名的<strong>爱因斯坦关系</strong>：<span class="arithmatex">\(B_{UL} = B_{LU}\)</span> 以及 <span class="arithmatex">\(A_{UL}/B_{UL} = 8\pi h\nu^3/c^3\)</span>。</p>
+</blockquote>
+<hr />
+<h3 id="公式327发射率与吸收系数基尔霍夫定律">公式3.27：发射率与吸收系数（基尔霍夫定律）<a class="headerlink" href="#公式327发射率与吸收系数基尔霍夫定律" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[j_{\nu\hat{\Omega}}^i \equiv n_U h\nu A P_{\nu\hat{\Omega}}^i, \quad \kappa_i \equiv n_L A\left(1-e^{-h\nu_0/k_BT_e}\right)\frac{P_{\nu\hat{\Omega}}^i c^2}{\nu^2}\]</div>
+<p><strong>基尔霍夫定律的核心结论</strong>：</p>
+<div class="arithmatex">\[\boxed{\frac{j_{\nu\hat{\Omega}}^i}{\kappa_i} = B_\nu(T) = \frac{2h\nu^3/c^2}{e^{h\nu/k_BT}-1}}\]</div>
+<p>这是<strong>单极化模式的黑体辐射强度</strong>。</p>
+<p><strong>物理内涵</strong>：发射能力与吸收能力成正比——"好的吸收体也是好的发射体"。这是热平衡的必然要求，与材料具体性质无关。</p>
+<hr />
+<h3 id="公式328弱核反应中的质子生成率含泡利阻塞">公式3.28：弱核反应中的质子生成率（含泡利阻塞）<a class="headerlink" href="#公式328弱核反应中的质子生成率含泡利阻塞" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\frac{dn_p}{dt} = n_n \int \underbrace{\left(\frac{2dV_{p_\nu}}{h^3}\eta_\nu\right)}_{\text{(1) 中微子相空间密度}} \underbrace{\left(hc\frac{W}{p_\nu^2}\delta(E_\nu+m_n-E_e-m_p)\right)}_{\text{(2) 能量守恒}} \underbrace{\left(\frac{2dV_{p_e}}{h^3}(1-\eta_e)\right)}_{\text{(3) 泡利阻塞因子}} \tag{3.28}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(n_p, n_n\)</span></td>
+<td style="text-align: left;">质子、中子数密度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_\nu\)</span></td>
+<td style="text-align: left;">中微子平均占据数（入射粒子分布）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(dV_{p_\nu}/h^3\)</span></td>
+<td style="text-align: left;">中微子动量空间体积元（相空间因子）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(W\)</span></td>
+<td style="text-align: left;">跃迁矩阵元平方（与弱相互作用耦合常数 <span class="arithmatex">\(G_F\)</span> 相关）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta(\cdots)\)</span></td>
+<td style="text-align: left;">狄拉克δ函数，强制执行能量守恒</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(1-\eta_e\)</span></td>
+<td style="text-align: left;"><strong>泡利阻塞因子</strong>（Pauli blocking factor）——<strong>本段最关键的新概念</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三核心概念深度解释">三、核心概念深度解释<a class="headerlink" href="#三核心概念深度解释" title="Permanent link">&para;</a></h2>
+<h3 id="1-超相对论极限下的速度尖峰现象">1. 超相对论极限下的"速度尖峰"现象<a class="headerlink" href="#1-超相对论极限下的速度尖峰现象" title="Permanent link">&para;</a></h3>
+<p><strong>经典图像</strong>：麦克斯韦分布是光滑的钟形曲线，最概然速率 <span class="arithmatex">\(v_{mp} \sim \sqrt{k_BT/m}\)</span> 随温度升高而增大。</p>
+<p><strong>相对论颠覆</strong>：当 <span class="arithmatex">\(k_BT \gg mc^2\)</span>：
+- 粒子能量 <span class="arithmatex">\(E \approx pc \gg mc^2\)</span>，即极端相对论
+- 但速度受狭义相对论限制，<strong>永远无法达到或超过光速</strong>
+- 所有粒子都被"挤压"在 <span class="arithmatex">\(v \in [1-\epsilon, 1)\)</span> 的狭窄区间内
+- 分布变成贴着 <span class="arithmatex">\(v=1\)</span> 的<strong>陡峭尖峰</strong></p>
+<blockquote>
+<p>通俗类比：想象高速公路限速120km/h。低温时车辆速度分散；高温时所有车辆都想狂飙，但都被电子眼（相对论）死死卡在119km/h附近，形成"拥堵尖峰"。</p>
+</blockquote>
+<hr />
+<h3 id="2-泡利阻塞效应pauli-blocking">2. 泡利阻塞效应（Pauli Blocking）<a class="headerlink" href="#2-泡利阻塞效应pauli-blocking" title="Permanent link">&para;</a></h3>
+<p>这是<strong>量子统计对反应动力学的关键修正</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">情景</th>
+<th style="text-align: left;">占据数 <span class="arithmatex">\(\eta_e\)</span></th>
+<th style="text-align: left;">阻塞因子 <span class="arithmatex">\(1-\eta_e\)</span></th>
+<th style="text-align: left;">物理结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">目标态空</td>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_e \approx 0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\approx 1\)</span></td>
+<td style="text-align: left;">反应正常进行</td>
+</tr>
+<tr>
+<td style="text-align: left;">目标态半满</td>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_e \approx 0.5\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\approx 0.5\)</span></td>
+<td style="text-align: left;">反应率减半</td>
+</tr>
+<tr>
+<td style="text-align: left;">目标态近满（简并）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_e \to 1\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\to 0\)</span></td>
+<td style="text-align: left;"><strong>反应被完全阻塞</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>在弱核反应 <span class="arithmatex">\(\nu + n \rightarrow e + p\)</span> 中的应用</strong>：
+- 生成的电子是<strong>费米子</strong>，必须服从泡利不相容原理
+- 如果周围电子气体已经高度简并（如中子星内部、早期宇宙高密度环境），低能电子态已被填满
+- 新电子只能占据高于费米能级的态，这大大<strong>抑制了反应速率</strong>
+- 因子 <span class="arithmatex">\((1-\eta_e)\)</span> 精确量化了这种<strong>量子统计抑制</strong></p>
+<blockquote>
+<p>宇宙学意义：在早期宇宙 <span class="arithmatex">\(T \sim 1\)</span> MeV 的弱平衡时期，泡利阻塞效应显著影响了中子-质子比例，进而决定了<strong>原初氦丰度</strong>！</p>
+</blockquote>
+<hr />
+<h3 id="3-从原子物理到宇宙学的神奇练习">3. 从原子物理到宇宙学的"神奇练习"<a class="headerlink" href="#3-从原子物理到宇宙学的神奇练习" title="Permanent link">&para;</a></h3>
+<p>这段练习的精妙设计：</p>
+<div class="highlight"><pre><span></span><code>练习3.6的层次结构：
+(a)(b) 原子物理：谱线宽度、自然展宽、多普勒展宽
+(c)    热力学/辐射转移：基尔霍夫定律（局域热平衡）
+(d)    推广：连续谱（电离态）
+(e)    宇宙学/粒子物理：弱核反应 + 量子统计效应
+</code></pre></div>
+<p>这种<strong>跨尺度贯通</strong>是理论物理的精髓——从氢原子到早期宇宙，相同的统计原理统摄一切。</p>
+<hr />
+<h2 id="四修正贝塞尔函数-k_2-的物理角色">四、修正贝塞尔函数 <span class="arithmatex">\(K_2\)</span> 的物理角色<a class="headerlink" href="#四修正贝塞尔函数-k_2-的物理角色" title="Permanent link">&para;</a></h2>
+<p>在相对论麦克斯韦分布的推导中，归一化积分：</p>
+<div class="arithmatex">\[\int_0^\infty \gamma^5 \beta^2 e^{-\gamma/\theta} d\beta = K_2(1/\theta)/\theta\]</div>
+<p>其中 <span class="arithmatex">\(\theta = k_BT/mc^2 = v_0^2/2\)</span>。</p>
+<p><span class="arithmatex">\(K_2(x)\)</span> 的渐近行为：
+- <span class="arithmatex">\(x \to \infty\)</span>（低温）：<span class="arithmatex">\(K_2(x) \sim \sqrt{\pi/2x}e^{-x}\)</span>，恢复经典结果
+- <span class="arithmatex">\(x \to 0\)</span>（高温）：<span class="arithmatex">\(K_2(x) \sim 2/x^2\)</span>，与超相对论极限匹配</p>
+<p>这保证了分布在两个极端下的正确归一化。</p>
+<hr />
+<h2 id="段落-5">段落 5：练习3.7：宇宙微波背景辐射、多普勒偶极与课程总结<a class="headerlink" href="#段落-5" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:23:41 ~ 00:28:24</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+我们迎接今天最后一个挑战
+练习三点七
+从地球观测宇宙微波背景辐射CMB
+可是关联到诺贝尔物理学奖的神奇观测现象大爆炸遗留下来的余辉
+在这个辐射自己的平均净值系里看,它是非常完美的热平衡产物,化学视野为零,它是一个标准的黑体普朗克分布
+平均温度T下标O等于极低的二七二五K二文对在A小题题目还要求大家推倒后亲手画出比强度的光谱并找出强度的峰值频率
+实际上这就是在让大家复现大名鼎鼎的维恩位移定律但它不仅如此是的随后的公式三百三十把这套平均占据数体系改写成了一个能够独立于任何参考系的通用形式
+一塔等于一除括号一的负四动两P点成四速度U下标O除括号KB成T下标O括号次方减一括号
+这里的P是光子的四冻两
+而U下标O变成了平均静止系的四速度
+既然普朗克分布已经很好了
+我们费那么大劲改造它干什么呢当然是为了方便我们把地球的宏观运动加进去考量
+如果大家抬头看星空我们的地球相对于这个CNB静止系从来都不是静止的
+事实上地球所在坐标系正以大概四百千匹汤秒的速度V朝着空中长蛇半人马座的方向飞奔
+不改写成四十辆点击的形式你是没法在不同参考系下游刃有余地计算相对论多普勒效应的哇我大概能想到了因为多普勒效应如果是地球迎面撞上来的那些宇宙微波背景光子应该会显得能量更高温度更热吧
+我看看推演出的公式
+三点三十一
+测到的地球系微波背景温度T等于T下标O成跨号跟号下一减V平方除以括号一减V成扣散C塔括号括号
+在这个公式里C塔代表观测方向和地球运动方向之间的假角对吗你领悟得非常精准
+这个壮观的现象叫做多普勒偶及各项异性
+你设想一下,当你迎着地球飞奔的前进方向去看,CTA等于0也就是COXI CTA最大
+公事分母最小
+于是测出的微波温度T就会偏高
+而当你回头看向背后温度就偏低
+而且,因为速度V远小于光速,你可以对公式泰勒展开
+他会惊讶地发现它几乎就是一个完美的偶几子分度
+我们测到了吗
+当然
+题目的最后给出了当年WMAP卫星的绝佳数据
+年平均的偶级温度变化幅度为3.346乘10的负34K
+这篇出自贝内特等人在二零零三年的报告是人类探索宇宙的一座峰碑
+通过简单的一步代数处方计算仅仅依靠测算微波背景温度变化的极为小幅度我们就能精确推导出地球穿梭在宇宙中的绝对速度了简直绝了把刻板里的分布函数简单的提及积分公式一路推演到泡力组塞效应更是一步步丈量出了地球在宏观宇宙中飞驰的绝对运动
+这就是物理学真正的独一无二的浪漫吧,很高兴你能有这样深刻的体会转
+无论面对多么复杂的等离子磁体若相互作用衰变或者是巨型的天文观测
+它们的本质都深深扎根在我们今天研究的这些热平衡以及向空间分布的基土规律里
+打好这座地基以后的星辰大海我们才能飞得更高今天感觉脑容量被撑爆又被彻底刷新了非常感谢大家坚持收听到这里今天的现代经典物理学第十六课博客就到此告一段落了
+再次感谢赛老师带领我们硬核突围也感谢专爱的精彩反馈和提问
+理论之路道足且长,我们下期见同学们,大家拜拜啦
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001463.5_formula.jpg" src="../frames/frame_001463.5_formula.jpg" /></p>
+<p><img alt="frame_001551.0_formula.jpg" src="../frames/frame_001551.0_formula.jpg" /></p>
+<p><img alt="frame_001598.5_formula.jpg" src="../frames/frame_001598.5_formula.jpg" /></p>
+<h3 id="注解_4">注解<a class="headerlink" href="#注解_4" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点聚焦于<strong>宇宙微波背景辐射（CMB）的相对论性描述、多普勒偶极各向异性以及地球绝对速度的测量</strong>。</p>
+<hr />
+<h2 id="一板书ppt截图内容描述_2">一、板书/PPT截图内容描述<a class="headerlink" href="#一板书ppt截图内容描述_2" title="Permanent link">&para;</a></h2>
+<h3 id="截图练习37-完整题目设置">截图：练习3.7 完整题目设置<a class="headerlink" href="#截图练习37-完整题目设置" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">区域</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>顶部标题</strong></td>
+<td style="text-align: left;">"练习3.7：从地球观测CMB——普朗克谱与偶极各向异性"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>核心公式框</strong></td>
+<td style="text-align: left;">公式(3.29)：<span class="arithmatex">\(\eta = \frac{1}{e^{h\nu/(k_B T_0)}-1}\)</span>，<span class="arithmatex">\(T_0 = 2.725\)</span> K</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>三维示意图</strong></td>
+<td style="text-align: left;">右侧地球-坐标系图：显示地球以速度<span class="arithmatex">\(v\)</span>朝向长蛇-半人马座方向（Hydra-Centaurus）运动，标注观测方向与运动方向的夹角<span class="arithmatex">\(\theta\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>天球温度分布图</strong></td>
+<td style="text-align: left;">下方彩色球体：红色区域（温度极高方向）与蓝色区域（温度极低方向），标注"最大温方向"和"最小温方向"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>脚注</strong></td>
+<td style="text-align: left;">WMAP 2003年结果：偶极温度变化幅度 <span class="arithmatex">\(3.364 \times 10^{-3}\)</span> K，测得地球速度 <span class="arithmatex">\(369 \pm 3\)</span> km/s</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二核心公式详解_2">二、核心公式详解<a class="headerlink" href="#二核心公式详解_2" title="Permanent link">&para;</a></h2>
+<h3 id="公式329cmb静止系中的普朗克分布">公式3.29：CMB静止系中的普朗克分布<a class="headerlink" href="#公式329cmb静止系中的普朗克分布" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta = \frac{1}{e^{h\nu/(k_B T_0)} - 1}, \quad T_0 = 2.725\,\text{K}}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta\)</span></td>
+<td style="text-align: left;">光子平均占据数（玻色-爱因斯坦分布，化学势<span class="arithmatex">\(\mu=0\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(h\)</span></td>
+<td style="text-align: left;">普朗克常数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\nu\)</span></td>
+<td style="text-align: left;">光子频率（在CMB静止系中测量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(k_B\)</span></td>
+<td style="text-align: left;">玻尔兹曼常数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_0\)</span></td>
+<td style="text-align: left;">CMB静止系中的特征温度（宇宙学标准值）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>关键物理</strong>：CMB是"大爆炸余辉"，在自身静止系中是完美的黑体辐射，化学势为零，各向同性。</p>
+</blockquote>
+<hr />
+<h3 id="公式330参考系无关的协变形式核心创新">公式3.30：参考系无关的协变形式（核心创新）<a class="headerlink" href="#公式330参考系无关的协变形式核心创新" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\eta = \frac{1}{e^{-\vec{p}\cdot\vec{u}_0/(k_B T_0)} - 1}}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{p}\)</span></td>
+<td style="text-align: left;">光子的<strong>四动量</strong>（<span class="arithmatex">\(p^\mu = (E/c, \vec{p}_{\text{空间}})\)</span>）</td>
+<td style="text-align: left;">相对论协变量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{u}_0\)</span></td>
+<td style="text-align: left;">CMB静止系的<strong>四速度</strong>（<span class="arithmatex">\(u_0^\mu = (c, 0, 0, 0)\)</span>在静止系中）</td>
+<td style="text-align: left;">定义"静止"的基准</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\vec{p}\cdot\vec{u}_0\)</span></td>
+<td style="text-align: left;">四矢量点积（洛伦兹不变量）</td>
+<td style="text-align: left;"><span class="arithmatex">\(= -p_\mu u_0^\mu = E_{\text{共动}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>为何需要这个形式？</strong>
+- 公式(3.29)中的<span class="arithmatex">\(\nu\)</span>是<strong>特定参考系</strong>中的频率
+- 公式(3.30)使用<strong>洛伦兹不变量</strong><span class="arithmatex">\(\vec{p}\cdot\vec{u}_0\)</span>，可在任意参考系中计算
+- 这是处理<strong>相对论多普勒效应</strong>的数学利器</p>
+<hr />
+<h3 id="公式331地球系中的观测温度多普勒效应">公式3.31：地球系中的观测温度（多普勒效应）<a class="headerlink" href="#公式331地球系中的观测温度多普勒效应" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{T = T_0 \frac{\sqrt{1-v^2/c^2}}{1 - \frac{v}{c}\cos\theta}}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T\)</span></td>
+<td style="text-align: left;">地球参考系中测得的温度（<strong>方向依赖</strong>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_0\)</span></td>
+<td style="text-align: left;">CMB静止系温度（2.725 K）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(v\)</span></td>
+<td style="text-align: left;">地球相对CMB静止系的速度（~400 km/s）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(c\)</span></td>
+<td style="text-align: left;">光速</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\theta\)</span></td>
+<td style="text-align: left;"><strong>观测方向</strong>与<strong>地球运动方向</strong>的夹角</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\sqrt{1-v^2/c^2}\)</span></td>
+<td style="text-align: left;">洛伦兹因子<span class="arithmatex">\(\gamma^{-1}\)</span>（时间膨胀/长度收缩）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>方向依赖性分析</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">观测方向</th>
+<th style="text-align: left;"><span class="arithmatex">\(\cos\theta\)</span></th>
+<th style="text-align: left;">温度行为</th>
+<th style="text-align: left;">物理图像</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>正前方</strong>（迎向运动）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\theta=0\)</span>, <span class="arithmatex">\(\cos\theta=1\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T = T_0\sqrt{\frac{1+v/c}{1-v/c}} &gt; T_0\)</span></td>
+<td style="text-align: left;">蓝移，光子能量更高，"更热"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>正后方</strong>（背向运动）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\theta=\pi\)</span>, <span class="arithmatex">\(\cos\theta=-1\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T = T_0\sqrt{\frac{1-v/c}{1+v/c}} &lt; T_0\)</span></td>
+<td style="text-align: left;">红移，光子能量更低，"更冷"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>垂直方向</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\theta=\pi/2\)</span>, <span class="arithmatex">\(\cos\theta=0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T = T_0/\gamma \approx T_0\)</span></td>
+<td style="text-align: left;">横向多普勒效应（二级小量）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三关键物理概念详解">三、关键物理概念详解<a class="headerlink" href="#三关键物理概念详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-多普勒偶极各向异性dipole-anisotropy">1. 多普勒偶极各向异性（Dipole Anisotropy）<a class="headerlink" href="#1-多普勒偶极各向异性dipole-anisotropy" title="Permanent link">&para;</a></h3>
+<p><strong>核心现象</strong>：由于地球运动，CMB温度在天球上呈现<strong>偶极分布</strong>——一侧更热，一侧更冷。</p>
+<p><strong>非相对论近似</strong>（<span class="arithmatex">\(v \ll c\)</span>，泰勒展开）：</p>
+<div class="arithmatex">\[\frac{T - T_0}{T_0} \approx \frac{v}{c}\cos\theta + \mathcal{O}\left(\frac{v^2}{c^2}\right)\]</div>
+<p>这正是<strong>偶极子分布</strong>：<span class="arithmatex">\(\propto \cos\theta\)</span>，天球上温度变化呈完美的<span class="arithmatex">\(\cos\theta\)</span>模式。</p>
+<p><strong>定量估算</strong>：
+- <span class="arithmatex">\(v \approx 400\)</span> km/s <span class="arithmatex">\(= 400/300000 \approx 1.33 \times 10^{-3}c\)</span>
+- 预期温度变化幅度：<span class="arithmatex">\(\Delta T/T_0 \sim v/c \sim 10^{-3}\)</span>
+- <span class="arithmatex">\(\Delta T \sim 2.725 \times 10^{-3}\)</span> K <span class="arithmatex">\(\sim 3 \times 10^{-3}\)</span> K</p>
+<p>这与WMAP数据<strong><span class="arithmatex">\(3.364 \times 10^{-3}\)</span> K</strong>完美吻合！</p>
+<hr />
+<h3 id="2-从温度变化测地球绝对速度">2. 从温度变化测地球绝对速度<a class="headerlink" href="#2-从温度变化测地球绝对速度" title="Permanent link">&para;</a></h3>
+<p><strong>反推逻辑</strong>（课程强调的"浪漫"）：</p>
+<div class="arithmatex">\[\text{测到的}\frac{\Delta T}{T_0} \xrightarrow{\text{公式3.31}} \text{推出}\frac{v}{c} \xrightarrow{\text{已知}c} \text{得到} v_{\text{地球}}\]</div>
+<p><strong>精妙之处</strong>：
+- 不需要任何"外部基准"
+- 利用<strong>宇宙学背景本身</strong>作为绝对参考系
+- 通过<strong>微观的热平衡分布</strong>推导出<strong>宏观的绝对运动</strong></p>
+<p>这就是物理学的"<strong>相对中的绝对</strong>"——CMB静止系定义了宇宙学意义上的"静止"，而地球相对这个静止系的速度是可以精确测量的。</p>
+<hr />
+<h3 id="3-历史背景诺贝尔物理学奖与cmb">3. 历史背景：诺贝尔物理学奖与CMB<a class="headerlink" href="#3-历史背景诺贝尔物理学奖与cmb" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">年份</th>
+<th style="text-align: left;">成就</th>
+<th style="text-align: left;">获奖者</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1964</td>
+<td style="text-align: left;">CMB的发现（彭齐亚斯&amp;威尔逊）</td>
+<td style="text-align: left;">1978年诺贝尔物理学奖</td>
+</tr>
+<tr>
+<td style="text-align: left;">1992</td>
+<td style="text-align: left;">COBE卫星：CMB黑体谱精确验证、各向异性发现</td>
+<td style="text-align: left;">2006年诺贝尔物理学奖（马瑟&amp;斯穆特）</td>
+</tr>
+<tr>
+<td style="text-align: left;">2003</td>
+<td style="text-align: left;">WMAP：高精度全天图，精确偶极测量</td>
+<td style="text-align: left;">贝内特等人（题目引用）</td>
+</tr>
+<tr>
+<td style="text-align: left;">2018</td>
+<td style="text-align: left;">Planck卫星：更高精度CMB参数</td>
+<td style="text-align: left;">—</td>
+</tr>
+</tbody>
+</table>
+<p>课程引用的<strong>Bennett et al. 2003</strong>是WMAP首年数据释放的经典论文，标志着"精确宇宙学"时代的开启。</p>
+<hr />
+<h2 id="四公式推导脉络课程隐含的逻辑">四、公式推导脉络（课程隐含的逻辑）<a class="headerlink" href="#四公式推导脉络课程隐含的逻辑" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>CMB静止系普朗克分布 (3.29)
+           ↓
+    改写为四矢量协变形式 (3.30)
+    η = 1/[exp(-p·u₀/k_BT₀) - 1]
+           ↓
+    地球运动：u₀ → 地球系四速度 u
+    利用洛伦兹变换：p·u₀ = p·Λ⁻¹·u = (Λp)·u
+           ↓
+    计算得地球系中的等效温度 (3.31)
+    T(θ) = T₀·√(1-v²/c²)/(1-v/c·cosθ)
+           ↓
+    v≪c展开 → 偶极近似 → 与WMAP数据对比 → 定出v
+</code></pre></div>
+<hr />
+<h2 id="五课程总结的核心思想">五、课程总结的核心思想<a class="headerlink" href="#五课程总结的核心思想" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>"无论面对多么复杂的等离子、磁流体、相互作用、衰变，或者是巨型的天文观测，它们的本质都深深扎根在我们今天研究的这些热平衡以及相空间分布的基土规律里。"</p>
+</blockquote>
+<p><strong>本节展示的研究范式</strong>：
+- <strong>从微观到宏观</strong>：单个光子的玻色分布 → 宇宙尺度的运动学
+- <strong>从相对到绝对</strong>：利用相对论协变性 → 测量绝对速度
+- <strong>从理论到观测</strong>：黑板上的公式 → 卫星实测数据</p>
+<p>这正是理论物理"<strong>硬核突围</strong>"的魅力所在。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

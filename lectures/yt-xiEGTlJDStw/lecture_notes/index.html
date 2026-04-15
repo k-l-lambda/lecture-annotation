@@ -1,0 +1,2455 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-xiEGTlJDStw/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-yqzjq6goYWQ/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-FdgRvHwxQ3o/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第4课 群论：对称性的语言 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第4课-群论对称性的语言" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第4课 群论：对称性的语言
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程导论：从对称性到庞加莱群目标
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程导论：从对称性到庞加莱群目标">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一-截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二-核心概念与符号解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、 核心概念与符号解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：直观例子入门：离散群、连续群与群的基本特征
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：直观例子入门：离散群、连续群与群的基本特征">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一-截图板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二-核心概念与公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、 核心概念与公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：群的公理化定义、表示观点与课程总结展望
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：群的公理化定义、表示观点与课程总结展望">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一-截图板书内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二-核心概念与公式解析_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、 核心概念与公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程导论：从对称性到庞加莱群目标
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程导论：从对称性到庞加莱群目标">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一-截图板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二-核心概念与符号解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、 核心概念与符号解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：直观例子入门：离散群、连续群与群的基本特征
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：直观例子入门：离散群、连续群与群的基本特征">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一-截图板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二-核心概念与公式解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、 核心概念与公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：群的公理化定义、表示观点与课程总结展望
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：群的公理化定义、表示观点与课程总结展望">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一-截图板书内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、 截图板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#二-核心概念与公式解析_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、 核心概念与公式解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第4课-群论对称性的语言">《基于对称性的物理学》第4课 群论：对称性的语言<a class="headerlink" href="#基于对称性的物理学第4课-群论对称性的语言" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 3 个段落）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 课程导论：从对称性到庞加莱群目标</a></li>
+<li><a href="#段落-2">00:05:00 直观例子入门：离散群、连续群与群的基本特征</a></li>
+<li><a href="#段落-3">00:11:00 群的公理化定义、表示观点与课程总结展望</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程导论：从对称性到庞加莱群目标<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:05:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎来到基于对称性的物理学博客我是你们活泼好奇的主持人乔伊大家好我是知识渊博的赛很高兴再次和大家见面赛老师今天我们来到第四课要正式开启理群理论的大门了一听理论就感觉有点抽象物理学高年级的同学们是不是要开始头疼了我们今天从哪儿开始呢哈哈乔伊别急我们先从一句特别有意思的话开始有位数学家要马克阿姆斯特朗他说过这么一句话数字衡量大小群衡量大小群衡量对称这句话听起来就很有哲学意义所以我们今天要学的群就是用来衡量对称的工具对吗没错在物理学里对称性无处不在从基本粒子的性质
+到时空的结构对称性都是理解他们的核心而群论就是我们用来精确描述和利用这些对称性的数学框架再能给我们指条明路吗我们将要讲些什么呢没问题乔伊今天这节课我们会像爬山一样先看看山顶是什么然后规划路线我们最终的目标是推导出庞加来群双覆盖的那些基本表示这可是描述所有基本粒子也就是宇宙中最小构成单元的关键工具哇听起来很酷所以我们最终要揭示基本粒子背后的秘密知道自然界到底有哪是粒子类型没错可以这么理解但我们得从最基础的开始首先我们会定义什么是群然后用两个简单的粒子来感受它比如我们先从二维旋转开始二维旋转就是我们平时转圈那种嘛
+这和李群有什么关系呢可以这么理解我们会介绍两种描述二维旋转的方法一种是二乘二的旋转矩阵这两种方式虽然不同但描述的是同一件事儿它们都是群的例子明白了就像是书图同归那三位旋转呢是不是更复杂了对三位旋转会引出我们一个非常重要的群叫做SU二这里的S代表特殊就是说矩阵的行列是必须是一U代表有意思是这个矩阵是腰正的而二则说明我们用的是二乘二的矩阵来定义它原来SU二有这么多含义在里面那接下来我们要学什么李代数又是怎么回事这个是一个非常好的问题李代数就像是李群的简化版或者说线性化版本
+理论上可能很复杂但通过对应的理带数我们可以用更简单更容易处理的线性代数工具去理解它所以理带数帮我们抽丝剥剪找到最核心的东西正是如此很多不同的理群可能共享同一个理带数但其中只有一个才是最根本最基础的我们通常从已知的变化出发找出他们的理带数再从理带数推导出不同的表示这能让我们看到我们最初的那个变化其实只是众多表示中的一个特例这听起来像是在寻找宇宙的通用语言那我们今天最终会触及哪些具体的物理概念呢可以这么说接下来我们会把学到的知识应用到洛伦子群上洛伦子群是庞家来群的重要组成部分它描述的是狭义相对论中的时空变化
+双附开的李带数是由两个SU二李带数直接叠加而成的所以我们之前选SU二就很有用了它在这里又出现了没错非常关键最后我们再把平移变换也考虑进来这样就得到了完整的庞嘉来群庞嘉来群就是落伦子群加上平移它被我们认为是时空最基本的对称群那到了这一步我们是不是就快到山顶了离我们的最终目标很近了是的到那时我们就掌握了所有工具来对庞嘉来群双附开的基本表示进行分类这些基本表示就是我们未来章节里推到物理学基本定律的即时也是理解基本粒子性质的关键太棒了听塞这么一说感觉整个路线图清晰多了从基础的群定义到二维三维旋转再到庞嘉来群最后构建
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.0_transitionparastart.jpg" src="../frames/frame_000000.0_transitionparastart.jpg" /></p>
+<p><img alt="frame_000120.0_formula.jpg" src="../frames/frame_000120.0_formula.jpg" /></p>
+<p><img alt="frame_000240.0_formulatransition.jpg" src="../frames/frame_000240.0_formulatransition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>这里是对本段课程内容的深度注解：</p>
+<h3 id="一-截图板书内容描述">一、 截图板书内容描述<a class="headerlink" href="#一-截图板书内容描述" title="Permanent link">&para;</a></h3>
+<p><strong>截图 1：群论：对称性的语言</strong>
+*   <strong>核心定义</strong>：对称性 = 变换下的不变性（如果一个物体经过变换后看起来和原来一样，这个变换就是一种对称）。引用了名言：“数字衡量大小，群衡量对称性。”
+*   <strong>对称性的种类</strong>：分为<strong>离散对称性</strong>（如正方形只能旋转90°、180°等特定角度）和<strong>连续对称性</strong>（如圆形可以绕圆心旋转任意角度）。
+*   <strong>群公理（四个数学规则）</strong>：
+    1.  <strong>封闭性 (Closure)</strong>：两种对称操作的组合，其结果仍是有效的对称操作。
+    2.  <strong>单位元 (Identity Element)</strong>：存在一个“什么都不做”的操作，使物体保持原样。
+    3.  <strong>逆元 (Inverse Element)</strong>：每种对称操作都有一个可以“撤销”它的逆操作。
+    4.  <strong>结合律 (Associativity)</strong>：连续进行多个操作时，执行的组合顺序不影响最终结果。</p>
+<p><strong>截图 2 &amp; 3：我们的探索之旅与最终目标</strong>
+*   <strong>探索路线图</strong>：
+    *   二维旋转：<span class="arithmatex">\(U(1)\)</span>, <span class="arithmatex">\(SO(2)\)</span>
+    *   三维旋转：<span class="arithmatex">\(SU(2)\)</span>, <span class="arithmatex">\(SO(3)\)</span>
+    *   洛伦兹变换（李代数）
+    *   庞加莱群（洛伦兹变换 + 平移）
+*   <strong>最终目标</strong>：推导庞加莱群双重覆盖的“基本表示”。假设这是时空的基本对称群，这些表示是描述所有基本粒子的工具，将揭示自然界中存在哪些类型的基本粒子。</p>
+<hr />
+<h3 id="二-核心概念与符号解析">二、 核心概念与符号解析<a class="headerlink" href="#二-核心概念与符号解析" title="Permanent link">&para;</a></h3>
+<p><strong>1. 二维旋转群：<span class="arithmatex">\(U(1)\)</span> 与 <span class="arithmatex">\(SO(2)\)</span></strong>
+*   <strong><span class="arithmatex">\(SO(2)\)</span></strong>：Special Orthogonal group in 2 dimensions（二维特殊正交群）。代表二维平面上的旋转矩阵。<span class="arithmatex">\(S\)</span> (Special) 意味着矩阵的行列式为 1（排除镜像翻转），<span class="arithmatex">\(O\)</span> (Orthogonal) 意味着矩阵是正交的（保持长度不变）。
+*   <strong><span class="arithmatex">\(U(1)\)</span></strong>：Unitary group of degree 1（一维酉群）。可以用模长为 1 的复数 <span class="arithmatex">\(e^{i\theta}\)</span> 表示。
+*   <strong>物理意义</strong>：两者在数学上是同构的（描述同一件事），都用来描述二维平面上的连续旋转。</p>
+<p><strong>2. 三维旋转群：<span class="arithmatex">\(SU(2)\)</span> 与 <span class="arithmatex">\(SO(3)\)</span></strong>
+*   <strong><span class="arithmatex">\(SO(3)\)</span></strong>：三维空间中的常规旋转群。
+*   <strong><span class="arithmatex">\(SU(2)\)</span></strong>：Special Unitary group of degree 2（二维特殊酉群）。<span class="arithmatex">\(U\)</span> 代表酉矩阵（复数域中保持内积不变），<span class="arithmatex">\(S\)</span> 代表行列式为 1，<span class="arithmatex">\(2\)</span> 代表它是 <span class="arithmatex">\(2 \times 2\)</span> 的复矩阵。
+*   <strong>物理意义</strong>：<span class="arithmatex">\(SU(2)\)</span> 是 <span class="arithmatex">\(SO(3)\)</span> 的<strong>双重覆盖</strong>。在量子力学中，<span class="arithmatex">\(SU(2)\)</span> 至关重要，它是描述自旋为 1/2 的粒子（如电子、夸克等费米子）的数学基础。</p>
+<p><strong>3. 李群 (Lie Group) 与 李代数 (Lie Algebra)</strong>
+*   <strong>李群</strong>：既是“群”又是“光滑流形”的数学结构，用来描述<strong>连续</strong>的对称变换（如任意角度的旋转）。
+*   <strong>李代数</strong>：可以理解为李群在单位元（即“什么都不做”的状态）附近的切空间。
+*   <strong>通俗解释</strong>：李群描述的是宏观的、整体的复杂变换；而李代数描述的是微观的、无穷小的线性变换。通过研究简单的李代数（线性代数工具），我们可以推导出复杂的李群性质，这就是视频中说的“抽丝剥茧”。</p>
+<p><strong>4. 洛伦兹群 (Lorentz Group) 与 庞加莱群 (Poincaré Group)</strong>
+*   <strong>洛伦兹群</strong>：狭义相对论中，保持时空距离（光速不变）的所有线性变换的集合，包括空间旋转和洛伦兹递升（不同速度参考系之间的转换）。
+*   <strong>庞加莱群</strong>：<strong>洛伦兹群 + 时空平移</strong>。它是平直时空最完整的对称群。
+*   <strong>物理意义</strong>：物理学家通过寻找庞加莱群的“表示”（即数学上的分类），实际上是在给宇宙中所有可能存在的基本粒子“上户口”。粒子的质量和自旋，正是由庞加莱群的对称性严格定义的。</p>
+<hr />
+<h2 id="段落-2">段落 2：直观例子入门：离散群、连续群与群的基本特征<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:05:00 ~ 00:11:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+望来大家可以理解这个概念了
+它有四条边四个角都一样如果我把它旋转九十度一百八十度两百七十度或者干脆不转它看起来都还是那个正方形说得太对了想象一下你闭上眼睛有人在你面前转动一个正方形如果你睁开眼后完全看不出它被动过那这次转动就是一种对称变化哦我懂了就像您说的转九十度一百八十度或者两百七十度甚至不转也就是转零度看起来都一样没错但如果直转了五度呢那肯定看得出来它的角垫都跑偏了不再是原来那个样子了对所以只有那些特定的转动角度零度九十度一百八十度两百七十度才构成了正方形的变换集合因为这些角度是离散的不能取任意值离散群我记住了
+有没有那种可以任意转的对称性呢当然有我们再来看一个例子单位圆就你觉得一个单位圆围绕它的圆形转动会有哪些对称性单位圆啊它长得那么圆不管我转多少度它看起来都还是那个单位圆转五度十度三十度三十五度都一样完全正确单位圆对于绕圆形的任意角度转动都是不变的也就是说它的变换参数旋转角度可以取任意连续的值这种群我们就称为连续群听起来连续群就更自由一些所以我们理群理论主要就是研究这种连续群吗精辟理群理论正是群论的一个分支它专门处理像单位圆这种变换参数可以连续变法的对称性这种连续的对称性在物理学中尤其重要明白了所以从正方形
+数学和单位圆的例子我们看到了对近性可以是离散的也可以是连续的那我们怎么把这些直观的理解用数学语言严格的定义出来呢很好拽这正是我们接下来要做为了让群这个概念变得通用不仅仅局限里几何图形数学家们从这些对称变换中提炼出了几个最基本的共同特征只要一个集合和一种运算满足这些特征我们就可以称它为一个群听起来有点像搭积木把最核心的砖块抽出来那这些核心特征都有哪些呢我们一个一个来看第一个特征我们称之为恒等元或者单位元恒等元听起来有点像什么都没做对就是这个意思就像正方性的粒子转动零度就相当于什么都没做
+在任何一个群里都必须有一个什么都不做的元素它对任何其他元素进行操作结果都保持不变明白了就像数学里的零或者一一样很基础那第二个特征呢第二个特征是逆圆既然我们能进行一个对称变换那么也必须能撤销这个变换回到初始状态哦就像我顺时转了九十度那逆是转九十度就回去了没错对于群里的每一个元素都必须存在一个逆的元素它们相互作用后结果就是我们刚刚说的恒等元也就是什么都没做听起来很合理能撤销那第三个特征是什么呢第三个叫封闭性它的意思是如果你连续进行两次群里的对称变换那么最终的结果也必然
+继续是这个群里的一个对称变换这个好理解就像正方形我先转九十度再转一百八十度最后总共转了二百七十度而二百七十度也是正方形的对称变换所以它还是封闭在这个集合里完全正确无论你如何组合群里的元素结果都不会跑到群外面去那第四个特征呢第四个特征是结合率意思是如果你有三个连续的变换比如A B C那么你先组合A和B再和C组合得到的结果和你先组合B和C再和A组合得到的结果是一样的等等赛老师这个结合率听起来有点像我们数学里的成发结合率A成B成C等于A成B成C对吗对
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000300.0_parastart.jpg" src="../frames/frame_000300.0_parastart.jpg" /></p>
+<p><img alt="frame_000360.0_transition.jpg" src="../frames/frame_000360.0_transition.jpg" /></p>
+<p><img alt="frame_000600.0_transition.jpg" src="../frames/frame_000600.0_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>这里是对本段课程内容的深度注解：</p>
+<h3 id="一-截图板书内容描述_1">一、 截图板书内容描述<a class="headerlink" href="#一-截图板书内容描述_1" title="Permanent link">&para;</a></h3>
+<p><strong>截图 1：我们的方法论：从具体到抽象</strong>
+*   <strong>内容概述</strong>：展示了课程的学习路径，分为四个步骤：
+    1.  <strong>基础入门</strong>：从两种描述二维旋转的方式开始：<span class="arithmatex">\(2 \times 2\)</span> 旋转矩阵和单位复数。
+    2.  <strong>关键进阶</strong>：寻找三维旋转的类似描述，引出极为重要的 <strong>SU(2) 群</strong>。
+    3.  <strong>核心工具</strong>：引入“<strong>李代数</strong>”，通过这个更简单的结构来理解复杂的“<strong>李群</strong>”。
+    4.  <strong>理论应用</strong>：利用李代数揭示洛伦兹群的本质，并最终纳入平移，构建庞加莱群。</p>
+<p><strong>截图 2：什么是对称性？变换下的不变性</strong>
+*   <strong>核心定义</strong>：对称性是在一组变换下保持不变的特性。
+*   <strong>数学框架</strong>：处理对称性的数学分支称为<strong>群论 (Group Theory)</strong>。处理连续对称性的特殊分支称为<strong>李群理论 (Lie Group Theory)</strong>。
+*   <strong>第一个例子：正方形</strong>：一个正方形是点的集合。正方形的对称性是一种将该点集映射到其自身的变换。右侧配有一个在直角坐标系中的正方形示意图。</p>
+<p><strong>截图 3：从现象到本质：对称变换的四大共性</strong>
+*   <strong>内容概述</strong>：为了用数学理论处理对称性，将其定义性特征提炼为数学术语（即群的四大公理）：
+    1.  <strong>单位元 (Identity)</strong>：总存在一种“什么都不做”的变换（如旋转0°），它本身就是一种对称。
+    2.  <strong>逆元 (Inverse)</strong>：任何对称变换都存在一个“撤销”它的逆变换。旋转90°的逆是旋转-90°。
+    3.  <strong>封闭性 (Closure)</strong>：两次连续的对称变换，其结果必然是另一个对称变换。旋转90°再旋转180°得到旋转270°，这依然是一种对称。
+    4.  <strong>结合律 (Associativity)</strong>：变换的组合顺序不影响最终结果，即 <span class="arithmatex">\((A \circ B) \circ C = A \circ (B \circ C)\)</span>。</p>
+<h3 id="二-核心概念与公式解析">二、 核心概念与公式解析<a class="headerlink" href="#二-核心概念与公式解析" title="Permanent link">&para;</a></h3>
+<h4 id="1-离散群-discrete-group-与-连续群-continuous-group">1. 离散群 (Discrete Group) 与 连续群 (Continuous Group)<a class="headerlink" href="#1-离散群-discrete-group-与-连续群-continuous-group" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>通俗解释</strong>：<ul>
+<li><strong>离散群</strong>：就像走楼梯，只能停在特定的台阶上。例如正方形的对称旋转只能是 0°、90°、180°、270°，这些角度是断开的、不连续的。</li>
+<li><strong>连续群</strong>：就像坐滑梯，可以停在任意位置。例如单位圆可以绕圆心旋转任意角度（如 5°、10.5° 等），旋转角度是一个可以连续变化的参数。</li>
+</ul>
+</li>
+<li><strong>理论背景</strong>：在物理学中，晶体结构通常对应离散群（空间群），而时空对称性（如旋转、平移）和规范对称性通常对应连续群。</li>
+</ul>
+<h4 id="2-李群-lie-group">2. 李群 (Lie Group)<a class="headerlink" href="#2-李群-lie-group" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>通俗解释</strong>：李群就是用来专门研究“连续群”的数学工具。只要一个对称变换的参数（比如旋转的角度）可以像实数轴上的点一样平滑、连续地变化，研究这种对称性的理论就是李群理论。</li>
+<li><strong>理论背景</strong>：李群不仅是一个群，同时还是一个微分流形，这意味着我们可以对群里的元素进行微积分操作。这在现代物理（尤其是量子力学和粒子物理）中是描述连续对称性（如规范场论）的基石。</li>
+</ul>
+<h4 id="3-群的四大公理-group-axioms">3. 群的四大公理 (Group Axioms)<a class="headerlink" href="#3-群的四大公理-group-axioms" title="Permanent link">&para;</a></h4>
+<p>为了让“对称性”这个直观概念变成严格的数学对象，数学家抽象出了四个基本规则。一个集合加上一种运算（比如“连续做两次变换”），只要满足这四条，就叫作一个“群”。</p>
+<ul>
+<li><strong>单位元 (Identity)</strong><ul>
+<li><strong>通俗解释</strong>：群里必须有一个“咸鱼”元素，它的作用就是“什么都不做”。就像加法里的 <span class="arithmatex">\(0\)</span>（<span class="arithmatex">\(5+0=5\)</span>），乘法里的 <span class="arithmatex">\(1\)</span>（<span class="arithmatex">\(5 \times 1=5\)</span>），或者旋转里的“转0度”。</li>
+</ul>
+</li>
+<li><strong>逆元 (Inverse)</strong><ul>
+<li><strong>通俗解释</strong>：世界上没有后悔药，但在群里有。你做的任何一个操作，都必须有一个对应的反向操作能把它抵消掉，让你回到原点。比如顺时针转90度的逆元就是逆时针转90度。</li>
+</ul>
+</li>
+<li><strong>封闭性 (Closure)</strong><ul>
+<li><strong>通俗解释</strong>：肥水不流外人田。你在群里随便挑两个操作，把它们连起来做，得到的新操作一定还是这个群里的成员，绝不会跑出去。比如正方形转90°再转180°等于转270°，270°依然是正方形的合法对称操作。</li>
+</ul>
+</li>
+<li><strong>结合律 (Associativity)</strong><ul>
+<li><strong>公式</strong>：<span class="arithmatex">\((A \circ B) \circ C = A \circ (B \circ C)\)</span></li>
+<li><strong>符号解释</strong>：<ul>
+<li><span class="arithmatex">\(A, B, C\)</span> 代表群里的三个变换操作。</li>
+<li><span class="arithmatex">\(\circ\)</span> 代表操作的组合（即“先做...再做...”）。</li>
+</ul>
+</li>
+<li><strong>通俗解释</strong>：如果你要连续做三个动作 A、B、C，你可以先做完 A 和 B，把结果再和 C 组合；也可以先不管 A，先把 B 和 C 组合好，再让 A 和它们的结果组合。只要动作的<strong>先后顺序</strong>不乱，怎么打括号分组，最终结果都一样。这和小学学的乘法结合律 <span class="arithmatex">\((a \times b) \times c = a \times (b \times c)\)</span> 是一模一样的道理。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="段落-3">段落 3：群的公理化定义、表示观点与课程总结展望<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:11:00 ~ 00:18:01</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+这里有个小小的陷阱或者说一个重要的特点就是结合率不等于交换率这是什么意思难道变换的序序会影响结果吗没错比如在三维空间里绕不同轴的旋转通常是不可交换的你先绕X轴转再绕Z轴转和先绕Z轴转再绕X轴转结果可能完全不同但结合率依然成立就是说你组合的方式不影响最终结果只要顺序不变这个太重要了我以前总觉得结合率和交换率差不多原来这里面大有文章所以群的定义里只要求结合率不要求交换率对吗精准如果一个群还满足交换率我们就会给它一个更特殊的称呼叫阿贝尔群
+它不要求交换率好的我记住了恒等圆逆圆封闭性结合率这四个就是定义一个群的核心特征吗差一点点还有一个非常基础的条件就是我们怎么把这些变换组合起来呢这需要一个明确的规则就是说我怎么把转九十度和转一百八十度变成转两百七十度的那个操作是吧对这个规则我们叫它二元运算比如对于旋转变换我们通常可以用矩阵来表示它们那么组合这些变换的规则就是矩阵成法或者对于二维旋转我们也可以用副数来表示那是规则就是副数成法原来还有不同的表示方式那群的概念就变得更抽象也更强大了正是这些
+表达方式其实就是群论中一个非常重要的分支表示论的核心内容他告诉我们同一个对称变换可以用很多不同的数学对象来描述好的赛士老师现在我们把这些直观的理解用数学语言严格地定义出来吧让同学们把这些公里记下来没问题我们把一个群记作G圆圈其中G是一个元素的集合而圆圈是定义在这个集合上的二元运算它必须满足以下四个公里第一条封闭性对于集合中的任意两个元素G1和G2他们通过运算圆圈组合之后得到的结果G1和G2也必须在这个集合里面组合的结果都不会跑出去第二条恒等元在几何计中必须存在一个特殊的元素
+使得对于G中的任意元素G都有G圈E等于G也等于E圈G就像什么都没做的那个变换第三条密圆对于集合G中的每一个元素G都必须存在一个逆元素G的负一次方也属于G使得G圈G的负一次方等于恒等元E也等于G的负一次方圈G每个变换都能被撤销第四条结合率对于集合G中的任意三个元素G一G二和G三他们的组合必须满足结合率也就是G一圈左括号G二圈G三右括号G一圈G二右括号G三组合的顺序不能变但分组的方式
+恭喜诸位你把群的四个功利都清晰地理解了这四看似简单的功利构成了群论这座宏伟大下的基石哇听起来好厉害所以只要一个集合和一种运散满足这四个条件我们就可以说它是一个群了对而且这个定义最厉害的地方在于它完全独立于这些变换作用在什么课题上我们可以研究对称变换本身的性质而不管它是作用在正方形上还是单位圆上甚至未来会作用在时空上这就厉害了这就意味着我们可以用一套数学工具去描述所有这些不同物理系统中的对称性是吗正是如此这大大简化了我们的研究比如我们之前提到描述时空基本对称性的群叫做庞加莱群它就是保持明克福基度归不变的变换集合
+就是理解庞家来群乃至整个物理时阶对称性的第一步从正方形到时空群论真的是太强大了那赛老师我们今天学习了群的公理化定义和它的动机接下来我们这门课会怎么继续呢好的乔伊今天我们只是打开了群论的大门理解了什么是群接下来我们会深入到更具体的例子中我们会先从二维旋转开始学习如何用矩阵和负数这两种不同的方式来描述它就是您刚刚提到的不同的二元运算和表示方式对吧对然后我们会尝试把这种思路扩展到三维旋转这会引出我们理群理论中一个非常重要的群叫做SUR群SUR群听起来就很高大上没错之后我们还会学习理代数它能帮助我们用更简单的方式去理解复杂的理群
+最终我们的目标是推导出旁家来群的双覆盖群的基本表示因为这些表示就是描述各种基本粒子的工具从群的定义到描述基本粒子这门课的旅程真是太精彩了今天这一课让我对群有了非常直观和深入的理解非常感谢赛老师不可及拽也感谢同学们认真收听群论是理解现代物理学特别是粒子物理和宇宙学不可或缺的工具希望大家今天能有所收获是的同学们今天我们理解了群的公理化定义包括封闭性恒等元和结合率还有最重要的二元运算这些都是我们后续学习理群理论的基础下一课讲具体探讨二维旋转的两种描述方式尽情期待好的那我们今天的基于对称系的物理学播客就到这里了
+我们下期再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000660.0_formulatransitionpar.jpg" src="../frames/frame_000660.0_formulatransitionpar.jpg" /></p>
+<p><img alt="frame_000720.0_formula.jpg" src="../frames/frame_000720.0_formula.jpg" /></p>
+<p><img alt="frame_000900.0_formulatransition.jpg" src="../frames/frame_000900.0_formulatransition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>这里是对本段课程内容的深度注解：</p>
+<h3 id="一-截图板书内容描述_2">一、 截图板书内容描述<a class="headerlink" href="#一-截图板书内容描述_2" title="Permanent link">&para;</a></h3>
+<p><strong>截图 1：从现象到本质：对称变换的四大共性</strong>
+*   <strong>内容概述</strong>：总结了将对称性提炼为数学术语的四个核心特征（即群的公理）：
+    1.  <strong>单位元 (Identity)</strong>：存在一种“什么都不做”的变换（如旋转0°）。
+    2.  <strong>逆元 (Inverse)</strong>：任何变换都有一个“撤销”它的逆变换（如旋转90°的逆是旋转-90°）。
+    3.  <strong>封闭性 (Closure)</strong>：两次连续的变换结果仍是对称变换。
+    4.  <strong>结合律 (Associativity)</strong>：变换的组合顺序不影响最终结果，即 <span class="arithmatex">\((A \circ B) \circ C = A \circ (B \circ C)\)</span>。</p>
+<p><strong>截图 2：重要说明：结合律不等于交换律</strong>
+*   <strong>内容概述</strong>：强调群必须满足结合律，但不一定满足交换律。
+    *   <strong>结合律公式</strong>：<span class="arithmatex">\((R(110^\circ) \circ R(40^\circ)) \circ R(90^\circ) = R(110^\circ) \circ (R(40^\circ) \circ R(90^\circ))\)</span>
+    *   <strong>非交换性示例</strong>：不同轴上的三维旋转通常不可交换，即 <span class="arithmatex">\(R_x(\theta) \circ R_z(\Phi) \neq R_z(\Phi) \circ R_x(\theta)\)</span>。</p>
+<p><strong>截图 3：群的公理化定义</strong>
+*   <strong>内容概述</strong>：给出了群 <span class="arithmatex">\((G, \circ)\)</span> 的严格数学定义，包含集合 <span class="arithmatex">\(G\)</span> 和二元运算 <span class="arithmatex">\(\circ\)</span>，并列出了必须满足的四个公理的数学表达式：
+    1.  <strong>封闭性</strong>：对所有 <span class="arithmatex">\(g_1, g_2 \in G\)</span>，有 <span class="arithmatex">\(g_1 \circ g_2 \in G\)</span>。
+    2.  <strong>单位元</strong>：存在单位元 <span class="arithmatex">\(e \in G\)</span>，使得对所有 <span class="arithmatex">\(g \in G\)</span>，有 <span class="arithmatex">\(g \circ e = g = e \circ g\)</span>。
+    3.  <strong>逆元</strong>：对任一 <span class="arithmatex">\(g \in G\)</span>，存在逆元 <span class="arithmatex">\(g^{-1} \in G\)</span>，使得 <span class="arithmatex">\(g \circ g^{-1} = e = g^{-1} \circ g\)</span>。
+    4.  <strong>结合律</strong>：对所有 <span class="arithmatex">\(g_1, g_2, g_3 \in G\)</span>，有 <span class="arithmatex">\(g_1 \circ (g_2 \circ g_3) = (g_1 \circ g_2) \circ g_3\)</span>。</p>
+<hr />
+<h3 id="二-核心概念与公式解析_1">二、 核心概念与公式解析<a class="headerlink" href="#二-核心概念与公式解析_1" title="Permanent link">&para;</a></h3>
+<h4 id="1-结合律与交换律的区别">1. 结合律与交换律的区别<a class="headerlink" href="#1-结合律与交换律的区别" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>结合律 (Associativity)</strong>：指的是在进行多次运算时，<strong>分组的方式</strong>不影响结果。只要元素的相对前后顺序不变，先算哪相邻的两个都可以。<ul>
+<li><strong>公式</strong>：<span class="arithmatex">\(g_1 \circ (g_2 \circ g_3) = (g_1 \circ g_2) \circ g_3\)</span></li>
+</ul>
+</li>
+<li><strong>交换律 (Commutativity)</strong>：指的是运算元素的<strong>前后顺序</strong>可以颠倒而不影响结果。<ul>
+<li><strong>公式</strong>：<span class="arithmatex">\(g_1 \circ g_2 = g_2 \circ g_1\)</span></li>
+</ul>
+</li>
+<li><strong>物理意义</strong>：在三维空间中，先绕X轴旋转再绕Z轴旋转，与先绕Z轴再绕X轴，最终物体的朝向是不同的。这说明三维旋转群（SO(3)）是<strong>非交换的（非阿贝尔群）</strong>。</li>
+</ul>
+<h4 id="2-阿贝尔群-abelian-group">2. 阿贝尔群 (Abelian Group)<a class="headerlink" href="#2-阿贝尔群-abelian-group" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>概念</strong>：如果一个群除了满足群的四个基本公理外，其二元运算还满足<strong>交换律</strong>，那么这个群就被称为阿贝尔群（以数学家尼尔斯·阿贝尔命名）。</li>
+<li><strong>例子</strong>：二维平面上的旋转群（SO(2)）是阿贝尔群，因为先转30度再转60度，和先转60度再转30度结果一样。</li>
+</ul>
+<h4 id="3-二元运算-binary-operation">3. 二元运算 (Binary Operation)<a class="headerlink" href="#3-二元运算-binary-operation" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>概念</strong>：一种将集合中的两个元素结合起来生成第三个元素的规则。在群论中，通常记作 <span class="arithmatex">\(\circ\)</span>。</li>
+<li><strong>表示方式</strong>：<ul>
+<li>对于旋转变换，如果用<strong>矩阵</strong>表示，二元运算就是<strong>矩阵乘法</strong>。</li>
+<li>对于二维旋转，如果用<strong>复数</strong>表示，二元运算就是<strong>复数乘法</strong>。</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-表示论-representation-theory">4. 表示论 (Representation Theory)<a class="headerlink" href="#4-表示论-representation-theory" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>概念</strong>：群论的一个分支，研究如何将抽象的群元素表示为线性空间上的线性变换（通常是矩阵）。</li>
+<li><strong>意义</strong>：它允许我们用具体的数学对象（如矩阵、复数）来进行计算，从而研究抽象群的性质。同一个抽象群可以有多种不同的“表示”。</li>
+</ul>
+<h4 id="5-庞加莱群-poincaré-group">5. 庞加莱群 (Poincaré Group)<a class="headerlink" href="#5-庞加莱群-poincaré-group" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>概念</strong>：描述狭义相对论中时空基本对称性的群。它包含了洛伦兹变换（旋转和速度递升）以及时空的平移。</li>
+<li><strong>物理意义</strong>：它是保持闵可夫斯基时空度规不变的变换集合，是理解现代粒子物理学（如量子场论）的基石。</li>
+</ul>
+<h4 id="6-李群与李代数-lie-groups-and-lie-algebras">6. 李群与李代数 (Lie Groups and Lie Algebras)<a class="headerlink" href="#6-李群与李代数-lie-groups-and-lie-algebras" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>李群</strong>：一种具有连续性质的群（即群元素可以由连续变化的参数描述，如旋转角度）。</li>
+<li><strong>李代数</strong>：与李群密切相关的代数结构，通常描述李群在单位元附近的局部性质（无穷小变换）。通过研究相对简单的李代数，可以推导出复杂的李群的性质。</li>
+<li><strong>SU(2) 群</strong>：特殊酉群，是量子力学中描述自旋等性质的核心李群，也是三维旋转群 SO(3) 的双覆盖群。</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

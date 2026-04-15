@@ -1,0 +1,3123 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-cssdpuXtJsg/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-XT8CoS4083U/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-RYaLL-k_T64/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第3课 张量的分量表示 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#现代经典物理学第3课-张量的分量表示" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第3课 张量的分量表示
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程导入与迪卡尔基底下的向量分量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程导入与迪卡尔基底下的向量分量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程导入与迪卡尔基底下的向量分量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程导入与迪卡尔基底下的向量分量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="现代经典物理学第3课-张量的分量表示">《现代经典物理学》第3课 张量的分量表示<a class="headerlink" href="#现代经典物理学第3课-张量的分量表示" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 4 个段落，<a href="cssdpuXtJsg">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:03 课程导入与迪卡尔基底下的向量分量</a></li>
+<li><a href="#段落-2">00:04:56 高阶张量分量表示与槽位命名指标技法</a></li>
+<li><a href="#段落-3">00:11:07 指标语言在经典力学与量子理论中的应用</a></li>
+<li><a href="#段落-4">00:15:12 正交坐标变换、分量变换规律与自旋示例</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程导入与迪卡尔基底下的向量分量<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:03 ~ 00:04:55</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎来到现代经典物理学的第三课我是你们的好奇宝宝周亦大家好我是赛很高兴再次和周亦一起深入探索物理学的奇妙世界赛上课我们聊了牛顿物理学的几何视角感觉就像给物理学加了一个空间滤镜让很多概念都立体起来了今天我们要聊什么呢没错周亦今天我们要继续深入这个几何视角聊聊我们怎么在具体坐标系里描述这些几何对象
+我们会从最熟悉的迪卡尔坐标系开始讲到基始分量再到爱因斯坦求和约定以及更高级的张亮分量表示
+最后我们还会看看当我们换一个坐标系的时候这些分量会怎么变化哇听起来有点像在给物理学编程了用一套规则把这些抽象概念具象化你说的没错主意这套编程语言非常强大是学习广义相对论量子场论这些现代物理学基石的必需工具那我们赶紧开始吧先从最基础的来在咱们熟悉的牛顿物理学里就是在那个三维欧吉里德空间里我们通常会用迪卡尔物理系对吧对没错
+想象一下你面前有个房间
+你总能找到三条相互垂直的边作为参考轴,比如X轴,Y轴,Z轴
+这就是我们说的迪卡尔坐标系
+嗯,我们高中就学过这个,那基史又是什么呢?好的,基史或者叫基向量
+就是和这些坐标轴方向一致长度唯一的向量
+我们通常用EX,EY,EZ来表示
+或者更数学一点用一一一二一三来表示哦我知道了就像是三个单位尺子分别指向XYZ方向
+他们有什么特别的性质吗?当然
+首先,它们是正交的
+就是说任何两个基石都是相互垂直的
+比如一一和一二垂直一一和一三垂直以此类推垂直的意思就是他们的点成结果是零对吧完全正确
+其次它们是归一化的,也就是它们的长度都是一长度唯一的点成就是一对吗是的
+所以如果把这两个性质结合起来
+e j 和 e k 的点称结果,如果 j 等于 k,那就是 e;如果 j 不等于 k,那就是 zero
+我们用一个非常方便的符号来表示这个叫做克罗内克德尔塔符号写成DELTAJK哦DELTAJK我记得这个符号
+当两个下标一样是1不一样是0这确实很方便没错
+有了这组正交规一化的基石我们就可以表示空间中的任何一个向量A了怎么表示呢我们可以把向量A写成A等于A一一一加上A二一二加上A三一三
+这里的A一A二A三就是向量A在这三的方向上的分量这也很熟悉就是把一个向量分解成XYZ方向上的投影对
+不过这里我要介绍一个非常重要的约定叫做爱因斯坦求和约定听起来很高大上其实很简单它规定如果一个世子里出现两次重复的指标一次是上标一次是下标或者像我们这里都是下标那么就默认也要对这个指标进行求和比如刚才的A等于A一一一加A二一二加A三一三如果用爱因斯坦求和约定怎么写呢就可以简单地写成A等于AJ一J
+这里的J出现了两次所以我们就知道它要从一加到三这样是不是简洁多了哇一下子就精练了好多我喜欢这种数学上的偷懒方式哈哈那我们怎么计算这个AJ分量呢计算方法也很直接
+你只需要把向量A和对应的基石EJ进行点成也就是AJ等于A到EJ这也很符合直觉一个向量在某个方向上的分量不就是它在这个方向上的投影吗点成就能得到投影的长度完全正确
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000161.6_transition.jpg" src="../frames/frame_000161.6_transition.jpg" /></p>
+<p><img alt="frame_000256.6_transition.jpg" src="../frames/frame_000256.6_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<h1 id="现代经典物理学-第三课-深度注解">现代经典物理学 第三课 深度注解<a class="headerlink" href="#现代经典物理学-第三课-深度注解" title="Permanent link">&para;</a></h1>
+<h2 id="一板书ppt-公式详解">一、板书/PPT 公式详解<a class="headerlink" href="#一板书ppt-公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="公式-19a正交归一性">公式 (1.9a)：正交归一性<a class="headerlink" href="#公式-19a正交归一性" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{e}_j \cdot \mathbf{e}_k = \delta_{jk}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{e}_j, \mathbf{e}_k\)</span></td>
+<td style="text-align: left;">基向量（下标 <span class="arithmatex">\(j,k = 1,2,3\)</span> 分别对应 <span class="arithmatex">\(x,y,z\)</span> 方向）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\cdot\)</span></td>
+<td style="text-align: left;">欧几里得空间中的点积（内积）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta_{jk}\)</span></td>
+<td style="text-align: left;"><strong>克罗内克δ符号</strong>（Kronecker delta）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>克罗内克δ的显式定义：</strong></p>
+<div class="arithmatex">\[\delta_{jk} = \begin{cases} 1 &amp; \text{若 } j = k \\ 0 &amp; \text{若 } j \neq k \end{cases}\]</div>
+<blockquote>
+<p>💡 <strong>物理意义</strong>：这个 compact 的公式同时编码了两个信息——"正交"（<span class="arithmatex">\(j\neq k\)</span> 时为0）和"归一"（<span class="arithmatex">\(j=k\)</span> 时为1）。</p>
+</blockquote>
+<hr />
+<h3 id="公式-19b矢量展开爱因斯坦求和约定">公式 (1.9b)：矢量展开（爱因斯坦求和约定）<a class="headerlink" href="#公式-19b矢量展开爱因斯坦求和约定" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{A} = A_j \mathbf{e}_j\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{A}\)</span></td>
+<td style="text-align: left;">三维欧几里得空间中的任意向量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_j\)</span></td>
+<td style="text-align: left;">向量 <span class="arithmatex">\(\mathbf{A}\)</span> 的第 <span class="arithmatex">\(j\)</span> 个<strong>分量</strong>（投影系数）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{e}_j\)</span></td>
+<td style="text-align: left;">第 <span class="arithmatex">\(j\)</span> 个基向量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>重复下标 <span class="arithmatex">\(j\)</span></strong></td>
+<td style="text-align: left;">暗示求和：<span class="arithmatex">\(\displaystyle\sum_{j=1}^{3} A_j \mathbf{e}_j = A_1\mathbf{e}_1 + A_2\mathbf{e}_2 + A_3\mathbf{e}_3\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>关键细节</strong>：本课程采用<strong>下标重复即求和</strong>的约定（而非上下标配对），这是部分教材的简化写法，在笛卡尔坐标系中无歧义。</p>
+</blockquote>
+<hr />
+<h2 id="二理论背景补充">二、理论背景补充<a class="headerlink" href="#二理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="21-为什么需要基的概念">2.1 为什么需要"基"的概念？<a class="headerlink" href="#21-为什么需要基的概念" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">层面</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>几何层面</strong></td>
+<td style="text-align: left;">向量是<strong>坐标无关</strong>的几何对象（有大小有方向的箭头）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>计算层面</strong></td>
+<td style="text-align: left;">必须选定基才能写成<strong>分量形式</strong>进行代数运算</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>核心洞见</strong></td>
+<td style="text-align: left;">向量本身不变，但<strong>分量随基的选择而变</strong>——这是张量理论的萌芽</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-爱因斯坦求和约定的历史与优势">2.2 爱因斯坦求和约定的历史与优势<a class="headerlink" href="#22-爱因斯坦求和约定的历史与优势" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>起源</strong>：1916年爱因斯坦在建立广义相对论时，为简化张量运算而系统采用</li>
+<li><strong>核心规则</strong>：<strong>哑指标（dummy index）</strong>——重复出现的指标自动求和，无需写求和号 <span class="arithmatex">\(\sum\)</span></li>
+<li><strong>优势对比</strong>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">传统写法</th>
+<th style="text-align: left;">爱因斯坦约定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\sum_{j=1}^{3} A_j \mathbf{e}_j\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(A_j \mathbf{e}_j\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\displaystyle\sum_{i=1}^{3}\sum_{j=1}^{3} g_{ij}x^i x^j\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(g_{ij}x^i x^j\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>在复杂计算（如黎曼几何、场论）中，省略求和号可显著提升可读性。</p>
+</blockquote>
+<hr />
+<h2 id="三核心概念通俗解释">三、核心概念通俗解释<a class="headerlink" href="#三核心概念通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="31-正交归一基--完美的测量工具">3.1 "正交归一基" = 完美的测量工具<a class="headerlink" href="#31-正交归一基--完美的测量工具" title="Permanent link">&para;</a></h3>
+<p>想象你有一把<strong>三向卡尺</strong>：
+- <strong>正交</strong>：三个测量臂互相垂直 → 测量互不干扰
+- <strong>归一</strong>：每个刻度都是"1单位" → 读数直接就是真实长度
+- <strong>完备</strong>：三个方向覆盖全空间 → 任何向量都能被测量</p>
+<h3 id="32-分量提取的直觉">3.2 分量提取的直觉<a class="headerlink" href="#32-分量提取的直觉" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[A_j = \mathbf{A} \cdot \mathbf{e}_j\]</div>
+<p>这就像是<strong>"用标准尺子去量投影"</strong>：
+- 点积 <span class="arithmatex">\(\mathbf{A} \cdot \mathbf{e}_j\)</span> 的几何意义 = <span class="arithmatex">\(|\mathbf{A}| \cos\theta\)</span> = 投影长度
+- 由于 <span class="arithmatex">\(\mathbf{e}_j\)</span> 长度为1，结果就是纯净的分量值</p>
+<hr />
+<h2 id="四板书截图描述">四、板书截图描述<a class="headerlink" href="#四板书截图描述" title="Permanent link">&para;</a></h2>
+<p><strong>左侧板块「正交归一基矢」：</strong>
+- 三维笛卡尔坐标系示意图：<span class="arithmatex">\(x,y,z\)</span> 轴，基矢 <span class="arithmatex">\(\mathbf{e}_1,\mathbf{e}_2,\mathbf{e}_3\)</span> 分别沿各轴指向
+- 文字说明基矢指向 <span class="arithmatex">\(x^j\)</span> 坐标方向且为单位矢量
+- 关键公式 (1.9a) 突出显示</p>
+<p><strong>右侧板块「矢量展开与求和约定」：</strong>
+- 公式 (1.9b) 以高亮框呈现
+- 规则说明：重复指标 <span class="arithmatex">\(j\)</span> 表示求和（1到3）
+- 强调说明：本书始终采用此约定，是<strong>核心简化工具</strong></p>
+<hr />
+<h2 id="五本节知识图谱">五、本节知识图谱<a class="headerlink" href="#五本节知识图谱" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>几何对象（向量 A）
+    ↓ 选定基 {e_j}
+分量表示 A_j（依赖于基的选择）
+    ↓ 爱因斯坦约定
+紧凑写法：A = A_j e_j
+    ↓ 正交归一性 e_j·e_k = δ_jk
+分量提取：A_j = A·e_j
+</code></pre></div>
+<blockquote>
+<p>🎯 <strong>预告</strong>：下节将讨论<strong>坐标变换时分量的变化规律</strong>——这是从"向量"走向"张量"的关键一步。</p>
+</blockquote>
+<hr />
+<h2 id="段落-2">段落 2：高阶张量分量表示与槽位命名指标技法<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:04:56 ~ 00:11:07</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+你可以自己推导一下,用我们刚才说的A等于AKEK带入A.E.J
+在利用基石的正交归一性你会发现结果确实是AJ好的我回去自己试试那向量是一节张量更高节的张量呢比如二节三节张量他们的分量怎么表示问得好快
+对于更高节的张亮,比如一个三节张亮梯,我们也可以用积石的张亮极来展开它
+它会是T等于TIJKEI张亮级EJ张亮级EK哇一下子出现三个基石的张亮级听起来有点复杂那它的分量TIJK怎么计算呢计算方法是类似的推广
+你把三个鸡屎EIJEK依次带入张亮梯的三个草味中也就是TIJK等于TEIJEK草味这个词听起来很形象是的
+你可以把张亮想象成一个带有若干个草味的机器你把项亮放进去它就会给你一个数或者一个新的张亮那我们之前提到的杜龟张亮呢它的分量是什么杜龟张亮级是一个二阶张亮
+它的分量 gjk 就是 ej.ek
+而我们知道这正是Delta JK
+所以杜龟章亮在迪卡尔坐标系下的分量就是克罗内克的二塔
+啊哈!原来GJK等于DeltaJK是这么来的,这一下就清晰多了
+那张亮之间也有运算,比如点乘缩并这些,他们的分量怎么表示呢?当然有
+比如两个向量A和B的内积也就是点成在分量表示下就是A.B等于A.J.B.J
+你看这里J重复了所以要对J求和这也是我们熟悉的公式再比如把三个向量A B C带入一个三阶张量T的三个槽位得到的结果是一个标量
+它的分量行驶就是T of A B C等于TIJKAIBJCK哇这个公式有点长但思路很清楚每个分量都对应上了那缩并呢
+缩病是一个很重要的操作
+比如你有一个四节章亮R
+如果你把它第一个草位和第三个草位进行缩并,那么结果会是一个二解张量
+它的分量表示就是RIJIK
+I J I K
+我看到这里的I重复了两次所以要对I求和剩下的J和K就是自由指标所以它是一个二界张亮对吗完全正确J
+你看爱因斯坦求合约定和指标的巧料运用让这些复杂的张量运算变得非常清晰和简洁确实感觉一下子打开了新世界的大门不过赛我有个问题
+我们刚才一直在说AJ是向量A的分量,TIJK是张量T的分量
+这些指标 JIJK 好像都在指分量
+但教材里提到一个曹魏命名指标技法这是什么意思难道指标还有别的用法吗这是一个非常非常关键的新视角赵你抓住了重点
+我们前面说的指标代表的是分量在某个特定基地下的值
+但曹魏命名指标技法则更进一步他把指标看作是张亮曹魏的名字曹魏名字这有什么区别呢区别可大了举个例子假设你有一个二节章亮F括号括号现在我们定义一个新的二节章亮G括号括号它和F是一样的只不过是把曹魏交换了一下
+也就是说对于任意两个向量 a 和 b
+句括号AB等于F括号BA就是把输入顺序调换了如果用我们刚才的分量技法你可能会写成句AB等于FBA对啊这不就是说句张量的DA个分量和DB个分量等于F张量的DB个分量和DA个分量吗这还是在说分量啊这就是艾舍尔画作的比喻精髓了你可以瞬间把它看作是特定基地下张量分量之间的关系但你也可以迅速心智反转把它看作是几何的与基地五关的张量之间的关系而那些指标只是在扮演曹魏名字的角色哇这个心智反转有点意思
+所以GAB等于FBA既可以理解为分量关系也可以理解为G张亮的A草位和B草位就是F张亮的B草位和A草位没错这个观点非常强大
+它能让我们在不指定具体基地的情况下依然用指标来简洁地表示张亮之间的几何关系
+比如刚才的缩并草作一个三界张亮T的第一和第三个草位缩并直接就可以写成TABA
+这里的A就是草位的名字它被缩并了剩下一个自有的B草位所以结果是一个一节张亮也就是一个向量这样一来很多张亮运算就变得非常直观了不再需要写出融长的几何表达式正是如此虽然草位命名指标技法这个词可能不是教材里最常见的但他非常准确地表达了这个思想明白了这个心智反转太重要了
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000296.1_formulaparastart.jpg" src="../frames/frame_000296.1_formulaparastart.jpg" /></p>
+<p><img alt="frame_000418.1_formulatransition.jpg" src="../frames/frame_000418.1_formulatransition.jpg" /></p>
+<p><img alt="frame_000525.9_formula.jpg" src="../frames/frame_000525.9_formula.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<h1 id="现代经典物理学-第三课-深度注解续">现代经典物理学 第三课 深度注解（续）<a class="headerlink" href="#现代经典物理学-第三课-深度注解续" title="Permanent link">&para;</a></h1>
+<h2 id="二板书ppt-公式详解新内容">二、板书/PPT 公式详解（新内容）<a class="headerlink" href="#二板书ppt-公式详解新内容" title="Permanent link">&para;</a></h2>
+<h3 id="公式-19e三阶张量的分量展开">公式 (1.9e)：三阶张量的分量展开<a class="headerlink" href="#公式-19e三阶张量的分量展开" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{T} = T_{ijk} \, \mathbf{e}_i \otimes \mathbf{e}_j \otimes \mathbf{e}_k\]</div>
+<div class="arithmatex">\[T_{ijk} = T(\mathbf{e}_i, \mathbf{e}_j, \mathbf{e}_k)\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{T}\)</span></td>
+<td style="text-align: left;">三阶张量（一个"三槽机器"）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_{ijk}\)</span></td>
+<td style="text-align: left;">张量在基 <span class="arithmatex">\(\{\mathbf{e}_i, \mathbf{e}_j, \mathbf{e}_k\}\)</span> 下的<strong>分量</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\otimes\)</span></td>
+<td style="text-align: left;"><strong>张量积</strong>（tensor product），将基向量"粘合"成更高阶对象</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T(\mathbf{e}_i, \mathbf{e}_j, \mathbf{e}_k)\)</span></td>
+<td style="text-align: left;">将三个基向量依次"喂入"张量的三个槽位</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键理解：</strong> 三阶张量需要<strong>三个基向量</strong>来展开，每个基向量对应一个"槽位"。分量 <span class="arithmatex">\(T_{ijk}\)</span> 的获取方法是：把第 <span class="arithmatex">\(i\)</span> 个、第 <span class="arithmatex">\(j\)</span> 个、第 <span class="arithmatex">\(k\)</span> 个基向量分别填入第一、第二、第三个槽位。</p>
+<hr />
+<h3 id="公式-19f度规张量的分量">公式 (1.9f)：度规张量的分量<a class="headerlink" href="#公式-19f度规张量的分量" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[g_{jk} = \mathbf{e}_j \cdot \mathbf{e}_k = \delta_{jk}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(g_{jk}\)</span></td>
+<td style="text-align: left;"><strong>度规张量</strong>（metric tensor）的分量，记作粗体 <span class="arithmatex">\(\mathbf{g}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{e}_j \cdot \mathbf{e}_k\)</span></td>
+<td style="text-align: left;">基向量的内积（定义度规的方式）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心结论：</strong> 在<strong>笛卡尔坐标系</strong>下，度规张量的分量恰好等于克罗内克δ符号。这是正交归一基的直接结果——基向量长度为1且互相垂直。</p>
+<blockquote>
+<p>💡 <strong>物理意义</strong>：度规张量"告诉"你如何计算空间中的长度和角度。在平直的欧几里得空间中，度规就是简单的 <span class="arithmatex">\(\delta_{jk}\)</span>；在弯曲空间（如广义相对论）中，度规会变得复杂。</p>
+</blockquote>
+<hr />
+<h3 id="公式-19g向量内积的分量形式">公式 (1.9g)：向量内积的分量形式<a class="headerlink" href="#公式-19g向量内积的分量形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{A} \cdot \mathbf{B} = A_j B_j\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_j, B_j\)</span></td>
+<td style="text-align: left;">向量 <span class="arithmatex">\(\mathbf{A}, \mathbf{B}\)</span> 的第 <span class="arithmatex">\(j\)</span> 个分量</td>
+</tr>
+<tr>
+<td style="text-align: left;">重复指标 <span class="arithmatex">\(j\)</span></td>
+<td style="text-align: left;"><strong>爱因斯坦求和约定</strong>：对 <span class="arithmatex">\(j=1,2,3\)</span> 求和</td>
+</tr>
+</tbody>
+</table>
+<p><strong>展开形式：</strong> <span class="arithmatex">\(A_j B_j = A_1B_1 + A_2B_2 + A_3B_3\)</span></p>
+<hr />
+<h3 id="公式-19g张量求值张量吃向量">公式 (1.9g')：张量求值（张量"吃"向量）<a class="headerlink" href="#公式-19g张量求值张量吃向量" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[T(\mathbf{A}, \mathbf{B}, \mathbf{C}) = T_{ijk} A_i B_j C_k\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T(\mathbf{A}, \mathbf{B}, \mathbf{C})\)</span></td>
+<td style="text-align: left;">三阶张量 <span class="arithmatex">\(T\)</span> 同时作用于三个向量，输出一个<strong>标量</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_{ijk}\)</span></td>
+<td style="text-align: left;">张量的分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_i, B_j, C_k\)</span></td>
+<td style="text-align: left;">三个向量的分量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>运作机制：</strong> 张量的每个"槽位"各吃一个向量，对应指标相乘后求和。这是"机器"比喻的精确数学实现。</p>
+<hr />
+<h3 id="公式-19h缩并contraction">公式 (1.9h)：缩并（Contraction）<a class="headerlink" href="#公式-19h缩并contraction" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\text{[对 } R \text{ 作 } 1\&amp;3 \text{ 缩并]} \text{ 的分量} = R_{ijik}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(R_{ijik}\)</span></td>
+<td style="text-align: left;">四阶张量 <span class="arithmatex">\(R\)</span> 的分量，第一和第三指标相同</td>
+</tr>
+<tr>
+<td style="text-align: left;">重复的 <span class="arithmatex">\(i\)</span></td>
+<td style="text-align: left;"><strong>求和指标</strong>（哑指标），对 <span class="arithmatex">\(i=1,2,3\)</span> 求和</td>
+</tr>
+<tr>
+<td style="text-align: left;">剩余的 <span class="arithmatex">\(j, k\)</span></td>
+<td style="text-align: left;"><strong>自由指标</strong>，决定结果的阶数</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结果分析：</strong> 
+- 原始：四阶张量 <span class="arithmatex">\(R_{ijkl}\)</span>（4个自由指标）
+- 缩并后：<span class="arithmatex">\(R_{ijik}\)</span>，<span class="arithmatex">\(i\)</span> 被求和"吃掉"，剩下 <span class="arithmatex">\(j,k\)</span> 两个自由指标
+- 结果：<strong>二阶张量</strong>（与预期相符）</p>
+<hr />
+<h2 id="三核心新概念插槽命名指标记法slot-naming-index-notation">三、核心新概念：插槽命名指标记法（Slot-Naming Index Notation）<a class="headerlink" href="#三核心新概念插槽命名指标记法slot-naming-index-notation" title="Permanent link">&para;</a></h2>
+<p>这是本段最重要的<strong>观念飞跃</strong>（Conceptual Leap）。</p>
+<h3 id="31-问题背景">3.1 问题背景<a class="headerlink" href="#31-问题背景" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">传统困境</th>
+<th style="text-align: left;">具体表现</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">如何简洁表示张量插槽的互换？</td>
+<td style="text-align: left;">想表达"G 和 F 相同，只是插槽顺序交换"</td>
+</tr>
+<tr>
+<td style="text-align: left;">几何 vs 分量的混淆</td>
+<td style="text-align: left;">写 <span class="arithmatex">\(G_{ab} = F_{ba}\)</span> 时，到底在说分量关系还是几何关系？</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-埃舍尔画作比喻">3.2 埃舍尔画作比喻<a class="headerlink" href="#32-埃舍尔画作比喻" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────┐
+│         视角一：分量关系              │
+│    在特定基底下，张量各分量之间的关系   │
+│         （像画中的&quot;鱼&quot;）              │
+├─────────────────────────────────────┤
+│         视角二：几何关系              │
+│    独立于基底的几何对象本身            │
+│         （像画中的&quot;鸟&quot;）              │
+│    此时指标扮演&quot;插槽名称&quot;的角色        │
+└─────────────────────────────────────┘
+</code></pre></div>
+<h3 id="33-关键公式插槽命名的双重解读">3.3 关键公式：插槽命名的双重解读<a class="headerlink" href="#33-关键公式插槽命名的双重解读" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[G_{ab} = F_{ba}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">解读方式</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>视角一（分量）</strong></td>
+<td style="text-align: left;">在特定基底下，<span class="arithmatex">\(G\)</span> 的 <span class="arithmatex">\((a,b)\)</span> 分量等于 <span class="arithmatex">\(F\)</span> 的 <span class="arithmatex">\((b,a)\)</span> 分量</td>
+<td style="text-align: left;">具体计算</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>视角二（几何）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(G\)</span> 的第 <span class="arithmatex">\(a\)</span> 插槽和第 <span class="arithmatex">\(b\)</span> 插槽，就是 <span class="arithmatex">\(F\)</span> 的第 <span class="arithmatex">\(b\)</span> 插槽和第 <span class="arithmatex">\(a\)</span> 插槽</td>
+<td style="text-align: left;">抽象推理</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-缩并的简洁表达">3.4 缩并的简洁表达<a class="headerlink" href="#34-缩并的简洁表达" title="Permanent link">&para;</a></h3>
+<p><strong>传统写法（冗长）：</strong> "将三阶张量 <span class="arithmatex">\(T\)</span> 的第一和第三个插槽进行缩并"</p>
+<p><strong>插槽命名写法：</strong> </p>
+<div class="arithmatex">\[T_{aba}\]</div>
+<ul>
+<li><span class="arithmatex">\(a\)</span>：被缩并的插槽名称（出现两次，求和后消失）</li>
+<li><span class="arithmatex">\(b\)</span>：自由插槽名称（保留）</li>
+</ul>
+<p><strong>结果：</strong> 一阶张量（向量），只有一个自由插槽 <span class="arithmatex">\(b\)</span></p>
+<hr />
+<h2 id="四理论背景补充">四、理论背景补充<a class="headerlink" href="#四理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="41-张量阶数与插槽数量的对应">4.1 张量阶数与插槽数量的对应<a class="headerlink" href="#41-张量阶数与插槽数量的对应" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">阶数</th>
+<th style="text-align: center;">插槽数</th>
+<th style="text-align: left;">输入</th>
+<th style="text-align: left;">输出</th>
+<th style="text-align: left;">例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">标量</td>
+<td style="text-align: left;">温度、质量</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">1个向量</td>
+<td style="text-align: left;">标量</td>
+<td style="text-align: left;">向量（作为线性泛函）</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">2个向量</td>
+<td style="text-align: left;">标量</td>
+<td style="text-align: left;">度规张量、应力张量</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">3个向量</td>
+<td style="text-align: left;">标量</td>
+<td style="text-align: left;">压电张量</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(n\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(n\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(n\)</span>个向量</td>
+<td style="text-align: left;">标量</td>
+<td style="text-align: left;">一般 <span class="arithmatex">\(n\)</span> 阶张量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-缩并的抽象定义">4.2 缩并的抽象定义<a class="headerlink" href="#42-缩并的抽象定义" title="Permanent link">&para;</a></h3>
+<p>缩并是<strong>降低张量阶数</strong>的核心操作：
+- 选择张量的两个插槽
+- 将<strong>同一个向量</strong>同时填入这两个插槽
+- 对填入的向量进行积分（或求和）
+- 结果：阶数减少 2</p>
+<p>在插槽命名记法中，这表现为<strong>让两个插槽共享同一个名称</strong>。</p>
+<hr />
+<h2 id="五通俗语言总结">五、通俗语言总结<a class="headerlink" href="#五通俗语言总结" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>"槽位命名"的心智模型</strong></p>
+</blockquote>
+<p>想象张量是一台<strong>多槽自动售货机</strong>：
+- <strong>传统观点</strong>：每个槽位有编号（第1槽、第2槽...），关注"投币口1投了什么"
+- <strong>插槽命名观点</strong>：给槽位起名字（"苹果槽"、"香蕉槽"），关注"苹果槽和香蕉槽的关系"</p>
+<p><strong>关键洞察：</strong> 名字是<strong>几何的、永恒的</strong>；编号是<strong>人为的、随基底变化的</strong>。当你看到 <span class="arithmatex">\(G_{ab} = F_{ba}\)</span>，你可以瞬间"翻转"理解方式——既看到具体数字，又看到抽象结构，就像埃舍尔画中鱼群瞬间变成飞鸟。</p>
+<p>这种<strong>双重视角</strong>的能力，是掌握现代张量分析的标志。</p>
+<hr />
+<h2 id="段落-3">段落 3：指标语言在经典力学与量子理论中的应用<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:11:07 ~ 00:15:11</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那这个强大的技法在实际物理学里是怎么用的呢我们可以用它来重写粒子动力学的方程
+比如速度v变成VI等于dxibdt
+动量P变成PI等于MVI
+加速度A变成AI等于DVI比DT等于第二方XI比DT二方
+能量呢,一等于二分之一MV平方怎么写
+就可以写成1等于二分之一MVJVJ
+你看,这里的VJVJ就是V和V的点成很简洁
+那洛伦兹利方程呢,DP比DT等于Q1加V乘B
+那个稍微复杂一点会引入一个叫做列为奇维他长两的符号EPSLONIJK来表示插成
+会写成DPIBDT等于QEI加IJKVJBK
+我们后面会详细讲这个张量
+哇,一下子感觉这些经典物理的方程都穿上了新衣,变得更统一,更抽象了
+是的
+而且这个视角不仅仅局限于经典物理
+在量子理论中向量和张亮也扮演着核心角色哦量子理论里也有向量和张亮当然比如一个物理系统的量子态我们用右史普赛来表示它就是一个希尔伯特空间里的向量可以看作是我们欧吉里的空间向量的推广希尔伯特空间听起来就很高位没错它甚至是无限为的
+不像我们经典物理只需要三个极事在量子理论中我们可能需要无限多个极事来描述所有可能的量子态无限多个极事那这些量子向量也有内极吗有叫做左是FY右是PSY的内极它是一个负数这和经典向量的时速内极有点不同还有代表可观察量比如能量位置动量的恶米算符它们就是二解长量也是负数值的函数这么说我们刚才学到的那些张量操作比如把向量带入张量的草位在量子理论里也有对应的概念完全有比如你把量子态又是PSY带入一个算符HHHH的第二个草位就会得到新的量子态HHH又是PSY这和我们把向量A带入经典张量T的草位
+是的而且在量子理论中我们也会用分量来表示散幅比如位置散幅XHET的分量就是XMN等于M键号XHETN键号
+既然如此,那两个算符的乘积或者著名的对异子关系也能用分量来表示吗?当然可以
+比如位置和动量算符的成绩XHAPPHAT它的分量就是矩阵成绩XJKPKM
+而著名的位置和动量不对一关系XHTPH等于IHB用分量表示就是XJKPKM减去PKJKXJM等于IHBDEALTJM哇连这么深奥的量子力学定律也能用我们学到的指标技法来表达这简是太酷了所以你看这个曹魏命名指标技法绝不仅仅是一个数学上的小技巧它是一种统一的强大的语言管穿了从经典到量子的物理学我感觉我开始理解这个心智反传的价值了那我们继续赛
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000667.6_parastart.jpg" src="../frames/frame_000667.6_parastart.jpg" /></p>
+<p><img alt="frame_000870.0_transition.jpg" src="../frames/frame_000870.0_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<h1 id="现代经典物理学-第三课-深度注解续_1">现代经典物理学 第三课 深度注解（续）<a class="headerlink" href="#现代经典物理学-第三课-深度注解续_1" title="Permanent link">&para;</a></h1>
+<h2 id="一板书ppt-公式详解新内容">一、板书/PPT 公式详解（新内容）<a class="headerlink" href="#一板书ppt-公式详解新内容" title="Permanent link">&para;</a></h2>
+<h3 id="1-经典力学方程的指标记法重写">1. 经典力学方程的指标记法重写<a class="headerlink" href="#1-经典力学方程的指标记法重写" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">物理量</th>
+<th style="text-align: left;">传统记法</th>
+<th style="text-align: left;">指标记法</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>速度</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(v_i = \frac{dx_i}{dt}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(v_i = \frac{dx_i}{dt}\)</span></td>
+<td style="text-align: left;">位置对时间的一阶导数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>动量</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(p_i = mv_i\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(p_i = mv_i\)</span></td>
+<td style="text-align: left;">质量乘以速度分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>加速度</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(a_i = \frac{dv_i}{dt} = \frac{d^2x_i}{dt^2}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(a_i = \frac{dv_i}{dt} = \frac{d^2x_i}{dt^2}\)</span></td>
+<td style="text-align: left;">速度对时间的一阶导数，或位置的二阶导数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>动能</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(E = \frac{1}{2}mv^2\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(E = \frac{1}{2}mv_j v_j\)</span></td>
+<td style="text-align: left;">利用<strong>爱因斯坦求和约定</strong>：重复指标 <span class="arithmatex">\(j\)</span> 自动求和</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键理解</strong>：<span class="arithmatex">\(v_j v_j = v_1^2 + v_2^2 + v_3^2 = v_x^2 + v_y^2 + v_z^2 = \mathbf{v} \cdot \mathbf{v} = v^2\)</span></p>
+<hr />
+<h3 id="2-洛伦兹力方程的指标记法">2. 洛伦兹力方程的指标记法<a class="headerlink" href="#2-洛伦兹力方程的指标记法" title="Permanent link">&para;</a></h3>
+<p><strong>传统矢量形式：</strong></p>
+<div class="arithmatex">\[\frac{d\mathbf{p}}{dt} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B})\]</div>
+<p><strong>指标记法形式：</strong></p>
+<div class="arithmatex">\[\frac{dp_i}{dt} = qE_i + q\varepsilon_{ijk} v_j B_k\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\varepsilon_{ijk}\)</span></td>
+<td style="text-align: left;"><strong>列维-奇维塔符号</strong>（Levi-Civita symbol），三阶完全反对称张量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(E_i\)</span></td>
+<td style="text-align: left;">电场 <span class="arithmatex">\(\mathbf{E}\)</span> 的第 <span class="arithmatex">\(i\)</span> 个分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(B_k\)</span></td>
+<td style="text-align: left;">磁场 <span class="arithmatex">\(\mathbf{B}\)</span> 的第 <span class="arithmatex">\(k\)</span> 个分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(v_j\)</span></td>
+<td style="text-align: left;">速度的第 <span class="arithmatex">\(j\)</span> 个分量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>列维-奇维塔符号的定义：</strong></p>
+<div class="arithmatex">\[\varepsilon_{ijk} = \begin{cases} +1 &amp; (i,j,k) \text{ 为 } (1,2,3) \text{ 的偶排列} \\ -1 &amp; (i,j,k) \text{ 为 } (1,2,3) \text{ 的奇排列} \\ 0 &amp; \text{任意两个指标相同} \end{cases}\]</div>
+<blockquote>
+<p>例如：<span class="arithmatex">\(\varepsilon_{123} = +1\)</span>, <span class="arithmatex">\(\varepsilon_{132} = -1\)</span>, <span class="arithmatex">\(\varepsilon_{112} = 0\)</span></p>
+</blockquote>
+<p><strong>为何能表示叉乘？</strong> 验证：<span class="arithmatex">\((\mathbf{v} \times \mathbf{B})_i = \varepsilon_{ijk} v_j B_k\)</span> 正是叉乘的第 <span class="arithmatex">\(i\)</span> 个分量。</p>
+<hr />
+<h3 id="3-量子理论中的核心类比见截图2">3. 量子理论中的核心类比（见截图2）<a class="headerlink" href="#3-量子理论中的核心类比见截图2" title="Permanent link">&para;</a></h3>
+<h4 id="量子态与希尔伯特空间">量子态与希尔伯特空间<a class="headerlink" href="#量子态与希尔伯特空间" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">经典概念</th>
+<th style="text-align: left;">量子类比</th>
+<th style="text-align: left;">数学结构</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">欧几里得空间向量 <span class="arithmatex">\(\mathbf{v}\)</span></td>
+<td style="text-align: left;">量子态 <span class="arithmatex">\(\|\psi\rangle\)</span>（"右矢"）</td>
+<td style="text-align: left;"><strong>希尔伯特空间</strong> <span class="arithmatex">\(\mathcal{H}\)</span> 中的向量</td>
+</tr>
+<tr>
+<td style="text-align: left;">有限维（3维）</td>
+<td style="text-align: left;">无限维</td>
+<td style="text-align: left;">可数无穷或连续无穷维</td>
+</tr>
+<tr>
+<td style="text-align: left;">基向量 <span class="arithmatex">\(\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3\)</span></td>
+<td style="text-align: left;">正交归一基矢 <span class="arithmatex">\(\{\|1\rangle, \|2\rangle, \ldots\}\)</span></td>
+<td style="text-align: left;">能量本征态或位置本征态</td>
+</tr>
+</tbody>
+</table>
+<h4 id="内积的对比">内积的对比<a class="headerlink" href="#内积的对比" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">经典</th>
+<th style="text-align: left;">量子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>记号</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{A} \cdot \mathbf{B} = A_i B_i\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\langle\phi\|\psi\rangle\)</span>（"左矢" <span class="arithmatex">\(\langle\phi\|\)</span> 与 "右矢" <span class="arithmatex">\(\|\psi\rangle\)</span> 的配对）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>结果类型</strong></td>
+<td style="text-align: left;">实数</td>
+<td style="text-align: left;"><strong>复数</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>性质</strong></td>
+<td style="text-align: left;">对称：<span class="arithmatex">\(\mathbf{A}\cdot\mathbf{B} = \mathbf{B}\cdot\mathbf{A}\)</span></td>
+<td style="text-align: left;">共轭对称：<span class="arithmatex">\(\langle\phi\|\psi\rangle = \langle\psi\|\phi\rangle^*\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="可观察量厄米算符">可观察量：厄米算符<a class="headerlink" href="#可观察量厄米算符" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>算符</strong> <span class="arithmatex">\(\hat{H}\)</span></td>
+<td style="text-align: left;">作用于量子态的"二阶张量"，线性映射：<span class="arithmatex">\(\|\psi\rangle \mapsto \hat{H}\|\psi\rangle\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>厄米性</strong>（自伴性）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\hat{H}^\dagger = \hat{H}\)</span>，保证本征值为实数（可测量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>求值结果</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\langle\phi\|\hat{H}\|\psi\rangle\)</span> —— 左矢、算符、右矢的"三明治"结构</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>这与经典张量的"插槽"操作完全类比：<span class="arithmatex">\(\mathbf{T}(\mathbf{A}, \mathbf{B}) = T_{ij}A_i B_j\)</span></p>
+</blockquote>
+<hr />
+<h3 id="4-量子理论的分量表示公式">4. 量子理论的分量表示公式<a class="headerlink" href="#4-量子理论的分量表示公式" title="Permanent link">&para;</a></h3>
+<h4 id="位置算符的分量">位置算符的分量<a class="headerlink" href="#位置算符的分量" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[x_{mn} = \langle m|\hat{x}|n\rangle\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\|n\rangle, \|m\rangle\)</span></td>
+<td style="text-align: left;">希尔伯特空间的基矢（如能量本征态）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\hat{x}\)</span></td>
+<td style="text-align: left;">位置算符</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x_{mn}\)</span></td>
+<td style="text-align: left;">位置算符在基 <span class="arithmatex">\(\{\|n\rangle\}\)</span> 下的<strong>矩阵元</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="算符乘积的分量">算符乘积的分量<a class="headerlink" href="#算符乘积的分量" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[(\hat{x}\hat{p})_{jm} = \sum_k x_{jk} p_{km} = x_{jk} p_{km}\]</div>
+<p>（最后一步使用爱因斯坦求和约定）</p>
+<h4 id="对易关系的分量形式海森堡不确定性原理的代数核心">对易关系的分量形式（海森堡不确定性原理的代数核心）<a class="headerlink" href="#对易关系的分量形式海森堡不确定性原理的代数核心" title="Permanent link">&para;</a></h4>
+<p><strong>抽象形式：</strong></p>
+<div class="arithmatex">\[[\hat{x}, \hat{p}] = \hat{x}\hat{p} - \hat{p}\hat{x} = i\hbar \hat{I}\]</div>
+<p><strong>分量形式：</strong></p>
+<div class="arithmatex">\[x_{jk}p_{km} - p_{jk}x_{km} = i\hbar \delta_{jm}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\([\hat{x}, \hat{p}]\)</span></td>
+<td style="text-align: left;">对易子（commutator）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\hbar\)</span></td>
+<td style="text-align: left;">约化普朗克常数，<span class="arithmatex">\(\hbar = h/2\pi\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta_{jm}\)</span></td>
+<td style="text-align: left;">克罗内克δ（单位矩阵的分量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(i\)</span></td>
+<td style="text-align: left;">虚数单位</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：位置和动量不能同时对角化（没有共同本征态），这是量子不确定性的数学根源。</p>
+<hr />
+<h2 id="二截图内容描述">二、截图内容描述<a class="headerlink" href="#二截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1插槽命名指标记法的核心思想">截图1：插槽命名指标记法的核心思想<a class="headerlink" href="#截图1插槽命名指标记法的核心思想" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：1.5.1 一个观念飞跃：插槽命名指标记法</li>
+<li><strong>三栏结构</strong>：</li>
+<li><strong>问题</strong>：如何简洁表示张量插槽的互换？<span class="arithmatex">\(G(A,B) = F(B,A)\)</span></li>
+<li><strong>核心思想</strong>：双重视角——分量视角 vs 几何对象视角</li>
+<li><strong>解决方案</strong>：给插槽命名，<span class="arithmatex">\(F(\_,\_) \to F_{ab}\)</span>，则 <span class="arithmatex">\(G_{ab} = F_{ba}\)</span></li>
+<li><strong>关键图示</strong>：立方体示意图，标注"视角一：分量"和"视角二：几何对象"，强调思维切换</li>
+</ul>
+<h3 id="截图2量子理论中的矢量与张量">截图2：量子理论中的矢量与张量<a class="headerlink" href="#截图2量子理论中的矢量与张量" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：拓展视野：量子理论中的矢量与张量</li>
+<li><strong>左栏（核心类比）</strong>：</li>
+<li>量子态 <span class="arithmatex">\(|\psi\rangle\)</span> ↔ 希尔伯特空间向量</li>
+<li>内积 <span class="arithmatex">\(\langle\psi|\psi\rangle\)</span> ↔ 复数类比经典内积</li>
+<li>可观察量（如 <span class="arithmatex">\(\hat{H}\)</span>）↔ 作用于向量的二阶张量</li>
+<li><strong>右栏（分量表示）</strong>：</li>
+<li>无穷维正交归一基矢 <span class="arithmatex">\(\{|1\rangle, |2\rangle, \ldots\}\)</span></li>
+<li>位置算符分量 <span class="arithmatex">\(x_{mn} = \langle m|\hat{x}|n\rangle\)</span></li>
+<li><strong>对易关系分量形式</strong>：<span class="arithmatex">\(x_{jk}p_{km} - p_{jk}x_{km} = i\hbar\delta_{jm}\)</span></li>
+<li><strong>底部总结</strong>："张量代数是描述自然法则的通用几何语言"</li>
+</ul>
+<hr />
+<h2 id="三核心概念通俗解释_1">三、核心概念通俗解释<a class="headerlink" href="#三核心概念通俗解释_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-爱因斯坦求和约定省略求和号的潜规则">1. 爱因斯坦求和约定：省略求和号的"潜规则"<a class="headerlink" href="#1-爱因斯坦求和约定省略求和号的潜规则" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>只要一个指标在一项中出现<strong>两次</strong>（一上一下或都在下），就自动对它求和。</p>
+</blockquote>
+<p><strong>例子</strong>：<span class="arithmatex">\(v_j v_j\)</span> 不用写 <span class="arithmatex">\(\sum_{j=1}^3 v_j v_j\)</span>，一看重复就知道要加三遍。</p>
+<h3 id="2-列维-奇维塔符号叉乘的密码本">2. 列维-奇维塔符号：叉乘的"密码本"<a class="headerlink" href="#2-列维-奇维塔符号叉乘的密码本" title="Permanent link">&para;</a></h3>
+<p>三维叉乘 <span class="arithmatex">\(\mathbf{a} \times \mathbf{b}\)</span> 有9种分量组合，<span class="arithmatex">\(\varepsilon_{ijk}\)</span> 用 <span class="arithmatex">\(+1, -1, 0\)</span> 精确编码了右手定则：
+- 顺时针循环（123→231→312）：<span class="arithmatex">\(+1\)</span>
+- 逆时针循环（132→213→321）：<span class="arithmatex">\(-1\)</span>
+- 任何重复（如113）：<span class="arithmatex">\(0\)</span>（平行向量叉乘为零）</p>
+<h3 id="3-希尔伯特空间无限维的量子舞台">3. 希尔伯特空间：无限维的"量子舞台"<a class="headerlink" href="#3-希尔伯特空间无限维的量子舞台" title="Permanent link">&para;</a></h3>
+<p>经典物理只需要3个坐标 <span class="arithmatex">\((x,y,z)\)</span> 描述粒子位置。但量子粒子可以处于<strong>叠加态</strong>——同时"在这里"和"在那里"。描述所有可能状态需要无限多个基向量，就像用无限多个音符才能演奏所有可能的旋律。</p>
+<h3 id="4-对易关系量子世界的不可交换性">4. 对易关系：量子世界的"不可交换性"<a class="headerlink" href="#4-对易关系量子世界的不可交换性" title="Permanent link">&para;</a></h3>
+<p>先位置后动量，与先动量后位置，结果差一个 <span class="arithmatex">\(i\hbar\)</span>。这就像：
+- 先旋转再平移 ≠ 先平移再旋转
+- 这种"操作顺序不可交换"是量子不确定性的本质</p>
+<hr />
+<h2 id="四本节核心洞见">四、本节核心洞见<a class="headerlink" href="#四本节核心洞见" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>"插槽命名指标记法"是贯穿经典与量子的统一语言</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">领域</th>
+<th style="text-align: left;">向量/张量角色</th>
+<th style="text-align: left;">核心方程的指标形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>经典力学</strong></td>
+<td style="text-align: left;">3维欧氏空间</td>
+<td style="text-align: left;"><span class="arithmatex">\(E = \frac{1}{2}mv_j v_j\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>电动力学</strong></td>
+<td style="text-align: left;">3维+时间</td>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{dp_i}{dt} = qE_i + q\varepsilon_{ijk}v_j B_k\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>量子力学</strong></td>
+<td style="text-align: left;">无限维希尔伯特空间</td>
+<td style="text-align: left;"><span class="arithmatex">\(x_{jk}p_{km} - p_{jk}x_{km} = i\hbar\delta_{jm}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>同一套符号系统，从3维到无限维，从实数到复数，从可对易到不可对易——这正是数学抽象的力量。</p>
+<hr />
+<h2 id="段落-4">段落 4：正交坐标变换、分量变换规律与自旋示例<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:15:12 ~ 00:23:57</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+刚才我们一直在一个固定的迪卡尔坐标系下讨论
+但物理规律应该是普世的
+不应该依赖于我们选择哪个坐标系
+所以如果我们换一个坐标系这些分量会怎么变化呢没错这就是我们接下来要讲的基地的正交变换与分量变换规律
+想象一下你刚才的房间
+你现在把XYZ轴旋转了一下,或者干脆换了个方向
+那同一个向量的分量肯定会变,对吧
+旋转之后X方向的投影就变了.我们用EI来表示原来的基底,用EP横来表示新的基底
+上面加一横表示新的那这两个集体之间有什么关系呢它们之间可以通过一个变换矩阵联系起来
+我们可以把新的集市一批衡表示成旧集时一爱的先行组合系数就是R一批衡
+反过来旧极时一I也可以表示成新极时一P恒的线性组合系数是RP恒一R矩阵
+我记得现性带书里学过
+这两个二矩阵有什么关系吗?它们互为逆矩阵
+也就是RPB乘以RIQ结果是单位矩阵也就是DERTAPIBQ矩阵的逆
+更重要的是因为我们讨论的是正交基底之间的变换这个变换矩阵有一个非常特别的形质
+他的逆矩阵就是他的转制矩阵逆矩阵等于转制矩阵这不就是正交矩阵的定义吗完全正确
+所以这种变换就叫做正交变换
+它代表的是空间中的旋转或者反循您骂了那一个向量它本身是客观存在的不随坐标系改变但它的分量会变
+这个分量变换的规律是什么呢这是一个非常重要的公式新的分量A把P等于旧的分量AI成以变换矩阵R把PI也就是A把P等于R把PIAI等等赛我有点基石的变换是I等于一把P而把PI看起来R把PI是从新到旧
+但是相当似这样的变换是A把P等于R把PIAI
+这怎么有点反过来哈哈你观察得很仔细乔伊这就是一个需要特别注意的地方向量本身是几何对象不随机底变化所以A等于AIEI等于A八P一八P
+把基时的变换公式带入,你就会发现向量的分量变化规律和基时的变化规律是反向的
+旧基底的系数R罢PI在分量变化里是把旧分量变成新分量的哦我明白了因为基石本身在变所以为了保持向量不变分量就得跟着反着变忘记了你抓住了核心
+同样的道理对于张亮分量变化规律就是一个三接张亮的新分量T八P八Q八二八会等于旧分量TIJK乘以三个变换矩阵R八PIR八QJR八二K每个指标都要乘以一个变换矩阵哇这一下子就复杂起来了但是规律很清晰是的
+而且如果你把坐标原点放在一起那么一个点的坐标它本身也是一个向量所以坐标本身的变化也遵循这个规律X八P等于R八PIXI这个也很合理那这些旋转变换矩阵它们有什么特殊的数学结构吗它们构成了一个非常重要的数学结构叫做旋转群
+这个群在量子理论中尤其是在描述粒子的自宣时扮演着极其重要的角色
+旋转群,听起来就很有趣,那有没有一些实际的例子能让我们感受一下这些变换的威力?
+当然有
+我们来看一个练习题 1.6节的练习
+想象一下,我们有两个迪卡尔坐标系,它们在XY平面上相互旋转了一个角度FY
+嗯G轴方向不变,只是X和Y轴转了一下
+对
+你能推导出把星基石变到旧基石的旋转矩阵Albaphase吗
+让我想想如果X轴转了F角那么新的X轴在旧的X轴上投影是Q三F在旧的Y轴上投影是SINF新Y轴在旧的X轴上投影是F三F在旧的Y轴上投影是Q三F
+轴不变
+没错
+所以旋转矩阵ABAFY的第一行就是 cosinefive sinefive zero
+第二行是复三五三五零第三行是零零一哦我写出来了
+那它的逆矩阵是不是就是它的转质矩阵呢
+你可以把这个矩阵转制一下,然后和原矩阵相成,你会发现结果确实是单位矩阵
+这验证了它是一个正交矩阵代表一个旋转
+太棒了,那这个例子还有个更深入的部分,和电磁波,引力波有关,是的,这部分非常精彩
+他把我们今天讲的变换规律和现代物理学的基本粒子性质联系起来了
+想象一下电磁场的实量是A,只有X和Y分量,AC等于0
+这两个分量可以描述电磁波的两种偏振电磁波有偏振如果我们把AX加IAY作为一个整体
+然后让坐标系旋转西踏角
+发现新的A八X加I八AY会变成AX加IAY乘以E的复西塔西方
+易的复西他西方这个音子是什么意思这个音子一乘上复F意味着当坐标系旋转斜角时这个负数会旋转一个负斜角
+在量子力学中这个异程上F的出现就暗示了与电磁波相关的量子粒子光子具有姿旋唯一的形状哇一个简单的坐标变换竟然能揭示粒子的姿旋这太神奇了还有更神奇的
+对于引力波它可以用一个对称的无际的二节张量HJK来描述同样也限制在XY平面
+我们考虑 hxx 加上 hxy 这个组合
+当坐标系旋转F角时你会发现它会变成HXX加上HXY成一一乘上负二F又是类似的因子但是变成了一乘上负二F多了一个二没错这个一乘上负二F就暗示了与引力波相关的量子粒子引粒子具有自旋为二的形状我的天所以通过观察这些物理量在坐标变换下的表现我们就能推断出它们背后粒子的一些基本属性比如自旋
+这简直是太酷了是的Joy
+就是集合视角和张量分析的强大处
+它不仅仅是描述物理现象的工具更是揭示物理本质的语言今天的内容真是信息量巨大从迪卡尔坐标系到基始再到安因苏坦求和约定然后是张亮分亮和那个令人咽咽闷的曹魏命名指标技法
+最后还看到了坐标变换和粒子自宣的联系
+感觉我们今天学到了一套非常强大的物理编程语言没错
+这套语言虽然刚开始可能有点抽象但一旦掌握你就会发现它能让你以一种非常优雅和统一的方式来理解和描述各种物理现象无论是经典还是量子好的那今天的现代经典物理学第三课就到这里了
+感谢赛的精彩讲解也谢谢大家的收听谢谢大家希望今天的课程能帮助大家更好地理解物理学的集合之美我们下期再见下期再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000921.8_transition.jpg" src="../frames/frame_000921.8_transition.jpg" /></p>
+<p><img alt="frame_001026.3_formula.jpg" src="../frames/frame_001026.3_formula.jpg" /></p>
+<p><img alt="frame_001124.8_transition.jpg" src="../frames/frame_001124.8_transition.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<h1 id="现代经典物理学-第三课-深度注解续_2">现代经典物理学 第三课 深度注解（续）<a class="headerlink" href="#现代经典物理学-第三课-深度注解续_2" title="Permanent link">&para;</a></h1>
+<h2 id="一板书ppt-公式详解新内容_1">一、板书/PPT 公式详解（新内容）<a class="headerlink" href="#一板书ppt-公式详解新内容_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-基矢变换与正交矩阵">1. 基矢变换与正交矩阵<a class="headerlink" href="#1-基矢变换与正交矩阵" title="Permanent link">&para;</a></h3>
+<p><strong>基矢变换关系（新→旧）：</strong></p>
+<div class="arithmatex">\[\mathbf{e}_i = \mathbf{e}_{\bar{p}} R_{\bar{p}i}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{e}_i\)</span></td>
+<td style="text-align: left;">旧基矢（带横杠表示新坐标系，即 <span class="arithmatex">\(\mathbf{e}_{\bar{p}}\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{e}_{\bar{p}}\)</span></td>
+<td style="text-align: left;">新基矢（下标加横杠标记）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(R_{\bar{p}i}\)</span></td>
+<td style="text-align: left;">变换矩阵元素：新基矢 <span class="arithmatex">\(\mathbf{e}_{\bar{p}}\)</span> 在旧基矢 <span class="arithmatex">\(\mathbf{e}_i\)</span> 上的投影</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质：</strong></p>
+<div class="arithmatex">\[\mathbf{R}^{-1} = \mathbf{R}^T \quad \text{或} \quad R_{i\bar{p}} = R_{\bar{p}i}^{-1} = R_{\bar{p}i}^T\]</div>
+<p>这正是<strong>正交矩阵</strong>的定义，保证旋转保持向量长度不变。</p>
+<hr />
+<h3 id="2-矢量分量变换法则公式-113a">2. 矢量分量变换法则（公式 1.13a）<a class="headerlink" href="#2-矢量分量变换法则公式-113a" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{A_{\bar{p}} = R_{\bar{p}i} A_i}\]</div>
+<div class="arithmatex">\[A_i = R_{i\bar{p}} A_{\bar{p}}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_i\)</span></td>
+<td style="text-align: left;">矢量 <span class="arithmatex">\(\mathbf{A}\)</span> 在旧基下的分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A_{\bar{p}}\)</span></td>
+<td style="text-align: left;">矢量 <span class="arithmatex">\(\mathbf{A}\)</span> 在新基下的分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(R_{\bar{p}i}\)</span></td>
+<td style="text-align: left;">从旧分量到新分量的变换矩阵</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>关键洞察</strong>：基矢变换与分量变换<strong>方向相反</strong>（"对偶"关系）
+- 基矢：<span class="arithmatex">\(\mathbf{e}_i = \mathbf{e}_{\bar{p}} R_{\bar{p}i}\)</span>（新→旧用 <span class="arithmatex">\(R_{\bar{p}i}\)</span>）
+- 分量：<span class="arithmatex">\(A_{\bar{p}} = R_{\bar{p}i} A_i\)</span>（旧→新用同样的 <span class="arithmatex">\(R_{\bar{p}i}\)</span>）</p>
+</blockquote>
+<p><strong>物理本质</strong>：矢量作为几何对象本身不变 <span class="arithmatex">\(\mathbf{A} = A_i\mathbf{e}_i = A_{\bar{p}}\mathbf{e}_{\bar{p}}\)</span>，基矢变了，分量必须反向补偿。</p>
+<hr />
+<h3 id="3-张量分量变换法则公式-113b">3. 张量分量变换法则（公式 1.13b）<a class="headerlink" href="#3-张量分量变换法则公式-113b" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{T_{\bar{p}\bar{q}\bar{r}} = R_{\bar{p}i} R_{\bar{q}j} R_{\bar{r}k} \, T_{ijk}}\]</div>
+<div class="arithmatex">\[T_{ijk} = R_{i\bar{p}} R_{j\bar{q}} R_{k\bar{r}} \, T_{\bar{p}\bar{q}\bar{r}}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_{ijk}\)</span></td>
+<td style="text-align: left;">三阶张量在旧基下的分量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T_{\bar{p}\bar{q}\bar{r}}\)</span></td>
+<td style="text-align: left;">三阶张量在新基下的分量</td>
+</tr>
+<tr>
+<td style="text-align: left;">每个 <span class="arithmatex">\(R\)</span> 因子</td>
+<td style="text-align: left;">对应一个指标的变换</td>
+</tr>
+</tbody>
+</table>
+<p><strong>规律</strong>：<span class="arithmatex">\(n\)</span> 阶张量有 <span class="arithmatex">\(n\)</span> 个指标，每个指标乘一个变换矩阵——这是张量"多线性"本质的体现。</p>
+<hr />
+<h3 id="4-坐标变换公式-113c">4. 坐标变换（公式 1.13c）<a class="headerlink" href="#4-坐标变换公式-113c" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{x_{\bar{p}} = R_{\bar{p}i} \, x_i}\]</div>
+<p><strong>说明</strong>：当坐标原点重合时，位置坐标作为位置矢量，其变换规律与普通矢量分量相同。</p>
+<hr />
+<h2 id="二核心概念深度解析">二、核心概念深度解析<a class="headerlink" href="#二核心概念深度解析" title="Permanent link">&para;</a></h2>
+<h3 id="1-正交变换的物理意义">1. 正交变换的物理意义<a class="headerlink" href="#1-正交变换的物理意义" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">数学性质</th>
+<th style="text-align: left;">物理诠释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{R}^T \mathbf{R} = \mathbf{I}\)</span></td>
+<td style="text-align: left;">旋转保持内积（长度与夹角）不变</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\det(\mathbf{R}) = +1\)</span></td>
+<td style="text-align: left;">纯旋转（右手系→右手系）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\det(\mathbf{R}) = -1\)</span></td>
+<td style="text-align: left;">包含反射（手性反转）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>旋转群 SO(3)</strong>：所有三维正交矩阵（行列式为+1）在矩阵乘法下构成群，是描述刚体转动和粒子自旋的数学基础。</p>
+<hr />
+<h3 id="2-分量变换-vs-基矢变换为何反向">2. 分量变换 vs 基矢变换：为何"反向"？<a class="headerlink" href="#2-分量变换-vs-基矢变换为何反向" title="Permanent link">&para;</a></h3>
+<p>用<strong>"被动观点"</strong>（坐标系变，物体不动）理解：</p>
+<div class="highlight"><pre><span></span><code>旧坐标系 {e₁, e₂, e₃} ──旋转──→ 新坐标系 {e₁̄, e₂̄, e₃̄}
+         ↑                              ↓
+       分量 Aᵢ                      分量 Aᵢ̄
+</code></pre></div>
+<ul>
+<li><strong>基矢旋转了</strong> → 新基矢是旧基矢的线性组合</li>
+<li><strong>分量必须反着变</strong> → 才能保证矢量 <span class="arithmatex">\(\mathbf{A}\)</span> 这个几何对象不变</li>
+</ul>
+<p>数学验证：</p>
+<div class="arithmatex">\[\mathbf{A} = A_i \mathbf{e}_i = A_i (\mathbf{e}_{\bar{p}} R_{\bar{p}i}) = (R_{\bar{p}i} A_i) \mathbf{e}_{\bar{p}} = A_{\bar{p}} \mathbf{e}_{\bar{p}}\]</div>
+<hr />
+<h3 id="3-旋转矩阵实例xy平面旋转练习16">3. 旋转矩阵实例：XY平面旋转（练习1.6）<a class="headerlink" href="#3-旋转矩阵实例xy平面旋转练习16" title="Permanent link">&para;</a></h3>
+<p>对于绕z轴旋转角度 <span class="arithmatex">\(\phi\)</span>：</p>
+<div class="arithmatex">\[\mathbf{R}(\phi) = \begin{pmatrix} \cos\phi &amp; \sin\phi &amp; 0 \\ -\sin\phi &amp; \cos\phi &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\]</div>
+<p><strong>验证正交性</strong>：
+- 转置：<span class="arithmatex">\(\mathbf{R}^T = \begin{pmatrix} \cos\phi &amp; -\sin\phi &amp; 0 \\ \sin\phi &amp; \cos\phi &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{pmatrix}\)</span>
+- 验证：<span class="arithmatex">\(\mathbf{R}^T \mathbf{R} = \mathbf{I}\)</span> ✓</p>
+<hr />
+<h2 id="三现代物理的深刻联系变换与自旋">三、现代物理的深刻联系：变换与自旋<a class="headerlink" href="#三现代物理的深刻联系变换与自旋" title="Permanent link">&para;</a></h2>
+<h3 id="核心发现课程高潮">核心发现（课程高潮）<a class="headerlink" href="#核心发现课程高潮" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">物理对象</th>
+<th style="text-align: left;">数学描述</th>
+<th style="text-align: left;">旋转行为</th>
+<th style="text-align: left;">暗示的自旋</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>光子（电磁波）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(A_x + iA_y\)</span>（复组合）</td>
+<td style="text-align: left;">乘以 <span class="arithmatex">\(e^{-i\phi}\)</span></td>
+<td style="text-align: left;"><strong>自旋 <span class="arithmatex">\(s=1\)</span></strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>引力子（引力波）</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(h_{xx} + ih_{xy}\)</span>（复组合）</td>
+<td style="text-align: left;">乘以 <span class="arithmatex">\(e^{-i2\phi}\)</span></td>
+<td style="text-align: left;"><strong>自旋 <span class="arithmatex">\(s=2\)</span></strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数学机制">数学机制<a class="headerlink" href="#数学机制" title="Permanent link">&para;</a></h3>
+<p>对于自旋为 <span class="arithmatex">\(s\)</span> 的粒子，其波函数在绕z轴旋转 <span class="arithmatex">\(\phi\)</span> 角时变换为：</p>
+<div class="arithmatex">\[\psi \rightarrow e^{-is\phi} \psi\]</div>
+<ul>
+<li><strong>电磁波</strong>：<span class="arithmatex">\(A_x + iA_y\)</span> 是圆偏振基，旋转 <span class="arithmatex">\(\phi\)</span> 时相位变 <span class="arithmatex">\(-\phi\)</span> → <span class="arithmatex">\(s=1\)</span></li>
+<li><strong>引力波</strong>：<span class="arithmatex">\(h_{xx} + ih_{xy}\)</span> 是引力波的"圆偏振"模式，相位变 <span class="arithmatex">\(-2\phi\)</span> → <span class="arithmatex">\(s=2\)</span></li>
+</ul>
+<p><strong>物理内涵</strong>：自旋反映了场在旋转下的"扭转"特性，是时空对称性（洛伦兹群的旋转部分）的量子体现。</p>
+<hr />
+<h2 id="四板书截图描述_1">四、板书截图描述<a class="headerlink" href="#四板书截图描述_1" title="Permanent link">&para;</a></h2>
+<p><strong>截图内容总结</strong>（"分量如何变换"页面）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">区域</th>
+<th style="text-align: left;">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>左侧文字</strong></td>
+<td style="text-align: left;">矢量作为几何对象的不变性声明；基矢变换与分量变换的推导逻辑</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中央公式</strong></td>
+<td style="text-align: left;">公式(1.13a)-(1.13c)的完整呈现</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>右侧图示</strong></td>
+<td style="text-align: left;">双向箭头示意图：基矢变换（向下箭头）与分量变换（向上箭头）的"对偶"关系，直观展示变换方向的相反性</td>
+</tr>
+</tbody>
+</table>
+<p><strong>视觉设计亮点</strong>：用箭头方向对比，强化"基矢变过去，分量变回来"的核心概念。</p>
+<hr />
+<h2 id="五本节知识脉络">五、本节知识脉络<a class="headerlink" href="#五本节知识脉络" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>笛卡尔坐标系 ──→ 基矢与分量 ──→ 坐标变换需求
+                      ↓
+              正交变换（保持内积）
+                      ↓
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+    基矢变换      分量变换        张量推广
+   eᵢ = eₚ̄Rₚ̄ᵢ    Aₚ̄ = Rₚ̄ᵢAᵢ    Tₚ̄q̄r̄ = Rₚ̄ᵢRq̄ⱼRᵣ̄ₖTᵢⱼₖ
+        └─────────────┴─────────────┘
+                      ↓
+              旋转群 SO(3)
+                      ↓
+        ┌─────────────┴─────────────┐
+        ↓                           ↓
+    经典物理                    量子物理
+（刚体力学）                （粒子自旋）
+</code></pre></div>
+<hr />
+<blockquote>
+<p><strong>下节预告</strong>：基于这套张量语言，课程将进入经典力学的重新表述——拉格朗日力学与哈密顿力学的几何化形式。</p>
+</blockquote>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

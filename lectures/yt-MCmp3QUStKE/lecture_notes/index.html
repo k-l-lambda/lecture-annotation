@@ -1,0 +1,4339 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-MCmp3QUStKE/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-r_iCQ3U8KJ4/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-T8Zxp9Nr34Y/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第14课 庞加莱群：基本粒子的数学指纹 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第14课-庞加莱群基本粒子的数学指纹" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第14课 庞加莱群：基本粒子的数学指纹
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：庞加莱群的定义、生成元与代数结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：庞加莱群的定义、生成元与代数结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图概念引入" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（概念引入）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二三张截图李代数对易关系表" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二、三张截图（李代数对易关系表）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心概念与公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心概念与公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心概念与公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-生成元的统一表示m_munu-的引入" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 生成元的统一表示：\(M_{\mu\nu}\) 的引入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-平移生成元p_mu-的引入" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 平移生成元：\(P_\mu\) 的引入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-庞加莱代数的三大核心对易关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 庞加莱代数的三大核心对易关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-半直积semi-direct-product的数学本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 半直积（Semi-direct Product）的数学本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-与诺特定理noethers-theorem的联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 与诺特定理（Noether's Theorem）的联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-粒子物理中的中心地位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 粒子物理中的中心地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗语言解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗语言解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：卡西米尔算符的思路与第一个不变量：质量平方
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：卡西米尔算符的思路与第一个不变量：质量平方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图张量表达与代数关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（张量表达与代数关系）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图卡西米尔算符的构造法则" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（卡西米尔算符的构造法则）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图质量的浮现" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（质量的浮现）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式详解与符号说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式详解与符号说明
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式详解与符号说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-庞加莱代数poincaré-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 庞加莱代数（Poincaré Algebra）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-卡西米尔算符的构造约束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 卡西米尔算符的构造约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-一阶卡西米尔算符的消失" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 一阶卡西米尔算符的消失
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-第一个卡西米尔算符质量平方" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 第一个卡西米尔算符（质量平方）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三关键理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、关键理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、关键理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-舒尔引理schurs-lemma与指纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 舒尔引理（Schur's Lemma）与"指纹"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-构造卡西米尔算符的材料学" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 构造卡西米尔算符的"材料学"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-庞加莱群的第二个卡西米尔算符预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 庞加莱群的第二个卡西米尔算符（预告）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗概念解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗概念解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、通俗概念解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#卡西米尔算符群的身份证号码" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡西米尔算符：群的"身份证号码"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一阶死胡同的直观理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "一阶死胡同"的直观理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：第二个卡西米尔算符、泡利-卢班斯矢量与自旋
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：第二个卡西米尔算符、泡利-卢班斯矢量与自旋">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图三阶迷局与四阶筛选" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（三阶迷局与四阶筛选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图静止质量与内禀自旋" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（静止质量与内禀自旋）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图洛伦兹群表示与自旋" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（洛伦兹群表示与自旋）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pauli-lubański-赝矢量pauli-lubański-pseudovector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Pauli-Lubański 赝矢量（Pauli-Lubański Pseudovector）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-第二个卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 第二个卡西米尔算符
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-静止参考系下的显式表达式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 静止参考系下的显式表达式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景与构造逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景与构造逻辑
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景与构造逻辑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-为什么三阶卡西米尔算符不存在" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 为什么三阶卡西米尔算符不存在？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-四阶组合的残酷淘汰赛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 四阶组合的"残酷淘汰赛"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-轨道角动量的滤波器效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 轨道角动量的"滤波器"效应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗概念解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗概念解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、通俗概念解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#自旋作为时空对称性的烙印" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "自旋"作为时空对称性的烙印
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么自旋是离散的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么自旋是离散的？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j_1-j_2-与物理自旋-j" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \((j_1, j_2)\) 与物理自旋 \(j\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：不可约表示与基本粒子：质量、自旋及场的对应
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：不可约表示与基本粒子：质量、自旋及场的对应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图自旋的群论起源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（自旋的群论起源）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图粒子的完整标签" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（粒子的完整标签）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图理论框架的总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（理论框架的总结）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式识别与符号解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式识别与符号解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式识别与符号解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-表示标记与自旋求和公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 表示标记与自旋求和公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-具体表示的物理对应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 具体表示的物理对应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-洛伦兹群的双覆盖-sl2mathbbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 洛伦兹群的双覆盖 \(SL(2,\mathbb{C})\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-时空对称性-vs-内部对称性关键区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 时空对称性 vs 内部对称性（关键区分）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-无质量粒子的特殊性光子与引力子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 无质量粒子的特殊性（光子与引力子）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-更高自旋的理论允许性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 更高自旋的理论允许性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基本粒子就是群的不可约表示是什么意思" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "基本粒子就是群的不可约表示"是什么意思？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么自旋-12-的粒子要叫旋量spinor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么自旋 \(1/2\) 的粒子要叫"旋量"（Spinor）？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#质量与自旋粒子的身份证" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        质量与自旋：粒子的"身份证"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：庞加莱群的定义、生成元与代数结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：庞加莱群的定义、生成元与代数结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图概念引入" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（概念引入）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二三张截图李代数对易关系表" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二、三张截图（李代数对易关系表）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心概念与公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心概念与公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心概念与公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-生成元的统一表示m_munu-的引入" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 生成元的统一表示：\(M_{\mu\nu}\) 的引入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-平移生成元p_mu-的引入" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 平移生成元：\(P_\mu\) 的引入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-庞加莱代数的三大核心对易关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 庞加莱代数的三大核心对易关系
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-半直积semi-direct-product的数学本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 半直积（Semi-direct Product）的数学本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-与诺特定理noethers-theorem的联系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 与诺特定理（Noether's Theorem）的联系
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-粒子物理中的中心地位" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 粒子物理中的中心地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗语言解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗语言解释
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：卡西米尔算符的思路与第一个不变量：质量平方
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：卡西米尔算符的思路与第一个不变量：质量平方">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图张量表达与代数关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（张量表达与代数关系）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图卡西米尔算符的构造法则" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（卡西米尔算符的构造法则）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图质量的浮现" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（质量的浮现）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式详解与符号说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式详解与符号说明
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式详解与符号说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-庞加莱代数poincaré-algebra" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 庞加莱代数（Poincaré Algebra）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-卡西米尔算符的构造约束" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 卡西米尔算符的构造约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-一阶卡西米尔算符的消失" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 一阶卡西米尔算符的消失
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-第一个卡西米尔算符质量平方" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 第一个卡西米尔算符（质量平方）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三关键理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、关键理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、关键理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-舒尔引理schurs-lemma与指纹" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 舒尔引理（Schur's Lemma）与"指纹"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-构造卡西米尔算符的材料学" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 构造卡西米尔算符的"材料学"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-庞加莱群的第二个卡西米尔算符预告" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 庞加莱群的第二个卡西米尔算符（预告）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗概念解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗概念解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、通俗概念解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#卡西米尔算符群的身份证号码" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        卡西米尔算符：群的"身份证号码"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一阶死胡同的直观理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "一阶死胡同"的直观理解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：第二个卡西米尔算符、泡利-卢班斯矢量与自旋
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：第二个卡西米尔算符、泡利-卢班斯矢量与自旋">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图三阶迷局与四阶筛选" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（三阶迷局与四阶筛选）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图静止质量与内禀自旋" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（静止质量与内禀自旋）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图洛伦兹群表示与自旋" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（洛伦兹群表示与自旋）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pauli-lubański-赝矢量pauli-lubański-pseudovector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Pauli-Lubański 赝矢量（Pauli-Lubański Pseudovector）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-第二个卡西米尔算符" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 第二个卡西米尔算符
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-静止参考系下的显式表达式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 静止参考系下的显式表达式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景与构造逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景与构造逻辑
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景与构造逻辑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-为什么三阶卡西米尔算符不存在" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 为什么三阶卡西米尔算符不存在？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-四阶组合的残酷淘汰赛" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 四阶组合的"残酷淘汰赛"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-轨道角动量的滤波器效应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 轨道角动量的"滤波器"效应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗概念解释_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗概念解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、通俗概念解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#自旋作为时空对称性的烙印" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "自旋"作为时空对称性的烙印
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么自旋是离散的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么自旋是离散的？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#j_1-j_2-与物理自旋-j" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        \((j_1, j_2)\) 与物理自旋 \(j\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 4：不可约表示与基本粒子：质量、自旋及场的对应
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 4：不可约表示与基本粒子：质量、自旋及场的对应">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt-截图内容描述_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT 截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、板书/PPT 截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#第一张截图自旋的群论起源" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一张截图（自旋的群论起源）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第二张截图粒子的完整标签" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二张截图（粒子的完整标签）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#第三张截图理论框架的总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三张截图（理论框架的总结）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式识别与符号解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式识别与符号解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式识别与符号解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-表示标记与自旋求和公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 表示标记与自旋求和公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-具体表示的物理对应" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 具体表示的物理对应
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-洛伦兹群的双覆盖-sl2mathbbc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 洛伦兹群的双覆盖 \(SL(2,\mathbb{C})\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-时空对称性-vs-内部对称性关键区分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 时空对称性 vs 内部对称性（关键区分）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-无质量粒子的特殊性光子与引力子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 无质量粒子的特殊性（光子与引力子）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-更高自旋的理论允许性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 更高自旋的理论允许性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基本粒子就是群的不可约表示是什么意思" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "基本粒子就是群的不可约表示"是什么意思？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为什么自旋-12-的粒子要叫旋量spinor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么自旋 \(1/2\) 的粒子要叫"旋量"（Spinor）？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#质量与自旋粒子的身份证" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        质量与自旋：粒子的"身份证"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第14课-庞加莱群基本粒子的数学指纹">《基于对称性的物理学》第14课 庞加莱群：基本粒子的数学指纹<a class="headerlink" href="#基于对称性的物理学第14课-庞加莱群基本粒子的数学指纹" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 4 个段落，<a href="https://www.youtube.com/watch?v=MCmp3QUStKE">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 庞加莱群的定义、生成元与代数结构</a></li>
+<li><a href="#段落-2">00:04:47 卡西米尔算符的思路与第一个不变量：质量平方</a></li>
+<li><a href="#段落-3">00:09:56 第二个卡西米尔算符、泡利-卢班斯矢量与自旋</a></li>
+<li><a href="#段落-4">00:18:10 不可约表示与基本粒子：质量、自旋及场的对应</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：庞加莱群的定义、生成元与代数结构<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:04:47</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎来到基于对称性的物理学第十四课我是周伊今天很高兴和大家一起探索物理世界里那些美妙的对称性
+没错,乔伊,我是赛,很高兴在此和大家见面
+今天我们要深入探讨的正是如何通过对称性来理解我们宇宙中最基本的一些构成要素基本粒子这真的是一个非常深刻而美丽的洞察
+听起来就很激动人心
+赛老师,我们之前讲了洛伦兹群,它包含了旋转和BUS的变换
+那今天我们要讲的庞加莱群,它又是什么呢?是不是在洛伦兹群的基础上又增加了是什么?
+问得好周怡
+你可以这么理解
+庞加莱群确实是在洛伦兹群的基础上做了一个升级我们知道洛伦兹群只涉及旋转和BOOST
+此外我们还期望在时空不同点测量光速也不会改变其数值
+嗯对
+但是光速不变这个原理
+不光是你在一个地方测量时那样你在时空中的任何一个点测量它的值都不会改变这其实就意味着我们的物理定律或者说光速本身对空间和时间的平移也是不变的
+哦我明白了
+所以庞加莱群就是把这种空间和时间的平移对称性也加进去了完全正确所以我们可以简单的把庞加莱群理解为罗伦兹群加上平移
+也就是旋转,boost再加上空间和时间的平移
+这样一来它就涵盖了我们四维时空中的所有的基本对称性哇!听起来庞加莱群就跟包罗万象了那它有什么特别处吗?
+比如我们之前讲洛伦兹群的时候它有生成源,庞加莱群也有吗?当然有
+庞加莱群的生成元除了罗伦兹群原有的那些也就是表示旋转的JI和表示Boost的KI
+还新增加了表示平易的生成元P下标Mew
+这里的MUE指的是时空的四个维度包括时间平移和空间平移好的那这些生成元之间有什么关系呢是不是也像洛伦兹群那样通过理代数来描述他们之间的对异关系没错就是理代数
+这些生成元之间的对异关系也就是它们构成的礼带数确实看起来会比较复杂
+书上列出了很多个诗字,比如JI和JJ的李夸浩
+JI和KJ的李夸号等等
+还有JI和PJ的李夸浩这样的新关系我看到树上这些公式了密密麻麻的确实有点让人眼花了乱是的这些公式初看起来确实不太直观
+但核心思想是这些对异关系定义了这个群的结构告诉我们这些对称性操作是如何相互作用的
+我特意将这十个生成元之间的离括号列了一个表那还有更简单的形式吗有的
+为了让它看起来更简洁一些大家习惯用M下滑线MUENEW这样的反称张量来表示JI和KI
+这种表示法其中我们以前也提到过希望再简单介绍一下这个定义帮我回顾一下也就是JI等于二分之一乘EPSLONIJK双重缩并MJK或者MIJ等于EPSLONIJK缩并JK
+还有KI等于M零I哦这样就能把旋转和Boost的生成源统一起来了是吗对就是这个意思用M下M新新之后庞加来代数的核心关系就可以简化为三个主要类型平移生成源P下M新之间对应也就是P下M新和P下M新的理括号等于零还有M下M新新和P下R的理括号等于复虚数单位I成括号A大下M新肉成P下M新肉成P下M新括号
+还有M下M新新和M下ROSIGMA的理括号等于负虚数单位I成括号A踏下M牛肉成M下New Sigma减A踏下M牛肉成M下New肉减A踏下New肉成M下New Sigma加A踏下New Sigma成M下New肉括号
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000086.7_transition.jpg" src="../frames/frame_000086.7_transition.jpg" /></p>
+<p><img alt="frame_000174.3_formula.jpg" src="../frames/frame_000174.3_formula.jpg" /></p>
+<p><img alt="frame_000188.0_formula.jpg" src="../frames/frame_000188.0_formula.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>这段内容标志着课程从<strong>洛伦兹群</strong>向<strong>庞加莱群</strong>（Poincaré Group）的关键跃升，引入了时空平移对称性，这是相对论性量子场论和粒子物理的数学基石。</p>
+<hr />
+<h2 id="一板书ppt-截图内容描述">一、板书/PPT 截图内容描述<a class="headerlink" href="#一板书ppt-截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="第一张截图概念引入">第一张截图（概念引入）<a class="headerlink" href="#第一张截图概念引入" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《宇宙对称性的扩充：引入时空平移》</li>
+<li><strong>核心图示</strong>：</li>
+<li><strong>左侧</strong>：光锥图（<span class="arithmatex">\(c=\text{constant}\)</span>），表示光速不变原理在时空不同点的普适性。</li>
+<li><strong>中下图</strong>：标注“洛伦兹群变换”，展示旋转和Boost（参考系变换）如何改变空间取向和速度。</li>
+<li><strong>右下图</strong>：标注“时空平移变换”，展示坐标系在时间和空间方向上的整体平移（网格整体移动）。</li>
+<li><strong>关键公式框</strong>：<blockquote>
+<p>庞加莱群 = 洛伦兹群 + 平移 = 旋转 + Boost + 平移</p>
+</blockquote>
+</li>
+<li><strong>注释框</strong>：强调庞加莱群并非简单的直和（direct sum），而是<strong>半直积</strong>（semi-direct sum），这是维持群结构的关键数学细节。</li>
+</ul>
+<h3 id="第二三张截图李代数对易关系表">第二、三张截图（李代数对易关系表）<a class="headerlink" href="#第二三张截图李代数对易关系表" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《庞加莱群的李代数：基础对易关系》</li>
+<li><strong>表格结构</strong>：一个 <span class="arithmatex">\(5\times 5\)</span> 的对易关系表，行列分别标记为生成元 <span class="arithmatex">\(J_i\)</span>（旋转）、<span class="arithmatex">\(K_i\)</span>（Boost）、<span class="arithmatex">\(P_i\)</span>（空间平移）、<span class="arithmatex">\(P_0\)</span>（时间平移/能量）。</li>
+<li><strong>表格内容</strong>：展示了10个生成元彼此之间的李括号 <span class="arithmatex">\([X, Y]\)</span> 结果，包含克罗内克 delta <span class="arithmatex">\(\delta_{ij}\)</span> 和列维-奇维塔符号 <span class="arithmatex">\(\epsilon_{ijk}\)</span>。</li>
+<li><strong>底部注释</strong>：“形式看似混乱与不直观，但这是通向深刻物理定律的必经之路。”</li>
+</ul>
+<hr />
+<h2 id="二核心概念与公式详解">二、核心概念与公式详解<a class="headerlink" href="#二核心概念与公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-生成元的统一表示m_munu-的引入">1. 生成元的统一表示：<span class="arithmatex">\(M_{\mu\nu}\)</span> 的引入<a class="headerlink" href="#1-生成元的统一表示m_munu-的引入" title="Permanent link">&para;</a></h3>
+<p>为了将旋转和Boost统一处理，引入<strong>反对称张量</strong>（antisymmetric tensor）<span class="arithmatex">\(M_{\mu\nu}\)</span>（其中 <span class="arithmatex">\(\mu, \nu = 0,1,2,3\)</span> 为时空指标）。</p>
+<p><strong>关键公式</strong>：</p>
+<div class="arithmatex">\[
+J_i = \frac{1}{2}\epsilon_{ijk}M_{jk}, \quad M_{ij} = \epsilon_{ijk}J_k, \quad K_i = M_{0i}
+\]</div>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(M_{\mu\nu}\)</span>：<strong>洛伦兹群的生成元</strong>的协变形式，<span class="arithmatex">\(M_{\mu\nu} = -M_{\nu\mu}\)</span>（反对称，共6个独立分量）。
+- <span class="arithmatex">\(J_i\)</span>（<span class="arithmatex">\(i=1,2,3\)</span>）：<strong>空间旋转生成元</strong>（角动量算符），对应 <span class="arithmatex">\(M_{23}, M_{31}, M_{12}\)</span>。
+- <span class="arithmatex">\(K_i\)</span>（<span class="arithmatex">\(i=1,2,3\)</span>）：<strong>Boost生成元</strong>（推动变换），对应 <span class="arithmatex">\(M_{01}, M_{02}, M_{03}\)</span>（时间-空间分量）。
+- <span class="arithmatex">\(\epsilon_{ijk}\)</span>：<strong>列维-奇维塔符号</strong>（Levi-Civita symbol），完全反对称，<span class="arithmatex">\(\epsilon_{123}=1\)</span>，用于三维空间指标间的转换。
+- <strong>物理意义</strong>：<span class="arithmatex">\(M_{\mu\nu}\)</span> 将“转动”和“换参考系”统一为“时空平面内的转动”——<span class="arithmatex">\(M_{ij}\)</span> 是空间平面 <span class="arithmatex">\(ij\)</span> 内的转动，<span class="arithmatex">\(M_{0i}\)</span> 是时间-空间平面 <span class="arithmatex">\(0i\)</span> 内的“转动”（即Boost）。</p>
+<h3 id="2-平移生成元p_mu-的引入">2. 平移生成元：<span class="arithmatex">\(P_\mu\)</span> 的引入<a class="headerlink" href="#2-平移生成元p_mu-的引入" title="Permanent link">&para;</a></h3>
+<p>庞加莱群在洛伦兹群基础上新增的生成元是<strong>四动量</strong>（four-momentum）算符 <span class="arithmatex">\(P_\mu\)</span>：</p>
+<p><strong>符号说明</strong>：
+- <span class="arithmatex">\(P_\mu = (P_0, P_1, P_2, P_3) = (H/c, \mathbf{P})\)</span>：<strong>平移生成元</strong>。
+  - <span class="arithmatex">\(P_0\)</span>（或 <span class="arithmatex">\(H\)</span>）：<strong>时间平移生成元</strong>，对应系统的<strong>能量</strong>（哈密顿量）。
+  - <span class="arithmatex">\(P_i\)</span>（<span class="arithmatex">\(i=1,2,3\)</span>）：<strong>空间平移生成元</strong>，对应系统的<strong>动量</strong>分量。
+- <span class="arithmatex">\(\mu, \nu\)</span>：时空指标，<span class="arithmatex">\(\mu=0\)</span> 为时间，<span class="arithmatex">\(\mu=1,2,3\)</span> 为空间。</p>
+<h3 id="3-庞加莱代数的三大核心对易关系">3. 庞加莱代数的三大核心对易关系<a class="headerlink" href="#3-庞加莱代数的三大核心对易关系" title="Permanent link">&para;</a></h3>
+<p>庞加莱群的李代数（Lie Algebra）由以下三类对易关系（commutation relations）完全定义，它们决定了对称性操作如何相互作用：</p>
+<h4 id="类型-i平移子群的阿贝尔性">类型 I：平移子群的阿贝尔性<a class="headerlink" href="#类型-i平移子群的阿贝尔性" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+[P_\mu, P_\nu] = 0
+\]</div>
+<ul>
+<li><strong>含义</strong>：任意两个平移操作（无论是时间平移、空间平移还是混合）彼此对易，先后顺序不影响结果。这对应时空的<strong>均匀性</strong>（homogeneity）——物理定律不依赖于你选择在何时何地做实验。</li>
+</ul>
+<h4 id="类型-ii洛伦兹变换与平移的耦合半直积结构">类型 II：洛伦兹变换与平移的耦合（半直积结构）<a class="headerlink" href="#类型-ii洛伦兹变换与平移的耦合半直积结构" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+[M_{\mu\nu}, P_\rho] = i(\eta_{\mu\rho}P_\nu - \eta_{\nu\rho}P_\mu)
+\]</div>
+<ul>
+<li><strong>符号</strong>：<span class="arithmatex">\(\eta_{\mu\nu} = \text{diag}(+1, -1, -1, -1)\)</span> 为闵可夫斯基度规（Minkowski metric）。</li>
+<li><strong>含义</strong>：这是庞加莱群最核心的数学特征。它表明<strong>平移生成元 <span class="arithmatex">\(P_\mu\)</span> 本身构成洛伦兹群的矢量表示</strong>。</li>
+<li>当 <span class="arithmatex">\(\rho=0\)</span>（时间分量）：<span class="arithmatex">\([M_{i0}, P_0] = -iP_i\)</span>，即Boost变换会混合能量和动量。</li>
+<li>当 <span class="arithmatex">\(\rho=i\)</span>（空间分量）：<span class="arithmatex">\([M_{ij}, P_k] = i(\delta_{ik}P_j - \delta_{jk}P_i)\)</span>，即旋转变换会旋转动量矢量。</li>
+</ul>
+<h4 id="类型-iii洛伦兹子代数不变的部分">类型 III：洛伦兹子代数（不变的部分）<a class="headerlink" href="#类型-iii洛伦兹子代数不变的部分" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+[M_{\mu\nu}, M_{\rho\sigma}] = i(\eta_{\mu\rho}M_{\nu\sigma} - \eta_{\nu\rho}M_{\mu\sigma} - \eta_{\mu\sigma}M_{\nu\rho} + \eta_{\nu\sigma}M_{\mu\rho})
+\]</div>
+<ul>
+<li><strong>含义</strong>：这即是洛伦兹群本身的李代数，描述旋转与Boost之间的闭合关系（例如两次Boost的复合等于一次旋转加一次Boost）。</li>
+</ul>
+<hr />
+<h2 id="三理论背景补充">三、理论背景补充<a class="headerlink" href="#三理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-半直积semi-direct-product的数学本质">1. 半直积（Semi-direct Product）的数学本质<a class="headerlink" href="#1-半直积semi-direct-product的数学本质" title="Permanent link">&para;</a></h3>
+<p>字幕中提到庞加莱群是“洛伦兹群 + 平移”，但注释强调这不是简单的<strong>直和</strong>（direct sum），而是<strong>半直积</strong> <span class="arithmatex">\(ISO(3,1) = \mathbb{R}^4 \rtimes SO(3,1)\)</span>。
+- <strong>原因</strong>：平移群 <span class="arithmatex">\(\mathbb{R}^4\)</span> 是<strong>正规子群</strong>（normal subgroup），而洛伦兹群 <span class="arithmatex">\(SO(3,1)\)</span> 通过共轭作用在平移群上（即先做一个洛伦兹变换，再平移，再逆洛伦兹变换，等价于另一个平移）。这种“相互作用”体现在对易关系 <span class="arithmatex">\([M, P] \neq 0\)</span> 中。</p>
+<h3 id="2-与诺特定理noethers-theorem的联系">2. 与诺特定理（Noether's Theorem）的联系<a class="headerlink" href="#2-与诺特定理noethers-theorem的联系" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>时空平移对称性 <span class="arithmatex">\(\leftrightarrow\)</span> 能量-动量守恒</strong>：<span class="arithmatex">\(P_\mu\)</span> 作为生成元，对应的对称性是时空坐标 <span class="arithmatex">\(x^\mu \to x^\mu + a^\mu\)</span> 的不变性。根据诺特定理，这直接导致孤立系统的<strong>四动量守恒</strong>。</li>
+<li><strong>洛伦兹对称性 <span class="arithmatex">\(\leftrightarrow\)</span> 角动量守恒</strong>：<span class="arithmatex">\(M_{\mu\nu}\)</span> 生成时空转动，对应<strong>相对论性角动量张量</strong>守恒。</li>
+</ul>
+<h3 id="3-粒子物理中的中心地位">3. 粒子物理中的中心地位<a class="headerlink" href="#3-粒子物理中的中心地位" title="Permanent link">&para;</a></h3>
+<p>在量子场论中，<strong>基本粒子被定义为庞加莱群的不可约表示</strong>（irreducible representations）。一个粒子的质量（<span class="arithmatex">\(m\)</span>）和自旋（<span class="arithmatex">\(s\)</span>）正是标记这些表示的<strong>卡西米尔算符</strong>（Casimir operators）的本征值：
+- <span class="arithmatex">\(P_\mu P^\mu = m^2c^2\)</span>（质量壳条件）
+- <span class="arithmatex">\(W_\mu W^\mu = -m^2s(s+1)\hbar^2\)</span>（其中 <span class="arithmatex">\(W_\mu\)</span> 为Pauli-Lubanski赝矢量，与自旋相关）</p>
+<hr />
+<h2 id="四通俗语言解释">四、通俗语言解释<a class="headerlink" href="#四通俗语言解释" title="Permanent link">&para;</a></h2>
+<p>想象你是一位<strong>时空摄影师</strong>：</p>
+<ul>
+<li>
+<p><strong>洛伦兹群</strong>（之前的课程）：只允许你<strong>转动相机</strong>（旋转 <span class="arithmatex">\(J_i\)</span>）或<strong>追赶被摄物体</strong>（Boost <span class="arithmatex">\(K_i\)</span>）。无论你如何转动或奔跑，你看到的物理规律（光速）不变，但你始终站在原点拍摄。</p>
+</li>
+<li>
+<p><strong>庞加莱群</strong>（本课新增）：你现在获得了<strong>瞬移能力</strong>（平移 <span class="arithmatex">\(P_\mu\)</span>）。你可以把相机搬到宇宙的任何角落（空间平移 <span class="arithmatex">\(P_i\)</span>），也可以把拍摄时间调到过去或未来（时间平移 <span class="arithmatex">\(P_0\)</span>），然后再进行转动或追赶。</p>
+</li>
+</ul>
+<p><strong>关键洞察</strong>：<strong>“瞬移”和“转动/追赶”并不独立</strong>。如果你在瞬移后转动相机，这等价于先转动相机，然后朝一个<strong>被旋转过的方向</strong>瞬移。这就是对易关系 <span class="arithmatex">\([M, P] \neq 0\)</span> 的直观体现——平移和洛伦兹变换“纠缠”在一起，构成了庞加莱群这个更宏大的对称性结构。</p>
+<p>正是这种“包罗万象”的对称性，迫使基本粒子必须携带<strong>确定的质量和自旋</strong>，并遵守相对论性波动方程（如克莱因-戈登方程、狄拉克方程）。</p>
+<hr />
+<h2 id="段落-2">段落 2：卡西米尔算符的思路与第一个不变量：质量平方<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:04:47 ~ 00:09:55</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+一共三组关系,其中最后一组就是洛伦自带数扁身
+这些关系是如何得到的
+你可以通过上一课提及的这些生成源的无限维表示来验证其实也可以用有限维表示进行验证只不过针对有限维表示而言只能验证最后一个洛伦兹袋鼠本身
+无论是有线维表示还是无线维表示,最后一个洛伦子袋鼠都是成立的
+还有其实这些验证你可以手工进行也可以借助数学软件验证好的虽然公式本身很复杂但核心是这些生成源之间的相互作用对吧
+那我们研究这些复杂的群和袋鼠最终是为了什么呢?
+他能告诉我们关于物理世界什么信息这个问题问到点子啦
+我们研究这些群和它们的李袋鼠一个非常重要的目的就是寻找它们的不可约表示
+而要标记这些表示卡西米尔算符就显得非常有用卡西米尔算符这个名字听起来有点酷
+它具体是做什么的呢卡西米尔算符简单来说就是由群的生成元构造出来的并且与这个群的所有生成元都对应的算符
+特点是在群的每一个不可约表示力卡西米尔算符的值都是一个固定的标量
+所以这些固定的标量纸就成了标记这些表示的指纹我记得以前我们也提到过卡西米尔算符
+烤先是指和所有生成源都对应的蒜腹
+这些算符是如何找出来的呢首先根据定义寻找它有三条硬性要求第一卡西米尔算符C必须和所有的平移生成元P以及洛伦兹生成元M对应也就是他们互不干扰李阔浩为零
+第二,既然要和洛伦兹生成源对应,那它本身必须一个洛伦兹标量
+第三我们在构造塔的时候手头只有生成源P和M以及两个极其特殊的场数不变张量也就是杜归A塔和全反对称的列维奇维塔张量EPSILON可用明白了就是用A塔EPSILONPM缩并成一个洛伦兹不变的标量并且和所有的生成源对应然后我从一接卡西米尔算符找题
+仔细列出所有可能项
+第一项的常识量无法用A塔或EPSLON构成,所以只能取0
+第二项长章量只能取A塔但是一个对称一个反衡索并为零所以我们说不存在一阶卡西米尔算符我明白了那么对二阶卡西米尔算符我们也是先列出所有可能二阶标量项
+然后尽可能用A塔,EPSLON或其组合替代长数张量,如果没有合适的组合就取零,如果有合适的组合再看看是否能通过缩并为零或者可吸收到其他项中是的
+但是经过你说的这些处理后,最后还能剩下三项
+然后我逐项检查是否能和所有生成元对移最后我们发现后两项不满足对移关系于是剩下最后一项P下索并上哇塞我们找到了第一个卡西米尔算符这个是个二节卡西米尔算符P平方等于P下索并上没错
+这不仅仅是个数学结果它有着极其直接的物理意义你想想在之前我们提过P下是时空平逸生物源它在物理上直接对应着粒子的四维动量四维动量我记得它包含了能量和三维动量对吧完全正确我们如果直接计算这个四维动量的平方由于明科夫斯基时空度归的存在空间部分会变好
+所以P缩并P其实就是能量E的平方减去三维动量P的大小平方
+更关键的是作为卡西米尔算符群论中的舒尔盈利保证了他在任何一个不可约表示中必定等于一个固定的长数标量
+也就是不同的不可约表示对应着不同的场数值就像是给每个不可约表示一个独一无二的身份证号码对吗非常形象的类比
+对于庞加莱群,我们已经以这样的卡西米尔算法P下缩并P上我们把它记作M平方
+M平方这个M听起来很像质量啊没错准你直觉很准
+我们后面会再次讨论这个问题
+那将会发现这个m正是粒子的质量
+所以庞加莱群的第一个卡西米尔算符就给出了我们描述粒子的第一个重要标签质量那么既然有二节的卡西米尔算符是不是也会有更高阶的呢没错这正是当时探索的必然路径
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000287.9_parastart.jpg" src="../frames/frame_000287.9_parastart.jpg" /></p>
+<p><img alt="frame_000372.5_transition.jpg" src="../frames/frame_000372.5_transition.jpg" /></p>
+<p><img alt="frame_000443.2_transition.jpg" src="../frames/frame_000443.2_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>这段内容的核心在于<strong>从庞加莱代数出发，系统性地构造卡西米尔算符（Casimir Operators）</strong>，并揭示第一个卡西米尔算符 <span class="arithmatex">\(P^2\)</span> 与粒子质量之间的深刻联系。这是理解粒子物理中"质量"与"自旋"标签的群论起源的关键步骤。</p>
+<hr />
+<h2 id="一板书ppt-截图内容描述_1">一、板书/PPT 截图内容描述<a class="headerlink" href="#一板书ppt-截图内容描述_1" title="Permanent link">&para;</a></h2>
+<h3 id="第一张截图张量表达与代数关系">第一张截图（张量表达与代数关系）<a class="headerlink" href="#第一张截图张量表达与代数关系" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《优雅的张量表达：化繁为简》</li>
+<li><strong>左侧（生成元重构）</strong>：</li>
+<li>展示角动量 <span class="arithmatex">\(J_i\)</span> 与洛伦兹生成元 <span class="arithmatex">\(M_{\mu\nu}\)</span> 的相互转换关系：<span class="arithmatex">\(J_i = \frac{1}{2}\epsilon_{ijk}M_{jk} \Longleftrightarrow M_{ij} = \epsilon_{ijk}J_k\)</span></li>
+<li>标注 Boost 生成元 <span class="arithmatex">\(K_i = M_{0i}\)</span></li>
+<li><strong>右侧（庞加莱代数）</strong>：</li>
+<li>列出三组对易关系：<ol>
+<li><span class="arithmatex">\([P_\mu, P_\nu] = 0\)</span>（平移生成元彼此对易）</li>
+<li><span class="arithmatex">\([M_{\mu\nu}, P_\rho] = -i(\eta_{\mu\rho}P_\nu - \eta_{\nu\rho}P_\mu)\)</span>（洛伦兹变换与平移的混合关系）</li>
+<li><span class="arithmatex">\([M_{\mu\nu}, M_{\rho\sigma}] = -i(\eta_{\mu\rho}M_{\nu\sigma} - \eta_{\mu\sigma}M_{\nu\rho} - \eta_{\nu\rho}M_{\mu\sigma} + \eta_{\nu\sigma}M_{\mu\rho})\)</span>（洛伦兹代数本身）</li>
+</ol>
+</li>
+<li><strong>底部黑框（无限维表示）</strong>：</li>
+<li>给出微分算符形式的实现：<span class="arithmatex">\(M_{\mu\nu} = i(x_\mu\partial_\nu - x_\nu\partial_\mu)\)</span>，<span class="arithmatex">\(P_\mu = i\partial_\mu\)</span></li>
+</ul>
+<h3 id="第二张截图卡西米尔算符的构造法则">第二张截图（卡西米尔算符的构造法则）<a class="headerlink" href="#第二张截图卡西米尔算符的构造法则" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《寻找不变性：庞加莱群与卡西米尔算符的构造法则》</li>
+<li><strong>左侧（生成元概览）</strong>：</li>
+<li>平移生成元 <span class="arithmatex">\(P_\mu\)</span>（共4个）</li>
+<li>洛伦兹生成元 <span class="arithmatex">\(M_{\mu\nu}\)</span>（共6个，反对称张量）</li>
+<li>下方列出完整的庞加莱代数对易关系</li>
+<li><strong>"粘合剂"（The Glue）</strong>：标注可用的常数张量——闵可夫斯基度规 <span class="arithmatex">\(\eta_{\mu\nu} = \text{diag}(1,-1,-1,-1)\)</span> 与完全反对称列维-奇维塔张量 <span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\)</span></li>
+<li><strong>右侧（核心要求/The Core Rules）</strong>：</li>
+<li><strong>全局对易（Global Commutativity）</strong>：<span class="arithmatex">\([C, P_\lambda] = 0\)</span> 且 <span class="arithmatex">\([C, M_{\alpha\beta}] = 0\)</span></li>
+<li><strong>洛伦兹标量（Lorentz Scalar）</strong>：<span class="arithmatex">\(C\)</span> 必须是不带外部自由指标的标量</li>
+<li><strong>封闭构造（Closed Construction）</strong>：只能由 <span class="arithmatex">\(P_\mu\)</span>、<span class="arithmatex">\(M_{\mu\nu}\)</span>、<span class="arithmatex">\(\eta_{\mu\nu}\)</span>、<span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\)</span> 组合或缩并而成</li>
+</ul>
+<h3 id="第三张截图质量的浮现">第三张截图（质量的浮现）<a class="headerlink" href="#第三张截图质量的浮现" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《质量的浮现：一阶的死胡同与二阶算符的破局》</li>
+<li><strong>上半部分（一阶算符）</strong>：</li>
+<li>假设形式：<span class="arithmatex">\(C_1 = a^\mu P_\mu + b^{\mu\nu}M_{\mu\nu}\)</span></li>
+<li>红色叉号标记两项均为零：<ul>
+<li>(a) <span class="arithmatex">\(a^\mu = 0\)</span>：4维时空中不存在洛伦兹不变的非零常数矢量</li>
+<li>(b) <span class="arithmatex">\(\eta^{\mu\nu}\)</span>（对称）与 <span class="arithmatex">\(M_{\mu\nu}\)</span>（反称）缩并必然为零</li>
+</ul>
+</li>
+<li><strong>结论</strong>：一阶卡西米尔算符不存在（<span class="arithmatex">\(C_1 = 0\)</span>）</li>
+<li><strong>下半部分（二阶算符）</strong>：</li>
+<li>假设形式：<span class="arithmatex">\(C_2 = a_1^{\mu\nu}P_\mu P_\nu + a_2 P_\mu P^\mu + b^{\mu\nu\rho}P_\mu M_{\nu\rho} + \dots\)</span></li>
+<li>逐步排除：<ul>
+<li>含奇数个 <span class="arithmatex">\(M\)</span> 指标的项因 <span class="arithmatex">\(\epsilon\)</span> 缩并或对称性为零</li>
+<li>含 <span class="arithmatex">\(M\)</span> 的项（如 <span class="arithmatex">\(M_{\mu\nu}M^{\mu\nu}\)</span>）经对易检验 <span class="arithmatex">\([M_{\mu\nu}M^{\mu\nu}, P_\sigma] \neq 0\)</span> 被排除（强制要求 <span class="arithmatex">\(c_2=0, c_3=0\)</span>）</li>
+</ul>
+</li>
+<li><strong>最终结果（蓝框）</strong>：第一个独立卡西米尔算符 <span class="arithmatex">\(P^2 = P_\mu P^\mu\)</span></li>
+<li><strong>物理意义</strong>：静质量的平方 <span class="arithmatex">\(m^2\)</span></li>
+</ul>
+<hr />
+<h2 id="二公式详解与符号说明">二、公式详解与符号说明<a class="headerlink" href="#二公式详解与符号说明" title="Permanent link">&para;</a></h2>
+<h3 id="1-庞加莱代数poincaré-algebra">1. 庞加莱代数（Poincaré Algebra）<a class="headerlink" href="#1-庞加莱代数poincaré-algebra" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[[M_{\mu\nu}, P_\rho] = -i(\eta_{\mu\rho}P_\nu - \eta_{\nu\rho}P_\mu)\]</div>
+<ul>
+<li><strong>符号含义</strong>：</li>
+<li><span class="arithmatex">\(M_{\mu\nu}\)</span>：洛伦兹群的6个生成元（<span class="arithmatex">\(\mu,\nu = 0,1,2,3\)</span>），反对称（<span class="arithmatex">\(M_{\mu\nu} = -M_{\nu\mu}\)</span>）。其中 <span class="arithmatex">\(M_{0i}\)</span> 对应 Boost（加速），<span class="arithmatex">\(M_{ij}\)</span> 对应空间转动。</li>
+<li><span class="arithmatex">\(P_\rho\)</span>：时空平移的4个生成元，物理上对应四维动量算符。</li>
+<li><span class="arithmatex">\(\eta_{\mu\rho}\)</span>：闵可夫斯基度规，符号约定为 <span class="arithmatex">\((+,-,-,-)\)</span>。</li>
+<li>右侧表达式：体现洛伦兹变换如何"转动"动量矢量，是四矢量变换规律的代数体现。</li>
+</ul>
+<h3 id="2-卡西米尔算符的构造约束">2. 卡西米尔算符的构造约束<a class="headerlink" href="#2-卡西米尔算符的构造约束" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[[C, P_\lambda] = 0, \quad [C, M_{\alpha\beta}] = 0\]</div>
+<ul>
+<li><strong>含义</strong>：卡西米尔算符 <span class="arithmatex">\(C\)</span> 必须与庞加莱群的<strong>所有</strong>生成元对易（李括号为零）。这使其成为群代数的<strong>中心元素</strong>（Central Element）。</li>
+</ul>
+<h3 id="3-一阶卡西米尔算符的消失">3. 一阶卡西米尔算符的消失<a class="headerlink" href="#3-一阶卡西米尔算符的消失" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[C_1 = a^\mu P_\mu + b^{\mu\nu}M_{\mu\nu} \equiv 0\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(a^\mu P_\mu\)</span> 项</strong>：在4维闵可夫斯基时空中，不存在能与所有洛伦兹变换对易的非零常数矢量 <span class="arithmatex">\(a^\mu\)</span>（即不存在洛伦兹不变的矢量）。若强行要求 <span class="arithmatex">\(a^\mu\)</span> 在洛伦兹变换下不变，则必有 <span class="arithmatex">\(a^\mu = 0\)</span>。</li>
+<li><strong><span class="arithmatex">\(b^{\mu\nu}M_{\mu\nu}\)</span> 项</strong>：常数张量 <span class="arithmatex">\(b^{\mu\nu}\)</span> 必须由 <span class="arithmatex">\(\eta^{\mu\nu}\)</span> 构成（唯一可用的二阶对称张量），但 <span class="arithmatex">\(\eta^{\mu\nu}M_{\mu\nu} = 0\)</span> 因为 <span class="arithmatex">\(\eta\)</span> 对称而 <span class="arithmatex">\(M\)</span> 反对称（<span class="arithmatex">\(M_{\mu\nu} = -M_{\nu\mu}\)</span>），缩并后正负抵消。</li>
+</ul>
+<h3 id="4-第一个卡西米尔算符质量平方">4. 第一个卡西米尔算符（质量平方）<a class="headerlink" href="#4-第一个卡西米尔算符质量平方" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[P^2 \equiv P_\mu P^\mu = \eta^{\mu\nu}P_\mu P_\nu = E^2 - \vec{p}^2\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(P_\mu\)</span></strong>：四维动量算符，<span class="arithmatex">\(P_0 = E\)</span>（能量），<span class="arithmatex">\(P_i = p_i\)</span>（三维动量）。</li>
+<li><strong><span class="arithmatex">\(P^\mu = \eta^{\mu\nu}P_\nu\)</span></strong>：利用度规升降指标。</li>
+<li><strong>物理诠释</strong>：该算符的本征值即为粒子静质量平方 <span class="arithmatex">\(m^2\)</span>（在 <span class="arithmatex">\(c=1\)</span> 单位制下）。这是相对论中 <span class="arithmatex">\(E^2 = p^2c^2 + m^2c^4\)</span> 的群论根源。</li>
+</ul>
+<hr />
+<h2 id="三关键理论背景补充">三、关键理论背景补充<a class="headerlink" href="#三关键理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-舒尔引理schurs-lemma与指纹">1. 舒尔引理（Schur's Lemma）与"指纹"<a class="headerlink" href="#1-舒尔引理schurs-lemma与指纹" title="Permanent link">&para;</a></h3>
+<p>舒尔引理指出：在群的<strong>不可约表示</strong>（Irreducible Representation）中，任何与所有群元对易的算符（即卡西米尔算符）必定是单位矩阵的常数倍（标量）。
+- <strong>后果</strong>：卡西米尔算符的本征值成为标记不可约表示的<strong>量子数</strong>。对于庞加莱群，<span class="arithmatex">\(P^2\)</span> 的本征值 <span class="arithmatex">\(m^2\)</span> 就是粒子的质量，这解释了为什么同一类粒子（如所有电子）具有相同的质量——它们属于同一个不可约表示。</p>
+<h3 id="2-构造卡西米尔算符的材料学">2. 构造卡西米尔算符的"材料学"<a class="headerlink" href="#2-构造卡西米尔算符的材料学" title="Permanent link">&para;</a></h3>
+<p>构造卡西米尔算符如同用乐高积木搭建模型，可用的基本块（积木）受到严格限制：
+- <strong>生成元</strong>：<span class="arithmatex">\(P_\mu\)</span>（平移）、<span class="arithmatex">\(M_{\mu\nu}\)</span>（洛伦兹）
+- <strong>不变张量</strong>（"粘合剂"）：
+  - <span class="arithmatex">\(\eta_{\mu\nu}\)</span>：度规张量，用于缩并指标构造标量
+  - <span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\)</span>：四阶完全反对称张量（Levi-Civita符号），仅在4维时空中可用，用于构造赝标量（Pseudoscalar）</p>
+<p><strong>为什么一阶不存在？</strong> 这本质上是时空对称性的结果：4维闵可夫斯基空间不存在洛伦兹不变的矢量方向（没有"绝对静止"或"绝对方向"），因此无法构造线性标量。</p>
+<h3 id="3-庞加莱群的第二个卡西米尔算符预告">3. 庞加莱群的第二个卡西米尔算符（预告）<a class="headerlink" href="#3-庞加莱群的第二个卡西米尔算符预告" title="Permanent link">&para;</a></h3>
+<p>虽然本段只讨论了 <span class="arithmatex">\(P^2\)</span>，但完整的庞加莱群实际上有<strong>两个</strong>独立的卡西米尔算符。第二个是<strong>泡利-卢班斯基矢量（Pauli-Lubanski Vector）</strong>的平方：</p>
+<div class="arithmatex">\[W_\mu = \frac{1}{2}\epsilon_{\mu\nu\rho\sigma}M^{\nu\rho}P^\sigma, \quad C_2 = W_\mu W^\mu\]</div>
+<ul>
+<li><span class="arithmatex">\(W_\mu\)</span> 与 <span class="arithmatex">\(P_\mu\)</span> 正交（<span class="arithmatex">\(W_\mu P^\mu = 0\)</span>），其平方的本征值与粒子的<strong>自旋</strong>（Spin）或<strong>螺旋度</strong>（Helicity）相关。这解释了为什么基本粒子除了质量外，还需要用自旋来分类。</li>
+</ul>
+<hr />
+<h2 id="四通俗概念解释">四、通俗概念解释<a class="headerlink" href="#四通俗概念解释" title="Permanent link">&para;</a></h2>
+<h3 id="卡西米尔算符群的身份证号码">卡西米尔算符：群的"身份证号码"<a class="headerlink" href="#卡西米尔算符群的身份证号码" title="Permanent link">&para;</a></h3>
+<p>想象庞加莱群的所有不可约表示是一个巨大的图书馆，每本书代表一种粒子（或场）。如何快速找到某类粒子（比如"所有质量为 <span class="arithmatex">\(m\)</span>、自旋为 <span class="arithmatex">\(s\)</span> 的粒子"）？</p>
+<ul>
+<li><strong>卡西米尔算符</strong>就像是图书的<strong>ISBN编号系统</strong>。它由书的内容（生成元）构成，但无论你从哪个角度读这本书（进行洛伦兹变换或平移），这个编号都不会变（与所有生成元对易）。</li>
+<li><strong><span class="arithmatex">\(P^2 = m^2\)</span></strong> 就是"质量"这个标签的群论定义。它告诉我们：质量不是随意填写的参数，而是庞加莱对称性在粒子身上留下的"烙印"——任何具有该对称性的物理系统，其粒子必然携带这个不变的标量特征。</li>
+</ul>
+<h3 id="一阶死胡同的直观理解">"一阶死胡同"的直观理解<a class="headerlink" href="#一阶死胡同的直观理解" title="Permanent link">&para;</a></h3>
+<p>试图构造一阶卡西米尔算符（线性组合）就像试图找到一个<strong>在所有参考系中都指向同一方向的箭头</strong>。但根据相对论，</p>
+<hr />
+<h2 id="段落-3">段落 3：第二个卡西米尔算符、泡利-卢班斯矢量与自旋<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:09:56 ~ 00:18:09</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+我们故意从师继续往上找
+先看三阶的组合,比如三个p,三个m,或者p和m混打
+但结果比较平淡
+经过构成罗论子标量和与所有生成元对异这两个严苛求一卡所有的三界组合要么因为无法凑出非零的长数张量直接为零要么因为矩阵剂的反对称性互相抵消化为乌有了也就是说根本不存在三界的卡西米尔算法了完完全全存在
+于是我们只能迎难而上杀入四节的袋树丛林
+四阶意味着四个生成源的排列组合有PPPP像PPPM像PPMM像还有MMMM像等等
+写出来真的是密密麻麻的一大片感觉光是列出这些多项事就要耗费大量脑细胞了要在这样的丛林里找岂不是大海捞针确实是个苦力活但幸好我们有冷酷的排雷机制
+首先带有七数个外部自由指标的项会被立刻判定为零清空出局
+其次单纯四个批相成的项其实只是之前找到的那个二界算符质量平方的自己成自己并不是新的独立算符最绝的是最后一步要求他必须和时空平移生成元对一就这一条把一大批由常规度规矩量A塔拼凑出的组合通通淘汰了简直是极其残酷的淘汰赛啊
+那大浪淘沙过后最后留下了什么真金白银经过这层层的严密筛选结果非常震撼
+依靠常规方法构造的像全军覆没却奇迹般地留下了唯一的一根毒苗
+它是依赖时空中仅存的另一个不变张量也就是全反对称的列为奇维塔符号EPSLEN通过将动量P和洛伦兹生成源M交错缩并而硬生生存下来的这就宣告了我们锁定了第二个也是唯一的一个独立的高阶算符我们先看看这个大浪淘沙最后得到这个卡西米尔算符吧为了更美观不妨引入一个波利鲁班斯验史量W下mU等于二分之一乘以EPSLEN下mUROSIGMA缩并P上mROSIGMA
+一是整个新的四阶卡西米尔算符可表示成W平方等于W下MU缩并W上MU
+哇虽然听起来全都是复杂的数学符号,那它在物理上到底刻画了什么含义呢?这里藏着一个非常精巧的数学效应
+你还记得我们在前面讲长表示的时候提到过吗
+总的洛伦兹生成员艾玛其实包含了两种贡献
+这种是由微商算子构建的无穷为的轨道搅动量
+另一种是单纯混合产量有纤维的内饼自选部分嗯我记得就有点类似地球绕着太阳一个弓转同时它自身还在原地自转对吧极其完美的比喻
+这就涉及到列为奇维塔符号EPSILON最奇妙的地方了
+它是一个绝对不讲情面的全犯堆成长料
+因为动量P本质上是对时空坐标球偏到数的微分算子
+再叠加上宫传像里包含的坐标和偏导数
+当全反对称的 Epsilon 遇上同位偏道数所带的对称性
+这两股特性一碰
+轨道角动量那一部分在求和后完全变成了零这简直像是个天生的滤波器把由于空间运动导致的弓转部分给彻底屏蔽掉了完全正确这意味着庞家来群通过这个复杂的算符硬生生的将因为粒子跑来跑去产生的轨道角动量影响全剔除了最后算符里面干干净净的仅仅存活了属于有限维的纯粹的内柄自旋的那一部分太奇妙了那既然它过滤掉了弓转只剩下自转如果计算它的平方也就是W索柄W得出的物理量是什么呢为了看得更直白咱们可以切换到一个很淘巧的视角选定一个具有质量的粒子的净直坐标系
+这个参考系下粒子老老实实带着不动它的四维动量P就只剩下时间分量了且数值上正好就是它自己的静止质量M三个空间动量全等于零把这个处于静止只有标量M的状态带入进算符里去会发生什么变化负大的方程
+三个空间动量全等于零把这个处于静止只有标量M的状态带进进算符里去会发生什么变化负大的方程可以说是瞬间探索了W的时间分量直接变成了零空间分量则变成了静止质量M加上自旋矩阵的组合这时我们再去算这个第二个卡西米尔算符W平方的话结果可以说是清爽到了极点它直接等于负的M的平方去乘以一个J的平方这里头又出现了M的平方这不是我们找出的第一个卡西米尔算符吗
+对所以好戏上演了这个J实际上就是核心它是三维空间的旋转生成元
+这个平方刚好也是我们非常熟悉的SU2制好代数的卡西米尔算符
+这意味着倘若我们在四节卡西米尔算符W平方中利用我们找到的前一个卡西米尔算符也就是质量的平方去除了M的影像剩余的本征值状态就必然是一个属于不可约本征态的常数我懂了等于说是庞加莱群通过极其严格的数学给不可约表示定下了第二个死死的规矩一点都没错
+可以说,这是时空对称性赋予我们的第二道身份鉴定
+除了静止质量M之外物理学家们往往用一个非常经典的核心标签来称呼并标记这个被提成出来的属性那就是常数JJ这个J是什么呢这个J就是我们物理学里常说的自旋Spin
+所以你看庞加莱群的两个卡西米尔算符自然而然的就给出了描述粒子的两个最核心的属性质量M和字旋J这简直是太棒了对称性竟然能直接告诉我们粒子的质量和字旋
+那这个自选J有什么特点吗?有的
+和质量M可以取任意值不同,自选J只能取半整数或整数
+书上还提到洛伦兹群的孵化李袋鼠看作两个SU2的复本
+所以长的表示可以用J1J2表记
+这里面蕴含的物理自选J其实是一个范围也就是从他们的差值一直到他俩相加之合即从J一J二的绝对值到J一J二明白了所以零零对应的J就是零管它叫自选零
+那二分之一零对应的J就是二分之一
+而二分之一二分之一的相加最大就是一,所以它就是自选一的主场,是这样理解吗?对了一大半
+对于二分之一二分之一,它其实混入了j=0和j=1.
+但在真实的物理操作中我们往往会用洛伦兹规范条件像拔掉杂草一样把J等于零这个非物理的荣誉部分淘汰掉
+剩下的实质主角就变成了纯正的自选一的例子所以记住庞家莱群的每一个不可越表示都由这两个标量值质量M和自选J来为一标记这真的是一个非常重要的结论
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000596.1_parastart.jpg" src="../frames/frame_000596.1_parastart.jpg" /></p>
+<p><img alt="frame_000988.1_transition.jpg" src="../frames/frame_000988.1_transition.jpg" /></p>
+<p><img alt="frame_001046.7_transition.jpg" src="../frames/frame_001046.7_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>这段内容聚焦于<strong>庞加莱群（Poincaré Group）的第二个卡西米尔算符（Casimir Operator）</strong>的构造与物理诠释，揭示了粒子"自旋"（Spin）这一内禀属性的群论起源。这是连接时空对称性与粒子内禀量子数的关键环节。</p>
+<hr />
+<h2 id="一板书ppt-截图内容描述_2">一、板书/PPT 截图内容描述<a class="headerlink" href="#一板书ppt-截图内容描述_2" title="Permanent link">&para;</a></h2>
+<h3 id="第一张截图三阶迷局与四阶筛选">第一张截图（三阶迷局与四阶筛选）<a class="headerlink" href="#第一张截图三阶迷局与四阶筛选" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《自旋的定格：三阶迷局、四阶算符与高阶的坍缩》</li>
+<li><strong>左侧（三阶算符的覆灭）</strong>：</li>
+<li>红色标签"全军覆没 (All Eliminated)"，列举三阶组合：<span class="arithmatex">\(PPP\)</span>、<span class="arithmatex">\(PPM\)</span>、<span class="arithmatex">\(PMM\)</span>、<span class="arithmatex">\(MMM\)</span>。</li>
+<li>标注消失原因：奇数指标无法构成非零张量；<span class="arithmatex">\(\text{Tr}(M^3)=0\)</span>（迹为零）；<span class="arithmatex">\(\epsilon\)</span> 缩并与雅可比恒等式导致两两抵消。</li>
+<li><strong>中间（四阶算符的终局之战）</strong>：</li>
+<li>列出所有四阶排列：<span class="arithmatex">\(PPPP\)</span>、<span class="arithmatex">\(PPPM\)</span>、<span class="arithmatex">\(PPMM\)</span>、<span class="arithmatex">\(PMMM\)</span>、<span class="arithmatex">\(MMMM\)</span>。</li>
+<li>红色删除线划去：奇数指标项、非独立项（如 <span class="arithmatex">\((P^2)^2\)</span>）、不与平移生成元对易的项。</li>
+<li>蓝色箭头指向"唯一幸存项 (The Survivor)"：<span class="arithmatex">\(c_5(\epsilon_{\mu\nu\rho\sigma}P^\nu M^{\rho\sigma})\)</span>。</li>
+<li><strong>右侧（核心定义）</strong>：</li>
+<li><strong>Pauli-Lubański 赝矢量</strong>：<span class="arithmatex">\(W_\mu = \frac{1}{2}\epsilon_{\mu\nu\rho\sigma}P^\nu M^{\rho\sigma}\)</span></li>
+<li><strong>第二个独立卡西米尔算符</strong>：<span class="arithmatex">\(W^2 = W_\mu W^\mu\)</span></li>
+<li>物理意义标注："本征坐标系下的自旋平方"。</li>
+</ul>
+<h3 id="第二张截图静止质量与内禀自旋">第二张截图（静止质量与内禀自旋）<a class="headerlink" href="#第二张截图静止质量与内禀自旋" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《有质量粒子的本征：质量与自旋》</li>
+<li><strong>左侧（质量卡西米尔）</strong>：</li>
+<li><span class="arithmatex">\(P^2 = (-i\partial_\mu)(-i\partial^\mu) = -\Box\)</span></li>
+<li>在动量空间中：<span class="arithmatex">\(P^2 = E^2 - \mathbf{p}^2 = m^2\)</span></li>
+<li>结论：算符本征值 = 粒子的静止质量平方 (<span class="arithmatex">\(m^2\)</span>)。</li>
+<li><strong>右侧（自旋卡西米尔）</strong>：</li>
+<li>静止参考系设定：<span class="arithmatex">\(P^\mu = (m, 0, 0, 0)\)</span>。</li>
+<li>完整生成元分解：<span class="arithmatex">\(M^{\text{fin}\rho\sigma} = x^\rho P^\sigma - x^\sigma P^\rho + S^{\rho\sigma}\)</span>（轨道部分 + 自旋部分）。</li>
+<li>关键推导：由于 <span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\partial^\nu\partial^\rho = 0\)</span>（偏导数对称性与 <span class="arithmatex">\(\epsilon\)</span> 全反对称性正交），轨道角动量被完全屏蔽。</li>
+<li>静止系计算结果：<span class="arithmatex">\(W^2 = -m^2 \mathbf{J}^2 = -m^2 j(j+1)\)</span>。</li>
+<li>结论：剔除质量后，<span class="arithmatex">\(W^2\)</span> 完全由粒子的内禀量子数 <span class="arithmatex">\(j\)</span> 决定。</li>
+<li><strong>底部（物理自旋取值）</strong>：</li>
+<li><span class="arithmatex">\(j=0\)</span>：标量场（如希格斯玻色子）</li>
+<li><span class="arithmatex">\(j=1/2\)</span>：外尔旋量场（如电子）</li>
+<li><span class="arithmatex">\(j=1\)</span>：矢量场（通过规范消除非物理自由度）</li>
+</ul>
+<h3 id="第三张截图洛伦兹群表示与自旋">第三张截图（洛伦兹群表示与自旋）<a class="headerlink" href="#第三张截图洛伦兹群表示与自旋" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《从 SU(2) 对称性到自旋表示》</li>
+<li><strong>核心内容</strong>：</li>
+<li>洛伦兹群的复化李代数可看作两个 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 副本的直和。</li>
+<li>表示用两个数字 <span class="arithmatex">\((j_1, j_2)\)</span> 标记，物理自旋 <span class="arithmatex">\(j\)</span> 取值范围为 <span class="arithmatex">\(|j_1-j_2| \leq j \leq j_1+j_2\)</span>。</li>
+<li>对应关系：<ul>
+<li><span class="arithmatex">\((0,0) \to j=0\)</span>（自旋0表示）</li>
+<li><span class="arithmatex">\((\frac{1}{2},0)\)</span> 或 <span class="arithmatex">\((0,\frac{1}{2}) \to j=\frac{1}{2}\)</span>（自旋1/2表示）</li>
+<li><span class="arithmatex">\((\frac{1}{2},\frac{1}{2}) \to j=0 \text{ 和 } j=1\)</span>，经洛伦兹规范条件剔除 <span class="arithmatex">\(j=0\)</span> 后，剩下自旋1表示。</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="二核心公式详解">二、核心公式详解<a class="headerlink" href="#二核心公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-pauli-lubański-赝矢量pauli-lubański-pseudovector">1. Pauli-Lubański 赝矢量（Pauli-Lubański Pseudovector）<a class="headerlink" href="#1-pauli-lubański-赝矢量pauli-lubański-pseudovector" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[W_\mu = \frac{1}{2}\epsilon_{\mu\nu\rho\sigma}P^\nu M^{\rho\sigma}\]</div>
+<p><strong>符号含义</strong>：
+- <span class="arithmatex">\(W_\mu\)</span>：Pauli-Lubański 四矢量，是一个<strong>赝矢量</strong>（在空间反演下符号改变）。
+- <span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\)</span>：四阶全反对称 Levi-Civita 符号（在字幕中称为"列为奇维塔符号"），<span class="arithmatex">\(\epsilon_{0123}=+1\)</span>，任意两个指标交换改变符号。
+- <span class="arithmatex">\(P^\nu\)</span>：四动量算符（平移生成元），<span class="arithmatex">\(P^\nu = i\partial^\nu\)</span>。
+- <span class="arithmatex">\(M^{\rho\sigma}\)</span>：洛伦兹群的生成元（转动和 boost 的生成元），满足特定的对易关系。
+- 因子 <span class="arithmatex">\(\frac{1}{2}\)</span>：来自对反对称张量 <span class="arithmatex">\(M^{\rho\sigma}\)</span> 的双重计数归一化。</p>
+<p><strong>物理角色</strong>：这是构造第二个卡西米尔算符的"原材料"，它巧妙地混合了平移生成元 <span class="arithmatex">\(P\)</span> 和洛伦兹生成元 <span class="arithmatex">\(M\)</span>。</p>
+<h3 id="2-第二个卡西米尔算符">2. 第二个卡西米尔算符<a class="headerlink" href="#2-第二个卡西米尔算符" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[W^2 = W_\mu W^\mu = \eta^{\mu\nu}W_\mu W_\nu\]</div>
+<p><strong>符号含义</strong>：
+- <span class="arithmatex">\(W^2\)</span>：第二个卡西米尔算符（第一个是 <span class="arithmatex">\(P^2 = P_\mu P^\mu\)</span>）。
+- <span class="arithmatex">\(\eta^{\mu\nu}\)</span>：闵可夫斯基度规（ mostly minus 约定或 mostly plus，取决于上下文，通常粒子物理用 <span class="arithmatex">\(\eta = \text{diag}(1,-1,-1,-1)\)</span>）。
+- 这个算符与庞加莱群的所有生成元对易，因此其本征值是标记不可约表示的好量子数。</p>
+<h3 id="3-静止参考系下的显式表达式">3. 静止参考系下的显式表达式<a class="headerlink" href="#3-静止参考系下的显式表达式" title="Permanent link">&para;</a></h3>
+<p>在粒子静止系中，<span class="arithmatex">\(P^\mu = (m, \mathbf{0})\)</span>，此时：</p>
+<div class="arithmatex">\[W^2 = -m^2 \mathbf{J}^2 = -m^2 j(j+1)\]</div>
+<p><strong>符号含义</strong>：
+- <span class="arithmatex">\(m\)</span>：粒子静止质量（来自第一个卡西米尔算符的本征值）。
+- <span class="arithmatex">\(\mathbf{J}^2\)</span>：三维空间转动生成元的平方（即 <span class="arithmatex">\(\mathfrak{su}(2)\)</span> 卡西米尔算符）。
+- <span class="arithmatex">\(j\)</span>：自旋量子数，取值为 <span class="arithmatex">\(0, \frac{1}{2}, 1, \frac{3}{2}, \dots\)</span>。</p>
+<hr />
+<h2 id="三理论背景与构造逻辑">三、理论背景与构造逻辑<a class="headerlink" href="#三理论背景与构造逻辑" title="Permanent link">&para;</a></h2>
+<h3 id="1-为什么三阶卡西米尔算符不存在">1. 为什么三阶卡西米尔算符不存在？<a class="headerlink" href="#1-为什么三阶卡西米尔算符不存在" title="Permanent link">&para;</a></h3>
+<p>庞加莱群的生成元包括平移 <span class="arithmatex">\(P_\mu\)</span>（4个）和洛伦兹转动 <span class="arithmatex">\(M_{\mu\nu}\)</span>（6个）。构造高阶不变量（多项式组合）时：
+- <strong>奇数指标困境</strong>：任何带有奇数个外部自由指标的项，在洛伦兹变换下无法构成标量（张量缩并后指标必须成对出现）。
+- <strong>矩阵迹的反对称性</strong>：如 <span class="arithmatex">\(\text{Tr}(M^3)=0\)</span>，因为 <span class="arithmatex">\(M\)</span> 在矢量表示下是反对称的，奇数次幂的迹为零。
+- <strong>雅可比恒等式</strong>：生成元满足的李代数关系导致某些组合相互抵消。</p>
+<p>因此，<strong>三阶组合全军覆没</strong>，这是由时空的洛伦兹结构决定的。</p>
+<h3 id="2-四阶组合的残酷淘汰赛">2. 四阶组合的"残酷淘汰赛"<a class="headerlink" href="#2-四阶组合的残酷淘汰赛" title="Permanent link">&para;</a></h3>
+<p>四阶意味着四个生成元的排列组合（<span class="arithmatex">\(PPPP, PPPM, PPMM, \dots\)</span>）。筛选机制包括：
+- <strong>奇数指标排除</strong>：任何带有奇数个 <span class="arithmatex">\(P\)</span> 或 <span class="arithmatex">\(M\)</span> 外部指标的项立即为零。
+- <strong>非独立性排除</strong>：如 <span class="arithmatex">\(PPPP = (P^2)^2\)</span>，这只是第一个卡西米尔算符的平方，不是新的独立算符。
+- <strong>对易性考验</strong>：必须与时空平移生成元 <span class="arithmatex">\(P_\mu\)</span> 对易。这一条件极其严苛，淘汰了所有仅由度规 <span class="arithmatex">\(\eta_{\mu\nu}\)</span> 拼凑的组合。</p>
+<p><strong>唯一幸存者</strong>：只有通过全反对称的 Levi-Civita 符号 <span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\)</span> 构造的组合，即 Pauli-Lubański 矢量，才能满足所有条件。</p>
+<h3 id="3-轨道角动量的滤波器效应">3. 轨道角动量的"滤波器"效应<a class="headerlink" href="#3-轨道角动量的滤波器效应" title="Permanent link">&para;</a></h3>
+<p>总角动量 <span class="arithmatex">\(M^{\rho\sigma}\)</span> 可分解为：</p>
+<div class="arithmatex">\[M^{\rho\sigma} = L^{\rho\sigma} + S^{\rho\sigma} = (x^\rho P^\sigma - x^\sigma P^\rho) + S^{\rho\sigma}\]</div>
+<p>当 <span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}\)</span> 与 <span class="arithmatex">\(P^\nu\)</span> 缩并后，再与 <span class="arithmatex">\(L^{\rho\sigma}\)</span> 部分作用时：
+- 由于 <span class="arithmatex">\(L^{\rho\sigma}\)</span> 包含坐标 <span class="arithmatex">\(x\)</span> 和动量 <span class="arithmatex">\(P\)</span> 的乘积，而 <span class="arithmatex">\(\epsilon\)</span> 与两个 <span class="arithmatex">\(P\)</span> 缩并（通过 <span class="arithmatex">\(W_\mu\)</span> 的定义）时，对称的偏导数（或动量）与全反对称的 <span class="arithmatex">\(\epsilon\)</span> 相遇，结果为零。
+- <strong>数学本质</strong>：<span class="arithmatex">\(\epsilon_{\mu\nu\rho\sigma}P^\nu P^\rho = 0\)</span>（因为 <span class="arithmatex">\(P^\nu P^\rho\)</span> 对称而 <span class="arithmatex">\(\epsilon\)</span> 反对称）。</p>
+<p>这就像一个<strong>完美的滤波器</strong>，彻底屏蔽了与空间运动相关的"公转"（轨道角动量），只保留与内部自由度相关的"自转"（内禀自旋）。</p>
+<hr />
+<h2 id="四通俗概念解释_1">四、通俗概念解释<a class="headerlink" href="#四通俗概念解释_1" title="Permanent link">&para;</a></h2>
+<h3 id="自旋作为时空对称性的烙印">"自旋"作为时空对称性的烙印<a class="headerlink" href="#自旋作为时空对称性的烙印" title="Permanent link">&para;</a></h3>
+<p>这段内容揭示了一个深刻的物理事实：<strong>粒子的自旋不是人为强加的属性，而是时空对称性（庞加莱群）的必然结果</strong>。</p>
+<ul>
+<li><strong>第一道身份标签</strong>：质量 <span class="arithmatex">\(m\)</span>（来自 <span class="arithmatex">\(P^2\)</span>），告诉我们在静止系中粒子有多少能量。</li>
+<li><strong>第二道身份标签</strong>：自旋 <span class="arithmatex">\(j\)</span>（来自 <span class="arithmatex">\(W^2\)</span>），告诉我们粒子在静止时仍然拥有的"内部转动"自由度。</li>
+</ul>
+<h3 id="为什么自旋是离散的">为什么自旋是离散的？<a class="headerlink" href="#为什么自旋是离散的" title="Permanent link">&para;</a></h3>
+<p>在静止系中，<span class="arithmatex">\(W^2\)</span> 正比于 <span class="arithmatex">\(\mathbf{J}^2\)</span>，而 <span class="arithmatex">\(\mathbf{J}\)</span> 是三维转动群 <span class="arithmatex">\(SU(2)\)</span> 的生成元。量子力学告诉我们，<span class="arithmatex">\(SU(2)\)</span> 的不可约表示由 <span class="arithmatex">\(j\)</span> 标记，且 <span class="arithmatex">\(j\)</span> 只能取半整数或整数。因此，<strong>自旋的量子化不是假设，而是三维空间旋转对称性的数学必然</strong>。</p>
+<h3 id="j_1-j_2-与物理自旋-j"><span class="arithmatex">\((j_1, j_2)\)</span> 与物理自旋 <span class="arithmatex">\(j\)</span><a class="headerlink" href="#j_1-j_2-与物理自旋-j" title="Permanent link">&para;</a></h3>
+<p>洛伦兹群 locally 等价于 <span class="arithmatex">\(SU(2) \times SU(2)\)</span>，因此其表示用两个 <span class="arithmatex">\(SU(2)\)</span> 的量子数 <span class="arithmatex">\((j_1, j_2)\)</span> 标记。但物理粒子是庞加莱群的表示，其自旋 <span class="arithmatex">\(j\)</span> 是总角动量，取值范围为 <span class="arithmatex">\(|j_1-j_2|\)</span> 到 <span class="arithmatex">\(j_1+j_2\)</span> 的整数步长。</p>
+<ul>
+<li><strong>标量场</strong> <span class="arithmatex">\((0,0)\)</span>：<span class="arithmatex">\(j=0\)</span>，如希格斯玻色子。</li>
+<li><strong>旋量场</strong> <span class="arithmatex">\((\frac{1}{2},0)\)</span> 或 <span class="arithmatex">\((0,\frac{1}{2})\)</span>：<span class="arithmatex">\(j=\frac{1}{2}\)</span>，如电子、中微子。</li>
+<li><strong>矢量场</strong> <span class="arithmatex">\((\frac{1}{2},\frac{1}{2})\)</span>：包含 <span class="arithmatex">\(j=0\)</span> 和 <span class="arithmatex">\(j=1\)</span>，但 <span class="arithmatex">\(j=0\)</span> 的部分是非物理的纵向模式，通过规范条件（如洛伦兹规范 <span class="arithmatex">\(\partial_\mu A^\mu = 0\)</span>）剔除后，剩下 <span class="arithmatex">\(j=1\)</span> 的物理光子/有质量矢量玻色子。</li>
+</ul>
+<p><strong>结论</strong>：庞加莱群的两个卡西米尔算符 <span class="arithmatex">\(P^2\)</span> 和 <span class="arithmatex">\(W^2\)</span>，分别对应粒子的<strong>质量</strong>和<strong>自旋</strong>，这是时空对称性赋予基本粒子的最本质的"身份证"。</p>
+<hr />
+<h2 id="段落-4">段落 4：不可约表示与基本粒子：质量、自旋及场的对应<a class="headerlink" href="#段落-4" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:18:10 ~ 00:24:29</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那接下来我们是不是就要把这个结论应用到基本粒子上了没错这正是我们下面要讲的这真的是物理学中最深刻最美丽的洞察之一
+庞加莱群双覆盖的不可越表示的标签
+也就是质量M和自选J
+正是物理学中用来标记基本粒子的方式所以基本粒子本身其实就是这些庞加莱群的不可约表示吗某种程度上是的
+有些物理学家甚至认为基本粒子就是庞加莱群的不可约表示
+一个具有特定质量和自选的基本粒子比如一个自选二分之一的粒子就对应着庞家莱群的某个具有相应M和自选二分之一的表示除了质量和自选基本粒子还有其他的属性吗比如电鹤什么的当然有
+除了质量和自选基本粒子还有一些被称为赫 Charges 的标签比如电鹤弱鹤强鹤等等这些鹤通常是从其他内部对称性中产生的我们会在后面的章节中详细讨论但最基本的由时空对称性决定的就是质量和自选
+能举个例子吗?比如我们熟悉的电子
+好的,就拿垫子来说吧
+它的定义标签包括质量大约是9.109×10的负三席一次房KG
+自旋是二分之一,电荷是1.602乘10的负19次方C,还有弱和强和等等
+你看质量和自选就是它最核心的两个属性
+所以说这些标签决定了基本粒子在实验中的行为而我们今天推导出的庞加莱群的表示则定义了我们如何在数学上描述它们真是太漂亮了
+是的
+而且不同自选的例子我们用不同的数学对象来描述它们哦具体是怎么对应的呢
+比如次悬为零的例子它有一个叫做标量的数学对象范秒数
+这个标量场其实就是根据洛伦兹群注意不是庞加莱群的零零表示来变换的
+最著名的例子就是自旋为零的希格斯粒子明白了希格斯粒子就是自旋零的那自旋二分之一的例子呢比如电子自旋二分之一的例子比如电子夸克是由一种叫做悬量斯宾纳的数学对象描述的
+它会根据洛伦字群的二分之一零和零二分之一的直合来变换选量这个词听起来就很有趣那字选一的例子呢由史量Vector描述
+根据洛伦兹群的二分之一二分之一表示变换
+最典型的例子就是传递弱相互作用的有质量的W和Z波色子
+当然,我们熟悉的光子同样是由石量场描述的
+虽然光子因为没有质量,没法像我们前面那样,借助静止坐标席来推倒
+需要引入螺旋度这个概念
+但它们都统一在这套洛伦兹和庞加莱群的美妙框架之下这么说来我们通过庞加莱群的不可约表示就得到了描述所有基本粒子所需的数学工具了这真的是一个极其重要深刻且美丽的洞察没错转你总结得非常好
+这正是我们这节课最核心的观点
+通过研究时空对称性我们不仅能推导出质量和自选这两个基本属性
+还能知道用什么样的数学预言去描述这些例子听起来字旋这个名字非常形象感觉它们真的在转动一样
+是的
+但目前阶段,自选仅仅是一个标签
+至于为什么它叫自选,以及我们在实验中如何测量它,这些我们会在后面的章节中详细解释
+现在我们只需要知道它是一个由庞家来群给出的用来标记粒子的基本属性那有没有自选更高的例子呢比如自选二分之三或者自选二的
+这是一个很好的问题
+目前我们还没有发现自选二分之三的基本粒子
+但这个理论框架是允许更高自选表示存在的
+这些更高纬的表示可以用来描述复合对象或者像引粒子这样理论上存在的传递引力的基本粒子
+他就被认为是具有自选二真是太精彩了通过对称性来理解基本例子
+这让我对物理世界有了全新的认识,是的
+对称性是物理学中一个非常强大的工具
+它不仅仅是一种数学上的美更是我们理解自然规律的钥匙好的三一老师今天的内容真的是干货满满也让我对基本粒子和对称性之间的联系有了更深的理解很高兴你能有所收获J
+总结一下,我们今天最重要的收获就是
+通过将洛伦子群与时空平移结合,我们得到了庞加莱群
+这个群的不可约表示有两个卡西米尔算符所标记
+它们恰好对应了基本粒子的两个最核心属性
+质量M和自选J而且不同自选的粒子我们用不同的数学对象来描述比如标量描述自选二的粒子悬量描述自选二分之一的粒子而实量则描述自选一的粒子这真的是太精妙了没错这种从对称性出发推导出粒子属性和描述方式是现代物理学特别是粒子物理学的基石感谢赛老师今天精彩的讲解也感谢各位同学的收听希望大家今天都能有所收获感谢周阿也感谢大家请大家课后可以回顾一下这些概念特别是庞家来群与基本粒子之间的深刻联系下次课我们再见好的
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_001109.5_transition.jpg" src="../frames/frame_001109.5_transition.jpg" /></p>
+<p><img alt="frame_001191.6_formulatransition.jpg" src="../frames/frame_001191.6_formulatransition.jpg" /></p>
+<p><img alt="frame_001307.3_formula.jpg" src="../frames/frame_001307.3_formula.jpg" /></p>
+<h3 id="注解_3">注解<a class="headerlink" href="#注解_3" title="Permanent link">&para;</a></h3>
+<p>这段内容标志着课程从<strong>庞加莱群的抽象代数结构</strong>迈向<strong>粒子物理学的物理诠释</strong>，完成了从"数学标签"（质量 <span class="arithmatex">\(M\)</span> 与自旋 <span class="arithmatex">\(J\)</span>）到"物理实体"（基本粒子）的对应，并系统建立了<strong>自旋-统计-数学对象</strong>的三重对应关系。</p>
+<hr />
+<h2 id="一板书ppt-截图内容描述_3">一、板书/PPT 截图内容描述<a class="headerlink" href="#一板书ppt-截图内容描述_3" title="Permanent link">&para;</a></h2>
+<h3 id="第一张截图自旋的群论起源">第一张截图（自旋的群论起源）<a class="headerlink" href="#第一张截图自旋的群论起源" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《从 SU(2) 对称性到自旋表示》</li>
+<li><strong>核心内容</strong>：</li>
+<li>说明洛伦兹群的双覆盖表示需要两个数字 <span class="arithmatex">\((j_1, j_2)\)</span> 标记。</li>
+<li>右侧"细节"栏解释：洛伦兹群的复化李代数可看作两个 <span class="arithmatex">\(SU(2)\)</span> 副本的直和，每个 <span class="arithmatex">\(SU(2)\)</span> 表示用一个数字 <span class="arithmatex">\(j_i\)</span> 标记。</li>
+<li><strong>对应关系表</strong>（三行）：<ol>
+<li><span class="arithmatex">\((0,0) \rightarrow j=0+0=0 \rightarrow\)</span> 自旋 0 表示</li>
+<li><span class="arithmatex">\((\frac{1}{2},0)\)</span> 或 <span class="arithmatex">\((0,\frac{1}{2}) \rightarrow j=\frac{1}{2}+0=\frac{1}{2} \rightarrow\)</span> 自旋 <span class="arithmatex">\(\frac{1}{2}\)</span> 表示</li>
+<li><span class="arithmatex">\((\frac{1}{2},\frac{1}{2}) \rightarrow j=\frac{1}{2}+\frac{1}{2}=1 \rightarrow\)</span> 自旋 1 表示</li>
+</ol>
+</li>
+</ul>
+<h3 id="第二张截图粒子的完整标签">第二张截图（粒子的完整标签）<a class="headerlink" href="#第二张截图粒子的完整标签" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《粒子的"数字档案"：以电子为例》</li>
+<li><strong>核心内容</strong>：</li>
+<li>展示一个表格，说明这些标签共同定义基本粒子并决定其物理行为。</li>
+<li><strong>表格内容</strong>：<ul>
+<li>档案代号：电子 (Electron)</li>
+<li>质量 (Mass)：<span class="arithmatex">\(9.109 \cdot 10^{-31}\)</span> kg —— 标注"(庞加莱群标签)"</li>
+<li>自旋 (Spin)：<span class="arithmatex">\(1/2\)</span> —— 标注"(庞加莱群标签)"</li>
+<li>电荷 (Electric Charge)：<span class="arithmatex">\(1.602 \cdot 10^{-19}\)</span> C —— 标注"(内部对称性)"</li>
+<li>弱荷/弱同位旋 (Weak Charge)：<span class="arithmatex">\(-1/2\)</span> —— 标注"(内部对称性)"</li>
+<li>强荷/色荷 (Strong Charge)：<span class="arithmatex">\(0\)</span> —— 标注"(内部对称性)"</li>
+</ul>
+</li>
+</ul>
+<h3 id="第三张截图理论框架的总结">第三张截图（理论框架的总结）<a class="headerlink" href="#第三张截图理论框架的总结" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>标题</strong>：《推导的终极意义》</li>
+<li><strong>核心内容</strong>：</li>
+<li>中央绿色框："通过推导庞加莱群的不可约表示，我们获得了描述所有基本粒子所需的数学工具。"</li>
+<li>左侧红色框（关于"自旋"）："目前它仅仅是一个数学标签。在证明这个名称的合理性之前，我们必须先知道如何在实验中测量旋转。"</li>
+<li>右侧红色框（更高的维度）："数学上不必在自旋 1 停止。目前尚未发现自旋 <span class="arithmatex">\(3/2\)</span> 的基本粒子。但许多物理学家相信传递重力的引力子具有自旋 2，将需要更高维的表示。"</li>
+</ul>
+<hr />
+<h2 id="二公式识别与符号解释">二、公式识别与符号解释<a class="headerlink" href="#二公式识别与符号解释" title="Permanent link">&para;</a></h2>
+<p>当前段落涉及的<strong>核心公式</strong>主要围绕<strong>洛伦兹群双覆盖的表示标记</strong> <span class="arithmatex">\((j_1, j_2)\)</span> 与<strong>物理自旋</strong> <span class="arithmatex">\(j\)</span> 的对应关系：</p>
+<h3 id="1-表示标记与自旋求和公式">1. 表示标记与自旋求和公式<a class="headerlink" href="#1-表示标记与自旋求和公式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[(j_1, j_2) \quad \rightarrow \quad j = j_1 + j_2\]</div>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(j_1\)</span></td>
+<td>第一个 <span class="arithmatex">\(SU(2)\)</span> 副本的角动量量子数（可取 <span class="arithmatex">\(0, \frac{1}{2}, 1, \frac{3}{2}, \dots\)</span>）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(j_2\)</span></td>
+<td>第二个 <span class="arithmatex">\(SU(2)\)</span> 副本的角动量量子数（同上）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(j\)</span></td>
+<td>物理上的<strong>总自旋量子数</strong>（Spin），决定粒子在三维空间旋转下的变换性质</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((j_1, j_2)\)</span></td>
+<td>洛伦兹群双覆盖 <span class="arithmatex">\(SL(2,\mathbb{C})\)</span> 的有限维不可约表示的标准标记</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-具体表示的物理对应">2. 具体表示的物理对应<a class="headerlink" href="#2-具体表示的物理对应" title="Permanent link">&para;</a></h3>
+<p><strong>（1）标量表示（自旋 0）</strong></p>
+<div class="arithmatex">\[(0,0) \rightarrow j=0+0=0\]</div>
+<ul>
+<li><strong>数学对象</strong>：标量场（Scalar Field）<span class="arithmatex">\(\phi(x)\)</span></li>
+<li><strong>物理实例</strong>：希格斯玻色子（Higgs Boson）</li>
+<li><strong>变换性质</strong>：在洛伦兹变换下保持不变，如同一个普通的数字</li>
+</ul>
+<p><strong>（2）旋量表示（自旋 1/2）</strong></p>
+<div class="arithmatex">\[\left(\frac{1}{2},0\right) \oplus \left(0,\frac{1}{2}\right) \rightarrow j=\frac{1}{2}\]</div>
+<ul>
+<li><strong>符号说明</strong>：<span class="arithmatex">\(\oplus\)</span> 表示直和（Direct Sum），构成<strong>狄拉克旋量</strong>（Dirac Spinor）</li>
+<li><strong>数学对象</strong>：旋量场（Spinor Field）<span class="arithmatex">\(\psi(x)\)</span>（四分量狄拉克旋量，或二分量外尔旋量）</li>
+<li><strong>物理实例</strong>：电子、夸克、中微子等所有费米子</li>
+<li><strong>变换性质</strong>：旋转 <span class="arithmatex">\(360^\circ\)</span> 会引入负号，需旋转 <span class="arithmatex">\(720^\circ\)</span> 才回到原状</li>
+</ul>
+<p><strong>（3）矢量表示（自旋 1）</strong></p>
+<div class="arithmatex">\[\left(\frac{1}{2},\frac{1}{2}\right) \rightarrow j=\frac{1}{2}+\frac{1}{2}=1\]</div>
+<ul>
+<li><strong>数学对象</strong>：矢量场（Vector Field）<span class="arithmatex">\(A_\mu(x)\)</span>（四矢量）</li>
+<li><strong>物理实例</strong>：光子（Photon，无质量）、<span class="arithmatex">\(W/Z\)</span> 玻色子（有质量）</li>
+<li><strong>变换性质</strong>：如同时空坐标 <span class="arithmatex">\(x^\mu\)</span> 一样变换，具有方向性</li>
+</ul>
+<hr />
+<h2 id="三理论背景补充_1">三、理论背景补充<a class="headerlink" href="#三理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-洛伦兹群的双覆盖-sl2mathbbc">1. 洛伦兹群的双覆盖 <span class="arithmatex">\(SL(2,\mathbb{C})\)</span><a class="headerlink" href="#1-洛伦兹群的双覆盖-sl2mathbbc" title="Permanent link">&para;</a></h3>
+<p>洛伦兹群 <span class="arithmatex">\(SO(3,1)\)</span> 本身不是单连通的，其<strong>双覆盖群</strong>（Double Cover）是 <span class="arithmatex">\(SL(2,\mathbb{C})\)</span>（二维复特殊线性群）。这类似于 <span class="arithmatex">\(SU(2)\)</span> 是 <span class="arithmatex">\(SO(3)\)</span> 的双覆盖。在量子力学中，由于投影表示的相位自由度，物理上真正相关的实际上是这个双覆盖群，而非洛伦兹群本身。</p>
+<p>其李代数关系为：</p>
+<div class="arithmatex">\[\mathfrak{so}(3,1) \cong \mathfrak{su}(2) \oplus \mathfrak{su}(2)\]</div>
+<p>这正是为什么表示可以用两个独立的 <span class="arithmatex">\(SU(2)\)</span> 量子数 <span class="arithmatex">\((j_1, j_2)\)</span> 来标记。</p>
+<h3 id="2-时空对称性-vs-内部对称性关键区分">2. 时空对称性 vs 内部对称性（关键区分）<a class="headerlink" href="#2-时空对称性-vs-内部对称性关键区分" title="Permanent link">&para;</a></h3>
+<p>课程字幕中反复提及的"电荷"（Electric Charge）、"弱荷"（Weak Charge）、"强荷/色荷"（Strong Charge/Color Charge）与质量、自旋有本质区别：</p>
+<ul>
+<li><strong>时空对称性</strong>（庞加莱群）：决定粒子在<strong>时空中的运动与几何属性</strong></li>
+<li>质量 <span class="arithmatex">\(M\)</span>：决定能量-动量关系 <span class="arithmatex">\(E^2 = p^2c^2 + M^2c^4\)</span></li>
+<li>
+<p>自旋 <span class="arithmatex">\(J\)</span>：决定粒子在旋转下的变换方式</p>
+</li>
+<li>
+<p><strong>内部对称性</strong>（规范群 <span class="arithmatex">\(U(1) \times SU(2) \times SU(3)\)</span>）：决定粒子参与<strong>基本相互作用的类型</strong></p>
+</li>
+<li>电荷 <span class="arithmatex">\(Q\)</span>：参与电磁相互作用（<span class="arithmatex">\(U(1)\)</span> 规范对称性）</li>
+<li>弱同位旋 <span class="arithmatex">\(T_3\)</span>：参与弱相互作用（<span class="arithmatex">\(SU(2)_L\)</span> 规范对称性）</li>
+<li>色荷：参与强相互作用（<span class="arithmatex">\(SU(3)_C\)</span> 规范对称性）</li>
+</ul>
+<p><strong>深刻洞察</strong>：基本粒子是<strong>庞加莱群不可约表示</strong>（时空部分）与<strong>内部对称群表示</strong>（荷部分）的<strong>直积</strong>（Tensor Product）。</p>
+<h3 id="3-无质量粒子的特殊性光子与引力子">3. 无质量粒子的特殊性（光子与引力子）<a class="headerlink" href="#3-无质量粒子的特殊性光子与引力子" title="Permanent link">&para;</a></h3>
+<p>字幕提到光子"因为没有质量，没法像前面那样借助静止坐标系来推导，需要引入螺旋度（Helicity）概念"。</p>
+<ul>
+<li><strong>有质量粒子</strong>：在静止参考系中，自旋投影 <span class="arithmatex">\(J_z\)</span> 可以取 <span class="arithmatex">\(-j, -j+1, \dots, j\)</span> 共 <span class="arithmatex">\(2j+1\)</span> 个态。</li>
+<li><strong>无质量粒子</strong>：不存在静止参考系，其内禀角动量只能沿着运动方向投影，称为<strong>螺旋度</strong> <span class="arithmatex">\(\lambda = \vec{J} \cdot \hat{p}\)</span>，且只能取 <span class="arithmatex">\(\pm j\)</span> 两个值（手性）。</li>
+<li>光子（自旋 1）：螺旋度 <span class="arithmatex">\(\pm 1\)</span>（对应左旋和右旋圆偏振），不存在纵向分量（<span class="arithmatex">\(\lambda=0\)</span>）。</li>
+<li>引力子（自旋 2，理论预言）：螺旋度 <span class="arithmatex">\(\pm 2\)</span>。</li>
+</ul>
+<h3 id="4-更高自旋的理论允许性">4. 更高自旋的理论允许性<a class="headerlink" href="#4-更高自旋的理论允许性" title="Permanent link">&para;</a></h3>
+<p>虽然标准模型中未发现自旋 <span class="arithmatex">\(3/2\)</span> 或更高的基本粒子，但理论框架允许：
+- <strong>自旋 <span class="arithmatex">\(3/2\)</span></strong>：对应 <span class="arithmatex">\((1, \frac{1}{2}) \oplus (\frac{1}{2}, 1)\)</span> 表示，数学上由<strong>拉瑞塔-施温格场</strong>（Rarita-Schwinger Field）描述，是超对称理论中超引力子的候选者。
+- <strong>自旋 <span class="arithmatex">\(2\)</span></strong>：对应 <span class="arithmatex">\((1,1)\)</span> 表示，数学上由<strong>对称无迹二阶张量场</strong> <span class="arithmatex">\(h_{\mu\nu}\)</span>（度规扰动）描述，是广义相对论中<strong>引力子</strong>（Graviton）的量子场论描述。</p>
+<hr />
+<h2 id="四核心概念通俗解释">四、核心概念通俗解释<a class="headerlink" href="#四核心概念通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="基本粒子就是群的不可约表示是什么意思">"基本粒子就是群的不可约表示"是什么意思？<a class="headerlink" href="#基本粒子就是群的不可约表示是什么意思" title="Permanent link">&para;</a></h3>
+<p>这是一种<strong>数学本体论</strong>的观点。可以这样理解：</p>
+<p>想象你有一盒乐高积木（数学对象），要拼出不同的动物（基本粒子）。你会发现：
+- 有些积木块是球形的（标量场），拼出来的是"希格斯粒子"
+- 有些是带方向的小箭头（矢量场），拼出来的是"光子"
+- 有些是特殊的"半扭转"积木（旋量场），拼出来的是"电子"</p>
+<p><strong>不可约表示</strong>就像是这些<strong>最基本的、不可再分割的积木块</strong>。你不能把"电子"这个表示再拆成更小的部分而不破坏它的本质属性。因此，说"电子是庞加莱群的不可约表示"，实际上是说：<strong>电子是时空对称性允许存在的、最基本的、不可分割的量子激发模式</strong>。</p>
+<h3 id="为什么自旋-12-的粒子要叫旋量spinor">为什么自旋 <span class="arithmatex">\(1/2\)</span> 的粒子要叫"旋量"（Spinor）？<a class="headerlink" href="#为什么自旋-12-的粒子要叫旋量spinor" title="Permanent link">&para;</a></h3>
+<p>虽然课程强调此时"自旋仅仅是一个标签"，但这个名字暗示了它的几何特性：</p>
+<ul>
+<li><strong>矢量</strong>（自旋 1）：旋转 <span class="arithmatex">\(360^\circ\)</span> 回到原位，如同箭头指向。</li>
+<li><strong>旋量</strong>（自旋 1/2）：旋转 <span class="arithmatex">\(360^\circ\)</span> 会变成一个"负的自己"，必须旋转 <span class="arithmatex">\(720^\circ\)</span>（两圈）才回到原位。这听起来反直觉，但在量子力学中，全局相位不可观测，因此 <span class="arithmatex">\(\psi\)</span> 和 <span class="arithmatex">\(-\psi\)</span> 描述的是同一个物理态。这种"双重覆盖"的特性正是 <span class="arithmatex">\(SU(2) \rightarrow SO(3)\)</span> 映射的数学体现。</li>
+</ul>
+<h3 id="质量与自旋粒子的身份证">质量与自旋：粒子的"身份证"<a class="headerlink" href="#质量与自旋粒子的身份证" title="Permanent link">&para;</a></h3>
+<p>课程中的"数字档案"概念非常贴切：
+- <strong>质量</strong>和<strong>自旋</strong>是<strong>普适的、时空几何赋予的身份证</strong>：无论你在地球、黑洞附近还是遥远星系，电子的质量和自旋都是 <span class="arithmatex">\(9.11\times 10^{-31}\)</span> kg 和 <span class="arithmatex">\(1/2\)</span>。这是由时空本身的庞加莱对称性决定的。
+- <strong>电荷等"荷"</strong>则是<strong>社会关系的标签</strong>：它们告诉你这个粒子如何与其他粒子互动（电磁力、弱力、强力），类似于"职业"或"国籍"。</p>
+<p>这种区分是现代粒子物理标准模型的基石：<strong>时空属性</strong>（庞加莱群）与<strong>相互作用属性</strong>（规范群）的分离与统一。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

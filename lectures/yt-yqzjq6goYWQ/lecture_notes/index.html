@@ -1,0 +1,3804 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-yqzjq6goYWQ/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-02NJOnDcSpM/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-xiEGTlJDStw/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第3课 理解闵可夫斯基时空 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第3课-理解闵可夫斯基时空" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第3课 理解闵可夫斯基时空
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：明科夫斯基时空记号与度规基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：明科夫斯基时空记号与度规基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-时空间隔不变间隔的原始形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 时空间隔（不变间隔）的原始形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-闵可夫斯基坐标重定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 闵可夫斯基坐标重定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-时空间隔的紧凑形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 时空间隔的紧凑形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-闵可夫斯基度规-eta_munu核心新概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 闵可夫斯基度规 \(\eta_{\mu\nu}\)（核心新概念）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-最优雅的紧凑形式爱因斯坦求和约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 最优雅的紧凑形式（爱因斯坦求和约定）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-爱因斯坦求和约定einstein-summation-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 爱因斯坦求和约定（Einstein Summation Convention）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-四维矢量4-vector的标量积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 四维矢量（4-vector）的标量积
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1课程总览图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：课程总览图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2坐标统一化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：坐标统一化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图3度规的矩阵乘法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图3：度规的矩阵乘法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么叫度规metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么叫"度规"（Metric）？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#符号的号差signature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        符号的号差（Signature）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为广义相对论埋下的伏笔" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为广义相对论埋下的伏笔
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：洛伦兹变换及其与欧氏旋转的类比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：洛伦兹变换及其与欧氏旋转的类比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-洛伦兹变换的矩阵形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 洛伦兹变换的矩阵形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-洛伦兹变换的定义条件核心新公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 洛伦兹变换的定义条件（核心新公式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-欧几里得旋转的类比公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 欧几里得旋转的类比公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三关键新概念解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、关键新概念解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、关键新概念解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-度规metric-时空的尺子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 度规（Metric）—— 时空的"尺子"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-洛伦兹变换的数学本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 洛伦兹变换的数学本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-上下指标与洛伦兹不变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 上下指标与洛伦兹不变量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗理解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节知识图谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节知识图谱
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：不变性、对称性与协变性的区别
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：不变性、对称性与协变性的区别">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式1不变性的数学表达" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式1：不变性的数学表达
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式2协变性的标准形式板书右侧" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式2：协变性的标准形式（板书右侧）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式3非协变方程的反例板书底部红叉标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3：非协变方程的反例（板书底部红叉标记）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三三大概念的深度辨析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、三大概念的深度辨析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、三大概念的深度辨析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#概念对比表" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概念对比表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键区分口诀" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键区分口诀
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么协变性对相对论至关重要" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么协变性对相对论至关重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#常见误区澄清" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见误区澄清
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五通俗类比总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、通俗类比总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#六与之前内容的衔接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、与之前内容的衔接
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：明科夫斯基时空记号与度规基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：明科夫斯基时空记号与度规基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-时空间隔不变间隔的原始形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 时空间隔（不变间隔）的原始形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-闵可夫斯基坐标重定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 闵可夫斯基坐标重定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-时空间隔的紧凑形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 时空间隔的紧凑形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-闵可夫斯基度规-eta_munu核心新概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 闵可夫斯基度规 \(\eta_{\mu\nu}\)（核心新概念）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-最优雅的紧凑形式爱因斯坦求和约定" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 最优雅的紧凑形式（爱因斯坦求和约定）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-爱因斯坦求和约定einstein-summation-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 爱因斯坦求和约定（Einstein Summation Convention）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-四维矢量4-vector的标量积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 四维矢量（4-vector）的标量积
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、板书/PPT截图内容描述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#截图1课程总览图" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图1：课程总览图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图2坐标统一化" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图2：坐标统一化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截图3度规的矩阵乘法" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        截图3：度规的矩阵乘法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么叫度规metric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么叫"度规"（Metric）？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#符号的号差signature" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        符号的号差（Signature）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#为广义相对论埋下的伏笔" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为广义相对论埋下的伏笔
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗理解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：洛伦兹变换及其与欧氏旋转的类比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：洛伦兹变换及其与欧氏旋转的类比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一核心公式详解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-洛伦兹变换的矩阵形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 洛伦兹变换的矩阵形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-洛伦兹变换的定义条件核心新公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 洛伦兹变换的定义条件（核心新公式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-欧几里得旋转的类比公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 欧几里得旋转的类比公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二板书ppt截图内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、板书/PPT截图内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三关键新概念解析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、关键新概念解析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、关键新概念解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-度规metric-时空的尺子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 度规（Metric）—— 时空的"尺子"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-洛伦兹变换的数学本质" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 洛伦兹变换的数学本质
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-上下指标与洛伦兹不变量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 上下指标与洛伦兹不变量
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗理解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗理解
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五本节知识图谱" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、本节知识图谱
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：不变性、对称性与协变性的区别
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：不变性、对称性与协变性的区别">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书ppt内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书/PPT内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二核心公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、核心公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式1不变性的数学表达" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式1：不变性的数学表达
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式2协变性的标准形式板书右侧" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式2：协变性的标准形式（板书右侧）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式3非协变方程的反例板书底部红叉标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3：非协变方程的反例（板书底部红叉标记）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三三大概念的深度辨析" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、三大概念的深度辨析
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、三大概念的深度辨析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#概念对比表" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概念对比表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#关键区分口诀" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键区分口诀
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么协变性对相对论至关重要" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么协变性对相对论至关重要？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#常见误区澄清" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        常见误区澄清
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五通俗类比总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、通俗类比总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#六与之前内容的衔接" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、与之前内容的衔接
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第3课-理解闵可夫斯基时空">《基于对称性的物理学》第3课 理解闵可夫斯基时空<a class="headerlink" href="#基于对称性的物理学第3课-理解闵可夫斯基时空" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 3 个段落，<a href="https://www.youtube.com/watch?v=yqzjq6goYWQ">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 明科夫斯基时空记号与度规基础</a></li>
+<li><a href="#段落-2">00:10:00 洛伦兹变换及其与欧氏旋转的类比</a></li>
+<li><a href="#段落-3">00:14:00 不变性、对称性与协变性的区别</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：明科夫斯基时空记号与度规基础<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:10:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+欢迎来到基于对称性的物理学博客我是你们的活泼主持人乔伊大家好我是赛很高兴在此和大家在空中相遇赛老师今天是我们这门课的第三讲了感觉每次听完您的讲解都觉得物理世界又打开了一项新的大门今天我们要聊点什么呢哈哈乔伊你这么说我很高兴今天我们可要深入一些了我们上次提到了狭义相对论里时间和空间不再是完全独立的今天我们就要来具体看看怎么把时间和空间捆在一起用一种更统一更优雅的方式来描述它们捆在一起听起来有点像科幻小说但又很物理没错这其实就是明科夫斯基读归和他相关记号的精髓明科夫斯基这位大神曾经说过一句
+特别有名的话他说从今以后空间本身以及时间本身都注定要淡化成单纯的影子只有两者的某种结合才能保持独立的实在这句话听着就特别有哲理也特别有画面感所以他说的这种结合我们在物理上体现出来呢我们先从狭义相对论里那个非常重要的不变时说起你还记得我们之前说的光速不变所以不同观性系下光走过的距离和时间的关系是保持不变的对吧记得那个DS平方等于CDT平方减DX平方减DY平方减DZ平方对就是它这个DS平方它代表的是时空中两个事件之间的距离平方而且它在所有观性系下都是不变的为了让这个事子看起来更统一更方便
+敏科夫斯基就引入了一套新的记号系统. 新的记号系统听起来好像要学新语言一样. 差不多是这个意思. 虽然一开始会觉得有点复杂,但用习惯了就会发现它真是太有用了. 我们先来重新定义一下坐标. 我们把时间像CT叫做X0把X叫做X1Y叫做X2Z叫做X3等等X0是时间X1X2X3是空间. 这样就把时间也当成一个坐标了没错这正是核心思想这样一来我们就把时间和空间放在了一个平等的地位上你看原来那个DS平方的字子现在就可以写成DX零的平方减去DX一的平方减去DX二的平方减去DX三的平方了.
+那除了这个还有什么新的规则吗当然有而且还很关键第一个叫爱因斯坦求和约定求和约定听起来像是在偷懒你也可以这么理解它的意思是如果一个指标比如说MUE或者NEW在一个项里面出现了两次一次在上标一次在下标那我们就默认要对这个指标从0加到3哦不用写那个大大的求和符号SIGMA了直接看到重复的指标就知道要加起来对就是这样比如说AIBI我们看到I重复了就知道它其实就是A1B1加A2B2加A3B3这确实省事那指标有什么讲究吗我看资料里有希腊字母和罗马字母好问题通常呢我们用希腊字母比如MUE
+时间X零在内的四个维度而罗马字母比如IJK则表示从一到三的指标也就是纯粹的空间维度这样一区分是不是就能清楚的区分是四维时空还是三维空间了完全正确这都是为了让我们的表达式更简洁更明确接下来还有一个非常非常重要的概念叫做明克福斯基度归我们通常用希腊字母I塔来表示度归这是什么意思简单来说度归就是告诉我们如何在时空中测量距离的数学工具在三维O级的空间里我们平时用的距离公式DX方方加DY方加DZ方它背后的度归其实就是一个单位矩阵也就是对角线上都是一的矩阵
+一零零零零零零零零那个矩阵对就是他但是在明克夫斯基时空里情况就不一样了我们的DS方法是DX零的方法减DX一的方法减DX二的方法减DX三的方法这里面有正号有负号所以明克夫斯基度归低就长这样它的对角线元素分别是一负一负一负一其他非对角线元素都是零也就是说它是一个四乘四的矩阵只有一塔零零一等于负一一一塔二二等于负一其他都是零没错有了这个读规我们就可以把DS方程的表达式写得更紧凑更优雅了我们可以引入一个叫做
+表面的40辆听起来比普通时量多了一尾就是多了一尾时间一个40辆DX缪它其实就是一个列向量包含DX0DX1DX2DX3这四个分量那么我们之前那个DS方方的柿子就可以用40辆和明克夫斯基度归的矩阵成发来表示了怎么表示呢它可以写成DS方等于DX缪ETAMYUNDXN等等这个DX缪N是什么关系还有中间的DX缪N好的我们来一步步拆解DX缪是一个列向量DX缪也是一个列向量但在这里我们其实是把DX缪看作一个航向量DX0DX1DX2DX3然后乘一
+DX这个矩阵最后再成以DX新这个列向量所以是航向量成以矩阵成以列向量这种形式对通过矩阵成法你就会发现它正好等于DX的平方减去DX1的平方减去DX2的平方减去DX3的平方你看这其实就是一种非常巧妙的写哈把一大串加减号的表达式用简洁的指标和矩阵形式表达出来了这确实很厉害所以这个DS在物理上到底代表什么呢DS它代表的是时间中两个事件之间的距离助理我这里强调了是事件不是仅仅指空间上的距离它包含了时间上的间隔和空间上的距离这个距离在狭义相对论里是所有惯性观察者都认同
+所以我们说它是不变的明白了它就像一个时空尺子量出来的结果大家都能达成一致可以这么理解有了度规我们就可以定义四十辆的长度了一个四十辆的长度平方就是他自己和自己做标量级也就是X平方等于X等于XMYYYY这跟我们OG里的空间里实量长度的定义差不多只不过把单位矩阵换成了明可夫斯基度规完全正确同样的任意两个X和Y的标量级我们也可以定义为XY等于XYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+是为了避免写球和符一样明白了这都是为了让表达式更简洁算起来更方便了对有了这些工具我们就可以更方便地处理时空问题了好了赛老师我们现在掌握了明科夫斯基的这套语言了那接下来我们是不是要看看在这种新的语言下各种物理量怎么变身了没错这就要引出我们今天的第二个重要概念罗伦兹变换罗伦兹变换这个名字听起来很酷选
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000000.0_parastart.jpg" src="../frames/frame_000000.0_parastart.jpg" /></p>
+<p><img alt="frame_000120.0_formula.jpg" src="../frames/frame_000120.0_formula.jpg" /></p>
+<p><img alt="frame_000420.0_transition.jpg" src="../frames/frame_000420.0_transition.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点分析新出现的公式、概念和记号系统。</p>
+<hr />
+<h2 id="一核心公式详解">一、核心公式详解<a class="headerlink" href="#一核心公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="1-时空间隔不变间隔的原始形式">1. 时空间隔（不变间隔）的原始形式<a class="headerlink" href="#1-时空间隔不变间隔的原始形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ds^2 = c^2dt^2 - dx^2 - dy^2 - dz^2\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(ds^2\)</span></td>
+<td style="text-align: left;">时空间隔的平方（两个事件之间的"距离"）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(c\)</span></td>
+<td style="text-align: left;">光速</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(dt\)</span></td>
+<td style="text-align: left;">时间间隔</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(dx, dy, dz\)</span></td>
+<td style="text-align: left;">空间间隔的三个分量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键性质</strong>：在所有惯性参考系中保持不变——这是狭义相对论的数学核心。</p>
+<hr />
+<h3 id="2-闵可夫斯基坐标重定义">2. 闵可夫斯基坐标重定义<a class="headerlink" href="#2-闵可夫斯基坐标重定义" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">旧记号</th>
+<th style="text-align: left;">新记号</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(ct\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x^0\)</span></td>
+<td style="text-align: left;">时间坐标（带<strong>上标</strong>0）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x^1\)</span></td>
+<td style="text-align: left;">空间第1维</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(y\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x^2\)</span></td>
+<td style="text-align: left;">空间第2维</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(z\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(x^3\)</span></td>
+<td style="text-align: left;">空间第3维</td>
+</tr>
+</tbody>
+</table>
+<p><strong>统一写成</strong>：<span class="arithmatex">\(x^\mu = (x^0, x^1, x^2, x^3)\)</span>，其中 <span class="arithmatex">\(\mu = 0,1,2,3\)</span></p>
+<blockquote>
+<p><strong>指标约定</strong>：希腊字母（<span class="arithmatex">\(\mu, \nu, \rho...\)</span>）→ 0,1,2,3（四维时空）；罗马字母（<span class="arithmatex">\(i,j,k...\)</span>）→ 1,2,3（纯空间）</p>
+</blockquote>
+<hr />
+<h3 id="3-时空间隔的紧凑形式">3. 时空间隔的紧凑形式<a class="headerlink" href="#3-时空间隔的紧凑形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ds^2 = (dx^0)^2 - (dx^1)^2 - (dx^2)^2 - (dx^3)^2\]</div>
+<p>这是将 <span class="arithmatex">\(c^2dt^2\)</span> 改写为 <span class="arithmatex">\((dx^0)^2\)</span> 的结果。</p>
+<hr />
+<h3 id="4-闵可夫斯基度规-eta_munu核心新概念">4. 闵可夫斯基度规 <span class="arithmatex">\(\eta_{\mu\nu}\)</span>（核心新概念）<a class="headerlink" href="#4-闵可夫斯基度规-eta_munu核心新概念" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\eta_{\mu\nu} = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分量</th>
+<th style="text-align: left;">值</th>
+<th style="text-align: left;">意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_{00}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(+1\)</span></td>
+<td style="text-align: left;">时间分量带正号</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_{11}=\eta_{22}=\eta_{33}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(-1\)</span></td>
+<td style="text-align: left;">三个空间分量带负号</td>
+</tr>
+<tr>
+<td style="text-align: left;">非对角元</td>
+<td style="text-align: left;"><span class="arithmatex">\(0\)</span></td>
+<td style="text-align: left;">时间与空间"正交"</td>
+</tr>
+</tbody>
+</table>
+<p><strong>对比</strong>：三维欧几里得空间的度规是 <span class="arithmatex">\(\delta_{ij} = \text{diag}(1,1,1)\)</span>（全为正）</p>
+<hr />
+<h3 id="5-最优雅的紧凑形式爱因斯坦求和约定">5. 最优雅的紧凑形式（爱因斯坦求和约定）<a class="headerlink" href="#5-最优雅的紧凑形式爱因斯坦求和约定" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{ds^2 = \eta_{\mu\nu}\, dx^\mu\, dx^\nu}\]</div>
+<p><strong>拆解这个公式的结构</strong>：
+- <span class="arithmatex">\(dx^\mu\)</span> = 列向量 <span class="arithmatex">\((dx^0, dx^1, dx^2, dx^3)^T\)</span>
+- <span class="arithmatex">\(\eta_{\mu\nu}\)</span> = 4×4 矩阵
+- <span class="arithmatex">\(dx^\nu\)</span> = 列向量（与<span class="arithmatex">\(dx^\mu\)</span>相同，只是换了个哑指标名）</p>
+<p><strong>矩阵乘法视角</strong>：</p>
+<div class="arithmatex">\[ds^2 = \begin{bmatrix} dx^0 &amp; dx^1 &amp; dx^2 &amp; dx^3 \end{bmatrix} \begin{bmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{bmatrix} \begin{bmatrix} dx^0 \\ dx^1 \\ dx^2 \\ dx^3 \end{bmatrix}\]</div>
+<p>展开后正好得到 <span class="arithmatex">\((dx^0)^2 - (dx^1)^2 - (dx^2)^2 - (dx^3)^2\)</span></p>
+<hr />
+<h3 id="6-爱因斯坦求和约定einstein-summation-convention">6. 爱因斯坦求和约定（Einstein Summation Convention）<a class="headerlink" href="#6-爱因斯坦求和约定einstein-summation-convention" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>规则</strong>：同一项中<strong>一个上标、一个下标</strong>的重复指标，自动表示对该指标从0到3求和。</p>
+</blockquote>
+<p><strong>例子</strong>：
+- <span class="arithmatex">\(a_\mu b^\mu \equiv \sum_{\mu=0}^{3} a_\mu b^\mu = a_0b^0 + a_1b^1 + a_2b^2 + a_3b^3\)</span>
+- 不需要写 <span class="arithmatex">\(\sum\)</span> 符号！</p>
+<p><strong>为什么区分上下标？</strong>
+- 这是为广义相对论做准备的<strong>协变/逆变</strong>区分
+- 在狭义相对论中，<span class="arithmatex">\(\eta_{\mu\nu}\)</span> 的特殊形式使得 <span class="arithmatex">\(x_\mu = \eta_{\mu\nu}x^\nu\)</span> 有简单关系</p>
+<hr />
+<h3 id="7-四维矢量4-vector的标量积">7. 四维矢量（4-vector）的标量积<a class="headerlink" href="#7-四维矢量4-vector的标量积" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[x^2 = x_\mu x^\mu = \eta_{\mu\nu} x^\mu x^\nu\]</div>
+<p>两个四维矢量 <span class="arithmatex">\(A^\mu, B^\mu\)</span> 的标量积：</p>
+<div class="arithmatex">\[A \cdot B = A_\mu B^\mu = \eta_{\mu\nu} A^\mu B^\nu\]</div>
+<p><strong>关键</strong>：这个标量积在所有惯性系中数值相同（洛伦兹不变量）</p>
+<hr />
+<h2 id="二板书ppt截图内容描述">二、板书/PPT截图内容描述<a class="headerlink" href="#二板书ppt截图内容描述" title="Permanent link">&para;</a></h2>
+<h3 id="截图1课程总览图">截图1：课程总览图<a class="headerlink" href="#截图1课程总览图" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>左侧</strong>：闵可夫斯基肖像 + 名言（"空间本身和时间本身都注定要淡化成单纯的影子..."）</li>
+<li><strong>中央</strong>：四维时空的螺旋可视化，标注 <span class="arithmatex">\(x, y, z, ct\)</span> 四个轴</li>
+<li><strong>公式区</strong>：<span class="arithmatex">\((ds)^2 = (ct)^2 - dx^2 - dy^2 - dz^2\)</span></li>
+<li><strong>度规对比</strong>：闵可夫斯基 <span class="arithmatex">\(\eta = \text{diag}(1,-1,-1,-1)\)</span> vs 欧几里得 <span class="arithmatex">\(\delta = \text{diag}(1,1,1)\)</span></li>
+<li><strong>右侧</strong>：洛伦兹变换的核心条件 <span class="arithmatex">\(\eta = \Lambda^T \eta \Lambda\)</span></li>
+</ul>
+<h3 id="截图2坐标统一化">截图2：坐标统一化<a class="headerlink" href="#截图2坐标统一化" title="Permanent link">&para;</a></h3>
+<ul>
+<li>清晰展示 <span class="arithmatex">\(ct \to x^0\)</span>, <span class="arithmatex">\(x \to x^1\)</span>, <span class="arithmatex">\(y \to x^2\)</span>, <span class="arithmatex">\(z \to x^3\)</span> 的映射</li>
+<li>四维矢量 <span class="arithmatex">\(dx^\mu\)</span> 的列向量表示</li>
+<li>展开式 <span class="arithmatex">\(ds^2 = (dx^0)^2 - (dx^1)^2 - (dx^2)^2 - (dx^3)^2\)</span></li>
+</ul>
+<h3 id="截图3度规的矩阵乘法">截图3：度规的矩阵乘法<a class="headerlink" href="#截图3度规的矩阵乘法" title="Permanent link">&para;</a></h3>
+<ul>
+<li>最核心展示：行向量 × 度规矩阵 × 列向量的具体运算</li>
+<li>用括号标注了每个矩阵的维度匹配</li>
+<li>最终结果箭头指向展开式，直观验证等价性</li>
+</ul>
+<hr />
+<h2 id="三理论背景补充">三、理论背景补充<a class="headerlink" href="#三理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="为什么叫度规metric">为什么叫"度规"（Metric）？<a class="headerlink" href="#为什么叫度规metric" title="Permanent link">&para;</a></h3>
+<p>度规张量 <span class="arithmatex">\(g_{\mu\nu}\)</span>（广义相对论中）或 <span class="arithmatex">\(\eta_{\mu\nu}\)</span>（狭义相对论中）是流形上的<strong>内积结构</strong>：
+- 告诉我们在弯曲（或平直）时空中如何测量长度和角度
+- 从度规可以导出<strong>测地线</strong>（自由粒子的运动轨迹）
+- 闵可夫斯基度规描述的是<strong>平直的</strong>四维时空（无引力）</p>
+<h3 id="符号的号差signature">符号的号差（Signature）<a class="headerlink" href="#符号的号差signature" title="Permanent link">&para;</a></h3>
+<p>闵可夫斯基度规的 <span class="arithmatex">\((+,-,-,-)\)</span> 称为<strong>号差+2</strong>（或洛伦兹号差）。也有文献用 <span class="arithmatex">\((-,+,+,+)\)</span>，物理结果相同，但需注意一致性。</p>
+<h3 id="为广义相对论埋下的伏笔">为广义相对论埋下的伏笔<a class="headerlink" href="#为广义相对论埋下的伏笔" title="Permanent link">&para;</a></h3>
+<ul>
+<li>上标/下标的区分 → 广义协变性</li>
+<li>度规作为基本变量 → 引力即几何</li>
+<li>求和约定 → 张量运算的标准语言</li>
+</ul>
+<hr />
+<h2 id="四通俗理解">四、通俗理解<a class="headerlink" href="#四通俗理解" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">日常类比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">把时间和空间"捆在一起"</td>
+<td style="text-align: left;">就像把"东-西"和"北-南"统一成"平面位置"，不再单独谈论</td>
+</tr>
+<tr>
+<td style="text-align: left;">度规的±号</td>
+<td style="text-align: left;">时间方向和空间方向在几何上"性质相反"——时间带正、空间带负</td>
+</tr>
+<tr>
+<td style="text-align: left;">不变间隔 <span class="arithmatex">\(ds^2\)</span></td>
+<td style="text-align: left;">就像两地之间的"直线距离"不随你用什么地图（参考系）而改变</td>
+</tr>
+<tr>
+<td style="text-align: left;">爱因斯坦求和约定</td>
+<td style="text-align: left;">编程里的"隐式循环"——看到重复变量就知道要遍历求和</td>
+</tr>
+</tbody>
+</table>
+<p><strong>一句话总结</strong>：闵可夫斯基用一套漂亮的数学语言，把"时间流逝+空间移动"重新包装成"在四维时空里沿某条路径移动"，而 <span class="arithmatex">\(ds^2\)</span> 就是所有观察者都承认的"路径长度"。</p>
+<hr />
+<h2 id="段落-2">段落 2：洛伦兹变换及其与欧氏旋转的类比<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:10:00 ~ 00:14:00</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+我们想找出一些变换这些变换能够把一个观性系下的物理描述转换到另一个观性系下同时又不违反狭义相对论的基本假设也就是要保证DS平方在不同观性系下都是不变的对吧核心就是这个DS平方不变就意味着时空中两个事件之间的距离是不变的我们用LEMDA这个希腊字母来表示这种变换如果一个坐标DXMUE经过变换变成了DXMUE那他们之间的关系就可以写成DXMUE等于LEMDAMUESIGMADXSIGMA这个LEMDAMUESIGMA是一个矩阵吗是的它就是一个四乘四的变换矩阵
+带入进去经过一系列的数学推导我们最终会得到一个非常重要的条件是什么条件呢这个条件就是如果用矩阵的形式来写它就是这个字看起来有点复杂不过我好像隐约看到了点熟悉的东西没错这个条件就是洛伦兹变换必须满足的条件它告诉我们一个变换必须满足这个条件才能被称为洛伦兹变换那它跟我们平时说的旋转变换有什么关系吗关系非常大我们来对比一下在普通的欧吉里德三维空间里我们说一个变换是旋转那它必须满足什么条件呢
+必须保证时量的长度不变对吧对旋转不会改变物体的长度没错在欧吉里的空间里时量的长度平方是A点A等于AIDALTAIJA这里的DELTAIJ就是单位矩阵如果一个变换O是旋转那它必须满足OTO等于E这里的E就是单位矩阵我明白了所以在欧吉里的空间里度归是单位矩阵E旋转变换满足OTEO等于E而在敏科夫斯基时空里度归是NUEL落轮子变换满足蓝大T新蓝大等于NEW他们的形式是一样的完全正确就是美妙之处敏科夫斯基度归在时空中的作用就相当于欧吉里的空间中的单位矩阵
+所以洛伦兹变换就是那些保持敏科夫斯基时空标量级不变的变换听起来洛伦兹变换就是时空中的旋转和加速之类的变换了可以怎么理解它描述的是不同冠信息系之间坐标转换的方式而且这种转换是符合狭义相对论的基本原理的反过来说如果我们要构造一个在洛伦兹变换下保持不变的物理量我们就必须把一个上指标和下指标组合起来比如刚才说的XYYY这样的一个标量级它在洛伦兹变换下就是不变的没错这些不变的量对我们理解物理规律非常重要C老师今天的信息量真的很大我们学了明科夫斯基的记号不过我注意到了洛伦兹变换
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000600.0_parastart.jpg" src="../frames/frame_000600.0_parastart.jpg" /></p>
+<p><img alt="frame_000660.0_formula.jpg" src="../frames/frame_000660.0_formula.jpg" /></p>
+<p><img alt="frame_000780.0_transition.jpg" src="../frames/frame_000780.0_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点分析新出现的公式、概念和数学结构。</p>
+<hr />
+<h2 id="一核心公式详解_1">一、核心公式详解<a class="headerlink" href="#一核心公式详解_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-洛伦兹变换的矩阵形式">1. 洛伦兹变换的矩阵形式<a class="headerlink" href="#1-洛伦兹变换的矩阵形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[dx'^\mu = \Lambda^\mu_{\ \sigma} dx^\sigma\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(dx'^\mu\)</span></td>
+<td style="text-align: left;">变换后参考系中的坐标微分（带撇表示新参考系）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^\mu_{\ \sigma}\)</span></td>
+<td style="text-align: left;"><strong>洛伦兹变换矩阵</strong>（4×4矩阵），<span class="arithmatex">\(\mu\)</span>为行指标，<span class="arithmatex">\(\sigma\)</span>为列指标</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(dx^\sigma\)</span></td>
+<td style="text-align: left;">原参考系中的坐标微分</td>
+</tr>
+<tr>
+<td style="text-align: left;">希腊字母指标 <span class="arithmatex">\(\mu, \sigma\)</span></td>
+<td style="text-align: left;">取值为 0,1,2,3（0代表时间分量，1,2,3代表空间分量）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>爱因斯坦求和约定</strong>：重复的上下指标（这里的<span class="arithmatex">\(\sigma\)</span>）自动求和，即 <span class="arithmatex">\(\sum_{\sigma=0}^{3}\)</span>。</p>
+<hr />
+<h3 id="2-洛伦兹变换的定义条件核心新公式">2. 洛伦兹变换的<strong>定义条件</strong>（核心新公式）<a class="headerlink" href="#2-洛伦兹变换的定义条件核心新公式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\eta = \Lambda^T \eta \Lambda\]</div>
+<p>或写成分量形式：</p>
+<div class="arithmatex">\[\eta_{\mu\nu} = \Lambda^\sigma_{\ \mu} \eta_{\sigma\gamma} \Lambda^\gamma_{\ \nu}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\eta\)</span> (或 <span class="arithmatex">\(\eta_{\mu\nu}\)</span>)</td>
+<td style="text-align: left;"><strong>闵可夫斯基度规</strong>（Minkowski metric），4×4对角矩阵</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^T\)</span></td>
+<td style="text-align: left;">矩阵<span class="arithmatex">\(\Lambda\)</span>的转置</td>
+</tr>
+<tr>
+<td style="text-align: left;">等式整体</td>
+<td style="text-align: left;">洛伦兹变换必须满足的<strong>正交性条件</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>闵可夫斯基度规的具体形式</strong>：</p>
+<div class="arithmatex">\[\eta_{\mu\nu} = \text{diag}(+1, -1, -1, -1) = \begin{pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end{pmatrix}\]</div>
+<p>（注：有些文献使用 <span class="arithmatex">\(\text{diag}(-1,+1,+1,+1)\)</span> 的符号约定，两者等价）</p>
+<hr />
+<h3 id="3-欧几里得旋转的类比公式">3. 欧几里得旋转的类比公式<a class="headerlink" href="#3-欧几里得旋转的类比公式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathbf{O}^T \mathbf{O} = \mathbf{I}\]</div>
+<p>或写成：</p>
+<div class="arithmatex">\[\mathbf{O}^T \mathbf{I} \mathbf{O} = \mathbf{I}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{O}\)</span></td>
+<td style="text-align: left;">三维欧几里得空间中的旋转矩阵（3×3正交矩阵）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{I}\)</span> (或 <span class="arithmatex">\(\delta_{ij}\)</span>)</td>
+<td style="text-align: left;">三维单位矩阵（欧几里得度规）</td>
+</tr>
+<tr>
+<td style="text-align: left;">上标 <span class="arithmatex">\(T\)</span></td>
+<td style="text-align: left;">矩阵转置</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二板书ppt截图内容描述_1">二、板书/PPT截图内容描述<a class="headerlink" href="#二板书ppt截图内容描述_1" title="Permanent link">&para;</a></h2>
+<p>根据提供的三张截图，板书内容如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">截图</th>
+<th style="text-align: left;">核心内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>图1</strong></td>
+<td style="text-align: left;">标题"核心问题：何种变换能够保持时空间隔不变？"，展示 <span class="arithmatex">\(ds'^2 = ds^2\)</span> 的不变性要求，给出变换定义 <span class="arithmatex">\(dx'^\mu = \Lambda^\mu_{\ \sigma} dx^\sigma\)</span>，右侧有参考系S和S'的示意图</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>图2</strong></td>
+<td style="text-align: left;">标题"洛伦兹变换的定义条件"，展示从 <span class="arithmatex">\(\eta_{\mu\nu}dx^\mu dx^\nu = \eta_{\sigma\gamma}dx'^\sigma dx'^\gamma\)</span> 出发的4步推导，最终得到矩阵条件 <span class="arithmatex">\(\eta = \Lambda^T \eta \Lambda\)</span>，标注"这是所有洛伦兹变换<span class="arithmatex">\(\Lambda\)</span>必须满足的条件"</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>图3</strong></td>
+<td style="text-align: left;">标题"直观类比：欧几里得空间中的旋转"，左侧推导 <span class="arithmatex">\(\mathbf{a}'\cdot\mathbf{b}' = \mathbf{a}\cdot\mathbf{b}\)</span> 导致 <span class="arithmatex">\(\mathbf{O}^T\mathbf{O}=\mathbf{I}\)</span>，右侧方框对比两个条件：<span class="arithmatex">\(\mathbf{O}^T[\mathbf{I}]\mathbf{O}=\mathbf{I}\)</span> 和 <span class="arithmatex">\(\Lambda^T[\eta]\Lambda=\eta\)</span>，用黄色高亮显示结构相似性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三关键新概念解析">三、关键新概念解析<a class="headerlink" href="#三关键新概念解析" title="Permanent link">&para;</a></h2>
+<h3 id="1-度规metric-时空的尺子">1. <strong>度规（Metric）—— 时空的"尺子"</strong><a class="headerlink" href="#1-度规metric-时空的尺子" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">空间类型</th>
+<th style="text-align: left;">度规</th>
+<th style="text-align: left;">几何性质</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">欧几里得空间</td>
+<td style="text-align: left;"><span class="arithmatex">\(\delta_{ij}\)</span>（单位矩阵）</td>
+<td style="text-align: left;">正定，<span class="arithmatex">\(ds^2 &gt; 0\)</span>（距离总是正的）</td>
+</tr>
+<tr>
+<td style="text-align: left;">闵可夫斯基时空</td>
+<td style="text-align: left;"><span class="arithmatex">\(\eta_{\mu\nu}\)</span>（符号差为+2或-2）</td>
+<td style="text-align: left;">不定，<span class="arithmatex">\(ds^2\)</span> 可正、可负、可为零</td>
+</tr>
+</tbody>
+</table>
+<p><strong>度规的核心作用</strong>：定义"长度"或"间隔"的计算方式。</p>
+<ul>
+<li>欧几里得：<span class="arithmatex">\(|\mathbf{a}|^2 = \delta_{ij} a^i a^j = a_x^2 + a_y^2 + a_z^2\)</span>（普通勾股定理）</li>
+<li>闵可夫斯基：<span class="arithmatex">\(ds^2 = \eta_{\mu\nu} dx^\mu dx^\nu = c^2dt^2 - dx^2 - dy^2 - dz^2\)</span>（带符号的"勾股定理"）</li>
+</ul>
+<h3 id="2-洛伦兹变换的数学本质">2. <strong>洛伦兹变换的数学本质</strong><a class="headerlink" href="#2-洛伦兹变换的数学本质" title="Permanent link">&para;</a></h3>
+<p>洛伦兹变换是<strong>保持闵可夫斯基度规不变的线性变换</strong>，即：</p>
+<div class="arithmatex">\[\Lambda^T \eta \Lambda = \eta\]</div>
+<p>这与旋转矩阵 <span class="arithmatex">\(\mathbf{O}^T \mathbf{I} \mathbf{O} = \mathbf{I}\)</span> 形成<strong>完美的数学类比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">特征</th>
+<th style="text-align: left;">欧几里得旋转</th>
+<th style="text-align: left;">洛伦兹变换</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">保持不变的"尺子"</td>
+<td style="text-align: left;">单位矩阵 <span class="arithmatex">\(\mathbf{I}\)</span></td>
+<td style="text-align: left;">闵可夫斯基度规 <span class="arithmatex">\(\eta\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">变换矩阵的条件</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{O}^T \mathbf{O} = \mathbf{I}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\Lambda^T \eta \Lambda = \eta\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">几何解释</td>
+<td style="text-align: left;">保持普通长度不变</td>
+<td style="text-align: left;">保持时空间隔不变</td>
+</tr>
+<tr>
+<td style="text-align: left;">群的名字</td>
+<td style="text-align: left;">正交群 <span class="arithmatex">\(O(3)\)</span></td>
+<td style="text-align: left;">洛伦兹群 <span class="arithmatex">\(O(3,1)\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-上下指标与洛伦兹不变量">3. <strong>上下指标与洛伦兹不变量</strong><a class="headerlink" href="#3-上下指标与洛伦兹不变量" title="Permanent link">&para;</a></h3>
+<p>字幕中提到："要把一个上指标和下指标组合起来"——这指的是<strong>缩并（contraction）</strong>操作。</p>
+<ul>
+<li>上指标（逆变指标）：如 <span class="arithmatex">\(dx^\mu\)</span>，在洛伦兹变换下按 <span class="arithmatex">\(dx'^\mu = \Lambda^\mu_{\ \nu} dx^\nu\)</span> 变换</li>
+<li>下指标（协变指标）：如 <span class="arithmatex">\(dx_\mu \equiv \eta_{\mu\nu}dx^\nu\)</span></li>
+</ul>
+<p><strong>洛伦兹不变量的构造</strong>：上指标与下指标配对求和</p>
+<div class="arithmatex">\[x_\mu y^\mu = \eta_{\mu\nu} x^\nu y^\mu = -c^2t_xt_y + \mathbf{x}\cdot\mathbf{y}\]</div>
+<p>这种"一上一下"的组合在变换下保持不变，类似于欧几里得空间中 <span class="arithmatex">\(\mathbf{a}\cdot\mathbf{b} = a_i b^i\)</span> 在旋转下不变。</p>
+<hr />
+<h2 id="四通俗理解_1">四、通俗理解<a class="headerlink" href="#四通俗理解_1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>洛伦兹变换 = 时空中的"广义旋转"</strong></p>
+</blockquote>
+<p>普通旋转：你在房间里转个身，物体的空间长度不变，只是方向变了。</p>
+<p>洛伦兹变换：你以高速运动起来，时间和空间会"混合"——你的时间变慢了（时间膨胀），你的长度缩短了（洛伦兹收缩）。但<strong>时空间隔</strong>这个"四维距离"对所有人都是一样的。</p>
+<p>数学上，这种"混合"之所以可能，是因为闵可夫斯基度规 <span class="arithmatex">\(\eta\)</span> 有正有负（时间分量正，空间分量负），这使得 <span class="arithmatex">\(\Lambda\)</span> 可以包含<strong>双曲旋转</strong>（boost），而不仅仅是普通的三角旋转。</p>
+<hr />
+<h2 id="五本节知识图谱">五、本节知识图谱<a class="headerlink" href="#五本节知识图谱" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>狭义相对论的基本假设
+        ↓
+时空间隔不变 ds² = ds&#39;²
+        ↓
+寻找线性变换 Λ: dx&#39; = Λ dx
+        ↓
+代入不变性条件 → ΛᵀηΛ = η  [洛伦兹变换的定义]
+        ↓
+        ├─→ 类比：旋转矩阵满足 OᵀIO = I
+        │
+        └─→ 应用：构造洛伦兹不变量（上下指标缩并）
+</code></pre></div>
+<hr />
+<h2 id="段落-3">段落 3：不变性、对称性与协变性的区别<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:14:00 ~ 00:19:02</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+和斜变性它们听起来好像有点像但又有点不一样您能帮我们理清一下吗好的这三个概念确实容易混淆但它们在物理学中都非常重要我们一个一个来说首先是不变性Invariance这个最直接了如果一个东西在经过某个变换之后它本身没有发生任何变化那我们就说它是不变的比如一个苹果我把它从桌子左边移到右边它还是那个苹果它的质量颜色都没变那它的质量就是不变的很好的例子在比如刚才我们说的DS平方它在落伦子变换下数值是不会变的所以DS平方就是落伦子变换下的一个不变量接下来是对称性Symmetry
+物理系统在经过某种变换或者一类变换之后它看起来还是一模一样或者说它的性质没有发生改变那我们就说这个系统具有这种变换下的对称性比如一个圆我把它旋转任意角度它还是那个圆所以圆具有旋转对称性对再举个物理的例子如果一个房间里的温度是均匀的到处都一样那么你在这个房间里无论从A点走到B点测到的温度都是一样的我们可以说温度这个量在平移变换下是不变的那么这个房间就具有平移对称性是对某个量来说对称性是针对整个系统或者规律来说的可以这么区分最后也是最容易和不变性混淆的
+写变性写变性指的是一个物理方程在经过变换之后它的形式保持不变形式不变什么意思呢比如说我们有一个方程E等于AA方方加上BB如果EAB经过某个变换变成了E撇A撇B撇而这个方程变成了E撇等于A撇A撇你看虽然里面的变量变了但是方程的结构也就是形式没有变我们还是A乘以某个量的平方加上B乘以某个量的乘积哦就像公式的骨价没变只是里面的肉换了非常形象的比喻如果另一个方程E等于X方加上4AXY加上Z经过变换后变成了Y等于Y撇方加上4A
+那这个方程就不是斜偏加上Y撇方方加上Y撇X撇那这个方程就不是斜偏的因为它完全变了样听起来斜偏性对物理定律特别重要没错这非常关键所有的物理定律都必须在洛伦子变换下具有斜偏性这是为什么呢因为如果一个物理定律在不同惯性系下形式不一样那不就意味着物理定律不是普世的了吗完全正确物理定律应该是普世的它不应该依赖于你选择哪个惯性参考系如果一个定律不写便那它就只在某个特定的参考系下成立这不符合我们对物理世界的人知你想啊如果物理定律在东京和纽约看起来不一样那物理学家们可就头疼了哈哈那确实太麻烦了所以物理学家们在写物理定律的时候都要确保他们是
+对这是构建物理理论的一个基本原则我们以后会学到怎么用张亮等数学工具来确保物理定律的斜率今天一下子把好几个重要的概念都讲清楚了从明可福斯基的四维时空记号到洛伦子变换再到不变性对称性和斜率性感觉对狭义相对论的理解又剩了一层是的这些都是构建现代物理学理论的基础理解他们能帮助我们更好地把握物理世界的本质谢谢赛老师今天的精彩讲解听完这期博客对时空变换和物理定律的普世性有了更深刻的认识希望同学们也能有所收获物理学就是这样一步步深入你会发现它越来越迷人没错那我们今天的基于对称性的物理学博客就到这里了
+我们下期再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000840.0_transitionparastart.jpg" src="../frames/frame_000840.0_transitionparastart.jpg" /></p>
+<p><img alt="frame_000900.0_transition.jpg" src="../frames/frame_000900.0_transition.jpg" /></p>
+<p><img alt="frame_000960.0_formula.jpg" src="../frames/frame_000960.0_formula.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>我来对这段课程视频进行深度注解，重点分析新出现的<strong>不变性（Invariance）、对称性（Symmetry）、协变性（Covariance）</strong>三大核心概念的辨析，以及板书中的关键公式。</p>
+<hr />
+<h2 id="一板书ppt内容描述">一、板书/PPT内容描述<a class="headerlink" href="#一板书ppt内容描述" title="Permanent link">&para;</a></h2>
+<p>截图展示了一张分为三栏的对比图，标题为<strong>"物理学的三大支柱概念"</strong>，分别阐述：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">栏目</th>
+<th style="text-align: left;">核心内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>不变性 (Invariance)</strong></td>
+<td style="text-align: left;">公式 <span class="arithmatex">\(F(A') = F(A)\)</span>，配以正十二面体旋转示意图</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>对称性 (Symmetry)</strong></td>
+<td style="text-align: left;">温度均匀房间的平移示意图 + 圆的旋转对称示意图</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>协变性 (Covariance)</strong></td>
+<td style="text-align: left;">两个方程对比：协变的 vs 非协变的</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二核心公式详解">二、核心公式详解<a class="headerlink" href="#二核心公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="公式1不变性的数学表达">公式1：不变性的数学表达<a class="headerlink" href="#公式1不变性的数学表达" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[F(A') = F(A)\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(F\)</span></td>
+<td style="text-align: left;">某个物理量（函数或数值）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A\)</span></td>
+<td style="text-align: left;">变换前的状态/坐标/构型</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A'\)</span></td>
+<td style="text-align: left;">变换后的状态/坐标/构型</td>
+</tr>
+<tr>
+<td style="text-align: left;">等式</td>
+<td style="text-align: left;">变换前后该物理量的<strong>数值完全相同</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键理解</strong>：这是<strong>标量（scalar）</strong>的性质——洛伦兹标量在变换下数值不变，如 <span class="arithmatex">\(ds^2\)</span>、静质量 <span class="arithmatex">\(m\)</span>、电荷 <span class="arithmatex">\(q\)</span> 等。</p>
+<hr />
+<h3 id="公式2协变性的标准形式板书右侧">公式2：协变性的标准形式（板书右侧）<a class="headerlink" href="#公式2协变性的标准形式板书右侧" title="Permanent link">&para;</a></h3>
+<p><strong>协变方程示例：</strong></p>
+<div class="arithmatex">\[E = aA^2 + bB \quad \xrightarrow{\text{变换}} \quad E' = aA'^2 + bB'\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(E, A, B\)</span></td>
+<td style="text-align: left;">原参考系中的物理量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(E', A', B'\)</span></td>
+<td style="text-align: left;">新参考系中的对应物理量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(a, b\)</span></td>
+<td style="text-align: left;"><strong>变换系数/常数</strong>（保持不变）</td>
+</tr>
+<tr>
+<td style="text-align: left;">方程结构</td>
+<td style="text-align: left;"><span class="arithmatex">\(a \times (\text{某量})^2 + b \times (\text{某量})\)</span> 的形式严格保持</td>
+</tr>
+</tbody>
+</table>
+<p><strong>核心特征</strong>：变量带撇，但方程的"骨架"——运算结构、系数关系、微分阶数——完全不变。</p>
+<hr />
+<h3 id="公式3非协变方程的反例板书底部红叉标记">公式3：非协变方程的反例（板书底部红叉标记）<a class="headerlink" href="#公式3非协变方程的反例板书底部红叉标记" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[E = x^2 + 4axy + z \quad \xrightarrow{\text{变换}} \quad E' = y'^4 + 4ax'y' + y'^2z'^2\]</div>
+<p><strong>为何破坏协变性：</strong>
+| 原方程特征 | 变换后方程 | 问题 |
+|:---|:---|:---|
+| <span class="arithmatex">\(x^2\)</span>（二次） | <span class="arithmatex">\(y'^4\)</span>（四次） | <strong>幂次改变</strong> |
+| <span class="arithmatex">\(4axy\)</span>（交叉项，一次×一次） | <span class="arithmatex">\(4ax'y'\)</span>（保持） | 这一项OK |
+| <span class="arithmatex">\(z\)</span>（一次） | <span class="arithmatex">\(y'^2z'^2\)</span>（二次×二次=四次） | <strong>幂次与结构全变</strong> |
+| 三项结构 | 三项结构 | 但每项的数学形式完全不同 |</p>
+<blockquote>
+<p>板书用<strong>红色大叉</strong>明确标记：这不是协变方程。</p>
+</blockquote>
+<hr />
+<h2 id="三三大概念的深度辨析">三、三大概念的深度辨析<a class="headerlink" href="#三三大概念的深度辨析" title="Permanent link">&para;</a></h2>
+<h3 id="概念对比表">概念对比表<a class="headerlink" href="#概念对比表" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">数学对象</th>
+<th style="text-align: left;">变换下的表现</th>
+<th style="text-align: left;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>不变性</strong></td>
+<td style="text-align: left;"><strong>标量</strong>（单个数值）</td>
+<td style="text-align: left;"><span class="arithmatex">\(F' = F\)</span>（数值不变）</td>
+<td style="text-align: left;">物理量的绝对性</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>对称性</strong></td>
+<td style="text-align: left;"><strong>系统/拉格朗日量</strong></td>
+<td style="text-align: left;">系统性质不变</td>
+<td style="text-align: left;">物理规律的根源（诺特定理）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>协变性</strong></td>
+<td style="text-align: left;"><strong>方程/张量关系</strong></td>
+<td style="text-align: left;">形式结构不变</td>
+<td style="text-align: left;">物理定律的普适性</td>
+</tr>
+</tbody>
+</table>
+<h3 id="关键区分口诀">关键区分口诀<a class="headerlink" href="#关键区分口诀" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>"不变"看数值，"对称"看系统，"协变"看方程</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">例子</th>
+<th style="text-align: left;">归属</th>
+<th style="text-align: left;">原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(ds^2\)</span> 在洛伦兹变换下</td>
+<td style="text-align: left;"><strong>不变性</strong></td>
+<td style="text-align: left;">数值不变，是洛伦兹标量</td>
+</tr>
+<tr>
+<td style="text-align: left;">拉格朗日量 <span class="arithmatex">\(\mathcal{L}\)</span> 在旋转下</td>
+<td style="text-align: left;"><strong>对称性</strong></td>
+<td style="text-align: left;">系统作用量不变 → 导出角动量守恒</td>
+</tr>
+<tr>
+<td style="text-align: left;">麦克斯韦方程组在不同惯性系中</td>
+<td style="text-align: left;"><strong>协变性</strong></td>
+<td style="text-align: left;">方程形式相同，都是 <span class="arithmatex">\(\partial_\mu F^{\mu\nu} = \mu_0 J^\nu\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="四理论背景补充">四、理论背景补充<a class="headerlink" href="#四理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="为什么协变性对相对论至关重要">为什么协变性对相对论至关重要？<a class="headerlink" href="#为什么协变性对相对论至关重要" title="Permanent link">&para;</a></h3>
+<p><strong>爱因斯坦相对性原理的数学表达：</strong></p>
+<blockquote>
+<p>所有物理定律在所有惯性参考系中具有<strong>相同的形式</strong>。</p>
+</blockquote>
+<p>这要求物理方程必须写成<strong>张量方程</strong>的形式：</p>
+<div class="arithmatex">\[T^{\mu\nu\cdots}_{\ \ \ \rho\sigma\cdots} = S^{\mu\nu\cdots}_{\ \ \ \rho\sigma\cdots}\]</div>
+<p><strong>张量的关键性质</strong>：变换规律统一，方程两边按相同方式变换，保证形式不变。</p>
+<h3 id="常见误区澄清">常见误区澄清<a class="headerlink" href="#常见误区澄清" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">错误理解</th>
+<th style="text-align: left;">正确理解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">"协变就是变量都带撇"</td>
+<td style="text-align: left;">协变要求<strong>结构相同</strong>，不是简单加撇</td>
+</tr>
+<tr>
+<td style="text-align: left;">"不变性和协变性是一回事"</td>
+<td style="text-align: left;">不变性是<strong>数值</strong>相等，协变性是<strong>形式</strong>相同</td>
+</tr>
+<tr>
+<td style="text-align: left;">"对称性只指几何对称"</td>
+<td style="text-align: left;">对称性是<strong>广义的不变性</strong>，包括时空对称、内部对称等</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="五通俗类比总结">五、通俗类比总结<a class="headerlink" href="#五通俗类比总结" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">生活类比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>不变性</strong></td>
+<td style="text-align: left;">你的体重，在北京称是70kg，在纽约称还是70kg——<strong>数值不变</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>对称性</strong></td>
+<td style="text-align: left;">圆形蛋糕，切任意角度旋转后看起来一样——<strong>系统性质不变</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>协变性</strong></td>
+<td style="text-align: left;">菜谱"2个鸡蛋+1杯面粉→蛋糕"，用英制单位写"2 eggs + 1 cup flour → cake"——<strong>配方结构不变</strong>，只是单位（变量）换了</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>板书底部的"骨架vs肉"比喻非常精准：协变就是<strong>换肉不换骨</strong>。</p>
+</blockquote>
+<hr />
+<h2 id="六与之前内容的衔接">六、与之前内容的衔接<a class="headerlink" href="#六与之前内容的衔接" title="Permanent link">&para;</a></h2>
+<p>本段在前述<strong>闵可夫斯基时空</strong>和<strong>洛伦兹变换矩阵</strong>基础上，进一步阐明：</p>
+<ul>
+<li><span class="arithmatex">\(dx'^\mu = \Lambda^\mu_{\ \sigma} dx^\sigma\)</span> 是<strong>协变性的数学实现</strong></li>
+<li><span class="arithmatex">\(ds^2 = \eta_{\mu\nu}dx^\mu dx^\nu\)</span> 是<strong>不变性的具体实例</strong></li>
+<li>而<strong>对称性</strong>则是导出守恒律（能量、动量、角动量）的深层原理（诺特定理）</li>
+</ul>
+<p>三者共同构成现代理论物理的数学-物理框架。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
