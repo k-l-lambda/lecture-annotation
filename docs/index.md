@@ -65,6 +65,7 @@
 | 第13课 | [统计物理学与动理学理论](lectures/yt-c5LLj0IMkmQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=c5LLj0IMkmQ) |
 | 第14课 | [相空间中的相对论分布函数](lectures/yt-YsO39CIizQQ/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=YsO39CIizQQ) |
 | 第15课 | [等离子体、光子和量子态三种不同粒子系统的分布函数](lectures/yt-NLFv1ZeAvkg/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=NLFv1ZeAvkg) |
+| 第16课 | [热平衡分布函数：从理论到宇宙观测](lectures/yt-ggNqDCZwJuc/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=ggNqDCZwJuc) |
 
 ---
 
