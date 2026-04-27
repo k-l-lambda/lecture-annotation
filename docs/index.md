@@ -24,6 +24,7 @@
 | 第14课 | [庞加莱群：基本粒子的数学指纹](lectures/yt-MCmp3QUStKE/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=MCmp3QUStKE) |
 | 第15课 | [物理学的万能框架：拉格朗日形式体系](lectures/yt-T8Zxp9Nr34Y/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=T8Zxp9Nr34Y) |
 | 第16课 | [物理学深层逻辑：对称性和守恒律的纽带](lectures/yt-se56XiBhic4/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=se56XiBhic4) |
+| 第17课 | [诺特定理：粒子伽利略Boost和场论平移对称性](lectures/yt-myVqll47vZI/lecture_notes.md) | [🎬](https://www.youtube.com/watch?v=myVqll47vZI) |
 
 ## 李群李代数-梁灿彬
 
