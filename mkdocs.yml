@@ -63,7 +63,11 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
+extra_css:
+  - stylesheets/ebooks-section.css
+
 extra_javascript:
+  - javascripts/ebooks-section.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 

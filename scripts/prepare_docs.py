@@ -14,8 +14,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 LECTURES_SRC = ROOT / "lectures"
+EBOOKS_SRC = ROOT / "ebooks"
 DOCS_DIR = ROOT / "docs"
 DOCS_LECTURES = DOCS_DIR / "lectures"
+DOCS_EBOOKS = DOCS_DIR / "ebooks"
 
 
 def extract_title(md_path: Path) -> str:
@@ -288,11 +290,106 @@ def preprocess_docs_math(docs_dir: Path):
     return count
 
 
+def _ebook_index_titles(index_md: Path) -> dict[str, str]:
+    if not index_md.exists():
+        return {}
+    content = index_md.read_text(encoding="utf-8")
+    titles: dict[str, str] = {}
+    for title, target in re.findall(r"\[([^\]]+)\]\(([^)]+)\)", content):
+        parts = Path(target).parts
+        if len(parts) >= 2 and parts[-1] == "index.md":
+            titles[parts[-2]] = title.strip()
+    return titles
+
+
+def _first_heading(md_path: Path, fallback: str) -> str:
+    try:
+        with open(md_path, "r", encoding="utf-8") as f:
+            for line in f:
+                title = line.strip()
+                if title.startswith("# "):
+                    return title[2:].strip()
+    except Exception:
+        pass
+    return fallback
+
+
+def generate_ebooks_index(ebooks_dir: Path):
+    """Generate an independent ebooks landing page without adding it to the main nav."""
+    if not ebooks_dir.exists():
+        return
+
+    index_titles = _ebook_index_titles(ebooks_dir / "index.md")
+    books = []
+    for entry in sorted(ebooks_dir.iterdir()):
+        if not entry.is_dir():
+            continue
+        index_md = entry / "index.md"
+        if not index_md.exists():
+            continue
+        books.append({
+            "title": index_titles.get(entry.name) or _first_heading(index_md, entry.name),
+            "path": f"{entry.name}/index.md",
+            "slug": entry.name,
+        })
+
+    lines = [
+        "---",
+        "hide:",
+        "  - navigation",
+        "---",
+        "",
+        "# 电子书",
+        "",
+        "这里是本站独立的电子书资源入口。电子书页面不会出现在课程主页和主导航中，但可以通过本目录直接访问。",
+        "",
+        "## 书目导航",
+        "",
+    ]
+
+    if books:
+        for book in books:
+            lines.append(f"- [{book['title']}]({book['path']})")
+    else:
+        lines.append("*暂无电子书资源。*")
+
+    lines.extend([
+        "",
+        "---",
+        "",
+        "[返回课程首页](../index.md)",
+        "",
+    ])
+
+    (ebooks_dir / "index.md").write_text("\n".join(lines), encoding="utf-8")
+
+    navigation = ["## 电子书导航", "", "- [电子书首页](../index.md)"]
+    for book in books:
+        navigation.append(f"- [{book['title']}](../{book['path']})")
+    navigation_block = "\n".join(navigation)
+
+    for book in books:
+        book_index = ebooks_dir / book["slug"] / "index.md"
+        content = book_index.read_text(encoding="utf-8").rstrip()
+        marker = "## 电子书导航"
+        if marker in content:
+            content = content[:content.index(marker)].rstrip()
+        book_index.write_text(f"---\nhide:\n  - navigation\n---\n\n{navigation_block}\n\n---\n\n{content}\n", encoding="utf-8")
+
+
 def main():
     # Clean and recreate docs/lectures
     if DOCS_LECTURES.exists():
         shutil.rmtree(DOCS_LECTURES)
     DOCS_LECTURES.mkdir(parents=True, exist_ok=True)
+
+    # Copy ebook pages into docs/ebooks without touching generated lecture content
+    if EBOOKS_SRC.exists():
+        if DOCS_EBOOKS.exists():
+            shutil.rmtree(DOCS_EBOOKS)
+        shutil.copytree(EBOOKS_SRC, DOCS_EBOOKS)
+        generate_ebooks_index(DOCS_EBOOKS)
+        print("  Copied ebooks -> docs/ebooks")
 
     # Find all lecture directories
     lectures = []
