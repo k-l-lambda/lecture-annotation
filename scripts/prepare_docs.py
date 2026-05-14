@@ -132,6 +132,14 @@ def _escape_pipe_in_math(line: str) -> str:
     return ''.join(parts)
 
 
+def _normalize_display_math_punctuation(content: str) -> str:
+    content = re.sub(r'\$\$([^$]*?)([。；，、])\s*\$\$', r'$$\1$$\2', content, flags=re.DOTALL)
+    content = re.sub(r'\$\$([^$]*?)\\text\{\s*([。；，、])\s*\}\s*\$\$', r'$$\1$$\2', content, flags=re.DOTALL)
+    content = re.sub(r'\\\[([\s\S]*?)([。；，、])\s*\\\]', r'\\[\1\\]\2', content)
+    content = re.sub(r'\\\[([\s\S]*?)\\text\{\s*([。；，、])\s*\}\s*\\\]', r'\\[\1\\]\2', content)
+    return content
+
+
 def preprocess_math(content: str) -> str:
     """Preprocess math blocks for reliable arithmatex rendering.
 
@@ -146,6 +154,7 @@ def preprocess_math(content: str) -> str:
     4. Inline $$...$$ (text before/after on the same line) → \\(...\\)
     5. | inside $...$ in markdown table rows → escaped \\|
     """
+    content = _normalize_display_math_punctuation(content)
     lines = content.split('\n')
     result = []
     i = 0
@@ -155,10 +164,11 @@ def preprocess_math(content: str) -> str:
         stripped = line.strip()
 
         # Pattern 1: Single-line display math $$...$$ on its own line
-        single_line_match = re.match(r'^(\s*)\$\$(.+)\$\$\s*$', line)
+        single_line_match = re.match(r'^(\s*)\$\$(.+?)\$\$([。；，、])?(?:\s+\d+)?\s*$', line)
         if single_line_match:
             indent = single_line_match.group(1)
             formula = single_line_match.group(2).strip()
+            punctuation = single_line_match.group(3) or ""
 
             if indent:
                 # Indented (inside list items) - use inline math to stay within list
