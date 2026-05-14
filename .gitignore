@@ -1,7 +1,8 @@
 # MkDocs build output
 site/
 
-# Generated docs (built from lectures/ by prepare_docs.py)
+# Generated docs (built by prepare_docs.py)
+docs/ebooks/
 docs/lectures/
 
 *.pyc
