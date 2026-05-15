@@ -8,3 +8,4 @@ docs/lectures/
 *.pyc
 
 *.local
+*.checkpoint.json
