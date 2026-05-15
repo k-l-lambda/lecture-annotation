@@ -9,3 +9,6 @@ docs/lectures/
 
 *.local
 *.checkpoint.json
+
+ebooks/*/*.tsv
+ebooks/*/assets/*.json
