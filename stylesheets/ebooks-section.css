@@ -1,0 +1,10 @@
+html.ebooks-section .md-sidebar--primary,
+html.ebooks-section .md-header__button[for="__drawer"] {
+  display: none !important;
+}
+
+@media screen and (min-width: 76.25em) {
+  html.ebooks-section .md-content {
+    margin-left: 0;
+  }
+}

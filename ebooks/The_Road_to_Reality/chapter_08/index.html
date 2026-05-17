@@ -1,0 +1,2154 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/The_Road_to_Reality/chapter_08/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Chapter 08 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#黎曼曲面和复映射" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 08
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#81-黎曼曲面概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 黎曼曲面概念
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第八章-黎曼曲面和复映射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第八章 黎曼曲面和复映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-共形映射" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 共形映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-黎曼球面" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 黎曼球面
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-紧黎曼曲面的亏格" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 紧黎曼曲面的亏格
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第八章-黎曼曲面和复映射_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第八章 黎曼曲面和复映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85-黎曼映射定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 黎曼映射定理
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- page 113 -->
+
+<p>通向实在之路</p>
+<p>第八章</p>
+<h1 id="黎曼曲面和复映射">黎曼曲面和复映射<a class="headerlink" href="#黎曼曲面和复映射" title="Permanent link">&para;</a></h1>
+<h2 id="81-黎曼曲面概念">8.1 黎曼曲面概念<a class="headerlink" href="#81-黎曼曲面概念" title="Permanent link">&para;</a></h2>
+<p>这里，我们给出一种理解对数函数——或其他任意“多值函数”——的解析延拓的方法，这就是基于所谓黎曼曲面的方法。黎曼的思想是将函数看成是定义在这样一种定义域上，它不是复平面的简单子集，而是一个多层区域。以 log z 为例，其图像就是一个绕垂直轴旋转而下直到复平面的倾斜螺旋面，见图 8.1。对数函数在这个多叶螺旋复平面上是单值的，因为我们每绕原点一周，对数就增加 2πi，这个值就处于上一叶的螺旋面上。这里各对数值之间不会有任何冲突，因为它的定义域是一种展开的环绕空间——黎曼曲面的一个例证——这是一种细节上不同于复平面本身的空间。</p>
+<p><img alt="log z 的黎曼曲面，绕垂直轴旋转而下的倾斜螺旋面" src="../assets/page113_fig01.jpg" /></p>
+<p>图 8.1 log z 的黎曼曲面，其图像是一个绕垂直轴旋转而下的倾斜螺旋面。</p>
+<p>引入这一思想的黎曼（Bernhardt Riemann，1826～1866）是最伟大的数学家之一，在他短暂的一生里，他提出的许多数学思想深刻改变了数学的进程。在 [136] 本书中，我们还将遇到他的其他一些贡献，例如作为爱因斯坦广义相对论基础的那些概念（黎曼的另一项极其重要的贡献见第 7 章末尾所述）。在黎曼引入我们今天称之为“黎曼曲面”这一概念之前，数学家们一直对如何处理这些所谓的“多值函数”（对数只是其中最简单的一个例子）莫衷一是。为严格起见，许多人感到有必要以某种我个人很不赞同的方式来处理这类函数。（附带说一下，我在大学里学的仍旧是这种方式，尽管这距黎曼划时代的论文发表已过去了近一个世纪。）特别是，对数函数的定义域会被从原点到无穷远拉一条线这样一种随意的方式所“割裂”。在我看来，这是对庄严的数学结构的一种粗鲁的损毁。黎曼教导我们，应当用不同的方式来处理事情。全纯函数为什么必须像普通“函数”那样，理解为固定定义域到确定值域的映射？</p>
+<p>·94·</p>
+<!-- page 114 -->
+
+<h2 id="第八章-黎曼曲面和复映射">第八章 黎曼曲面和复映射<a class="headerlink" href="#第八章-黎曼曲面和复映射" title="Permanent link">&para;</a></h2>
+<p>这实在是让人很不舒服。在解析延拓中我们看到，全纯函数“自己有脑子”确定自身的定义域该是什么样，这与我们最初派分给它的复平面区域基本无关。我们可以将函数的定义域表示为与函数有关的黎曼曲面，但这个定义域不是提前给定的。正是函数本身的显形式告诉我们定义域实际用的是哪一种黎曼曲面。</p>
+<p>不久我们还将遇到各种其他类型的黎曼曲面。这个优美的概念在现代试图找到数学物理的新的基础——主要指弦论（§§31.5, 13），也包括扭量理论（§§33.2, 10）——方面发挥着重要作用。事实上，<span class="arithmatex">\(\log z\)</span> 的黎曼曲面只是这种曲面里最简单的一种。它只是提示我们其中都有什么。函数 <span class="arithmatex">\(z^a\)</span> 的黎曼曲面要比 <span class="arithmatex">\(\log z\)</span> 稍有意思些，但这也只是在 <span class="arithmatex">\(a\)</span> 为有理数时是如此。当 <span class="arithmatex">\(a\)</span> 是无理数时，<span class="arithmatex">\(z^a\)</span> 的黎曼曲面具有和 <span class="arithmatex">\(\log z\)</span> 的一样的结构，而在 <span class="arithmatex">\(a\)</span> 是有理数时，假设其最简形式为 <span class="arithmatex">\(a=m/n\)</span>，则旋转面转了 <span class="arithmatex">\(n\)</span> 圈后将回到出发点。*[8.1]在所有这些例子中，原点 <span class="arithmatex">\(z=0\)</span> 称为分支点。如果旋转面转了 <span class="arithmatex">\(n\)</span> 圈后回到出发点（在 <span class="arithmatex">\(z^{m/n}\)</span> 中，<span class="arithmatex">\(m\)</span> 和 <span class="arithmatex">\(n\)</span> 无公因子），我们就说这个分支点有有限阶，或称它是 <span class="arithmatex">\(n\)</span> 阶的。如果旋转面转了任意圈仍不能回到出发点（如 <span class="arithmatex">\(\log z\)</span> 的情形），我们就称这个分支点</p>
+<p><img alt="图8.2 黎曼曲面构造示意：(a) 两叶黎曼曲面；(b) 拓扑环面粘合过程；(c) 流形拼块粘合规则与示例" src="../assets/page114_fig01.jpg" /></p>
+<p><strong>图8.2</strong> (a)由两叶构建的<span class="arithmatex">\((1-z^3)^{1/2}\)</span>的黎曼曲面，它在 <span class="arithmatex">\(1,\omega,\omega^2\)</span>（和<span class="arithmatex">\(\infty\)</span>）等处有阶数为 <span class="arithmatex">\(2\)</span> 的分支点。(b)为了看出<span class="arithmatex">\((1-z^3)^{1/2}\)</span>的黎曼曲面是拓扑上的环面，我们将(a)的面想象成带有割缝（分别为从 <span class="arithmatex">\(\omega\)</span> 到 <span class="arithmatex">\(\omega^2\)</span> 和从 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(\infty\)</span>）的两个黎曼球面，它们沿箭头所指方向粘合起来，形成相应的拓扑柱面，最后再粘合成环面。(c)为了构建黎曼曲面（或一般流形），我们将坐标空间的拼块粘合起来——这些拼块是复平面的开区域部分。拼块之间必须存在（开集）重叠（而且在并的情形下，例如上述的最后一种情形，必须不存在“非豪斯道夫分支”，见图 12.5(b)和§12.2）。</p>
+<p>*[8.1] 解释为什么。</p>
+<p>·95·</p>
+<!-- page 115 -->
+
+<p>通向实在之路</p>
+<p>137</p>
+<p>是无穷阶的。</p>
+<p>表达式<span class="arithmatex">\((1-z^3)^{1/2}\)</span>对这一思想做了更清楚的注解。这个函数有3个分支点，分别是<span class="arithmatex">\(z=1\)</span>，<span class="arithmatex">\(z=\omega\)</span>和<span class="arithmatex">\(z=\omega^2\)</span>（这里<span class="arithmatex">\(\omega=e^{2\pi i/3}\)</span>，见§5.4，§7.4），故<span class="arithmatex">\(1-z^3=0\)</span>，另外还有一个“无穷分支点”。如果我们在每个分支点的紧邻域内绕分支点完整地转一圈（对“无穷分支点”，这意味着要绕一个大圈），会发现函数改变了正负号，再绕一圈，函数值又变回原初的值。因此我们看到，所有分支点都是2阶的。我们有两叶来构成黎曼曲面，它们按图8.2(a)所示的方式粘合起来。在图8.2(b)里，我采用某种拓扑弯曲来说明黎曼曲面实际上是一种环面拓扑结构，就像环状面包圈，只是多了4个小洞，它们对应于4个分支点本身。实际上，这些洞可以（用4个单点）毫不含糊地填补起来，这样黎曼曲面就有了严格的环面拓扑。**[8.2]</p>
+<p>**[8.2] 试作<span class="arithmatex">\((1-z^4)^{1/2}\)</span>。</p>
+<p>·96·</p>
+<p>138</p>
+<p>黎曼曲面是一般流形概念的第一个例子。流形是一种局部（即在点的足够小邻域内）“弯曲”的空间，它看上去像通常的欧几里得空间。我们在第10和12章里还会遇到更多的流形。在现代物理的许多领域中，流形概念都是至关重要的概念。特别是在爱因斯坦的广义相对论中，它具有核心地位。流形可看成是由许多不同的拼块拼贴而成的，这种拼贴是无缝的，这一点与§6.3末尾的<span class="arithmatex">\(h(x)\)</span>函数大不一样。无缝拼贴的性质是指两个拼块之间总能够保证有适当的（开集）重叠（见图8.2(c)和§12.2的图12.5）。</p>
+<p>在黎曼曲面情形，流形（即黎曼曲面本身）是由不同的“叶”所对应的复平面拼块粘合成一个整体而构成的。像上面的情形一样，最后也有几个有限阶分支点留下的“洞”，而这些洞也一样可以补起来。对于无穷阶分支点，事情要复杂些，这里很难作简单的一般性叙述。</p>
+<p>作为例子，让我们来看看对数函数的“螺旋上升”的黎曼曲面。在纸模型上作这种粘合的一个方法，是按如下方式依次交替地取拼块进行粘合：(a) -拼块为去掉非负实数的复平面，(b) -拼块去掉非正实数的复平面。每个(a) -拼块的上半部分与下一个(b) -拼块的上半部分粘合，每个(b) -拼块的下半部分与下一个(a) -拼块的下半部分粘合，见图8.3。</p>
+<p><img alt="图8.3 展示构建\(\log z\)黎曼曲面的交替拼块粘合示意图，(a)为去掉非负实数的复平面拼块，(b)为去掉非正实数的复平面拼块，每个拼块的上半部分与下一个拼块的上半部分粘合，下半部分与下一个拼块的下半部分粘合。" src="../assets/page115_fig01.jpg" /></p>
+<p>图8.3 我们可通过如下依次交替地取拼块进行粘合的方式来构建<span class="arithmatex">\(\log z\)</span>的黎曼曲面；(a)为去掉非负实数的复平面拼块，(b)为去掉非正实数的复平面拼块。每个(a)-拼块的上半部分与下一个(b)-拼块的上半部分粘合，每个(b)-拼块的下半部分与下一个(a)-拼块的下半部分粘合。</p>
+<p>初始位置和无穷远位置上是无穷阶分支点——由此我们惊奇地发现，整个螺旋上升结构恰好等价于带有一个单洞的球面，这个洞同样可以补</p>
+<!-- page 116 -->
+
+<p>第八章 黎曼曲面和复映射</p>
+<p>上从而形成完整的球面。**[8.3]</p>
+<h2 id="82-共形映射">8.2 共形映射<a class="headerlink" href="#82-共形映射" title="Permanent link">&para;</a></h2>
+<p>有了流形之后，我们来考虑从一个拼块到另一个拼块的过渡过程中哪些局域结构得以保留。通常我们讨论的是实流形，各种不同的拼块都是（固定维）欧几里得空间的一部分，它们沿不同的（开）重合区域粘合成一个整体。相邻拼块的局域结构之间的匹配通常只是一个如何保持连续或光滑的问题。我们到 §10.2 再来讨论这个问题。但在黎曼曲面情形，我们关心的是复光滑，由 §7.1 我们知道，这是一个更为复杂的问题，涉及柯西－黎曼方程。虽然我们还未直接与它打过交道（我们在 §10.5 讨论这个问题），但不妨先了解一下这个方程所含结构的几何意义。这个结构非常完美、非常灵活和有力，它引出了具有广泛应用的数学概念。[139]</p>
+<p>这个概念就是共形几何概念。大致上说，在共形几何里，我们感兴趣的是形状而不是大小，这里指的是无限小尺度下的形状。在从一个（开）平面区域到另一个（开）平面区域的共形映射下，有限大小的形状通常是要变形的，但无限小的形状则保持不变。我们认为这种性质可以用到平面上的小（无限小的）圆上。在共形映射下，这些小圆可扩张也可收缩，但不会变形成小椭圆。见图 8.4。</p>
+<p>[图 8.4：共形映射下小圆保持圆形，非共形映射下小圆变为椭圆]</p>
+<p>图 8.4 在共形映射下，小（无限小的）圆可扩张也可收缩，但不会变形成小椭圆。</p>
+<p>为了加深对共形变换的理解，我们来看图 2.11 给出的埃舍尔的画，它提供了一种如 §2.4 所述的欧几里得平面下双曲平面的共形表示（贝尔特拉米的“庞加莱圆盘”）。双曲平面是非常对称的。特别是存在这样的变换，它将埃舍尔画的中心部分变换到紧靠约束圆内侧的相应的狭窄部分。我们可以把这种变换表示成取约束圆内部到自身的欧几里得平面的共形移动。显然，这样一种变换通常不保持单个图形的大小（因为中间部分远大于边缘部分），但形状大致可保持不变。当每个图形的细节取得越小，这种保形性就越精确，因此无限小形状就得以完全保持不变。读者或许会发现，有一种略微不同的特性更有用：共形变换下不变的曲线间夹角。它刻画了变换的共形本质。</p>
+<p>对于某些函数 <span class="arithmatex">\(f(z)\)</span> 的复光滑（全纯）性，这种共形性质能作什么呢？我们试试看如何得到复光滑几何内容的直观图像。让我们回到函数 <span class="arithmatex">\(f\)</span> 的“映射”观点，将关系 <span class="arithmatex">\(w=f(z)\)</span> 看成是一种 <span class="arithmatex">\(z\)</span> 复平面（函数 <span class="arithmatex">\(f\)</span> 的定义域）到 <span class="arithmatex">\(w\)</span> 复平面（值域）的映射，见图 8.5。我们要问：什么样的局部几何性质能够[140]</p>
+<p>** [8.3] 你能看出这是怎么回事吗？（提示：考虑变量 <span class="arithmatex">\(w(=\log z)\)</span> 的黎曼球面，见 §8.3。）</p>
+<p>·97·</p>
+<!-- page 117 -->
+
+<p>通向实在之路</p>
+<p>将映射塑造成全纯的？答案令人称奇。<span class="arithmatex">\(f\)</span> 的全纯性实际上等价于共形且非反射的映射（非反射——或保定向——是指变换中保形的小块形状不是反射的，即不是“颠倒的”，见 §12.6）。</p>
+<p><img alt="z-复平面与 w-复平面间的共形非反射映射示意图" src="../assets/page117_fig01.jpg" /></p>
+<p>图 8.5 映射 <span class="arithmatex">\(w=f(z)\)</span> 分别在 <span class="arithmatex">\(z\)</span> 复平面有开区域的定义域，在 <span class="arithmatex">\(w\)</span> 复平面有开区域的值域。函数 <span class="arithmatex">\(f\)</span> 的全纯性等价于这种共形且非反射的映射。</p>
+<p>141</p>
+<p><span class="arithmatex">\(w = f(z)\)</span> 变换中的“光滑”概念是指在无限小极限情形下变换是如何操作的。先考虑实数情形，我们再回到 §6.2 的实函数 <span class="arithmatex">\(f(x)\)</span> 情形，见图 6.4 的 <span class="arithmatex">\(y = f(x)\)</span> 的图。如果函数图在某一点有明确定义的切线，则函数 <span class="arithmatex">\(f\)</span> 在该点上是光滑的。我们可以通过想象来画这条切线：将过该点的曲线逐步放大，只要它是光滑的，那么随着放大倍数逐渐提高，过该点的曲线就会越来越像直线，最后在无穷大放大倍数的极限下它就等效为切线。复光滑的情形类似，只是需要把这一思想应用到从 <span class="arithmatex">\(z\)</span> 复平面到 <span class="arithmatex">\(w\)</span> 复平面的映射上。为了检验这种映射的无穷小性质，我们在一个平面上画出点 <span class="arithmatex">\(z\)</span> 的紧邻域，并将它映射到另一个平面上 <span class="arithmatex">\(w\)</span> 的紧邻域。而要检验点的这种紧邻域性质，我们想象用一个巨大的系数分别将 <span class="arithmatex">\(z\)</span> 和 <span class="arithmatex">\(w\)</span> 的邻域放大，在极限情形下，从 <span class="arithmatex">\(z\)</span> 的扩充邻域到 <span class="arithmatex">\(w\)</span> 的扩充邻域的映射就变成了简单的平面线性变换，但如果它是全纯的，那么这种变换基本上就是 §5.1 所研究的变换之一。由此可知，在一般情形下，从 <span class="arithmatex">\(z\)</span> 的邻域到 <span class="arithmatex">\(w\)</span> 的邻域的变换可简单地看成是一种带均匀扩充（或收缩）的转动，见 5.2(b)。也就是说，小的形状（或夹角）是不变的，而且没有反射，这说明这种映射确实是共形且非反射的。</p>
+<p>我们来看几个例子。映射的特例之一是如 §5.1 所示的使 <span class="arithmatex">\(z\)</span> 加上一个常数 <span class="arithmatex">\(b\)</span> 或乘上一个常数 <span class="arithmatex">\(a\)</span>（图 5.2），它们显然不仅是全纯的（<span class="arithmatex">\(z + b\)</span> 和 <span class="arithmatex">\(az\)</span> 显然都是可微的），也是共形的。这些是一般组合（非齐次线性）变换</p>
+<div class="arithmatex">\[w = az + b\]</div>
+<p>的特例。这种变换给出平面的欧几里得运动（非反射）与均匀扩张（或收缩）的组合。事实上，它们是唯一的全复 <span class="arithmatex">\(z\)</span> 平面到全复 <span class="arithmatex">\(w\)</span> 平面的（非反射）共形映射。除此之外，它们还具有实际圆——不止是无限小圆——映射到实际圆，以及直线映射到直线的非常特殊的性质。</p>
+<p>另一种简单全纯函数是互反函数</p>
+<div class="arithmatex">\[w = z^{-1},\]</div>
+<p>它把去掉原点的复平面映射到去掉原点的复平面。神奇的是，这种变换也把实际圆映射到实际圆<a href="证明这一点。">^8.4</a>（这里我们认为直线是一种特殊的圆——即半径无穷大的圆）。这个变换与实轴的反射</p>
+<p>· 98 ·</p>
+<!-- page 118 -->
+
+<p>第八章 黎曼曲面和复映射</p>
+<p>合在一起，就构成所谓的反演。而将它与前面考虑的非齐次线性映射相结合，则得到更一般的变换*[8.5]：</p>
+<div class="arithmatex">\[w = \frac{az + b}{cz + d},\]</div>
+<p>它称作双线性或默比乌斯变换。由前面所述，这些变换也必定将圆映射为圆（直线看作是圆的一种特殊情形）。这个默比乌斯变换实际上将去掉点 <span class="arithmatex">\(-d/c\)</span> 的整个复平面映射到去掉点 <span class="arithmatex">\(a/c\)</span> 的整个复平面——作为完全非平庸映射的变换，我们要求 <span class="arithmatex">\(ad \neq bc\)</span>（分子不是分母的固定倍数）。</p>
+<p>注意，从 <span class="arithmatex">\(z\)</span> 平面去掉的点其值（<span class="arithmatex">\(z = -d/c\)</span>）将给出“<span class="arithmatex">\(w = \infty\)</span>”；相应地，从 <span class="arithmatex">\(w\)</span> 平面去掉的点其值（<span class="arithmatex">\(w = a/c\)</span>）将给出“<span class="arithmatex">\(z = \infty\)</span>”。实际上，如果我们将“<span class="arithmatex">\(\infty\)</span>”包括进定义域和值域，那么整个变换将更具总体意义。这就是关于最简单（紧）黎曼曲面的一种思考方法：黎曼球面。</p>
+<h2 id="83-黎曼球面">8.3 黎曼球面<a class="headerlink" href="#83-黎曼球面" title="Permanent link">&para;</a></h2>
+<p>简单地将额外的点“<span class="arithmatex">\(\infty\)</span>”结合到复平面并不能使 <span class="arithmatex">\(\infty\)</span> 的邻域是否满足无缝结构要求这一问题得到彻底解决，对出现在其他地方的奇点同样如此。我们处理这个问题的方法，是将球面看作是由两个“坐标拼块”拼合而成的，一个是 <span class="arithmatex">\(z\)</span> 平面，另一个是 <span class="arithmatex">\(w\)</span> 平面。除两点外，整个球面划分为 <span class="arithmatex">\(z\)</span> 坐标和 <span class="arithmatex">\(w\)</span> 坐标（经由默比乌斯变换而关联）。而这两个点中，一个只有 <span class="arithmatex">\(z\)</span> 坐标（此处 <span class="arithmatex">\(w\)</span> 是“无穷远”），另一个只有 <span class="arithmatex">\(w\)</span> 坐标（此处 <span class="arithmatex">\(z\)</span> 是“无穷远”）。我们用 <span class="arithmatex">\(z\)</span> 或 <span class="arithmatex">\(w\)</span> 或同时用二者来定义所需的共形结构，这里同时用二者得到的共形结构与使用其中一种得到的是一样的，因为两坐标间关系是全纯的。</p>
+<p>事实上，在 <span class="arithmatex">\(z\)</span> 和 <span class="arithmatex">\(w\)</span> 之间，我们不需要像一般默比乌斯变换那样复杂的变换。考虑下述这种特别简单的默比乌斯变换就已足够：</p>
+<div class="arithmatex">\[w = \frac{1}{z}, \qquad z = \frac{1}{w},\]</div>
+<p>这里 <span class="arithmatex">\(z = 0\)</span> 和 <span class="arithmatex">\(w = 0\)</span> 都给出对方拼块上的 <span class="arithmatex">\(\infty\)</span>。我在图 8.6 说明了这个变换如何映射 <span class="arithmatex">\(z\)</span> 的实轴和虚轴。</p>
+<p>所有这些以一种相当抽象的方式定义了黎曼球面。通过图 8.7(a) 所示的几何，我们可以更清楚地看出为什么黎曼球面被称为“球面”。我取 <span class="arithmatex">\(z\)</span> 平面来表示这个几何球面的赤道面。球面上的点通过由南极发出的所谓球极平面投影被映射到这个赤道面上。这好比我从南极经赤道面上点 <span class="arithmatex">\(z\)</span> 画一条三维空间里的直线。这条直线再次与球面相遇的地方就是复数 <span class="arithmatex">\(z\)</span> 所代表的球面上的点。球面上有一个点，即南极点本身，他代表的是 <span class="arithmatex">\(z = \infty\)</span>。为了看出 <span class="arithmatex">\(w\)</span> 如何符合这一图像，我们想象它的复平面是颠倒过来的（<span class="arithmatex">\(w = 1, i, -1, -i\)</span> 分别对应于 <span class="arithmatex">\(z = 1, -i, -1, i\)</span>），而且球极</p>
+<p>*[8.5] 验证：变换 <span class="arithmatex">\(z \mapsto Az + B\)</span>, <span class="arithmatex">\(z \mapsto z^{-1}\)</span>, <span class="arithmatex">\(z \mapsto Cz + D\)</span> 的结果确实是一种双映射。</p>
+<p>·99·</p>
+<!-- page 119 -->
+
+<p>通向实在之路</p>
+<hr />
+<p><img alt="z复平面矩形网格及其经 \(w=1/z\) 变换后在 \(w\) 复平面上的圆网格" src="../assets/page119_fig01.jpg" /></p>
+<p><strong>图8.6</strong> 通过 <span class="arithmatex">\(w=1/z\)</span>, <span class="arithmatex">\(z=1/w\)</span> 从 <span class="arithmatex">\(z\)</span> 复平面和 <span class="arithmatex">\(w\)</span> 复平面拼贴黎曼球面。（这里 <span class="arithmatex">\(z\)</span> 的网格线也显示在 <span class="arithmatex">\(w\)</span>-复平面上。）除了原点 <span class="arithmatex">\(z=0\)</span> 和 <span class="arithmatex">\(w=0\)</span> 二者互给出对方拼块上的"<span class="arithmatex">\(\infty\)</span>"点之外，其他区域均重叠。</p>
+<p><img alt="黎曼球面的球极平面投影示意图：(a) 从南极点向 \(z\) 平面投影，(b) 从北极点向颠倒的 \(w\) 平面投影，(c) 实轴作为球面上的大圆" src="../assets/page119_fig02.jpg" /></p>
+<p><strong>图8.7</strong> (a) 作为单位球面的黎曼球面，其赤道面与（水平的）<span class="arithmatex">\(z\)</span> 复平面上的单位圆重合。球面上的点经南极点发出的直线被投影（按球极投影方式）到 <span class="arithmatex">\(z\)</span> 平面上，南极点本身给出 <span class="arithmatex">\(z=\infty\)</span>。(b) 作为 <span class="arithmatex">\(w\)</span> 平面的赤道面的再解释。它被颠倒过来，但实轴不变，球极投影现在则由北极点（<span class="arithmatex">\(w=\infty\)</span>）发出，这里 <span class="arithmatex">\(w=1/z\)</span>。(c) 实轴是这个黎曼球面上的大圆，像垂直而不是水平画出的单位圆。</p>
+<p>144</p>
+<p>平面投影是从北极发出的（图8.7(b)）。<strong>[8.6]</strong> 球极平面投影的一个重要而又漂亮的性质是它把球面上的圆映射为平面上的圆（或直线）。¹ 因此，在球面上，双线性（默比乌斯）变换将圆变成圆。这个显著的事实对我们将在 §18.5 要遇到的相对论具有重要意义（它还与旋量理论和扭量理论有着深刻联系，见 §22.8，§24.7，§§33.2, 4）。</p>
+<p>我们注意到，从黎曼球面的观点看，实轴实则为“另一个圆”，与单位圆没有本质的区别，只是画在了垂直方向上而不是水平方向上（图8.7(c)）。通过转动我们就能由此及彼。转动是共形的，因此它可由球面到自身的全纯映射给出。实际上，取整个黎曼球面到自身的每一个（非</p>
+<hr />
+<p><strong>[8.6]</strong> 验证这两个球极平面投影的关系是 <span class="arithmatex">\(w=z^{-1}\)</span>。</p>
+<p>·100·</p>
+<!-- page 120 -->
+
+<p>第八章 黎曼曲面和复映射</p>
+<p>反射）共形映射都是由双线性（默比乌斯）变换实现的，因此我们所考虑的特定转动可明确表现为双线性变换给定的两个复参数 <span class="arithmatex">\(z\)</span> 和 <span class="arithmatex">\(t\)</span> 的黎曼球面之间的关系^{<em>*</em>[8.7]}</p>
+<div class="arithmatex">\[t=\frac{z-1}{iz+i},\quad z=\frac{-t+i}{t+i}\]</div>
+<p>在图 8.8 中，我画出了 <span class="arithmatex">\(t\)</span> 和 <span class="arithmatex">\(z\)</span> 的复平面间的对应关系，其中特地标出了由实轴界定的 <span class="arithmatex">\(t\)</span> 的上半平面如何被映射到由单位圆界定的 <span class="arithmatex">\(z\)</span> 的单位圆盘。这个特殊变换对我们下一章的讨论很重要。</p>
+<p><img alt="t 平面与 z 平面的对应关系示意图。左侧为 t 平面，显示由实轴界定的带阴影格点的上半平面；右侧为 z 平面，显示由单位圆界定的带阴影格点的单位圆盘；中间箭头标注映射公式 \(z=(i-t)/(i+t)\)，并绘有坐标轴与网格线。" src="../assets/page120_fig01.jpg" /></p>
+<p>图 8.8 <span class="arithmatex">\(t\)</span> 和 <span class="arithmatex">\(z\)</span> 的复平面间的对应关系 <span class="arithmatex">\(t=(z-1)/(iz+i)\)</span>，<span class="arithmatex">\(z=(-t+i)/(t+i)\)</span>。由实轴界定的 <span class="arithmatex">\(t\)</span> 的上半平面被映射到由单位圆界定的 <span class="arithmatex">\(z\)</span> 的单位圆盘。</p>
+<p>黎曼球面是最简单的紧——或者叫“闭”——黎曼曲面。^2 “紧”的概念见 §12.6。相反，前面所述的对数函数的“螺旋上升的”黎曼曲面则是非紧的。对于 <span class="arithmatex">\((1-z^3)^{1/2}\)</span> 的黎曼曲面情形，我们需要补上分支点带来的四个洞来使它成为紧的（如果不补，它就是非紧的），这种“紧致化”就是我们通常要做的。正如早先所说的，用有限阶分支点来进行这种“填洞”工作总是可能的。在 §8.1 我们看到，对于对数情形，我们可以用一个单点来填原点和无穷远点两处的分支点以便得到紧的黎曼曲面。实际上，存在一种紧黎曼曲面的完全分类（黎曼本人的成就），这种分类对许多领域（包括弦论）都是重要的。下面我来简单介绍一下这种分类。</p>
+<h2 id="84-紧黎曼曲面的亏格">8.4 紧黎曼曲面的亏格<a class="headerlink" href="#84-紧黎曼曲面的亏格" title="Permanent link">&para;</a></h2>
+<p>首先我们按照曲面的拓扑来对其进行分类，就是说，按照曲面在连续变换中保持不变的性质来分类。二维可定向（见 §12.6 末）紧曲面是非常简单的。它可由称之为曲面亏格的单个自然数来给定。大致上说，我们要做的就是数一数曲面具有的“环柄”数。对于球面，亏格是 0，</p>
+<hr />
+<p>*** [8.7] 证明这一点。</p>
+<p>·101·</p>
+<!-- page 121 -->
+
+<p>通向实在之路</p>
+<p>环面的亏格是 <span class="arithmatex">\(1\)</span>。日常所用的茶杯的曲面亏格也是 <span class="arithmatex">\(1\)</span>（<span class="arithmatex">\(1\)</span> 个环柄），因此它与环面在拓扑上是相同的。常吃的纽结状椒盐饼的亏格是 <span class="arithmatex">\(3\)</span>。图 8.9 是一些例子。</p>
+<p><img alt="黎曼曲面亏格示例，包含标注 \(g=0\) 的球面与另一同胚曲面、\(g=1\) 的环面与茶杯、\(g=2\) 的双环面，以及 \(g=3\) 的纽结状椒盐饼" src="../assets/page121_fig01.jpg" /></p>
+<p><strong>图 8.9</strong> 黎曼曲面的亏格就是它的“环柄”数目。球面的亏格是 <span class="arithmatex">\(0\)</span>，环面或茶杯状曲面的亏格是 <span class="arithmatex">\(1\)</span>。常吃的纽结状椒盐饼的亏格是 <span class="arithmatex">\(3\)</span>。</p>
+<p><img alt="复平面上顶点依次为 \(0, 1, 1+p, p\) 的平行四边形，箭头指示对边粘合方向" src="../assets/page121_fig02.jpg" /></p>
+<p><strong>图 8.10</strong> 为了构建亏格为 <span class="arithmatex">\(1\)</span> 的黎曼曲面，我们取平行四边形界定的复平面区域，其顶点分别（依次标定）为 <span class="arithmatex">\(0, 1, 1+p, p\)</span>，然后将对边粘合起来。量 <span class="arithmatex">\(p\)</span> 给出的是黎曼曲面的模。</p>
+<p><span class="arithmatex">\(146\)</span></p>
+<p>除了亏格 <span class="arithmatex">\(0\)</span> 之外，亏格本身并不能确定曲面。我们还需要知道某些复参数，它们称为模。让我用环面（亏格 <span class="arithmatex">\(1\)</span>）来解释这个问题。构造亏格 <span class="arithmatex">\(1\)</span> 的黎曼曲面的一种简单方法，是取一个由平行四边形界定的复平面区域，譬如说顶点分别为 <span class="arithmatex">\(0, 1, 1+p, p\)</span>（依次标定）的区域，见图 8.10。现在，我们想象将这个四边形的对边粘合起来，即 <span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(1\)</span> 的边与 <span class="arithmatex">\(p\)</span> 到 <span class="arithmatex">\(1+p\)</span> 的边相粘，<span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(p\)</span> 的边与 <span class="arithmatex">\(1\)</span> 到 <span class="arithmatex">\(1+p\)</span> 的边相粘。（只要愿意，我们总能够找到其他拼块来覆盖缝。）粘合生成的黎曼曲面就是拓扑上等价的环面。可以证明，对不同的 <span class="arithmatex">\(p\)</span> 值，结果曲面通常并不彼此等价。就是说，我们不可能运用全纯映射从一个变换到另一个。（但也存在某些零散的等价关系，像用 <span class="arithmatex">\(1+p\)</span> 或用 <span class="arithmatex">\(-p\)</span> 或 <span class="arithmatex">\(1/p\)</span> 来取代 <span class="arithmatex">\(p\)</span> 形成的曲面之间的关系。<em>*</em>[8.8]）</p>
+<p><img alt="两个不等价的环面拓扑型黎曼曲面，中间以 \(\neq\) 符号分隔" src="../assets/page121_fig03.jpg" /></p>
+<p><strong>图 8.11</strong> 两个不等价的环面拓扑型黎曼曲面。</p>
+<p><span class="arithmatex">\(147\)</span></p>
+<p>考虑图 8.11 所示的两种情形，我们很容易从直观上理解不是所有具有相同拓扑的黎曼曲面都可以等价的。对其中的一个图形我取非常小的 <span class="arithmatex">\(p\)</span> 值，我们得到的是一个细长的环面，而另一个图形的 <span class="arithmatex">\(p\)</span> 值则取得接近 <span class="arithmatex">\(i\)</span>，故而环面肥美。直观上可以很清楚地看出，这二者之间不可能共形等价，事实也的确是这样。</p>
+<p>对亏格 <span class="arithmatex">\(1\)</span> 只存在一个复模数 <span class="arithmatex">\(p\)</span>，但对亏格 <span class="arithmatex">\(2\)</span> 我们发现有三个复模数。为了能像对亏格 <span class="arithmatex">\(1\)</span> 我们构造了平行四边形那样，通过粘贴来构造亏格 <span class="arithmatex">\(2\)</span> 的黎曼曲面，我们可以用双曲平面来构造所需的</p>
+<p>*** [8.8] 证明这些位移给出全纯等价的空间。找出所有使这些等价物产生黎曼曲面的额外对称性的特殊 <span class="arithmatex">\(p\)</span> 值。</p>
+<p>·102·</p>
+<!-- page 122 -->
+
+<h2 id="第八章-黎曼曲面和复映射_1">第八章　黎曼曲面和复映射<a class="headerlink" href="#第八章-黎曼曲面和复映射_1" title="Permanent link">&para;</a></h2>
+<p>形状，见图 8.12。这对更高亏格的情形也是成立的。对亏格 <span class="arithmatex">\(g\)</span>（这里 <span class="arithmatex">\(g \geqslant 2\)</span>）的复模数 <span class="arithmatex">\(m\)</span>，有 <span class="arithmatex">\(m = 3g - 3\)</span>。</p>
+<p><img alt="超双曲平面的八角形区域，通过粘合产生亏格 2 的黎曼曲面" src="../assets/page122_fig01.jpg" /></p>
+<p>图 8.12　超双曲平面的八角形区域，通过粘合产生亏格 2 的黎曼曲面。</p>
+<p>人们或许会奇怪，复模数的公式 <span class="arithmatex">\(3g-3\)</span> 怎么会对所有亏格值 <span class="arithmatex">\(g=2,3,4,5,\cdots\)</span> 都有效，而只对 <span class="arithmatex">\(g=0\)</span> 或 <span class="arithmatex">\(1\)</span> 失效。对此我们有实际的“理由”，它必须结合复参数 <span class="arithmatex">\(s\)</span> 一起来考察，这个参数是规定黎曼曲面的不同的连续（全纯）自变换性质所需的。对 <span class="arithmatex">\(g \geqslant 2\)</span>，不存在这种连续自变换（虽然存在离散的自变换），故 <span class="arithmatex">\(s=0\)</span>。但对 <span class="arithmatex">\(g=1\)</span>，图 8.10 的平行四边形的复平面可在平面内任意方向上平移（无转动的刚性运动）。位移量（和方向）可用单个复参数 <span class="arithmatex">\(a\)</span> 来具体确定，因此平移可通过 <span class="arithmatex">\(z \mapsto z + a\)</span> 来实现，故当 <span class="arithmatex">\(g=1\)</span> 时 <span class="arithmatex">\(s=1\)</span>。在球面（亏格 0）情形，自变换是通过双线性变换来实现的，即 <span class="arithmatex">\(z \mapsto (az+b)/(cz+d)\)</span>。这里自由度由三个³独立比值 <span class="arithmatex">\(a:b:c:d\)</span> 给定。因此对 <span class="arithmatex">\(g=0\)</span> 情形，我们有 <span class="arithmatex">\(s=3\)</span>。[148] 这样，对所有情形，确定自变换所需的复模数和复参数之间的差 <span class="arithmatex">\(m-s\)</span> 满足</p>
+<div class="arithmatex">\[m - s = 3g - 3\]</div>
+<p>（这个公式还与更深层次的问题有关，但这已超出本书的范围了。⁴）</p>
+<p>很显然，在通过共形（全纯）变换来改变黎曼曲面的表观“形状”，但同时保持黎曼曲面的结构性质不变方面，存在着相当大的自由度。例如，在球面拓扑情形，有许多度量几何都是可行的（如图 8.13 所示）；但它们都共形于标准（“圆形的”）单位球面。（在 §14.7 我会更清楚地说明“度量”的概念。）而对于高亏格情形，表观上数量很大的关于曲面“形状”的自由度能够被削减为由上述公式给定的有限的几个复模数。但是，曲面的形状也还存在一些不受这种共性自由度（即由模本身规定的那些参数）约束的总体性质。这种自由度的应用在多大程度上有效是一个较难定论的问题。</p>
+<p><img alt="每个 g=0 的度量几何都共形全等于标准的（“圆形”）单位球面" src="../assets/page122_fig02.jpg" /></p>
+<p>图 8.13　每个 <span class="arithmatex">\(g=0\)</span> 的度量几何都共形全等于标准的（“圆形”）单位球面。</p>
+<p>·103·</p>
+<!-- page 123 -->
+
+<p>通向实在之路</p>
+<h2 id="85-黎曼映射定理">8.5　黎曼映射定理<a class="headerlink" href="#85-黎曼映射定理" title="Permanent link">&para;</a></h2>
+<p>但是，涉及全纯变换的众多自由度的判定可通过著名的黎曼映射定理来取得。这个定理是说，如果我们在复平面上有某个由非自交闭环界定的闭区域（见注释 8.1），则存在全纯映射将该区域匹配到闭单位圆（见图 8.14）。（环的“驯顺性”可以适当放宽，但这些避免不了环带有拐角或其他更糟糕的使环线不可导的形状，例子见图 8.14。）我们甚至可以比这走得更远，以相当随意的方式在环上取三个点 <span class="arithmatex">\(a, b, c\)</span>，并认为它们映射到单位圆上的三个点 <span class="arithmatex">\(a', b', c'\)</span>（譬如说 <span class="arithmatex">\(a' = 1, b' = \omega, c' = \omega^2\)</span>），唯一的限定是点 <span class="arithmatex">\(a, b, c\)</span> 绕环的次序必须与 <span class="arithmatex">\(a', b', c'\)</span> 绕单位圆的次序相同。而且映射必须是唯一确定的。另一种唯一确定映射的方法，是在环上只取一点 <span class="arithmatex">\(a\)</span>，而将另一点 <span class="arithmatex">\(j\)</span> 取在环内，然后认为 <span class="arithmatex">\(a\)</span> 映射到单位圆上的点 <span class="arithmatex">\(a'\)</span>（譬如说 <span class="arithmatex">\(a' = 1\)</span>），<span class="arithmatex">\(j\)</span> 映射到单位圆内的点 <span class="arithmatex">\(j'\)</span>（譬如说 <span class="arithmatex">\(j' = 0\)</span>）。</p>
+<p><img alt="图示黎曼映射定理，左侧为由简单闭环（不必光滑）界定的复平面上的开区域，右侧为单位圆内部，箭头表示全纯映射。" src="../assets/page123_fig01.jpg" /></p>
+<p><strong>图 8.14</strong>　黎曼映射定理认为，由简单闭环（不必光滑）界定的复平面上的任何开区域都能够全纯映射到单位圆的内部，边界亦可作相应的映射。</p>
+<p>现在，让我们想象着我们是在黎曼球面上而不是在复平面上应用黎曼映射定理。从黎曼球面的观点看，闭环的“内部”与环的“外部”具有相同的地位（如同从另一侧来看球面），因此定理可以平等地应用于环的外部和内部。这样，就存在一种“相反”形式的黎曼映射定理，它是说，复平面上环的外部可以映射到单位圆的外部，其唯一性可通过下述简单要求来保证：环上指定点 <span class="arithmatex">\(a\)</span> 映射到单位圆上的指定点 <span class="arithmatex">\(a'\)</span>（譬如说 <span class="arithmatex">\(a' = 1\)</span>），而 <span class="arithmatex">\(j\)</span> 和 <span class="arithmatex">\(j'\)</span> 则为 <span class="arithmatex">\(\infty\)</span> 所取代。⁵</p>
+<p>这种所需的映射经常能够明确地实现，原因是它能够提供物理上感兴趣问题的解，例如对流过翼型物体的气流（在理想情形下，气流是所谓“无粘滞”、“不可压缩”和“非转动”的）的处理。我记得当我还是数学系本科生的时候，我曾对此感到非常惊讶，特别是著名的茹科夫斯基（E. N. Zhoukowski, 1847 ~ 1921）翼型变换理论，如图 8.15 所示，它可以通过如下变换明确地给出</p>
+<div class="arithmatex">\[w = \frac{1}{2}\left(z + \frac{1}{z}\right),\]</div>
+<p>· 104 ·</p>
+<!-- page 124 -->
+
+<h1 id="第八章-黎曼曲面和复映射_2">第八章 黎曼曲面和复映射<a class="headerlink" href="#第八章-黎曼曲面和复映射_2" title="Permanent link">&para;</a></h1>
+<hr />
+<p><img alt="z-平面与w-平面示意图，展示茹科夫斯基变换将过 \(z=-1\) 的圆的外部映射为翼型截面" src="../assets/page124_fig01.jpg" /></p>
+<p><strong>图8.15</strong> 茹科夫斯基变换 <span class="arithmatex">\(w=\frac{1}{2}(z+1/z)\)</span> 将过 <span class="arithmatex">\(z=-1\)</span> 的圆的外部变到翼型截面,使得通过机翼的气流模式变得可计算。</p>
+<p>这是一种关于过点 <span class="arithmatex">\(z = -1\)</span> 的圆的变换。这个形状与 20 世纪 30 年代的飞机机翼截面形状非常相似，因此机翼附近的（理想）气流可直接从圆截面 “翼” 的形状得到，而后者又可以从另一种全纯变换来得到。（我曾被告知，飞机机翼之所以如此普遍地采用这种形状，就是因为人们可根据茹科夫斯基变换理论从数学上对它进行研究。我相信这不是真的！）</p>
+<p>当然，这些知识的应用还涉及具体的假设和简化。不仅零粘滞性、不可压缩性和非旋转流体是出于方便而作的假设，而且将流体视同与翼长等长因此实质上的三维问题被完全缩减为二维问题也是非常大胆的简化。很明显，流过机翼流体的实际计算在数学处理上要远为复杂得多。但在实际处理过程中，我们没有理由认为我们可以抛开对像茹科夫斯基变换那样的全纯函数的直接完美的应用。你可以争辩说，在发现复数能够诱人地应用于现实世界里这个显然非常重要的问题方面，的确有着很强的幸运成分。大气无疑是由数目巨大的单个基本颗粒组成的（事实上，每立方厘米大约有 <span class="arithmatex">\(10^{20}\)</span> 个），因此气流的宏观描述涉及相当数量上的平均和近似。但这并不是说我们就一定需要空气动力学的数学方程将支配这些单粒子的物理定律的每一个数学公式都包括进来。</p>
+<p>151</p>
+<p>.在 §4.1 我曾指出过在 “最小尺度” 的物理作用上复数实际所扮演的 “超凡且又基本的角色”，在支配粒子行为方面（见 §21.2）的确存在这样的全纯函数。但对于宏观系统，一般来说这种 “复结构” 变得完全被埋没了，只有在非常特殊的情况下（像上面所说的气流问题），复数和全纯几何才能表现出其自然的用途。但还有些场合，其中基本的复结构甚至可以在宏观水平上表现出来。这种情形有时我们能在麦克斯韦电磁理论和其他波动现象中看到，在相对论中也存在这种特别令人称奇的事例（见 §18.5）。在下一章，我们将看到复数和全纯函数在现象背后表现出的神奇性。</p>
+<p>·105·</p>
+<!-- page 125 -->
+
+<p>通向实在之路</p>
+<p>注释</p>
+<p>§ 8.3</p>
+<p>8.1 见练习 [2.5]。</p>
+<p>8.2 在涉及曲面（或更一般的流形即 <span class="arithmatex">\(n\)</span> 维曲面，见第 12 章）方面，“闭合”一词的使用存在术语上的混乱。对于流形，“闭合”意味着“紧致但无界”，这与拓扑意义上单纯的“闭”概念大不相同，后者是 §7.4 讨论的“开”概念的互补概念。（拓扑上说，一个“闭集”就是一个包含了其所有极限点的集合。闭集的补集是开集，反之一样——这里，集合 S 在某个外围拓扑空间 V 内的“补集”是 V 的不在 S 内的元素组成的集合。）上面所说的“紧致但无界”概念中的“（边）界”一词也存在混乱，但本书不打算讨论它。对第 12 章所述的通常流形（即无界流形），“闭”流形概念（与拓扑流形概念相反）等价于“紧”流形概念。为了避免混淆，本书中我通常只用“紧”而不用“闭”这个词，只是在下述情形下是例外：对拓扑圆 <span class="arithmatex">\(S^1\)</span> 的实一维流形，我们用“闭曲线”来称呼；对空间紧致（即包含紧类空超曲面，见 §27.11）的宇宙模型，我们称闭宇宙。</p>
+<p>§ 8.4</p>
+<p>8.3 如果我们将 <span class="arithmatex">\(a, b, c, d\)</span> 中的每一个都乘（重定标）以同一个非零复数，则变换不受影响，但如果我们分别改变它们，则变换也随之改变。这个总体重定标自由度减少了变换的一个独立参数，使之从 4 减为 3。</p>
+<p>8.4 这可以说是另一个长长的故事的开始，其高潮是非常一般且强有力的阿蒂亚－辛格（Atiyah-Singer 1963）定理。</p>
+<p>§ 8.5</p>
+<p>8.5 应当指出，只有对精确为圆的环，两种黎曼映射定理的组合才可以给出完全光滑的黎曼球面。</p>
+<hr />
+<p>· 106 ·</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
