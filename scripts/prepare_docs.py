@@ -140,6 +140,28 @@ def _normalize_display_math_punctuation(content: str) -> str:
     return content
 
 
+def _normalize_markdown_superscript_math(content: str) -> str:
+    combined_re = re.compile(r'(?<![A-Za-z0-9_^$])([A-Za-zΑ-Ωα-ωγπμντκϕφχψωΩΓΔΛΞΠΣΥΦΧΨ]+)_([A-Za-zΑ-Ωα-ωγπμντκϕφχψωΩΓΔΛΞΠΣΥΦΧΨ0-9]+)([A-Za-zΑ-Ωα-ωγπμντκϕφχψωΩΓΔΛΞΠΣΥΦΧΨ]+)\^([+\-−±0-9A-Za-zΑ-Ωα-ω]+)\^')
+    token_re = re.compile(r'(?<![A-Za-z0-9_^$])([A-Za-zΑ-Ωα-ωγπμντκϕφχψωΩΓΔΛΞΠΣΥΦΧΨ]+|\d+(?:\.\d+)?)\^([+\-−±0-9A-Za-zΑ-Ωα-ω]+)\^')
+
+    def convert_combined(match: re.Match[str]) -> str:
+        exponent = match.group(4).replace('−', '-')
+        return f'${match.group(1)}_{{{match.group(2)}}}{match.group(3)}^{{{exponent}}}$'
+
+    def convert(match: re.Match[str]) -> str:
+        base = match.group(1)
+        exponent = match.group(2).replace('−', '-')
+        if base.isdigit() and exponent.isdigit():
+            prefix_start = max(0, match.start() - 4)
+            prefix = content[prefix_start:match.start()]
+            if not re.search(r'[×*/=<>]|\b10\s*$', prefix) and base != '10':
+                return match.group(0)
+        return f'${base}^{{{exponent}}}$'
+
+    content = combined_re.sub(convert_combined, content)
+    return token_re.sub(convert, content)
+
+
 def preprocess_math(content: str) -> str:
     """Preprocess math blocks for reliable arithmatex rendering.
 
@@ -155,6 +177,7 @@ def preprocess_math(content: str) -> str:
     5. | inside $...$ in markdown table rows → escaped \\|
     """
     content = _normalize_display_math_punctuation(content)
+    content = _normalize_markdown_superscript_math(content)
     lines = content.split('\n')
     result = []
     i = 0
