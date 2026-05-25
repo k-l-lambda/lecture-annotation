@@ -490,7 +490,7 @@ $$\mathcal{L}_{\text{EM}} = -\frac{1}{4} F_{ab} F^{ab}.$$
 
 **注 释**
 
-§ 20.1
+[§20.1](chapter_20.md#201-神奇的拉格朗日形式体系)
 
 20.1 （非牛顿系统的）更为一般的拉格朗日量可能涉及较高阶的导数，它们定义在 $\mathcal{C}$ 的所谓"节丛"上，我们这里用不上。
 
@@ -500,13 +500,13 @@ $$\mathcal{L}_{\text{EM}} = -\frac{1}{4} F_{ab} F^{ab}.$$
 
 20.3 为简单计，我这里仅考虑"与时间无关的拉格朗日量"。但我们很容易将外力的时间相关性引进来，只要取另一个"广义坐标" $q^0=t$ 以及形式量 $\dot{q}^0$（其最大值为 1）即可。
 
-§ 20.5
+[§20.5](chapter_20.md#205-场的拉格朗日处理)
 
 20.4 确定 $\varepsilon$ 的另一种方法，是在局域右手正交系下令 $\varepsilon$ 的分量 $\varepsilon_{0123}$ 满足 $\varepsilon_{0123}=1$（[§19.2](chapter_19.md#192-麦克斯韦电磁场理论)）。
 
 通过取满足 $\varepsilon_{abcd}\varepsilon_{pqrs}g^{ap}g^{bq}g^{cr}g^{ds}=-24$ 的度规，我们可将 $\begin{bmatrix} 0 \\ 4 \end{bmatrix}$ 张量 $\varepsilon$ 确定到仅相差一个符号，$\varepsilon$ 的符号选定可依时空体积的取向来定。***[20.19]
 
-§ 20.6
+[§20.6](chapter_20.md#206-如何从拉格朗日量导出现代理论)
 
 20.5 见 Penrose (1982); Penrose and Rindler (1986); Winicour (1980); Rizzi (1998)。
 
