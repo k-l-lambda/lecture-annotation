@@ -51,7 +51,17 @@ $$z\bar{z} = |z|^2。$$
 
 **[10.1]　解释为什么减法和除法运算可以从中推出。
 
+??? question "答案 [10.1]"
+    减法可由加法和取负得到：$a-b=a+(-b)$，而 $-b$ 是满足 $b+(-b)=0$ 的加法逆元。除法可由乘法和取倒数得到：$a/b=a\cdot b^{-1}$，其中 $b^{-1}$ 满足 $bb^{-1}=1$，当然要求 $b\ne0$。
+
+    因此只要加法、乘法以及相应逆元操作在所讨论的结构中有意义，减法和除法就不是新的基本运算。
+
 **[10.2]　导出这两个式子。
+
+??? question "答案 [10.2]"
+    若 $z=x+iy$，则 $\bar z=x-iy$。相加得 $z+\bar z=2x$，相减得 $z-\bar z=2iy$。
+
+    因此 $x=(z+\bar z)/2$，$y=(z-\bar z)/(2i)$。这说明把实坐标 $(x,y)$ 换成复坐标 $(z,\bar z)$ 只是同一二维实平面的另一种坐标写法。
 
 ·128·
 
@@ -158,6 +168,11 @@ $$\mathrm{d}\Phi = \frac{\partial f}{\partial x}\mathrm{d}x + \frac{\partial f}{
 
 *[10.6] 对 $f(x, y) = x^3 - y^3$ 找出 $F(X,Y)$ 的显形式，这里 $X = x - y$，$Y = xy$，提示：$x^2 + xy + y^2$ 用 $X, Y$ 来表达是怎样的？这与 $f$ 有什么关系？
 
+??? question "答案 [10.6]"
+    由 $X=x-y$、$Y=xy$，有 $x^2+xy+y^2=(x-y)^2+3xy=X^2+3Y$。而 $x^3-y^3=(x-y)(x^2+xy+y^2)$。
+
+    所以 $f(x,y)=x^3-y^3=X(X^2+3Y)$，即 $F(X,Y)=X^3+3XY$。
+
 ·131·
 
 
@@ -212,6 +227,11 @@ $$\xi = a \frac{\partial}{\partial x} + b \frac{\partial}{\partial y}$$
 
 **[10.7]** 根据 $a$ 和 $b$ 找出 $A$ 和 $B$；通过类比，根据 $A$ 和 $B$ 写出 $a$ 和 $b$。
 
+??? question "答案 [10.7]"
+    若坐标变换给出 $X=X(x,y)$、$Y=Y(x,y)$，则链式法则给出 $\xi=A\partial/\partial X+B\partial/\partial Y$，其中 $A=a\partial X/\partial x+b\partial X/\partial y$，$B=a\partial Y/\partial x+b\partial Y/\partial y$。
+
+    反过来若已知 $x=x(X,Y)$、$y=y(X,Y)$，则 $a=A\partial x/\partial X+B\partial x/\partial Y$，$b=A\partial y/\partial X+B\partial y/\partial Y$。矢量场本身不变，变的只是它在不同坐标基下的分量。
+
 ·133·
 
 
@@ -234,6 +254,11 @@ $$\frac{\partial}{\partial X} = \frac{\partial}{\partial x} - \frac{\partial}{\p
 现在我们来解释量 $d\varPhi$。它称为 $\varPhi$ 的梯度（或外导数），表示 $\varPhi$ 沿 $\mathcal{S}$ 的所有可能方向如何变化。$d\varPhi$ 的一种好的几何图像是借助于 $\mathcal{S}$ 的等高线系，见图10.8(a)。我们将 $\mathcal{S}$ 视为一幅普通的地图*⁴（这里“map”一词是指你旅行时随身携带的纸质地图，不是数学概念“映射”），它可以是球状的，如果我们打算将 $\mathcal{S}$ 看成是弯曲的流形的话。函数 $\varPhi$ 可以代表海拔高度。这样 $d\varPhi$ 就代表了地面相对于水平面的坡度。等高线标出的是所有海拔高度相同的位置。在 $\mathcal{S}$ 的任意一点 $p$ 上，等高线的周线方向给出梯度为零的方向（地表坡度的“斜轴”），因此它是 $p$ 点处满足 $\xi(\varPhi)=0$ 的箭头 $\xi$ 所
 
 [^10.8]: 推导这个公式。提示：你可将“链式法则”用到 $\partial/\partial X$ 和 $\partial/\partial Y$ 上，它们可严格类比于我们早先所示的 $\partial/\partial x$ 的表达式。
+
+??? question "答案 [10.8]"
+    把 $\partial/\partial X$ 看成沿保持 $Y$ 不变、只改变 $X$ 的方向求导。由链式法则，对任意函数 $\Phi(x,y)$，有 $\partial\Phi/\partial X=(\partial x/\partial X)\partial\Phi/\partial x+(\partial y/\partial X)\partial\Phi/\partial y$。
+
+    因而作为微分算子，$\partial/\partial X=(\partial x/\partial X)\partial/\partial x+(\partial y/\partial X)\partial/\partial y$。同理可得 $\partial/\partial Y$ 的公式。
 
 ·134·
 
@@ -304,7 +329,17 @@ $$\Phi = \alpha + \mathrm{i}\beta,$$
 
 **[10.10]** 用三种不同的观点解释这一点：(a) 从一般原理出发的直觉观点（怎么才能出现 z̄?），(b) 用 [§8.2](chapter_08.md#82-共形映射) 所述的全纯映射几何，(c) 用链式法则和我们下述的柯西－黎曼方程。
 
+??? question "答案 [10.10]"
+    (a) 全纯函数只允许依赖 $z$，不能独立依赖 $\bar z$；若出现 $\bar z$，就相当于把复平面的反向结构也引入了。 (b) 几何上，全纯映射在无穷小尺度上是旋转加伸缩而非反射；$z\mapsto\bar z$ 正是反射，所以不是全纯。
+
+    (c) 写 $f=u+iv$。若 $f=\bar z=x-iy$，则 $u=x$、$v=-y$。柯西–黎曼方程要求 $u_x=v_y$，但这里 $u_x=1$、$v_y=-1$，矛盾。
+
 **[10.11]** 导出该式。
+
+??? question "答案 [10.11]"
+    设 $\Phi=\alpha+i\beta$ 且 $z=x+iy$。全纯性意味着 $\partial\Phi/\partial\bar z=0$，其中 $\partial/\partial\bar z=(1/2)(\partial/\partial x+i\partial/\partial y)$。
+
+    代入得 $0=(1/2)(\alpha_x+i\beta_x+i\alpha_y-\beta_y)$。实部和虚部分别为 $\alpha_x-\beta_y=0$、$\beta_x+\alpha_y=0$，即 $\alpha_x=\beta_y$、$\alpha_y=-\beta_x$。
 
 · 137 ·
 
@@ -343,9 +378,24 @@ $$\nabla^2=\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}。$$
 
 ***[10.12] 从导数的定义出发，给出柯西–黎曼方程的一种更直接的推导。
 
+??? question "答案 [10.12]"
+    在点 $z$ 处，复导数若存在，则差商 $\{f(z+h)-f(z)\}/h$ 的极限必须与 $h$ 趋零方向无关。沿实方向取 $h=\Delta x$，极限为 $u_x+iv_x$。
+
+    沿虚方向取 $h=i\Delta y$，极限为 $(u_y+iv_y)/i=v_y-iu_y$。令二者相等，得 $u_x=v_y$、$v_x=-u_y$，这就是柯西–黎曼方程。
+
 *[10.13] 证明这一点。
 
+??? question "答案 [10.13]"
+    若 $u$、$v$ 满足柯西–黎曼方程 $u_x=v_y$、$u_y=-v_x$，并且二阶偏导可交换，则 $u_{xx}=v_{yx}$，$u_{yy}=-v_{xy}$。
+
+    相加得 $u_{xx}+u_{yy}=v_{yx}-v_{xy}=0$。同理 $v_{xx}+v_{yy}=-u_{xy}+u_{yx}=0$。所以全纯函数的实部和虚部都是调和函数。
+
 **[10.14] 证明这一点。
+
+??? question "答案 [10.14]"
+    若 $u$ 为调和函数，即 $u_{xx}+u_{yy}=0$，则希望找到 $v$ 使 $v_y=u_x$、$v_x=-u_y$。这个一阶系统的相容条件是 $(v_y)_x=(v_x)_y$，也就是 $u_{xx}=-u_{yy}$，正是调和条件。
+
+    在单连通区域内，相容条件保证这样的 $v$ 存在；它只差一个常数唯一。于是 $u+iv$ 全纯，$v$ 称为 $u$ 的调和共轭。
 
 ·138·
 
@@ -398,5 +448,12 @@ $$\nabla^2=\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}。$$
 ---
 
 ***〔10.15〕针对 $\Phi(u,v)=\theta(v)h(u)$ 的情形解释这一点，这里函数 $\theta$ 和 $h$ 的定义均如 [§6.1](chapter_06.md#61-如何构造实函数), 3 所示。腰果状区域必须不包括非负 $u$ 轴。
+
+??? question "答案 [10.15]"
+    取 $	heta(v)$ 为在 $v
+    e0$ 处光滑、但在跨过 $v=0$ 时带有跳变性质的函数，而 $h(u)$ 在 $u>0$ 一侧按第 6 章的构造平滑地变为零。乘积 $	heta(v)h(u)$ 的奇异性只可能沿 $v=0$ 与 $u
+    ot<0$ 的相交区域显现。
+
+    若腰果状区域不包含非负 $u$ 轴，就避开了 $h(u)$ 从零到非零的接缝与 $	heta$ 的跳变共同作用的地方。在该区域内，每个局部拼块上函数都可按通常规则光滑处理，因此正文所说的局部结论成立。
 
 ·140·
