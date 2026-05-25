@@ -143,7 +143,7 @@ $$\langle\phi|\psi\rangle = \int_{\mathbb{E}^3} \bar{\phi}\psi dx^1 \wedge dx^2 
 ??? question "答案 [22.2]"
     在任意有限区域 $R$ 上，非负性 $\int_R|\phi-\lambda\psi|^2\ge0$ 对所有复数 $\lambda$ 成立。把它看成关于 $\lambda$ 的二次式，判别式非正，就得到柯西-施瓦茨不等式 $|\int_R\bar\phi\psi|^2\le(\int_R|\phi|^2)(\int_R|\psi|^2)$。
 
-    即使单独范数在全空间发散，只要取适当的广义归一化或有限区域极限，交叉项的定义由这个不等式控制。这里的要点是标量积的代数性质来自局部积分的正性。
+    因而只要 $\phi,\psi$ 是平方可积的，令 $R$ 增大到全空间即可得到有限且良定义的内积。若单独范数发散，则必须改用广义归一化或分布意义；普通希尔伯特空间内积本身不再由这个极限直接给出。
 
 · 384 ·
 
@@ -329,9 +329,9 @@ $$\frac{\langle\phi|\psi\rangle\langle\psi|\phi\rangle}{\langle\psi|\psi\rangle\
 *** [22.12] 从练习 [22.2] 所用的 ⟨|⟩ 的代数性质出发证明这一点。
 
 ??? question "答案 [22.12]"
-    由标量积的正定性，若 $Q$ 是正规算符，则不同本征值的本征矢量可用 $Q$ 与 $Q^*$ 的对易性比较。设 $Q\psi=\lambda\psi$、$Q\phi=\mu\phi$，正规性保证相应共轭关系良好。
-    于是 $\lambda\langle\phi|\psi\rangle=\langle\phi|Q\psi\rangle=\langle Q^*\phi|\psi\rangle=\mu\langle\phi|\psi\rangle$（按共轭约定调整），若 $\lambda\ne\mu$，内积为零。
+    设 $Q\psi=\lambda\psi$、$Q\phi=\mu\phi$，且 $Q$ 正规。正规性保证不同本征值的本征子空间同时适合用 $Q$ 与 $Q^*$ 比较；特别地，对本征矢量有 $Q^*\phi=\bar\mu\phi$。
 
+    采用物理记号内积，$\langle\phi|Q\psi\rangle=\lambda\langle\phi|\psi\rangle$，另一方面 $\langle\phi|Q\psi\rangle=\langle Q^*\phi|\psi\rangle=\mu\langle\phi|\psi\rangle$。故 $(\lambda-\mu)\langle\phi|\psi\rangle=0$，若 $\lambda\ne\mu$，内积为零。
 
 <!-- page 409 -->
 

@@ -283,12 +283,9 @@ $$\mathrm{i}\hbar\frac{\partial\psi}{\partial t} = \left(\mathrm{i}\hbar\gamma_0
 *〔24.6〕证明这一点。
 
 ??? question "答案 [24.6]"
-    令狄拉克方程写成 $
-    ot\partial\psi=-iM\psi$。把时间项从 $
-    ot\partial$ 中分离出来，并用适当的 $\gamma_0$ 左乘，就可把它改写为 $i\hbar\\partial_t\\psi=H\psi$ 的薛定谔形式。
+    令狄拉克方程写成 $\not\partial\psi=-iM\psi$。把时间项从 $\not\partial$ 中分离出来，并用适当的 $\gamma_0$ 左乘，就可把它改写为 $i\hbar\partial_t\psi=H\psi$ 的薛定谔形式。
 
     整理空间导数项得到的哈密顿量正是正文所写的 $i\hbar\gamma_0\boldsymbol{\gamma}\cdot\boldsymbol{\nabla}+\gamma_0\mu$（依单位和符号约定可有等价变形）。因此狄拉克方程既是相对论协变的一阶方程，也可在选定时间坐标后写成哈密顿演化方程。
-
 ***〔24.7〕解释这一点。提示：将练习〔22.18〕一般化。
 
 ??? question "答案 [24.7]"
