@@ -79,16 +79,7 @@ $$\Psi^*|0\rangle=0。$$
 
 <!-- page 493 -->
 
-通向实在之路
-
-$$\psi\alpha = |\psi\rangle = \Psi|0\rangle \leadsto \downarrow, \qquad \overline{\psi}_\alpha = \langle\psi| = \langle 0|\Psi^* \leadsto \uparrow$$
-
-| 玻色子情形 | 费米子情形 |
-|-----------|-----------|
-| 产生算符 $\Psi$： | |
-| [图示：N个圆圈的弹簧状线上增加一个向下的三角形] | [图示：N个圆圈的横线上增加一个向下的三角形] |
-| 湮灭算符 $\Psi^*$： | |
-| [图示：N个圆圈的弹簧状线上增加一个向上的三角形] | [图示：N个圆圈的横线上增加一个向上的三角形] |
+![玻色子和费米子产生算符与湮灭算符的图示记号](assets/page493_fig01.jpg)
 
 图26.1 下列作用量的图示形式：玻色子情形 $\phi_1^{(\beta}\phi_2^\gamma\cdots\phi_N^{\nu)} \mapsto \psi^{(\alpha}\phi_1^\beta\phi_2^\gamma\cdots\phi_N^{\nu)}$ 和费米子情形 $\phi_1^{[\beta}\phi_2^\gamma\cdots\phi_N^{\nu]} \mapsto \psi^{[\alpha}\phi_1^\beta\phi_2^\gamma\cdots\phi_N^{\nu]}$ 下产生算符 $\Psi$ 的作用量；玻色子情形 $\phi_1^{(\alpha}\phi_2^\beta\cdots\phi_N^{\mu)} \mapsto \overline{\psi}_\alpha\phi_1^\alpha\phi_2^\beta\cdots\phi_N^{\mu)}$ 和费米子情形 $\phi_1^{[\alpha}\phi_2^\beta\cdots\phi_N^{\mu]} \mapsto \overline{\psi}_\alpha\phi_1^\alpha\phi_2^\beta\cdots\phi_N^{\mu]}$ 下湮没算符 $\Psi^*$ 的作用量。
 
