@@ -313,17 +313,17 @@ $$\frac{\mathrm{d}^2 \mathbf{q}}{\mathrm{d}t^2} = -\omega^2 \mathbf{q}，$$
 
 ## 20.4 辛几何的哈密顿动力学
 
-让我们回头看看有限维的哈密顿方程是如何与辛几何联系起来的。如 [§14.8](chapter_14.md#148-辛流形) 所述，任何辛流形都有一种称之为泊松括号的运算，它能够通过对流形上两个标量场 $\boldsymbol{\varPhi}$ 和 $\boldsymbol{\varPsi}$ 的演算产生另一个标量场 $\boldsymbol{\varTheta}$：**[20.14]
+让我们回头看看有限维的哈密顿方程是如何与辛几何联系起来的。如 [§14.8](chapter_14.md#148-辛流形) 所述，任何辛流形都有一种称之为泊松括号的运算，它能够通过对流形上两个标量场 $\mathbf{\varPhi}$ 和 $\mathbf{\varPsi}$ 的演算产生另一个标量场 $\mathbf{\varTheta}$：**[20.14]
 
-$$\boldsymbol{\varTheta}=\{\boldsymbol{\varPhi},\boldsymbol{\varPsi}\}=\frac{\partial\boldsymbol{\varPhi}}{\partial p_a}\frac{\partial\boldsymbol{\varPsi}}{\partial q^a}-\frac{\partial\boldsymbol{\varPhi}}{\partial q^a}\frac{\partial\boldsymbol{\varPsi}}{\partial p_a}。$$
+$$\mathbf{\varTheta}=\{\mathbf{\varPhi},\mathbf{\varPsi}\}=\frac{\partial\mathbf{\varPhi}}{\partial p_a}\frac{\partial\mathbf{\varPsi}}{\partial q^a}-\frac{\partial\mathbf{\varPhi}}{\partial q^a}\frac{\partial\mathbf{\varPsi}}{\partial p_a}。$$
 
-如果花括号里的 $\boldsymbol{\varPsi}$ 位置空着，则我们得到微分算子 $\{\boldsymbol{\varPhi},\quad\}$，它相当于一个矢量场（[§12.3](chapter_12.md#123-标量矢量和余矢量)），作用到 $\boldsymbol{\varPsi}$ 上给出 $\{\boldsymbol{\varPhi},\boldsymbol{\varPsi}\}$。如果我们用 $\mathcal{H}$ 代替 $\boldsymbol{\varPhi}$，会发现矢量场 $\{\mathcal{H},\quad\}$"指向"系统在 $\mathrm{T}^*(\mathcal{C})$ 上的时间演化的轨迹方向。实际上，按哈密顿方程（[§20.2](#202-更为对称的哈密顿图像)），$\{\mathcal{H},\quad\}$ 就代表这种演化。辛几何的突出特点是系统的动力学演化，因此可以在几何上概括为一个标量函数（即哈密顿量）。
+如果花括号里的 $\mathbf{\varPsi}$ 位置空着，则我们得到微分算子 $\{\mathbf{\varPhi},\quad\}$，它相当于一个矢量场（[§12.3](chapter_12.md#123-标量矢量和余矢量)），作用到 $\mathbf{\varPsi}$ 上给出 $\{\mathbf{\varPhi},\mathbf{\varPsi}\}$。如果我们用 $\mathcal{H}$ 代替 $\mathbf{\varPhi}$，会发现矢量场 $\{\mathcal{H},\quad\}$"指向"系统在 $\mathrm{T}^*(\mathcal{C})$ 上的时间演化的轨迹方向。实际上，按哈密顿方程（[§20.2](#202-更为对称的哈密顿图像)），$\{\mathcal{H},\quad\}$ 就代表这种演化。辛几何的突出特点是系统的动力学演化，因此可以在几何上概括为一个标量函数（即哈密顿量）。
 
 辛几何还有许多其他作用。例如，刘维尔曾有这么一个著名的结果：相空间体积在动力学演化中保持不变，见[图 20.7](assets/page370_fig01.jpg)。相空间的体积元取 $2N$ 形式
 
-$$\boldsymbol{\varSigma}=\boldsymbol{S}\wedge\boldsymbol{S}\wedge\cdots\wedge\boldsymbol{S},$$
+$$\mathbf{\varSigma}=\mathbf{S}\wedge\mathbf{S}\wedge\cdots\wedge\mathbf{S},$$
 
-这里有 $N$ 个 $\boldsymbol{S}$ 相楔积（我们可以回顾一下，辛几何的 2 形式 $\boldsymbol{S}$ 由 $\boldsymbol{S}=\mathrm{d}p_a\wedge\mathrm{d}q^a$ 给定）。不难检验，$\boldsymbol{S}$ 本身在哈密顿量的演化中是不变的（即对于矢量场 $\{\mathcal{H},\quad\}$，$\boldsymbol{S}$ 的李导数为零）。**[20.15] 于是我们有：全体积形式 $\boldsymbol{\varSigma}$ 在这种演化中也是不变的，这就是刘维尔定理。
+这里有 $N$ 个 $\mathbf{S}$ 相楔积（我们可以回顾一下，辛几何的 2 形式 $\mathbf{S}$ 由 $\mathbf{S}=\mathrm{d}p_a\wedge\mathrm{d}q^a$ 给定）。不难检验，$\mathbf{S}$ 本身在哈密顿量的演化中是不变的（即对于矢量场 $\{\mathcal{H},\quad\}$，$\mathbf{S}$ 的李导数为零）。**[20.15] 于是我们有：全体积形式 $\mathbf{\varSigma}$ 在这种演化中也是不变的，这就是刘维尔定理。
 
 由 $\{\mathcal{H},\mathcal{H}\}=0$*[20.16] 可知哈密顿量本身是不变的，即沿轨迹是一常数。它反映了这样
 
@@ -331,10 +331,10 @@ $$\boldsymbol{\varSigma}=\boldsymbol{S}\wedge\boldsymbol{S}\wedge\cdots\wedge\bo
 
 **[20.13] 描述这种性态。
 
-**[20.14] 对 $\{\boldsymbol{\varPhi},\boldsymbol{\varPsi}\}$ 验证这个表达式与 §14.9 里的一致。
+**[20.14] 对 $\{\mathbf{\varPhi},\mathbf{\varPsi}\}$ 验证这个表达式与 §14.9 里的一致。
 
 ??? question "答案 [20.14]"
-    第 14.9 节的泊松括号由辛形式的逆给出。若把相空间坐标写成 $\boldsymbol{\Phi}=(q,p)$、$\boldsymbol{\Psi}=(Q,P)$，则括号就是坐标导数按辛矩阵收缩。
+    第 14.9 节的泊松括号由辛形式的逆给出。若把相空间坐标写成 $\mathbf{\Phi}=(q,p)$、$\mathbf{\Psi}=(Q,P)$，则括号就是坐标导数按辛矩阵收缩。
 
     展开这个收缩，得到 $\sum_i(\partial\Phi/\partial q^i\partial\Psi/\partial p_i-\partial\Phi/\partial p_i\partial\Psi/\partial q^i)$，与第 14.9 节的表达式一致。
 

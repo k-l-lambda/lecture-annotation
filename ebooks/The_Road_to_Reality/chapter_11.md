@@ -18,7 +18,7 @@ $$\mathbf{i}^2 = \mathbf{j}^2 = \mathbf{k}^2 = \mathbf{i}\mathbf{j}\mathbf{k} = 
 
 这里三个量 $\mathbf{i}$、$\mathbf{j}$ 和 $\mathbf{k}$ 中的每一个都是独立的“$-1$ 的平方根”（如同复数符号 $i$ 一样），其一般组合
 
-$$\boldsymbol{q} = t + u\mathbf{i} + v\mathbf{j} + w\mathbf{k},$$
+$$\mathbf{q} = t + u\mathbf{i} + v\mathbf{j} + w\mathbf{k},$$
 
 称为一般四元数，其中 $t, u, v$ 和 $w$ 均为实数。这些量满足代数里除了一条之外的所有其他运算关系。这个例外——这正是这种哈密顿数的真正创新之处¹——就是乘法交换律的破坏。因为哈密顿发现\*\*[11.1]
 
@@ -57,21 +57,21 @@ $$a + 0 = a, \quad 1a = a1 = a.$$
 
 如果撇开最后一个式子，上面这些关系式定义了代数学中所称的环。（在我看来，“环”这个概念完全没有直观性可言——如同抽象代数里许多其他术语一样——我也不知道它的起源。）如果把最后一个式子也包括进来，我们得到的是所谓幺环。
 
-四元数还提供了所谓实数域上的矢量空间的例证。在矢量空间里，我们能够将两个元素（矢量^2）$\boldsymbol{\xi}$ 和 $\boldsymbol{\eta}$ 加起来构成二者的和 $\boldsymbol{\xi} + \boldsymbol{\eta}$，这个和服从交换律和结合律：
+四元数还提供了所谓实数域上的矢量空间的例证。在矢量空间里，我们能够将两个元素（矢量^2）$\mathbf{\xi}$ 和 $\mathbf{\eta}$ 加起来构成二者的和 $\mathbf{\xi} + \mathbf{\eta}$，这个和服从交换律和结合律：
 
-$$\boldsymbol{\xi} + \boldsymbol{\eta} = \boldsymbol{\eta} + \boldsymbol{\xi},$$
+$$\mathbf{\xi} + \mathbf{\eta} = \mathbf{\eta} + \mathbf{\xi},$$
 
-$$(\boldsymbol{\xi} + \boldsymbol{\eta}) + \boldsymbol{\zeta} = \boldsymbol{\xi} + (\boldsymbol{\eta} + \boldsymbol{\zeta}),$$
+$$(\mathbf{\xi} + \mathbf{\eta}) + \mathbf{\zeta} = \mathbf{\xi} + (\mathbf{\eta} + \mathbf{\zeta}),$$
 
 我们可以用“标量”（这里仅取实数 $f$ 和 $g$）乘以矢量，这样，下述分配律和结合律等均成立：
 
-$$(f + g)\boldsymbol{\xi} = f\boldsymbol{\xi} + g\boldsymbol{\xi},$$
+$$(f + g)\mathbf{\xi} = f\mathbf{\xi} + g\mathbf{\xi},$$
 
-$$f(\boldsymbol{\xi} + \boldsymbol{\eta}) = f\boldsymbol{\xi} + f\boldsymbol{\eta},$$
+$$f(\mathbf{\xi} + \mathbf{\eta}) = f\mathbf{\xi} + f\mathbf{\eta},$$
 
-$$f(g\boldsymbol{\xi}) = (fg)\boldsymbol{\xi},$$
+$$f(g\mathbf{\xi}) = (fg)\mathbf{\xi},$$
 
-$$1\boldsymbol{\xi} = \boldsymbol{\xi}.$$
+$$1\mathbf{\xi} = \mathbf{\xi}.$$
 
 四元数组成实数域上四维矢量空间，这是因为正好有四个独立“基”量 $\mathbf{1}$，$\mathbf{i}$，$\mathbf{j}$ 和 $\mathbf{k}$，它们张起四元数的整个空间，也就是说，任何一个四元数都能唯一地表示为这些基元的实数倍的和。以后我们还将看到这种矢量空间的许多其他例子。
 
@@ -96,27 +96,27 @@ $$q^{-1} = \bar{q}\left(\bar{q}q\right)^{-1},$$
 
 第十一章　超复数
 
-其中 $\boldsymbol{q}$ 的（四元数型）共轭 $\bar{\boldsymbol{q}}$ 定义为
+其中 $\mathbf{q}$ 的（四元数型）共轭 $\bar{\mathbf{q}}$ 定义为
 
-$$\bar{\boldsymbol{q}} = t - u\mathbf{i} - v\mathbf{j} - w\mathbf{k},$$
+$$\bar{\mathbf{q}} = t - u\mathbf{i} - v\mathbf{j} - w\mathbf{k},$$
 
-加上前面定义的 $\bar{\boldsymbol{q}} = t + u\mathbf{i} + v\mathbf{j} + w\mathbf{k}$，我们有
+加上前面定义的 $\bar{\mathbf{q}} = t + u\mathbf{i} + v\mathbf{j} + w\mathbf{k}$，我们有
 
-$$\boldsymbol{q}\bar{\boldsymbol{q}} = t^2 + u^2 + v^2 + w^2,$$
+$$\mathbf{q}\bar{\mathbf{q}} = t^2 + u^2 + v^2 + w^2,$$
 
-因此，除非 $\boldsymbol{q} = 0$（即 $t = u = v = w = 0$），否则实数 $\boldsymbol{q}\boldsymbol{q}^{-1}$ 不为零。这样，一旦 $\boldsymbol{q}^{-1}$ 有定义（只要 $\boldsymbol{q} \neq 0$），$(\boldsymbol{q}\boldsymbol{q}^{-1})^{-1}$ 必存在。\*[11.3]
+因此，除非 $\mathbf{q} = 0$（即 $t = u = v = w = 0$），否则实数 $\mathbf{q}\mathbf{q}^{-1}$ 不为零。这样，一旦 $\mathbf{q}^{-1}$ 有定义（只要 $\mathbf{q} \neq 0$），$(\mathbf{q}\mathbf{q}^{-1})^{-1}$ 必存在。\*[11.3]
 
 ## 11.2　四元数的物理角色
 
 四元数为我们提供了一种非常优美的代数结构，并使我们有可能将一种神奇的计算极其自然地用于处理物理问题和三维物理空间里的几何问题。为此，哈密顿将自己生命的最后 22 年全都投入到发展这么一种四元数计算的工作中。但依我们目前的眼光看，回眸 19 世纪和 20 世纪，我们必须承认，这种英勇无畏的努力虽值得称道，但终归于失败。这不是说四元数在数学上（甚至物理上）不重要，它们在寻求代数的各种推广的舞台上的确扮演过非常重要的角色，在某种间接意义上，这种影响还相当深远，但具有原创意义的“纯四元数”最终没能成为人们所期待的那种具有非凡前途的数学大纛。
 
-为什么它们没能成功？在为物理世界寻找“正确的”数学所作的努力方面我们应记取什么样的教训？首先，很明显，如果我们将四元数类比为高维上的复数，那么这种类比在维数上不是从二维到三维，而是从二维到四维，因为上述 $\boldsymbol{q}$ 表示里的“$t$”分量，应当相当于四维之一的“实轴”。我们真希望用 $t$ 来表示时间，³ 这样，四元数就可以用来描述四维时空而不只是空间。从 20 世纪的观点看，如果能够做到这一点那真是太好了，要知道四维时空可是我们将要在第 17 章里展开的现代相对论理论的核心内容！但事实证明，四元数并不适合用来描述时空，这主要是因为四元数的平方形式 $\boldsymbol{q}\bar{\boldsymbol{q}} = t^2 + u^2 + v^2 + w^2$ 不符合相对论的要求（这个问题我们会在以后详加讨论，见 [§13.8](chapter_13.md#138-正交群) 和 [§18.1](chapter_18.md#181-欧几里得型与闵可夫斯基型四维空间)）。哈密顿当然不知道相对论，因为他早生了一个世纪。不管怎么说，这都是一个错综复杂的问题，我不想在此多做纠缠，以后我们再来慢慢解决（见 [§13.8](chapter_13.md#138-正交群)，[§18.1](chapter_18.md#181-欧几里得型与闵可夫斯基型四维空间)–4，[§22.11](chapter_22.md#2211-球谐函数) 节末，[§28.9](chapter_28.md#289-哈特尔霍金的无界假说)，[§31.13](chapter_31.md#3113-弦量子场论是有限的吗)，[§32.2](chapter_32.md#322-阿什台卡变量的手征输入)）。
+为什么它们没能成功？在为物理世界寻找“正确的”数学所作的努力方面我们应记取什么样的教训？首先，很明显，如果我们将四元数类比为高维上的复数，那么这种类比在维数上不是从二维到三维，而是从二维到四维，因为上述 $\mathbf{q}$ 表示里的“$t$”分量，应当相当于四维之一的“实轴”。我们真希望用 $t$ 来表示时间，³ 这样，四元数就可以用来描述四维时空而不只是空间。从 20 世纪的观点看，如果能够做到这一点那真是太好了，要知道四维时空可是我们将要在第 17 章里展开的现代相对论理论的核心内容！但事实证明，四元数并不适合用来描述时空，这主要是因为四元数的平方形式 $\mathbf{q}\bar{\mathbf{q}} = t^2 + u^2 + v^2 + w^2$ 不符合相对论的要求（这个问题我们会在以后详加讨论，见 [§13.8](chapter_13.md#138-正交群) 和 [§18.1](chapter_18.md#181-欧几里得型与闵可夫斯基型四维空间)）。哈密顿当然不知道相对论，因为他早生了一个世纪。不管怎么说，这都是一个错综复杂的问题，我不想在此多做纠缠，以后我们再来慢慢解决（见 [§13.8](chapter_13.md#138-正交群)，[§18.1](chapter_18.md#181-欧几里得型与闵可夫斯基型四维空间)–4，[§22.11](chapter_22.md#2211-球谐函数) 节末，[§28.9](chapter_28.md#289-哈特尔霍金的无界假说)，[§31.13](chapter_31.md#3113-弦量子场论是有限的吗)，[§32.2](chapter_32.md#322-阿什台卡变量的手征输入)）。
 
 哈密顿失利的另一个原因，也可能是更主要的原因，是四元数实际上并不像人们第一眼看到的那样在数学上已臻“完美”，它们是相当蹩脚的“魔术师”。确切地说，在数学完备性方面它们还无法和复数相比，我们找不到一种全纯函数意义上的令人满意的四元数。⁴ 其原因十分简单，由前一章可知，复变量 $z$ 的全纯函数特征是它有全纯“独立的”复共轭 $\bar{z}$，而对于四元数，
 
 ---
 
-\* [11.3] 检验 $\boldsymbol{q}^{-1}$ 定义的实际效果。
+\* [11.3] 检验 $\mathbf{q}^{-1}$ 定义的实际效果。
 
 · 143 ·
 
@@ -245,21 +245,21 @@ $$\bar{q}=-\frac{1}{2}(q+\mathbf{i}q\mathbf{i}+\mathbf{j}q\mathbf{j}+\mathbf{k}q
 
 但高维转动的上述特点暗示其中存在某种“新要素”：在维数大于 3 的情形下，关于不同的 $(n-2)$ 维轴基本转动的叠加不可能总等价为关于某个 $(n-2)$ 维轴的转动。在高维情形下，一般性的转动（叠加）不可能描述得如此简单。这种（广义）转动也许有“轴”（即转动形成的空间），其维数可以取一系列不同的值。因此，对于 $n$ 维克利福德代数，我们需要对代表不同转动的各种情形加以分级。实际上，研究表明，这种分级最好是从比转过 $\pi$ 角更基本的地方开始，即从 $(n-1)$ 维（超）平面的反射开始。两个这类（关于两个垂直平面的）反射的叠加产生转过 $\pi$ 的转动，并把这种以前称为基本 $\pi$ 转动的转动看作是“次级”项，而反射则作为初级项。***[11.6]
 
-我们用 $\boldsymbol{\gamma}_1, \boldsymbol{\gamma}_2, \boldsymbol{\gamma}_3, \cdots, \boldsymbol{\gamma}_n$ 来表示这些基本反射，这里 $\boldsymbol{\gamma}_r$ 代表在保持其他各轴不变条件下使第 $r$ 个坐标轴反向。对于适当形式的“自旋体”，沿某个坐标轴方向反射两次即得到与其初态相反的状态。因此，我们有 $n$ 个初级反射项所满足的类四元数关系式：
+我们用 $\mathbf{\gamma}_1, \mathbf{\gamma}_2, \mathbf{\gamma}_3, \cdots, \mathbf{\gamma}_n$ 来表示这些基本反射，这里 $\mathbf{\gamma}_r$ 代表在保持其他各轴不变条件下使第 $r$ 个坐标轴反向。对于适当形式的“自旋体”，沿某个坐标轴方向反射两次即得到与其初态相反的状态。因此，我们有 $n$ 个初级反射项所满足的类四元数关系式：
 
-$$\boldsymbol{\gamma}_1^2 = -1, \quad \boldsymbol{\gamma}_2^2 = -1, \quad \boldsymbol{\gamma}_3^2 = -1, \quad \cdots, \quad \boldsymbol{\gamma}_n^2 = -1,$$
+$$\mathbf{\gamma}_1^2 = -1, \quad \mathbf{\gamma}_2^2 = -1, \quad \mathbf{\gamma}_3^2 = -1, \quad \cdots, \quad \mathbf{\gamma}_n^2 = -1,$$
 
-代表 $\pi$ 转动的次级项是两个不同的 $\boldsymbol{\gamma}$ 的乘积，这些积具有（与四元数非常类似的）反交换性质：
+代表 $\pi$ 转动的次级项是两个不同的 $\mathbf{\gamma}$ 的乘积，这些积具有（与四元数非常类似的）反交换性质：
 
-$$\boldsymbol{\gamma}_p \boldsymbol{\gamma}_q = -\boldsymbol{\gamma}_q \boldsymbol{\gamma}_p \quad (p \neq q).$$
+$$\mathbf{\gamma}_p \mathbf{\gamma}_q = -\mathbf{\gamma}_q \mathbf{\gamma}_p \quad (p \neq q).$$
 
 具体到三维情形 $(n=3)$，我们可定义三个不同的“二阶”量
 
-$$\mathbf{i} = \boldsymbol{\gamma}_2 \boldsymbol{\gamma}_3, \quad \mathbf{j} = \boldsymbol{\gamma}_3 \boldsymbol{\gamma}_1, \quad \mathbf{k} = \boldsymbol{\gamma}_1 \boldsymbol{\gamma}_2,$$
+$$\mathbf{i} = \mathbf{\gamma}_2 \mathbf{\gamma}_3, \quad \mathbf{j} = \mathbf{\gamma}_3 \mathbf{\gamma}_1, \quad \mathbf{k} = \mathbf{\gamma}_1 \mathbf{\gamma}_2,$$
 
 易证这三个量 $\mathbf{i}, \mathbf{j}$ 和 $\mathbf{k}$ 满足四元数代数律（哈密顿的“布鲁厄姆桥”方程）。*[11.7]
 
-$n$ 维空间下克利福德代数的一般元素是不同个相异的 $\boldsymbol{\gamma}$ 乘积的实数倍的和（即不同个 $\boldsymbol{\gamma}$ 积的线性组合）。一级（初级）项即 $n$ 个不同的个量 $\boldsymbol{\gamma}_p$，二级（次级）项是 $\frac{1}{2}n(n-1)$ 个相互独立
+$n$ 维空间下克利福德代数的一般元素是不同个相异的 $\mathbf{\gamma}$ 乘积的实数倍的和（即不同个 $\mathbf{\gamma}$ 积的线性组合）。一级（初级）项即 $n$ 个不同的个量 $\mathbf{\gamma}_p$，二级（次级）项是 $\frac{1}{2}n(n-1)$ 个相互独立
 
 ***[11.6] 对于三维欧几里得空间情形，找出这种变换的几何性质，它是两个不相互垂直的平面反射的叠加。
 
@@ -314,31 +314,31 @@ $$1+n+\frac{1}{2}n(n-1)+\frac{1}{6}n(n-1)(n-2)+\cdots+1=2^n$$
 
 ## 11.6 格拉斯曼代数
 
-最后，让我们回到格拉斯曼代数上来。从上述讨论的观点看，我们可将格拉斯曼代数视为一种克利福德代数的退化情形。这里我们有类似于克利福德代数里 $\gamma_1, \gamma_2, \gamma_3, \cdots, \gamma_n$ 的反交换生成元 $\boldsymbol{\eta}_1, \boldsymbol{\eta}_2, \boldsymbol{\eta}_3, \cdots, \boldsymbol{\eta}_n$，但其中每个 $\boldsymbol{\eta}_s$ 的平方为零，而不是克利福德代数里的 $-1$：
+最后，让我们回到格拉斯曼代数上来。从上述讨论的观点看，我们可将格拉斯曼代数视为一种克利福德代数的退化情形。这里我们有类似于克利福德代数里 $\gamma_1, \gamma_2, \gamma_3, \cdots, \gamma_n$ 的反交换生成元 $\mathbf{\eta}_1, \mathbf{\eta}_2, \mathbf{\eta}_3, \cdots, \mathbf{\eta}_n$，但其中每个 $\mathbf{\eta}_s$ 的平方为零，而不是克利福德代数里的 $-1$：
 
-$$\boldsymbol{\eta}_1^2 = 0,\ \boldsymbol{\eta}_2^2 = 0,\ \cdots,\ \boldsymbol{\eta}_n^2 = 0.$$
+$$\mathbf{\eta}_1^2 = 0,\ \mathbf{\eta}_2^2 = 0,\ \cdots,\ \mathbf{\eta}_n^2 = 0.$$
 
 类似于克利福德代数情形，这里反交换律
 
-$$\boldsymbol{\eta}_p\boldsymbol{\eta}_q = -\boldsymbol{\eta}_q\boldsymbol{\eta}_p$$
+$$\mathbf{\eta}_p\mathbf{\eta}_q = -\mathbf{\eta}_q\mathbf{\eta}_p$$
 
-亦成立，而且格拉斯曼代数比克利福德代数更“系统化”，因为这里我们可以去掉“$p \neq q$”的限制，这样，由 $\boldsymbol{\eta}_p\boldsymbol{\eta}_p = -\boldsymbol{\eta}_p\boldsymbol{\eta}_p$ 直接就有 $\boldsymbol{\eta}_p^2 = 0$。
+亦成立，而且格拉斯曼代数比克利福德代数更“系统化”，因为这里我们可以去掉“$p \neq q$”的限制，这样，由 $\mathbf{\eta}_p\mathbf{\eta}_p = -\mathbf{\eta}_p\mathbf{\eta}_p$ 直接就有 $\mathbf{\eta}_p^2 = 0$。
 
 格拉斯曼代数的确比克利福德代数更基本也更普适。因为它仅取决于极少数局域结构。根本上说，克利福德代数需要“知道”什么代表“垂直”才可以从反射中建立起通常的转动概念，而在格拉斯曼代数里，“转动”并不是那种需要描述的概念。换句话说，“克利福德代数”和“旋量”这些概念是建立在空间度规概念基础上的，而格拉斯曼代数则不是。（度规的讨论见[§13.8](chapter_13.md#138-正交群)和[§14.7](chapter_14.md#147-度规能为你做什么)。）
 
-格拉斯曼代数关注的是不同维下的“平面元素”这一基本概念。我们这么来考虑，将每个基本量 $\boldsymbol{\eta}_1, \boldsymbol{\eta}_2, \boldsymbol{\eta}_3, \cdots, \boldsymbol{\eta}_n$ 看作是在某个 $n$ 维空间的坐标原点上定义的一个线元或“矢量”（不是反射的超平面），每个 $\boldsymbol{\eta}$ 与 $n$ 个坐标轴中的一个轴相关联。（这些坐标轴可以是“斜的”，因为格拉斯曼代数并不关心垂直性，见图11.5。）位于原点的一般矢量是某种组合
+格拉斯曼代数关注的是不同维下的“平面元素”这一基本概念。我们这么来考虑，将每个基本量 $\mathbf{\eta}_1, \mathbf{\eta}_2, \mathbf{\eta}_3, \cdots, \mathbf{\eta}_n$ 看作是在某个 $n$ 维空间的坐标原点上定义的一个线元或“矢量”（不是反射的超平面），每个 $\mathbf{\eta}$ 与 $n$ 个坐标轴中的一个轴相关联。（这些坐标轴可以是“斜的”，因为格拉斯曼代数并不关心垂直性，见图11.5。）位于原点的一般矢量是某种组合
 
-$$\boldsymbol{a} = a_1\boldsymbol{\eta}_1 + a_2\boldsymbol{\eta}_2 + \cdots + a_n\boldsymbol{\eta}_n,$$
+$$\mathbf{a} = a_1\mathbf{\eta}_1 + a_2\mathbf{\eta}_2 + \cdots + a_n\mathbf{\eta}_n,$$
 
-其中 $a_1, a_2, \cdots, a_n$ 是实数。（在复空间内，$a_i$ 也可以是复数，但两种情形在代数处理上是类似的。）为了描述由两个这种矢量 $\boldsymbol{a}, \boldsymbol{b}$ 组成的二维平面元素，这里 $\boldsymbol{b}$ 表为
+其中 $a_1, a_2, \cdots, a_n$ 是实数。（在复空间内，$a_i$ 也可以是复数，但两种情形在代数处理上是类似的。）为了描述由两个这种矢量 $\mathbf{a}, \mathbf{b}$ 组成的二维平面元素，这里 $\mathbf{b}$ 表为
 
-$$\boldsymbol{b} = b_1\boldsymbol{\eta}_1 + b_2\boldsymbol{\eta}_2 + \cdots + b_n\boldsymbol{\eta}_n,$$
+$$\mathbf{b} = b_1\mathbf{\eta}_1 + b_2\mathbf{\eta}_2 + \cdots + b_n\mathbf{\eta}_n,$$
 
-我们给出 $\boldsymbol{a}$ 对 $\boldsymbol{b}$ 的格拉斯曼积。出于避免与其他形式积混淆的考虑，我采用 $\boldsymbol{a} \wedge \boldsymbol{b}$ 来表示这种积（称为“楔积”）而不用并置符号，相应地，前面的 $\boldsymbol{\eta}_p\boldsymbol{\eta}_q$ 现在应改为 $\boldsymbol{\eta}_p \wedge \boldsymbol{\eta}_q$，$\boldsymbol{\eta}$ 的反交换律改为
+我们给出 $\mathbf{a}$ 对 $\mathbf{b}$ 的格拉斯曼积。出于避免与其他形式积混淆的考虑，我采用 $\mathbf{a} \wedge \mathbf{b}$ 来表示这种积（称为“楔积”）而不用并置符号，相应地，前面的 $\mathbf{\eta}_p\mathbf{\eta}_q$ 现在应改为 $\mathbf{\eta}_p \wedge \mathbf{\eta}_q$，$\mathbf{\eta}$ 的反交换律改为
 
-$$\boldsymbol{\eta}_p \wedge \boldsymbol{\eta}_q = -\boldsymbol{\eta}_q \wedge \boldsymbol{\eta}_p.$$
+$$\mathbf{\eta}_p \wedge \mathbf{\eta}_q = -\mathbf{\eta}_q \wedge \mathbf{\eta}_p.$$
 
-![图11.5 格拉斯曼代数的每个基元 $\boldsymbol{\eta}_1, \boldsymbol{\eta}_2, \boldsymbol{\eta}_3, \cdots, \boldsymbol{\eta}_n$ 定义 $n$ 维空间原点 $O$ 上的一个矢量。这些矢量可以沿着不同的坐标轴（它们可以是“斜”轴，格拉斯曼代数并不关心垂直性）。$O$ 上的一般矢量是某个线性组合 $\mathbf{a} = a_1\boldsymbol{\eta}_1 + a_2\boldsymbol{\eta}_2 + \cdots + a_n\boldsymbol{\eta}_n$。](assets/page170_fig01.jpg)
+![图11.5 格拉斯曼代数的每个基元 $\mathbf{\eta}_1, \mathbf{\eta}_2, \mathbf{\eta}_3, \cdots, \mathbf{\eta}_n$ 定义 $n$ 维空间原点 $O$ 上的一个矢量。这些矢量可以沿着不同的坐标轴（它们可以是“斜”轴，格拉斯曼代数并不关心垂直性）。$O$ 上的一般矢量是某个线性组合 $\mathbf{a} = a_1\mathbf{\eta}_1 + a_2\mathbf{\eta}_2 + \cdots + a_n\mathbf{\eta}_n$。](assets/page170_fig01.jpg)
 
 
 <!-- page 171 -->
@@ -388,11 +388,11 @@ $$a_{[p}b_q c_{r]} = \frac{1}{6}(a_p b_q c_r + a_q b_r c_p + a_r b_p c_q - a_q b
 
 类似地，我们可将这种定义推广到 $r$ 个元素，这里 $r$ 可取到全空间维数 $n$。$r$ 阶楔积的分量可由各矢量分量的反对称化积表示。\*[11.11] ,\*\*[11.12] 因此，格拉斯曼代数的确提供了一套用于描述任意（有限）维基本几何线性元的有力工具。
 
-从格拉斯曼代数具有 $r$ 阶元（这里 $r$ 是构成楔积中 $\boldsymbol{\eta}$ 的数目）这一点来看，这种代数是一种秩代数。数目 $r$（$r = 0, 1, 2, \cdots, n$）称为格拉斯曼代数元素的秩。但应当明白，秩 $r$ 代数中的一般元素不必是单一的楔积（如 $r = 3$ 情形下的 $a \wedge b \wedge c$），它可以是各种楔积之和。相应地，格拉斯曼代数中存在许多元素，它们并不直接描述 $r$ 维几何元素，这种"非几何"的格拉斯曼元还将出现在以后的讨论中（[§12.7](chapter_12.md#127-体积元求和规则)）。
+从格拉斯曼代数具有 $r$ 阶元（这里 $r$ 是构成楔积中 $\mathbf{\eta}$ 的数目）这一点来看，这种代数是一种秩代数。数目 $r$（$r = 0, 1, 2, \cdots, n$）称为格拉斯曼代数元素的秩。但应当明白，秩 $r$ 代数中的一般元素不必是单一的楔积（如 $r = 3$ 情形下的 $a \wedge b \wedge c$），它可以是各种楔积之和。相应地，格拉斯曼代数中存在许多元素，它们并不直接描述 $r$ 维几何元素，这种"非几何"的格拉斯曼元还将出现在以后的讨论中（[§12.7](chapter_12.md#127-体积元求和规则)）。
 
-一般而言，如果 $\boldsymbol{P}$ 是秩 $r$ 的元素，$\boldsymbol{Q}$ 是秩 $q$ 的元素，我们规定秩为 $(p+q)$ 的楔积 $\boldsymbol{P} \wedge \boldsymbol{Q}$ 具有分量 $P_{[a \cdots c} Q_{d \cdots f]}$，这里 $P_{a \cdots c}$ 和 $Q_{d \cdots f}$ 分别是 $\boldsymbol{P}$ 和 $\boldsymbol{Q}$ 的分量，于是有\*\*\*[11.13] , \*[11.14]
+一般而言，如果 $\mathbf{P}$ 是秩 $r$ 的元素，$\mathbf{Q}$ 是秩 $q$ 的元素，我们规定秩为 $(p+q)$ 的楔积 $\mathbf{P} \wedge \mathbf{Q}$ 具有分量 $P_{[a \cdots c} Q_{d \cdots f]}$，这里 $P_{a \cdots c}$ 和 $Q_{d \cdots f}$ 分别是 $\mathbf{P}$ 和 $\mathbf{Q}$ 的分量，于是有\*\*\*[11.13] , \*[11.14]
 
-$$\boldsymbol{P} \wedge \boldsymbol{Q} = \begin{cases} +\boldsymbol{Q} \wedge \boldsymbol{P} & \text{若 } p \text{，或 } q \text{，或二者均为偶数；} \\ -\boldsymbol{Q} \wedge \boldsymbol{P} & \text{或 } p \text{ 和 } q \text{ 均为奇数。} \end{cases}$$
+$$\mathbf{P} \wedge \mathbf{Q} = \begin{cases} +\mathbf{Q} \wedge \mathbf{P} & \text{若 } p \text{，或 } q \text{，或二者均为偶数；} \\ -\mathbf{Q} \wedge \mathbf{P} & \text{或 } p \text{ 和 } q \text{ 均为奇数。} \end{cases}$$
 
 秩 $r$ 不变的各元素之和仍是秩 $r$ 的元素。我们也可把所有不同秩的元素加起来得到一个"混合"量，这个量没有具体的秩，但这种格拉斯曼代元素没有直接意义。
 
@@ -420,7 +420,7 @@ $$\boldsymbol{P} \wedge \boldsymbol{Q} = \begin{cases} +\boldsymbol{Q} \wedge \b
 
 \*\*\* [11.13] 证明该式。
 
-\* [11.14] 如果 $p$ 是奇数，推导 $\boldsymbol{P} \wedge \boldsymbol{P} = 0$。
+\* [11.14] 如果 $p$ 是奇数，推导 $\mathbf{P} \wedge \mathbf{P} = 0$。
 
 ·153·
 

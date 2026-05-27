@@ -51,7 +51,7 @@
 
 ## 14.2 平行移动
 
-由 [§10.3](chapter_10.md#103-矢量场和-1-形式) 和 [§12.3](chapter_12.md#123-标量矢量和余矢量) 可知，对于一般的 $n$ 维光滑流形 $\mathcal{M}$ 上的标量场 $\Phi$，我们可以有对“变化率”即 1 形式 $\mathrm{d}\Phi$ 的适当度量，这里 $\mathrm{d}\Phi = 0$ 表示 $\Phi$ 在（在整个 $\mathcal{M}$ 的连通域上）是一常数。但这种度量对一般张量无效，它甚至不能用于矢量场 $\boldsymbol{\xi}$。为什么呢？麻烦出在这里：在一般流形里，我们没有适当的 $\boldsymbol{\xi}$ 为常数的概念（一会儿你就会看到），而应用于 $\boldsymbol{\xi}$ 的微分（“梯度”）运算
+由 [§10.3](chapter_10.md#103-矢量场和-1-形式) 和 [§12.3](chapter_12.md#123-标量矢量和余矢量) 可知，对于一般的 $n$ 维光滑流形 $\mathcal{M}$ 上的标量场 $\Phi$，我们可以有对“变化率”即 1 形式 $\mathrm{d}\Phi$ 的适当度量，这里 $\mathrm{d}\Phi = 0$ 表示 $\Phi$ 在（在整个 $\mathcal{M}$ 的连通域上）是一常数。但这种度量对一般张量无效，它甚至不能用于矢量场 $\mathbf{\xi}$。为什么呢？麻烦出在这里：在一般流形里，我们没有适当的 $\mathbf{\xi}$ 为常数的概念（一会儿你就会看到），而应用于 $\mathbf{\xi}$ 的微分（“梯度”）运算
 
 · 212 ·
 
@@ -188,7 +188,7 @@ $$12\nabla_a\{\xi^b\lambda_{bc[d}^{(e}D_{gh]}^{f)c}\} \longrightarrow$$
 
 **图 14.6** 在图示记法里，协变微分可以方便地标记为绕被微分的量画的一个环。这里以张量的莱布尼茨法则应用 $\nabla_a\{\xi^b\lambda_{bc[d}^{(e}D_{gh]}^{f)c}\}$ 为例展示了这一点（见图 12.17）。（反对称因子给出"12"。）
 
-所有这些性质在"坐标导数"算子 $\partial/\partial x^a$ 取代 $\nabla_a$ 时也是正确的。事实上，在任一坐标拼块上，我们可以用 $\partial/\partial x^a$ 来定义这个拼块上的具体联络，我称它为坐标联络。它不是一种非常令人感兴趣的联络，因为坐标是任意的。（它提供了一种"平行"概念，这个概念把所有坐标线视为"平行"。）在两个坐标拼块的重叠处，由其中一个拼块的坐标定义的联络通常与另一个拼块定义的联络不一致（见[图 14.1](assets/page232_fig01.jpg)）。尽管坐标联络不"令人感兴趣"（物理上肯定没意思），但它在阐明表达式时常常是很有用的。原因得牵涉到这样一种事实：如果我们在两个联络之间取差分，这个差分对某个张量 $\boldsymbol{T}$ 的作用总可以根据 $\boldsymbol{T}$ 和一个确定的价 $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 的张量 $\boldsymbol{\Gamma}$ 用完全代数的形式（即不用微分）表达出来。***[14.5] 这使我们能够将 $\nabla$ 对 $\boldsymbol{T}$ 的作用清楚地表示为分量 $T_{a\cdots f}^{c\cdots i}$ 的坐标导数^2 加上某些涉及分量 $\Gamma_{bc}^a$ 的附加项。***[14.6]
+所有这些性质在"坐标导数"算子 $\partial/\partial x^a$ 取代 $\nabla_a$ 时也是正确的。事实上，在任一坐标拼块上，我们可以用 $\partial/\partial x^a$ 来定义这个拼块上的具体联络，我称它为坐标联络。它不是一种非常令人感兴趣的联络，因为坐标是任意的。（它提供了一种"平行"概念，这个概念把所有坐标线视为"平行"。）在两个坐标拼块的重叠处，由其中一个拼块的坐标定义的联络通常与另一个拼块定义的联络不一致（见[图 14.1](assets/page232_fig01.jpg)）。尽管坐标联络不"令人感兴趣"（物理上肯定没意思），但它在阐明表达式时常常是很有用的。原因得牵涉到这样一种事实：如果我们在两个联络之间取差分，这个差分对某个张量 $\mathbf{T}$ 的作用总可以根据 $\mathbf{T}$ 和一个确定的价 $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 的张量 $\mathbf{\Gamma}$ 用完全代数的形式（即不用微分）表达出来。***[14.5] 这使我们能够将 $\nabla$ 对 $\mathbf{T}$ 的作用清楚地表示为分量 $T_{a\cdots f}^{c\cdots i}$ 的坐标导数^2 加上某些涉及分量 $\Gamma_{bc}^a$ 的附加项。***[14.6]
 
 ## 14.4 曲率和挠率
 
@@ -196,7 +196,7 @@ $$12\nabla_a\{\xi^b\lambda_{bc[d}^{(e}D_{gh]}^{f)c}\} \longrightarrow$$
 
 ---
 
-***[14.5] 看看你能否证明这一点，找出明确表达式。提示：首先看两个联络之间的差分对矢量场 $\boldsymbol{\xi}$ 的作用，给出指标形式 $\xi^c\Gamma_{ac}^b$ 的答案；其次，证明这种联络的差分作用到余矢量 $\boldsymbol{\alpha}$ 上将有指标形式 $-\alpha_c\Gamma_{ab}^c$；最后，用 $\begin{bmatrix} p \\ q \end{bmatrix}$ 价张量 $\boldsymbol{T}$ 的定义作为 $q$ 矢量关于 $p$ 余矢量的多重线性函数（参见 [§14.2](#142-平行移动)），找出联络的差分作用到 $\boldsymbol{T}$ 的一般指标表达式。
+***[14.5] 看看你能否证明这一点，找出明确表达式。提示：首先看两个联络之间的差分对矢量场 $\mathbf{\xi}$ 的作用，给出指标形式 $\xi^c\Gamma_{ac}^b$ 的答案；其次，证明这种联络的差分作用到余矢量 $\mathbf{\alpha}$ 上将有指标形式 $-\alpha_c\Gamma_{ab}^c$；最后，用 $\begin{bmatrix} p \\ q \end{bmatrix}$ 价张量 $\mathbf{T}$ 的定义作为 $q$ 矢量关于 $p$ 余矢量的多重线性函数（参见 [§14.2](#142-平行移动)），找出联络的差分作用到 $\mathbf{T}$ 的一般指标表达式。
 
 ??? question "答案 [14.5]"
     令 $D_a=\nabla'_a-\nabla_a$。对矢量，$D_a(f\xi^b)=fD_a\xi^b$，因为两个联络对标量的导数相同，含 $\nabla_a f$ 的项相消。因此 $D_a\xi^b=\Gamma_{ac}{}^b\xi^c$，其中 $\Gamma_{ac}{}^b$ 是张量。
@@ -293,17 +293,17 @@ $$\nabla_{[a}R_{bc]d}{}^e=0,\quad\text{即}\quad \nabla_a R_{bcd}{}^e + \nabla_b
 
 正如我们在 [§19.6](chapter_19.md#196-爱因斯坦场方程) 将会看到的，这个比安基恒等式对爱因斯坦场方程至为关键。
 
-曲率是表示联络的路径依赖性的基本量（至少在局部范围是这样）。如果我们设想沿空间 $\mathcal{M}$ 内的一个小环按 $\boldsymbol{\nabla}$ 所定义的平行移动概念来移动矢量，回到出发点后我们将发现，正是 $\boldsymbol{R}$ 测度了矢量改变的程度。最容易想到的是将这个环设想为画在空间 $\mathcal{M}$ 内的"无穷小平行四边形"。（正如我们将看到的，在 $\boldsymbol{\nabla}$ 是无挠的情形下，这种"平行四边形"足以存在。）然而，这里先要澄清一些不同的概念。
+曲率是表示联络的路径依赖性的基本量（至少在局部范围是这样）。如果我们设想沿空间 $\mathcal{M}$ 内的一个小环按 $\mathbf{\nabla}$ 所定义的平行移动概念来移动矢量，回到出发点后我们将发现，正是 $\mathbf{R}$ 测度了矢量改变的程度。最容易想到的是将这个环设想为画在空间 $\mathcal{M}$ 内的"无穷小平行四边形"。（正如我们将看到的，在 $\mathbf{\nabla}$ 是无挠的情形下，这种"平行四边形"足以存在。）然而，这里先要澄清一些不同的概念。
 
 ## 14.5　测地线、平行四边形和曲率
 
-首先，为了构建我们自己的平行四边形，我们来考虑由联络 $\boldsymbol{\nabla}$ 定义的测地线概念。测地线的重要性还可以有其他一些理由来说明。它们类似于欧几里得几何的直线。在前面考虑的球面 $S^2$ 的例子（[图 14.2](assets/page232_fig02.jpg)–14.4）中，测地线是球面上的大圆。更一般地，在欧几里得空间里的曲面上，测地线是长度最短的曲线（可取沿曲面张紧的弦来代表）。后面（[§17.9](chapter_17.md#179-爱因斯坦广义相对论的时空)）我们会看到，测地线对于爱因斯坦的广义相对论具有根本的重要性，它表示自由落体在时空里的路径。联络 $\boldsymbol{\nabla}$ 是如何提供测地线概念的呢？本质上，根据 $\boldsymbol{\nabla}$ 所定义的平行概念，测地线就是一条持续地"平行于自身"的曲线 $\gamma$。我们如何准确地表达这个要求呢？假定矢量 $\boldsymbol{t}$（即 $t^a$）沿 $\gamma$ 始终与 $\gamma$ 相切，那么要求 $\boldsymbol{t}$ 的方向沿 $\gamma$ 保持与自身平行这项要求可以表示为^4
+首先，为了构建我们自己的平行四边形，我们来考虑由联络 $\mathbf{\nabla}$ 定义的测地线概念。测地线的重要性还可以有其他一些理由来说明。它们类似于欧几里得几何的直线。在前面考虑的球面 $S^2$ 的例子（[图 14.2](assets/page232_fig02.jpg)–14.4）中，测地线是球面上的大圆。更一般地，在欧几里得空间里的曲面上，测地线是长度最短的曲线（可取沿曲面张紧的弦来代表）。后面（[§17.9](chapter_17.md#179-爱因斯坦广义相对论的时空)）我们会看到，测地线对于爱因斯坦的广义相对论具有根本的重要性，它表示自由落体在时空里的路径。联络 $\mathbf{\nabla}$ 是如何提供测地线概念的呢？本质上，根据 $\mathbf{\nabla}$ 所定义的平行概念，测地线就是一条持续地"平行于自身"的曲线 $\gamma$。我们如何准确地表达这个要求呢？假定矢量 $\mathbf{t}$（即 $t^a$）沿 $\gamma$ 始终与 $\gamma$ 相切，那么要求 $\mathbf{t}$ 的方向沿 $\gamma$ 保持与自身平行这项要求可以表示为^4
 
-$$\underset{\gamma}{\boldsymbol{\nabla}}\,\boldsymbol{t}\propto\boldsymbol{t},\quad\text{即}\quad t^a\nabla_a t^b \propto t^b,$$
+$$\underset{\gamma}{\mathbf{\nabla}}\,\mathbf{t}\propto\mathbf{t},\quad\text{即}\quad t^a\nabla_a t^b \propto t^b,$$
 
-（符号"$\propto$"表示"正比于"，见 [§12.7](chapter_12.md#127-体积元求和规则)）。当这一条件成立时，根据 $\boldsymbol{\nabla}$ 所定义的平行概念 $\boldsymbol{t}$ 可沿 $\gamma$ 伸展或收缩，但它的方向"保持不变"。如果我们希望确认不发生这种"伸或缩"，则矢量 $\boldsymbol{t}$ 本身沿 $\gamma$ 保持常数，于是，我们需要更强的条件：切矢量 $\boldsymbol{t}$ 沿 $\gamma$ 作平行移动，即要求
+（符号"$\propto$"表示"正比于"，见 [§12.7](chapter_12.md#127-体积元求和规则)）。当这一条件成立时，根据 $\mathbf{\nabla}$ 所定义的平行概念 $\mathbf{t}$ 可沿 $\gamma$ 伸展或收缩，但它的方向"保持不变"。如果我们希望确认不发生这种"伸或缩"，则矢量 $\mathbf{t}$ 本身沿 $\gamma$ 保持常数，于是，我们需要更强的条件：切矢量 $\mathbf{t}$ 沿 $\gamma$ 作平行移动，即要求
 
-$$\underset{\gamma}{\boldsymbol{\nabla}}\,\boldsymbol{t}=0,\quad\text{即}\quad t^a\nabla_a t^b = 0,$$
+$$\underset{\gamma}{\mathbf{\nabla}}\,\mathbf{t}=0,\quad\text{即}\quad t^a\nabla_a t^b = 0,$$
 
 
 <!-- page 239 -->
@@ -415,38 +415,38 @@ $$\varepsilon^2 L^a M^b N^c R_{abc}{}^d。$$
 
 在上述平行四边形的路径依赖性的讨论中，对于联络 $\nabla$，我已经用物理学家的指标记法给予了表示。在数学家的记法下，直接写出这些特定表达式并不容易。取而代之的是，人们很自然地采用一种与此稍有不同的途径。（记法上的不同如何能促进概念上不同方向的课题研究，这很值得注意！）这条途径涉及另一种微分运算，即所谓李括号——它是 [§13.6](chapter_13.md#136-表示理论与李代数) 里引入的相同名称运算的更一般的形式。它也是称之为李导数这一重要概念的一种特殊情况。这些概念其实与联络的任何特定选取无关（因此可应用于一般的无结构光滑流形）。我倾向于先对李导数和李括号作一般性的讨论，然后在本节末我们再回过头来讨论它们与曲率和挠率的关系。
 
-然而，对定义在流形 $\mathcal{M}$ 上的李导数，我们要求矢量场 $\boldsymbol{\xi}$ 在 $\mathcal{M}$ 上是预先指定的。于是李导数，写作 $\underset{\xi}{\pounds}$ 是一种关于矢量场 $\boldsymbol{\xi}$ 的运算。导数 $\underset{\xi}{\pounds}\mathbf{Q}$ 量度某个量 $\mathbf{Q}$ 在受到矢量场 $\boldsymbol{\xi}$ 的作用时产生“曳引”的变化，见[图 14.13](assets/page243_fig01.jpg)。它通常用于张量（甚至非张量项，如联络）。首先，我们只考虑矢量场 $\boldsymbol{\eta}(=\mathbf{Q})$ 关于另一个矢量场 $\boldsymbol{\xi}$ 的李导数。我们发现，它的确与 [§13.6](chapter_13.md#136-表示理论与李代数) 里引入的“李括号”的运算相同，只是范围更广。我们来看看如何把它推广到随后的张量场 $\mathbf{Q}$ 上。
+然而，对定义在流形 $\mathcal{M}$ 上的李导数，我们要求矢量场 $\mathbf{\xi}$ 在 $\mathcal{M}$ 上是预先指定的。于是李导数，写作 $\underset{\xi}{\pounds}$ 是一种关于矢量场 $\mathbf{\xi}$ 的运算。导数 $\underset{\xi}{\pounds}\mathbf{Q}$ 量度某个量 $\mathbf{Q}$ 在受到矢量场 $\mathbf{\xi}$ 的作用时产生“曳引”的变化，见[图 14.13](assets/page243_fig01.jpg)。它通常用于张量（甚至非张量项，如联络）。首先，我们只考虑矢量场 $\mathbf{\eta}(=\mathbf{Q})$ 关于另一个矢量场 $\mathbf{\xi}$ 的李导数。我们发现，它的确与 [§13.6](chapter_13.md#136-表示理论与李代数) 里引入的“李括号”的运算相同，只是范围更广。我们来看看如何把它推广到随后的张量场 $\mathbf{Q}$ 上。
 
 ![流形上的矢量场与张量场示意图，展示矢量场ξ的"曳引"作用，包括矢量场η和张量场Q在ξ作用下的变化，标注有"由ξη测度的差"、"曳引矢量η"、"曳引张量Q"等](assets/page243_fig01.jpg)
 
-**图 14.13** 定义在一般流形 $\mathcal{M}$ 上的关于 $\mathcal{M}$ 上给定光滑矢量场 $\boldsymbol{\xi}$ 的李导数。因此，$\underset{\xi}{\pounds}\mathbf{Q}$ 测度的是量 $\mathbf{Q}$（例如矢量场 $\boldsymbol{\eta}$ 或张量场 $\mathbf{Q}$）与受到 $\boldsymbol{\xi}$ “曳引”作用的量比较时表现出的实际变化。
+**图 14.13** 定义在一般流形 $\mathcal{M}$ 上的关于 $\mathcal{M}$ 上给定光滑矢量场 $\mathbf{\xi}$ 的李导数。因此，$\underset{\xi}{\pounds}\mathbf{Q}$ 测度的是量 $\mathbf{Q}$（例如矢量场 $\mathbf{\eta}$ 或张量场 $\mathbf{Q}$）与受到 $\mathbf{\xi}$ “曳引”作用的量比较时表现出的实际变化。
 
-回想一下，在 [§12.3](chapter_12.md#123-标量矢量和余矢量) 里，矢量场本身可以解释成作用在标量场 $\Phi$，$\Psi$，$\cdots$ 上的微分算子，它满足三条法则：(i) $\boldsymbol{\xi}(\Phi+\Psi)=\boldsymbol{\xi}(\Phi)+\boldsymbol{\xi}(\Psi)$，(ii) $\boldsymbol{\xi}(\Phi\Psi)=\Psi\boldsymbol{\xi}(\Phi)+\Phi\boldsymbol{\xi}(\Psi)$ 和 (iii)
+回想一下，在 [§12.3](chapter_12.md#123-标量矢量和余矢量) 里，矢量场本身可以解释成作用在标量场 $\Phi$，$\Psi$，$\cdots$ 上的微分算子，它满足三条法则：(i) $\mathbf{\xi}(\Phi+\Psi)=\mathbf{\xi}(\Phi)+\mathbf{\xi}(\Psi)$，(ii) $\mathbf{\xi}(\Phi\Psi)=\Psi\mathbf{\xi}(\Phi)+\Phi\mathbf{\xi}(\Psi)$ 和 (iii)
 
 · 224 ·
 
 
 <!-- page 244 -->
 
-$\boldsymbol{\xi}(k)=0$，这里 $k$ 是常数。我们可以直接证明，*\[14.15\]* 由
+$\mathbf{\xi}(k)=0$，这里 $k$ 是常数。我们可以直接证明，*\[14.15\]* 由
 
-$$\boldsymbol{\omega}(\Phi)=\boldsymbol{\xi}(\boldsymbol{\eta}(\Phi))-\boldsymbol{\eta}(\boldsymbol{\xi}(\Phi))$$
+$$\mathbf{\omega}(\Phi)=\mathbf{\xi}(\mathbf{\eta}(\Phi))-\mathbf{\eta}(\mathbf{\xi}(\Phi))$$
 
-定义的算子 $\boldsymbol{\omega}$ 满足这三条法则，只要 $\boldsymbol{\xi}$ 和 $\boldsymbol{\eta}$ 也满足这些法则，这样，$\boldsymbol{\omega}$ 必然也是矢量场。上述两种 $\boldsymbol{\xi}$ 和 $\boldsymbol{\eta}$ 运算的交换子经常写成（如同 [§13.6](chapter_13.md#136-表示理论与李代数) 里情形）李括号记法
+定义的算子 $\mathbf{\omega}$ 满足这三条法则，只要 $\mathbf{\xi}$ 和 $\mathbf{\eta}$ 也满足这些法则，这样，$\mathbf{\omega}$ 必然也是矢量场。上述两种 $\mathbf{\xi}$ 和 $\mathbf{\eta}$ 运算的交换子经常写成（如同 [§13.6](chapter_13.md#136-表示理论与李代数) 里情形）李括号记法
 
-$$\boldsymbol{\omega}=\boldsymbol{\xi}\boldsymbol{\eta}-\boldsymbol{\eta}\boldsymbol{\xi}=[\boldsymbol{\xi},\boldsymbol{\eta}]。$$
+$$\mathbf{\omega}=\mathbf{\xi}\mathbf{\eta}-\mathbf{\eta}\mathbf{\xi}=[\mathbf{\xi},\mathbf{\eta}]。$$
 
-两个矢量场 $\boldsymbol{\xi}$ 和 $\boldsymbol{\eta}$ 之间的交换子的几何意义见图 14.14。如果用 $\boldsymbol{\xi}$ 和 $\boldsymbol{\eta}$（每个取为 $O(\varepsilon)$）来构造一个"带箭头的"四边形，我们就会发现，$\boldsymbol{\omega}$ 量度"间隙"（$O(\varepsilon^3)$ 阶）。我们可以证明，*\[14.16\]* 对易满足如下关系
+两个矢量场 $\mathbf{\xi}$ 和 $\mathbf{\eta}$ 之间的交换子的几何意义见图 14.14。如果用 $\mathbf{\xi}$ 和 $\mathbf{\eta}$（每个取为 $O(\varepsilon)$）来构造一个"带箭头的"四边形，我们就会发现，$\mathbf{\omega}$ 量度"间隙"（$O(\varepsilon^3)$ 阶）。我们可以证明，*\[14.16\]* 对易满足如下关系
 
-$$[\boldsymbol{\xi},\boldsymbol{\eta}]=-[\boldsymbol{\eta},\boldsymbol{\xi}],\quad [\boldsymbol{\xi}+\boldsymbol{\eta},\boldsymbol{\zeta}]=[\boldsymbol{\xi},\boldsymbol{\zeta}]+[\boldsymbol{\eta},\boldsymbol{\zeta}],$$
+$$[\mathbf{\xi},\mathbf{\eta}]=-[\mathbf{\eta},\mathbf{\xi}],\quad [\mathbf{\xi}+\mathbf{\eta},\mathbf{\zeta}]=[\mathbf{\xi},\mathbf{\zeta}]+[\mathbf{\eta},\mathbf{\zeta}],$$
 
-$$[\boldsymbol{\xi},[\boldsymbol{\eta},\boldsymbol{\zeta}]]+[\boldsymbol{\eta},[\boldsymbol{\zeta},\boldsymbol{\xi}]]+[\boldsymbol{\zeta},[\boldsymbol{\xi},\boldsymbol{\eta}]]=0,$$
+$$[\mathbf{\xi},[\mathbf{\eta},\mathbf{\zeta}]]+[\mathbf{\eta},[\mathbf{\zeta},\mathbf{\xi}]]+[\mathbf{\zeta},[\mathbf{\xi},\mathbf{\eta}]]=0,$$
 
 它们就像我们在 [§13.6](chapter_13.md#136-表示理论与李代数) 里看到的李群的无穷小元素的交换子作用。
 
-如上定义的对易运算如何与李群的无穷小元素的代数（[§13.6](chapter_13.md#136-表示理论与李代数)）相联系呢？容我暂且离题对此作一解释。我们把群视为流形 $\mathcal{G}$（叫做群流形），它的点都是李群元素。更一般地，我们可以把李群元素作用其上的任何流形 $\mathcal{H}$ 看成是光滑的变换（像球面 $S^2$，见[图 13.2](assets/page198_fig01.jpg) 的转动群 $\mathcal{G}=\text{SO}(3)$ 的情形），但眼下我们主要关心的是群流形 $\mathcal{G}$ 而不是更一般的 $\mathcal{H}$，因为我们感兴趣的是整群 $\mathcal{G}$ 是如何关联到李代数的结构的。我们将无穷小群元素描绘成 $\mathcal{G}$（或 $\mathcal{H}$）上的特殊矢量场。就是说，我们考虑沿 $\mathcal{G}$ 上相关的矢量场使 $\mathcal{G}$ 做无穷小移动，以表示与以下运算相应的变换：用由 $\boldsymbol{\xi}$ 表示的无穷小元素来左乘每一个群元素。见图 14.15（a）。
+如上定义的对易运算如何与李群的无穷小元素的代数（[§13.6](chapter_13.md#136-表示理论与李代数)）相联系呢？容我暂且离题对此作一解释。我们把群视为流形 $\mathcal{G}$（叫做群流形），它的点都是李群元素。更一般地，我们可以把李群元素作用其上的任何流形 $\mathcal{H}$ 看成是光滑的变换（像球面 $S^2$，见[图 13.2](assets/page198_fig01.jpg) 的转动群 $\mathcal{G}=\text{SO}(3)$ 的情形），但眼下我们主要关心的是群流形 $\mathcal{G}$ 而不是更一般的 $\mathcal{H}$，因为我们感兴趣的是整群 $\mathcal{G}$ 是如何关联到李代数的结构的。我们将无穷小群元素描绘成 $\mathcal{G}$（或 $\mathcal{H}$）上的特殊矢量场。就是说，我们考虑沿 $\mathcal{G}$ 上相关的矢量场使 $\mathcal{G}$ 做无穷小移动，以表示与以下运算相应的变换：用由 $\mathbf{\xi}$ 表示的无穷小元素来左乘每一个群元素。见图 14.15（a）。
 
-取一小正数 $\varepsilon$，我们可将 $\varepsilon\boldsymbol{\xi}$ 视为 $\mathcal{G}$ 沿矢量场 $\boldsymbol{\xi}$ 作的 $O(\varepsilon)$ 位移，单位群元素 $\boldsymbol{I}$ 对应于零位移。两个这种无穷小群作用 $\varepsilon\boldsymbol{\xi}$ 和 $\varepsilon\boldsymbol{\eta}$ 的积，如果仅取 $O(\varepsilon)$ 阶，由二者的和 $\varepsilon\boldsymbol{\xi}+\varepsilon\boldsymbol{\eta}$ 给出。这样，表示 $\varepsilon\boldsymbol{\xi}$ 和 $\varepsilon\boldsymbol{\eta}$ 的"箭头"只需根据平行四边形法则相加（图 14.15（b））。但这些没给我们提供多少有关群结构的信息（事实上，我们只知道它的维数，因为只涉及群的单位元素 $\boldsymbol{I}$ 的切空间的加和结构）。为了得到群结构，我们需要精确到 $O(\varepsilon^2)$ 阶。如同 [§13.6](chapter_13.md#136-表示理论与李代数) 那样，通过观察交换子 $\boldsymbol{\xi}\boldsymbol{\eta}-\boldsymbol{\eta}\boldsymbol{\xi}=[\boldsymbol{\xi},\boldsymbol{\eta}]$ 即知我们做得到这一点。现在，$\varepsilon^2[\boldsymbol{\xi},\boldsymbol{\eta}]$ 相当于"平行四边形"的 $O(\varepsilon^2)$ 间隙，它在原点 $\boldsymbol{I}$ 的两条初始边为 $\varepsilon\boldsymbol{\xi}$ 和 $\varepsilon\boldsymbol{\eta}$。有关的"平行"概念来自群作用，它提供了所需的"平行移动"概念，实际上由此给出了具有挠率但无曲率的联络。***\[14.17\]* 见图 14.15（c）。
+取一小正数 $\varepsilon$，我们可将 $\varepsilon\mathbf{\xi}$ 视为 $\mathcal{G}$ 沿矢量场 $\mathbf{\xi}$ 作的 $O(\varepsilon)$ 位移，单位群元素 $\mathbf{I}$ 对应于零位移。两个这种无穷小群作用 $\varepsilon\mathbf{\xi}$ 和 $\varepsilon\mathbf{\eta}$ 的积，如果仅取 $O(\varepsilon)$ 阶，由二者的和 $\varepsilon\mathbf{\xi}+\varepsilon\mathbf{\eta}$ 给出。这样，表示 $\varepsilon\mathbf{\xi}$ 和 $\varepsilon\mathbf{\eta}$ 的"箭头"只需根据平行四边形法则相加（图 14.15（b））。但这些没给我们提供多少有关群结构的信息（事实上，我们只知道它的维数，因为只涉及群的单位元素 $\mathbf{I}$ 的切空间的加和结构）。为了得到群结构，我们需要精确到 $O(\varepsilon^2)$ 阶。如同 [§13.6](chapter_13.md#136-表示理论与李代数) 那样，通过观察交换子 $\mathbf{\xi}\mathbf{\eta}-\mathbf{\eta}\mathbf{\xi}=[\mathbf{\xi},\mathbf{\eta}]$ 即知我们做得到这一点。现在，$\varepsilon^2[\mathbf{\xi},\mathbf{\eta}]$ 相当于"平行四边形"的 $O(\varepsilon^2)$ 间隙，它在原点 $\mathbf{I}$ 的两条初始边为 $\varepsilon\mathbf{\xi}$ 和 $\varepsilon\mathbf{\eta}$。有关的"平行"概念来自群作用，它提供了所需的"平行移动"概念，实际上由此给出了具有挠率但无曲率的联络。***\[14.17\]* 见图 14.15（c）。
 
 正如 [§13.6](chapter_13.md#136-表示理论与李代数) 说明的那样，这些矢量场的李代数提供了群的完整的（局部）结构。这里我们
 
@@ -491,25 +491,25 @@ $$[\boldsymbol{\xi},[\boldsymbol{\eta},\boldsymbol{\zeta}]]+[\boldsymbol{\eta},[
 
 <!-- page 246 -->
 
-可以给出从李代数元素 $\boldsymbol{\xi}$ 得到普通有限（即非无穷小）群元素 $x$ 的程序。它称为指数化（参见 [§5.3](chapter_05.md#53-多值性自然对数)，[§13.4](chapter_13.md#134-行列式和迹)）：
+可以给出从李代数元素 $\mathbf{\xi}$ 得到普通有限（即非无穷小）群元素 $x$ 的程序。它称为指数化（参见 [§5.3](chapter_05.md#53-多值性自然对数)，[§13.4](chapter_13.md#134-行列式和迹)）：
 
-$$x = \mathrm{e}^{\boldsymbol{\xi}} = \boldsymbol{I} + \boldsymbol{\xi} + \frac{1}{2}\boldsymbol{\xi}^2 + \frac{1}{6}\boldsymbol{\xi}^3 + \cdots.$$
+$$x = \mathrm{e}^{\mathbf{\xi}} = \mathbf{I} + \mathbf{\xi} + \frac{1}{2}\mathbf{\xi}^2 + \frac{1}{6}\mathbf{\xi}^3 + \cdots.$$
 
-这里 $\boldsymbol{\xi}^2$ 指"两次运用 $\boldsymbol{\xi}$ 的二阶导数算子"，余类推（$\boldsymbol{I}$ 是单位算子）。它本质上就是 [§6.4](chapter_06.md#64-欧拉的-函数概念) 里描述的泰勒定理。***[14.18] 于是，两个有限群元素 $x$ 和 $y$ 的积可从表达式 $\mathrm{e}^{\boldsymbol{\xi}}\mathrm{e}^{\boldsymbol{\eta}}$ 得到。它不同于完全由 $\boldsymbol{\xi}$ 和 $\boldsymbol{\eta}$ 李代数表达式^6 构建的表式 $\mathrm{e}^{\boldsymbol{\xi}+\boldsymbol{\eta}}$（与 [§5.3](chapter_05.md#53-多值性自然对数) 比较）。
+这里 $\mathbf{\xi}^2$ 指"两次运用 $\mathbf{\xi}$ 的二阶导数算子"，余类推（$\mathbf{I}$ 是单位算子）。它本质上就是 [§6.4](chapter_06.md#64-欧拉的-函数概念) 里描述的泰勒定理。***[14.18] 于是，两个有限群元素 $x$ 和 $y$ 的积可从表达式 $\mathrm{e}^{\mathbf{\xi}}\mathrm{e}^{\mathbf{\eta}}$ 得到。它不同于完全由 $\mathbf{\xi}$ 和 $\mathbf{\eta}$ 李代数表达式^6 构建的表式 $\mathrm{e}^{\mathbf{\xi}+\mathbf{\eta}}$（与 [§5.3](chapter_05.md#53-多值性自然对数) 比较）。
 
-有必要指出，这种指数化运算 $\mathrm{e}^{\boldsymbol{\xi}}$ 也可以用于一般流形 $\mathcal{M}$ 内的矢量场 $\boldsymbol{\xi}$（假定这里 $\mathcal{M}$ 和 $\boldsymbol{\xi}$ 都是解析的——即 $\mathrm{C}^\omega$ 光滑的，见 [§6.4](chapter_06.md#64-欧拉的-函数概念)）。由 [§12.3](chapter_12.md#123-标量矢量和余矢量)（和[图 10.6](assets/page153_fig01.jpg)）我们知道，当 $\varepsilon$ 取得很小时，$\varepsilon\boldsymbol{\xi}(\varPhi)$ 度量的是标量场 $\varPhi$ 在表示 $\varepsilon\boldsymbol{\xi}$ 的"箭头"方向上的增量 $O(\varepsilon)$。说得更准确点儿，量 $\mathrm{e}^{\mathrm{t}\boldsymbol{\xi}}(\varPhi)$ 度量的是我们从起点 $O$ 跟随"$\boldsymbol{\xi}$ 箭头"到由参数值 $u=t$ 给定的终点所取得的总值 $\varPhi$，这里参数 $u$ 是满足 $\boldsymbol{\xi}(u)=1$ 的分度值（参见 [§14.5](#145-测地线平行四边形和曲率) 和[图 14.8](assets/page239_fig01.jpg)）。$\mathrm{e}^{\mathrm{t}\boldsymbol{\xi}}(\varPhi)$ 的幂级数表达式里的所有各级导数（即在 $\boldsymbol{\xi}^r(\varPhi)$ 里出现的是 $r$ 级导数）取在原点的值（假定它们均收敛）。"跟随箭头"是指沿所谓 $\boldsymbol{\xi}$ 的"积分曲线"，即是说，沿其切矢量是 $\boldsymbol{\xi}$ 矢量的曲线。见[图 14.16](assets/page245_fig02.jpg)。^7
+有必要指出，这种指数化运算 $\mathrm{e}^{\mathbf{\xi}}$ 也可以用于一般流形 $\mathcal{M}$ 内的矢量场 $\mathbf{\xi}$（假定这里 $\mathcal{M}$ 和 $\mathbf{\xi}$ 都是解析的——即 $\mathrm{C}^\omega$ 光滑的，见 [§6.4](chapter_06.md#64-欧拉的-函数概念)）。由 [§12.3](chapter_12.md#123-标量矢量和余矢量)（和[图 10.6](assets/page153_fig01.jpg)）我们知道，当 $\varepsilon$ 取得很小时，$\varepsilon\mathbf{\xi}(\varPhi)$ 度量的是标量场 $\varPhi$ 在表示 $\varepsilon\mathbf{\xi}$ 的"箭头"方向上的增量 $O(\varepsilon)$。说得更准确点儿，量 $\mathrm{e}^{\mathrm{t}\mathbf{\xi}}(\varPhi)$ 度量的是我们从起点 $O$ 跟随"$\mathbf{\xi}$ 箭头"到由参数值 $u=t$ 给定的终点所取得的总值 $\varPhi$，这里参数 $u$ 是满足 $\mathbf{\xi}(u)=1$ 的分度值（参见 [§14.5](#145-测地线平行四边形和曲率) 和[图 14.8](assets/page239_fig01.jpg)）。$\mathrm{e}^{\mathrm{t}\mathbf{\xi}}(\varPhi)$ 的幂级数表达式里的所有各级导数（即在 $\mathbf{\xi}^r(\varPhi)$ 里出现的是 $r$ 级导数）取在原点的值（假定它们均收敛）。"跟随箭头"是指沿所谓 $\mathbf{\xi}$ 的"积分曲线"，即是说，沿其切矢量是 $\mathbf{\xi}$ 矢量的曲线。见[图 14.16](assets/page245_fig02.jpg)。^7
 
-那么什么是李导数的定义？首先，我们简单地将李括号重写为 $\underset{\boldsymbol{\xi}}{\pounds}$（取决于 $\boldsymbol{\xi}$），它作用于矢量场 $\boldsymbol{\eta}$：
+那么什么是李导数的定义？首先，我们简单地将李括号重写为 $\underset{\mathbf{\xi}}{\pounds}$（取决于 $\mathbf{\xi}$），它作用于矢量场 $\mathbf{\eta}$：
 
-$$\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\eta} = [\boldsymbol{\xi}, \boldsymbol{\eta}].$$
+$$\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta} = [\mathbf{\xi}, \mathbf{\eta}].$$
 
-这就是 $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$ 价张量 $\boldsymbol{\eta}$（关于 $\boldsymbol{\xi}$）的李导数 $\underset{\boldsymbol{\xi}}{\pounds}$。我们希望把它写成某种给定的无挠联络 $\nabla$ 的形式。所要求的表达式（其图示记法形式见图 14.17(a)）
+这就是 $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$ 价张量 $\mathbf{\eta}$（关于 $\mathbf{\xi}$）的李导数 $\underset{\mathbf{\xi}}{\pounds}$。我们希望把它写成某种给定的无挠联络 $\nabla$ 的形式。所要求的表达式（其图示记法形式见图 14.17(a)）
 
-$$\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\eta} = \underset{\boldsymbol{\xi}}{\nabla}\boldsymbol{\eta} - \underset{\boldsymbol{\eta}}{\nabla}\boldsymbol{\xi}, \quad \text{即} \quad (\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\eta})^a = \xi^a\nabla_a\eta^b - \eta^a\nabla_a\xi^b,$$
+$$\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta} = \underset{\mathbf{\xi}}{\nabla}\mathbf{\eta} - \underset{\mathbf{\eta}}{\nabla}\mathbf{\xi}, \quad \text{即} \quad (\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta})^a = \xi^a\nabla_a\eta^b - \eta^a\nabla_a\xi^b,$$
 
-可直接由 $\boldsymbol{\xi}(\varPhi)=\xi^a\nabla_a\varPhi$ 等获得。***[14.19] , ***[14.20] 为了获得一般张量的李导数，我们采用这么一
+可直接由 $\mathbf{\xi}(\varPhi)=\xi^a\nabla_a\varPhi$ 等获得。***[14.19] , ***[14.20] 为了获得一般张量的李导数，我们采用这么一
 
-![李导数的图示记法。(a) 矢量 $\boldsymbol{\eta}$: $(\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\eta})^a = \xi^a\nabla_a\eta^b - \eta^a\nabla_a\xi^b$ 的图示记法；(b) 余矢量 $\boldsymbol{\alpha}$: $(\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\alpha})_a = \xi^b\nabla_b\alpha_a + \alpha_b\nabla_a\xi^b$ 的图示记法；(c) $(\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 价) 张量 $\boldsymbol{Q}$: $\underset{\boldsymbol{\xi}}{\pounds}Q_{ab}^c = \xi^u\nabla_u Q_{ab}^c + Q_{ub}^c\nabla_a\xi^u + Q_{au}^c\nabla_b\xi^u - Q_{ab}^u\nabla_u\xi^c$ 的图示记法。](assets/page246_fig01.jpg)
+![李导数的图示记法。(a) 矢量 $\mathbf{\eta}$: $(\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta})^a = \xi^a\nabla_a\eta^b - \eta^a\nabla_a\xi^b$ 的图示记法；(b) 余矢量 $\mathbf{\alpha}$: $(\underset{\mathbf{\xi}}{\pounds}\mathbf{\alpha})_a = \xi^b\nabla_b\alpha_a + \alpha_b\nabla_a\xi^b$ 的图示记法；(c) $(\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 价) 张量 $\mathbf{Q}$: $\underset{\mathbf{\xi}}{\pounds}Q_{ab}^c = \xi^u\nabla_u Q_{ab}^c + Q_{ub}^c\nabla_a\xi^u + Q_{au}^c\nabla_b\xi^u - Q_{ab}^u\nabla_u\xi^c$ 的图示记法。](assets/page246_fig01.jpg)
 
 *** [14.18] 试解释为什么当 $a$ 为常数时，$\mathrm{e}^{a\mathrm{d}/\mathrm{d}y}f(y) = f(y+a)$。
 
@@ -518,7 +518,7 @@ $$\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\eta} = \underset{\boldsymbol{
 
     因此只要级数收敛，结果等于 $f(y+a)$。微分算子 $d/dy$ 的指数就是沿 $y$ 方向平移 $a$。
 
-*** [14.19] 对 $\underset{\boldsymbol{\xi}}{\pounds}\boldsymbol{\eta}$ 导出此式。
+*** [14.19] 对 $\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta}$ 导出此式。
 
 ??? question "答案 [14.19]"
     对任意标量 $\Phi$，$([\xi,\eta])(\Phi)=\xi^a\nabla_a(\eta^b\nabla_b\Phi)-\eta^a\nabla_a(\xi^b\nabla_b\Phi)$。
@@ -693,7 +693,7 @@ $$R_{abcd} = -R_{abdc} = R_{cdab}.$$
 
 这些关系的图解记法表示见[图 14.21](assets/page250_fig01.jpg)。$n$ 维流形的一般 $\begin{bmatrix}0\\4\end{bmatrix}$ 价张量有 $n^4$ 个分量；但对于黎曼张量，由于其对称性，这些分量中只有 $\frac{1}{12}n^2(n^2-1)$ 个是独立的。***[14.30]
 
-现在，我们不妨将注意力集中到（伪）黎曼流形 $\mathcal{M}$ 的基灵矢量概念上。存在矢量场 $\boldsymbol{\kappa}$，它
+现在，我们不妨将注意力集中到（伪）黎曼流形 $\mathcal{M}$ 的基灵矢量概念上。存在矢量场 $\mathbf{\kappa}$，它
 
 ---
 
@@ -743,9 +743,9 @@ $$\mathrm{d}S = 0.$$
 
 （这可能是 $2m$ 维实流形上实辛形式的标准情形，其中的局部对称性由通常的"剖分符号差"辛群 $\mathrm{Sp}(m, m)$ 给出，见 [§13.10](chapter_13.md#1310-辛群)。我不太关心那些已得到深入研究的其他种符号差的"辛流形"。）
 
-$S_{ab}$ 的逆 $S^{ab}$（由 $S^{ab}S_{bc} = \delta^a_c$ 定义）定义了所谓"泊松括号"（以纪念杰出的法国数学家泊松（Siméon Denis Poisson, 1781~1840））。它将相空间上的两个标量场 $\boldsymbol{\Phi}$ 和 $\boldsymbol{\Psi}$ 结合起来给出第三个标量场：
+$S_{ab}$ 的逆 $S^{ab}$（由 $S^{ab}S_{bc} = \delta^a_c$ 定义）定义了所谓"泊松括号"（以纪念杰出的法国数学家泊松（Siméon Denis Poisson, 1781~1840））。它将相空间上的两个标量场 $\mathbf{\Phi}$ 和 $\mathbf{\Psi}$ 结合起来给出第三个标量场：
 
-$$\{\boldsymbol{\Phi}, \boldsymbol{\Psi}\} = -\frac{1}{2}S^{ab}\nabla_a\boldsymbol{\Phi}\nabla_b\boldsymbol{\Psi}$$
+$$\{\mathbf{\Phi}, \mathbf{\Psi}\} = -\frac{1}{2}S^{ab}\nabla_a\mathbf{\Phi}\nabla_b\mathbf{\Psi}$$
 
 （这里因子 $-\dfrac{1}{2}$ 只是因为需要与传统的坐标表达式相一致而置）。这个量在经典力学里非常重要。以后（[§20.4](chapter_20.md#204-辛几何的哈密顿动力学)）我们会了解它是如何运用到哈密顿方程的，这些方程提供了处理经典物理动力学问题的基本通用程序，并建立起与量子力学的联系。从 $S$ 的反对称性和 $\mathrm{d}S = 0$ 条件我们可以得
 
@@ -839,7 +839,7 @@ $$\{\Phi,\Psi\}=-\{\Psi,\Phi\}\quad\{\Theta,\{\Phi,\Psi\}\}+\{\Phi,\{\Psi,\Theta
 
 [§14.5](chapter_14.md#145-测地线平行四边形和曲率)
 
-14.4 严格来说，$\boldsymbol{\nabla}$ 作用于定义在 $\mathcal{M}$ 上的场，而不只是沿 $\mathcal{M}$ 内的曲线作用。但这个方程可作此理解，因为这里算子只沿曲线方向进行微分。如果我们愿意，我们可将 $t$ 定义的区域视为以任意方式从 $\gamma$ 光滑地向外扩展到 $\mathcal{M}$ 内。这里以何种方式无关紧要，因为我们要求的只是 $t$ 的方程沿 $\gamma$ 成立。
+14.4 严格来说，$\mathbf{\nabla}$ 作用于定义在 $\mathcal{M}$ 上的场，而不只是沿 $\mathcal{M}$ 内的曲线作用。但这个方程可作此理解，因为这里算子只沿曲线方向进行微分。如果我们愿意，我们可将 $t$ 定义的区域视为以任意方式从 $\gamma$ 光滑地向外扩展到 $\mathcal{M}$ 内。这里以何种方式无关紧要，因为我们要求的只是 $t$ 的方程沿 $\gamma$ 成立。
 
 324 14.5 例子见 Nayfeh (1993)；Simmond and Mann (1998)。
 
@@ -849,7 +849,7 @@ $$\{\Phi,\Psi\}=-\{\Psi,\Phi\}\quad\{\Theta,\{\Phi,\Psi\}\}+\{\Phi,\{\Psi,\Theta
 
 14.7 更准确地说，我们可以沿这条曲线将坐标 $x^2, x^3, \cdots, x^n$ 取为常数，并取 $x^1=t$；于是沿条曲线 $\xi=\partial/\partial t$。我们由泰勒定理（[§6.4](chapter_06.md#64-欧拉的-函数概念)）可知，上述处理给出 $e^{t\xi}(\Phi)$。
 
-14.8 类似于从 $\xi$ 的指数表示 $e^{\xi}$ 可得到有限距离范围内的标量 $\Phi$ 的值，当在“曳引”参照系里进行度量时，将 $\xi$ 代换为 $\pounds$，我们有相应的指数表示，并得到限距离范围内的张量 $\boldsymbol{Q}$。
+14.8 类似于从 $\xi$ 的指数表示 $e^{\xi}$ 可得到有限距离范围内的标量 $\Phi$ 的值，当在“曳引”参照系里进行度量时，将 $\xi$ 代换为 $\pounds$，我们有相应的指数表示，并得到限距离范围内的张量 $\mathbf{Q}$。
 
 14.9 见 Schouten (1954)；Penrose and Rindler (1984)，p202。
 

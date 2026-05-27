@@ -357,16 +357,16 @@ $$\text{Volume} = \varepsilon_{ijk} A_i B_j C_k = \mathbf{A} \cdot (\mathbf{B} \
 
 ### 新定义：从标量面积到矢量面积
 
-$$\boldsymbol{\Sigma} = \mathbf{A} \times \mathbf{B}$$
+$$\mathbf{\Sigma} = \mathbf{A} \times \mathbf{B}$$
 
 | 属性 | 说明 |
 |:---|:---|
-| **大小** $|\boldsymbol{\Sigma}|$ | 平行四边形的标量面积 |
+| **大小** $|\mathbf{\Sigma}|$ | 平行四边形的标量面积 |
 | **方向** | 垂直于 $\mathbf{A}, \mathbf{B}$ 所在平面，按右手定则确定 |
 
 **为什么需要向量面积？**
 - 在曲面积分中，面积元的**方向**至关重要
-- 通量计算 $\mathbf{A} \cdot d\boldsymbol{\Sigma}$ 依赖于面元与流场的相对取向
+- 通量计算 $\mathbf{A} \cdot d\mathbf{\Sigma}$ 依赖于面元与流场的相对取向
 - 将"面"提升为矢量，使积分具有坐标无关的几何意义
 
 ---
@@ -375,34 +375,34 @@ $$\boldsymbol{\Sigma} = \mathbf{A} \times \mathbf{B}$$
 
 ### 3.1 高斯定理（Gauss's Theorem / Divergence Theorem）
 
-$$\int_{V_3} (\nabla \cdot \mathbf{A})\, dV = \oint_{\partial V_3} \mathbf{A} \cdot d\boldsymbol{\Sigma} \tag{1.28a}$$
+$$\int_{V_3} (\nabla \cdot \mathbf{A})\, dV = \oint_{\partial V_3} \mathbf{A} \cdot d\mathbf{\Sigma} \tag{1.28a}$$
 
 | 符号 | 含义 |
 |:---|:---|
 | $V_3$ | 三维体积区域 |
 | $\partial V_3$ | 区域 $V_3$ 的边界（闭合曲面） |
 | $\nabla \cdot \mathbf{A}$ | 向量场 $\mathbf{A}$ 的**散度**（divergence）：单位体积的"源"强度 |
-| $\mathbf{A} \cdot d\boldsymbol{\Sigma}$ | 向量场穿过面元的**通量**（flux） |
+| $\mathbf{A} \cdot d\mathbf{\Sigma}$ | 向量场穿过面元的**通量**（flux） |
 
 **物理诠释**（PPT图示）：
 - 左图：立方体内各点的散度（正负源）之和
 - 右图：向量场穿过六个面的通量
 - **核心**：内部源的累加 = 边界流出的净通量
 
-> **板书内容**（第二张PPT左侧）：立方体示意图，内部标有 $\nabla \cdot \mathbf{A}$ 的正负源，边界面上标有 $\mathbf{A} \cdot d\boldsymbol{\Sigma}$ 的通量箭头。
+> **板书内容**（第二张PPT左侧）：立方体示意图，内部标有 $\nabla \cdot \mathbf{A}$ 的正负源，边界面上标有 $\mathbf{A} \cdot d\mathbf{\Sigma}$ 的通量箭头。
 
 ---
 
 ### 3.2 斯托克斯定理（Stokes's Theorem）
 
-$$\int_{V_2} (\nabla \times \mathbf{A}) \cdot d\boldsymbol{\Sigma} = \oint_{\partial V_2} \mathbf{A} \cdot d\mathbf{l} \tag{1.28b}$$
+$$\int_{V_2} (\nabla \times \mathbf{A}) \cdot d\mathbf{\Sigma} = \oint_{\partial V_2} \mathbf{A} \cdot d\mathbf{l} \tag{1.28b}$$
 
 | 符号 | 含义 |
 |:---|:---|
 | $V_2$ | 二维曲面区域（可弯曲！） |
 | $\partial V_2$ | 曲面 $V_2$ 的边界闭合曲线 |
 | $\nabla \times \mathbf{A}$ | 向量场 $\mathbf{A}$ 的**旋度**（curl）：单位面积的"涡旋"强度 |
-| $(\nabla \times \mathbf{A}) \cdot d\boldsymbol{\Sigma}$ | 旋度垂直于面元的分量 |
+| $(\nabla \times \mathbf{A}) \cdot d\mathbf{\Sigma}$ | 旋度垂直于面元的分量 |
 | $\mathbf{A} \cdot d\mathbf{l}$ | 向量场沿路径的**环量**（circulation） |
 
 **物理诠释**（PPT图示）：
@@ -418,7 +418,7 @@ $$\int_{V_2} (\nabla \times \mathbf{A}) \cdot d\boldsymbol{\Sigma} = \oint_{\par
 
 ### 4.1 电荷守恒的积分形式
 
-$$\frac{d}{dt}\int_{V_3} \rho_e \, dV + \oint_{\partial V_3} \mathbf{j} \cdot d\boldsymbol{\Sigma} = 0$$
+$$\frac{d}{dt}\int_{V_3} \rho_e \, dV + \oint_{\partial V_3} \mathbf{j} \cdot d\mathbf{\Sigma} = 0$$
 
 | 符号 | 含义 |
 |:---|:---|
@@ -433,11 +433,11 @@ $$\frac{d}{dt}\int_{V_3} \rho_e \, dV + \oint_{\partial V_3} \mathbf{j} \cdot d\
 
 **第一步**：将时间导数移入积分（固定区域，使用偏导数）
 
-$$\int_{V_3} \frac{\partial \rho_e}{\partial t}\, dV + \oint_{\partial V_3} \mathbf{j} \cdot d\boldsymbol{\Sigma} = 0$$
+$$\int_{V_3} \frac{\partial \rho_e}{\partial t}\, dV + \oint_{\partial V_3} \mathbf{j} \cdot d\mathbf{\Sigma} = 0$$
 
 **第二步**：对面积分应用**高斯定理**
 
-$$\oint_{\partial V_3} \mathbf{j} \cdot d\boldsymbol{\Sigma} = \int_{V_3} (\nabla \cdot \mathbf{j})\, dV$$
+$$\oint_{\partial V_3} \mathbf{j} \cdot d\mathbf{\Sigma} = \int_{V_3} (\nabla \cdot \mathbf{j})\, dV$$
 
 **第三步**：合并为单一体积分
 
@@ -485,7 +485,7 @@ $$\boxed{\frac{\partial \rho_e}{\partial t} + \nabla \cdot \mathbf{j} = 0} \tag{
 | 1.12 | 相关练习 | 巩固积分定理 |
 
 **习题1.11的物理内涵**：法拉第定律的积分形式
-$$\oint_{\partial S} \mathbf{E} \cdot d\mathbf{l} = -\frac{d}{dt}\int_S \mathbf{B} \cdot d\boldsymbol{\Sigma}$$
+$$\oint_{\partial S} \mathbf{E} \cdot d\mathbf{l} = -\frac{d}{dt}\int_S \mathbf{B} \cdot d\mathbf{\Sigma}$$
 正是斯托克斯定理的直接应用——左边是电场环量，右边是磁通量变化，建立了"涡旋电场"与"变化磁场"的联系，是麦克斯韦方程组的关键一环。
 
 ---

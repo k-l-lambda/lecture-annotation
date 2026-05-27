@@ -83,7 +83,7 @@ $$\psi=Ce^{-\mathrm{i}Et/\hbar},$$
 
 614 形组合，每个能量本征值都应当是正的。这样，任何“体面的”波函数都应具有这种至关重要的正频率特性。在我看来，基本的物理要求与优美的数学性质这两方面的显著的联系，正是高深的数学概念与我们这个宇宙内部机制之间那种深奥的、微妙的、乃至神秘的关系的突出例证。
 
-在非相对论量子力学里，只要哈密顿量是出自合理的物理问题（其中经典能量是正的），作为理论的自然本性，这种正频率要求大都能自动实现。例如，对（正）质量 $\mu$ 的单个的自由的非相对论（无自旋）粒子情形，其哈密顿量为 $\mathcal{H}=\boldsymbol{p}^2/2\mu$（见 [§20.2](chapter_20.md#202-更为对称的哈密顿图像)，[§21.2](chapter_21.md#212-量子哈密顿量)）。表达式 $\boldsymbol{p}^2$ 以及哈密顿量 $\mathcal{H}$ 本身是所谓“正定的”^3（[§13.8](chapter_13.md#138-正交群), 9）。从经典的观点看，所以如此是因为 $\boldsymbol{p}^2$ 是一平方和，它不可能是负的：$\boldsymbol{p}^2=\boldsymbol{p}\cdot\boldsymbol{p}=(p_1)^2+(p_2)^2+(p_3)^2$。而在量子力学里，我们必须用 $-\mathrm{i}\hbar\boldsymbol{\nabla}$ 取代 $\boldsymbol{p}$，这里 $\boldsymbol{\nabla}=(\partial/\partial x^1,\partial/\partial x^2,\partial/\partial x^3)$，现在“正定性”指的是算符 $-\nabla^2$ 的本征值（对归一化态，就是适当希尔伯特空间 $\mathbf{H}$ 的元素），这些也不可能是负的，其理由与经典情形本质上一样。***^{[24.3]}
+在非相对论量子力学里，只要哈密顿量是出自合理的物理问题（其中经典能量是正的），作为理论的自然本性，这种正频率要求大都能自动实现。例如，对（正）质量 $\mu$ 的单个的自由的非相对论（无自旋）粒子情形，其哈密顿量为 $\mathcal{H}=\mathbf{p}^2/2\mu$（见 [§20.2](chapter_20.md#202-更为对称的哈密顿图像)，[§21.2](chapter_21.md#212-量子哈密顿量)）。表达式 $\mathbf{p}^2$ 以及哈密顿量 $\mathcal{H}$ 本身是所谓“正定的”^3（[§13.8](chapter_13.md#138-正交群), 9）。从经典的观点看，所以如此是因为 $\mathbf{p}^2$ 是一平方和，它不可能是负的：$\mathbf{p}^2=\mathbf{p}\cdot\mathbf{p}=(p_1)^2+(p_2)^2+(p_3)^2$。而在量子力学里，我们必须用 $-\mathrm{i}\hbar\mathbf{\nabla}$ 取代 $\mathbf{p}$，这里 $\mathbf{\nabla}=(\partial/\partial x^1,\partial/\partial x^2,\partial/\partial x^3)$，现在“正定性”指的是算符 $-\nabla^2$ 的本征值（对归一化态，就是适当希尔伯特空间 $\mathbf{H}$ 的元素），这些也不可能是负的，其理由与经典情形本质上一样。***^{[24.3]}
 
 ---
 
@@ -101,7 +101,7 @@ $$\psi=Ce^{-\mathrm{i}Et/\hbar},$$
 
     但引力耦合到能量本身，而不只是能量差。整体加常数会改变等效的引力质量或时空相位积累；若引力场也是动力学的，就不能把这种能量零点简单地重整化掉。
 
-\*\*\*^{[24.3]} 这里，薛定谔方程为 $\partial\psi/\partial t=(\mathrm{i}\hbar/2\mu)\nabla^2\psi$。先来确认：对能量 $E$ 的能量本征态，我们有 $-\nabla^2\psi=A\psi$，这里 $A=2\mu\hbar^{-2}E$，然后用格林定理（$\int\bar{\psi}\nabla^2\psi\mathrm{d}^3x=-\int\boldsymbol{\nabla}\bar{\psi}\cdot\boldsymbol{\nabla}\psi\mathrm{d}^3x$）证明，对归一化态，$A$ 必为正值。（相反，下述事实也是正确的：对正的 $A$，$-\nabla^2\psi=A\psi$ 有多个解，在变量趋于无穷时这些解趋于零，以保证模 $\|\psi\|$ 有限，^4 只要我们愿意，可将其归一化到 $\|\psi\|=1$。）并说明如何从外运算基本定理导出格林定理。
+\*\*\*^{[24.3]} 这里，薛定谔方程为 $\partial\psi/\partial t=(\mathrm{i}\hbar/2\mu)\nabla^2\psi$。先来确认：对能量 $E$ 的能量本征态，我们有 $-\nabla^2\psi=A\psi$，这里 $A=2\mu\hbar^{-2}E$，然后用格林定理（$\int\bar{\psi}\nabla^2\psi\mathrm{d}^3x=-\int\mathbf{\nabla}\bar{\psi}\cdot\mathbf{\nabla}\psi\mathrm{d}^3x$）证明，对归一化态，$A$ 必为正值。（相反，下述事实也是正确的：对正的 $A$，$-\nabla^2\psi=A\psi$ 有多个解，在变量趋于无穷时这些解趋于零，以保证模 $\|\psi\|$ 有限，^4 只要我们愿意，可将其归一化到 $\|\psi\|=1$。）并说明如何从外运算基本定理导出格林定理。
 
 ??? question "答案 [24.3]"
     能量本征态满足 $\mathcal H\psi=E\psi$，而 $\mathcal H=-(\hbar^2/2\mu)\nabla^2$，所以 $-\nabla^2\psi=(2\mu E/\hbar^2)\psi$。
@@ -165,7 +165,7 @@ $$\mathcal{H} = (\mu^2 + p^2)^{\frac{1}{2}}。$$
 
 ## 24.5 $\partial/\partial t$ 的非不变性
 
-我们知道，在相对论情形里必须采用哈密顿量 $(\mu^2+p^2)^{\frac{1}{2}}$ 的根本原因，是基于这样一个事实：薛定谔方程要用到算符 $\partial/\partial t$（即"关于时间的变化率"），而在相对论里，$\partial/\partial t$ 不是一个不变量，因为时间和空间不能分开来考虑，而是以合二为一的"时空"面貌出现。因此，$\partial/\partial t$ 不是一个基本的"相对论性的不变量"。正如我们在 [§21.3](chapter_21.md#213-薛定谔方程) 看到的，薛定谔方程里的 $\partial/\partial t$ 源自一般的"量子化技巧"，由此，标准的 4 维时空动量 $p_a$（即能量 $E$ 和负的 3 维动量 $-\mathbf{p}$）替换为微分算符 $\mathrm{i}\hbar\partial/\partial x^a$（即能量 $E$ 替换为 $\mathrm{i}\hbar\partial/\partial t$，$-\mathbf{p}$ 替换为 $\mathrm{i}\hbar\boldsymbol{\nabla}$）。因此 $\partial/\partial t$ 的"相对论性非不变性"与能量的非不变性紧密相关。正如 [§18.7](chapter_18.md#187-相对论性能量和角动量) 所显示的那样，在相对论里，能量和动量如同时间和空间的关系一样也是合二为一的。
+我们知道，在相对论情形里必须采用哈密顿量 $(\mu^2+p^2)^{\frac{1}{2}}$ 的根本原因，是基于这样一个事实：薛定谔方程要用到算符 $\partial/\partial t$（即"关于时间的变化率"），而在相对论里，$\partial/\partial t$ 不是一个不变量，因为时间和空间不能分开来考虑，而是以合二为一的"时空"面貌出现。因此，$\partial/\partial t$ 不是一个基本的"相对论性的不变量"。正如我们在 [§21.3](chapter_21.md#213-薛定谔方程) 看到的，薛定谔方程里的 $\partial/\partial t$ 源自一般的"量子化技巧"，由此，标准的 4 维时空动量 $p_a$（即能量 $E$ 和负的 3 维动量 $-\mathbf{p}$）替换为微分算符 $\mathrm{i}\hbar\partial/\partial x^a$（即能量 $E$ 替换为 $\mathrm{i}\hbar\partial/\partial t$，$-\mathbf{p}$ 替换为 $\mathrm{i}\hbar\mathbf{\nabla}$）。因此 $\partial/\partial t$ 的"相对论性非不变性"与能量的非不变性紧密相关。正如 [§18.7](chapter_18.md#187-相对论性能量和角动量) 所显示的那样，在相对论里，能量和动量如同时间和空间的关系一样也是合二为一的。
 
 此外，爱因斯坦的 $E=mc^2$（按约定 $c=1$）告诉我们，能量即质量，质量即能量，因此质量也是"非不变量"。但这是指加和性的"质量"概念 $m$（4 维能量动量矢量的时间分量），它并非粒子本身的内在性质，而是在未必与粒子速度相同的某个参照系下测得的质量。粒子的速度越大，这种"感知的"质量也越大（这确实是 $m$ 不是不变量的一个理由）。粒子的静质量 $\mu$ 倒是个不变量，但麻烦在于它不是加和性的，在粒子转换过程中静质量不守恒，因此我们很难选择一个可与哈密顿量等价的量。不仅如此，$\mu$ 还是能量动量表达式的平方根，就是说（$c=1$）
 
@@ -182,7 +182,7 @@ $$\mu^2=p_ap^a=m^2-p^2,\text{ 即 }\mu=(m^2-p^2)^{\frac{1}{2}},$$
 
 第二十四章 狄拉克电子和反粒子
 
-念，而不是非不变性的能量分量 $m$。应用于平方静能量（即 $\mu^2 = m^2 - p^2$）的量子化技巧（即用 $m$ 替换为 $\mathrm{i}\hbar \partial/\partial t$，$\mathbf{p}$ 替换为 $-\mathrm{i}\hbar \boldsymbol{\nabla}$）提供的是闵可夫斯基坐标 $(t, x, y, z)$ 下 $(\mathrm{i}\hbar)^2$ 倍的算符^5
+念，而不是非不变性的能量分量 $m$。应用于平方静能量（即 $\mu^2 = m^2 - p^2$）的量子化技巧（即用 $m$ 替换为 $\mathrm{i}\hbar \partial/\partial t$，$\mathbf{p}$ 替换为 $-\mathrm{i}\hbar \mathbf{\nabla}$）提供的是闵可夫斯基坐标 $(t, x, y, z)$ 下 $(\mathrm{i}\hbar)^2$ 倍的算符^5
 
 $$\square = \left(\frac{\partial}{\partial t}\right)^2 - \nabla^2 = \left(\frac{\partial}{\partial t}\right)^2 - \left(\frac{\partial}{\partial x}\right)^2 - \left(\frac{\partial}{\partial y}\right)^2 - \left(\frac{\partial}{\partial z}\right)^2$$
 
@@ -215,21 +215,21 @@ $$\left(\mathbf{i}\frac{\partial}{\partial x}+\mathbf{j}\frac{\partial}{\partial
 
 $$\square=\left(\frac{\partial}{\partial x}\right)^{2}-\nabla^{2}。$$
 
-因此我们用“洛伦兹型”克利福德代数元 $\boldsymbol{\gamma}_{0},\cdots,\boldsymbol{\gamma}_{3}$，它们满足
+因此我们用“洛伦兹型”克利福德代数元 $\mathbf{\gamma}_{0},\cdots,\mathbf{\gamma}_{3}$，它们满足
 
-$$\boldsymbol{\gamma}_{0}^{2}=1,\boldsymbol{\gamma}_{1}^{2}=-1,\boldsymbol{\gamma}_{2}^{2}=-1,\boldsymbol{\gamma}_{3}^{2}=-1。$$
+$$\mathbf{\gamma}_{0}^{2}=1,\mathbf{\gamma}_{1}^{2}=-1,\mathbf{\gamma}_{2}^{2}=-1,\mathbf{\gamma}_{3}^{2}=-1。$$
 
-在标准的（符号差++…+）克利福德代数里，上述每一个平方项均为−1。这里，我按照标准的物理学家的习惯来处理符号，因此作为空间量的 $\boldsymbol{\gamma}$ 仍保留克利福德原初的负平方形式。¹⁰ 而时间量的 $\boldsymbol{\gamma}_{0}$ 则取正平方。正是在这种意义上，狄拉克的克利福德代数是“洛伦兹型”的。对不同的 $\boldsymbol{\gamma}$，克利福德代数的反对易性质仍成立（[§11.5](chapter_11.md#115-克利福德代数)）：
+在标准的（符号差++…+）克利福德代数里，上述每一个平方项均为−1。这里，我按照标准的物理学家的习惯来处理符号，因此作为空间量的 $\mathbf{\gamma}$ 仍保留克利福德原初的负平方形式。¹⁰ 而时间量的 $\mathbf{\gamma}_{0}$ 则取正平方。正是在这种意义上，狄拉克的克利福德代数是“洛伦兹型”的。对不同的 $\mathbf{\gamma}$，克利福德代数的反对易性质仍成立（[§11.5](chapter_11.md#115-克利福德代数)）：
 
-$$\boldsymbol{\gamma}_{i}\boldsymbol{\gamma}_{j}=-\boldsymbol{\gamma}_{j}\boldsymbol{\gamma}_{i}(i\neq j)。$$
+$$\mathbf{\gamma}_{i}\mathbf{\gamma}_{j}=-\mathbf{\gamma}_{j}\mathbf{\gamma}_{i}(i\neq j)。$$
 
 620 狄拉克采取的关键步骤，是通过这些克利福德元将波算符定义为一阶算符的平方\*⁽²⁴˙⁵⁾
 
-$$\square=(\boldsymbol{\gamma}_{0}\partial/\partial t-\boldsymbol{\gamma}_{1}\partial/\partial x-\boldsymbol{\gamma}_{2}\partial/\partial y-\boldsymbol{\gamma}_{3}\partial/\partial z)^{2}。$$
+$$\square=(\mathbf{\gamma}_{0}\partial/\partial t-\mathbf{\gamma}_{1}\partial/\partial x-\mathbf{\gamma}_{2}\partial/\partial y-\mathbf{\gamma}_{3}\partial/\partial z)^{2}。$$
 
-我们可利用矢量形式 $\boldsymbol{\gamma}=(\boldsymbol{\gamma}_{1},\boldsymbol{\gamma}_{2},\boldsymbol{\gamma}_{3})$ 将上式更简洁地写成
+我们可利用矢量形式 $\mathbf{\gamma}=(\mathbf{\gamma}_{1},\mathbf{\gamma}_{2},\mathbf{\gamma}_{3})$ 将上式更简洁地写成
 
-$$\square=(\boldsymbol{\gamma}_{0}\partial/\partial t-\boldsymbol{\gamma}\cdot\boldsymbol{\nabla})^{2}，$$
+$$\square=(\mathbf{\gamma}_{0}\partial/\partial t-\mathbf{\gamma}\cdot\mathbf{\nabla})^{2}，$$
 
 或
 
@@ -237,11 +237,11 @@ $$\square=\not\partial^{2}，$$
 
 这里量
 
-$$\not\partial=\boldsymbol{\gamma}_{0}\partial/\partial t-\boldsymbol{\gamma}\cdot\boldsymbol{\nabla}=\boldsymbol{\gamma}^{a}\partial/\partial x_{a}$$
+$$\not\partial=\mathbf{\gamma}_{0}\partial/\partial t-\mathbf{\gamma}\cdot\mathbf{\nabla}=\mathbf{\gamma}^{a}\partial/\partial x_{a}$$
 
-（$\boldsymbol{\gamma}^{a}=g^{ab}\boldsymbol{\gamma}_{b}$）称为狄拉克算符。这个简约的“斜杠”记号是理查德·费恩曼引入的。推而广之，矢量 $A^{a}$ 可用克利福德–狄拉克代数元
+（$\mathbf{\gamma}^{a}=g^{ab}\mathbf{\gamma}_{b}$）称为狄拉克算符。这个简约的“斜杠”记号是理查德·费恩曼引入的。推而广之，矢量 $A^{a}$ 可用克利福德–狄拉克代数元
 
-$$\not A=\boldsymbol{\gamma}_{a}A^{a}$$
+$$\not A=\mathbf{\gamma}_{a}A^{a}$$
 
 ---
 
@@ -272,9 +272,9 @@ $$\hbar\not\partial\psi = -\mathrm{i}\mu\psi.$$
 
 狄拉克方程优于波方程就在于它是关于一阶 $\partial/\partial t$ 的方程。的确，狄拉克方程可以重写成薛定谔方程的形式 *〔24.6〕
 
-$$\mathrm{i}\hbar\frac{\partial\psi}{\partial t} = \left(\mathrm{i}\hbar\gamma_0\boldsymbol{\gamma}\cdot\boldsymbol{\nabla} + \gamma_0\mu\right)\psi,$$
+$$\mathrm{i}\hbar\frac{\partial\psi}{\partial t} = \left(\mathrm{i}\hbar\gamma_0\mathbf{\gamma}\cdot\mathbf{\nabla} + \gamma_0\mu\right)\psi,$$
 
-这里 $\mathrm{i}\hbar\gamma_0\boldsymbol{\gamma}\cdot\boldsymbol{\nabla} + \gamma_0\mu$ 起着哈密顿算符的作用。从算符 $\partial/\partial t$ 分离出的单个的量自然不具有相对论不变性，但整个狄拉克方程 $\not\partial/\psi = -\mathrm{i}M\psi$ 是相对论不变的。（为了看清这一点，我们需要对克利福德代数元与洛伦兹变换之间的相互作用做仔细的检查。***〔24.7〕令当时的物理学家大为吃惊的是，从中可知，相对论性不变量居然可以出现在矢量/张量运算的标准框架之外（12 章和 14 章）。）狄拉克有效地开创了一种全新的强有力的形式体系，我们现在称之为旋量运算，^11^这是一种超乎当时传统意义上矢量/张量运算的计算方式。
+这里 $\mathrm{i}\hbar\gamma_0\mathbf{\gamma}\cdot\mathbf{\nabla} + \gamma_0\mu$ 起着哈密顿算符的作用。从算符 $\partial/\partial t$ 分离出的单个的量自然不具有相对论不变性，但整个狄拉克方程 $\not\partial/\psi = -\mathrm{i}M\psi$ 是相对论不变的。（为了看清这一点，我们需要对克利福德代数元与洛伦兹变换之间的相互作用做仔细的检查。***〔24.7〕令当时的物理学家大为吃惊的是，从中可知，相对论性不变量居然可以出现在矢量/张量运算的标准框架之外（12 章和 14 章）。）狄拉克有效地开创了一种全新的强有力的形式体系，我们现在称之为旋量运算，^11^这是一种超乎当时传统意义上矢量/张量运算的计算方式。
 
 排除讨厌的平方根同时保留相对论不变性的"代价"，是产生了这些奇怪的非对易的克利福德代数元 $\gamma_a$。它们有什么意义呢？我们说，我们得把它们看作是作用在波函数上的算符。由于这些特殊的算符是新事物，不是像我们以前处理的那样直接产生于粒子的（非对易的）位置和动量量子变量，因此它们应当表示的是（和作用于）粒子的某些新的自由度。我们必须搞清楚这些新自由度能够担当的物理目的是什么。用当今的术语来表达，这个答案就是"旋量"——描述电子自旋的新自由度。^12^由 [§11.5](chapter_11.md#115-克利福德代数) 我们知道："旋量可看成是克利福德代数元算符的作用对象"。在狄
 
@@ -285,7 +285,7 @@ $$\mathrm{i}\hbar\frac{\partial\psi}{\partial t} = \left(\mathrm{i}\hbar\gamma_0
 ??? question "答案 [24.6]"
     令狄拉克方程写成 $\not\partial\psi=-iM\psi$。把时间项从 $\not\partial$ 中分离出来，并用适当的 $\gamma_0$ 左乘，就可把它改写为 $i\hbar\partial_t\psi=H\psi$ 的薛定谔形式。
 
-    整理空间导数项得到的哈密顿量正是正文所写的 $i\hbar\gamma_0\boldsymbol{\gamma}\cdot\boldsymbol{\nabla}+\gamma_0\mu$（依单位和符号约定可有等价变形）。因此狄拉克方程既是相对论协变的一阶方程，也可在选定时间坐标后写成哈密顿演化方程。
+    整理空间导数项得到的哈密顿量正是正文所写的 $i\hbar\gamma_0\mathbf{\gamma}\cdot\mathbf{\nabla}+\gamma_0\mu$（依单位和符号约定可有等价变形）。因此狄拉克方程既是相对论协变的一阶方程，也可在选定时间坐标后写成哈密顿演化方程。
 ***〔24.7〕解释这一点。提示：将练习〔22.18〕一般化。
 
 ??? question "答案 [24.7]"
@@ -415,7 +415,7 @@ $$1.0011596521188\cdots$$
 
 24.12　“旋量”这个术语显然是 Paul Ehrenfest 在给 Bartel van der Waerden 的一封信里提出的。
 
-24.13　增加的项为 $\mathrm{i}e\slashed{A}$，这里 $\slashed{A}=g^{ab}A_a\gamma_b$，$A_a$ 是电磁势，这相当于用 $\boldsymbol{\partial}-\mathrm{i}e\slashed{A}$ 取代 $\boldsymbol{\partial}$ 算符。\**[24.10]
+24.13　增加的项为 $\mathrm{i}e\slashed{A}$，这里 $\slashed{A}=g^{ab}A_a\gamma_b$，$A_a$ 是电磁势，这相当于用 $\mathbf{\partial}-\mathrm{i}e\slashed{A}$ 取代 $\mathbf{\partial}$ 算符。\**[24.10]
 
 **[§24.7](#247-狄拉克方程)**
 

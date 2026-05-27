@@ -357,9 +357,9 @@ $$\psi = z_1 e_1 + z_2 e_2 + z_3 e_3 + \cdots,$$
 
 对于本征态不是归一化的位置算符或动量算符情形，找到粒子的概率为零。这个答案之所以"正确"，是因为位置或动量取任何具体值的概率的确为零（位置和动量都是连续参数）。于是我们得考虑用其他可观察量，例如我们可以这样来提出问题："这个位置是否处在某个取值范围内？"对动量（或任何其他连续的可观察量）也可以提出类似问题。这种所谓 YES/NO 问题可通过譬如说令 YES 对应于本征值 1、NO 对应于本征值 0 而被结合到量子形式体系里，用来描述它的可观察量称之为投影算符。
 
-投影算符 $\boldsymbol{E}$ 具有自共轭和等于自身平方的性质 $^{**}[22.13]$
+投影算符 $\mathbf{E}$ 具有自共轭和等于自身平方的性质 $^{**}[22.13]$
 
-$$\boldsymbol{E}^2 = \boldsymbol{E} = \boldsymbol{E}^*.$$
+$$\mathbf{E}^2 = \mathbf{E} = \mathbf{E}^*.$$
 
 ---
 
@@ -372,19 +372,19 @@ $^{**}[22.13]$ 证明：如果可观察量 $Q$ 满足某个多项式方程，那
 
 这一点提供了一种最基本的测量。对量子力学里由测量引起的一系列问题，我们都可以用它来解决。但在进行 YES/NO 测量时，有一个问题变得突出了，那就是（大于二维情形下）这些算符是简并的。我们说 $Q$ 关于某个本征值 $q$ 是简并的，是指 $q$ 所对应的本征矢空间大于一维，即对同一个本征值 $q$，存在 $Q$ 的非比例本征矢（[§13.5](chapter_13.md#135-本征值与本征矢量)）。由相同本征值 $q$ 的所有本征矢组成的 $\mathbf{H}$ 的整个线性子空间，就是 $q$ 所对应的 $Q$ 的本征空间。在此情形下，测量得到的“结果”（即本征值的确定）本身并不能告诉我们将要“跳变”到哪个态。这个问题是通过所谓投影公设来解决的，这条投影公设认为，我们可将作为测量结果的态正交投影到 $q$ 所对应的 $Q$ 的本征空间上。^{13}实际上，这条“投影公设”经常被用作为 [§22.1](#221-量子步骤-u-和-r) 所说的标准的量子力学处理（正如冯·诺伊曼清楚表明的那样^{14}），就是说，对可观察量 $Q$ 进行测量的结果，就是使态跳变到本次测量得到的本征值所对应的 $Q$ 的某个本征态。在本节和下一节，我将反复强调简并本征值情形下这条公设的投影性质的重要性。^{15}
 
-表示这种投影的最好方式就是运用适当的投影算符 $\boldsymbol{E}$，这种算符对应于 YES 本征值 1 的本征空间等同于 $q$ 所对应的 $Q$ 的本征空间。（这一点总是能做到的，$\boldsymbol{E}$ 所提出的问题比 $Q$ 所提出的更基本：“$q$ 是 $Q$ 测量的结果吗？”）因此，投影公设所陈述的是：测量的结果（不论是由 $Q$ 得到的 $q$，还是由 $\boldsymbol{E}$ 得到的 1）为
+表示这种投影的最好方式就是运用适当的投影算符 $\mathbf{E}$，这种算符对应于 YES 本征值 1 的本征空间等同于 $q$ 所对应的 $Q$ 的本征空间。（这一点总是能做到的，$\mathbf{E}$ 所提出的问题比 $Q$ 所提出的更基本：“$q$ 是 $Q$ 测量的结果吗？”）因此，投影公设所陈述的是：测量的结果（不论是由 $Q$ 得到的 $q$，还是由 $\mathbf{E}$ 得到的 1）为
 
-$$|\psi\rangle \quad \text{跳变到} \quad \boldsymbol{E}|\psi\rangle。$$
+$$|\psi\rangle \quad \text{跳变到} \quad \mathbf{E}|\psi\rangle。$$
 
 这里不用担心归一化问题。如果我们要求结果态归一化，我们可以让 $|\psi\rangle$ 跳变到看上去更凌乱的
 
-$$\boldsymbol{E}|\psi\rangle\langle\psi|\boldsymbol{E}|\psi\rangle^{-1/2}。$$
+$$\mathbf{E}|\psi\rangle\langle\psi|\mathbf{E}|\psi\rangle^{-1/2}。$$
 
 但在这里，我倒觉得不作归一化更方便，这样可以使公式看起来更简洁。
 
-图 22.4 在希尔伯特空间 $\mathbf{H}$ 内展示了投影公设的几何性质。我们注意到，如果我们用 $\boldsymbol{I}-\boldsymbol{E}$（也是算符）取代 $\boldsymbol{E}$，则 YES 和 NO 本征空间正好交换。（这里 $\boldsymbol{I}$ 是 $\mathbf{H}$ 上的恒等算符。）因此，如果 $\boldsymbol{E}$ 测量得到的结果是 0，则 $|\psi\rangle$ 跳变到 $(\boldsymbol{I}-\boldsymbol{E})|\psi\rangle$（$=|\psi\rangle-\boldsymbol{E}|\psi\rangle$）。注意，$|\psi\rangle$ 是两个态 $\boldsymbol{E}|\psi\rangle$ 和 $(\boldsymbol{I}-\boldsymbol{E})|\psi\rangle$ 的和，他们彼此正交，*^{[22.14]}而且测量 $\boldsymbol{E}$ 决定着二者之一，YES 对应于前者，NO 对应于后者：
+图 22.4 在希尔伯特空间 $\mathbf{H}$ 内展示了投影公设的几何性质。我们注意到，如果我们用 $\mathbf{I}-\mathbf{E}$（也是算符）取代 $\mathbf{E}$，则 YES 和 NO 本征空间正好交换。（这里 $\mathbf{I}$ 是 $\mathbf{H}$ 上的恒等算符。）因此，如果 $\mathbf{E}$ 测量得到的结果是 0，则 $|\psi\rangle$ 跳变到 $(\mathbf{I}-\mathbf{E})|\psi\rangle$（$=|\psi\rangle-\mathbf{E}|\psi\rangle$）。注意，$|\psi\rangle$ 是两个态 $\mathbf{E}|\psi\rangle$ 和 $(\mathbf{I}-\mathbf{E})|\psi\rangle$ 的和，他们彼此正交，*^{[22.14]}而且测量 $\mathbf{E}$ 决定着二者之一，YES 对应于前者，NO 对应于后者：
 
-$$|\psi\rangle = \boldsymbol{E}|\psi\rangle + (\boldsymbol{I}-\boldsymbol{E})|\psi\rangle。$$
+$$|\psi\rangle = \mathbf{E}|\psi\rangle + (\mathbf{I}-\mathbf{E})|\psi\rangle。$$
 
 ![图 22.4 H 内投影公设的几何性质。图中显示了投影算符 E 的本征空间，水平面表示本征值 1（YES），垂直面表示本征值 0（NO）。图中还显示了 |ψ⟩ 到两个正交分量的分解 |ψ⟩ = E|ψ⟩ + (I−E)|ψ⟩，这里 E|ψ⟩ 是 |ψ⟩ 到 YES 空间（测量得到 YES 结果）的投影，(I−E)|ψ⟩ 是 |ψ⟩ 到 NO 空间（测量得到 NO 结果）的投影。每种情形的概率由投影造成 |ψ⟩ 的（哈密顿）平方长度减小的比例因子给出（态矢没有归一化）。](assets/page410_fig01.jpg)
 
@@ -486,15 +486,15 @@ $$|\psi+\rangle = |\tau+\rangle + |\rho-\rangle,$$
 
 $$l_1 l_2 - l_2 l_1 = l_3, \qquad l_2 l_3 - l_3 l_2 = l_1, \qquad l_3 l_1 - l_1 l_3 = l_2。$$
 
-按照量子力学法则，这些关系反映了关于三个轴的角动量分量 $\boldsymbol{L}_1, \boldsymbol{L}_2, \boldsymbol{L}_3$
+按照量子力学法则，这些关系反映了关于三个轴的角动量分量 $\mathbf{L}_1, \mathbf{L}_2, \mathbf{L}_3$
 
-$$\boldsymbol{L}_1 = \mathrm{i}\hbar l_1, \; \boldsymbol{L}_2 = \mathrm{i}\hbar l_2, \; \boldsymbol{L}_3 = \mathrm{i}\hbar l_3$$
+$$\mathbf{L}_1 = \mathrm{i}\hbar l_1, \; \mathbf{L}_2 = \mathrm{i}\hbar l_2, \; \mathbf{L}_3 = \mathrm{i}\hbar l_3$$
 
 之间的联系。于是角动量对易规则为$^{22}$
 
-$$\boldsymbol{L}_1 \boldsymbol{L}_2 - \boldsymbol{L}_2 \boldsymbol{L}_1 = \mathrm{i}\hbar \boldsymbol{L}_3, \; \boldsymbol{L}_2 \boldsymbol{L}_3 - \boldsymbol{L}_3 \boldsymbol{L}_2 = \mathrm{i}\hbar \boldsymbol{L}_1, \; \boldsymbol{L}_3 \boldsymbol{L}_1 - \boldsymbol{L}_1 \boldsymbol{L}_3 = \mathrm{i}\hbar \boldsymbol{L}_2。$$
+$$\mathbf{L}_1 \mathbf{L}_2 - \mathbf{L}_2 \mathbf{L}_1 = \mathrm{i}\hbar \mathbf{L}_3, \; \mathbf{L}_2 \mathbf{L}_3 - \mathbf{L}_3 \mathbf{L}_2 = \mathrm{i}\hbar \mathbf{L}_1, \; \mathbf{L}_3 \mathbf{L}_1 - \mathbf{L}_1 \mathbf{L}_3 = \mathrm{i}\hbar \mathbf{L}_2。$$
 
-和量子力学里其他算符一样，角动量分量 $\boldsymbol{L}_1, \boldsymbol{L}_2, \boldsymbol{L}_3$ 也必须是希尔伯特空间 $\mathbf{H}$ 上的线性算符。因此，具有角动量的量子系统提供了一种 SO(3) 关于 $\mathbf{H}$ 的线性变换的李代数表示（见 [§13.6](chapter_13.md#136-表示理论与李代数)–8, 10, [§14.6](chapter_14.md#146-李导数)）。
+和量子力学里其他算符一样，角动量分量 $\mathbf{L}_1, \mathbf{L}_2, \mathbf{L}_3$ 也必须是希尔伯特空间 $\mathbf{H}$ 上的线性算符。因此，具有角动量的量子系统提供了一种 SO(3) 关于 $\mathbf{H}$ 的线性变换的李代数表示（见 [§13.6](chapter_13.md#136-表示理论与李代数)–8, 10, [§14.6](chapter_14.md#146-李导数)）。
 
 这一点展现了量子力学中最优美和最富启迪的一面，是值得详细研究的一个方面。但此处不
 
@@ -575,7 +575,7 @@ $$\mathbf{J}^2=\mathbf{L}_1^2+\mathbf{L}_2^2+\mathbf{L}_3^2;$$
 
 通向实在之路
 
-描绘量子态，我们通常组成一个对易算符完全集（[§22.12](#2212-相对论性量子角动量)），并找出那些作为集内所有算符本征态的态。对角动量，我们通常取关于垂直（“$z$”）方向的角动量算符 $\boldsymbol{L}_3$ 来伴随 $\boldsymbol{J}^2$。两个“量子数”$j$ 和 $m$ 用来标识这个态，这里 $j(j+1)$ 是 $\boldsymbol{J}^2$ 的本征值，$m$ 是 $\boldsymbol{L}_3$ 的本征值。我们取 $j \geqslant 0$ 并取 $-j \leqslant m \leqslant j$，这里 $j$ 和 $m$ 要么都是半奇数（自旋体情形），要么都是整数。$2j+1$（$n+1$）个不同的 $m$ 值对应于 $\psi_{AB\ldots F}$ 的不同分量。
+描绘量子态，我们通常组成一个对易算符完全集（[§22.12](#2212-相对论性量子角动量)），并找出那些作为集内所有算符本征态的态。对角动量，我们通常取关于垂直（“$z$”）方向的角动量算符 $\mathbf{L}_3$ 来伴随 $\mathbf{J}^2$。两个“量子数”$j$ 和 $m$ 用来标识这个态，这里 $j(j+1)$ 是 $\mathbf{J}^2$ 的本征值，$m$ 是 $\mathbf{L}_3$ 的本征值。我们取 $j \geqslant 0$ 并取 $-j \leqslant m \leqslant j$，这里 $j$ 和 $m$ 要么都是半奇数（自旋体情形），要么都是整数。$2j+1$（$n+1$）个不同的 $m$ 值对应于 $\psi_{AB\ldots F}$ 的不同分量。
 
 对旋量分量而言，垂直方向的选择是任意的，它相当于上/下基（[§22.9](#229-二态系统的黎曼球面) 的 $|\uparrow\rangle$，$|\downarrow\rangle$）的选择。任何其他空间方向都同样可以用来作为“上”方向。偶尔我也会用“$m$ 值”来指其他给定方向（如 [§22.10](#2210-高自旋马约拉纳绘景) 的马约拉纳（Majorana）描述情形）。
 
@@ -738,7 +738,7 @@ $$|\uparrow\uparrow\uparrow\cdots\uparrow\rangle, |\downarrow\uparrow\uparrow\cd
 
 $$|\downarrow\downarrow\uparrow\cdots\uparrow\rangle, \cdots, |\downarrow\downarrow\downarrow\cdots\downarrow\rangle。$$
 
-这 $n+1$ 个态都是可观察量 $\boldsymbol{L}_3$ 的本征态（$x^3$ 轴为"向上"方向），因此彼此正交。它们可通过 $n+1$ 个不同的自旋本征值来区分，这些本征值称为 $m$ 值（[§22.8](#228-自旋和旋量)），分别为 $j, j-1, j-2, \cdots, -j$。在 [§22.11](#2211-球谐函数) 里我们将更仔细地来讨论这一点。
+这 $n+1$ 个态都是可观察量 $\mathbf{L}_3$ 的本征态（$x^3$ 轴为"向上"方向），因此彼此正交。它们可通过 $n+1$ 个不同的自旋本征值来区分，这些本征值称为 $m$ 值（[§22.8](#228-自旋和旋量)），分别为 $j, j-1, j-2, \cdots, -j$。在 [§22.11](#2211-球谐函数) 里我们将更仔细地来讨论这一点。
 
 有一种标准的测量装置，叫施特恩－格拉赫实验仪，它经常被用来测量原子的"$m$值"。这里，我们要求原子具有磁矩（因此它是一个小磁体），磁矩矢量为自旋矢量的若干倍。当这些原子通过一个极不均匀的磁场区时，会发现每个 $m$ 值原子的径迹都有稍许不同，这是因为 $m$ 决定了每个原子的磁矩矢量如何在非均匀磁场中取向，见[图 22.15](assets/page422_fig02.jpg)。
 
@@ -750,7 +750,7 @@ $$|\downarrow\downarrow\uparrow\cdots\uparrow\rangle, \cdots, |\downarrow\downar
 
 ---
 
-***[22.31] 看看你能否用 [§22.9](#229-二态系统的黎曼球面) 的几何性质证明这一点，并用这个结果证明 $\boldsymbol{L}_3$ 的不同本征态之间的正交性。
+***[22.31] 看看你能否用 [§22.9](#229-二态系统的黎曼球面) 的几何性质证明这一点，并用这个结果证明 $\mathbf{L}_3$ 的不同本征态之间的正交性。
 
 ??? question "答案 [22.31]"
     在 Majorana 球面表示中，$L_3$ 的本征态对应点全部堆在南北极的特定组合。不同本征值有不同数目的点位于两极。
@@ -963,19 +963,19 @@ $$S_a=sp_a.$$
 
 外部特征是指它的总体质量/能量、动量、质心位置及其运动以及它的角动量。这里我们是在相对论意义下取这些量，并用 [§22.12](#2212-相对论性量子角动量) 的 $p_a$ 和 $M^{ab}$ 来描述这些外参数。内部机制是指其成分粒子以及它们的性质、它们之间力的性质、以及它们的几何关系。这些关系可由完全相对的^45^性质（例如某个部分相对于质心的距离、各部分之间的夹角以及相对距离等）的广义坐标 $q_r$ 来表示。因此，如果整个对象处于空间或时间上的平移运动，或转过一个有限角度，或沿某方向做匀速运动时，这些内部参量都不会变化。
 
-由于其相对性质，所有内部坐标均不随庞加莱群的对称性变化。因此它们必然与 $p_a$ 和 $M^{ab}$ 对易。为什么呢？假定某个对称算符 $\boldsymbol{S}$ 按下述关系作用到量子系统上：
+由于其相对性质，所有内部坐标均不随庞加莱群的对称性变化。因此它们必然与 $p_a$ 和 $M^{ab}$ 对易。为什么呢？假定某个对称算符 $\mathbf{S}$ 按下述关系作用到量子系统上：
 
-$$|\psi\rangle \mapsto \boldsymbol{S}|\psi\rangle。$$
+$$|\psi\rangle \mapsto \mathbf{S}|\psi\rangle。$$
 
-$\boldsymbol{Q}$ 是某个量子算符，于是，对称算符对 $\boldsymbol{Q}$ 的作用为*^(22.40)^
+$\mathbf{Q}$ 是某个量子算符，于是，对称算符对 $\mathbf{Q}$ 的作用为*^(22.40)^
 
-$$\boldsymbol{Q} \mapsto \boldsymbol{S}\boldsymbol{Q}\boldsymbol{S}^{-1}。$$
+$$\mathbf{Q} \mapsto \mathbf{S}\mathbf{Q}\mathbf{S}^{-1}。$$
 
-如果 $\boldsymbol{Q}$ 在 $\boldsymbol{S}$ 作用下不变化，那么 $\boldsymbol{S}\boldsymbol{Q}\boldsymbol{S}^{-1}=\boldsymbol{Q}$，故
+如果 $\mathbf{Q}$ 在 $\mathbf{S}$ 作用下不变化，那么 $\mathbf{S}\mathbf{Q}\mathbf{S}^{-1}=\mathbf{Q}$，故
 
-$$\boldsymbol{S}\boldsymbol{Q}=\boldsymbol{Q}\boldsymbol{S}。$$
+$$\mathbf{S}\mathbf{Q}=\mathbf{Q}\mathbf{S}。$$
 
-因此，依次取 $\boldsymbol{S}$ 为 $p_a$ 和 $M^{ab}$ 的每一个分量，我们看到，每个内部参数必与 $p_a$ 和 $M^{ab}$ 对易。
+因此，依次取 $\mathbf{S}$ 为 $p_a$ 和 $M^{ab}$ 的每一个分量，我们看到，每个内部参数必与 $p_a$ 和 $M^{ab}$ 对易。
 
 就这里的情形而言，它意味着我们可以将表示内部自由度的波函数与表示外部参量的 4 个动量和 6 个角动量波函数分离开来。在通常处理当中，我们假定系统处于外部可观察量的适当完备系统的本征态。特别是，我们认为能量和动量取确定的本征值，并且，我们通常是在三维动量为零（[§21.5](chapter_21.md#215-理解波粒二象性) 的记法下，$\mathbf{P}=0$）的参照系下进行这些处理的。于是角动量可按照 [§22.8](#228-自旋和旋量)–11 的非相对论情形来处理，这样，我们就可以将系统看成是总角动量 $\mathbf{J}^2$，也就是 $L_3$ 的本征态。
 

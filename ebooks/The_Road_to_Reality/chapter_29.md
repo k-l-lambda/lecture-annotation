@@ -182,19 +182,19 @@ $$\|\psi\| = 1, \|\phi\| = 1, \cdots, \|\chi\| = 1.$$
 
 （由 [§22.3](chapter_22.md#223-幺正结构希尔伯特空间和狄拉克算符) 知，$\|\psi\| = \langle\psi|\psi\rangle$，等等。）于是，我们定义密度矩阵为下述量
 
-$$\boldsymbol{D} = p|\psi\rangle\langle\psi| + q|\phi\rangle\langle\phi| + \cdots + s|\chi\rangle\langle\chi|.$$
+$$\mathbf{D} = p|\psi\rangle\langle\psi| + q|\phi\rangle\langle\phi| + \cdots + s|\chi\rangle\langle\chi|.$$
 
-由 [§22.3](chapter_22.md#223-幺正结构希尔伯特空间和狄拉克算符) 知，左矢 $\langle\psi|$ 是右矢 $|\psi\rangle$ 的哈密顿共轭。量 $|\psi\rangle\langle\psi|$ 是 $|\psi\rangle$ 和 $\langle\psi|$ 之间的张量积（外积），如此等等。在 [§23.8](chapter_23.md#238-玻色子和费米子的量子态) 的指标记法下，我们可将 $\langle\psi|$ 记为 $\bar{\psi}_\alpha$，这里 $\psi^\alpha$ 表示 $|\psi\rangle$。于是 $|\psi\rangle\langle\psi|$ 可以写成 $\psi^\alpha\bar{\psi}_\beta$，等等。相应地，$\boldsymbol{D}$ 本身可表示为指标结构 $D^\alpha{}_\beta$。密度矩阵具有哈密顿量的非负定（[§13.8](chapter_13.md#138-正交群), 9）的代数性质，其迹为 1：
+由 [§22.3](chapter_22.md#223-幺正结构希尔伯特空间和狄拉克算符) 知，左矢 $\langle\psi|$ 是右矢 $|\psi\rangle$ 的哈密顿共轭。量 $|\psi\rangle\langle\psi|$ 是 $|\psi\rangle$ 和 $\langle\psi|$ 之间的张量积（外积），如此等等。在 [§23.8](chapter_23.md#238-玻色子和费米子的量子态) 的指标记法下，我们可将 $\langle\psi|$ 记为 $\bar{\psi}_\alpha$，这里 $\psi^\alpha$ 表示 $|\psi\rangle$。于是 $|\psi\rangle\langle\psi|$ 可以写成 $\psi^\alpha\bar{\psi}_\beta$，等等。相应地，$\mathbf{D}$ 本身可表示为指标结构 $D^\alpha{}_\beta$。密度矩阵具有哈密顿量的非负定（[§13.8](chapter_13.md#138-正交群), 9）的代数性质，其迹为 1：
 
-$$\boldsymbol{D}^* = \boldsymbol{D}, \text{对所有} |\xi\rangle, \text{有} \langle\xi|\boldsymbol{D}|\xi\rangle \geqslant 0, \quad \langle\boldsymbol{D}\rangle = 1,$$
+$$\mathbf{D}^* = \mathbf{D}, \text{对所有} |\xi\rangle, \text{有} \langle\xi|\mathbf{D}|\xi\rangle \geqslant 0, \quad \langle\mathbf{D}\rangle = 1,$$
 
-这里 $\langle\boldsymbol{D}\rangle = \text{迹}\boldsymbol{D} = D^\alpha{}_\alpha$（见 [§13.4](chapter_13.md#134-行列式和迹)）。*^(29.2)
+这里 $\langle\mathbf{D}\rangle = \text{迹}\mathbf{D} = D^\alpha{}_\alpha$（见 [§13.4](chapter_13.md#134-行列式和迹)）。*^(29.2)
 
-这里密度矩阵的角色有点像经典统计力学里经常用到的类似概念，在那里我们并不特别关心系统的精确的（经典）态，而主要是考虑各种经典态的概率分布。系统不是由 $\mathcal{P}$ 中的一点 $P$ 来表示，而是根据 $\mathcal{P}$ 中的分布来表示。如果我们的系统正好有有限个备选的态，^13 其概率分别为 $p, q, \cdots, s$，我们就用 $\mathcal{P}$ 的一个有限个点 $P, Q, \cdots, S$ 的点集来表示这些概率对应的分布，见[图 29.1](assets/page586_fig01.jpg)。在量子物理里，我们在量子系统的希尔伯特空间 $\mathbf{H}$ 上可做同样的事情，这时 $\mathbf{H}$ 就扮演着相空间 $\mathcal{P}$ 的角色。联系到前面所说的密度矩阵 $\boldsymbol{D}$，这时概率分布将由 $\mathbf{H}$ 的有限个点 $P, Q, \cdots, S$ 组成，每一个被赋予相应的概率值 $p, q, \cdots, s$。
+这里密度矩阵的角色有点像经典统计力学里经常用到的类似概念，在那里我们并不特别关心系统的精确的（经典）态，而主要是考虑各种经典态的概率分布。系统不是由 $\mathcal{P}$ 中的一点 $P$ 来表示，而是根据 $\mathcal{P}$ 中的分布来表示。如果我们的系统正好有有限个备选的态，^13 其概率分别为 $p, q, \cdots, s$，我们就用 $\mathcal{P}$ 的一个有限个点 $P, Q, \cdots, S$ 的点集来表示这些概率对应的分布，见[图 29.1](assets/page586_fig01.jpg)。在量子物理里，我们在量子系统的希尔伯特空间 $\mathbf{H}$ 上可做同样的事情，这时 $\mathbf{H}$ 就扮演着相空间 $\mathcal{P}$ 的角色。联系到前面所说的密度矩阵 $\mathbf{D}$，这时概率分布将由 $\mathbf{H}$ 的有限个点 $P, Q, \cdots, S$ 组成，每一个被赋予相应的概率值 $p, q, \cdots, s$。
 
 ![由相空间 $\mathcal{P}$ 表示的经典概率颁布。(a) 对 $\mathcal{P}$ 的一个有限个点 $P, Q, \cdots, S$ 的点集，其概率值 $p, q, \cdots, s$（0 和 1 之间的实数）分别赋给每一点，这里 $p+q+\cdots+s=1$。(b) 具有概率测度（非负实数密度）的连续分布，其积分为 1，分布在 $\mathcal{P}$ 的某个区域。](assets/page586_fig01.jpg)
 
-但这种做法并非通常的量子力学做法，量子力学通常用的是密度矩阵。^14 为什么呢？这是因为在量子力学里，测量（作为量子力学中提出问题的一种方式，这里我们把注意力集中在 YES/NO 问题上）总是表示为某个投影算子 $\boldsymbol{E}$ 对（归一化）态矢 $|\xi\rangle$ 的作用。于是回答 YES 的概率为 **^(29.3)
+但这种做法并非通常的量子力学做法，量子力学通常用的是密度矩阵。^14 为什么呢？这是因为在量子力学里，测量（作为量子力学中提出问题的一种方式，这里我们把注意力集中在 YES/NO 问题上）总是表示为某个投影算子 $\mathbf{E}$ 对（归一化）态矢 $|\xi\rangle$ 的作用。于是回答 YES 的概率为 **^(29.3)
 
 ---
 
@@ -205,7 +205,7 @@ $$\boldsymbol{D}^* = \boldsymbol{D}, \text{对所有} |\xi\rangle, \text{有} \l
 
     因此任意态都可唯一分解为 $|\psi\rangle=\sum_iE_i|\psi\rangle$。各分量的范数平方相加为原态范数平方，因为交叉项 $\langle\psi|E_iE_j|\psi\rangle$ 在 $i\ne j$ 时为零。
 
-\*\* [29.3] 解释为什么，并导出后文的式子 $\langle\boldsymbol{E}\boldsymbol{D}\rangle$。
+\*\* [29.3] 解释为什么，并导出后文的式子 $\langle\mathbf{E}\mathbf{D}\rangle$。
 
 ??? question "答案 [29.3]"
     若先测量对应投影 $D$，后测量对应投影 $E$，则未归一化的连续测量分支为 $ED|\psi\rangle$。其概率为 $\|ED|\psi\rangle\|^2=\langle\psi|D E D|\psi\rangle$。
@@ -221,9 +221,9 @@ $$\boldsymbol{D}^* = \boldsymbol{D}, \text{对所有} |\xi\rangle, \text{有} \l
 
 YES 的概率 = $\langle\xi|E|\xi\rangle$，
 
-由此，对上面用密度矩阵 $\boldsymbol{D}$ 描述的各种可能的态 $|\psi\rangle, |\phi\rangle, \cdots, |\chi\rangle$ 的混合概率，我们写成
+由此，对上面用密度矩阵 $\mathbf{D}$ 描述的各种可能的态 $|\psi\rangle, |\phi\rangle, \cdots, |\chi\rangle$ 的混合概率，我们写成
 
-$$\text{YES 的概率} = \langle\boldsymbol{E}\boldsymbol{D}\rangle.$$
+$$\text{YES 的概率} = \langle\mathbf{E}\mathbf{D}\rangle.$$
 
 它的意义是，为了计算量子力学里标准的 YES/NO 问题的概率（或者说，对于任何其他量子力学可观察量的期望值），我们不必知道这些备选态 $|\psi\rangle, |\phi\rangle, \cdots, |\chi\rangle$ 的分布的全部信息。***〔29.4〕所有所需的信息都保存在密度矩阵里——正如我们将看到的，一个给定的密度矩阵可由许多不同的态的概率分布组成。这个数学概念体现了相当好的经济性和完美性（它是由杰出的匈牙利/美国数学家约翰·冯·诺伊曼（John von Neumann, 1903～1957）于 1932 年提出的）。它将原本似乎是两个不相关的概率概念结合到一个表达式里。一方面，对于态 $|\psi\rangle, |\phi\rangle, \cdots, |\chi\rangle$，我们有通常经典概率值 $p, q, \cdots, s$，另一方面，我们从 [§21.9](chapter_21.md#219-波函数的概率分布) 的平方模法则得到量子概率。密度矩阵则将二者合而为一，并不直接区分彼此。
 
@@ -259,17 +259,17 @@ $$\text{YES 的概率} = \langle\boldsymbol{E}\boldsymbol{D}\rangle.$$
 
 第二十九章 测量疑难
 
-每一种情形我们都取态是正交且归一化的：$\langle\uparrow|\downarrow\rangle=\langle\leftarrow|\rightarrow\rangle=\langle\nwarrow|\searrow\rangle=0$ 且 $\langle\uparrow|\uparrow\rangle=\langle\downarrow|\downarrow\rangle=\cdots=\langle\searrow|\searrow\rangle=1$）。对每一种情形下的密度矩阵 $\boldsymbol{D}$ 有：
+每一种情形我们都取态是正交且归一化的：$\langle\uparrow|\downarrow\rangle=\langle\leftarrow|\rightarrow\rangle=\langle\nwarrow|\searrow\rangle=0$ 且 $\langle\uparrow|\uparrow\rangle=\langle\downarrow|\downarrow\rangle=\cdots=\langle\searrow|\searrow\rangle=1$）。对每一种情形下的密度矩阵 $\mathbf{D}$ 有：
 
-$$\boldsymbol{D}=\frac{1}{2}|\uparrow\rangle\langle\uparrow|+\frac{1}{2}|\downarrow\rangle\langle\downarrow|,$$
+$$\mathbf{D}=\frac{1}{2}|\uparrow\rangle\langle\uparrow|+\frac{1}{2}|\downarrow\rangle\langle\downarrow|,$$
 
-$$\boldsymbol{D}=\frac{1}{2}|\leftarrow\rangle\langle\leftarrow|+\frac{1}{2}|\rightarrow\rangle\langle\rightarrow|,$$
+$$\mathbf{D}=\frac{1}{2}|\leftarrow\rangle\langle\leftarrow|+\frac{1}{2}|\rightarrow\rangle\langle\rightarrow|,$$
 
-$$\boldsymbol{D}=\frac{1}{2}|\nwarrow\rangle\langle\nwarrow|+\frac{1}{2}|\searrow\rangle\langle\searrow|,$$
+$$\mathbf{D}=\frac{1}{2}|\nwarrow\rangle\langle\nwarrow|+\frac{1}{2}|\searrow\rangle\langle\searrow|,$$
 
-密度矩阵的一个显著特点是所有这些 $\boldsymbol{D}$ 均相等。**[29.6]** 自旋测量的所有概率指的都是从上述 $\langle\boldsymbol{E}\boldsymbol{D}\rangle$ 公式得到的值，因此，既然 $\boldsymbol{D}$ 都相等，那么相应的概率必然也都相等。
+密度矩阵的一个显著特点是所有这些 $\mathbf{D}$ 均相等。**[29.6]** 自旋测量的所有概率指的都是从上述 $\langle\mathbf{E}\mathbf{D}\rangle$ 公式得到的值，因此，既然 $\mathbf{D}$ 都相等，那么相应的概率必然也都相等。
 
-但是我们怎么来考虑这些态的概率混合的本体论意义呢？如果我们认为量子态具有某种物理实在，那么这 3 种情形在本体论上必然各不相同。我们说态处于（物理实在上）可能的 $|\uparrow\rangle$ 和 $|\downarrow\rangle$ 之一上是等概率的与说态处于 $|\nwarrow\rangle$ 或 $|\searrow\rangle$ 上是等概率的是完全不同的两回事。然而，这一本体论问题在许多量子力学文献中却是相当混乱的。量子物理学家似乎经常对前述的问题采取非常不同的本体论立场，他们将密度矩阵本身看成是提供了一种比单个的态更好的对实在的描述。他们或许持这样的观点，上述 3 种明显各异的本体论性的 $\boldsymbol{D}$（即备选量子态的 3 种不同概率权重的组合）在物理上是不可分辨的。由此，这些物理学家——常持环境退相关观点 (c) 的那些人——会采取实证主义或实用主义立场，认为对这些差异做出区分毫无意义。这些人的观点是：正是密度矩阵提供了对量子实在的最好的描述。
+但是我们怎么来考虑这些态的概率混合的本体论意义呢？如果我们认为量子态具有某种物理实在，那么这 3 种情形在本体论上必然各不相同。我们说态处于（物理实在上）可能的 $|\uparrow\rangle$ 和 $|\downarrow\rangle$ 之一上是等概率的与说态处于 $|\nwarrow\rangle$ 或 $|\searrow\rangle$ 上是等概率的是完全不同的两回事。然而，这一本体论问题在许多量子力学文献中却是相当混乱的。量子物理学家似乎经常对前述的问题采取非常不同的本体论立场，他们将密度矩阵本身看成是提供了一种比单个的态更好的对实在的描述。他们或许持这样的观点，上述 3 种明显各异的本体论性的 $\mathbf{D}$（即备选量子态的 3 种不同概率权重的组合）在物理上是不可分辨的。由此，这些物理学家——常持环境退相关观点 (c) 的那些人——会采取实证主义或实用主义立场，认为对这些差异做出区分毫无意义。这些人的观点是：正是密度矩阵提供了对量子实在的最好的描述。
 
 的确，在许多场合，“态”这个词经常是指密度矩阵而非更原始的被我一直称之为“量子态”——即用 $|\psi\rangle$ 来描述的量。当“态”被用来指密度矩阵时，则 $|\psi\rangle\langle\psi|$ 这种特定形式的密度矩阵称为“纯态”，而不能表达为这种形式的更一般的密度矩阵则称为“混合态”。在这个意义上，“纯态”指的就是我通常所称的“态”。我个人认为，称一个密度矩阵（纯的或混合的）为“态”很容易让人糊涂，因此我在这儿将不用这种术语。在我看来，“量子态”就是指量子态矢 $|\psi\rangle$，而不是密度矩阵。但有些人喜欢对“量子态”和“量子态矢”这两个名词做出区分，后者指右矢 $|\psi\rangle$，而前者表示 $|\psi\rangle$ 的而非零复倍乘的等价类，即与 $\mathsf{H}$ 的元素 $|\psi\rangle$ 相应的希尔伯特投影空间 $\mathbb{P}\mathsf{H}$ 的元素（见 [§15.6](chapter_15.md#156-射影空间)）。如果我们对 $|\psi\rangle$ 归一化 $\langle\psi|\psi\rangle=1$，那么 $|\psi\rangle$ 的唯一自由度（对 $\mathbb{P}\mathsf{H}$ 的给定点来说）就是相角自由度 $|\psi\rangle\mapsto e^{i\theta}|\psi\rangle$（此处 $\theta$ 是实数），见[图 29.2](assets/page589_fig01.jpg)。“纯态”密度矩阵的概念实际上就等价于这种量子态的“投影”概念，因为 $|\psi\rangle\langle\psi|$ 对这种相角自由度是不变量。因此我们可以合理地认为纯态密度矩阵恰当描述了物理的量子态。
 
@@ -278,7 +278,7 @@ $$\boldsymbol{D}=\frac{1}{2}|\nwarrow\rangle\langle\nwarrow|+\frac{1}{2}|\searro
 **[29.6]** 用 §§ 22.8, 9 和练习 [22.25] 通过明确计算来证明这一点。
 
 ??? question "答案 [29.6]"
-    用二态系统表示，取 $|\uparrow_z\rangle=(1,0)$、$|\downarrow_z\rangle=(0,1)$，沿方向 $\mathbf n$ 的上态投影为 $E_{\mathbf n}=\frac12(I+\mathbf n\cdot\boldsymbol\sigma)$。对 singlet 态计算联合概率得 $P(\text{same})=\frac12\sin^2(\theta/2)$、$P(\text{opposite})=\frac12\cos^2(\theta/2)$。
+    用二态系统表示，取 $|\uparrow_z\rangle=(1,0)$、$|\downarrow_z\rangle=(0,1)$，沿方向 $\mathbf n$ 的上态投影为 $E_{\mathbf n}=\frac12(I+\mathbf n\cdot\mathbf{\sigma})$。对 singlet 态计算联合概率得 $P(\text{same})=\frac12\sin^2(\theta/2)$、$P(\text{opposite})=\frac12\cos^2(\theta/2)$。
 
     对任一单边测量，把另一边结果求和后，局部概率都是 $1/2$。等价地，局部约化密度矩阵为 $I/2$，所以任意方向上的自旋测量概率都相等。
 
@@ -347,7 +347,7 @@ $$a^2+b^2+c^2 \leqslant 1.$$
 
 我们来检验一种特别明确的情形，其中可能态矢的加权概率的总和是以十分自然的方式出现的。这就是 EPR-Bohm 效应（[§23.4](chapter_23.md#234-玻姆型-epr-实验)）中出现的情形。假定在地球和土星的卫星土卫六之间的某个地方——譬如靠近土卫六的三分点的位置上——以总自旋为 0 的组合态发射出一对自旋 $\frac{1}{2}$ 的 EPR 粒子。假定我在土卫六的同事（[§23.4](chapter_23.md#234-玻姆型-epr-实验), 5 中的老相识）在上/下方向上测量接收到的粒子自旋，并在我在地球这端接收到粒子的大约半小时前得到某个结果，而且在我接收到粒子时我没时间收到来自我这位同事的上一次测量的任何信号。（土卫六距地球约 3 小时光程。）我所关心的是我接收到的粒子的自旋是 $|\uparrow\rangle$ 还是 $|\downarrow\rangle$。如果我的同事得到态 $|\downarrow\rangle$，那我的就只能是 $|\uparrow\rangle$；如果我同事的是 $|\uparrow\rangle$，那我的就是 $|\downarrow\rangle$。因为我知道我同事得到 $|\uparrow\rangle$ 或 $|\downarrow\rangle$ 的机会是相等的，故我认为我（在我同事测量的半小时后）得到的粒子必然也是 $\frac{1}{2}$ 概率是 $|\uparrow\rangle$，$\frac{1}{2}$ 概率是 $|\downarrow\rangle$。这样，密度矩阵为
 
-$$\boldsymbol{D} = \frac{1}{2}|\uparrow\rangle\langle\uparrow| + \frac{1}{2}|\downarrow\rangle\langle\downarrow|$$
+$$\mathbf{D} = \frac{1}{2}|\uparrow\rangle\langle\uparrow| + \frac{1}{2}|\downarrow\rangle\langle\downarrow|$$
 
 （$|\uparrow\rangle$ 和 $|\downarrow\rangle$ 取正交归一：$\langle\uparrow|\downarrow\rangle = 0$ 且 $\langle\uparrow|\uparrow\rangle = 1 = \langle\downarrow|\downarrow\rangle$）。
 
@@ -407,7 +407,7 @@ $$L = \frac{1}{3}|\leftarrow\rangle\langle\leftarrow| + \frac{2}{3}|\uparrow\ran
 
 $$L = \begin{pmatrix} \frac{5}{6} & -\frac{1}{6} \\ -\frac{1}{6} & \frac{1}{6} \end{pmatrix}$$
 
-（取 $|\leftarrow\rangle = (|\uparrow\rangle - |\downarrow\rangle)/\sqrt{2}$）。它显然不是等本征值的，两个本征值为 $\frac{1}{2} + \frac{1}{6}\sqrt{5}$ 和 $\frac{1}{2} - \frac{1}{6}\sqrt{5}$。***[29.12] 不论怎样，这个密度矩阵的"$\frac{1}{3}$ 的概率接收到 $|\leftarrow\rangle$，$\frac{2}{3}$ 的概率接收到 $|\uparrow\rangle$"这样的特定本体论远远谈不上是唯一的。例如，从初态 $|\leftarrow\nearrow\rangle$ 的 $\leftarrow$ 和 $\nearrow$ 之间的对称性可以明显看出，如果我的同事选择在 $\nearrow$ 方向而不是左/右（$\leftarrow$ 的方向）测量，那么我自己对密度矩阵 $\boldsymbol{D}$ 的本体的认识就得发生很大变化，它涉及 $|\nearrow\rangle$ 和另一个与之正交的态。对我在土卫六上的同事的每一种可能的测量选择，确实存在着不同的本体论描述。***[29.13]
+（取 $|\leftarrow\rangle = (|\uparrow\rangle - |\downarrow\rangle)/\sqrt{2}$）。它显然不是等本征值的，两个本征值为 $\frac{1}{2} + \frac{1}{6}\sqrt{5}$ 和 $\frac{1}{2} - \frac{1}{6}\sqrt{5}$。***[29.12] 不论怎样，这个密度矩阵的"$\frac{1}{3}$ 的概率接收到 $|\leftarrow\rangle$，$\frac{2}{3}$ 的概率接收到 $|\uparrow\rangle$"这样的特定本体论远远谈不上是唯一的。例如，从初态 $|\leftarrow\nearrow\rangle$ 的 $\leftarrow$ 和 $\nearrow$ 之间的对称性可以明显看出，如果我的同事选择在 $\nearrow$ 方向而不是左/右（$\leftarrow$ 的方向）测量，那么我自己对密度矩阵 $\mathbf{D}$ 的本体的认识就得发生很大变化，它涉及 $|\nearrow\rangle$ 和另一个与之正交的态。对我在土卫六上的同事的每一种可能的测量选择，确实存在着不同的本体论描述。***[29.13]
 
 对于给定的密度矩阵，如果我们将概率混合所涉及的态扩大到 3 个甚至更多，那么就会出现更复杂的本体论情形。这样一种情形也会出现在初态自旋为 $\frac{1}{2}n$（$n>2$）的情形下，这种初态衰
 
@@ -420,7 +420,7 @@ $$L = \begin{pmatrix} \frac{5}{6} & -\frac{1}{6} \\ -\frac{1}{6} & \frac{1}{6} \
 
     由正文引用的哈迪 EPR 关系，远端得到 $|\rightarrow\rangle$ 时，本地剩下 $|\leftarrow\rangle$；远端得到 $|\leftarrow\rangle$ 时，本地剩下 $|\uparrow\rangle$。若不知道远端结果，本地态就是这两种条件态按相应概率形成的混合。
 
-**** [29.12] 推导 $\boldsymbol{L}$ 的这个矩阵形式，验证这些是它的本征值，并找出其本征矢量。如果在图 29.3 的布洛赫球上将点 $\boldsymbol{L}$ 选得与此一致，那么它位于中心外的多远处？
+**** [29.12] 推导 $\mathbf{L}$ 的这个矩阵形式，验证这些是它的本征值，并找出其本征矢量。如果在图 29.3 的布洛赫球上将点 $\mathbf{L}$ 选得与此一致，那么它位于中心外的多远处？
 
 ??? question "答案 [29.12]"
     任意二态密度矩阵可写为 $\rho=\frac12\begin{pmatrix}1+z&x-iy\\x+iy&1-z\end{pmatrix}$，其中 $\mathbf r=(x,y,z)$ 是布洛赫向量。对正文给出的混合，把 $|\leftarrow\rangle=(|\uparrow\rangle-|\downarrow\rangle)/\sqrt2$ 代入并相加，就得到相应的 $2\times2$ 矩阵。
@@ -482,13 +482,13 @@ $$D_{\alpha}^{\beta}=\bar{\psi}_{\alpha\rho}\psi^{\beta\rho}$$
 上述考虑可看成是我们研究环境退相关观点(c)的"序言"，这种观点仍认为，出现态收缩 **R** 是可以理解的，因为所考虑的量子系统不可避免地与环境纠缠在一起。为了运用这些观点，我们将系统本身看成是"这里"部分，环境视为"那里"部分，并将环境看成是极为复杂且本质上是"随机的"，这样，实际上不存在可行的抽取总量子态中环境"那"部分信息的方法。我们能做的是对环境中"未知态求和"来得到对态的"这"部分的密度矩阵描述。这方面的大部分工作都是有关如何通过"合理的"方法来模拟环境的，于是在很短的时间周期里（甚至对中度"噪声"的环境而言），密度矩阵在很高的近似程度上变成对角的：
 
 $$
-\boldsymbol{D} = \begin{pmatrix} p_1 & 0 & \cdots & 0 \\ 0 & p_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & p_n \end{pmatrix}
+\mathbf{D} = \begin{pmatrix} p_1 & 0 & \cdots & 0 \\ 0 & p_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & p_n \end{pmatrix}
 $$
 
 这里是根据某种特别有意思的基 $|1\rangle, |2\rangle, \cdots, |n\rangle$ 给出的表达式。**[29.15]** 它可以理解成相应于对角元的那些特定基态的概率混合
 
 $$
-\boldsymbol{D} = p_1|1\rangle\langle 1| + p_2|2\rangle\langle 2| + \cdots + p_n|n\rangle\langle n|.
+\mathbf{D} = p_1|1\rangle\langle 1| + p_2|2\rangle\langle 2| + \cdots + p_n|n\rangle\langle n|.
 $$
 
 这个概率混合可看成是态收缩过程 **R** 中出现的各种可能的反映，每个结果出现的概率相应于数 $p_1, p_2, \cdots, p_n$。
