@@ -46,7 +46,7 @@
 
     if (window.matchMedia("(max-width: 700px)").matches) {
       left = (window.innerWidth - width) / 2;
-      top = window.innerHeight - height - margin;
+      top = (window.innerHeight - height) / 2;
     } else if (top + height > window.innerHeight - margin) {
       top = rect.top - height - margin;
     }
@@ -64,6 +64,11 @@
     activeLink = link;
     previewImage.src = link.href;
     previewImage.alt = link.textContent.trim() || link.getAttribute("aria-label") || "图片预览";
+    previewImage.onload = function () {
+      if (activeLink === link) {
+        positionPreview(link);
+      }
+    };
     preview.setAttribute("aria-hidden", "false");
     preview.classList.add("ebook-image-preview--visible");
 
