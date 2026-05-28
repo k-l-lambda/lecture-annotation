@@ -188,7 +188,7 @@ $$12\nabla_a\{\xi^b\lambda_{bc[d}^{(e}D_{gh]}^{f)c}\} \longrightarrow$$
 
 **图 14.6** 在图示记法里，协变微分可以方便地标记为绕被微分的量画的一个环。这里以张量的莱布尼茨法则应用 $\nabla_a\{\xi^b\lambda_{bc[d}^{(e}D_{gh]}^{f)c}\}$ 为例展示了这一点（见图 12.17）。（反对称因子给出"12"。）
 
-所有这些性质在"坐标导数"算子 $\partial/\partial x^a$ 取代 $\nabla_a$ 时也是正确的。事实上，在任一坐标拼块上，我们可以用 $\partial/\partial x^a$ 来定义这个拼块上的具体联络，我称它为坐标联络。它不是一种非常令人感兴趣的联络，因为坐标是任意的。（它提供了一种"平行"概念，这个概念把所有坐标线视为"平行"。）在两个坐标拼块的重叠处，由其中一个拼块的坐标定义的联络通常与另一个拼块定义的联络不一致（见[图 14.1](assets/page232_fig01.jpg)）。尽管坐标联络不"令人感兴趣"（物理上肯定没意思），但它在阐明表达式时常常是很有用的。原因得牵涉到这样一种事实：如果我们在两个联络之间取差分，这个差分对某个张量 $\mathbf{T}$ 的作用总可以根据 $\mathbf{T}$ 和一个确定的价 $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 的张量 $\mathbf{\Gamma}$ 用完全代数的形式（即不用微分）表达出来。***[14.5] 这使我们能够将 $\nabla$ 对 $\mathbf{T}$ 的作用清楚地表示为分量 $T_{a\cdots f}^{c\cdots i}$ 的坐标导数^2 加上某些涉及分量 $\Gamma_{bc}^a$ 的附加项。***[14.6]
+所有这些性质在"坐标导数"算子 $\partial/\partial x^a$ 取代 $\nabla_a$ 时也是正确的。事实上，在任一坐标拼块上，我们可以用 $\partial/\partial x^a$ 来定义这个拼块上的具体联络，我称它为坐标联络。它不是一种非常令人感兴趣的联络，因为坐标是任意的。（它提供了一种"平行"概念，这个概念把所有坐标线视为"平行"。）在两个坐标拼块的重叠处，由其中一个拼块的坐标定义的联络通常与另一个拼块定义的联络不一致（见[图 14.1](assets/page232_fig01.jpg)）。尽管坐标联络不"令人感兴趣"（物理上肯定没意思），但它在阐明表达式时常常是很有用的。原因得牵涉到这样一种事实：如果我们在两个联络之间取差分，这个差分对某个张量 $\mathbf{T}$ 的作用总可以根据 $\mathbf{T}$ 和一个确定的价 $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 的张量 $\mathbf{\Gamma}$ 用完全代数的形式（即不用微分）表达出来。***[14.5] 这使我们能够将 $\nabla$ 对 $\mathbf{T}$ 的作用清楚地表示为分量 $T_{a\cdots f}^{c\cdots i}$ 的坐标导数^2^ 加上某些涉及分量 $\Gamma_{bc}^a$ 的附加项。***[14.6]
 
 ## 14.4 曲率和挠率
 
@@ -495,7 +495,7 @@ $$[\mathbf{\xi},[\mathbf{\eta},\mathbf{\zeta}]]+[\mathbf{\eta},[\mathbf{\zeta},\
 
 $$x = \mathrm{e}^{\mathbf{\xi}} = \mathbf{I} + \mathbf{\xi} + \frac{1}{2}\mathbf{\xi}^2 + \frac{1}{6}\mathbf{\xi}^3 + \cdots.$$
 
-这里 $\mathbf{\xi}^2$ 指"两次运用 $\mathbf{\xi}$ 的二阶导数算子"，余类推（$\mathbf{I}$ 是单位算子）。它本质上就是 [§6.4](chapter_06.md#64-欧拉的-函数概念) 里描述的泰勒定理。***[14.18] 于是，两个有限群元素 $x$ 和 $y$ 的积可从表达式 $\mathrm{e}^{\mathbf{\xi}}\mathrm{e}^{\mathbf{\eta}}$ 得到。它不同于完全由 $\mathbf{\xi}$ 和 $\mathbf{\eta}$ 李代数表达式^6 构建的表式 $\mathrm{e}^{\mathbf{\xi}+\mathbf{\eta}}$（与 [§5.3](chapter_05.md#53-多值性自然对数) 比较）。
+这里 $\mathbf{\xi}^2$ 指"两次运用 $\mathbf{\xi}$ 的二阶导数算子"，余类推（$\mathbf{I}$ 是单位算子）。它本质上就是 [§6.4](chapter_06.md#64-欧拉的-函数概念) 里描述的泰勒定理。***[14.18] 于是，两个有限群元素 $x$ 和 $y$ 的积可从表达式 $\mathrm{e}^{\mathbf{\xi}}\mathrm{e}^{\mathbf{\eta}}$ 得到。它不同于完全由 $\mathbf{\xi}$ 和 $\mathbf{\eta}$ 李代数表达式^6^ 构建的表式 $\mathrm{e}^{\mathbf{\xi}+\mathbf{\eta}}$（与 [§5.3](chapter_05.md#53-多值性自然对数) 比较）。
 
 有必要指出，这种指数化运算 $\mathrm{e}^{\mathbf{\xi}}$ 也可以用于一般流形 $\mathcal{M}$ 内的矢量场 $\mathbf{\xi}$（假定这里 $\mathcal{M}$ 和 $\mathbf{\xi}$ 都是解析的——即 $\mathrm{C}^\omega$ 光滑的，见 [§6.4](chapter_06.md#64-欧拉的-函数概念)）。由 [§12.3](chapter_12.md#123-标量矢量和余矢量)（和[图 10.6](assets/page153_fig01.jpg)）我们知道，当 $\varepsilon$ 取得很小时，$\varepsilon\mathbf{\xi}(\varPhi)$ 度量的是标量场 $\varPhi$ 在表示 $\varepsilon\mathbf{\xi}$ 的"箭头"方向上的增量 $O(\varepsilon)$。说得更准确点儿，量 $\mathrm{e}^{\mathrm{t}\mathbf{\xi}}(\varPhi)$ 度量的是我们从起点 $O$ 跟随"$\mathbf{\xi}$ 箭头"到由参数值 $u=t$ 给定的终点所取得的总值 $\varPhi$，这里参数 $u$ 是满足 $\mathbf{\xi}(u)=1$ 的分度值（参见 [§14.5](#145-测地线平行四边形和曲率) 和[图 14.8](assets/page239_fig01.jpg)）。$\mathrm{e}^{\mathrm{t}\mathbf{\xi}}(\varPhi)$ 的幂级数表达式里的所有各级导数（即在 $\mathbf{\xi}^r(\varPhi)$ 里出现的是 $r$ 级导数）取在原点的值（假定它们均收敛）。"跟随箭头"是指沿所谓 $\mathbf{\xi}$ 的"积分曲线"，即是说，沿其切矢量是 $\mathbf{\xi}$ 矢量的曲线。见[图 14.16](assets/page245_fig02.jpg)。^7
 
