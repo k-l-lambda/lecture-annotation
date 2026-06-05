@@ -89,6 +89,13 @@ $$q^{-1} = \bar{q}\left(\bar{q}q\right)^{-1},$$
 
 * [11.2] 求两个一般四元数的和与积，从而说明这些关系式的确成立。
 
+??? question "答案 [11.2]"
+    设两个一般四元数 $a=a_0+a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}$ 与 $b=b_0+b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k}$（系数均为实数）。其和逐分量相加：$a+b=(a_0+b_0)+(a_1+b_1)\mathbf{i}+(a_2+b_2)\mathbf{j}+(a_3+b_3)\mathbf{k}$。因实数加法满足交换律与结合律，故加法交换律 $a+b=b+a$ 与加法结合律随之成立。
+
+    用分配律展开乘积，并代入哈密顿关系 $\mathbf{i}^2=\mathbf{j}^2=\mathbf{k}^2=-1$、$\mathbf{ij}=\mathbf{k}=-\mathbf{ji}$、$\mathbf{jk}=\mathbf{i}=-\mathbf{kj}$、$\mathbf{ki}=\mathbf{j}=-\mathbf{ik}$，得 $ab=(a_0b_0-a_1b_1-a_2b_2-a_3b_3)+(a_0b_1+a_1b_0+a_2b_3-a_3b_2)\mathbf{i}+(a_0b_2+a_2b_0+a_3b_1-a_1b_3)\mathbf{j}+(a_0b_3+a_3b_0+a_1b_2-a_2b_1)\mathbf{k}$。一般地 $ab\neq ba$，可见乘法交换律确被破坏。
+
+    由于乘积是把基元 $1,\mathbf{i},\mathbf{j},\mathbf{k}$ 的乘法表按分配律双线性延拓而成，分配律 $a(b+c)=ab+ac$ 与 $(a+b)c=ac+bc$ 立即成立；乘法结合律 $a(bc)=(ab)c$ 只需在基元上核验，而它由布鲁厄姆桥方程保证（例如 $\mathbf{i}(\mathbf{jk})=\mathbf{i}\mathbf{i}=-1=\mathbf{k}\mathbf{k}=(\mathbf{ij})\mathbf{k}$），故对一般四元数亦成立。这样所列各关系式全部得证。
+
 · 142 ·
 
 
@@ -370,6 +377,15 @@ $$a \wedge b \wedge c = b \wedge c \wedge a = c \wedge a \wedge b = -b \wedge a 
 ---
 
 * [11.9] 证明该式。
+
+??? question "答案 [11.9]"
+    设两个一般矢量 $a=\sum_p a_p\mathbf{\eta}_p$ 与 $b=\sum_q b_q\mathbf{\eta}_q$，其中系数 $a_p,b_q$ 为实数。由楔积的分配律（双线性）展开
+
+    $a\wedge b=\sum_{p,q}a_p b_q\,(\mathbf{\eta}_p\wedge\mathbf{\eta}_q)$。
+
+    利用基元的反交换律 $\mathbf{\eta}_p\wedge\mathbf{\eta}_q=-\mathbf{\eta}_q\wedge\mathbf{\eta}_p$（当 $p=q$ 时该式给出 $\mathbf{\eta}_p\wedge\mathbf{\eta}_p=0$），把每一项的因子对调，得 $a\wedge b=-\sum_{p,q}a_p b_q\,(\mathbf{\eta}_q\wedge\mathbf{\eta}_p)$。再交换求和哑标 $p\leftrightarrow q$，右端化为 $-\sum_{p,q}a_q b_p\,(\mathbf{\eta}_p\wedge\mathbf{\eta}_q)=-\sum_{p,q}b_p a_q\,(\mathbf{\eta}_p\wedge\mathbf{\eta}_q)=-\,b\wedge a$。
+
+    故对任意两个矢量都有 $a\wedge b=-b\wedge a$，即一般的反交换性质由基元的反交换律经分配律延拓而来。特别地取 $b=a$ 即得 $a\wedge a=0$。
 
 * [11.10] 对 $n = 2$ 情形写出 $a \wedge b$ 的全部展开式，看看它是如何组成的。
 

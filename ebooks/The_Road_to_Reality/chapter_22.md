@@ -109,6 +109,11 @@ $$w\psi + z\phi \leadsto w\psi' + z\phi'.$$
 
 *[22.1] 为什么说薛定谔演化的作用是线性的，尽管实际上 ℋ 可以是 p 和 x 的高阶非线性函数？
 
+??? question "答案 [22.1]"
+    "高阶非线性" 是就 $\mathcal{H}$ 作为算符 $p=-\mathrm{i}\hbar\,\partial/\partial x$ 与 $x$ 的函数而言的：$\mathcal{H}$ 可以是 $p,x$ 的任意高次多项式（如 $x^2p^2$ 之类）。但薛定谔方程 $\mathrm{i}\hbar\,\partial\psi/\partial t=\mathcal{H}\psi$ 的线性性指的是它对态 $\psi$ 的依赖，而不是对 $p,x$ 的依赖。
+
+    无论 $\mathcal{H}$ 是 $p,x$ 多么复杂的函数，它作为希尔伯特空间上的算符总是线性的：$\mathcal{H}(w\psi+z\phi)=w\,\mathcal{H}\psi+z\,\mathcal{H}\phi$。于是演化算符 $\mathrm{e}^{-\mathrm{i}\mathcal{H}t/\hbar}$ 也是线性的，把 $w\psi+z\phi$ 演化成 $w\psi'+z\phi'$。这正是叠加性在演化中得以保持的原因。
+
 · 383 ·
 
 
@@ -392,6 +397,11 @@ $$|\psi\rangle = \mathbf{E}|\psi\rangle + (\mathbf{I}-\mathbf{E})|\psi\rangle。
 
 * [22.14] 证明这一点。
 
+??? question "答案 [22.14]"
+    投影算符 $\mathbf{E}$ 满足厄米性 $\mathbf{E}^\dagger=\mathbf{E}$ 与幂等性 $\mathbf{E}^2=\mathbf{E}$。要证 $\mathbf{E}|\psi\rangle$ 与 $(\mathbf{I}-\mathbf{E})|\psi\rangle$ 正交，计算二者的标积：$\langle\mathbf{E}\psi|(\mathbf{I}-\mathbf{E})\psi\rangle=\langle\psi|\mathbf{E}^\dagger(\mathbf{I}-\mathbf{E})|\psi\rangle=\langle\psi|(\mathbf{E}-\mathbf{E}^2)|\psi\rangle=\langle\psi|(\mathbf{E}-\mathbf{E})|\psi\rangle=0$。
+
+    故两个分量正交，$|\psi\rangle=\mathbf{E}|\psi\rangle+(\mathbf{I}-\mathbf{E})|\psi\rangle$ 正是 $|\psi\rangle$ 沿 YES 与 NO 两个相互正交本征子空间的分解。
+
 · 391 ·
 
 
@@ -607,7 +617,17 @@ $$w|\uparrow\rangle + z|\downarrow\rangle = |\nearrow\rangle，$$
 
 *[22.24] 为什么？
 
+??? question "答案 [22.24]"
+    动量算符为 $\mathbf{p}=-\mathrm{i}\hbar\nabla$。零动量本征态满足 $\mathbf{p}\psi=0$，即 $\nabla\psi=0$，故 $\psi$ 在整个 $\mathbf{x}$ 空间内不随位置变化，是常量。等价地说，动量本征态是平面波 $\psi\propto\mathrm{e}^{\mathrm{i}\mathbf{p}\cdot\mathbf{x}/\hbar}$，当 $\mathbf{p}=0$ 时指数因子化为 $1$，空间部分变成常数。
+
+    因此粒子的位置自由度被 "冻结"，只剩下自旋自由度，态可仅用两个复振幅 $\psi_0,\psi_1$ 来描述。
+
 *[22.25] 导出这一表达式。
+
+??? question "答案 [22.25]"
+    标积对左矢（bra）是反线性的、对右矢（ket）是线性的。把 $\langle\{a,b\}|=\bar a\langle\uparrow|+\bar b\langle\downarrow|$ 与 $|\{w,z\}\rangle=w|\uparrow\rangle+z|\downarrow\rangle$ 代入并展开：$\langle\{a,b\}|\{w,z\}\rangle=\bar a w\langle\uparrow|\uparrow\rangle+\bar a z\langle\uparrow|\downarrow\rangle+\bar b w\langle\downarrow|\uparrow\rangle+\bar b z\langle\downarrow|\downarrow\rangle$。
+
+    利用基态的正交归一关系 $\langle\uparrow|\uparrow\rangle=\langle\downarrow|\downarrow\rangle=1$、$\langle\uparrow|\downarrow\rangle=\langle\downarrow|\uparrow\rangle=0$，交叉项消失，立即得到 $\langle\{a,b\}|\{w,z\}\rangle=\bar a w+\bar b z$。
 
 · 398 ·
 
@@ -666,6 +686,11 @@ $$\frac{1}{2}(1+\cos\theta)。$$
     因此从 $|\uparrow\rangle$ 测得 $|\nearrow\rangle$ 的 YES 概率就是这个模平方；相反方向对应正交态，概率为 $\sin^2(\theta/2)$。
 
 *[22.28] 确认这一点。
+
+??? question "答案 [22.28]"
+    取半径为 $\frac12$、球心为 $O$ 的圆，$A$ 与对径点 $A'$ 为直径两端，$B$ 在圆上，$OB$ 与 $OA$ 夹角为 $\theta$。将 $B$ 沿垂直方向投影到直径 $AA'$ 上得 $C$。以 $O$ 为原点、$OA$ 为正轴，则 $B$ 在该轴上的投影坐标为 $\frac12\cos\theta$，故 $C$ 到 $A'$ 的距离为 $A'C=\tfrac12+\tfrac12\cos\theta=\tfrac12(1+\cos\theta)$。
+
+    直径 $AA'=1$，于是 $A'C/AA'=\tfrac12(1+\cos\theta)$，恰是 [22.27] 算出的 YES 概率。（文中 "A'B" 应理解为 $B$ 在直径上的投影到 $A'$ 的长度 $A'C$。）这就用纯球面几何确认了同一概率值。
 
 · 400 ·
 
@@ -790,6 +815,13 @@ $$\nabla^2\Phi=-j(j+1)\Phi,$$
 ---
 
 *** [22.32] 你能导出这个球极坐标下的表达式吗？
+
+??? question "答案 [22.32]"
+    曲面上的拉普拉斯（拉普拉斯-贝尔特拉米）算符为 $\nabla^2=\dfrac{1}{\sqrt{g}}\partial_a\!\left(\sqrt{g}\,g^{ab}\partial_b\right)$，其中 $g=\det(g_{ab})$。由度规 $\mathrm{d}s^2=\mathrm{d}\theta^2+\sin^2\theta\,\mathrm{d}\phi^2$ 可读出 $g_{\theta\theta}=1,\;g_{\phi\phi}=\sin^2\theta$，非对角项为零，故 $g=\sin^2\theta$、$\sqrt{g}=\sin\theta$，逆度规 $g^{\theta\theta}=1,\;g^{\phi\phi}=1/\sin^2\theta$。
+
+    代入并对 $\theta,\phi$ 求和：$\nabla^2=\dfrac{1}{\sin\theta}\dfrac{\partial}{\partial\theta}\!\left(\sin\theta\dfrac{\partial}{\partial\theta}\right)+\dfrac{1}{\sin\theta}\dfrac{\partial}{\partial\phi}\!\left(\dfrac{1}{\sin\theta}\dfrac{\partial}{\partial\phi}\right)$。
+
+    展开第一项 $\dfrac{1}{\sin\theta}\partial_\theta(\sin\theta\,\partial_\theta)=\partial_\theta^2+\dfrac{\cos\theta}{\sin\theta}\partial_\theta$；第二项中 $1/\sin\theta$ 不含 $\phi$，给出 $\dfrac{1}{\sin^2\theta}\partial_\phi^2$。于是 $\nabla^2=\dfrac{\partial^2}{\partial\theta^2}+\dfrac{\cos\theta}{\sin\theta}\dfrac{\partial}{\partial\theta}+\dfrac{1}{\sin^2\theta}\dfrac{\partial^2}{\partial\phi^2}$，与正文表达式一致。
 
 ·404·
 
@@ -951,6 +983,11 @@ $$S_a=sp_a.$$
     当这组算符已经把所有简并完全分开时，共同本征值就唯一标记态；若仍有简并，就需要再加入与它们对易的可观察量来完成标记。
 
 *[22.38] 用简单的理由说明为什么这两个算符必与 $p_a$ 和 $M^{ab}$ 对易。提示：利用 [§22.13](#2213-一般的孤立量子客体) 的结果。
+
+??? question "答案 [22.38]"
+    $p_ap^a$ 和 $S_aS^a$ 都是洛伦兹标量（庞加莱不变量），即它们是庞加莱群的两个卡西米尔算符。按 [§22.13](#2213-一般的孤立量子客体) 的论证，凡是在群的对称操作下不变的量必与该群的全部生成元对易：若 $\mathbf{Q}$ 在对称算符 $\mathbf{S}$ 下不变，则 $\mathbf{S}\mathbf{Q}\mathbf{S}^{-1}=\mathbf{Q}$，即 $\mathbf{S}\mathbf{Q}=\mathbf{Q}\mathbf{S}$。
+
+    依次取 $\mathbf{S}$ 为平移生成元 $p_a$ 和洛伦兹生成元 $M^{ab}$ 的各分量。由于这两个卡西米尔标量在平移与洛伦兹变换下都不变，便有 $[p_ap^a,p_b]=[p_ap^a,M^{cd}]=0$ 以及 $[S_aS^a,p_b]=[S_aS^a,M^{cd}]=0$。这正是卡西米尔算符与所有生成元对易的定义性质。
 
 *[22.39] 如何能使 $S_a$ 和 $p_a$ 彼此正交且成比例？
 

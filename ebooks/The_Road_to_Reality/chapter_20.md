@@ -99,6 +99,9 @@ $$p_a \mathrm{d}q^a$$
 
 *[20.1] 将细节补充完整，完成论证以便给出伽利略的重力下自由落体的抛物运动。
 
+??? question "答案 [20.1]"
+    拉格朗日量 $\mathcal{L}=\frac{1}{2}m(\dot{x}^2+\dot{y}^2+\dot{z}^2)-mgz$ 中 $x,y$ 不出现（循环坐标），其欧拉-拉格朗日方程给出 $\ddot{x}=0$、$\ddot{y}=0$；$z$ 的方程给出 $\ddot{z}=-g$。积分得 $x=x_0+\dot{x}_0 t$，$y=y_0+\dot{y}_0 t$，$z=z_0+\dot{z}_0 t-\frac{1}{2}gt^2$。从水平方程解出 $t$ 与水平位移成正比，代入 $z$ 即得 $z$ 是水平位移的二次函数——这正是伽利略所描述的抛物线轨迹。
+
 [1] 原文误为 $P_r = \partial \mathcal{L}/\partial q^r$。——译注
 
 ·344·
@@ -243,6 +246,9 @@ $$\mathbf{W}=\mathbf{PQ},$$
 
 **[20.7] 为什么？
 
+??? question "答案 [20.7]"
+    稳定平衡要求受小扰动后系统只在平衡点附近作有界小振动，而不偏离。这只有当 $q_0^a=0$ 处于势能 $V$ 的局域最小值时才成立：此时偏离平衡会使势能升高，从而产生指向平衡点的回复力。若该点是极大值或鞍点，则沿势能降低的方向出现远离平衡的力，扰动被放大，平衡不稳定。因此"稳定平衡"必然对应势能的局域最小态。
+
 **[20.8] 你能更充分地解释这一切吗？如果平衡是不稳定的，能有线性项吗？为什么？
 
 ??? question "答案 [20.8]"
@@ -285,6 +291,11 @@ $$\frac{\mathrm{d}^2 \mathbf{q}}{\mathrm{d}t^2} = -\omega^2 \mathbf{q}，$$
     把小振动方程写成 $M\ddot q=-Kq$，其中 $M,K$ 正定。乘以 $M^{-1}$ 后得到本征值问题；上述正定性保证频率平方为正，从而简正频率为实数。
 
 ** [20.10] 看看你能否在拉格朗日形式而不是哈密顿形式下进行前述的分析。
+
+??? question "答案 [20.10]"
+    在拉格朗日形式下，小振动的拉格朗日量为 $\mathcal{L}=\frac{1}{2}T_{ab}\dot{q}^a\dot{q}^b-\frac{1}{2}V_{ab}q^aq^b$，其中动能矩阵 $T_{ab}$（质量矩阵）与势能 Hessian $V_{ab}$ 都是对称正定常系数矩阵。欧拉-拉格朗日方程 $\frac{\mathrm{d}}{\mathrm{d}t}\frac{\partial\mathcal{L}}{\partial\dot{q}^a}=\frac{\partial\mathcal{L}}{\partial q^a}$ 给出 $T_{ab}\ddot{q}^b=-V_{ab}q^b$，即 $\ddot{q}^a=-(T^{-1}V)^a{}_b\,q^b$。
+
+    这与哈密顿分析得到的 $\ddot{\mathbf{q}}=-\mathbf{W}\mathbf{q}$ 形式完全相同，只需令 $\mathbf{W}=T^{-1}V$（对应哈密顿形式中的 $\mathbf{W}=\mathbf{PQ}$，其中 $\mathbf{P}=T^{-1}$、$\mathbf{Q}=V$）。求解广义本征值问题 $V\mathbf{q}=\omega^2 T\mathbf{q}$ 即得同样的简正频率 $\omega$ 与简正模，且本征矢在 $T$ 定义的度规下正交。可见两种形式给出一致的结果。
 
 *** [20.11] 描述退化情形下的本征矢量系统。
 
@@ -346,6 +357,9 @@ $$\mathbf{\varSigma}=\mathbf{S}\wedge\mathbf{S}\wedge\cdots\wedge\mathbf{S},$$
     反过来，若一个量沿所有哈密顿运动都守恒，则它与 $H$ 的泊松括号必须消失。这把守恒律与相空间中的生成变换直接联系起来。
 
 *[20.16] 为什么？
+
+??? question "答案 [20.16]"
+    泊松括号是反对称的：$\{\mathbf{\varPhi},\mathbf{\varPsi}\}=-\{\mathbf{\varPsi},\mathbf{\varPhi}\}$。把 $\mathbf{\varPhi}=\mathbf{\varPsi}=\mathcal{H}$ 代入，得 $\{\mathcal{H},\mathcal{H}\}=-\{\mathcal{H},\mathcal{H}\}$，故 $\{\mathcal{H},\mathcal{H}\}=0$。直接展开也一样：$\frac{\partial\mathcal{H}}{\partial p_a}\frac{\partial\mathcal{H}}{\partial q^a}-\frac{\partial\mathcal{H}}{\partial q^a}\frac{\partial\mathcal{H}}{\partial p_a}=0$。由于 $\mathcal{H}$ 沿轨迹的变化率正是 $\{\mathcal{H},\mathcal{H}\}$（不显含时），它为零意味着哈密顿量沿演化轨迹守恒，即能量守恒。
 
 ·350·
 

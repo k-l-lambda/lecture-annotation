@@ -421,6 +421,9 @@ $$\mathrm{trace}\mathbf{T}=T^a_{\phantom{a}a}=T^1_{\phantom{1}1}+T^2_{\phantom{2
 
 **[13.21]** 由[图 13.8](assets/page207_fig01.jpg)(a) 的表达式出发推导这些关系。
 
+??? question "答案 [13.21]"
+    [图 13.8](assets/page207_fig01.jpg)(a) 把行列式写成 $\det\mathbf{T}=\frac{1}{n!}\epsilon^{a\cdots c}\varepsilon_{f\cdots h}T^f_{\phantom{f}a}\cdots T^h_{\phantom{h}c}$。两个列维－齐维塔符号迫使上指标串 $a,\cdots,c$ 与下指标串 $f,\cdots,h$ 都取遍 $(1,2,\cdots,n)$ 的排列，每个非零项带有两串排列符号之积。对所有取法求和时，$1/n!$ 因子恰好抵消由两套求和带来的 $n!$ 重重复计数，于是化为标准展开 $\det\mathbf{T}=\sum_\pi \mathrm{sgn}(\pi)\,T^1_{\phantom{1}\pi(1)}\cdots T^n_{\phantom{n}\pi(n)}$。取 $n=2$ 时只剩两项，得 $ad-bc$；取 $n=3$ 时把 $3!=6$ 个带符号排列逐一写出，即得 $aej-afh+bfg-bdj+cdh-ceg$。
+
 ***[13.22] 证明这些关系成立。
 
 ??? question "答案 [13.22]"
@@ -1267,6 +1270,11 @@ $$\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}。$$
 ---
 
 *** [13.57] 运用这种法则找出 $\mathrm{Sp}(1)$ 和 $\mathrm{Sp}(1,1)$ 的显表达式。
+
+??? question "答案 [13.57]"
+    这种法则是把伪辛群取成交集 $\mathrm{Sp}(p,q)=\mathrm{Sp}\!\left(\tfrac{1}{2}n,\mathbb{C}\right)\cap\mathrm{U}(p,q)$，其中 $p+q=n$。$\mathrm{Sp}(1)$ 与 $\mathrm{Sp}(1,1)$ 都对应 $\tfrac{1}{2}n=1$（即 $n=2$）。此时 $\mathbb{C}^2$ 上的反对称形式 $s_{ab}$ 就是行列式（面积）形式，保它等价于行列式为 $1$，故 $\mathrm{Sp}(1,\mathbb{C})=\mathrm{SL}(2,\mathbb{C})$。
+    于是 $\mathrm{Sp}(1)=\mathrm{Sp}(2,0)=\mathrm{SL}(2,\mathbb{C})\cap\mathrm{U}(2)=\mathrm{SU}(2)$，即单位四元数群，其元素为 $\begin{pmatrix}\alpha&\beta\\-\bar\beta&\bar\alpha\end{pmatrix}$，满足 $|\alpha|^2+|\beta|^2=1$（紧致形式）。
+    而 $\mathrm{Sp}(1,1)=\mathrm{SL}(2,\mathbb{C})\cap\mathrm{U}(1,1)=\mathrm{SU}(1,1)$，其元素为 $\begin{pmatrix}\alpha&\beta\\\bar\beta&\bar\alpha\end{pmatrix}$，满足 $|\alpha|^2-|\beta|^2=1$（非紧形式）。两种情形里 $\det=1$ 都自动成立，与 $\mathrm{SL}(2,\mathbb{C})$ 的要求一致。
 
 *** [13.58] 对 $p=q=n/2$ 情形证明，这些不同的表达式是等价的。
 

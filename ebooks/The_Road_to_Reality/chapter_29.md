@@ -238,12 +238,9 @@ $$\text{YES 的概率} = \langle\mathbf{E}\mathbf{D}\rangle.$$
 ***〔29.4〕你能说出为什么如此吗？
 
 ??? question "答案 [29.4]"
-    密度矩阵 $
-    ho=\sum_i p_i|\psi_i\rangle\langle\psi_i|$ 已经包含了计算所有 YES/NO 投影概率所需的信息。对投影 $P$，概率为 $\operatorname{tr}(\rho P)$。
+    密度矩阵 $\rho=\sum_i p_i|\psi_i\rangle\langle\psi_i|$ 已经包含了计算所有 YES/NO 投影概率所需的信息。对投影 $P$，概率为 $\operatorname{tr}(\rho P)$。
 
-    这个表达式只依赖 $
-    ho$，不依赖把 $
-    ho$ 分解成哪些纯态及其概率的具体方式。因此不同的统计混合只要给出同一个密度矩阵，就对所有量子测量给出同样预言。
+    这个表达式只依赖 $\rho$，不依赖把 $\rho$ 分解成哪些纯态及其概率的具体方式。因此不同的统计混合只要给出同一个密度矩阵，就对所有量子测量给出同样预言。
 
 **〔29.5〕对取一般倾角 $\theta$ 的测量方向，得用 [§22.9](chapter_22.md#229-二态系统的黎曼球面) 的概率表达式 $\frac{1}{2}(1+\cos\theta)$ 证明这一点。
 

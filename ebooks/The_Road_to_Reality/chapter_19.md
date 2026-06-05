@@ -96,17 +96,9 @@ $$\mathrm{d}\mathbf{F}=0,\quad \mathrm{d}\,^*\mathbf{F}=4\pi\,^*\mathbf{J}.$$
 **〔19.2〕** 以电场和磁场分量形式完整地写出这些公式，用算符 $\partial/\partial t$ 说明这些公式如何给出了电场和磁场的时间演化。
 
 ??? question "答案 [19.2]"
-    取闵可夫斯基坐标并把 $F_{0i}$ 记作电场分量、$F_{ij}$ 记作磁场分量的反对称组合，则麦克斯韦方程分裂为 $
-    abla\\cdot\\mathbf B=0$、$
-    abla\\times\\mathbf E+\\partial\\mathbf B/\\partial t=0$、$
-    abla\\cdot\\mathbf E=4\\pi\\rho$、$
-    abla\\times\\mathbf B-\\partial\\mathbf E/\\partial t=4\\pi\\mathbf J$（符号随约定可能整体调整）。
+    取闵可夫斯基坐标并把 $F_{0i}$ 记作电场分量、$F_{ij}$ 记作磁场分量的反对称组合，则麦克斯韦方程分裂为 $\nabla\cdot\mathbf B=0$、$\nabla\times\mathbf E+\partial\mathbf B/\partial t=0$、$\nabla\cdot\mathbf E=4\pi\rho$、$\nabla\times\mathbf B-\partial\mathbf E/\partial t=4\pi\mathbf J$（符号随约定可能整体调整）。
 
-    前两式中，$
-    abla\\cdot\\mathbf B=0$ 是约束，$
-    abla\\times\\mathbf E+\\partial_t\\mathbf B=0$ 给出磁场的时间演化；后两式中，$
-    abla\\cdot\\mathbf E=4\\pi\\rho$ 是约束，$
-    abla\\times\\mathbf B-\\partial_t\\mathbf E=4\\pi\\mathbf J$ 给出电场的时间演化。因此给定满足约束的初值和源，方程决定随时间的演化。
+    前两式中，$\nabla\cdot\mathbf B=0$ 是约束，$\nabla\times\mathbf E+\partial_t\mathbf B=0$ 给出磁场的时间演化；后两式中，$\nabla\cdot\mathbf E=4\pi\rho$ 是约束，$\nabla\times\mathbf B-\partial_t\mathbf E=4\pi\mathbf J$ 给出电场的时间演化。因此给定满足约束的初值和源，方程决定随时间的演化。
 
 · 321 ·
 
@@ -192,26 +184,23 @@ $$\int_{S} {}^{*}\mathbf{F} = 4\pi\chi,\ \text{这里}\ \ \chi = \int_{\mathcal{
 ***〔19.6〕你能看出这一点吗？在曲线坐标系下$\mathbf{F}$和${}^{*}\mathbf{F}$的分量是什么？为什么麦克斯韦方程不受其影响？
 
 ??? question "答案 [19.6]"
-    在曲线坐标中，$F$ 仍是二形式，写作 $F=\\frac12F_{ab}dx^a\\wedge dx^b$；其对偶 ${*F}$ 的分量由度规和体积形式给出，即 ${*F}_{ab}=\\frac12\\varepsilon_{ab}{}^{cd}F_{cd}$。坐标变化只改变这些分量，不改变二形式本身。
+    在曲线坐标中，$F$ 仍是二形式，写作 $F=\frac12F_{ab}dx^a\wedge dx^b$；其对偶 ${*F}$ 的分量由度规和体积形式给出，即 ${*F}_{ab}=\frac12\varepsilon_{ab}{}^{cd}F_{cd}$。坐标变化只改变这些分量，不改变二形式本身。
 
-    麦克斯韦方程 $dF=0$ 与 $d{*F}=4\\pi {*J}$ 是外微分形式的张量方程。外微分和形式等式不依赖所选坐标，所以曲线坐标只改变公式中的分量表达，不改变方程内容。
+    麦克斯韦方程 $dF=0$ 与 $d{*F}=4\pi {*J}$ 是外微分形式的张量方程。外微分和形式等式不依赖所选坐标，所以曲线坐标只改变公式中的分量表达，不改变方程内容。
 
 ***〔19.7〕对于$\mathcal{R}$取时空"柱面"（由固定的有限时间间隔$t$里的某个界定出的空间区域构成）情形，写出该方程的完整细节，并解释，这里的"电荷通量"概念与由类空的"顶"和"底"以及类时"侧面"组成的柱面情形有何不同？
 
 ??? question "答案 [19.7]"
-    令柱面区域的边界由底面、顶面和侧面组成。对闭边界积分 $
-    abla_aJ^a=0$ 的外形式版本，得到三部分电荷通量之和为零。
+    令柱面区域的边界由底面、顶面和侧面组成。对闭边界积分 $\nabla_aJ^a=0$ 的外形式版本，得到三部分电荷通量之和为零。
 
     底面和顶面是类空的，其通量分别表示两个时刻区域内的总电荷；侧面是类时的，其通量表示在这段时间中穿过空间边界流出的电荷。于是方程正是“末时刻电荷减初时刻电荷等于负的流出电荷”，也就是连续性方程的积分形式。
 
 ***〔19.8〕解释这个量正好就是电通量。
 
 ??? question "答案 [19.8]"
-    在固定时刻的空间超曲面中，${*F}$ 限制到二维闭曲面 $S$ 上时，只保留与电场法向分量对应的面积形式。具体地，若 $n$ 是 $S$ 的单位法向，则 ${*F}$ 在 $S$ 上的积分就是 $
-    abla E_n dS$ 按约定的常数因子写成的通量。
+    在固定时刻的空间超曲面中，${*F}$ 限制到二维闭曲面 $S$ 上时，只保留与电场法向分量对应的面积形式。具体地，若 $n$ 是 $S$ 的单位法向，则 ${*F}$ 在 $S$ 上的积分就是 $\oint_S E_n\,\mathrm{d}S$ 按约定的常数因子写成的通量。
 
-    因此 $
-    abla_S {*F}=4\\pi\\chi$ 正是高斯定律：穿过闭曲面的电通量等于曲面内包含的总电荷乘以 $4\\pi$。
+    因此 $\oint_S {*F}=4\pi\chi$ 正是高斯定律：穿过闭曲面的电通量等于曲面内包含的总电荷乘以 $4\pi$。
 
 ·323·
 
@@ -299,10 +288,7 @@ $$\mathbf{g} \mapsto \lambda \mathbf{g},$$
 **[19.10]** 证明这一点。提示：参见 [§15.8](chapter_15.md#158-丛曲率)。
 
 ??? question "答案 [19.10]"
-    按第 15 章的丛曲率公式，若协变导数为 $
-    abla_a=\partial_a-ieA_a$，则两个协变导数的对易子为 $[
-    abla_a,
-    abla_b]=-ie(\partial_aA_b-\partial_bA_a)$。
+    按第 15 章的丛曲率公式，若协变导数为 $\nabla_a=\partial_a-ieA_a$，则两个协变导数的对易子为 $[\nabla_a,\nabla_b]=-ie(\partial_aA_b-\partial_bA_a)$。
 
     括号中的量正是电磁场张量 $F_{ab}$。所以电磁势 $A_a$ 是电荷相位丛上的联络，电磁场 $F_{ab}$ 是该联络的曲率。
 
@@ -390,11 +376,7 @@ $$\frac{1}{8\pi}(F_{ac}F^{c}{}_{b} + {}^*F_{ac}{}^*F^{c}{}_{b}) \text{。}$$
 **[19.13] 证明：如果 $J=0$，则该式满足守恒方程 $\nabla^a T_{ab} = 0$。找出这个量的 00 分量，并用 $(E_1, E_2, E_3)$ 和 $(B_1, B_2, B_3)$ 形式将电磁场能量密度恢复到麦克斯韦的原初形式 $(E^2 + B^2)/8\pi$。
 
 ??? question "答案 [19.13]"
-    在无源情形下，麦克斯韦方程给出 $
-    abla^aF_{ab}=0$ 与 $
-    abla_{[a}F_{bc]}=0$。对 $T_{ab}$ 求散度时，含 $
-    abla^aF_{ac}$ 的项由前者消失，剩余项由后者的循环恒等式抵消，因此 $
-    abla^aT_{ab}=0$。
+    在无源情形下，麦克斯韦方程给出 $\nabla^aF_{ab}=0$ 与 $\nabla_{[a}F_{bc]}=0$。对 $T_{ab}$ 求散度时，含 $\nabla^aF_{ac}$ 的项由前者消失，剩余项由后者的循环恒等式抵消，因此 $\nabla^aT_{ab}=0$。
 
     在惯性坐标中，$T_{00}$ 等于电场和磁场平方和的适当倍数。采用高斯单位制时得到 $T_{00}=(E^2+B^2)/8\pi$，这正是麦克斯韦的电磁能量密度。
 
@@ -422,6 +404,11 @@ $$L_a = T_{ab}\kappa^b,$$
 ---
 
 ***[19.14] 为什么？为什么说这种处理使 $\nabla^a T_{ab}=0$ 等式具体化了？对于一个四维动量在碰撞过程中是保守量的离散粒子系统，你能给出类似于连续场守恒律 $\nabla^a(T_{ab}\kappa^b)=0$ 的守恒律吗？提示：对给定基灵矢量 $\kappa^a$，找到一个对碰撞中的每个粒子皆为常数的量。
+
+??? question "答案 [19.14]"
+    因为 $\nabla^a L_a = \nabla^a(T_{ab}\kappa^b) = (\nabla^a T_{ab})\kappa^b + T_{ab}\nabla^a\kappa^b$。第一项因 $\nabla^a T_{ab}=0$ 而消失；第二项中 $T_{ab}$ 对称，故 $T_{ab}\nabla^a\kappa^b = T_{ab}\nabla^{(a}\kappa^{b)}$，而基灵方程 $\nabla_{(a}\kappa_{b)}=0$ 使其也为零。于是 $\nabla_a L^a=0$，再由散度定理得到积分守恒律 $\int_{\mathcal{Q}}{}^*L=0$——这把局域微分关系 $\nabla^a T_{ab}=0$ 转化为一个可检验的整体守恒量，从而把它"具体化"了。
+
+    离散类比：对给定基灵矢量 $\kappa^a$，取每个粒子的 $\kappa_a p^a$（四维动量在 $\kappa^a$ 上的投影）。沿自由粒子的测地线 $\kappa_a p^a$ 为常数；在碰撞点四维动量守恒 $\sum_{\text{in}} p_a = \sum_{\text{out}} p_a$，与同一点的 $\kappa^a$ 缩并即得 $\sum_i \kappa_a p^a_{(i)}$ 在碰撞前后不变。因此总量 $\sum_i \kappa_a p^a_{(i)}$ 守恒，正是连续场 $\nabla^a(T_{ab}\kappa^b)=0$ 的离散对应。
 
 · 331 ·
 
@@ -554,6 +541,10 @@ $$R_{ab} - \frac{1}{2}R\,g_{ab} + \Lambda g_{ab} = -8\pi G\,T_{ab}$$
 ---
 
 ***[19.19] 为什么？
+
+??? question "答案 [19.19]"
+    朴素方程 $R_{ab}=-4\pi G T_{ab}$ 两边取迹得 $R=-4\pi G\,T$。对它取散度并用缩并的比安基恒等式 $\nabla^a R_{ab}=\frac{1}{2}\nabla_b R$，左边给出 $\frac{1}{2}\nabla_b R$；而源的守恒 $\nabla^a T_{ab}=0$ 要求右边的散度为零。于是 $\nabla_b R=0$，即 $R$ 在整个时空为常量，从而迹 $T$ 也必须处处为常量。这与普通物质分布（其迹随物质密度变化）相矛盾，故朴素方程不可接受。
+
 ***[19.20] 比较 $-4\pi G$ 来解释系数 $-8\pi G$。
 
 ??? question "答案 [19.20]"
@@ -561,6 +552,9 @@ $$R_{ab} - \frac{1}{2}R\,g_{ab} + \Lambda g_{ab} = -8\pi G\,T_{ab}$$
 
     这使得从几何方程恢复 $\nabla^2\Phi=4\pi G\rho$ 时，系数需要是 $8\pi G$ 而不是 $4\pi G$。额外的因子 2 正来自爱因斯坦张量 $G_{ab}=R_{ab}-\frac12Rg_{ab}$ 的迹反转结构。
 ***[19.21] 为什么？
+
+??? question "答案 [19.21]"
+    真空情形 $T_{ab}=0$ 时方程为 $R_{ab}-\frac{1}{2}Rg_{ab}=0$。两边取迹（用 $g^{ab}g_{ab}=4$）得 $R-\frac{1}{2}R\cdot4 = R-2R = -R = 0$，故 $R=0$。把 $R=0$ 代回原方程，$\frac{1}{2}Rg_{ab}$ 项消失，便剩下 $R_{ab}=0$。
 
 · 334 ·
 
@@ -584,9 +578,9 @@ $$\rho_G=\rho+P_1+P_2+P_3-\frac{\Lambda}{4\pi G},$$
 \*〔19.22〕为什么？
 
 ??? question "答案 [19.22]"
-    从爱因斯坦方程取迹可解出 $R$ 与 $T$ 的关系，再代回原方程，就能把 $R_{ab}-\\frac12Rg_{ab}$ 的形式改写为 $R_{ab}$ 等于 $T_{ab}$ 的迹反转组合。
+    从爱因斯坦方程取迹可解出 $R$ 与 $T$ 的关系，再代回原方程，就能把 $R_{ab}-\frac12Rg_{ab}$ 的形式改写为 $R_{ab}$ 等于 $T_{ab}$ 的迹反转组合。
 
-    在四维中，取迹给出 $R-2R=-8\\pi GT+4\\Lambda$，即 $R=8\\pi GT-4\\Lambda$。代回后得到正文所写的等价形式。
+    在四维中，取迹给出 $R-2R=-8\pi GT+4\Lambda$，即 $R=8\pi GT-4\Lambda$。代回后得到正文所写的等价形式。
 
 \*\*〔19.23〕证明：$C$ 的所有"迹"为零（例如 $C_{abc}{}^d=0$，等等）。这种计算可以用图示记法进行吗？
 
