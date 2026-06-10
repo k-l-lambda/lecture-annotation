@@ -62,13 +62,38 @@
 
     ensurePreview();
     activeLink = link;
-    previewImage.src = link.href;
-    previewImage.alt = link.textContent.trim() || link.getAttribute("aria-label") || "图片预览";
-    previewImage.onload = function () {
+
+    function markLoaded() {
       if (activeLink === link) {
+        preview.classList.remove("ebook-image-preview--loading");
         positionPreview(link);
       }
+    }
+
+    // Reset to loading state so the previously shown image is not left visible
+    // while the new one is still decoding.
+    preview.classList.add("ebook-image-preview--loading");
+    previewImage.alt = link.textContent.trim() || link.getAttribute("aria-label") || "图片预览";
+    previewImage.onload = markLoaded;
+    previewImage.onerror = function () {
+      if (activeLink === link) {
+        preview.classList.remove("ebook-image-preview--loading");
+      }
     };
+
+    if (previewImage.src === link.href) {
+      // Same image element, same source: force a reload event path.
+      if (previewImage.complete && previewImage.naturalWidth > 0) {
+        markLoaded();
+      }
+    } else {
+      previewImage.src = link.href;
+      // Cached images may already be complete without firing onload.
+      if (previewImage.complete && previewImage.naturalWidth > 0) {
+        markLoaded();
+      }
+    }
+
     preview.setAttribute("aria-hidden", "false");
     preview.classList.add("ebook-image-preview--visible");
 
