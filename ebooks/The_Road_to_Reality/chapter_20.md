@@ -441,7 +441,7 @@ $$\nabla_a \frac{\delta \mathcal{L}}{\delta \nabla_a \Phi} = \frac{\delta \mathc
 
 $$S=\int_\mathcal{D}\mathcal{L}\varepsilon.$$
 
-场方程可以从 $S$ 对所有变量的变分都是平稳的（由此给出类似测地线的量，见图20.3）这一论断中导出，这意味着 $\mathcal{L}$ 关于所有成分场及其导数的变分导数为零。这个条件写成
+场方程可以从 $S$ 对所有变量的变分都是平稳的（由此给出类似测地线的量，见[图20.3](assets/page362_fig01.jpg)）这一论断中导出，这意味着 $\mathcal{L}$ 关于所有成分场及其导数的变分导数为零。这个条件写成
 
 $$\delta S=0.$$
 

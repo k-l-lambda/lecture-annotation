@@ -125,7 +125,7 @@ $$1^{-1} = 1,\ 2^{-1} = 3,\ 3^{-1} = 2,\ 4^{-1} = 4。$$
 ***[16.5] 有限域 $\mathbb{F}_8$ 有元素 $0, 1, \varepsilon, \varepsilon^2, \varepsilon^3, \varepsilon^4, \varepsilon^5, \varepsilon^6$，这里 $\varepsilon^7=1$，$1+1=0$。证明：要么 (1) 存在形如 $\varepsilon^a+\varepsilon^b+\varepsilon^c=0$ 的恒等式，这里 $a, b, c$ 是[图 16.1](assets/page280_fig01.jpg)(a) 中背景圆上可使活动圆盘上三点连成一线的数字；要么 (2) 其他同前，只是 $\varepsilon^3$ 取代了 $\varepsilon$（即 $\varepsilon^{3a}+\varepsilon^{3b}+\varepsilon^{3c}=0$）。
 
 ??? question "答案 [16.5]"
-    $\mathbb{F}_8=\mathbb{F}_2[t]/(f(t))$，其中 $f$ 是 $\mathbb{F}_2$ 上的 3 次不可约多项式。本原元 $\varepsilon$ 的极小多项式只可能是两个 3 次本原多项式之一：$t^3+t+1$ 或 $t^3+t^2+1$。$\mathbb{F}_8$ 的 7 个非零元构成阶为 $7$ 的循环群，可与图 16.1(a) 魔盘上 7 个标记一一对应，标记编号即指数。
+    $\mathbb{F}_8=\mathbb{F}_2[t]/(f(t))$，其中 $f$ 是 $\mathbb{F}_2$ 上的 3 次不可约多项式。本原元 $\varepsilon$ 的极小多项式只可能是两个 3 次本原多项式之一：$t^3+t+1$ 或 $t^3+t^2+1$。$\mathbb{F}_8$ 的 7 个非零元构成阶为 $7$ 的循环群，可与[图 16.1](assets/page280_fig01.jpg)(a) 魔盘上 7 个标记一一对应，标记编号即指数。
 
     图 16.1(a)（$q=2$）的魔盘给出完满差集 $\{0,1,3\}$（弧长 $1,2,4$），其平移即法诺平面的 7 条线，三点共线当且仅当三个指数构成 $\{0,1,3\}+k\pmod 7$。
 
