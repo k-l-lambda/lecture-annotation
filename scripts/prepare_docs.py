@@ -153,13 +153,32 @@ def _normalize_markdown_superscript_math(content: str) -> str:
         exponent = match.group(2).replace('−', '-')
         if base.isdigit() and exponent.isdigit():
             prefix_start = max(0, match.start() - 4)
-            prefix = content[prefix_start:match.start()]
+            prefix = match.string[prefix_start:match.start()]
             if not re.search(r'[×*/=<>]|\b10\s*$', prefix) and base != '10':
                 return match.group(0)
         return f'${base}^{{{exponent}}}$'
 
-    content = combined_re.sub(convert_combined, content)
-    return token_re.sub(convert, content)
+    # Mask existing math spans ($$...$$ and $...$) so the markdown-superscript
+    # normalizer below only rewrites BARE superscripts outside math. Inside math,
+    # '^' is legitimate LaTeX (e.g. $d\tau^2-dr^2$) and must not be touched.
+    math_span_re = re.compile(
+        r'(?<!\\)\$\$(?:\\\$|[^$])*?(?<!\\)\$\$'   # display $$...$$
+        r'|(?<!\\)\$(?:\\\$|[^$])*?(?<!\\)\$'      # inline $...$
+    )
+    placeholders: list[str] = []
+
+    def _mask(m: re.Match[str]) -> str:
+        placeholders.append(m.group(0))
+        return f'\x00MATH{len(placeholders) - 1}\x00'
+
+    masked = math_span_re.sub(_mask, content)
+    masked = combined_re.sub(convert_combined, masked)
+    masked = token_re.sub(convert, masked)
+
+    def _unmask(m: re.Match[str]) -> str:
+        return placeholders[int(m.group(1))]
+
+    return re.sub(r'\x00MATH(\d+)\x00', _unmask, masked)
 
 
 def preprocess_math(content: str) -> str:
