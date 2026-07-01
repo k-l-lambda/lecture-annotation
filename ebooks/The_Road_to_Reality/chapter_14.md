@@ -503,7 +503,7 @@ $$x = \mathrm{e}^{\mathbf{\xi}} = \mathbf{I} + \mathbf{\xi} + \frac{1}{2}\mathbf
 
 $$\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta} = [\mathbf{\xi}, \mathbf{\eta}].$$
 
-这就是 $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$ 价张量 $\mathbf{\eta}$（关于 $\mathbf{\xi}$）的李导数 $\underset{\mathbf{\xi}}{\pounds}$。我们希望把它写成某种给定的无挠联络 $\nabla$ 的形式。所要求的表达式（其图示记法形式见图 14.17(a)）
+这就是 $\begin{bmatrix} 1 \\ 0 \end{bmatrix}$ 价张量 $\mathbf{\eta}$（关于 $\mathbf{\xi}$）的李导数 $\underset{\mathbf{\xi}}{\pounds}$。我们希望把它写成某种给定的无挠联络 $\nabla$ 的形式。所要求的表达式（其图示记法形式见[图 14.17](assets/page246_fig01.jpg)(a)）
 
 $$\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta} = \underset{\mathbf{\xi}}{\nabla}\mathbf{\eta} - \underset{\mathbf{\eta}}{\nabla}\mathbf{\xi}, \quad \text{即} \quad (\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta})^a = \xi^a\nabla_a\eta^b - \eta^a\nabla_a\xi^b,$$
 
@@ -541,7 +541,7 @@ $$\underset{\mathbf{\xi}}{\pounds}\mathbf{\eta} = \underset{\mathbf{\xi}}{\nabla
 
 $$\pounds_\xi \alpha = \nabla_\xi \alpha + \alpha \cdot (\nabla \xi) \text{，即} \quad (\pounds_\xi \alpha)_a = \xi^b \nabla_b \alpha_a + \alpha_b \nabla_a \xi^b$$
 
-（$\nabla$ 是无挠的），见图 14.17（b）。例如对价 $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 的张量 $Q$，我们有（图 14.17（c））**[14.21]**
+（$\nabla$ 是无挠的），见[图 14.17](assets/page246_fig01.jpg)（b）。例如对价 $\begin{bmatrix} 1 \\ 2 \end{bmatrix}$ 的张量 $Q$，我们有（[图 14.17](assets/page246_fig01.jpg)（c））**[14.21]**
 
 $$\pounds_\xi Q_{ab}^c = \xi^u \nabla_u Q_{ab}^c + Q_{ub}^c \nabla_a \xi^u + Q_{au}^c \nabla_b \xi^u - Q_{ab}^u \nabla_u \xi^c \text{。}$$
 

@@ -800,7 +800,7 @@ $$|\downarrow\downarrow\uparrow\cdots\uparrow\rangle, \cdots, |\downarrow\downar
 
 $$\mathrm{d}s^2=g_{ab}\mathrm{d}x^a\mathrm{d}x^b=\mathrm{d}\theta^2+\sin^2\theta\,\mathrm{d}\phi^2$$
 
-$S^2$ 上点的球极坐标与其三维笛卡儿坐标之间的关系为 $x=\sin\theta\cos\phi, y=\sin\theta\sin\phi, z=\cos\theta$（图 22.16）。因此，$\phi$ 表示经度，$\frac{1}{2}\pi-\theta$ 表示纬度（均以弧度为单位）。（带协变导数 $\nabla_a$ 的）拉普拉斯算符为***[22.32]
+$S^2$ 上点的球极坐标与其三维笛卡儿坐标之间的关系为 $x=\sin\theta\cos\phi, y=\sin\theta\sin\phi, z=\cos\theta$（[图 22.16](assets/page423_fig01.jpg)）。因此，$\phi$ 表示经度，$\frac{1}{2}\pi-\theta$ 表示纬度（均以弧度为单位）。（带协变导数 $\nabla_a$ 的）拉普拉斯算符为***[22.32]
 
 $$\nabla^2=g^{ab}\nabla_a\nabla_b=\frac{\partial^2}{\partial\theta^2}+\frac{\cos\theta}{\sin\theta}\frac{\partial}{\partial\theta}+\frac{1}{\sin^2\theta}\frac{\partial^2}{\partial\phi^2}。$$
 
@@ -913,7 +913,7 @@ $$[p_a, M^{bc}] = \mathrm{i}\hbar\left(g_a{}^b p^c - g_a{}^c p^b\right),$$
 
 $$[M^{ab}, M^{cd}] = i\hbar(g^{bc}M^{ad} - g^{bd}M^{ac} + g^{ad}M^{bc} - g^{ac}M^{bd})。$$
 
-这些对易律看上去有点复杂，但在相对论物理里却具有根本的重要性，因为它们定义了庞加莱群的李代数（[§14.6](chapter_14.md#146-李导数)）。在图 22.18 的图示记法下，它们看起来会简单点。**[22.35]
+这些对易律看上去有点复杂，但在相对论物理里却具有根本的重要性，因为它们定义了庞加莱群的李代数（[§14.6](chapter_14.md#146-李导数)）。在[图 22.18](assets/page427_fig01.jpg) 的图示记法下，它们看起来会简单点。**[22.35]
 
 ![相对论四维动量和六维角动量量子对易子的图示记法，包含 $p_a$、$p^a$、$M^{ab}$ 的符号定义以及三行对易关系图示：$[p,p]=0$、$[p,M]=i\hbar$ 相关项、$[M,M]=i\hbar$ 相关项](assets/page427_fig01.jpg)
 

@@ -344,7 +344,7 @@ $$\mathbf{T}\mathbf{v} = 0.$$
 
 $$\mathbf{T}\mathbf{T}^{-1} = \mathbf{I} = \mathbf{T}^{-1}\mathbf{T},$$
 
-我们可用图示记法来清晰方便地表示这个逆矩阵，如图 13.7。这里我引入了一种非常有用的符号来表示反对称的列维－齐维塔量 $\varepsilon_{a\cdots c}$ 和 $\epsilon^{a\cdots c}$（按 $\varepsilon_{a\cdots c}\in^{a\cdots c} = n!$ 归一化），这种反对称量最先是在 [§12.7](chapter_12.md#127-体积元求和规则) 节和[图 12.18](assets/page193_fig01.jpg) 中引入的。^[13.19]^
+我们可用图示记法来清晰方便地表示这个逆矩阵，如[图 13.7](assets/page205_fig01.jpg)。这里我引入了一种非常有用的符号来表示反对称的列维－齐维塔量 $\varepsilon_{a\cdots c}$ 和 $\epsilon^{a\cdots c}$（按 $\varepsilon_{a\cdots c}\in^{a\cdots c} = n!$ 归一化），这种反对称量最先是在 [§12.7](chapter_12.md#127-体积元求和规则) 节和[图 12.18](assets/page193_fig01.jpg) 中引入的。^[13.19]^
 
 ??? question "答案 [13.19]"
     图 12.18 的反对称收缩恒等式说明，用两个列维-齐维塔量夹住 $n-1$ 个 $T$ 并除以 $\det T$ 得到的余因子矩阵，正好满足与 $T$ 收缩后变成克罗内克 $\delta$。这就是伴随矩阵公式 $T^{-1}=(\operatorname{adj}T)/\det T$ 的图示版本，因此给出 $TT^{-1}=I=T^{-1}T$。
