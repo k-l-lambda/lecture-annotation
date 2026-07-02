@@ -1,0 +1,2277 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/The_Road_to_Reality/chapter_05/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Chapter 05 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#对数幂和根的几何" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 05
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#51-复代数几何" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 复代数几何
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- page 77 -->
+
+<p>通向实在之路</p>
+<p><strong>第五章</strong></p>
+<h1 id="对数幂和根的几何">对数、幂和根的几何<a class="headerlink" href="#对数幂和根的几何" title="Permanent link">&para;</a></h1>
+<h2 id="51-复代数几何">5.1 复代数几何<a class="headerlink" href="#51-复代数几何" title="Permanent link">&para;</a></h2>
+<p>86　　上章末讨论的复数的神奇性质包括许多方面，现在我们回头再看看其中更为基础的一些要素。首先，我们来看 §4.1 的加法和乘法规则在复平面上如何几何地表示出来。我们可以分别用<a href="../assets/page078_fig01.jpg">图 5.1</a>(a),(b) 的平行四边形法则和相似三角形法则来表示它们。具体来说，对于两个一般的复数 <span class="arithmatex">\(w\)</span> 和 <span class="arithmatex">\(z\)</span>，点 <span class="arithmatex">\(w+z\)</span> 和 <span class="arithmatex">\(wz\)</span> 分别由以下命题确定：</p>
+<p>点 <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(w\)</span>, <span class="arithmatex">\(w + z\)</span>, <span class="arithmatex">\(z\)</span> 分别是平行四边形的四个顶点，</p>
+<p>且</p>
+<p>顶点为 <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(w\)</span> 的三角形和顶点为 <span class="arithmatex">\(0\)</span>, <span class="arithmatex">\(z\)</span>, <span class="arithmatex">\(wz\)</span> 的三角形相似。</p>
+<p>87　　（这里采用通常约定的逆时针周线取向。我的意思是说，我们沿平行四边形逆时针转一圈，从 <span class="arithmatex">\(w\)</span> 到 <span class="arithmatex">\(w+z\)</span> 的线段平行于 <span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(z\)</span> 的线段，等等；此外，三角形间的相似关系不考虑“反射”因素。并且容许存在三角形和平行四边形按不同方式退化的特殊情形。**〔5.1〕）感兴趣的读者可以用三角学和直接计算来检验这些运算法则。**〔5.2〕但是，我们还有其他办法来看待这些关系，它们可以免去具体计算，而且更具洞察力。</p>
+<p>我们先来考虑将整个复平面映射到自身的不同映射（或“变换”）的加法和乘法。任意给定的复数 <span class="arithmatex">\(w\)</span> 定义了一种“加法映射”和一种“乘法映射”，它们是这样的运算：当作用于任意复数 <span class="arithmatex">\(z\)</span> 时，前者为将 <span class="arithmatex">\(w\)</span> 加到 <span class="arithmatex">\(z\)</span> 上，后者为取 <span class="arithmatex">\(w\)</span> 和 <span class="arithmatex">\(z\)</span> 的积，就是说，</p>
+<div class="arithmatex">\[z \mapsto w+z \qquad \text{和} \qquad z \mapsto wz\]</div>
+<p>很容易看出，加法映射就是不加转动地沿复平面滑行或改变其大小或形状——一种平移变换</p>
+<hr />
+<p>**〔5.1〕 检验这些不同的可能性。</p>
+<details class="question">
+<summary>答案 [5.1]</summary>
+<p>加法的退化情形包括 <span class="arithmatex">\(w=0\)</span>、<span class="arithmatex">\(z=0\)</span> 或 <span class="arithmatex">\(w,z\)</span> 共线时，平行四边形压成线段；若 <span class="arithmatex">\(w=-z\)</span>，则 <span class="arithmatex">\(w+z=0\)</span>，四个顶点中有重合。所有这些仍符合向量相加的平移规则。</p>
+<p>乘法的退化情形主要是 <span class="arithmatex">\(w=0\)</span> 或 <span class="arithmatex">\(z=0\)</span>，这时相似三角形压缩到原点，结果 <span class="arithmatex">\(wz=0\)</span>；若 <span class="arithmatex">\(w=1\)</span> 或 <span class="arithmatex">\(z=1\)</span>，相应三角形不变；若 <span class="arithmatex">\(w\)</span> 或 <span class="arithmatex">\(z\)</span> 是负实数，相似关系表现为转过 <span class="arithmatex">\(\pi\)</span> 再按模长伸缩。这些都与复数乘法公式一致。</p>
+</details>
+<p>**〔5.2〕 不妨试试。</p>
+<details class="question">
+<summary>答案 [5.2]</summary>
+<p>写 <span class="arithmatex">\(w=a+ib\)</span>，<span class="arithmatex">\(z=c+id\)</span>。加法给出 <span class="arithmatex">\(w+z=(a+c)+i(b+d)\)</span>，这正是平面中从 <span class="arithmatex">\(0\)</span> 先走到 <span class="arithmatex">\(w\)</span> 再平移 <span class="arithmatex">\(z\)</span> 的平行四边形终点。</p>
+<p>对乘法，<span class="arithmatex">\(wz=(ac-bd)+i(ad+bc)\)</span>。若 <span class="arithmatex">\(z\)</span> 的坐标向量为 <span class="arithmatex">\((c,d)\)</span>，乘以 <span class="arithmatex">\(w\)</span> 后变为 <span class="arithmatex">\((ac-bd,ad+bc)\)</span>。这个线性变换把 <span class="arithmatex">\((1,0)\)</span> 送到 <span class="arithmatex">\((a,b)\)</span>，把 <span class="arithmatex">\((0,1)\)</span> 送到 <span class="arithmatex">\((-b,a)\)</span>，两像向量等长且垂直，因此它是一个伸缩加旋转，伸缩因子为 <span class="arithmatex">\(|w|\)</span>。这正是相似三角形法则。</p>
+</details>
+<p>·58·</p>
+<!-- page 78 -->
+
+<h1 id="第五章-对数幂和根的几何">第五章 对数、幂和根的几何<a class="headerlink" href="#第五章-对数幂和根的几何" title="Permanent link">&para;</a></h1>
+<hr />
+<p><img alt="复平面上加法平行四边形法则示意图" src="../assets/page078_fig01.jpg" /></p>
+<p><img alt="复平面上乘法相似三角形法则示意图" src="../assets/page078_fig02.jpg" /></p>
+<p>图 5.1 复代数基本法则的几何描述。(a) 加法的平行四边形法则：0，w，w+z，z分别给出平行四边形的四个顶点。(b) 乘法的相似三角形法则：顶点为0，1，w的三角形和顶点为0，z，wz的三角形相似。</p>
+<p>（见<a href="../chapter_02/#21-毕达哥拉斯定理">§2.1</a>）——将原点0移至点w；见<a href="../assets/page078_fig03.jpg">图5.2</a>(a)。平行四边形法则就是对这种情形的复数。但什么是乘法映射呢？它是一种保持原点和形状不变的变换——将点1变换到点w。在一般情形下，它包括具有均匀扩展（或收缩）的（非反射）转动变换，见<a href="../assets/page078_fig03.jpg">图5.2</a>(b)。<em>*</em>[5.3]相似三角形法则有效地表明了这一点。这个映射对于我们在<a href="../chapter_08/#82-共形映射">§8.2</a>的讨论有重要意义。</p>
+<p><img alt="加法映射“+w”平移复平面的示意图" src="../assets/page078_fig03.jpg" /></p>
+<p><img alt="乘法映射“×w”转动并扩展复平面的示意图" src="../assets/page078_fig04.jpg" /></p>
+<p>图5.2 (a) 加法映射“+w”提供了复平面从0到w的平移。(b) 乘法映射“×w”提供复平面关于0的转动和从1到w的扩展（或收缩）。</p>
+<p>88</p>
+<p>在特定的w = i的情形，乘法映射就是按右手法则（即逆时针）转过一个直角（π/2）。如果我们两次运用这一运算，则转过π，它相当于关于原点对称的反射变换；换句话说，这种乘法映射就是将每个复数z变换到其负值。它是“神秘”方程i² = -1的图像表示（<a href="../assets/page079_fig01.jpg">图5.3</a>）。“乘以i”的运算是通过几何上“转过一个直角”的变换来实现的。按这种观点看，这种运算的“平方”（即操作两次）似乎并不神秘，不过就是“取负值”。自然，这种观点并未除去笼罩在复代数为什么如此有效这一点上的魔力和神秘面纱，也不能告诉我们这些数的清楚的物理意义。例如，我们可以问：为什么只是平面转动，三维下情形如何？以后特别是在 <a href="../chapter_11/#112-四元数的物理角色">§11.2</a>, 3、<a href="../chapter_18/#185-作为黎曼球面的天球">§18.5</a>、</p>
+<hr />
+<p><em>*</em>[5.3] 试不做具体计算也不用三角学来验证这一点。（提示：这是“分配律”w(z₁ + z₂) = wz₁ + wz₂的结果，它说明复平面保“线性”结构，而w(iz) = i(wz)则说明转过一个直角的转动是保角的，即直角在转动中保持不变。）</p>
+<details class="question">
+<summary>答案 [5.3]</summary>
+<p>映射 <span class="arithmatex">\(z\mapsto wz\)</span> 保持加法：两点差向量 <span class="arithmatex">\(z_1-z_2\)</span> 被送到 <span class="arithmatex">\(w(z_1-z_2)\)</span>，所以直线、平行性和平行四边形结构都保持。它还满足 <span class="arithmatex">\(w(iz)=i(wz)\)</span>，即先把向量转直角再映射，等于先映射再转直角。</p>
+<p>因此一个直角坐标框架在此映射下仍变成直角坐标框架，只是所有单位长度都被同一个因子 <span class="arithmatex">\(|w|\)</span> 放大，并整体旋转到 <span class="arithmatex">\(1\mapsto w\)</span> 的方向。于是该映射必为绕原点的旋转加均匀伸缩。</p>
+</details>
+<p>·59·</p>
+<!-- page 79 -->
+
+<p>通向实在之路</p>
+<p><a href="../chapter_21/#216-什么是量子实在">§21.6</a>, 9、<a href="../chapter_22/#222-u-的线性性以及它给-r-带来的问题">§22.2</a>, 3, 8—10、<a href="../chapter_33/#332-作为光线的扭量">§33.2</a>和<a href="../chapter_34/#348-通向实在的漫长的数学之路">§34.8</a>等章节，我将讨论这个问题的不同方面。</p>
+<p>在复数的平面描述中，我们对平面上的点用的是标准的笛卡儿坐标<span class="arithmatex">\((x,y)\)</span>，但我们也可以用极坐标<span class="arithmatex">\([r,\theta]\)</span>。这里正实数<span class="arithmatex">\(r\)</span>度量自原点始的距离，角度<span class="arithmatex">\(\theta\)</span>度量直线自原点到点<span class="arithmatex">\(z\)</span>的实轴按逆时针方向转过的角度，见<a href="../assets/page079_fig02.jpg">图5.4</a>(a)。量<span class="arithmatex">\(r\)</span>也叫作复数<span class="arithmatex">\(z\)</span>的模，我们经常写作</p>
+<div class="arithmatex">\[r = |z|,\]</div>
+<p><span class="arithmatex">\(\theta\)</span>叫做幅角（在量子力学里，有时也称作相角）。对<span class="arithmatex">\(z=0\)</span>点，我们不考虑其幅角<span class="arithmatex">\(\theta\)</span>，但仍定义<span class="arithmatex">\(r\)</span>为自原点的距离，此时就是<span class="arithmatex">\(r=0\)</span>。</p>
+<p>为清楚起见，我们可要求<span class="arithmatex">\(\theta\)</span>的主值处于一定的象限范围内，例如<span class="arithmatex">\(-\pi &lt; \theta \leqq \pi\)</span>（这是标准约定）。同时我们也可以认为对幅角增加<span class="arithmatex">\(2\pi\)</span>的整数倍而其效果不变。这使我们能够在度量角度时可以不论正反方向绕原点转任意圈（见<a href="../assets/page079_fig02.jpg">图5.4</a>(b)）。（这第二种观点实际上是一种更深刻的观点，它的意义我们不久就会知道。）由<a href="../assets/page079_fig03.jpg">图5.5</a>和基本三角函数关系我们看到，</p>
+<div class="arithmatex">\[x = r \cos \theta \qquad \text{和} \qquad y = r \sin \theta,\]</div>
+<p>反过来有</p>
+<div class="arithmatex">\[r = \sqrt{x^2 + y^2} \qquad \text{和} \qquad \theta = \arctan \frac{y}{x},\]</div>
+<p><img alt="图5.3 在复平面上，“乘以i”的特殊运算是通过几何上“转过一个直角”的变换来实现的。可用图像来表示“神秘”方程\(i^2=-1\)。" src="../assets/page079_fig01.jpg" /></p>
+<p><img alt="图5.4 (a) 笛卡儿坐标\((x,y)\)到极坐标\([r,\theta]\)的转换，我们有\(z=x+iy=re^{i\theta}\)，其中模\(r=|z|\)是自原点始的距离，幅角\(\theta\)是直线自原点到点\(z\)的实轴按逆时针方向转过的角度。(b) 如果\(\theta\)的主值范围取\(-\pi&gt;\theta\leqq\pi\)，我们可容许\(z\)绕原点转动任意圈、\(\theta\)增加\(2\pi\)的整数倍而意义不变。" src="../assets/page079_fig02.jpg" /></p>
+<p><img alt="图5.5 复数的笛卡儿坐标与极坐标之间的转换关系：\(x=r\cos\theta\)和\(y=r\sin\theta\)，反过来有\(r=\sqrt{x^2+y^2}\)和\(\theta=\tan^{-1}(y/x)\)。" src="../assets/page079_fig03.jpg" /></p>
+<!-- page 80 -->
+
+<p>第五章 对数、幂和根的几何</p>
+<p>这里 <span class="arithmatex">\(\theta=\tan^{-1}(y/x)\)</span> 量度多值函数 <span class="arithmatex">\(\tan^{-1}\)</span> 的某个特定值。（对那些已忘了三角函数的读者，前两个式子不过是直角三角形中一个角的正弦和余弦函数的复述："角的余弦等于邻边比上斜边"，"角的正弦等于对边比上斜边"，<span class="arithmatex">\(r\)</span> 就是斜边；后两个式子表示的是毕达哥拉斯定理的逆形式："角的正切等于对边比上邻边"。我们还应注意到，<span class="arithmatex">\(\tan^{-1}\)</span> 就是正切 <span class="arithmatex">\(\tan\)</span> 的反函数，而不是倒数，因此上述方程 <span class="arithmatex">\(\theta=\tan^{-1}(y/x)\)</span> 表示 <span class="arithmatex">\(\tan\theta=y/x\)</span>。最后，<span class="arithmatex">\(\tan^{-1}\)</span> 值具有任意性，就是说，<span class="arithmatex">\(\theta\)</span> 可以增加 <span class="arithmatex">\(2\pi\)</span> 的整数倍而关系不变。）¹</p>
+<h2 id="52-复对数概念">5.2 复对数概念<a class="headerlink" href="#52-复对数概念" title="Permanent link">&para;</a></h2>
+<p>现在，如<a href="../assets/page078_fig01.jpg">图 5.1</a>(b) 所示的两个复数的乘法的"相似三角形法则"可重新表述为如下事实：两个复数的相乘，相当于它们的幅角相加，模相乘。*[5.4] 注意，这里就幅角运算规则来说，我们实际上已将乘法转换为加法，其原理是应用了对数运算法则（两数之积的对数等于该两数的对数之和：<span class="arithmatex">\(\log ab=\log a+\log b\)</span>），这也是计算尺（<a href="../assets/page080_fig01.jpg">图 5.6</a>）的工作原理，在早年的计算实践中它具有根本的重要性。² 现在我们都改用电子计算器来做乘法运算了，尽管这比计算尺或对数表快了很多，也要精确得多，但如果我们没能直接体验过对数运算的美和深刻的重要性，我们就会在理解上失去一些非常有价值的东西。我们将看到，对数在复数间的关系上具有基础性地位。在非常明确的意义上，复数的幅角实际上就是一个对数。我们试着来了解这是怎么回事儿。</p>
+<p><img alt="计算尺对数刻度示意图，演示乘法运算转换为尺上距离相加的原理" src="../assets/page080_fig01.jpg" /></p>
+<p>图 5.6 计算尺按对数定标关系来显示数，从而使乘法运算变成为尺上距离的加和运算，其依据的公式为 <span class="arithmatex">\(\log_b(p\times q)=\log_b p+\log_b q\)</span>。（图中显示的是乘以 2 的例子。）</p>
+<p>从 <a href="../chapter_04/#42-用复数解方程">§4.2</a> 的命题可知，取复数根实质上就是个如何理解复对数的问题。我们将发现，复对数与三角学之间存在着值得注意的关系。这些我们在此也一并考虑进来。</p>
+<p>先回顾一下通常的对数。对数是"数的自乘"或指数运算的一种逆运算。"自乘"是一种将加法转换成乘法的运算，为什么这么说呢？我们任取一个（非零）数 <span class="arithmatex">\(b\)</span>。于是有公式（将加法转换成乘法）</p>
+<div class="arithmatex">\[b^{m+n}=b^m\times b^n,\]</div>
+<ul>
+<li>[5.4] 验证这一点。</li>
+</ul>
+<details class="question">
+<summary>答案 [5.4]</summary>
+<p>令 <span class="arithmatex">\(w=r(\cos\theta+i\sin\theta)\)</span>，<span class="arithmatex">\(z=s(\cos\phi+i\sin\phi)\)</span>。相乘得 <span class="arithmatex">\(wz=rs\{(\cos\theta\cos\phi-\sin\theta\sin\phi)+i(\sin\theta\cos\phi+\cos\theta\sin\phi)\}\)</span>。</p>
+<p>括号内由三角加法公式就是 <span class="arithmatex">\(\cos(\theta+\phi)+i\sin(\theta+\phi)\)</span>。所以模相乘为 <span class="arithmatex">\(rs\)</span>，幅角相加为 <span class="arithmatex">\(\theta+\phi\)</span>。</p>
+</details>
+<!-- page 81 -->
+
+<h1 id="通向实在之路">通向实在之路<a class="headerlink" href="#通向实在之路" title="Permanent link">&para;</a></h1>
+<p>如果 <span class="arithmatex">\(m\)</span> 和 <span class="arithmatex">\(n\)</span> 都是正整数，这是很显然的，因为等号两边都表示有 <span class="arithmatex">\(m+n\)</span> 个 <span class="arithmatex">\(b\)</span> 相乘。我们要做的就是找出一般化的法则，使其不仅适用于 <span class="arithmatex">\(m\)</span> 和 <span class="arithmatex">\(n\)</span> 不是正整数的情形，而且可用于任意复数。为此，我们需要找出“使 <span class="arithmatex">\(b\)</span> 自乘 <span class="arithmatex">\(z\)</span> 次”的正确定义，这里 <span class="arithmatex">\(z\)</span> 是复数。我们还需要使上述公式，即 <span class="arithmatex">\(b^{w+z}=b^w \times b^z\)</span>，对复指数 <span class="arithmatex">\(w\)</span> 和 <span class="arithmatex">\(z\)</span> 成立。</p>
+<p>实际上，一定意义上说，这个过程见证了 §4.1 所述的由毕达哥拉斯始，经由欧多克索斯、婆罗摩笈多，直到卡尔达诺和邦贝利（及此后）各个时期数的概念是如何一步步地从正整数发展到复数的历史。起先，人们将“<span class="arithmatex">\(b^z\)</span>”的概念（这里 <span class="arithmatex">\(z\)</span> 是正整数）理解为 <span class="arithmatex">\(z\)</span> 个 <span class="arithmatex">\(b\)</span> 的简单乘积 <span class="arithmatex">\(b \times b \times \cdots \times b\)</span>，特别是 <span class="arithmatex">\(b^1=b\)</span>。随后（在婆罗摩笈多的引领下），我们懂得了 <span class="arithmatex">\(z\)</span> 可以为 <span class="arithmatex">\(0\)</span>，认识到只需令 <span class="arithmatex">\(b^0=1\)</span> 就可以保持 <span class="arithmatex">\(b^{w+z}=b^w \times b^z\)</span> 成立。再后来又将 <span class="arithmatex">\(z\)</span> 扩展到负数，并基于同样的理由认识到，对于 <span class="arithmatex">\(z=-1\)</span> 的情形，必须将 <span class="arithmatex">\(b^{-1}\)</span> 定义为 <span class="arithmatex">\(b\)</span> 的倒数（即 <span class="arithmatex">\(1/b\)</span>），这样 <span class="arithmatex">\(b^{-n}\)</span>（<span class="arithmatex">\(n\)</span> 是自然数）就可理解为 <span class="arithmatex">\(b^{-1}\)</span> 的 <span class="arithmatex">\(n\)</span> 次幂。这以后，我们再次将 <span class="arithmatex">\(z\)</span> 一般化，容许 <span class="arithmatex">\(z\)</span> 是一个分数，依然由 <span class="arithmatex">\(z=1/n\)</span> 开始，这里 <span class="arithmatex">\(n\)</span> 是个正整数。重复应用 <span class="arithmatex">\(b^{w+z}=b^w \times b^z\)</span> 我们即可得出结论 <span class="arithmatex">\((b^z)^n=b^{zn}\)</span>；由此，令 <span class="arithmatex">\(z=1/n\)</span>，我们即导出 <span class="arithmatex">\(b^{1/n}\)</span> 为 <span class="arithmatex">\(b\)</span> 的 <span class="arithmatex">\(n\)</span> 次根的事实。</p>
+<p>92</p>
+<p>我们可以在实数域里这么做，只要数 <span class="arithmatex">\(b\)</span> 始终是正的即可。然后，我们可以将 <span class="arithmatex">\(b^{1/n}\)</span> 看成是 <span class="arithmatex">\(b\)</span> 的唯一的正 <span class="arithmatex">\(n\)</span> 次根（这里 <span class="arithmatex">\(n\)</span> 是正整数），接着我们对任意有理数 <span class="arithmatex">\(z=m/n\)</span>，将 <span class="arithmatex">\(b^z\)</span> 定义为 <span class="arithmatex">\(b\)</span> 的 <span class="arithmatex">\(n\)</span> 次根的 <span class="arithmatex">\(m\)</span> 次幂；再（利用取极限过程）将 <span class="arithmatex">\(z\)</span> 扩展到实数。但是，如果容许 <span class="arithmatex">\(b\)</span> 是负数，那么我们需要在 <span class="arithmatex">\(z=1/2\)</span> 处停一下，因为这时 <span class="arithmatex">\(\sqrt{b}\)</span> 需要引入 <span class="arithmatex">\(i\)</span>，由此我们转向了复数。进入复数世界后，让我们喘口气，振作精神，接着走下去。</p>
+<p>我们得这样来定义 <span class="arithmatex">\(b^p\)</span>：对所有复数 <span class="arithmatex">\(p, q\)</span> 和 <span class="arithmatex">\(b(b \neq 0)\)</span>，</p>
+<div class="arithmatex">\[b^{p+q} = b^p \times b^q\]</div>
+<p>由此，我们希望将以 <span class="arithmatex">\(b\)</span> 为底的对数（记为“<span class="arithmatex">\(\log_b\)</span>”）定义为函数 <span class="arithmatex">\(f(z)=b^z\)</span> 的逆运算，即</p>
+<div class="arithmatex">\[z = \log_b w，如果 w = b^z\]</div>
+<p>然后我们期望</p>
+<div class="arithmatex">\[\log_b(p \times q) = \log_b p + \log_b q\]</div>
+<p>因此，这种对数概念确实将乘法转换成了加法。</p>
+<h2 id="53-多值性自然对数">5.3　多值性，自然对数<a class="headerlink" href="#53-多值性自然对数" title="Permanent link">&para;</a></h2>
+<p>虽然这基本上是正确的，但这么做技术上还有些困难（这点一会儿再谈）。首先，<span class="arithmatex">\(b^z\)</span> 是“多值”的。就是说，“<span class="arithmatex">\(b^z\)</span>”的意义一般来说可以有多种不同的答案。对 <span class="arithmatex">\(\log_b w\)</span> 来说也是如此。我们已经见过在 <span class="arithmatex">\(z\)</span> 为分数值时 <span class="arithmatex">\(b^z\)</span> 的多值性。例如，若 <span class="arithmatex">\(z=1/2\)</span>，则“<span class="arithmatex">\(b^z\)</span>”的意义应当是“某个数 <span class="arithmatex">\(t\)</span> 的平方等于 <span class="arithmatex">\(b\)</span>”，就是说，<span class="arithmatex">\(t^2 = t \times t = b^{\frac{1}{2}} \times b^{\frac{1}{2}} = b^{\frac{1}{2}+\frac{1}{2}} = b^1 = b\)</span>。如果某个数 <span class="arithmatex">\(t\)</span> 满足这种性质，那么</p>
+<p>·62·</p>
+<!-- page 82 -->
+
+<h2 id="第五章-对数幂和根的几何_1">第五章 对数、幂和根的几何<a class="headerlink" href="#第五章-对数幂和根的几何_1" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(-t\)</span> 也将满足（因为 <span class="arithmatex">\((-t)\times(-t)=t^2=b\)</span>）。假定 <span class="arithmatex">\(b\neq0\)</span>，我们有两个不同的 <span class="arithmatex">\(b^{1/2}\)</span> 解（通常写作 <span class="arithmatex">\(\pm\sqrt{b}\)</span>）。更一般地，对 <span class="arithmatex">\(b^{1/n}\)</span>（<span class="arithmatex">\(n\)</span> 为正整数 <span class="arithmatex">\(1, 2, 3, 4, \cdots\)</span>），我们有 <span class="arithmatex">\(n\)</span> 个不同的复数解。事实上，只要 <span class="arithmatex">\(n\)</span> 是（非零）有理数，我们就一定有有限个解；如果 <span class="arithmatex">\(n\)</span> 是无理数，则得到的是无限多个解，93 一会儿我们就会明白这一点。</p>
+<p>我们来试试，看如何消除这些不确定性。先从选择特定的 <span class="arithmatex">\(b\)</span> 开始，这里取其为基本常数 “e”，它称为自然对数的底。这么做有助于减少多值性问题。<span class="arithmatex">\(e\)</span> 的定义为：</p>
+<div class="arithmatex">\[e = 1 + \frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \frac{1}{4!} + \cdots = 2.718\ 281\ 828\ 5\cdots,\]</div>
+<p>这里感叹号 “!” 表示阶乘，即</p>
+<div class="arithmatex">\[n! = 1 \times 2 \times 3 \times 4 \times \cdots \times n\]</div>
+<p>故 <span class="arithmatex">\(1! = 1\)</span>，<span class="arithmatex">\(2! = 2\)</span>，<span class="arithmatex">\(3! = 6\)</span>，等等。由 <span class="arithmatex">\(f(z)=e^z\)</span> 定义的函数叫指数函数，通常写作 “exp”。当这个函数作用于 <span class="arithmatex">\(z\)</span> 时，可将其看成是 “使 e 自乘 <span class="arithmatex">\(z\)</span> 次”，这个 “幂” 可定义为如下的级数：</p>
+<div class="arithmatex">\[e^z = 1 + \frac{z}{1!} + \frac{z^2}{2!} + \frac{z^3}{3!} + \frac{z^4}{4!} + \cdots\]</div>
+<p>这个重要的幂级数实际上对所有 <span class="arithmatex">\(z\)</span> 值均收敛（因此它有无穷大的收敛圆，见 <a href="../chapter_04/#44-韦塞尔复平面">§4.4</a>）。在 <span class="arithmatex">\(b=e\)</span> 的情形下，“<span class="arithmatex">\(b^z\)</span>” 的多值性正是通过这个无穷和得到了一种特定的选择。例如，若 <span class="arithmatex">\(z=1/2\)</span>，则级数给出正的量 <span class="arithmatex">\(+\sqrt{e}\)</span> 而不是 <span class="arithmatex">\(-\sqrt{e}\)</span>。按照级数定义，<em>*</em>[5.5] <span class="arithmatex">\(z=1/2\)</span> 实际上给出的是 <span class="arithmatex">\(e^{1/2}\)</span>，由 <span class="arithmatex">\(e^z\)</span> 知，它的平方就是 <span class="arithmatex">\(e\)</span>，这个事实总满足所需的 “加法转乘法” 性质</p>
+<div class="arithmatex">\[e^{a+b} = e^a e^b\]</div>
+<p>故 <span class="arithmatex">\((e^{1/2})^2 = e^{1/2} e^{1/2} = e^{1/2+1/2} = e^1 = e\)</span>。</p>
+<p>我们试用 <span class="arithmatex">\(e^z\)</span> 的这个定义来处理无歧义的对数，它定义为指数函数的反函数：</p>
+<div class="arithmatex">\[z = \log w，\text{如果 } w = e^z\]</div>
+<p>这是自然对数（我将它写成不带底符号的 “log”）。³ 从上述加法转乘法的性质，我们预期有 “乘法转加法” 的法则：</p>
+<div class="arithmatex">\[\log ab = \log a + \log b\]</div>
+<p>要一眼看出这种 <span class="arithmatex">\(e^z\)</span> 的反函数必定存在并非易事。但是，它说明一个事实，对任意不为零的复数 <span class="arithmatex">\(w\)</span>，总存在 <span class="arithmatex">\(z\)</span> 使得 <span class="arithmatex">\(w=e^z\)</span>，因此我们可定义 <span class="arithmatex">\(\log w = z\)</span>。但这里有个陷阱：答案不唯一。</p>
+<p>我们怎么来表示这个答案呢？如果 <span class="arithmatex">\([r, \theta]\)</span> 是 <span class="arithmatex">\(w\)</span> 的极坐标表示，那么我们就可以按普通的笛卡儿形式 (<span class="arithmatex">\(z=x+iy\)</span>) 写出对数 <span class="arithmatex">\(z\)</span>：</p>
+<div class="arithmatex">\[z = \log r + i\theta\]</div>
+<hr />
+<p>*** [5.5] 直接从级数验证这一点。（提示：按照整数指数的 “二项式定理”，<span class="arithmatex">\((a+b)^n\)</span> 的 <span class="arithmatex">\(a^p b^q\)</span> 项的系数为 <span class="arithmatex">\(n!/p!q!\)</span>。）</p>
+<details class="question">
+<summary>答案 [5.5]</summary>
+<p>将两个级数相乘：<span class="arithmatex">\(e^a e^b=(\sum_{p\ge0}a^p/p!)(\sum_{q\ge0}b^q/q!)\)</span>。其中总次数为 <span class="arithmatex">\(n=p+q\)</span> 的项之和为 <span class="arithmatex">\(\sum_{p+q=n}a^p b^q/(p!q!)\)</span>。</p>
+<p>而 <span class="arithmatex">\(e^{a+b}=\sum_{n\ge0}(a+b)^n/n!\)</span>。由二项式定理，<span class="arithmatex">\((a+b)^n/n!=\sum_{p+q=n}a^p b^q/(p!q!)\)</span>。逐次比较各总次数的项，得到 <span class="arithmatex">\(e^{a+b}=e^a e^b\)</span>。</p>
+</details>
+<p>·63·</p>
+<!-- page 83 -->
+
+<p>通向实在之路</p>
+<p>这里 <span class="arithmatex">\(\log r\)</span> 是正实数 <span class="arithmatex">\(r\)</span> 的普通的自然对数——实指数的反函数。为什么呢？这从<a href="../assets/page083_fig01.jpg">图 5.7</a> 看得很清楚，这种实对数是存在的。在<a href="../assets/page083_fig01.jpg">图 5.7</a>(a) 中，我们画出了 <span class="arithmatex">\(r=e^x\)</span> 的图像。只需将坐标轴颠倒个个儿，我们即得到反函数 <span class="arithmatex">\(x=\log r\)</span> 的图像如<a href="../assets/page083_fig01.jpg">图 5.7</a>(b)。毫不奇怪，<span class="arithmatex">\(z=\log w\)</span> 的实部正是普通的实对数。奇怪的倒是<sup>4</sup> <span class="arithmatex">\(z\)</span> 的虚部恰好就是复数 <span class="arithmatex">\(w\)</span> 的幅角 <span class="arithmatex">\(\theta\)</span>。这一事实证实了我们早先所说的复数的幅角实际就是一种对数形式的断言。</p>
+<p><img alt="图 5.7 (a) 函数 \(r=e^x\) 的图像；(b) 反函数 \(x=\log r\) 的图像。" src="../assets/page083_fig01.jpg" /></p>
+<p>图 5.7 为了得到正实数 <span class="arithmatex">\(r\)</span> 的对数，考虑图 (a) <span class="arithmatex">\(r=e^x\)</span> 的图像。这个图像囊括了 <span class="arithmatex">\(r\)</span> 的所有正值，因此，将这幅图像颠倒一下，我们就得到了关于正值 <span class="arithmatex">\(r\)</span> 的反函数 <span class="arithmatex">\(x=\log r\)</span> 的图像 (b)。</p>
+<p>此前我们说过，复数的幅角定义存在不确定性。我们可以让 <span class="arithmatex">\(\theta\)</span> 加上 <span class="arithmatex">\(2\pi\)</span> 的任意整数倍而实际效果不变（回忆<a href="../assets/page079_fig02.jpg">图 5.4</a>(b)）。相应地，在 <span class="arithmatex">\(w=e^z\)</span> 中，对给定的 <span class="arithmatex">\(w\)</span> 存在多种不同的解 <span class="arithmatex">\(z\)</span>。如果我们取定一个这样的 <span class="arithmatex">\(z\)</span>，则 <span class="arithmatex">\(z+2\pi i n\)</span> 也是可能的解，其中 <span class="arithmatex">\(n\)</span> 是任意整数。因此，<span class="arithmatex">\(w\)</span> 的对数只能确定到相差一个任意倍 <span class="arithmatex">\(2\pi i\)</span> 的程度。必须记住，在诸如 <span class="arithmatex">\(\log ab=\log a+\log b\)</span> 的表达式里也存在这种不确定性，我们必须对对数做出适当的选择。</p>
+<p>复对数的这种特征似乎是一种让人恼火的事情。然而，在 <a href="../chapter_07/#72-周线积分">§7.2</a> 我们将看到，它却是复数最有力、有用和神奇性质的核心。复分析的关键全在于此。眼下我们只是试着评估一下这种不确定性的实质。</p>
+<p>理解 <span class="arithmatex">\(\log w\)</span> 的这种不确定性的另一种方法是通过如下公式</p>
+<div class="arithmatex">\[e^{2\pi i}=1,\]</div>
+<p>由此有，<span class="arithmatex">\(e^{z+2\pi i}=e^z=w\)</span>，等等，这说明，对 <span class="arithmatex">\(w\)</span> 的代数来说，<span class="arithmatex">\(z+2\pi i\)</span> 的效果与 <span class="arithmatex">\(z\)</span> 一样（我们可以将此重复任意倍）。上述公式与著名的欧拉公式紧密相关：</p>
+<div class="arithmatex">\[e^{\pi i}+1=0\]</div>
+<p>（这个公式将 5 个基本量 <span class="arithmatex">\(0\)</span>，<span class="arithmatex">\(1\)</span>，<span class="arithmatex">\(i\)</span>，<span class="arithmatex">\(\pi\)</span> 和 <span class="arithmatex">\(e\)</span> 通过一个神秘的表达式联系起来）。*(5.6)</p>
+<p>为了更好地理解这些性质，我们不妨对表达式 <span class="arithmatex">\(z=\log r+i\theta\)</span> 取指数，得到</p>
+<hr />
+<p>*[5.6] 由此证明 <span class="arithmatex">\(z+\pi i\)</span> 是 <span class="arithmatex">\(-w\)</span> 的对数。</p>
+<details class="question">
+<summary>答案 [5.6]</summary>
+<p>若 <span class="arithmatex">\(z\)</span> 是 <span class="arithmatex">\(w\)</span> 的对数，则 <span class="arithmatex">\(e^z=w\)</span>。又由欧拉公式 <span class="arithmatex">\(e^{\pi i}=-1\)</span>，所以 <span class="arithmatex">\(e^{z+\pi i}=e^z e^{\pi i}=w(-1)=-w\)</span>。</p>
+<p>因此 <span class="arithmatex">\(z+\pi i\)</span> 的指数正是 <span class="arithmatex">\(-w\)</span>，按定义它就是 <span class="arithmatex">\(-w\)</span> 的一个对数。</p>
+</details>
+<!-- page 84 -->
+
+<p>第五章 对数、幂和根的几何</p>
+<div class="arithmatex">\[w = e^{z} = e^{\log r + i\theta} = e^{\log r}e^{i\theta} = re^{i\theta}\]</div>
+<p>它说明，复数 <span class="arithmatex">\(w\)</span> 的极坐标表达式可以更明确地写成</p>
+<div class="arithmatex">\[w = re^{i\theta}\]</div>
+<p>从这种方式我们看得很明白，如果两个复数相乘，得到的是它们的模的积和幅角的和（<span class="arithmatex">\(re^{i\theta}se^{i\phi} = rse^{i(\theta+\phi)}\)</span>，故 <span class="arithmatex">\(r\)</span> 和 <span class="arithmatex">\(s\)</span> 相乘，而 <span class="arithmatex">\(\theta\)</span> 和 <span class="arithmatex">\(\phi\)</span> 相加——记住，从 <span class="arithmatex">\(\theta + \phi\)</span> 上减去 <span class="arithmatex">\(2\pi\)</span> 不会造成任何影响），就像<a href="../assets/page078_fig01.jpg">图 5.1</a>b 的相似三角形法则所显示的那样。以后我不再讨论记号 <span class="arithmatex">\([r, \theta]\)</span>，而是直接用上述表达式。注意，若 <span class="arithmatex">\(r=1\)</span>，<span class="arithmatex">\(\theta=\pi\)</span>，则我们得到 <span class="arithmatex">\(-1\)</span> 并回到<a href="../assets/page079_fig02.jpg">图 5.4</a>(a) 几何所示的欧拉定理 <span class="arithmatex">\(e^{\pi i} + 1 = 0\)</span>；若 <span class="arithmatex">\(r=1\)</span>，<span class="arithmatex">\(\theta=2\pi\)</span>，则我们得到 <span class="arithmatex">\(+1\)</span> 和 <span class="arithmatex">\(e^{2\pi i} = 1\)</span>。</p>
+<p><span class="arithmatex">\(r=1\)</span> 的圆称为复平面上的单位圆（见<a href="../assets/page084_fig01.jpg">图 5.8</a>）。它由 <span class="arithmatex">\(w = e^{i\theta}\)</span>（<span class="arithmatex">\(\theta\)</span> 为实数）按上述表达式给出。将这个表达式与前面给出的量 <span class="arithmatex">\(w = x + iy\)</span> 的实部 <span class="arithmatex">\(x = r\cos\theta\)</span> 和虚部 <span class="arithmatex">\(y = r\sin\theta\)</span> 作比较，可得丰富的“柯茨-欧拉公式”<sup>5</sup></p>
+<div class="arithmatex">\[e^{i\theta} = \cos\theta + i\sin\theta,\]</div>
+<p>这个公式以复指数函数的简单性质基本包括了三角学的核心内容。</p>
+<p><img alt="复平面上的单位圆示意图，标有实轴、虚轴、点 1、-1、i、-i，以及单位圆上点 z、幅角 θ、半径 r=1。" src="../assets/page084_fig01.jpg" /></p>
+<blockquote>
+<p><a href="../assets/page084_fig01.jpg">图 5.8</a> 由单位模长复数组成的单位圆。这些复数均满足正值 θ 的柯茨-欧拉公式 <span class="arithmatex">\(e^{i\theta} = \cos\theta + i\sin\theta\)</span>。</p>
+</blockquote>
+<p>我们来看看它在基本的情形下是如何工作的。特别是，当我们将基本关系 <span class="arithmatex">\(e^{a+b} = e^{a}e^{b}\)</span> 按实部和虚部进行展开时，立即得到<sup>*[5.7]</sup>看起来异常复杂的表达式</p>
+<div class="arithmatex">\[\cos(a+b) = \cos a \cos b - \sin a \sin b,\]</div>
+<div class="arithmatex">\[\sin(a+b) = \sin a \cos b + \cos a \sin b.\]</div>
+<p>同样，对 <span class="arithmatex">\(e^{3i\theta} = (e^{i\theta})^3\)</span> 作展开，可很快得到<sup>6,*[5.8]</sup></p>
+<div class="arithmatex">\[\cos 3\theta = \cos^{3}\theta - 3\cos\theta\sin^{2}\theta,\]</div>
+<div class="arithmatex">\[\sin 3\theta = 3\sin\theta\cos^{2}\theta - \sin^{3}\theta.\]</div>
+<p>这种使复杂公式变成相当简单的复数表示的直接方法的确像是具有某种魔力。</p>
+<h2 id="54-复数幂">5.4 复数幂<a class="headerlink" href="#54-复数幂" title="Permanent link">&para;</a></h2>
+<p>现在让我们回到定义 <span class="arithmatex">\(w^{z}\)</span>（或如前面写的 <span class="arithmatex">\(b^{x}\)</span>）的问题上来。我们可将它写成</p>
+<div class="arithmatex">\[w^{z} = e^{z\log w}\]</div>
+<p>（因为我们有 <span class="arithmatex">\(e^{z\log w} = (e^{\log w})^{z}\)</span> 和 <span class="arithmatex">\(e^{\log w} = w\)</span>）。同时我们注意到，由于 <span class="arithmatex">\(\log w\)</span> 的多值性，我们可以增</p>
+<hr />
+<ul>
+<li>[5.7] 验证一下</li>
+</ul>
+<details class="question">
+<summary>答案 [5.7]</summary>
+<p>由 <span class="arithmatex">\(e^{i(a+b)}=e^{ia}e^{ib}\)</span>，左边为 <span class="arithmatex">\(\cos(a+b)+i\sin(a+b)\)</span>。右边为 <span class="arithmatex">\((\cos a+i\sin a)(\cos b+i\sin b)\)</span>。</p>
+<p>展开右边得 <span class="arithmatex">\((\cos a\cos b-\sin a\sin b)+i(\sin a\cos b+\cos a\sin b)\)</span>。比较实部和虚部，就得到正文两条加法公式。</p>
+</details>
+<ul>
+<li>[5.8] 验证一下。</li>
+</ul>
+<details class="question">
+<summary>答案 [5.8]</summary>
+<p>由 <span class="arithmatex">\(e^{3i\theta}=(e^{i\theta})^3\)</span>，有 <span class="arithmatex">\(\cos3\theta+i\sin3\theta=(\cos\theta+i\sin\theta)^3\)</span>。</p>
+<p>展开右边：实部为 <span class="arithmatex">\(\cos^3\theta-3\cos\theta\sin^2\theta\)</span>，虚部为 <span class="arithmatex">\(3\sin\theta\cos^2\theta-\sin^3\theta\)</span>。比较实部和虚部即得正文公式。</p>
+</details>
+<!-- page 85 -->
+
+<p>通向实在之路</p>
+<p>加任意整数倍的 <span class="arithmatex">\(2\pi i\)</span> 到 <span class="arithmatex">\(\log w\)</span> 上来得到另一个容许的答案。这意味着我们可以用 <span class="arithmatex">\(e^{z \cdot 2\pi i}\)</span> 的任意整数倍来乘或除 <span class="arithmatex">\(w^z\)</span> 的一个特定值，得到的还是这个“<span class="arithmatex">\(w^z\)</span>”。看看一般情形下由此给出的复平面上点的分布（见<a href="../assets/page085_fig01.jpg">图 5.9</a>）亦为快事。这些点就是两等角螺线交点。（等角螺线——或称为对数螺线——是一种与所有过极点的射线的交角都相等的平面曲线。）<em>*</em>[5.9]</p>
+<p><img alt="复平面上两等角螺线交点示意图" src="../assets/page085_fig01.jpg" /></p>
+<p>图 5.9 不同的 <span class="arithmatex">\(w^z\ (= e^{z \log w})\)</span> 值。任意整数倍的 <span class="arithmatex">\(2\pi i\)</span> 可加到 <span class="arithmatex">\(\log w\)</span> 上以得到另一个容许值，这意味着我们可以用 <span class="arithmatex">\(e^{z \cdot 2\pi i}\)</span> 的任意整数倍来乘或除 <span class="arithmatex">\(w^z\)</span> 得到的还是这个“<span class="arithmatex">\(w^z\)</span>”。在一般情形下，这些数表现为复平面上两等角螺线的交点（等角螺线是一种与所有过极点的射线的交角都相等的平面曲线）。</p>
+<p>如果我们不注意，这种不确定性会给我们带来各种麻烦。**[5.10] 避免这些麻烦的最好方法就是采用如下规则：记号 <span class="arithmatex">\(w^z\)</span> 只用于 <span class="arithmatex">\(\log w\)</span> 的特定选择已明确了的情形。（对 <span class="arithmatex">\(e^z\)</span> 这一特殊情形，默认的约定为 <span class="arithmatex">\(\log e = 1\)</span>。于是标准记号 <span class="arithmatex">\(e^z\)</span> 与更为一般的 <span class="arithmatex">\(w^z\)</span> 相一致。）一旦 <span class="arithmatex">\(\log w\)</span> 的这种选择得到具体化，则 <span class="arithmatex">\(w^z\)</span> 对所有 <span class="arithmatex">\(z\)</span> 有无歧义的定义。</p>
+<p>这里还要说上几句。如果要定义“以 <span class="arithmatex">\(b\)</span> 为底的对数”（记为“<span class="arithmatex">\(\log_b\)</span>”的函数），我们还得对 <span class="arithmatex">\(\log b\)</span> 做出规定，因为我们需要用 <span class="arithmatex">\(w = b^z\)</span> 来定义 <span class="arithmatex">\(z = \log_b w\)</span>。即使如此，<span class="arithmatex">\(\log_b w\)</span> 仍是多值的（<span class="arithmatex">\(\log w\)</span> 也如此），我们可以将 <span class="arithmatex">\(2\pi i/\log b\)</span> 的任意整数倍加到 <span class="arithmatex">\(\log_b w\)</span> 上。*[5.11]</p>
+<p>98</p>
+<p>在过去曾使一些数学家中计的一个奇思怪想是量 <span class="arithmatex">\(i^i\)</span>。它曾被认为是“人们能够想象的至高虚幻”。但实际上，通过规定 <span class="arithmatex">\(\log i = \dfrac{1}{2}\pi i\)</span>，*[5.12] 我们发现它有实的答案：</p>
+<div class="arithmatex">\[i^i = e^{i \log i} = e^{i \frac{1}{2}\pi i} = e^{-\pi/2} = 0.207\,879\,576\cdots\]</div>
+<p>如果对 <span class="arithmatex">\(\log i\)</span> 作其他规定，那么就还存在着其他多种答案。这些答案可通过将上述量乘以 <span class="arithmatex">\(e^{2\pi n}\)</span> 来得到，这里 <span class="arithmatex">\(n\)</span> 是任意整数（或等价地，将上述量自乘 <span class="arithmatex">\(4n + 1\)</span> 次，这里 <span class="arithmatex">\(n\)</span> 是整数——正负均可 *[5.13]）。令人惊奇的是，所有这些 <span class="arithmatex">\(i^i\)</span> 的值都是实数。</p>
+<p>再来看看 <span class="arithmatex">\(z = \dfrac{1}{2}\)</span> 时 <span class="arithmatex">\(w^z\)</span> 的情形。一定意义上说，我们希望仍能用两个量 <span class="arithmatex">\(\pm\sqrt{w}\)</span> 来表示“<span class="arithmatex">\(w^{1/2}\)</span>”。实际上，这两个量可以简单地用先规定 <span class="arithmatex">\(\log w\)</span> 的一个量的值再由此规定另一个的办法来得到。这样处理导致 <span class="arithmatex">\(w^{1/2}\)</span> 改变符号（由欧拉公式 <span class="arithmatex">\(e^{\pi i} = -1\)</span>）。类似地，对于 <span class="arithmatex">\(n = 3, 4, 5, \cdots\)</span>，我们可生成</p>
+<hr />
+<p>*** [5.9] 证明这一点。可有多少种方法？找出所有特解。</p>
+<details class="question">
+<summary>答案 [5.9]</summary>
+<p>写 <span class="arithmatex">\(w=Re^{i\Theta}\)</span>，<span class="arithmatex">\(z=a+ib\)</span>。则 <span class="arithmatex">\(\log w=\log R+i(\Theta+2\pi n)\)</span>，其中 <span class="arithmatex">\(n\in\mathbb Z\)</span>。于是 <span class="arithmatex">\(w^z\)</span> 的所有值为 <span class="arithmatex">\(e^{(a+ib)(\log R+i(\Theta+2\pi n))}\)</span>。</p>
+<p>其模的对数为 <span class="arithmatex">\(a\log R-b(\Theta+2\pi n)\)</span>，幅角为 <span class="arithmatex">\(b\log R+a(\Theta+2\pi n)\)</span>。当 <span class="arithmatex">\(n\)</span> 变化时，点的对数模和幅角都按等差数列变化，所以这些点落在对数螺线上；从正、负方向追踪可看作两族等角螺线的交点。若 <span class="arithmatex">\(z\)</span> 为有理实数，只得到有限多个不同值；若 <span class="arithmatex">\(z\)</span> 为无理实数或有非零虚部，通常得到无限多个不同值。</p>
+</details>
+<p>** [5.10] 解这个“疑难”：因为 <span class="arithmatex">\(e = e^{1+2\pi i}\)</span>，故 <span class="arithmatex">\(e = (e^{1+2\pi i})^{1+2\pi i} = e^{1+4\pi i - 4\pi^2} = e^{1-4\pi^2}\)</span>。</p>
+<details class="question">
+<summary>答案 [5.10]</summary>
+<p>错误在于把幂运算当成单值且无条件满足 <span class="arithmatex">\((e^u)^v=e^{uv}\)</span>。表达式 <span class="arithmatex">\((e^{1+2\pi i})^{1+2\pi i}\)</span> 要先为底数 <span class="arithmatex">\(e^{1+2\pi i}=e\)</span> 选定一个对数。</p>
+<p>若按标准约定取 <span class="arithmatex">\(\log e=1\)</span>，则结果是 <span class="arithmatex">\(e^{1+2\pi i}=e\)</span>。若故意取 <span class="arithmatex">\(\log e=1+2\pi i\)</span>，则得到 <span class="arithmatex">\(e^{(1+2\pi i)^2}=e^{1-4\pi^2}\)</span>。这不是矛盾，而是同一多值幂的另一个分支值。</p>
+</details>
+<ul>
+<li>[5.11] 证明这一点。</li>
+</ul>
+<details class="question">
+<summary>答案 [5.11]</summary>
+<p>若规定了 <span class="arithmatex">\(\log b\)</span>，则 <span class="arithmatex">\(b^z=e^{z\log b}\)</span>。要求 <span class="arithmatex">\(b^z=w\)</span> 等价于 <span class="arithmatex">\(e^{z\log b}=w\)</span>，所以 <span class="arithmatex">\(z\log b\)</span> 必为 <span class="arithmatex">\(\log w\)</span> 的某个值。</p>
+<p>因而 <span class="arithmatex">\(\log_b w=(\log w)/(\log b)\)</span>。由于 <span class="arithmatex">\(\log w\)</span> 可加上 <span class="arithmatex">\(2\pi i n\)</span>，<span class="arithmatex">\(\log_b w\)</span> 就可加上 <span class="arithmatex">\(2\pi i n/\log b\)</span>。这就是正文所说的不确定性。</p>
+</details>
+<ul>
+<li>[5.12] 为什么这是一种容许的规定？</li>
+</ul>
+<details class="question">
+<summary>答案 [5.12]</summary>
+<p>因为 <span class="arithmatex">\(i\)</span> 的模为 <span class="arithmatex">\(1\)</span>，幅角可取 <span class="arithmatex">\(\pi/2\)</span>。按复对数公式，<span class="arithmatex">\(\log i=\log1+i(\pi/2)=\pi i/2\)</span>。</p>
+<p>当然还可以取 <span class="arithmatex">\(\pi i/2+2\pi i n\)</span>。正文只是选取其中的主值分支，因此是完全容许的规定。</p>
+</details>
+<ul>
+<li>[5.13] 证明为什么这是有效的。</li>
+</ul>
+<details class="question">
+<summary>答案 [5.13]</summary>
+<p><span class="arithmatex">\(\log i\)</span> 的所有值为 <span class="arithmatex">\(\pi i/2+2\pi i n\)</span>。于是 <span class="arithmatex">\(i^i=e^{i\log i}=e^{i(\pi i/2+2\pi i n)}=e^{-\pi/2-2\pi n}\)</span>。</p>
+<p>这等于主值 <span class="arithmatex">\(e^{-\pi/2}\)</span> 乘以 <span class="arithmatex">\(e^{-2\pi n}\)</span>。把整数 <span class="arithmatex">\(n\)</span> 改名为 <span class="arithmatex">\(-n\)</span>，也可说通过乘以 <span class="arithmatex">\(e^{2\pi n}\)</span> 得到所有值。它们全是正实数。</p>
+</details>
+<p>·66·</p>
+<!-- page 86 -->
+
+<p>第五章　对数、幂和根的几何</p>
+<hr />
+<p><span class="arithmatex">\(z^n = w\)</span> 的所有 <span class="arithmatex">\(n\)</span> 个解 <span class="arithmatex">\(w^{1/n}\)</span>，只要 <span class="arithmatex">\(\log w\)</span> 的依次不同的值都有定义。*[5.14] 更一般地，现在可以来研究非零复数 <span class="arithmatex">\(w\)</span> 的 <span class="arithmatex">\(z\)</span> 次根的问题了，这里 <span class="arithmatex">\(z\)</span> 是非零复数，我们曾在 <a href="../chapter_04/#42-用复数解方程">§4.2</a> 回避了这个问题。这个 <span class="arithmatex">\(z\)</span> 次根可表示为 <span class="arithmatex">\(w^{1/z}\)</span>，一般来说，我们得到的是无穷多个这样的解，这要看 <span class="arithmatex">\(\log w\)</span> 的选择是如何规定的。通过正确选定 <span class="arithmatex">\(\log w^{1/z}\)</span>，即规定为 <span class="arithmatex">\((\log w)/z\)</span>，我们得到 <span class="arithmatex">\((w^{1/z})^z = w\)</span>。提醒一句，更一般地，</p>
+<div class="arithmatex">\[(w^a)^b = w^{ab},\]</div>
+<p>一旦我们对（右边的）<span class="arithmatex">\(\log w\)</span> 作出了具体规定，（左边的）<span class="arithmatex">\(\log w^a\)</span> 就具体化为 <span class="arithmatex">\(a\log w\)</span>。**[5.15]</p>
+<p>当 <span class="arithmatex">\(z = n\)</span> 为正整数时，事情要简单得多，我们恰好得到 <span class="arithmatex">\(n\)</span> 个根。此时一个特有意思的情形是 <span class="arithmatex">\(w = 1\)</span>。在依次指定 <span class="arithmatex">\(\log 1\)</span> 的可能值分别等于 <span class="arithmatex">\(0, 2\pi i, 4\pi i, 6\pi i, \cdots\)</span> 之后，我们得到 <span class="arithmatex">\(1^{1/n}\)</span> 的可能值分别为 <span class="arithmatex">\(1 = e^0, e^{2\pi i/n}, e^{4\pi i/n}, e^{6\pi i/n}, \cdots\)</span>。我们可把它们写为 <span class="arithmatex">\(1, \epsilon, \epsilon^2, \epsilon^3, \cdots\)</span>，这里 <span class="arithmatex">\(\epsilon = e^{2\pi i/n}\)</span>。在复平面上，它们是单位圆上均布的 <span class="arithmatex">\(n\)</span> 个点，称为 <span class="arithmatex">\(n\)</span> 次单位根。这些点是正 <span class="arithmatex">\(n\)</span> 边形（<a href="../assets/page086_fig01.jpg">图 5.10</a>）的顶点。（注意，<span class="arithmatex">\(\log 1\)</span> 的 <span class="arithmatex">\(-2\pi i, -4\pi i, -6\pi i\)</span> 等的选取同样是 <span class="arithmatex">\(n\)</span> 次根，只不过取的是逆序。）</p>
+<p>对给定的 <span class="arithmatex">\(n\)</span>，有趣的是，这 <span class="arithmatex">\(n\)</span> 次单位根构成所谓有限乘法群，更具体地说，就是循环群 <span class="arithmatex">\(\mathbb{Z}_n\)</span>（见 <a href="../chapter_13/#131-变换群">§13.1</a>）。我们有具有如下性质的 <span class="arithmatex">\(n\)</span> 个量：它们中任意两个之积给出其中的第三个量。我们也可以用一个量除以另一个量来得到第三个量。例如，考虑 <span class="arithmatex">\(n = 3\)</span> 的情形。现在我们有 3 个元素 <span class="arithmatex">\(1, \omega\)</span> 和 <span class="arithmatex">\(\omega^2\)</span>，这里 <span class="arithmatex">\(\omega = e^{2\pi i/3}\)</span>（故 <span class="arithmatex">\(\omega^3 = 1, \omega^{-1} = \omega^2\)</span>）。对这些数我们有如下乘法表和除法表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(\times\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\omega\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(\div\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(1\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\omega\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>在复平面上，这些数由等边三角形的顶点来表示。乘以 <span class="arithmatex">\(\omega\)</span> 相当于使三角形逆时针转过 <span class="arithmatex">\(\frac{2}{3}\pi\)</span>（即 <span class="arithmatex">\(120^\circ\)</span>），乘以 <span class="arithmatex">\(\omega^2\)</span> 相当于使三角形顺时针转过 <span class="arithmatex">\(\frac{2}{3}\pi\)</span>；至于除法，转动方向正好相反（见<a href="../assets/page087_fig01.jpg">图 5.11</a>）。</p>
+<hr />
+<p>*[5.14] 验证这一点。</p>
+<details class="question">
+<summary>答案 [5.14]</summary>
+<p>令 <span class="arithmatex">\(\log w=L+2\pi i k\)</span>。则 <span class="arithmatex">\(w^{1/n}\)</span> 的候选值为 <span class="arithmatex">\(e^{(L+2\pi i k)/n}\)</span>。当 <span class="arithmatex">\(k=0,1,\ldots,n-1\)</span> 时得到 <span class="arithmatex">\(n\)</span> 个不同值。</p>
+<p>若把 <span class="arithmatex">\(k\)</span> 增加 <span class="arithmatex">\(n\)</span>，值会乘以 <span class="arithmatex">\(e^{2\pi i}=1\)</span>，所以不会产生新值。并且每个候选值的 <span class="arithmatex">\(n\)</span> 次方都是 <span class="arithmatex">\(e^{L+2\pi i k}=w\)</span>。因此正好得到 <span class="arithmatex">\(z^n=w\)</span> 的全部 <span class="arithmatex">\(n\)</span> 个根。</p>
+</details>
+<p>**[5.15] 证明这一点。</p>
+<details class="question">
+<summary>答案 [5.15]</summary>
+<p>先固定 <span class="arithmatex">\(\log w=L\)</span>，定义 <span class="arithmatex">\(w^a=e^{aL}\)</span>。若随后把 <span class="arithmatex">\(\log(w^a)\)</span> 规定为 <span class="arithmatex">\(aL\)</span>，则 <span class="arithmatex">\((w^a)^b=e^{b\log(w^a)}=e^{baL}=w^{ab}\)</span>。</p>
+<p>如果不作这个规定，而任意选择 <span class="arithmatex">\(\log(w^a)\)</span> 的其他分支，就可能多出 <span class="arithmatex">\(2\pi i\)</span> 的整数倍并改变结果。这正是正文强调必须明确对数选择的原因。</p>
+</details>
+<hr />
+<p><img alt="单位圆上均布的五个点，标记为 \(1, \epsilon, \epsilon^2, \epsilon^3, \epsilon^4\)，构成正五边形的顶点，展示 \(n=5\) 时的 \(n\) 次单位根" src="../assets/page086_fig01.jpg" /></p>
+<p><strong>图 5.10</strong>　单位圆上均布的单位 <span class="arithmatex">\(e^{2\pi r i/n}(r = 1, 2, \cdots, n)\)</span> 的 <span class="arithmatex">\(n\)</span> 次单位根是正 <span class="arithmatex">\(n\)</span> 边形的顶点。这里 <span class="arithmatex">\(n = 5\)</span>。</p>
+<p>· 67 ·</p>
+<!-- page 87 -->
+
+<p>通向实在之路</p>
+<p><img alt="复平面上的单位圆，标出三个单位立方根 1、ω 和 ω² 构成的等边三角形" src="../assets/page087_fig01.jpg" /></p>
+<p><strong>图 5.11</strong> 单位三次根 1，ω 和 ω² 构成的等边三角形。乘以 ω 相当于使三角形逆时针转过 120°，乘以 ω² 则使三角形顺时针转过 120°。</p>
+<hr />
+<p>100 <strong>5.5 与现代粒子物理学的某些关联</strong></p>
+<p>现代粒子物理学对复数这样的数很有兴趣，因为它们有可能用作乘积性量子数。在 <a href="../chapter_03/#35-物理世界里的离散数">§3.5</a>，我提到过这样的事实：就目前所知，粒子物理学中的加和性（标量）量子数总是以整数计的。现在我们看到，还存在一些乘积性量子数的例子，它们似乎都是 <em>n</em> 次单位根。我知道的只是传统粒子物理学中的一些例子，其中大部分属相当无趣的 <em>n</em>=2 情形。也存在一种明显属 <em>n</em>=3 的情形和 <em>n</em>=4 的可能情形。遗憾的是，在大多数情形下，这种量子数不是普适的，就是说，它不能应用于所有粒子。正因此，我将这种量子数称之为近似的。</p>
+<p>所谓宇称的量是一种 <em>n</em>=2 的（近似）乘积性量子数。（还存在其他的 <em>n</em>=2 的近似量子数，它们在许多方面与宇称相似，如 <em>g</em> 宇称。这里我不讨论这些情形。）复合系统的宇称概念是由其基本成分粒子的宇称（通过相乘）构成的。成分粒子的宇称可以是偶的，此时粒子的镜像反射与粒子本身相同（在近似意义上）；相反，如果粒子的宇称是奇的，那么其镜像反射就是其反粒子（见 <a href="../chapter_03/#35-物理世界里的离散数">§3.5</a>，<a href="../chapter_24/#241-量子理论与相对论之间的张力">§24.1</a>~3, 8 和 <a href="../chapter_26/#264-量子场论中的反粒子">§26.4</a>）。由于镜像反射（或取反粒子）的概念相当于“平方到 1”（即操作两次回到出发点），这种量子数——我们称其为 ε——有性质 ε²=1，因此它必为 <em>n</em>=2 的“<em>n</em> 次单位根”（即 ε=+1 或 ε=-1）。这个概念只是近似的，因为宇称在所谓“弱相互作用”下不是守恒量，也正因此，某些粒子没有明确定义的宇称概念（见 <a href="../chapter_25/#253-电弱相互作用反射不对称性">§25.3</a>, 4）。</p>
+<p>此外，在通常的描述中，宇称概念只用于所谓玻色子的粒子族。其余的粒子则属于另一族，即所谓费米子。玻色子与费米子之间的区别是非常重要的概念，也是一个有点复杂的概念，我们将在 <a href="../chapter_23/#237-玻色子和费米子">§23.7</a>, 8 再来谈这个问题。（作为一种现象，我们有必要搞清楚当我们将粒子态持续转过 2π（即 360°）时将发生什么事情。我们说，在这种转动下，只有玻色子恢复到原状态，而费米子则要操作两次才能回到原状态。见 <a href="../chapter_11/#113-四元数几何">§11.3</a> 和 <a href="../chapter_22/#228-自旋和旋量">§22.8</a>。）可以这么说，“两个费米子合成一个玻</p>
+<p>·68·</p>
+<!-- page 88 -->
+
+<p>第五章　对数、幂和根的几何</p>
+<p>色子”，“两个玻色子则仍产生一个玻色子”，而“一个玻色子和一个费米子则生成一个费米子”。因此，我们可将乘积性量子数 <span class="arithmatex">\(-1\)</span> 赋给费米子，而将 <span class="arithmatex">\(+1\)</span> 赋给玻色子，由此来描述费米子/玻色子的性质。这样我们就有了 <span class="arithmatex">\(n=2\)</span> 情形下的另一种乘积性量子数。就目前所知，这种量子数才是严格的乘积性量子数。</p>
+<p>在我看来，费米子也可以有宇称概念，虽然它不是传统意义上的那种。这必须与费米子/玻色子的量子数结合起来给出一个 <span class="arithmatex">\(n=4\)</span> 情形下的复合乘积性量子数。对费米子，宇称值可以是 <span class="arithmatex">\(+\mathrm{i}\)</span> 或 <span class="arithmatex">\(-\mathrm{i}\)</span>，其两次镜像反射具有 <span class="arithmatex">\(2\pi\)</span> 转动的效果。对玻色子，宇称值可以和以前一样，是 <span class="arithmatex">\(\pm 1\)</span>。</p>
+<p><span class="arithmatex">\(n=3\)</span> 情形下的乘积性量子数就是我以前说的夸克性。（这不是一个标准的术语，通常也不指量子数这样的概念，但它反映了当今粒子物理中一个重要方面。）我在 <a href="../chapter_03/#35-物理世界里的离散数">§3.5</a> 说过，所谓强子（质子、中子、<span class="arithmatex">\(\pi\)</span> 介子等等）这样的“强相互作用”粒子都是由夸克组成的（<a href="../chapter_25/#256-强相互作用粒子">§25.6</a>）。这些夸克具有非整数倍而是 <span class="arithmatex">\(\frac{1}{3}\)</span> 倍电子电荷的电荷值。但是，夸克不能作为独立粒子存在，它们的复合物只能在其总电荷数加起来为电子电荷的整数倍时才可能独立存在。令 <span class="arithmatex">\(q\)</span> 为以电子电荷的负值为单位测得的电荷值（这样，电子本身在此单位下为 <span class="arithmatex">\(q=-1\)</span> 通常规定电子电荷为负值）。对夸克，我们有 <span class="arithmatex">\(q=2/3\)</span> 或 <span class="arithmatex">\(-1/3\)</span>，对反夸克，<span class="arithmatex">\(q=1/3\)</span> 或 <span class="arithmatex">\(-2/3\)</span>。因此，如果我们将夸克性的乘积性量子数取为 <span class="arithmatex">\(\mathrm{e}^{-2q\pi\mathrm{i}}\)</span>，就会发现它取值 <span class="arithmatex">\(1\)</span>，<span class="arithmatex">\(\omega\)</span> 和 <span class="arithmatex">\(\omega^2\)</span>。夸克的夸克性是 <span class="arithmatex">\(\omega\)</span>，反夸克的夸克性是 <span class="arithmatex">\(\omega^2\)</span>。自身能够独立存在的粒子其夸克性只能是 <span class="arithmatex">\(1\)</span>。按 <a href="#54-复数幂">§5.4</a>，夸克性自由度构成循环群 <span class="arithmatex">\(\mathbb{Z}_3\)</span>。（在 <a href="../chapter_16/#161-有限域">§16.1</a>，我将在增设元素“<span class="arithmatex">\(0\)</span>”和加法概念的基础上，阐述这个群如何扩展到有限场 <span class="arithmatex">\(\mathbb{F}_4\)</span>。）</p>
+<p>在本节和前节中，我展示了复数在数学方面的某些神奇性，并且暗示了它们极为有限的应用。但我没有谈及复数的另一些方面，这是我还是数学系大学生时所学到的我自认为是复数最为神奇的那些方面（见第 7 章）。在那以后，我看到了这种神奇的更多方面，其中之一就是它奇妙的互补性（我们在第 9 章末尾予以描述），这给当时还是大学生的我留下了深刻印象。当然，这些事情都基于基本的微积分概念，因此，为了向读者传递这种神奇性，我们有必要先搞清这些基础概念。这么做还有另一个理由，那就是微积分绝对是正确理解物理的基本条件！</p>
+<h2 id="注-释">注　释<a class="headerlink" href="#注-释" title="Permanent link">&para;</a></h2>
+<h3 id="-51">§ 5.1<a class="headerlink" href="#-51" title="Permanent link">&para;</a></h3>
+<p><strong>5.1</strong>　还应提到的三角函数有 <span class="arithmatex">\(\cot\theta=\cos\theta/\sin\theta=(\tan\theta)^{-1}\)</span>，<span class="arithmatex">\(\sec\theta=(\cos\theta)^{-1}\)</span> 和 <span class="arithmatex">\(\operatorname{cosec}\theta=(\sin\theta)^{-1}\)</span>。还有“双曲”函数 <span class="arithmatex">\(\sinh t=\frac{1}{2}(\mathrm{e}^t-\mathrm{e}^{-t})\)</span>，<span class="arithmatex">\(\cosh t=\frac{1}{2}(\mathrm{e}^t+\mathrm{e}^{-t})\)</span>，<span class="arithmatex">\(\tanh t=\sinh t/\cosh t\)</span>，等等。注意，这些函数的反函数记为 <span class="arithmatex">\(\cot^{-1}\)</span>，<span class="arithmatex">\(\sinh^{-1}\)</span>，等等，就像 <a href="#51-复代数几何">§5.1</a> 里的“<span class="arithmatex">\(\tan^{-1}(y/x)\)</span>”那样。</p>
+<h3 id="-52">§ 5.2<a class="headerlink" href="#-52" title="Permanent link">&para;</a></h3>
+<p><strong>5.2</strong>　对数是由纳皮尔（John Napier，1550–1617）于 1614 年引入的，1624 年，布里格斯（Henry Briggs，1561–1630）将其推广应用。</p>
+<h3 id="-53">§ 5.3<a class="headerlink" href="#-53" title="Permanent link">&para;</a></h3>
+<p><strong>5.3</strong>　自然对数通常也作“<span class="arithmatex">\(\ln\)</span>”。</p>
+<p>· 69 ·</p>
+<!-- page 89 -->
+
+<p>通向实在之路</p>
+<p>5.4 从迄今所建立起来的情况看，我们不能推断说公式 <span class="arithmatex">\(z = \log r + i\theta\)</span> 中的 "<span class="arithmatex">\(i\theta\)</span>" 不可是 <span class="arithmatex">\(i\theta\)</span> 的实数倍。这需要计算。</p>
+<p>5.5 柯茨（Cotes, 1714）得到过等价的公式 <span class="arithmatex">\(\log(\cos\theta + i\sin\theta) = i\theta\)</span>，欧拉的 <span class="arithmatex">\(e^{i\theta} = \cos\theta + i\sin\theta\)</span> 第一次出现时似乎要比前者晚了 30 年（见 Euler, 1748）。</p>
+<p>5.6 这里对 <span class="arithmatex">\((\cos\theta)^3\)</span> 我用的是方便（但有些不合逻辑）的记法 <span class="arithmatex">\(\cos^3\theta\)</span>。而记号 <span class="arithmatex">\(\cos^{-1}\theta\)</span> 通常则用以表示反函数 <span class="arithmatex">\(\arccos\theta\)</span>。公式 <span class="arithmatex">\(\sin n\theta + i\cos n\theta = (\sin\theta + i\cos\theta)^n\)</span> 有时也称为"棣莫弗（De Moivre）定理"。亚伯拉罕·棣莫弗作为与罗杰·柯茨同时代的人，似乎也是 <span class="arithmatex">\(e^{i\theta} = \sin\theta + i\cos\theta\)</span> 的共同发现者之一。</p>
+<p>·70·</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

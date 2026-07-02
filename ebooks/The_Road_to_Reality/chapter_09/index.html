@@ -1,0 +1,2441 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/The_Road_to_Reality/chapter_09/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Chapter 09 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#91-傅里叶级数-153" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 09
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#91-傅里叶级数-153" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 傅里叶级数 153
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#92-圆上的函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 圆上的函数
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#第九章-傅里叶分解和超函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第九章 傅里叶分解和超函数
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第九章 傅里叶分解和超函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#93-黎曼球面上的频率剖分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 黎曼球面上的频率剖分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-傅里叶变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 傅里叶变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-傅里叶变换的频率剖分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 傅里叶变换的频率剖分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-哪种函数是适当的" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 哪种函数是适当的？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-超函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 超函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#注释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="注释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        §9.1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        §9.2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        §9.4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- page 126 -->
+
+<div align="right">第九章　傅里叶分解和超函数</div>
+
+<div align="center">
+
+第九章
+
+# 傅里叶分解和超函数
+
+</div>
+
+<h2 id="91-傅里叶级数-153">9.1　傅里叶级数　153<a class="headerlink" href="#91-傅里叶级数-153" title="Permanent link">&para;</a></h2>
+<p>让我们回到<a href="../chapter_06/#61-如何构造实函数">§6.1</a>提出的欧拉和他的同时代人认为是可接受的“实在函数”问题上来。在<a href="../chapter_07/#71-复光滑全纯函数">§7.1</a>，我们已说明了全纯（复解析）函数可能是欧拉最为满意的函数。但今天的大多数数学家会认为这样一种“函数”概念限定得毫无道理。孰对孰错？在本章末我们会给出这个问题的令人惊奇的答案。但首先我们得搞懂问题是什么。</p>
+<p>在将数学应用到物理世界的问题的过程中，经常需要一种灵活性，而这是全纯函数和它的实搭档——解析（即<span class="arithmatex">\(C^\infty\)</span>）函数——都不具有的。由于解析函数的唯一性（见<a href="../chapter_07/#74-解析延拓">§7.4</a>的描述），定义在复平面某个连通开区域<span class="arithmatex">\(\mathcal{D}\)</span>上的全纯函数的总体行为是完全确定的，如果我们知道了它在<span class="arithmatex">\(\mathcal{D}\)</span>的某个小开子区域上的行为的话。类似地，定义在实线<span class="arithmatex">\(\mathbb{R}\)</span>的某个连通片断<span class="arithmatex">\(\mathcal{R}\)</span>上的实变量解析函数也是完全确定的，一旦函数在<span class="arithmatex">\(\mathcal{R}\)</span>的某个小开子区域上已知的话。这种刚性对于物理系统的实际模型来说似乎是不恰当的。</p>
+<p>当我们考虑波的传播时，会发现这种刚性显得特别别扭。波的传播，包括像射频波或光的电磁信号的发送，其功效大都在于信息可通过这种方式传递。毕竟信号传递的全部意义就在于能够使接受者得到意想不到的信息。如果信号形式必须采用解析函数的形式，那么就不可能在信息中“改变主意”。信号的任何一小部分都会使整个信号始终完全确定。而实际上我们经常是根据如何不连续，或偏离解析性来研究波的传播的。</p>
+<p>我们来考虑如何从数学上描述波。研究波的一种最有效的方式是通过著名的傅里叶分析来进行。约瑟夫·傅里叶（Joseph Fourier，1768~1830）是一位法国数学家。他一直关注的一个问题是如何将周期性振荡分解成“正弦波”分量。在音乐中，这个问题基本上就是如何将某个乐音表示成其组分“纯的基音”。“周期”一词是指经过一定时间周期就严格重复自身的模式（譬如说振荡物体的物理位移），它也可以指空间上的周期，像晶体、壁纸或远海水波等表现出的重</p>
+<div align="right">154</div>
+
+<div align="center">·107·</div>
+
+<!-- page 127 -->
+
+<p>通向实在之路</p>
+<hr />
+<p>复性模式。数学上，我们说一个函数 <span class="arithmatex">\(f\)</span>（譬如说关于实变量 <span class="arithmatex">\(\chi\)</span> 的函数¹）是周期性的，是指对所有 <span class="arithmatex">\(\chi\)</span>，满足</p>
+<div class="arithmatex">\[f(\chi+l)=f(\chi),\]</div>
+<p>这里 <span class="arithmatex">\(l\)</span> 是表示周期的固定数。因此，如果我们将 <span class="arithmatex">\(y=f(\chi)\)</span> 的图像沿 <span class="arithmatex">\(\chi\)</span> 轴“平移”一个量 <span class="arithmatex">\(l\)</span>，它看上去将和以前一样（<a href="../assets/page127_fig01.jpg">图9.1（a）</a>）。（傅里叶用以处理函数的方法——傅里叶变换——将在<a href="#94-傅里叶变换">§9.4</a>描述。）</p>
+<p>“纯的基音”是一些像 <span class="arithmatex">\(\sin\chi\)</span> 或 <span class="arithmatex">\(\cos\chi\)</span> 这样的振荡模式（<a href="../assets/page127_fig01.jpg">图9.1（b）</a>）。这些模式有周期 <span class="arithmatex">\(2\pi\)</span>，因为</p>
+<div class="arithmatex">\[\sin(\chi+2\pi)=\sin\chi,\quad\cos(\chi+2\pi)=\cos\chi,\]</div>
+<p>这些关系在单复数 <span class="arithmatex">\(e^{i\chi}=\cos\chi+i\sin\chi\)</span> 的周期性中是显然的，</p>
+<p><img alt="图9.1 周期函数。（a）一般周期函数 \(f(\chi)=f(\chi+l)\)，沿 \(\chi\) 轴平移 \(l\) 后图形不变；（b）“纯基音” \(\sin\chi\)（实线）与 \(\cos\chi\)（点画线），周期 \(l=2\pi\)；（c）“高次谐频”纯音在一个周期 \(l\) 内振荡数次，仍有周期 \(l\)，同时还有更小的周期。" src="../assets/page127_fig01.jpg" /></p>
+<p>图9.1 周期函数。（a）如果对所有 <span class="arithmatex">\(\chi\)</span> 有 <span class="arithmatex">\(f(\chi)=f(\chi+l)\)</span>，我们说函数 <span class="arithmatex">\(f(\chi)\)</span> 有周期 <span class="arithmatex">\(l\)</span>，这意味着如果我们将 <span class="arithmatex">\(y=f(\chi)\)</span> 的图像沿 <span class="arithmatex">\(\chi\)</span> 轴移动 <span class="arithmatex">\(l\)</span>，它看上去将和以前一样。（b）“纯基音” <span class="arithmatex">\(\sin\chi\)</span> 或 <span class="arithmatex">\(\cos\chi\)</span>（如点画线所示）有周期 <span class="arithmatex">\(l=2\pi\)</span>。（c）“高次谐频”纯音在周期 <span class="arithmatex">\(l\)</span> 的时间里振荡数次，它们仍有周期 <span class="arithmatex">\(l\)</span>，同时还有更小的周期（如 <span class="arithmatex">\(\sin3\chi\)</span> 有周期 <span class="arithmatex">\(l=2\pi\)</span>，同时还有更小的周期 <span class="arithmatex">\(2\pi/3\)</span>）。</p>
+<p>·108·</p>
+<!-- page 128 -->
+
+<p>第九章　傅里叶分解和超函数</p>
+<div class="arithmatex">\[e^{i(\chi+2\pi)} = e^{i\chi}.\]</div>
+<p>我们在<a href="../chapter_05/#53-多值性自然对数">§5.3</a>就见过它。如果我们打算把周期定为 <span class="arithmatex">\(l\)</span> 而不是 <span class="arithmatex">\(2\pi\)</span>，那么我们就必须“重定标”函数中的 <span class="arithmatex">\(\chi\)</span>，取 <span class="arithmatex">\(e^{i2\pi\chi/l}\)</span> 而不是 <span class="arithmatex">\(e^{i\chi}\)</span>。相应地，实部和虚部 <span class="arithmatex">\(\cos(2\pi\chi/l)\)</span> 和 <span class="arithmatex">\(\sin(2\pi\chi/l)\)</span> 也有周期 <span class="arithmatex">\(l\)</span>。但这不是唯一的。在周期 <span class="arithmatex">\(l\)</span> 内，振荡未必就只一次，函数可以振荡两次、三次直到 <span class="arithmatex">\(n\)</span> 次，这里 <span class="arithmatex">\(n\)</span> 是任意正整数（<a href="../assets/page127_fig01.jpg">图9.1</a>(c)），故我们发现，</p>
+<div class="arithmatex">\[e^{i\cdot 2\pi n\chi/l},\quad \sin\left(\frac{2\pi n\chi}{l}\right),\quad \cos\left(\frac{2\pi n\chi}{l}\right)\]</div>
+<p>中的每一个都有周期 <span class="arithmatex">\(l\)</span>（此外还有较小的周期 <span class="arithmatex">\(l/n\)</span>）。在音乐中，这些表达式（<span class="arithmatex">\(n=2, 3, 4, \cdots\)</span>）称为高次谐音。</p>
+<p>傅里叶提出（并解决）的一个问题是如何将一般的周期为 <span class="arithmatex">\(l\)</span> 的函数 <span class="arithmatex">\(f(\chi)\)</span> 表示为纯基音的和。对每个 <span class="arithmatex">\(n\)</span>，一般来说纯基音对总的和声的贡献表现为不同的幅度，而这种差异主要取决于波形（即取决于函数 <span class="arithmatex">\(y=f(\chi)\)</span> 图像的形状）。<a href="../assets/page129_fig01.jpg">图9.2</a>展示了一些简单的例子。但通常，对 <span class="arithmatex">\(f(\chi)\)</span> 有贡献的各种纯基音的数目是无限的。更具体地说，傅里叶所要求的，是 <span class="arithmatex">\(f(\chi)\)</span> 到其各纯基音分量的分解系数 <span class="arithmatex">\(c,\,a_1,\,b_1,\,a_2,\,b_2,\,a_3,\,b_3,\,a_4,\,\dots\)</span></p>
+<div class="arithmatex">\[f(\chi) = c + a_1\cos\omega\chi + b_1\sin\omega\chi + a_2\cos2\omega\chi + b_2\sin2\omega\chi + a_3\cos3\omega\chi + b_3\sin3\omega\chi + \cdots,\]</div>
+<p>这里，为使表达式看上去更简洁，我是按照角频率 <span class="arithmatex">\(\omega\)</span> 来写的（这里的“<span class="arithmatex">\(\omega\)</span>”与<a href="../chapter_05/#54-复数幂">§5.4</a>, 5的“<span class="arithmatex">\(\omega\)</span>”不相干），<span class="arithmatex">\(\omega=2\pi/l\)</span>。</p>
+<p>有些读者可能会认为这个 <span class="arithmatex">\(f(\chi)\)</span> 表达式还是看起来太复杂——他们是对的。如果我们将 <span class="arithmatex">\(\cos\)</span> 和 <span class="arithmatex">\(\sin\)</span> 整合为复指数形式（<span class="arithmatex">\(e^{iA\chi}=\cos A\chi + i\sin A\chi\)</span>），这个公式就漂亮多了，因此，</p>
+<div class="arithmatex">\[f(\chi) = \cdots + \alpha_{-2}e^{-2i\omega\chi} + \alpha_{-1}e^{-i\omega\chi} + \alpha_0 + \alpha_1 e^{i\omega\chi} + \alpha_2 e^{2i\omega\chi} + \alpha_3 e^{3i\omega\chi} + \cdots,\]</div>
+<p>这里*[9.1]</p>
+<div class="arithmatex">\[a_n = \alpha_n + \alpha_{-n}\quad b_n = i\alpha_n - i\alpha_{-n},\quad c = \alpha_0\]</div>
+<p>其中 <span class="arithmatex">\(n=1,\,2,\,3,\,4,\,\dots\)</span>。如果我们取 <span class="arithmatex">\(z=e^{i\omega\chi}\)</span>，并定义函数 <span class="arithmatex">\(F(z)\)</span> 为 <span class="arithmatex">\(f(\chi)\)</span> 的同型复变量 <span class="arithmatex">\(z\)</span> 的函数，那么这个表达式会更简洁。这时我们有</p>
+<div class="arithmatex">\[F(z) = \cdots + \alpha_{-2}z^{-2} + \alpha_{-1}z^{-1} + \alpha_0 z^0 + \alpha_1 z^1 + \alpha_2 z^2 + \alpha_3 z^3 + \cdots,\]</div>
+<p>这里</p>
+<div class="arithmatex">\[F(z) = F(e^{i\omega\chi}) = f(\chi).\]</div>
+<p>我们还可以通过运用求和号 <span class="arithmatex">\(\sum\)</span> 使它变得更简洁，“<span class="arithmatex">\(\sum\)</span>”的意义是“对所有整数 <span class="arithmatex">\(r\)</span> 值，将所有项加起来”：</p>
+<div class="arithmatex">\[F(z) = \sum \alpha_r z^r.\]</div>
+<hr />
+<p>*[9.1] 证明这一点。</p>
+<details class="question">
+<summary>答案 [9.1]</summary>
+<p>用欧拉公式 <span class="arithmatex">\(\cos n\omega\chi=(e^{in\omega\chi}+e^{-in\omega\chi})/2\)</span> 和 <span class="arithmatex">\(\sin n\omega\chi=(e^{in\omega\chi}-e^{-in\omega\chi})/(2i)\)</span>。若 <span class="arithmatex">\(f\)</span> 写成实三角级数 <span class="arithmatex">\(c+\sum_{n&gt;0}(a_n\cos n\omega\chi+b_n\sin n\omega\chi)\)</span>，则 <span class="arithmatex">\(e^{in\omega\chi}\)</span> 的系数是 <span class="arithmatex">\((a_n-ib_n)/2\)</span>，<span class="arithmatex">\(e^{-in\omega\chi}\)</span> 的系数是 <span class="arithmatex">\((a_n+ib_n)/2\)</span>。</p>
+<p>反解即 <span class="arithmatex">\(a_n=\alpha_n+\alpha_{-n}\)</span>，<span class="arithmatex">\(b_n=i\alpha_n-i\alpha_{-n}\)</span>，常数项为 <span class="arithmatex">\(c=\alpha_0\)</span>。</p>
+</details>
+<p>·109·</p>
+<!-- page 129 -->
+
+<p>通向实在之路</p>
+<hr />
+<p><img alt="图9.2 周期函数傅里叶分解的两个例子，每个都展示复合周期函数（上）及其傅里叶分量（下）。" src="../assets/page129_fig01.jpg" /></p>
+<p><strong>图9.2</strong> 周期函数的傅里叶分解的例子。波的形状（图像的尖锐程度）取决于傅里叶系数。各函数极其傅里叶分量如下：(a) <span class="arithmatex">\(f(x)=\frac{2}{3}+2\sin x+\frac{1}{3}\cos 2x+\frac{1}{4}\sin 2x+\frac{1}{3}\sin 3x\)</span>。(b) <span class="arithmatex">\(f(x)=\frac{1}{2}+\sin x-\frac{1}{3}\cos 2x-\frac{1}{4}\sin 2x-\frac{1}{5}\sin 3x\)</span>。</p>
+<p>这看上去有点像幂级数（<a href="../chapter_04/#43-幂级数的收敛">§4.3</a>）。只是容许出现负幂次项。它称为洛朗级数。在下一节里</p>
+<p>·110·</p>
+<!-- page 130 -->
+
+<p>第九章 傅里叶分解和超函数</p>
+<p>我们将看到这个表达式的重要性。**[9.2]</p>
+<h2 id="92-圆上的函数">9.2 圆上的函数<a class="headerlink" href="#92-圆上的函数" title="Permanent link">&para;</a></h2>
+<p>洛朗级数确实为我们提供了一种傅里叶级数的简洁的表达式。但这种表达式隐含着关于傅里叶分解的另一种有趣的观点。由于周期函数可无穷次地重复出现，因此我们可认为这种（实变量 <span class="arithmatex">\(\chi\)</span> 的）函数是定义在圆上的（<a href="../assets/page130_fig01.jpg">图 9.3</a>），这里函数的周期 <span class="arithmatex">\(l\)</span> 就是圆的周长，<span class="arithmatex">\(\chi\)</span> 度量绕过圆的弧长。这些弧长不是直线，而是绕圆进行，因此周期性自动包含其中。</p>
+<p><img alt="周期函数卷成圆柱示意图" src="../assets/page130_fig01.jpg" /></p>
+<p><strong>图9.3</strong> 实变量 <span class="arithmatex">\(\chi\)</span> 的周期函数可以看成是定义在周长为 <span class="arithmatex">\(l\)</span> 的圆上，这里我们将 <span class="arithmatex">\(\chi\)</span> 的实轴“卷成”圆。对于 <span class="arithmatex">\(l=2\pi\)</span>，我们取这个圆为复平面上的单位圆。</p>
+<p>出于方便起见（至少在时间上作如此考虑），我们把这个圆取为复平面上的单位圆，其周长为 <span class="arithmatex">\(2\pi\)</span>，也就是说，周期 <span class="arithmatex">\(l\)</span> 是 <span class="arithmatex">\(2\pi\)</span>。相应地，</p>
+<div class="arithmatex">\[\omega = 1 \text{，故 } z = e^{i\chi}\]</div>
+<p>（对其他的周期值，我们只需适当重定标变量 <span class="arithmatex">\(\chi\)</span> 来重申 <span class="arithmatex">\(\omega\)</span>。）由傅里叶分解的各个“纯基音”表示的不同的 <span class="arithmatex">\(\cos\)</span> 和 <span class="arithmatex">\(\sin\)</span> 项，现在可简单地表示为 <span class="arithmatex">\(z\)</span> 的正或负次幂，即第 <span class="arithmatex">\(n\)</span> 阶谐波的 <span class="arithmatex">\(z^{\pm n}\)</span>。在单位圆上，这些幂恰好给出我们所需的 <span class="arithmatex">\(\cos\)</span> 和 <span class="arithmatex">\(\sin\)</span> 振荡项，见<a href="../assets/page130_fig02.jpg">图 9.4</a>。</p>
+<p><img alt="\(n=5\) 时 \(z^5\) 实部的三维波形图" src="../assets/page130_fig02.jpg" /></p>
+<p><strong>图9.4</strong> 在单位圆上，函数 <span class="arithmatex">\(z^n\)</span> 的实部和虚部看上去都是 <span class="arithmatex">\(n\)</span> 次余弦和正弦谐波（分别是 <span class="arithmatex">\(e^{inx}\)</span> 的实部和虚部，这里 <span class="arithmatex">\(z=e^{ix}\)</span>）。图中画出的是 <span class="arithmatex">\(n=5\)</span> 的 <span class="arithmatex">\(z^5\)</span> 的实部。</p>
+<p>现在我们有了非常简练的表达周期函数 <span class="arithmatex">\(f(\chi)\)</span> 的傅里叶分解的方法。我们把 <span class="arithmatex">\(f(x) = F(z)\)</span> 看成是定义在 <span class="arithmatex">\(z\)</span> 平面的单位圆上，这里 <span class="arithmatex">\(z=e^{ix}\)</span>，于是傅里叶分解正好是这个函数在复参数 <span class="arithmatex">\(z\)</span> 下的洛朗级数表示。但好处还不仅限于简练。这种表示还提供了对傅里叶级数性质及其所表示的函数</p>
+<hr />
+<p><strong>** [9.2]</strong> 证明：若 <span class="arithmatex">\(F\)</span> 在单位圆上是解析的，则系数 <span class="arithmatex">\(a_n\)</span> 从而 <span class="arithmatex">\(a_n\)</span>, <span class="arithmatex">\(b_n\)</span> 和 <span class="arithmatex">\(c_n\)</span> 可由公式 <span class="arithmatex">\(a_n = (2\pi i)^{-1} \oint z^{-n-1} F(z) dz\)</span> 获得。</p>
+<details class="question">
+<summary>答案 [9.2]</summary>
+<p>若 <span class="arithmatex">\(F(z)=\sum_{m=-\infty}^{\infty}\alpha_m z^m\)</span> 在单位圆附近的圆环内解析，则 <span class="arithmatex">\(z^{-n-1}F(z)=\sum_m \alpha_m z^{m-n-1}\)</span>。沿单位圆积分时，除 <span class="arithmatex">\(m=n\)</span> 的 <span class="arithmatex">\(z^{-1}\)</span> 项外，其余幂次积分为零。</p>
+<p>因而 <span class="arithmatex">\((2\pi i)^{-1}\oint z^{-n-1}F(z)dz=\alpha_n\)</span>。再由 [9.1] 的关系即可得到通常正弦、余弦系数。</p>
+</details>
+<p>· 111 ·</p>
+<!-- page 131 -->
+
+<p>通向实在之路</p>
+<p>性质的更深刻的认识。从本书的最终目的来说，更紧要的是它与量子力学有着重要联系，因此有助于加深我们对大自然的理解。这一切还反映了复数的神奇性，因为当 <span class="arithmatex">\(z\)</span> 越出单位圆时我们仍能够用洛朗级数表达式。业已证明，对 <span class="arithmatex">\(z\)</span> 处于单位圆上的情形，这个级数会依据 <span class="arithmatex">\(z\)</span> 在单位圆外时级数的性态来告诉我们某些关于 <span class="arithmatex">\(F(z)\)</span> 的重要信息。</p>
+<p>159
+现在，让我们（从 <a href="../chapter_04/#44-韦塞尔复平面">§4.4</a>）回顾一下收敛圆的概念，就是说，在这个圆内幂级数收敛，而在圆外幂级数发散。洛朗级数也有非常类似的对应概念：收敛圆环。这是复平面上严格处于两个以原点为圆心的同心圆之间的区域（<a href="../assets/page132_fig01.jpg">图 9.5</a>(a)）。一旦我们有了通常幂级数的收敛圆的概念，对此很容易理解。具有正幂的级数部分³</p>
+<div class="arithmatex">\[
+F^- = \alpha_1 z^1 + \alpha_2 z^2 + \alpha_3 z^3 + \cdots
+\]</div>
+<p>160
+有普通的收敛圆，其半径譬如说为 <span class="arithmatex">\(A\)</span>，对所有其模小于 <span class="arithmatex">\(A\)</span> 的 <span class="arithmatex">\(z\)</span> 值，级数收敛。而对于具有负幂的级数部分，即</p>
+<div class="arithmatex">\[
+F^+ = \cdots + \alpha_{-3} z^{-3} + \alpha_{-2} z^{-2} + \alpha_{-1} z^{-1},
+\]</div>
+<p>我们将其理解为倒参数 <span class="arithmatex">\(w = 1/z\)</span> 的普通幂级数。它在 <span class="arithmatex">\(w\)</span> - 平面内有收敛圆，譬如说其半径为 <span class="arithmatex">\(1/B\)</span>，对所有其模小于 <span class="arithmatex">\(1/B\)</span> 的 <span class="arithmatex">\(w\)</span> 值，级数收敛。（我们这里讨论的实际上是第 8 章所述的黎曼球面——见<a href="../assets/page119_fig02.jpg">图 8.7</a>，<span class="arithmatex">\(z\)</span> 坐标对应于一个半球，<span class="arithmatex">\(w\)</span> 坐标对应于另一个半球，见<a href="../assets/page132_fig01.jpg">图 9.5</a>(b)。下一节我们再探讨这种黎曼球面的特性。）因此，对于其模大于 <span class="arithmatex">\(B\)</span> 的 <span class="arithmatex">\(z\)</span> 值，级数的负幂部分将收敛。只要 <span class="arithmatex">\(B &lt; A\)</span>，这两个收敛区域就将重叠，于是我们得到整个洛朗级数的收敛圆环。注意，函数 <span class="arithmatex">\(f(\chi) = F(e^{i\chi}) = F(z)\)</span> 的整个傅里叶级数或洛朗级数是由</p>
+<div class="arithmatex">\[
+F(z) = F^+ + \alpha_0 + F^-
+\]</div>
+<p>给定的，这里必须包括附加的常数项 <span class="arithmatex">\(\alpha_0\)</span>。</p>
+<p>在目前情形，我们要求的是在单位圆上收敛，因为正是在此我们才有 <span class="arithmatex">\(z = e^{i\chi}\)</span>（对实数 <span class="arithmatex">\(\chi\)</span>），当 <span class="arithmatex">\(z\)</span> 处在单位圆上时，<span class="arithmatex">\(f(\chi)\)</span> 的傅里叶级数收敛问题其实就是 <span class="arithmatex">\(F(z)\)</span> 的洛朗级数的收敛问题。因此，我们似乎需要 <span class="arithmatex">\(B &lt; 1 &lt; A\)</span> 来保证单位圆确实处于收敛圆环之内。对傅里叶级数的收敛性而言，这是否意味着我们必须要求单位圆处于收敛圆环之内？</p>
+<p>如果 <span class="arithmatex">\(f(\chi)\)</span> 是解析的（即 <span class="arithmatex">\(C^\omega\)</span>），情形确实如此。于是函数 <span class="arithmatex">\(f(\chi)\)</span> 可扩展为函数 <span class="arithmatex">\(F(z)\)</span>，它在包括单位圆的某个开区域上是全纯的。⁴ 但如果 <span class="arithmatex">\(f(\chi)\)</span> 不是解析的，那么就会出现一种有趣的情形。在这种情形下，要么收敛圆环收缩变成单位圆本身——严格说来，对真正的收敛圆环这是不容许的，因为收敛圆环必须是开区域，而单位圆则不是——要么单位圆变成收敛圆环的外边界或内边界。这些问题在 §§ 9.6, 7 会变得很重要。</p>
+<p>161
+眼下，我们先考虑 <span class="arithmatex">\(f(\chi)\)</span> 不是解析的会发生什么情况，并考虑 <span class="arithmatex">\(f(\chi)\)</span> 为解析时的较简单情形。然后我们有 <span class="arithmatex">\(z\)</span> 平面内严格处于 <span class="arithmatex">\(F(z)\)</span> 的真正收敛圆环内的单位圆，它由（以原点为圆心）半径 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 的圆界定（<span class="arithmatex">\(B &lt; 1 &lt; A\)</span>）。洛朗级数的正幂部分 <span class="arithmatex">\(F^-\)</span> 收敛到 <span class="arithmatex">\(z\)</span> 平面内其模小于 <span class="arithmatex">\(A\)</span> 的那些点；负幂</p>
+<p>· 112 ·</p>
+<!-- page 132 -->
+
+<h1 id="第九章-傅里叶分解和超函数">第九章 傅里叶分解和超函数<a class="headerlink" href="#第九章-傅里叶分解和超函数" title="Permanent link">&para;</a></h1>
+<p>部分 <span class="arithmatex">\(F^{+}\)</span> 则收敛到 <span class="arithmatex">\(z\)</span> 平面内其模大于 <span class="arithmatex">\(B\)</span> 的那些点。因此，二者都收敛到收敛圆环本身之内（在非常平凡的意义上，常数项 <span class="arithmatex">\(a_0\)</span> 显然对所有 <span class="arithmatex">\(z\)</span> 均“收敛”）。这使我们看到，<span class="arithmatex">\(f(z)\)</span> “劈裂”为两部分，一部分全纯成分处于外圆之内，另一部分全纯成分处于内圆之外，它们分别定义为级数表达式 <span class="arithmatex">\(F^{-}\)</span> 和 <span class="arithmatex">\(F^{+}\)</span>。</p>
+<p>关于常数项 <span class="arithmatex">\(a_0\)</span> 是否包含于 <span class="arithmatex">\(F^{-}\)</span> 或 <span class="arithmatex">\(F^{+}\)</span> 内这一点还有些模糊之处。实际上，存留这点模糊或许更好。因为 <span class="arithmatex">\(F^{-}\)</span> 和 <span class="arithmatex">\(F^{+}\)</span> 之间存在对称性，如果我们采用黎曼球面的图像，这点会变得更清楚（<a href="../assets/page132_fig01.jpg">图 9.5</a>b）。它使我们有了一种更完整的图像，下面让我们来探讨这一问题。</p>
+<p><img alt="图 9.5 洛朗级数收敛圆环与黎曼球面对应关系" src="../assets/page132_fig01.jpg" /></p>
+<p>图 9.5 (a) 洛朗级数 <span class="arithmatex">\(F(z)=F^{+}+a_0+F^{-}\)</span> 的收敛圆环，这里 <span class="arithmatex">\(F^{+}=\cdots+a_{-3} z^{-3}+a_{-2} z^{-2}+a_{-1} z^{-1}\)</span>，<span class="arithmatex">\(F^{-}= a_1z^1+a_2z^2+a_3z^3+\cdots\)</span>。由 <span class="arithmatex">\(w=z^{-1}\)</span>，<span class="arithmatex">\(F^{+}\)</span> 的收敛半径为 <span class="arithmatex">\(A\)</span>，<span class="arithmatex">\(F^{-}\)</span> 的为 <span class="arithmatex">\(B^{-1}\)</span>。(b) 黎曼球面上（见图 8.7）的情形亦同样，这里 <span class="arithmatex">\(z\)</span> 指扩展了的北半球，<span class="arithmatex">\(w\left(=z^{-1}\right)\)</span> 指扩展了的南半球。</p>
+<h2 id="93-黎曼球面上的频率剖分">9.3 黎曼球面上的频率剖分<a class="headerlink" href="#93-黎曼球面上的频率剖分" title="Permanent link">&para;</a></h2>
+<p>坐标 <span class="arithmatex">\(z\)</span> 和 <span class="arithmatex">\(w(=1 / z)\)</span> 给出了两个覆盖黎曼球面的拼块。单位圆变成了球的赤道面，圆环现在成了赤道面的“项圈”。我们把劈裂的 <span class="arithmatex">\(F(z)\)</span> 看成是两部分的和，一部分全纯地扩展到南半球——称为 <span class="arithmatex">\(F(z)\)</span> 的正频率部分——如 <span class="arithmatex">\(F^{+}(z)\)</span> 所定义，并加上所选的常数项；另一部分全纯地扩展到北半球——称为 <span class="arithmatex">\(F(z)\)</span> 的负频率部分——如 <span class="arithmatex">\(F^{-}(z)\)</span> 所定义，并加上常数项的剩余部分。如果我们忽略掉常数项，那么这个劈裂就唯一地取决于向两半球扩展的全纯性要求。**[9.3]</p>
+<p>这么做常常是方便的：我们用画在黎曼球面上的圆（或其他闭曲线）的取向来指称圆的“内”或“外”。单位圆在 <span class="arithmatex">\(z\)</span> 平面上的标准取向是按标准 <span class="arithmatex">\(\theta\)</span> - 坐标增加的方向即逆时针方向为正方向的。如果我们颠倒这个取向（例如用 <span class="arithmatex">\(-\theta\)</span> 取代 <span class="arithmatex">\(\theta\)</span>），则正、负频率发生交换。一般闭环的取向约定也与此一致。如果“钟面”处于环内，则取向是逆时针的；反之，如果“钟面”处于环外，</p>
+<p>** [9.3] 你能看出为什么吗？</p>
+<details class="question">
+<summary>答案 [9.3]</summary>
+<p>正频率部分只含 <span class="arithmatex">\(z,z^2,\ldots\)</span>，所以可全纯延拓到单位圆内部；负频率部分只含 <span class="arithmatex">\(z^{-1},z^{-2},\ldots\)</span>，改用 <span class="arithmatex">\(w=1/z\)</span> 后就是 <span class="arithmatex">\(w,w^2,\ldots\)</span>，所以可全纯延拓到外部即北半球。</p>
+<p>若两个这样的分解只差一个既能延拓到南半球又能延拓到北半球的函数，那么它给出整个黎曼球面上的全纯函数。紧黎曼球面上的全纯函数只能是常数。因此除常数项如何分配外，分解唯一。</p>
+</details>
+<p>· 113 ·</p>
+<!-- page 133 -->
+
+<p>通向实在之路</p>
+<p>则取向是顺时针的。这种约定规定了有向闭环的“内”和“外”。<a href="../assets/page133_fig01.jpg">图 9.6</a> 能够澄清这一问题。</p>
+<p>162</p>
+<p>在 <a href="../chapter_24/#243-量子力学里能量的正定性">§24.3</a> 和 <a href="../chapter_26/#262-产生算符和湮没算符">§26.2</a>-4 我们将看到，函数剖分为正、负两个频率部分这一点对量子理论至关重要，特别是对量子场论。我这里给出的具体公式并不是这种频率剖分的最常见的形式，但它在许多不同场合（特别是在旋量理论中，见 <a href="../chapter_33/#3310-扭量与正负频率剖分">§33.10</a>）有莫大的好处。常用公式并不像关心傅里叶展开那样直接关心全纯性的扩张。正频率部分通常由 <span class="arithmatex">\(e^{-inx}\)</span> 的倍数给定，这里 <span class="arithmatex">\(n\)</span> 为正。相反，<span class="arithmatex">\(e^{inx}\)</span> 的倍数给出负频率部分。正频率函数完全由正频率分量组成。</p>
+<p>然而，这种描述并未完全反映出频率剖分的全部内容。有许多黎曼球面到自身的全纯映射，它们将每个半球映射到自身，但却不保北极或南极点（即 <span class="arithmatex">\(z=0\)</span> 或 <span class="arithmatex">\(z=\infty\)</span> 的点）。**[9.4] 这些映射保正/负频率剖分，但不保单个的傅里叶分量 <span class="arithmatex">\(e^{-inx}\)</span> 或 <span class="arithmatex">\(e^{inx}\)</span>。因此，剖分为正、负频率的问题（对量子理论至为关键）是比挑出单个傅里叶分量更为一般的概念。</p>
+<p>在通常的量子力学讨论中，正/负频率剖分涉及的是时间 <span class="arithmatex">\(t\)</span> 的函数，我们一般并不把时间看成是走过一个圆，但我们可以用简单的变换从 <span class="arithmatex">\(\chi\)</span> 绕圆行一圈来得到 <span class="arithmatex">\(t\)</span> 的整个范围：从“过去的极限” <span class="arithmatex">\(t=-\infty\)</span> 到“未来的极限” <span class="arithmatex">\(t=\infty\)</span>。这里我将 <span class="arithmatex">\(\chi\)</span> 的取值范围规定为两极限 <span class="arithmatex">\(\chi=-\pi\)</span> 和 <span class="arithmatex">\(\chi=\pi\)</span> 之间区域（因此 <span class="arithmatex">\(z=e^{i\chi}\)</span> 按逆时针方向行遍复平面上整个单位圆，从 <span class="arithmatex">\(z=-1\)</span> 出发最后又回到 <span class="arithmatex">\(z=-1\)</span>，见<a href="../assets/page133_fig02.jpg">图 9.7</a>）。这样的变换可由下式给出</p>
+<div class="arithmatex">\[t = \tan \frac{1}{2}\chi\]</div>
+<p>163</p>
+<p><img alt="图 9.6 黎曼球面上闭环的内外定向示意图，显示球面上的闭合曲线，标注“外部”和“内部”，箭头指示环内为逆时针方向、环外为顺时针方向" src="../assets/page133_fig01.jpg" /></p>
+<p><strong>图 9.6</strong> 安排给黎曼球面上闭环的“内”和“外”的定向定义如下：环内定向为“钟面”的逆时针方向（环外为顺时针方向）。</p>
+<p><img alt="图 9.7 展示 t 轴到单位圆的变换示意图，左侧为 t 轴（标注 -1, 0, 1, 2 等点），右侧为单位圆（标注 t=0, t=1, t=2, t=-1, t=±∞ 及角度 χ），箭头表示逆时针方向" src="../assets/page133_fig02.jpg" /></p>
+<p><strong>图 9.7</strong> 在量子力学里，正/负两个频率剖分是指时间 <span class="arithmatex">\(t\)</span> 的未必是周期性的函数。如果我们用 <span class="arithmatex">\(t\)</span> 到 <span class="arithmatex">\(z\)</span>（<span class="arithmatex">\(=e^{i\chi}\)</span>）的变换，那么在整个 <span class="arithmatex">\(t\)</span> 区域（从 <span class="arithmatex">\(-\infty\)</span> 到 <span class="arithmatex">\(+\infty\)</span>）上，我们仍可运用图 9.5 的剖分，这时我们按逆时针绕单位圆转圈，从 <span class="arithmatex">\(z=-1\)</span> 出发又回到 <span class="arithmatex">\(z=-1\)</span>，故 <span class="arithmatex">\(\chi\)</span> 从 <span class="arithmatex">\(-\pi\)</span> 到 <span class="arithmatex">\(\pi\)</span>。）</p>
+<hr />
+<p><strong>[9.4]</strong> 这些映射中哪些是显映射？</p>
+<details class="question">
+<summary>答案 [9.4]</summary>
+<p>在本书的用法中，“显映射”指由明确公式给出的点到点映射。圆盘与上半平面之间的默比乌斯变换、圆上变量 <span class="arithmatex">\(z=e^{i\theta}\)</span> 与角变量之间的对应，以及后面把圆极限为实线的变换，都是显映射。</p>
+<p>相比之下，单纯把一个函数分成正、负频率部分不是底空间点的显映射，而是对函数空间的线性操作；它由投影或周线积分给出，不是正文所说的几何显映射。</p>
+</details>
+<p>· 114 ·</p>
+<!-- page 134 -->
+
+<p>这个关系图由<a href="../assets/page134_fig01.jpg">图 9.8</a> 给出，简单的几何解释见<a href="../assets/page134_fig02.jpg">图 9.9</a>。</p>
+<p><img alt="函数 t = tan(χ/2) 的图像，显示曲线在 χ = ±π 处的渐近线，曲线通过原点，横轴为 t，纵轴为 χ" src="../assets/page134_fig01.jpg" /></p>
+<p>图 9.8　t = tan χ/2 的图像。</p>
+<p>这个特殊变换的一个好处是它全纯地扩展到了整个黎曼球面，我们在 <a href="../chapter_08/#83-黎曼球面">§8.3</a> 就考虑过这个变换（见<a href="../assets/page120_fig01.jpg">图 8.8</a>），它把单位圆（z 平面）变成实直线（t 平面）：**[9.5]</p>
+<div class="arithmatex">\[t=\frac{z-1}{iz+i},\quad z=\frac{-t+i}{t+i}\]</div>
+<p>z 平面上单位圆的内部对应于 t 平面的上半部，z 单位圆的外部对应于 t 平面的下半部。因此，t 的正频率函数是那些全纯扩展到 t 的下半平面的函数，负频率函数则全纯扩展到 t 的上半平面。（但技术上有一点需要额外考虑，这就是 t 平面的“∞”。但如果我们是在黎曼球面上考虑问题，而不是在复 t 平面上考虑问题，则这一点很容易处理。）</p>
+<p><img alt="t = tan(χ/2) 的几何图示，显示单位圆 z = e^(iχ)，圆心在原点，实轴上标有 1，角度 χ 和 χ/2 的标注，以及从点 z = e^(iχ) 到实轴上某点的连线" src="../assets/page134_fig02.jpg" /></p>
+<p>图 9.9　t = tan χ/2 的几何。</p>
+<p>然而，时间坐标 t 下“正频率”概念的标准表述并不是按我在这里给出的特定形式来陈述的，而是按照 f(χ) 的所谓傅里叶变换来进行的。答案与我给出的实际上是一样的，⁵ 但由于傅里叶变换从各方面说对量子力学都是至关重要的，因此在这里有必要解释一下什么是傅里叶变换。</p>
+<h2 id="94-傅里叶变换">9.4　傅里叶变换<a class="headerlink" href="#94-傅里叶变换" title="Permanent link">&para;</a></h2>
+<p>根本上说，傅里叶变换是傅里叶级数在周期函数 f(χ) 的周期 l 越来越大以至无穷时的极限情形。在这种极限情形下，函数 f(χ) 的周期没有任何限制：它就是一个普通函数。⁶ 当我们研</p>
+<hr />
+<p>**[9.5] 证明：这个式子给出与上面给出的相同的 t。</p>
+<details class="question">
+<summary>答案 [9.5]</summary>
+<p>由第 8 章的变换 <span class="arithmatex">\(t=(z-1)/(iz+i)\)</span>，把 <span class="arithmatex">\(z=e^{i\theta}\)</span> 代入。分子、分母同时乘以 <span class="arithmatex">\(e^{-i\theta/2}\)</span>，得 <span class="arithmatex">\(t=(e^{i\theta/2}-e^{-i\theta/2})/(i(e^{i\theta/2}+e^{-i\theta/2}))\)</span>。</p>
+<p>用 <span class="arithmatex">\(e^{ia}-e^{-ia}=2i\sin a\)</span>、<span class="arithmatex">\(e^{ia}+e^{-ia}=2\cos a\)</span>，得到 <span class="arithmatex">\(t=\tan(\theta/2)\)</span>。这就是圆上角变量与实线变量之间的同一 Cayley 对应。</p>
+</details>
+<p>· 115 ·</p>
+<!-- page 135 -->
+
+<p>通向实在之路</p>
+<p>究波的传播和“不可预料”信号的发送等问题时，这会带来相当大的好处，因为我们不必非要坚持信号以周期形式出现了。傅里叶级数容许我们将这种“一次性的”信号按周期性的“纯基音”来分析。实际上，它是通过将函数 <span class="arithmatex">\(f(\chi)\)</span> 取周期 <span class="arithmatex">\(l \to \infty\)</span> 来实现的。随着周期 <span class="arithmatex">\(l\)</span> 取得越来越大，纯基音谐频（对某个正实数 <span class="arithmatex">\(n\)</span>，周期为 <span class="arithmatex">\(l/n\)</span>）也就越来越接近我们所取的任意正实数。（我们知道，任意正实数可用有理数任意逼近。）这个事实告诉我们，现在任何频率的纯基音都可以是一个傅里叶分量。我们现在不是要把 <span class="arithmatex">\(f(\chi)\)</span> 表示成离散的傅里叶分量的和，而是要将 <span class="arithmatex">\(f(\chi)\)</span> 表示成所有频率的连续和，这意味着将 <span class="arithmatex">\(f(\chi)\)</span> 表示成关于频率的积分（见 <a href="../chapter_06/#66-积分">§6.6</a>）。</p>
+<p>让我们概要地看看它是如何工作的。首先，周期 <span class="arithmatex">\(l\)</span> 的周期函数 <span class="arithmatex">\(f(x)\)</span> 的傅里叶分解的“最简洁”表达式为：</p>
+<div class="arithmatex">\[F(z) = \sum \alpha_r z^r, \qquad \text{这里 } z = e^{i\omega x}\]</div>
+<p>（角频率 <span class="arithmatex">\(\omega = 2\pi/l\)</span>）。我们取初始周期 <span class="arithmatex">\(2\pi\)</span>，这样 <span class="arithmatex">\(\omega = 1\)</span>。现在我们来试着增加周期到某个大数 <span class="arithmatex">\(N\)</span> 倍（故 <span class="arithmatex">\(l = 2\pi N\)</span>），由此频率降低了相同倍数（即 <span class="arithmatex">\(\omega = N^{-1}\)</span>）。原用作基本纯基音的振荡波现在变成了这个新的低频波的 <span class="arithmatex">\(N\)</span> 次谐波，而用作 <span class="arithmatex">\(n\)</span> 次谐波的纯基音现在则成了 <span class="arithmatex">\((nN)\)</span> 次谐波。当我们取 <span class="arithmatex">\(N\)</span> 趋向无穷的极限时，要通过标签“谐频数”（即数字 <span class="arithmatex">\(n\)</span>）来跟踪某个具体的振荡分量就显得不合适了，因为这个数字总在变化。也就是说，在上面的求和中用整数 <span class="arithmatex">\(r\)</span> 来指称振荡分量已经不合适了，因为一个固定的 <span class="arithmatex">\(r\)</span> 值标称一个具体的谐频（<span class="arithmatex">\(r = \pm n\)</span> 表示第 <span class="arithmatex">\(n\)</span> 次谐波），而不是示踪某个具体的基音频率。示踪某个具体的基音频率的是 <span class="arithmatex">\(r/N\)</span>，因此我们需要有新的变量来标称它。请记住，在后面章节（特别是在 <a href="../chapter_21/#2111-动量空间描述">§21.11</a>）的傅里叶变换的重要应用中，我们将把这个 <span class="arithmatex">\(N\)</span> 趋向无穷时的新变量称为“<span class="arithmatex">\(p\)</span>”，它表示某个量子力学粒子（其位置由 <span class="arithmatex">\(x\)</span> 量度）的动量。<sup>7</sup> 在这种极限情形下，我们也可以反过来用 <span class="arithmatex">\(x\)</span> 来取代 <span class="arithmatex">\(\chi\)</span>，如有必要的话。通过如下所述我们会发现，在取极限后，<span class="arithmatex">\(\chi\)</span> 实际上已变成 <span class="arithmatex">\(z\)</span> 的实部。</p>
+<p>对有限的 <span class="arithmatex">\(N\)</span>，我们有</p>
+<div class="arithmatex">\[p = \frac{r}{N}\]</div>
+<p>在 <span class="arithmatex">\(N \to \infty\)</span> 的极限情形下，参数 <span class="arithmatex">\(p\)</span> 成了连续变量。由于求和中的“系数 <span class="arithmatex">\(\alpha_r\)</span>”依赖于连续的实值参数 <span class="arithmatex">\(p\)</span> 而非离散的整数参数 <span class="arithmatex">\(r\)</span>，因此我们可将 <span class="arithmatex">\(\alpha_r\)</span> 对 <span class="arithmatex">\(r\)</span> 的依赖关系写成标准的函数形式 <span class="arithmatex">\(g(p)\)</span> 而不是下标形式 <span class="arithmatex">\(g_p\)</span>。实际工作中，我们对求和 <span class="arithmatex">\(\sum \alpha_r z^r\)</span> 中的 <span class="arithmatex">\(\alpha_r\)</span> 作替换</p>
+<div class="arithmatex">\[\alpha_r \mapsto g(p)\]</div>
+<p>但必须记住，随着 <span class="arithmatex">\(N\)</span> 取得越来越大，处于 <span class="arithmatex">\(p\)</span> 值的某个小区间内的项数也越来越多（基本上正比于 <span class="arithmatex">\(N\)</span>，因为我们考虑的是处于该区间的分数 <span class="arithmatex">\(n/N\)</span>）。与此同时，量 <span class="arithmatex">\(g(p)\)</span> 实际上可看成是对密度的量度，因此在求和号 <span class="arithmatex">\(\sum\)</span> 变成积分号 <span class="arithmatex">\(\int\)</span> 的极限情形下，<span class="arithmatex">\(g(p)\)</span> 必须后附一个 <span class="arithmatex">\(\mathrm{d}p\)</span>。最后，考虑求和 <span class="arithmatex">\(\sum \alpha_r z^r\)</span> 中的 <span class="arithmatex">\(z^r\)</span> 项。我们有 <span class="arithmatex">\(z = e^{i\omega x}\)</span>，这里 <span class="arithmatex">\(\omega = N^{-1}\)</span>；因此 <span class="arithmatex">\(z = e^{ix/N}\)</span>，<span class="arithmatex">\(z^r = e^{irx/N} = e^{ixp}\)</span>。将这些式子合起来，取极限 <span class="arithmatex">\(N \to \infty\)</span>，我们得到表达式</p>
+<p>·116·</p>
+<!-- page 136 -->
+
+<div class="arithmatex">\[\sum \alpha_r z^r \rightarrow \int_{-\infty}^{\infty} g(p) e^{i\chi p} dp,\]</div>
+<p>它就是我们的函数 <span class="arithmatex">\(f(\chi)\)</span>。实际过程中常在这个积分上附加一项标度因子 <span class="arithmatex">\((2\pi)^{-1/2}\)</span>，这样，用 <span class="arithmatex">\(f(\chi)\)</span> 表示 <span class="arithmatex">\(g(p)\)</span> 的逆运算就与用 <span class="arithmatex">\(g(p)\)</span> 表示的 <span class="arithmatex">\(f(\chi)\)</span> 具有完全相同的对称形式：</p>
+<div class="arithmatex">\[f(\chi) = (2\pi)^{-1/2} \int_{-\infty}^{\infty} g(p) e^{i\chi p} dp, g(p) = (2\pi)^{-1/2} \int_{-\infty}^{\infty} f(\chi) e^{-i\chi p} d\chi.\]</div>
+<p>函数 <span class="arithmatex">\(f(\chi)\)</span> 和 <span class="arithmatex">\(g(p)\)</span> 称为互为傅里叶变换。<em>*</em>[9.6]</p>
+<h2 id="95-傅里叶变换的频率剖分">9.5 傅里叶变换的频率剖分<a class="headerlink" href="#95-傅里叶变换的频率剖分" title="Permanent link">&para;</a></h2>
+<p>如果定义在整个实线上的（复）函数 <span class="arithmatex">\(f(\chi)\)</span> 的傅里叶变换 <span class="arithmatex">\(g(p)\)</span> 对所有 <span class="arithmatex">\(p \geqslant 0\)</span> 均为零，则称 <span class="arithmatex">\(f(\chi)\)</span> 为正频率。这时 <span class="arithmatex">\(f(\chi)\)</span> 就只由 <span class="arithmatex">\(p &lt; 0\)</span> 的 <span class="arithmatex">\(e^{i\chi p}\)</span> 的分量组成。（欧拉一定又要替 <span class="arithmatex">\(g(p)\)</span> 担心了（见 <a href="../chapter_06/#61-如何构造实函数">§6.1</a>），它明显是由 <span class="arithmatex">\(p &lt; 0\)</span> 时的非零函数与 <span class="arithmatex">\(p &gt; 0\)</span> 时的零"粘合"而成的。但它似乎体现了 <span class="arithmatex">\(f(\chi)\)</span> 完美的"全纯"特性。）表示这种"正频率"条件的另一种方法是依据 <span class="arithmatex">\(f(\chi)\)</span> 的全纯可扩展性质，我们在讲述傅里叶级数前谈到过这种性质。现在我们将变量 <span class="arithmatex">\(\chi\)</span> 取为实轴上的点（故在实轴上有 <span class="arithmatex">\(\chi = x\)</span>），在黎曼球面上，这个"实轴"（包括点"<span class="arithmatex">\(\chi = \infty\)</span>"）是实圆（<a href="../assets/page119_fig02.jpg">图 8.7</a>c）。这个圆将球面分成了两个半圆，凸向"外"的对应于标准复平面图形的下半平面。<span class="arithmatex">\(f(\chi)\)</span> 为正频率的条件现在全纯地扩展为这个凸向"外"的半球面。</p>
+<p>但当我们比较这两种"正频率"定义时，有一个问题需要注意。它牵涉到我们如何处理点 <span class="arithmatex">\(z = \infty\)</span>，因为函数 <span class="arithmatex">\(f(\chi)\)</span> 一般在这里总是奇异的。实际上，只要我们采用下面（<a href="#97-超函数">§9.7</a>）要说的"超函数"观点，<span class="arithmatex">\(z = \infty\)</span> 处的奇异性就不会引起实质性的困难。对"<span class="arithmatex">\(f(\infty)\)</span>"也采取类似的适当处理，我们可以证明，我在上面给出的这两种正频率定义基本上是彼此一致的。⁸</p>
+<p>对有兴趣的读者，根据黎曼球面来检验一下与 <a href="#94-傅里叶变换">§9.4</a> 中取极限有关的几何是有益的，这种取极限过程使我们从傅里叶级数过渡到傅里叶变换。让我们回到早先考虑的 <span class="arithmatex">\(z\)</span> 平面描述。对周期 <span class="arithmatex">\(2\pi\)</span> 的函数 <span class="arithmatex">\(f(\chi)\)</span>，这里 <span class="arithmatex">\(\chi\)</span> 度量单位圆的弧长。假定我们以持续增大步长的方式改变周期，使之取一系列比 <span class="arithmatex">\(2\pi\)</span> 更大的值，同时仍取 <span class="arithmatex">\(\chi\)</span> 为圆的弧长。这可以通过考虑一系列越来越大的圆来实现，但为了使取极限过程不失几何意义，我们假定这些圆全都在 <span class="arithmatex">\(\chi = 0\)</span> 点彼此相切（<a href="../assets/page137_fig01.jpg">图 9.10</a>(a)）。下面为简单计，我们取这个点为原点 <span class="arithmatex">\(z = 0\)</span>（不是 <span class="arithmatex">\(z = 1\)</span>），所有圆均处下半平面。这样，初始圆对应周期 <span class="arithmatex">\(l = 2\pi\)</span>，该单位圆的圆心在 <span class="arithmatex">\(z = -i\)</span>，而不是原点。对周期 <span class="arithmatex">\(l &gt; 2\pi\)</span> 的那些圆，其圆心处于复平面上 <span class="arithmatex">\(C = -il/2\pi\)</span> 的位置，在 <span class="arithmatex">\(l \rightarrow \infty\)</span> 的极限情形，我们得到实轴本身（故 <span class="arithmatex">\(\chi = x\)</span>），"圆心"沿负的</p>
+<p>*** [9.6] 概要说明，如何利用练习 [9.2] 的周线积分表达式 <span class="arithmatex">\(\alpha_n = (2\pi i)^{-1} \oint z^{-n-1} F(z) dz\)</span> 的极限形式从 <span class="arithmatex">\(f(\chi)\)</span> 得到 <span class="arithmatex">\(g(p)\)</span>？</p>
+<details class="question">
+<summary>答案 [9.6]</summary>
+<p>令圆半径或周期趋于无穷，使离散频率 <span class="arithmatex">\(n\omega\)</span> 变成连续变量 <span class="arithmatex">\(p\)</span>，相邻频率间隔为 <span class="arithmatex">\(\Delta p=\omega\)</span>。傅里叶系数 <span class="arithmatex">\(\alpha_n\)</span> 乘以适当的尺度因子后趋向连续频谱密度 <span class="arithmatex">\(g(p)\)</span>。</p>
+<p>练习 [9.2] 的周线积分在这个极限中变成沿实频率轴的积分核提取公式，也就是通常的傅里叶变换。直观地说，洛朗系数求取从“取圆上的第 <span class="arithmatex">\(n\)</span> 个模式”变成“取实线上频率 <span class="arithmatex">\(p\)</span> 的模式”。</p>
+</details>
+<!-- page 137 -->
+
+<p>通向实在之路</p>
+<p><img alt="图9.10(a) 复平面上的位移单位圆示意图，显示圆心C=-il/2π，半径为l，以及顺时针方向的χ弧长测量" src="../assets/page137_fig01.jpg" /></p>
+<p><img alt="图9.10(b) 黎曼球面示意图，显示位移的单位圆、实轴、负虚轴、点0、-i和∞的位置关系" src="../assets/page137_fig02.jpg" /></p>
+<p><strong>图9.10</strong> <span class="arithmatex">\(l \to \infty\)</span> 时的正频率条件，这里 <span class="arithmatex">\(l\)</span> 是 <span class="arithmatex">\(f(\chi)\)</span> 的周期。（a）由 <span class="arithmatex">\(l=2\pi\)</span> 开始，定义在单位圆上的 <span class="arithmatex">\(f\)</span> 的圆心在 <span class="arithmatex">\(z=-i\)</span>。随着 <span class="arithmatex">\(l\)</span> 增加，圆的半径为 <span class="arithmatex">\(l\)</span>，圆心在 <span class="arithmatex">\(C=-il/2\pi\)</span> 的位置。在每一种情形下，<span class="arithmatex">\(\chi\)</span> 为顺时针测得的圆弧长。正频率表示 <span class="arithmatex">\(f\)</span> 可全纯地扩展到圆内，在 <span class="arithmatex">\(l=\infty\)</span> 极限情形下，则扩展到下半平面。（b）同样，在黎曼球面上，对有限的 <span class="arithmatex">\(l\)</span>，傅里叶级数可由关于 <span class="arithmatex">\(z=-il/2\pi\)</span> 的洛朗级数得到，但是在球面上这个点不是圆心，并且随着取 <span class="arithmatex">\(l=\infty\)</span> 极限，该点变成无穷远点 <span class="arithmatex">\(\infty\)</span>，这时傅里叶级数变成傅里叶变换。</p>
+<p>虚轴方向移至无穷远。在每一种情形，我们现在都取 <span class="arithmatex">\(\chi\)</span> 为顺时针测得的圆弧长（在极限情形，则为沿实轴的正距离），且在原点 <span class="arithmatex">\(\chi=0\)</span>。由于现在圆是非标准（顺时针）取向，它们的"外侧"即为它们的内部（见 <a href="#93-黎曼球面上的频率剖分">§9.3</a>，<a href="../assets/page133_fig01.jpg">图9.6</a>），因此正频率条件指的就是这个内部。现在我们将 <span class="arithmatex">\(\chi\)</span> 和 <span class="arithmatex">\(z\)</span> 之间的关系表示成**[9.7]</p>
+<div class="arithmatex">\[z = \frac{il}{2\pi}(e^{-i\chi} - 1)\]</div>
+<p>对有限的 <span class="arithmatex">\(l\)</span>，我们可通过点 <span class="arithmatex">\(C=-il/2\pi\)</span> 处的洛朗级数将 <span class="arithmatex">\(f(\chi)\)</span> 表示成傅里叶级数，并通过取极限 <span class="arithmatex">\(l \to \infty\)</span> 得到傅里叶变换。在有限 <span class="arithmatex">\(l\)</span> 的情形下，当 <span class="arithmatex">\(f(\chi)\)</span> 的全纯可扩展性延伸到相关圆的内部时，我们得到正频率条件；而在 <span class="arithmatex">\(l \to \infty\)</span> 的极限情形下，<span class="arithmatex">\(f(\chi)\)</span> 的这种全纯可扩展性延伸到整个下半平面，以便与上述条件相一致。</p>
+<p>那么洛朗级数在 <span class="arithmatex">\(l \to \infty\)</span> 的极限情形下会怎样呢？这时我们需要借助黎曼球面来理解。对有限的 <span class="arithmatex">\(l\)</span> 值，点 <span class="arithmatex">\(C(=-il/2\pi)\)</span> 是 <span class="arithmatex">\(\chi\)</span> 圆的圆心，但在黎曼球面上，点 <span class="arithmatex">\(C\)</span> 已不再像圆心。随着 <span class="arithmatex">\(l\)</span> 的递增，<span class="arithmatex">\(C\)</span> 沿黎曼球面上表示虚轴的圆向外运动（<a href="../assets/page137_fig01.jpg">图9.10</a>(b)），点 <span class="arithmatex">\(C(=-il/2\pi)\)</span> 越来越不像圆心。最后，在 <span class="arithmatex">\(l=\infty\)</span> 的极限情形下，<span class="arithmatex">\(C\)</span> 变成黎曼球面上的点 <span class="arithmatex">\(z=\infty\)</span>。但当 <span class="arithmatex">\(C=\infty\)</span>，我们发现它实际上是处在本当是圆心的圆上！（这个圆就是现在的实轴。）因此，取关于这个点的幂级数将出现奇异（或"奇点"）——当然这是预料之中的，因为我们不再能得到各项的和，只能得到连续的积分。</p>
+<hr />
+<p><strong>[9.7]</strong> 导出这个表达式。</p>
+<details class="question">
+<summary>答案 [9.7]</summary>
+<p>从 <span class="arithmatex">\(z=(i-t)/(i+t)\)</span> 出发，令 <span class="arithmatex">\(t\)</span> 趋于实轴上的变量并把圆上接近点 <span class="arithmatex">\(z=1\)</span> 的小弧放大。若写 <span class="arithmatex">\(t=\tan(\theta/2)\)</span>，则反解为 <span class="arithmatex">\(e^{i\theta}=(i-t)/(i+t)\)</span>，或者等价地 <span class="arithmatex">\(t=i(1-z)/(1+z)\)</span>。</p>
+<p>因此当圆被放大到实线时，圆内/圆外的全纯延拓分别转化为实线上半平面/下半平面的全纯延拓，这就是正文表达式的来源。</p>
+</details>
+<p>· 118 ·</p>
+<!-- page 138 -->
+
+<p>第九章 傅里叶分解和超函数</p>
+<h2 id="96-哪种函数是适当的">9.6 哪种函数是适当的？<a class="headerlink" href="#96-哪种函数是适当的" title="Permanent link">&para;</a></h2>
+<p>现在让我们回到本章开头提出的关于适当可用的"函数"种类的问题上来。我们可以提出如下问题：哪一种函数可用来表示傅里叶变换？将注意力仅限定在解析（即 C^ω）函数上是不恰当的，因为如我们上面所见，正频率函数 f(χ) ——它当然是解析的了——的傅里叶变换 g(p) 显然是一种从非零函数到零函数的非解析"粘合"的结果。一个函数和它的傅里叶变换之间是对称的，因此采用这样一种非标准形式似乎不合道理。另外还应当指出，f(χ) 在点 χ=∞ 的行为关系到正/负频率剖分，而且只有在相当特殊的场合下 f(χ) 在 ∞ 才是（C^ω）解析的（因为这要求 f(χ) 在 χ→+∞ 和 χ→-∞ 之间严格匹配）。除此之外，我们还不能忽略当初研究傅里叶变换的物理动机，即这种变换应使我们能够处理那种传递"不曾预料的"（非解析）信息的信号。因此，我们必须回到本章开头我们所面临的问题上来：我们应当采用哪一种函数作为"实在"函数？</p>
+<p>一方面我们知道，欧拉和他的同时代人可能满足于将一个全纯（或解析）函数当作他们心仪的那种"函数"；而另一方面，这些函数对许多数学和物理方面的问题，包括波传播的问题，显得无能为力，因此函数概念必须向更一般的意义上拓展。这些观点中哪一个更"正确"呢？普遍存在这样一种看法，认为第一种观点的支持者都是些"老古董"，那些摩登的概念肯定都偏向于第二种观点，因此全纯或解析函数只是一般的"函数"概念里一种非常特殊的情形。但这就是我们必须采取的"正确"态度吗？让我们试着用 18 世纪的思想框架来思考这一问题。</p>
+<p><img alt="不连续周期函数图，包含两个子图：(a) 方波，(b) 锯齿波" src="../assets/page138_fig01.jpg" /></p>
+<p><strong>图 9.11</strong> 不连续周期函数（具有完全看似合理的傅里叶表示）：(a) 方波，(b) 锯齿波。</p>
+<p>先看 19 世纪初的约瑟夫·傅里叶。在傅里叶向人们展示说某些周期函数，像<a href="../assets/page138_fig01.jpg">图 9.11</a> 描述的方波或锯齿波，具有完全看似合理的傅里叶表示时，那些属于"解析"（欧拉）学派的老学究们一定吃惊不小！当时傅里叶遇到了来自数学传统势力的一片反对之声。很多人不愿接受他的结论。例如，方波函数怎么可以用一个"公式"来表示？但正如傅里叶展示的，级数</p>
+<div class="arithmatex">\[s(\chi) = \sin\chi + \frac{1}{3}\sin 3\chi + \frac{1}{5}\sin 5\chi + \frac{1}{7}\sin 7\chi + \cdots\]</div>
+<!-- page 139 -->
+
+<p>通向实在之路</p>
+<p><img alt="方波傅里叶级数逼近示意图，展示 \(s\) 随 \(x\) 变化的周期性方波及其谐波叠加" src="../assets/page139_fig01.jpg" /></p>
+<p><strong>图 9.12</strong> 傅里叶级数 <span class="arithmatex">\(s(\chi)=\sin\chi+\dfrac{1}{3}\sin3\chi+\dfrac{1}{5}\sin5\chi+\dfrac{1}{7}\sin7\chi+\cdots\)</span> 的部分和，收敛到一个（像图 9.11(a) 的）方波。</p>
+<p>实际上就是一种方波的和，这种方波是一种在两个常数 <span class="arithmatex">\(\dfrac{1}{4}\pi\)</span> 和 <span class="arithmatex">\(-\dfrac{1}{4}\pi\)</span> 之间的半周期为 <span class="arithmatex">\(\pi\)</span> 的振荡（<a href="../assets/page139_fig01.jpg">图 9.12</a>）。</p>
+<p>170</p>
+<p>让我们看看上述图形如何用洛朗级数来表示。我们有相当漂亮的表达式 *^{[9.8]}</p>
+<details class="question">
+<summary>答案 [9.8]</summary>
+<p>方波的洛朗级数只含奇数频率，因为它在半周期平移下变号。其正负频率系数可由通常傅里叶正弦级数读出：<span class="arithmatex">\(\operatorname{sgn}(\sin\theta)=4\pi^{-1}(\sin\theta+\sin3\theta/3+\cdots)\)</span>。</p>
+<p>将 <span class="arithmatex">\(\sin n\theta=(z^n-z^{-n})/(2i)\)</span> 代入，就得到只含奇次幂的洛朗表达式。正频率和负频率部分分别是这些正幂与负幂项。</p>
+</details>
+<div class="arithmatex">\[2\mathrm{i}s(\chi)=\cdots-\frac{1}{5}z^{-5}-\frac{1}{3}z^{-3}-z^{-1}+z+\frac{1}{3}z^{3}+\frac{1}{5}z^{5}+\cdots,\]</div>
+<p>这里 <span class="arithmatex">\(z=\mathrm{e}^{\mathrm{i}\chi}\)</span>。事实上，这只是一个收敛圆环退缩为单位圆（未留下开区域）的例子。但我们仍可以根据全纯函数对此予以解释，如果我们将洛朗级数分成两部分，一部分具有正幂，给出普通的 <span class="arithmatex">\(z\)</span> 的幂级数；另一部分具有负幂，给出 <span class="arithmatex">\(z^{-1}\)</span> 的幂级数。实际上它们都是已知的级数，可直接求和：**^{[9.9]}</p>
+<p>171</p>
+<div class="arithmatex">\[S^{-}=z+\frac{1}{3}z^{3}+\frac{1}{5}z^{5}+\cdots=\frac{1}{2}\log\left(\frac{1+z}{1-z}\right)\]</div>
+<p>和</p>
+<div class="arithmatex">\[S^{+}=\cdots-\frac{1}{5}z^{-5}-\frac{1}{3}z^{-3}-z^{-1}=-\frac{1}{2}\log\left(\frac{1+z^{-1}}{1-z^{-1}}\right),\]</div>
+<p>由此给出 <span class="arithmatex">\(2\mathrm{i}s(\chi)=S^{-}+S^{+}\)</span>。稍许重排这些表达式即可导出结论：<span class="arithmatex">\(S^{-}\)</span> 和 <span class="arithmatex">\(-S^{+}\)</span> 只差 <span class="arithmatex">\(\pm\dfrac{1}{2}\mathrm{i}\pi\)</span>。</p>
+<p>由此可知 <span class="arithmatex">\(s(\chi)=\pm\dfrac{1}{4}\pi\)</span>。*^{[9.10]} 但我们还需要进一步了解为什么我们实际得到的是一个量在不同值之间的方波振荡。</p>
+<p>如果我们作 <a href="../chapter_08/#83-黎曼球面">§8.3</a> 给出的变换 <span class="arithmatex">\(t=(z-1)/(\mathrm{i}z+\mathrm{i})\)</span>，会使我们欣赏接下来要发生的事变得更容</p>
+<hr />
+<ul>
+<li>[9.8] 证明这个表达式。</li>
+</ul>
+<p>** [9.9] 利用 <a href="../chapter_07/#74-解析延拓">§7.4</a> 末尾给出的 <span class="arithmatex">\(\log z\)</span> 在 <span class="arithmatex">\(z=0\)</span> 处的幂级数展开式，证明这个表达式。</p>
+<details class="question">
+<summary>答案 [9.9]</summary>
+<p>使用 <span class="arithmatex">\(\log(1-z)=-(z+z^2/2+z^3/3+\cdots)\)</span>。把 <span class="arithmatex">\(z\)</span> 换成相应的圆变量后，两个对数分支的差给出跳跃；奇次项保留、偶次项相消，便得到方波的奇频率级数。</p>
+<p>本质上，这是把 <span class="arithmatex">\(\log(1+z)-\log(1-z)=2(z+z^3/3+z^5/5+\cdots)\)</span> 作为生成函数；在单位圆边界取适当分支值，就得到正文的表达式。</p>
+</details>
+<ul>
+<li>[9.10] 证明这个式子（假定 <span class="arithmatex">\(|s(\chi)|&lt;3\pi/2\)</span>）。</li>
+</ul>
+<details class="question">
+<summary>答案 [9.10]</summary>
+<p>在 <span class="arithmatex">\(|s(\chi)|&lt;3\pi/2\)</span> 的范围内，相关对数分支不会跨过切线，因此可以固定同一分支来展开。把 [9.9] 的对数级数逐项代入，并用边界两侧的分支值之差表示跳跃函数，就得到正文的方波表达式。</p>
+<p>这个限制的作用不是改变傅里叶系数，而是保证所选对数分支和解析延拓路径不发生额外的 <span class="arithmatex">\(2\pi i\)</span> 跳变。</p>
+</details>
+<p>· 120 ·</p>
+<!-- page 140 -->
+
+<p>第九章 傅里叶分解和超函数</p>
+<p>易些。这个变换将 <span class="arithmatex">\(z\)</span> 平面上单位圆的内部变换成 <span class="arithmatex">\(t\)</span> 平面的上半平面（如<a href="../assets/page120_fig01.jpg">图 8.8</a> 所示）。对 <span class="arithmatex">\(t\)</span> 来说，量 <span class="arithmatex">\(S^-\)</span> 现在是指上半平面，<span class="arithmatex">\(S^+\)</span> 指下半平面，我们发现（对数里可能会差个 <span class="arithmatex">\(2\pi i\)</span>）</p>
+<div class="arithmatex">\[S^- = -\frac{1}{2}\log t + \frac{1}{2}\log i,\quad S^+ = \frac{1}{2}\log t + \frac{1}{2}\log i.\]</div>
+<p>接下来对数从相应的起始点 <span class="arithmatex">\(t=i\)</span>（这时 <span class="arithmatex">\(S^-=0\)</span>）和 <span class="arithmatex">\(t=-i\)</span>（这时 <span class="arithmatex">\(S^+=0\)</span>）开始连续地取值，我们发现，沿正实 <span class="arithmatex">\(t-\)</span>轴有 <span class="arithmatex">\(S^-+S^+=+\dfrac{1}{2}i\pi\)</span>，而沿负实 <span class="arithmatex">\(t\)</span> 轴有 <span class="arithmatex">\(S^-+S^+=-\dfrac{1}{2}i\pi\)</span>。<em>*</em>[9.11] 由此我们得到结论，沿 <span class="arithmatex">\(z\)</span> 平面上单位圆的上半部分我们有 <span class="arithmatex">\(s(\chi)=+\dfrac{1}{4}\pi\)</span>，而沿其下半部分我们有 <span class="arithmatex">\(s(\chi)=-\dfrac{1}{4}\pi\)</span>。这说明，正如傅里叶所断言的，傅里叶级数确实是方波的和。</p>
+<p>从这个例子我们得到了什么教训呢？我们已看到，一个特定的（周期）函数，它甚至不是连续的，更甭说可微了（在 <span class="arithmatex">\(C^{-1}\)</span> 函数意义上），能够被表示成完全合理的傅里叶级数。同样，当我们将一个函数看成是定义在单位圆上，那么它就一定能够用看起来合理的洛朗级数表示出来，虽然这个级数的收敛圆环事实上已经退缩为单位圆本身。这个洛朗级数的正半部分和负半部分各自加和成为半黎曼球面上的完美的全纯函数。一个定义在单位圆的一侧，另一个定义在另一侧。我们可将这两个函数的“和”看成是单位圆本身给出的所要求的方波。正是因为在单位圆的 <span class="arithmatex">\(z=\pm 1\)</span> 的两点上存在分支奇点，才使得这个和可以从一侧“跳到”另一侧，给出以这个和的形式出现的方波。这些分支奇点还使得两侧的幂级数在单位圆外不收敛。</p>
+<h2 id="97-超函数">9.7 超函数<a class="headerlink" href="#97-超函数" title="Permanent link">&para;</a></h2>
+<p>这个例子只是一个很特殊的情形，但它示范了我们一般必须经历的过程步骤。我们要问，能够定义在单位圆上（黎曼球面上）并能够表示成开区间上的全纯函数 <span class="arithmatex">\(F^+\)</span> 和 <span class="arithmatex">\(F^-\)</span> 的“和”的最一般的函数形式是什么？这里 <span class="arithmatex">\(F^+\)</span> 定义在单位圆一侧的开区间上，<span class="arithmatex">\(F^-\)</span> 定义在单位圆的另一侧的开区间上，恰如我们上面所给的例子中的情形。我们发现，这个问题的答案将直接导致一个古怪但重要的概念——“超函数”。</p>
+<p>实际上，将 <span class="arithmatex">\(f\)</span> 看成是 <span class="arithmatex">\(F^-\)</span> 和 <span class="arithmatex">\(-F^+\)</span> 之间的“差”将更富于启发性。这么做的一个理由是，在最一般的情形下，对实际单位圆来说，<span class="arithmatex">\(F^-\)</span> 或 <span class="arithmatex">\(F^+\)</span> 可能都不存在解析扩展，因此在圆上这种“和”意味着什么并不清楚。但是，我们可以将 <span class="arithmatex">\(F^-\)</span> 和 <span class="arithmatex">\(-F^+\)</span> 之间的差视为这两个函数间“跳跃”的表示，此时它们的定义域已在单位圆上合二为一。</p>
+<p>复平面上曲线一侧的全纯函数与另一侧的另一个全纯函数之间“跳跃”的这一思想——这</p>
+<hr />
+<p><em>*</em>[9.11] 证明这个式子。</p>
+<details class="question">
+<summary>答案 [9.11]</summary>
+<p><span class="arithmatex">\(S^+\)</span> 和 <span class="arithmatex">\(S^-\)</span> 分别是边界曲线两侧的全纯函数边值。若把同一个全纯函数同时加到两侧，二者的差不变；因此超函数只由边值差决定，而不由某个代表元唯一决定。</p>
+<p>对对数例子，绕过分支点时两个边值相差 <span class="arithmatex">\(2\pi i\)</span> 的整数倍。选择不同分支只会给两边同时加上全纯项或常数，所代表的边界跳跃即超函数不变。</p>
+</details>
+<p>·121·</p>
+<!-- page 141 -->
+
+<p>通向实在之路</p>
+<p>里的两个全纯函数都无需全纯地扩展过曲线本身——实际上为我们提供了一种全新的定义在曲线上的“函数”概念。这就是（解析）曲线上超函数的定义。这是由日本数学家佐藤干夫（Sato Mikio, 1926～）^(1) 于1958年提出的一个绝妙的概念。<sup>9</sup> 不久我们就会看到，佐藤实际的定义比这里用的更加优美。^10</p>
+<p>对于超函数的定义，我们不必考虑像完整的单位圆那样的闭曲线，而是考虑曲线的某一段即可。更经常的是将超函数定义在某段实线段 γ 上。我们将 γ 看成是 a 和 b 之间的实线段，这里 a 和 b 都是实数且有 a &lt; b。于是，定义在 γ 上的一个超函数是横越 γ 的跳跃，它从开集 R^-（以 γ 为上界）上的全纯函数 f 到开集 R^+（以 γ 为下界）上的全纯函数 g，见<a href="../assets/page141_fig01.jpg">图9.13</a>。</p>
+<p><img alt="三维示意图展示复平面上实轴段γ两侧的全纯函数形成的“跳跃”曲面，左侧标注“复平面”，右侧标注γ" src="../assets/page141_fig01.jpg" /></p>
+<p>图9.13 实轴段 γ 上的超函数表示 γ 上一侧的全纯函数到另一侧的全纯函数的“跳跃”。</p>
+<p>像这样简单地称它为“跳跃”并没有使我们了解多少这是怎么回事（数学上也很不严谨）。佐藤对这个问题的处理相当完美，他采用的是异常简洁的形式化的代数方法。我们可以用这两个全纯函数对 (f, g) 来表示这一跳跃。我们说这样的一个对 (f, g) 等价于另一个对 (f_0, g_0)，如果后者是通过在 f 和 g 上加上同一个全纯函数 h 而得到的话，这里 h 定义在由 R^- 和 R^+ 沿曲线段 γ 联合组成的（开）区域 R 上，见<a href="../assets/page142_fig01.jpg">图9.14</a>。我们可以说</p>
+<p>(f, g) 等价于 (f + h, g + h),</p>
+<p>这里全纯函数 f 和 g 分别定义在 R^- 和 R^+ 上，h 为联合区域 R 上任意全纯函数。这两个表达式都可以用来表示同一个超函数。在数学上，超函数本身指的是这种对的等价类，“约化模”<sup>11</sup> 定</p>
+<hr />
+<p>^(1) 2003年，与美国数学家泰特（John T. Tate）一起荣获2002/2003年度沃尔夫数学奖。——译者</p>
+<p>· 122 ·</p>
+<!-- page 142 -->
+
+<hr />
+<p>第九章 傅里叶分解和超函数</p>
+<hr />
+<p><img alt="三个圆形示意图，展示超函数的模构造。左图：阴影区域标记&quot;R⁻上的f&quot;，实轴γ为边界；中图：阴影区域标记&quot;R⁺上的g&quot;，实轴γ为边界；右图：完整阴影圆标记&quot;R上的h&quot;。中间标注&quot;模&quot;字。" src="../assets/page142_fig01.jpg" /></p>
+<p><strong>图9.14</strong> 在部分实轴γ上，超函数由一对全纯函数(f,g)提供，这里f定义在以γ为上界的某个开区域R⁻上，g定义在以γ为下界的开区域R⁺上。γ上的实际超函数h是(f,g)与(f+h,g+h)的模，这里h是R⁻、γ和R⁺的并R上的全纯函数。</p>
+<p>义在R上的全纯函数h。读者可以回顾一下序言里提到的与分数定义相关联的"等价类"的概念。它与这里所用的一样都是一般性概念。现在的关键是，增加h虽不影响f和g之间的"跳跃"，但h能以与这种跳跃无关的方式改变f和g。（例如，h能够改变这些函数偶尔出现的持续离开γ进入开区域R⁻和R⁺。）因此，跳跃本身可由这个等价类来表示。</p>
+<p>读者可能真的被搞糊涂了。这种巧妙的定义似乎主要取决于我们对开区域R⁻和R⁺的任意选择，仅有的限制是它们得有共同的边界线γ。但令人惊奇的是，超函数的定义并不依赖于这种选择。按照所谓的切除定理，实际上这种超函数概念在很大程度上独立于R⁻和R⁺的具体选择，见<a href="../assets/page142_fig02.jpg">图9.15</a>的前3个例子。</p>
+<p><img alt="六个示意图展示切除定理。(a) 上排三个：圆内水平线段γ、矩形内水平线段γ、不规则形状内水平线段γ；(b) 下排三个：椭圆内水平线段γ、圆角矩形内水平线段γ、圆内倾斜线段γ，其中右下角圆的下半部分为密集点状阴影。" src="../assets/page142_fig02.jpg" /></p>
+<p><strong>图9.15</strong> 切除定理告诉我们，超函数概念与开区域R的选择无关，只要R包含给定的曲线γ。(a) 区域R-γ̄可以包含两个分离的片断（于是我们得到如图9.14所示的两个独立的全纯函数f和g）；(b) R-γ̄可以是一个单个的连通片断，这时f和g只是同一个全纯函数的两个部分。</p>
+<p>事实上，切除定理给予我们的比这更多。我们不要求开区域R上被可移除的γ分成两部分（即R⁻和R⁺）。我们所需的是，复平面上开区域R必须包含开线段¹²γ。R-γ（即去掉γ后R所剩余的部分¹³）似乎是由两个分离部分组成，恰如我们上面一直在考虑的，但更一般的是，从R中去掉γ后留下的是一个单个连通的区域，如<a href="../assets/page142_fig02.jpg">图9.15</a>的后3个例子所示。在这些情形下，</p>
+<hr />
+<p>· 123 ·</p>
+<hr />
+<!-- page 143 -->
+
+<p>通向实在之路</p>
+<p>我们必须去掉 <span class="arithmatex">\(\gamma\)</span> 的内端点 <span class="arithmatex">\(a\)</span> 或 <span class="arithmatex">\(b\)</span>，这样，我们就只有一个开集，我称它为 <span class="arithmatex">\(\mathcal{R}-\bar{\gamma}\)</span>。在这种更一般的情形下，超函数定义为"<span class="arithmatex">\(\mathcal{R}\)</span> 上约化模 <span class="arithmatex">\(\mathcal{R}-\bar{\gamma}\)</span> 上全纯函数的全纯函数"。一个明显的事实是，<span class="arithmatex">\(\mathcal{R}\)</span> 的这种非常自由的选择对由此定义的"超函数"类没有任何影响。*[9.12] <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 都处于 <span class="arithmatex">\(\mathcal{R}\)</span> 内的情形对超函数的积分是有用的，因为这样的话我们可用 <span class="arithmatex">\(\mathcal{R}-\bar{\gamma}\)</span> 内的闭周线。</p>
+<p>所有这些都可以用到我们先前的黎曼球面上圆的情形。这时取 <span class="arithmatex">\(\mathcal{R}\)</span> 为整个黎曼球面较为有利，因为这时我们必须"取模"的函数是在整个黎曼球面上具有全局性的全纯函数，有一条定理是说，这些函数都只是常数。（实际上这些"常数"就是我们在 <a href="#92-圆上的函数">§9.2</a> 里的 <span class="arithmatex">\(\alpha_0\)</span>。）因此，一个定义在黎曼球面的圆上模常数的全纯函数可具体化为这个圆一侧全区域上的全纯函数和另一侧的另一个全纯函数。这给出了一种将圆上一个任意超函数唯一地剖分（模常数）成其正/负频率分量的方法。</p>
+<p>作为结束，我们来考虑超函数的一些基本性质。我用符号 <span class="arithmatex">\((|f,g|)\)</span> 来表示由分别全纯定义在 <span class="arithmatex">\(\mathcal{R}^-\)</span> 和 <span class="arithmatex">\(\mathcal{R}^+\)</span> 上的函数对 <span class="arithmatex">\(f\)</span> 和 <span class="arithmatex">\(g\)</span> 给出的超函数（这里我将 <span class="arithmatex">\(\gamma\)</span> 划分 <span class="arithmatex">\(\mathcal{R}\)</span> 成 <span class="arithmatex">\(\mathcal{R}^-\)</span> 和 <span class="arithmatex">\(\mathcal{R}^+\)</span> 的情形颠倒了过来）。因此，如果我们对同一个超函数有两个不同的表示 <span class="arithmatex">\((|f,g|)\)</span> 和 <span class="arithmatex">\((|f_0,g_0|)\)</span>，就是说，<span class="arithmatex">\((|f,g|)=(|f_0,g_0|)\)</span>，那么 <span class="arithmatex">\(f-f_0\)</span> 和 <span class="arithmatex">\(g-g_0\)</span> 是两个相同的定义在 <span class="arithmatex">\(\mathcal{R}\)</span> 上的全纯函数 <span class="arithmatex">\(h\)</span>，但它们分别被约束在 <span class="arithmatex">\(\mathcal{R}^-\)</span> 和 <span class="arithmatex">\(\mathcal{R}^+\)</span>。我们可以直接给出这两个超函数的和、导数和一个超函数与定义在 <span class="arithmatex">\(\gamma\)</span> 上的解析函数 <span class="arithmatex">\(q\)</span> 的积：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;(|f,g|)+(|f_1,g_1|)=(|f+f_1,g+g_1|),\\
+&amp;\frac{\mathrm{d}(|f,g|)}{\mathrm{d}z}=\left(\left|\frac{\mathrm{d}f}{\mathrm{d}z},\frac{\mathrm{d}g}{\mathrm{d}z}\right|\right),\\
+&amp;q(|f,g|)=(|qf,qg|).
+\end{aligned}
+\]</div>
+<p>这里，在最后这个表达式中，解析函数 <span class="arithmatex">\(q\)</span> 被全纯扩展到 <span class="arithmatex">\(\gamma\)</span> 的一个邻域。14,**[9.13] 我们可将 <span class="arithmatex">\(q\)</span> 本身表示成一个超函数 <span class="arithmatex">\(q=(|q,0|)=(|0,-q|)\)</span>，但一般没有定义在两个超函数之间的的积。不存在积并非超函数成为广义函数的缺陷。这里可有多种处理。15 例如，狄拉克的 <span class="arithmatex">\(\delta\)</span> 函数（见 <a href="../chapter_06/#66-积分">§6.6</a>）不能够平方就曾使许多量子场论学家陷入无尽的烦恼。</p>
+<p>在 <span class="arithmatex">\(\gamma=\mathbb{R}\)</span>，在 <span class="arithmatex">\(\mathcal{R}^-\)</span> 和 <span class="arithmatex">\(\mathcal{R}^+\)</span> 分别是上、下开复半平面的情形下，超函数表示的一些简单的例子可举出赫维塞德阶梯函数 <span class="arithmatex">\(\theta(x)\)</span> 和狄拉克（-赫维塞德）<span class="arithmatex">\(\delta\)</span> 函数 <span class="arithmatex">\(\delta(x)\)</span>（<span class="arithmatex">\(=\mathrm{d}\theta(x)/\mathrm{d}x\)</span>）（<a href="../chapter_06/#61-如何构造实函数">§6.1</a>, 6）：</p>
+<div class="arithmatex">\[\theta(x)=\left(\left|\frac{1}{2\pi\mathrm{i}}\log z,\frac{1}{2\pi\mathrm{i}}\log z-1\right|\right),\]</div>
+<div class="arithmatex">\[\delta(x)=\left(\left|\frac{1}{2\pi\mathrm{i}z},\frac{1}{2\pi\mathrm{i}z}\right|\right),\]</div>
+<hr />
+<p>*[9.12] 当 <span class="arithmatex">\(\mathcal{R}-\bar{\gamma}\)</span> 分为 <span class="arithmatex">\(\mathcal{R}^-\)</span> 和 <span class="arithmatex">\(\mathcal{R}^+\)</span> 两部分时，为什么"<span class="arithmatex">\(\mathcal{R}\)</span> 上约化模 <span class="arithmatex">\(\mathcal{R}-\bar{\gamma}\)</span> 上全纯函数的全纯函数"就成了我们先前所给出的超函数的定义？</p>
+<details class="question">
+<summary>答案 [9.12]</summary>
+<p>曲线 <span class="arithmatex">\(\bar\gamma\)</span> 把黎曼曲面 <span class="arithmatex">\(\mathcal R\)</span> 的邻域分成两侧 <span class="arithmatex">\(\mathcal R^-\)</span> 和 <span class="arithmatex">\(\mathcal R^+\)</span>。在约化模中，把能跨过曲线全纯延拓的函数视为零，因为它在两侧没有真正的边界跳跃。</p>
+<p>因而“全纯函数模去可跨越曲线全纯的函数”等价于给出一对两侧全纯函数的边值差。这正是先前把超函数定义为 <span class="arithmatex">\(F^- - F^+\)</span> 且模去共同全纯项的定义。</p>
+</details>
+<p>**[9.13] 这里有一些细微差别，请找出来。提示：仔细考虑有关定义域。</p>
+<details class="question">
+<summary>答案 [9.13]</summary>
+<p>细微处在定义域：若 <span class="arithmatex">\(q\)</span> 只在曲线附近的一侧或一个小邻域内解析，那么把它看作超函数时必须选择曲线两侧都可比较的邻域。若 <span class="arithmatex">\(q\)</span> 实际可全纯穿过 <span class="arithmatex">\(\gamma\)</span>，则作为边值差的代表可以写成一侧为 <span class="arithmatex">\(q\)</span>、另一侧为 <span class="arithmatex">\(0\)</span>，但这与其他代表相差一个可约去的全纯函数。</p>
+<p>因此解析函数嵌入超函数并不是说“同一个全纯函数的两侧差”为零，而是要指定哪一侧代表普通函数的边界值，同时按可跨越的全纯函数取商。</p>
+</details>
+<p>·124·</p>
+<!-- page 144 -->
+
+<p>第九章 傅里叶分解和超函数</p>
+<p>这里我们取对数分支 <span class="arithmatex">\(\log 1=0\)</span>。超函数 <span class="arithmatex">\((|f, g|)\)</span> 在整个实线上的积分可由 <span class="arithmatex">\(f\)</span> 沿紧邻实线下方的环线的积分减去 <span class="arithmatex">\(g\)</span> 沿紧邻实线上方的环线积分来表示（假定二者均收敛），方向均为从左到右。<em>*</em>[9.14] 注意，甚至当 <span class="arithmatex">\(f\)</span> 和 <span class="arithmatex">\(g\)</span> 是同一函数的解析延拓时，这个超函数仍可以是非平凡的。</p>
+<p>超函数有多一般？它们肯定包含所有的解析函数，还包括像 <span class="arithmatex">\(\theta(x)\)</span> 和我们前面讨论的方波那样的不连续函数，或其他通过这类函数叠加所得到的 <span class="arithmatex">\(C^{-1}\)</span> 函数。实际上，所有 <span class="arithmatex">\(C^{-1}\)</span> 函数都是超函数的例子。此外，由于我们可通过对超函数进行微分来得到另一个超函数，而且任意 <span class="arithmatex">\(C^{-2}\)</span> 函数都可以由 <span class="arithmatex">\(C^{-1}\)</span> 函数的微分得到，因此所有 <span class="arithmatex">\(C^{-2}\)</span> 函数也都是超函数。我们已经看到，超函数包含狄拉克 <span class="arithmatex">\(\delta\)</span> 函数。我们可以不断地微分。这样，对任意整数 <span class="arithmatex">\(n\)</span>，任何 <span class="arithmatex">\(C^{-n}\)</span> 函数都是一个超函数。至于 <span class="arithmatex">\(C^{-\infty}\)</span> 函数，也就是分布函数（<a href="../chapter_06/#66-积分">§6.6</a>），情形又如何呢？是的，它们仍然全都是超函数。</p>
+<p>通常，分布函数是作为所谓 <span class="arithmatex">\(C^\infty\)</span> 光滑函数的对偶空间的元素来定义的。<sup>16</sup> "对偶空间"的概念将在 <a href="../chapter_12/#123-标量矢量和余矢量">§12.3</a>（和 <a href="../chapter_13/#136-表示理论与李代数">§13.6</a>）里描述。实际上，对任意整数 <span class="arithmatex">\(n\)</span>，<span class="arithmatex">\(C^n\)</span> 函数空间的对偶（在适当意义下）就是 <span class="arithmatex">\(C^{-2-n}\)</span> 函数空间，这里 <span class="arithmatex">\(n\)</span> 可以取到无穷，<span class="arithmatex">\(n=\infty\)</span>，如果我们有 <span class="arithmatex">\(-2-\infty=-\infty\)</span> 和 <span class="arithmatex">\(-2+\infty=\infty\)</span> 的话。相应地，<span class="arithmatex">\(C^{-\infty}\)</span> 函数与 <span class="arithmatex">\(C^\infty\)</span> 函数对偶。那么 <span class="arithmatex">\(C^\omega\)</span> 函数的对偶（<span class="arithmatex">\(C^{-\omega}\)</span>）是怎样的呢？经过对"对偶"的适当定义，这些 <span class="arithmatex">\(C^{-\omega}\)</span> 函数同样是超函数！</p>
+<p>我们已经转了一圈。为了尽可能使"函数"概念一般化，使之摆脱"解析"或"全纯"函数——让欧拉满意的那种函数——概念的限制，我们已领略了极其一般和灵活的超函数概念。但超函数本身又是以非常简单的方式定义在"欧拉"全纯函数概念基础上的。在我看来，这是复数最为神奇的成功的一个方面。欧拉要是能活着看到这一点那该多好！</p>
+<h2 id="注释">注释<a class="headerlink" href="#注释" title="Permanent link">&para;</a></h2>
+<h3 id="91">§9.1<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<p>9.1 这里我用希腊字母 <span class="arithmatex">\(\chi\)</span> 而不用普通的似乎更自然的 <span class="arithmatex">\(x\)</span>，只是因为我们需要将这个变量与复数 <span class="arithmatex">\(z\)</span> 的实部 <span class="arithmatex">\(x\)</span> 区别开来，后者在下述内容中扮演着重要角色。</p>
+<p>9.2 对实变量 <span class="arithmatex">\(\chi\)</span>，就是说，对取实数的 <span class="arithmatex">\(a_n\)</span>，<span class="arithmatex">\(b_n\)</span> 和 <span class="arithmatex">\(c\)</span>，我们并不要求 <span class="arithmatex">\(f(\chi)\)</span> 一定要是实的。实变量的复函数在数学上是完全合法的。<span class="arithmatex">\(f(\chi)\)</span> 是实的的条件是 <span class="arithmatex">\(\alpha_{-n}\)</span> 是 <span class="arithmatex">\(\alpha_n\)</span> 的复共轭。复共轭概念将在 <a href="../chapter_10/#101-复维和实维-179">§10.1</a> 介绍。</p>
+<h3 id="92">§9.2<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<p>9.3 用 "<span class="arithmatex">\(F^-\)</span>" 表示正幂级数部分而用 "<span class="arithmatex">\(F^+\)</span>" 表示负幂级数部分，这种看似反常的记号法主要源于量子力学文献的习惯约定（见 <a href="../chapter_21/#212-量子哈密顿量">§21.2</a>, 3 和 <a href="../chapter_24/#243-量子力学里能量的正定性">§24.3</a>）。对此我只能说抱歉，但这不影响我对它的正确使用。</p>
+<p>9.4 这是一个一般性的准则：对定义在实域 <span class="arithmatex">\(\mathcal{R}\)</span> 上的任意 <span class="arithmatex">\(C^\omega\)</span> 函数 <span class="arithmatex">\(f\)</span>，我们可以"复化" <span class="arithmatex">\(\mathcal{R}\)</span> 来扩展到复域 <span class="arithmatex">\(C\mathcal{R}\)</span>，它称为 <span class="arithmatex">\(\mathcal{R}\)</span> 的"复加厚"。它将 <span class="arithmatex">\(\mathcal{R}\)</span> 包含在其内部，使得 <span class="arithmatex">\(f\)</span> 唯一地扩展为 <span class="arithmatex">\(C\mathcal{R}\)</span> 上的全纯函数。</p>
+<p>9.5 例如见 Bailey <em>et al.</em> (1982)。</p>
+<h3 id="94">§9.4<a class="headerlink" href="#94" title="Permanent link">&para;</a></h3>
+<p>9.6 另一方面，通常要求，当 <span class="arithmatex">\(\chi\)</span> 趋于正负无穷大时，<span class="arithmatex">\(f(\chi)\)</span> 的行为"合理"。我们在这里不必关注这一点，就我采用的方式来说，这一要求不必是限定性的。</p>
+<p>9.7 在量子力学里，通常还引入另一个常量 <span class="arithmatex">\(\hbar\)</span> 来适当确定在与 <span class="arithmatex">\(x\)</span> 关系中的 <span class="arithmatex">\(p\)</span> 的标长（见 <a href="../chapter_21/#212-量子哈密顿量">§21.2</a>, 11），但</p>
+<hr />
+<p>*** [9.14] 就 <span class="arithmatex">\(q(x)\)</span> 为解析的情形，检查 <span class="arithmatex">\(\int q(x)\delta(x)dx=q(0)\)</span> 中 <span class="arithmatex">\(\delta\)</span> 函数的标准性质。</p>
+<details class="question">
+<summary>答案 [9.14]</summary>
+<p>取 <span class="arithmatex">\(\delta\)</span> 的超函数代表为 <span class="arithmatex">\((2\pi i z)^{-1}\)</span> 在原点两侧的边值差。对解析试验函数 <span class="arithmatex">\(q\)</span>，配对就是围绕原点的小周线积分 <span class="arithmatex">\((2\pi i)^{-1}\oint q(z)z^{-1}dz\)</span>。</p>
+<p>由柯西公式，这个积分等于 <span class="arithmatex">\(q(0)\)</span>。因此该超函数代表确实满足 <span class="arithmatex">\(\int q(x)\delta(x)dx=q(0)\)</span> 的标准 delta 性质。</p>
+</details>
+<p>· 125 ·</p>
+<!-- page 145 -->
+
+<p>通向实在之路</p>
+<p>眼下为简单计，我取 <span class="arithmatex">\(\hbar=1\)</span>。<span class="arithmatex">\(\hbar\)</span> 是普朗克常数的狄拉克形式（即 <span class="arithmatex">\(h/2\pi\)</span>，这里 <span class="arithmatex">\(h\)</span> 是原始的普朗克“作用量子”）。经过适当定义基本单位，我们总可以取 <span class="arithmatex">\(\hbar=1\)</span>。见 <a href="../chapter_27/#2710-黑洞熵">§27.10</a>。</p>
+<p><a href="#95-傅里叶变换的频率剖分">§9.5</a></p>
+<p>9.8 见 Bailey <em>et al.</em> (1982)。</p>
+<p><a href="#97-超函数">§9.7</a></p>
+<p>9.9 见 Sato (1958, 1959, 1960)。</p>
+<p>9.10 亦见 Bremermann (1965)，尽管在这一工作中并未明确指明使用“超函数”。</p>
+<p>9.11 “modulo（按…取模）”概念的另一方面内容将在 <a href="../chapter_16/#161-有限域">§16.1</a> 讨论（并请与注释 3.17 比较）。</p>
+<p>9.12 这里“开端”是指端点 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span> 都不包含在 <span class="arithmatex">\(\gamma\)</span> 内，因此“包含”<span class="arithmatex">\(\gamma\)</span> 并不意味着 <span class="arithmatex">\(\mathcal{R}\)</span> 内包含 <span class="arithmatex">\(a\)</span> 和 <span class="arithmatex">\(b\)</span>。</p>
+<p>9.13 这种集 <span class="arithmatex">\(\mathcal{R}\)</span> 与 <span class="arithmatex">\(\gamma\)</span> 之间的“差”通常也写成 <span class="arithmatex">\(\mathcal{R}/\gamma\)</span>。</p>
+<p>9.14 “…的邻域”的数学定义是“包含…的开集”。</p>
+<p>9.15 “一般化函数”概念的更标准的（“分布”）处理见 Schwartz (1966)；Friedlander (1982)；Gel'fand and Shilov (1964)；Trèves (1967)。对于“非线性”方面非常有用的另一种处理，它将“积的存在性问题”转换为“非唯一性问题”，见 Colombeau (1983, 1985) 和 Grosser <em>et al.</em> (2001)。</p>
+<p>9.16 超函数与 <a href="../chapter_33/#339-扭量层上同调">§33.9</a> 将要讨论的全纯层上同调之间也存在重要的相互联系。这些概念在高维曲面上的超函数理论中扮演着重要角色，见 Sato (1959, 1960) 以及 Harvey (1966)。</p>
+<p>·126·</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

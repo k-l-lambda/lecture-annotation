@@ -1,0 +1,3865 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/lectures/yt-myVqll47vZI/lecture_notes/">
+      
+      
+        <link rel="prev" href="../../yt-se56XiBhic4/lecture_notes/">
+      
+      
+        <link rel="next" href="../../yt-mG3KzhwXS1k/lecture_notes/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第17课 诺特定理：粒子伽利略Boost和场论平移对称性 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#基于对称性的物理学第17课-诺特定理粒子伽利略boost和场论平移对称性" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入与粒子理论中的伽利略Boost守恒量推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入与粒子理论中的伽利略Boost守恒量推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式详解与符号说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式详解与符号说明
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式详解与符号说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-伽利略boost变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 伽利略Boost变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-速度变换律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 速度变换律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-拉格朗日量的变化量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 拉格朗日量的变化量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-全导数边界项函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 全导数（边界项）函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-诺特荷守恒量的通用形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 诺特荷（守恒量）的通用形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-简化后的boost守恒荷核心结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 简化后的Boost守恒荷（核心结果）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-准不变性quasi-invariance与诺特定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 准不变性（Quasi-Invariance）与诺特定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-显含时间的守恒量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 显含时间的守恒量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-与牛顿第一定律的等价性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 与牛顿第一定律的等价性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么拉格朗日量变了物理却没变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么拉格朗日量"变"了，物理却没变？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#奇怪的守恒量时间乘以动量减去质量乘以位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        奇怪的守恒量：时间乘以动量减去质量乘以位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：从粒子理论过渡到场论：时空变换与拉格朗日密度变分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：从粒子理论过渡到场论：时空变换与拉格朗日密度变分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二新公式识别与解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、新公式识别与解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、新公式识别与解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-拉格朗日密度的全变分结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 拉格朗日密度的全变分结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-全散度项的允许性字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 全散度项的允许性（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心新概念详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心新概念详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心新概念详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#概念一场变换的双重奏duality-of-field-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概念一：场变换的"双重奏"（Duality of Field Transformations）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#概念二拉格朗日密度的特权全散度自由度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概念二：拉格朗日密度的"特权"——全散度自由度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#诺特定理在场论中的升级" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        诺特定理在场论中的升级
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五关键要点总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、关键要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：平移对称性、能量动量张量及能量动量守恒
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：平移对称性、能量动量张量及能量动量守恒">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二新公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、新公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、新公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式1场的总变分方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式1：场的总变分方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式2时空平移下的简化变分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式2：时空平移下的简化变分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式3拉格朗日密度的总变分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3：拉格朗日密度的总变分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式4能量-动量张量核心定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式4：能量-动量张量（核心定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式5连续性方程守恒定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式5：连续性方程（守恒定律）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式6时间分量能量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式6：时间分量（能量守恒）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式7空间分量动量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式7：空间分量（动量守恒）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-诺特定理noethers-theorem的场论版本" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 诺特定理（Noether's Theorem）的场论版本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-能量-动量张量的物理诠释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 能量-动量张量的物理诠释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-边界条件的物理必要性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 边界条件的物理必要性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心洞见为什么能量动量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心洞见：为什么能量动量守恒？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#能量-动量张量的直观图像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        能量-动量张量的直观图像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五课程逻辑脉络" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、课程逻辑脉络
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#目录" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        目录
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 1：课程引入与粒子理论中的伽利略Boost守恒量推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 1：课程引入与粒子理论中的伽利略Boost守恒量推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书内容描述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二公式详解与符号说明" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、公式详解与符号说明
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、公式详解与符号说明">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-伽利略boost变换" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 伽利略Boost变换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-速度变换律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 速度变换律
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-拉格朗日量的变化量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 拉格朗日量的变化量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-全导数边界项函数" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 全导数（边界项）函数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-诺特荷守恒量的通用形式" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 诺特荷（守恒量）的通用形式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-简化后的boost守恒荷核心结果" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 简化后的Boost守恒荷（核心结果）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-准不变性quasi-invariance与诺特定理" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 准不变性（Quasi-Invariance）与诺特定理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-显含时间的守恒量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 显含时间的守恒量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-与牛顿第一定律的等价性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 与牛顿第一定律的等价性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四核心概念通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、核心概念通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、核心概念通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#为什么拉格朗日量变了物理却没变" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么拉格朗日量"变"了，物理却没变？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#奇怪的守恒量时间乘以动量减去质量乘以位置" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        奇怪的守恒量：时间乘以动量减去质量乘以位置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 2：从粒子理论过渡到场论：时空变换与拉格朗日密度变分
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 2：从粒子理论过渡到场论：时空变换与拉格朗日密度变分">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书内容描述_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二新公式识别与解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、新公式识别与解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、新公式识别与解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-拉格朗日密度的全变分结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 拉格朗日密度的全变分结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-全散度项的允许性字幕中提及" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 全散度项的允许性（字幕中提及）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三核心新概念详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、核心新概念详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、核心新概念详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#概念一场变换的双重奏duality-of-field-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概念一：场变换的"双重奏"（Duality of Field Transformations）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#概念二拉格朗日密度的特权全散度自由度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概念二：拉格朗日密度的"特权"——全散度自由度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四理论背景补充" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#诺特定理在场论中的升级" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        诺特定理在场论中的升级
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五关键要点总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、关键要点总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#段落-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        段落 3：平移对称性、能量动量张量及能量动量守恒
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="段落 3：平移对称性、能量动量张量及能量动量守恒">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#注解_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        注解
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#一板书内容描述_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、板书内容描述
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二新公式详解" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、新公式详解
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、新公式详解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#公式1场的总变分方程" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式1：场的总变分方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式2时空平移下的简化变分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式2：时空平移下的简化变分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式3拉格朗日密度的总变分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式3：拉格朗日密度的总变分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式4能量-动量张量核心定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式4：能量-动量张量（核心定义）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式5连续性方程守恒定律" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式5：连续性方程（守恒定律）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式6时间分量能量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式6：时间分量（能量守恒）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#公式7空间分量动量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公式7：空间分量（动量守恒）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三理论背景补充_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、理论背景补充
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、理论背景补充">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-诺特定理noethers-theorem的场论版本" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 诺特定理（Noether's Theorem）的场论版本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-能量-动量张量的物理诠释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 能量-动量张量的物理诠释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-边界条件的物理必要性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 边界条件的物理必要性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#四通俗解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、通俗解释
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、通俗解释">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#核心洞见为什么能量动量守恒" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心洞见：为什么能量动量守恒？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#能量-动量张量的直观图像" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        能量-动量张量的直观图像
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#五课程逻辑脉络" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、课程逻辑脉络
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="基于对称性的物理学第17课-诺特定理粒子伽利略boost和场论平移对称性">《基于对称性的物理学》第17课 诺特定理：粒子伽利略Boost和场论平移对称性<a class="headerlink" href="#基于对称性的物理学第17课-诺特定理粒子伽利略boost和场论平移对称性" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>自动生成的课程注解文档（共 3 个段落，<a href="https://www.youtube.com/watch?v=myVqll47vZI">原始视频</a>）</p>
+</blockquote>
+<h2 id="目录">目录<a class="headerlink" href="#目录" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#段落-1">00:00:00 课程引入与粒子理论中的伽利略Boost守恒量推导</a></li>
+<li><a href="#段落-2">00:06:18 从粒子理论过渡到场论：时空变换与拉格朗日密度变分</a></li>
+<li><a href="#段落-3">00:08:51 平移对称性、能量动量张量及能量动量守恒</a></li>
+</ul>
+<hr />
+<h2 id="段落-1">段落 1：课程引入与粒子理论中的伽利略Boost守恒量推导<a class="headerlink" href="#段落-1" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:00:00 ~ 00:06:18</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+大家好欢迎来到基于对称性的物理学第十七课
+我是你们活泼好奇的主持人,乔伊
+大家好,我是赛,很高兴能和大家一起探索物理世界的奥秘
+今天我们这第十七课内容可不简单我们要聊聊嘉利略Boost不变性还有场论里的能量动量涨量没错一听Boost不变性和能量动量涨量感觉就很特别
+塞
+咱们先从例子理论里的BUS的不变性说起吧,好的
+上节课我们提到了假利略boost,但是是直接给出了对应的手衡量,并没有给出证明我说呢
+我还以为是从天上掉下来的本课我们将补上这个证明
+我们先回顾一下什么是BUS的变化
+简单来说就是从一个惯性参考系切换到另一个以恒定速度相对于它运动的参考系就像我在火车上你站在月台上看我对吧对
+对于一个例子来说,如果它的位置是原位置Q
+那么在Boost变换下它的新位置Q撇就变成了Q加上V层ET其中V是恒定的速度明白了
+那我们的拉格朗日量,比如我们上节课提前剧透过的最简单的自由粒子拉格朗日量
+手写L等于二分之一m乘以Q点的平方
+在这种变块下会保持不变吗?很好的问题,其实它并不会保持不变
+但这一点也不影响运动方程保持不变
+我们之前说过只要拉格朗日量的变化量是一个任意函数的全导数运动方程就不会变哦我记起来了诺特定理的核心之一嘛那我们这个拉格朗日量的变化量是多少呢好的我们来算一下
+因为Q撇等于Q加上V成语T那么对时间求到Q撇点等于Q点加上V因为V是长数速度Q点也变了没错
+所以拉格朗日量的变化量塔手写L就是新的手写L减去原来的手写L
+把它带入进去就是二分之一m乘上括号Q点加上V括号的平方减去二分之一m乘以Q点的平方展开一下
+我算算二分之一m乘以括号Q点的平方加上二倍的Q点乘V加上V的平方括号
+减去二分之一m乘以Q点的平方结果是m乘以Q点乘V加上二分之一m乘以V的平方完全正确
+这个就是我们的 delta 手写 l
+现在我们得找一个函数G让它的全导数正好等于这个Delta手写L这个G是什么呢这个码经过推导我们发现G可以是M乘以Q乘以V再加上二分之一M乘以V的平方乘以T
+不信你可以自己对它求个时间倒数就会发现正好是M乘以Q点乘以V加上二分之一M乘以V的平方哇还真是那现在我们有了DELTA手写L和G就可以推导出BUST的不变性下的手衡量了对吧没错
+根据上一课的粒子理论的诺特定理的通用公式手衡量J等于偏手写L百偏Q点乘以DELTAQ再减去G好我们来代入一下
+片手写L百片Q点就是动量P
+而delta q呢就是v乘以t
+非常好
+所以我们的Boost手衡量JBoost就等于P乘V乘T减去括号M乘V乘Q加上二分之一M乘V的平方乘T括号
+哦也就是 p 乘 v 乘 t 减去 m 乘 v 乘 q
+减去二分之一m乘v的平方乘t
+是的
+不过根据诺特定理,这个手衡量的全导数是零,而且我们还可以做一些简化,从每一项中削取一个V
+五,可以削去V
+那消掉之后,就得到了简化版的J Boost
+等于p乘以t减去二分之一m乘以v乘以t减去m乘以q
+对,我们还可以把前两项合并一下,写成括号
+P减去2%,m乘V,括号乘以t,减去m乘以Q
+我们把P减去二分之一m乘以V,叫做P跳的,所以最终形式是P跳的乘以T减去M乘以Q.这个手衡量
+PQ打乘以T,减去M乘以Q,怎么还带着时间T呢?
+一个手衡量不应该是长数吗?
+哈哈乔伊你问到点子上了
+这确实是一个相当奇怪的手衡量,它的取值确实依赖于你选择的起始时间,怎么理解这个奇怪呢?
+意思是,如果你在某个时刻T0计算它的值,那么在任何其他时刻T,它的值都会保持不变
+虽然它整体上依赖于时间,但它的变怀率是零
+我们甚至可以选择一个合适的零时刻,让这个量在那个时刻为零,那么它就会永远保持为零
+明白了
+虽然形式上看起来有点特别但它的物理意义仍然是守恒的并且在上一节课我们还将这个守恒量等价于牛顿第一定律
+这个Boost的不变性带来的手衡量在粒子理论里还挺有意思的
+没错
+它揭示了在不同观信息系之间变换时物理系统的一些内在属性
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000036.4_formula.jpg" src="../frames/frame_000036.4_formula.jpg" /></p>
+<p><img alt="frame_000133.0_transition.jpg" src="../frames/frame_000133.0_transition.jpg" /></p>
+<p><img alt="frame_000214.2_formula.jpg" src="../frames/frame_000214.2_formula.jpg" /></p>
+<h3 id="注解">注解<a class="headerlink" href="#注解" title="Permanent link">&para;</a></h3>
+<p>基于您提供的字幕文本与板书截图，以下是对本段课程内容的深度注解：</p>
+<hr />
+<h2 id="一板书内容描述">一、板书内容描述<a class="headerlink" href="#一板书内容描述" title="Permanent link">&para;</a></h2>
+<p>根据提供的三张PPT截图，本段课程的板书呈现了一个完整的逻辑推演链条：</p>
+<p><strong>第一张图（总览框架）</strong>：
+展示了本课的知识架构——从<strong>微观特例</strong>（经典粒子理论的 <span class="arithmatex">\(\tilde{J}_{\text{boost}} = \tilde{p}t - mq\)</span>）向<strong>宏观普适</strong>（物理场论的能量-动量张量守恒 <span class="arithmatex">\(\partial_\nu T^\nu_{\ \mu} = 0\)</span>）的过渡。这预示了后续课程将从离散粒子推广到场论。</p>
+<p><strong>第二张图（拉格朗日量的"漏洞"）</strong>：
+左侧绘有两个相对以速度 <span class="arithmatex">\(\vec{v}\)</span> 运动的坐标系（<span class="arithmatex">\(X\)</span>-<span class="arithmatex">\(Y\)</span> 与 <span class="arithmatex">\(X'\)</span>-<span class="arithmatex">\(Y'\)</span>）。中央流程图展示了核心计算：
+- 输入：<span class="arithmatex">\(L = \frac{1}{2}m\dot{q}^2\)</span> 与变换 <span class="arithmatex">\(q \to q' = q + vt\)</span>
+- 中间步骤展示 <span class="arithmatex">\(\delta L\)</span> 的展开式，其中 <span class="arithmatex">\(\frac{1}{2}m\dot{q}^2\)</span> 项被划去（相消）
+- 输出：<span class="arithmatex">\(\delta L = m\dot{q}v + \frac{1}{2}mv^2\)</span></p>
+<p>右侧"物理学家的备忘录"框中强调：尽管 <span class="arithmatex">\(\delta L \neq 0\)</span>，但运动方程 <span class="arithmatex">\(m\ddot{q}=0\)</span> 仍保持不变，这是核心洞察。</p>
+<p><strong>第三张图（守恒量的诞生）</strong>：
+分栏展示了诺特荷的构造过程：
+- <strong>左栏</strong>：定义 <span class="arithmatex">\(G \equiv mqv + \frac{1}{2}mv^2t\)</span>，并验证 <span class="arithmatex">\(\frac{dG}{dt} = mq\dot{v} + \frac{1}{2}mv^2\)</span>（因 <span class="arithmatex">\(v,m\)</span> 为常数）完美匹配 <span class="arithmatex">\(\delta L\)</span>。
+- <strong>右栏</strong>：代入诺特定理通用公式 <span class="arithmatex">\(J_{\text{boost}} = \frac{\partial L}{\partial \dot{q}}\delta q - G\)</span>，展示从 <span class="arithmatex">\(pvt - mvq - \frac{1}{2}mv^2t\)</span> 到最终简化形式 <span class="arithmatex">\(\tilde{J}_{\text{boost}} = \tilde{p}t - mq\)</span> 的推导，其中 <span class="arithmatex">\(\tilde{p} \equiv p - \frac{1}{2}mv\)</span>。</p>
+<p>底部结论框强调：这是一个<strong>显含时间</strong>的守恒量，其物理锚点是牛顿第一定律。</p>
+<hr />
+<h2 id="二公式详解与符号说明">二、公式详解与符号说明<a class="headerlink" href="#二公式详解与符号说明" title="Permanent link">&para;</a></h2>
+<p>本段推导中涉及的关键公式及其物理含义如下：</p>
+<h3 id="1-伽利略boost变换">1. 伽利略Boost变换<a class="headerlink" href="#1-伽利略boost变换" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[q' = q + vt\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(q\)</span></strong>：原惯性系中的粒子位置（广义坐标）</li>
+<li><strong><span class="arithmatex">\(v\)</span></strong>：两参考系之间的相对速度（恒定的Boost参数）</li>
+<li><strong><span class="arithmatex">\(t\)</span></strong>：时间</li>
+<li><strong>物理意义</strong>：描述如何从一个"地面观察者"视角转换到"匀速运动火车上的观察者"视角。</li>
+</ul>
+<h3 id="2-速度变换律">2. 速度变换律<a class="headerlink" href="#2-速度变换律" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\dot{q}' = \dot{q} + v\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\dot{q}\)</span></strong>：粒子相对于原参考系的速度（<span class="arithmatex">\(dq/dt\)</span>）</li>
+<li><strong>说明</strong>：在伽利略变换下，速度是简单叠加的（不同于洛伦兹变换）。</li>
+</ul>
+<h3 id="3-拉格朗日量的变化量">3. 拉格朗日量的变化量<a class="headerlink" href="#3-拉格朗日量的变化量" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\delta L = \frac{1}{2}m(\dot{q}+v)^2 - \frac{1}{2}m\dot{q}^2 = m\dot{q}v + \frac{1}{2}mv^2\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\delta L\)</span></strong>：变换后的拉格朗日量与原拉格朗日量之差</li>
+<li><strong>关键特征</strong>：结果不为零，但可分解为与坐标和速度相关的项</li>
+</ul>
+<h3 id="4-全导数边界项函数">4. 全导数（边界项）函数<a class="headerlink" href="#4-全导数边界项函数" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[G = mqv + \frac{1}{2}mv^2t\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(G\)</span></strong>：诺特定理中的边界函数（表面项），满足 <span class="arithmatex">\(\delta L = \frac{dG}{dt}\)</span></li>
+<li><strong>结构解析</strong>：</li>
+<li>第一项 <span class="arithmatex">\(mqv\)</span>：与坐标耦合的线性项</li>
+<li>第二项 <span class="arithmatex">\(\frac{1}{2}mv^2t\)</span>：显含时间的能量类项</li>
+</ul>
+<h3 id="5-诺特荷守恒量的通用形式">5. 诺特荷（守恒量）的通用形式<a class="headerlink" href="#5-诺特荷守恒量的通用形式" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[J_{\text{boost}} = \frac{\partial L}{\partial \dot{q}}\delta q - G = p \cdot vt - G\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(p = \frac{\partial L}{\partial \dot{q}} = m\dot{q}\)</span></strong>：正则动量（广义动量）</li>
+<li><strong><span class="arithmatex">\(\delta q = vt\)</span></strong>：坐标在变换下的改变量</li>
+</ul>
+<h3 id="6-简化后的boost守恒荷核心结果">6. 简化后的Boost守恒荷（核心结果）<a class="headerlink" href="#6-简化后的boost守恒荷核心结果" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\tilde{J}_{\text{boost}} = \tilde{p}t - mq \quad \text{其中} \quad \tilde{p} \equiv p - \frac{1}{2}mv\]</div>
+<ul>
+<li><strong><span class="arithmatex">\(\tilde{p}\)</span></strong>：<strong>修正动量</strong>（或称为"相对动量"），扣除了参考系运动带来的"半速"贡献</li>
+<li><strong>结构</strong>：这是一个<strong>显含时间</strong>的守恒量，形式为 <span class="arithmatex">\((\text{动量}) \times (\text{时间}) - (\text{质量}) \times (\text{位置})\)</span></li>
+</ul>
+<hr />
+<h2 id="三理论背景补充">三、理论背景补充<a class="headerlink" href="#三理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="1-准不变性quasi-invariance与诺特定理">1. 准不变性（Quasi-Invariance）与诺特定理<a class="headerlink" href="#1-准不变性quasi-invariance与诺特定理" title="Permanent link">&para;</a></h3>
+<p>通常诺特定理的简化版本要求拉格朗日量在对称变换下<strong>严格不变</strong>（<span class="arithmatex">\(\delta L = 0\)</span>）。但更一般的定理（本课所用）指出：</p>
+<blockquote>
+<p>只要 <span class="arithmatex">\(\delta L\)</span> 能表示为某个函数 <span class="arithmatex">\(G(q,t)\)</span> 的全导数 <span class="arithmatex">\(\frac{dG}{dt}\)</span>，则仍存在守恒量 <span class="arithmatex">\(J = p\delta q - G\)</span>。</p>
+</blockquote>
+<p>这被称为拉格朗日量的<strong>准不变性</strong>。伽利略Boost正是典型案例：虽然 <span class="arithmatex">\(L\)</span> 本身变了，但运动方程（物理实质）不变。</p>
+<h3 id="2-显含时间的守恒量">2. 显含时间的守恒量<a class="headerlink" href="#2-显含时间的守恒量" title="Permanent link">&para;</a></h3>
+<p>一般守恒量（如能量、动量）不显含时间，但 <span class="arithmatex">\(\tilde{J}_{\text{boost}}\)</span> 显含 <span class="arithmatex">\(t\)</span>。这看似矛盾，实则不然：
+- <strong>守恒</strong>指的是<strong>随时间的变率为零</strong>（<span class="arithmatex">\(\frac{d\tilde{J}}{dt} = 0\)</span>），而非表达式中不能出现 <span class="arithmatex">\(t\)</span>。
+- <strong>物理诠释</strong>：这个量本质上是<strong>初始位置</strong>（或质心位置）的守恒。因为对于自由粒子 <span class="arithmatex">\(q(t) = q_0 + \frac{p}{m}t\)</span>，整理得 <span class="arithmatex">\(q - \frac{p}{m}t = q_0\)</span>（常数）。注意到 <span class="arithmatex">\(\tilde{J}_{\text{boost}} = m(q_0) + \text{常数偏移}\)</span>，因此它守恒等价于"粒子在 <span class="arithmatex">\(t=0\)</span> 时的位置是固定的"。</p>
+<h3 id="3-与牛顿第一定律的等价性">3. 与牛顿第一定律的等价性<a class="headerlink" href="#3-与牛顿第一定律的等价性" title="Permanent link">&para;</a></h3>
+<p>字幕中提到这个守恒量"等价于牛顿第一定律"。这是因为：
+- 守恒意味着 <span class="arithmatex">\(\tilde{J}_{\text{boost}} = \text{const}\)</span>，即 <span class="arithmatex">\(p - \frac{1}{2}mv\)</span> 恒定（而 <span class="arithmatex">\(v\)</span> 是Boost参数，对特定参考系是常数）。
+- 这等价于 <span class="arithmatex">\(p = m\dot{q} = \text{const}\)</span>，即<strong>动量守恒/速度恒定</strong>——这正是牛顿第一定律的内容。</p>
+<hr />
+<h2 id="四核心概念通俗解释">四、核心概念通俗解释<a class="headerlink" href="#四核心概念通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="为什么拉格朗日量变了物理却没变">为什么拉格朗日量"变"了，物理却没变？<a class="headerlink" href="#为什么拉格朗日量变了物理却没变" title="Permanent link">&para;</a></h3>
+<p>想象你在火车上抛接球。地上的朋友看到的球速（<span class="arithmatex">\(\dot{q}'\)</span>）是火车速度（<span class="arithmatex">\(v\)</span>）加上你抛出的速度（<span class="arithmatex">\(\dot{q}\)</span>）。虽然动能公式 <span class="arithmatex">\(\frac{1}{2}mv^2\)</span> 看起来变了（多出了交叉项 <span class="arithmatex">\(m\dot{q}v\)</span> 和常数项），但这只是<strong>视角转换带来的" bookkeeping"（记账方式）改变</strong>。球实际怎么飞（运动方程）只取决于相对速度的变化，而这部分是不变的。</p>
+<h3 id="奇怪的守恒量时间乘以动量减去质量乘以位置">奇怪的守恒量：时间乘以动量减去质量乘以位置<a class="headerlink" href="#奇怪的守恒量时间乘以动量减去质量乘以位置" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\tilde{J}_{\text{boost}} = \tilde{p}t - mq\)</span> 看起来像个"四不像"，单位是 [动量×时间] = [质量×位置]，实际上是<strong>角动量量纲</strong>（虽然这里是一维运动）。</p>
+<p>可以这样理解：如果你知道一个自由粒子现在的位置 <span class="arithmatex">\(q\)</span> 和动量 <span class="arithmatex">\(p\)</span>，并且知道它<strong>一直这样匀速运动</strong>，那么你就能算出它<strong>从哪里出发</strong>（<span class="arithmatex">\(t=0\)</span> 时的位置）。这个"出发位置"就是守恒量。无论你什么时候测量，倒推回去的出发位置都一样——这就是守恒的本质。</p>
+<p><strong>时间 <span class="arithmatex">\(t\)</span> 出现在公式里</strong>只是因为这个量是用来"倒推历史"的：时间越长，同样的当前动量意味着粒子走过得距离越远，需要用 <span class="arithmatex">\(pt\)</span> 来补偿，才能锁定那个不变的初始位置 <span class="arithmatex">\(q_0\)</span>。</p>
+<hr />
+<h2 id="段落-2">段落 2：从粒子理论过渡到场论：时空变换与拉格朗日密度变分<a class="headerlink" href="#段落-2" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:06:18 ~ 00:08:50</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+那我们从粒子理论跳到场论,是不是就更复杂了
+场论中的诺特定理,尤其是时空对称性,又会给我们带来什么呢?
+这个是一个非常好的过渡
+在场论里诺特定理变得更加强大和普世
+当我们谈论场的时候情况确实会复杂一些因为我们需要区分两种不同类型的变化
+两种变化,是的
+第一种是时空坐标的变化,比如X变道X片
+这就像你从一个观察者的角度切换到另一个观察者的角度
+他们对同一事件的时间和空间坐标描述不同
+嗯,这我知道,比如洛伦斯变化没错
+第二种是场分量的变化,也就是F变到F撇
+这指的是即使是同一个场在不同的坐标系下它的分量数值也会不同比如一个向量场旋转一下坐标系它的分量就变了但它描述的物理场本身还是那个场
+完全正确
+所以对于一个依赖于时空的场一个完整的扁环必须同时包含这两部分
+但为了简化,我们通常会先分辨研究
+今天我们主要关注由X变道X撇带来的影响
+好的
+那场论中的拉格朗日密度,花体L
+它也是一种对称性,意味着它在变换下不变吗?
+对
+对称性意味着花体L
+作为厂贩以及厂的微商偏下谬贩还有时空坐标的函数
+必须等于变换后的滑体L
+作为变换后的场变换后的导数以及新坐标的函数
+等等在刚才例子理论的Boost变换以及上一堂课中拉格朗日量是可以相差一个时间拳导数的
+那场论的拉格朗日密度会有类似的特权吗
+明锐的观察
+确实在场论中拉格朗日密度的变分也允许相差一个全散度相
+也就是Delta话题L可以使偏下m 缩并 k 上m
+因为只要带有全散度响的作用量在无穷远边界积分为零
+就能保证物力的核心也就是作用量不变
+我们在这里为了简化推倒步骤,就先直接假定它严格不变
+这样能让大家更清晰地看到能量动量张量的造造过程
+明白了,我们继续
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000378.7_parastart.jpg" src="../frames/frame_000378.7_parastart.jpg" /></p>
+<p><img alt="frame_000391.0_formula.jpg" src="../frames/frame_000391.0_formula.jpg" /></p>
+<p><img alt="frame_000445.0_transition.jpg" src="../frames/frame_000445.0_transition.jpg" /></p>
+<h3 id="注解_1">注解<a class="headerlink" href="#注解_1" title="Permanent link">&para;</a></h3>
+<p>基于您提供的字幕文本与板书截图，以下是对本段课程内容的深度注解：</p>
+<hr />
+<h2 id="一板书内容描述_1">一、板书内容描述<a class="headerlink" href="#一板书内容描述_1" title="Permanent link">&para;</a></h2>
+<p>本段课程的核心板书围绕<strong>场变换的双重结构</strong>展开，呈现了三张关键PPT：</p>
+<p><strong>第一张图（回顾：全导数G的提取）</strong>：
+承接上节课内容，展示经典粒子理论中Boost变换的守恒量推导。关键公式为：</p>
+<div class="arithmatex">\[\tilde{J}_{\text{boost}} = pt - \frac{1}{2}mvt - mq = \tilde{p}t - mq\]</div>
+<p>其中通过定义 <span class="arithmatex">\(G = mqv + \frac{1}{2}mv^2t\)</span> 消去了显含时间的项，最终得到物理上合理的守恒量。</p>
+<p><strong>第二张与第三张图（场变换的双重奏）</strong>：
+这是本段的核心新内容。画面中央是一个三维网格上的矢量场可视化：
+- <strong>蓝色网格平面</strong>：代表时空坐标基底，标注"时空坐标系改变 <span class="arithmatex">\((x \to x')\)</span>"
+- <strong>黄色矢量箭头场</strong>：代表物理场本身，标注"场分量的内在混合 <span class="arithmatex">\((\Psi \to \Psi')\)</span>"
+- <strong>右侧备忘录</strong>：以具体例子说明——观察者旋转90°时，矢量场 <span class="arithmatex">\(A_\mu\)</span> 从 <span class="arithmatex">\((A_0, A_1, A_2, A_3)^T\)</span> 变为 <span class="arithmatex">\((A_0, -A_2, A_1, A_3)^T\)</span>，场仍是同一个物理场，但分量重新组合</p>
+<hr />
+<h2 id="二新公式识别与解释">二、新公式识别与解释<a class="headerlink" href="#二新公式识别与解释" title="Permanent link">&para;</a></h2>
+<p>本段字幕中提及但尚未显式写出、将在后续展开的<strong>关键公式框架</strong>：</p>
+<h3 id="1-拉格朗日密度的全变分结构">1. 拉格朗日密度的全变分结构<a class="headerlink" href="#1-拉格朗日密度的全变分结构" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\mathcal{L}(\phi(x), \partial_\mu\phi(x), x) = \mathcal{L}'(\phi'(x'), \partial'_\mu\phi'(x'), x')\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathcal{L}\)</span>（花体L）</td>
+<td style="text-align: left;"><strong>拉格朗日密度</strong>，场论中的核心量，作用量 <span class="arithmatex">\(S = \int d^4x \, \mathcal{L}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\phi(x)\)</span> 或 <span class="arithmatex">\(\Psi\)</span></td>
+<td style="text-align: left;">场量，时空点的函数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\partial_\mu\phi \equiv \frac{\partial\phi}{\partial x^\mu}\)</span></td>
+<td style="text-align: left;">场的时空导数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(x \to x'\)</span></td>
+<td style="text-align: left;"><strong>主动/被动坐标变换</strong>（如平移、旋转、Boost）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\phi \to \phi'\)</span></td>
+<td style="text-align: left;"><strong>场的内在变换</strong>（同一场在不同坐标系下的分量重组）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-全散度项的允许性字幕中提及">2. 全散度项的允许性（字幕中提及）<a class="headerlink" href="#2-全散度项的允许性字幕中提及" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\delta\mathcal{L} = \partial_\mu K^\mu\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta\mathcal{L}\)</span></td>
+<td style="text-align: left;">拉格朗日密度在变分下的改变量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(K^\mu\)</span>（字幕中"k上m"）</td>
+<td style="text-align: left;">某四维矢量函数</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\partial_\mu K^\mu\)</span></td>
+<td style="text-align: left;"><strong>全散度</strong>，四维散度 <span class="arithmatex">\(\partial_0 K^0 + \partial_1 K^1 + \partial_2 K^2 + \partial_3 K^3\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>关键物理</strong>：根据四维高斯定理，<span class="arithmatex">\(\int d^4x \, \partial_\mu K^\mu = \oint d\Sigma_\mu K^\mu\)</span>，若场在无穷远处衰减足够快，则边界项为零，作用量不变。</p>
+<hr />
+<h2 id="三核心新概念详解">三、核心新概念详解<a class="headerlink" href="#三核心新概念详解" title="Permanent link">&para;</a></h2>
+<h3 id="概念一场变换的双重奏duality-of-field-transformations">概念一：场变换的"双重奏"（Duality of Field Transformations）<a class="headerlink" href="#概念一场变换的双重奏duality-of-field-transformations" title="Permanent link">&para;</a></h3>
+<p>这是从粒子理论跃迁到场论时最本质的复杂性来源：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">变换类型</th>
+<th style="text-align: left;">粒子类比</th>
+<th style="text-align: left;">场论实现</th>
+<th style="text-align: left;">数学描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>外变换</strong>（External）</td>
+<td style="text-align: left;">换参考系看同一粒子</td>
+<td style="text-align: left;">时空坐标重标定 <span class="arithmatex">\(x \to x'\)</span></td>
+<td style="text-align: left;">微分同胚/庞加莱变换</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>内变换</strong>（Internal）</td>
+<td style="text-align: left;">—（粒子无此概念）</td>
+<td style="text-align: left;">场分量重组合 <span class="arithmatex">\(\phi \to \phi'\)</span></td>
+<td style="text-align: left;">群的表示论作用</td>
+</tr>
+</tbody>
+</table>
+<p><strong>通俗理解</strong>：想象你拍摄一场风中的麦田。
+- <strong>外变换</strong>：你换到另一个山头拍摄（坐标系变了，麦穗的"地址"变了）
+- <strong>内变换</strong>：风吹麦浪，麦穗本身的方向改变了（场的"状态"变了）</p>
+<p>在场论中，<strong>即使是纯坐标旋转</strong>，也会同时触发两种效应：麦穗的地址标签变了（外），且麦穗朝向相对于新坐标轴的投影变了（内）。</p>
+<h3 id="概念二拉格朗日密度的特权全散度自由度">概念二：拉格朗日密度的"特权"——全散度自由度<a class="headerlink" href="#概念二拉格朗日密度的特权全散度自由度" title="Permanent link">&para;</a></h3>
+<p><strong>与粒子理论的对比</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">理论</th>
+<th style="text-align: left;">允许的拉格朗日量差异</th>
+<th style="text-align: left;">原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">粒子力学</td>
+<td style="text-align: left;"><span class="arithmatex">\(\delta L = \frac{dF}{dt}\)</span>（全时间导数）</td>
+<td style="text-align: left;">作用量 <span class="arithmatex">\(S = \int dt L\)</span>，边界项 <span class="arithmatex">\(F\vert_{t_1}^{t_2}\)</span> 固定端点为零</td>
+</tr>
+<tr>
+<td style="text-align: left;">场论</td>
+<td style="text-align: left;"><span class="arithmatex">\(\delta\mathcal{L} = \partial_\mu K^\mu\)</span>（全散度）</td>
+<td style="text-align: left;">作用量 <span class="arithmatex">\(S = \int d^4x \mathcal{L}\)</span>，四维边界项 <span class="arithmatex">\(\oint d\Sigma_\mu K^\mu\)</span> 无穷远为零</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：这种"特权"是<strong>局域性</strong>（locality）的体现——场论允许在时空每一点有独立的"表面项"调整，只要整体积分收敛。</p>
+<hr />
+<h2 id="四理论背景补充">四、理论背景补充<a class="headerlink" href="#四理论背景补充" title="Permanent link">&para;</a></h2>
+<h3 id="诺特定理在场论中的升级">诺特定理在场论中的升级<a class="headerlink" href="#诺特定理在场论中的升级" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">特征</th>
+<th style="text-align: left;">粒子理论</th>
+<th style="text-align: left;">场论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">守恒量</td>
+<td style="text-align: left;">离散编号 <span class="arithmatex">\(Q_a\)</span></td>
+<td style="text-align: left;">守恒流 <span class="arithmatex">\(J^\mu_a\)</span>，满足 <span class="arithmatex">\(\partial_\mu J^\mu_a = 0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">时空对称性</td>
+<td style="text-align: left;">能量、动量、角动量分立</td>
+<td style="text-align: left;">统一为<strong>能量-动量张量</strong> <span class="arithmatex">\(T^{\mu\nu}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Boost对称性</td>
+<td style="text-align: left;">奇特的 <span class="arithmatex">\(t\)</span>-依赖守恒量</td>
+<td style="text-align: left;">场论中 <span class="arithmatex">\(T^{\mu\nu}\)</span> 的对称性自动处理</td>
+</tr>
+</tbody>
+</table>
+<p>本段课程为后续推导<strong>正则能量-动量张量</strong> </p>
+<div class="arithmatex">\[\Theta^{\mu\nu} = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\partial^\nu\phi - \eta^{\mu\nu}\mathcal{L}\]</div>
+<p>及其改进（Belinfante对称化）奠定基础。</p>
+<hr />
+<h2 id="五关键要点总结">五、关键要点总结<a class="headerlink" href="#五关键要点总结" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>本段核心信息</strong>：从粒子到场，诺特定理的复杂性不在于数学形式，而在于<strong>物理对象的表征方式</strong>——场既是时空的函数，又是多重分量的载体。理解这种"双重身份"是掌握场论对称性的关键门槛。</p>
+</blockquote>
+<p>下节课预告：在假定 <span class="arithmatex">\(\delta\mathcal{L} = 0\)</span>（严格不变）的简化条件下，推导时空平移对称性对应的<strong>能量-动量张量</strong>构造过程。</p>
+<hr />
+<h2 id="段落-3">段落 3：平移对称性、能量动量张量及能量动量守恒<a class="headerlink" href="#段落-3" title="Permanent link">&para;</a></h2>
+<p><strong>时间：</strong> 00:08:51 ~ 00:15:30</p>
+<details><summary>📝 原始字幕</summary>
+
+<pre>
+
+拉格朗日密度的总变化量 delta 话题L 是怎么计算的呢
+它的总变化量
+就像求复合函数的全导数一样
+会包含对场犯
+对场的导数偏下MEUFY和对时空坐标X上标MEU的变化
+看着有点长,不过都是我们熟悉的偏导术和变分没错
+然后类似上一堂课的技巧
+利用场的欧拉拉格朗日方场
+我们可以巧妙地把这个Delta话题链重新整理成一个更简洁的形式
+它会变成一个全散度像,加上一个与X上标MEO显示一来相关的像
+嗯就是偏下mew作用在大括号偏花TL百篇括号偏下mewfive括号称以DeltaFive大括号
+再加上片花TL 百片X商标Mew 索并DotaX商标Mew 这一部
+这里面的关键是DeltaFide的表达式它也包含了两部分
+一部分来自场分量的混合另一部分来自坐标变化
+场分量混合的那部分是不是跟旋转和BOOST的变换有关你说得很对
+Epsilon下,双乘缩并S上,作用FY这一项就是
+但对于我们今天要重点讨论的时空平移情况会大大简化时空平移就是新坐标XP上等于原坐标X上加上A上其中A上是一个长数平移向量没错
+对于平衣来说场分量是不会混合的
+所以那个S张量相关的项就直接是零太好了那DIALTAFIVE就只剩下负的偏F百偏X上MUEL缩并DIALTAX上MUEL这一项了正是如此
+现在,我们把这个简化的雕塑file带回到雕塑花体L的表达室中
+并且假设拉格朗日密度在平移下是不变的
+也就是雕踏花体L等于0
+也就是忽略全散度补偿
+事实上对平易变换而言这个全散度补偿本身也就是零那我们就能得到一个守恒定律了没错
+经过一系列的带入和整理提取出公因子A上
+我们最终会得到一个形式为
+偏下作样于一个大括号区域等于零
+这个大括号里是偏花条
+by 偏括号 偏下new five 括号
+呈以偏5白偏X上Mew
+减去
+克罗内克戴奥塔上下成一花条
+整个大括号再乘以A上等于0
+因为A上Mue是任意的平移向量,所以括号里的量必须是满足散度为零的,对吧
+完美
+这个括号里的量我们给它一个非常重要的名字
+它就是能量动量张量
+用T上下表示
+T 上下等于偏花体L百括号偏下非括号
+呈以片肺百片X上
+剪去克罗尼科德尔塔上下成以花TL
+这个张量太关键了是的而且它满足一个连续性方程偏下缩并上下等于零连续性方程
+这不就是说有守恒量存在吗?就像电鹤守恒一样.完全正确,我们来具体看看这个方程
+我们可以把它分成时间分量和空间分量
+党女等于零的时候我们得到偏下女缩病T上女下零等于零也就是偏下零成T上零下零加上偏下I空间缩病T上I下零等于零
+偏下零是对时间的倒数
+偏下空间缩并上下是对空间求散度没错这告诉我们上下对时间的偏道等于负的空间散度
+现在如果我们对这个方程在整个无限大的三维空间中进行积分那左边就是时间导数可以提到积分外面右边根据散度定理可以变成一个在无限远边界上的面积分聪明而且我们知道物理场在无限远处必须衰减到零否则总能量就会是无限大这不符合物理实际所以那个无限远处的面积分就等于零了对这样我们就得到了对时间梯的偏倒作用于对三维全空间积分梯上零下零结果等于零
+这意味着全空间积分T上零下零是一个手衡量,这个手衡量就是总能量一
+所以时间平移不变性对应着能量守恒太美了是的非常深刻的怜悯
+同样的道理,当我们看等于爱,也就是爱取一二三时
+我们也会得到类似的手衡量那就是全空间积分T上零下I没错
+这些就是系统的总动量 p 下 i
+它们对应着空间平移不变性所带来的守恒量哇塞所以我们日常生活中所说的能量守恒和动量守恒在场论的框架下居然是时空平移对称性的直接结果这真是太震撼了的确如此
+诺特定理的强大之处在于它将抽象的对称性概念与我们实际可观察的守衡量紧密地联系在了一起
+无论是粒子理论中的Boost还是场论中的时空平移
+对称性都是理解物理世界最根本的钥匙从一个奇怪的BUSE的守衡量到能量动量张量再到能量和动量的守衡今天的课程内容真是太丰富了谢谢你把这些复杂的概念讲得这么清晰不客气
+希望同学们通过今天的讲解能对诺特定理在不同理论框架下的应用有更深入的理解相信大家都会受益匪浅今天的物理播课就到这里我们下节课再见
+再见
+
+</pre>
+
+</details>
+
+<p><strong>课程截图：</strong></p>
+<p><img alt="frame_000632.7_transition.jpg" src="../frames/frame_000632.7_transition.jpg" /></p>
+<p><img alt="frame_000792.6_formulatransition.jpg" src="../frames/frame_000792.6_formulatransition.jpg" /></p>
+<p><img alt="frame_000864.1_transition.jpg" src="../frames/frame_000864.1_transition.jpg" /></p>
+<h3 id="注解_2">注解<a class="headerlink" href="#注解_2" title="Permanent link">&para;</a></h3>
+<p>基于您提供的字幕文本与板书截图，以下是对本段课程内容的深度注解：</p>
+<hr />
+<h2 id="一板书内容描述_2">一、板书内容描述<a class="headerlink" href="#一板书内容描述_2" title="Permanent link">&para;</a></h2>
+<p>本段课程的核心板书围绕<strong>场变换的双重结构</strong>展开，呈现了三张关键PPT：</p>
+<p><strong>第一张图（回顾：全导数G的提取）</strong>：
+承接上节课内容，展示经典粒子理论中Boost变换的守恒量推导。关键公式为：</p>
+<div class="arithmatex">\[\tilde{J}_{\text{boost}} = pt - \frac{1}{2}mvt - mq = \tilde{p}t - mq\]</div>
+<p>其中通过定义 <span class="arithmatex">\(G = mqv + \frac{1}{2}mv^2t\)</span> 消去了显含时间的项，最终得到物理上合理的守恒量。</p>
+<p><strong>第二张与第三张图（场变换的双重结构）</strong>：
+这是本段的核心板书，标题为<strong>"解剖总变分方程 (<span class="arithmatex">\(\delta\Phi\)</span>)"</strong>，清晰展示了场总变分的两大组成部分：</p>
+<div class="arithmatex">\[\boxed{\delta\Phi = \underbrace{\epsilon_{\mu\nu}S^{\mu\nu}\Phi(x)}_{\text{旋转与Boost生成元部分}} - \underbrace{\frac{\partial\Phi}{\partial x^\mu}\delta x^\mu}_{\text{坐标平移常规项}}}\]</div>
+<ul>
+<li><strong>左侧黄色高亮部分</strong>：<span class="arithmatex">\(\epsilon_{\mu\nu}S^{\mu\nu}\Phi(x)\)</span> —— 代表场分量的<strong>内在混合</strong>（如 <span class="arithmatex">\(\Psi \to \Psi'\)</span>），<span class="arithmatex">\(S^{\mu\nu}\)</span> 是统一处理旋转和Boost的变换算子，<span class="arithmatex">\(\epsilon_{\mu\nu}\)</span> 为变换参数</li>
+<li><strong>右侧蓝色框部分</strong>：<span class="arithmatex">\(-\frac{\partial\Phi}{\partial x^\mu}\delta x^\mu\)</span> —— 代表观察者在时空中的<strong>位置移动</strong>（<span class="arithmatex">\(x \to x'\)</span>），包含常规的负号项</li>
+</ul>
+<p><strong>关键推论（灰色底框）</strong>：平移变换不会混合场分量（即此时 <span class="arithmatex">\(\epsilon_{\mu\nu} = 0\)</span>）</p>
+<hr />
+<h2 id="二新公式详解">二、新公式详解<a class="headerlink" href="#二新公式详解" title="Permanent link">&para;</a></h2>
+<h3 id="公式1场的总变分方程">公式1：场的总变分方程<a class="headerlink" href="#公式1场的总变分方程" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\delta\Phi = \epsilon_{\mu\nu}S^{\mu\nu}\Phi(x) - \frac{\partial\Phi}{\partial x^\mu}\delta x^\mu\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta\Phi\)</span></td>
+<td style="text-align: left;">场 <span class="arithmatex">\(\Phi\)</span> 的<strong>总变分</strong>（total variation）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon_{\mu\nu}\)</span></td>
+<td style="text-align: left;">无穷小变换参数（反对称张量，<span class="arithmatex">\(\epsilon_{\mu\nu}=-\epsilon_{\nu\mu}\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(S^{\mu\nu}\)</span></td>
+<td style="text-align: left;">场的<strong>自旋生成元</strong>（spin generator），统一描述旋转和Boost</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\Phi(x)\)</span></td>
+<td style="text-align: left;">时空点 <span class="arithmatex">\(x\)</span> 处的场值</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{\partial\Phi}{\partial x^\mu}\)</span></td>
+<td style="text-align: left;">场对时空坐标的普通偏导</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta x^\mu\)</span></td>
+<td style="text-align: left;">时空坐标的无穷小变化</td>
+</tr>
+</tbody>
+</table>
+<p><strong>物理意义</strong>：场的"变化"来自两种独立来源——
+- <strong>内禀变化</strong>：场分量自身的重新组合（如矢量旋转、旋量变换）
+- <strong>外禀变化</strong>：观察点移动带来的表观变化</p>
+<hr />
+<h3 id="公式2时空平移下的简化变分">公式2：时空平移下的简化变分<a class="headerlink" href="#公式2时空平移下的简化变分" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\delta x^\mu = a^\mu \quad \Rightarrow \quad \delta\Phi = -\frac{\partial\Phi}{\partial x^\mu}a^\mu\]</div>
+<p>对于<strong>纯平移</strong>（<span class="arithmatex">\(x'^\mu = x^\mu + a^\mu\)</span>，<span class="arithmatex">\(a^\mu\)</span> 为常数向量）：
+- 无旋转/无Boost <span class="arithmatex">\(\Rightarrow \epsilon_{\mu\nu} = 0\)</span>
+- 场分量不混合 <span class="arithmatex">\(\Rightarrow S^{\mu\nu}\)</span> 项消失</p>
+<hr />
+<h3 id="公式3拉格朗日密度的总变分">公式3：拉格朗日密度的总变分<a class="headerlink" href="#公式3拉格朗日密度的总变分" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\delta\mathcal{L} = \frac{\partial\mathcal{L}}{\partial\Phi}\delta\Phi + \frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\delta(\partial_\mu\Phi) + \frac{\partial\mathcal{L}}{\partial x^\mu}\delta x^\mu\]</div>
+<p>经欧拉-拉格朗日方程整理后，化为<strong>全散度形式</strong>：</p>
+<div class="arithmatex">\[\delta\mathcal{L} = \partial_\mu\left[\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\delta\Phi\right] + \frac{\partial\mathcal{L}}{\partial x^\mu}\delta x^\mu\]</div>
+<hr />
+<h3 id="公式4能量-动量张量核心定义">公式4：能量-动量张量（核心定义）<a class="headerlink" href="#公式4能量-动量张量核心定义" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{T^\mu_{\ \nu} = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\frac{\partial\Phi}{\partial x^\nu} - \delta^\mu_{\ \nu}\mathcal{L}}\]</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">符号</th>
+<th style="text-align: left;">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T^\mu_{\ \nu}\)</span></td>
+<td style="text-align: left;"><strong>能量-动量张量</strong>（stress-energy tensor / energy-momentum tensor）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\)</span></td>
+<td style="text-align: left;">正则动量密度（场 <span class="arithmatex">\(\Phi\)</span> 的共轭动量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\frac{\partial\Phi}{\partial x^\nu}\)</span></td>
+<td style="text-align: left;">场对时空的偏导（包含"速度"信息）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\delta^\mu_{\ \nu}\)</span></td>
+<td style="text-align: left;">克罗内克δ符号（Kronecker delta）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\mathcal{L}\)</span></td>
+<td style="text-align: left;">拉格朗日密度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>指标结构</strong>：上指标 <span class="arithmatex">\(\mu\)</span> 表示<strong>流的方向</strong>（哪个超曲面），下指标 <span class="arithmatex">\(\nu\)</span> 表示<strong>守恒的荷类型</strong>（能量或动量分量）。</p>
+<hr />
+<h3 id="公式5连续性方程守恒定律">公式5：连续性方程（守恒定律）<a class="headerlink" href="#公式5连续性方程守恒定律" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\boxed{\partial_\mu T^\mu_{\ \nu} = 0}\]</div>
+<p>这是<strong>四个独立的守恒方程</strong>（<span class="arithmatex">\(\nu = 0,1,2,3\)</span>）。</p>
+<hr />
+<h3 id="公式6时间分量能量守恒">公式6：时间分量（能量守恒）<a class="headerlink" href="#公式6时间分量能量守恒" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\partial_0 T^0_{\ 0} + \partial_i T^i_{\ 0} = 0 \quad \Rightarrow \quad \frac{\partial}{\partial t}\int d^3x\, T^0_{\ 0} = 0\]</div>
+<p>定义<strong>总能量</strong>：</p>
+<div class="arithmatex">\[\boxed{E = \int d^3x\, T^0_{\ 0}}\]</div>
+<hr />
+<h3 id="公式7空间分量动量守恒">公式7：空间分量（动量守恒）<a class="headerlink" href="#公式7空间分量动量守恒" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\frac{\partial}{\partial t}\int d^3x\, T^0_{\ i} = 0\]</div>
+<p>定义<strong>总动量</strong>：</p>
+<div class="arithmatex">\[\boxed{P_i = \int d^3x\, T^0_{\ i}}\]</div>
+<hr />
+<h2 id="三理论背景补充_1">三、理论背景补充<a class="headerlink" href="#三理论背景补充_1" title="Permanent link">&para;</a></h2>
+<h3 id="1-诺特定理noethers-theorem的场论版本">1. 诺特定理（Noether's Theorem）的场论版本<a class="headerlink" href="#1-诺特定理noethers-theorem的场论版本" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">对称性</th>
+<th style="text-align: left;">变换参数</th>
+<th style="text-align: left;">守恒流</th>
+<th style="text-align: left;">守恒荷</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">时间平移</td>
+<td style="text-align: left;"><span class="arithmatex">\(a^0\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T^0_{\ 0}\)</span></td>
+<td style="text-align: left;">能量 <span class="arithmatex">\(E\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">空间平移</td>
+<td style="text-align: left;"><span class="arithmatex">\(a^i\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(T^0_{\ i}\)</span></td>
+<td style="text-align: left;">动量 <span class="arithmatex">\(P_i\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">旋转</td>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon_{ij}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(J^0_{\ ij}\)</span></td>
+<td style="text-align: left;">角动量 <span class="arithmatex">\(L_{ij}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Boost</td>
+<td style="text-align: left;"><span class="arithmatex">\(\epsilon_{0i}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(K^0_{\ i}\)</span></td>
+<td style="text-align: left;">质心运动</td>
+</tr>
+</tbody>
+</table>
+<p>本课聚焦于<strong>前两项</strong>（时空平移），揭示日常最熟悉的守恒定律竟源于最朴素的"物理定律不随时间地点改变"。</p>
+<hr />
+<h3 id="2-能量-动量张量的物理诠释">2. 能量-动量张量的物理诠释<a class="headerlink" href="#2-能量-动量张量的物理诠释" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(T^\mu_{\ \nu}\)</span> 的各分量：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">分量</th>
+<th style="text-align: left;">物理意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T^0_{\ 0}\)</span></td>
+<td style="text-align: left;"><strong>能量密度</strong>（单位体积能量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T^0_{\ i}\)</span></td>
+<td style="text-align: left;"><strong>动量密度</strong>的第 <span class="arithmatex">\(i\)</span> 分量（或能量流密度）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T^i_{\ 0}\)</span></td>
+<td style="text-align: left;"><strong>能量流密度</strong>的第 <span class="arithmatex">\(i\)</span> 分量（或动量密度）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(T^i_{\ j}\)</span></td>
+<td style="text-align: left;"><strong>应力张量</strong>（动量流，即压强/应力）</td>
+</tr>
+</tbody>
+</table>
+<p>对称性 <span class="arithmatex">\(T_{\mu\nu} = T_{\nu\mu}\)</span>（需添加适当的对称化手续）对应角动量守恒。</p>
+<hr />
+<h3 id="3-边界条件的物理必要性">3. 边界条件的物理必要性<a class="headerlink" href="#3-边界条件的物理必要性" title="Permanent link">&para;</a></h3>
+<p>课程中强调"场在无穷远处衰减为零"是<strong>物理实在性的要求</strong>：
+- 若 <span class="arithmatex">\(\Phi \not\to 0\)</span> 当 <span class="arithmatex">\(r \to \infty\)</span>，则 <span class="arithmatex">\(\int d^3x\, T^0_{\ 0}\)</span> 发散
+- 总能量无限大 <span class="arithmatex">\(\Rightarrow\)</span> 无法定义有意义的物理系统
+- 这一条件排除了某些非物理的场构型</p>
+<hr />
+<h2 id="四通俗解释">四、通俗解释<a class="headerlink" href="#四通俗解释" title="Permanent link">&para;</a></h2>
+<h3 id="核心洞见为什么能量动量守恒">核心洞见：为什么能量动量守恒？<a class="headerlink" href="#核心洞见为什么能量动量守恒" title="Permanent link">&para;</a></h3>
+<p>想象你在拍摄一部物理定律的电影：</p>
+<ul>
+<li><strong>时间平移不变性</strong>：今天做实验和明天做实验，物理定律一样 <span class="arithmatex">\(\Rightarrow\)</span> 你可以"快进"或"倒带"，能量不增不减</li>
+<li><strong>空间平移不变性</strong>：在这里做实验和在火星做实验，物理定律一样 <span class="arithmatex">\(\Rightarrow\)</span> 你可以平移整个实验室，动量不增不减</li>
+</ul>
+<p>诺特定理就是一部<strong>翻译机</strong>：把"电影怎么拍都行"这种<strong>几何对称性</strong>，翻译成"能量/动量守衡"这种<strong>物理定律</strong>。</p>
+<h3 id="能量-动量张量的直观图像">能量-动量张量的直观图像<a class="headerlink" href="#能量-动量张量的直观图像" title="Permanent link">&para;</a></h3>
+<p>把时空想象成一张网格：
+- <span class="arithmatex">\(T^0_{\ 0}\)</span> 是每个格子里的"能量存货"
+- <span class="arithmatex">\(T^i_{\ 0}\)</span> 是能量在格子间流动的"管道"
+- 连续性方程 <span class="arithmatex">\(\partial_\mu T^\mu_{\ \nu}=0\)</span> 就是说：存货变化 = 流入 - 流出，没有凭空产生或消失</p>
+<hr />
+<h2 id="五课程逻辑脉络">五、课程逻辑脉络<a class="headerlink" href="#五课程逻辑脉络" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>场的总变分 δΦ = 内禀变化 + 坐标变化
+                    ↓
+        平移简化：δΦ = −∂Φ/∂x^μ · a^μ
+                    ↓
+        拉格朗日密度变化 δL = 全散度 + 显式项
+                    ↓
+        假设平移不变性 δL = 0
+                    ↓
+        整理得：∂μ[...] = 0
+                    ↓
+        定义能量-动量张量 T^μ_ν
+                    ↓
+        连续性方程 ∂μT^μ_ν = 0
+                    ↓
+        三维空间积分 + 边界条件
+                    ↓
+        ├─ ν=0: 能量守恒 E = ∫d³x T⁰₀
+        └─ ν=i: 动量守恒 P_i = ∫d³x T⁰_i
+</code></pre></div>
+<hr />
+<p><strong>本段课程的核心成就</strong>：从抽象的场论形式出发，通过严格的数学推导，最终还原出我们最熟悉的<strong>能量守恒</strong>与<strong>动量守恒</strong>，揭示了这些日常经验背后的深刻对称性根源——这是理论物理"从美到真"的典型范例。</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
