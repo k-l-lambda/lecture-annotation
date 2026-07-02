@@ -453,7 +453,7 @@ $$\alpha' \approx 10^{-68} \text{m}^2。$$
 
 如何来做到这一点呢？如上所述，几乎所有弦理论方面的考虑都是在微扰框架下进行的，而且只有来自特定基模的小扰动才会被检测。这里我们来考虑一种由通常4维闵可夫斯基空间 $\mathbb{M}$ 与某个给定的六维紧致类空黎曼空间 $\mathcal{Y}$ 的乘积 $\mathbb{M} \times \mathcal{Y}$ 给出的基本“时空”，其中整个 $\mathcal{Y}$ 的“大小”都极其小，譬如说在普朗克 $10^{-35}$ 米尺度上。我们来看一下源自 $\mathbb{M} \times \mathcal{Y}$ 的小扰动。
 
-首先，我们对何谓“积流形” $\mathcal{A} \times \mathcal{B}$ 需要有一个较清晰的图像，这里 $m$ 维空间 $\mathcal{A}$ 和 $n$ 维空间 $\mathcal{B}$ 均取自（伪）黎曼流形。从 [§15.2](chapter_15.md#152-丛的数学思想)（和[图 15.3](assets/page660_fig01.jpg)a）可知，$\mathcal{A} \times \mathcal{B}$ 的点由点对 $(a, b)$ 描述，这里 $a$ 属于 $\mathcal{A}$，$b$ 属于 $\mathcal{B}$，因此 $\mathcal{A} \times \mathcal{B}$ 的维为 $m+n$（见练习 [15.1]）。我们怎么来定义 $\mathcal{A} \times \mathcal{B}$ 上的（伪）黎曼度规呢？这可以用 $\mathcal{A}$ 上和 $\mathcal{B}$ 上度规“直和”的办法来实现。设 $\mathcal{A} \times \mathcal{B}$ 的局部坐标为 $(x^1, \cdots, x^m, y^1, \cdots, y^n)$，其中 $(x^1, \cdots, x^m)$ 和 $(y^1, \cdots, y^n)$ 分别为 $\mathcal{A}$ 和 $\mathcal{B}$ 的局部坐标。于是 $\mathcal{A} \times \mathcal{B}$ 的度规分量 $g_{ij}$ 有“分块对角形式”（类似于 [§13.7](chapter_13.md#137-张量表示空间可约性) 所示的完全可约表示矩阵），它用来描述 $\mathcal{A}$ 和 $\mathcal{B}$ 的度规分量的直和：$\mathcal{A} \times \mathcal{B}$ 的度规距离平方是 $\mathcal{A}$ 和 $\mathcal{B}$ 单独度规距离平方的和（[图 31.7](assets/page660_fig01.jpg)）。
+首先，我们对何谓“积流形” $\mathcal{A} \times \mathcal{B}$ 需要有一个较清晰的图像，这里 $m$ 维空间 $\mathcal{A}$ 和 $n$ 维空间 $\mathcal{B}$ 均取自（伪）黎曼流形。从 [§15.2](chapter_15.md#152-丛的数学思想)（和图 15.3a）可知，$\mathcal{A} \times \mathcal{B}$ 的点由点对 $(a, b)$ 描述，这里 $a$ 属于 $\mathcal{A}$，$b$ 属于 $\mathcal{B}$，因此 $\mathcal{A} \times \mathcal{B}$ 的维为 $m+n$（见练习 [15.1]）。我们怎么来定义 $\mathcal{A} \times \mathcal{B}$ 上的（伪）黎曼度规呢？这可以用 $\mathcal{A}$ 上和 $\mathcal{B}$ 上度规“直和”的办法来实现。设 $\mathcal{A} \times \mathcal{B}$ 的局部坐标为 $(x^1, \cdots, x^m, y^1, \cdots, y^n)$，其中 $(x^1, \cdots, x^m)$ 和 $(y^1, \cdots, y^n)$ 分别为 $\mathcal{A}$ 和 $\mathcal{B}$ 的局部坐标。于是 $\mathcal{A} \times \mathcal{B}$ 的度规分量 $g_{ij}$ 有“分块对角形式”（类似于 [§13.7](chapter_13.md#137-张量表示空间可约性) 所示的完全可约表示矩阵），它用来描述 $\mathcal{A}$ 和 $\mathcal{B}$ 的度规分量的直和：$\mathcal{A} \times \mathcal{B}$ 的度规距离平方是 $\mathcal{A}$ 和 $\mathcal{B}$ 单独度规距离平方的和（[图 31.7](assets/page660_fig01.jpg)）。
 
 ![积流形示意图，展示两个（伪）黎曼空间 $\mathcal{A}$ 和 $\mathcal{B}$ 的乘积 $\mathcal{A} \times \mathcal{B}$，包含从 $\mathcal{A}$ 和 $\mathcal{B}$ 分别指向乘积空间的箭头，以及乘积空间内的网格结构](assets/page660_fig01.jpg)
 
@@ -791,9 +791,9 @@ $$A = 8\pi\left[m + (m^2 - a^2)^{\frac{1}{2}}\right]G^2/c^4。$$
 
 ## 31.16 “全息原理”
 
-上面谈到的弦论证方法，例如几乎所有的弦计算，都是基于微扰性质的方法。但最近提出了一些概念以图能给出精确结果。这些方法不同程度地依赖于所谓“全息猜想”，它是对全息原理的某种提升。这一原理的思想似乎是，在适当环境下，定义在某个时空 $\mathcal{M}$ 上的（量子）场论的态可以直接 1-1 对应到另一个量子场论的态，这里第二个量子场论定义在另一个低维时空 $\mathcal{E}$ 上！$\mathcal{E}$ 经常被认做像是 $\mathcal{M}$ 的（类时）边界，或至少是 $\mathcal{M}$ 的某个共形光滑类时子流形（图 31.14）。但是，这不
+上面谈到的弦论证方法，例如几乎所有的弦计算，都是基于微扰性质的方法。但最近提出了一些概念以图能给出精确结果。这些方法不同程度地依赖于所谓“全息猜想”，它是对全息原理的某种提升。这一原理的思想似乎是，在适当环境下，定义在某个时空 $\mathcal{M}$ 上的（量子）场论的态可以直接 1-1 对应到另一个量子场论的态，这里第二个量子场论定义在另一个低维时空 $\mathcal{E}$ 上！$\mathcal{E}$ 经常被认做像是 $\mathcal{M}$ 的（类时）边界，或至少是 $\mathcal{M}$ 的某个共形光滑类时子流形（[图 31.14](assets/page674_fig01.jpg)）。但是，这不
 
-[图 31.14 “全息原理”？时空 $\mathcal{E}$ 是另一时空 $\mathcal{M}$ 的一条（类时）边界。有猜想认为，$\mathcal{E}$ 上适当的 QFT 可以等价于 $\mathcal{M}$ 上的弦 QFT。]
+![图31.14 "全息原理"？时空 $\mathcal{E}$ 是另一时空 $\mathcal{M}$ 的一条（类时）边界；有猜想认为 $\mathcal{E}$ 上适当的 QFT 可等价于 $\mathcal{M}$ 上的弦 QFT。](assets/page674_fig01.jpg)
 
 
 <!-- page 675 -->
