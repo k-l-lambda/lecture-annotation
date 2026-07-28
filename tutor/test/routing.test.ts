@@ -13,10 +13,10 @@ import { IDBFactory } from 'fake-indexeddb';
 
 import { IdbStore, type IDBFactoryLike } from '../src/core/idb-store.ts';
 import { FakeLlm } from '../src/shells/node/fake-llm.ts';
-import { parseRouterReply } from '../src/core/roles.ts';
+import { buildQuestionerUser, parseRouterReply } from '../src/core/roles.ts';
 import { TutorSession } from '../src/core/session.ts';
 import type { Llm, LlmRequest, LlmResponse, ContentSource } from '../src/core/ports.ts';
-import type { SectionContent, Settings } from '../src/core/types.ts';
+import type { AskedQuestion, SectionContent, Settings } from '../src/core/types.ts';
 import { defaultSettings } from '../src/shells/node/settings.ts';
 
 const SECTION_TEXT = [
@@ -256,3 +256,88 @@ test('a secondary intent is kept when valid and dropped when not', async () => {
   assert.equal(parseRouterReply('{"route":"answer","secondary":"null"}', 'AWAIT_ANSWER').secondary, null);
 });
 
+
+// ---------------------------------------------------------------------------
+// Adaptive difficulty: the previous score must change the next question
+// ---------------------------------------------------------------------------
+
+function asked(over: Partial<AskedQuestion> = {}): AskedQuestion {
+  return {
+    stepId: 'step:1',
+    stepTitle: '读出定义',
+    variant: 0,
+    targetLevel: 2,
+    genre: 'descriptive',
+    question: '熵为什么是体积的对数？',
+    expectedPoints: ['熵是相空间体积的对数'],
+    kpIds: ['kp:entropy'],
+    sourceAnchor: '熵是一种对系统"混乱程度"的量度',
+    score: 0,
+    discussedPoints: [],
+    isCurrentStep: true,
+    ...over,
+  };
+}
+
+function questionerPayload(askedQuestions: AskedQuestion[], variant = 1): Record<string, unknown> {
+  const s = section();
+  return JSON.parse(
+    buildQuestionerUser({
+      section: s,
+      analysis: null,
+      step: {
+        id: 'step:1',
+        title: '读出定义',
+        goal: 'g',
+        knowledgePointIds: ['kp:entropy'],
+        targetLevel: 2,
+        questionGenre: 'descriptive',
+        anchors: [],
+        inserted: false,
+        isPrep: false,
+        passed: false,
+        chipState: 'current',
+        attempts: [],
+      },
+      stepIndex: 0,
+      variant,
+      askedQuestions,
+      previouslyAsked: [],
+      digest: { known: [], weak: [], unseen: [], recentAchievements: [], overallLevel: 'beginner' },
+      settings: settings(),
+    }),
+  );
+}
+
+test('a 0/5 on this step tells the next variant to lower the step, not just reskin it', () => {
+  const p = questionerPayload([asked({ score: 0 })]);
+  assert.equal((p.priorAttempt as { score: number }).score, 0);
+  assert.match(String(p.adaptiveNote), /把台阶降下来/);
+  assert.match(String(p.adaptiveNote), /不要只是换个案例重问同样难的东西/);
+});
+
+test('a 3/5 targets only what was missed, and does not ask for an easier step', () => {
+  const p = questionerPayload([asked({ score: 3 })]);
+  assert.match(String(p.adaptiveNote), /没说到的那部分/);
+  assert.doesNotMatch(String(p.adaptiveNote), /把台阶降下来/);
+});
+
+test('a passing score leaves the difficulty alone', () => {
+  const p = questionerPayload([asked({ score: 5 })]);
+  assert.equal(p.adaptiveNote, undefined);
+  assert.equal(p.priorAttempt, undefined);
+});
+
+test('only attempts on THIS step adapt the difficulty', () => {
+  // A 0/5 on an earlier step must not scaffold down a later, unrelated step.
+  const p = questionerPayload([asked({ stepId: 'step:0', score: 0 })]);
+  assert.equal(p.adaptiveNote, undefined);
+});
+
+test('the latest variant wins when a step has several scored attempts', () => {
+  const p = questionerPayload(
+    [asked({ variant: 0, score: 0 }), asked({ variant: 1, score: 3 })],
+    2,
+  );
+  assert.match(String(p.adaptiveNote), /没说到的那部分/, 'must adapt to the 3, not the older 0');
+});

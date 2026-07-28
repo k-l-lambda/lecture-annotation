@@ -144,6 +144,47 @@ export interface QuestionerInput {
  * the whole section, and never chat history — its substitute is the
  * askedQuestions ledger (harness.md §7).
  */
+/**
+ * Turns the previous attempt on THIS step into an instruction about difficulty.
+ *
+ * The score was already in `askedQuestions`, but as data with no directive, so a
+ * 0/5 was followed by a fresh question at the same level. Adapting downward is
+ * the harness's job to ask for, not the model's to infer: a student who just
+ * scored 1/5 needs the ground broken differently, not another swing at the same
+ * height.
+ *
+ * Deliberately does NOT lower `targetLevel` — the ladder's levels are the
+ * step's contract and `set_steps` requires them non-decreasing. This changes how
+ * much scaffolding the question carries, not what it ultimately tests.
+ */
+function buildAdaptiveNote(input: QuestionerInput): Record<string, unknown> {
+  const priorOnThisStep = input.askedQuestions
+    .filter((q) => q.stepId === input.step.id && typeof q.score === 'number')
+    .sort((a, b) => a.variant - b.variant);
+  const last = priorOnThisStep.at(-1);
+  if (!last || typeof last.score !== 'number') return {};
+
+  if (last.score <= 1) {
+    return {
+      priorAttempt: { score: last.score, expectedPoints: last.expectedPoints },
+      adaptiveNote:
+        `上一题该学生只得 ${last.score}/5，说明这一步的门槛对他还太高。这一题要**把台阶降下来**：` +
+        '换一个更小、更具体、更靠前的切入点——先只问那个大问题的第一小步，或先问一个只需要' +
+        '前置知识就能答的具体情形，让他有一个能站住的落点。不要只是换个案例重问同样难的东西。' +
+        '题面要更浅显，必要的背景放进 setup 里替他铺好。',
+    };
+  }
+  if (last.score <= 3) {
+    return {
+      priorAttempt: { score: last.score, expectedPoints: last.expectedPoints },
+      adaptiveNote:
+        `上一题得 ${last.score}/5，方向对了但没答全。这一题针对他没说到的那部分提问，` +
+        '不要把已经答对的部分再考一遍。',
+    };
+  }
+  return {};
+}
+
 export function buildQuestionerUser(input: QuestionerInput): string {
   const payload: Record<string, unknown> = {
     task: '为当前步骤出一道题，调用 ask_question。',
@@ -162,6 +203,12 @@ export function buildQuestionerUser(input: QuestionerInput): string {
       input.variant > 0
         ? '这是同一步的新变体：必须是不同的案例（不同物理设定、不同极限、不同符号约定），不能是同一题换个说法。'
         : undefined,
+    // The previous attempt's score, made actionable. `askedQuestions` already
+    // carried it, but nothing told the questioner to DO anything with it, so a
+    // 0/5 was followed by a different question of identical difficulty. The
+    // adaptive step the user asked for lives here: a failed attempt should be
+    // followed by more scaffolding, not just a new case.
+    ...buildAdaptiveNote(input),
     analysis: input.analysis,
     anchors: expandAnchors(input.section, input.step.anchors),
     askedQuestions: input.askedQuestions,
