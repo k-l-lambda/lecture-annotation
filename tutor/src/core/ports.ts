@@ -11,10 +11,12 @@ import type {
   Achievement,
   KnowledgePoint,
   MasteryRecord,
+  ReplyIntent,
   RoleName,
   SectionContent,
   SessionRecord,
   SessionState,
+  StudentRoute,
   Usage,
 } from './types.ts';
 
@@ -91,10 +93,16 @@ export interface LlmResponse {
 
 export interface Llm {
   call(req: LlmRequest, signal?: AbortSignal): Promise<LlmResponse>;
+  /**
+   * `onReasoning` receives a running token estimate while the model thinks. For a
+   * reasoning model this is the only progress signal that exists before the first
+   * prose token — planner calls measured 70-129s of silence without it.
+   */
   stream?(
     req: LlmRequest,
     onDelta: (chunk: string) => void,
     signal?: AbortSignal,
+    onReasoning?: (tokens: number) => void,
   ): Promise<LlmResponse>;
 }
 
@@ -154,6 +162,18 @@ export type SessionEvent =
     }
   | { type: 'hint'; text: string; used: number; cap: number }
   | { type: 'reply'; text: string; streaming: boolean }
+  /** A prose fragment as it streams in. Shells render these without a newline. */
+  | { type: 'delta'; role: RoleName; text: string }
+  /** Running reasoning-token estimate while the model thinks. */
+  | { type: 'reasoning'; role: RoleName; tokens: number }
+  // Why a free-text turn was sent where it was. Emitted for every routed turn,
+  // including fallbacks, so a misroute is visible rather than silent.
+  | {
+      type: 'route';
+      route: StudentRoute;
+      reason: string;
+      secondary: ReplyIntent | null;
+    }
   | { type: 'steprail'; chips: Array<{ title: string; state: string; inserted: boolean }> }
   | { type: 'planning-progress'; tool: string; done: boolean; note?: string }
   | {

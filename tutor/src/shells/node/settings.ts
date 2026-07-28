@@ -30,21 +30,33 @@ export function defaultSettings(): Settings {
     reasoning: {
       effort: 'high',
       byRole: {
-        planner: 'high',
+        planner: 'medium',
         questioner: 'medium',
         grader: 'high',
         tutor_reply: 'low',
         summarizer: 'medium',
+        // Classification, not thinking. Reasoning here buys nothing and this call
+        // is on the critical path of every free-text turn.
+        router: 'off',
       },
     },
     temperature: {
-      byRole: { planner: 0.3, questioner: 0.7, grader: 0.1, tutor_reply: 0.6, summarizer: 0.4 },
+      byRole: {
+        planner: 0.3,
+        questioner: 0.7,
+        grader: 0.1,
+        tutor_reply: 0.6,
+        summarizer: 0.4,
+        // Deterministic: the same sentence must route the same way twice.
+        router: 0,
+      },
     },
     roleModels: {},
     maxOutputTokens: 2000,
     maxContextChars: 24000,
     stream: true,
     showReasoning: 'off',
+    requireAnalysis: false,
     callBudgetPerSession: 40,
     hintCap: 2,
     variantCap: 3,
@@ -134,6 +146,9 @@ export function applySettings(raw: unknown, base = defaultSettings()): LoadResul
 
   settings.maxOutputTokens = clampInt(src['maxOutputTokens'], settings.maxOutputTokens, 256, 32_000);
   settings.maxContextChars = clampInt(src['maxContextChars'], settings.maxContextChars, 2_000, 200_000);
+  if (typeof src['requireAnalysis'] === 'boolean') {
+    settings.requireAnalysis = src['requireAnalysis'];
+  }
   settings.callBudgetPerSession = clampInt(src['callBudgetPerSession'], settings.callBudgetPerSession, 5, 500);
   settings.hintCap = clampInt(src['hintCap'], settings.hintCap, 0, 5);
   settings.variantCap = clampInt(src['variantCap'], settings.variantCap, 1, 10);

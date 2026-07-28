@@ -207,8 +207,11 @@ async function upsertKnowledgePoints(
 // ---------------------------------------------------------------------------
 
 async function setSteps(args: SetStepsArgs, ctx: ToolContext): Promise<ToolResult> {
-  // Ordering is enforced here, not merely explained in the prompt.
-  if (!ctx.analyzePassed || !ctx.session.analysis) {
+  // Ordering is enforced here, not merely explained in the prompt — but only when
+  // the analysis is required at all. With `requireAnalysis` off the ladder's own
+  // anchors are still verbatim-checked below, which is the grounding that matters
+  // for question generation.
+  if (ctx.settings.requireAnalysis && (!ctx.analyzePassed || !ctx.session.analysis)) {
     return toolErr([
       'set_steps requires a successful analyze_section first in this session: read the section and submit the analysis, then set the ladder.',
     ]);
@@ -336,6 +339,7 @@ function askQuestion(args: AskQuestionArgs, ctx: ToolContext): ToolResult {
     askedQuestions: collectAskedQuestions(ctx.session),
     targetLevel: step.targetLevel,
     kpIds: step.knowledgePointIds,
+    isPrep: step.isPrep,
   });
   if (errors.length > 0) return toolErr(errors);
 
@@ -365,6 +369,7 @@ function askQuestion(args: AskQuestionArgs, ctx: ToolContext): ToolResult {
     at: nowIso(ctx),
     discussion: [],
     discussedPoints: [],
+    clarifications: [],
     exitChoice: null,
   };
   step.attempts.push(attempt);

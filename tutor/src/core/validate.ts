@@ -64,6 +64,13 @@ export function normalizeForAnchor(s: string): string {
       // divergence point, immediately visible if it happens.
       .replace(/['‘’"“”「」『』｢｣′″]/g, '"')
       .replace(/[—–−]/g, '-')
+      // Sentence-final stop. NFKD already folds ，：；！？（） to ASCII because those
+      // have compatibility decompositions, but 。 decomposes to ｡ and so stayed
+      // distinct from `.` — the single mark the fold missed. Live, §4.2 s4 was
+      // rejected for an anchor that matched 43 characters and diverged only here:
+      // the source ends a display formula with `\frac{1}{2}.$$` and the model
+      // wrote 。 for it, which is how the sentence reads in Chinese.
+      .replace(/[。｡]/g, '.')
       .replace(/\s+/g, '')
       .trim()
   );
@@ -224,10 +231,19 @@ const PAGE_FURNITURE = new RegExp(
     String.raw`<!--[^>]*-->`, // <!-- page 71 -->
     String.raw`^\s*-{3,}\s*$`, // --- rule
     String.raw`^\s*通向实在之路\s*$`, // running title
-    String.raw`^\s*第[一二三四五六七八九十百零〇\d]+章[^\n]{0,40}$`, // running chapter head
+    // Running chapter head, bare or bolded: the corpus writes both
+    // `第四章 奇幻的复数` and `**第四章 奇幻的复数**`.
+    String.raw`^\s*\*{0,2}第[一二三四五六七八九十百零〇\d]+章[^\n]{0,40}$`,
     String.raw`^\s*·\s*\d{1,4}\s*·\s*$`, // ·51· folio
     String.raw`^\s*\d{1,4}\s*$`, // bare page number
     String.raw`^\s*〔\d+〕[^\n]*$`, // 〔1〕 translator footnote
+    // Exercise callout: `\*[4.3] 验证这一点。` — an aside to the reader, printed in
+    // the margin, that the scan drops into the middle of the running sentence.
+    String.raw`^\s*\\?\*+\s*\[\d+\.\d+\][^\n]*$`,
+    // MkDocs collapsible answer block, header plus its indented body. The answer
+    // to an exercise is not section prose, and leaving it in both interrupts
+    // sentences and offers the questioner a ready-made answer to quote.
+    String.raw`^\s*\?{3}\+?\s+\w+[^\n]*$(?:\n(?:[ \t]+[^\n]*)?$)*`,
   ].join('|'),
   'gm',
 );
@@ -237,8 +253,18 @@ export function stripPageFurniture(text: string): string {
   return text.replace(PAGE_FURNITURE, '\n');
 }
 
+/**
+ * Furniture is stripped from **both** sides.
+ *
+ * The haystack alone is not enough. A model reading the raw markdown may quote a
+ * split sentence exactly as it sits on the page, page number and rule included —
+ * §4.2 s4 was rejected live for a quote whose only defect was the `76 ---` it had
+ * faithfully copied. Stripping one side accepts the reader's version and rejects
+ * the transcriber's; stripping both accepts either, and neither can smuggle in
+ * text that is not in the section, since furniture is all that is removed.
+ */
 export function anchorAppears(anchor: string, sectionText: string): boolean {
-  const needle = normalizeForAnchor(anchor);
+  const needle = normalizeForAnchor(stripPageFurniture(anchor));
   if (needle.length === 0) return false;
   return normalizeForAnchor(stripPageFurniture(sectionText)).includes(needle);
 }
@@ -256,7 +282,9 @@ export function anchorDivergence(
   anchor: string,
   sectionText: string,
 ): { matched: string; rest: string } {
-  const needle = normalizeForAnchor(anchor);
+  // Both sides treated exactly as `anchorAppears` treats them, or the reported
+  // divergence point describes a comparison that was never made.
+  const needle = normalizeForAnchor(stripPageFurniture(anchor));
   const hay = normalizeForAnchor(stripPageFurniture(sectionText));
   let lo = 0;
   let hi = needle.length;
@@ -290,7 +318,13 @@ export function checkAnchors(
           : `it does not match the section at all, from '${tail}' onward`;
       errors.push(
         `${field} not found verbatim in the section: '${shown}' — ${detail}. ` +
-          'Re-read the section and quote one unbroken sentence exactly as written.',
+          // Page numbers and rules inside the quote are tolerated now, so the
+          // advice names what is actually still rejected: skipping over text, or
+          // joining two sentences that are not adjacent. Telling a model to "quote
+          // one unbroken sentence" when that is exactly what it did sends it
+          // rewriting a correct quote.
+          'Quote a shorter span, continuous in the source — do not omit words from ' +
+          'the middle or join sentences that are not adjacent.',
       );
     }
   }
@@ -431,17 +465,34 @@ export function validateSteps(
   }
 
   // Every KP must exist after upsert_knowledge_points.
+  const unknownKps: string[] = [];
   for (const s of steps) {
     if (s.knowledgePointIds.length === 0) {
       errors.push(`step ${s.id} has no knowledgePointIds.`);
     }
     for (const kp of s.knowledgePointIds) {
-      if (!ctx.knownKpIds.has(kp)) {
-        errors.push(
-          `step ${s.id} references unknown knowledge point '${kp}': call upsert_knowledge_points first and use the ids it returns.`,
-        );
-      }
+      if (!ctx.knownKpIds.has(kp) && !unknownKps.includes(kp)) unknownKps.push(kp);
     }
+  }
+  if (unknownKps.length > 0) {
+    // One error for the whole set, not one per reference. Nine copies of the same
+    // instruction crowd out the other errors in the same response, and the fix is
+    // a single call listing all of them.
+    //
+    // The wording matters: "call upsert_knowledge_points first" was read as
+    // one-shot. Live on §13.9 the planner had already called it once and, rather
+    // than register the missing ids, shrank its whole ladder onto the one id it
+    // knew was registered — then failed the over-concentration rule instead, and
+    // the session died with no plan.
+    const known = [...ctx.knownKpIds];
+    errors.push(
+      `unknown knowledge points: ${unknownKps.join('、')}. Call ` +
+        `upsert_knowledge_points AGAIN in this same turn to register them — repeat ` +
+        `calls adding new knowledge points are expected, not an error — then use the ` +
+        `ids it returns. Do not drop steps, and do not re-target them onto an ` +
+        `already-registered id to get past this.` +
+        (known.length ? ` Already registered: ${known.join('、')}.` : ''),
+    );
   }
 
   // No KP may be the sole target of more than two steps.
@@ -575,6 +626,15 @@ export interface QuestionContext {
   askedQuestions: AskedQuestion[];
   targetLevel: TargetLevel;
   kpIds: string[];
+  /**
+   * A prep step tests knowledge from *before* this section, and the harness builds
+   * it with `anchors: []` — there is nothing in the section for the questioner to
+   * quote. Requiring a verbatim anchor anyway is unsatisfiable by construction, and
+   * live on §13.9 the questioner filled it by narrating the harness's own state
+   * (「用户在准备步骤中列出了知识点 kp:hermitian-form…」) three times until the
+   * repair budget ran out, killing the session before its first question.
+   */
+  isPrep?: boolean;
 }
 
 export function validateAskQuestion(
@@ -621,7 +681,13 @@ export function validateAskQuestion(
   }
 
   errors.push(...validateGenreForQuestion(args.genre, ctx.genrePreference));
-  errors.push(...checkAnchors([{ value: args.sourceAnchor, field: 'sourceAnchor' }], ctx.sectionText));
+  // Anchor required for a section step, optional for a prep step — but if a prep
+  // question does supply one, it still has to be real. Skipping the check entirely
+  // would let an invented quote through on exactly the step where the model is most
+  // tempted to invent one.
+  if (!ctx.isPrep || args.sourceAnchor?.trim()) {
+    errors.push(...checkAnchors([{ value: args.sourceAnchor, field: 'sourceAnchor' }], ctx.sectionText));
+  }
 
   if (args.question && points.length > 0 && answerInSameSentence(args.question, points, ctx.sectionText)) {
     errors.push(
@@ -779,10 +845,38 @@ export function evaluateAchievementGate(input: AchievementGateInput): {
 
 export const KP_ID_RE = /^kp:[a-z0-9][a-z0-9-]*$/;
 
+/**
+ * Rejects a malformed id **and shows the repaired form**.
+ *
+ * Stating the rule alone does not work. Live on §13.9 the planner sent ten
+ * underscore ids (`kp:unitary_group`), was told three times that ids "must match
+ * kp:<lowercase-slug> (letters, digits, hyphens)", and re-sent the same ten
+ * unchanged — a model that already believes its id is a lowercase slug has nothing
+ * to act on. The session died there with no plan. Naming the offending character
+ * and offering the exact replacement gives it something to copy.
+ */
 export function validateKpId(id: string): string[] {
-  return KP_ID_RE.test(id)
-    ? []
-    : [`knowledge point id '${id}' must match kp:<lowercase-slug> (letters, digits, hyphens).`];
+  if (KP_ID_RE.test(id)) return [];
+
+  const suggestion = `kp:${id
+    .replace(/^kp:/, '')
+    .toLowerCase()
+    .replace(/[_\s]+/g, '-')
+    .replace(/[^a-z0-9-]/g, '-')
+    .replace(/-{2,}/g, '-')
+    .replace(/^-|-$/g, '')}`;
+
+  const offenders = [...new Set((id.replace(/^kp:/, '').match(/[^a-z0-9-]/g) ?? []))];
+  const because = offenders.length
+    ? ` Underscores, spaces, uppercase and other characters are not allowed — found ${offenders
+        .map((c) => `'${c}'`)
+        .join(', ')}.`
+    : '';
+
+  return [
+    `knowledge point id '${id}' is not a valid kp:<lowercase-slug>.${because}` +
+      (KP_ID_RE.test(suggestion) ? ` Use '${suggestion}' instead.` : ''),
+  ];
 }
 
 /**

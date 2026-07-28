@@ -37,7 +37,13 @@ export const QUESTION_GENRES: readonly QuestionGenre[] = [
 /** settings.md §5. Gates which genres `ask_question` will accept. */
 export type GenrePreference = 'descriptive-only' | 'descriptive-first' | 'mixed';
 
-export type RoleName = 'planner' | 'questioner' | 'grader' | 'tutor_reply' | 'summarizer';
+export type RoleName =
+  | 'planner'
+  | 'questioner'
+  | 'grader'
+  | 'tutor_reply'
+  | 'summarizer'
+  | 'router';
 
 export const ROLE_NAMES: readonly RoleName[] = [
   'planner',
@@ -45,6 +51,7 @@ export const ROLE_NAMES: readonly RoleName[] = [
   'grader',
   'tutor_reply',
   'summarizer',
+  'router',
 ];
 
 /** harness.md §2. */
@@ -85,7 +92,44 @@ export type BacktrackReason =
   | 'missing_prerequisite';
 
 /** llm-io.md §3 tutor_reply intent, parsed from the optional `<<INTENT:…>>` line. */
-export type ReplyIntent = 'too_hard' | 'wants_hint' | 'wants_variant' | 'off_topic' | 'none';
+export type ReplyIntent =
+  | 'too_hard'
+  | 'wants_hint'
+  | 'wants_variant'
+  | 'off_topic'
+  | 'needs_clarification'
+  | 'wants_next'
+  | 'wants_skip'
+  | 'answering'
+  | 'none';
+
+/**
+ * Where a free-text student turn should go. The router role proposes one of
+ * these; the harness decides whether it is legal in the current state and owns
+ * the transition. The router never writes session state.
+ *
+ * `answer` is the safe default and the fallback for every failure path: grading a
+ * borderline turn costs a score the student can retry with a variant, whereas
+ * routing a real answer to `clarify` silently discards work they did.
+ */
+export type StudentRoute =
+  | 'answer'
+  | 'clarify'
+  | 'hint'
+  | 'variant'
+  | 'skip'
+  | 'advance'
+  | 'quit'
+  | 'too_hard'
+  | 'off_topic';
+
+export interface StudentTurnRoute {
+  route: StudentRoute;
+  /** A second reading of the same turn, when it carries one (see `answer` + `clarify`). */
+  secondary: ReplyIntent | null;
+  /** One line, shown to the student so an unexpected branch is never silent. */
+  reason: string;
+}
 
 // ---------------------------------------------------------------------------
 // Profile stores (data-model.md §2)
@@ -223,6 +267,14 @@ export interface Attempt {
   discussion: DiscussionTurn[];
   /** Harness digest of what the tutor explained; feeds the repeat guard. */
   discussedPoints: string[];
+  /**
+   * Question-clarifying exchanges that happened BEFORE the answer, kept separate
+   * from `discussion` (which is post-grade). These deliberately do NOT feed
+   * `discussedPoints`: explaining what a question is asking is not teaching the
+   * point it tests, and counting it as such would let the repetition guard block
+   * a variant the student never actually saw answered.
+   */
+  clarifications: DiscussionTurn[];
   exitChoice: ExitChoice | null;
 }
 
@@ -410,6 +462,20 @@ export interface Settings {
   maxContextChars: number;
   stream: boolean;
   showReasoning: 'off' | 'collapsed' | 'expanded';
+  /**
+   * Whether the planner must pass `analyze_section` before `set_steps`.
+   *
+   * Off by default. The analysis was the dominant startup cost: its verbatim
+   * anchor requirements made it the call that got rejected and retried, at
+   * 70-129s per attempt, and on dense sections (§13.9) it could not pass at all.
+   *
+   * The cost of disabling it is real and worth stating: `analysis` is also the
+   * questioner's, grader's, and tutor_reply's view of the section — they are
+   * never given the full text (harness.md §7). With it off they work from the
+   * step's own anchors alone. Step anchors are still verbatim-checked by
+   * `set_steps`, so grounding is reduced, not removed.
+   */
+  requireAnalysis: boolean;
   callBudgetPerSession: number;
   hintCap: number;
   variantCap: number;

@@ -178,6 +178,7 @@ test('previouslyAsked projects questions from the last completed sessions', asyn
               at: ISO,
               discussion: [],
               discussedPoints: [],
+              clarifications: [],
               exitChoice: null,
             },
           ],

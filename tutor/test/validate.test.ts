@@ -18,6 +18,7 @@ import {
   tokenize,
   validateAnalyzeSection,
   validateAskQuestion,
+  validateKpId,
   validateEvaluation,
   validateGenreMix,
   validateSteps,
@@ -271,6 +272,59 @@ test('unknown knowledge point is rejected naming the id', () => {
   assert.ok(validateSteps(steps, ladderCtx).some((e) => /kp:not-registered/.test(e)));
 });
 
+test('unknown knowledge points are reported once, and say a second upsert is allowed', () => {
+  const steps = [
+    step({ id: 's1', knowledgePointIds: ['kp:a', 'kp:b'] }),
+    step({ id: 's2', knowledgePointIds: ['kp:c'] }),
+    step({ id: 's3', knowledgePointIds: ['kp:phase-space'] }),
+  ];
+  const errors = validateSteps(steps, ladderCtx).filter((e) => /unknown knowledge point/.test(e));
+
+  // One error for the whole set: a copy per reference crowds the other errors out of
+  // the same response, and the fix is a single call listing all of them.
+  assert.equal(errors.length, 1, errors.join(' | '));
+  for (const id of ['kp:a', 'kp:b', 'kp:c']) {
+    assert.match(errors[0]!, new RegExp(id));
+  }
+  // Live on §13.9 "call upsert_knowledge_points first" was read as one-shot: the
+  // planner had already called it, so instead of registering the missing ids it
+  // re-targeted every step onto the one id it knew was registered — and died on the
+  // over-concentration rule with no plan. The message must rule that out explicitly.
+  assert.match(errors[0]!, /AGAIN/);
+  assert.match(errors[0]!, /already-registered id/);
+  // And it must show what *is* registered, so the alternative to guessing is visible.
+  assert.match(errors[0]!, /kp:phase-space/);
+});
+
+test('a malformed kp id is rejected with the repaired form, not just the rule', () => {
+  assert.deepEqual(validateKpId('kp:unitary-group'), []);
+
+  // Live on §13.9: ten underscore ids, told three times that ids "must match
+  // kp:<lowercase-slug> (letters, digits, hyphens)", re-sent unchanged all three
+  // times, session dead with no plan. A model that already believes its id is a
+  // lowercase slug cannot act on a restatement of the rule — it needs the offending
+  // character named and the replacement spelled out.
+  const [err] = validateKpId('kp:unitary_group');
+  assert.ok(err);
+  assert.match(err, /'_'/, 'names the offending character');
+  assert.match(err, /kp:unitary-group/, 'offers the corrected id');
+
+  // Whatever it suggests must itself be valid, or the advice sends the model in a
+  // circle.
+  for (const bad of ['kp:Unitary_Group', 'kp:hermitian form', 'kp:U(n)__group', 'kp:a??b']) {
+    const [e] = validateKpId(bad);
+    assert.ok(e, bad);
+    const suggested = e.match(/Use '([^']+)' instead/)?.[1];
+    if (suggested) assert.deepEqual(validateKpId(suggested), [], `suggested ${suggested}`);
+  }
+
+  // An id with nothing salvageable must still be rejected rather than suggesting
+  // a bare `kp:`.
+  const [empty] = validateKpId('kp:???');
+  assert.ok(empty);
+  assert.doesNotMatch(empty, /Use 'kp:' instead/);
+});
+
 test('descriptive-only rejects a derivation-step genre', () => {
   const errors = validateGenreMix(['descriptive', 'derivation-step'], 'descriptive-only');
   assert.ok(errors.some((e) => /descriptive-only/.test(e)));
@@ -428,6 +482,45 @@ test('a good question passes the full validator', () => {
     },
   );
   assert.deepEqual(errors, []);
+});
+
+test('a prep step may leave sourceAnchor empty, but not fabricate one', () => {
+  // The harness builds the prep step with `anchors: []` — it tests knowledge from
+  // before this section, so there is nothing here to quote. Live on §13.9 the
+  // questioner met the requirement by narrating the harness's own state
+  // (「用户在准备步骤中列出了知识点 kp:hermitian-form…」) three times, exhausted the
+  // repair budget, and the session died before asking anything.
+  const args = {
+    genre: 'descriptive' as const,
+    question: '什么是双线性型？它对每个变量分别有什么要求？',
+    setup: null,
+    expectedPoints: [{ point: '对每个变量分别线性', weight: 2 }],
+    rubric: { '5': 'a', '3': 'b', '1': 'c' },
+    hintLadder: ['想想线性的定义'],
+    sourceAnchor: '',
+  };
+  const ctx = {
+    sectionText: SECTION,
+    genrePreference: 'descriptive-first' as const,
+    askedQuestions: [],
+    targetLevel: 1 as const,
+    kpIds: ['kp:bilinear-form'],
+  };
+
+  assert.deepEqual(validateAskQuestion(args, { ...ctx, isPrep: true }), []);
+  // A section step still owes an anchor: the exemption is for prep only.
+  assert.ok(
+    validateAskQuestion(args, { ...ctx, isPrep: false }).some((e) => /sourceAnchor/.test(e)),
+  );
+  // And a prep step that *does* supply one must still supply a real one — skipping
+  // the check outright would let an invented quote through on exactly the step where
+  // the model is most tempted to invent it.
+  assert.ok(
+    validateAskQuestion(
+      { ...args, sourceAnchor: '用户在准备步骤中列出了知识点 kp:bilinear-form' },
+      { ...ctx, isPrep: true },
+    ).some((e) => /sourceAnchor/.test(e)),
+  );
 });
 
 test('an over-long ask is rejected with its length', () => {

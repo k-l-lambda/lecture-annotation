@@ -8,7 +8,7 @@
 
 import type { Llm, LlmMessage, LlmRequest, LlmToolCall } from './ports.ts';
 import { PROMPTS } from './prompts.ts';
-import { ROLE_TERMINAL_TOOL, toolsForRole } from './schema.ts';
+import { ROLE_TERMINAL_TOOL, toolsForRole, type ToolName } from './schema.ts';
 import { delimit } from './validate.ts';
 import type {
   AskedQuestion,
@@ -19,6 +19,8 @@ import type {
   SectionContent,
   Settings,
   Step,
+  StudentRoute,
+  StudentTurnRoute,
   ToolResult,
   Usage,
 } from './types.ts';
@@ -104,7 +106,11 @@ export interface PlannerInput {
 export function buildPlannerUser(input: PlannerInput): string {
   const budgeted = budgetSection(input.section, input.settings.maxContextChars);
   const payload: Record<string, unknown> = {
-    task: '通读本节，然后按 get_student_profile → analyze_section → upsert_knowledge_points → set_steps 的顺序调用工具。',
+    // The declared sequence must match the tools actually offered, or the model
+    // spends a turn calling one that was withheld.
+    task: input.settings.requireAnalysis
+      ? '通读本节，然后按 get_student_profile → analyze_section → upsert_knowledge_points → set_steps 的顺序调用工具。'
+      : '通读本节，然后按 get_student_profile → upsert_knowledge_points → set_steps 的顺序调用工具。',
     sectionId: input.section.sectionId,
     sectionTitle: input.section.tutorTitle ?? input.section.heading,
     sectionText: delimit('SECTION', budgeted.text),
@@ -219,6 +225,14 @@ export interface TutorReplyInput {
   hintsUsed: number;
   settings: Settings;
   stepDigest: string[];
+  /**
+   * The router's reading of this turn. The prompt has always documented an
+   * `intentHint` field; until routing existed it was never sent, so the model was
+   * told about context it never received.
+   */
+  intentHint?: ReplyIntent | null;
+  /** The live question, needed so a `needs_clarification` reply can restate it. */
+  question?: string | null;
 }
 
 export function buildTutorReplyMessages(input: TutorReplyInput, settings: Settings): LlmMessage[] {
@@ -232,9 +246,18 @@ export function buildTutorReplyMessages(input: TutorReplyInput, settings: Settin
     hintsUsed: input.hintsUsed,
     hintCap: settings.hintCap,
     earlierSteps: input.stepDigest,
+    intentHint: input.intentHint ?? null,
+    question: input.question ?? null,
     rules:
       input.phase === 'AWAIT_ANSWER'
-        ? '学生还没作答：可以给方向性提示，但不能给出答案，也不能把答案藏在提示里。'
+        ? input.intentHint === 'needs_clarification'
+          ? // Distinct from the hint rule below: restating a question is allowed to be
+            // thorough, but must not narrow toward the answer. Hints are metered by
+            // hintLadder/hintCap, so an explanation that leaks one is a free hint.
+            '学生在问题目本身的意思，还没作答：把题目换一种说法讲清楚，' +
+            '说明它要求什么形式的答案，但不要给出答案，也不要把范围收窄到一点上。' +
+            '这不消耗提示次数，讲完把作答权交回给他。'
+          : '学生还没作答：可以给方向性提示，但不能给出答案，也不能把答案藏在提示里。'
         : '本步已评分，可以完整讲解答案。不要催促学生做选择——是否继续由他自己按按钮决定。',
   };
 
@@ -346,14 +369,170 @@ export function parseToolArguments(raw: string): { value: unknown; error: string
   return { value: {}, error: `arguments were not valid JSON: ${text.slice(0, 200)}` };
 }
 
+const REPLY_INTENTS: readonly ReplyIntent[] = [
+  'too_hard',
+  'wants_hint',
+  'wants_variant',
+  'off_topic',
+  'needs_clarification',
+  'wants_next',
+  'wants_skip',
+  'answering',
+  'none',
+];
+
 /** llm-io.md §3 — strips the `<<INTENT:…>>` line before rendering. */
 export function extractIntent(text: string): { text: string; intent: ReplyIntent } {
   const match = text.match(/<<INTENT:\s*([a-z_]+)\s*>>/i);
   if (!match) return { text: text.trim(), intent: 'none' };
   const raw = match[1]!.toLowerCase();
-  const valid: ReplyIntent[] = ['too_hard', 'wants_hint', 'wants_variant', 'off_topic', 'none'];
-  const intent = (valid as string[]).includes(raw) ? (raw as ReplyIntent) : 'none';
+  const intent = (REPLY_INTENTS as string[]).includes(raw) ? (raw as ReplyIntent) : 'none';
   return { text: text.replace(match[0], '').trim(), intent };
+}
+
+// ---------------------------------------------------------------------------
+// The router (student-turn classification)
+// ---------------------------------------------------------------------------
+
+export interface RouterInput {
+  phase: 'AWAIT_ANSWER' | 'DISCUSSING';
+  step: { title: string; goal: string };
+  question: string | null;
+  setup: string | null;
+  studentText: string;
+  hintsRemaining: number;
+  variantsRemaining: number;
+}
+
+/**
+ * Deliberately excludes the section text and the analysis. Telling an answer from
+ * a question about the question needs no physics, and this call sits in front of
+ * every free-text turn — so its prompt stays small enough that the extra
+ * round-trip is worth paying.
+ */
+export function buildRouterUser(input: RouterInput): string {
+  return JSON.stringify(
+    {
+      phase: input.phase,
+      step: input.step,
+      question: input.question,
+      setup: input.setup,
+      hintsRemaining: input.hintsRemaining,
+      variantsRemaining: input.variantsRemaining,
+      studentText: input.studentText,
+    },
+    null,
+    2,
+  );
+}
+
+const ROUTES_BY_PHASE: Record<'AWAIT_ANSWER' | 'DISCUSSING', readonly StudentRoute[]> = {
+  AWAIT_ANSWER: ['answer', 'clarify', 'hint', 'too_hard', 'variant', 'skip', 'off_topic'],
+  // No `answer` here: the question has already been graded.
+  DISCUSSING: ['advance', 'variant', 'skip', 'quit', 'clarify', 'too_hard', 'off_topic'],
+};
+
+/**
+ * The route to fall back on. See `StudentTurnRoute` for why it is `answer`.
+ *
+ * `reason` names the specific failure rather than the resulting behaviour: every
+ * one of these paths looks identical in a log otherwise, and a live run needs to
+ * distinguish "the router said something we could not parse" from "the router
+ * never answered" to be diagnosable at all.
+ */
+function defaultRoute(phase: 'AWAIT_ANSWER' | 'DISCUSSING', reason: string): StudentTurnRoute {
+  return {
+    route: phase === 'AWAIT_ANSWER' ? 'answer' : 'clarify',
+    secondary: null,
+    reason,
+  };
+}
+
+/**
+ * Parses the router's JSON, tolerating a fenced block or surrounding prose.
+ *
+ * Every failure path returns the phase default rather than throwing: a router that
+ * is down, slow, or emitting garbage must not be able to stop a student from
+ * submitting an answer. Routing is a convenience layered over the old behaviour,
+ * so its absence degrades to exactly that old behaviour.
+ */
+export function parseRouterReply(
+  raw: string,
+  phase: 'AWAIT_ANSWER' | 'DISCUSSING',
+): StudentTurnRoute {
+  const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i);
+  const body = (fenced?.[1] ?? raw).trim();
+  const start = body.indexOf('{');
+  const end = body.lastIndexOf('}');
+  if (start < 0 || end <= start) {
+    return defaultRoute(phase, raw.trim() ? '分流未给出 JSON' : '分流没有输出');
+  }
+
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(body.slice(start, end + 1));
+  } catch {
+    return defaultRoute(phase, '分流 JSON 无法解析');
+  }
+  if (typeof parsed !== 'object' || parsed === null) return defaultRoute(phase, '分流 JSON 无法解析');
+
+  const obj = parsed as Record<string, unknown>;
+  const route = typeof obj['route'] === 'string' ? obj['route'].toLowerCase().trim() : '';
+  const allowed = ROUTES_BY_PHASE[phase];
+  if (!(allowed as string[]).includes(route)) {
+    // A route the model invented, or one legal only in the other phase. Falling
+    // back is safer than mapping it: `advance` at AWAIT_ANSWER would abandon a
+    // step with no attempt recorded.
+    return defaultRoute(phase, route ? `分流给出非法路由 ${route}` : '分流未给出路由');
+  }
+
+  const rawSecondary =
+    typeof obj['secondary'] === 'string' ? obj['secondary'].toLowerCase().trim() : '';
+  const secondary =
+    rawSecondary && rawSecondary !== 'null' && (REPLY_INTENTS as string[]).includes(rawSecondary)
+      ? (rawSecondary as ReplyIntent)
+      : null;
+
+  const reason = typeof obj['reason'] === 'string' ? obj['reason'].trim().slice(0, 60) : '';
+
+  return { route: route as StudentRoute, secondary, reason };
+}
+
+/** One cheap call, no tools. Never throws — see `parseRouterReply`. */
+export async function runRouterTurn(options: {
+  llm: Llm;
+  settings: Settings;
+  model: string;
+  input: RouterInput;
+  signal?: AbortSignal;
+}): Promise<{ route: StudentTurnRoute; usage: Partial<Usage> }> {
+  const request: LlmRequest = {
+    role: 'router',
+    model: options.model,
+    messages: [
+      { role: 'system', content: systemPrompt('router', options.settings) },
+      { role: 'user', content: buildRouterUser(options.input) },
+    ],
+    temperature: options.settings.temperature.byRole.router,
+    // A route object is ~40 tokens, but the cap has to cover reasoning too, and
+    // `reasoning: off` is a request the endpoint may ignore: deepseek-v4-pro spent
+    // 154-200 tokens thinking about a two-line classification regardless. A 200
+    // cap let reasoning consume the whole budget, so the turn came back with empty
+    // text and every route silently fell back to the phase default.
+    maxOutputTokens: Math.min(options.settings.maxOutputTokens, 1200),
+    reasoningEffort: (options.settings.reasoning.byRole.router ??
+      options.settings.reasoning.effort) as 'off' | 'low' | 'medium' | 'high',
+  };
+
+  try {
+    const response = await options.llm.call(request, options.signal);
+    return {
+      route: parseRouterReply(response.text ?? '', options.input.phase),
+      usage: response.usage,
+    };
+  } catch {
+    return { route: defaultRoute(options.input.phase, '分流调用失败'), usage: {} };
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -362,6 +541,42 @@ export function extractIntent(text: string): { text: string; intent: ReplyIntent
 
 export const MAX_ITERATIONS = 8;
 export const MAX_REPAIRS = 2;
+/**
+ * How many times a role may re-call a tool that already succeeded before the turn
+ * is abandoned. Higher than MAX_REPAIRS because the correction is cheap (nothing
+ * executes) and a model that has merely lost its place usually recovers on the
+ * next turn; low enough that it cannot silently consume MAX_ITERATIONS.
+ */
+export const MAX_REDUNDANT_CALLS = 3;
+
+/**
+ * How many times one non-terminal tool may successfully run in a single turn. Two
+ * legitimate re-queries (a revised `kpHints` list) plus headroom; beyond that the
+ * model is looping rather than refining.
+ */
+export const MAX_RUNS_PER_TOOL = 3;
+
+/**
+ * Identity of a tool call for the repeat check: name plus arguments, with object
+ * keys sorted so `{a,b}` and `{b,a}` are the same call. Array order is preserved —
+ * it can be meaningful — so a reordered `kpHints` list counts as a new query. That
+ * errs toward letting the call run, which is the safe direction: refusing real work
+ * is worse than allowing one redundant read.
+ */
+function callKey(name: string, args: unknown): string {
+  const canon = (v: unknown): unknown => {
+    if (Array.isArray(v)) return v.map(canon);
+    if (v && typeof v === 'object') {
+      return Object.fromEntries(
+        Object.entries(v as Record<string, unknown>)
+          .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+          .map(([k, val]) => [k, canon(val)]),
+      );
+    }
+    return v;
+  };
+  return `${name}:${JSON.stringify(canon(args ?? {}))}`;
+}
 
 export interface ToolLoopOptions {
   role: RoleName;
@@ -374,6 +589,12 @@ export interface ToolLoopOptions {
   signal?: AbortSignal;
   /** Called for each executed tool so the caller can log and render progress. */
   onTool?(name: string, result: ToolResult): void;
+  /** Tools to withhold from this turn (see `toolsForRole`). */
+  excludeTools?: readonly ToolName[];
+  /** Streamed prose deltas, when the shell renders them. */
+  onDelta?(chunk: string): void;
+  /** Reasoning-token progress while the model thinks. */
+  onReasoning?(tokens: number): void;
 }
 
 export interface ToolLoopResult {
@@ -401,7 +622,7 @@ function addUsage(total: Usage, delta: Partial<Usage>): void {
 export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopResult> {
   const { role, llm, settings } = options;
   const terminal = ROLE_TERMINAL_TOOL[role];
-  const tools = toolsForRole(role);
+  const tools = toolsForRole(role, options.excludeTools ?? []);
 
   const messages: LlmMessage[] = [
     { role: 'system', content: options.systemText },
@@ -410,6 +631,31 @@ export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopRes
 
   const usage: Usage = { calls: 0, promptTokens: 0, completionTokens: 0, reasoningTokens: 0 };
   const repairsPerTool = new Map<string, number>();
+  // Non-terminal tools that already succeeded. A model that loses its place in the
+  // sequence re-calls a read-only tool it has already run, and because the call
+  // *succeeds* no repair budget is charged — live, the planner spent 7 of its 8
+  // iterations re-reading the profile and had one left for set_steps, which then
+  // hit the cap. Answering the repeat without spending a turn is what breaks that.
+  //
+  // Keyed on tool name *and* arguments. `get_student_profile` really does return a
+  // different digest for different `kpHints`, so a re-query with revised hints is
+  // legitimate work, not a lost bearing — on §13.9 the planner re-called it four
+  // times with genuinely different hint lists (one Chinese, one English) and a
+  // name-only key refused all of them.
+  const succeeded = new Set<string>();
+  /** Tool names that have succeeded at least once, for reporting what is left. */
+  const succeededNames = new Set<string>();
+  /**
+   * Successful runs per non-terminal tool, whatever the arguments. Keying the repeat
+   * check on arguments makes a varying-argument loop invisible to it — on an empty
+   * store every `get_student_profile` hint list returns the same empty digest, so the
+   * model can keep trying new hints forever and each call legitimately succeeds.
+   */
+  const runsPerTool = new Map<string, number>();
+  // Bounded separately from repairs. Answering a repeat cheaply is still a turn,
+  // so a model that ignores the correction must fail with a diagnosis rather than
+  // spin quietly into the iteration cap.
+  let redundantCalls = 0;
   let iterations = 0;
   let repairs = 0;
   let terminalCalled = false;
@@ -434,7 +680,19 @@ export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopRes
         | 'high',
     };
 
-    const response = await llm.call(request, options.signal);
+    // Streamed when the shell can render progress. Tool-call roles stream too:
+    // the point here is not to show prose (there usually is none) but to surface
+    // the reasoning-token counter during a call that is otherwise silent for
+    // minutes.
+    const canStream = settings.stream && llm.stream && (options.onDelta || options.onReasoning);
+    const response = canStream
+      ? await llm.stream!(
+          { ...request, stream: true },
+          (chunk) => options.onDelta?.(chunk),
+          options.signal,
+          (tokens) => options.onReasoning?.(tokens),
+        )
+      : await llm.call(request, options.signal);
     addUsage(usage, response.usage);
     if (response.text) lastText = response.text;
 
@@ -466,10 +724,31 @@ export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopRes
 
     let sawFailure = false;
     for (const call of response.toolCalls) {
+      let redundant = false;
       const parsed = parseToolArguments(call.arguments);
       let result: ToolResult;
       if (parsed.error) {
         result = { ok: false, errors: [parsed.error] };
+      } else if (succeeded.has(callKey(call.name, parsed.value)) && call.name !== terminal) {
+        redundant = true;
+        // Not executed again, and deliberately not charged to the repair budget:
+        // repeating a completed step is a lost bearing, not a bad argument, and
+        // failing the turn after two repeats would be worse than the loop this
+        // replaces. The result names what is still outstanding instead.
+        // Names the tools still outstanding, not the terminal one. Telling the
+        // planner to "call set_steps directly" was actively wrong: set_steps is
+        // rejected until upsert_knowledge_points has returned real kp ids, so the
+        // advice pointed at a step that could only fail.
+        const pending = tools
+          .map((t) => (t as { function?: { name?: string } }).function?.name ?? '')
+          .filter((n) => n && !succeededNames.has(n));
+        result = {
+          ok: false,
+          errors: [
+            `${call.name} 用同样的参数已经成功调用过，结果在前面的消息里，重复调用不会得到新信息。` +
+              (pending.length ? `本轮还没有完成的是：${pending.join('、')}，请按顺序继续。` : ''),
+          ],
+        };
       } else {
         result = await options.execute(call.name, parsed.value, call.id);
       }
@@ -478,7 +757,41 @@ export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopRes
       messages.push({ role: 'tool', toolCallId: call.id, content: JSON.stringify(result) });
 
       if (result.ok) {
+        succeededNames.add(call.name);
         if (call.name === terminal) terminalCalled = true;
+        else {
+          succeeded.add(callKey(call.name, parsed.value));
+          const runs = (runsPerTool.get(call.name) ?? 0) + 1;
+          runsPerTool.set(call.name, runs);
+          if (runs > MAX_RUNS_PER_TOOL) {
+            return {
+              text: lastText,
+              usage,
+              iterations,
+              repairs,
+              terminalToolCalled: terminalCalled,
+              failure:
+                `${role} called ${call.name} ${runs} times with varying arguments instead of ` +
+                `${terminal ?? 'finishing the turn'}`,
+            };
+          }
+        }
+      } else if (redundant) {
+        // Told to move on, but no validation actually failed.
+        sawFailure = true;
+        redundantCalls += 1;
+        if (redundantCalls > MAX_REDUNDANT_CALLS) {
+          return {
+            text: lastText,
+            usage,
+            iterations,
+            repairs,
+            terminalToolCalled: terminalCalled,
+            failure:
+              `${role} kept re-calling completed tools (${redundantCalls}) instead of ` +
+              `${terminal ?? 'finishing the turn'}`,
+          };
+        }
       } else {
         sawFailure = true;
         const used = (repairsPerTool.get(call.name) ?? 0) + 1;
@@ -516,7 +829,16 @@ export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopRes
   };
 }
 
-/** Free-prose roles (tutor_reply) — streamed when the shell supports it. */
+/**
+ * Free-prose roles (tutor_reply) — streamed when the shell supports it.
+ *
+ * `tutor_reply` is granted `insert_prerequisite_step` and `update_mastery`
+ * (schema.ts ROLE_TOOLS), which were unreachable while this function sent no
+ * `tools` at all: the 「太难了」 path could advise a backtrack but never perform
+ * one. Tools are now passed, with one follow-up round so the model can speak
+ * after seeing the tool's result — capped at one, because prose turns must stay
+ * single-exchange for streaming to make sense.
+ */
 export async function runProseTurn(options: {
   llm: Llm;
   settings: Settings;
@@ -524,24 +846,71 @@ export async function runProseTurn(options: {
   messages: LlmMessage[];
   signal?: AbortSignal;
   onDelta?(chunk: string): void;
+  onReasoning?(tokens: number): void;
+  execute?(name: string, args: unknown, id: string): Promise<ToolResult>;
+  onTool?(name: string, result: ToolResult): void;
 }): Promise<{ text: string; intent: ReplyIntent; usage: Partial<Usage> }> {
-  const request: LlmRequest = {
+  const tools = options.execute ? toolsForRole('tutor_reply') : undefined;
+  const messages = [...options.messages];
+  const usage: Usage = { calls: 0, promptTokens: 0, completionTokens: 0, reasoningTokens: 0 };
+
+  const build = (): LlmRequest => ({
     role: 'tutor_reply',
     model: options.model,
-    messages: options.messages,
+    messages,
+    ...(tools ? { tools, toolChoice: 'auto' as const } : {}),
     temperature: options.settings.temperature.byRole.tutor_reply,
     maxOutputTokens: options.settings.maxOutputTokens,
     reasoningEffort: (options.settings.reasoning.byRole.tutor_reply ??
       options.settings.reasoning.effort) as 'off' | 'low' | 'medium' | 'high',
-  };
+  });
 
-  const response =
-    options.onDelta && options.llm.stream
-      ? await options.llm.stream(request, options.onDelta, options.signal)
-      : await options.llm.call(request, options.signal);
+  // Streaming still runs when tools are live — the accumulator assembles tool
+  // calls whole before this returns, so nothing is executed mid-stream. Only the
+  // prose is emitted incrementally.
+  const wantStream = options.settings.stream && options.llm.stream && options.onDelta;
+  const first = wantStream
+    ? await options.llm.stream!(
+        { ...build(), stream: true },
+        (chunk) => options.onDelta?.(chunk),
+        options.signal,
+        options.onReasoning,
+      )
+    : await options.llm.call(build(), options.signal);
+  addUsage(usage, first.usage);
 
-  const { text, intent } = extractIntent(response.text);
-  return { text, intent, usage: response.usage };
+  if (!options.execute || first.toolCalls.length === 0) {
+    const { text, intent } = extractIntent(first.text);
+    // Nothing re-emitted here: if streaming ran, the shell already received this
+    // text as deltas, and emitting it again would print the reply twice.
+    if (!wantStream && text && options.onDelta) options.onDelta(text);
+    return { text, intent, usage };
+  }
+
+  messages.push({ role: 'assistant', content: first.text ?? '', toolCalls: first.toolCalls });
+  for (const call of first.toolCalls) {
+    const parsed = parseToolArguments(call.arguments);
+    const result: ToolResult = parsed.error
+      ? { ok: false, errors: [parsed.error] }
+      : await options.execute(call.name, parsed.value, call.id);
+    options.onTool?.(call.name, result);
+    messages.push({ role: 'tool', toolCallId: call.id, content: JSON.stringify(result) });
+  }
+
+  // The follow-up turn speaks after seeing the tool result, so its prose is what
+  // the student reads — stream it when we can.
+  const second = wantStream
+    ? await options.llm.stream!(
+        { ...build(), stream: true },
+        (chunk) => options.onDelta?.(chunk),
+        options.signal,
+        options.onReasoning,
+      )
+    : await options.llm.call(build(), options.signal);
+  addUsage(usage, second.usage);
+  const { text, intent } = extractIntent(second.text || first.text);
+  if (!wantStream && text && options.onDelta) options.onDelta(text);
+  return { text, intent, usage };
 }
 
 export type { LlmToolCall };

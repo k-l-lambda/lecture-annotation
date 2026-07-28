@@ -26,7 +26,7 @@ import { IdbStore, type IDBFactoryLike } from '../../core/idb-store.ts';
 import { HttpLlm } from '../../core/provider.ts';
 import { TutorSession } from '../../core/session.ts';
 import { sequentialIdGen, systemClock, type Llm, type SessionEvent } from '../../core/ports.ts';
-import type { ExitChoice, Settings } from '../../core/types.ts';
+import type { ExitChoice, Settings, StudentTurnRoute } from '../../core/types.ts';
 import { FakeLlm, loadFixture, type Fixture } from './fake-llm.ts';
 import { SourceContent } from './source-content.ts';
 import { assertLiveReady, loadSettings, DEFAULT_SETTINGS_PATH } from './settings.ts';
@@ -54,6 +54,63 @@ function rule(label = ''): void {
   say(dim(label ? `── ${label} ${line}` : `──${line}────`));
 }
 
+// ---------------------------------------------------------------------------
+// The live line — thinking counter and streamed prose
+// ---------------------------------------------------------------------------
+
+const ROLE_LABELS: Record<string, string> = {
+  planner: '规划',
+  questioner: '出题',
+  grader: '评分',
+  tutor_reply: '讲解',
+  summarizer: '小结',
+  router: '分流',
+};
+
+/**
+ * Both the thinking counter and streamed prose write without a trailing newline,
+ * so any other output would land on the same line. `endLive` closes it, and the
+ * sink calls that first for every event that is not a delta.
+ */
+const live = { mode: 'idle' as 'idle' | 'thinking' | 'prose', role: '', tokens: 0 };
+
+function liveReasoning(role: string, tokens: number): void {
+  // Once prose has started the model has stopped thinking; a late counter update
+  // would overwrite the text being read.
+  if (live.mode === 'prose') return;
+  live.role = ROLE_LABELS[role] ?? role;
+  live.tokens = tokens;
+  if (useColor) {
+    stdout.write(`\r${dim(`  ${live.role}思考中… ${tokens} tokens`)}[K`);
+  } else if (live.mode !== 'thinking') {
+    // No cursor control in a pipe: announce once and let endLive report the total,
+    // rather than writing one line per update into the log.
+    stdout.write(dim(`  ${live.role}思考中…\n`));
+  }
+  live.mode = 'thinking';
+}
+
+function liveDelta(text: string): void {
+  if (live.mode === 'thinking') stdout.write(useColor ? '\r[K' : '');
+  if (live.mode !== 'prose') stdout.write('  ');
+  stdout.write(text.replace(/\n/g, '\n  '));
+  live.mode = 'prose';
+}
+
+function endLive(): void {
+  if (live.mode === 'idle') return;
+  if (live.mode === 'thinking') {
+    if (useColor) stdout.write('\r[K');
+    // The counter was transient; keep its final value so the transcript still
+    // records what the turn cost.
+    say(dim(`  ${live.role}思考 ${live.tokens} tokens`));
+  } else {
+    stdout.write('\n');
+  }
+  live.mode = 'idle';
+  live.tokens = 0;
+}
+
 const CHIP_MARK: Record<string, string> = {
   passed: '✓',
   failed: '✗',
@@ -78,9 +135,31 @@ function renderChips(chips: Array<{ title: string; state: string; inserted: bool
 }
 
 /** `showReasoning` controls only how much of a tool log line is printed. */
+const ROUTE_LABELS: Record<string, string> = {
+  answer: '评分',
+  clarify: '解释题目',
+  hint: '给提示',
+  variant: '换一题',
+  skip: '跳过本步',
+  advance: '进入下一步',
+  quit: '结束本节',
+  too_hard: '退回前置知识',
+  off_topic: '离题',
+};
+
 function makeSink(verbose: boolean) {
   return (event: SessionEvent): void => {
+    // Anything other than the two live-line events terminates it, so nothing
+    // ever prints into a half-written counter.
+    if (event.type !== 'delta' && event.type !== 'reasoning') endLive();
+
     switch (event.type) {
+      case 'reasoning':
+        liveReasoning(event.role, event.tokens);
+        break;
+      case 'delta':
+        liveDelta(event.text);
+        break;
       case 'phase':
         say(dim(`[${event.state}] ${event.label}`));
         break;
@@ -112,8 +191,18 @@ function makeSink(verbose: boolean) {
         say(yellow(`  提示 ${event.used}/${event.cap}：${event.text}`));
         break;
       case 'reply':
-        say(`  ${event.text.replace(/\n/g, '\n  ')}`);
+        // Already on screen if it streamed; endLive above closed its last line.
+        if (!event.streaming) say(`  ${event.text.replace(/\n/g, '\n  ')}`);
         break;
+      case 'route': {
+        // Always shown, not just under -v: a student needs to know their text was
+        // read as a question rather than graded, and a live run needs misroutes
+        // visible without a rerun.
+        const label = ROUTE_LABELS[event.route] ?? event.route;
+        const extra = verbose && event.secondary ? dim(` (+${event.secondary})`) : '';
+        say(dim(`  → ${label}${event.reason ? `：${event.reason}` : ''}`) + extra);
+        break;
+      }
       case 'summary':
         rule('小结');
         say(`  ${event.text.replace(/\n/g, '\n  ')}`);
@@ -336,7 +425,9 @@ async function main(): Promise<number> {
 
     while (session.state !== 'DONE' && session.state !== 'ABANDONED') {
       if (session.state === 'AWAIT_ANSWER') {
-        const line = await ask(bold('\n你的作答 > '));
+        const line = await ask(bold('\n你的作答（也可以直接问题目的意思）> '));
+        // Explicit keys are honoured without a router call: input we can already
+        // read costs nothing to act on, and a menu key is unambiguous.
         if (line === '?') {
           await session.requestHint();
           continue;
@@ -345,7 +436,13 @@ async function main(): Promise<number> {
           await session.submitAnswer('');
           continue;
         }
-        await session.submitAnswer(line);
+        if (line === '') continue;
+        const key = CHOICES[line.toLowerCase()];
+        if (key) {
+          await session.choose(key);
+          continue;
+        }
+        await dispatch(session, await session.routeStudentTurn(line), line);
         continue;
       }
 
@@ -357,7 +454,7 @@ async function main(): Promise<number> {
           continue;
         }
         if (line === '') continue;
-        await session.discuss(line);
+        await dispatch(session, await session.routeStudentTurn(line), line);
         continue;
       }
 
@@ -440,6 +537,48 @@ const CHOICES: Record<string, ExitChoice> = {
   s: 'skip',
   q: 'quit',
 };
+
+/**
+ * Acts on a route. Every branch calls a session method that validates on its own,
+ * so an illegal route (`advance` at AWAIT_ANSWER) throws in the session rather
+ * than being silently corrected here — the shell must not become a second place
+ * where routing rules live.
+ */
+async function dispatch(
+  session: TutorSession,
+  route: StudentTurnRoute,
+  line: string,
+): Promise<void> {
+  switch (route.route) {
+    case 'answer':
+      await session.submitAnswer(line);
+      return;
+    case 'hint':
+      await session.requestHint();
+      return;
+    case 'variant':
+      await session.choose('remain');
+      return;
+    case 'skip':
+      await session.choose('skip');
+      return;
+    case 'advance':
+      await session.choose('advance');
+      return;
+    case 'quit':
+      await session.choose('quit');
+      return;
+    case 'clarify':
+      await session.discuss(line, 'needs_clarification');
+      return;
+    case 'too_hard':
+      await session.discuss(line, 'too_hard');
+      return;
+    case 'off_topic':
+      await session.discuss(line, 'off_topic');
+      return;
+  }
+}
 
 function providerConfig(settings: Settings) {
   return {

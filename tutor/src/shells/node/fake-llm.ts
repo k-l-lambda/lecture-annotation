@@ -83,9 +83,19 @@ export class FakeLlm implements Llm {
     return response;
   }
 
-  async stream(req: LlmRequest, onDelta: (chunk: string) => void): Promise<LlmResponse> {
+  async stream(
+    req: LlmRequest,
+    onDelta: (chunk: string) => void,
+    _signal?: AbortSignal,
+    onReasoning?: (tokens: number) => void,
+  ): Promise<LlmResponse> {
     const response = await this.call(req);
-    // Chunked so the shell's streaming path is exercised, not just awaited.
+    // A rising counter first, then prose — the order a reasoning model produces
+    // them, so the shell's two live-line modes and the transition between them
+    // are exercised rather than just awaited.
+    if (onReasoning && req.reasoningEffort && req.reasoningEffort !== 'off') {
+      for (const tokens of [40, 180, 420]) onReasoning(tokens);
+    }
     for (const piece of response.text.match(/.{1,24}/gs) ?? []) onDelta(piece);
     return response;
   }
@@ -122,7 +132,30 @@ export class FakeLlm implements Llm {
           toolCalls: [],
           usage: USAGE,
         };
+      case 'router':
+        return this.#route(req);
     }
+  }
+
+  /**
+   * Deterministic routing so scripted sessions stay reproducible: a turn that ends
+   * in a question mark is a clarification request, anything else is an answer.
+   *
+   * This is a stand-in, not a model of the real router — the whole question of
+   * whether an LLM can tell 「这题什么意思」 from a hedged answer is exactly what a
+   * fake cannot answer, and only the live run does.
+   */
+  #route(req: LlmRequest): LlmResponse {
+    const raw = jsonField(req, 'studentText');
+    const text = typeof raw === 'string' ? raw : '';
+    const phase = jsonField(req, 'phase');
+    const asks = /[?？]\s*$/.test(text.trim());
+    const route = phase === 'DISCUSSING' ? 'clarify' : asks ? 'clarify' : 'answer';
+    return {
+      text: JSON.stringify({ route, secondary: null, reason: asks ? '先解释题目' : '去评分' }),
+      toolCalls: [],
+      usage: USAGE,
+    };
   }
 
   #plan(): LlmResponse {

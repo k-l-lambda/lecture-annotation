@@ -172,12 +172,55 @@ function validSteps() {
 // The analyze_section gate
 // ---------------------------------------------------------------------------
 
-test('set_steps before analyze_section is rejected', async () => {
-  const ctx = await context({ analyzePassed: false });
+test('set_steps before analyze_section is rejected when the analysis is required', async () => {
+  // Explicit rather than relying on the default: `requireAnalysis` now defaults
+  // to false because the analysis was the dominant startup cost, so this test has
+  // to opt in to the behaviour it is checking.
+  const ctx = await context({
+    analyzePassed: false,
+    settings: { ...defaultSettings(), requireAnalysis: true },
+  });
   const result = await executeTool('planner', 'set_steps', validSteps(), ctx);
   assert.equal(result.ok, false);
   assert.match(errorsOf(result), /analyze_section/);
   assert.equal(ctx.session.steps.length, 0);
+});
+
+/** The kp gate is independent of the analysis gate, so steps still need these. */
+async function seedKps(ctx: ToolContext): Promise<void> {
+  const r = await executeTool(
+    'planner',
+    'upsert_knowledge_points',
+    {
+      knowledgePoints: [
+        { id: 'kp:entropy', label: '熵作为体积的对数' },
+        { id: 'kp:second-law', label: '第二定律' },
+      ],
+    },
+    ctx,
+  );
+  assert.equal(r.ok, true, errorsOf(r));
+}
+
+test('set_steps stands alone when the analysis is not required', async () => {
+  // The ladder's own anchors still carry the grounding — verbatim-checked inside
+  // validateSteps — so dropping the analysis loosens the gate without removing it.
+  const ctx = await context({ analyzePassed: false });
+  assert.equal(ctx.settings.requireAnalysis, false, 'off by default');
+  await seedKps(ctx);
+  const result = await executeTool('planner', 'set_steps', validSteps(), ctx);
+  assert.equal(result.ok, true, errorsOf(result));
+  assert.ok(ctx.session.steps.length > 0);
+});
+
+test('a fabricated step anchor is still rejected with no analysis', async () => {
+  const ctx = await context({ analyzePassed: false });
+  await seedKps(ctx);
+  const steps = validSteps() as { steps: Array<{ anchors: string[] }> };
+  steps.steps[0]!.anchors = ['这句话根本不在本节里，是编出来的。'];
+  const result = await executeTool('planner', 'set_steps', steps, ctx);
+  assert.equal(result.ok, false);
+  assert.match(errorsOf(result), /not found verbatim/);
 });
 
 test('set_steps is accepted once analyze_section has passed', async () => {
@@ -304,6 +347,19 @@ test('an anchor quoted with different quote glyphs still counts as verbatim', as
   assert.equal(result.ok, true, errorsOf(result));
 });
 
+test('a full-width stop matches the ASCII period inside a formula', () => {
+  // Live, §4.2 s4. The source ends a display formula with `\frac{1}{2}.$$`; the
+  // planner wrote 。 for that stop, which is how the sentence reads in Chinese.
+  // NFKD folds ，：；！？（） to ASCII for free because those have compatibility
+  // decompositions — 。 decomposes to ｡ instead, so it was the one mark left
+  // unmatchable, and it cost an anchor that was right for 43 characters.
+  const src = '这里\n\n$$w = (q^2 - p^3)^{\\frac{1}{2}}.$$\n\n如果';
+  assert.ok(anchorAppears('$$w = (q^2 - p^3)^{\\frac{1}{2}}。$$', src), 'full-width stop');
+  assert.ok(anchorAppears('$$w = (q^2 - p^3)^{\\frac{1}{2}}.$$', src), 'ASCII period');
+  // Folding punctuation must not make different prose compare equal.
+  assert.equal(anchorAppears('这里没有这句话。', src), false);
+});
+
 test('math notation variants of the same anchor are accepted', () => {
   // All three from live runs: the corpus writes `$\mathcal{P}$` (23 different
   // letters across the corpus), and a model quoting prose reasonably renders that
@@ -366,9 +422,63 @@ test('a sentence interrupted by page furniture is still one anchor', () => {
     ),
     'quote spanning the page break must be accepted',
   );
+  // Live, §4.2 s4: three more forms of interruption, all between the two halves of
+  // one sentence — a margin exercise callout, an MkDocs answer block with its
+  // indented body, and a *bolded* running chapter head (the pattern previously
+  // required the line to start with 第).
+  const withAside = [
+    '更有意思的当属所谓“代数基本定理”，它是说，像',
+    '',
+    '$$1 - z + z^{4} = 0$$',
+    '',
+    '或',
+    '',
+    '---',
+    '',
+    '\\*[4.3] 验证这一点。',
+    '',
+    '??? question "答案 [4.3]"',
+    '    令 $u=\\sqrt{a}$，则 $u^2=a$。',
+    '',
+    '    又 $4u^2v^2=b^2$。',
+    '',
+    '·50·',
+    '',
+    '<!-- page 70 -->',
+    '',
+    '**第四章 奇幻的复数**',
+    '',
+    '$$\\pi + iz = 0,$$',
+    '',
+    '这样的任意多项式方程必有复数解。',
+  ].join('\n');
+  assert.ok(
+    anchorAppears('$$1 - z + z^{4} = 0$$\n\n或\n\n$$\\pi + iz = 0,$$\n\n这样的任意多项式方程必有复数解。', withAside),
+    'quote spanning an exercise callout and answer block must be accepted',
+  );
+  // The answer to an exercise is not section prose: leaving it in would also let
+  // the questioner quote a ready-made answer as if it were source material.
+  assert.equal(anchorAppears('令 $u=\\sqrt{a}$，则 $u^2=a$。', withAside), false);
+  assert.equal(anchorAppears('或这样的任意多项式方程必无复数解。', withAside), false);
+
+  // The other half of the same problem: a model reading the raw markdown may copy
+  // the sentence *with* the furniture in it. Live, §4.2 s4 was rejected for a
+  // quote whose only defect was the '76 ---' it had faithfully reproduced, and the
+  // error told it to "quote one unbroken sentence" — which is what it had done.
+  assert.ok(
+    anchorAppears(
+      '尽管这个方程看上去与复数无关——方程有实系数，解也是实的\n\n76\n\n---\n\n（在“不可约情形”下）',
+      src,
+    ),
+    'quote that copied the page furniture verbatim must also be accepted',
+  );
+
   // Removing the furniture must not join unrelated prose into a false match.
   assert.equal(anchorAppears('解也是实的通向实在之路', src), false);
   assert.equal(anchorAppears('尽管这个方程看上去与复数无关，但它其实没有实数解。', src), false);
+  // Stripping both sides must not become a way to smuggle in absent text: the
+  // furniture is deleted, not treated as a wildcard.
+  assert.equal(anchorAppears('解也是实的\n\n76\n\n---\n\n但它没有实数解。', src), false);
 });
 
 test('notation folding does not let a paraphrase through', () => {
@@ -559,6 +669,7 @@ function attempt(over: Partial<Attempt> = {}): Attempt {
     at: ISO,
     discussion: [],
     discussedPoints: [],
+    clarifications: [],
     exitChoice: null,
     ...over,
   };

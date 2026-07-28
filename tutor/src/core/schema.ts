@@ -470,6 +470,11 @@ export const ROLE_TOOLS: Record<RoleName, readonly ToolName[]> = {
   grader: ['submit_evaluation', 'update_mastery', 'insert_prerequisite_step'],
   tutor_reply: ['insert_prerequisite_step', 'update_mastery'],
   summarizer: ['propose_achievement', 'finish_session'],
+  // The router classifies a student turn and writes nothing. It returns a small
+  // JSON object as prose rather than calling a tool: a tool would cost a second
+  // round-trip for a decision that fits in ~30 tokens, and this call sits in
+  // front of every free-text turn, so its latency is felt directly.
+  router: [],
 };
 
 /**
@@ -482,6 +487,7 @@ export const ROLE_TERMINAL_TOOL: Record<RoleName, ToolName | null> = {
   grader: 'submit_evaluation',
   tutor_reply: null,
   summarizer: 'finish_session',
+  router: null,
 };
 
 export function toolDeclaration(name: ToolName): ToolDeclaration {
@@ -489,14 +495,24 @@ export function toolDeclaration(name: ToolName): ToolDeclaration {
 }
 
 /** OpenAI-compatible `tools` array for a role (llm-io.md §1). */
-export function toolsForRole(role: RoleName): Array<Record<string, unknown>> {
-  return ROLE_TOOLS[role].map((name) => {
-    const d = DECLARATIONS[name];
-    return {
-      type: 'function',
-      function: { name: d.name, description: d.description, parameters: d.parameters },
-    };
-  });
+/**
+ * `exclude` withholds a tool the role would otherwise have. Used for
+ * `analyze_section` when `requireAnalysis` is off: offering a tool the harness
+ * does not want called invites the model to spend a slow turn on it.
+ */
+export function toolsForRole(
+  role: RoleName,
+  exclude: readonly ToolName[] = [],
+): Array<Record<string, unknown>> {
+  return ROLE_TOOLS[role]
+    .filter((name) => !exclude.includes(name))
+    .map((name) => {
+      const d = DECLARATIONS[name];
+      return {
+        type: 'function',
+        function: { name: d.name, description: d.description, parameters: d.parameters },
+      };
+    });
 }
 
 export function isToolName(name: string): name is ToolName {

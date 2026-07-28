@@ -143,7 +143,9 @@ export class HttpLlm implements Llm {
       max_tokens: req.maxOutputTokens,
       ...(req.tools?.length ? { tools: req.tools, tool_choice: req.toolChoice ?? 'auto' } : {}),
       ...(withReasoning ? reasoningPayload(this.#config.flavor, req.reasoningEffort) : {}),
-      stream: false,
+      ...(req.stream
+        ? { stream: true, stream_options: { include_usage: true } }
+        : { stream: false }),
     };
   }
 
@@ -226,6 +228,208 @@ export class HttpLlm implements Llm {
       usage,
       ...(strippedReasoning ? { reasoningUnsupported: true } : {}),
     };
+  }
+
+  async #openStream(
+    body: Record<string, unknown>,
+    signal: AbortSignal | undefined,
+  ): Promise<ReadableStream<Uint8Array>> {
+    const controller = new AbortController();
+    // Unlike #post, the timer guards only time-to-first-byte: a long generation
+    // that is actively streaming must not be aborted mid-flight.
+    const timer = setTimeout(() => controller.abort(), this.#config.timeoutMs);
+    const onAbort = () => controller.abort();
+    signal?.addEventListener('abort', onAbort, { once: true });
+
+    try {
+      const response = await this.#fetch(`${this.#config.baseUrl}/chat/completions`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'text/event-stream',
+          Authorization: `Bearer ${this.#config.apiKey}`,
+        },
+        body: JSON.stringify(body),
+        signal: controller.signal,
+      });
+      if (!response.ok) throw new HttpError(response.status, await response.text());
+      if (!response.body) throw new Error('streaming response had no body');
+      return response.body;
+    } finally {
+      clearTimeout(timer);
+      signal?.removeEventListener('abort', onAbort);
+    }
+  }
+
+  /**
+   * Streams a turn. `onDelta` receives prose as it arrives; `onReasoning` receives
+   * a running reasoning-token estimate while the model thinks, which is the only
+   * signal available during the long silent phase of a reasoning model.
+   */
+  async stream(
+    req: LlmRequest,
+    onDelta: (chunk: string) => void,
+    signal?: AbortSignal,
+    onReasoning?: (tokens: number) => void,
+  ): Promise<LlmResponse> {
+    const useReasoning = this.#reasoningSupported && req.reasoningEffort !== 'off';
+    const streaming = { ...req, stream: true };
+    let body: ReadableStream<Uint8Array>;
+    let strippedReasoning = false;
+
+    try {
+      body = await this.#openStream(this.#body(streaming, useReasoning), signal);
+    } catch (err) {
+      if (
+        useReasoning &&
+        err instanceof HttpError &&
+        err.status === 400 &&
+        isReasoningParamError(err.body)
+      ) {
+        this.#reasoningSupported = false;
+        strippedReasoning = true;
+        body = await this.#openStream(this.#body(streaming, false), signal);
+      } else {
+        throw err;
+      }
+    }
+
+    const acc = new StreamAccumulator();
+    for await (const chunk of sseChunks(body)) {
+      const added = acc.push(chunk);
+      if (added.text) onDelta(added.text);
+      // Report the estimate as it grows rather than per-chunk deltas, so a shell
+      // can render one updating counter.
+      if (added.reasoning && onReasoning) onReasoning(estimateTokens(acc.reasoning));
+    }
+    return acc.toResponse(strippedReasoning);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// SSE stream accumulation
+// ---------------------------------------------------------------------------
+
+/**
+ * Accumulates OpenAI-style `chat.completions.chunk` deltas into one response.
+ *
+ * Kept separate from the transport and free of I/O so the assembly rules —
+ * especially tool-call argument concatenation, where a single JSON object arrives
+ * split across arbitrarily many chunks — can be tested without a socket.
+ */
+export class StreamAccumulator {
+  text = '';
+  reasoning = '';
+  /** Tool calls by their `index`, since chunks identify them positionally. */
+  #tools = new Map<number, { id: string; name: string; arguments: string }>();
+  usage: Partial<Usage> = {};
+  finishReason: string | null = null;
+
+  /** Returns what this chunk added, so a caller can render incrementally. */
+  push(chunk: Record<string, unknown>): { text: string; reasoning: string } {
+    const usage = chunk['usage'];
+    if (usage) Object.assign(this.usage, extractUsage(usage));
+
+    const choices = chunk['choices'];
+    const first = Array.isArray(choices) ? (choices[0] as Record<string, unknown>) : undefined;
+    if (!first) return { text: '', reasoning: '' };
+
+    if (typeof first['finish_reason'] === 'string') this.finishReason = first['finish_reason'];
+
+    const delta = (first['delta'] ?? {}) as Record<string, unknown>;
+    let addedText = '';
+    let addedReasoning = '';
+
+    if (typeof delta['content'] === 'string') {
+      addedText = delta['content'];
+      this.text += addedText;
+    }
+    // Providers disagree on the field name; both appear in the wild.
+    const r = delta['reasoning_content'] ?? delta['reasoning'];
+    if (typeof r === 'string') {
+      addedReasoning = r;
+      this.reasoning += addedReasoning;
+    }
+
+    const calls = delta['tool_calls'];
+    if (Array.isArray(calls)) {
+      for (const raw of calls) {
+        const c = raw as Record<string, unknown>;
+        const index = typeof c['index'] === 'number' ? c['index'] : 0;
+        const fn = (c['function'] ?? {}) as Record<string, unknown>;
+        const existing = this.#tools.get(index) ?? { id: '', name: '', arguments: '' };
+        if (typeof c['id'] === 'string' && c['id']) existing.id = c['id'];
+        if (typeof fn['name'] === 'string' && fn['name']) existing.name = fn['name'];
+        // Arguments stream as fragments and must be concatenated, never replaced.
+        if (typeof fn['arguments'] === 'string') existing.arguments += fn['arguments'];
+        this.#tools.set(index, existing);
+      }
+    }
+
+    return { text: addedText, reasoning: addedReasoning };
+  }
+
+  toResponse(strippedReasoning: boolean): LlmResponse {
+    const usage: Partial<Usage> = { ...this.usage };
+    // include_usage is not universally honoured, so estimate rather than report 0.
+    if (usage.completionTokens === undefined && this.text) {
+      usage.completionTokens = estimateTokens(this.text);
+    }
+    if (usage.reasoningTokens === undefined && this.reasoning) {
+      usage.reasoningTokens = estimateTokens(this.reasoning);
+    }
+    const toolCalls = [...this.#tools.entries()]
+      .sort((a, b) => a[0] - b[0])
+      .map(([index, t]) => ({
+        id: t.id || `call_${index}`,
+        name: t.name,
+        arguments: t.arguments,
+      }))
+      .filter((t) => t.name);
+
+    return {
+      text: this.text,
+      toolCalls,
+      ...(this.reasoning ? { reasoning: this.reasoning } : {}),
+      usage,
+      ...(strippedReasoning ? { reasoningUnsupported: true } : {}),
+    };
+  }
+}
+
+/** Splits an SSE byte stream into decoded JSON chunk objects. */
+export async function* sseChunks(
+  body: ReadableStream<Uint8Array>,
+): AsyncGenerator<Record<string, unknown>> {
+  const decoder = new TextDecoder();
+  const reader = body.getReader();
+  let buffer = '';
+
+  try {
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+
+      // Events are newline-delimited; a chunk boundary can fall mid-line, so only
+      // complete lines are consumed and the remainder stays buffered.
+      let nl: number;
+      while ((nl = buffer.indexOf('\n')) >= 0) {
+        const line = buffer.slice(0, nl).trim();
+        buffer = buffer.slice(nl + 1);
+        if (!line.startsWith('data:')) continue;
+        const data = line.slice(5).trim();
+        if (data === '[DONE]') return;
+        try {
+          yield JSON.parse(data) as Record<string, unknown>;
+        } catch {
+          // A malformed chunk is skipped rather than killing the stream: the
+          // accumulated text so far is still usable.
+        }
+      }
+    }
+  } finally {
+    reader.releaseLock();
   }
 }
 

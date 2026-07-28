@@ -20,6 +20,7 @@ import {
   buildSummarizerUser,
   buildTutorReplyMessages,
   runProseTurn,
+  runRouterTurn,
   runToolLoop,
   systemPrompt,
 } from './roles.ts';
@@ -36,6 +37,7 @@ import type {
   SessionState,
   Settings,
   Step,
+  StudentTurnRoute,
   ToolResult,
   Usage,
 } from './types.ts';
@@ -270,6 +272,20 @@ export class TutorSession {
     }
   }
 
+  /**
+   * The thinking counter, spread into every role's turn. This is the only
+   * progress signal a reasoning model gives before its first output token —
+   * planner calls measured 70-129s of silence without it.
+   */
+  #thinking(role: RoleName) {
+    return { onReasoning: (tokens: number) => this.#emit({ type: 'reasoning', role, tokens }) };
+  }
+
+  // Prose deltas are wired only at tutor_reply, the one role whose answer *is*
+  // prose — a tool-call role's visible content is empty or a stray preamble, and
+  // rendering that would put junk on screen. See the onDelta there, which also
+  // records whether the shell saw the stream.
+
   #modelFor(role: RoleName): string {
     return this.#settings.roleModels[role] ?? this.#settings.model;
   }
@@ -322,6 +338,10 @@ export class TutorSession {
         settings: this.#settings,
       }),
       execute: (name, args) => this.#execute('planner', name, args),
+      ...this.#thinking('planner'),
+      // Withheld rather than merely unmentioned: a tool in the list is a tool the
+      // model will eventually try, and this one is the slow, retry-prone call.
+      ...(this.#settings.requireAnalysis ? {} : { excludeTools: ['analyze_section' as const] }),
       ...(this.#abort ? { signal: this.#abort.signal } : {}),
       onTool: (name, r) =>
         this.#emit({
@@ -384,6 +404,7 @@ export class TutorSession {
         settings: this.#settings,
       }),
       execute: (name, args) => this.#execute('questioner', name, args),
+      ...this.#thinking('questioner'),
       ...(this.#abort ? { signal: this.#abort.signal } : {}),
     });
     this.#addUsage(result.usage);
@@ -467,6 +488,7 @@ export class TutorSession {
         hintsUsed: attempt.hintsUsed,
       }),
       execute: (name, args) => this.#execute('grader', name, args),
+      ...this.#thinking('grader'),
       ...(this.#abort ? { signal: this.#abort.signal } : {}),
     });
     this.#addUsage(result.usage);
@@ -504,7 +526,10 @@ export class TutorSession {
   // DISCUSSING — a self-loop with no turn cap. Only a student choice leaves it.
   // -------------------------------------------------------------------------
 
-  async discuss(studentText: string): Promise<{ text: string; intent: ReplyIntent }> {
+  async discuss(
+    studentText: string,
+    intentHint: ReplyIntent | null = null,
+  ): Promise<{ text: string; intent: ReplyIntent }> {
     if (this.#record.state !== 'DISCUSSING' && this.#record.state !== 'AWAIT_ANSWER') {
       throw new SessionError(`discuss() is not valid in state ${this.#record.state}`);
     }
@@ -513,7 +538,12 @@ export class TutorSession {
 
     const attempt = step.attempts[step.attempts.length - 1];
     const iso = new Date(this.#clock.now()).toISOString();
-    if (attempt) attempt.discussion.push({ role: 'student', text: studentText, at: iso });
+    // Pre-answer exchanges are logged apart from post-grade discussion: the two
+    // are read differently (see `Attempt.clarifications`), and mixing them would
+    // feed question-clarifying talk into the repetition guard.
+    const preAnswer = this.#record.state === 'AWAIT_ANSWER';
+    const log = preAnswer ? attempt?.clarifications : attempt?.discussion;
+    if (log) log.push({ role: 'student', text: studentText, at: iso });
 
     // At 100 % of the budget discussion stops, but the choice buttons stay live —
     // a student must never be trapped in a state they cannot leave.
@@ -523,7 +553,10 @@ export class TutorSession {
       return { text, intent: 'none' };
     }
 
-    const history = (attempt?.discussion ?? []).map((d) => ({ role: d.role, text: d.text }));
+    const history = (log ?? []).map((d) => ({ role: d.role, text: d.text }));
+    // Whether the shell already saw this text arrive as deltas. A shell that
+    // rendered the stream must not print the whole reply again underneath it.
+    let streamed = false;
     this.#countCall();
     const reply = await runProseTurn({
       llm: this.#llm,
@@ -548,9 +581,27 @@ export class TutorSession {
           hintsUsed: attempt?.hintsUsed ?? 0,
           settings: this.#settings,
           stepDigest: this.#stepDigest(),
+          intentHint,
+          question: attempt?.question ?? null,
         },
         this.#settings,
       ),
+      // Grants tutor_reply its declared tools (insert_prerequisite_step,
+      // update_mastery), which no call path could reach before.
+      execute: (name, args) => this.#execute('tutor_reply', name, args),
+      onTool: (name, result) =>
+        this.#emit({
+          type: 'tool',
+          role: 'tutor_reply',
+          tool: name,
+          ok: result.ok,
+          errors: result.ok ? [] : result.errors,
+        }),
+      ...this.#thinking('tutor_reply'),
+      onDelta: (text: string) => {
+        streamed = true;
+        this.#emit({ type: 'delta', role: 'tutor_reply', text });
+      },
       ...(this.#abort ? { signal: this.#abort.signal } : {}),
     });
     this.#addUsage({
@@ -560,13 +611,17 @@ export class TutorSession {
       reasoningTokens: reply.usage.reasoningTokens ?? 0,
     });
 
-    if (attempt) {
-      attempt.discussion.push({ role: 'tutor', text: reply.text, at: iso });
+    if (log) log.push({ role: 'tutor', text: reply.text, at: iso });
+    if (attempt && !preAnswer) {
       // The harness digest of what was explained; feeds the repeat guard so a
       // new variant cannot be answerable from this explanation.
+      //
+      // Pre-answer clarifications are excluded deliberately. Restating what a
+      // question asks is not teaching its answer, and folding it in here would let
+      // the guard reject the very variant the student still needs to attempt.
       attempt.discussedPoints.push(...summariseExplained(reply.text));
     }
-    this.#emit({ type: 'reply', text: reply.text, streaming: false });
+    this.#emit({ type: 'reply', text: reply.text, streaming: streamed });
     await this.#store.saveSession(this.#record);
     return { text: reply.text, intent: reply.intent };
   }
@@ -581,12 +636,27 @@ export class TutorSession {
   }
 
   // -------------------------------------------------------------------------
-  // The student's choice — the only exit from DISCUSSING
+  // The student's choice — the exit from DISCUSSING, and a limited exit from
+  // AWAIT_ANSWER.
   // -------------------------------------------------------------------------
 
+  /**
+   * `skip`, `remain` and `quit` are legal from `AWAIT_ANSWER` too: a student who
+   * has read the question and wants a different one, or none, should not have to
+   * submit a throwaway answer first.
+   *
+   * `advance` stays DISCUSSING-only. From `AWAIT_ANSWER` it would leave the step
+   * with zero attempts and no `skipped` mark — indistinguishable from a step that
+   * was completed, which corrupts the achievement gate's denominator. Wanting to
+   * move on without answering IS `skip`, and is recorded as such.
+   */
   async choose(choice: ExitChoice): Promise<void> {
-    if (this.#record.state !== 'DISCUSSING') {
-      throw new SessionError(`choose() is not valid in state ${this.#record.state}`);
+    const state = this.#record.state;
+    const legal =
+      state === 'DISCUSSING' ||
+      (state === 'AWAIT_ANSWER' && (choice === 'skip' || choice === 'remain' || choice === 'quit'));
+    if (!legal) {
+      throw new SessionError(`choose('${choice}') is not valid in state ${state}`);
     }
     const step = this.currentStep;
     if (!step) throw new SessionError('no current step');
@@ -622,6 +692,76 @@ export class TutorSession {
     // 'advance' always advances, even after a fail: the student decides, and the
     // failed step keeps its low mastery (harness.md §5).
     await this.#advance();
+  }
+
+  // -------------------------------------------------------------------------
+  // Routing a free-text student turn
+  // -------------------------------------------------------------------------
+
+  /**
+   * Asks the router what the student's text is for. Classification only — the
+   * caller acts on the returned route, and every action it can take is an
+   * existing method that validates independently. The router cannot move the
+   * machine, so a misclassification is a wasted turn, never a corrupt state.
+   *
+   * Costs one LLM call. Shells should skip it for input they can already
+   * interpret (an explicit menu key, an empty line).
+   */
+  async routeStudentTurn(studentText: string): Promise<StudentTurnRoute> {
+    const state = this.#record.state;
+    if (state !== 'AWAIT_ANSWER' && state !== 'DISCUSSING') {
+      throw new SessionError(`routeStudentTurn() is not valid in state ${state}`);
+    }
+    const step = this.currentStep;
+    if (!step) throw new SessionError('no current step');
+
+    // Out of budget: fall through to the phase default rather than spending the
+    // last call on classification. Grading is never budget-blocked, so at
+    // AWAIT_ANSWER the answer still gets through.
+    if (this.budgetExhausted) {
+      const route: StudentTurnRoute = {
+        route: state === 'AWAIT_ANSWER' ? 'answer' : 'clarify',
+        secondary: null,
+        reason: '调用次数已用完',
+      };
+      this.#emit({ type: 'route', route: route.route, reason: route.reason, secondary: null });
+      return route;
+    }
+
+    const attempt = this.#liveAttempt() ?? step.attempts[step.attempts.length - 1];
+    this.#countCall();
+    const { route, usage } = await runRouterTurn({
+      llm: this.#llm,
+      settings: this.#settings,
+      model: this.#modelFor('router'),
+      input: {
+        phase: state,
+        step: { title: step.title, goal: step.goal },
+        question: attempt?.question ?? null,
+        setup: attempt?.setup ?? null,
+        studentText,
+        hintsRemaining: Math.max(0, this.#settings.hintCap - (attempt?.hintsUsed ?? 0)),
+        variantsRemaining: Math.max(
+          0,
+          this.#settings.variantCap - this.#record.cursor.variant - 1,
+        ),
+      },
+      ...(this.#abort ? { signal: this.#abort.signal } : {}),
+    });
+    this.#addUsage({
+      calls: 1,
+      promptTokens: usage.promptTokens ?? 0,
+      completionTokens: usage.completionTokens ?? 0,
+      reasoningTokens: usage.reasoningTokens ?? 0,
+    });
+
+    this.#emit({
+      type: 'route',
+      route: route.route,
+      reason: route.reason,
+      secondary: route.secondary,
+    });
+    return route;
   }
 
   async #advance(): Promise<void> {
@@ -669,6 +809,7 @@ export class TutorSession {
         digest,
       }),
       execute: (name, args) => this.#execute('summarizer', name, args),
+      ...this.#thinking('summarizer'),
       ...(this.#abort ? { signal: this.#abort.signal } : {}),
     });
     this.#addUsage(result.usage);
