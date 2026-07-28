@@ -12,3 +12,17 @@ docs/lectures/
 
 ebooks/*/*.tsv
 ebooks/*/assets/*.json
+
+# Tutor harness (tutor/src/core/prompts.ts IS committed — its source lives in
+# design.local/, which *.local ignores, so a fresh clone could not regenerate it)
+tutor/node_modules/
+tutor/dist/
+# Holds an API key. `*.local` above does NOT cover it — that pattern matches a
+# name *ending* in .local, so `design.local` is ignored but `tutor.local.yaml`
+# would have been committed.
+*.local.*
+# ...but the key-free template must ship, or a fresh clone has nothing to copy.
+!*.local.*.example
+
+# Scratch probes for one-off validator debugging.
+tutor/tmp/

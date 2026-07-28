@@ -1,0 +1,59 @@
+# Copy to `tutor.local.yaml` (gitignored) and fill in a key, or set
+# TUTOR_BASE_URL / TUTOR_API_KEY / TUTOR_MODEL / TUTOR_FLAVOR instead —
+# environment variables win over this file, so a key never has to be written
+# to disk at all.
+#
+# Every value below is optional; missing keys fall back to the defaults in
+# src/shells/node/settings.ts, and out-of-range values are clamped with a
+# warning rather than failing the run. Only baseUrl/apiKey/model are required,
+# and only for `--live`.
+
+baseUrl: "https://your-gateway.example/v1"
+apiKey: ""
+model: "deepseek/deepseek-v4-pro"
+# `openai` = Chat Completions with `reasoning_effort`;
+# `anthropic` = Messages API with `thinking: {budget_tokens}`.
+flavor: openai
+
+language: zh
+bilingualTerms: true
+
+# Optional: shapes questions toward the reader's background (<= 600 chars).
+background: ""
+backgroundAffectsQuestions: true
+
+reasoning:
+  effort: high
+  byRole:
+    planner: high
+    questioner: medium
+    grader: high
+    tutor_reply: low
+    summarizer: medium
+
+temperature:
+  byRole:
+    planner: 0.3
+    questioner: 0.7
+    grader: 0.1
+    tutor_reply: 0.6
+    summarizer: 0.4
+
+# Optional per-role model override, e.g. a cheap model for tutor_reply.
+roleModels: {}
+
+# A `set_steps` call for a 5-6 step ladder is a large payload; at 4000 a
+# reasoning model runs out mid-emission and the arguments arrive truncated.
+maxOutputTokens: 12000
+maxContextChars: 24000
+stream: false
+showReasoning: collapsed   # off | collapsed | expanded
+
+callBudgetPerSession: 40
+hintCap: 2
+variantCap: 3
+stepRange: [3, 5]
+genrePreference: descriptive-first   # descriptive-only | descriptive-first | mixed
+
+requestTimeoutMs: 120000
+plannerTimeoutMs: 300000

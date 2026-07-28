@@ -1,0 +1,208 @@
+{
+  "_comment": "Scripted planner turns for §27.3 熵. Turn 1 fabricates an anchor on purpose: the harness must reject it, and turn 2 is the repair with real verbatim slices. Turns are consumed in order, filtered by role; roles with no scripted turn left fall through to the fake's auto mode, so only the planner is scripted here.",
+  "page": "ebooks/The_Road_to_Reality/chapter_27.md",
+  "sectionId": "273-熵",
+  "turns": [
+    {
+      "role": "planner",
+      "note": "fabricated argumentChain[0].sourceAnchor — must be rejected by name",
+      "toolCalls": [
+        {
+          "name": "analyze_section",
+          "arguments": {
+            "coreQuestion": "熵为什么可以被定义成相空间盒子体积的对数？",
+            "argumentChain": [
+              {
+                "claim": "熵衡量系统的无序程度。",
+                "sourceAnchor": "熵是系统无序程度的度量，这句话并不在本节里出现过。",
+                "role": "premise"
+              },
+              {
+                "claim": "玻尔兹曼给出了熵的明确定义。",
+                "sourceAnchor": "为了严格定义熵的概念，我们需要所谓“粗粒”的概念。",
+                "role": "derivation"
+              },
+              {
+                "claim": "于是熵等于盒子体积的对数。",
+                "sourceAnchor": "由于熵定义成盒子体积的对数，因此确有必要重划边界以获得 $S$ 的任何明显变化。",
+                "role": "conclusion"
+              }
+            ],
+            "formulas": [
+              {
+                "latex": "S = k \\log V",
+                "meaning": "态所在盒子的相空间体积取对数，乘玻尔兹曼常数，就是熵。",
+                "sourceAnchor": "体积 $V$ 的盒子 $\\mathcal{V}$ 中态 $x$ 的熵为 $S = k \\log V$，其中 $k$ 是玻尔兹曼常数。"
+              },
+              {
+                "latex": "k = 1.38 \\times 10^{-23} \\text{JK}^{-1}",
+                "meaning": "玻尔兹曼常数的数值，给出熵的单位。",
+                "sourceAnchor": "体积 $V$ 的盒子 $\\mathcal{V}$ 中态 $x$ 的熵为 $S = k \\log V$，其中 $k$ 是玻尔兹曼常数。"
+              }
+            ],
+            "conceptsIntroducedHere": [
+              "粗粒化",
+              "玻尔兹曼熵"
+            ],
+            "conceptsAssumedKnown": [
+              "相空间"
+            ],
+            "commonMisreadings": [
+              {
+                "misreading": "把熵当成一个绝对的、不依赖观察者的物理量。",
+                "whyTempting": "教科书通常直接给出公式，不提粗粒化的任意性。",
+                "correction": "盒子的划分依赖哪些宏观量被视为可分辨，因此熵带有约定成分。"
+              }
+            ],
+            "sectionDifficulty": "medium",
+            "notInSection": [
+              "本节没有推导玻尔兹曼常数的数值。"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "role": "planner",
+      "note": "repair: every anchor now a real verbatim slice",
+      "toolCalls": [
+        {
+          "name": "analyze_section",
+          "arguments": {
+            "coreQuestion": "熵为什么可以被定义成相空间盒子体积的对数？",
+            "argumentChain": [
+              {
+                "claim": "第二定律给出一个过程后不减小的量，即熵。",
+                "sourceAnchor": "它给出一种称之为熵的物理量，这个量的值在过程之后会变得比之前更大（至少不减小）。",
+                "role": "premise"
+              },
+              {
+                "claim": "要严格定义熵，先要有粗粒化的概念。",
+                "sourceAnchor": "为了严格定义熵的概念，我们需要所谓“粗粒”的概念。",
+                "role": "derivation"
+              },
+              {
+                "claim": "熵等于所在盒子体积的对数。",
+                "sourceAnchor": "由于熵定义成盒子体积的对数，因此确有必要重划边界以获得 $S$ 的任何明显变化。",
+                "role": "conclusion"
+              }
+            ],
+            "formulas": [
+              {
+                "latex": "S = k \\log V",
+                "meaning": "态所在盒子的相空间体积取对数，乘玻尔兹曼常数，就是熵。",
+                "sourceAnchor": "体积 $V$ 的盒子 $\\mathcal{V}$ 中态 $x$ 的熵为 $S = k \\log V$，其中 $k$ 是玻尔兹曼常数。"
+              },
+              {
+                "latex": "k = 1.38 \\times 10^{-23} \\text{JK}^{-1}",
+                "meaning": "玻尔兹曼常数的数值，给出熵的单位。",
+                "sourceAnchor": "体积 $V$ 的盒子 $\\mathcal{V}$ 中态 $x$ 的熵为 $S = k \\log V$，其中 $k$ 是玻尔兹曼常数。"
+              }
+            ],
+            "conceptsIntroducedHere": [
+              "粗粒化",
+              "玻尔兹曼熵"
+            ],
+            "conceptsAssumedKnown": [
+              "相空间"
+            ],
+            "commonMisreadings": [
+              {
+                "misreading": "把熵当成一个绝对的、不依赖观察者的物理量。",
+                "whyTempting": "教科书通常直接给出公式，不提粗粒化的任意性。",
+                "correction": "盒子的划分依赖哪些宏观量被视为可分辨，因此熵带有约定成分。"
+              }
+            ],
+            "sectionDifficulty": "medium",
+            "notInSection": [
+              "本节没有推导玻尔兹曼常数的数值。"
+            ]
+          }
+        },
+        {
+          "name": "upsert_knowledge_points",
+          "arguments": {
+            "knowledgePoints": [
+              {
+                "id": "kp:coarse-graining",
+                "label": "粗粒化",
+                "coreIdea": "按宏观可分辨性把相空间划分成盒子。"
+              },
+              {
+                "id": "kp:boltzmann-entropy",
+                "label": "玻尔兹曼熵",
+                "coreIdea": "熵是所在盒子相空间体积的对数。",
+                "prerequisites": [
+                  "kp:coarse-graining"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "set_steps",
+          "arguments": {
+            "steps": [
+              {
+                "id": "step:1",
+                "title": "粗粒化",
+                "goal": "说清盒子是按什么划分的。",
+                "knowledgePointIds": [
+                  "kp:coarse-graining"
+                ],
+                "targetLevel": 1,
+                "questionGenre": "descriptive",
+                "anchors": [
+                  "为了严格定义熵的概念，我们需要所谓“粗粒”的概念。"
+                ]
+              },
+              {
+                "id": "step:2",
+                "title": "为何取对数",
+                "goal": "解释对数如何让熵可加。",
+                "knowledgePointIds": [
+                  "kp:boltzmann-entropy"
+                ],
+                "targetLevel": 2,
+                "questionGenre": "descriptive",
+                "anchors": [
+                  "体积 $V$ 的盒子 $\\mathcal{V}$ 中态 $x$ 的熵为 $S = k \\log V$，其中 $k$ 是玻尔兹曼常数。"
+                ]
+              },
+              {
+                "id": "step:3",
+                "title": "边界的任意性",
+                "goal": "判断重划边界对熵的影响有多大。",
+                "knowledgePointIds": [
+                  "kp:boltzmann-entropy"
+                ],
+                "targetLevel": 3,
+                "questionGenre": "estimate",
+                "anchors": [
+                  "由于熵定义成盒子体积的对数，因此确有必要重划边界以获得 $S$ 的任何明显变化。"
+                ]
+              }
+            ],
+            "prep": {
+              "include": false,
+              "reason": "相空间概念已在 27.2 达到要求。",
+              "focusKpIds": []
+            },
+            "rationale": "先立粗粒化，再解释对数，最后考察定义的稳健性。"
+          }
+        }
+      ]
+    }
+  ],
+  "answers": [
+    "相空间是把系统所有位置和动量当作坐标张成的空间，一个点代表整个系统的一个瞬时状态，因此演化是这个空间里的一条轨迹。",
+    "n",
+    "盒子是按宏观可分辨性划分的：把那些在我们选定的宏观量上看起来相同的态归到同一个盒子里，所以划分依赖我们认为哪些量可观测。",
+    "n",
+    "两个独立系统合起来时相空间体积相乘，取对数就把相乘变成相加，于是熵成为可加量，这正是要取对数的原因。",
+    "n",
+    "由于不同盒子的体积往往相差几十个数量级，而熵是体积的对数，所以边界怎么划只带来很小的修正，必须大幅重划边界才能让熵有明显变化。",
+    "n",
+    "y"
+  ]
+}

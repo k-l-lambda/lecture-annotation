@@ -1,0 +1,22 @@
+{
+  "name": "@lecture-annotation/tutor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Tutor harness core — shared by the web frontend shell and the Node debug shell",
+  "scripts": {
+    "build:prompts": "node scripts/build-prompts.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types test/*.test.ts",
+    "session": "node --experimental-strip-types src/shells/node/debug-cli.ts",
+    "bundle": "esbuild src/core/index.ts --bundle --format=iife --global-name=TutorCore --outfile=dist/tutor-core.js",
+    "check": "npm run build:prompts && npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.2",
+    "esbuild": "0.28.1",
+    "fake-indexeddb": "6.2.5",
+    "typescript": "5.9.3",
+    "yaml": "2.9.0"
+  }
+}
