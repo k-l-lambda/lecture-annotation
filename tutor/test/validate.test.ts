@@ -216,6 +216,38 @@ test('inline footnote markers are furniture, but math exponents are not', () => 
   assert.ok(stripPageFurniture('$x^{22} + 1$').includes('22'));
 });
 
+test('spacing commands are typesetting, not content', () => {
+  // `\!` is punctuation, so the bare-command rule (`\\[a-zA-Z]+`) never saw it and
+  // it survived as a literal. §13.10: source `\mathrm{Sp}\left(` vs a model's
+  // `\mathrm{Sp}\!\left(` compared unequal over a negative thin space.
+  assert.equal(
+    normalizeForAnchor('$\\mathrm{Sp}\\left(\\frac{1}{2}n\\right)$'),
+    normalizeForAnchor('$\\mathrm{Sp}\\!\\left(\\frac{1}{2}n\\right)$'),
+  );
+  assert.equal(normalizeForAnchor('$a \\quad b$'), 'ab');
+});
+
+test('plain-text and LaTeX superscript notation agree', () => {
+  // This corpus has passages still in plain text (`**S**^(-1)`, `n×n`) while a
+  // model transcribing them writes `$\mathbf{S}^{-1}$` — the same symbol, the
+  // other markup. §13.10 s3 was rejected on exactly this pair.
+  assert.equal(
+    normalizeForAnchor('**X** 即为 **S**^(-1) 乘以 n×n 对称矩阵'),
+    normalizeForAnchor('$\\mathbf{X}$ 即为 $\\mathbf{S}^{-1}$ 乘以 $n\\times n$ 对称矩阵'),
+  );
+  assert.equal(normalizeForAnchor('$x^(ab)$'), normalizeForAnchor('$x^{ab}$'));
+});
+
+test('folding notation does not make distinct formulas compare equal', () => {
+  // The standing risk with every fold added here.
+  const n = normalizeForAnchor;
+  assert.notEqual(n('$a_0$'), n('$a_1$'));
+  assert.notEqual(n('$k \\log V$'), n('$k \\exp V$'));
+  assert.notEqual(n('$\\frac{1}{2}n(n+1)$'), n('$\\frac{1}{2}n(n-1)$'));
+  assert.notEqual(n('$\\mathrm{SO}(3)$'), n('$\\mathrm{SU}(3)$'));
+  assert.notEqual(n('$\\mathrm{Sp}(n,0)$'), n('$\\mathrm{Sp}(0,n)$'));
+});
+
 test('a wholly invented anchor is reported as matching nothing, not as diverging late', () => {
   const errors = checkAnchors(
     [{ value: '这句话完全不在本节之中，是凭空写出来的', field: 'formulas[1].sourceAnchor' }],

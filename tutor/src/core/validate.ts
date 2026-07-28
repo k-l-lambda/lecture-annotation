@@ -138,10 +138,24 @@ function foldMathNotation(s: string): string {
       // Operators with a standard Unicode glyph, folded to that glyph so the
       // source's `1.38 \times 10^{-23}` matches a model's `1.38 × 10^{-23}`.
       .replace(MATH_GLYPH_RE, (_, name: string) => MATH_GLYPH[name] ?? name)
+      // Spacing and sizing commands, dropped entirely: they are typesetting with
+      // no semantic content, and a model may add or omit them freely. `\!` is
+      // punctuation rather than letters, so the bare-command rule below never saw
+      // it — live on §13.10 the source's `\mathrm{Sp}\left(` and a model's
+      // `\mathrm{Sp}\!\left(` compared unequal on a negative thin space.
+      .replace(/\\[!,;:>](?![a-zA-Z])/g, '')
+      .replace(/\\(?:quad|qquad|thinspace|medspace|thickspace|,|;)(?![a-zA-Z])/g, '')
+      .replace(/\\(?:left|right|big{1,2}|Big{1,2}|bigg?l|bigg?r)(?![a-zA-Z])/g, '')
       // Any other bare command keeps its name but loses the backslash, so the
       // source's `$S = k \log V$` and a model's `S = k log V` agree. Dropping the
       // name instead would let `\log` and `\exp` compare equal.
       .replace(/\\([a-zA-Z]+)/g, '$1')
+      // Plain-text superscript/subscript notation, which this corpus uses where it
+      // has not been converted to LaTeX: `**S**^(-1)`, `n^2`, `x_(ab)`. A model
+      // transcribing that passage writes `$\mathbf{S}^{-1}$` — the same symbol in
+      // the other markup — so the parenthesis form must reduce to the same thing
+      // the brace form does. §13.10 s3 was rejected on exactly this pair.
+      .replace(/([_^])\(([^()]*)\)/g, '$1{$2}')
       // Sub/superscript markup, which a model quoting prose drops because that is
       // how the rendered formula reads: the source's `a_0 + a_1z + a_2z^2` and a
       // model's `a0 + a1z + a2z2` are the same formula. The operands survive, so
