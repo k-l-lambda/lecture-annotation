@@ -840,7 +840,7 @@ $$\kappa_{\alpha\beta} = \gamma_{\alpha\zeta}^{\ \ \xi}\gamma_{\beta\xi}^{\ \ \z
 
 ---
 
-### 13.8 正交群 { .tutor-section }
+## 13.8 正交群 { .tutor-section }
 
 我们现在再回到正交群。在 [§13.3](#133-线性变换和矩阵) 的开头，我们已经看到如何用普通笛卡儿坐标系 $(x, y, z)$ 将 $\mathrm{O}(3)$ 或 $\mathrm{SO}(3)$ 忠实地表示为三维实矢量空间里的线性变换。这里球面
 
