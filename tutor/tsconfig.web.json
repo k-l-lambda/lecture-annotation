@@ -1,0 +1,21 @@
+/*
+ * The web shell's project. Identical to tsconfig.json except that it has the DOM.
+ *
+ * Two projects rather than one because `lib: ["ES2022"]` with no DOM in the main
+ * project is the mechanism that keeps `src/core/` portable: a stray
+ * `document.querySelector` in core is a compile error there. Adding DOM globally
+ * to let the web shell compile would delete that guarantee — and it is the one
+ * guarantee that lets the same harness run under Node.
+ *
+ * Core is included here as well, so it is checked twice: DOM-free by tsconfig.json
+ * and DOM-available by this one. Node's own `@types/node` is excluded, so a
+ * `node:*` import in the web shell fails here too.
+ */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": []
+  },
+  "include": ["src/core/**/*.ts", "src/shells/web/**/*.ts", "test/web-shell.test.ts"]
+}

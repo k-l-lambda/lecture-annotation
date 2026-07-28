@@ -24,16 +24,24 @@ const STORE_SESSIONS = 'sessions';
 const STORE_ACHIEVEMENTS = 'achievements';
 const STORE_META = 'meta';
 
-/** Minimal structural type so core does not depend on lib.dom. */
+/**
+ * Minimal structural types so core does not depend on lib.dom.
+ *
+ * Event handlers take `never` rather than `unknown`: core never reads the event,
+ * and `never` is the only parameter type a real `IDBRequest`'s
+ * `(ev: Event) => any` is assignable to under `strictFunctionTypes`. With
+ * `unknown` the browser's own `window.indexedDB` fails to satisfy `IDBFactoryLike`
+ * — which would push the web shell into casting away the whole interface.
+ */
 export interface IDBFactoryLike {
   open(name: string, version?: number): IDBOpenDBRequestLike;
 }
 interface IDBOpenDBRequestLike {
   result: IDBDatabaseLike;
   error: unknown;
-  onsuccess: ((this: unknown, ev: unknown) => void) | null;
-  onerror: ((this: unknown, ev: unknown) => void) | null;
-  onupgradeneeded: ((this: unknown, ev: unknown) => void) | null;
+  onsuccess: ((this: never, ev: never) => void) | null;
+  onerror: ((this: never, ev: never) => void) | null;
+  onupgradeneeded: ((this: never, ev: never) => void) | null;
 }
 interface IDBDatabaseLike {
   objectStoreNames: { contains(name: string): boolean };
@@ -43,13 +51,14 @@ interface IDBDatabaseLike {
 }
 interface IDBTransactionLike {
   objectStore(name: string): IDBObjectStoreLike;
-  oncomplete: ((ev: unknown) => void) | null;
-  onerror: ((ev: unknown) => void) | null;
-  onabort: ((ev: unknown) => void) | null;
+  oncomplete: ((ev: never) => void) | null;
+  onerror: ((ev: never) => void) | null;
+  onabort: ((ev: never) => void) | null;
   error: unknown;
 }
 interface IDBObjectStoreLike {
   put(value: unknown): IDBRequestLike;
+  clear(): IDBRequestLike;
   get(key: unknown): IDBRequestLike;
   getAll(): IDBRequestLike;
   createIndex(name: string, keyPath: string | string[], options?: { unique?: boolean }): unknown;
@@ -58,8 +67,8 @@ interface IDBObjectStoreLike {
 interface IDBRequestLike {
   result: unknown;
   error: unknown;
-  onsuccess: ((ev: unknown) => void) | null;
-  onerror: ((ev: unknown) => void) | null;
+  onsuccess: ((ev: never) => void) | null;
+  onerror: ((ev: never) => void) | null;
 }
 
 function promisify<T>(request: IDBRequestLike): Promise<T> {
@@ -226,6 +235,19 @@ export class IdbStore implements Store {
 
   async putAchievement(a: Achievement): Promise<void> {
     await promisify(this.#write(STORE_ACHIEVEMENTS).put(a));
+  }
+
+  /**
+   * 清空学习档案 (ui-spec.md §7a). Wipes the profile stores AND the session
+   * history: leaving sessions behind would let `previouslyAsked` keep suppressing
+   * questions the student no longer has any record of having seen.
+   *
+   * Irreversible — the typed confirmation is the caller's responsibility.
+   */
+  async clearAll(): Promise<void> {
+    for (const name of [STORE_KP, STORE_MASTERY, STORE_SESSIONS, STORE_ACHIEVEMENTS, STORE_META]) {
+      await promisify(this.#write(name).clear());
+    }
   }
 
   close(): void {

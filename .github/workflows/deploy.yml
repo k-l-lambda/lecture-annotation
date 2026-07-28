@@ -34,8 +34,26 @@ jobs:
       - name: Prepare docs
         run: python scripts/prepare_docs.py
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build Tutor web assets
+        run: |
+          cd tutor
+          npm ci
+          npm run build:web
+
       - name: Build site
         run: mkdocs build --clean --verbose
+
+      # Every Tutor section id is derived twice — by tutor_sidecars.slugify and by
+      # MkDocs' toc — and is used by the entry button, the sidecar lookup and
+      # getElementById. A drifted slug rule must fail the build, not degrade a
+      # handful of sections at runtime (data-model.md §5.1).
+      - name: Check Tutor sidecars against rendered HTML
+        run: python scripts/check_tutor_sidecars.py
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4

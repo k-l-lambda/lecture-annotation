@@ -74,6 +74,43 @@ export type SessionStatus = 'active' | 'completed' | 'abandoned';
 export type ChipState = 'passed' | 'failed' | 'current' | 'pending' | 'inserted' | 'skipped';
 
 /**
+ * Student-facing phase names (ui-spec.md §4a). Here rather than in session.ts
+ * because the panel's phase indicator must render the label for the state the
+ * harness emitted — a second copy in the UI would eventually disagree with the
+ * state machine, which is the class of divergence layering rule 2 exists to stop.
+ */
+export const PHASE_LABELS: Record<SessionState, string> = {
+  PLANNING: '正在通读本节…',
+  PREP_DECISION: '正在检查前置知识',
+  STEP_ENTER: '进入下一步',
+  ASKING: '正在出题…',
+  AWAIT_ANSWER: '等待作答',
+  GRADING: '正在评估…',
+  DISCUSSING: '讨论中 · 随时可以选择',
+  SUMMARIZING: '正在总结本节',
+  AWARD_DECISION: '成就待确认',
+  DONE: '已结束',
+  ABANDONED: '已结束',
+};
+
+/** `targetLevel` 1/2/3 as the step rail shows them (harness.md §3). */
+export const TARGET_LEVEL_LABELS: Record<number, string> = {
+  1: '识别',
+  2: '应用',
+  3: '迁移',
+};
+
+/** ui-spec.md §4a: a glyph AND a tooltip, so chip state never rests on colour. */
+export const CHIP_GLYPHS: Record<ChipState, { glyph: string; label: string }> = {
+  passed: { glyph: '✓', label: '已通过' },
+  failed: { glyph: '✕', label: '未通过，已继续' },
+  current: { glyph: '●', label: '进行中' },
+  pending: { glyph: '○', label: '未开始' },
+  inserted: { glyph: '↩', label: '补充的前置步骤' },
+  skipped: { glyph: '⤼', label: '已跳过（记为未掌握）' },
+};
+
+/**
  * data-model.md §3 evidence tiers, in precedence order. `graded` is the only
  * tier the prep-skip gate reads; see harness.md §3.1.
  */

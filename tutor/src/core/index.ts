@@ -12,6 +12,7 @@ export * from './schema.ts';
 export * from './ports.ts';
 export * from './validate.ts';
 export * from './content.ts';
+export { applySettings, defaultSettings, type LoadResult } from './settings.ts';
 export { PROMPTS, PROMPT_HASH, type PromptSpec } from './prompts.ts';
 export {
   DB_NAME,

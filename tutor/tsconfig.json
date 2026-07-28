@@ -3,8 +3,9 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": ["ES2022"],
-
+    "lib": [
+      "ES2022"
+    ],
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
@@ -12,7 +13,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "erasableSyntaxOnly": true,
@@ -21,5 +21,12 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*.ts", "test/**/*.ts"]
+  "include": [
+    "src/core/**/*.ts",
+    "src/shells/node/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "test/web-shell.test.ts"
+  ]
 }

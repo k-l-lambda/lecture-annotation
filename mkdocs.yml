@@ -65,11 +65,30 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/ebooks-section.css
+  - stylesheets/tutor.css
 
+# Order is load order, and these are classic scripts, not modules: the vendored
+# renderers and the typed core have to be evaluated before any UI script reads
+# `window.TutorCore`, and `tutor.js` comes last because it is the entry that wires
+# the others together. Both vendored files are served from the site rather than a
+# CDN — the API key lives in this origin's localStorage, so every third-party
+# script on the page can read it, and the tutor's own dependencies are the ones we
+# can decline to import (settings.md §1).
 extra_javascript:
   - javascripts/ebooks-section.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/tutor/vendor/marked.js
+  - javascripts/tutor/vendor/purify.js
+  - javascripts/tutor/tutor-core.js
+  - javascripts/tutor/widgets.js
+  - javascripts/tutor/messages.js
+  - javascripts/tutor/steprail.js
+  - javascripts/tutor/focus.js
+  - javascripts/tutor/settings-dialog.js
+  - javascripts/tutor/profile-drawer.js
+  - javascripts/tutor/panel.js
+  - javascripts/tutor/tutor.js
 
 extra:
   social:

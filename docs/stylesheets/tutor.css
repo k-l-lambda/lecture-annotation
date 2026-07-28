@@ -1,0 +1,818 @@
+/*
+ * Tutor styles.
+ *
+ * Every colour comes from a Material CSS variable, so the light and slate schemes
+ * both work with no second palette to maintain. Nothing here relies on colour
+ * alone to convey state: score pills carry the numeral, step chips carry a glyph
+ * and a tooltip.
+ */
+
+:root {
+  --tutor-panel-w: min(420px, 34vw);
+  --tutor-sheet-h: 52vh;
+  --tutor-header-h: 2.4rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Entry affordances                                                   */
+/* ------------------------------------------------------------------ */
+
+/* Sized and coloured exactly like the ¶ it replaces, so heading rhythm is
+   untouched — including the reveal-on-hover behaviour Material gives permalinks. */
+.tutor-entry {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+.tutor-entry[aria-disabled="true"] {
+  opacity: 0.35 !important;
+  cursor: not-allowed;
+}
+
+/* Material shows permalinks persistently on touch devices; the entry icon
+   inherits that, at a 44px target via padding rather than glyph size. */
+@media (hover: none) {
+  .tutor-entry {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.6rem;
+    opacity: 0.6 !important;
+  }
+}
+
+.tutor-header-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+  background: transparent;
+  color: var(--md-primary-bg-color);
+  cursor: pointer;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+.tutor-header-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.tutor-header-button__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+
+.tutor-header-button[data-tutor-status="idle"] .tutor-header-button__dot {
+  background: color-mix(in srgb, currentColor 45%, transparent);
+}
+
+.tutor-header-button[data-tutor-status="live"] .tutor-header-button__dot {
+  background: currentColor;
+}
+
+.tutor-resume {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+  padding: 0.6rem 0.8rem;
+  border-left: 3px solid var(--md-primary-fg-color);
+  border-radius: 0.2rem;
+  background: var(--md-code-bg-color);
+  font-size: 0.75rem;
+}
+
+.tutor-resume__text {
+  flex: 1 1 12rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Focus / fold                                                        */
+/* ------------------------------------------------------------------ */
+
+html.tutor-active .md-sidebar--primary,
+html.tutor-active .md-sidebar--secondary,
+html.tutor-active .md-header__button[for="__drawer"] {
+  display: none !important;
+}
+
+.tutor-breadcrumb {
+  margin: 0 0 0.4rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+}
+
+.tutor-folded {
+  margin: 1.2rem 0;
+  padding: 0.4rem 0.6rem;
+  border: 1px dashed var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.75rem;
+}
+
+.tutor-folded > summary {
+  cursor: pointer;
+}
+
+.tutor-focus {
+  scroll-margin-top: 4rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Panel — desktop side-by-side                                        */
+/* ------------------------------------------------------------------ */
+
+@media screen and (min-width: 76.25em) {
+  html.tutor-active .md-main__inner {
+    display: grid;
+    grid-template-columns: 1fr var(--tutor-panel-w);
+    gap: 1rem;
+  }
+
+  .tutor-panel {
+    position: sticky;
+    top: var(--tutor-header-h);
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--tutor-header-h));
+    border-left: 1px solid var(--md-default-fg-color--lightest);
+  }
+}
+
+/* Mobile: a bottom sheet. `100dvh` and the safe-area inset keep the composer off
+   the iOS home indicator and out from under the virtual keyboard. */
+@media screen and (max-width: 76.24em) {
+  .tutor-panel {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100dvh - var(--tutor-header-h));
+    height: var(--tutor-sheet-h);
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid var(--md-default-fg-color--lighter);
+    box-shadow: var(--md-shadow-z2);
+  }
+
+  html.tutor-active .md-content {
+    padding-bottom: var(--tutor-sheet-h);
+  }
+
+  .tutor-resizer {
+    display: none;
+  }
+}
+
+.tutor-panel {
+  background: var(--md-default-bg-color);
+  font-size: 0.72rem;
+}
+
+.tutor-panel--collapsed {
+  height: 3.2rem;
+}
+
+.tutor-panel--collapsed .tutor-messages,
+.tutor-panel--collapsed .tutor-composer,
+.tutor-panel--collapsed .tutor-choices,
+.tutor-panel--collapsed .tutor-quick {
+  display: none;
+}
+
+.tutor-panel--flash {
+  animation: tutor-flash 0.6s ease;
+}
+
+@keyframes tutor-flash {
+  0%, 100% { box-shadow: none; }
+  50% { box-shadow: inset 0 0 0 2px var(--md-primary-fg-color); }
+}
+
+.tutor-panel__header {
+  padding: 0.5rem 0.7rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tutor-panel__title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tutor-panel__title {
+  flex: 1;
+  font-weight: 700;
+}
+
+.tutor-panel__menu,
+.tutor-panel__collapse,
+.tutor-dialog__close {
+  border: none;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.2rem 0.35rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Step rail                                                           */
+/* ------------------------------------------------------------------ */
+
+.tutor-rail {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.tutor-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.05rem 0.35rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.8rem;
+  font-size: 0.65rem;
+  cursor: default;
+}
+
+.tutor-chip--current {
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+.tutor-chip--passed {
+  border-color: color-mix(in srgb, var(--md-typeset-a-color) 60%, transparent);
+}
+
+/* Inserted prerequisite steps get a dashed border, so backtracking reads as a
+   route rather than a rewind. */
+.tutor-chip--inserted {
+  border-style: dashed;
+}
+
+.tutor-chip--skipped,
+.tutor-chip--failed {
+  color: var(--md-default-fg-color--light);
+}
+
+.tutor-step-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+  font-size: 0.68rem;
+}
+
+.tutor-step-line__level {
+  color: var(--md-default-fg-color--light);
+  white-space: nowrap;
+}
+
+.tutor-phase {
+  margin-top: 0.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.66rem;
+}
+
+.tutor-planning {
+  margin-top: 0.4rem;
+  font-size: 0.66rem;
+}
+
+.tutor-planning__row {
+  display: flex;
+  gap: 0.3rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.tutor-planning__row--active {
+  color: var(--md-default-fg-color);
+}
+
+.tutor-planning__row--retry .tutor-planning__mark {
+  color: var(--md-typeset-del-color);
+}
+
+/* ------------------------------------------------------------------ */
+/* Messages                                                            */
+/* ------------------------------------------------------------------ */
+
+.tutor-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.6rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tutor-msg {
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.35rem;
+  background: var(--md-code-bg-color);
+  overflow-wrap: break-word;
+}
+
+.tutor-msg--student {
+  align-self: flex-end;
+  max-width: 85%;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+  white-space: pre-wrap;
+}
+
+.tutor-msg--question {
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color);
+}
+
+.tutor-question__setup {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+}
+
+.tutor-question__ask {
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.tutor-msg__label {
+  margin-bottom: 0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tutor-msg--hint {
+  border-left: 3px solid var(--md-typeset-mark-color, #ffd);
+}
+
+.tutor-score {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.05rem 0.4rem;
+  border: 1px solid currentColor;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Shape as well as colour: the pill is filled when passed and outlined when not,
+   and the numeral is always present regardless. */
+.tutor-score[data-passed="true"] {
+  background: color-mix(in srgb, var(--md-typeset-a-color) 18%, transparent);
+}
+
+.tutor-evaluation__missed {
+  margin: 0.3rem 0 0;
+  padding-left: 1rem;
+  font-size: 0.68rem;
+}
+
+.tutor-evaluation__missed-label,
+.tutor-summary__label {
+  list-style: none;
+  margin-left: -1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.tutor-notice {
+  align-self: center;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.tutor-notice--error {
+  color: var(--md-typeset-del-color);
+  font-style: normal;
+}
+
+.tutor-notice--warn {
+  color: var(--md-default-fg-color);
+}
+
+.tutor-msg--achievement {
+  border: 1px solid var(--md-primary-fg-color);
+  text-align: center;
+}
+
+.tutor-achievement__name {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.tutor-achievement__basis {
+  margin-top: 0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+}
+
+.tutor-achievement__actions {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Composer and choices                                                */
+/* ------------------------------------------------------------------ */
+
+.tutor-quick {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  padding: 0 0.7rem;
+}
+
+.tutor-quick__chip {
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.8rem;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 0.65rem;
+}
+
+/* Sticky so they never scroll out of reach during a long discussion. */
+.tutor-choices {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.7rem 0;
+  background: var(--md-default-bg-color);
+}
+
+.tutor-choices__button {
+  flex: 1 1 auto;
+  font-size: 0.66rem;
+}
+
+.tutor-composer {
+  padding: 0.5rem 0.7rem 0.7rem;
+}
+
+.tutor-composer__input,
+.tutor-input {
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  resize: none;
+}
+
+.tutor-composer__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.tutor-hint-counter {
+  flex: 1;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.64rem;
+}
+
+.tutor-hint-counter--spent {
+  opacity: 0.5;
+}
+
+.tutor-usage {
+  padding: 0 0.7rem 0.5rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tutor-resizer {
+  position: absolute;
+  inset-block: 0;
+  left: -3px;
+  width: 6px;
+  cursor: col-resize;
+}
+
+.tutor-resizer:focus-visible {
+  outline: 2px solid var(--md-primary-fg-color);
+}
+
+/* ------------------------------------------------------------------ */
+/* Dialogs, menu, drawer                                               */
+/* ------------------------------------------------------------------ */
+
+.tutor-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.tutor-overlay--drawer {
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.tutor-dialog {
+  max-width: 32rem;
+  max-height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z3);
+  font-size: 0.72rem;
+}
+
+.tutor-drawer {
+  width: min(28rem, 100%);
+  height: 100%;
+  overflow-y: auto;
+  padding: 1rem;
+  background: var(--md-default-bg-color);
+  font-size: 0.72rem;
+}
+
+.tutor-dialog__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tutor-dialog__title {
+  flex: 1;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.tutor-dialog__body {
+  margin: 0.6rem 0;
+  white-space: pre-line;
+}
+
+.tutor-dialog__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.tutor-dialog__danger {
+  color: var(--md-typeset-del-color);
+  border-color: currentColor;
+}
+
+.tutor-field {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.tutor-field__label {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+}
+
+.tutor-field__hint {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.64rem;
+}
+
+.tutor-field__row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.tutor-input--number {
+  width: 6rem;
+}
+
+.tutor-settings__group {
+  margin: 0.5rem 0;
+  padding: 0.4rem 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tutor-settings__group > summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.tutor-settings__group-summary {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.66rem;
+}
+
+.tutor-probe {
+  margin-top: 0.4rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.2rem;
+  background: var(--md-code-bg-color);
+  font-size: 0.66rem;
+}
+
+.tutor-probe--ok {
+  border-left: 3px solid var(--md-typeset-a-color);
+}
+
+.tutor-probe--error {
+  border-left: 3px solid var(--md-typeset-del-color);
+}
+
+.tutor-probe--warn {
+  border-left: 3px solid var(--md-default-fg-color--light);
+}
+
+.tutor-menu {
+  position: fixed;
+  z-index: 12;
+  min-width: 9rem;
+  padding: 0.2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z2);
+}
+
+.tutor-menu__item,
+.tutor-picker__item {
+  display: block;
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.tutor-menu__item:hover,
+.tutor-picker__item:hover {
+  background: var(--md-code-bg-color);
+}
+
+.tutor-menu__item--danger {
+  color: var(--md-typeset-del-color);
+}
+
+.tutor-picker__list {
+  max-height: 50vh;
+  overflow-y: auto;
+  margin: 0.5rem 0;
+}
+
+.tutor-tabs {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0.5rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tutor-tabs__tab {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  background: transparent;
+  color: var(--md-default-fg-color--light);
+  cursor: pointer;
+  font: inherit;
+}
+
+.tutor-tabs__tab--active {
+  color: var(--md-primary-fg-color);
+  border-bottom: 2px solid currentColor;
+  font-weight: 700;
+}
+
+.tutor-kp {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tutor-kp__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+  font-size: 0.64rem;
+}
+
+.tutor-bar {
+  display: inline-block;
+  width: 5rem;
+  height: 0.35rem;
+  border-radius: 0.2rem;
+  background: var(--md-default-fg-color--lightest);
+  overflow: hidden;
+}
+
+.tutor-bar--confidence {
+  height: 0.2rem;
+}
+
+.tutor-bar__fill {
+  display: block;
+  height: 100%;
+  background: var(--md-primary-fg-color);
+}
+
+.tutor-kp__hint,
+.tutor-empty,
+.tutor-data__note {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.64rem;
+}
+
+.tutor-badge {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.tutor-badge--declined {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.7;
+}
+
+/* ------------------------------------------------------------------ */
+/* Accessibility and print                                             */
+/* ------------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+  .tutor-panel,
+  .tutor-panel--flash {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Minimum touch target on mobile controls. */
+@media (hover: none) {
+  .tutor-quick__chip,
+  .tutor-menu__item,
+  .tutor-choices__button {
+    min-height: 44px;
+  }
+}
+
+/* A printed page is the plain chapter again: the panel is gone and every fold is
+   expanded, so nothing the reader can see on screen is missing on paper. */
+@media print {
+  .tutor-panel,
+  .tutor-header-button,
+  .tutor-resume,
+  .tutor-overlay,
+  .tutor-menu,
+  .tutor-entry {
+    display: none !important;
+  }
+
+  .tutor-folded {
+    border: none;
+  }
+
+  .tutor-folded > summary {
+    display: none;
+  }
+
+  .tutor-folded[open],
+  .tutor-folded {
+    display: block !important;
+  }
+
+  html.tutor-active .md-main__inner {
+    display: block !important;
+  }
+}

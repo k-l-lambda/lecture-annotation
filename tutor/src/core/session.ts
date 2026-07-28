@@ -41,21 +41,7 @@ import type {
   ToolResult,
   Usage,
 } from './types.ts';
-import { PASS_THRESHOLD } from './types.ts';
-
-const PHASE_LABELS: Record<SessionState, string> = {
-  PLANNING: '正在通读本节…',
-  PREP_DECISION: '正在检查前置知识',
-  STEP_ENTER: '进入下一步',
-  ASKING: '正在出题…',
-  AWAIT_ANSWER: '等待作答',
-  GRADING: '正在评估…',
-  DISCUSSING: '讨论中 · 随时可以选择',
-  SUMMARIZING: '正在总结本节',
-  AWARD_DECISION: '成就待确认',
-  DONE: '已结束',
-  ABANDONED: '已结束',
-};
+import { PASS_THRESHOLD, PHASE_LABELS } from './types.ts';
 
 export interface SessionOptions {
   page: string;
@@ -891,6 +877,51 @@ export class TutorSession {
   abortInFlight(): void {
     this.#abort?.abort();
     this.#abort = new AbortController();
+  }
+
+  /**
+   * Sends a routed free-text turn to the method that route means.
+   *
+   * Here rather than in each shell because it is a pure mapping with nothing
+   * environment-shaped in it, and both shells need all nine branches. Two copies
+   * would be two places where routing rules live, and the second one would
+   * eventually lag — a route added to the enum but not to the browser's switch
+   * would silently fall through to grading.
+   *
+   * Deliberately does NOT correct an illegal route (`advance` at AWAIT_ANSWER):
+   * the guard in `choose()` owns that, so an illegal route throws rather than
+   * being quietly rewritten out of sight of the event log.
+   */
+  async applyRoute(route: StudentTurnRoute, studentText: string): Promise<void> {
+    switch (route.route) {
+      case 'answer':
+        await this.submitAnswer(studentText);
+        return;
+      case 'hint':
+        await this.requestHint();
+        return;
+      case 'variant':
+        await this.choose('remain');
+        return;
+      case 'skip':
+        await this.choose('skip');
+        return;
+      case 'advance':
+        await this.choose('advance');
+        return;
+      case 'quit':
+        await this.choose('quit');
+        return;
+      case 'clarify':
+        await this.discuss(studentText, 'needs_clarification');
+        return;
+      case 'too_hard':
+        await this.discuss(studentText, 'too_hard');
+        return;
+      case 'off_topic':
+        await this.discuss(studentText, 'off_topic');
+        return;
+    }
   }
 }
 

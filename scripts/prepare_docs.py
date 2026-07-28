@@ -10,7 +10,13 @@ Prepare docs directory for MkDocs build.
 import os
 import re
 import shutil
+import sys
 from pathlib import Path
+
+# Sibling-module import: works whether this is run as `scripts/prepare_docs.py`
+# or `python -m scripts.prepare_docs` from the repo root.
+sys.path.insert(0, str(Path(__file__).parent))
+from tutor_sidecars import emit_all as emit_tutor_sidecars  # noqa: E402
 
 ROOT = Path(__file__).parent.parent
 LECTURES_SRC = ROOT / "lectures"
@@ -18,6 +24,28 @@ EBOOKS_SRC = ROOT / "ebooks"
 DOCS_DIR = ROOT / "docs"
 DOCS_LECTURES = DOCS_DIR / "lectures"
 DOCS_EBOOKS = DOCS_DIR / "ebooks"
+
+
+def _site_url_prefix() -> str:
+    """The path part of mkdocs.yml's site_url, e.g. `/lecture-annotation`.
+
+    Only used for the sidecar's informational `pageUrl`. Read from the config
+    rather than hard-coded, so a fork published at a different path still emits
+    correct sidecars; the runtime fetch derives its own URL from
+    `location.pathname` and never reads this field.
+    """
+    try:
+        text = (ROOT / "mkdocs.yml").read_text(encoding="utf-8")
+    except OSError:
+        return ""
+    m = re.search(r"^site_url:\s*(\S+)", text, re.M)
+    if not m:
+        return ""
+    path = re.sub(r"^https?://[^/]+", "", m.group(1).strip().strip("\"'"))
+    return path.rstrip("/")
+
+
+SITE_URL_PREFIX = _site_url_prefix()
 
 
 def extract_title(md_path: Path) -> str:
@@ -466,6 +494,18 @@ def main():
         dst = DOCS_LECTURES / lec["dir_name"]
         shutil.copytree(src, dst, dirs_exist_ok=True)
         print(f"  Copied {src.name} -> docs/lectures/{lec['dir_name']}")
+
+    # Emit Tutor sidecars BEFORE the math rewrite below. preprocess_docs_math
+    # turns `$$…$$` into `\[…\]` in place, and the harness's anchor gate,
+    # formulaCount and the section text the model reads were all tuned against
+    # the source form — emitting afterwards would hand the model a notation no
+    # other shell ever sees. See design.local/tutor/data-model.md §5.
+    sidecars = emit_tutor_sidecars(DOCS_DIR, SITE_URL_PREFIX)
+    if sidecars:
+        total = sum(s["sections"] for s in sidecars)
+        truncated = sum(s["truncated"] for s in sidecars)
+        note = f", {truncated} section(s) truncated to fit budget" if truncated else ""
+        print(f"  Tutor sidecars: {total} sections across {len(sidecars)} page(s){note}")
 
     # Preprocess math formulas in copied docs for reliable rendering
     processed = preprocess_docs_math(DOCS_DIR)

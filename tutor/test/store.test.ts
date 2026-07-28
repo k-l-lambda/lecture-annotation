@@ -195,3 +195,35 @@ test('previouslyAsked projects questions from the last completed sessions', asyn
   assert.deepEqual(asked, ['为什么熵是体积的对数？']);
   store.close();
 });
+
+test('clearAll wipes the profile and the session history together', async () => {
+  const store = await freshStore();
+  await store.upsertKnowledgePoints([kp()]);
+  await store.putMastery(emptyRecord('kp:entropy', ISO));
+  await store.putAchievement({
+    id: 'ach:1',
+    name: '熵的相空间直觉',
+    description: 'd',
+    basis: 'b',
+    page: 'ebooks/x/chapter_27',
+    sectionId: '273-熵',
+    sessionId: 'sess:1',
+    knowledgePointIds: ['kp:entropy'],
+    accepted: true,
+    declined: false,
+    renamed: false,
+    awardedAt: ISO,
+  });
+
+  await store.clearAll();
+
+  assert.deepEqual(await store.getAllKnowledgePoints(), []);
+  assert.deepEqual(await store.getAllMastery(), []);
+  assert.deepEqual(await store.listAchievements(), []);
+  // Sessions go too: leaving them behind would let previouslyAsked keep
+  // suppressing questions the student has no remaining record of seeing.
+  assert.deepEqual(
+    await store.findSessions({ page: 'ebooks/x/chapter_27', sectionId: '273-熵' }),
+    [],
+  );
+});

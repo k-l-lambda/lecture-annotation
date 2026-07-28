@@ -26,3 +26,9 @@ tutor/dist/
 
 # Scratch probes for one-off validator debugging.
 tutor/tmp/
+
+# Web shell generated assets (built by tutor/scripts/build-web.mjs; the
+# hand-written shell scripts beside them ARE committed).
+docs/javascripts/tutor/tutor-core.js
+docs/javascripts/tutor/tutor-core.js.map
+docs/javascripts/tutor/vendor/

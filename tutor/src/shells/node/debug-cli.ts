@@ -26,7 +26,7 @@ import { IdbStore, type IDBFactoryLike } from '../../core/idb-store.ts';
 import { HttpLlm } from '../../core/provider.ts';
 import { TutorSession } from '../../core/session.ts';
 import { sequentialIdGen, systemClock, type Llm, type SessionEvent } from '../../core/ports.ts';
-import type { ExitChoice, Settings, StudentTurnRoute } from '../../core/types.ts';
+import type { ExitChoice, Settings } from '../../core/types.ts';
 import { FakeLlm, loadFixture, type Fixture } from './fake-llm.ts';
 import { SourceContent } from './source-content.ts';
 import { assertLiveReady, loadSettings, DEFAULT_SETTINGS_PATH } from './settings.ts';
@@ -442,7 +442,7 @@ async function main(): Promise<number> {
           await session.choose(key);
           continue;
         }
-        await dispatch(session, await session.routeStudentTurn(line), line);
+        await session.applyRoute(await session.routeStudentTurn(line), line);
         continue;
       }
 
@@ -454,7 +454,7 @@ async function main(): Promise<number> {
           continue;
         }
         if (line === '') continue;
-        await dispatch(session, await session.routeStudentTurn(line), line);
+        await session.applyRoute(await session.routeStudentTurn(line), line);
         continue;
       }
 
@@ -537,48 +537,6 @@ const CHOICES: Record<string, ExitChoice> = {
   s: 'skip',
   q: 'quit',
 };
-
-/**
- * Acts on a route. Every branch calls a session method that validates on its own,
- * so an illegal route (`advance` at AWAIT_ANSWER) throws in the session rather
- * than being silently corrected here — the shell must not become a second place
- * where routing rules live.
- */
-async function dispatch(
-  session: TutorSession,
-  route: StudentTurnRoute,
-  line: string,
-): Promise<void> {
-  switch (route.route) {
-    case 'answer':
-      await session.submitAnswer(line);
-      return;
-    case 'hint':
-      await session.requestHint();
-      return;
-    case 'variant':
-      await session.choose('remain');
-      return;
-    case 'skip':
-      await session.choose('skip');
-      return;
-    case 'advance':
-      await session.choose('advance');
-      return;
-    case 'quit':
-      await session.choose('quit');
-      return;
-    case 'clarify':
-      await session.discuss(line, 'needs_clarification');
-      return;
-    case 'too_hard':
-      await session.discuss(line, 'too_hard');
-      return;
-    case 'off_topic':
-      await session.discuss(line, 'off_topic');
-      return;
-  }
-}
 
 function providerConfig(settings: Settings) {
   return {
