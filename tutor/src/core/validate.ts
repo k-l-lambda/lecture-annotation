@@ -359,35 +359,102 @@ export function anchorDivergence(
   return { matched: needle.slice(0, lo), rest: needle.slice(lo) };
 }
 
-/** Names the offending anchor, so the model can fix that one rather than guess. */
+/**
+ * How much of an anchor must locate in the section for it to be usable.
+ *
+ * An anchor's ONLY job is to find a paragraph: `expandAnchors` looks up the
+ * paragraph containing it and hands that to the questioner as context (and
+ * already falls back to the raw anchor when it cannot). A prefix this long
+ * identifies a paragraph unambiguously — nothing downstream needs the quote to be
+ * character-exact.
+ */
+/**
+ * Chosen from measurement, not intuition. On §13.10, anchors the planner quoted
+ * correctly but in different markup score 12–22 here, while fabricated text —
+ * including plausible-sounding inventions like 「辛群是保持辛形式不变的线性变换群」 —
+ * scores 4–7, because Chinese technical prose shares only short substrings with a
+ * section it did not come from. 8 sits in that gap and is one full clause of CJK.
+ */
+export const ANCHOR_MIN_LOCATING_CHARS = 8;
+
+/**
+ * The longest run of the anchor that appears in the section, from ANY offset.
+ *
+ * Not a prefix match: a formula near the start of the anchor caps a prefix score
+ * no matter how much correct prose follows it. `辛群的维数是 $\frac{1}{2}n(n+1)$`
+ * scores 6 as a prefix and dies, though `辛群的维数是` plus the surrounding
+ * sentence is plainly in the section. Measuring the best run anywhere is what
+ * "can this locate a paragraph" actually asks.
+ */
+export function longestLocatingRun(anchor: string, sectionText: string): number {
+  const needle = normalizeForAnchor(stripPageFurniture(anchor));
+  const hay = normalizeForAnchor(stripPageFurniture(sectionText));
+  if (needle.length === 0) return 0;
+  let best = 0;
+  for (let i = 0; i < needle.length; i++) {
+    // Only runs that could beat the incumbent are worth testing.
+    if (needle.length - i <= best) break;
+    let lo = best;
+    let hi = needle.length - i;
+    while (lo < hi) {
+      const mid = Math.ceil((lo + hi) / 2);
+      if (hay.includes(needle.slice(i, i + mid))) lo = mid;
+      else hi = mid - 1;
+    }
+    if (lo > best) best = lo;
+  }
+  return best;
+}
+
+/**
+ * Locating, not verbatim.
+ *
+ * This gate used to demand exact equality after notation folding, and it cost
+ * five sessions and five patches — bold `**V**` vs `$\mathbf{V}$`, `\!` vs
+ * nothing, `^(-1)` vs `^{-1}`, inline footnote markers, `(1/2)` vs `\frac{1}{2}`.
+ * Every one was the same non-problem: the corpus is half plain-text and half
+ * LaTeX, a model transcribing a sentence picks whichever markup is conventional,
+ * and the gate called that a fabricated quote and killed the section. Chasing it
+ * one notation at a time was never going to end — the set of ways to write the
+ * same formula is open.
+ *
+ * So the requirement is now the one the consumer actually has: enough of the
+ * anchor must appear in the section to locate a paragraph. That still rejects the
+ * failure that matters, an anchor invented wholesale, while a formula written in
+ * different-but-equivalent markup passes on its prose prefix.
+ */
 export function checkAnchors(
   anchors: Array<{ value: string; field: string }>,
   sectionText: string,
 ): string[] {
   const errors: string[] = [];
   for (const { value, field } of anchors) {
-    if (!anchorAppears(value, sectionText)) {
-      const { matched, rest } = anchorDivergence(value, sectionText);
+    const located = anchorAppears(value, sectionText)
+      ? Number.POSITIVE_INFINITY
+      : longestLocatingRun(value, sectionText);
+    if (located < ANCHOR_MIN_LOCATING_CHARS) {
+      const { rest } = anchorDivergence(value, sectionText);
       const shown = value.length > 30 ? `${value.slice(0, 30)}…` : value;
-      // Name the anchor first (so the model knows *which* quote to fix), then the
-      // divergence point (so it knows where its memory drifted). The head alone is
-      // useless for a quote that is right for 200 characters and wrong in its last
-      // clause — which is the common failure, not wholesale fabrication.
+      // Name the anchor first, so the model knows WHICH quote to replace, then
+      // where it left the text, so it knows the quote is invented rather than
+      // merely differently typeset.
       const tail = rest.length > 24 ? `${rest.slice(0, 24)}…` : rest;
-      const detail =
-        matched.length >= 8
-          ? `it matches for its first ${matched.length} characters ` +
-            `(…${matched.slice(-16)}) and then diverges at '${tail}'`
-          : `it does not match the section at all, from '${tail}' onward`;
+      // Report the run the DECISION was made on, not the prefix — otherwise the
+      // number in the message contradicts the threshold that rejected the anchor.
+      const detail = located
+        ? `its longest run found in this section is only ${located} characters; ` +
+          `it already departs from the text at '${tail}'`
+        : `no part of it appears here, starting at '${tail}'`;
       errors.push(
-        `${field} not found verbatim in the section: '${shown}' — ${detail}. ` +
-          // Page numbers and rules inside the quote are tolerated now, so the
-          // advice names what is actually still rejected: skipping over text, or
-          // joining two sentences that are not adjacent. Telling a model to "quote
-          // one unbroken sentence" when that is exactly what it did sends it
-          // rewriting a correct quote.
-          'Quote a shorter span, continuous in the source — do not omit words from ' +
-          'the middle or join sentences that are not adjacent.',
+        // The rule is locating, not verbatim: notation may differ freely, so an
+        // anchor only fails when it cannot be found in the section AT ALL. Say
+        // that, rather than sending the model off to re-quote a sentence it copied
+        // correctly in the other markup.
+        `${field} does not locate anywhere in this section: '${shown}' — ${detail}. ` +
+          `An anchor only has to be findable: quote ${ANCHOR_MIN_LOCATING_CHARS}+ characters ` +
+          'of running prose that really is in this section. Formula notation need not match ' +
+          'the source exactly, but the text around it must exist — do not quote from memory, ' +
+          'from another section, or from an exercise answer block.',
       );
     }
   }

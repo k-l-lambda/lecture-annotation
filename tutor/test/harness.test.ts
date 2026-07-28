@@ -220,7 +220,7 @@ test('a fabricated step anchor is still rejected with no analysis', async () => 
   steps.steps[0]!.anchors = ['这句话根本不在本节里，是编出来的。'];
   const result = await executeTool('planner', 'set_steps', steps, ctx);
   assert.equal(result.ok, false);
-  assert.match(errorsOf(result), /not found verbatim/);
+  assert.match(errorsOf(result), /does not locate anywhere in this section/);
 });
 
 test('set_steps is accepted once analyze_section has passed', async () => {

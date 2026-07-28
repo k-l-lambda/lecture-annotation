@@ -147,10 +147,11 @@ test('fabricated sourceAnchor is rejected and the anchor is named', () => {
   assert.match(errors[0]!, /熵是无序的度量/);
 });
 
-test('a quote that is right until its last clause is told where it diverged', () => {
-  // The failure mode that mattered in the live runs: the model quotes a long
-  // sentence correctly and drifts at the end. Naming only the head of the anchor
-  // gave neither the model nor a human any way to locate the drift.
+test('a quote that drifts at the end still locates, so it is accepted', () => {
+  // Under the old verbatim contract this was a rejection. The anchor's only job is
+  // to find a paragraph for `expandAnchors`, and a quote whose first clause is
+  // real does that — so drift at the tail is no longer worth killing a section
+  // over. `anchorDivergence` still reports where it drifted, for the message.
   const good = '必须先引入粗粒化';
   const drifted = `${good}，然后就能直接得出第二定律`;
   const { matched, rest } = anchorDivergence(drifted, SECTION);
@@ -158,10 +159,25 @@ test('a quote that is right until its last clause is told where it diverged', ()
   // The comma is ASCII here: normalizeForAnchor folds full-width punctuation.
   assert.ok(rest.includes('然后就能直接得出第二定律'), `rest was ${rest}`);
 
-  const errors = checkAnchors([{ value: drifted, field: 'formulas[0].sourceAnchor' }], SECTION);
-  assert.equal(errors.length, 1);
-  assert.match(errors[0]!, /diverges at/);
-  assert.match(errors[0]!, /matches for its first \d+ characters/);
+  assert.deepEqual(checkAnchors([{ value: drifted, field: 'formulas[0].sourceAnchor' }], SECTION), []);
+});
+
+test('a locating anchor is accepted however its formulas are typeset', () => {
+  // The five defects this replaces were all one non-problem: the corpus is part
+  // plain-text and part LaTeX, and a model picks whichever markup is conventional.
+  // What must still be caught is an anchor that is not in the section at all.
+  const cases = [
+    '熵是相空间体积的对数，其中 $V$ 是 $\\frac{1}{2}$ 粗粒化盒子的体积',  // invented formula, real prose
+    '必须先引入粗粒化$\\!$（见前）',                                      // spacing command
+  ];
+  for (const value of cases) {
+    assert.deepEqual(checkAnchors([{ value, field: 'a' }], SECTION), [], value);
+  }
+  // Under the locating rule, prose that is simply not here is still rejected.
+  assert.equal(
+    checkAnchors([{ value: '黑洞的事件视界面积与熵成正比这一点本节反复强调', field: 'a' }], SECTION).length,
+    1,
+  );
 });
 
 test('bold source and $\\mathbf{}$ model markup for the same symbol compare equal', () => {
@@ -254,7 +270,7 @@ test('a wholly invented anchor is reported as matching nothing, not as diverging
     SECTION,
   );
   assert.equal(errors.length, 1);
-  assert.match(errors[0]!, /does not match the section at all/);
+  assert.match(errors[0]!, /no part of it appears here|longest run found in this section/);
 });
 
 test('argumentChain shorter than 3 links is rejected', () => {
