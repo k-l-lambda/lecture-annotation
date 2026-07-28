@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
+  anchorAppears,
   anchorDivergence,
   answerInSameSentence,
   checkAnchors,
@@ -14,7 +15,9 @@ import {
   looksYesNo,
   overlapRatio,
   pointsMatch,
+  questionLength,
   stripDelimiters,
+  stripPageFurniture,
   tokenize,
   validateAnalyzeSection,
   validateAskQuestion,
@@ -159,6 +162,58 @@ test('a quote that is right until its last clause is told where it diverged', ()
   assert.equal(errors.length, 1);
   assert.match(errors[0]!, /diverges at/);
   assert.match(errors[0]!, /matches for its first \d+ characters/);
+});
+
+test('bold source and $\\mathbf{}$ model markup for the same symbol compare equal', () => {
+  // The corpus marks vectors with **V**; a model transcribing that sentence
+  // typesets the symbol as $\mathbf{V}$. Both are the vector V — only the markup
+  // differs — and on §13.9 this made every anchor over a bolded symbol unquotable.
+  const src = '我们可用运算 * 来定义 **V** 的两个元素 **v** 和 **w** 之间的埃尔米特标积';
+  const mdl = '我们可用运算 * 来定义 $\\mathbf{V}$ 的两个元素 $\\mathbf{v}$ 和 $\\mathbf{w}$ 之间的埃尔米特标积';
+  assert.equal(normalizeForAnchor(src), normalizeForAnchor(mdl));
+  assert.ok(anchorAppears(mdl, `前文。${src}：`), 'the model quote must locate in bold source');
+});
+
+test('emphasis folding does not eat asterisks that are real content', () => {
+  // §13.9 is about the operation `*` and the covector `v*`. Folding emphasis must
+  // not consume either, or the fix trades one class of unquotable anchor for another.
+  assert.ok(normalizeForAnchor('运算 * 是反线性的').includes('*'));
+  assert.ok(normalizeForAnchor('由 v* 与 w 的标积').includes('v*'));
+  assert.equal(normalizeForAnchor('*强调* 与 _下划_'), '强调与下划');
+});
+
+test('emphasis folding leaves every asterisk inside a display formula intact', () => {
+  // The regression this guards: emphasis folded AFTER the math fold (or with a
+  // span allowed to cross `$`) pairs the `*` closing `$$…TT^*=I$$` with one in a
+  // later `$*$` and eats the prose between, corrupting the section itself. Live,
+  // a perfectly-quoted §13.9 anchor was then reported as not present at all.
+  const passage =
+    '线性变换 $T$ 的逆为 $T^*$，故\n\n$$T^{-1} = T^*, \\quad \\text{即} \\quad TT^* = I = T^*T$$\n\n当 $*$ 是正定的';
+  const norm = normalizeForAnchor(passage);
+  // Four `T^*` plus the standalone `$*$`.
+  assert.equal((norm.match(/\*/g) ?? []).length, 5, `asterisks were dropped: ${norm}`);
+  assert.ok(norm.includes('TT^*=I'), norm);
+  assert.ok(norm.includes('当*是正定的'), norm);
+});
+
+test('inline footnote markers are furniture, but math exponents are not', () => {
+  // Every other furniture pattern is line-anchored; footnote markers sit
+  // mid-sentence, so an anchor quoted exactly as the sentence READS diverged at
+  // the marker the model correctly omitted (§13.9, `^[21]`).
+  const line = '如果 $q = 0$，则称 $*$ 是正定的，在此情形下，^[21] 非零矢量的范数总是正的：^**[13.54]';
+  assert.ok(
+    anchorAppears('如果 $q = 0$，则称 $*$ 是正定的，在此情形下，非零矢量的范数总是正的', `前文。${line}\n\n后文。`),
+    'a quote skipping the footnote marker must still locate',
+  );
+  // `^6^` after CJK/punctuation is a footnote; `x^2` is an exponent. Stripping
+  // bare `^N` unconditionally hit 170 sites in ch04 alone, nearly all exponents.
+  assert.ok(!stripPageFurniture('无穷大，^6^ 这就解释').includes('6'));
+  assert.ok(stripPageFurniture('$c^2+d^2 \\neq 0$').includes('c^2'));
+  assert.ok(stripPageFurniture('能量 $E = mc^2$ 的形式').includes('mc^2'));
+  // The scan also wraps footnote markers in math: `$^{22}$` (60 sites corpus-wide).
+  // A bare superscript with no base can only be a footnote — `x^{22}` has a base.
+  assert.ok(!stripPageFurniture('伪酉群 $U(p,q)$。$^{22}$ 如果变换').includes('22'));
+  assert.ok(stripPageFurniture('$x^{22} + 1$').includes('22'));
 });
 
 test('a wholly invented anchor is reported as matching nothing, not as diverging late', () => {
@@ -420,6 +475,96 @@ test('identical anchor + kpIds + genre is rejected even with low textual overlap
   assert.ok(errors.some((e) => /same sourceAnchor, same knowledge points, same genre/.test(e)));
 });
 
+// A prep step tests knowledge from BEFORE this section, so it has no anchor to
+// quote. Both anchors being empty made the identical-triple rule fire on every
+// prep variant (kpIds and genre are fixed by the step), so 换一题 on a prep step
+// could not produce any question and the session died on §13.9 live.
+test('inline math counts as one symbol toward the question length cap', () => {
+  // Three formulas whose markup is 46 chars but which read as three symbols.
+  const withMath = `${'在'.repeat(110)}$h_{a'b}$$\\overline{h}_{ab}$$v^a g_{ab}$？`;
+  // 151 raw chars fold to 114: the three formulas cost 3 instead of 40.
+  assert.equal(withMath.length, 151);
+  assert.equal(questionLength(withMath), 114);
+});
+
+test('a genuinely verbose question is still rejected, and the error says how much to cut', () => {
+  const errors = validateAskQuestion(
+    {
+      question: '这'.repeat(230) + '？',
+      setup: '',
+      genre: 'descriptive',
+      expectedPoints: [{ point: '要点甲', weight: 1 }],
+      rubric: { '5': 'a', '3': 'b', '1': 'c' },
+      hintLadder: ['h1'],
+      sourceAnchor: '熵是相空间体积的对数',
+    } as never,
+    {
+      sectionText: SECTION,
+      genrePreference: 'descriptive-first',
+      askedQuestions: [],
+      targetLevel: 1,
+      kpIds: ['kp:entropy'],
+    },
+  );
+  assert.ok(
+    errors.some((e) => /max 200 .*cut 31 chars by moving background/.test(e)),
+    errors.join('; '),
+  );
+});
+
+test('a second prep variant with different expectedPoints is accepted (both anchors empty)', () => {
+  const errors = checkRepetition(
+    {
+      genre: 'descriptive',
+      expectedPoints: ['对偶空间的元素是 V 到标量域的线性泛函'],
+      sourceAnchor: '',
+    },
+    {
+      sectionText: SECTION,
+      genrePreference: 'descriptive-first',
+      askedQuestions: [
+        asked({
+          stepId: 'prep',
+          sourceAnchor: '',
+          expectedPoints: ['双线性型对每个变量分别线性'],
+          kpIds: ['kp:hermitian-form'],
+        }),
+      ],
+      targetLevel: 1,
+      kpIds: ['kp:hermitian-form'],
+    },
+  );
+  assert.deepEqual(errors, [], 'an empty anchor is an absence of evidence, not a match');
+});
+
+test('a prep variant that really repeats the first is still rejected on overlap', () => {
+  const errors = checkRepetition(
+    {
+      genre: 'descriptive',
+      expectedPoints: ['双线性型对每个变量分别线性'],
+      sourceAnchor: '',
+    },
+    {
+      sectionText: SECTION,
+      genrePreference: 'descriptive-first',
+      askedQuestions: [
+        asked({
+          stepId: 'prep',
+          sourceAnchor: '',
+          expectedPoints: ['双线性型对每个变量分别线性'],
+          kpIds: ['kp:hermitian-form'],
+        }),
+      ],
+      targetLevel: 1,
+      kpIds: ['kp:hermitian-form'],
+    },
+  );
+  assert.ok(
+    errors.some((e) => /repeats a question already asked/.test(e)),
+    errors.join('; '),
+  );
+});
+
 test('a variant covered by discussedPoints is rejected', () => {
   const errors = checkRepetition(
     {
@@ -527,6 +672,28 @@ test('an over-long ask is rejected with its length', () => {
   const errors = validateAskQuestion(
     {
       genre: 'descriptive',
+      question: '为'.repeat(230),
+      setup: null,
+      expectedPoints: [{ point: 'x', weight: 1 }],
+      rubric: { '5': 'a', '3': 'b', '1': 'c' },
+      hintLadder: [],
+      sourceAnchor: '必须先引入粗粒化',
+    },
+    {
+      sectionText: SECTION,
+      genrePreference: 'descriptive-first',
+      askedQuestions: [],
+      targetLevel: 2,
+      kpIds: ['kp:coarse-graining'],
+    },
+  );
+  assert.ok(errors.some((e) => /question is 230 chars/.test(e)));
+});
+
+test('a 130-char ask is accepted — the cap is 200, not 120', () => {
+  const errors = validateAskQuestion(
+    {
+      genre: 'descriptive',
       question: '为'.repeat(130),
       setup: null,
       expectedPoints: [{ point: 'x', weight: 1 }],
@@ -542,7 +709,7 @@ test('an over-long ask is rejected with its length', () => {
       kpIds: ['kp:coarse-graining'],
     },
   );
-  assert.ok(errors.some((e) => /question is 130 chars/.test(e)));
+  assert.ok(!errors.some((e) => /max 200/.test(e)), errors.join('; '));
 });
 
 // ---------------------------------------------------------------------------

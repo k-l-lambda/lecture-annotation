@@ -45,7 +45,7 @@ import { QUESTION_GENRES } from './types.ts';
  */
 export function normalizeForAnchor(s: string): string {
   return (
-    foldMathNotation(s)
+    foldMathNotation(foldEmphasis(s))
       // Quotation marks fold to ONE character, single and double alike. Keeping
       // the two families distinct made `“实数”` (source) and `'实数'` (what the
       // model emitted for it) unmatchable forever: the corpus uses curly doubles
@@ -74,6 +74,34 @@ export function normalizeForAnchor(s: string): string {
       .replace(/\s+/g, '')
       .trim()
   );
+}
+
+/**
+ * Markdown emphasis, folded for the same reason as the quotation marks: it is
+ * markup around a symbol, not part of it. This corpus marks vectors with bold —
+ * `**V**` — while a model transcribing that sentence typesets the symbol the
+ * usual way, `$\mathbf{V}$`. `foldMathNotation` unwraps `$…$` to its content, so
+ * the model's side became `V` while the source's stayed `**V**` and the two
+ * could never match: on §13.9 that made every anchor over a bolded symbol
+ * unquotable — most of a chapter about vector spaces.
+ *
+ * Runs BEFORE `foldMathNotation`, which is the whole point. Inside math `*` is an
+ * operator (§13.9 is *about* the operation `*`, and `$$T^{-1}=T^*, … TT^*=I$$`
+ * has three of them), and once the `$` delimiters are stripped there is no way
+ * left to tell an operator from an emphasis marker. Attempting this after the
+ * math fold silently ate the `*` out of `TT^*=I` and, with a greedy span, paired
+ * the `*` closing a display formula with one in a later `$*$` and swallowed the
+ * prose between — corrupting the section text itself, so anchors that were quoted
+ * perfectly could not be found.
+ */
+function foldEmphasis(s: string): string {
+  // Split on math spans (`$$…$$` and `$…$`) and fold only the prose between them.
+  return s
+    .split(/(\$\$[\s\S]*?\$\$|\$[^$\n]*\$)/g)
+    .map((part, i) =>
+      i % 2 === 1 ? part : part.replace(/(\*{1,3}|_{1,3})(?=\S)([^\n]*?\S)\1/g, '$2'),
+    )
+    .join('');
 }
 
 /** LaTeX commands that have one conventional Unicode glyph a model may use instead. */
@@ -244,6 +272,27 @@ const PAGE_FURNITURE = new RegExp(
     // to an exercise is not section prose, and leaving it in both interrupts
     // sentences and offers the questioner a ready-made answer to quote.
     String.raw`^\s*\?{3}\+?\s+\w+[^\n]*$(?:\n(?:[ \t]+[^\n]*)?$)*`,
+    // INLINE footnote and exercise markers: `^[21]`, `^**[13.54]`, `^17`. Every
+    // pattern above is line-anchored, but these sit mid-sentence — a superscript
+    // in print, invisible as prose — so they survived and broke anchors quoted
+    // exactly as the sentence reads. Live on §13.9 the planner quoted
+    // `如果 $q = 0$，则称 $*$ 是正定的，在此情形下，非零矢量的范数总是正的` and was
+    // rejected for diverging at the `^[21]` it had correctly left out.
+    // The bracketed forms are unambiguous. A BARE `^17` is not: `^2`/`^3` are
+    // overwhelmingly math exponents (170 of them in ch04 alone), so this only
+    // strips one that follows CJK text or closing punctuation — where a
+    // superscript can only be a footnote, never an operand's exponent.
+    String.raw`\^\*{0,2}\[\d+(?:\.\d+)?\]`,
+    // Footnote markers the scan wrapped in math delimiters: `$^{22}$`, `$^{17}$`.
+    // Typographically a superscript like any other footnote, but the caret sits
+    // INSIDE `$…$`, so neither the bracketed pattern nor the CJK lookbehind below
+    // sees it. §13.9 s4: the planner quoted `…伪酉群 $\mathrm{U}(p,q)$。如果变换有
+    // 单位行列式…` — the sentence as printed — and was rejected at the `$^{22}$`
+    // standing between the two halves.
+    String.raw`\$\^\{?\d{1,3}\}?\$`,
+    // The corpus writes these as `^6^` — caret on both sides — so consume the
+    // closing caret too, or a stray `^` is left in the middle of the sentence.
+    String.raw`(?<=[一-鿿）】」』，。：；！？])\^\d{1,3}\^?(?![\d\w])`,
   ].join('|'),
   'gm',
 );
@@ -560,8 +609,30 @@ export function validateGenreForQuestion(genre: QuestionGenre, pref: GenrePrefer
 // ask_question (tools.md §3)
 // ---------------------------------------------------------------------------
 
-export const QUESTION_MAX_CHARS = 120;
+/**
+ * The ask, not the whole question — background belongs in `setup`, which allows
+ * SETUP_MAX_CHARS on top of this.
+ *
+ * Raised from 120 (the figure in `tools.md`, recorded there without a rationale).
+ * The costs are wildly asymmetric: a question 5 chars over reads no differently
+ * to a student, while three rejections abandon the whole section — which is how
+ * §13.9 died at `question is 125 chars, max 120` ×3. A ceiling whose only job is
+ * to catch genuine verbosity should sit where only genuine verbosity reaches it.
+ */
+export const QUESTION_MAX_CHARS = 200;
 export const SETUP_MAX_CHARS = 400;
+
+/**
+ * Length as a reader experiences it: one inline `$…$` span counts as one symbol,
+ * not as its markup width. The cap exists to keep the *ask* short and push
+ * background into `setup`; charging `$\overline{h}_{ab}$` 20 characters for what
+ * reads as one glyph made notation-heavy sections fail on formatting instead of
+ * on verbosity — §13.9 died at `question is 125 chars, max 120` three times,
+ * where nearly all the excess was LaTeX delimiters and subscript braces.
+ */
+export function questionLength(question: string): number {
+  return question.replace(/\$[^$]*\$/g, '§').length;
+}
 
 /** Yes/no answerability and multiple-choice shape are forbidden in every mode. */
 const YES_NO_PATTERNS = [
@@ -655,10 +726,16 @@ export function validateAskQuestion(
   if (!args.question || args.question.trim().length === 0) {
     errors.push('question is empty.');
   }
-  if (args.question && args.question.length > QUESTION_MAX_CHARS) {
-    errors.push(
-      `question is ${args.question.length} chars, max ${QUESTION_MAX_CHARS}: move background into 'setup'.`,
-    );
+  if (args.question) {
+    const qLen = questionLength(args.question);
+    if (qLen > QUESTION_MAX_CHARS) {
+      errors.push(
+        `question is ${qLen} chars, max ${QUESTION_MAX_CHARS} (inline $…$ already counts as 1 each): ` +
+          `cut ${qLen - QUESTION_MAX_CHARS} chars by moving background — definitions, given data, ` +
+          `restatement of the setting — into 'setup', which allows ${SETUP_MAX_CHARS}. ` +
+          `Keep only the sentence that asks.`,
+      );
+    }
   }
   if (args.setup && args.setup.length > SETUP_MAX_CHARS) {
     errors.push(`setup is ${args.setup.length} chars, max ${SETUP_MAX_CHARS}.`);
@@ -711,14 +788,26 @@ export function checkRepetition(
   const errors: string[] = [];
   const kpSet = new Set(ctx.kpIds);
 
+  const anchor = normalizeForAnchor(args.sourceAnchor);
+
   for (const prior of ctx.askedQuestions) {
     // Identical anchor + kpIds + genre is a duplicate regardless of overlap.
+    //
+    // Only when there IS an anchor. A prep step has none — it tests knowledge from
+    // before this section, so there is nothing here to quote — which made every
+    // prep question match every earlier one on `'' === ''`, and the second variant
+    // was rejected as a duplicate however different it was. Live on §13.9 a 换一题
+    // on the prep step could not produce any question at all and the session died.
+    // Two empty anchors are two absences of evidence, not evidence of sameness;
+    // such a pair falls through to the expectedPoints overlap check below, which
+    // compares what the questions actually ask.
     const sameKps =
       prior.kpIds.length === kpSet.size && prior.kpIds.every((k) => kpSet.has(k));
     if (
+      anchor.length > 0 &&
       sameKps &&
       prior.genre === args.genre &&
-      normalizeForAnchor(prior.sourceAnchor) === normalizeForAnchor(args.sourceAnchor)
+      normalizeForAnchor(prior.sourceAnchor) === anchor
     ) {
       errors.push(
         `duplicate of the question on step ${prior.stepId} variant ${prior.variant}: same sourceAnchor, same knowledge points, same genre. Pick a different case or a different aspect.`,
