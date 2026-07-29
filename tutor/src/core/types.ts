@@ -135,6 +135,14 @@ export type ReplyIntent =
   | 'wants_variant'
   | 'off_topic'
   | 'needs_clarification'
+  /**
+   * The student has asked to be taught rather than examined — 「你来讲清楚」,
+   * 「不要局限在原文」, 「先别让我答」. Distinct from `needs_clarification`, which asks what
+   * the question means: restating the question is the right answer to that and the
+   * wrong answer to this. Recorded because answering it with a second restatement is
+   * the observed failure, and because it is the signal that the quiz may be dropped.
+   */
+  | 'wants_explanation'
   | 'wants_next'
   | 'wants_skip'
   | 'answering'

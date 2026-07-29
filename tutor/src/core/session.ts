@@ -569,6 +569,7 @@ export class TutorSession {
           stepDigest: this.#stepDigest(),
           intentHint,
           question: attempt?.question ?? null,
+          expectedPoints: (attempt?.expectedPoints ?? []).map((p) => p.point),
         },
         this.#settings,
       ),

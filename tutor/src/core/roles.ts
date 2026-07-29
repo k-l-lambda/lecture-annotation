@@ -9,7 +9,7 @@
 import type { Llm, LlmMessage, LlmRequest, LlmToolCall } from './ports.ts';
 import { PROMPTS } from './prompts.ts';
 import { ROLE_TERMINAL_TOOL, toolsForRole, type ToolName } from './schema.ts';
-import { delimit } from './validate.ts';
+import { ANCHOR_MIN_LOCATING_CHARS, delimit, longestLocatingRun } from './validate.ts';
 import type {
   AskedQuestion,
   ProfileDigest,
@@ -210,7 +210,7 @@ export function buildQuestionerUser(input: QuestionerInput): string {
     // followed by more scaffolding, not just a new case.
     ...buildAdaptiveNote(input),
     analysis: input.analysis,
-    anchors: expandAnchors(input.section, input.step.anchors),
+    anchors: expandAnchors(input.section, input.step.anchors).texts,
     askedQuestions: input.askedQuestions,
     askedQuestionsNote:
       '本会话已问过的题。新题的 expectedPoints 与其中任何一条重合超过 60% 都会被拒绝；已在讨论中讲解过的要点（discussedPoints）同样不能再考。',
@@ -256,7 +256,7 @@ export function buildGraderUser(input: GraderInput): string {
     targetLevel: input.step.targetLevel,
     knowledgePointIds: input.step.knowledgePointIds,
     analysis: input.analysis,
-    anchors: expandAnchors(input.section, input.step.anchors),
+    anchors: expandAnchors(input.section, input.step.anchors).texts,
   };
   return JSON.stringify(payload, null, 2);
 }
@@ -280,14 +280,38 @@ export interface TutorReplyInput {
   intentHint?: ReplyIntent | null;
   /** The live question, needed so a `needs_clarification` reply can restate it. */
   question?: string | null;
+  /**
+   * What this attempt is graded on. Sent so the reply role can tell *the answer* from
+   * *adjacent material*: without it the only safe policy is to refuse everything, and
+   * that is what produced a tutor claiming 「本节没有展开到那个程度」 about a section that
+   * answered the student two paragraphs later.
+   */
+  expectedPoints?: string[];
 }
 
 export function buildTutorReplyMessages(input: TutorReplyInput, settings: Settings): LlmMessage[] {
+  // The section itself, not just the pinned anchors. Anchors exist for the questioner —
+  // they fix what a question may be built on. This role answers follow-ups, and scoping
+  // its knowledge to one pinned sentence is what manufactures a false 「本节没讲」: in the
+  // 33.2 twistor session the reply held 68 characters of source while the answers to all
+  // three of the student's questions sat at −1, +6 and +7 paragraphs from the anchor.
+  const budgeted = budgetSection(input.section, settings.maxContextChars);
+  const anchors = expandAnchors(input.section, input.step.anchors);
   const context: Record<string, unknown> = {
     phase: input.phase,
     step: { id: input.step.id, title: input.step.title, goal: input.step.goal, targetLevel: input.step.targetLevel },
     analysis: input.analysis,
-    anchors: expandAnchors(input.section, input.step.anchors),
+    sectionText: delimit('SECTION', budgeted.text),
+    sectionTruncated: budgeted.truncated,
+    // Still sent: the anchor marks the sentence being examined, which is what the
+    // no-reveal rule is scoped to. `anchorsExpanded` says whether paragraph expansion
+    // actually found them — it matches on a whitespace-stripped substring and returns
+    // the bare anchor when it misses, which is indistinguishable from success. The
+    // planner writes anchors as paraphrases (`Z` for `$\mathbf{Z}$`), so misses are
+    // routine, and a reply that knows its anchor view is thin can say so instead of
+    // inventing a claim about what the section covers.
+    anchors: anchors.texts,
+    anchorsExpanded: anchors.expanded,
     profileDigest: input.digest,
     lastEvaluation: input.lastEvaluation,
     hintsUsed: input.hintsUsed,
@@ -295,16 +319,40 @@ export function buildTutorReplyMessages(input: TutorReplyInput, settings: Settin
     earlierSteps: input.stepDigest,
     intentHint: input.intentHint ?? null,
     question: input.question ?? null,
+    // Scopes the no-reveal rule to what is actually graded. Without this the model
+    // cannot tell 「the answer」 from 「a fact that merely sounds advanced」, and refusing
+    // both is the only safe policy — which is the rigidity this fixes.
+    ...(input.expectedPoints?.length && input.phase === 'AWAIT_ANSWER'
+      ? { gradedPoints: input.expectedPoints, gradedPointsNote: '这些是本题评分点，回避的只是它们；本节其他内容照常回答' }
+      : {}),
     rules:
       input.phase === 'AWAIT_ANSWER'
-        ? input.intentHint === 'needs_clarification'
+        ? input.intentHint === 'wants_explanation'
+          ? // The student asked to be taught, not examined. Restating the question is
+            // the correct response to `needs_clarification` and the wrong one here —
+            // giving it anyway is what left this student asking twice.
+            '学生明确要求你直接讲，不要再重述题目：把他问的讲透，' +
+            '可以直接使用本节原文里的结论。本题的评分让位于他真的理解——' +
+            '需要就说明这题不算分了。讲完不要催他作答。'
+          : input.intentHint === 'needs_clarification'
           ? // Distinct from the hint rule below: restating a question is allowed to be
             // thorough, but must not narrow toward the answer. Hints are metered by
             // hintLadder/hintCap, so an explanation that leaks one is a free hint.
+            //
+            // The final clause is the precedence rule, and it overrides the rest of
+            // this string: 让学生理解 is the objective and the quiz is only the
+            // instrument. Without it the branch was absolute, and a student who said
+            // 「我让你来讲清楚，不要局限在原文」 got the same restatement twice plus a false
+            // 「本节没有展开」 — the harness protected a grade at the cost of the
+            // understanding the grade exists to measure.
             '学生在问题目本身的意思，还没作答：把题目换一种说法讲清楚，' +
-            '说明它要求什么形式的答案，但不要给出答案，也不要把范围收窄到一点上。' +
-            '这不消耗提示次数，讲完把作答权交回给他。'
-          : '学生还没作答：可以给方向性提示，但不能给出答案，也不能把答案藏在提示里。'
+            '说明它要求什么形式的答案，默认不要直接给出评分点，也不要把范围收窄到一点上。' +
+            '这不消耗提示次数，讲完把作答权交回给他。' +
+            '但如果学生明确要求你讲清楚、要求不要局限于原文、或明确表示不想先作答，' +
+            '就按他说的做：把他问的讲透，需要时直接放弃本题的评分。' +
+            '最高原则是让他真的理解，测验只是手段。'
+          : '学生还没作答：可以给方向性提示，但不能给出答案，也不能把答案藏在提示里。' +
+            '学生明确要求直接讲解时，以他的要求为准——理解优先于评分。'
         : '本步已评分，可以完整讲解答案。不要催促学生做选择——是否继续由他自己按按钮决定。',
   };
 
@@ -354,17 +402,50 @@ export function buildSummarizerUser(input: SummarizerInput): string {
   return JSON.stringify(payload, null, 2);
 }
 
-/** Anchors expanded to their surrounding paragraph, so a quote has context. */
-export function expandAnchors(section: SectionContent, anchors: string[]): string[] {
-  if (anchors.length === 0) return [];
+/**
+ * Anchors expanded to their surrounding paragraph, so a quote has context.
+ *
+ * Matched through `normalizeForAnchor`, the same folding the anchor gate uses, rather
+ * than a bare whitespace strip. The planner writes anchors as paraphrases of the
+ * source: in the 33.2 twistor session it stored `光线 Z 是一条轨迹` where the source has
+ * `光线 $Z$ 是一条轨迹`, so the substring test failed at the *first character* (longest
+ * matching prefix: `"在"`) and every anchor silently degraded to its bare self. That
+ * left the reply role with one sentence and no way to know it was missing the rest.
+ *
+ * `expanded` is returned rather than inferred by the caller, because the old shape
+ * made a miss indistinguishable from a hit — and a dedupe on the way out means output
+ * indices do not line up with input ones.
+ */
+export function expandAnchors(
+  section: SectionContent,
+  anchors: string[],
+): { texts: string[]; expanded: boolean } {
+  if (anchors.length === 0) return { texts: [], expanded: false };
   const paragraphs = section.annotation.split(/\n{2,}/);
   const out: string[] = [];
+  let hits = 0;
   for (const anchor of anchors) {
-    const needle = anchor.replace(/\s+/g, '');
-    const hit = paragraphs.find((p) => p.replace(/\s+/g, '').includes(needle));
-    out.push(hit ? hit.trim() : anchor);
+    // Located by longest shared run, the way the anchor gate does it — NOT by whole-
+    // string containment. Notation folding alone is not enough: in 33.2 the source
+    // reads 「这样，与普通时空图景中…」 and the planner stored 「在普通时空图景中…」, one
+    // character different, and a substring test cannot survive an edited word. That
+    // single character is why the reply role held 68 characters of source.
+    const best = paragraphs.reduce<{ i: number; run: number }>(
+      (acc, p, i) => {
+        const run = longestLocatingRun(anchor, p);
+        return run > acc.run ? { i, run } : acc;
+      },
+      { i: -1, run: 0 },
+    );
+    // The same floor the gate uses for "this really points at that paragraph".
+    if (best.i >= 0 && best.run >= ANCHOR_MIN_LOCATING_CHARS) {
+      hits += 1;
+      out.push((paragraphs[best.i] as string).trim());
+    } else {
+      out.push(anchor);
+    }
   }
-  return [...new Set(out)];
+  return { texts: [...new Set(out)], expanded: hits === anchors.length };
 }
 
 // ---------------------------------------------------------------------------
@@ -422,6 +503,7 @@ const REPLY_INTENTS: readonly ReplyIntent[] = [
   'wants_variant',
   'off_topic',
   'needs_clarification',
+  'wants_explanation',
   'wants_next',
   'wants_skip',
   'answering',
