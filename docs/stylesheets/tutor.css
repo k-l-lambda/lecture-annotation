@@ -266,6 +266,7 @@ html.tutor-fullscreen .tutor-panel {
 html.tutor-fullscreen .tutor-messages,
 html.tutor-fullscreen .tutor-panel__header,
 html.tutor-fullscreen .tutor-composer,
+html.tutor-fullscreen .tutor-phase-bar,
 html.tutor-fullscreen .tutor-choices {
   max-width: 52rem;
   margin-inline: auto;
@@ -280,6 +281,7 @@ html.tutor-fullscreen .tutor-choices {
 .tutor-panel--collapsed .tutor-messages,
 .tutor-panel--collapsed .tutor-composer,
 .tutor-panel--collapsed .tutor-choices,
+.tutor-panel--collapsed .tutor-phase-bar,
 .tutor-panel--collapsed .tutor-quick {
   display: none;
 }
@@ -385,8 +387,26 @@ html.tutor-fullscreen .tutor-choices {
   white-space: nowrap;
 }
 
+/* The row the phase line lives in, directly under the transcript. Empty most of the
+   time, so it must not reserve height — an always-on 1.2rem gap above the composer
+   reads as a layout bug. `:empty` cannot be used: the phase div is always present,
+   just blank, so the collapse is keyed on the parent having no text. */
+.tutor-phase-bar {
+  padding: 0.2rem 0.7rem 0;
+}
+
+.tutor-phase-bar:not(:has(.tutor-phase:not(:empty))) {
+  padding: 0;
+}
+
+/* Zeroing the bar's padding is not enough: an empty `.tutor-phase` still generates a
+   line box plus its own 0.1rem padding, measured as a 17px gap above the composer
+   with nothing in it. `display: none` on the empty div removes the box entirely. */
+.tutor-phase:empty {
+  display: none;
+}
+
 .tutor-phase {
-  margin-top: 0.25rem;
   color: var(--md-default-fg-color--light);
   font-size: 0.66rem;
   /* inline-block so the highlight below is the width of the text, not the panel:
@@ -590,15 +610,42 @@ html.tutor-fullscreen .tutor-choices {
   position: sticky;
   bottom: 0;
   display: flex;
-  gap: 0.4rem;
+  gap: 0.3rem;
   flex-wrap: wrap;
-  padding: 0.5rem 0.7rem 0;
+  padding: 0.3rem 0.7rem 0;
   background: var(--md-default-bg-color);
 }
 
+/* Styled here in full, not by `.md-button`. Every Material button rule is scoped
+   under `.md-typeset` and the panel sits outside it, so these carried the classes
+   while inheriting no border, no background, no padding and `cursor: default` —
+   they painted as bare black text. Shrinking a padding that was never applied
+   would have changed nothing on screen. */
 .tutor-choices__button {
   flex: 1 1 auto;
-  font-size: 0.66rem;
+  font-size: 0.62rem;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+  transition: background-color 120ms ease-out, border-color 120ms ease-out;
+}
+
+.tutor-choices__button:hover,
+.tutor-choices__button:focus-visible {
+  border-color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent);
+}
+
+/* The suggested next move. Weight as well as colour, so the recommendation does not
+   rest on hue alone (ui-spec.md §8). */
+.tutor-choices__button.md-button--primary {
+  border-color: var(--md-primary-fg-color);
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 700;
 }
 
 .tutor-composer {
@@ -622,6 +669,32 @@ html.tutor-fullscreen .tutor-choices {
   align-items: center;
   gap: 0.4rem;
   margin-top: 0.35rem;
+}
+
+/* Same `.md-typeset` scoping problem as the choice buttons: 提交 and 停止 carried
+   `.md-button` and painted as plain text. Kept larger than the choice row — this is
+   the primary action of the panel, not a secondary option. */
+.tutor-composer__submit,
+.tutor-composer__stop {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.tutor-composer__submit {
+  border-color: var(--md-primary-fg-color);
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 700;
+}
+
+.tutor-composer__submit:disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 .tutor-hint-counter {

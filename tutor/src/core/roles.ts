@@ -755,7 +755,16 @@ export async function runToolLoop(options: ToolLoopOptions): Promise<ToolLoopRes
           iterations,
           repairs,
           terminalToolCalled: false,
-          failure: `${role} did not call ${terminal} after a nudge`,
+          // Naming the cap when that is the cause: "did not call the tool" sends
+          // the reader looking for a prompt bug, while a model cut off before it
+          // could emit a call needs `maxOutputTokens` raised instead. With a
+          // reasoning role the thinking is drawn from the same budget, so the cap
+          // can be consumed before any visible output exists.
+          failure:
+            response.finishReason === 'length'
+              ? `${role} 在输出 ${terminal} 之前就到了 maxOutputTokens ` +
+                `(${settings.maxOutputTokens})，回复被截断。请调高 maxOutputTokens。`
+              : `${role} did not call ${terminal} after a nudge`,
         };
       }
       nudged = true;
@@ -896,7 +905,13 @@ export async function runProseTurn(options: {
   onReasoning?(tokens: number): void;
   execute?(name: string, args: unknown, id: string): Promise<ToolResult>;
   onTool?(name: string, result: ToolResult): void;
-}): Promise<{ text: string; intent: ReplyIntent; usage: Partial<Usage> }> {
+}): Promise<{
+  text: string;
+  intent: ReplyIntent;
+  usage: Partial<Usage>;
+  /** True when the endpoint stopped at `maxOutputTokens`, so `text` breaks off. */
+  truncated: boolean;
+}> {
   const tools = options.execute ? toolsForRole('tutor_reply') : undefined;
   const messages = [...options.messages];
   const usage: Usage = { calls: 0, promptTokens: 0, completionTokens: 0, reasoningTokens: 0 };
@@ -931,7 +946,7 @@ export async function runProseTurn(options: {
     // Nothing re-emitted here: if streaming ran, the shell already received this
     // text as deltas, and emitting it again would print the reply twice.
     if (!wantStream && text && options.onDelta) options.onDelta(text);
-    return { text, intent, usage };
+    return { text, intent, usage, truncated: first.finishReason === 'length' };
   }
 
   messages.push({ role: 'assistant', content: first.text ?? '', toolCalls: first.toolCalls });
@@ -957,7 +972,11 @@ export async function runProseTurn(options: {
   addUsage(usage, second.usage);
   const { text, intent } = extractIntent(second.text || first.text);
   if (!wantStream && text && options.onDelta) options.onDelta(text);
-  return { text, intent, usage };
+  // The turn whose text the student actually reads is the one to judge. When the
+  // second turn produced nothing and `first.text` is shown instead, that is the
+  // one that may have been cut.
+  const shown = second.text ? second : first;
+  return { text, intent, usage, truncated: shown.finishReason === 'length' };
 }
 
 export type { LlmToolCall };

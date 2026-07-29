@@ -70,15 +70,20 @@
     var rail = el("div", "tutor-rail");
     rail.setAttribute("role", "list");
     var stepLine = el("div", "tutor-step-line");
+    // Below the transcript rather than in the header: 讲解思考中… is about the reply
+    // being written *now*, so it belongs at the edge the next message will appear
+    // from, where the student is already looking. In the header it sat above a
+    // scrolled-away rail, furthest from the action it described.
+    var phaseBar = el("div", "tutor-phase-bar");
     var phase = el("div", "tutor-phase");
     // Its own live region, separate from the message log, so a screen reader
     // announces 正在出题… without re-reading the whole transcript (ui-spec.md §8).
     phase.setAttribute("aria-live", "polite");
+    phaseBar.appendChild(phase);
 
     header.appendChild(titleRow);
     header.appendChild(rail);
     header.appendChild(stepLine);
-    header.appendChild(phase);
 
     // --- messages -------------------------------------------------------
     var messages = el("div", "tutor-messages");
@@ -110,6 +115,7 @@
 
     root.appendChild(header);
     root.appendChild(messages);
+    root.appendChild(phaseBar);
     root.appendChild(quickReplies);
     root.appendChild(choices);
     root.appendChild(composer);

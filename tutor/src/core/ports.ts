@@ -89,6 +89,14 @@ export interface LlmResponse {
   usage: Partial<Usage>;
   /** Set when the endpoint rejected the reasoning param and it was stripped. */
   reasoningUnsupported?: boolean;
+  /**
+   * The endpoint's stop reason, verbatim. `'length'` means the model was cut off at
+   * `maxOutputTokens` mid-sentence, which for a prose turn is invisible in the text
+   * itself — the student just reads a reply that stops. The tool-call path catches
+   * its own truncation by bracket balance, but prose has no structure to check, so
+   * this is the only signal that a reply is incomplete.
+   */
+  finishReason?: string | null;
 }
 
 export interface Llm {

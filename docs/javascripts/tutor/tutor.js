@@ -145,17 +145,25 @@
    * A plain click starts a session; a modifier or middle click falls through to
    * the anchor. Silently destroying "copy link to section" on a reference site
    * would be a bad trade for an icon (ui-spec.md §1.1).
+   *
+   * Registered in the capture phase (see the listener below): every path that keeps
+   * the click for itself must also call `stopPropagation`, or Material's instant
+   * navigation re-routes the page and discards the panel.
    */
   function handleEntryClick(event) {
     var link = event.target.closest && event.target.closest("a.tutor-entry");
     if (!link) return;
+    // Modifier and middle clicks are deliberately *not* stopped: they belong to the
+    // browser, and Material ignores them too.
     if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
     if (link.getAttribute("aria-disabled") === "true") {
       event.preventDefault();
+      event.stopPropagation();
       if (state.panel) state.panel.flashBusy();
       return;
     }
     event.preventDefault();
+    event.stopPropagation();
     startSession(link.getAttribute("data-tutor-section"));
   }
 
@@ -262,6 +270,15 @@
   function startSession(sectionId) {
     var r = runtime();
     if (!r) return;
+    // The active section's own icon stays enabled — it is the 正在辅导本节 affordance,
+    // and the only in-page handle on a panel the student may have collapsed. Clicking
+    // it must toggle, not restart: `runtime.start()` throws 「已有进行中的会话」 on a live
+    // session, which is correct for the runtime and useless as a response to clicking
+    // the section you are already studying.
+    if (r.live && state.activeSectionId === sectionId) {
+      if (state.panel) state.panel.toggle();
+      return;
+    }
     if (!r.settingsStore.configured()) {
       window.TutorSettingsDialog.open({
         runtime: r,
@@ -326,7 +343,17 @@
       });
   }
 
-  document.addEventListener("click", handleEntryClick);
+  // Capture phase, and it stops propagation for entry clicks. Both are required
+  // because `navigation.instant` is enabled: Material subscribes to `document.body`
+  // clicks and routes any in-site anchor itself, filtering only on `target`, `metaKey`
+  // and `ctrlKey` — it never consults `defaultPrevented`. So a bubble-phase
+  // `preventDefault()` here was honoured by the browser and ignored by Material,
+  // which then swapped the whole `md-container` for the same URL with the hash
+  // stripped. The panel had already been appended into `.md-main__inner`, so it went
+  // out with the replaced subtree: measured as a session that starts, a panel that
+  // exists for one frame inside a now-detached parent, and a second click reporting
+  // 「已有进行中的会话」 because the runtime's session survived the DOM that showed it.
+  document.addEventListener("click", handleEntryClick, true);
   document.addEventListener("keydown", function (event) {
     // Alt+T toggles the panel (ui-spec.md §8).
     if (event.altKey && (event.key === "t" || event.key === "T") && state.panel) {

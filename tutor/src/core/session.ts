@@ -608,6 +608,17 @@ export class TutorSession {
       attempt.discussedPoints.push(...summariseExplained(reply.text));
     }
     this.#emit({ type: 'reply', text: reply.text, streaming: streamed });
+    // A prose reply cut off at the cap is invisible in the text — it simply stops
+    // mid-sentence, and a student cannot tell that from a terse tutor. Unlike the
+    // tool-call path, which rejects a truncated payload by bracket balance, there is
+    // no structure here to check, so the endpoint's stop reason is the only signal.
+    if (reply.truncated) {
+      this.#emit({
+        type: 'notice',
+        level: 'warn',
+        text: `回复在 maxOutputTokens (${this.#settings.maxOutputTokens}) 处被截断，上面这段话不完整。可以让我接着说，或在设置里调高这个上限。`,
+      });
+    }
     await this.#store.saveSession(this.#record);
     return { text: reply.text, intent: reply.intent };
   }

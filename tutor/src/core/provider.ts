@@ -234,6 +234,9 @@ export class HttpLlm implements Llm {
       ...(reasoning ? { reasoning } : {}),
       usage,
       ...(strippedReasoning ? { reasoningUnsupported: true } : {}),
+      ...(typeof first?.['finish_reason'] === 'string'
+        ? { finishReason: first['finish_reason'] }
+        : {}),
     };
   }
 
@@ -400,6 +403,7 @@ export class StreamAccumulator {
       ...(this.reasoning ? { reasoning: this.reasoning } : {}),
       usage,
       ...(strippedReasoning ? { reasoningUnsupported: true } : {}),
+      ...(this.finishReason ? { finishReason: this.finishReason } : {}),
     };
   }
 }
