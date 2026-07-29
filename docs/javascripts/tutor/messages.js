@@ -22,18 +22,83 @@
   }
 
   function renderMarkdown(node, text) {
-    var html = text;
     if (window.marked && window.DOMPurify) {
-      html = window.DOMPurify.sanitize(
-        window.marked.parse(text, { breaks: true, gfm: true })
+      var shielded = shieldMath(text);
+      var html = window.DOMPurify.sanitize(
+        window.marked.parse(shielded.text, { breaks: true, gfm: true })
       );
-      node.innerHTML = html;
+      node.innerHTML = restoreMath(html, shielded.spans);
     } else {
       // No sanitiser loaded means no innerHTML: degrade to plain text rather than
       // trusting model output. Formulas will show as source, which is legible.
       node.textContent = text;
     }
     typeset(node);
+  }
+
+  /**
+   * Math is lifted out before `marked` runs and put back after `DOMPurify`.
+   *
+   * Markdown and TeX disagree about `\`, `*` and `_`, and markdown wins because it
+   * parses first. `\(` and `\[` are *escapes* to marked, so `\(z=a+bi\)` came out as
+   * the literal `(z=a+bi)` — the delimiter destroyed before MathJax could ever see
+   * it, which is why an evaluation showed a formula's source with no `$` in sight.
+   * `$$…$$` happened to survive, so the bug looked intermittent when it was really
+   * "whichever delimiter the model chose this turn".
+   *
+   * Restoring *after* sanitising is deliberate: DOMPurify must still see the whole
+   * document, and TeX source containing `<` or `&` would otherwise be mangled by it
+   * (or, worse, be the thing it has to judge). The placeholder carries no markup, so
+   * it survives both passes unchanged, and the restored text is inserted as **text**,
+   * never as HTML.
+   */
+  /**
+   * The `$…$` branch requires a non-space on *both* inner edges. Without the closing
+   * guard, 「一共 $5 和 $7」 matched from the first `$` to the second and MathJax
+   * turned two prices into one formula — a grader mentioning money would corrupt its
+   * own feedback. Real inline math never ends on a space, so the guard costs nothing.
+   * `$$…$$` is listed first so a display block is never split by the inline rule.
+   */
+  var MATH_SPAN =
+    /\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\$(?!\s)(?:[^$\n\\]|\\.)*?[^$\s\\](?:\\.)?\$|\$(?!\s)[^$\s\n\\]\$|\\\((?:[\s\S]+?)\\\)/g;
+  /**
+   * Bare letters and `@`: no markdown-special character, so neither `marked` nor
+   * DOMPurify rewrites it. It must not be whitespace-delimited (markdown collapses
+   * runs of spaces) and must not be a control character — a NUL sentinel was tried
+   * first and DOMPurify silently *strips* NUL, so every placeholder survived into the
+   * DOM unrestored and every formula rendered as `tutormath0`.
+   */
+  var PLACEHOLDER = "@@TUTORMATH";
+
+  function shieldMath(text) {
+    var spans = [];
+    // Fenced and inline code are left alone: `$x$` inside backticks is a literal the
+    // student may have typed, and turning it into a formula would misquote them.
+    var pieces = String(text).split(/(```[\s\S]*?```|`[^`\n]*`)/g);
+    var out = pieces
+      .map(function (piece, index) {
+        if (index % 2 === 1) return piece; // a code span, verbatim
+        return piece.replace(MATH_SPAN, function (match) {
+          spans.push(match);
+          return PLACEHOLDER + (spans.length - 1) + "@@";
+        });
+      })
+      .join("");
+    return { text: out, spans: spans };
+  }
+
+  function restoreMath(html, spans) {
+    if (!spans.length) return html;
+    return html.replace(/@@TUTORMATH(\d+)@@/g, function (match, index) {
+      var source = spans[Number(index)];
+      if (source === undefined) return match;
+      // Escaped, because this lands in innerHTML and the source is model output.
+      // MathJax reads the resulting text node, so escaping costs nothing.
+      return source
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    });
   }
 
   /**
@@ -50,7 +115,14 @@
    * rather than the bubble, and leaves the site-wide config alone — the chapter
    * body depends on it.
    */
-  var MATH_PATTERN = /\$[^$\n]+\$|\$\$[\s\S]+?\$\$|\\\(|\\\[/;
+  /**
+   * Derived from `MATH_SPAN` rather than written twice. The two must agree: this one
+   * decides what gets *tagged* for MathJax and the other decides what got *shielded*
+   * from markdown, so a span shielded but not tagged would render as its own source,
+   * and a span tagged but not shielded would already be mangled. Same source, minus
+   * the `g` flag, is the only way they cannot drift.
+   */
+  var MATH_PATTERN = new RegExp(MATH_SPAN.source);
 
   function typeset(node) {
     if (!window.MathJax || !window.MathJax.typesetPromise) return;
@@ -60,11 +132,31 @@
     });
   }
 
+  /**
+   * Typesets a node whose text was set with `textContent`, no markdown involved.
+   *
+   * The short list fields — `pointsMissed`, `strengths`, `gaps`, `nextActions` — are
+   * plain strings placed straight into `<li>`s, and they are exactly where a grader
+   * names the formula the student missed, so they showed raw `$b^2-4ac$` next to
+   * properly rendered prose. They deliberately do **not** go through
+   * `renderMarkdown`: a fragment like `判别式 *的符号*` should not gain emphasis, and
+   * `textContent` already makes injection impossible. Only the math needs doing.
+   */
+  function typesetText(node) {
+    if (MATH_PATTERN.test(node.textContent || "")) typeset(node);
+    // Returned so it can wrap an `el(...)` call at the append site.
+    return node;
+  }
+
   /** Tags every element whose own text holds a delimiter, deepest-first. */
   function markMathLeaves(root) {
     var candidates = [root].concat(Array.prototype.slice.call(root.querySelectorAll("*")));
     candidates.forEach(function (element) {
       if (element.tagName === "CODE" || element.tagName === "PRE") return;
+      // A `<code>` descendant's text is not this element's own, but `closest` still
+      // has to be checked: a tagged ancestor of a code span would hand the code to
+      // MathJax as processable content.
+      if (element.closest && element.closest("code, pre")) return;
       var ownText = "";
       Array.prototype.forEach.call(element.childNodes, function (child) {
         if (child.nodeType === 3) ownText += child.nodeValue;
@@ -169,7 +261,7 @@
         var missed = el("ul", "tutor-evaluation__missed");
         missed.appendChild(el("li", "tutor-evaluation__missed-label", "还没说到："));
         event.pointsMissed.forEach(function (point) {
-          missed.appendChild(el("li", null, point));
+          missed.appendChild(typesetText(el("li", null, point)));
         });
         card.appendChild(missed);
       }
@@ -209,7 +301,7 @@
         var list = el("ul", "tutor-summary__list");
         list.appendChild(el("li", "tutor-summary__label", pair[0] + "："));
         pair[1].forEach(function (item) {
-          list.appendChild(el("li", null, item));
+          list.appendChild(typesetText(el("li", null, item)));
         });
         card.appendChild(list);
       });
@@ -226,7 +318,7 @@
           } else {
             item.textContent = action.text;
           }
-          next.appendChild(item);
+          next.appendChild(typesetText(item));
         });
         card.appendChild(next);
       }

@@ -179,7 +179,7 @@
     button.id = "tutor-header-button";
     button.className = "md-header__button tutor-header-button";
     button.type = "button";
-    button.innerHTML = '<span class="tutor-header-button__label">🎓 Tutor</span><span class="tutor-header-button__dot" aria-hidden="true"></span>';
+    button.innerHTML = '<span class="tutor-header-button__label">🎓</span><span class="tutor-header-button__dot" aria-hidden="true"></span>';
     button.addEventListener("click", function () {
       var r = runtime();
       if (!r) return;
