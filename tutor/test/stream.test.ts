@@ -247,3 +247,44 @@ test('a multi-byte character split across reads is decoded intact', async () => 
   const first = (out[0]!['choices'] as Array<Record<string, unknown>>)[0]!;
   assert.equal((first['delta'] as Record<string, unknown>)['content'], '球');
 });
+
+// ---------------------------------------------------------------------------
+// Receiver binding
+//
+// Node's `fetch` does not care what `this` is, so no test here could fail on a
+// bare stored reference — but the browser's `fetch` is a Window method that
+// throws `TypeError: Illegal invocation` for any other receiver. That threw on
+// every real call in the web shell, and the probe classified the TypeError as a
+// CORS rejection, so a gateway sending `Access-Control-Allow-Origin: *` could
+// never pass the save gate. This test supplies a fetch that checks its receiver
+// the way a browser does.
+// ---------------------------------------------------------------------------
+
+test('the provider calls fetch with the global as receiver, not the instance', async () => {
+  const strictFetch = function (this: unknown, _url: string, _init: RequestInit) {
+    // Mirrors the browser's own check: anything but the global is illegal.
+    if (this !== globalThis && this !== undefined) {
+      throw new TypeError('Illegal invocation');
+    }
+    return Promise.resolve(
+      new Response('{"choices":[{"message":{"content":"ok"}}],"usage":{}}', { status: 200 }),
+    );
+  } as unknown as typeof fetch;
+
+  const llm = new HttpLlm({
+    baseUrl: 'https://example.test/v1',
+    apiKey: 'k',
+    flavor: 'openai',
+    timeoutMs: 5000,
+    fetchImpl: strictFetch,
+  });
+
+  const res = await llm.call({
+    role: 'router',
+    model: 'm',
+    messages: [{ role: 'user', content: 'hi' }],
+    temperature: 0,
+    maxOutputTokens: 128,
+  });
+  assert.equal(res.text, 'ok');
+});

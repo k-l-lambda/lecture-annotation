@@ -293,6 +293,33 @@
     // ------------------------------------------------------------------
     // Actions
     // ------------------------------------------------------------------
+
+    /**
+     * Turns a thrown request error into the same named diagnosis the settings
+     * dialog shows.
+     *
+     * A raw `Failed to fetch` in the transcript is the failure the probe exists to
+     * replace: it is what a student sees if they start a session on a config that
+     * was never tested, or whose gateway stopped answering since, and it names no
+     * cause and suggests no action. `describeProbeFailure` already classifies this
+     * exact class of error, so the panel reuses it rather than keeping a second,
+     * vaguer vocabulary for the same conditions.
+     */
+    function explainError(err) {
+      var raw = String((err && err.message) || err);
+      var C = window.TutorCore;
+      if (!C || !C.describeProbeFailure) return raw;
+      // Only reclassify transport-level failures. A harness rejection ("planner
+      // produced no step ladder") is already specific, and running it through a
+      // network classifier would replace a precise message with a wrong one.
+      if (!/failed to fetch|load failed|networkerror|abort|timeout|^4\d\d|^5\d\d/i.test(raw)
+          && !(err && err.status)) {
+        return raw;
+      }
+      var described = C.describeProbeFailure(err, (ui.settings && ui.settings.model) || "");
+      return described.message;
+    }
+
     function guard(promise) {
       ui.busy = true;
       submit.disabled = true;
@@ -301,7 +328,7 @@
         .catch(function (err) {
           // A failed call returns to the previous state with a notice rather than
           // ending the session: it is retriable (harness.md §2).
-          view.notice(String((err && err.message) || err), "error");
+          view.notice(explainError(err), "error");
         })
         .then(function () {
           ui.busy = false;
@@ -443,7 +470,7 @@
         return session.ask();
       })
       .catch(function (err) {
-        view.notice(String((err && err.message) || err), "error");
+        view.notice(explainError(err), "error");
       });
 
     return {

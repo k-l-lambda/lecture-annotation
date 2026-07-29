@@ -109,7 +109,14 @@ export class HttpLlm implements Llm {
 
   constructor(config: ProviderConfig) {
     this.#config = { ...config, baseUrl: normalizeBaseUrl(config.baseUrl) };
-    this.#fetch = config.fetchImpl ?? fetch;
+    // Bound to `globalThis`, not stored bare. `this.#fetch(…)` calls the function
+    // with `this` set to the HttpLlm instance, and the browser's `fetch` is a
+    // Window method that throws `TypeError: Illegal invocation` when its receiver
+    // is not the global — which the probe then read as a CORS rejection, so a
+    // perfectly good gateway could never pass the save gate. Node's fetch is
+    // receiver-agnostic, which is why the Node shell never saw this.
+    const impl = config.fetchImpl ?? globalThis.fetch;
+    this.#fetch = impl.bind(globalThis);
     this.#reasoningSupported = config.reasoningSupported !== false;
   }
 

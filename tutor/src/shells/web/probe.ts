@@ -159,8 +159,11 @@ async function distinguishNetworkFailure(
   baseUrl: string,
   fetchImpl?: typeof fetch,
 ): Promise<Pick<ProbeResult, 'ok' | 'failure' | 'message'>> {
-  const doFetch = fetchImpl ?? globalThis.fetch;
-  if (!doFetch) return CORS_FAILURE;
+  const raw = fetchImpl ?? globalThis.fetch;
+  if (!raw) return CORS_FAILURE;
+  // Bound for the same reason as in HttpLlm: an unbound browser `fetch` throws
+  // `Illegal invocation`, which here would report every failure as unreachable.
+  const doFetch = raw.bind(globalThis);
   try {
     await doFetch(normalizeBaseUrl(baseUrl), {
       method: 'GET',
@@ -232,7 +235,11 @@ export function describeProbeFailure(
     return {
       ok: false,
       failure: 'network',
-      message: '请求没有发出去（CORS 拦截或地址不可达），正在判断具体原因…',
+      // Self-contained, because this text is also shown where nothing follows it:
+      // the panel reuses this classifier for a mid-session failure and does not run
+      // the reachability retry, so a message promising 正在判断… would be a sentence
+      // the panel never finishes.
+      message: '请求没有发出去：可能被 CORS 拦截，也可能地址不可达。请到设置里重新测试连接。',
     };
   }
   return { ok: false, failure: 'unknown', message: `连接失败：${text}` };

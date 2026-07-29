@@ -48,6 +48,11 @@
     var settings = loaded.settings;
     var keyMode = store.keyMode();
 
+    // The state as it stood on open, so 取消 can restore it — fields write through
+    // as drafts while typing, so discarding an edit is a rollback, not a no-op.
+    var opened = Object.assign({}, settings);
+    var openedKeyMode = keyMode;
+
     // Reset on every open: a passing test for one endpoint must not authorise
     // saving a different one the student typed afterwards.
     var probeOk = false;
@@ -274,6 +279,18 @@
       input.addEventListener("change", invalidateProbe);
     });
 
+    // Every field also persists as a draft on change, debounced. Keeping the draft
+    // only on dismissal still lost the work to a reload or a closed tab, which is
+    // the very loop a student is in while fixing a gateway. Writing through means
+    // the fields survive whatever ends the page.
+    var draftTimer = null;
+    function scheduleDraft() {
+      if (draftTimer) clearTimeout(draftTimer);
+      draftTimer = setTimeout(saveDraft, 400);
+    }
+    dialog.addEventListener("input", scheduleDraft);
+    dialog.addEventListener("change", scheduleDraft);
+
     function invalidateProbe() {
       if (!probeOk) return;
       probeOk = false;
@@ -354,22 +371,54 @@
         testResult.className = "tutor-probe tutor-probe--warn";
         return;
       }
-      dismiss();
+      dismiss({ keepDraft: false });
       if (options.onSaved) options.onSaved();
     });
 
-    cancel.addEventListener("click", dismiss);
-    close.addEventListener("click", dismiss);
+    /**
+     * What the student typed is kept even when the test failed.
+     *
+     * The connection test gates *enabling* Tutor, not *remembering* the fields —
+     * conflating the two meant a student debugging a CORS-blocked gateway or
+     * waiting on a new key retyped the URL, key, model, background and every
+     * budget on each attempt, losing work to a verdict about the endpoint. The
+     * enable gate is unaffected: `configured()` still needs all three fields, and
+     * a session start still runs `assertConfigured`, so an unverified draft cannot
+     * silently start a session.
+     */
+    function saveDraft() {
+      var draft = collect();
+      if (!draft.baseUrl && !draft.apiKey && !draft.model && !draft.background) return;
+      store.save(draft, keyModeSelect.value);
+    }
+
+    cancel.addEventListener("click", function () {
+      // 取消 means "discard this edit". Because fields write through as drafts, that
+      // has to actively restore the state captured when the dialog opened, not
+      // merely skip the final write.
+      dismiss({ keepDraft: false, restore: true });
+    });
+    close.addEventListener("click", function () {
+      dismiss({ keepDraft: true });
+    });
     back.addEventListener("click", function (event) {
-      if (event.target === back) dismiss();
+      if (event.target === back) dismiss({ keepDraft: true });
     });
     document.addEventListener("keydown", onEscape);
 
     function onEscape(event) {
-      if (event.key === "Escape") dismiss();
+      if (event.key === "Escape") dismiss({ keepDraft: true });
     }
 
-    function dismiss() {
+    function dismiss(options2) {
+      // Cancel the pending debounce first, or a queued write lands after 取消 and
+      // persists the edit the student just discarded.
+      if (draftTimer) {
+        clearTimeout(draftTimer);
+        draftTimer = null;
+      }
+      if (options2 && options2.keepDraft) saveDraft();
+      if (options2 && options2.restore) store.save(opened, openedKeyMode);
       release();
       back.remove();
       document.removeEventListener("keydown", onEscape);
