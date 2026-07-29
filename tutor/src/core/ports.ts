@@ -102,9 +102,15 @@ export interface LlmResponse {
 export interface Llm {
   call(req: LlmRequest, signal?: AbortSignal): Promise<LlmResponse>;
   /**
-   * `onReasoning` receives a running token estimate while the model thinks. For a
+   * `onReasoning` receives a running token estimate while the model works. For a
    * reasoning model this is the only progress signal that exists before the first
    * prose token — planner calls measured 70-129s of silence without it.
+   *
+   * It counts reasoning **and** tool-call arguments, because those are the two ways
+   * a turn can be silent from the shell's point of view. A planner emitting a long
+   * `set_steps` streams thousands of characters as `delta.tool_calls` and no
+   * reasoning at all: counting only reasoning left the number frozen while the
+   * stream was very much alive, which is indistinguishable from a hang.
    */
   stream?(
     req: LlmRequest,

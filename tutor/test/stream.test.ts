@@ -184,9 +184,14 @@ test('stream() reports prose per chunk and reasoning as a growing total', async 
   assert.deepEqual(sentBody['stream_options'], { include_usage: true });
   assert.deepEqual(deltas, ['是 ', '6n'], 'prose arrives as written, not in one lump');
   // A running total, so a shell can render one updating counter rather than
-  // summing deltas itself.
-  assert.equal(thinking.length, 2);
-  assert.ok(thinking[1]! > thinking[0]!);
+  // summing deltas itself. Fired for every chunk that produced anything — two
+  // reasoning, two prose here — not only for reasoning: a role that streams tool-call
+  // arguments and no reasoning would otherwise report no progress at all while the
+  // stream ran. Monotonic is the property that matters, since it drives a counter.
+  assert.equal(thinking.length, 4);
+  const monotonic = thinking.every((n, i) => i === 0 || n >= thinking[i - 1]!);
+  assert.ok(monotonic, `progress went backwards: ${thinking.join(' → ')}`);
+  assert.ok(thinking[thinking.length - 1]! > thinking[0]!);
   assert.equal(res.text, '是 6n');
   assert.equal(res.usage.completionTokens, 9);
   assert.equal(res.usage.promptTokens, 700);

@@ -12,6 +12,13 @@ export interface ProviderConfig {
   apiKey: string;
   flavor: 'openai' | 'anthropic';
   timeoutMs: number;
+  /**
+   * Deadline for the `planner` role specifically, which is slower than every other
+   * call — it reads the whole section and emits a multi-step ladder, measured at
+   * 70-129s. Both shells were already passing this in and `ProviderConfig` did not
+   * declare it, so it was dropped on the floor and the planner ran on `timeoutMs`.
+   */
+  plannerTimeoutMs?: number;
   /** Set false once the endpoint has rejected the reasoning parameter. */
   reasoningSupported?: boolean;
   fetchImpl?: typeof fetch;
@@ -124,6 +131,13 @@ export class HttpLlm implements Llm {
     return this.#reasoningSupported;
   }
 
+  /** The planner gets its own, longer deadline; every other role gets `timeoutMs`. */
+  #deadlineFor(role: LlmRequest['role']): number {
+    return role === 'planner' && this.#config.plannerTimeoutMs
+      ? this.#config.plannerTimeoutMs
+      : this.#config.timeoutMs;
+  }
+
   #body(req: LlmRequest, withReasoning: boolean): Record<string, unknown> {
     const messages = req.messages.map((m) => {
       if (m.role === 'tool') {
@@ -159,9 +173,10 @@ export class HttpLlm implements Llm {
   async #post(
     body: Record<string, unknown>,
     signal: AbortSignal | undefined,
+    deadlineMs: number,
   ): Promise<Record<string, unknown>> {
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), this.#config.timeoutMs);
+    const timer = setTimeout(() => controller.abort(), deadlineMs);
     const onAbort = () => controller.abort();
     signal?.addEventListener('abort', onAbort, { once: true });
 
@@ -193,8 +208,10 @@ export class HttpLlm implements Llm {
     let payload: Record<string, unknown>;
     let strippedReasoning = false;
 
+    const deadline = this.#deadlineFor(req.role);
+
     try {
-      payload = await this.#post(this.#body(req, useReasoning), signal);
+      payload = await this.#post(this.#body(req, useReasoning), signal, deadline);
     } catch (err) {
       // A 400 naming the reasoning parameter costs one retry, never a broken
       // session (llm-io.md §1.2).
@@ -206,7 +223,7 @@ export class HttpLlm implements Llm {
       ) {
         this.#reasoningSupported = false;
         strippedReasoning = true;
-        payload = await this.#post(this.#body(req, false), signal);
+        payload = await this.#post(this.#body(req, false), signal, deadline);
       } else {
         throw err;
       }
@@ -243,11 +260,13 @@ export class HttpLlm implements Llm {
   async #openStream(
     body: Record<string, unknown>,
     signal: AbortSignal | undefined,
+    deadlineMs: number,
   ): Promise<ReadableStream<Uint8Array>> {
     const controller = new AbortController();
     // Unlike #post, the timer guards only time-to-first-byte: a long generation
-    // that is actively streaming must not be aborted mid-flight.
-    const timer = setTimeout(() => controller.abort(), this.#config.timeoutMs);
+    // that is actively streaming must not be aborted mid-flight. The read loop that
+    // follows carries its own idle deadline — see `sseChunks`.
+    const timer = setTimeout(() => controller.abort(), deadlineMs);
     const onAbort = () => controller.abort();
     signal?.addEventListener('abort', onAbort, { once: true });
 
@@ -284,11 +303,12 @@ export class HttpLlm implements Llm {
   ): Promise<LlmResponse> {
     const useReasoning = this.#reasoningSupported && req.reasoningEffort !== 'off';
     const streaming = { ...req, stream: true };
+    const deadline = this.#deadlineFor(req.role);
     let body: ReadableStream<Uint8Array>;
     let strippedReasoning = false;
 
     try {
-      body = await this.#openStream(this.#body(streaming, useReasoning), signal);
+      body = await this.#openStream(this.#body(streaming, useReasoning), signal, deadline);
     } catch (err) {
       if (
         useReasoning &&
@@ -298,19 +318,29 @@ export class HttpLlm implements Llm {
       ) {
         this.#reasoningSupported = false;
         strippedReasoning = true;
-        body = await this.#openStream(this.#body(streaming, false), signal);
+        body = await this.#openStream(this.#body(streaming, false), signal, deadline);
       } else {
         throw err;
       }
     }
 
     const acc = new StreamAccumulator();
-    for await (const chunk of sseChunks(body)) {
+    // The same deadline the open used, applied per-read: chunks arrive seconds apart
+    // at worst, so a whole role-deadline of silence mid-stream is a dead connection.
+    for await (const chunk of sseChunks(body, deadline)) {
       const added = acc.push(chunk);
       if (added.text) onDelta(added.text);
       // Report the estimate as it grows rather than per-chunk deltas, so a shell
       // can render one updating counter.
-      if (added.reasoning && onReasoning) onReasoning(estimateTokens(acc.reasoning));
+      //
+      // Fed by tool-call arguments as well as reasoning. A planner emitting
+      // `set_steps` streams thousands of characters of arguments and, on many models,
+      // no reasoning after the first chunk — so a reasoning-only counter sat frozen
+      // through the longest call in the session while bytes were still arriving. The
+      // student cannot tell that from a hang, and it was reported as one.
+      if ((added.reasoning || added.toolArgs || added.text) && onReasoning) {
+        onReasoning(acc.producedTokens());
+      }
     }
     return acc.toResponse(strippedReasoning);
   }
@@ -335,14 +365,27 @@ export class StreamAccumulator {
   usage: Partial<Usage> = {};
   finishReason: string | null = null;
 
+  /** Total characters of streamed tool-call arguments, across all calls. */
+  toolArgChars = 0;
+
+  /**
+   * Everything the model has emitted so far, as a token estimate — reasoning, prose
+   * and tool-call arguments together. This is the progress counter's input: the point
+   * is "the model is producing output", and which of the three it is producing is not
+   * something the student needs to distinguish while waiting.
+   */
+  producedTokens(): number {
+    return estimateTokens(this.reasoning) + estimateTokens(this.text) + Math.ceil(this.toolArgChars / 2.2);
+  }
+
   /** Returns what this chunk added, so a caller can render incrementally. */
-  push(chunk: Record<string, unknown>): { text: string; reasoning: string } {
+  push(chunk: Record<string, unknown>): { text: string; reasoning: string; toolArgs: number } {
     const usage = chunk['usage'];
     if (usage) Object.assign(this.usage, extractUsage(usage));
 
     const choices = chunk['choices'];
     const first = Array.isArray(choices) ? (choices[0] as Record<string, unknown>) : undefined;
-    if (!first) return { text: '', reasoning: '' };
+    if (!first) return { text: '', reasoning: '', toolArgs: 0 };
 
     if (typeof first['finish_reason'] === 'string') this.finishReason = first['finish_reason'];
 
@@ -362,6 +405,7 @@ export class StreamAccumulator {
     }
 
     const calls = delta['tool_calls'];
+    let addedToolArgs = 0;
     if (Array.isArray(calls)) {
       for (const raw of calls) {
         const c = raw as Record<string, unknown>;
@@ -371,12 +415,16 @@ export class StreamAccumulator {
         if (typeof c['id'] === 'string' && c['id']) existing.id = c['id'];
         if (typeof fn['name'] === 'string' && fn['name']) existing.name = fn['name'];
         // Arguments stream as fragments and must be concatenated, never replaced.
-        if (typeof fn['arguments'] === 'string') existing.arguments += fn['arguments'];
+        if (typeof fn['arguments'] === 'string') {
+          existing.arguments += fn['arguments'];
+          addedToolArgs += fn['arguments'].length;
+        }
         this.#tools.set(index, existing);
       }
     }
+    this.toolArgChars += addedToolArgs;
 
-    return { text: addedText, reasoning: addedReasoning };
+    return { text: addedText, reasoning: addedReasoning, toolArgs: addedToolArgs };
   }
 
   toResponse(strippedReasoning: boolean): LlmResponse {
@@ -408,9 +456,18 @@ export class StreamAccumulator {
   }
 }
 
-/** Splits an SSE byte stream into decoded JSON chunk objects. */
+/**
+ * Splits an SSE byte stream into decoded JSON chunk objects.
+ *
+ * `idleMs` bounds the gap *between* reads, not the total duration: a generation that
+ * keeps producing may run as long as it likes, but one that opens and then goes quiet
+ * has to end. Without it the loop had no deadline at all — `#openStream`'s timer is
+ * cleared once the response headers arrive — so a stalled stream hung the session
+ * forever with no error, no retry and no further call.
+ */
 export async function* sseChunks(
   body: ReadableStream<Uint8Array>,
+  idleMs = 0,
 ): AsyncGenerator<Record<string, unknown>> {
   const decoder = new TextDecoder();
   const reader = body.getReader();
@@ -418,7 +475,7 @@ export async function* sseChunks(
 
   try {
     for (;;) {
-      const { done, value } = await reader.read();
+      const { done, value } = await (idleMs > 0 ? readWithin(reader, idleMs) : reader.read());
       if (done) break;
       buffer += decoder.decode(value, { stream: true });
 
@@ -440,7 +497,41 @@ export async function* sseChunks(
       }
     }
   } finally {
+    reader.cancel().catch(() => {});
     reader.releaseLock();
+  }
+}
+
+/** One `read()`, or a `StreamIdleError` if nothing arrives within `idleMs`. */
+async function readWithin(
+  reader: ReadableStreamDefaultReader<Uint8Array>,
+  idleMs: number,
+): Promise<{ done: boolean; value?: Uint8Array }> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      reader.read(),
+      new Promise<never>((_, reject) => {
+        timer = setTimeout(() => reject(new StreamIdleError(idleMs)), idleMs);
+      }),
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
+/**
+ * Distinct from an abort so the retry policy can tell them apart: a stream that went
+ * quiet is worth retrying (`isRetriable` treats it as a network failure), whereas the
+ * student pressing 停止 is not.
+ */
+export class StreamIdleError extends Error {
+  readonly idleMs: number;
+
+  constructor(idleMs: number) {
+    super(`流在 ${Math.round(idleMs / 1000)}s 内没有新数据，已中断。可以重试。`);
+    this.name = 'StreamIdleError';
+    this.idleMs = idleMs;
   }
 }
 

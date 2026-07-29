@@ -81,11 +81,11 @@ function liveReasoning(role: string, tokens: number): void {
   live.role = ROLE_LABELS[role] ?? role;
   live.tokens = tokens;
   if (useColor) {
-    stdout.write(`\r${dim(`  ${live.role}思考中… ${tokens} tokens`)}[K`);
+    stdout.write(`\r${dim(`  ${live.role}生成中… ${tokens} tokens`)}[K`);
   } else if (live.mode !== 'thinking') {
     // No cursor control in a pipe: announce once and let endLive report the total,
     // rather than writing one line per update into the log.
-    stdout.write(dim(`  ${live.role}思考中…\n`));
+    stdout.write(dim(`  ${live.role}生成中…\n`));
   }
   live.mode = 'thinking';
 }
@@ -103,7 +103,7 @@ function endLive(): void {
     if (useColor) stdout.write('\r[K');
     // The counter was transient; keep its final value so the transcript still
     // records what the turn cost.
-    say(dim(`  ${live.role}思考 ${live.tokens} tokens`));
+    say(dim(`  ${live.role}生成 ${live.tokens} tokens`));
   } else {
     stdout.write('\n');
   }
