@@ -21,7 +21,8 @@
     return node;
   }
 
-  function renderMarkdown(node, text) {
+  /** `afterTypeset` runs once MathJax has finished changing the layout, if ever. */
+  function renderMarkdown(node, text, afterTypeset) {
     if (window.marked && window.DOMPurify) {
       var shielded = shieldMath(text);
       var html = window.DOMPurify.sanitize(
@@ -33,7 +34,7 @@
       // trusting model output. Formulas will show as source, which is legible.
       node.textContent = text;
     }
-    typeset(node);
+    typeset(node, afterTypeset);
   }
 
   /**
@@ -124,12 +125,24 @@
    */
   var MATH_PATTERN = new RegExp(MATH_SPAN.source);
 
-  function typeset(node) {
-    if (!window.MathJax || !window.MathJax.typesetPromise) return;
+  /**
+   * `after` runs once typesetting has changed the layout. MathJax is async and a
+   * display formula is much taller than the source it replaces, so a scroll performed
+   * before it resolves is undone by it — the caller needs a second chance.
+   */
+  function typeset(node, after) {
+    if (!window.MathJax || !window.MathJax.typesetPromise) {
+      if (after) after();
+      return;
+    }
     markMathLeaves(node);
-    window.MathJax.typesetPromise([node]).catch(function () {
-      // A malformed formula must not take the message with it.
-    });
+    window.MathJax.typesetPromise([node])
+      .catch(function () {
+        // A malformed formula must not take the message with it.
+      })
+      .then(function () {
+        if (after) after();
+      });
   }
 
   /**
@@ -142,8 +155,8 @@
    * `renderMarkdown`: a fragment like `判别式 *的符号*` should not gain emphasis, and
    * `textContent` already makes injection impossible. Only the math needs doing.
    */
-  function typesetText(node) {
-    if (MATH_PATTERN.test(node.textContent || "")) typeset(node);
+  function typesetText(node, afterTypeset) {
+    if (MATH_PATTERN.test(node.textContent || "")) typeset(node, afterTypeset);
     // Returned so it can wrap an `el(...)` call at the append site.
     return node;
   }
@@ -172,19 +185,47 @@
     };
     var streaming = null;
 
+    /** Distance from the bottom of the transcript, in px. 0 means fully scrolled down. */
+    function gap() {
+      return container.scrollHeight - container.scrollTop - container.clientHeight;
+    }
+
+    /**
+     * True when the student is reading the newest message rather than an earlier one.
+     *
+     * Measured BEFORE the node is inserted. Measuring after counts the new node's own
+     * height against the threshold, so any message taller than 120px looked like the
+     * student had scrolled away and suppressed its own autoscroll — and once one
+     * message was left unscrolled its gap suppressed the next, which is how the
+     * transcript drifted further behind with every turn.
+     */
+    var wasNearBottom = true;
+    function measure() {
+      wasNearBottom = gap() < 120;
+      return wasNearBottom;
+    }
+
+    /** Pins the view to the newest content, if the student was following it. */
+    function follow(force) {
+      if (force || wasNearBottom) container.scrollTop = container.scrollHeight;
+    }
+
     function append(node) {
-      container.appendChild(node);
       // Only autoscroll when the student is already at the bottom: yanking the
       // view while they are re-reading an earlier turn is worse than a missed
       // scroll they can perform themselves.
-      var nearBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 120;
-      if (nearBottom) container.scrollTop = container.scrollHeight;
+      measure();
+      container.appendChild(node);
+      follow();
       return node;
     }
 
     api.student = function (text) {
       var bubble = append(el("div", "tutor-msg tutor-msg--student"));
       bubble.textContent = text;
+      // Their own message always follows, whatever they were reading: sending is an
+      // explicit act, and it is the one case where taking the view is what they meant.
+      follow(true);
     };
 
     api.question = function (event) {
@@ -203,8 +244,11 @@
         card.appendChild(setup);
       }
       var ask = el("div", "tutor-question__ask");
-      renderMarkdown(ask, event.question);
+      renderMarkdown(ask, event.question, follow);
       card.appendChild(ask);
+      // `append` scrolled while the card was still empty, so the content it now holds
+      // is below the fold. Same for every other card built this way.
+      follow();
     };
 
     /** Streamed prose lands in one live bubble that grows; a new role opens a new
@@ -222,13 +266,23 @@
 
     api.reply = function (text, wasStreamed) {
       if (wasStreamed && streaming) {
-        // Now that the text is complete, render it properly once.
-        renderMarkdown(streaming.node, text || streaming.raw);
+        // Now that the text is complete, render it properly once — and re-follow,
+        // because rendering makes the bubble TALLER than the plain text it replaces
+        // (lists, block formulas, MathJax: measured +98px). The stream had pinned the
+        // view to the bottom, so without this the end of the message the student just
+        // watched arrive is pushed out of sight at the moment it finishes.
+        measure();
+        // Twice: once for the markdown layout, once more after MathJax resolves, since
+        // a display formula grows the bubble again well after this call returns.
+        renderMarkdown(streaming.node, text || streaming.raw, follow);
+        follow();
         streaming = null;
         return;
       }
       var bubble = append(el("div", "tutor-msg tutor-msg--tutor"));
-      renderMarkdown(bubble, text);
+      measure();
+      renderMarkdown(bubble, text, follow);
+      follow();
       streaming = null;
     };
 
@@ -237,8 +291,9 @@
       var bubble = append(el("div", "tutor-msg tutor-msg--hint"));
       bubble.appendChild(el("div", "tutor-msg__label", "提示 " + used + "/" + cap));
       var body = el("div");
-      renderMarkdown(body, text);
+      renderMarkdown(body, text, follow);
       bubble.appendChild(body);
+      follow();
     };
 
     api.evaluation = function (event) {
@@ -254,17 +309,18 @@
       card.appendChild(pill);
 
       var body = el("div", "tutor-evaluation__body");
-      renderMarkdown(body, event.evaluation);
+      renderMarkdown(body, event.evaluation, follow);
       card.appendChild(body);
 
       if (event.pointsMissed && event.pointsMissed.length) {
         var missed = el("ul", "tutor-evaluation__missed");
         missed.appendChild(el("li", "tutor-evaluation__missed-label", "还没说到："));
         event.pointsMissed.forEach(function (point) {
-          missed.appendChild(typesetText(el("li", null, point)));
+          missed.appendChild(typesetText(el("li", null, point), follow));
         });
         card.appendChild(missed);
       }
+      follow();
     };
 
     /** Why a turn went where it did. Only shown for non-grading routes, so a
@@ -286,6 +342,7 @@
     api.notice = function (text, level) {
       var node = append(el("div", "tutor-notice tutor-notice--" + (level || "info")));
       node.textContent = text;
+      follow();
     };
 
     api.summary = function (event) {
@@ -293,7 +350,7 @@
       var card = append(el("div", "tutor-msg tutor-msg--summary"));
       card.appendChild(el("div", "tutor-msg__label", "本节小结"));
       var body = el("div");
-      renderMarkdown(body, event.text);
+      renderMarkdown(body, event.text, follow);
       card.appendChild(body);
 
       [["掌握了", event.strengths], ["还要补", event.gaps]].forEach(function (pair) {
@@ -301,7 +358,7 @@
         var list = el("ul", "tutor-summary__list");
         list.appendChild(el("li", "tutor-summary__label", pair[0] + "："));
         pair[1].forEach(function (item) {
-          list.appendChild(typesetText(el("li", null, item)));
+          list.appendChild(typesetText(el("li", null, item), follow));
         });
         card.appendChild(list);
       });
@@ -318,10 +375,11 @@
           } else {
             item.textContent = action.text;
           }
-          next.appendChild(typesetText(item));
+          next.appendChild(typesetText(item, follow));
         });
         card.appendChild(next);
       }
+      follow();
     };
 
     /** A card, not a toast: declining is a real choice and needs a real button. */
@@ -347,6 +405,14 @@
       row.appendChild(accept);
       row.appendChild(decline);
       card.appendChild(row);
+      // The buttons are the point of this card; leaving them below the fold means the
+      // student is asked to choose and shown nothing to choose with.
+      follow();
+    };
+
+    /** For the shell: pin to the newest content regardless of where the student is. */
+    api.scrollToEnd = function () {
+      follow(true);
     };
 
     return api;

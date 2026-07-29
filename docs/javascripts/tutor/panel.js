@@ -137,6 +137,7 @@
       hintsUsed: 0,
       hintCap: 2,
       settings: null,
+      phaseLabel: "",
     };
 
     // ------------------------------------------------------------------
@@ -146,6 +147,10 @@
       switch (event.type) {
         case "phase":
           railView.setPhase(event.state, event.label);
+          // Remembered so a failed turn can restore the label it interrupted. The
+          // state itself is unchanged by a throw — the error is retriable — so
+          // leaving 思考中… on screen misreports where the session actually is.
+          ui.phaseLabel = event.label;
           setComposerFor(event.state);
           // The header dot reads `runtime.live`, which only becomes true once
           // `runtime.start()` has resolved — after the caller's own synchronous
@@ -357,6 +362,12 @@
           ui.busy = false;
           submit.disabled = false;
           stop.hidden = true;
+          // The thinking counter is stopped by a `phase` event, and a turn that
+          // throws never emits one — the harness raises before `#transition`. So it
+          // was left ticking under the error notice, still claiming to think. Here
+          // because it must run on both paths; on the success path the phase event
+          // has already stopped it and this is a no-op.
+          railView.stopThinking(ui.phaseLabel);
         });
     }
 
@@ -461,9 +472,9 @@
         // only the preference is lost, which is not worth surfacing.
       }
       // The list keeps its scroll offset while its height changes, so without this
-      // the student lands mid-transcript on every toggle. Set directly rather than
-      // through the view, which only autoscrolls as messages arrive.
-      messages.scrollTop = messages.scrollHeight;
+      // the student lands mid-transcript on every toggle. Unconditional — a layout
+      // change they asked for is not a reason to lose the newest message.
+      view.scrollToEnd();
     }
 
     expand.addEventListener("click", function () {
@@ -557,6 +568,10 @@
       })
       .catch(function (err) {
         view.notice(explainError(err), "error");
+        // The startup chain does not go through `guard`, and a planner that dies at
+        // `maxOutputTokens` fails here — the case the student reported, where the
+        // seconds kept counting up next to the error.
+        railView.stopThinking(ui.phaseLabel);
       });
 
     return {
