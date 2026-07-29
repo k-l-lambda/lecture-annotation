@@ -26,7 +26,7 @@ export interface LoadResult {
 /** settings.md §4-§5 defaults. Thinking is ON by default; the planner is why. */
 export function defaultSettings(): Settings {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     baseUrl: '',
     apiKey: '',
     model: '',
@@ -60,7 +60,15 @@ export function defaultSettings(): Settings {
       },
     },
     roleModels: {},
-    maxOutputTokens: 2000,
+    /**
+     * Raised from 2000, which the planner could not fit. `set_steps` carries 3-5
+     * steps each with a verbatim anchor quoted out of the section, so the call alone
+     * runs to well over a thousand tokens — and with `reasoning.byRole.planner`
+     * defaulting to `'medium'`, the thinking is drawn from the same budget before any
+     * of that is emitted. The observed failure was the cap being spent mid-tool-call:
+     * 「planner 在输出 set_steps 之前就到了 maxOutputTokens (2000)」.
+     */
+    maxOutputTokens: 6000,
     maxContextChars: 24000,
     stream: true,
     showReasoning: 'off',
@@ -146,7 +154,18 @@ export function applySettings(raw: unknown, base = defaultSettings()): LoadResul
     if (typeof v === 'string' && v) settings.roleModels[role as RoleName] = v;
   }
 
-  settings.maxOutputTokens = clampInt(src['maxOutputTokens'], settings.maxOutputTokens, 256, 32_000);
+  // Written by every save since v1 but never read until now. A v1 blob carrying the
+  // old default of 2000 is not a choice the student made — there was no control for
+  // this field, so nobody could have typed it — and keeping it means the planner goes
+  // on failing at the cap for anyone who already ran a session. A value they did
+  // change is preserved, as is anything saved at v2 or later.
+  const stale =
+    clampInt(src['schemaVersion'], 1, 1, 1_000) < 2 && src['maxOutputTokens'] === 2000;
+  if (stale) {
+    warnings.push('单次回复 token 上限已从 2000 提高到 6000：规划一节放不进 2000');
+  } else {
+    settings.maxOutputTokens = clampInt(src['maxOutputTokens'], settings.maxOutputTokens, 256, 32_000);
+  }
   settings.maxContextChars = clampInt(src['maxContextChars'], settings.maxContextChars, 2_000, 200_000);
   if (typeof src['requireAnalysis'] === 'boolean') {
     settings.requireAnalysis = src['requireAnalysis'];

@@ -213,11 +213,23 @@
     // --- group 4: budgets ----------------------------------------------
     var g4 = group("4. 会话与用量", "上限 " + settings.callBudgetPerSession + " 次调用");
     var budget = numberInput(settings.callBudgetPerSession, 5, 500);
+    // The bounds are `normalizeSettings`' own clamp, so a value typed here cannot be
+    // silently rewritten on load. Exposed because two failure messages tell the
+    // student to raise this — 「规划…到了 maxOutputTokens (2000)，请调高」 among them — and
+    // there was no control for it, which makes the advice unfollowable.
+    var maxOutput = numberInput(settings.maxOutputTokens, 256, 32000);
     var hintCap = numberInput(settings.hintCap, 0, 5);
     var variantCap = numberInput(settings.variantCap, 1, 10);
     var stepLo = numberInput(settings.stepRange[0], 1, 6);
     var stepHi = numberInput(settings.stepRange[1], 1, 6);
     g4.appendChild(field("每会话调用上限", budget));
+    g4.appendChild(
+      field(
+        "单次回复 token 上限",
+        maxOutput,
+        "思考型模型的思考也占这个额度，被截断时会提示调高；规划一节通常需要 4000 以上"
+      )
+    );
     g4.appendChild(field("每题提示上限", hintCap));
     g4.appendChild(field("单步变体上限", variantCap));
     var rangeRow = el("div", "tutor-field__row");
@@ -266,6 +278,7 @@
         requireAnalysis: requireAnalysis.checked,
         reasoning: Object.assign({}, settings.reasoning, { effort: effort.value }),
         callBudgetPerSession: Number(budget.value),
+        maxOutputTokens: Number(maxOutput.value),
         hintCap: Number(hintCap.value),
         variantCap: Number(variantCap.value),
         stepRange: [Number(stepLo.value), Number(stepHi.value)],

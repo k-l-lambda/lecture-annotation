@@ -34,6 +34,8 @@
     var planning = null;
     var thinkingSince = 0;
     var thinkingTimer = null;
+    var thinkingRole = "";
+    var thinkingTokens = 0;
 
     var api = {};
 
@@ -117,29 +119,52 @@
     };
 
     /**
-     * The thinking counter is the only progress signal a reasoning model gives
-     * before its first prose token — planner calls measured 70-129s of silence
-     * without it, which reads as a hang.
+     * The work counter is the only progress signal a model gives during a call —
+     * planner calls measured 70-129s of silence without it, which reads as a hang.
+     *
+     * `tokens` counts reasoning, prose and tool-call arguments together, so the label
+     * is 生成中 rather than 思考中: a planner writing a long `set_steps` is past
+     * thinking, and claiming otherwise while the number climbs was misleading.
      */
     api.setThinking = function (role, tokens) {
       if (!thinkingSince) thinkingSince = Date.now();
-      var seconds = Math.round((Date.now() - thinkingSince) / 1000);
-      phaseNode.textContent =
-        labelFor(role) + "思考中… " + tokens + " tokens · " + seconds + "s";
+      // Held on the closure variables, not captured per-call by the interval. The
+      // timer used to close over the `tokens` argument of whichever call created
+      // it, so once a later call reported a larger count the two repainted in turn
+      // and the number visibly bounced between them — 120 / 460 / 120 / 120.
+      thinkingRole = role;
+      thinkingTokens = tokens;
+      paintThinking();
       if (!thinkingTimer) {
         // Ticks the elapsed seconds between token updates, which can be seconds
         // apart, so the number never looks frozen.
-        thinkingTimer = setInterval(function () {
-          var s = Math.round((Date.now() - thinkingSince) / 1000);
-          phaseNode.textContent = labelFor(role) + "思考中… " + tokens + " tokens · " + s + "s";
-        }, 1000);
+        thinkingTimer = setInterval(paintThinking, 1000);
       }
+    };
+
+    function paintThinking() {
+      var s = Math.round((Date.now() - thinkingSince) / 1000);
+      phaseNode.textContent =
+        labelFor(thinkingRole) + "生成中… " + thinkingTokens + " tokens · " + s + "s";
+    }
+
+    /**
+     * Exposed because `setPhase` is not the only end of a turn. A role that throws —
+     * a planner cut off at `maxOutputTokens`, a dropped connection — never reaches
+     * `#transition`, so no `phase` event is ever emitted and the counter kept
+     * ticking under an error notice, still claiming to be thinking.
+     */
+    api.stopThinking = function (label) {
+      stopThinking();
+      if (typeof label === "string") phaseNode.textContent = label;
     };
 
     function stopThinking() {
       if (thinkingTimer) clearInterval(thinkingTimer);
       thinkingTimer = null;
       thinkingSince = 0;
+      thinkingRole = "";
+      thinkingTokens = 0;
     }
 
     function labelFor(role) {
