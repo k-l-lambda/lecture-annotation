@@ -64,26 +64,38 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* `inline-block` rather than relying on the parent's flex to blockify it: the dot
-   is a fixed square in either context, so a future change to the button's display
-   cannot silently flatten it again. */
-.tutor-header-button__dot {
+/* State is carried by the 🎓 glyph itself rather than a separate dot beside it.
+   `color` cannot do this — a color-emoji glyph is painted from the font's own
+   bitmap and ignores it — so the three states are steps of `filter` instead:
+   drained and dim when there is nothing to resume, fully saturated when live.
+   `filter` needs a box to apply to, and an inline box is enough here, but the
+   button is a flex container so the span is a flex item regardless. */
+.tutor-header-button__label {
   display: inline-block;
   flex: 0 0 auto;
-  box-sizing: border-box;
-  width: 0.5rem;
-  height: 0.5rem;
-  vertical-align: middle;
-  border: 1px solid currentColor;
-  border-radius: 50%;
+  line-height: 1;
+  transition: filter 120ms ease-out;
 }
 
-.tutor-header-button[data-tutor-status="idle"] .tutor-header-button__dot {
-  background: color-mix(in srgb, currentColor 45%, transparent);
+/* Not configured: monochrome and dimmed, so the button reads as available but inert.
+   Dimmed with `brightness`, not `opacity`: a translucent glyph composites with the
+   header's primary colour and comes back *tinted* — measured at saturation 54 against
+   2.9 for the opaque grey, which defeats the point of reserving colour for "live". */
+.tutor-header-button[data-tutor-status="unconfigured"] .tutor-header-button__label {
+  filter: grayscale(1) brightness(0.7);
 }
 
-.tutor-header-button[data-tutor-status="live"] .tutor-header-button__dot {
-  background: currentColor;
+/* Configured but idle: still monochrome — colour is reserved for "a session is
+   running" — but at full strength, which distinguishes it from unconfigured. */
+.tutor-header-button[data-tutor-status="idle"] .tutor-header-button__label {
+  filter: grayscale(1);
+}
+
+/* Live: the glyph's own colour, slightly lifted. This is the only state that is
+   not grey, so peripheral vision can tell a running session from a dormant one
+   without reading anything. */
+.tutor-header-button[data-tutor-status="live"] .tutor-header-button__label {
+  filter: saturate(1.15);
 }
 
 .tutor-resume {

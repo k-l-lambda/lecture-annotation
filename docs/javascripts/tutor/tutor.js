@@ -179,7 +179,11 @@
     button.id = "tutor-header-button";
     button.className = "md-header__button tutor-header-button";
     button.type = "button";
-    button.innerHTML = '<span class="tutor-header-button__label">🎓</span><span class="tutor-header-button__dot" aria-hidden="true"></span>';
+    // State is shown by filtering the glyph itself (see tutor.css), so there is no
+    // separate indicator element. The button's `aria-label` names the state in
+    // words, which is what a screen reader gets either way — a decorative dot never
+    // conveyed it.
+    button.innerHTML = '<span class="tutor-header-button__label">🎓</span>';
     button.addEventListener("click", function () {
       var r = runtime();
       if (!r) return;
@@ -209,7 +213,8 @@
     updateHeaderButton();
   }
 
-  /** Hollow = not configured, grey = configured but idle, filled = session live. */
+  /** Faded grey = not configured, grey = configured but idle, colour = session live.
+   *  The status attribute is the whole contract; `tutor.css` decides how it looks. */
   function updateHeaderButton() {
     var button = document.getElementById("tutor-header-button");
     if (!button) return;
