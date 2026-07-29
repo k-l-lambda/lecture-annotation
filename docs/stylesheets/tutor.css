@@ -41,7 +41,12 @@
   }
 }
 
-.tutor-header-button {
+/* Both classes plus `:not([hidden])`, because Material ships
+   `.md-header__button:not([hidden]) { display: inline-block }` — at specificity
+   0,2,0 that beat a bare `.tutor-header-button`, the button never became a flex
+   container, and the status dot inherited `display: inline`, where width and
+   height do not apply. It rendered as its own left+right border: a 2x18px bar. */
+.md-header__button.tutor-header-button:not([hidden]) {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -59,9 +64,16 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
+/* `inline-block` rather than relying on the parent's flex to blockify it: the dot
+   is a fixed square in either context, so a future change to the button's display
+   cannot silently flatten it again. */
 .tutor-header-button__dot {
+  display: inline-block;
+  flex: 0 0 auto;
+  box-sizing: border-box;
   width: 0.5rem;
   height: 0.5rem;
+  vertical-align: middle;
   border: 1px solid currentColor;
   border-radius: 50%;
 }
