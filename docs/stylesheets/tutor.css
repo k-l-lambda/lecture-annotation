@@ -389,6 +389,37 @@ html.tutor-fullscreen .tutor-choices {
   margin-top: 0.25rem;
   color: var(--md-default-fg-color--light);
   font-size: 0.66rem;
+  /* inline-block so the highlight below is the width of the text, not the panel:
+     a full-bleed bar reads as a section divider rather than a status. */
+  display: inline-block;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.15rem;
+  /* Declared here so only the colours change when the state does — a transition on
+     `all` would animate the padding and make the line twitch every transition. */
+  transition: background-color 140ms ease-out, color 140ms ease-out;
+}
+
+/* The states where a model call is in flight, i.e. where the student is waiting on
+   the agent and nothing else in the panel is moving. Selected by state rather than a
+   separate `--busy` class so this cannot disagree with the state machine: these are
+   exactly the `SessionState`s that sit between a `#transition` and its reply
+   (PHASE_LABELS in core/types.ts). The waiting states — AWAIT_ANSWER, DISCUSSING,
+   AWARD_DECISION — are deliberately absent: highlighting "等待作答" would mark the
+   student's own turn as agent activity.
+
+   Not colour alone (ui-spec.md §8): the label already says what is happening in
+   words, and the thinking counter appends live token and elapsed-second counts. This
+   only makes the line findable at a glance. */
+.tutor-phase[data-state="PLANNING"],
+.tutor-phase[data-state="PREP_DECISION"],
+.tutor-phase[data-state="ASKING"],
+.tutor-phase[data-state="GRADING"],
+.tutor-phase[data-state="SUMMARIZING"] {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 16%, transparent);
+  /* Full-strength foreground, not the muted `--light`: against a tinted background
+     the muted grey drops below a readable contrast. */
+  color: var(--md-default-fg-color);
+  font-weight: 700;
 }
 
 .tutor-planning {
