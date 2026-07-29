@@ -200,6 +200,79 @@ html.tutor-active .md-header__button[for="__drawer"] {
   font-size: 0.72rem;
 }
 
+/* ------------------------------------------------------------------ */
+/* Panel — fullscreen                                                  */
+/* ------------------------------------------------------------------ */
+
+/* Fullscreen means "the whole page body", not the Fullscreen API. Element
+   fullscreen would take the panel out of the document's stacking context, and the
+   panel's own dialogs (settings, profile, quit confirm) are appended to `body` — in
+   the API's top-layer they would render *behind* the panel and be unreachable. This
+   also keeps the site header, so leaving is never a trapdoor.
+
+   Placed after both media queries so it overrides either dock without needing to be
+   repeated inside them: one rule covers desktop and mobile, since a fullscreen panel
+   has no side to be docked to. */
+html.tutor-fullscreen .tutor-panel {
+  position: fixed;
+  inset: var(--tutor-header-h) 0 0;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-height: none;
+  /* dvh, not vh: on mobile the browser chrome is counted out, so the composer is
+     not left under it. */
+  height: auto;
+  padding-bottom: env(safe-area-inset-bottom);
+  border: none;
+  box-shadow: none;
+}
+
+/* The dock reserves space in the grid or with padding; fullscreen must give both
+   back or the page keeps a 420px gutter and a sheet-sized dead strip behind an
+   opaque panel. */
+html.tutor-fullscreen.tutor-active .md-main__inner {
+  display: block;
+}
+
+html.tutor-fullscreen.tutor-active .md-content {
+  padding-bottom: 0;
+}
+
+/* The content is behind an opaque, page-sized panel. Leaving it scrollable means a
+   stray wheel event silently moves the reading position out from under the student,
+   and they return from fullscreen somewhere else entirely.
+
+   On `html`, not `body`: Material sets `overflow` on `html`, and the viewport's
+   scrolling is governed by whichever of the two is not `visible` — `html` wins.
+   Measured with `body { overflow: hidden }` in place: computed style said `hidden`
+   and the page still scrolled a full 900px. As a bonus this retires the scrollbar,
+   which was leaving the panel 15px short of the viewport width. */
+html.tutor-fullscreen {
+  overflow: hidden;
+}
+
+html.tutor-fullscreen .tutor-resizer {
+  display: none;
+}
+
+/* Room to read at full width: a 420px column's measure is what forced the small
+   type, and at 1440px a chat bubble would otherwise run the whole span. */
+html.tutor-fullscreen .tutor-panel {
+  font-size: 0.78rem;
+}
+
+html.tutor-fullscreen .tutor-messages,
+html.tutor-fullscreen .tutor-panel__header,
+html.tutor-fullscreen .tutor-composer,
+html.tutor-fullscreen .tutor-choices {
+  max-width: 52rem;
+  margin-inline: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .tutor-panel--collapsed {
   height: 3.2rem;
 }
@@ -238,6 +311,7 @@ html.tutor-active .md-header__button[for="__drawer"] {
 
 .tutor-panel__menu,
 .tutor-panel__collapse,
+.tutor-panel__expand,
 .tutor-dialog__close {
   border: none;
   background: transparent;
@@ -246,6 +320,13 @@ html.tutor-active .md-header__button[for="__drawer"] {
   font-size: 0.9rem;
   line-height: 1;
   padding: 0.2rem 0.35rem;
+}
+
+/* The one header control whose state is worth seeing at a glance, since it changes
+   the whole layout. `aria-pressed` carries it for assistive tech; this is the
+   sighted half of the same fact. */
+.tutor-panel__expand[aria-pressed="true"] {
+  color: var(--md-primary-fg-color);
 }
 
 /* ------------------------------------------------------------------ */
@@ -838,5 +919,20 @@ html.tutor-active .md-header__button[for="__drawer"] {
 
   html.tutor-active .md-main__inner {
     display: block !important;
+  }
+
+  /* The fullscreen scroll lock must not reach paper. An overflow-hidden root clips
+     paged output at the first page, so printing mid-session would silently lose the
+     rest of the chapter — the one thing the print rules exist to prevent. Measured
+     under emulated print media: the panel was correctly hidden while
+     `html` still computed `overflow-y: hidden`. */
+  html.tutor-fullscreen {
+    overflow: visible !important;
+  }
+
+  /* Same reason as the panel's own reset: the measure cap and the fixed positioning
+     are screen affordances, and `position: fixed` repeats a block on every page. */
+  html.tutor-fullscreen .tutor-panel {
+    position: static;
   }
 }

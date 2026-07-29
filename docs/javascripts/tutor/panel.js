@@ -24,12 +24,23 @@
     return node;
   }
 
+  /** Document-level listeners of the previous mount. Removing the panel element does
+   *  not unbind these, so without cleanup each mount adds a copy and a *stale* one
+   *  runs first — observed as an Escape press that dropped the fullscreen class via
+   *  the dead panel's handler, leaving the live panel's button showing the wrong
+   *  state because its own handler then took the "already left" early return. */
+  var teardown = [];
+
   function mount(options) {
     var C = window.TutorCore;
     var runtime = options.runtime;
     var session = null;
     var root = document.getElementById("tutor-panel");
     if (root) root.remove();
+    teardown.forEach(function (undo) {
+      undo();
+    });
+    teardown = [];
 
     root = el("aside", "tutor-panel");
     root.id = "tutor-panel";
@@ -46,7 +57,13 @@
     var collapse = el("button", "tutor-panel__collapse", "⌄");
     collapse.type = "button";
     collapse.setAttribute("aria-label", "收起面板");
+    // Fullscreen is a reading-comfort control, so it sits next to collapse rather
+    // than in the `⋯` menu: a student who wants the transcript wide wants it now,
+    // and a menu round-trip on every switch is what makes people stop switching.
+    var expand = el("button", "tutor-panel__expand", "⤢");
+    expand.type = "button";
     titleRow.appendChild(title);
+    titleRow.appendChild(expand);
     titleRow.appendChild(menuButton);
     titleRow.appendChild(collapse);
 
@@ -408,6 +425,69 @@
       collapse.setAttribute("aria-label", collapsed ? "展开面板" : "收起面板");
     }
 
+    // ------------------------------------------------------------------
+    // Fullscreen
+    // ------------------------------------------------------------------
+
+    /** The class lives on `<html>`, not the panel: it has to suppress the grid
+     *  column and the sheet padding, which are set on ancestors of the panel. */
+    var FULLSCREEN_KEY = "tutor.fullscreen";
+
+    function fullscreen() {
+      return document.documentElement.classList.contains("tutor-fullscreen");
+    }
+
+    function setFullscreen(on) {
+      document.documentElement.classList.toggle("tutor-fullscreen", on);
+      // Collapsing a panel that already fills the page would leave a 3.2rem strip
+      // over a blank body with no visible way back.
+      if (on) root.classList.remove("tutor-panel--collapsed");
+      collapse.hidden = on;
+      collapse.textContent = "⌄";
+      collapse.setAttribute("aria-label", "收起面板");
+      expand.textContent = on ? "⤡" : "⤢";
+      expand.setAttribute("aria-label", on ? "退出全屏" : "全屏显示");
+      expand.setAttribute("aria-pressed", String(on));
+      try {
+        window.localStorage.setItem(FULLSCREEN_KEY, on ? "1" : "0");
+      } catch (err) {
+        // Private mode denies writes. The toggle still works for this session;
+        // only the preference is lost, which is not worth surfacing.
+      }
+      // The list keeps its scroll offset while its height changes, so without this
+      // the student lands mid-transcript on every toggle. Set directly rather than
+      // through the view, which only autoscrolls as messages arrive.
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    expand.addEventListener("click", function () {
+      setFullscreen(!fullscreen());
+    });
+
+    // Escape is the expected way out of anything page-filling. Only when nothing
+    // else is open: a dialog over the panel owns Escape first, and the composer is
+    // checked so a student clearing a draft does not lose their layout too.
+    // Named so `destroy` can unbind it — it is on `document`, not the panel.
+    function onEscape(event) {
+      if (event.key !== "Escape" || !fullscreen()) return;
+      if (document.querySelector(".tutor-overlay, .tutor-menu")) return;
+      if (document.activeElement === textarea && textarea.value) return;
+      setFullscreen(false);
+    }
+
+    document.addEventListener("keydown", onEscape);
+    teardown.push(function () {
+      document.removeEventListener("keydown", onEscape);
+    });
+
+    var storedFullscreen = "0";
+    try {
+      storedFullscreen = window.localStorage.getItem(FULLSCREEN_KEY) || "0";
+    } catch (err) {
+      // Reads can throw in the same conditions as writes; default to docked.
+    }
+    setFullscreen(storedFullscreen === "1");
+
     function exportSession() {
       if (!session) return;
       var blob = new Blob([JSON.stringify(session.record, null, 2)], { type: "application/json" });
@@ -484,6 +564,14 @@
       destroy: function () {
         root.remove();
         document.documentElement.classList.remove("tutor-active");
+        // Both live outside the panel element, so they outlive it. Leaving
+        // `tutor-fullscreen` behind would strand the page with `overflow: hidden`
+        // and no panel to unset it.
+        document.documentElement.classList.remove("tutor-fullscreen");
+        teardown.forEach(function (undo) {
+          undo();
+        });
+        teardown = [];
       },
     };
   }
