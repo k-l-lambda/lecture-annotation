@@ -248,7 +248,7 @@ test('a restarted counter measures from its own start, not the previous turn', (
 test('the retriable-turn guard stops the counter', () => {
   // `guard()` catches, notices, and re-enables the composer. Without this the seconds
   // ran on under the error text.
-  const body = /function guard\(promise, again\)\s*\{[\s\S]*?\n    \}\n\n/.exec(panel);
+  const body = /function guard\(run, again\)\s*\{[\s\S]*?\n    \}\n\n/.exec(panel);
   assert.ok(body, 'guard() not found in panel.js');
   assert.match(body[0], /stopThinking/);
   // …and it must be on the settle path, not only inside the catch: the counter has to
@@ -263,7 +263,7 @@ test('the startup chain stops the counter when plan() or ask() throws', () => {
   // counter rather than two that have to be kept in step. Asserting on the routing
   // rather than on a duplicated call is the point: a third entry point added later
   // gets the behaviour for free only if it, too, goes through `guard`.
-  assert.match(panel, /guard\(planAndAsk\(\), planAndAsk\)/);
+  assert.match(panel, /guard\(planAndAsk, planAndAsk\)/);
   assert.doesNotMatch(
     panel,
     /runtime\s+\.start\(\{[\s\S]*?\.catch\(/,

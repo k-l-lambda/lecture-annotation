@@ -361,11 +361,34 @@
      * harness now restores the pre-call state when a turn throws, so re-running is a
      * legal repeat rather than a second attempt from a state half-way through the
      * first. Without a thunk the notice is text only, as before.
+     *
+     * Takes the turn as a THUNK, not a promise, and refuses while one is in flight.
+     * It used to take `promise` and be called as `guard(again(), again)` — so `again()`
+     * had already fired the turn before `guard` could set `ui.busy`, and a second press
+     * of 重试 was never seen by this function at all. Measured on a double press:
+     * `submitAnswer` ran the grader 4 times and charged 6 budget calls for one answer,
+     * and `discuss` logged `student, student, tutor, tutor`. The harness now refuses the
+     * overlapping turn too (`session.busy`), and this is the half that keeps the UI from
+     * asking for it: two layers because the button is DOM state a stale cached
+     * `messages.js` can lose, while the harness rule cannot be cached away.
      */
-    function guard(promise, again) {
+    function guard(run, again) {
+      if (ui.busy) return Promise.resolve();
       ui.busy = true;
       submit.disabled = true;
       stop.hidden = false;
+      // Invoked AFTER the flag is set, so a re-entrant call from inside `run` — or from
+      // a click handler that fires while it is starting — hits the check above.
+      var promise;
+      try {
+        promise = run();
+      } catch (err) {
+        // A thunk that throws synchronously must still clear the flag.
+        ui.busy = false;
+        submit.disabled = false;
+        stop.hidden = true;
+        return Promise.reject(err);
+      }
       return promise
         .catch(function (err) {
           // A failed call returns to the previous state with a notice rather than
@@ -375,7 +398,7 @@
           view.notice(
             explainError(err),
             "error",
-            canRetry ? { label: "重试", onClick: function () { guard(again(), again); } } : null
+            canRetry ? { label: "重试", onClick: function () { guard(again, again); } } : null
           );
         })
         .then(function () {
@@ -409,7 +432,7 @@
         // still on screen, and the harness un-logs the failed turn so this is not a
         // duplicate on its side either.
         var talk = function () { return session.discuss(value); };
-        guard(talk(), talk);
+        guard(talk, talk);
         return;
       }
 
@@ -423,20 +446,20 @@
           return session.applyRoute(route, value);
         });
       };
-      guard(routed(), routed);
+      guard(routed, routed);
     }
 
     function choose(key) {
       if (!session || ui.busy) return;
       if (key === "quit") return confirmQuit();
       var pick = function () { return session.choose(key); };
-      guard(pick(), pick);
+      guard(pick, pick);
     }
 
     function decideAchievement(accept) {
       if (!session) return;
       var decide = function () { return session.decideAchievement(accept); };
-      guard(decide(), decide);
+      guard(decide, decide);
     }
 
     function confirmQuit() {
@@ -617,7 +640,7 @@
         });
     }
 
-    guard(planAndAsk(), planAndAsk);
+    guard(planAndAsk, planAndAsk);
 
     return {
       toggle: toggle,

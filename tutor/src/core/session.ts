@@ -85,6 +85,25 @@ export class TutorSession {
   /** Logical calls, not HTTP calls: a repaired call counts once (harness.md §7). */
   #logicalCalls = 0;
   #abort: AbortController | null = null;
+  /**
+   * The turn currently in flight, if any. Guards against a second turn starting while
+   * the first is still awaiting the model.
+   *
+   * Reported: the 重试 button stayed clickable after a press. The DOM half of that is a
+   * stale `messages.js`, but the reason it matters is here — nothing in the harness
+   * refused the overlapping turn, and the browser's `guard()` set `ui.busy` only AFTER
+   * evaluating `again()`, so the second call was already away. Measured on a double
+   * retry: `submitAnswer` ran the grader 4 times and charged 6 calls to the budget for
+   * one answer, keeping one of the two scores; `discuss` logged
+   * `student, student, tutor, tutor` — the same duplication `retry-notice.test.ts`
+   * exists to prevent, reached by a path that test did not cover.
+   *
+   * Held here rather than only in each shell because both shells and every future
+   * entry point need it, and a per-shell flag is a rule that has to be re-implemented
+   * correctly each time. `abortInFlight` and `abandon` deliberately do NOT check it:
+   * cancelling is what you do to a turn that is running.
+   */
+  #inFlight: string | null = null;
 
   private constructor(
     record: SessionRecord,
@@ -207,6 +226,43 @@ export class TutorSession {
       if (this.#record.state !== from) await this.#transition(from);
       throw err;
     }
+  }
+
+  /**
+   * Refuses a turn while another is in flight. See `#inFlight`.
+   *
+   * Rejecting is right rather than queueing: the second press is the student asking for
+   * the same thing again, not for it twice. Queueing would spend a second call and
+   * append a second copy of the same exchange, which is the behaviour being fixed.
+   *
+   * The error names both turns, because "a turn is already running" alone does not tell
+   * you whether you double-pressed 重试 or hit a genuine bug in a shell.
+   */
+  async #exclusive<T>(name: string, run: () => Promise<T>): Promise<T> {
+    // Only the OUTERMOST entry point is wrapped, so this never sees a nested call. The
+    // turn methods call each other by design — `choose('remain')` and a backtracking
+    // `discuss()` both end in `ask()`, and `applyRoute` delegates to all of them — so
+    // the wrapper goes on the public method and the internal callers go to the
+    // unguarded `#…Turn` body. Wrapping both ends would deadlock the session against
+    // itself, which is worse than the bug being fixed.
+    if (this.#inFlight !== null) {
+      throw new SessionError(
+        `${name}() refused: ${this.#inFlight}() is still in flight. Wait for it to settle or call abortInFlight().`,
+      );
+    }
+    this.#inFlight = name;
+    try {
+      return await run();
+    } finally {
+      // `finally`, so a thrown turn does not wedge the session shut — the failure paths
+      // are exactly the ones the retry button then has to be able to use.
+      this.#inFlight = null;
+    }
+  }
+
+  /** True while a turn is awaiting the model. Shells use it to disable their composer. */
+  get busy(): boolean {
+    return this.#inFlight !== null;
   }
 
   #emitStepRail(): void {
@@ -348,6 +404,10 @@ export class TutorSession {
   // -------------------------------------------------------------------------
 
   async plan(): Promise<void> {
+    return this.#exclusive('plan', () => this.#planTurn());
+  }
+
+  async #planTurn(): Promise<void> {
     if (this.#record.steps.length > 0) throw new SessionError('plan() called twice');
     await this.#transition('PLANNING');
 
@@ -407,15 +467,48 @@ export class TutorSession {
   // ASKING -> AWAIT_ANSWER
   // -------------------------------------------------------------------------
 
+  /**
+   * Asks the current step's question.
+   *
+   * The body runs under `#attempt` because a questioner that cannot satisfy the
+   * validators throws AFTER the move to `ASKING`, and `ASKING` accepts no student
+   * input at all. Reported live (`temp/tutor-session-段落-1 (1).json`): a backtrack
+   * inserted 舒尔引理回顾, `ask_question` failed its anchor gate three times, and the
+   * record ended `state: ASKING, status: active`. Every later turn then answered
+   * 「routeStudentTurn() is not valid in state ASKING」 — the retry button was live but
+   * could only reproduce the same error, because the state it needed to leave was the
+   * one the failure had pinned.
+   *
+   * `STEP_ENTER` is the state to return to: every internal caller transitions there
+   * before calling this, and it is the one state from which a retry of `ask()` is
+   * legal. Restoring `AWAIT_ANSWER` instead would invite an answer to a question that
+   * was never asked.
+   */
   async ask(): Promise<void> {
     const step = this.currentStep;
     if (!step) throw new SessionError('no current step');
     if (this.budgetExhausted) {
       this.#emit({ type: 'notice', level: 'warn', text: '已达调用上限，只能结束本节' });
-      await this.summarize();
+      await this.#summarizeTurn();
       return;
     }
 
+    await this.#exclusive('ask', () => this.#askTurn());
+  }
+
+  /** The unguarded body, for the internal callers that are already inside a turn. */
+  async #askTurn(): Promise<void> {
+    const step = this.currentStep;
+    if (!step) throw new SessionError('no current step');
+    if (this.budgetExhausted) {
+      this.#emit({ type: 'notice', level: 'warn', text: '已达调用上限，只能结束本节' });
+      await this.#summarizeTurn();
+      return;
+    }
+    await this.#attempt('STEP_ENTER', () => this.#askOnce(step));
+  }
+
+  async #askOnce(step: Step): Promise<void> {
     await this.#transition('ASKING');
     const digest = await this.#digest(step.knowledgePointIds);
 
@@ -495,6 +588,10 @@ export class TutorSession {
   // -------------------------------------------------------------------------
 
   async submitAnswer(answer: string): Promise<void> {
+    return this.#exclusive('submitAnswer', () => this.#submitAnswerTurn(answer));
+  }
+
+  async #submitAnswerTurn(answer: string): Promise<void> {
     const step = this.currentStep;
     const attempt = this.#liveAttempt();
     if (!step || !attempt) throw new SessionError('no question awaiting an answer');
@@ -572,6 +669,14 @@ export class TutorSession {
   // -------------------------------------------------------------------------
 
   async discuss(
+    studentText: string,
+    intentHint: ReplyIntent | null = null,
+    routeReason: string | null = null,
+  ): Promise<{ text: string; intent: ReplyIntent | null }> {
+    return this.#exclusive('discuss', () => this.#discussTurn(studentText, intentHint, routeReason));
+  }
+
+  async #discussTurn(
     studentText: string,
     intentHint: ReplyIntent | null = null,
     routeReason: string | null = null,
@@ -717,7 +822,7 @@ export class TutorSession {
     if (this.#pendingInsertedStep) {
       this.#pendingInsertedStep = false;
       await this.#transition('STEP_ENTER');
-      await this.ask();
+      await this.#askTurn();
     }
     return { text: reply.text, intent: reply.intent };
   }
@@ -747,6 +852,10 @@ export class TutorSession {
    * move on without answering IS `skip`, and is recorded as such.
    */
   async choose(choice: ExitChoice): Promise<void> {
+    return this.#exclusive('choose', () => this.#chooseTurn(choice));
+  }
+
+  async #chooseTurn(choice: ExitChoice): Promise<void> {
     const state = this.#record.state;
     const legal =
       state === 'DISCUSSING' ||
@@ -775,7 +884,7 @@ export class TutorSession {
       }
       this.#record.cursor.variant += 1;
       await this.#transition('STEP_ENTER');
-      await this.ask();
+      await this.#askTurn();
       return;
     }
 
@@ -817,6 +926,10 @@ export class TutorSession {
    * interpret (an explicit menu key, an empty line).
    */
   async routeStudentTurn(studentText: string): Promise<StudentTurnRoute> {
+    return this.#exclusive('routeStudentTurn', () => this.#routeStudentTurnTurn(studentText));
+  }
+
+  async #routeStudentTurnTurn(studentText: string): Promise<StudentTurnRoute> {
     const state = this.#record.state;
     if (state !== 'AWAIT_ANSWER') {
       throw new SessionError(`routeStudentTurn() is not valid in state ${state}`);
@@ -874,7 +987,7 @@ export class TutorSession {
   async #advance(): Promise<void> {
     const next = this.#record.cursor.stepIndex + 1;
     if (next >= this.#record.steps.length) {
-      await this.summarize();
+      await this.#summarizeTurn();
       return;
     }
     this.#record.cursor = {
@@ -886,7 +999,7 @@ export class TutorSession {
         : Math.max(0, this.#record.cursor.backtrackDepth - 1),
     };
     await this.#transition('STEP_ENTER');
-    await this.ask();
+    await this.#askTurn();
   }
 
   // -------------------------------------------------------------------------
@@ -894,6 +1007,10 @@ export class TutorSession {
   // -------------------------------------------------------------------------
 
   async summarize(): Promise<void> {
+    return this.#exclusive('summarize', () => this.#summarizeTurn());
+  }
+
+  async #summarizeTurn(): Promise<void> {
     await this.#transition('SUMMARIZING');
 
     const gate = evaluateAchievementGate(achievementGateInput(this.#record));

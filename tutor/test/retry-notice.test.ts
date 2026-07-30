@@ -65,10 +65,10 @@ test('isRetriable is exported to the UI, so both halves agree what is transient'
 test('every turn the panel starts is retriable, including startup', () => {
   // Startup used to bypass `guard` entirely, which is why a planner that died at
   // maxOutputTokens left the thinking counter ticking under the error notice.
-  assert.match(panel, /guard\(planAndAsk\(\), planAndAsk\)/);
-  assert.match(panel, /guard\(talk\(\), talk\)/);
-  assert.match(panel, /guard\(routed\(\), routed\)/);
-  assert.match(panel, /guard\(pick\(\), pick\)/);
+  assert.match(panel, /guard\(planAndAsk, planAndAsk\)/);
+  assert.match(panel, /guard\(talk, talk\)/);
+  assert.match(panel, /guard\(routed, routed\)/);
+  assert.match(panel, /guard\(pick, pick\)/);
   // A second run must not pay for a second planner call.
   assert.match(panel, /session\.record\.steps\.length \? null : session\.plan\(\)/);
 });
