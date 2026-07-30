@@ -28,6 +28,7 @@ import { achievementGateInput, collectAskedQuestions, executeTool, type ToolCont
 import { evaluateAchievementGate } from './validate.ts';
 import type {
   Achievement,
+  DiscussionTurn,
   ExitChoice,
   ProfileDigest,
   ReplyIntent,
@@ -69,6 +70,16 @@ export class TutorSession {
 
   #analyzePassed = false;
   #liveQuestionId: string | null = null;
+  /**
+   * Set when `insert_prerequisite_step` succeeded during a reply turn, so `discuss()`
+   * can ask the new step's question once the reply is delivered.
+   *
+   * A flag rather than an `ask()` inside the tool handler: tools are synchronous and
+   * pure state edits, and asking from inside one would nest an LLM call inside the
+   * turn that is still streaming. The insert must also be *told* to the student before
+   * the new question appears, which only the caller can sequence.
+   */
+  #pendingInsertedStep = false;
   #digestCache: ProfileDigest | null = null;
   #previouslyAsked: string[] = [];
   /** Logical calls, not HTTP calls: a repaired call counts once (harness.md §7). */
@@ -213,6 +224,19 @@ export class TutorSession {
     const result = await executeTool(role, name, args, this.#toolContext());
 
     if (result.ok && name === 'analyze_section') this.#analyzePassed = true;
+
+    // `insert_prerequisite_step` moves the cursor to a step that has no question yet.
+    // The pending question belongs to the step we just left, so it has to be released
+    // here: leaving `#liveQuestionId` set meant the next `submitAnswer` graded the
+    // student's words against a question from a different step. In the live 段落-1
+    // session that scored a correct answer to the tutor's own question as a 1/5 on the
+    // questioner's, with 「你没有列出任何一条完整的公理」 as the feedback.
+    if (result.ok && name === 'insert_prerequisite_step') {
+      const abandoned = this.#liveAttempt();
+      if (abandoned) abandoned.exitChoice = 'remain';
+      this.#liveQuestionId = null;
+      this.#pendingInsertedStep = true;
+    }
 
     this.#record.toolLog.push({
       at: new Date(started).toISOString(),
@@ -450,6 +474,15 @@ export class TutorSession {
     const step = this.currentStep;
     const attempt = this.#liveAttempt();
     if (!step || !attempt) throw new SessionError('no question awaiting an answer');
+    // The live question must belong to the step the student is looking at. If the
+    // cursor moved without releasing it, grading here would score this answer against
+    // a question from another step — the failure observed in the 段落-1 session. Refuse
+    // instead: a thrown error is visible, a mismatched grade is not.
+    if (!step.attempts.some((a) => a.attemptId === attempt.attemptId)) {
+      throw new SessionError(
+        `live question ${attempt.attemptId} belongs to another step than the cursor's (${step.id})`,
+      );
+    }
 
     attempt.answer = answer;
     await this.#transition('GRADING');
@@ -515,6 +548,7 @@ export class TutorSession {
   async discuss(
     studentText: string,
     intentHint: ReplyIntent | null = null,
+    routeReason: string | null = null,
   ): Promise<{ text: string; intent: ReplyIntent }> {
     if (this.#record.state !== 'DISCUSSING' && this.#record.state !== 'AWAIT_ANSWER') {
       throw new SessionError(`discuss() is not valid in state ${this.#record.state}`);
@@ -528,18 +562,27 @@ export class TutorSession {
     // are read differently (see `Attempt.clarifications`), and mixing them would
     // feed question-clarifying talk into the repetition guard.
     const preAnswer = this.#record.state === 'AWAIT_ANSWER';
-    const log = preAnswer ? attempt?.clarifications : attempt?.discussion;
-    if (log) log.push({ role: 'student', text: studentText, at: iso });
+    // Falls back to the step's own log when there is no attempt to hang the turn on,
+    // which is the state a backtrack insert leaves the cursor in. Never optional: the
+    // previous `attempt?.` chain produced `undefined` there, and the `if (log)` guard
+    // that followed made losing the whole exchange look like a no-op.
+    const log: DiscussionTurn[] = attempt
+      ? preAnswer
+        ? attempt.clarifications
+        : attempt.discussion
+      : step.dialogue;
+    log.push({ role: 'student', text: studentText, at: iso });
 
     // At 100 % of the budget discussion stops, but the choice buttons stay live —
     // a student must never be trapped in a state they cannot leave.
     if (this.budgetExhausted) {
       const text = '本次会话的调用次数已用完。你仍然可以选择继续下一步或结束本节。';
       this.#emit({ type: 'notice', level: 'warn', text });
+      await this.#store.saveSession(this.#record);
       return { text, intent: 'none' };
     }
 
-    const history = (log ?? []).map((d) => ({ role: d.role, text: d.text }));
+    const history = log.map((d) => ({ role: d.role, text: d.text }));
     // Whether the shell already saw this text arrive as deltas. A shell that
     // rendered the stream must not print the whole reply again underneath it.
     let streamed = false;
@@ -554,6 +597,7 @@ export class TutorSession {
           section: this.#section,
           step,
           phase: this.#record.state === 'DISCUSSING' ? 'DISCUSSING' : 'AWAIT_ANSWER',
+          studentText,
           history,
           digest: await this.#digest(step.knowledgePointIds),
           lastEvaluation:
@@ -568,6 +612,7 @@ export class TutorSession {
           settings: this.#settings,
           stepDigest: this.#stepDigest(),
           intentHint,
+          routeReason,
           question: attempt?.question ?? null,
           expectedPoints: (attempt?.expectedPoints ?? []).map((p) => p.point),
         },
@@ -598,7 +643,7 @@ export class TutorSession {
       reasoningTokens: reply.usage.reasoningTokens ?? 0,
     });
 
-    if (log) log.push({ role: 'tutor', text: reply.text, at: iso });
+    log.push({ role: 'tutor', text: reply.text, at: new Date(this.#clock.now()).toISOString() });
     if (attempt && !preAnswer) {
       // The harness digest of what was explained; feeds the repeat guard so a
       // new variant cannot be answerable from this explanation.
@@ -621,6 +666,15 @@ export class TutorSession {
       });
     }
     await this.#store.saveSession(this.#record);
+
+    // The reply backtracked. It has been delivered, so the new step can now ask its
+    // own question — without this the session sat at AWAIT_ANSWER on a question from
+    // the step it had just left, and every later turn was measured against it.
+    if (this.#pendingInsertedStep) {
+      this.#pendingInsertedStep = false;
+      await this.#transition('STEP_ENTER');
+      await this.ask();
+    }
     return { text: reply.text, intent: reply.intent };
   }
 
@@ -702,23 +756,35 @@ export class TutorSession {
    * existing method that validates independently. The router cannot move the
    * machine, so a misclassification is a wasted turn, never a corrupt state.
    *
+   * `AWAIT_ANSWER` only, and that boundary is the point. There, one question is
+   * genuinely hard and worth a call: is this text an answer to be graded, or a
+   * question about the question? Guess wrong and the student is either scored on a
+   * request for help or has real work silently discarded.
+   *
+   * At `DISCUSSING` there is no such question. The step is already graded, the
+   * `rules` the reply role gets are derived from the phase rather than the intent,
+   * and every state move out of the phase has an explicit control — `n/r/s/q` in the
+   * shell, buttons in the browser. All a router could add there is *guessing*
+   * `advance`/`skip` out of prose, where a misread moves the step the student was
+   * still asking about. So free text at `DISCUSSING` goes straight to `discuss()`:
+   * one call, no classifier between the two of them.
+   *
    * Costs one LLM call. Shells should skip it for input they can already
    * interpret (an explicit menu key, an empty line).
    */
   async routeStudentTurn(studentText: string): Promise<StudentTurnRoute> {
     const state = this.#record.state;
-    if (state !== 'AWAIT_ANSWER' && state !== 'DISCUSSING') {
+    if (state !== 'AWAIT_ANSWER') {
       throw new SessionError(`routeStudentTurn() is not valid in state ${state}`);
     }
     const step = this.currentStep;
     if (!step) throw new SessionError('no current step');
 
-    // Out of budget: fall through to the phase default rather than spending the
-    // last call on classification. Grading is never budget-blocked, so at
-    // AWAIT_ANSWER the answer still gets through.
+    // Out of budget: grade rather than spend the last call on classification.
+    // Grading is never budget-blocked, so the answer still gets through.
     if (this.budgetExhausted) {
       const route: StudentTurnRoute = {
-        route: state === 'AWAIT_ANSWER' ? 'answer' : 'clarify',
+        route: 'answer',
         secondary: null,
         reason: '调用次数已用完',
       };
@@ -733,7 +799,6 @@ export class TutorSession {
       settings: this.#settings,
       model: this.#modelFor('router'),
       input: {
-        phase: state,
         step: { title: step.title, goal: step.goal },
         question: attempt?.question ?? null,
         setup: attempt?.setup ?? null,
@@ -895,14 +960,14 @@ export class TutorSession {
    * Sends a routed free-text turn to the method that route means.
    *
    * Here rather than in each shell because it is a pure mapping with nothing
-   * environment-shaped in it, and both shells need all nine branches. Two copies
-   * would be two places where routing rules live, and the second one would
-   * eventually lag — a route added to the enum but not to the browser's switch
-   * would silently fall through to grading.
+   * environment-shaped in it, and both shells need every branch. Two copies would
+   * be two places where routing rules live, and the second one would eventually
+   * lag — a route added to the enum but not to the browser's switch would silently
+   * fall through to grading.
    *
-   * Deliberately does NOT correct an illegal route (`advance` at AWAIT_ANSWER):
-   * the guard in `choose()` owns that, so an illegal route throws rather than
-   * being quietly rewritten out of sight of the event log.
+   * `advance` is absent by construction: routing is `AWAIT_ANSWER`-only now, and
+   * advancing from there is illegal (see `choose`). At `DISCUSSING` a shell calls
+   * `discuss()` directly.
    */
   async applyRoute(route: StudentTurnRoute, studentText: string): Promise<void> {
     switch (route.route) {
@@ -918,20 +983,24 @@ export class TutorSession {
       case 'skip':
         await this.choose('skip');
         return;
-      case 'advance':
-        await this.choose('advance');
-        return;
       case 'quit':
         await this.choose('quit');
         return;
       case 'clarify':
-        await this.discuss(studentText, 'needs_clarification');
+        await this.discuss(studentText, 'needs_clarification', route.reason);
+        return;
+      // A student who says 「你直接讲」/「不要重述题目」 is asking to be taught, not to
+      // have the question paraphrased again. `wants_explanation` selects the one
+      // `rules` branch that permits answering outright — unreachable before, which
+      // is why asking twice got the restatement twice.
+      case 'explain':
+        await this.discuss(studentText, 'wants_explanation', route.reason);
         return;
       case 'too_hard':
-        await this.discuss(studentText, 'too_hard');
+        await this.discuss(studentText, 'too_hard', route.reason);
         return;
       case 'off_topic':
-        await this.discuss(studentText, 'off_topic');
+        await this.discuss(studentText, 'off_topic', route.reason);
         return;
     }
   }

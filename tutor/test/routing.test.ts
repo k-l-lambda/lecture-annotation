@@ -185,19 +185,40 @@ test('advance is refused from AWAIT_ANSWER', async () => {
 });
 
 test('advance is accepted from DISCUSSING', async () => {
-  const { session } = await atAwaitAnswer([
-    '{"route":"answer","secondary":null,"reason":"去评分"}',
-    '{"route":"advance","secondary":null,"reason":"进入下一步"}',
-  ]);
+  const { session } = await atAwaitAnswer(['{"route":"answer","secondary":null,"reason":"去评分"}']);
   await session.routeStudentTurn('熵是盒子体积的对数。');
   await session.submitAnswer('熵是盒子体积的对数。');
   assert.equal(session.state, 'DISCUSSING');
 
   const before = session.currentStep!.id;
-  const route = await session.routeStudentTurn('懂了，下一步吧');
-  assert.equal(route.route, 'advance');
   await session.choose('advance');
   assert.notEqual(session.currentStep?.id, before);
+});
+
+test('routing is refused at DISCUSSING: free text goes straight to the tutor', async () => {
+  // The router bought nothing here — the phase is already graded, the reply role's
+  // rules are derived from the phase rather than the intent, and every exit has an
+  // explicit control. All it could add was guessing `advance` out of prose and moving
+  // the step the student was still asking about.
+  const { session, llm } = await atAwaitAnswer([
+    '{"route":"answer","secondary":null,"reason":"去评分"}',
+  ]);
+  await session.routeStudentTurn('熵是盒子体积的对数。');
+  await session.submitAnswer('熵是盒子体积的对数。');
+  assert.equal(session.state, 'DISCUSSING');
+
+  const callsBefore = llm.routerCalls;
+  await assert.rejects(
+    () => session.routeStudentTurn('为什么取对数就能让熵可加？'),
+    /not valid in state DISCUSSING/,
+  );
+
+  const stepBefore = session.currentStep!.id;
+  await session.discuss('为什么取对数就能让熵可加？');
+  assert.equal(llm.routerCalls, callsBefore, 'no classifier call for a discussion turn');
+  assert.equal(session.state, 'DISCUSSING', 'talking does not move the step');
+  assert.equal(session.currentStep!.id, stepBefore);
+  assert.equal(session.currentStep!.attempts.at(-1)!.discussion.length, 2);
 });
 
 // ---------------------------------------------------------------------------
@@ -205,18 +226,16 @@ test('advance is accepted from DISCUSSING', async () => {
 // ---------------------------------------------------------------------------
 
 test('a fenced or prose-wrapped route object still parses', async () => {
-  const fenced = parseRouterReply('```json\n{"route":"clarify","reason":"先解释"}\n```', 'AWAIT_ANSWER');
+  const fenced = parseRouterReply('```json\n{"route":"clarify","reason":"先解释"}\n```');
   assert.equal(fenced.route, 'clarify');
-  const chatty = parseRouterReply('好的。{"route":"hint","reason":"给提示"} 就这样。', 'AWAIT_ANSWER');
+  const chatty = parseRouterReply('好的。{"route":"hint","reason":"给提示"} 就这样。');
   assert.equal(chatty.route, 'hint');
 });
 
-test('unparseable or invented routes fall back to the phase default', async () => {
+test('unparseable or invented routes fall back to answer', async () => {
   for (const bad of ['', 'not json at all', '{"route":"teleport"}', '{"route":', 'null']) {
-    assert.equal(parseRouterReply(bad, 'AWAIT_ANSWER').route, 'answer', `input: ${bad}`);
+    assert.equal(parseRouterReply(bad).route, 'answer', `input: ${bad}`);
   }
-  // DISCUSSING has no `answer` route — its default is to keep talking.
-  assert.equal(parseRouterReply('garbage', 'DISCUSSING').route, 'clarify');
 });
 
 test('each fallback names its own cause', async () => {
@@ -224,12 +243,12 @@ test('each fallback names its own cause', async () => {
   // misroute undiagnosable: an empty reply and an invented route are different
   // bugs with the same visible behaviour.
   const reasons = [
-    parseRouterReply('', 'AWAIT_ANSWER').reason,
-    parseRouterReply('抱歉我不确定', 'AWAIT_ANSWER').reason,
+    parseRouterReply('').reason,
+    parseRouterReply('抱歉我不确定').reason,
     // Braces present but the contents are not valid JSON — a distinct failure
     // from `{"route":`, which has no closing brace and so never reaches the parse.
-    parseRouterReply('{route: clarify,}', 'AWAIT_ANSWER').reason,
-    parseRouterReply('{"route":"teleport"}', 'AWAIT_ANSWER').reason,
+    parseRouterReply('{route: clarify,}').reason,
+    parseRouterReply('{"route":"teleport"}').reason,
   ];
   assert.equal(new Set(reasons).size, reasons.length, `not distinct: ${reasons.join(' / ')}`);
   // The empty case is the one that actually happened live: reasoning consumed the
@@ -237,23 +256,30 @@ test('each fallback names its own cause', async () => {
   assert.match(reasons[0]!, /没有输出/);
 });
 
-test('a route legal only in the other phase is refused, not remapped', async () => {
-  // `advance` at AWAIT_ANSWER would abandon a step with no attempt recorded.
-  assert.equal(parseRouterReply('{"route":"advance"}', 'AWAIT_ANSWER').route, 'answer');
-  // `answer` at DISCUSSING refers to a question that was already graded.
-  assert.equal(parseRouterReply('{"route":"answer"}', 'DISCUSSING').route, 'clarify');
+test('advance is refused rather than remapped', async () => {
+  // Routing runs at AWAIT_ANSWER only, so `advance` is not a route at all — and
+  // honouring it would leave the step with no attempt and no `skipped` mark.
+  const route = parseRouterReply('{"route":"advance"}');
+  assert.equal(route.route, 'answer');
+  assert.match(route.reason, /非法路由 advance/);
+});
+
+test('explain is a route of its own, not a secondary on clarify', async () => {
+  // The whole point: `clarify` binds the reply role to restating the question, and a
+  // student who says 「你为什么不正面回答」 has already had that once. `applyRoute` reads
+  // only the primary route, so the distinction has to live there.
+  assert.equal(parseRouterReply('{"route":"explain","reason":"直接讲"}').route, 'explain');
 });
 
 test('a secondary intent is kept when valid and dropped when not', async () => {
   const both = parseRouterReply(
     '{"route":"answer","secondary":"needs_clarification","reason":"先评分"}',
-    'AWAIT_ANSWER',
   );
   assert.equal(both.route, 'answer', 'an answer with a question attached is still an answer');
   assert.equal(both.secondary, 'needs_clarification');
 
-  assert.equal(parseRouterReply('{"route":"answer","secondary":"nonsense"}', 'AWAIT_ANSWER').secondary, null);
-  assert.equal(parseRouterReply('{"route":"answer","secondary":"null"}', 'AWAIT_ANSWER').secondary, null);
+  assert.equal(parseRouterReply('{"route":"answer","secondary":"nonsense"}').secondary, null);
+  assert.equal(parseRouterReply('{"route":"answer","secondary":"null"}').secondary, null);
 });
 
 
@@ -298,6 +324,7 @@ function questionerPayload(askedQuestions: AskedQuestion[], variant = 1): Record
         passed: false,
         chipState: 'current',
         attempts: [],
+        dialogue: [],
       },
       stepIndex: 0,
       variant,

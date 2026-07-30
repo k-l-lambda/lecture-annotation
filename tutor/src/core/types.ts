@@ -156,14 +156,19 @@ export type ReplyIntent =
  * `answer` is the safe default and the fallback for every failure path: grading a
  * borderline turn costs a score the student can retry with a variant, whereas
  * routing a real answer to `clarify` silently discards work they did.
+ *
+ * Routing happens at `AWAIT_ANSWER` only, so there is no `advance` route: leaving a
+ * step unanswered is `skip`, and it must be recorded as such. `DISCUSSING` needs no
+ * classifier at all — free text there is just conversation.
  */
 export type StudentRoute =
   | 'answer'
   | 'clarify'
+  /** 「你直接讲」 — teach it, do not restate the question a second time. */
+  | 'explain'
   | 'hint'
   | 'variant'
   | 'skip'
-  | 'advance'
   | 'quit'
   | 'too_hard'
   | 'off_topic';
@@ -337,6 +342,18 @@ export interface Step {
   attempts: Attempt[];
   passed: boolean;
   chipState: ChipState;
+  /**
+   * Dialogue belonging to the step rather than to any one attempt — everything said
+   * before its first question exists, which is exactly the window a backtrack insert
+   * opens (`insert_prerequisite_step` moves the cursor to a step with no attempts).
+   *
+   * This field exists because the alternative was losing the turns. `discuss()` wrote
+   * only to `attempt.clarifications`, guarded by `if (log)`, so on a step with no
+   * attempt every student turn AND every tutor reply was silently dropped: absent from
+   * the export, and absent from the `history` the next reply is built from, which left
+   * the tutor answering from a step description with no question in front of it.
+   */
+  dialogue: DiscussionTurn[];
 }
 
 export interface PrepDecision {

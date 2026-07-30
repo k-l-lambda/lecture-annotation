@@ -261,6 +261,7 @@ async function setSteps(args: SetStepsArgs, ctx: ToolContext): Promise<ToolResul
       attempts: [],
       passed: false,
       chipState: 'pending',
+      dialogue: [],
     });
   }
 
@@ -278,6 +279,7 @@ async function setSteps(args: SetStepsArgs, ctx: ToolContext): Promise<ToolResul
       attempts: [],
       passed: false,
       chipState: 'pending',
+      dialogue: [],
     });
   }
 
@@ -582,6 +584,7 @@ function insertPrerequisiteStep(
     attempts: [],
     passed: false,
     chipState: 'pending',
+    dialogue: [],
   };
 
   ctx.session.steps.splice(targetIdx, 0, step);

@@ -266,6 +266,15 @@ export interface TutorReplyInput {
   section: SectionContent;
   step: Step;
   phase: 'AWAIT_ANSWER' | 'DISCUSSING';
+  /**
+   * What the student just said. Also the last entry of `history`, and duplicated
+   * here on purpose: this is the one input the role cannot function without, and
+   * `history` is assembled from a per-attempt log that a bookkeeping bug once left
+   * empty. The reply role then received a step description and no question, and did
+   * the only thing available to it — asked the student what they wanted to discuss.
+   * A field that is passed directly cannot be lost that way.
+   */
+  studentText: string;
   history: Array<{ role: 'student' | 'tutor'; text: string }>;
   digest: ProfileDigest;
   lastEvaluation: { score: number; evaluation: string; pointsMissed: string[] } | null;
@@ -280,6 +289,13 @@ export interface TutorReplyInput {
   intentHint?: ReplyIntent | null;
   /** The live question, needed so a `needs_clarification` reply can restate it. */
   question?: string | null;
+  /**
+   * The router's one-line reading of the turn, e.g. 「正面回答你问的这一点」. Shown to the
+   * student, and sent here too: it is the classifier's actual justification, and
+   * withholding it while letting the enum it produced select the binding `rules`
+   * string left the model with the conclusion and none of the reasoning.
+   */
+  routeReason?: string | null;
   /**
    * What this attempt is graded on. Sent so the reply role can tell *the answer* from
    * *adjacent material*: without it the only safe policy is to refuse everything, and
@@ -299,6 +315,9 @@ export function buildTutorReplyMessages(input: TutorReplyInput, settings: Settin
   const anchors = expandAnchors(input.section, input.step.anchors);
   const context: Record<string, unknown> = {
     phase: input.phase,
+    // First, because it is what the reply answers. See `TutorReplyInput.studentText`
+    // for why it is here as well as at the tail of the message array.
+    studentText: input.studentText,
     step: { id: input.step.id, title: input.step.title, goal: input.step.goal, targetLevel: input.step.targetLevel },
     analysis: input.analysis,
     sectionText: delimit('SECTION', budgeted.text),
@@ -318,6 +337,7 @@ export function buildTutorReplyMessages(input: TutorReplyInput, settings: Settin
     hintCap: settings.hintCap,
     earlierSteps: input.stepDigest,
     intentHint: input.intentHint ?? null,
+    routeReason: input.routeReason ?? null,
     question: input.question ?? null,
     // Scopes the no-reveal rule to what is actually graded. Without this the model
     // cannot tell 「the answer」 from 「a fact that merely sounds advanced」, and refusing
@@ -523,8 +543,13 @@ export function extractIntent(text: string): { text: string; intent: ReplyIntent
 // The router (student-turn classification)
 // ---------------------------------------------------------------------------
 
+/**
+ * No `phase` field: routing runs at `AWAIT_ANSWER` only. The classifier exists for
+ * the one question that is genuinely ambiguous there — answer, or question about the
+ * question — and `DISCUSSING` has no equivalent, so free text there goes straight to
+ * the tutor with nothing in between.
+ */
 export interface RouterInput {
-  phase: 'AWAIT_ANSWER' | 'DISCUSSING';
   step: { title: string; goal: string };
   question: string | null;
   setup: string | null;
@@ -542,7 +567,6 @@ export interface RouterInput {
 export function buildRouterUser(input: RouterInput): string {
   return JSON.stringify(
     {
-      phase: input.phase,
       step: input.step,
       question: input.question,
       setup: input.setup,
@@ -555,11 +579,18 @@ export function buildRouterUser(input: RouterInput): string {
   );
 }
 
-const ROUTES_BY_PHASE: Record<'AWAIT_ANSWER' | 'DISCUSSING', readonly StudentRoute[]> = {
-  AWAIT_ANSWER: ['answer', 'clarify', 'hint', 'too_hard', 'variant', 'skip', 'off_topic'],
-  // No `answer` here: the question has already been graded.
-  DISCUSSING: ['advance', 'variant', 'skip', 'quit', 'clarify', 'too_hard', 'off_topic'],
-};
+/** Every route legal at `AWAIT_ANSWER` — which is every route there is. */
+const ALLOWED_ROUTES: readonly StudentRoute[] = [
+  'answer',
+  'clarify',
+  'explain',
+  'hint',
+  'too_hard',
+  'variant',
+  'skip',
+  'quit',
+  'off_topic',
+];
 
 /**
  * The route to fall back on. See `StudentTurnRoute` for why it is `answer`.
@@ -569,50 +600,42 @@ const ROUTES_BY_PHASE: Record<'AWAIT_ANSWER' | 'DISCUSSING', readonly StudentRou
  * distinguish "the router said something we could not parse" from "the router
  * never answered" to be diagnosable at all.
  */
-function defaultRoute(phase: 'AWAIT_ANSWER' | 'DISCUSSING', reason: string): StudentTurnRoute {
-  return {
-    route: phase === 'AWAIT_ANSWER' ? 'answer' : 'clarify',
-    secondary: null,
-    reason,
-  };
+function defaultRoute(reason: string): StudentTurnRoute {
+  return { route: 'answer', secondary: null, reason };
 }
 
 /**
  * Parses the router's JSON, tolerating a fenced block or surrounding prose.
  *
- * Every failure path returns the phase default rather than throwing: a router that
- * is down, slow, or emitting garbage must not be able to stop a student from
- * submitting an answer. Routing is a convenience layered over the old behaviour,
- * so its absence degrades to exactly that old behaviour.
+ * Every failure path returns `answer` rather than throwing: a router that is down,
+ * slow, or emitting garbage must not be able to stop a student from submitting an
+ * answer. Routing is a convenience layered over the old behaviour, so its absence
+ * degrades to exactly that old behaviour.
  */
-export function parseRouterReply(
-  raw: string,
-  phase: 'AWAIT_ANSWER' | 'DISCUSSING',
-): StudentTurnRoute {
+export function parseRouterReply(raw: string): StudentTurnRoute {
   const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/i);
   const body = (fenced?.[1] ?? raw).trim();
   const start = body.indexOf('{');
   const end = body.lastIndexOf('}');
   if (start < 0 || end <= start) {
-    return defaultRoute(phase, raw.trim() ? '分流未给出 JSON' : '分流没有输出');
+    return defaultRoute(raw.trim() ? '分流未给出 JSON' : '分流没有输出');
   }
 
   let parsed: unknown;
   try {
     parsed = JSON.parse(body.slice(start, end + 1));
   } catch {
-    return defaultRoute(phase, '分流 JSON 无法解析');
+    return defaultRoute('分流 JSON 无法解析');
   }
-  if (typeof parsed !== 'object' || parsed === null) return defaultRoute(phase, '分流 JSON 无法解析');
+  if (typeof parsed !== 'object' || parsed === null) return defaultRoute('分流 JSON 无法解析');
 
   const obj = parsed as Record<string, unknown>;
   const route = typeof obj['route'] === 'string' ? obj['route'].toLowerCase().trim() : '';
-  const allowed = ROUTES_BY_PHASE[phase];
-  if (!(allowed as string[]).includes(route)) {
-    // A route the model invented, or one legal only in the other phase. Falling
-    // back is safer than mapping it: `advance` at AWAIT_ANSWER would abandon a
-    // step with no attempt recorded.
-    return defaultRoute(phase, route ? `分流给出非法路由 ${route}` : '分流未给出路由');
+  if (!(ALLOWED_ROUTES as string[]).includes(route)) {
+    // A route the model invented, or one this phase does not have — `advance` is the
+    // one it is most likely to reach for, and honouring it would leave the step with
+    // no attempt and no `skipped` mark. Falling back is safer than mapping it.
+    return defaultRoute(route ? `分流给出非法路由 ${route}` : '分流未给出路由');
   }
 
   const rawSecondary =
@@ -655,12 +678,9 @@ export async function runRouterTurn(options: {
 
   try {
     const response = await options.llm.call(request, options.signal);
-    return {
-      route: parseRouterReply(response.text ?? '', options.input.phase),
-      usage: response.usage,
-    };
+    return { route: parseRouterReply(response.text ?? ''), usage: response.usage };
   } catch {
-    return { route: defaultRoute(options.input.phase, '分流调用失败'), usage: {} };
+    return { route: defaultRoute('分流调用失败'), usage: {} };
   }
 }
 

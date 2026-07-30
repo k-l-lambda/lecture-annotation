@@ -689,6 +689,7 @@ function step(over: Partial<Step> = {}): Step {
     passed: true,
     chipState: 'passed',
     attempts: [attempt()],
+    dialogue: [],
     ...over,
   };
 }

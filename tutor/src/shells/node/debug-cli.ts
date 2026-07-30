@@ -454,7 +454,10 @@ async function main(): Promise<number> {
           continue;
         }
         if (line === '') continue;
-        await session.applyRoute(await session.routeStudentTurn(line), line);
+        // Straight to the tutor. The keys above are the only way out of this phase,
+        // so there is nothing for a classifier to decide — and one that guessed
+        // `advance` would move the step the student was still asking about.
+        await session.discuss(line);
         continue;
       }
 

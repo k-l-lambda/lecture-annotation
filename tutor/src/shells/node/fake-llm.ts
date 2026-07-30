@@ -138,8 +138,9 @@ export class FakeLlm implements Llm {
   }
 
   /**
-   * Deterministic routing so scripted sessions stay reproducible: a turn that ends
-   * in a question mark is a clarification request, anything else is an answer.
+   * Deterministic routing so scripted sessions stay reproducible: an explicit demand
+   * to be taught is `explain`, a turn ending in a question mark is `clarify`, anything
+   * else is an answer. No phase check — the router only runs at `AWAIT_ANSWER` now.
    *
    * This is a stand-in, not a model of the real router — the whole question of
    * whether an LLM can tell 「这题什么意思」 from a hedged answer is exactly what a
@@ -148,11 +149,13 @@ export class FakeLlm implements Llm {
   #route(req: LlmRequest): LlmResponse {
     const raw = jsonField(req, 'studentText');
     const text = typeof raw === 'string' ? raw : '';
-    const phase = jsonField(req, 'phase');
-    const asks = /[?？]\s*$/.test(text.trim());
-    const route = phase === 'DISCUSSING' ? 'clarify' : asks ? 'clarify' : 'answer';
+    const trimmed = text.trim();
+    const demandsTeaching = /直接讲|你来讲|不要局限|正面回答|别让我(猜|答)/.test(trimmed);
+    const asks = /[?？]\s*$/.test(trimmed);
+    const route = demandsTeaching ? 'explain' : asks ? 'clarify' : 'answer';
+    const reason = demandsTeaching ? '按你说的直接讲' : asks ? '先解释题目' : '去评分';
     return {
-      text: JSON.stringify({ route, secondary: null, reason: asks ? '先解释题目' : '去评分' }),
+      text: JSON.stringify({ route, secondary: null, reason }),
       toolCalls: [],
       usage: USAGE,
     };

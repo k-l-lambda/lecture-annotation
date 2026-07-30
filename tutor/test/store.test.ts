@@ -182,6 +182,7 @@ test('previouslyAsked projects questions from the last completed sessions', asyn
               exitChoice: null,
             },
           ],
+          dialogue: [],
         },
       ],
     }),

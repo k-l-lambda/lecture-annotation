@@ -381,6 +381,14 @@
       var state = session.state;
       if (state !== "AWAIT_ANSWER" && state !== "DISCUSSING") return;
 
+      // Once the step is graded, typing is just talking. The buttons below are the
+      // only way out of the phase, so there is nothing for the router to decide — and
+      // one that guessed `advance` would move the step mid-question.
+      if (state === "DISCUSSING") {
+        guard(session.discuss(value));
+        return;
+      }
+
       // The route -> method mapping lives in the core (session.applyRoute), shared
       // with the debug shell. The panel deliberately has no switch of its own: a
       // route added to the enum but missed here would silently fall through to

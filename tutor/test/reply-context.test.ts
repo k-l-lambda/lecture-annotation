@@ -195,6 +195,27 @@ test('the prompt states the precedence and forbids a false 本节没讲', () => 
 });
 
 test('the router can tell "explain it to me" from "what does the question mean"', () => {
-  assert.match(PROMPTS.router.text, /wants_explanation/);
+  // Once a `secondary: wants_explanation` on a `clarify` route, now a route of its
+  // own: `applyRoute` dispatches on the primary route alone, so as a secondary the
+  // distinction was parsed and then thrown away, and the student got the
+  // restate-the-question rules anyway.
+  assert.match(PROMPTS.router.text, /`explain`/);
   assert.match(PROMPTS.router.text, /不要局限在原文/);
+  // The two routes are only useful if the prompt says which is which.
+  assert.match(PROMPTS.router.text, /`clarify` 和 `explain` 的区别/);
+});
+
+test('the router is told it only runs before an answer', () => {
+  // No `advance` route, and no DISCUSSING table: a classifier there could only guess
+  // at moving the step, and the phase has explicit controls for that.
+  assert.match(PROMPTS.router.text, /没有 `advance` 这条路线/);
+  assert.doesNotMatch(PROMPTS.router.text, /`DISCUSSING`（已评分/);
+});
+
+test('tutor_reply is told studentText is what it must answer', () => {
+  // The field exists because `history` was once empty on a step with no attempt, and
+  // the reply role received a step description with no question in it.
+  assert.match(PROMPTS.tutor_reply.text, /`studentText` 是学生这一轮说的原话/);
+  assert.match(PROMPTS.tutor_reply.text, /wants_explanation/);
+  assert.match(PROMPTS.tutor_reply.text, /不要重述题目/);
 });
