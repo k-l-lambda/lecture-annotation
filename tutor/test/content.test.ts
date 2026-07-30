@@ -28,6 +28,34 @@ test('slugify keeps the alphanumerics inside inline math', () => {
   assert.equal(slug('24.5 $\\partial/\\partial t$ 的非不变性'), '245-partialpartial-t-的非不变性');
 });
 
+test('slugify keeps hyphens and underscores, which pymdownx does not strip', () => {
+  // The bug this pins failed a Pages deploy. `RE_INVALID_SLUG_CHAR` is `[^\w\- ]`,
+  // so `-` and `_` survive while `+` and `：` do not — but the character class this
+  // replaced stripped `-` and `_` along with the rest of ASCII punctuation, so the
+  // sidecar and the rendered HTML disagreed on 381 of the corpus's 5559 headings.
+  // Only 7 were marked sections, which is why it went unnoticed until a lecture
+  // page without an explicit id was marked.
+  assert.equal(
+    slug('段落 16：QCD例子：e+e-到强子总截面与红外抵消'),
+    '段落-16qcd例子ee-到强子总截面与红外抵消',
+  );
+  assert.equal(slug('4. 涨落-耗散定理（Fluctuation-Dissipation Theorem）'),
+    '4-涨落-耗散定理fluctuation-dissipation-theorem');
+  assert.equal(slug('1. 生成元的统一表示：$M_{\\mu\\nu}$ 的引入'), '1-生成元的统一表示m_munu-的引入');
+});
+
+test('slugify strips symbols that are neither letter, digit, dash nor space', () => {
+  // `⭐` is in 14 corpus headings; it is a symbol, so it goes, and the spaces
+  // around it still collapse to separators independently.
+  assert.equal(slug('图2：双轨制学习路径 ⭐新出现'), '图2双轨制学习路径-新出现');
+});
+
+test('slugify replaces each space with a separator, not each run', () => {
+  // pymdownx's `RE_SEP` is a single U+0020, applied after the invalid chars are
+  // removed — so a stripped character between two spaces leaves TWO separators.
+  assert.equal(slug('4. 核心方程 $\\nabla \\cdot T = 0$ 的物理内涵'), '4-核心方程-nabla-cdot-t--0-的物理内涵');
+});
+
 test('slugify appends toc duplicate suffixes', () => {
   const seen = new Map<string, number>();
   assert.equal(slugify('小结', seen), '小结');

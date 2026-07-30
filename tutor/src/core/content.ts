@@ -65,25 +65,48 @@ export function parseHeading(line: string, lineNumber: number): ParsedHeading | 
  * Verified against the rendered HTML, and the subtlety is load-bearing: `toc`
  * normalises the heading text BEFORE slugifying, so an ideographic space becomes a
  * regular space and then the separator. `27.2　亚微观成分` -> `272-亚微观成分`.
- * Calling pymdownx's slugify directly returns `272亚微观成分` instead — matching
- * that would silently break every cross-chapter link to such a section, which is
- * the drift the build-time cross-check exists to catch.
+ * Handing pymdownx the raw text returns `272亚微观成分` instead — matching that
+ * would silently break every cross-chapter link to such a section, which is the
+ * drift the build-time cross-check exists to catch.
+ *
+ * The Python side (`scripts/tutor_sidecars.py`) calls pymdownx directly, since it
+ * is already a dependency there. Here it has to be reimplemented, so this mirrors
+ * `_uslugify`'s steps rather than guessing at its output — the previous version
+ * guessed with a character range list and was wrong about `-` and `_`.
  */
 export function slugify(text: string, seen: Map<string, number>): string {
-  const base = normalizeHeadingSpaces(text)
+  // The steps and their order are pymdownx.slugs._uslugify's, not an approximation
+  // of its results: NFC normalise, strip HTML tags, trim, lowercase, drop every
+  // character that is not word/dash/space, then spaces to the separator.
+  const base = normalizeHeadingSpaces(text.normalize('NFC'))
     // Inline math contributes its stripped LaTeX, it is NOT dropped: the real
     // pipeline removes only the `$` delimiters and slugifies what is inside, so
     // `$C^\infty$` -> `cinfty` and `$\frac{1}{2}$` -> `frac12`. Verified against
     // chapters 6, 24 and 29, the three in the corpus with math in a heading.
     .replace(/\$+/g, '')
-    .replace(/[!-/:-@[-`{-~ -⁯　-〿＀-￯]/g, '')
+    .replace(TAG_RE, '')
     .trim()
-    .replace(/\s+/g, '-')
-    .toLowerCase();
+    .toLowerCase()
+    .replace(INVALID_SLUG_CHAR_RE, '')
+    // Only U+0020, matching pymdownx's `RE_SEP`. Every other space separator has
+    // already been folded to U+0020 by normalizeHeadingSpaces.
+    .replace(/ /g, '-');
   const n = seen.get(base) ?? 0;
   seen.set(base, n + 1);
   return n === 0 ? base : `${base}_${n}`;
 }
+
+/** pymdownx's `RE_TAGS`. */
+const TAG_RE = /<\/?[^>]*>/g;
+
+/**
+ * pymdownx's `RE_INVALID_SLUG_CHAR` — `[^\w\- ]` under Python's Unicode `re`, whose
+ * `\w` is letters, digits and underscore. `-` and `_` SURVIVE; this is the part the
+ * previous hand-written range list got wrong, stripping both and so disagreeing with
+ * the built HTML on 381 of the corpus's 5559 headings (`段落 16：…e+e-到强子…` gave
+ * `…ee到强子…` here against `…ee-到强子…` in the DOM).
+ */
+const INVALID_SLUG_CHAR_RE = /[^\p{L}\p{N}_\- ]/gu;
 
 /**
  * Folds every Unicode space separator — notably U+3000 IDEOGRAPHIC SPACE, which

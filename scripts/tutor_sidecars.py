@@ -25,6 +25,8 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from pymdownx.slugs import slugify as pymdownx_slugify
+
 MARK = ".tutor-section"
 
 HEADING_RE = re.compile(r"^(?P<hashes>#{1,6})[ \t]+(?P<text>.*?)[ \t]*$")
@@ -39,11 +41,17 @@ TRANSCRIPT_RE = re.compile(r"<details>\s*<summary>\s*📝\s*原始字幕.*?</det
 SPACE_CHARS = "                　"
 SPACE_RE = re.compile(f"[{SPACE_CHARS}]")
 
-# Punctuation + symbol ranges that toc's slugify strips. Mirrors the character
-# class in content.ts slugify().
-STRIP_RE = re.compile(
-    r"[!-/:-@\[-`{-~ -⁯　-〿＀-￯]"
-)
+# The real slugifier, not a reimplementation of it. `mkdocs.yml` configures toc with
+# `pymdownx.slugs.slugify(case=lower)`, and pymdownx ships with mkdocs-material, so
+# calling it directly is exact by construction.
+#
+# The hand-written character class this replaces was wrong about `-` and `_`: it
+# stripped both (they fall inside its `!-/` and `` [-` `` ranges) where pymdownx
+# PRESERVES them. So `段落 16：QCD例子：e+e-到强子总截面与红外抵消` slugified to
+# `…例子ee到强子…` here but `…例子ee-到强子…` in the built HTML, and
+# check_tutor_sidecars.py failed the build -- correctly. 381 of the corpus's 5559
+# headings differed; 7 are marked sections. Mirrored in content.ts slugify().
+TOC_SLUGIFY = pymdownx_slugify(case="lower")
 
 # A page over this loses its per-section annotation to truncation rather than
 # shipping a sidecar that costs every reader bandwidth (data-model.md §5.2).
@@ -59,16 +67,21 @@ def normalize_heading_spaces(text: str) -> str:
 def slugify(text: str, seen: dict[str, int]) -> str:
     """Reproduce the id the built site carries (toc + pymdownx slugify(case=lower)).
 
-    The subtlety is that ``toc`` normalises the heading text *before* slugifying,
-    so an ideographic space becomes a regular space and then the separator:
-    ``27.2　亚微观成分`` -> ``272-亚微观成分``. Calling pymdownx's slugify directly
-    yields ``272亚微观成分`` instead, which would break every cross-chapter link
-    to such a section.
+    Two normalisations happen before pymdownx sees the text, and both are load-bearing:
+
+    - ``toc`` folds the heading text first, so an ideographic space becomes a regular
+      space and then the separator: ``27.2　亚微观成分`` -> ``272-亚微观成分``. Handing
+      pymdownx the raw text yields ``272亚微观成分`` instead, which would break every
+      cross-chapter link to such a section.
+    - the ``$`` delimiters of inline math are dropped and what is inside is slugified,
+      so ``$C^\\infty$`` -> ``cinfty``. Verified against chapters 6, 24 and 29, the
+      three in the corpus with math in a heading.
+
+    Everything after that is pymdownx's own slugify rather than a copy of its rules --
+    see ``TOC_SLUGIFY``. The ``seen`` counter reproduces toc's ``_1``/``_2`` suffixes
+    for duplicate headings, which pymdownx does not do itself.
     """
-    base = normalize_heading_spaces(text)
-    base = base.replace("$", "")
-    base = STRIP_RE.sub("", base)
-    base = re.sub(r"\s+", "-", base.strip()).lower()
+    base = TOC_SLUGIFY(normalize_heading_spaces(text).replace("$", ""), "-")
     n = seen.get(base, 0)
     seen[base] = n + 1
     return base if n == 0 else f"{base}_{n}"

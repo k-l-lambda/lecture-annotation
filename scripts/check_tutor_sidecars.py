@@ -34,6 +34,25 @@ ID_RE = re.compile(r"""\bid=["']([^"']+)["']""")
 CLASS_RE = re.compile(r"""\bclass=["']([^"']*)["']""")
 
 
+def rendered_path(page: str) -> str:
+    """Where ``use_directory_urls: true`` puts a page's HTML.
+
+    ``docs/a/b.md`` -> ``a/b/index.html``, but ``docs/a/index.md`` -> ``a/index.html``:
+    MkDocs does NOT nest an index page inside a directory of its own name. Deriving the
+    path without that case reported `lectures/yt-BYKhAbcMMg8/index` as "sidecar emitted
+    but no HTML built" while the file was sitting there as `.../index.html`, and then
+    also flagged the same page's real HTML as having no sidecar — one cause, two errors.
+    """
+    if page == "index":
+        return "index.html"
+    return f"{page[: -len('/index')]}/index.html" if page.endswith("/index") else f"{page}/index.html"
+
+
+def sidecar_name(page_dir: str) -> str:
+    """Inverse of `rendered_path` for the reverse scan: the sidecar a built page implies."""
+    return "index.tutor-sections.json" if page_dir == "" else f"{page_dir}.tutor-sections.json"
+
+
 def rendered_ids(html: str) -> set[str]:
     found = set()
     for tag in TAG_RE.finditer(html):
@@ -56,8 +75,7 @@ def check(site: Path, docs: Path) -> list[str]:
         page = payload["page"]
         declared = {s["id"] for s in payload["sections"]}
 
-        # use_directory_urls: true -> docs/a/b.md renders to site/a/b/index.html
-        html_path = site / page / "index.html"
+        html_path = site / rendered_path(page)
         if not html_path.exists():
             problems.append(f"{page}: sidecar emitted but {html_path} was not built")
             continue
@@ -82,11 +100,18 @@ def check(site: Path, docs: Path) -> list[str]:
         marked = rendered_ids(html_path.read_text(encoding="utf-8"))
         if not marked:
             continue
-        page = html_path.parent.relative_to(site).as_posix()
-        if not (docs / f"{page}.tutor-sections.json").exists():
+        page_dir = html_path.parent.relative_to(site).as_posix()
+        page_dir = "" if page_dir == "." else page_dir
+        # `<dir>/index.html` is ambiguous: it is either `<dir>.md` or `<dir>/index.md`.
+        # Either sidecar satisfies this check, so accept whichever exists rather than
+        # reporting a page as unemitted because it was written the other way.
+        candidates = [docs / sidecar_name(page_dir)]
+        if page_dir:
+            candidates.append(docs / page_dir / "index.tutor-sections.json")
+        if not any(c.exists() for c in candidates):
             problems.append(
-                f"{page}: {len(marked)} .tutor-section heading(s) rendered but no sidecar was "
-                "emitted — Tutor would fall back to DOM text (formulas lost) on this page"
+                f"{page_dir or 'index'}: {len(marked)} .tutor-section heading(s) rendered but no "
+                "sidecar was emitted — Tutor would fall back to DOM text (formulas lost) here"
             )
 
     print(f"checked {checked} sidecar(s) against rendered HTML")
