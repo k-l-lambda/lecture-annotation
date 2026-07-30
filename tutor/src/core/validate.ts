@@ -787,6 +787,21 @@ export interface QuestionContext {
    * repair budget ran out, killing the session before its first question.
    */
   isPrep?: boolean;
+  /**
+   * A step from `insert_prerequisite_step` is the same situation under a different
+   * name, and it was not exempt — so the bug above recurred verbatim on a backtrack.
+   *
+   * Live (`temp/tutor-session-段落-1 (1).json`): the student said 太难了, the tutor
+   * inserted 舒尔引理回顾, and `ask_question` failed three times quoting
+   * 「与所有生成元对易的算符，在不可约表示中只能是常数倍恒等算符」 — which is the
+   * inserted step's own `goal`, not section text. The gate was right to reject it and
+   * the questioner had nothing else to offer: 舒尔引理 is prerequisite background, so
+   * by construction it is not in this section. The session died at `ASKING`.
+   *
+   * The tool takes no `anchors` argument and the harness builds the step with
+   * `anchors: []`, exactly like a prep step. Same cause, same exemption.
+   */
+  inserted?: boolean;
 }
 
 export function validateAskQuestion(
@@ -839,11 +854,12 @@ export function validateAskQuestion(
   }
 
   errors.push(...validateGenreForQuestion(args.genre, ctx.genrePreference));
-  // Anchor required for a section step, optional for a prep step — but if a prep
-  // question does supply one, it still has to be real. Skipping the check entirely
-  // would let an invented quote through on exactly the step where the model is most
-  // tempted to invent one.
-  if (!ctx.isPrep || args.sourceAnchor?.trim()) {
+  // Anchor required for a section step, optional for a prep or inserted prerequisite
+  // step — but if such a question does supply one, it still has to be real. Skipping
+  // the check entirely would let an invented quote through on exactly the step where
+  // the model is most tempted to invent one.
+  const anchorOptional = ctx.isPrep || ctx.inserted;
+  if (!anchorOptional || args.sourceAnchor?.trim()) {
     errors.push(...checkAnchors([{ value: args.sourceAnchor, field: 'sourceAnchor' }], ctx.sectionText));
   }
 

@@ -342,6 +342,7 @@ function askQuestion(args: AskQuestionArgs, ctx: ToolContext): ToolResult {
     targetLevel: step.targetLevel,
     kpIds: step.knowledgePointIds,
     isPrep: step.isPrep,
+    inserted: step.inserted,
   });
   if (errors.length > 0) return toolErr(errors);
 
