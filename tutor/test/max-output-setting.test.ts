@@ -104,3 +104,31 @@ test('a blob with no schemaVersion is treated as v1', () => {
 test('new saves carry the bumped schemaVersion', () => {
   assert.ok(defaultSettings().schemaVersion >= 2);
 });
+
+test('the lift reports itself as a migration so the caller can persist it', () => {
+  // Without this the notice reappeared on every page load: the blob kept
+  // `schemaVersion: 1`, so each read reached the same conclusion and warned again. The
+  // student was told about an upgrade with no way to acknowledge it.
+  assert.equal(applySettings({ schemaVersion: 1, maxOutputTokens: 2000 }).migrated, true);
+  assert.notEqual(applySettings({ schemaVersion: 1, maxOutputTokens: 12000 }).migrated, true);
+  assert.notEqual(applySettings({ schemaVersion: 2, maxOutputTokens: 2000 }).migrated, true);
+});
+
+test('the browser store writes the migration back, so it is announced once', async () => {
+  const { SettingsStore, memoryStorage } = await import('../src/shells/web/settings-store.ts');
+  const local = memoryStorage();
+  const store = new SettingsStore({ local, session: memoryStorage() });
+  local.setItem('tutor.settings', JSON.stringify({ schemaVersion: 1, maxOutputTokens: 2000 }));
+
+  const first = store.load();
+  assert.equal(first.settings.maxOutputTokens, defaultSettings().maxOutputTokens);
+  assert.ok(first.warnings.some((w) => w.includes('2000')), 'told the first time');
+
+  const second = store.load();
+  assert.equal(second.settings.maxOutputTokens, defaultSettings().maxOutputTokens, 'still lifted');
+  assert.equal(
+    second.warnings.some((w) => w.includes('2000')),
+    false,
+    'and not told a second time',
+  );
+});

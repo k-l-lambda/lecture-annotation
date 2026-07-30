@@ -107,6 +107,16 @@ export class SettingsStore {
     // The key is stored apart, so it is absent from the object every time and has
     // to be merged back in after clamping.
     result.settings.apiKey = safeRead(this.#keyStore(), KEY_STORAGE_KEY) ?? '';
+
+    // A migration rewrote a stored value, so write the result back — otherwise the
+    // blob keeps its old `schemaVersion` and the next load reports the same migration
+    // again, forever. `warnings` is still returned this once, which is the point: the
+    // student is told exactly one time.
+    //
+    // A write failure is not surfaced. The settings are correct in memory either way,
+    // and the only cost is that the notice appears again next load — much less than
+    // interrupting a session over a quota error the student cannot act on.
+    if (result.migrated) this.save(result.settings);
     return result;
   }
 

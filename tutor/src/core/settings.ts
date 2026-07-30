@@ -21,6 +21,15 @@ export interface LoadResult {
   warnings: string[];
   /** Where the values came from; null when nothing was found and defaults apply. */
   path: string | null;
+  /**
+   * True when a stored value was rewritten by a schema migration, so the caller should
+   * persist the result. `applySettings` is pure — it cannot write — and without this
+   * signal a migration announced itself on every single load: the blob kept its old
+   * `schemaVersion`, so the next read re-derived the same conclusion and warned again.
+   * The notice only stopped if the student happened to open the settings dialog and
+   * save, which is self-healing by coincidence rather than by design.
+   */
+  migrated?: boolean;
 }
 
 /** settings.md §4-§5 defaults. Thinking is ON by default; the planner is why. */
@@ -104,6 +113,7 @@ const GENRE_PREFS = new Set<GenrePreference>(['descriptive-only', 'descriptive-f
  */
 export function applySettings(raw: unknown, base = defaultSettings()): LoadResult {
   const warnings: string[] = [];
+  let migrated = false;
   const settings = { ...base, reasoning: { ...base.reasoning, byRole: { ...base.reasoning.byRole } }, temperature: { byRole: { ...base.temperature.byRole } }, roleModels: { ...base.roleModels } };
   const src = (raw ?? {}) as Record<string, unknown>;
 
@@ -159,10 +169,18 @@ export function applySettings(raw: unknown, base = defaultSettings()): LoadResul
   // this field, so nobody could have typed it — and keeping it means the planner goes
   // on failing at the cap for anyone who already ran a session. A value they did
   // change is preserved, as is anything saved at v2 or later.
+  //
+  // `migrated` is what makes this a one-time event rather than a permanent complaint:
+  // the caller writes the result back, stamping `schemaVersion: 2`, so the next load
+  // takes the `else` branch. Reporting without persisting meant the student was told
+  // about an upgrade they had no way to acknowledge, on every page load.
   const stale =
     clampInt(src['schemaVersion'], 1, 1, 1_000) < 2 && src['maxOutputTokens'] === 2000;
   if (stale) {
-    warnings.push('单次回复 token 上限已从 2000 提高到 6000：规划一节放不进 2000');
+    migrated = true;
+    warnings.push(
+      `单次回复 token 上限已从 2000 提高到 ${settings.maxOutputTokens}：规划一节放不进 2000。已为你调整`,
+    );
   } else {
     settings.maxOutputTokens = clampInt(src['maxOutputTokens'], settings.maxOutputTokens, 256, 32_000);
   }
@@ -195,5 +213,5 @@ export function applySettings(raw: unknown, base = defaultSettings()): LoadResul
     }
   }
 
-  return { settings, warnings, path: null };
+  return { settings, warnings, path: null, migrated };
 }
