@@ -85,7 +85,12 @@ export function defaultSettings(): Settings {
     callBudgetPerSession: 40,
     hintCap: 2,
     variantCap: 3,
-    stepRange: [3, 5],
+    // Floor 1, not 3: a short lecture section often carries exactly one checkable
+    // idea, and a floor of 3 made the planner pad the ladder with steps the section
+    // does not support — or get rejected and re-plan into the same wall. The cap
+    // still stops a runaway ladder; the floor was only ever protecting against a
+    // lazy plan, which is not the failure that actually happens.
+    stepRange: [1, 5],
     genrePreference: 'descriptive-first',
     requestTimeoutMs: 60_000,
     plannerTimeoutMs: 120_000,
@@ -200,7 +205,7 @@ export function applySettings(raw: unknown, base = defaultSettings()): LoadResul
   }
 
   if (Array.isArray(src['stepRange']) && src['stepRange'].length === 2) {
-    const lo = clampInt(src['stepRange'][0], 3, 1, 6);
+    const lo = clampInt(src['stepRange'][0], 1, 1, 6);
     const hi = clampInt(src['stepRange'][1], 5, lo, 6);
     settings.stepRange = [lo, hi];
   }
