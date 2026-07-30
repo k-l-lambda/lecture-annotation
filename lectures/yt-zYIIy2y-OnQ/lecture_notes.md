@@ -17,7 +17,7 @@
 
 ---
 
-## 段落 1
+## 段落 1 { .tutor-section }
 
 **时间：** 00:00:00 ~ 00:01:31
 
@@ -139,7 +139,7 @@ $$\mathrm{Tr}(\Phi) = \sum_{k=1}^m \varphi_k = 0 \quad (\mathrm{mod}\, 2\pi)$$
 
 ---
 
-## 段落 2
+## 段落 2 { .tutor-section }
 
 **时间：** 00:01:35 ~ 00:06:43
 
@@ -372,7 +372,7 @@ $$\det(\operatorname{Exp}\mathbf{A}) = \exp(\operatorname{tr}\mathbf{A})$$
 
 ---
 
-## 段落 3
+## 段落 3 { .tutor-section }
 
 **时间：** 00:06:43 ~ 00:06:52
 
@@ -449,7 +449,7 @@ $$f(t) := \det\bigl(\exp(t\mathbf{A})\bigr)$$
 
 ---
 
-## 段落 4
+## 段落 4 { .tutor-section }
 
 **时间：** 00:06:56 ~ 00:11:48
 
@@ -686,7 +686,7 @@ $$\det(\exp(\mathbf{A})) = \exp(d(\det)_e(\mathbf{A})) = \exp(\operatorname{tr}(
 
 ---
 
-## 段落 5
+## 段落 5 { .tutor-section }
 
 **时间：** 00:11:57 ~ 00:17:00
 
@@ -825,7 +825,7 @@ special就是
 
 ---
 
-## 段落 6
+## 段落 6 { .tutor-section }
 
 **时间：** 00:17:00 ~ 00:17:46
 
@@ -931,7 +931,7 @@ $$\mathfrak{su}(m) := \{A \in \mathfrak{u}(m) \mid \operatorname{tr} A = 0\}$$
 
 ---
 
-## 段落 7
+## 段落 7 { .tutor-section }
 
 **时间：** 00:17:53 ~ 00:22:55
 
@@ -1172,7 +1172,7 @@ $$H \subset G \quad \Leftrightarrow \quad \mathfrak{h} \subset \mathfrak{g}$$
 
 ---
 
-## 段落 8
+## 段落 8 { .tutor-section }
 
 **时间：** 00:22:55 ~ 00:26:31
 
@@ -1403,7 +1403,7 @@ $$\mathfrak{su}(m) = \{A \in \mathfrak{gl}(m, \mathbb{C}) \mid A^\dagger = -A, \
 
 ---
 
-## 段落 9
+## 段落 9 { .tutor-section }
 
 **时间：** 00:26:36 ~ 00:28:48
 
@@ -1540,7 +1540,7 @@ $$\det(e^{tA}) = e^{\operatorname{tr}(tA)} = e^{t\operatorname{tr}(A)}$$
 
 ---
 
-## 段落 10
+## 段落 10 { .tutor-section }
 
 **时间：** 00:28:55 ~ 00:30:30
 

@@ -13,7 +13,7 @@
 
 ---
 
-## 段落 1
+## 段落 1 { .tutor-section }
 
 **时间：** 00:00:00 ~ 00:03:53
 
@@ -175,7 +175,7 @@ $$U^\dagger U = I$$
 
 ---
 
-## 段落 2
+## 段落 2 { .tutor-section }
 
 **时间：** 00:03:59 ~ 00:06:47
 
@@ -341,7 +341,7 @@ $$I = U^\dagger U = \overline{U}^T U = \overline{U} U = |U|^2$$
 
 ---
 
-## 段落 3
+## 段落 3 { .tutor-section }
 
 **时间：** 00:06:52 ~ 00:11:52
 
@@ -579,7 +579,7 @@ $$\mathfrak{u}(m) = \{ m \times m \text{ 复矩阵 } A \mid A^\dagger = -A \}$$
 
 ---
 
-## 段落 4
+## 段落 4 { .tutor-section }
 
 **时间：** 00:11:52 ~ 00:16:53
 
@@ -828,7 +828,7 @@ $$\dim G = \dim \mathfrak{g}$$
 
 ---
 
-## 段落 5
+## 段落 5 { .tutor-section }
 
 **时间：** 00:16:53 ~ 00:21:53
 
@@ -1106,7 +1106,7 @@ $$a - ib = -(a + ib) \Rightarrow a = 0, \quad b \in \mathbb{R}$$
 
 ---
 
-## 段落 6
+## 段落 6 { .tutor-section }
 
 **时间：** 00:21:53 ~ 00:22:07
 

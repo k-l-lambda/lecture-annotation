@@ -23,7 +23,7 @@
 
 ---
 
-## 段落 1：课程导入与卢瑟福散射背景设定
+## 段落 1：课程导入与卢瑟福散射背景设定 { .tutor-section }
 
 **时间：** 00:00:00 ~ 00:06:47
 
@@ -250,7 +250,7 @@ OK
 
 ---
 
-## 段落 2：软光子实发射的eikonal因子与概率因子
+## 段落 2：软光子实发射的eikonal因子与概率因子 { .tutor-section }
 
 **时间：** 00:06:47 ~ 00:12:33
 
@@ -522,7 +522,7 @@ $$d\sigma \approx d\sigma_0 \cdot \int \frac{d^3k}{(2\pi)^3 2E_k} \sum_{\lambda}
 
 ---
 
-## 段落 3：极化求和、角积分定义与红外发散出现
+## 段落 3：极化求和、角积分定义与红外发散出现 { .tutor-section }
 
 **时间：** 00:12:33 ~ 00:20:30
 
@@ -872,7 +872,7 @@ $$ I(\mathbf{v}, \mathbf{v'}) = \int \frac{d\Omega_{\hat{k}}}{4\pi} \left[ \frac
 
 ---
 
-## 段落 4：经典轫致辐射类比与红外灾难图像
+## 段落 4：经典轫致辐射类比与红外灾难图像 { .tutor-section }
 
 **时间：** 00:20:30 ~ 00:26:18
 
@@ -1190,7 +1190,7 @@ $$ Prob = \frac{\alpha}{\pi} \int \frac{d|\mathbf{k}|}{|\mathbf{k}|} I(\mathbf{v
 
 ---
 
-## 段落 5：红外正规化与探测器能量阈值
+## 段落 5：红外正规化与探测器能量阈值 { .tutor-section }
 
 **时间：** 00:26:18 ~ 00:34:50
 
@@ -1560,7 +1560,7 @@ $$ \int_{\lambda}^{E_T} \frac{d|\vec{k}|}{|\vec{k}|} = \ln\left(\frac{E_T}{\lamb
 
 ---
 
-## 段落 6：转向虚修正：LSZ展开与Z2准备
+## 段落 6：转向虚修正：LSZ展开与Z2准备 { .tutor-section }
 
 **时间：** 00:34:50 ~ 00:41:51
 
@@ -1883,7 +1883,7 @@ $$ \delta Z_2 = \frac{\partial \Sigma(p)}{\partial \not{p}} \Bigg|_{\not{p}=m} $
 
 ---
 
-## 段落 7：电子自能的软区域提取与红外部分
+## 段落 7：电子自能的软区域提取与红外部分 { .tutor-section }
 
 **时间：** 00:41:51 ~ 00:49:41
 
@@ -2214,7 +2214,7 @@ E squared
 
 ---
 
-## 段落 8：自能结果整理与顶角修正计算准备
+## 段落 8：自能结果整理与顶角修正计算准备 { .tutor-section }
 
 **时间：** 00:49:41 ~ 00:55:01
 
@@ -2518,7 +2518,7 @@ $$ \delta Z_2 \approx e^2 \int \frac{d^3k}{(2\pi)^3 2|\vec{k}|} \frac{m^2}{(p \c
 
 ---
 
-## 段落 9：顶角修正的soft近似与因子化
+## 段落 9：顶角修正的soft近似与因子化 { .tutor-section }
 
 **时间：** 00:55:01 ~ 01:03:22
 
@@ -2861,7 +2861,7 @@ $$ \mathcal{M}_V \approx \mathcal{M}_0 \left[ -e^2 \int \frac{d^3k}{(2\pi)^3 2|\
 
 ---
 
-## 段落 10：虚修正振幅平方与实发射结果对比
+## 段落 10：虚修正振幅平方与实发射结果对比 { .tutor-section }
 
 **时间：** 01:03:30 ~ 01:10:29
 
@@ -3181,7 +3181,7 @@ $$ \left(\frac{d\sigma}{d\Omega}\right)_{\text{Virtual}} = \left(\frac{d\sigma}{
 
 ---
 
-## 段落 11：实虚相加后的红外抵消与KLN思想
+## 段落 11：实虚相加后的红外抵消与KLN思想 { .tutor-section }
 
 **时间：** 01:10:29 ~ 01:16:15
 
@@ -3496,7 +3496,7 @@ $$ \frac{d\sigma}{d\Omega} = \frac{d\sigma_0}{d\Omega} \left[ 1 - \frac{\alpha}{
 
 ---
 
-## 段落 12：角函数I的解析形式与共线发散
+## 段落 12：角函数I的解析形式与共线发散 { .tutor-section }
 
 **时间：** 01:16:15 ~ 01:23:50
 
@@ -3851,7 +3851,7 @@ $$ \int_{-1}^{1} \frac{d\cos\theta}{1 - v\cos\theta} = \frac{1}{v} \ln\left( \fr
 
 ---
 
-## 段落 13：高能极限下的Sudakov双对数
+## 段落 13：高能极限下的Sudakov双对数 { .tutor-section }
 
 **时间：** 01:23:50 ~ 01:27:20
 
@@ -4049,7 +4049,7 @@ $$ \left(\frac{d\sigma}{d\Omega}\right)_{\text{Virtual + Soft}} \approx \left(\f
 
 ---
 
-## 段落 14：多软光子重求和与Sudakov形状因子
+## 段落 14：多软光子重求和与Sudakov形状因子 { .tutor-section }
 
 **时间：** 01:27:20 ~ 01:33:09
 
@@ -4323,7 +4323,7 @@ $$ \left(\frac{d\sigma}{d\Omega}\right)_{\text{observed}} = \left(\frac{d\sigma}
 
 ---
 
-## 段落 15：软共线有效理论与一般红外定理
+## 段落 15：软共线有效理论与一般红外定理 { .tutor-section }
 
 **时间：** 01:33:09 ~ 01:36:31
 
@@ -4505,7 +4505,7 @@ $$ -2p \cdot k + i\epsilon $$
 
 ---
 
-## 段落 16：QCD例子：e+e-到强子总截面与红外抵消
+## 段落 16：QCD例子：e+e-到强子总截面与红外抵消 { .tutor-section }
 
 **时间：** 01:36:31 ~ 01:42:30
 

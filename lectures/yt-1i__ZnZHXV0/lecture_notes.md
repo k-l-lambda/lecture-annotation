@@ -55,7 +55,7 @@
 
 ---
 
-## 段落 1
+## 段落 1 { .tutor-section }
 
 **时间：** 00:00:00 ~ 00:04:04
 
@@ -254,7 +254,7 @@ $$\langle\Omega|T\{\psi(x)\bar{\psi}(y)A_\mu(z)\}|\Omega\rangle = \frac{\langle 
 
 ---
 
-## 段落 2
+## 段落 2 { .tutor-section }
 
 **时间：** 00:04:08 ~ 00:05:28
 
@@ -425,7 +425,7 @@ Wick转动 → 欧几里得积分
 
 ---
 
-## 段落 3
+## 段落 3 { .tutor-section }
 
 **时间：** 00:05:32 ~ 00:10:04
 
@@ -661,7 +661,7 @@ $$\tilde{G}(p_1, p_2, \cdots) = \int d^4x_1\, d^4x_2 \cdots e^{i(p_1\cdot x_1 + 
 
 ---
 
-## 段落 4
+## 段落 4 { .tutor-section }
 
 **时间：** 00:10:13 ~ 00:15:15
 
@@ -883,7 +883,7 @@ $$\int d^4z \, e^{iz\cdot(p_1+p_2+p_3+p_4)} = (2\pi)^4\delta^{(4)}(p_1+p_2+p_3+p
 
 ---
 
-## 段落 5
+## 段落 5 { .tutor-section }
 
 **时间：** 00:15:15 ~ 00:17:48
 
@@ -1103,7 +1103,7 @@ $\delta^{(4)}(p_1+p_2+p_3+p_4)=0$ 表示：
 
 ---
 
-## 段落 6
+## 段落 6 { .tutor-section }
 
 **时间：** 00:17:52 ~ 00:20:05
 
@@ -1281,7 +1281,7 @@ $$\prod_{i=1}^{4}\frac{d^4p_i}{(2\pi)^4}$$
 
 ---
 
-## 段落 7
+## 段落 7 { .tutor-section }
 
 **时间：** 00:20:12 ~ 00:23:26
 
@@ -1511,7 +1511,7 @@ $$= \langle 0 | \phi(0) e^{iP\cdot(x-y)} \phi(0) | 0 \rangle = G_2(x-y, 0)$$
 
 ---
 
-## 段落 8
+## 段落 8 { .tutor-section }
 
 **时间：** 00:23:30 ~ 00:24:57
 
@@ -1695,7 +1695,7 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 
 ---
 
-## 段落 9
+## 段落 9 { .tutor-section }
 
 **时间：** 00:25:01 ~ 00:25:19
 
@@ -1771,7 +1771,7 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 
 ---
 
-## 段落 10
+## 段落 10 { .tutor-section }
 
 **时间：** 00:25:23 ~ 00:25:52
 
@@ -1874,7 +1874,7 @@ $$\tilde{G}_4(p_1,p_2,p_3,p_4) = \int \prod_{i=1}^{4}d^4x_i\, e^{i\sum_j p_j \cd
 
 ---
 
-## 段落 11
+## 段落 11 { .tutor-section }
 
 **时间：** 00:25:56 ~ 00:28:23
 
@@ -2044,7 +2044,7 @@ $$\hat{1} = \sum_n |n\rangle\langle n|$$
 
 ---
 
-## 段落 12
+## 段落 12 { .tutor-section }
 
 **时间：** 00:28:32 ~ 00:33:33
 
@@ -2224,7 +2224,7 @@ $$ \langle\Omega|\phi(x)\phi(y)|\Omega\rangle = \sum_X \int d\Pi_X \, \langle\Om
 
 ---
 
-## 段落 13
+## 段落 13 { .tutor-section }
 
 **时间：** 00:33:34 ~ 00:35:21
 
@@ -2371,7 +2371,7 @@ $$\langle 0 | \hat{\phi}(x) | X \rangle = e^{-ip_X \cdot x} \langle 0 | \hat{\ph
 
 ---
 
-## 段落 14
+## 段落 14 { .tutor-section }
 
 **时间：** 00:35:28 ~ 00:38:50
 
@@ -2551,7 +2551,7 @@ $\langle\Omega|\phi(0)|X\rangle \neq 0$ 的物理含义：
 
 ---
 
-## 段落 15
+## 段落 15 { .tutor-section }
 
 **时间：** 00:38:54 ~ 00:40:05
 
@@ -2672,7 +2672,7 @@ $$ \rho(p^2) \equiv \theta(p^0) \sum_X (2\pi) \delta(p^2 - m_X^2) |\langle \Omeg
 
 ---
 
-## 段落 16
+## 段落 16 { .tutor-section }
 
 **时间：** 00:40:10 ~ 00:41:29
 
@@ -2824,7 +2824,7 @@ $$ \rho(p^2) = 2\pi \delta(p^2 - m^2) Z + \text{连续部分} \quad (p^2 \geq (2
 
 ---
 
-## 段落 17
+## 段落 17 { .tutor-section }
 
 **时间：** 00:41:34 ~ 00:44:31
 
@@ -3010,7 +3010,7 @@ $$ \langle\Omega|\phi(x)\phi(y)|\Omega\rangle = \int\frac{d^4p}{(2\pi)^3}\, e^{-
 
 ---
 
-## 段落 18
+## 段落 18 { .tutor-section }
 
 **时间：** 00:44:38 ~ 00:45:04
 
@@ -3074,7 +3074,7 @@ $$ \text{积分} \to \int d^4p \, \frac{e^{-ip(x-y)}}{p^2 - m^2 + i\epsilon} $$
 
 ---
 
-## 段落 19
+## 段落 19 { .tutor-section }
 
 **时间：** 00:45:09 ~ 00:45:44
 
@@ -3178,7 +3178,7 @@ $$D(p) = \frac{i}{p^2 - m^2 + i\epsilon}$$
 
 ---
 
-## 段落 20
+## 段落 20 { .tutor-section }
 
 **时间：** 00:45:49 ~ 00:45:55
 
@@ -3258,7 +3258,7 @@ $$ D(x-y) \equiv \langle \Omega | \phi(x)\phi(y) | \Omega \rangle $$
 
 ---
 
-## 段落 21
+## 段落 21 { .tutor-section }
 
 **时间：** 00:46:04 ~ 00:47:43
 
@@ -3389,7 +3389,7 @@ $$\rho(M^2) = \delta(M^2 - m^2)$$
 
 ---
 
-## 段落 22
+## 段落 22 { .tutor-section }
 
 **时间：** 00:47:49 ~ 00:48:38
 
@@ -3442,7 +3442,7 @@ $$\delta(x^2 - a^2) = \frac{1}{2|a|}\left[\delta(x - a) + \delta(x + a)\right] \
 
 ---
 
-## 段落 23
+## 段落 23 { .tutor-section }
 
 **时间：** 00:48:43 ~ 00:48:57
 
@@ -3514,7 +3514,7 @@ $$\rho(p^2) = \sum_X (2\pi)^4 \delta^4(p-P_X) \left| \langle \Omega | \phi(0) | 
 
 ---
 
-## 段落 24
+## 段落 24 { .tutor-section }
 
 **时间：** 00:49:03 ~ 00:49:11
 
@@ -3558,7 +3558,7 @@ $$\langle \Omega | \phi(x)\phi(y) | \Omega \rangle = \int_0^\infty d\mu^2 \, \rh
 
 ---
 
-## 段落 25
+## 段落 25 { .tutor-section }
 
 **时间：** 00:49:21 ~ 00:49:34
 
@@ -3652,7 +3652,7 @@ $$\langle \Omega | \phi(x) | n \rangle = e^{-ip_n\cdot x} \langle \Omega | \phi(
 
 ---
 
-## 段落 26
+## 段落 26 { .tutor-section }
 
 **时间：** 00:49:44 ~ 00:50:33
 
@@ -3792,7 +3792,7 @@ $$\rho(M^2) = \sum_X (2\pi)^4 \delta^4(p-P_X) \left|\langle\Omega|\phi(0)|X\rang
 
 ---
 
-## 段落 27
+## 段落 27 { .tutor-section }
 
 **时间：** 00:50:36 ~ 00:52:13
 
@@ -3939,7 +3939,7 @@ $$\rho(M^2) = \sum_X (2\pi)^4 \delta^4(p-P_X) |\langle\Omega|\phi(0)|X\rangle|^2
 
 ---
 
-## 段落 28
+## 段落 28 { .tutor-section }
 
 **时间：** 00:52:16 ~ 00:52:56
 
@@ -4055,7 +4055,7 @@ $$D(x-y; M^2) = \int \frac{d^4p}{(2\pi)^4} \frac{i}{p^2-M^2+i\epsilon} e^{-ip\cd
 
 ---
 
-## 段落 29
+## 段落 29 { .tutor-section }
 
 **时间：** 00:53:07 ~ 00:54:27
 
@@ -4193,7 +4193,7 @@ $$\tilde{G}_F(p^2) = \int_0^\infty dM^2 \, \frac{\rho(M^2)}{p^2-M^2+i\epsilon}$$
 
 ---
 
-## 段落 30
+## 段落 30 { .tutor-section }
 
 **时间：** 00:54:31 ~ 00:54:44
 
@@ -4292,7 +4292,7 @@ $$\tilde{D}_F(p^2) = \int_0^\infty dM^2 \, \rho(M^2) \frac{i}{p^2 - M^2 + i\epsi
 
 ---
 
-## 段落 31
+## 段落 31 { .tutor-section }
 
 **时间：** 00:54:48 ~ 00:55:00
 
@@ -4388,7 +4388,7 @@ Z │    ● (极点)
 
 ---
 
-## 段落 32
+## 段落 32 { .tutor-section }
 
 **时间：** 00:55:03 ~ 00:56:43
 
@@ -4542,7 +4542,7 @@ $$\boxed{D_F(x-y) \equiv \langle\Omega|T\phi_H(x)\phi_H(y)|\Omega\rangle = \int_
 
 ---
 
-## 段落 33
+## 段落 33 { .tutor-section }
 
 **时间：** 00:56:46 ~ 00:58:15
 
@@ -4676,7 +4676,7 @@ $$\int_0^\infty dM^2 \, \rho(M^2) = 1 \quad \text{（场算符对易关系的谱
 
 ---
 
-## 段落 34
+## 段落 34 { .tutor-section }
 
 **时间：** 00:58:18 ~ 01:02:34
 
@@ -4904,7 +4904,7 @@ $$\tilde{G}^{(2)}(p) = \int_0^\infty dM^2 \, \frac{\rho(M^2)}{p^2 - M^2 + i\epsi
 
 ---
 
-## 段落 35
+## 段落 35 { .tutor-section }
 
 **时间：** 01:02:42 ~ 01:03:06
 
@@ -5003,7 +5003,7 @@ $$\tilde{D}(p) = \int_0^\infty dM^2 \, \rho(M^2) \, \frac{i}{p^2 - M^2 + i\epsil
 
 ---
 
-## 段落 36
+## 段落 36 { .tutor-section }
 
 **时间：** 01:03:10 ~ 01:03:38
 
@@ -5139,7 +5139,7 @@ $$\int d^4x \, e^{ip\cdot x} D_F(x; M^2) = \frac{i}{p^2 - M^2 + i\epsilon}$$
 
 ---
 
-## 段落 37
+## 段落 37 { .tutor-section }
 
 **时间：** 01:03:41 ~ 01:04:04
 
@@ -5249,7 +5249,7 @@ D̃(p) = ∫ dM² ρ(M²) · i/(p²-M²+iε)
 
 ---
 
-## 段落 38
+## 段落 38 { .tutor-section }
 
 **时间：** 01:04:08 ~ 01:04:54
 
@@ -5376,7 +5376,7 @@ $$\int_0^{\infty} dM^2 \, \rho(M^2) = 1 \quad \text{（归一化条件，若}\ph
 
 ---
 
-## 段落 39
+## 段落 39 { .tutor-section }
 
 **时间：** 01:05:02 ~ 01:05:14
 
@@ -5445,7 +5445,7 @@ $$\langle\Omega|\phi_H(x)\phi_H(y)|\Omega\rangle = \int_0^{\infty} dM^2 \, \rho(
 
 ---
 
-## 段落 40
+## 段落 40 { .tutor-section }
 
 **时间：** 01:05:34 ~ 01:09:58
 
@@ -5689,7 +5689,7 @@ $Z$ 量化了**场算符的"强度"**：
 
 ---
 
-## 段落 41
+## 段落 41 { .tutor-section }
 
 **时间：** 01:10:01 ~ 01:10:28
 
@@ -5779,7 +5779,7 @@ $$\tilde{D}(p) = \underbrace{\frac{iZ}{p^2 - m_{\text{phys}}^2 + i\epsilon}}_{\t
 
 ---
 
-## 段落 42
+## 段落 42 { .tutor-section }
 
 **时间：** 01:10:38 ~ 01:12:45
 
@@ -5998,7 +5998,7 @@ $$\rho(p^2) \supset Z \cdot \delta(p^2 - M^2)$$
 
 ---
 
-## 段落 43
+## 段落 43 { .tutor-section }
 
 **时间：** 01:12:49 ~ 01:14:04
 
@@ -6157,7 +6157,7 @@ $$\langle \Omega | \phi(x) | q \rangle = e^{-iq\cdot x} \langle \Omega | \phi(0)
 
 ---
 
-## 段落 44
+## 段落 44 { .tutor-section }
 
 **时间：** 01:14:08 ~ 01:14:14
 
@@ -6230,7 +6230,7 @@ Z 就是**单粒子成分的纯度**——相互作用越强，Z 越小，单粒
 
 ---
 
-## 段落 45
+## 段落 45 { .tutor-section }
 
 **时间：** 01:14:18 ~ 01:17:23
 
@@ -6425,7 +6425,7 @@ $$\tilde{G}^{(2)}(p) \approx \frac{iZ}{p^2 - m_{\text{phys}}^2 + i\epsilon} + \t
 
 ---
 
-## 段落 46
+## 段落 46 { .tutor-section }
 
 **时间：** 01:17:43 ~ 01:18:17
 
@@ -6538,7 +6538,7 @@ $$\text{自由场：} \quad \langle 0|\phi_{\text{free}}(0)|p\rangle = 1 \quad \
 
 ---
 
-## 段落 47
+## 段落 47 { .tutor-section }
 
 **时间：** 01:18:21 ~ 01:19:58
 
@@ -6735,7 +6735,7 @@ $$\boxed{\text{自由场：}\langle 0|\phi(0)|p\rangle = 1 \quad \text{vs.} \qua
 
 ---
 
-## 段落 48
+## 段落 48 { .tutor-section }
 
 **时间：** 01:20:02 ~ 01:20:36
 

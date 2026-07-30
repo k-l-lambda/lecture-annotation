@@ -13,7 +13,7 @@
 
 ---
 
-## 段落 1
+## 段落 1 { .tutor-section }
 
 **时间：** 00:00:00 ~ 00:05:00
 
@@ -240,7 +240,7 @@ $$\mathfrak{u}(1) = \left\{ -i\lambda \,\big|\, \lambda \in \mathbb{R} \right\} 
 
 ---
 
-## 段落 2
+## 段落 2 { .tutor-section }
 
 **时间：** 00:05:00 ~ 00:06:05
 
@@ -324,7 +324,7 @@ $$\gamma(t+\varepsilon) = \gamma(t)\gamma(\varepsilon)$$
 
 ---
 
-## 段落 3
+## 段落 3 { .tutor-section }
 
 **时间：** 00:06:12 ~ 00:11:12
 
@@ -562,7 +562,7 @@ $$\gamma(t) = W^{-1}\, \text{diag}\left(e^{it\phi_1}, e^{it\phi_2}, \dots, e^{it
 
 ---
 
-## 段落 4
+## 段落 4 { .tutor-section }
 
 **时间：** 00:11:12 ~ 00:15:57
 
@@ -747,7 +747,7 @@ $$A^\dagger = A
 
 ---
 
-## 段落 5
+## 段落 5 { .tutor-section }
 
 **时间：** 00:16:04 ~ 00:21:05
 
@@ -1010,7 +1010,7 @@ $$\gamma(0) = I, \quad \gamma(1) = \exp(A) = U$$
 
 ---
 
-## 段落 6
+## 段落 6 { .tutor-section }
 
 **时间：** 00:21:05 ~ 00:26:03
 

@@ -20,7 +20,7 @@
 
 ---
 
-## 段落 1
+## 段落 1 { .tutor-section }
 
 **时间：** 00:00:01 ~ 00:05:05
 
@@ -95,7 +95,7 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 
 ---
 
-## 段落 2
+## 段落 2 { .tutor-section }
 
 **时间：** 00:05:07 ~ 00:05:49
 
@@ -166,7 +166,7 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 
 ---
 
-## 段落 3
+## 段落 3 { .tutor-section }
 
 **时间：** 00:05:54 ~ 00:07:01
 
@@ -227,7 +227,7 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 
 ---
 
-## 段落 4
+## 段落 4 { .tutor-section }
 
 **时间：** 00:07:06 ~ 00:12:08
 
@@ -311,7 +311,7 @@ $$ \int_{-\infty}^{\infty} |\psi_p(x)|^2 dx = \int_{-\infty}^{\infty} \frac{1}{2
 
 ---
 
-## 段落 5
+## 段落 5 { .tutor-section }
 
 **时间：** 00:12:08 ~ 00:12:09
 
@@ -363,7 +363,7 @@ $(f+g, h)$ 转化为 $\overline{(h, f+g)}$，然后利用 $(h, f+g) = (h, f) + (
 
 ---
 
-## 段落 6
+## 段落 6 { .tutor-section }
 
 **时间：** 00:12:15 ~ 00:12:23
 
@@ -421,7 +421,7 @@ $$ (f+g, h) = \overline{(h, f+g)} = \overline{(h, f)} + \overline{(h, g)} = (f, 
 
 ---
 
-## 段落 7
+## 段落 7 { .tutor-section }
 
 **时间：** 00:12:27 ~ 00:13:17
 
@@ -498,7 +498,7 @@ $$ ... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ... $$
 
 ---
 
-## 段落 8
+## 段落 8 { .tutor-section }
 
 **时间：** 00:13:21 ~ 00:17:55
 
@@ -577,7 +577,7 @@ $$ ... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ... $$
 
 ---
 
-## 段落 9
+## 段落 9 { .tutor-section }
 
 **时间：** 00:17:59 ~ 00:18:09
 
@@ -638,7 +638,7 @@ $$ ... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ... $$
 
 ---
 
-## 段落 10
+## 段落 10 { .tutor-section }
 
 **时间：** 00:18:12 ~ 00:23:15
 
@@ -699,7 +699,7 @@ $$ ... h) = \overline{(h, f+g)} = \overline{(h, f) + (h, g)} = (f, h) + ... $$
 
 ---
 
-## 段落 11
+## 段落 11 { .tutor-section }
 
 **时间：** 00:23:16 ~ 00:24:24
 

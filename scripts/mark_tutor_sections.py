@@ -20,9 +20,30 @@ What counts as a real section (ebook chapters):
   ## 通向实在之路 / ## 第二十五章         -> skipped  (running book/chapter title)
   # 大爆炸及其热力学传奇                 -> skipped  (h1: page title, not a section)
 
+And in lecture notes (``content-marking.md`` §6):
+
+  ## 段落 1：庞加莱群的定义 { #段落-1 }  -> marked   (the 段落 unit)
+  ## 段落 3                              -> marked   (same, untitled variant)
+  ## 一、板书/PPT截图内容描述             -> skipped  (absorbed into the 段落 above
+                                                     it by extent rule 2, §3)
+  ## 目录                                -> skipped  (navigation)
+
+The two corpora share this script because the *decision* differs but the edit does
+not: both insert ` .tutor-section` into an existing or new attr_list block.
+
+Which rule applies is chosen **per page**, not per heading, and that is load-bearing.
+A page carrying any `段落 N` heading is a lecture page, and on such a page the numbered
+rule is switched off entirely: lecture notes number their analysis subsections
+(`## 2.1 为什么两点函数里会有 Z？`, `### 3.2 时空间隔的三种类型`) in the same `\\d+\\.\\d+`
+form an ebook uses for real sections. Marking one would not merely add a spurious
+entry -- by extent rule 2 (`content-marking.md` §3) a section ends at the next *marked*
+heading at any level, so a marked subsection truncates the 段落 that contains it. On
+one page (`yt-_2G-v6mio3g`) that was 233 false marks against 5 real ones.
+
 Usage:
     scripts/mark_tutor_sections.py ebooks/The_Road_to_Reality
     scripts/mark_tutor_sections.py ebooks/The_Road_to_Reality --apply
+    scripts/mark_tutor_sections.py lectures --apply
     scripts/mark_tutor_sections.py ebooks/**/chapter_27.md --show-skipped
 """
 
@@ -46,6 +67,11 @@ ATTR_RE = re.compile(r"(?P<body>\{[^{}\\]*\})[ \t]*$")
 # A numbered section: `27.1 …`, `27.10　…`, optionally `27.1. …`.
 NUMBERED_RE = re.compile(r"^\d+\.\d+[.．]?(?:[ \t　]|$)")
 
+# A lecture 段落 unit: `段落 1：…`, or bare `段落 3` where the generator had no
+# title to give it. `段落` alone is not enough -- the number is what distinguishes
+# the unit heading from prose that happens to mention 段落.
+PARAGRAPH_RE = re.compile(r"^段落[ \t　]*\d+(?:[:：.．][ \t　]*\S|[ \t　]*$)")
+
 # Endnote headings: `§27.2`, `§ 25.3`, `注释`, `注 释`, `注　释`.
 NOTES_RE = re.compile(r"^(?:§|注[ \t　]*释)")
 
@@ -64,7 +90,24 @@ def strip_attrs(text: str) -> tuple[str, str | None]:
     return text[: m.start()].rstrip(), m.group("body")
 
 
-def classify(level: int, text: str) -> tuple[bool, str]:
+def is_lecture_page(markdown: str) -> bool:
+    """True if this page's sections are 段落 units rather than numbered sections.
+
+    Detected from content, not from the path, so a lecture page living anywhere
+    (`lectures/<id>/index.md` is one) is classified the same way. See the module
+    docstring for why the two rules must not both apply to one page.
+    """
+    for line in markdown.split("\n"):
+        m = HEADING_RE.match(line)
+        if not m:
+            continue
+        text, _ = strip_attrs(m.group("text"))
+        if len(m.group("hashes")) in MARKABLE_LEVELS and PARAGRAPH_RE.match(text):
+            return True
+    return False
+
+
+def classify(level: int, text: str, lecture: bool) -> tuple[bool, str]:
     """Return (should_mark, reason)."""
     if level not in MARKABLE_LEVELS:
         return False, f"h{level}: not a section heading"
@@ -72,6 +115,11 @@ def classify(level: int, text: str) -> tuple[bool, str]:
         return False, "endnotes"
     if RUNNING_TITLE_RE.match(text):
         return False, "running title"
+    if lecture:
+        if PARAGRAPH_RE.match(text):
+            return True, "lecture 段落"
+        # Everything else on a lecture page is analysis, absorbed by extent rule 2.
+        return False, "absorbed into the 段落 above it"
     if NUMBERED_RE.match(text):
         return True, "numbered section"
     return False, "unnumbered"
@@ -87,6 +135,16 @@ def add_mark(attrs: str | None) -> str:
     return "{ " + inner + " " + MARK + " }"
 
 
+def label(path: Path) -> str:
+    """A path short enough to read but unique across the corpus.
+
+    Every lecture file is named `lecture_notes.md`, so `path.name` would attribute
+    all 45 files' diffs to the same label. The parent directory is the video id,
+    which is the part that identifies the lecture.
+    """
+    return f"{path.parent.name}/{path.name}" if path.parent.name else path.name
+
+
 def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, list[str]]:
     """Return (new_lines, marked_count, already_count, report_lines)."""
     original = path.read_text(encoding="utf-8")
@@ -95,6 +153,8 @@ def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, l
     marked = already = 0
     report: list[str] = []
     in_fence = False
+    # Decided once for the whole page, before marking anything.
+    lecture = is_lecture_page(original)
 
     for lineno, line in enumerate(lines, 1):
         stripped = line.lstrip()
@@ -109,7 +169,7 @@ def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, l
 
         level = len(m.group("hashes"))
         text, attrs = strip_attrs(m.group("text"))
-        should, reason = classify(level, text)
+        should, reason = classify(level, text, lecture)
 
         if attrs and MARK in attrs:
             already += 1
@@ -117,7 +177,7 @@ def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, l
             continue
         if not should:
             if show_skipped and level in MARKABLE_LEVELS:
-                report.append(f"  skip  {path.name}:{lineno}  h{level} {text}  ({reason})")
+                report.append(f"  skip  {label(path)}:{lineno}  h{level} {text}  ({reason})")
             out.append(line)
             continue
 
@@ -125,7 +185,7 @@ def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, l
         rebuilt = f"{m.group('hashes')} {text} {add_mark(attrs)}{newline}"
         out.append(rebuilt)
         marked += 1
-        report.append(f"  mark  {path.name}:{lineno}  h{level} {text}")
+        report.append(f"  mark  {label(path)}:{lineno}  h{level} {text}")
 
     return out, marked, already, report
 
@@ -135,7 +195,10 @@ def collect(targets: list[str]) -> list[Path]:
     for t in targets:
         p = Path(t)
         if p.is_dir():
-            files.extend(sorted(p.glob("*.md")))
+            # Recursive: ebook chapters sit directly in the directory, but lecture
+            # notes are one level down (`lectures/<video-id>/lecture_notes.md`), so a
+            # non-recursive glob would silently report "nothing to do" for `lectures`.
+            files.extend(sorted(p.rglob("*.md")))
         elif p.is_file():
             files.append(p)
         else:
@@ -172,7 +235,7 @@ def main() -> int:
             state.append(f"{already} already")
         if not state:
             state.append("no tutorable heading")
-        print(f"{path.name}: {', '.join(state)}")
+        print(f"{label(path)}: {', '.join(state)}")
         if report and not args.quiet:
             print("\n".join(report))
         if marked and args.apply:
