@@ -262,7 +262,13 @@
       renderChoices(discussing, awaiting);
 
       if (ended) {
-        options.onEnd && options.onEnd();
+        // ABANDONED and DONE both end the session but want opposite things on screen.
+        // Quitting means the student asked to be rid of the panel, so it goes away
+        // (ui-spec.md §6: "focus/fold is restored, panel animates out"). Completing
+        // means the panel is holding the summary and the achievement card, which are
+        // the payoff for the whole session — removing it there would throw away what
+        // the student just earned. So only `abandoned` is dismissed.
+        options.onEnd && options.onEnd(state === "ABANDONED" ? "abandoned" : "completed");
         window.Tutor.updateHeaderButton();
       }
       if (awaiting || discussing) textarea.focus();
@@ -621,6 +627,15 @@
           root.classList.remove("tutor-panel--flash");
         }, 600);
       },
+      /**
+       * Removes the panel and everything it left outside itself.
+       *
+       * Was dead code: nothing called it, so 退出辅导 marked the record `abandoned`
+       * and left the panel mounted — composer hidden, rail and transcript still
+       * there, no way to interact with any of it, and `html.tutor-active` still
+       * holding the page in its two-column layout. The residue outlived the session
+       * it belonged to.
+       */
       destroy: function () {
         root.remove();
         document.documentElement.classList.remove("tutor-active");

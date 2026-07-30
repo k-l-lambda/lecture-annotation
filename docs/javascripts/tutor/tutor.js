@@ -296,10 +296,20 @@
       page: pageKey(),
       sectionId: sectionId,
       onStateChange: updateHeaderButton,
-      onEnd: function () {
+      onEnd: function (how) {
         state.activeSectionId = null;
         window.TutorFocus.restore();
         applyEntryIcons();
+        // Quitting dismisses the panel; finishing leaves it up, because it is
+        // holding the summary and the achievement card. `destroy()` also drops
+        // `tutor-active` and `tutor-fullscreen` from `html`, which live outside the
+        // panel element and so would otherwise survive it — a stranded
+        // `tutor-fullscreen` leaves the page `overflow: hidden` with nothing left
+        // on screen able to unset it.
+        if (how === "abandoned" && state.panel) {
+          state.panel.destroy();
+          state.panel = null;
+        }
         updateHeaderButton();
       },
     });
