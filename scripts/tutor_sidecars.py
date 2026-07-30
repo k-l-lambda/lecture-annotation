@@ -164,21 +164,37 @@ def parse_marked_sections(markdown: str, page: str) -> list[dict]:
         if not heading["marked"]:
             continue
 
-        # Extent: data-tutor-span, else the next marked heading, else the next
-        # heading of the same or shallower level, else end of document.
+        # Extent (content-marking.md §3): data-tutor-span, else the next MARKED heading
+        # at any level, else end of document.
+        #
+        # Rules 2 and 3 used to share one disjunction, which let whichever heading came
+        # first in the document win — so an unmarked sibling ended the section before
+        # rule 2 could reach the next marked heading. That truncated 240 of 362 lecture
+        # sections (their analysis subsections are h2 siblings of 段落) and 17 ebook
+        # sections (PDF running titles between real sections). Rule 3 is now unreachable
+        # by design: rule 2 bounds every section that has a successor, and the last
+        # marked section on a page runs to EOF rather than stopping at its own first
+        # subsection.
+        #
+        # Must stay identical to `parseMarkedSections` in tutor/src/core/content.ts,
+        # which carries the full rationale — the browser reads sections from the markdown
+        # and the sidecar is generated from it, so any divergence means two different
+        # texts for one section id.
         end_line = len(lines)
         end_id = None
         span = heading["attrs"].get("data-tutor-span")
-        for j in range(index + 1, len(headings)):
-            candidate = headings[j]
-            if span:
+        if span:
+            for j in range(index + 1, len(headings)):
                 if ids[j] == span:
-                    end_line, end_id = candidate["line"], ids[j]
+                    end_line, end_id = headings[j]["line"], ids[j]
                     break
-                continue
-            if candidate["marked"] or candidate["level"] <= heading["level"]:
-                end_line, end_id = candidate["line"], ids[j]
-                break
+        else:
+            next_marked = next(
+                (j for j in range(index + 1, len(headings)) if headings[j]["marked"]),
+                None,
+            )
+            if next_marked is not None:
+                end_line, end_id = headings[next_marked]["line"], ids[next_marked]
 
         body = "\n".join(lines[heading["line"] + 1 : end_line])
         transcripts = TRANSCRIPT_RE.findall(body)

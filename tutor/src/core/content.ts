@@ -153,23 +153,72 @@ export function parseMarkedSections(markdown: string, options: ParseOptions): Se
   for (const [index, heading] of headings.entries()) {
     if (!heading.marked) continue;
 
-    // Extent: data-tutor-span, else the next marked heading, else the next
-    // heading of the same or shallower level, else end of document.
+    /*
+     * Extent (content-marking.md §3), in the spec's order:
+     *   1. the heading named by `data-tutor-span`;
+     *   2. the next `.tutor-section` heading at any level;
+     *   3. the next heading of the same or shallower level;
+     *   4. end of document.
+     *
+     * Rules 2 and 3 used to be tested in ONE disjunction —
+     * `candidate.marked || candidate.level <= heading.level` — which is not the same
+     * thing: whichever heading came first in the DOCUMENT won, so rule 3 fired on any
+     * unmarked sibling before rule 2 could reach the next marked heading. Since the
+     * two rules disagree exactly when an unmarked same-or-shallower heading sits
+     * between two marked ones, that is the common case, not a corner:
+     *
+     *   - lecture pages put the 段落 unit and its own analysis subsections BOTH at h2
+     *     (`## 一、公式与符号解析`), so a 段落 was ended by its own first subsection —
+     *     240 of 362 sections truncated, and the corpus read at half its length
+     *     (764,816 chars against 1,579,160);
+     *   - ebook chapters carry PDF running titles (`## 通向实在之路`, `## 第三章 …`)
+     *     between real sections, which truncated 17 more (chapter_03's §3.2 ended at
+     *     line 99 and lost lines 100-186).
+     *
+     * §3 is explicit that rule 2 is what makes lecture pages work "with no special-
+     * casing", and even diagrams the absorbed-h2 structure. So the fix is to give the
+     * rules their stated precedence: scan for a marked heading FIRST, and only fall
+     * back to the level test if the document has none left.
+     *
+     * Rule 3 then applies only while a LATER marked section exists — i.e. it bounds a
+     * section against the next one, and the LAST marked section on a page runs to end
+     * of document (rule 4). Applying rule 3 at the tail as well cut the final section
+     * of 37 lecture pages at its own first subsection, 141,793 chars, and the file this
+     * was reported against read its 段落 6 as 322 chars against ~3,900. The ebooks pay
+     * for this: a chapter's `## 注释` endnote block is now absorbed into its last
+     * section (18 blocks, ~53,318 chars).
+     *
+     * That cost is accepted deliberately. Absorbed furniture — a running title, an
+     * endnote heading — stays in the body as written, for the model to judge.
+     * Recognising it structurally does not work: probed against the corpus, neither
+     * heading level nor "has no body of its own" separates a running title from real
+     * content, since `通向实在之路` appears 6 times WITH the page text that follows the
+     * page break, and `## 注释` is the same h2 as `## 一、板书内容描述`. Keying on the
+     * title text is the blocklist §4 argues against ("no blocklist to maintain, and no
+     * risk of a new non-content heading sneaking in because nobody thought to add it
+     * to a list"). A model reading the section can tell endnotes from the exposition;
+     * a truncated section it cannot recover.
+     */
     let endLine = lines.length;
     const span = heading.attrs['data-tutor-span'];
-    for (let j = index + 1; j < headings.length; j += 1) {
-      const candidate = headings[j]!;
-      if (span) {
+    if (span) {
+      for (let j = index + 1; j < headings.length; j += 1) {
         if (ids[j] === span) {
-          endLine = candidate.line;
+          endLine = headings[j]!.line;
           break;
         }
-        continue;
       }
-      if (candidate.marked || candidate.level <= heading.level) {
-        endLine = candidate.line;
-        break;
-      }
+    } else {
+      const nextMarked = headings.findIndex((h, j) => j > index && h.marked);
+      if (nextMarked !== -1) endLine = headings[nextMarked]!.line;
+      // else: rule 4, end of document.
+      //
+      // Note rule 3 is now unreachable, and that is the intended outcome rather than an
+      // oversight: rule 2 covers every section that has a successor, and the tail runs
+      // to EOF. It is left in the spec's list as the statement of what bounds a section
+      // when a page mixes marked and unmarked headings at the same level — but every
+      // case in this corpus is answered by 2 or 4, and a rule that fires only in
+      // untested territory is worse than one that never fires.
     }
 
     const body = lines.slice(heading.line + 1, endLine).join('\n');
