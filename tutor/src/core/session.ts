@@ -185,6 +185,30 @@ export class TutorSession {
     this.#sink(event);
   }
 
+  /**
+   * Runs a turn that has already moved the machine into a working state, and puts the
+   * state back if it throws.
+   *
+   * `harness.md` §2 says a failed call returns to the previous stable state, and both
+   * shells' error handlers say so in their comments — but nothing implemented it. A
+   * grader that timed out left `state = 'GRADING'` permanently: the phase label went
+   * on reading 评分中 under the error, `discuss()` refused (`not valid in state
+   * GRADING`), and the only reason a retry worked at all is that `submitAnswer` never
+   * checked the state it was in. So the message told the student to retry, and the
+   * session was quietly in a state where half the ways to do that were rejected.
+   *
+   * Restoring emits a `phase` event, which is what lets a shell re-enable the composer
+   * and stop the thinking counter without having to know which call failed.
+   */
+  async #attempt<T>(from: SessionState, run: () => Promise<T>): Promise<T> {
+    try {
+      return await run();
+    } catch (err) {
+      if (this.#record.state !== from) await this.#transition(from);
+      throw err;
+    }
+  }
+
   #emitStepRail(): void {
     if (this.#record.steps.length === 0) return;
     this.#emit({
@@ -487,40 +511,42 @@ export class TutorSession {
     attempt.answer = answer;
     await this.#transition('GRADING');
 
-    this.#countCall();
-    const result = await runToolLoop({
-      role: 'grader',
-      llm: this.#llm,
-      settings: this.#settings,
-      model: this.#modelFor('grader'),
-      systemText: systemPrompt('grader', this.#settings),
-      userText: buildGraderUser({
-        analysis: this.#record.analysis,
-        section: this.#section,
-        step,
-        questionId: attempt.attemptId,
-        question: attempt.question,
-        setup: attempt.setup,
-        rubric: attempt.rubric,
-        expectedPoints: attempt.expectedPoints,
-        answer,
-        hintsUsed: attempt.hintsUsed,
-      }),
-      execute: (name, args) => this.#execute('grader', name, args),
-      ...this.#thinking('grader'),
-      ...(this.#abort ? { signal: this.#abort.signal } : {}),
+    const score = await this.#attempt('AWAIT_ANSWER', async () => {
+      this.#countCall();
+      const r = await runToolLoop({
+        role: 'grader',
+        llm: this.#llm,
+        settings: this.#settings,
+        model: this.#modelFor('grader'),
+        systemText: systemPrompt('grader', this.#settings),
+        userText: buildGraderUser({
+          analysis: this.#record.analysis,
+          section: this.#section,
+          step,
+          questionId: attempt.attemptId,
+          question: attempt.question,
+          setup: attempt.setup,
+          rubric: attempt.rubric,
+          expectedPoints: attempt.expectedPoints,
+          answer,
+          hintsUsed: attempt.hintsUsed,
+        }),
+        execute: (name, args) => this.#execute('grader', name, args),
+        ...this.#thinking('grader'),
+        ...(this.#abort ? { signal: this.#abort.signal } : {}),
+      });
+      this.#addUsage(r.usage);
+      if (attempt.score === null) {
+        throw new SessionError(r.failure ?? 'grader produced no evaluation');
+      }
+      return attempt.score;
     });
-    this.#addUsage(result.usage);
-
-    if (attempt.score === null) {
-      throw new SessionError(result.failure ?? 'grader produced no evaluation');
-    }
 
     this.#liveQuestionId = null;
     this.#emit({
       type: 'evaluation',
-      score: attempt.score,
-      passed: attempt.score >= PASS_THRESHOLD,
+      score,
+      passed: score >= PASS_THRESHOLD,
       evaluation: attempt.evaluation ?? '',
       pointsHit: attempt.pointsHit,
       pointsMissed: attempt.pointsMissed,
@@ -571,7 +597,8 @@ export class TutorSession {
         ? attempt.clarifications
         : attempt.discussion
       : step.dialogue;
-    log.push({ role: 'student', text: studentText, at: iso });
+    const turn: DiscussionTurn = { role: 'student', text: studentText, at: iso };
+    log.push(turn);
 
     // At 100 % of the budget discussion stops, but the choice buttons stay live —
     // a student must never be trapped in a state they cannot leave.
@@ -583,11 +610,25 @@ export class TutorSession {
     }
 
     const history = log.map((d) => ({ role: d.role, text: d.text }));
+    /**
+     * Un-logs the student's turn when the reply never arrives.
+     *
+     * It has to go in before the call — it is the last `user` message the model sees —
+     * but leaving it there after a failure made the log disagree with what happened:
+     * a question with no answer under it, and a retry appended a second copy, so the
+     * tutor saw 「为什么？」 twice and the transcript showed the student stuttering. The
+     * turn is only real once there is a reply to pair it with.
+     */
+    const unlog = (): void => {
+      const at = log.lastIndexOf(turn);
+      if (at >= 0) log.splice(at, 1);
+    };
     // Whether the shell already saw this text arrive as deltas. A shell that
     // rendered the stream must not print the whole reply again underneath it.
     let streamed = false;
+    const digest = await this.#digest(step.knowledgePointIds);
     this.#countCall();
-    const reply = await runProseTurn({
+    const reply = await this.#attempt(this.#record.state, () => runProseTurn({
       llm: this.#llm,
       settings: this.#settings,
       model: this.#modelFor('tutor_reply'),
@@ -599,7 +640,7 @@ export class TutorSession {
           phase: this.#record.state === 'DISCUSSING' ? 'DISCUSSING' : 'AWAIT_ANSWER',
           studentText,
           history,
-          digest: await this.#digest(step.knowledgePointIds),
+          digest,
           lastEvaluation:
             attempt && attempt.score !== null
               ? {
@@ -635,6 +676,9 @@ export class TutorSession {
         this.#emit({ type: 'delta', role: 'tutor_reply', text });
       },
       ...(this.#abort ? { signal: this.#abort.signal } : {}),
+    })).catch((err: unknown) => {
+      unlog();
+      throw err;
     });
     this.#addUsage({
       calls: 1,

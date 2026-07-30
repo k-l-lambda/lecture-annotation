@@ -339,9 +339,29 @@
       api.notice("→ " + (labels[route] || route) + (reason ? "：" + reason : ""), "info");
     };
 
-    api.notice = function (text, level) {
+    /**
+     * `action` is optional: `{ label, onClick }` renders a button inside the notice.
+     *
+     * Used for 重试. The stream-idle message ends in 「可以重试。」 and for a long time
+     * offered nothing to press — at AWAIT_ANSWER the student could retype their answer,
+     * but a failed planner or questioner turn left no way at all to ask again short of
+     * reloading the page and losing the session.
+     */
+    api.notice = function (text, level, action) {
       var node = append(el("div", "tutor-notice tutor-notice--" + (level || "info")));
-      node.textContent = text;
+      node.appendChild(el("span", null, text));
+      if (action && action.onClick) {
+        var button = el("button", "tutor-notice__action", action.label || "重试");
+        button.type = "button";
+        button.addEventListener("click", function () {
+          // One press per notice: the offer is spent, and the outcome arrives as a new
+          // notice or a normal turn. Leaving it live invited a second call on top of
+          // the first, against a session that is mid-turn again.
+          button.disabled = true;
+          action.onClick();
+        });
+        node.appendChild(button);
+      }
       follow();
     };
 

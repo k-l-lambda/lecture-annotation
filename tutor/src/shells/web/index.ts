@@ -22,6 +22,10 @@ export {
   type StorageLike,
 } from './settings-store.ts';
 export { probeConnection, describeProbeFailure, type ProbeResult } from './probe.ts';
+// The panel offers a 重试 button only for failures that retrying can fix. The same
+// predicate the core's own retry policy uses, so the button and the automatic retries
+// never disagree about what is transient.
+export { isRetriable } from '../../core/provider.ts';
 
 // Re-exported so the UI can render phase labels, chip states and validation
 // limits from the same constants the harness enforces, rather than from a second

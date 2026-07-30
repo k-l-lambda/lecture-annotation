@@ -561,6 +561,31 @@ html.tutor-fullscreen .tutor-choices {
   color: var(--md-default-fg-color);
 }
 
+/* Sits inline after the notice text, so 「可以重试」 has something to press. Sized to
+   the 44px tap-target guideline via padding rather than a fixed height, so it grows
+   with the notice's font size. */
+.tutor-notice__action {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  min-height: 2rem;
+  border: 1px solid currentcolor;
+  border-radius: 0.2rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.tutor-notice__action:hover {
+  background: var(--md-default-fg-color--lightest);
+}
+
+.tutor-notice__action:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .tutor-msg--achievement {
   border: 1px solid var(--md-primary-fg-color);
   text-align: center;

@@ -348,7 +348,15 @@
       return described.message;
     }
 
-    function guard(promise) {
+    /**
+     * Runs a turn, and on a retriable failure offers to run it again.
+     *
+     * `again` is the thunk to re-invoke. Every caller can supply one because the
+     * harness now restores the pre-call state when a turn throws, so re-running is a
+     * legal repeat rather than a second attempt from a state half-way through the
+     * first. Without a thunk the notice is text only, as before.
+     */
+    function guard(promise, again) {
       ui.busy = true;
       submit.disabled = true;
       stop.hidden = false;
@@ -356,7 +364,13 @@
         .catch(function (err) {
           // A failed call returns to the previous state with a notice rather than
           // ending the session: it is retriable (harness.md §2).
-          view.notice(explainError(err), "error");
+          var C = window.TutorCore;
+          var canRetry = again && C && C.isRetriable && C.isRetriable(err);
+          view.notice(
+            explainError(err),
+            "error",
+            canRetry ? { label: "重试", onClick: function () { guard(again(), again); } } : null
+          );
         })
         .then(function () {
           ui.busy = false;
@@ -385,7 +399,11 @@
       // only way out of the phase, so there is nothing for the router to decide — and
       // one that guessed `advance` would move the step mid-question.
       if (state === "DISCUSSING") {
-        guard(session.discuss(value));
+        // Retried without re-echoing `value` as a student bubble: the first one is
+        // still on screen, and the harness un-logs the failed turn so this is not a
+        // duplicate on its side either.
+        var talk = function () { return session.discuss(value); };
+        guard(talk(), talk);
         return;
       }
 
@@ -393,23 +411,26 @@
       // with the debug shell. The panel deliberately has no switch of its own: a
       // route added to the enum but missed here would silently fall through to
       // grading, which costs the student a score for asking a question.
-      guard(
-        session.routeStudentTurn(value).then(function (route) {
+      var routed = function () {
+        return session.routeStudentTurn(value).then(function (route) {
           if (route.route === "quit") return confirmQuit();
           return session.applyRoute(route, value);
-        })
-      );
+        });
+      };
+      guard(routed(), routed);
     }
 
     function choose(key) {
       if (!session || ui.busy) return;
       if (key === "quit") return confirmQuit();
-      guard(session.choose(key));
+      var pick = function () { return session.choose(key); };
+      guard(pick(), pick);
     }
 
     function decideAchievement(accept) {
       if (!session) return;
-      guard(session.decideAchievement(accept));
+      var decide = function () { return session.decideAchievement(accept); };
+      guard(decide(), decide);
     }
 
     function confirmQuit() {
@@ -564,23 +585,33 @@
 
     document.documentElement.classList.add("tutor-active");
 
-    runtime
-      .start({ page: options.page, sectionId: options.sectionId, sink: sink })
-      .then(function (created) {
-        session = created;
-        title.textContent = "Tutor · " + (created.section.tutorTitle || created.section.heading);
-        return session.plan();
-      })
-      .then(function () {
-        return session.ask();
-      })
-      .catch(function (err) {
-        view.notice(explainError(err), "error");
-        // The startup chain does not go through `guard`, and a planner that dies at
-        // `maxOutputTokens` fails here — the case the student reported, where the
-        // seconds kept counting up next to the error.
-        railView.stopThinking(ui.phaseLabel);
-      });
+    /**
+     * Plan, then ask. Retried as a unit from whichever half failed: `plan()` is skipped
+     * on a second run if the ladder is already there, so a questioner that timed out
+     * does not pay for a second planner call.
+     *
+     * This is the failure with the least recourse — a planner that dies here leaves a
+     * session with no steps and no composer worth typing into, so before the retry
+     * button the only way forward was reloading the page.
+     */
+    function planAndAsk() {
+      var first = session ? Promise.resolve(session) : runtime
+        .start({ page: options.page, sectionId: options.sectionId, sink: sink })
+        .then(function (created) {
+          session = created;
+          title.textContent = "Tutor · " + (created.section.tutorTitle || created.section.heading);
+          return created;
+        });
+      return first
+        .then(function () {
+          return session.record.steps.length ? null : session.plan();
+        })
+        .then(function () {
+          return session.ask();
+        });
+    }
+
+    guard(planAndAsk(), planAndAsk);
 
     return {
       toggle: toggle,
