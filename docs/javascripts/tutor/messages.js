@@ -88,6 +88,22 @@
     return { text: out, spans: spans };
   }
 
+  /**
+   * Repairs JSON-style escaping that some gateways leave in model prose.
+   *
+   * By the time text reaches this function, JSON itself has already been decoded, so
+   * `\\\\mathbb` means the model/gateway emitted two real backslashes for one TeX
+   * command. Collapse only an *exact* pair followed by an ASCII command letter. The
+   * non-backslash capture makes triples and quadruples ineligible, while row breaks
+   * (`\\\\`, `\\\\[4pt]`, or `\\\\` before a newline) have no following letter and
+   * remain intact. This is deliberately not a general-purpose unescape operation.
+   */
+  var OVERESCAPED_TEX_COMMAND = /(^|[^\\])\\\\(?=[A-Za-z])/g;
+
+  function normalizeMathSource(source) {
+    return source.replace(OVERESCAPED_TEX_COMMAND, "$1\\");
+  }
+
   function restoreMath(html, spans) {
     if (!spans.length) return html;
     return html.replace(/@@TUTORMATH(\d+)@@/g, function (match, index) {
@@ -95,7 +111,7 @@
       if (source === undefined) return match;
       // Escaped, because this lands in innerHTML and the source is model output.
       // MathJax reads the resulting text node, so escaping costs nothing.
-      return source
+      return normalizeMathSource(source)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;");

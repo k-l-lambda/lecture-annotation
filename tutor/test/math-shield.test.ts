@@ -31,6 +31,12 @@ function extractRegex(name: string): RegExp {
 }
 
 const MATH_SPAN = extractRegex('MATH_SPAN');
+const OVERESCAPED_TEX_COMMAND = extractRegex('OVERESCAPED_TEX_COMMAND');
+
+/** Uses the shipped regex; the replacement is asserted against restoreMath below. */
+function normalizeMathSource(text: string): string {
+  return text.replace(new RegExp(OVERESCAPED_TEX_COMMAND.source, 'g'), '$1\\');
+}
 
 /** Mirrors shieldMath: the code-span split plus the placeholder substitution. */
 function shield(text: string): { text: string; spans: string[] } {
@@ -81,6 +87,38 @@ test('dollar math of both kinds is shielded', () => {
   assert.equal(shield('$$\n\\frac{1}{2}\n$$').spans.length, 1);
   // CJK with no spaces around the delimiters is the common case in this product.
   assert.equal(shield('所以$z^2=-1$成立，因此$$z=\\pm i$$。').spans.length, 2);
+});
+
+test('over-escaped TeX commands are repaired without changing valid commands', () => {
+  // These string literals contain two and one real backslashes respectively.
+  assert.equal(normalizeMathSource('$\\\\mathbb{C}^2$'), '$\\mathbb{C}^2$');
+  assert.equal(normalizeMathSource('$\\mathbb{C}^2$'), '$\\mathbb{C}^2$');
+  // Do not reinterpret longer runs: unlike the exact doubled-command defect, their
+  // intended TeX meaning is ambiguous and a second pass must never decode again.
+  assert.equal(normalizeMathSource('$\\\\\\mathbb{C}^2$'), '$\\\\\\mathbb{C}^2$');
+  assert.equal(normalizeMathSource('$\\\\\\\\mathbb{C}^2$'), '$\\\\\\\\mathbb{C}^2$');
+});
+
+test('legitimate TeX row breaks and spacing options stay doubled', () => {
+  for (const input of [
+    '$$\\begin{align}a &= b \\\\ c &= d\\end{align}$$',
+    '$$a &= b \\\\[4pt] c &= d$$',
+    '$$a &= b \\\\\n c &= d$$',
+  ]) {
+    assert.equal(normalizeMathSource(input), input);
+  }
+});
+
+test('restoreMath normalizes before HTML-escaping model output', () => {
+  const start = source.indexOf('function restoreMath');
+  const end = source.indexOf('\n  /**', start);
+  const body = start >= 0 && end > start ? source.slice(start, end) : '';
+  assert.match(body, /normalizeMathSource\(source\)[\s\S]*?\.replace\(\/&\/g, "&amp;"\)/);
+  const repaired = normalizeMathSource('$\\\\mathrm{A&B<C>} $')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+  assert.equal(repaired, '$\\mathrm{A&amp;B&lt;C&gt;} $');
 });
 
 test('a display block is never split by the inline rule', () => {
