@@ -1,0 +1,2306 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/Information_Geometry_Basics/information-geometry-basics.zh/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Information geometry basics.zh - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/tutor.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#信息几何基础" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Information geometry basics.zh
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-引言" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1 引言
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-统计流形的例子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2 统计流形的例子
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-弯曲空间中的距离与体积" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 弯曲空间中的距离与体积
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-信息度量的两种推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4 信息度量的两种推导
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4 信息度量的两种推导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#从可区分性出发的推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从可区分性出发的推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#由相对熵推导" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        由相对熵推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-信息度规的唯一性" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5 信息度规的唯一性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-一些常见分布的度量" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6 一些常见分布的度量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-结论" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7 结论
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#参考文献" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考文献
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- page 1 -->
+
+<p>arXiv:1412.5633v1 [physics.data-an] 17 Dec 2014</p>
+<h1 id="信息几何基础">信息几何基础*<a class="headerlink" href="#信息几何基础" title="Permanent link">&para;</a></h1>
+<p>Ariel Caticha</p>
+<p>物理系，University at Albany-SUNY，Albany，NY 12222，USA。</p>
+<p><strong>摘要</strong></p>
+<p>我们在多大程度上可以将一个概率分布与另一个区分开来？是否存在可区分性的定量度量？本教程的目标是，通过引入两个概率分布之间“距离”的概念，并探索这种“信息几何”的一些基本思想，来探讨此类问题。</p>
+<blockquote>
+<p><strong>Einstein, 1949:</strong> “[The basic ideas of General Relativity were in place] … *1908年。为什么构建 the general theory of relativity 还需要另外七年？主要原因在于，要使自己摆脱坐标必须具有直接度量意义这一观念，并非易事。*(cite)” [1]</p>
+</blockquote>
+<h2 class="tutor-section" id="1-引言">1 引言<a class="headerlink" href="#1-引言" title="Permanent link">&para;</a></h2>
+<p>任何推断理论的主要关注点之一，是当新信息可用时如何更新概率的问题。我们想从一组候选分布中选出一个概率分布，而这立即引发了许多问题。如果我们选择了邻近的分布会怎样？这会有什么不同？是什么让两个分布相似？我们在多大程度上可以区分一个分布与另一个分布？是否存在可区分性的定量度量？本教程的目标是通过引入几何方法来探讨这些问题。更具体地说，目标将是引入两个概率分布之间“距离”的概念。</p>
+<p>一个参数化的概率分布族是一组由参数 <span class="arithmatex">\(\theta = (\theta^1 \dots \theta^n)\)</span> 标记的分布 <span class="arithmatex">\(p_\theta(x)\)</span>。这样一个族构成一个<em>统计流形</em>，即一个空间，其中每个由坐标 <span class="arithmatex">\(\theta\)</span> 标记的点代表一个概率分布 <span class="arithmatex">\(p_\theta(x)\)</span>。一般的流形不带有内在的距离概念；这种额外的结构必须以度量张量的形式单独提供。然而，统计流形是一个例外。本章的主要目标之一是证明统计流形具有</p>
+<hr />
+<p>*受邀教程，发表于 MaxEnt 2014，the 34th International Workshop on Bayesian Inference and Maximum Entropy Methods in Science and Engineering（September 21–26, 2014，Amboise，France）。</p>
+<!-- page 2 -->
+
+<p>唯一自然的距离概念——即所谓的信息度量。这一度量并非可选特征；它是不可避免的。几何是统计流形结构的内在属性。</p>
+<p>两个邻近点 <span class="arithmatex">\(\theta\)</span> 与 <span class="arithmatex">\(\theta + d\theta\)</span> 之间的距离 <span class="arithmatex">\(d\ell\)</span> 由毕达哥拉斯定理给出，若用度量张量 <span class="arithmatex">\(g_{ab}\)</span> 表示，则¹</p>
+<div class="arithmatex">\[d\ell^2 = g_{ab}d\theta^a d\theta^b \ . \tag{1}\]</div>
+<p>度量张量 <span class="arithmatex">\(g_{ab}\)</span> 的极其重要性源于 N. Čencov 的一个定理，该定理指出：概率分布流形上的度量 <span class="arithmatex">\(g_{ab}\)</span> 本质上是唯一的——在整体比例因子意义下，只存在一种度量能够反映这一事实：这些距离并非简单无结构的点之间的距离，而是概率分布之间的距离。[2]</p>
+<p>我们不会穷尽该主题的所有可能性²，但确实希望强调一个具体结果。具有距离概念意味着我们具有体积概念，而这进而意味着：在参数空间上存在唯一且客观的均匀分布概念——相等的体积被赋予相等的概率。此类均匀分布是否最大非信息性，是否定义了无知，或是否反映任何理性主体的实际先验信念，都是重要的问题，但它们与我们想要阐明的特定要点毫不相干，即：它们是均匀的——而这并非主观判断的问题，而是客观数学证明的问题。</p>
+<h2 class="tutor-section" id="2-统计流形的例子">2 统计流形的例子<a class="headerlink" href="#2-统计流形的例子" title="Permanent link">&para;</a></h2>
+<p>一个 <span class="arithmatex">\(n\)</span> 维流形 <span class="arithmatex">\(\mathcal{M}\)</span> 是一个光滑的、可能弯曲的空间，它在局部上类似于 <span class="arithmatex">\(\mathcal{R}^n\)</span>。这意味着可以建立一个坐标架（即从 <span class="arithmatex">\(\mathcal{M}\)</span> 到 <span class="arithmatex">\(\mathcal{R}^n\)</span> 的映射），使得每个点 <span class="arithmatex">\(\theta \in \mathcal{M}\)</span> 都能由其坐标识别或标记，<span class="arithmatex">\(\theta = (\theta^1 \dots \theta^n)\)</span>。统计流形是一种流形，其中每个点 <span class="arithmatex">\(\theta\)</span> 代表一个概率分布 <span class="arithmatex">\(p_\theta(x)\)</span>。正如我们稍后将要看到的，一种非常方便的记法是 <span class="arithmatex">\(p_\theta(x) = p(x|\theta)\)</span>。以下是一些例子：</p>
+<p><strong>多项分布</strong>由下式给出</p>
+<div class="arithmatex">\[p(\{n_i\}|\theta) = \frac{N!}{n_1! n_2! \dots n_m!}(\theta^1)^{n_1}(\theta^2)^{n_2} \dots (\theta^m)^{n_m} \ , \tag{2}\]</div>
+<p>其中 <span class="arithmatex">\(\theta = (\theta^1, \theta^2 \dots \theta^m)\)</span>，<span class="arithmatex">\(N = \sum_{i=1}^m n_i\)</span> 且 <span class="arithmatex">\(\sum_{i=1}^m \theta^i = 1\)</span>。它们构成一个维数为 <span class="arithmatex">\((m-1)\)</span> 的统计流形，称为单纯形 <span class="arithmatex">\(S_{m-1}\)</span>。参数 <span class="arithmatex">\(\theta = (\theta^1, \theta^2 \dots \theta^m)\)</span> 是一种方便的坐标选择。</p>
+<p>具有均值 <span class="arithmatex">\(\mu^a\)</span>（<span class="arithmatex">\(a = 1 \dots n\)</span>）和方差 <span class="arithmatex">\(\sigma^2\)</span> 的<strong>多元高斯分布</strong>，</p>
+<div class="arithmatex">\[p(x|\mu,\sigma) = \frac{1}{(2\pi\sigma^2)^{n/2}} \exp -\frac{1}{2\sigma^2}\sum_{a=1}^n (x^a - \mu^a)^2 \ , \tag{3}\]</div>
+<hr />
+<p>¹在微分几何中，用上标而非下标来标记坐标指标是一种标准且非常方便的记法约定。我们采用对重复指标求和的标准约定，例如，<span class="arithmatex">\(g_{ab}f^{ab} = \sum_a \sum_b g_{ab}f^{ab}\)</span>。</p>
+<p>²更详尽的论述请见 [3][4]。此处我们紧密遵循 [5] 中的表述。</p>
+<p>2</p>
+<!-- page 3 -->
+
+<p>构成一个 <span class="arithmatex">\((n{+}1)\)</span> 维统计流形，其坐标为 <span class="arithmatex">\(\theta=(\mu^1, \dots, \mu^n, \sigma^2)\)</span>。</p>
+<p><strong>正则分布</strong>（canonical distributions），</p>
+<div class="arithmatex">\[p(i|F) = \frac{1}{Z} e^{-\lambda_k f_i^k} \ , \qquad (4)\]</div>
+<p>由对Shannon熵 <span class="arithmatex">\(S[p]\)</span> 在约束条件下求极大值得出，这些约束作用于 <span class="arithmatex">\(n\)</span> 个函数 <span class="arithmatex">\(f_i^k = f^k(x_i)\)</span> 的期望值，函数用上标 <span class="arithmatex">\(k = 1,2,\dots n\)</span> 标记，</p>
+<div class="arithmatex">\[\left&lt;f^k\right&gt; = \sum_i p_i f_i^k = F^k \ . \qquad (5)\]</div>
+<p>它们构成一个 <span class="arithmatex">\(n\)</span> 维统计流形。作为坐标，我们可以使用期望值 <span class="arithmatex">\(F=(F^1 \dots F^n)\)</span>，或者等价地使用Lagrange乘子 <span class="arithmatex">\(\lambda=(\lambda_1 \dots \lambda_n)\)</span>。</p>
+<h2 class="tutor-section" id="3-弯曲空间中的距离与体积">3 弯曲空间中的距离与体积<a class="headerlink" href="#3-弯曲空间中的距离与体积" title="Permanent link">&para;</a></h2>
+<p>微分几何背后的基本直觉源于如下观察：弯曲空间在局部是平坦的——只要停留在足够小的区域内，曲率效应就可以忽略不计。于是这一想法相当简单：在任意点 <span class="arithmatex">\(x\)</span> 的邻近区域内，我们总可以从原始坐标 <span class="arithmatex">\(x^a\)</span> 变换到新的坐标 <span class="arithmatex">\(\hat{x}^\alpha = \hat{x}^\alpha(x^1 \dots x^n)\)</span>，我们将其<em>声明</em>为局部Cartesian坐标（这里用帽子符号和希腊字母上标表示，<span class="arithmatex">\(\hat{x}^\alpha\)</span>）。无穷小位移由下式给出</p>
+<div class="arithmatex">\[d\hat{x}^\alpha = X^\alpha_a \, dx^a \quad \text{其中} \quad X^\alpha_a = \frac{\partial \hat{x}^\alpha}{\partial x^a} \qquad (6)\]</div>
+<p>而相应的无穷小距离可以利用Pythagoras定理计算<span class="arithmatex">\(，d\ell^2 = \delta_{\alpha\beta} d\hat{x}^\alpha d\hat{x}^\beta \ . \qquad (7)\)</span>
+变换回原参考系</p>
+<div class="arithmatex">\[d\ell^2 = \delta_{\alpha\beta} d\hat{x}^\alpha d\hat{x}^\beta = \delta_{\alpha\beta} X^\alpha_a X^\beta_b \, dx^a dx^b \ . \qquad (8)\]</div>
+<p>定义量</p>
+<div class="arithmatex">\[g_{ab} \equiv \delta_{\alpha\beta} X^\alpha_a X^\beta_b \ , \qquad (9)\]</div>
+<p>我们可以在一般坐标 <span class="arithmatex">\(x^a\)</span> 下将无穷小Pythagoras定理写为</p>
+<div class="arithmatex">\[d\ell^2 = g_{ab} dx^a dx^b \ . \qquad (10)\]</div>
+<p>量 <span class="arithmatex">\(g_{ab}\)</span> 是度量张量的分量。容易验证，在坐标变换下，<span class="arithmatex">\(g_{ab}\)</span> 按下式变换：</p>
+<div class="arithmatex">\[g_{ab} = X^{a'}_a X^{b'}_b g_{a'b'} \quad \text{其中} \quad X^{a'}_a = \frac{\partial x^{a'}}{\partial x^a} \, , \qquad (11)\]</div>
+<p>从而无穷小距离 <span class="arithmatex">\(d\ell\)</span> 与坐标的选择无关。</p>
+<!-- page 4 -->
+
+<p>要求出沿曲线 <span class="arithmatex">\(x(\lambda)\)</span> 上两点之间的有限长度，可沿曲线积分：</p>
+<div class="arithmatex">\[\ell = \int_{\lambda_1}^{\lambda_2} d\ell = \int_{\lambda_1}^{\lambda_2} \left( g_{ab}\frac{dx^a}{d\lambda}\frac{dx^b}{d\lambda} \right)^{1/2} d\lambda \ . \tag{12}\]</div>
+<p>一旦有了距离的度量，我们就可以测量角度、面积、体积以及各种其他几何量。为求 <span class="arithmatex">\(n\)</span> 维体积元 <span class="arithmatex">\(dV_n\)</span> 的表达式，我们使用和之前一样的技巧：变换到局部笛卡尔坐标，使得体积元简单地由乘积给出</p>
+<div class="arithmatex">\[dV_n = d\hat{x}^1 d\hat{x}^2 \ldots d\hat{x}^n \ , \tag{13}\]</div>
+<p>然后再利用 eq.(6) 变换回原始坐标 <span class="arithmatex">\(x^a\)</span>，</p>
+<div class="arithmatex">\[dV_n = \left|\frac{\partial \hat{x}}{\partial x}\right| dx^1 dx^2 \ldots dx^n = \left|\det X_a^\alpha\right| d^n x \ . \tag{14}\]</div>
+<p>这就是用坐标 <span class="arithmatex">\(x^a\)</span> 表示的我们所求的体积，但我们仍需计算该变换的雅可比行列式 <span class="arithmatex">\(|\partial \hat{x}/\partial x| = |\det X_a^\alpha|\)</span>。度规从其欧几里得形式 <span class="arithmatex">\(\delta_{\alpha\beta}\)</span> 到 <span class="arithmatex">\(g_{ab}\)</span> 的变换，eq.(9)，是三个矩阵的乘积。取行列式后得到</p>
+<div class="arithmatex">\[g \equiv \det(g_{ab}) = [\det X_a^\alpha]^2 \ , \tag{15}\]</div>
+<p>因此</p>
+<div class="arithmatex">\[\left|\det\left(X_a^\alpha\right)\right| = g^{1/2} \ . \tag{16}\]</div>
+<p>我们已成功地在原始坐标 <span class="arithmatex">\(x^a\)</span> 中用度规 <span class="arithmatex">\(g_{ab}(x)\)</span> 表示出了体积元。答案是</p>
+<div class="arithmatex">\[dV_n = g^{1/2}(x) d^n x \ . \tag{17}\]</div>
+<p>流形上任意扩展区域的体积为</p>
+<div class="arithmatex">\[V_n = \int dV_n = \int g^{1/2}(x) d^n x \ . \tag{18}\]</div>
+<p><strong>例：</strong> 在这样一个弯曲流形上的均匀分布，是指对相等的体积赋予相等概率的分布<span class="arithmatex">\(，p(x) d^n x \propto g^{1/2}(x) d^n x \ . \tag{19}\)</span></p>
+<p><strong>例：</strong> 对于球坐标 <span class="arithmatex">\((r, \theta, \phi)\)</span> 下的欧几里得空间，</p>
+<div class="arithmatex">\[d\ell^2 = dr^2 + r^2 d\theta^2 + r^2 \sin^2\theta d\phi^2 \ , \tag{20}\]</div>
+<p>而体积元则是我们熟悉的表达式</p>
+<div class="arithmatex">\[dV = g^{1/2} dr d\theta d\phi = r^2 \sin\theta \, dr d\theta d\phi \ . \tag{21}\]</div>
+<!-- page 5 -->
+
+<h2 class="tutor-section" id="4-信息度量的两种推导">4 信息度量的两种推导<a class="headerlink" href="#4-信息度量的两种推导" title="Permanent link">&para;</a></h2>
+<p>两个邻近分布 <span class="arithmatex">\(p(x|\theta)\)</span> 与 <span class="arithmatex">\(p(x|\theta + d\theta)\)</span> 之间，或者等价地说，两点 <span class="arithmatex">\(\theta\)</span> 与 <span class="arithmatex">\(\theta + d\theta\)</span> 之间的距离 <span class="arithmatex">\(d\ell\)</span>，由度量 <span class="arithmatex">\(g_{ab}\)</span> 给出。我们的目标是计算对应于 <span class="arithmatex">\(p(x|\theta)\)</span> 的张量 <span class="arithmatex">\(g_{ab}\)</span>。我们将给出两种推导，以阐明信息度量的含义、其解释，以及最终如何使用它。基于渐近推断的其他推导见 [6] 和 [7]。</p>
+<p>在此有必要提醒一句（并加以鼓励）。当然，我们有可能遇到充分奇异的分布族，它们并非光滑流形，研究其几何似乎是一项无望的事业。我们该放弃几何吗？不。统计流形可以具有复杂几何这一事实，并不会减损信息几何方法的价值，正如存在崎岖几何的曲面并不会减损几何学本身的一般价值一样。</p>
+<h3 id="从可区分性出发的推导">从可区分性出发的推导<a class="headerlink" href="#从可区分性出发的推导" title="Permanent link">&para;</a></h3>
+<p>我们寻求一种定量度量，以衡量两个分布 <span class="arithmatex">\(p(x|\theta)\)</span> 与 <span class="arithmatex">\(p(x|\theta+d\theta)\)</span> 能够被区分的程度。以下论证在直觉上很吸引人。[8][9] 这一方法的优点在于它澄清了解释——<em>该度量衡量的是可区分性</em>。考虑相对差，</p>
+<div class="arithmatex">\[
+\Delta = \frac{p(x|\theta + d\theta) - p(x|\theta)}{p(x|\theta)} = \frac{\partial \log p(x|\theta)}{\partial \theta^a} d\theta^a. \qquad (22)
+\]</div>
+<p>相对差的期望值 <span class="arithmatex">\(\langle\Delta\rangle\)</span> 似乎是一个不错的候选，但它行不通，因为它恒等于零，</p>
+<div class="arithmatex">\[
+\langle\Delta\rangle = \int dx\, p(x|\theta)\, \frac{\partial \log p(x|\theta)}{\partial \theta^a}\, d\theta^a = d\theta^a\, \frac{\partial}{\partial\theta^a} \int dx\, p(x|\theta) = 0. \qquad (23)
+\]</div>
+<p>（取决于具体问题，符号 <span class="arithmatex">\(\int\!dx\)</span> 既可表示离散求和，也可表示对一个或多个维度的积分；其含义应从上下文中明确。）然而，方差并不为零，</p>
+<div class="arithmatex">\[
+d\ell^2 = \langle\Delta^2\rangle = \int dx\, p(x|\theta)\, \frac{\partial \log p(x|\theta)}{\partial \theta^a}\, \frac{\partial \log p(x|\theta)}{\partial \theta^b}\, d\theta^a d\theta^b\ . \qquad (24)
+\]</div>
+<p>这正是我们所寻求的可区分性度量；<span class="arithmatex">\(d\ell^2\)</span> 的值很小意味着相对差 <span class="arithmatex">\(\Delta\)</span> 很小，且点 <span class="arithmatex">\(\theta\)</span> 与 <span class="arithmatex">\(\theta + d\theta\)</span> 难以区分。这提示我们引入矩阵 <span class="arithmatex">\(g_{ab}\)</span></p>
+<div class="arithmatex">\[
+g_{ab}(\theta) \stackrel{\text{def}}{=} \int dx\, p(x|\theta)\, \frac{\partial \log p(x|\theta)}{\partial \theta^a}\, \frac{\partial \log p(x|\theta)}{\partial \theta^b} \qquad (25)
+\]</div>
+<p>称为 Fisher 信息<em>矩阵</em> [10]，于是</p>
+<div class="arithmatex">\[
+d\ell^2 = g_{ab}\, d\theta^a d\theta^b\ . \qquad (26)
+\]</div>
+<p>5</p>
+<!-- page 6 -->
+
+<p>迄今为止，我们尚未引入距离的概念。通常人们会说，在例如我们所居住的三维空间中，难以区分两个点的原因是它们恰好靠得太近。我们很容易反其道而行之，断言两个点 <span class="arithmatex">\(\theta\)</span> 和 <span class="arithmatex">\(\theta + d\theta\)</span> 只要难以区分就是<em>靠近</em>的。此外，作为一个方差，量 <span class="arithmatex">\(d\ell^2 = \langle\Delta^2\rangle\)</span> 是正的，并且仅当 <span class="arithmatex">\(d\theta\)</span> 为零时才消失。因此，很自然地可以通过将 <span class="arithmatex">\(g_{ab}\)</span> 解释为黎曼空间的度规张量来引入距离。[8] 这就是<em>信息度规</em>。Rao 认识到 <span class="arithmatex">\(g_{ab}\)</span> 是概率分布空间中的一个度规，从而催生了信息几何学这一学科 [3]，也就是将几何方法应用于推断和信息论中的问题。</p>
+<p>坐标 <span class="arithmatex">\(\theta\)</span> 是相当任意的；我们可以随意地给流形中的点重新标记。于是很容易验证，<span class="arithmatex">\(g_{ab}\)</span> 是一个张量的分量，并且距离 <span class="arithmatex">\(d\ell^2\)</span> 是一个不变量，即在坐标变换下是一个标量。确实，变换</p>
+<div class="arithmatex">\[\theta^{a'} = f^{a'}(\theta^1 \ldots \theta^n) \qquad (27)\]</div>
+<p>导致</p>
+<div class="arithmatex">\[d\theta^a = \frac{\partial \theta^a}{\partial \theta^{a'}} d\theta^{a'} \quad \text{and} \quad \frac{\partial}{\partial \theta^a} = \frac{\partial \theta^{a'}}{\partial \theta^a} \frac{\partial}{\partial \theta^{a'}} \qquad (28)\]</div>
+<p>因此，将其代入 eq.(25)<span class="arithmatex">\(，g_{ab} = \frac{\partial \theta^{a'}}{\partial \theta^a} \frac{\partial \theta^{b'}}{\partial \theta^b} g_{a'b'} \qquad (29)\)</span></p>
+<h3 id="由相对熵推导">由相对熵推导<a class="headerlink" href="#由相对熵推导" title="Permanent link">&para;</a></h3>
+<p>我们在别处论证过相对熵 <span class="arithmatex">\(S[p, q]\)</span> 的概念，它是一种工具，用于在有新信息以约束形式出现时，将概率从先验 <span class="arithmatex">\(q\)</span> 更新到后验 <span class="arithmatex">\(p\)</span>。（关于最大熵方法的详细发展，请参见 [5] 及其中的参考文献。）其思路是用 <span class="arithmatex">\(S[p, q]\)</span> 对那些相对于 <span class="arithmatex">\(q\)</span> 的分布 <span class="arithmatex">\(p\)</span> 进行排序，使得首选的后验是在约束条件下使 <span class="arithmatex">\(S[p, q]\)</span> 最大化的那个。<span class="arithmatex">\(S[p, q]\)</span> 的函数形式是从非常保守的设计准则中推导出来的，这些准则承认信息的价值：过去学到的东西是宝贵的，除非被新信息证明已经过时，否则不应被忽视。这被表述为<em>最小更新原理</em>：信念只应在新的证据所要求的程度上进行修正。根据这种解释，那些具有更高熵 <span class="arithmatex">\(S[p, q]\)</span> 的分布 <span class="arithmatex">\(p\)</span> 在某种意义上更<em>接近</em> <span class="arithmatex">\(q\)</span>，因为它们反映出对我们信念的修正不那么剧烈。</p>
+<p>“更接近”这个词非常具有启发性，但也可能极具误导性。一方面，它暗示了熵与几何之间存在某种联系。如下所示，这种联系确实存在。另一方面，它可能诱使我们把 <span class="arithmatex">\(S[p, q]\)</span> <em>等同于</em>距离，而这显然是错误的：<span class="arithmatex">\(S[p, q]\)</span> 不是对称的，<span class="arithmatex">\(S[p, q] \neq S[q, p]\)</span>，因此它不可能是一种距离。</p>
+<!-- page 7 -->
+
+<p>熵与距离之间存在某种关系，但这种关系并非同一关系。</p>
+<p>在弯曲空间中，两点 <span class="arithmatex">\(p\)</span> 与 <span class="arithmatex">\(q\)</span> 之间的距离是连接它们的最短曲线的长度，而曲线的长度 <span class="arithmatex">\(\ell\)</span>（见式(12)）则是介于 <span class="arithmatex">\(p\)</span> 与 <span class="arithmatex">\(q\)</span> 之间的<em>局域</em>无穷小长度 <span class="arithmatex">\(d\ell\)</span> 之和。另一方面，熵 <span class="arithmatex">\(S[p,q]\)</span> 是一个<em>非局域</em>概念。除了 <span class="arithmatex">\(p\)</span> 与 <span class="arithmatex">\(q\)</span> 之外，它不涉及任何其他点。因此，熵与距离之间的关系——如果确实存在的话——必须是两个无穷接近分布 <span class="arithmatex">\(q\)</span> 与 <span class="arithmatex">\(p = q + dq\)</span> 之间的关系。只有这样，我们才能在不涉及 <span class="arithmatex">\(p\)</span> 与 <span class="arithmatex">\(q\)</span> 之间各点的情况下定义距离。（另见 [11]。）</p>
+<p>考虑一个分布 <span class="arithmatex">\(p(x|\theta')\)</span> 相对于另一个分布 <span class="arithmatex">\(p(x|\theta)\)</span> 的熵，</p>
+<div class="arithmatex">\[S(\theta', \theta) = -\int dx\, p(x|\theta') \log \frac{p(x|\theta')}{p(x|\theta)} \ . \qquad (30)\]</div>
+<p>我们研究当 <span class="arithmatex">\(\theta' = \theta + d\theta\)</span> 位于给定 <span class="arithmatex">\(\theta\)</span> 的邻近区域时，该熵如何变化。很容易验证——回顾吉布斯不等式，<span class="arithmatex">\(S(\theta',\theta) \leq 0\)</span>，且等号成立当且仅当 <span class="arithmatex">\(\theta' = \theta\)</span>——熵 <span class="arithmatex">\(S(\theta',\theta)\)</span> 在 <span class="arithmatex">\(\theta' = \theta\)</span> 处取得绝对极大值。因此，围绕 <span class="arithmatex">\(\theta\)</span> 作泰勒展开时，首个非零项是 <span class="arithmatex">\(d\theta\)</span> 的二阶项：</p>
+<div class="arithmatex">\[S(\theta + d\theta, \theta) = \frac{1}{2} \frac{\partial^2 S(\theta',\theta)}{\partial\theta'^a \partial\theta'^b}\bigg|_{\theta'=\theta} d\theta^a d\theta^b + \ldots \leq 0 \ , \qquad (31)\]</div>
+<p>这提示我们可通过下式定义距离 <span class="arithmatex">\(d\ell\)</span>：</p>
+<div class="arithmatex">\[S(\theta + d\theta, \theta) = -\frac{1}{2} d\ell^2 \ . \qquad (32)\]</div>
+<p>对二阶导数进行直接计算，即可得到信息度规：</p>
+<div class="arithmatex">\[-\frac{\partial S(\theta',\theta)}{\partial\theta'^a \partial\theta'^b}\bigg|_{\theta'=\theta} = \int dx\, p(x|\theta) \frac{\partial \log p(x|\theta)}{\partial\theta^a} \frac{\partial \log p(x|\theta)}{\partial\theta^b} = g_{ab} \ . \qquad (33)\]</div>
+<h2 class="tutor-section" id="5-信息度规的唯一性">5 信息度规的唯一性<a class="headerlink" href="#5-信息度规的唯一性" title="Permanent link">&para;</a></h2>
+<p>关于信息度规，一个非常引人注目的事实是：它在本质上是唯一的。除了一个常数比例因子之外，它是唯一能够充分考虑统计流形上各点性质的黎曼度规；也就是说，这些点代表概率分布，它们并非“无结构”。这一定理最初由 N. Čencov 在范畴论框架下证明 [2]；后来 Campbell 给出了另一种依赖于马尔可夫映射概念的替代证明。[12] 在此，我将通过一个简单例子来描述 Campbell 的基本思想。</p>
+<p>我们可以用二项分布来分析抛硬币（其中概率为 <span class="arithmatex">\(p(\text{heads}) = \theta\)</span> 和 <span class="arithmatex">\(p(\text{tails}) = 1-\theta\)</span>）。我们也可以用二项分布来描述掷一枚特殊骰子的情形。例如，假设这枚骰子</p>
+<!-- page 8 -->
+
+<p>三个面具有相等的概率 <span class="arithmatex">\(p_1 = p_2 = p_3 = \theta/3\)</span>，另外三个面也具有相等的概率 <span class="arithmatex">\(p_4 = p_5 = p_6 = (1-\theta)/3\)</span>。然后我们用二项分布来描述粗粒化结果低 = {1,2,3} 或高 = {4,5,6}，其概率分别为 <span class="arithmatex">\(\theta\)</span> 和 <span class="arithmatex">\(1-\theta\)</span>。这相当于将硬币分布的空间映射到骰子分布空间的一个子空间。</p>
+<p>将 <span class="arithmatex">\(n=2\)</span> 的二项式统计流形（即一维单形 <span class="arithmatex">\(\mathcal{S}_1\)</span>）嵌入到 <span class="arithmatex">\(n=6\)</span> 的多项式统计流形（即五维单形 <span class="arithmatex">\(\mathcal{S}_5\)</span>）的一个子空间中，这种嵌入称为 Markov 映射。</p>
+<p>在引入了 Markov 映射的概念之后，我们现在可以阐述 Campbell 论证背后的基本思想：无论我们讨论的是硬币的正面/反面结果，还是骰子的低/高结果，二项式都是二项式。无论赋予 <span class="arithmatex">\(\mathcal{S}_1\)</span> 中分布何种几何关系，都应该将完全相同的几何关系赋予 <span class="arithmatex">\(\mathcal{S}_5\)</span> 相应子空间中的分布。因此，这些 Markov 映射不仅仅是嵌入，它们是全等嵌入——<span class="arithmatex">\(\mathcal{S}_1\)</span> 中分布之间的距离应当与 <span class="arithmatex">\(\mathcal{S}_5\)</span> 中对应像之间的距离相匹配。</p>
+<p>现在到了关键之处：目标是寻找在 Markov 映射下保持不变的 Riemannian 度量。很容易理解为什么施加这样的不变性是极其受限的：在 <span class="arithmatex">\(\mathcal{S}_1\)</span> 中计算的距离必须与在 <span class="arithmatex">\(\mathcal{S}_5\)</span> 子空间中计算的距离一致，这一事实对允许的度量张量引入了一个约束；但我们总可以将 <span class="arithmatex">\(\mathcal{S}_1\)</span> 和 <span class="arithmatex">\(\mathcal{S}_5\)</span> 嵌入到维数越来越大的空间中，从而导致越来越多的约束。很可能没有任何 Riemannian 度量能够在如此严苛的条件下存活下来；相当令人惊讶的是，确实有一些度量存活了下来，而更令人惊讶的是（在不重要的比例因子意义下）存活的 Riemannian 度量是唯一的。证明的细节见 [5]。</p>
+<h2 class="tutor-section" id="6-一些常见分布的度量">6 一些常见分布的度量<a class="headerlink" href="#6-一些常见分布的度量" title="Permanent link">&para;</a></h2>
+<p><strong>多项式分布</strong>的统计流形，</p>
+<div class="arithmatex">\[P_N\left(n|\theta\right) = \frac{N!}{n_1! \dots n_m!}\theta_1^{n_1} \dots \theta_m^{n_m} \ , \tag{34}\]</div>
+<p>其中</p>
+<div class="arithmatex">\[n = (n_1 \dots n_m) \quad \text{其中} \quad \sum_{i=1}^m n_i = N \quad \text{且} \quad \sum_{i=1}^m \theta_i = 1 \ , \tag{35}\]</div>
+<p>即为单形 <span class="arithmatex">\(\mathcal{S}_{m-1}\)</span>。该度量由式(25)给出，</p>
+<div class="arithmatex">\[g_{ij} = \sum_n P_N \frac{\partial \log P_N}{\partial \theta_i} \frac{\partial \log P_N}{\partial \theta_j} \quad \text{其中} \quad 1 \le i,j \le m-1 \ . \tag{36}\]</div>
+<p>结果为</p>
+<div class="arithmatex">\[g_{ij} = \left\langle \left(\frac{n_i}{\theta_i} - \frac{n_m}{\theta_m}\right)\left(\frac{n_j}{\theta_j} - \frac{n_m}{\theta_m}\right) \right\rangle = \frac{N}{\theta_i}\delta_{ij} + \frac{N}{\theta_m} \ , \tag{37}\]</div>
+<!-- page 9 -->
+
+<p>其中 <span class="arithmatex">\(1 \leq i, j \leq m-1\)</span>。通过令 <span class="arithmatex">\(d\theta_m = -\sum_{i=1}^{m-1} d\theta_i\)</span> 并将指标范围扩展至包含 <span class="arithmatex">\(i, j = m\)</span>，可得到一个更为简洁的表达式。结果为</p>
+<div class="arithmatex">\[
+d\ell^2 = \sum_{i,j=1}^m g_{ij} d\theta_i d\theta_j \quad \text{其中} \quad g_{ij} = \frac{N}{\theta_i}\delta_{ij} \ .
+\tag{38}
+\]</div>
+<p>单纯形 <span class="arithmatex">\(\mathcal{S}_{m-1}\)</span> 上的均匀分布赋予相等体积以相等的概率，</p>
+<div class="arithmatex">\[
+P(\theta) d^{m-1}\theta \propto g^{1/2} d^{m-1}\theta \quad \text{其中} \quad g = \frac{N^{m-1}}{\theta_1 \theta_2 \dots \theta_m}
+\tag{39}
+\]</div>
+<p>在二项分布的特殊情形中，<span class="arithmatex">\(m=2\)</span>，且 <span class="arithmatex">\(\theta_1 = \theta\)</span>、<span class="arithmatex">\(\theta_2 = 1-\theta\)</span>，我们得到</p>
+<div class="arithmatex">\[
+g = g_{11} = \frac{N}{\theta(1-\theta)}
+\tag{40}
+\]</div>
+<p>因此 <span class="arithmatex">\(\theta\)</span>（其中 <span class="arithmatex">\(0 &lt; \theta &lt; 1\)</span>）上的均匀分布为</p>
+<div class="arithmatex">\[
+P(\theta)d\theta \propto [\frac{N}{\theta(1-\theta)}]^{1/2} d\theta \ .
+\tag{41}
+\]</div>
+<p><strong>正则分布：</strong> 设 <span class="arithmatex">\(z\)</span> 表示系统的微观状态（例如，相空间中的点），<span class="arithmatex">\(m(z)\)</span> 表示其底层测度（例如，相空间上的均匀密度）。宏观状态空间是一个统计流形：每个宏观状态都是在 <span class="arithmatex">\(n\)</span> 个约束条件 <span class="arithmatex">\(\langle f^a \rangle = F^a\)</span>（<span class="arithmatex">\(a = 1 \dots n\)</span>）以及归一化条件下，通过最大化熵 <span class="arithmatex">\(S[p,m]\)</span> 而得到的正则分布，</p>
+<div class="arithmatex">\[
+p(z|F) = \frac{1}{Z(\lambda)} m(z) e^{-\lambda_a f^a(z)} \quad \text{其中} \quad Z(\lambda) = \int dz \, m(z) e^{-\lambda_a f^a(z)} \ .
+\tag{42}
+\]</div>
+<p>数组 <span class="arithmatex">\(F = (F^1 \dots F^n)\)</span> 确定了统计流形上的一个点 <span class="arithmatex">\(p(z|F)\)</span>，因此我们可以将 <span class="arithmatex">\(F^a\)</span> 用作坐标。</p>
+<p>首先，以下是关于正则分布的一些有用事实。拉格朗日乘子 <span class="arithmatex">\(\lambda_a\)</span> 由以下关系隐式确定：</p>
+<div class="arithmatex">\[
+\langle f^a \rangle = F^a = -\frac{\partial \log Z}{\partial \lambda_a} \ ,
+\tag{43}
+\]</div>
+<p>并且容易证明，对 <span class="arithmatex">\(\lambda_b\)</span> 进一步求导即可得到协方差矩阵，</p>
+<div class="arithmatex">\[
+C^{ab} \equiv \langle (f^a - F^a)(f^b - F^b) \rangle = -\frac{\partial F^a}{\partial \lambda_b} \ .
+\tag{44}
+\]</div>
+<p>此外，根据链式法则</p>
+<div class="arithmatex">\[
+\delta_a^c = \frac{\partial \lambda_a}{\partial \lambda_c} = \frac{\partial \lambda_a}{\partial F^b} \frac{\partial F^b}{\partial \lambda_c} \ ,
+\tag{45}
+\]</div>
+<p>可知矩阵</p>
+<div class="arithmatex">\[
+C_{ab} = -\frac{\partial \lambda_a}{\partial F^b}
+\tag{46}
+\]</div>
+<p>9</p>
+<!-- page 10 -->
+
+<p>它是协方差矩阵的逆，<span class="arithmatex">\(C_{ab}C^{bc} = \delta_a^c\)</span>。</p>
+<p>信息度量为</p>
+<div class="arithmatex">\[\begin{aligned} g_{ab} &amp;= \int dz\, p(z|F)\, \frac{\partial \log p(z|F)}{\partial F^a}\, \frac{\partial \log p(z|F)}{\partial F^b} \\ &amp;= \frac{\partial \lambda_c}{\partial F^a} \frac{\partial \lambda_d}{\partial F^b} \int dz\, p\, \frac{\partial \log p}{\partial \lambda_c}\, \frac{\partial \log p}{\partial \lambda_d}\ . \end{aligned} \qquad (47)\]</div>
+<p>利用式 (42) 和 (43)<span class="arithmatex">\(，\frac{\partial \log p(z|F)}{\partial \lambda_c} = F^c - f^c(z) \qquad (48)\)</span></p>
+<p>因此<span class="arithmatex">\(，g_{ab} = C_{ca}C_{db}C^{cd} \implies g_{ab} = C_{ab}\ , \qquad (49)\)</span></p>
+<p>从而度量张量 <span class="arithmatex">\(g_{ab}\)</span> 是协方差矩阵 <span class="arithmatex">\(C^{ab}\)</span> 的逆。</p>
+<p>我们可以用拉格朗日乘子 <span class="arithmatex">\(\lambda_a\)</span> 作为坐标，而不是期望值 <span class="arithmatex">\(F^a\)</span>。此时信息度量即为协方差矩阵，</p>
+<div class="arithmatex">\[g^{ab} = \int dz\, p(z|\lambda)\, \frac{\partial \log p(z|\lambda)}{\partial \lambda_a}\, \frac{\partial \log p(z|\lambda)}{\partial \lambda_b} = C^{ab}\ . \qquad (50)\]</div>
+<p>因此，相邻分布之间的距离 <span class="arithmatex">\(d\ell\)</span> 可以写成两种等价形式之一，</p>
+<div class="arithmatex">\[d\ell^2 = g_{ab} dF^a dF^b = g^{ab} d\lambda_a d\lambda_b\ . \qquad (51)\]</div>
+<p>宏观状态空间上的均匀分布对相等的体积赋予相等的概率<span class="arithmatex">\(，P(F)d^n F \propto C^{-1/2} d^n F \quad\text{或}\quad P'(\lambda)d^n\lambda \propto C^{1/2} d^n\lambda\ , \qquad (52)\)</span></p>
+<p>其中 <span class="arithmatex">\(C = \det C^{ab}\)</span>。</p>
+<p><strong>高斯分布</strong>是正则分布的一个特例——它们在均值和相关性受约束的条件下使熵最大化。考虑 <span class="arithmatex">\(D\)</span> 维高斯分布，</p>
+<div class="arithmatex">\[p(x|\mu,C) = \frac{c^{1/2}}{(2\pi)^{D/2}} \exp\left[-\frac{1}{2}C_{ij}(x^i-\mu^i)(x^j-\mu^j)\right]\ , \qquad (53)\]</div>
+<p>其中 <span class="arithmatex">\(1 \leq i \leq D\)</span>，<span class="arithmatex">\(C_{ij}\)</span> 是相关矩阵的逆，且 <span class="arithmatex">\(c = \det C_{ij}\)</span>。均值 <span class="arithmatex">\(\mu^i\)</span> 是 <span class="arithmatex">\(D\)</span> 个参数 <span class="arithmatex">\(\mu^i\)</span>，而对称矩阵 <span class="arithmatex">\(C_{ij}\)</span> 另外有 <span class="arithmatex">\(\frac{1}{2}D(D+1)\)</span> 个参数。因此，统计流形的维数为 <span class="arithmatex">\(\frac{1}{2}D(D+3)\)</span>。</p>
+<p>计算 <span class="arithmatex">\(p(x|\mu,C)\)</span> 与 <span class="arithmatex">\(p(x|\mu+d\mu, C+dC)\)</span> 之间的信息距离，需要仔细跟踪所有涉及的指标。略去所有细节，结果为</p>
+<div class="arithmatex">\[d\ell^2 = g_{ij}d\mu^i d\mu^j + g_k^{ij} dC_{ij}d\mu^k + g^{ij\,kl} dC_{ij}dC_{kl}\ , \qquad (54)\]</div>
+<!-- page 11 -->
+
+<p>其中</p>
+<div class="arithmatex">\[g_{ij} = C_{ij}\ ,\quad g_k^{ij} = 0\ ,\quad\text{and}\quad g^{ij\,kl} = \frac{1}{4}(C^{ik}C^{jl}+C^{il}C^{jk})\ , \qquad(55)\]</div>
+<p>其中 <span class="arithmatex">\(C^{ik}\)</span> 是相关矩阵，即 <span class="arithmatex">\(C^{ik}C_{kj}=\delta^i_j\)</span>。因此，</p>
+<div class="arithmatex">\[d\ell^2 = C_{ij}dx^i dx^j + \frac{1}{2}C^{ik}C^{jl}dC_{ij}dC_{kl}\ . \qquad(56)\]</div>
+<p>最后我们考虑几个特例。对于仅在均值上有所不同的高斯分布，<span class="arithmatex">\(p(x|\mu,C)\)</span> 与 <span class="arithmatex">\(p(x|\mu+d\mu,C)\)</span> 之间的信息距离可通过令 <span class="arithmatex">\(dC_{ij}=0\)</span> 得到，即</p>
+<div class="arithmatex">\[d\ell^2 = C_{ij}dx^i dx^j\ , \qquad(57)\]</div>
+<p>这是式(49)的一个实例。最后，对于球对称高斯分布<span class="arithmatex">\(，p(x|\mu,\sigma) = \frac{1}{(2\pi\sigma^2)^{D/2}}\exp\left[-\frac{1}{2\sigma^2}\delta_{ij}(x^i-\mu^i)(x^j-\mu^j)\right]\ . \qquad(58)\)</span>
+协方差矩阵及其逆均为对角矩阵，且与单位矩阵成正比<span class="arithmatex">\(，C_{ij} = \frac{1}{\sigma^2}\delta_{ij}\ ,\quad C^{ij} = \sigma^2\delta^{ij}\ ,\quad\text{and}\quad c = \sigma^{-2D}\ . \qquad(59)\)</span></p>
+<p>将</p>
+<div class="arithmatex">\[dC_{ij} = d\frac{1}{\sigma^2}\delta_{ij} = -\frac{2\delta_{ij}}{\sigma^3}d\sigma \qquad(60)\]</div>
+<p>代入式(56)，诱导的信息度量为</p>
+<div class="arithmatex">\[d\ell^2 = \frac{1}{\sigma^2}\delta_{ij}d\mu^i d\mu^j + \frac{1}{2}\sigma^4\delta^{ik}\delta^{jl}\frac{2\delta_{ij}}{\sigma^3}d\sigma\frac{2\delta_{kl}}{\sigma^3}d\sigma \qquad(61)\]</div>
+<p>利用</p>
+<div class="arithmatex">\[\delta^{ik}\delta^{jl}\delta_{ij}\delta_{kl} = \delta^k_j\delta^j_k = \delta^k_k = D\ , \qquad(62)\]</div>
+<p>可简化为</p>
+<div class="arithmatex">\[d\ell^2 = \frac{\delta_{ij}}{\sigma^2}d\mu^i d\mu^j + \frac{2D}{\sigma^2}(d\sigma)^2\ . \qquad(63)\]</div>
+<h2 class="tutor-section" id="7-结论">7 结论<a class="headerlink" href="#7-结论" title="Permanent link">&para;</a></h2>
+<p>信息度量的定义只不过是浅尝辄止。我们不仅可以引入长度和体积，还可以利用各种其他几何概念，如测地线、法向投影、平行移动的概念、协变导数、联络和曲率。信息几何方法的威力通过大量的应用得到了证明。作为进入浩如烟海的文献的一个非常不完整的入口</p>
+<p>11</p>
+<!-- page 12 -->
+
+<p>在数理统计学中，见 [4][13][14][15]；在模型选择中，见 [16][17]；在热力学中，见 [18]；关于其向量子信息几何的推广，见 [19][20]。</p>
+<p>这些方法最终的适用范围仍有待探索。在本教程中，我们论证了信息几何是一种自然且必然的工具，用于在不完全信息下进行推理。人们或许可以猜想，既然科学在很大程度上就是在不完全信息下进行推理，那么我们理应预期在科学的方方面面都能发现概率、熵以及几何。事实上，我甚至敢预测，一旦我们更好地理解了时空物理学，我们就会发现，就连那古老而熟悉的最初几何——即欧几里得关于物理空间的几何——也将被证明是信息几何的一种体现。但那是未来的工作。</p>
+<h2 id="参考文献">参考文献<a class="headerlink" href="#参考文献" title="Permanent link">&para;</a></h2>
+<p>[1] A. Einstein，第67页，载于 "Albert Einstein: Philosopher-Scientist"，P. A. Schilpp 编（Open Court，1969）。</p>
+<p>[2] N. N. Čencov：<em>Statistical Decision Rules and Optimal Inference</em>，Transl. Math. Monographs，第53卷，Am. Math. Soc.（Providence，1981）。</p>
+<p>[3] S. Amari，<em>Differential-Geometrical Methods in Statistics</em>（Springer-Verlag，1985）。</p>
+<p>[4] S. Amari 与 H. Nagaoka，<em>Methods of Information Geometry</em>（Am. Math. Soc./Oxford U. Press，2000）。</p>
+<p>[5] A. Caticha，<em>Entropic Inference and the Foundations of Physics</em>（USP Press，São Paulo，Brazil 2012）；在线获取：http://www.albany.edu/physics/ACaticha-EIFP-book.pdf。</p>
+<p>[6] W. K. Wootters，"Statistical distance and Hilbert space"，Phys. Rev. <strong>D</strong>，357（1981）。</p>
+<p>[7] V. Balasubramanian，"Statistical inference, Occam's razor, and statistical mechanics on the space of probability distributions"，Neural Computation <strong>9</strong>，349（1997）。</p>
+<p>[8] C. R. Rao，"Information and the accuracy attainable in the estimation of statistical parameters"，Bull. Calcutta Math. Soc. <strong>37</strong>，81（1945）。</p>
+<p>[9] C. Atkinson 与 A. F. S. Mitchell，"Rao's distance measure"，Sankhyā <strong>43A</strong>，345（1981）。</p>
+<p>[10] R. A. Fisher，"Theory of statistical estimation"，Proc. Cambridge Philos. Soc. <strong>122</strong>，700（1925）。</p>
+<!-- page 13 -->
+
+<p>[11] C. C. Rodríguez, “The metrics generated by the Kullback number”, <em>Maximum Entropy and Bayesian Methods</em>, J. Skilling (编) (Kluwer, Dordrecht 1989).</p>
+<p>[12] L. L. Campbell, “An extended Čencov characterization of the information metric”, Proc. Am. Math. Soc. <strong>98</strong>, 135 (1986).</p>
+<p>[13] B. Efron, Ann. Stat. <strong>3</strong>, 1189 (1975).</p>
+<p>[14] C. C. Rodríguez, “Entropic priors”, <em>Maximum Entropy and Bayesian Methods</em>, 由 W. T. Grandy Jr. 和 L. H. Schick 编辑 (Kluwer, Dordrecht 1991).</p>
+<p>[15] R. A. Kass 和 P. W. Vos, <em>Geometric Foundations of Asymptotic Inference</em> (Wiley, 1997).</p>
+<p>[16] J. Myung, V. Balasubramanian, 和 M.A. Pitt, Proc. Nat. Acad. Sci. <strong>97</strong>, 11170 (2000).</p>
+<p>[17] C. C. Rodríguez, “The ABC of model selection: AIC, BIC and the new CIC”, <em>Bayesian Inference and Maximum Entropy Methods in Science and Engineering</em>, 由 K. Knuth <em>et al.</em> 编辑, AIP Conf. Proc. Vol. <strong>803</strong>, 80 (2006) (omega.albany.edu:8008/CIC/me05.pdf).</p>
+<p>[18] G. Ruppeiner, Rev. Mod. Phys. <strong>67</strong>, 605 (1995).</p>
+<p>[19] R. Balian, Y. Alhassid 和 H. Reinhardt, Phys Rep., <strong>131</strong>, 2 (1986).</p>
+<p>[20] R. F. Streater, Rep. Math. Phys., <strong>38</strong>, 419-436 (1996).</p>
+<p>13</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/marked.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/purify.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor-core.js"></script>
+      
+        <script src="../../../javascripts/tutor/widgets.js"></script>
+      
+        <script src="../../../javascripts/tutor/messages.js"></script>
+      
+        <script src="../../../javascripts/tutor/steprail.js"></script>
+      
+        <script src="../../../javascripts/tutor/focus.js"></script>
+      
+        <script src="../../../javascripts/tutor/settings-dialog.js"></script>
+      
+        <script src="../../../javascripts/tutor/profile-drawer.js"></script>
+      
+        <script src="../../../javascripts/tutor/panel.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor.js"></script>
+      
+    
+  </body>
+</html>

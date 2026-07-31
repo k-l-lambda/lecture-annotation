@@ -1,0 +1,2136 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/Information_Geometry_Elementary_Introduction/08_references/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>08 references - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/tutor.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#参考文献" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              08 references
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#参考文献" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        参考文献
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>08 references</h1>
+
+<!-- page 49 -->
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><span class="arithmatex">\(\mathcal{P}g\)</span></th>
+<th style="text-align: left;">Fisher信息度量张量场</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">exponential connection <span class="arithmatex">\({}^e_{\mathcal{P}}\nabla\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\({}^e_{\mathcal{P}}\nabla := E_\theta\left[(\partial_i\partial_j l)(\partial_k l)\right]\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">mixture connection <span class="arithmatex">\({}^m_{\mathcal{P}}\nabla\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\({}^m_{\mathcal{P}}\nabla := E_\theta\left[(\partial_i\partial_j l + \partial_i l\partial_j l)(\partial_k l)\right]\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">expected skewness tensor <span class="arithmatex">\(C_{ijk}\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(C_{ijk} := E_\theta\left[\partial_i l\partial_j l\partial_k l\right]\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">expected <span class="arithmatex">\(\alpha\)</span>-connections</td>
+<td style="text-align: left;"><span class="arithmatex">\({}_{\mathcal{P}}\Gamma^{\alpha k}_{\ ij} := -\frac{1+\alpha}{2}C_{ijk} = E_\theta\left[\left(\partial_i\partial_j l + \frac{1-\alpha}{2}\partial_i l\partial_j l\right)(\partial_k l)\right]\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(\equiv\)</span></td>
+<td style="text-align: left;">几何结构的等价性</td>
+</tr>
+</tbody>
+</table>
+<h2 id="参考文献">参考文献<a class="headerlink" href="#参考文献" title="Permanent link">&para;</a></h2>
+<p>[1] P-A Absil, Robert Mahony, and Rodolphe Sepulchre. <em>Optimization algorithms on matrix manifolds</em>. Princeton University Press, 2009.</p>
+<p>[2] Pierre-Antoine Absil, Robert Mahony, and Rodolphe Sepulchre. <em>Optimization algorithms on matrix manifolds</em>. Princeton University Press, 2009.</p>
+<p>[3] Maks Aizikovich Akivis and Boris Abramovich Rosenfeld. <em>Élie Cartan (1869-1951)</em>, 第123卷. American Mathematical Society, 2011.</p>
+<p>[4] Shun-ichi Amari. Theory of information spaces: A differential geometrical foundation of statistics. <em>Post RAAG Reports</em>, 1980.</p>
+<p>[5] Shun-ichi Amari. <em>Differential-geometrical methods in statistics</em>. <em>Lecture Notes on Statistics</em>, 28, 1985. 1990年第二版.</p>
+<p>[6] Shun-ichi Amari. Natural gradient works efficiently in learning. <em>Neural computation</em>, 10(2):251–276, 1998.</p>
+<p>[7] Shun-ichi Amari. <em>New developments of information geometry</em>. Saiensu'sha, Tokyo, 2014. Jouhou kikagaku no shintenkai（日语）.</p>
+<p>[8] Shun-ichi Amari. <em>Information Geometry and Its Applications</em>. Applied Mathematical Sciences. Springer Japan, 2016.</p>
+<p>[9] Shun-ichi Amari and Hiroshi Nagaoka. <em>Methods of Information Geometry</em>. American Mathematical Society, 2007.</p>
+<p>[10] Khadiga A. Arwini and Christopher Terence John Dodson. <em>Information Geometry: Near Randomness and Near Independance</em>. Springer, 2008.</p>
+<p>[11] John Ashburner and Karl J. Friston. Diffeomorphic registration using geodesic shooting and Gauss-Newton optimisation. <em>NeuroImage</em>, 55(3):954–967, 2011.</p>
+<p>[12] Nihat Ay and Shun-ichi Amari. A novel approach to canonical divergences within information geometry. <em>Entropy</em>, 17(12):8111–8129, 2015.</p>
+<p>[13] Nihat Ay, Paolo Gibilisco, and Frantisek Matúš. <em>Information Geometry and its Applications: On the Occasion of Shun-ichi Amari's 80th Birthday</em>, <em>Springer Proceedings in Mathematics &amp; Statistics</em>第252卷. Springer, 2018. 紧随2016年6月在捷克共和国Liblice举办的活动之后。</p>
+<p>[14] Katy S Azoury and Manfred K Warmuth. Relative loss bounds for on-line density estimation with the exponential family of distributions. <em>Machine Learning</em>, 43(3):211–246, 2001.</p>
+<p>[15] John C. Baez and Derek K. Wise. Teleparallel gravity as a higher gauge theory. <em>Communications in Mathematical Physics</em>, 333(1):153–186, 2015.</p>
+<p>[16] Arindam Banerjee, Srujana Merugu, Inderjit S Dhillon, and Joydeep Ghosh. Clustering with Bregman divergences. <em>Journal of machine learning research</em>, 6(Oct):1705–1749, 2005.</p>
+<p>49</p>
+<!-- page 50 -->
+
+<p>[17] Ole E. Barndorff-Nielsen, David Roxbee Cox, 和 Nancy Reid. The role of differential geometry in statistical theory. <em>International Statistical Review</em>, 第83–96页, 1986.</p>
+<p>[18] Arnaud Berny. Selection and reinforcement learning for combinatorial optimization. 载于 <em>International Conference on Parallel Problem Solving from Nature</em>, 第601–610页. Springer, 2000.</p>
+<p>[19] Hans-Georg Beyer 和 Hans-Paul Schwefel. Evolution strategies–a comprehensive introduction. <em>Natural computing</em>, 1(1):3–52, 2002.</p>
+<p>[20] Jean-Daniel Boissonnat, Frank Nielsen, 和 Richard Nock. Bregman Voronoi diagrams. <em>Discrete &amp; Computational Geometry</em>, 44(2):281–307, 2010.</p>
+<p>[21] Silvère Bonnabel. Stochastic gradient descent on Riemannian manifolds. <em>IEEE Transactions on Automatic Control</em>, 58(9):2217–2229, 2013.</p>
+<p>[22] Jean-Pierre Bourguignon. Ricci curvature and measures. <em>Japanese Journal of Mathematics</em>, 4(1):27–45, 2009.</p>
+<p>[23] Lev M. Bregman. The relaxation method of finding the common point of convex sets and its application to the solution of problems in convex programming. <em>USSR computational mathematics and mathematical physics</em>, 7(3):200–217, 1967.</p>
+<p>[24] Sébastien Bubeck 等. Convex optimization: Algorithms and complexity. <em>Foundations and Trends® in Machine Learning</em>, 8(3-4):231–357, 2015.</p>
+<p>[25] Ovidiu Calin 和 Constantin Udriste. <em>Geometric Modeling in Probability and Statistics</em>. Mathematics and Statistics. Springer International Publishing, 2014.</p>
+<p>[26] L. Lorne Campbell. An extended Čencov characterization of the information metric. <em>Proceedings of the American Mathematical Society</em>, 98(1):135–141, 1986.</p>
+<p>[27] Elie Joseph Cartan. <em>On manifolds with an affine connection and the theory of general relativity</em>. Bibliopolis, 1986.</p>
+<p>[28] AL Cauchy. Methode générale pour la résolution des systèmes d'équations simultanées. <em>Comptes Rendus de l'Académie des Sciences</em>, 25:536–538, 1847.</p>
+<p>[29] Nikolai N. Chentsov. Statistical decision rules and optimal inference. <em>Monographs, American Mathematical Society, Providence, RI</em>, 1982.</p>
+<p>[30] JM Corcuera 和 Federica Giummolè. A characterization of monotone and regular divergences. <em>Annals of the Institute of Statistical Mathematics</em>, 50(3):433–450, 1998.</p>
+<p>[31] Grenville J Croll. The natural philosophy of Kazuo Kondo. arXiv 预印本 arXiv:0712.0641, 2007.</p>
+<p>[32] Jean-Pierre Crouzeix. A relationship between the second derivatives of a convex function and of its conjugate. <em>Mathematical Programming</em>, 13(1):364–365, 1977.</p>
+<p>[33] Imre Csiszár. Information-type measures of difference of probability distributions and indirect observation. <em>studia scientiarum Mathematicarum Hungarica</em>, 2:229–318, 1967.</p>
+<p>[34] Imre Csiszár 和 Paul C Shields. Information theory and statistics: A tutorial. <em>Foundations and Trends® in Communications and Information Theory</em>, 1(4):417–528, 2004.</p>
+<p>[35] Haskell B Curry. The method of steepest descent for non-linear minimization problems. <em>Quarterly of Applied Mathematics</em>, 2(3):258–261, 1944.</p>
+<p>[36] Anand Ganesh Dabak. <em>A geometry for detection theory</em>. 博士论文, Rice University, 1993.</p>
+<p>50</p>
+<!-- page 51 -->
+
+<p>[37] Stephen Della Pietra, Vincent Della Pietra, 和 John Lafferty. Inducing features of random fields. <em>IEEE transactions on pattern analysis and machine intelligence</em>, 19(4):380–393, 1997.</p>
+<p>[38] Manfredo P Do Carmo. <em>Differential geometry of curves and surfaces: revised and updated second edition</em>. Courier Dover Publications, 2016.</p>
+<p>[39] Christopher Terence John Dodson, 编. <em>Geometrization of statistical theory</em>. ULDM Publications, 1987. University of Lancaster, Department of Mathematics.</p>
+<p>[40] D. C. Dowson 和 Basil V. Landau. The Fréchet distance between multivariate normal distributions. <em>Journal of multivariate analysis</em>, 12(3):450–455, 1982.</p>
+<p>[41] Bradley Efron 等. Defining the curvature of a statistical problem (with applications to second order efficiency). <em>The Annals of Statistics</em>, 3(6):1189–1242, 1975.</p>
+<p>[42] Shinto Eguchi. Second order efficiency of minimum contrast estimators in a curved exponential family. <em>The Annals of Statistics</em>, 第793–803页, 1983.</p>
+<p>[43] Shinto Eguchi 等. A differential geometric approach to statistical inference on the basis of contrast functionals. <em>Hiroshima mathematical journal</em>, 15(2):341–391, 1985.</p>
+<p>[44] Bent Fuglede 和 Flemming Topsøe. Jensen-Shannon divergence and Hilbert space embedding. 载于 <em>International Symposium on Information Theory (ISIT)</em>, 第31页. IEEE, 2004.</p>
+<p>[45] Akio Fujiwara. <em>Foundations of Information Geometry</em>. Makino Shoten, Tokyo, 2015. Jouhou kikagaku no kisou (日文).</p>
+<p>[46] Hitoshi Furuhata. Hypersurfaces in statistical manifolds. <em>Differential Geometry and its Applications</em>, 27(3):420–429, 2009.</p>
+<p>[47] Paolo Gibilisco, Eva Riccomagno, Maria Piera Rogantin, 和 Henry P. Wynn, 编. <em>Algebraic and Geometric Methods in Statistics</em>. Cambridge University Press, 2009.</p>
+<p>[48] Evarist Giné 和 Richard Nickl. <em>Mathematical foundations of infinite-dimensional statistical models</em>, 第40卷. Cambridge University Press, 2015.</p>
+<p>[49] Erika Gomes-Gonçalves, Henryk Gzyl, 和 Frank Nielsen. Geometry and fixed-rate quantization in riemannian metric spaces induced by separable Bregman divergences. 载于 Frank Nielsen 和 Frédéric Barbaresco, 编, <em>Geometric Science of Information - 4th International Conference, GSI 2019, Toulouse, France, August 27-29, 2019, Proceedings</em>, 第11712卷, <em>Lecture Notes in Computer Science</em>, 第351–358页. Springer, 2019.</p>
+<p>[50] G. J. Gordon. <em>Approximate solutions to Markov decision processes</em>. 博士论文, Department of Computer Science, Carnegie Mellon University, 1999.</p>
+<p>[51] Masahito Hayashi. <em>Quantum information</em>. Springer, 2006.</p>
+<p>[52] Jean-Baptiste Hiriart-Urruty 和 Claude Lemaréchal. <em>Fundamentals of convex analysis</em>. Springer Science &amp; Business Media, 2012.</p>
+<p>[53] Harold Hotelling. Spaces of statistical parameters. <em>Bulletin of the American Mathematical Society (AMS)</em>, 36:191, 1930.</p>
+<p>[54] Shun ichi Amari 和 Hiroshi Nagaoka. <em>Methods of Information Geometry</em>. Iwanami Shoten, Japan, 1993. Jouhou kika no houhou (日文).</p>
+<p>[55] Harold Jeffreys. An invariant form for the prior probability in estimation problems. <em>Proc. R. Soc. Lond. A</em>, 186(1007):453–461, 1946.</p>
+<p>51</p>
+<!-- page 52 -->
+
+<p>[56] Jiantao Jiao, Thomas A Courtade, Albert No, Kartik Venkat, 和 Tsachy Weissman. Information measures: the curious case of the binary alphabet. <em>IEEE Transactions on Information Theory</em>, 60(12):7616–7626, 2014.</p>
+<p>[57] Satoshi Kakihara, Atsumi Ohara, 和 Takashi Tsuchiya. Information geometry and interior-point algorithms in semidefinite programs and symmetric cone programs. <em>J. Optim. Theory Appl.</em>, 157(3):749–780, 2013.</p>
+<p>[58] Robert E. Kass 和 Paul W. Vos. <em>Geometrical Foundations of Asymptotic Inference</em>. Wiley-Interscience, 07 1997.</p>
+<p>[59] Michiaki Kawaguchi. An introduction to the theory of higher order spaces I. the theory of Kawaguchi spaces. <em>RAAG Memoirs</em>, 3:718–734, 1960.</p>
+<p>[60] Robert W Keener. <em>Theoretical statistics: Topics for a core course</em>. Springer, 2011.</p>
+<p>[61] Takashi Kurose. On the divergences of 1-conformally flat statistical manifolds. <em>Tohoku Mathematical Journal, Second Series</em>, 46(3):427–433, 1994.</p>
+<p>[62] Stefan L. Lauritzen. Statistical manifolds. <em>Differential geometry in statistical inference</em>, 10:163–216, 1987.</p>
+<p>[63] Luigi Malagò 和 Giovanni Pistone. Information geometry of the Gaussian distribution in view of stochastic optimization. 载于 <em>Proceedings of the 2015 ACM Conference on Foundations of Genetic Algorithms XIII</em>, 第150–162页, 2015.</p>
+<p>[64] Ann F. S. Mitchell. Statistical manifolds of univariate elliptic distributions. <em>International Statistical Review/Revue Internationale de Statistique</em>, 第1–16页, 1988.</p>
+<p>[65] Ann F. S. Mitchell. The information matrix, skewness tensor and α-connections for the general multivariate elliptic distribution. <em>Annals of the Institute of Statistical Mathematics</em>, 41(2):289–304, 1989.</p>
+<p>[66] Uwe Mühlich. <em>Fundamentals of tensor calculus for engineers with a primer on smooth manifolds</em>, 第230卷. Springer, 2017.</p>
+<p>[67] Michael Murray 和 John Rice. <em>Differential geometry and statistics</em>. 第48号载于 <em>Monographs on Statistics and Applied Probability</em>. Chapman and Hall, 1993.</p>
+<p>[68] Hiroshi Nagaoka 和 Shun-ichi Amari. Differential geometry of smooth families of probability distributions. 技术报告, University of Tokyo, 1982. METR 82-7.</p>
+<p>[69] Jan Naudts 和 Jun Zhang. Rho–tau embedding and gauge freedom in information geometry. <em>Information Geometry</em>, 2018年8月.</p>
+<p>[70] Frank Nielsen. Legendre transformation and information geometry, 2010.</p>
+<p>[71] Frank Nielsen. Cramér-Rao lower bound and information geometry. 载于 <em>Connected at Infinity II</em>, 第18–37页. Springer, 2013.</p>
+<p>[72] Frank Nielsen. Hypothesis testing, information divergence and computational geometry. 载于 <em>GSI</em>, 第241–248页, 2013.</p>
+<p>[73] Frank Nielsen. An information-geometric characterization of Chernoff information. <em>IEEE SPL</em>, 20(3):269–272, 2013.</p>
+<p>[74] Frank Nielsen. <em>Geometric Theory of Information</em>. Springer, 2014.</p>
+<p>[75] Frank Nielsen. <em>Geometric Structures of Information</em>. Springer, 2018.</p>
+<p>52</p>
+<!-- page 53 -->
+
+<p>[76] Frank Nielsen. What is... an information projection? Notices of the AMS, 65(3)(10):321–324, 2018.</p>
+<p>[77] Frank Nielsen. On geodesic triangles with right angles in a dually flat space. arXiv 预印本 arXiv:1910.03935, 2019.</p>
+<p>[78] Frank Nielsen. On the Jensen–Shannon symmetrization of distances relying on abstract means. Entropy, 21(5):485, 2019.</p>
+<p>[79] Frank Nielsen. On Voronoi diagrams on the information-geometric Cauchy manifolds. Entropy, 22(7):713, 2020.</p>
+<p>[80] Frank Nielsen 和 Frédéric Barbaresco, 编. Geometric Science of Information, 卷 8085 的 Lecture Notes in Computer Science. Springer, 2013.</p>
+<p>[81] Frank Nielsen 和 Frédéric Barbaresco, 编. Geometric Science of Information, 卷 9389 的 Lecture Notes in Computer Science. Springer, 2015.</p>
+<p>[82] Frank Nielsen 和 Frédéric Barbaresco, 编. Geometric Science of Information, 卷 10589 的 Lecture Notes in Computer Science. Springer, 2017.</p>
+<p>[83] Frank Nielsen 和 Sylvain Boltz. The Burbea-Rao and Bhattacharyya centroids. IEEE Transactions on Information Theory, 57(8), 2011.</p>
+<p>[84] Frank Nielsen 和 Vincent Garcia. Statistical exponential families: A digest with flash cards. arXiv 预印本 arXiv:0911.4863, 2009.</p>
+<p>[85] Frank Nielsen 和 Gaëtan Hadjeres. Monte Carlo information geometry: The dually flat case. CoRR, abs/1803.07225, 2018.</p>
+<p>[86] Frank Nielsen 和 Gaëtan Hadjeres. Monte Carlo information-geometric structures. 收录于 Geometric Structures of Information, 页 69–103. Springer, 2019.</p>
+<p>[87] Frank Nielsen 和 Richard Nock. Sided and symmetrized Bregman centroids. IEEE transactions on Information Theory, 55(6), 2009.</p>
+<p>[88] Frank Nielsen 和 Richard Nock. Entropies and cross-entropies of exponential families. 收录于 2010 IEEE International Conference on Image Processing, 页 3621–3624. IEEE, 2010.</p>
+<p>[89] Frank Nielsen 和 Richard Nock. Hyperbolic Voronoi diagrams made easy. 收录于 International Conference on Computational Science and Its Applications (ICCSA), 页 74–80. IEEE, 2010.</p>
+<p>[90] Frank Nielsen 和 Richard Nock. On the chi square and higher-order chi distances for approximating f-divergences. IEEE Signal Processing Letters, 21(1):10–13, 2013.</p>
+<p>[91] Frank Nielsen 和 Richard Nock. Total Jensen divergences: Definition, properties and clustering. 收录于 ICASSP, 页 2016–2020, 2015.</p>
+<p>[92] Frank Nielsen 和 Richard Nock. Patch matching with polynomial exponential families and projective divergences. 收录于 SISAP, 页 109–116, 2016.</p>
+<p>[93] Frank Nielsen 和 Richard Nock. On the geometry of mixtures of prescribed distributions. 收录于 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 页 2861–2865. IEEE, 2018.</p>
+<p>[94] Frank Nielsen 和 Richard Nock. Cumulant-free closed-form formulas for some common (dis)similarities between densities of an exponential family. arXiv 预印本 arXiv:2003.02469, 2020.</p>
+<p>[95] Frank Nielsen 和 Ke Sun. Guaranteed bounds on information-theoretic measures of univariate mixtures using piecewise log-sum-exp inequalities. Entropy, 18(12):442, 2016.</p>
+<p>53</p>
+<!-- page 54 -->
+
+<p>[96] Frank Nielsen 和 Ke Sun. Guaranteed bounds on the Kullback–Leibler divergence of univariate mixtures. <em>IEEE Signal Processing Letters</em>, 23(11):1543–1546, 2016.</p>
+<p>[97] Frank Nielsen, Ke Sun, 和 Stéphane Marchand-Maillet. On Hölder projective divergences. <em>Entropy</em>, 19(3):122, 2017.</p>
+<p>[98] Richard Nock, Frank Nielsen, 和 Shun-ichi. Amari. On conformal divergences and their population minimizers. <em>IEEE TIT</em>, 62(1):527–538, 2016.</p>
+<p>[99] Katsumi Nomizu, Nomizu Katsumi, 和 Takeshi Sasaki. <em>Affine differential geometry: Geometry of affine immersions</em>. Cambridge university press, 1994.</p>
+<p>[100] Aleksandr Petrovich Norden. On pairs of conjugate parallel displacements in multidimensional spaces. <em>Doklady Akademii nauk SSSR</em>, 49(9):1345–1347, 1945. Kazan State University, Comptes rendus de l'Académie des sciences de l'URSS.</p>
+<p>[101] Atsumi Ohara 和 Takashi Tsuchiya. An information geometric approach to polynomial-time interior-point algorithms: Complexity bound via curvature integral. The Institute of Statistical Mathematics, 1055, 2007. 研究备忘录.</p>
+<p>[102] María del Carmen Pardo 和 Igor Vajda. About distances of discrete distributions satisfying the data processing theorem of information theory. <em>IEEE transactions on information theory</em>, 43(4):1288–1293, 1997.</p>
+<p>[103] Charles Sanders Peirce. <em>Chance, love, and logic: Philosophical essays</em>. U of Nebraska Press, 1998.</p>
+<p>[104] Linyu Peng, Huafei Sun, 和 Lin Jiu. The geometric structure of the Pareto distribution. <em>Boletin de la Asociación Matemática Venezolana</em>, 14(1-2):5–13, 2007.</p>
+<p>[105] Tongzhu Li Linyu Peng 和 Huafei Sun. The geometric structure of the inverse gamma distribution. <em>Contributions to Algebra and Geometry</em>, 49(1):217–225, 2008.</p>
+<p>[106] Gia-Thuy Pham, Rémy Boyer, 和 Frank Nielsen. Computational information geometry for binary classification of high-dimensional random tensors. <em>Entropy</em>, 20(3):203, 2018.</p>
+<p>[107] Giovanni Pistone. Nonparametric information geometry. 载于 <em>Geometric Science of Information</em>, 第5–36页. Springer, 2013.</p>
+<p>[108] Yu Qiao 和 Nobuaki Minematsu. A study on invariance of f-divergence and its application to speech recognition. <em>IEEE Transactions on Signal Processing</em>, 58(7):3884–3890, 2010.</p>
+<p>[109] Hernando Quevedo. Geometrothermodynamics. <em>Journal of Mathematical Physics</em>, 48(1):013506, 2007.</p>
+<p>[110] C. Radhakrishna Rao. Information and the accuracy attainable in the estimation of statistical parameters. 载于 <em>Breakthroughs in statistics</em>, 第235–247页. Springer, 1992.</p>
+<p>[111] Radhakrishna C. Rao. Information and the accuracy attainable in the estimation of statistical parameters. <em>Bulletin of the Calcutta Mathematical Society</em>, 37:81–91, 1945.</p>
+<p>[112] Garvesh Raskutti 和 Sayan Mukherjee. The information geometry of mirror descent. <em>IEEE Transactions on Information Theory</em>, 61(3):1451–1457, 2015.</p>
+<p>[113] Ferran Reverter 和 Josep M. Oller. Computing the Rao distance for Gamma distributions. <em>Journal of computational and applied mathematics</em>, 157(1):155–167, 2003.</p>
+<p>[114] Yoshiharu Sato, Kazuaki Sugawa, 和 Michiaki Kawaguchi. The geometrical structure of the parameter space of the two-dimensional normal distribution. <em>Reports on Mathematical Physics</em>, 16(1):111–119, 1979.</p>
+<p>54</p>
+<!-- page 55 -->
+
+<p>[115] Gerhard Schurz. Patterns of abduction. <em>Synthese</em>, 164(2):201–234, 2008.</p>
+<p>[116] R. N. Sen. On parallelism in Riemannian space I. <em>Bull. Calcutta Math. Soc</em>, 36:102–107, 1944.</p>
+<p>[117] R. N. Sen. On parallelism in Riemannian space II. <em>Bull. Calcutta Math. Soc</em>, 37:153–159, 1944.</p>
+<p>[118] R. N. Sen. On parallelism in Riemannian space III. <em>Bull. Calcutta Math. Soc</em>, 38:161–167, 1946.</p>
+<p>[119] Claude Elwood Shannon. A mathematical theory of communication. <em>Bell Syst. Tech. J.</em>, 27:623–656, 1948.</p>
+<p>[120] Hirohiko Shima. <em>The geometry of Hessian structures</em>. World Scientific, 2007.</p>
+<p>[121] Lene Theil Skovgaard. A Riemannian geometry of the multivariate normal model. <em>Scandinavian journal of statistics</em>, 页 211–223, 1984.</p>
+<p>[122] Anuj Srivastava, Wei Wu, Sebastian Kurtek, Eric Klassen, 和 James Stephen Marron. Registration of Functional Data Using Fisher-Rao Metric. <em>ArXiv e-prints</em>, 03 2011.</p>
+<p>[123] Stephen M. Stigler. The epic story of maximum likelihood. <em>Statistical Science</em>, 页 598–620, 2007.</p>
+<p>[124] Ke Sun 和 Frank Nielsen. Relative Fisher information and natural gradient for learning large modular models. 载于 <em>ICML</em>, 页 3289–3298, 2017.</p>
+<p>[125] Asuka Takatsu. Wasserstein geometry of Gaussian measures. <em>Osaka Journal of Mathematics</em>, 48(4):1005–1026, 2011.</p>
+<p>[126] Matus Telgarsky 和 Sanjoy Dasgupta. Agglomerative Bregman clustering. 载于 <em>Proceedings of the 29th International Coference on International Conference on Machine Learning</em>, 页 1011–1018. Omnipress, 2012.</p>
+<p>[127] Igor Vajda. On metric divergences of probability measures. <em>Kybernetika</em>, 45(6):885–900, 2009.</p>
+<p>[128] Hông Vân Lê. Statistical manifolds are statistical models. <em>Journal of Geometry</em>, 84(1-2):83–93, 2006.</p>
+<p>[129] Hông Vân Lê. The uniqueness of the Fisher metric as information metric. <em>Annals of the Institute of Statistical Mathematics</em>, 69(4):879–896, 2017.</p>
+<p>[130] Cédric Villani. <em>Optimal transport: old and new</em>, 卷 338. Springer Science &amp; Business Media, 2008.</p>
+<p>[131] Abraham Wald. Statistical decision functions. <em>The Annals of Mathematical Statistics</em>, 页 165–205, 1949.</p>
+<p>[132] Abraham Wald. <em>Statistical decision functions</em>. Wiley, 1950.</p>
+<p>[133] MI Wanas. Absolute parallelism geometry: Developments, applications and problems. <em>arXiv preprint gr-qc/0209050</em>, 2002.</p>
+<p>[134] Shao-Wen Wei, Yu-Xiao Liu, 和 Robert B Mann. Ruppeiner geometry, phase transitions, and the microstructure of charged AdS black holes. <em>Physical Review D</em>, 100(12):124033, 2019.</p>
+<p>[135] Daan Wierstra, Tom Schaul, Tobias Glasmachers, Yi Sun, Jan Peters, 和 Jürgen Schmidhuber. Natural evolution strategies. <em>The Journal of Machine Learning Research</em>, 15(1):949–980, 2014.</p>
+<p>[136] Shintaro Yoshizawa 和 Kunio Tanabe. Dual differential geometry associated with kullback-leibler information on the gaussian distributions and its 2-parameter deformations. <em>SUT Journal of Mathematics</em>, 35(1):113–137, 1999.</p>
+<p>[137] Guodong Zhang, Shengyang Sun, David Duvenaud, 和 Roger Grosse. Noisy natural gradient as variational inference. 载于 <em>International Conference on Machine Learning</em>, 页 5852–5861, 2018.</p>
+<p>55</p>
+<!-- page 56 -->
+
+<p>[138] Jun Zhang. Divergence functions and geometric structures they induce on a manifold. 载于 Frank Nielsen, 主编, <em>Geometric Theory of Information</em>, 第1–30页. Springer, 2014.</p>
+<p>[139] Jun Zhang. On monotone embedding in information geometry. <em>Entropy</em>, 17(7):4485–4499, 2015.</p>
+<p>[140] Jun Zhang. Reference duality and representation duality in information geometry. <em>AIP Conference Proceedings</em>, 1641(1):130–146, 2015.</p>
+<p>[141] Zhenning Zhang, Huafei Sun, 和 Fengwei Zhong. Information geometry of the power inverse Gaussian distribution. <em>Applied Sciences</em>, 9, 2007.</p>
+<p>[142] Fengwei Zhong, Huafei Sun, 和 Zhenning Zhang. The geometry of the Dirichlet manifold. <em>Journal of the Korean Mathematical Society</em>, 45(3):859–870, 2008.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/marked.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/purify.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor-core.js"></script>
+      
+        <script src="../../../javascripts/tutor/widgets.js"></script>
+      
+        <script src="../../../javascripts/tutor/messages.js"></script>
+      
+        <script src="../../../javascripts/tutor/steprail.js"></script>
+      
+        <script src="../../../javascripts/tutor/focus.js"></script>
+      
+        <script src="../../../javascripts/tutor/settings-dialog.js"></script>
+      
+        <script src="../../../javascripts/tutor/profile-drawer.js"></script>
+      
+        <script src="../../../javascripts/tutor/panel.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor.js"></script>
+      
+    
+  </body>
+</html>

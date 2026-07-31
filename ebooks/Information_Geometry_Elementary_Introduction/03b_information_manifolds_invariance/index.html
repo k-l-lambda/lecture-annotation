@@ -1,0 +1,2376 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/Information_Geometry_Elementary_Introduction/03b_information_manifolds_invariance/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>03b information manifolds invariance - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/tutor.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#38-hessian-alpha-几何m-f-alpha-equiv-m-f-g-fnabla-alpha-fnablaalpha" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              03b information manifolds invariance
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#38-hessian-alpha-几何m-f-alpha-equiv-m-f-g-fnabla-alpha-fnablaalpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 Hessian \(\alpha\)-几何：\((M, F, \alpha) \equiv (M, {}^F g, {}^F\nabla^{-\alpha}, {}^F\nabla^{\alpha}\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#39-参数概率分布族的期望-alpha-流形mathcalp-_mathcalpg-_mathcalpnabla-alpha-_mathcalpnablaalpha" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.9 参数概率分布族的期望 \(\alpha\)-流形：\((\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{\alpha})\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#310-统计不变性的判据" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.10 统计不变性的判据
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#311-fisher-rao-期望黎曼流形mathcalp-_mathcalpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.11 Fisher-Rao 期望黎曼流形：\((\mathcal{P}, {}_\mathcal{P}g)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#312-单调-alpha-嵌入与度量规范自由度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.12 单调 \(\alpha\)-嵌入与度量规范自由度
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#313-对偶平坦空间与典范-bregman-散度" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.13 对偶平坦空间与典范 Bregman 散度
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>03b information manifolds invariance</h1>
+
+<!-- page 18 -->
+
+<p><img alt="图 7" src="../assets/fig07.png" /></p>
+<p>图 7：与光滑且严格凸生成器相关的常见对偶平坦空间。</p>
+<h3 class="tutor-section" id="38-hessian-alpha-几何m-f-alpha-equiv-m-f-g-fnabla-alpha-fnablaalpha">3.8 Hessian <span class="arithmatex">\(\alpha\)</span>-几何：<span class="arithmatex">\((M, F, \alpha) \equiv (M, {}^F g, {}^F\nabla^{-\alpha}, {}^F\nabla^{\alpha}\)</span><a class="headerlink" href="#38-hessian-alpha-几何m-f-alpha-equiv-m-f-g-fnabla-alpha-fnablaalpha" title="Permanent link">&para;</a></h3>
+<p>对偶平坦流形也被称为具有由凸势函数 <span class="arithmatex">\(F\)</span> 诱导的 Hessian 结构 [120] 的流形。由于我们构建了两个对偶仿射联络 <span class="arithmatex">\({}^{B_F}\nabla = {}^F\nabla\)</span> 与 <span class="arithmatex">\({}^{B_F}\nabla^* = {}^F\nabla^* = {}^{F^*}\nabla\)</span>，我们可以如下构造一族 <span class="arithmatex">\(\alpha\)</span>-几何：</p>
+<div class="arithmatex">\[
+{}^F g_{ij}(\theta) = \partial_i \partial_j F(\theta), \quad {}^F g^{ij}(\eta) = \partial^i \partial^j F(\eta), \tag{75}
+\]</div>
+<p>以及</p>
+<div class="arithmatex">\[
+{}^F\Gamma^\alpha_{ijk}(\theta) = \frac{1-\alpha}{2}\partial_i\partial_j\partial_k F(\theta), \quad {}^F\Gamma^{\alpha\ *}_{ijk}(\eta) = {}^{F^*}\Gamma^\alpha_{ijk}(\eta) = \frac{1+\alpha}{2}\partial^i\partial^j\partial^k F^*(\eta). \tag{76}
+\]</div>
+<p>因此当 <span class="arithmatex">\(\alpha = \pm 1\)</span> 时，Hessian <span class="arithmatex">\(\alpha\)</span>-几何是对偶平坦的。</p>
+<p>我们现在考虑由参数统计模型诱导的信息流形。</p>
+<h3 class="tutor-section" id="39-参数概率分布族的期望-alpha-流形mathcalp-_mathcalpg-_mathcalpnabla-alpha-_mathcalpnablaalpha">3.9 参数概率分布族的期望 <span class="arithmatex">\(\alpha\)</span>-流形：<span class="arithmatex">\((\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{\alpha})\)</span><a class="headerlink" href="#39-参数概率分布族的期望-alpha-流形mathcalp-_mathcalpg-_mathcalpnabla-alpha-_mathcalpnablaalpha" title="Permanent link">&para;</a></h3>
+<p>非正式地说，期望流形是建立于正则参数分布族上的信息流形。在文献 [140] 中，它有时被称为“期望”流形或“期望”几何，因为度量张量 <span class="arithmatex">\(g\)</span> 与 Amari-Chentsov 立方张量 <span class="arithmatex">\(C\)</span> 的分量是用统计期望 <span class="arithmatex">\(E_\cdot[\cdot]\)</span> 表示的。</p>
+<p>设 <span class="arithmatex">\(\mathcal{P}\)</span> 为一族参数概率分布：</p>
+<div class="arithmatex">\[
+\mathcal{P} := \{p_\theta(x)\}_{\theta\in\Theta}, \tag{77}
+\]</div>
+<p>其中 <span class="arithmatex">\(\theta\)</span> 属于开参数空间 <span class="arithmatex">\(\Theta\)</span>。该族的阶数是其参数空间的维数。我们将似然函数<span class="arithmatex">\(^{11}\)</span> <span class="arithmatex">\(L(\theta; x) := p_\theta(x)\)</span> 定义为 <span class="arithmatex">\(\theta\)</span> 的函数，其对应的对数似然函数为：</p>
+<div class="arithmatex">\[
+l(\theta; x) := \log L(\theta; x) = \log p_\theta(x). \tag{78}
+\]</div>
+<p>得分向量：</p>
+<div class="arithmatex">\[
+s_\theta = \nabla_\theta l = (\partial_i l)_i, \tag{79}
+\]</div>
+<p>它表示了似然函数 <span class="arithmatex">\(\partial_i l {:=} \frac{\partial}{\partial\theta_i}l(\theta; x)\)</span> 的敏感性。</p>
+<p>对于 <span class="arithmatex">\(\dim(\Theta) = D\)</span>，<span class="arithmatex">\(D \times D\)</span> 的 Fisher 信息矩阵（FIM）定义为：</p>
+<div class="arithmatex">\[
+{}_{\mathcal{P}}I(\theta) := E_\theta\left[\partial_i l \partial_j l\right]_{ij} \succeq 0, \tag{80}
+\]</div>
+<p>其中 <span class="arithmatex">\(\succeq\)</span> 表示 Löwner 序。也就是说，对于两个对称正定矩阵 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span>，<span class="arithmatex">\(A \succeq B\)</span> 当且仅当矩阵 <span class="arithmatex">\(A-B\)</span> 是半正定的。对于正则模型 [25]，FIM 是正定的：<span class="arithmatex">\({}_{\mathcal{P}}I(\theta) \succ 0\)</span>，其中 <span class="arithmatex">\(A \succ B\)</span> 当且仅当矩阵 <span class="arithmatex">\(A-B\)</span> 是正定的。</p>
+<hr />
+<p><span class="arithmatex">\(^{11}\)</span>似然函数是关于正比例因子模定义的函数等价类。</p>
+<p>18</p>
+<!-- page 19 -->
+
+<p>FIM 在样本空间 <span class="arithmatex">\(\mathcal{X}\)</span> 的重参数化下不变，而在参数空间 <span class="arithmatex">\(\Theta\)</span> 的重参数化下协变，见 [25]。也就是说，令 <span class="arithmatex">\(\bar{p}(x;\eta) = p(\theta(\eta); x)\)</span>。那么我们有：</p>
+<div class="arithmatex">\[
+\bar{I}(\eta) = \left[\frac{\partial\theta_i}{\partial\eta_j}\right]_{ij}^\top I(\theta(\eta)) \left[\frac{\partial\theta_i}{\partial\eta_j}\right]_{ij}.
+\tag{81}
+\]</div>
+<p>矩阵 <span class="arithmatex">\(J_{ij} = \left[\frac{\partial\theta_i}{\partial\eta_j}\right]_{ij}\)</span> 为 Jacobian 矩阵。</p>
+<p><strong>例 1.</strong> <em>例如，考虑如下分布族</em></p>
+<div class="arithmatex">\[
+\mathcal{N} = \left\{p(x; \mu, \sigma) = \frac{1}{\sqrt{2\pi}\sigma} \exp(-\frac{(x-\mu)^2}{2\sigma^2})) \ : \ (\mu, \sigma) \in \mathbb{R} \times \mathbb{R}_{++}\right\}
+\tag{82}
+\]</div>
+<p><em>一元正态分布。二维参数向量为 <span class="arithmatex">\(\lambda = (\mu, \sigma)\)</span>，其中 <span class="arithmatex">\(\mu\)</span> 表示均值，<span class="arithmatex">\(\sigma\)</span> 表示标准差。正态族的另一种常见参数化为 <span class="arithmatex">\(\lambda' = (\mu, \sigma^2)\)</span>。<span class="arithmatex">\(\lambda'\)</span> 参数化自然地推广到 <span class="arithmatex">\(d\)</span>-variance 正态分布，其中 <span class="arithmatex">\(\lambda' = (\mu, \Sigma)\)</span>，<span class="arithmatex">\(\Sigma\)</span> 表示协方差矩阵（当 <span class="arithmatex">\(d=1\)</span> 时，<span class="arithmatex">\(\Sigma = \sigma^2\)</span>）。对于多元正态分布，<span class="arithmatex">\(\lambda\)</span> 参数化可理解为 <span class="arithmatex">\(\lambda = (\mu, L^\top)\)</span>，其中 <span class="arithmatex">\(L^\top\)</span> 为 Cholesky 分解中的上三角矩阵（当 <span class="arithmatex">\(d=1\)</span> 时，<span class="arithmatex">\(L^\top = \sigma\)</span>）。我们在 <span class="arithmatex">\(\lambda\)</span> 参数化与 <span class="arithmatex">\(\lambda'\)</span> 参数化下有如下 Fisher 信息矩阵：</em></p>
+<div class="arithmatex">\[
+I_\lambda(\lambda) = \left[\begin{array}{cc} \frac{1}{\lambda_2^2} &amp; 0 \\ 0 &amp; \frac{2}{\lambda_2^2} \end{array}\right] = \left[\begin{array}{cc} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{2}{\sigma^2} \end{array}\right]
+\tag{83}
+\]</div>
+<p><em>以及</em></p>
+<div class="arithmatex">\[
+I_{\lambda'}\left(\lambda'\right) = \left[\begin{array}{cc} \frac{1}{\lambda_2} &amp; 0 \\ 0 &amp; \frac{1}{2\lambda_2^2} \end{array}\right] = \left[\begin{array}{cc} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{1}{2\sigma^4} \end{array}\right]
+\tag{84}
+\]</div>
+<p><em>由于 FIM 是协变的，我们得到如下变换关系：</em></p>
+<div class="arithmatex">\[
+I_{\lambda'}\left(\lambda'\right) = J_{\lambda,\lambda'}^\top I_\lambda\left(\lambda\left(\lambda'\right)\right) J_{\lambda,\lambda'},
+\tag{85}
+\]</div>
+<p><em>其中</em></p>
+<div class="arithmatex">\[
+J_{\lambda',\lambda} = \left[\begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 2\sigma \end{array}\right]
+\tag{86}
+\]</div>
+<p><em>于是我们可以验证</em></p>
+<div class="arithmatex">\[
+I_\lambda(\lambda) = \left[\begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 2\sigma \end{array}\right] \left[\begin{array}{cc} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{1}{2\sigma^4} \end{array}\right] \left[\begin{array}{cc} 1 &amp; 0 \\ 0 &amp; 2\sigma \end{array}\right] = \left[\begin{array}{cc} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{2}{\sigma^2} \end{array}\right]
+\tag{87}
+\]</div>
+<p><em>注意无穷小长度元是不变的：</em> <span class="arithmatex">\(\mathrm{d}s_\lambda = \mathrm{d}s_{\lambda'}\)</span>。</p>
+<p>作为推论，注意到若度量张量 <span class="arithmatex">\(g\)</span> 可写为 <span class="arithmatex">\(J_{\lambda,\lambda'}^\top J_{\lambda,\lambda'}\)</span>，则我们可以在任何其他坐标系中识别出 Euclidean 度量。例如，由具有可分离势函数的双平坦空间诱导的 Riemannian 几何是 Euclidean 的 [49]。</p>
+<p>在统计学中，FIM 在无偏估计量可达到的精度方面发挥作用。对于任意无偏估计量，其方差的 Cramér-Rao 下界 [71] 为：</p>
+<div class="arithmatex">\[
+\mathrm{Var}_\theta[\hat{\theta}_n(X)] \succeq \frac{1}{n}I^{-1}(\theta).
+\tag{88}
+\]</div>
+<p>图 8 展示了单变量分布的 Cramér-Rao 下界（CRLB）：在正态参数上半空间的规则网格位置 <span class="arithmatex">\((\mu, \sigma)\)</span> 处，我们重复 200 次运行（试验），利用 MLE 在 100 个独立同分布样本 <span class="arithmatex">\(x_1, \ldots, x_n \sim N(\mu, \sigma)\)</span> 上估计正态参数 <span class="arithmatex">\((\widehat{\mu}, \widehat{\sigma})\)</span>。针对试验次数计算样本均值与样本协方差矩阵，并以背景椭圆形式显示。Fisher</p>
+<p>19</p>
+<!-- page 20 -->
+
+<p><img alt="图 8" src="../assets/fig08.png" /></p>
+<p>Figure 8: Cramér-Rao下界可视化：红色椭圆展示了网格位置处正态分布的Fisher信息矩阵。黑色椭圆是样本协方差矩阵，以样本均值为中心，通过对网格的正态参数重复200次运行、每次采样100个iid变量计算得到。</p>
+<!-- page 21 -->
+
+<p>信息矩阵在网格位置处被绘制为红色椭圆：由于参数 <span class="arithmatex">\(\mu\)</span> 和 <span class="arithmatex">\(\sigma\)</span> 是正交的（对角 FIM），红色椭圆的半轴与坐标系平行。对于 MLE 估计量的样本协方差矩阵，这一点不再成立，并且样本协方差矩阵的中心偏离了网格位置。</p>
+<p>我们报告两种重要的通用参数化概率分布族的 FIM 表达式：(1) 指数族（及其突出的多元正态族），以及 (2) 混合族。</p>
+<p><strong>例 2</strong>（指数族 <span class="arithmatex">\(\mathcal{E}\)</span> 的 FIM）。<em>指数族 [84] <span class="arithmatex">\(\mathcal{E}\)</span> 针对充分统计量向量 <span class="arithmatex">\(t(x) = (t_1(x), \ldots, t_D(x))\)</span> 和辅助承载测度 <span class="arithmatex">\(k(x)\)</span> 由以下典范密度定义：</em></p>
+<div class="arithmatex">\[\mathcal{E} = \left\{ p_\theta(x) = \exp\left(\sum_{i=1}^D t_i(x)\theta_i - F(\theta) + k(x)\right) \text{ 满足 } \theta \in \Theta \right\}, \qquad (89)\]</div>
+<p>其中 <span class="arithmatex">\(F\)</span> 是严格凸的累积量函数（也称为对数归一化器、对数配分函数或统计力学中的自由能）。指数族包括高斯族、Gamma 和 Beta 族、概率单纯形 <span class="arithmatex">\(\Delta\)</span> 等。指数族的 FIM 由下式给出：</p>
+<div class="arithmatex">\[{}_{\mathcal{E}}I(\theta) = \mathrm{Cov}_{X\sim p_\theta(x)}[t(x)] = \nabla^2 F(\theta) = (\nabla^2 F^*(\eta))^{-1} \succ 0. \qquad (90)\]</div>
+<p><em>向量类型之外的自然参数也可用于指数族密度的典范分解：例如，我们可以使用矩阵类型来定义零中心多元高斯族或 Wishart 族，使用复数来定义复值高斯分布族，等等。然后，我们将式 89 中的项 <span class="arithmatex">\(\sum_{i=1}^D t_i(x)\theta_i\)</span> 替换为针对自然参数类型定义的内积（例如，向量的点积、矩阵的乘积迹，等等）。此外，自然参数可以是复合类型：例如，多元高斯分布可以写成 <span class="arithmatex">\(\theta = (\theta_v, \theta_M)\)</span>，其中 <span class="arithmatex">\(\theta_v\)</span> 是向量部分，<span class="arithmatex">\(\theta_M\)</span> 是矩阵部分，参见 [84]。</em></p>
+<p>令 <span class="arithmatex">\(\Sigma = [\sigma_{ij}]\)</span> 表示协方差矩阵，<span class="arithmatex">\(\Sigma^{-1} = [\sigma^{ij}]\)</span> 表示多元正态分布的精度矩阵。多元高斯分布 [114, 121] <span class="arithmatex">\(N(\mu, \Sigma)\)</span> 的 Fisher 信息矩阵由下式给出</p>
+<div class="arithmatex">\[
+I(\mu,\Sigma)=
+\begin{array}{cc}
+ &amp; \begin{array}{cc} \mu &amp; \Sigma=[\sigma_{ij}] \end{array}\\
+\begin{array}{c} \mu \\[4pt] \Sigma=[\sigma_{kl}] \end{array} &amp;
+\left[\begin{array}{cc}
+\sigma^{ij} &amp; 0\\
+0 &amp; \sigma^{il}\sigma^{jk}+\sigma^{ik}\sigma^{jl}
+\end{array}\right]
+\end{array}
+\qquad (91)
+\]</div>
+<p><em>注意右下块矩阵是一个维度为 <span class="arithmatex">\(d \times d \times d \times d\)</span> 的 <span class="arithmatex">\(4D\)</span> 张量。FIM 中的零子块矩阵表明参数 <span class="arithmatex">\(\mu\)</span> 和 <span class="arithmatex">\(\Sigma\)</span> 彼此正交。特别地，当 <span class="arithmatex">\(d=1\)</span> 时，由于 <span class="arithmatex">\(\sigma^{11}=\frac{1}{\sigma^2}\)</span>，我们恢复了单变量高斯的 Fisher 信息矩阵：</em></p>
+<div class="arithmatex">\[
+I(\mu, \Sigma) = \left[\begin{array}{cc} \frac{1}{\sigma^2} &amp; 0 \\ 0 &amp; \frac{1}{2\sigma^4} \end{array}\right] \qquad (92)
+\]</div>
+<p>关于使用其他典范参数化（指数族的自然/期望参数）的高斯分布 FIM，我们参见 [63]。</p>
+<p><strong>例 3</strong>（混合族 <span class="arithmatex">\(\mathcal{M}\)</span> 的 FIM）。<em>混合族针对 <span class="arithmatex">\(D+1\)</span> 个函数 <span class="arithmatex">\(F_1, \ldots, F_D\)</span> 和 <span class="arithmatex">\(C\)</span> 定义如下：</em></p>
+<div class="arithmatex">\[\mathcal{M} = \left\{ p_\theta(x) = \sum_{i=1}^D \theta_i F_i(x) + C(x) \text{ 满足 } \theta \in \Theta \right\}, \qquad (93)\]</div>
+<p>其中函数 <span class="arithmatex">\(\{F_i(x)\}_i\)</span> 在公共支撑 <span class="arithmatex">\(\mathcal{X}\)</span> 上线性无关，并满足 <span class="arithmatex">\(\int F_i(x)\mathrm{d}\mu(x) = 0\)</span>。函数 <span class="arithmatex">\(C\)</span> 满足 <span class="arithmatex">\(\int C(x)\mathrm{d}\mu(x) = 1\)</span>。混合族包括具有规定分量分布的统计混合以及概率单纯形 <span class="arithmatex">\(\Delta\)</span>。混合族的 FIM 由下式给出：</p>
+<div class="arithmatex">\[{}_{\mathcal{M}}I(\theta) = E_{X\sim p_\theta(x)}\left[\frac{F_i(x)F_j(x)}{(p_\theta(x))^2}\right] = \int_{\mathcal{X}} \frac{F_i(x)F_j(x)}{p_\theta(x)}\mathrm{d}\mu(x) \succ 0. \qquad (94)\]</div>
+<!-- page 22 -->
+
+<p>具有指定分量分布（即 D + 1 个高斯密度的凸权重组合）的高斯混合模型（GMM）族构成一个混合族 [93]。</p>
+<p>注意，离散分布的概率单纯形既可以被建模为指数族，也可以被建模为混合族 [8]。</p>
+<p>期望 α-几何由期望对偶 ±α-联络构建。Fisher“信息度量”张量由 FIM 构建如下：</p>
+<div class="arithmatex">\[{}_{\mathcal{P}}g(u,v) := (u)_\theta^\top \, {}_{\mathcal{P}}I(\theta) \, (v)_\theta \tag{95}\]</div>
+<p>期望指数联络和期望混合联络由下式给出</p>
+<div class="arithmatex">\[{}^{e}_{\mathcal{P}}\nabla := E_\theta\left[(\partial_i\partial_j l)(\partial_k l)\right], \tag{96}\]</div>
+<div class="arithmatex">\[{}^{m}_{\mathcal{P}}\nabla := E_\theta\left[(\partial_i\partial_j l + \partial_i l\partial_j l)(\partial_k l)\right]. \tag{97}\]</div>
+<p>对偶结构记为 <span class="arithmatex">\((\mathcal{P}, {}_{\mathcal{P}}g, {}^{m}_{\mathcal{P}}\nabla, {}^{e}_{\mathcal{P}}\nabla)\)</span>，其中 Amari-Chentsov 三次张量称为偏度张量：</p>
+<div class="arithmatex">\[C_{ijk} := E_\theta\left[\partial_i l \partial_j l \partial_k l\right]. \tag{98}\]</div>
+<p>由此我们可以构建一族期望信息 α-流形：</p>
+<div class="arithmatex">\[\left\{(\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{+\alpha})\right\}_{\alpha\in\mathbb{R}}, \tag{99}\]</div>
+<p>其中</p>
+<div class="arithmatex">\[{}_{\mathcal{P}}\Gamma^\alpha{}_{ij,k}(\theta) := E_\theta\left[\partial_i\partial_j l \partial_k l\right] + \frac{1-\alpha}{2}C_{ijk}(\theta), \tag{100}\]</div>
+<div class="arithmatex">\[= E_\theta\left[\left(\partial_i\partial_j l + \frac{1-\alpha}{2}\partial_i l\partial_j l\right)(\partial_k l)\right]. \tag{101}\]</div>
+<p>Levi-Civita 度量联络可如下恢复：</p>
+<div class="arithmatex">\[{}_{\mathcal{P}}\bar{\nabla} = \frac{{}_{\mathcal{P}}\nabla^{-\alpha} + {}_{\mathcal{P}}\nabla^{\alpha}}{2} = {}^{\text{LC}}_{\mathcal{P}}\nabla := {}^{\text{LC}}\nabla({}_{\mathcal{P}}g) \tag{102}\]</div>
+<p>α-Riemann-Christoffel 曲率张量为：</p>
+<div class="arithmatex">\[{}_{\mathcal{P}}R_{ijkl} = \partial_i\Gamma^\alpha_{jk,l} - \partial_j\Gamma^\alpha_{ik,l} + g^{rs}\left(\Gamma^\alpha_{ik,r}\Gamma^\alpha_{js,l} - \Gamma^\alpha_{jk,r}\Gamma^\alpha_{is,l}\right), \tag{103}\]</div>
+<p>其中 <span class="arithmatex">\(R^\alpha_{ijkl} = -R^{-\alpha}_{ijkl}\)</span>。我们验证期望 ±α-联络与度量相耦合：<span class="arithmatex">\(\partial_i g_{jk} = \Gamma^\alpha_{ij,k} + \Gamma^{-\alpha}_{ik,j}\)</span>。</p>
+<p>对于配备对偶指数/混合联络的指数族 <span class="arithmatex">\(\mathcal{E}\)</span> 或混合族 <span class="arithmatex">\(\mathcal{M}\)</span>，我们得到对偶平坦流形（Bregman 几何）。</p>
+<p>确实，对于指数/混合族，容易验证 <span class="arithmatex">\(\nabla^e\)</span> 和 <span class="arithmatex">\(\nabla^m\)</span> 的 Christoffel 符号消失：</p>
+<div class="arithmatex">\[{}^e_{\mathcal{M}}\Gamma = {}^m_{\mathcal{M}}\Gamma = {}^e_{\mathcal{E}}\Gamma = {}^m_{\mathcal{E}}\Gamma = 0. \tag{104}\]</div>
+<h3 class="tutor-section" id="310-统计不变性的判据">3.10 统计不变性的判据<a class="headerlink" href="#310-统计不变性的判据" title="Permanent link">&para;</a></h3>
+<p>迄今为止，我们已经解释了如何从一对共轭联络构建信息流形（或信息 α-流形）。随后我们介绍了获得这样一对共轭联络的两种方法：（1）从参数散度出发，或（2）使用预先定义的期望指数/混合联络。我们现在提出以下问题：哪种信息流形在统计学中是有意义的？我们可以将问题细化如下：</p>
+<ul>
+<li>哪些度量张量 <span class="arithmatex">\(g\)</span> 在统计学中是有意义的？</li>
+</ul>
+<!-- page 23 -->
+
+<p><img alt="图 9" src="../assets/fig09.png" /></p>
+<p>图 9：当且仅当 <span class="arithmatex">\(D(\theta_{\mathcal{A}} : \theta'_{\mathcal{A}}) \leq D(\theta : \theta')\)</span> 时，一个散度满足信息单调性。此处，参数 <span class="arithmatex">\(\theta\)</span> 表示一个离散分布。</p>
+<ul>
+<li>哪些仿射联络 <span class="arithmatex">\(\nabla\)</span> 在统计学中有意义？</li>
+<li>哪些统计散度在统计学中有意义（从中我们可以得到度量张量和对偶联络）？</li>
+</ul>
+<p>根据定义，一个<em>不变度量张量</em> <span class="arithmatex">\(g\)</span> 应在重要的称为马尔可夫嵌入的<em>统计映射</em>下保持内积。非正式地说，我们将 <span class="arithmatex">\(\Delta_D\)</span> 嵌入到 <span class="arithmatex">\(\Delta_{D'}\)</span> 中，其中 <span class="arithmatex">\(D' &gt; D\)</span>，且诱导的度量应保持不变（见 [8]，第 62 页）。</p>
+<p><strong>定理 8</strong>（Fisher 信息度量的唯一性 [26, 129]）。<em>Fisher 信息度量是在马尔可夫嵌入下唯一的不变度量张量，至多相差一个缩放常数。</em></p>
+<p>一个 <span class="arithmatex">\(D\)</span> 维参数（离散）散度满足<em>信息单调性</em><a href="这一性质可重命名为“距离粗分箱不等式性质”。">^12</a>，当且仅当：</p>
+<div class="arithmatex">\[D(\theta_{\mathcal{A}} : \theta'_{\mathcal{A}}) \leq D(\theta : \theta') \qquad (105)\]</div>
+<p>对于 <span class="arithmatex">\([D] = \{1, \ldots, D\}\)</span>（<span class="arithmatex">\(\mathcal{A}\)</span>-归并 [34]）的任意<em>粗粒化划分</em> <span class="arithmatex">\(\mathcal{A} = \{\mathcal{A}_i\}_{i=1}^E\)</span>，其中 <span class="arithmatex">\(E \leq D\)</span>，且 <span class="arithmatex">\(\theta_{\mathcal{A}}^i = \sum_{j\in\mathcal{A}_i} \theta^j\)</span>（<span class="arithmatex">\(i \in [E]\)</span>）。这种粗粒化的概念在图 9 中做了说明。</p>
+<p>一个<em>可分离散度</em> <span class="arithmatex">\(D(\theta_1 : \theta_2)\)</span> 是指可以表示为初等<em>标量散度</em> <span class="arithmatex">\(d(x : y)\)</span> 之和的散度：</p>
+<div class="arithmatex">\[D(\theta_1 : \theta_2) := \sum_i d(\theta_1^i : \theta_2^i). \qquad (106)\]</div>
+<p>例如，平方欧氏距离 <span class="arithmatex">\(D(\theta_1 : \theta_2) = \sum_i (\theta_1^i - \theta_2^i)^2\)</span> 对于标量欧氏散度 <span class="arithmatex">\(d(x : y) = (x - y)^2\)</span> 而言是一个可分离散度。欧氏距离 <span class="arithmatex">\(D_E(\theta_1, \theta_2) = \sqrt{\sum_i (\theta_1^i - \theta_2^i)^2}\)</span> 则<em>不是</em>可分离的，因为存在平方根运算。</p>
+<p>当 <span class="arithmatex">\(D &gt; 1\)</span> 时，唯一不变且<em>可分解的</em>散度是 <span class="arithmatex">\(f\)</span>-散度 [56]，其由凸泛函生成元 <span class="arithmatex">\(f\)</span> 定义：</p>
+<div class="arithmatex">\[I_f(\theta : \theta') := \sum_{i=1}^D \theta_i f\left(\frac{\theta'_i}{\theta_i}\right) \geq f(1), \quad f(1) = 0 \qquad (107)\]</div>
+<p><em>标准 <span class="arithmatex">\(f\)</span>-散度</em>由满足 <span class="arithmatex">\(f'(1) = 0\)</span>（选取 <span class="arithmatex">\(f_\lambda(u) := f(u) + \lambda(u-1)\)</span>，因为 <span class="arithmatex">\(I_{f_\lambda} = I_f\)</span>）且 <span class="arithmatex">\(f''(u) = 1\)</span>（尺度固定）的 <span class="arithmatex">\(f\)</span>-生成元定义。</p>
+<p>统计 <span class="arithmatex">\(f\)</span>-散度在样本空间的一对一/充分统计量变换 <span class="arithmatex">\(y = t(x)\)</span> 下是<em>不变的</em> [108]：<span class="arithmatex">\(p(x;\theta) = q(y(x);\theta)\)</span>：</p>
+<div class="arithmatex">\[\begin{array}{rcl} I_f[p(x;\theta) : p(x;\theta')] &amp; = &amp; \displaystyle\int_{\mathcal{X}} p(x;\theta) f\left(\frac{p(x;\theta')}{p(x;\theta)}\right) \mathrm{d}\mu(x), \\ &amp; = &amp; \displaystyle\int_{\mathcal{Y}} q(y;\theta) f\left(\frac{q(y;\theta')}{q(y;\theta)}\right) \mathrm{d}\mu(y), \\ &amp; = &amp; I_f[q(y;\theta) : q(y;\theta')]. \end{array}\]</div>
+<!-- page 24 -->
+
+<p>参考对偶性的对偶 <span class="arithmatex">\(f\)</span>-散度为</p>
+<div class="arithmatex">\[I_f{}^*[p(x;\theta):p(x;\theta')] = I_f[p(x;\theta'):p(x;\theta)] = I_{f^\diamond}[p(x;\theta):p(x;\theta')] \tag{108}\]</div>
+<p>对于标准共轭 <span class="arithmatex">\(f\)</span>-生成元（菱形 <span class="arithmatex">\(f^\diamond\)</span> 生成元），其表达式为：</p>
+<div class="arithmatex">\[f^\diamond(u) := uf\left(\frac{1}{u}\right). \tag{109}\]</div>
+<p>可以验证，当 <span class="arithmatex">\(f\)</span> 为标准时，<span class="arithmatex">\(f^\diamond\)</span> 也是一个标准 <span class="arithmatex">\(f\)</span>-生成元。</p>
+<p>下面我们列举一些常见的 <span class="arithmatex">\(f\)</span>-散度例子：</p>
+<ul>
+<li><span class="arithmatex">\(\alpha\)</span>-散度族：</li>
+</ul>
+<p><span class="arithmatex">\(I_\alpha[p:q] := \frac{4}{1-\alpha^2}\left(1-\int p^{\frac{1-\alpha}{2}}(x)q^{\frac{1+\alpha}{2}}(x)\mathrm{d}\mu(x)\right), \tag{110}\)</span></p>
+<p>由 <span class="arithmatex">\(f(u)=\frac{4}{1-\alpha^2}(1-u^{\frac{1+\alpha}{2}})\)</span> 得到。<span class="arithmatex">\(\alpha\)</span>-散度包括：</p>
+<ul>
+<li>
+<p>当 <span class="arithmatex">\(\alpha \to 1\)</span> 时的 Kullback-Leibler：</p>
+<p><span class="arithmatex">\(\mathrm{KL}[p:q] = \int p(x)\log\frac{p(x)}{q(x)}\mathrm{d}\mu(x), \tag{111}\)</span></p>
+<p>对应 <span class="arithmatex">\(f(u)=-\log u\)</span>。</p>
+</li>
+<li>
+<p>当 <span class="arithmatex">\(\alpha \to -1\)</span> 时的反向 Kullback-Leibler：</p>
+<p><span class="arithmatex">\(\mathrm{KL}^*[p:q] = \int q(x)\log\frac{q(x)}{p(x)}\mathrm{d}\mu(x) = \mathrm{KL}[q:p], \tag{112}\)</span></p>
+<p>对应 <span class="arithmatex">\(f(u)=u\log u\)</span>。</p>
+</li>
+<li>
+<p>对称平方 Hellinger 散度：</p>
+<p><span class="arithmatex">\(H^2[p:q] = \int(\sqrt{p(x)}-\sqrt{q(x)})^2\mathrm{d}\mu(x), \tag{113}\)</span></p>
+<p>对应 <span class="arithmatex">\(f(u)=(\sqrt{u}-1)^2\)</span>（即 <span class="arithmatex">\(\alpha=0\)</span> 的情形）。</p>
+</li>
+<li>
+<p>Pearson 和 Neyman 卡方散度 [90] 等。</p>
+</li>
+<li>
+<p>Jensen-Shannon 散度：</p>
+</li>
+</ul>
+<p><span class="arithmatex">\(\mathrm{JS}[p:q] = \frac{1}{2}\int\left(p(x)\log\frac{2p(x)}{p(x)+q(x)} + q(x)\log\frac{2q(x)}{p(x)+q(x)}\right)\mathrm{d}\mu(x), \tag{114}\)</span></p>
+<p>对应 <span class="arithmatex">\(f(u)=-(u+1)\log\frac{1+u}{2}+u\log u\)</span>。</p>
+<ul>
+<li>全变差</li>
+</ul>
+<p><span class="arithmatex">\(\mathrm{TV}[p:q] = \frac{1}{2}\int|p(x)-q(x)|\mathrm{d}\mu(x), \tag{115}\)</span></p>
+<p>对应 <span class="arithmatex">\(f(u)=\frac{1}{2}|u-1|\)</span>。全变差距离是唯一的度量 <span class="arithmatex">\(f\)</span>-散度。</p>
+<p><span class="arithmatex">\(f\)</span>-拓扑是由开 <span class="arithmatex">\(f\)</span>-球生成的拓扑，即关于 <span class="arithmatex">\(f\)</span>-散度的开球。若拓扑 <span class="arithmatex">\(T\)</span> 包含拓扑 <span class="arithmatex">\(T'\)</span> 的所有开集，则称 <span class="arithmatex">\(T\)</span> 比 <span class="arithmatex">\(T'\)</span> 更强。Csiszar 定理 [33] 指出，当 <span class="arithmatex">\(|\alpha|&lt;1\)</span> 时，<span class="arithmatex">\(\alpha\)</span>-拓扑与全变差度量距离诱导的拓扑等价。否则，<span class="arithmatex">\(\alpha\)</span>-拓扑比 TV 拓扑更强。</p>
+<p>下面我们阐述 <span class="arithmatex">\(f\)</span> 散度的一个重要特征：</p>
+<!-- page 25 -->
+
+<p><strong>定理 9.</strong> <span class="arithmatex">\(f\)</span>-散度在样本空间 <span class="arithmatex">\(\mathcal{X}\)</span> 的微分同胚 <span class="arithmatex">\(m(x)\)</span> 下保持不变：设 <span class="arithmatex">\(Y = m(X)\)</span>，且 <span class="arithmatex">\(X_i \sim p_i\)</span> 并满足 <span class="arithmatex">\(Y_i = m(X_i) \sim q_i\)</span>。则我们有 <span class="arithmatex">\(I_f[q_1 : q_2] = I_f[p_1 : p_2]\)</span>。</p>
+<p><strong>例 4.</strong> 考虑指数分布与瑞利分布，它们之间的关系如下：</p>
+<div class="arithmatex">\[X \sim \mathrm{Exponential}(\lambda) \Leftrightarrow Y = m(X) = \sqrt{X} \sim \mathrm{Rayleigh}\left(\sigma = \frac{1}{\sqrt{2\lambda}}\right).\]</div>
+<p>指数分布的密度定义为</p>
+<div class="arithmatex">\[p_\lambda(x) = \lambda \exp(-\lambda x) \text{ 其支撑集为 } \mathcal{X} = [0, \infty),\]</div>
+<p>而瑞利分布的密度定义为</p>
+<div class="arithmatex">\[q_\sigma(x) = \frac{x}{\sigma^2} \exp\left(-\frac{x^2}{2\sigma^2}\right) \text{ 其支撑集为 } \mathcal{X} = [0, \infty).\]</div>
+<p>我们有</p>
+<div class="arithmatex">\[D_{\mathrm{KL}}\left[q_{\sigma_1} : q_{\sigma_2}\right] = \log\left(\frac{\sigma_2^2}{\sigma_1^2}\right) + \frac{\sigma_1^2 - \sigma_2^2}{\sigma_2^2}.\]</div>
+<p>由此可得</p>
+<div class="arithmatex">\[
+\begin{aligned}
+D_{\mathrm{KL}}\left[p_{\lambda_1} : p_{\lambda_2}\right] &amp;= D_{\mathrm{KL}}\left[q_{\frac{1}{\sqrt{2\lambda_1}}} : q_{\frac{1}{\sqrt{2\lambda_2}}}\right] \\
+&amp;= \log\frac{2\lambda_1}{2\lambda_2} + 2\lambda_2\left(\frac{1}{2\lambda_1} - \frac{1}{2\lambda_2}\right) \\
+&amp;= \log\left(\frac{\lambda_1}{\lambda_2}\right) + \frac{\lambda_2}{\lambda_1} - 1.
+\end{aligned}
+\]</div>
+<p>一个显著的性质是，不变标准 <span class="arithmatex">\(f\)</span>-散度可导出 Fisher 信息矩阵与 <span class="arithmatex">\(\alpha\)</span>-联络。事实上，不变标准 <span class="arithmatex">\(f\)</span>-散度在无穷小意义下与 Fisher 度量有如下关系：</p>
+<div class="arithmatex">\[
+\begin{array}{rcl}
+I_f[p(x;\theta) : p(x;\theta+\mathrm{d}\theta)] &amp;=&amp; \displaystyle\int p(x;\theta)f\left(\frac{p(x;\theta+\mathrm{d}\theta)}{p(x;\theta)}\right)\mathrm{d}\mu(x) \qquad (116) \\[1em]
+&amp;\stackrel{\Sigma}{=}&amp; \displaystyle\frac{1}{2}Fg_{ij}(\theta)\mathrm{d}\theta^i\mathrm{d}\theta^j \qquad (117)
+\end{array}
+\]</div>
+<p>分布参数族 <span class="arithmatex">\(\mathcal{P}\)</span> 上的<em>统计参数散度</em> <span class="arithmatex">\(D\)</span> 可导出一个等价的<em>参数散度</em> <span class="arithmatex">\(_{\mathcal{P}}D\)</span>：</p>
+<div class="arithmatex">\[_{\mathcal{P}}D(\theta : \theta') := D[p(x;\theta) : p(x;\theta')]. \qquad (118)\]</div>
+<p>于是我们可以构建由该参数散度 <span class="arithmatex">\(_{\mathcal{P}}D(\cdot:\cdot)\)</span> 诱导的信息流形。当 <span class="arithmatex">\(_{\mathcal{P}}D(\cdot:\cdot) = I_f[\cdot:\cdot]\)</span> 时，所诱导的 <span class="arithmatex">\(\pm 1\)</span>-散度联络 <span class="arithmatex">\(^{I_f}_{\mathcal{P}}\nabla := \,^{\mathcal{P}I_f}\nabla\)</span> 与 <span class="arithmatex">\(^{(I_f)^*}_{\mathcal{P}}\nabla := \,^{\mathcal{P}I_f^*}\nabla\)</span> 正是<em>期望</em> <span class="arithmatex">\(\pm\alpha\)</span>-<em>联络</em>（由指数/混合联络导出），且满足：</p>
+<div class="arithmatex">\[\alpha = 2f'''(1) + 3. \qquad (119)\]</div>
+<p>因此，与不变统计散度所诱导的联络相一致的不变联络正是期望 <span class="arithmatex">\(\alpha\)</span>-联络。注意，期望 <span class="arithmatex">\(\alpha\)</span>-联络的曲率既依赖于 <span class="arithmatex">\(\alpha\)</span>，也依赖于所考虑的统计模型 [64]。</p>
+<p>25</p>
+<!-- page 26 -->
+
+<h3 class="tutor-section" id="311-fisher-rao-期望黎曼流形mathcalp-_mathcalpg">3.11 Fisher-Rao 期望黎曼流形：<span class="arithmatex">\((\mathcal{P}, {}_\mathcal{P}g)\)</span><a class="headerlink" href="#311-fisher-rao-期望黎曼流形mathcalp-_mathcalpg" title="Permanent link">&para;</a></h3>
+<p>从历史上看，对正则参数分布族 <span class="arithmatex">\(\mathcal{P} = \{p_\theta(x)\}_\theta\)</span> 的首次流形建模，是将 Fisher 信息矩阵（FIM）视为黎曼度量张量 <span class="arithmatex">\(g\)</span>（见 [53, 111]），其形式为：</p>
+<div class="arithmatex">\[
+{}_\mathcal{P}I(\theta) := E_{p_\theta}\left[\partial_i l \partial_j l\right],
+\tag{120}
+\]</div>
+<p>其中 <span class="arithmatex">\(\partial_i l {=:} \frac{\partial}{\partial \theta_i} \log p(x;\theta)\)</span>。在某些正则性条件下，我们可以将 FIM 重写为：</p>
+<div class="arithmatex">\[
+{}_\mathcal{P}I(\theta) := -E_{p_\theta}\left[\partial_i \partial_j l\right].
+\tag{121}
+\]</div>
+<p>黎曼测地度量距离 <span class="arithmatex">\(D_\rho\)</span> 通常被称为 Fisher-Rao 距离：</p>
+<div class="arithmatex">\[
+D_\rho(p_{\theta_1}, p_{\theta_2}) = \int_0^1 \sqrt{\dot{\gamma}(t)^\top g_{\gamma(t)} \dot{\gamma}(t)} \mathrm{d}t,
+\tag{122}
+\]</div>
+<p>其中 <span class="arithmatex">\(\gamma\)</span> 表示经过 <span class="arithmatex">\(\gamma(0) = \theta_1\)</span> 和 <span class="arithmatex">\(\gamma(1) = \theta_2\)</span> 的测地线。Fisher-Rao 距离也可以定义为最短路径长度：<span class="arithmatex">\(D_\rho(p_{\theta_1}, p_{\theta_2}) = \inf_\gamma \int_0^1 \sqrt{\dot{\gamma}(t)^\top g_{\gamma(t)} \dot{\gamma}(t)} \mathrm{d}t\)</span>。</p>
+<p><strong>定义 6</strong>（Fisher-Rao 距离）。<em>Fisher-Rao 距离是 Fisher-Riemann 流形 <span class="arithmatex">\((\mathcal{P}, {}_\mathcal{P}g)\)</span> 的测地度量距离。</em></p>
+<p>让我们给出一些 Fisher-Riemann 流形的例子：</p>
+<ul>
+<li>分类分布族（在 [8] 中也称为有限离散分布）的 Fisher-Riemann 流形等价于球面几何 [58]（球面流形）。</li>
+<li>二元位置-尺度分布族的 Fisher-Riemann 流形等价于双曲几何（双曲流形）。</li>
+<li>位置分布族的 Fisher-Riemann 流形等价于欧几里得几何（欧几里得流形）。</li>
+</ul>
+<p>黎曼几何的第一基本形式为 <span class="arithmatex">\(\mathrm{d}s^2 = \langle \mathrm{d}x, \mathrm{d}x \rangle \stackrel{\Sigma}{=} g_{ij} \mathrm{d}x^i \mathrm{d}x^j\)</span>，其中 <span class="arithmatex">\(\mathrm{d}s\)</span> 表示线元。</p>
+<p>将这种黎曼几何结构应用于参数概率分布族的做法最早由 Harold Hotelling [53] 提出（在 1929 年的一份手写笔记中，后重排印于 [123]），随后由 C. R. Rao [111] 独立提出（1945 年，重印于 [110]）。类似地，Jeffreys [55] 建议使用流形的体积元作为不变先验：即 1946 年提出的、以其名字命名的 Jeffreys 先验。</p>
+<p>注意，对于概率分布的参数族 <span class="arithmatex">\(\mathcal{P}\)</span>，黎曼结构 <span class="arithmatex">\((\mathcal{P}, {}_\mathcal{P}g)\)</span> 与由对称 <span class="arithmatex">\(f\)</span>-散度（如平方 Hellinger 散度）诱导的自对偶共轭联络流形 <span class="arithmatex">\((\mathcal{P}, {}_\mathcal{P}g, {}_\mathcal{P}^{I_f}\nabla, {}_\mathcal{P}^{I_f}\nabla^*)\)</span> 是一致的。</p>
+<p>指数映射 <span class="arithmatex">\(\exp_p\)</span> 在点 <span class="arithmatex">\(p \in M\)</span> 处提供了一种将向量 <span class="arithmatex">\(v \in T_p\)</span> 映射回点 <span class="arithmatex">\(\exp_p(v) \in M\)</span> 的方式（在良定义的情况下）。指数映射可用于参数化一条测地线 <span class="arithmatex">\(\gamma\)</span>，满足 <span class="arithmatex">\(\gamma(0) = p\)</span> 且单位切向量 <span class="arithmatex">\(\dot{\gamma}(0) = v\)</span>：<span class="arithmatex">\(t \mapsto \exp_p(tv)\)</span>。对于测地完备的流形，指数映射处处有定义。</p>
+<h3 class="tutor-section" id="312-单调-alpha-嵌入与度量规范自由度">3.12 单调 <span class="arithmatex">\(\alpha\)</span>-嵌入与度量规范自由度<a class="headerlink" href="#312-单调-alpha-嵌入与度量规范自由度" title="Permanent link">&para;</a></h3>
+<p>FIM 的另一个常见的数学等价表达式 [25] 由下式给出：</p>
+<div class="arithmatex">\[
+I_{ij}(\theta) := 4 \int \partial_i\sqrt{p(x;\theta)}\partial_j\sqrt{p(x;\theta)}\mathrm{d}\mu(x).
+\tag{123}
+\]</div>
+<p>FIM 的这种形式非常适合用来证明 FIM 始终是一个半正定矩阵 [25]（<span class="arithmatex">\(I(\theta) \succeq 0\)</span>）。结果表明，我们可以利用参数族的 <span class="arithmatex">\(\alpha\)</span>-嵌入 [139] 来定义一族 FIM 的等价表示。</p>
+<!-- page 27 -->
+
+<p>首先，我们定义密度的 <span class="arithmatex">\(\alpha\)</span>-表示 <span class="arithmatex">\(l^{\alpha}(x;\theta) := k_{\alpha}(p(x;\theta))\)</span> 如下：</p>
+<div class="arithmatex">\[k_{\alpha}(u) := \left\{ \begin{array}{ll} \frac{2}{1-\alpha}u^{\frac{1-\alpha}{2}}, &amp; \text{若 } \alpha \neq 1, \\ \log u, &amp; \text{若 } \alpha = 1. \end{array} \right. \qquad (124)\]</div>
+<p>函数 <span class="arithmatex">\(l^{\alpha}(x;\theta)\)</span> 被称为 <span class="arithmatex">\(\alpha\)</span>-似然函数。FIM 的 <span class="arithmatex">\(\alpha\)</span>-表示（简称为 <span class="arithmatex">\(\alpha\)</span>-FIM）可表示为：</p>
+<div class="arithmatex">\[I^{\alpha}_{ij}(\theta) := \int \partial_i l^{\alpha}(x;\theta) \partial_j l^{-\alpha}(x;\theta) \mathrm{d}\mu(x). \qquad (125)\]</div>
+<p>我们可以将 <span class="arithmatex">\(\alpha\)</span>-FIM 紧凑地重写为 <span class="arithmatex">\(I^{\alpha}_{ij}(\theta) = \int \partial_i l^{\alpha} \partial_j l^{-\alpha} \mathrm{d}\mu(x)\)</span>。展开 <span class="arithmatex">\(\alpha\)</span>-FIM，我们得到：</p>
+<div class="arithmatex">\[I^{\alpha}_{ij}(\theta) = \left\{ \begin{array}{ll} \frac{1}{1-\alpha^2} \int \partial_i p(x;\theta)^{\frac{1-\alpha}{2}} \partial_j p(x;\theta)^{\frac{1+\alpha}{2}} \mathrm{d}\mu(x) &amp; \text{当 } \alpha \neq \pm 1 \\ \int \partial_i \log p(x;\theta) \partial_j p(x;\theta) \mathrm{d}\mu(x) &amp; \text{当 } \alpha \in \{-1, 1\} \end{array} \right. \qquad (126)\]</div>
+<p>密度的 <span class="arithmatex">\(1\)</span>-表示被称为对数表示（或 <span class="arithmatex">\(e\)</span>-表示），<span class="arithmatex">\(-1\)</span>-表示为混合表示（或 <span class="arithmatex">\(m\)</span>-表示），而其 <span class="arithmatex">\(0\)</span>-表示被称为平方根表示。<span class="arithmatex">\(\alpha\)</span>-得分向量组 <span class="arithmatex">\(B_{\alpha} := \{\partial_i l^{\alpha}\}_i\)</span> 被解释为 <span class="arithmatex">\(\alpha\)</span>-基 <span class="arithmatex">\(B_{\alpha}\)</span> 的切基向量。因此，FIM 与 <span class="arithmatex">\(\alpha\)</span> 无关。</p>
+<p>此外，在温和条件 [25] 下，FIM 的 <span class="arithmatex">\(\alpha\)</span>-表示可以重写为：</p>
+<div class="arithmatex">\[I^{\alpha}_{ij}(\theta) = -\frac{2}{1+\alpha} \int p(x;\theta)^{\frac{1+\alpha}{2}} \partial_i \partial_j l^{\alpha}(x;\theta) \mathrm{d}\mu(x). \qquad (127)\]</div>
+<p>由于我们有：</p>
+<div class="arithmatex">\[\partial_i \partial_j l^{\alpha}(x;\theta) = p^{\frac{1-\alpha}{2}} \left( \partial_i \partial_j l + \frac{1-\alpha}{2} \partial_i l \partial_j l \right), \qquad (128)\]</div>
+<p>可得：</p>
+<div class="arithmatex">\[I^{\alpha}_{ij}(\theta) = -\frac{2}{1+\alpha} \left( -I_{ij}(\theta) + \frac{1-\alpha}{2} I_{ij} \right) = I_{ij}(\theta). \qquad (129)\]</div>
+<p>注意，当 <span class="arithmatex">\(\alpha = 1\)</span> 时，我们得到 FIM 的等价表达式（在温和条件下）：</p>
+<div class="arithmatex">\[I^{1}_{ij}(\theta) = -E[\nabla^2 \log p(x;\theta)]. \qquad (130)\]</div>
+<p>特别地，当该族为具有累积量函数 <span class="arithmatex">\(F(\theta)\)</span> 的指数族 [84]（满足温和条件）时，我们有：</p>
+<div class="arithmatex">\[I(\theta) = \nabla^2 F(\theta). \qquad (131)\]</div>
+<p>Zhang [139, 69] 进一步讨论了在 <span class="arithmatex">\(\alpha\)</span>-几何中被混淆的表示/参考对偶性。</p>
+<p>黎曼度量张量的规范自由度已在信息几何的 <span class="arithmatex">\((\rho,\tau)\)</span>-单调嵌入框架 [139, 98, 69] 下得到研究：设 <span class="arithmatex">\(\rho\)</span> 和 <span class="arithmatex">\(\tau\)</span> 为两个严格递增函数，<span class="arithmatex">\(f\)</span> 为一个严格凸函数，满足 <span class="arithmatex">\(f'(\rho(u)) = \tau(u)\)</span>（其中 <span class="arithmatex">\(f^*\)</span> 表示其凸共轭）。注意，严格递增的实值一元函数集合在群运算取为函数复合 <span class="arithmatex">\(\circ\)</span> 时具有群结构。我们记 <span class="arithmatex">\(p_{\theta}(x) = p(x;\theta)\)</span>。</p>
+<p><span class="arithmatex">\((\rho,\tau)\)</span>-度量张量 <span class="arithmatex">\(~^{\rho,\tau}g(\theta) = [~^{\rho,\tau}g_{ij}(\theta)]_{ij}\)</span> 可由 <span class="arithmatex">\((\rho,\tau)\)</span>-散度导出：</p>
+<div class="arithmatex">\[D_{\rho,\tau}(p:q) = \int \left( f(\rho(p(x))) + f^*(\tau(q(x))) - \rho(p(x))\tau(q(x)) \right) \mathrm{d}\nu(x) \qquad (132)\]</div>
+<p>27</p>
+<!-- page 28 -->
+
+<p>我们有：</p>
+<div class="arithmatex">\[\begin{aligned} {}^{\rho,\tau}g_{ij}(\theta) &amp;= \int (\partial_i \rho(p_\theta(x))) \, (\partial_j \tau(p_\theta(x))) \, \mathrm{d}\nu(x), &amp; (133) \\ &amp;= \int \rho'(p_\theta(x)) \tau'(p_\theta(x)) \, (\partial_i p_\theta(x)) \, (\partial_j p_\theta(x)) \, \mathrm{d}\nu(x), &amp; (134) \\ &amp;= \int f''(\rho(p_\theta(x))) \, (\partial_i \rho(p_\theta(x))) \, (\partial_j \rho(p_\theta(x))) \, \mathrm{d}\nu(x), &amp; (135) \\ &amp;= \int (f^*)''(\tau(p_\theta(x))) \, (\partial_i \tau(p_\theta(x))) \, (\partial_j \tau(p_\theta(x))) \, \mathrm{d}\nu(x). &amp; (136) \end{aligned}\]</div>
+<h3 class="tutor-section" id="313-对偶平坦空间与典范-bregman-散度">3.13 对偶平坦空间与典范 Bregman 散度<a class="headerlink" href="#313-对偶平坦空间与典范-bregman-散度" title="Permanent link">&para;</a></h3>
+<p>我们已描述了如何从任意严格凸且光滑的生成元 <span class="arithmatex">\(F\)</span> 构建一个对偶平坦空间：由 <span class="arithmatex">\(F(\theta)\)</span> 出发，利用 Riemannian Hessian 度量 <span class="arithmatex">\(\nabla^2 F(\theta)\)</span> 构建一个 Hessian 结构，而凸共轭 <span class="arithmatex">\(F^*(\eta)\)</span>（通过 Legendre-Fenchel 对偶得到）则产生具有 Riemannian Hessian 度量 <span class="arithmatex">\(\nabla^2 F^*(\eta)\)</span> 的对偶 Hessian 结构。对偶联络 <span class="arithmatex">\(\nabla\)</span> 与 <span class="arithmatex">\(\nabla^*\)</span> 与度量相耦合。这些联络由它们各自的 Christoffel 符号 <span class="arithmatex">\(\Gamma(\theta)=0\)</span> 与 <span class="arithmatex">\(\Gamma^*(\eta)=0\)</span> 定义，表明它们是平坦联络。</p>
+<p>反之，可以证明[8]，给定两个对偶平坦联络 <span class="arithmatex">\(\nabla\)</span> 与 <span class="arithmatex">\(\nabla^*\)</span>，我们可以重构两个对偶的典范严格凸势函数 <span class="arithmatex">\(F(\theta)\)</span> 与 <span class="arithmatex">\(F^*(\eta)\)</span>，使得 <span class="arithmatex">\(\eta = \nabla F(\theta)\)</span> 且 <span class="arithmatex">\(\theta = \nabla F^*(\eta)\)</span>。典范散度 <span class="arithmatex">\(A_{F,F^*}\)</span> 产生对偶 Bregman 散度 <span class="arithmatex">\(B_F\)</span> 与 <span class="arithmatex">\(B_{F^*}\)</span>。</p>
+<p>唯一的对称 Bregman 散度是平方 Mahalanobis 距离 <span class="arithmatex">\(M_Q^2\)</span> [20]，其 Mahalanobis 距离定义为：</p>
+<div class="arithmatex">\[M_Q(\theta, \theta') = \sqrt{(\theta' - \theta)^\top Q (\theta' - \theta)}. \qquad (137)\]</div>
+<p>令 <span class="arithmatex">\(Q = LL^\top\)</span> 为正定矩阵 <span class="arithmatex">\(Q \succ 0\)</span> 的 Cholesky 分解。众所周知，Mahalanobis 距离 <span class="arithmatex">\(M_Q\)</span> 等价于仿射变换点上的欧氏距离：</p>
+<div class="arithmatex">\[\begin{aligned} M_Q^2(\theta, \theta') &amp;= \Delta\theta^\top Q \Delta\theta, &amp; (138) \\ &amp;= \Delta\theta^\top LL^\top \Delta\theta, &amp; (139) \\ &amp;= M_I^2(L^\top \theta, L^\top \theta') = \|L^\top \theta - L^\top \theta'\|^2, &amp; (140) \end{aligned}\]</div>
+<p>其中 <span class="arithmatex">\(\Delta\theta = \theta' - \theta\)</span>。</p>
+<p>平方 Mahalanobis 距离 <span class="arithmatex">\(M_Q^2\)</span> 不满足三角不等式，但 Mahalanobis 距离 <span class="arithmatex">\(M_Q\)</span> 是一个度量距离。我们可以按如下方式将一个 Mahalanobis 距离 <span class="arithmatex">\(M_{Q_1}\)</span> 转换为另一个 Mahalanobis 距离 <span class="arithmatex">\(M_{Q_2}\)</span>，反之亦然：</p>
+<p><em>证明。</em> 让我们利用 Cholesky 分解将矩阵写成 <span class="arithmatex">\(Q = L^\top L \succ 0\)</span>。于是我们有</p>
+<div class="arithmatex">\[M_Q(\theta_1, \theta_2) = M_I(L^\top \theta_1, L^\top \theta_2) \Leftrightarrow M_I(\theta_1, \theta_2) = M_Q((L^\top)^{-1}\theta_1, ((L^\top)^{-1}\theta_2). \qquad (141)\]</div>
+<p>于是对于两个对称正定矩阵 <span class="arithmatex">\(Q_1 = L_1^\top L_1 \succ 0\)</span> 与 <span class="arithmatex">\(Q_2 = L_2^\top L_2 \succ 0\)</span>，我们有：</p>
+<div class="arithmatex">\[M_{Q_1}(\theta_1, \theta_2) = M_I(L_1^\top \theta_1, L_1^\top \theta_2) = M_{Q_2}((L_2^\top)^{-1}L_1^\top \theta_1, (L_2^\top)^{-1}L_1^\top \theta_2). \qquad (142)\]</div>
+<p>由此可得：</p>
+<div class="arithmatex">\[M_{Q_1}(\theta_1, \theta_2) = M_{Q_2}((L_2^\top)^{-1}L_1^\top \theta_1, (L_2^\top)^{-1}L_1^\top \theta_2). \qquad (143)\]</div>
+<div class="arithmatex">\[\square\]</div>
+<p>我们有 <span class="arithmatex">\(M_Q^2(\theta_1, \theta_2) = B_F(\theta_1, \theta_2)\)</span>（Bregman 散度），其中 <span class="arithmatex">\(F(\theta) = \frac{1}{2}\theta^\top Q\theta\)</span>，<span class="arithmatex">\(Q \succ 0\)</span> 为正定矩阵。凸共轭 <span class="arithmatex">\(F^*(\eta) = \frac{1}{2}\eta^\top Q^{-1}\eta\)</span>（其中 <span class="arithmatex">\(Q^{-1} \succ 0\)</span>）。我们有 <span class="arithmatex">\(\eta = Q^{-1}\theta\)</span> 以及 <span class="arithmatex">\(\theta = Q\eta\)</span>。我们在 <em>对偶 Mahalanobis 散度</em> <span class="arithmatex">\(M_Q^2\)</span> 与 <span class="arithmatex">\(M_{Q^{-1}}^2\)</span> 之间具有如下恒等式：</p>
+<div class="arithmatex">\[M_Q^2(\theta_1, \theta_2) = M_{Q^{-1}}^2(\eta_1, \eta_2). \qquad (144)\]</div>
+<div class="arithmatex">\[28\]</div>
+<!-- page 29 -->
+
+<p>当Bregman生成器基于积分时，即指数族<span class="arithmatex">\(\mathcal{E}\)</span>的对数归一化函数<span class="arithmatex">\(F(\theta) = \log \left(\int \exp(\langle t(x),\theta\rangle)\mathrm{d}\mu(x)\right)\)</span>，或混合族<span class="arithmatex">\(\mathcal{M}\)</span>的负Shannon熵<span class="arithmatex">\(F(\theta) = \int m_\theta(x) \log m(\eta)\mathrm{d}\mu(x)\)</span>，相关的Bregman散度<span class="arithmatex">\(B_{F,\mathcal{E}}\)</span>或<span class="arithmatex">\(B_{F,\mathcal{M}}\)</span>可以被松弛并解释为一种统计距离。我们在下面解释如何得到这种重构：</p>
+<ul>
+<li>考虑一个阶数为<span class="arithmatex">\(D\)</span>的指数族<span class="arithmatex">\(\mathcal{E}\)</span>，其密度根据控制测度<span class="arithmatex">\(\mu\)</span>定义：</li>
+</ul>
+<div class="arithmatex">\[\mathcal{E} = \{p_\theta(x) = \exp(\theta^\top t(x) - F(\theta))\ :\ \theta \in \Theta\}, \tag{145}\]</div>
+<p>其中自然参数<span class="arithmatex">\(\theta\)</span>和充分统计量向量<span class="arithmatex">\(t(x)\)</span>属于<span class="arithmatex">\(\mathbb{R}^D\)</span>。我们有基于积分的Bregman生成器：</p>
+<div class="arithmatex">\[F(\theta) = F_{\mathcal{E}}(p_\theta) = \log\left(\int \exp(\theta^\top t(x))\mathrm{d}\mu(x)\right), \tag{146}\]</div>
+<p>以及对偶凸共轭</p>
+<div class="arithmatex">\[F^*(\eta) = -h(p_\theta) = \int p(x)\log p(x)\mathrm{d}\mu(x), \tag{147}\]</div>
+<p>其中<span class="arithmatex">\(h(p) = -\int p(x)\log p(x)\mathrm{d}\mu(x)\)</span>表示Shannon熵。</p>
+<p>设<span class="arithmatex">\(\lambda(i)\)</span>表示向量<span class="arithmatex">\(\lambda\)</span>的第<span class="arithmatex">\(i\)</span>个坐标，让我们计算Legendre-Fenchel散度的内积<span class="arithmatex">\(\theta_1^\top\eta_2 = \sum_i \theta_1(i)\eta_2(i)\)</span>。我们有<span class="arithmatex">\(\eta_2(i) = E_{p_{\theta_2}}[t_i(x)]\)</span>。利用期望<span class="arithmatex">\(E[\cdot]\)</span>的线性性质，我们发现<span class="arithmatex">\(\sum_i \theta_1(i)\eta_2(i) = E_{p_{\theta_2}}\left[\sum_i \theta_1(i)t_i(x)\right]\)</span>。此外，我们有<span class="arithmatex">\(\sum_i \theta_1(i)t_i(x) = (\log p_{\theta_1}(x)) + F(\theta_1)\)</span>。因此我们有：</p>
+<div class="arithmatex">\[\theta_1^\top \eta_2 = E_{p_{\theta_2}}\left[\log p_{\theta_1} + F(\theta_1)\right] = F(\theta_1) + E_{p_{\theta_2}}\left[\log p_{\theta_1}\right]. \tag{148}\]</div>
+<p>由此我们得到
+\begin{align}
+B_{F,\mathcal{E}}[p_{\theta_1} : p_{\theta_2}] &amp;= F(\theta_1) + F^<em>(\eta_2) - \theta_1^\top \eta_2, \tag{149}\
+&amp;= F(\theta_1) - h(p_{\theta_2}) - E_{p_{\theta_2}}[\log p_{\theta_1}] - F(\theta_1), \tag{150}\
+&amp;= E_{p_{\theta_2}}\left[\log\frac{p_{\theta_2}}{p_{\theta_1}}\right] =: D_{\mathrm{KL}^</em>}[p_{\theta_1} : p_{\theta_2}], \tag{151}
+\end{align}</p>
+<p>通过将指数族密度<span class="arithmatex">\(p_{\theta_1}\)</span>和<span class="arithmatex">\(p_{\theta_2}\)</span>松弛为任意密度<span class="arithmatex">\(p_1\)</span>和<span class="arithmatex">\(p_2\)</span>，我们从由基于积分的指数族对数归一化函数诱导出的对偶平坦结构中，得到<span class="arithmatex">\(p_1\)</span>与<span class="arithmatex">\(p_2\)</span>之间的反向KL散度：
+\begin{align}
+D_{\mathrm{KL}^*}[p_1 : p_2] &amp;= E_{p_2}\left[\log\frac{p_2}{p_1}\right] = \int p_2(x)\log\frac{p_2(x)}{p_1(x)}\mathrm{d}\mu(x), \tag{152}\
+&amp;= D_{\mathrm{KL}}[p_2 : p_1]. \tag{153}
+\end{align}</p>
+<p>这样，我们就从<span class="arithmatex">\(B_{F,\mathcal{E}}\)</span>中恢复出了反向Kullback-Leibler散度<span class="arithmatex">\(D_{\mathrm{KL}^*}\)</span>。</p>
+<p>对偶散度<span class="arithmatex">\(D^*[p_1 : p_2] := D[p_2 : p_1]\)</span>通过交换分布参数的顺序得到。我们有：</p>
+<div class="arithmatex">\[D_{\mathrm{KL}^*}^*[p_1 : p_2] := D_{\mathrm{KL}^*}[p_2 : p_1] = E_{p_1}\left[\log\frac{p_1}{p_2}\right] =: D_{\mathrm{KL}}[p_1 : p_2], \tag{154}\]</div>
+<p>并且<span class="arithmatex">\(D_{\mathrm{KL}^*}[p_1 : p_2] = D_{\mathrm{KL}^*}^*[p_2 : p_1] = D_{\mathrm{KL}}[p_2 : p_1]\)</span>。</p>
+<p>总之，与指数族对数归一化函数相关联的规范Legendre-Fenchel散度等价于<span class="arithmatex">\(p_{\theta_1}\)</span>与<span class="arithmatex">\(p_{\theta_2}\)</span>之间的统计反向Kullback-Leibler散度</p>
+<!-- page 30 -->
+
+<p>（或交换对应密度之间的KL散度）：<span class="arithmatex">\(D_{\mathrm{KL}}[p_{\theta_1} : p_{\theta_2}] = B_F(\theta_2 : \theta_1) = A_{F,F^*}(\theta_2 : \eta_1)\)</span>。容易验证 <span class="arithmatex">\(D_{\mathrm{KL}}[p_{\theta_1} : p_{\theta_2}] = B_F(\theta_2 : \theta_1)\)</span> [14, 16]。此处，我们采取了相反的方向，由 <span class="arithmatex">\(B_F\)</span> 构造 <span class="arithmatex">\(D_{\mathrm{KL}}\)</span>。</p>
+<p>我们可以引入一个辅助承载项 <span class="arithmatex">\(k(x)\)</span>，使得密度写作 <span class="arithmatex">\(p_\theta(x) = \exp(\theta^\top t(x) - F(\theta) + k(x))\)</span>。于是对偶凸共轭写作 [88]：<span class="arithmatex">\(F^*(\eta) = -h(p_\theta) + E_{p_\theta}[k(x)]\)</span>。</p>
+<p>注意到，由于Bregman生成元在仿射项意义下定义，我们可以考虑等价的生成元 <span class="arithmatex">\(F(\theta) = -\log p_\theta(\omega)\)</span>，以替代基于积分的生成元。这种方法为构建公式提供了途径，从而绕过显式使用对数归一化来计算各种统计距离 [94]。</p>
+<ul>
+<li>在第二个例子中，我们考虑一个混合族</li>
+</ul>
+<div class="arithmatex">\[\mathcal{M} = \left\{m_\theta = \sum_{i=1}^D \theta_i p_i(x) + (1 - \sum_{i=1}^D \theta_i) p_0(x)\right\}, \qquad (155)\]</div>
+<p>其中 <span class="arithmatex">\(p_0, \ldots, p_D\)</span> 是 <span class="arithmatex">\(D+1\)</span> 个线性无关的概率密度。基于积分的Bregman生成元 <span class="arithmatex">\(F\)</span> 被选为Shannon负熵：</p>
+<div class="arithmatex">\[F(\theta) = F_{\mathcal{M}}(m_\theta) = -h(m_\theta) = \int m_\theta(x) \log m_\theta(x) \mathrm{d}\mu(x). \qquad (156)\]</div>
+<p>我们有</p>
+<div class="arithmatex">\[\eta_i = [\nabla F(\theta)]_i = \int (p_i(x) - p_0(x)) \log m_\theta(x) \mathrm{d}\mu(x), \qquad (157)\]</div>
+<p>且对偶凸势函数为</p>
+<div class="arithmatex">\[F^*(\eta) = - \int p_0(x) \log m_\theta(x) \mathrm{d}\mu(x) = h^\times(p_0 : m_\theta), \qquad (158)\]</div>
+<p>即密度 <span class="arithmatex">\(p_0\)</span> 与混合体 <span class="arithmatex">\(m_\theta\)</span> 之间的交叉熵。让我们如下计算Legendre-Fenchel散度的内积 <span class="arithmatex">\(\theta_1^\top \eta_2\)</span>：</p>
+<div class="arithmatex">\[\begin{array}{rcl} \displaystyle\sum_i \theta_1(i) \int (p_i(x) - p_0(x)) \log m_{\theta_2}(x) \mathrm{d}\mu(x) &amp; = &amp; \displaystyle\int \sum_i \theta_1(i) p_i(x) \log m_{\theta_2}(x) \mathrm{d}\mu(x) \\ &amp; &amp; \displaystyle - \sum_i \theta_1(i) p_0(x) \log m_{\theta_2}(x) \mathrm{d}\mu(x). \end{array} \qquad (159)\]</div>
+<p>即</p>
+<div class="arithmatex">\[\theta_1^\top \eta_2 = \int \sum_i \theta_1(i) p_i \log m_{\theta_2} \mathrm{d}\mu - \sum_i \theta_1(i) p_0 \log m_{\theta_2} \mathrm{d}\mu. \qquad (160)\]</div>
+<p>30</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/marked.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/purify.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor-core.js"></script>
+      
+        <script src="../../../javascripts/tutor/widgets.js"></script>
+      
+        <script src="../../../javascripts/tutor/messages.js"></script>
+      
+        <script src="../../../javascripts/tutor/steprail.js"></script>
+      
+        <script src="../../../javascripts/tutor/focus.js"></script>
+      
+        <script src="../../../javascripts/tutor/settings-dialog.js"></script>
+      
+        <script src="../../../javascripts/tutor/profile-drawer.js"></script>
+      
+        <script src="../../../javascripts/tutor/panel.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor.js"></script>
+      
+    
+  </body>
+</html>

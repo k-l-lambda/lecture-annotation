@@ -1,0 +1,37 @@
+source_pdf: "/home/camus/work/diary-job/temp/arxiv-1808.08271.pdf"
+segments:
+  - id: 01_introduction
+    title: "1 引言 (Introduction)"
+    pdf_pages: [1, 2]
+
+  - id: 02_prerequisite_differential_geometry
+    title: "2 预备知识：微分几何基础 (Prerequisite: Basics of differential geometry)"
+    pdf_pages: [3, 9]
+
+  - id: 03a_information_manifolds_structures
+    title: "3 信息流形（上）：共轭联络、统计流形、对偶平坦 (Information manifolds, part 1)"
+    pdf_pages: [10, 17]
+
+  - id: 03b_information_manifolds_invariance
+    title: "3 信息流形（下）：Hessian 几何、期望流形、统计不变性、Fisher-Rao (Information manifolds, part 2)"
+    pdf_pages: [18, 30]
+
+  - id: 04_applications
+    title: "4 信息几何的一些应用 (Some applications of information geometry)"
+    pdf_pages: [31, 39]
+
+  - id: 05_conclusion
+    title: "5 结论：总结、历史背景与展望 (Conclusion)"
+    pdf_pages: [40, 43]
+
+  - id: 06_appendix_a_montecarlo
+    title: "附录 A：f-散度的蒙特卡洛估计 (Appendix A: Monte Carlo estimations of f-divergences)"
+    pdf_pages: [44, 45]
+
+  - id: 07_appendix_b_gaussian_family
+    title: "附录 B：多元高斯族——一个指数族 (Appendix B: The multivariate Gaussian family)"
+    pdf_pages: [46, 48]
+
+  - id: 08_references
+    title: "参考文献 (References)"
+    pdf_pages: [49, 56]

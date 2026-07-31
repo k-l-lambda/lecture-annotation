@@ -1,0 +1,2220 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/Information_Geometry_Elementary_Introduction/03a_information_manifolds_structures/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>03a information manifolds structures - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/tutor.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-信息流形" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              03a information manifolds structures
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3-信息流形" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3 信息流形
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 信息流形">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 概述
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-共轭联络流形m-g-nabla-nabla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 共轭联络流形：\((M, g, \nabla, \nabla^*)\)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 共轭联络流形：\((M, g, \nabla, \nabla^*)\)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#33-统计流形m-g-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 统计流形：\((M, g, C)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-共轭联络流形族-mgnabla-alphanablaalpha--nabla-alpha_alphainmathbbr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 共轭联络流形族 \(\{(M,g,\nabla^{-\alpha},\nabla^\alpha = (\nabla^{-\alpha})^*)\}_{\alpha\in\mathbb{R}}\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-信息几何基本定理nabla-kappa-弯曲-leftrightarrow-nabla-kappa-弯曲" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 信息几何基本定理：\(\nabla\) \(\kappa\)-弯曲 \(\Leftrightarrow\) \(\nabla^*\) \(\kappa\)-弯曲
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-由散度导出的共轭联络m-d-equiv-m-dg-dnabla-dnabla--dnabla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 由散度导出的共轭联络：\((M, D) \equiv (M, {}^Dg, {}^D\nabla, {}^D\nabla^* = {}^{D^*}\nabla)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-对偶平坦流形bregman-几何m-f-equiv-m-b_fg-b_fnabla-b_fnabla--b_fnabla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 对偶平坦流形（Bregman 几何）：\((M, F) \equiv (M, {}^{B_F}g, {}^{B_F}\nabla, {}^{B_F}\nabla^* = {}^{B_F^*}\nabla)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>03a information manifolds structures</h1>
+
+<!-- page 10 -->
+
+<h2 id="3-信息流形">3 信息流形<a class="headerlink" href="#3-信息流形" title="Permanent link">&para;</a></h2>
+<h3 class="tutor-section" id="31-概述">3.1 概述<a class="headerlink" href="#31-概述" title="Permanent link">&para;</a></h3>
+<p>在本部分中，我们解释信息几何中流形的<em>对偶结构</em>。在 §3.2 中，我们首先介绍核心的<em>共轭联络流形</em>（CCMs）<span class="arithmatex">\((M,g,\nabla,\nabla^*)\)</span>，并展示如何构建<em>统计流形</em></p>
+<!-- page 11 -->
+
+<p>(SMs) <span class="arithmatex">\((M, g, C)\)</span> 来自 §3.3 中的 CCM。从任意统计流形出发，我们可以构造 CCM 的一个单参数族 <span class="arithmatex">\((M, g, \nabla^{-\alpha}, \nabla^{\alpha})\)</span>，即信息 <span class="arithmatex">\(\alpha\)</span>-流形。我们在 §3.5 中陈述信息几何的基本定理。这些 CCM 与 SM 的结构先验上并不与任何距离相关，但首先需要一个与度量张量 <span class="arithmatex">\(g\)</span> 耦合的共轭联络对 <span class="arithmatex">\((\nabla, \nabla^*)\)</span>。我们展示两种构造初始共轭联络对的方法。第一种方法是在 §3.6 中从任意散度 <span class="arithmatex">\(D\)</span> 构造一对共轭联络 <span class="arithmatex">\(({}^D\nabla, {}^D\nabla^*)\)</span>。因此，当散度对称时，即 <span class="arithmatex">\(D(\theta_1 : \theta_2) = D(\theta_2 : \theta_1)\)</span>，我们得到自共轭联络。当散度为 Bregman 散度（即对于严格凸且可微的 Bregman 生成元，<span class="arithmatex">\(D = B_F\)</span>）时，我们在 §3.7 中得到对偶平坦流形（DFMs）<span class="arithmatex">\((M, \nabla^2 F, {}^F\nabla, {}^F\nabla^*)\)</span>。DFM 很好地推广了欧几里得几何，并展现出勾股定理。我们进一步刻画点关于子流形 a 的正交 <span class="arithmatex">\({}^F\nabla\)</span>-投影与对偶 <span class="arithmatex">\({}^F\nabla^*\)</span>-投影何时唯一。[^7] 第二种获得共轭联络对 <span class="arithmatex">\(({}^e\nabla, {}^m\nabla)\)</span> 的方法是从一个正则参数概率分布族 <span class="arithmatex">\(\mathcal{P} = \{p_\theta(x)\}_\theta\)</span> 来定义这些联络。在这种情况下，这些‘e’指数联络 <span class="arithmatex">\({}^e\nabla\)</span> 和‘m’混合联络 <span class="arithmatex">\({}^m\nabla\)</span> 与 Fisher 信息度量 <span class="arithmatex">\({}_{\mathcal{P}}g\)</span> 相耦合。通过考虑偏度 Amari-Chentsov 三次张量 <span class="arithmatex">\({}_{\mathcal{P}}C\)</span>，可以恢复统计流形 <span class="arithmatex">\((\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}C)\)</span>，并由此得到一族 CCM 的单参数族 <span class="arithmatex">\((\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{+\alpha})\)</span>，即统计期望 <span class="arithmatex">\(\alpha\)</span>-流形。在这种参数统计语境下，这些信息流形被称为期望信息流形，因为各种量都是用统计期望 <span class="arithmatex">\(E_\cdot[\cdot]\)</span> 来表达的。注意到这些信息流形可以一般地用于信息科学，而不仅限于传统的统计学领域。在统计学中，我们在 §3.10 中通过研究统计不变性准则来为联络、度量张量和散度的选择提供动机。我们解释如何从标准的 <span class="arithmatex">\(f\)</span>-散度中恢复期望 <span class="arithmatex">\(\alpha\)</span>-联络，而 <span class="arithmatex">\(f\)</span>-散度是唯一满足信息单调性性质的可分散度。最后，在 §3.11 中，我们回顾 Fisher-Rao 期望黎曼流形，它们是装备了称为 Fisher-Rao 距离（简称 Rao 距离）的测地度量距离的黎曼流形 <span class="arithmatex">\((\mathcal{P}, {}_{\mathcal{P}}g)\)</span>。</p>
+<h2 class="tutor-section" id="32-共轭联络流形m-g-nabla-nabla">3.2 共轭联络流形：<span class="arithmatex">\((M, g, \nabla, \nabla^*)\)</span><a class="headerlink" href="#32-共轭联络流形m-g-nabla-nabla" title="Permanent link">&para;</a></h2>
+<p>我们从一个定义开始：</p>
+<p><strong>定义 1</strong>（共轭联络）。<em>称联络 <span class="arithmatex">\(\nabla^*\)</span> 关于度量张量 <span class="arithmatex">\(g\)</span> 与联络 <span class="arithmatex">\(\nabla\)</span> 共轭，当且仅当对于任意光滑向量场三元组 <span class="arithmatex">\((X, Y, Z)\)</span> 满足如下恒等式：</em></p>
+<div class="arithmatex">\[X\langle Y, Z \rangle = \langle \nabla_X Y, Z \rangle + \langle Y, \nabla_X^* Z \rangle, \quad \forall X, Y, Z \in \mathfrak{X}(M). \tag{35}\]</div>
+<p>我们在记号上可将式 35 重写为：</p>
+<div class="arithmatex">\[Xg(Y,Z) = g(\nabla_X Y, Z) + g(Y, \nabla_X^* Z), \tag{36}\]</div>
+<p>并进一步显式写出，对于每一点 <span class="arithmatex">\(p \in M\)</span>，我们有：</p>
+<div class="arithmatex">\[X_p g_p(Y_p, Z_p) = g_p((\nabla_X Y)_p, Z_p) + g_p(Y_p, (\nabla_X^* Z)_p). \tag{37}\]</div>
+<p>我们检查右端是一个标量，而左端是一个实值函数的方向导数，它也是一个标量。</p>
+<p>共轭是一个对合：<span class="arithmatex">\((\nabla^*)^* = \nabla\)</span>。</p>
+<p><strong>定义 2</strong>（共轭联络流形）。<em>共轭联络流形（CCM）的结构记为 <span class="arithmatex">\((M, g, \nabla, \nabla^*)\)</span>，其中 <span class="arithmatex">\((\nabla, \nabla^*)\)</span> 是关于度量 <span class="arithmatex">\(g\)</span> 的共轭联络。</em></p>
+<p>一个显著的性质是，向量的对偶平行移动保持度量。也就是说，对于任意光滑曲线 <span class="arithmatex">\(c(t)\)</span>，当我们用原始平行移动 <span class="arithmatex">\(\prod_c^\nabla\)</span> 移动其中一个向量 <span class="arithmatex">\(u\)</span>，并用对偶平行移动 <span class="arithmatex">\(\prod_c^{\nabla^*}\)</span> 移动另一向量 <span class="arithmatex">\(v\)</span> 时，内积保持不变。</p>
+<p>[^7]: 在欧几里得几何中，利用勾股定理可以证明点 <span class="arithmatex">\(p\)</span> 到仿射子空间 <span class="arithmatex">\(S\)</span> 的正交投影是唯一的。</p>
+<p>11</p>
+<!-- page 12 -->
+
+<div class="arithmatex">\[\langle u, v \rangle_{c(0)} = \left\langle \prod_{c(0)\to c(t)}^{\nabla} u,\; \prod_{c(0)\to c(t)}^{\nabla^*} v \right\rangle_{c(t)}. \tag{38}\]</div>
+<p><strong>性质 1</strong>（对偶平行输运保持度量）。<em>一对共轭联络 <span class="arithmatex">\((\nabla, \nabla^*)\)</span> 保持度量 <span class="arithmatex">\(g\)</span> 当且仅当：</em></p>
+<div class="arithmatex">\[\forall t \in [0,1],\; \left\langle \prod_{c(0)\to c(t)}^{\nabla} u,\; \prod_{c(0)\to c(t)}^{\nabla^*} v \right\rangle_{c(t)} = \langle u, v \rangle_{c(0)}. \tag{39}\]</div>
+<p><strong>性质 2。</strong> <em>给定 <span class="arithmatex">\((M, g)\)</span> 上的一个联络 <span class="arithmatex">\(\nabla\)</span>（即结构 <span class="arithmatex">\((M, g, \nabla)\)</span>），存在唯一的共轭联络 <span class="arithmatex">\(\nabla^*\)</span>（即对偶结构 <span class="arithmatex">\((M, g, \nabla^*)\)</span>）。</em></p>
+<p>我们考虑一个配备了共轭联络对 <span class="arithmatex">\(\nabla\)</span> 与 <span class="arithmatex">\(\nabla^*\)</span> 的流形 <span class="arithmatex">\(M\)</span>，它们与度量张量 <span class="arithmatex">\(g\)</span> 耦合，使得对偶平行输运保持度量。我们定义平均联络 <span class="arithmatex">\(\bar{\nabla}\)</span>：</p>
+<div class="arithmatex">\[\bar{\nabla} = \frac{\nabla + \nabla^*}{2}, \tag{40}\]</div>
+<p>相应的 Christoffel 系数记为 <span class="arithmatex">\(\bar{\Gamma}\)</span>。该平均联络与 Levi-Civita 度量联络一致：</p>
+<div class="arithmatex">\[\bar{\nabla} = {}^{\mathrm{LC}}\nabla. \tag{41}\]</div>
+<p><strong>性质 3。</strong> <em>平均联络 <span class="arithmatex">\(\bar{\nabla}\)</span> 是自共轭的，并且与 Levi-Civita 度量联络重合。</em></p>
+<h3 class="tutor-section" id="33-统计流形m-g-c">3.3 统计流形：<span class="arithmatex">\((M, g, C)\)</span><a class="headerlink" href="#33-统计流形m-g-c" title="Permanent link">&para;</a></h3>
+<p>Lauritzen 于 1987 年引入了信息几何中的这一角结构 [62]。需注意，尽管它名为“统计流形”，但它是一种纯几何构造，可在统计学领域之外使用。然而，正如我们稍后将要提到的，我们总可以找到一个与统计流形 [128] 对应的统计模型 <span class="arithmatex">\(\mathcal{P}\)</span>。我们将看到如何把共轭联络流形转化为这样的统计流形，以及如何随后从统计流形导出无限一族 CCMs。换言之，一旦我们拥有一对共轭联络，我们就能够构造一族共轭联络对。</p>
+<p>我们定义一个完全对称⁸的三次 <span class="arithmatex">\((0,3)\)</span>-张量（即 3-协变张量），称为 Amari-Chentsov 张量：</p>
+<div class="arithmatex">\[C_{ijk} := \Gamma_{ij}^k - \Gamma_{ij}^{*k}, \tag{42}\]</div>
+<p>或用无坐标方程表示：</p>
+<div class="arithmatex">\[C(X,Y,Z) := \langle \nabla_X Y - \nabla_X^* Y, Z \rangle. \tag{43}\]</div>
+<p>使用局部基，该三次张量可表示为：</p>
+<div class="arithmatex">\[C_{ijk} = C(\partial_i, \partial_j, \partial_k) = \langle \nabla_{\partial_i} \partial_j - \nabla_{\partial_i}^* \partial_j, \partial_k \rangle \tag{44}\]</div>
+<p><strong>定义 3</strong>（统计流形 [62]）。<em>统计流形 <span class="arithmatex">\((M, g, C)\)</span> 是一个配备了度量张量 <span class="arithmatex">\(g\)</span> 和完全对称三次张量 <span class="arithmatex">\(C\)</span> 的流形 <span class="arithmatex">\(M\)</span>。</em></p>
+<hr />
+<p>⁸这意味着对于任意置换 <span class="arithmatex">\(\sigma\)</span>，都有 <span class="arithmatex">\(C_{ijk} = C_{\sigma(i)\sigma(j)\sigma(k)}\)</span>。度量张量是完全对称的。</p>
+<p>12</p>
+<!-- page 13 -->
+
+<h3 class="tutor-section" id="34-共轭联络流形族-mgnabla-alphanablaalpha--nabla-alpha_alphainmathbbr">3.4 共轭联络流形族 <span class="arithmatex">\(\{(M,g,\nabla^{-\alpha},\nabla^\alpha = (\nabla^{-\alpha})^*)\}_{\alpha\in\mathbb{R}}\)</span><a class="headerlink" href="#34-共轭联络流形族-mgnabla-alphanablaalpha--nabla-alpha_alphainmathbbr" title="Permanent link">&para;</a></h3>
+<p>对于任意一对共轭联络 <span class="arithmatex">\((\nabla,\nabla^*)\)</span>，我们可以定义一个 <span class="arithmatex">\(1\)</span>-<em>参数联络族</em> <span class="arithmatex">\(\{\nabla^\alpha\}_{\alpha\in\mathbb{R}}\)</span>，称为 <span class="arithmatex">\(\alpha\)</span>-<em>联络</em>，使得 <span class="arithmatex">\((\nabla^{-\alpha}, \nabla^\alpha)\)</span> 关于度量对偶耦合，且 <span class="arithmatex">\(\nabla^0=\bar{\nabla}={}^{\text{LC}}\nabla\)</span>，<span class="arithmatex">\(\nabla^1=\nabla\)</span> 以及 <span class="arithmatex">\(\nabla^{-1}=\nabla^*\)</span>。注意到缩放的三次张量 <span class="arithmatex">\(\alpha C\)</span> 也是一个完全对称的三次 <span class="arithmatex">\(3\)</span> 阶协变张量，我们可以从统计流形 <span class="arithmatex">\((M,g,C)\)</span> 导出 <span class="arithmatex">\(\alpha\)</span>-联络如下：</p>
+<div class="arithmatex">\[\Gamma^\alpha_{ij,k} = \Gamma^0_{ij,k} - \frac{\alpha}{2}C_{ij,k}, \tag{45}\]</div>
+<div class="arithmatex">\[\Gamma^{-\alpha}_{ij,k} = \Gamma^0_{ij,k} + \frac{\alpha}{2}C_{ij,k}, \tag{46}\]</div>
+<p>其中 <span class="arithmatex">\(\Gamma^0_{ij,k}\)</span> 是 Levi-Civita Christoffel 符号，且 <span class="arithmatex">\(\Gamma_{ki,j}\stackrel{\Sigma}{=}\Gamma^l_{ij}g_{lk}\)</span>（通过指标变换）。</p>
+<p><span class="arithmatex">\(\alpha\)</span>-联络 <span class="arithmatex">\(\nabla^\alpha\)</span> 也可以如下定义：</p>
+<div class="arithmatex">\[g(\nabla^\alpha_XY,Z) = g({}^{\text{LC}}\nabla_XY,Z) + \frac{\alpha}{2}C(X,Y,Z), \forall X,Y,Z\in\mathfrak{X}(M). \tag{47}\]</div>
+<p><strong>定理 2</strong>（信息 <span class="arithmatex">\(\alpha\)</span>-流形族）。<em>对于任意 <span class="arithmatex">\(\alpha\in\mathbb{R}\)</span>，<span class="arithmatex">\((M,g,\nabla^{-\alpha},\nabla^\alpha = (\nabla^{-\alpha})^*)\)</span> 是一个共轭联络流形。</em></p>
+<p><span class="arithmatex">\(\alpha\)</span>-联络 <span class="arithmatex">\(\nabla^\alpha\)</span> 也可以通过取如下加权组合直接从一对共轭联络 <span class="arithmatex">\((\nabla,\nabla^*)\)</span> 构造：</p>
+<div class="arithmatex">\[\Gamma^\alpha_{ij,k} = \frac{1+\alpha}{2}\Gamma_{ij,k} + \frac{1-\alpha}{2}\Gamma^*_{ij,k}. \tag{48}\]</div>
+<h3 class="tutor-section" id="35-信息几何基本定理nabla-kappa-弯曲-leftrightarrow-nabla-kappa-弯曲">3.5 信息几何基本定理：<span class="arithmatex">\(\nabla\)</span> <span class="arithmatex">\(\kappa\)</span>-弯曲 <span class="arithmatex">\(\Leftrightarrow\)</span> <span class="arithmatex">\(\nabla^*\)</span> <span class="arithmatex">\(\kappa\)</span>-弯曲<a class="headerlink" href="#35-信息几何基本定理nabla-kappa-弯曲-leftrightarrow-nabla-kappa-弯曲" title="Permanent link">&para;</a></h3>
+<p>我们现在陈述信息几何基本定理及其推论：</p>
+<p><strong>定理 3</strong>（对偶常曲率流形）。<em>若无挠仿射联络 <span class="arithmatex">\(\nabla\)</span> 具有常曲率 <span class="arithmatex">\(\kappa\)</span>，则其共轭无挠联络 <span class="arithmatex">\(\nabla^*\)</span> 必然具有相同的常曲率 <span class="arithmatex">\(\kappa\)</span>。</em></p>
+<p>证明见 [25]（命题 8.1.4，第 226 页）。</p>
+<p>若统计流形 <span class="arithmatex">\((M,g,C)\)</span> 的诱导 <span class="arithmatex">\(\alpha\)</span>-联络是平坦的，则称其为 <span class="arithmatex">\(\alpha\)</span>-<em>平坦</em>的。可以证明 <span class="arithmatex">\(R^\alpha = -R^{-\alpha}\)</span>。</p>
+<p>我们得到以下两个推论：</p>
+<p><strong>推论 1</strong>（对偶 <span class="arithmatex">\(\alpha\)</span>-平坦流形）。<em>流形 <span class="arithmatex">\((M,g,\nabla^{-\alpha},\nabla^\alpha)\)</span> 是 <span class="arithmatex">\(\nabla^\alpha\)</span>-平坦的当且仅当它是 <span class="arithmatex">\(\nabla^{-\alpha}\)</span>-平坦的。</em></p>
+<p><strong>推论 2</strong>（对偶平坦流形（<span class="arithmatex">\(\alpha=\pm 1\)</span>））。<em>流形 <span class="arithmatex">\((M,g,\nabla,\nabla^*)\)</span> 是 <span class="arithmatex">\(\nabla\)</span>-平坦的当且仅当它是 <span class="arithmatex">\(\nabla^*\)</span>-平坦的。</em></p>
+<p>（见 [9] 的定理 3.3）</p>
+<p>现在我们定义统计结构 [46] 的常曲率概念：</p>
+<p><strong>定义 4</strong>（常曲率 <span class="arithmatex">\(\kappa\)</span>）。<em>统计结构 <span class="arithmatex">\((M,g,\nabla)\)</span> 被称为具有常曲率 <span class="arithmatex">\(\kappa\)</span>，当</em></p>
+<div class="arithmatex">\[R^\nabla(X,Y)Z = \kappa\{g(Y,Z)X - g(X,Z)Y\}, \quad \forall X,Y,Z\in\Gamma(TM),\]</div>
+<p><em>其中 <span class="arithmatex">\(\Gamma(TM)\)</span> 表示光滑向量场的空间。</em></p>
+<p>可以证明共轭 <span class="arithmatex">\(\alpha\)</span>-联络 [25] 的 Riemann-Christoffel（RC）<span class="arithmatex">\(4\)</span>-张量有如下关系：</p>
+<div class="arithmatex">\[g\left(R^{(\alpha)}(X,Y)Z,W\right) + g\left(Z,R^{(-\alpha)}(X,Y)W\right) = 0. \tag{49}\]</div>
+<p>因此我们有 <span class="arithmatex">\(g\left(R^{\nabla^*}(X,Y)Z,W\right) = -g\left(Z,R^\nabla(X,Y)W\right)\)</span>。</p>
+<p>因此，一旦给定一对共轭联络，我们总能构造一个 <span class="arithmatex">\(1\)</span>-参数流形族。从计算的角度来看，具有常曲率 <span class="arithmatex">\(\kappa\)</span> 的流形是很有意义的，因为对偶测地线具有简单的闭式表达式。</p>
+<!-- page 14 -->
+
+<h3 class="tutor-section" id="36-由散度导出的共轭联络m-d-equiv-m-dg-dnabla-dnabla--dnabla">3.6 由散度导出的共轭联络：<span class="arithmatex">\((M, D) \equiv (M, {}^Dg, {}^D\nabla, {}^D\nabla^* = {}^{D^*}\nabla)\)</span><a class="headerlink" href="#36-由散度导出的共轭联络m-d-equiv-m-dg-dnabla-dnabla--dnabla" title="Permanent link">&para;</a></h3>
+<p>粗略地说，散度 <span class="arithmatex">\(D(\cdot:\cdot)\)</span> 是一种光滑距离 [138]，可能是非对称的。为了严格定义散度，我们首先引入以下便捷记号：<span class="arithmatex">\(\partial_{i,\cdot} f(x,y) = \frac{\partial}{\partial x^i} f(x,y)\)</span>，<span class="arithmatex">\(\partial_{\cdot,j} f(x,y) = \frac{\partial}{\partial y^j} f(x,y)\)</span>，<span class="arithmatex">\(\partial_{ij,\cdot} f(x,y) = \frac{\partial^2}{\partial x^i \partial x^j} f(x,y)\)</span> 以及 <span class="arithmatex">\(\partial_{i,jk} f(x,y) = \frac{\partial}{\partial x^i}\frac{\partial^2}{\partial y^j \partial y^k} f(x,y)\)</span>，等等。</p>
+<p><strong>定义 5</strong>（散度）。流形 <span class="arithmatex">\(M\)</span> 上关于局部坐标卡 <span class="arithmatex">\(\Theta \subset \mathbb{R}^D\)</span> 的散度 <span class="arithmatex">\(D: M \times M \to [0,\infty)\)</span> 是一个满足以下性质的 <span class="arithmatex">\(C^3\)</span> 函数：</p>
+<ol>
+<li>对所有 <span class="arithmatex">\(\theta, \theta' \in \Theta\)</span> 有 <span class="arithmatex">\(D(\theta:\theta') \geq 0\)</span>，且等号成立当且仅当 <span class="arithmatex">\(\theta=\theta'\)</span>（不可分辨者同一律），</li>
+<li>对所有 <span class="arithmatex">\(i,j \in [D]\)</span> 有 <span class="arithmatex">\(\partial_{i,\cdot} D(\theta:\theta')|_{\theta=\theta'} = \partial_{\cdot,j} D(\theta:\theta')|_{\theta=\theta'} = 0\)</span>，</li>
+<li><span class="arithmatex">\(-\partial_{\cdot,i}\partial_{\cdot,j} D(\theta:\theta')|_{\theta=\theta'}\)</span> 是正定的。</li>
+</ol>
+<p><em>对偶散度</em>通过交换自变量定义：</p>
+<div class="arithmatex">\[D^*(\theta:\theta') := D(\theta':\theta), \tag{50}\]</div>
+<p>它也被称为<em>反向散度</em>（信息几何中的参考对偶性）。散度的参考对偶性是一个对合：<span class="arithmatex">\((D^*)^* = D\)</span>。</p>
+<p>欧几里得距离是一种度量距离，但不是散度。平方欧几里得距离是一种非度量对称散度。度量张量 <span class="arithmatex">\(g\)</span> 给出黎曼度量距离 <span class="arithmatex">\(D_\rho\)</span>，但它绝不是散度。</p>
+<p>从任意给定的散度 <span class="arithmatex">\(D\)</span> 出发，我们可以按照 Eguchi [42, 43]（1983）的构造定义一个共轭联络流形：</p>
+<p><strong>定理 4</strong>（由散度构造流形）。<span class="arithmatex">\((M, {}^Dg, {}^D\nabla, {}^{D^*}\nabla)\)</span> 是一个信息流形，其中：</p>
+<div class="arithmatex">\[
+\begin{align}
+{}^Dg &amp;:= -\partial_{i,j} D(\theta:\theta')|_{\theta=\theta'} = {}^{D^*}g, \tag{51}\\
+{}^D\Gamma_{ijk} &amp;:= -\partial_{ij,k} D(\theta:\theta')|_{\theta=\theta'}, \tag{52}\\
+{}^{D^*}\Gamma_{ijk} &amp;:= -\partial_{k,ij} D(\theta:\theta')|_{\theta=\theta'}. \tag{53}
+\end{align}
+\]</div>
+<p>相关联的统计流形为 <span class="arithmatex">\((M, {}^Dg, {}^DC)\)</span>，其中：</p>
+<div class="arithmatex">\[{}^DC_{ijk} = {}^{D^*}\Gamma_{ijk} - {}^D\Gamma_{ijk}. \tag{54}\]</div>
+<p>由于对任意 <span class="arithmatex">\(\alpha \in \mathbb{R}\)</span>，<span class="arithmatex">\(\alpha{}^DC\)</span> 都是一个完全对称的三次张量，我们可以导出一族单参数共轭联络流形：</p>
+<div class="arithmatex">\[\left\{(M, {}^Dg, {}^DC^\alpha) \equiv (M, {}^Dg, {}^D\nabla^{-\alpha}, ({}^D\nabla^{-\alpha})^* = {}^D\nabla^\alpha)\right\}_{\alpha\in\mathbb{R}}. \tag{55}\]</div>
+<p>在后续内容中，我们使用简写 <span class="arithmatex">\((M,D)\)</span> 来表示由散度诱导的信息流形 <span class="arithmatex">\((M, {}^Dg, {}^D\nabla, {}^D\nabla^*)\)</span>。注意，由构造可知：</p>
+<div class="arithmatex">\[{}^D\nabla^* = {}^{D^*}\nabla. \tag{56}\]</div>
+<h3 class="tutor-section" id="37-对偶平坦流形bregman-几何m-f-equiv-m-b_fg-b_fnabla-b_fnabla--b_fnabla">3.7 对偶平坦流形（Bregman 几何）：<span class="arithmatex">\((M, F) \equiv (M, {}^{B_F}g, {}^{B_F}\nabla, {}^{B_F}\nabla^* = {}^{B_F^*}\nabla)\)</span><a class="headerlink" href="#37-对偶平坦流形bregman-几何m-f-equiv-m-b_fg-b_fnabla-b_fnabla--b_fnabla" title="Permanent link">&para;</a></h3>
+<p>我们考虑满足非对称毕达哥拉斯定理的对偶平坦流形。这些平坦流形可以从一个典范的 Bregman 散度得到。</p>
+<p>考虑一个<em>严格凸光滑函数</em> <span class="arithmatex">\(F(\theta)\)</span>，称为<em>势函数</em>，其中 <span class="arithmatex">\(\theta \in \Theta\)</span>，而 <span class="arithmatex">\(\Theta\)</span> 是一个开凸区域。注意，函数的凸性在仿射变换下不变。我们将一个相应的<em>Bregman 散度</em>（参数散度）与势函数 <span class="arithmatex">\(F\)</span> 相关联：</p>
+<div class="arithmatex">\[B_F(\theta:\theta') := F(\theta) - F(\theta') - (\theta-\theta')^\top \nabla F(\theta'). \tag{57}\]</div>
+<!-- page 15 -->
+
+<p>我们也将点 <span class="arithmatex">\(P\)</span> 与点 <span class="arithmatex">\(Q\)</span> 之间的Bregman散度记为 <span class="arithmatex">\(D(P:Q) := B_F(\theta(P):\theta(Q))\)</span>，其中 <span class="arithmatex">\(\theta(P)\)</span> 表示点 <span class="arithmatex">\(P\)</span> 的坐标。</p>
+<p>由Bregman生成元<span class="arithmatex">\(^9\)</span>诱导的信息几何结构为 <span class="arithmatex">\((M, {}^F g, {}^F C) := (M, {}^{B_F} g, {}^{B_F} C)\)</span>，其定义为：</p>
+<div class="arithmatex">\[
+{}^F g := {}^{B_F} g = -[\partial_i\partial_j B_F(\theta:\theta')|_{\theta'=\theta}] = \nabla^2 F(\theta), \tag{58}
+\]</div>
+<div class="arithmatex">\[
+{}^F \Gamma := {}^{B_F} \Gamma_{ij,k}(\theta) = 0, \tag{59}
+\]</div>
+<div class="arithmatex">\[
+{}^F C_{ijk} := {}^{B_F} C_{ijk} = \partial_i\partial_j\partial_k F(\theta). \tag{60}
+\]</div>
+<p>由于Christoffel符号的所有系数均为零（公式59），该信息流形是 <span class="arithmatex">\({}^F\nabla\)</span>-<em>平坦</em>的。Levi-Civita联络 <span class="arithmatex">\({}^{\mathrm{LC}}\nabla\)</span> 由度量张量 <span class="arithmatex">\({}^F g\)</span>（通常不是平坦的）导出，而由 <span class="arithmatex">\((M, {}^F g, {}^F C)\)</span> 可得共轭联络 <span class="arithmatex">\(({}^F\nabla)^* = {}^F\nabla^1\)</span>。</p>
+<p>Legendre-Fenchel变换产生<em>凸共轭</em> <span class="arithmatex">\(F^*\)</span>，它被解释为<em>对偶势函数</em>：</p>
+<div class="arithmatex">\[
+F^*(\eta) := \sup_{\theta\in\Theta} \{\theta^\top\eta - F(\theta)\}. \tag{61}
+\]</div>
+<p><strong>定理5</strong>（Fenchel-Moreau双共轭 [52]）。<em>若 <span class="arithmatex">\(F\)</span> 为下半连续<span class="arithmatex">\(^{10}\)</span>的凸函数，则其Legendre-Fenchel变换是对合的：<span class="arithmatex">\((F^*)^* = F\)</span>（双共轭）。</em></p>
+<p>在对偶平坦流形中，存在两个全局对偶仿射坐标系 <span class="arithmatex">\(\eta = \nabla F(\theta)\)</span> 与 <span class="arithmatex">\(\theta = \nabla F^*(\eta)\)</span>，因此该流形可被单个坐标图覆盖。于是，若一个概率族属于指数族，则其自然参数不可能属于，例如，球面空间（那至少需要两个坐标图）。</p>
+<p>我们有Crouzeix [32] 恒等式，它关联势函数的Hessian矩阵：</p>
+<div class="arithmatex">\[
+\nabla^2 F(\theta)\nabla^2 F^*(\eta) = I, \tag{62}
+\]</div>
+<p>其中 <span class="arithmatex">\(I\)</span> 表示 <span class="arithmatex">\(D\times D\)</span> 单位矩阵。此Crouzeix恒等式表明 <span class="arithmatex">\(B = \{\partial_i\}_i\)</span> 与 <span class="arithmatex">\(B^* = \{\partial^j\}_j\)</span> 分别为原始基与倒基。</p>
+<p>Bregman散度可借助Young-Fenchel（不）等式重新解释为<em>典范散度</em> <span class="arithmatex">\(A_{F,F^*}\)</span> [12]：</p>
+<div class="arithmatex">\[
+B_F(\theta:\theta') = A_{F,F^*}(\theta:\eta') = F(\theta) + F^*(\eta') - \theta^\top\eta' = A_{F^*,F}(\eta':\theta). \tag{63}
+\]</div>
+<p><em>对偶Bregman散度</em> <span class="arithmatex">\(B_{F^*}(\theta:\theta') := B_F(\theta':\theta) = B_{F^*}(\eta:\eta')\)</span> 给出</p>
+<div class="arithmatex">\[
+{}^F g^{ij}(\eta) = \partial^i\partial^j F^*(\eta), \quad \partial^l :=: \frac{\partial}{\partial\eta^l} \tag{64}
+\]</div>
+<div class="arithmatex">\[
+{}^F\Gamma^{*ijk}(\eta) = 0, \quad {}^F C^{ijk} = \partial^i\partial^j\partial^k F^*(\eta) \tag{65}
+\]</div>
+<p>因此，该信息流形既是 <span class="arithmatex">\({}^F\nabla\)</span>-平坦的，又是 <span class="arithmatex">\({}^F\nabla^*\)</span>-平坦的：这种结构称为<em>对偶平坦流形</em>（DFM）。在DFM中，我们有两个全局仿射坐标系 <span class="arithmatex">\(\theta(\cdot)\)</span> 与 <span class="arithmatex">\(\eta(\cdot)\)</span>，它们由一对势函数 <span class="arithmatex">\(F\)</span> 与 <span class="arithmatex">\(F^*\)</span> 的Legendre-Fenchel变换所关联。亦即 <span class="arithmatex">\((M, F) \equiv (M, F^*)\)</span>，并且对偶图册为 <span class="arithmatex">\(\mathcal{A}=\{(M,\theta)\}\)</span> 与 <span class="arithmatex">\(\mathcal{A}^*=\{(M,\eta)\}\)</span>。</p>
+<p>在对偶平坦流形中，任意两点 <span class="arithmatex">\(P\)</span> 与 <span class="arithmatex">\(Q\)</span> 既可通过 <span class="arithmatex">\(\nabla\)</span>-测地线（即 <span class="arithmatex">\(\theta\)</span>-直线）相连，也可通过 <span class="arithmatex">\(\nabla^*\)</span>-测地线（即 <span class="arithmatex">\(\eta\)</span>-直线）相连。一般而言，在对偶平坦流形中存在 <span class="arithmatex">\(2^3 = 8\)</span> 种类型的<em>测地三角形</em>。</p>
+<p><span class="arithmatex">\(^9\)</span>此处，我们将Bregman生成元定义为正常的、下半连续的、严格凸的且 <span class="arithmatex">\(C^3\)</span> 可微的实值函数。</p>
+<p><span class="arithmatex">\(^{10}\)</span>函数 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(x_0\)</span> 处下半连续（lsc）当且仅当 <span class="arithmatex">\(f(x_0) \leq \lim_{x\to x_0}\inf f(x)\)</span>。若函数 <span class="arithmatex">\(f\)</span> 在其定义域中所有 <span class="arithmatex">\(x\)</span> 处都下半连续，则称 <span class="arithmatex">\(f\)</span> 是下半连续的。</p>
+<p>15</p>
+<!-- page 16 -->
+
+<p><img alt="图 6" src="../assets/fig06.png" /></p>
+<div class="arithmatex">\[\gamma^*(P,Q) \perp_F \gamma(Q,R)\]</div>
+<div class="arithmatex">\[D(P:R) = D(P:Q) + D(Q:R)\]</div>
+<div class="arithmatex">\[B_F(\theta(P):\theta(R)) = B_F(\theta(P):\theta(Q)) + B_F(\theta(Q):\theta(R))\]</div>
+<div class="arithmatex">\[\gamma(P,Q) \perp_F \gamma^*(Q,R)\]</div>
+<div class="arithmatex">\[D^*(P:R) = D^*(P:Q) + D^*(Q:R)\]</div>
+<div class="arithmatex">\[B_{F^*}(\eta(P):\eta(R)) = B_{F^*}(\eta(P):\eta(Q)) + B_{F^*}(\eta(Q):\eta(R))\]</div>
+<p>图 6：对偶平坦空间中的对偶毕达哥拉斯定理。</p>
+<p>在 Bregman 流形上，向量的原始平行移动不改变其逆变分量，而对偶平行移动不改变其协变分量。由于对偶联络是平坦的，因此对偶平行移动与路径无关。</p>
+<p>此外，图 6 所示的对偶毕达哥拉斯定理 [76] 成立。令 <span class="arithmatex">\(\gamma(P,Q) = \gamma_\nabla(P,Q)\)</span> 表示通过点 <span class="arithmatex">\(P\)</span> 和 <span class="arithmatex">\(Q\)</span> 的 <span class="arithmatex">\(\nabla\)</span>-测地线，<span class="arithmatex">\(\gamma^*(P,Q) = \gamma_{\nabla^*}(P,Q)\)</span> 表示通过点 <span class="arithmatex">\(P\)</span> 和 <span class="arithmatex">\(Q\)</span> 的 <span class="arithmatex">\(\nabla^*\)</span>-测地线。当 <span class="arithmatex">\(g(\dot{\gamma}_1(t_1), \dot{\gamma}_2(t_2)) = 0\)</span> 时，曲线 <span class="arithmatex">\(\gamma_1\)</span> 和 <span class="arithmatex">\(\gamma_2\)</span> 在点 <span class="arithmatex">\(p = \gamma_1(t_1) = \gamma_2(t_2)\)</span> 处关于度量张量 <span class="arithmatex">\(g\)</span> 正交。</p>
+<p><strong>定理 6</strong>（对偶毕达哥拉斯恒等式）。</p>
+<div class="arithmatex">\[\gamma^*(P,Q) \perp \gamma(Q,R) \quad \Leftrightarrow \quad (\eta(P) - \eta(Q))^\top(\theta(Q) - \theta(R)) \stackrel{\Sigma}{=} (\eta_i(P) - \eta_i(Q))(\theta_i(Q) - \theta_i(R)) = 0,\]</div>
+<div class="arithmatex">\[\gamma(P,Q) \perp \gamma^*(Q,R) \quad \Leftrightarrow \quad (\theta(P) - \theta(Q))^\top(\eta(Q) - \eta(R)) \stackrel{\Sigma}{=} (\theta_i(P) - \theta_i(Q))(\eta_i(Q) - \eta_i(R)) = 0.\]</div>
+<p>我们可以定义对偶 Bregman 投影并刻画这些投影在何时唯一：子流形 <span class="arithmatex">\(S \subset M\)</span> 被称为 <span class="arithmatex">\(\nabla\)</span>-平坦（<span class="arithmatex">\(\nabla^*\)</span>-平坦）当且仅当它对应于 <span class="arithmatex">\(\theta\)</span>-坐标系（分别地，<span class="arithmatex">\(\eta\)</span>-坐标系）中的仿射子空间。</p>
+<p><strong>定理 7</strong>（投影的唯一性）。若 <span class="arithmatex">\(S\)</span> 是 <span class="arithmatex">\(\nabla^*\)</span>-平坦的，且最小化散度 <span class="arithmatex">\(D(\theta(P):\theta(Q))\)</span>，则 <span class="arithmatex">\(P\)</span> 在 <span class="arithmatex">\(S\)</span> 上的 <span class="arithmatex">\(\nabla\)</span>-投影 <span class="arithmatex">\(P_S\)</span> 唯一：</p>
+<div class="arithmatex">\[\nabla\text{-投影：} \quad P_S = \arg\min_{Q \in S} D(\theta(P):\theta(Q)). \tag{66}\]</div>
+<p>若 <span class="arithmatex">\(M \subseteq S\)</span> 是 <span class="arithmatex">\(\nabla\)</span>-平坦的且最小化散度 <span class="arithmatex">\(D(\theta(Q):\theta(P))\)</span>，则对偶 <span class="arithmatex">\(\nabla^*\)</span>-投影 <span class="arithmatex">\(P_S^*\)</span> 唯一：</p>
+<div class="arithmatex">\[\nabla^*\text{-投影：} \quad P_S^* = \arg\min_{Q \in S} D(\theta(Q):\theta(P)). \tag{67}\]</div>
+<p>设 <span class="arithmatex">\(S \subset M\)</span> 且 <span class="arithmatex">\(S' \subset M\)</span>，则我们定义 <span class="arithmatex">\(S\)</span> 与 <span class="arithmatex">\(S'\)</span> 之间的散度为</p>
+<div class="arithmatex">\[D(S:S') := \min_{s \in S, s' \in S'} D(s:s'). \tag{68}\]</div>
+<p>当 <span class="arithmatex">\(S\)</span> 为 <span class="arithmatex">\(\nabla\)</span>-平坦子流形且 <span class="arithmatex">\(S'\)</span> 为 <span class="arithmatex">\(\nabla^*\)</span>-平坦子流形时，子流形 <span class="arithmatex">\(S\)</span> 与子流形 <span class="arithmatex">\(S'\)</span> 之间的散度 <span class="arithmatex">\(D(S:S')\)</span> 可用交替投影法 [8] 计算。让我们指出</p>
+<p>16</p>
+<!-- page 17 -->
+
+<p>Kurose [61] 报告了一个关于对偶常曲率流形的毕达哥拉斯定理，该定理推广了对偶平坦空间的毕达哥拉斯定理。</p>
+<p>我们将简要解释在 [20] 中详细阐述的 Bregman 球空间。令 <span class="arithmatex">\(D\)</span> 表示 <span class="arithmatex">\(\Theta\)</span> 的维度。我们利用一个额外的维度 <span class="arithmatex">\(\theta_{D+1}\)</span>，将原始坐标 <span class="arithmatex">\(\theta\)</span> 提升到原始势函数 <span class="arithmatex">\(\mathcal{F}=\{\hat{\theta}=(\theta,\theta_{D+1}=F(\theta))\ :\ \theta\in\Theta\}\)</span>。一个 Bregman 球 <span class="arithmatex">\(\Sigma\)</span></p>
+<div class="arithmatex">\[\mathrm{Ball}_F(C:r) := \{P \text{ such that } F(\theta(P))+F^*(\eta(C))-\langle\theta(P),\eta(C)\rangle\leq r\} \tag{69}\]</div>
+<p>随后可以被提升到 <span class="arithmatex">\(\mathcal{F}\)</span>：<span class="arithmatex">\(\hat{\Sigma}=\{\hat{\theta}(P)\ :\ P\in\sigma\}\)</span>。边界 Bregman 球 <span class="arithmatex">\(\sigma=\partial\Sigma\)</span> 被提升为 <span class="arithmatex">\(\partial\hat{\Sigma}=\hat{\sigma}\)</span>，且所有被提升的点都由一个支撑 <span class="arithmatex">\((D+1)\)</span> 维超平面（维度为 <span class="arithmatex">\(D\)</span>）所支撑：</p>
+<div class="arithmatex">\[H_{\hat{\sigma}} : \theta_{D+1} = \langle\theta-\theta(C),\eta(C)\rangle+F(\theta(C))+r. \tag{70}\]</div>
+<p>令 <span class="arithmatex">\(H_{\hat{\sigma}}^-\)</span> 表示由 <span class="arithmatex">\(H_{\hat{\sigma}}\)</span> 界定且包含 <span class="arithmatex">\(\hat{\theta}(C)=(\theta(C),F(\theta(C)))\)</span> 的半空间。当且仅当 <span class="arithmatex">\(\theta(P)\in H_{\hat{\sigma}}^-\)</span> 时，点 <span class="arithmatex">\(P\)</span> 属于 Bregman 球 <span class="arithmatex">\(\Sigma\)</span>，参见 [20]。反之，一个切割势函数 <span class="arithmatex">\(\mathcal{F}\)</span> 的 <span class="arithmatex">\((D+1)\)</span> 维超平面 <span class="arithmatex">\(H:\theta_{D+1}=\langle\theta,\eta_a\rangle+b\)</span> 产生一个中心为 <span class="arithmatex">\(C\)</span> 的 Bregman 球 <span class="arithmatex">\(\sigma_H\)</span>，其中 <span class="arithmatex">\(\theta(C)=\nabla F^*(\eta_a)\)</span>，半径为 <span class="arithmatex">\(r=\langle\nabla F^*(\eta_a),\eta_a\rangle-F(\theta_a)+b=F^*(\eta_a)+b\)</span>，这里 <span class="arithmatex">\(\theta_a=\nabla F^*(\eta_a)\)</span>。由此可知，<span class="arithmatex">\(k\)</span> 个 Bregman 球的交集是一个 <span class="arithmatex">\((D-k)\)</span> 维的 Bregman 球，并且一个 Bregman 球可以由一般位置下的 <span class="arithmatex">\(D+1\)</span> 个点来定义，因为增广空间中的一个超平面由 <span class="arithmatex">\(D+1\)</span> 个点定义。我们可以通过检查一个 <span class="arithmatex">\((D+2)\times(D+2)\)</span> 行列式的符号，来判断点 <span class="arithmatex">\(P\)</span> 是否属于一个其边界 Bregman 球穿过 <span class="arithmatex">\(D+1\)</span> 个点 <span class="arithmatex">\(P_1,\ldots,P_{D+1}\)</span> 的 Bregman 球：</p>
+<div class="arithmatex">\[\mathrm{InBregmanBall}_F(P_1,\ldots,P_{d+1};P) := \mathrm{sign}\left(\left|\begin{array}{llll} 1 &amp; \ldots &amp; 1 &amp; 1 \\ \theta(P_1) &amp; \ldots &amp; \theta(P_{D+1}) &amp; \theta(P) \\ F(\theta(P_1)) &amp; \ldots &amp; F(\theta(P_{D+1})) &amp; F(\theta(P)) \end{array}\right|\right). \tag{71}\]</div>
+<p>我们有：</p>
+<div class="arithmatex">\[\mathrm{InBregmanBall}_F(P_1,\ldots,P_{d+1};P) : \left\{ \begin{array}{lcl} = -1 &amp; \Leftrightarrow &amp; P \in \mathrm{InBregmanBall}_F^\circ(P_1,\ldots,P_{D+1};P) \\ = 0 &amp; \Leftrightarrow &amp; P \in \partial\mathrm{InBregmanBall}_F(P_1,\ldots,P_{D+1};P) \\ = +1 &amp; \Leftrightarrow &amp; P \not\in \mathrm{InBregmanBall}_F(P_1,\ldots,P_{D+1};P) \end{array} \right. \tag{72}\]</div>
+<p>类似地，对偶型 Bregman 球 <span class="arithmatex">\(\Sigma^*\)</span> 可以定义为</p>
+<div class="arithmatex">\[\mathrm{Ball}_F^*(C:r) := \{P \text{ such that } F(\theta(C))+F^*(\eta(P))-\langle\theta(C),\eta(P)\rangle\leq r\}, \tag{73}\]</div>
+<p>并被提升到对偶势函数 <span class="arithmatex">\(\mathcal{F}^*\)</span>。注意 <span class="arithmatex">\(\mathrm{Ball}^*_F(C:r)=\mathrm{Ball}_{F^*}(C:r)\)</span>。</p>
+<p>一般而言，我们有如下关于 Bregman 散度的四边形关系：</p>
+<p><strong>性质 4</strong>（Bregman 四参数性质 [37]）。<em>对于任意四个点 <span class="arithmatex">\(P_1\)</span>、<span class="arithmatex">\(P_2\)</span>、<span class="arithmatex">\(Q_1\)</span>、<span class="arithmatex">\(Q_2\)</span>，我们有如下恒等式：</em></p>
+<div class="arithmatex">\[\begin{array}{ll} B_F(\theta(P_1):\theta(Q_1))+B_F(\theta(P_2):\theta(Q_2)) &amp; -B_F(\theta(P_1):\theta(Q_2))-B_F(\theta(P_2):\theta(Q_1)) \\ &amp; -(\theta(P_2)-\theta(P_1))^\top(\eta(Q_1)-\eta(Q_2))=0. \end{array} \tag{74}\]</div>
+<p>总而言之，要定义一个对偶平坦空间，我们需要一个凸的 Bregman 生成元。当 <span class="arithmatex">\(\alpha\)</span>-几何不是对偶平坦时（例如，Cauchy 流形 [79]），我们仍然可以通过考虑某些 Bregman 生成元（例如，用于对偶平坦 Cauchy 流形的 Bregman-Tsallis 生成元 [79]）在流形上建立对偶平坦结构。对偶平坦几何可以在更广泛的 <em>Hessian 流形</em> [120] 框架下研究，后者考虑<em>局部</em>势函数。一般而言，对偶平坦空间可以由任意光滑严格凸生成元 <span class="arithmatex">\(F\)</span> 构造。例如，可以在齐次锥上利用该锥的特征函数 <span class="arithmatex">\(F\)</span> 建立对偶平坦几何 [120]。图 7 展示了对偶平坦空间的几种常见构造。</p>
+<p>17</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/marked.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/purify.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor-core.js"></script>
+      
+        <script src="../../../javascripts/tutor/widgets.js"></script>
+      
+        <script src="../../../javascripts/tutor/messages.js"></script>
+      
+        <script src="../../../javascripts/tutor/steprail.js"></script>
+      
+        <script src="../../../javascripts/tutor/focus.js"></script>
+      
+        <script src="../../../javascripts/tutor/settings-dialog.js"></script>
+      
+        <script src="../../../javascripts/tutor/profile-drawer.js"></script>
+      
+        <script src="../../../javascripts/tutor/panel.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor.js"></script>
+      
+    
+  </body>
+</html>
