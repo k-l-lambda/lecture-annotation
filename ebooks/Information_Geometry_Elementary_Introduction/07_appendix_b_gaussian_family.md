@@ -1,6 +1,6 @@
 <!-- page 46 -->
 
-## B 多元高斯族：一个指数族
+## B 多元高斯族：一个指数族 { .tutor-section }
 
 我们报告多元高斯 [136] 族 $\{N(\mu,\Sigma) \text{ 满足 } \mu \in \mathbb{R}^d, \Sigma \succ 0\}$ 的典范分解，依据 [78]。多元高斯族亦称 MultiVariate Normal 族，或简称 MVN 族。
 

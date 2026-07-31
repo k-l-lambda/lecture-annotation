@@ -14,7 +14,7 @@ Ariel Caticha
 
 > **Einstein, 1949:** “[The basic ideas of General Relativity were in place] … \*1908年。为什么构建 the general theory of relativity 还需要另外七年？主要原因在于，要使自己摆脱坐标必须具有直接度量意义这一观念，并非易事。\*(cite)” [1]
 
-## 1 引言
+## 1 引言 { .tutor-section }
 
 任何推断理论的主要关注点之一，是当新信息可用时如何更新概率的问题。我们想从一组候选分布中选出一个概率分布，而这立即引发了许多问题。如果我们选择了邻近的分布会怎样？这会有什么不同？是什么让两个分布相似？我们在多大程度上可以区分一个分布与另一个分布？是否存在可区分性的定量度量？本教程的目标是通过引入几何方法来探讨这些问题。更具体地说，目标将是引入两个概率分布之间“距离”的概念。
 
@@ -36,7 +36,7 @@ $$d\ell^2 = g_{ab}d\theta^a d\theta^b \ . \tag{1}$$
 
 我们不会穷尽该主题的所有可能性²，但确实希望强调一个具体结果。具有距离概念意味着我们具有体积概念，而这进而意味着：在参数空间上存在唯一且客观的均匀分布概念——相等的体积被赋予相等的概率。此类均匀分布是否最大非信息性，是否定义了无知，或是否反映任何理性主体的实际先验信念，都是重要的问题，但它们与我们想要阐明的特定要点毫不相干，即：它们是均匀的——而这并非主观判断的问题，而是客观数学证明的问题。
 
-## 2 统计流形的例子
+## 2 统计流形的例子 { .tutor-section }
 
 一个 $n$ 维流形 $\mathcal{M}$ 是一个光滑的、可能弯曲的空间，它在局部上类似于 $\mathcal{R}^n$。这意味着可以建立一个坐标架（即从 $\mathcal{M}$ 到 $\mathcal{R}^n$ 的映射），使得每个点 $\theta \in \mathcal{M}$ 都能由其坐标识别或标记，$\theta = (\theta^1 \dots \theta^n)$。统计流形是一种流形，其中每个点 $\theta$ 代表一个概率分布 $p_\theta(x)$。正如我们稍后将要看到的，一种非常方便的记法是 $p_\theta(x) = p(x|\theta)$。以下是一些例子：
 
@@ -67,7 +67,7 @@ $$p(i|F) = \frac{1}{Z} e^{-\lambda_k f_i^k} \ , \qquad (4)$$
 $$\left<f^k\right> = \sum_i p_i f_i^k = F^k \ . \qquad (5)$$
 它们构成一个 $n$ 维统计流形。作为坐标，我们可以使用期望值 $F=(F^1 \dots F^n)$，或者等价地使用Lagrange乘子 $\lambda=(\lambda_1 \dots \lambda_n)$。
 
-## 3 弯曲空间中的距离与体积
+## 3 弯曲空间中的距离与体积 { .tutor-section }
 
 微分几何背后的基本直觉源于如下观察：弯曲空间在局部是平坦的——只要停留在足够小的区域内，曲率效应就可以忽略不计。于是这一想法相当简单：在任意点 $x$ 的邻近区域内，我们总可以从原始坐标 $x^a$ 变换到新的坐标 $\hat{x}^\alpha = \hat{x}^\alpha(x^1 \dots x^n)$，我们将其*声明*为局部Cartesian坐标（这里用帽子符号和希腊字母上标表示，$\hat{x}^\alpha$）。无穷小位移由下式给出
 $$d\hat{x}^\alpha = X^\alpha_a \, dx^a \quad \text{其中} \quad X^\alpha_a = \frac{\partial \hat{x}^\alpha}{\partial x^a} \qquad (6)$$
@@ -129,7 +129,7 @@ $$dV = g^{1/2} dr d\theta d\phi = r^2 \sin\theta \, dr d\theta d\phi \ . \tag{21
 
 <!-- page 5 -->
 
-## 4 信息度量的两种推导
+## 4 信息度量的两种推导 { .tutor-section }
 
 两个邻近分布 $p(x|\theta)$ 与 $p(x|\theta + d\theta)$ 之间，或者等价地说，两点 $\theta$ 与 $\theta + d\theta$ 之间的距离 $d\ell$，由度量 $g_{ab}$ 给出。我们的目标是计算对应于 $p(x|\theta)$ 的张量 $g_{ab}$。我们将给出两种推导，以阐明信息度量的含义、其解释，以及最终如何使用它。基于渐近推断的其他推导见 [6] 和 [7]。
 
@@ -215,7 +215,7 @@ $$S(\theta + d\theta, \theta) = -\frac{1}{2} d\ell^2 \ . \qquad (32)$$
 
 $$-\frac{\partial S(\theta',\theta)}{\partial\theta'^a \partial\theta'^b}\bigg|_{\theta'=\theta} = \int dx\, p(x|\theta) \frac{\partial \log p(x|\theta)}{\partial\theta^a} \frac{\partial \log p(x|\theta)}{\partial\theta^b} = g_{ab} \ . \qquad (33)$$
 
-## 5 信息度规的唯一性
+## 5 信息度规的唯一性 { .tutor-section }
 
 关于信息度规，一个非常引人注目的事实是：它在本质上是唯一的。除了一个常数比例因子之外，它是唯一能够充分考虑统计流形上各点性质的黎曼度规；也就是说，这些点代表概率分布，它们并非“无结构”。这一定理最初由 N. Čencov 在范畴论框架下证明 [2]；后来 Campbell 给出了另一种依赖于马尔可夫映射概念的替代证明。[12] 在此，我将通过一个简单例子来描述 Campbell 的基本思想。
 
@@ -232,7 +232,7 @@ $$-\frac{\partial S(\theta',\theta)}{\partial\theta'^a \partial\theta'^b}\bigg|_
 
 现在到了关键之处：目标是寻找在 Markov 映射下保持不变的 Riemannian 度量。很容易理解为什么施加这样的不变性是极其受限的：在 $\mathcal{S}_1$ 中计算的距离必须与在 $\mathcal{S}_5$ 子空间中计算的距离一致，这一事实对允许的度量张量引入了一个约束；但我们总可以将 $\mathcal{S}_1$ 和 $\mathcal{S}_5$ 嵌入到维数越来越大的空间中，从而导致越来越多的约束。很可能没有任何 Riemannian 度量能够在如此严苛的条件下存活下来；相当令人惊讶的是，确实有一些度量存活了下来，而更令人惊讶的是（在不重要的比例因子意义下）存活的 Riemannian 度量是唯一的。证明的细节见 [5]。
 
-## 6 一些常见分布的度量
+## 6 一些常见分布的度量 { .tutor-section }
 
 **多项式分布**的统计流形，
 
@@ -367,7 +367,7 @@ $$\delta^{ik}\delta^{jl}\delta_{ij}\delta_{kl} = \delta^k_j\delta^j_k = \delta^k
 可简化为
 $$d\ell^2 = \frac{\delta_{ij}}{\sigma^2}d\mu^i d\mu^j + \frac{2D}{\sigma^2}(d\sigma)^2\ . \qquad(63)$$
 
-## 7 结论
+## 7 结论 { .tutor-section }
 
 信息度量的定义只不过是浅尝辄止。我们不仅可以引入长度和体积，还可以利用各种其他几何概念，如测地线、法向投影、平行移动的概念、协变导数、联络和曲率。信息几何方法的威力通过大量的应用得到了证明。作为进入浩如烟海的文献的一个非常不完整的入口
 

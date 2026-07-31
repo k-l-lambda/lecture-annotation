@@ -2,7 +2,7 @@
 
 ## 3 信息流形
 
-### 3.1 概述
+### 3.1 概述 { .tutor-section }
 
 在本部分中，我们解释信息几何中流形的*对偶结构*。在 §3.2 中，我们首先介绍核心的*共轭联络流形*（CCMs）$(M,g,\nabla,\nabla^*)$，并展示如何构建*统计流形*
 
@@ -11,7 +11,7 @@
 
 (SMs) $(M, g, C)$ 来自 §3.3 中的 CCM。从任意统计流形出发，我们可以构造 CCM 的一个单参数族 $(M, g, \nabla^{-\alpha}, \nabla^{\alpha})$，即信息 $\alpha$-流形。我们在 §3.5 中陈述信息几何的基本定理。这些 CCM 与 SM 的结构先验上并不与任何距离相关，但首先需要一个与度量张量 $g$ 耦合的共轭联络对 $(\nabla, \nabla^*)$。我们展示两种构造初始共轭联络对的方法。第一种方法是在 §3.6 中从任意散度 $D$ 构造一对共轭联络 $({}^D\nabla, {}^D\nabla^*)$。因此，当散度对称时，即 $D(\theta_1 : \theta_2) = D(\theta_2 : \theta_1)$，我们得到自共轭联络。当散度为 Bregman 散度（即对于严格凸且可微的 Bregman 生成元，$D = B_F$）时，我们在 §3.7 中得到对偶平坦流形（DFMs）$(M, \nabla^2 F, {}^F\nabla, {}^F\nabla^*)$。DFM 很好地推广了欧几里得几何，并展现出勾股定理。我们进一步刻画点关于子流形 a 的正交 ${}^F\nabla$-投影与对偶 ${}^F\nabla^*$-投影何时唯一。[^7] 第二种获得共轭联络对 $({}^e\nabla, {}^m\nabla)$ 的方法是从一个正则参数概率分布族 $\mathcal{P} = \{p_\theta(x)\}_\theta$ 来定义这些联络。在这种情况下，这些‘e’指数联络 ${}^e\nabla$ 和‘m’混合联络 ${}^m\nabla$ 与 Fisher 信息度量 ${}_{\mathcal{P}}g$ 相耦合。通过考虑偏度 Amari-Chentsov 三次张量 ${}_{\mathcal{P}}C$，可以恢复统计流形 $(\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}C)$，并由此得到一族 CCM 的单参数族 $(\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{+\alpha})$，即统计期望 $\alpha$-流形。在这种参数统计语境下，这些信息流形被称为期望信息流形，因为各种量都是用统计期望 $E_\cdot[\cdot]$ 来表达的。注意到这些信息流形可以一般地用于信息科学，而不仅限于传统的统计学领域。在统计学中，我们在 §3.10 中通过研究统计不变性准则来为联络、度量张量和散度的选择提供动机。我们解释如何从标准的 $f$-散度中恢复期望 $\alpha$-联络，而 $f$-散度是唯一满足信息单调性性质的可分散度。最后，在 §3.11 中，我们回顾 Fisher-Rao 期望黎曼流形，它们是装备了称为 Fisher-Rao 距离（简称 Rao 距离）的测地度量距离的黎曼流形 $(\mathcal{P}, {}_{\mathcal{P}}g)$。
 
-## 3.2 共轭联络流形：$(M, g, \nabla, \nabla^*)$
+## 3.2 共轭联络流形：$(M, g, \nabla, \nabla^*)$ { .tutor-section }
 
 我们从一个定义开始：
 
@@ -60,7 +60,7 @@ $$\bar{\nabla} = {}^{\mathrm{LC}}\nabla. \tag{41}$$
 
 **性质 3。** *平均联络 $\bar{\nabla}$ 是自共轭的，并且与 Levi-Civita 度量联络重合。*
 
-### 3.3 统计流形：$(M, g, C)$
+### 3.3 统计流形：$(M, g, C)$ { .tutor-section }
 
 Lauritzen 于 1987 年引入了信息几何中的这一角结构 [62]。需注意，尽管它名为“统计流形”，但它是一种纯几何构造，可在统计学领域之外使用。然而，正如我们稍后将要提到的，我们总可以找到一个与统计流形 [128] 对应的统计模型 $\mathcal{P}$。我们将看到如何把共轭联络流形转化为这样的统计流形，以及如何随后从统计流形导出无限一族 CCMs。换言之，一旦我们拥有一对共轭联络，我们就能够构造一族共轭联络对。
 
@@ -87,7 +87,7 @@ $$C_{ijk} = C(\partial_i, \partial_j, \partial_k) = \langle \nabla_{\partial_i} 
 
 <!-- page 13 -->
 
-### 3.4 共轭联络流形族 $\{(M,g,\nabla^{-\alpha},\nabla^\alpha = (\nabla^{-\alpha})^*)\}_{\alpha\in\mathbb{R}}$
+### 3.4 共轭联络流形族 $\{(M,g,\nabla^{-\alpha},\nabla^\alpha = (\nabla^{-\alpha})^*)\}_{\alpha\in\mathbb{R}}$ { .tutor-section }
 
 对于任意一对共轭联络 $(\nabla,\nabla^*)$，我们可以定义一个 $1$-*参数联络族* $\{\nabla^\alpha\}_{\alpha\in\mathbb{R}}$，称为 $\alpha$-*联络*，使得 $(\nabla^{-\alpha}, \nabla^\alpha)$ 关于度量对偶耦合，且 $\nabla^0=\bar{\nabla}={}^{\text{LC}}\nabla$，$\nabla^1=\nabla$ 以及 $\nabla^{-1}=\nabla^*$。注意到缩放的三次张量 $\alpha C$ 也是一个完全对称的三次 $3$ 阶协变张量，我们可以从统计流形 $(M,g,C)$ 导出 $\alpha$-联络如下：
 
@@ -107,7 +107,7 @@ $\alpha$-联络 $\nabla^\alpha$ 也可以通过取如下加权组合直接从一
 
 $$\Gamma^\alpha_{ij,k} = \frac{1+\alpha}{2}\Gamma_{ij,k} + \frac{1-\alpha}{2}\Gamma^*_{ij,k}. \tag{48}$$
 
-### 3.5 信息几何基本定理：$\nabla$ $\kappa$-弯曲 $\Leftrightarrow$ $\nabla^*$ $\kappa$-弯曲
+### 3.5 信息几何基本定理：$\nabla$ $\kappa$-弯曲 $\Leftrightarrow$ $\nabla^*$ $\kappa$-弯曲 { .tutor-section }
 
 我们现在陈述信息几何基本定理及其推论：
 
@@ -144,7 +144,7 @@ $$g\left(R^{(\alpha)}(X,Y)Z,W\right) + g\left(Z,R^{(-\alpha)}(X,Y)W\right) = 0. 
 
 <!-- page 14 -->
 
-### 3.6 由散度导出的共轭联络：$(M, D) \equiv (M, {}^Dg, {}^D\nabla, {}^D\nabla^* = {}^{D^*}\nabla)$
+### 3.6 由散度导出的共轭联络：$(M, D) \equiv (M, {}^Dg, {}^D\nabla, {}^D\nabla^* = {}^{D^*}\nabla)$ { .tutor-section }
 
 粗略地说，散度 $D(\cdot:\cdot)$ 是一种光滑距离 [138]，可能是非对称的。为了严格定义散度，我们首先引入以下便捷记号：$\partial_{i,\cdot} f(x,y) = \frac{\partial}{\partial x^i} f(x,y)$，$\partial_{\cdot,j} f(x,y) = \frac{\partial}{\partial y^j} f(x,y)$，$\partial_{ij,\cdot} f(x,y) = \frac{\partial^2}{\partial x^i \partial x^j} f(x,y)$ 以及 $\partial_{i,jk} f(x,y) = \frac{\partial}{\partial x^i}\frac{\partial^2}{\partial y^j \partial y^k} f(x,y)$，等等。
 
@@ -184,7 +184,7 @@ $$\left\{(M, {}^Dg, {}^DC^\alpha) \equiv (M, {}^Dg, {}^D\nabla^{-\alpha}, ({}^D\
 
 $${}^D\nabla^* = {}^{D^*}\nabla. \tag{56}$$
 
-### 3.7 对偶平坦流形（Bregman 几何）：$(M, F) \equiv (M, {}^{B_F}g, {}^{B_F}\nabla, {}^{B_F}\nabla^* = {}^{B_F^*}\nabla)$
+### 3.7 对偶平坦流形（Bregman 几何）：$(M, F) \equiv (M, {}^{B_F}g, {}^{B_F}\nabla, {}^{B_F}\nabla^* = {}^{B_F^*}\nabla)$ { .tutor-section }
 
 我们考虑满足非对称毕达哥拉斯定理的对偶平坦流形。这些平坦流形可以从一个典范的 Bregman 散度得到。
 

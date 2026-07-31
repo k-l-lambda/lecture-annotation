@@ -4,7 +4,7 @@
 
 图 7：与光滑且严格凸生成器相关的常见对偶平坦空间。
 
-### 3.8 Hessian $\alpha$-几何：$(M, F, \alpha) \equiv (M, {}^F g, {}^F\nabla^{-\alpha}, {}^F\nabla^{\alpha}$
+### 3.8 Hessian $\alpha$-几何：$(M, F, \alpha) \equiv (M, {}^F g, {}^F\nabla^{-\alpha}, {}^F\nabla^{\alpha}$ { .tutor-section }
 
 对偶平坦流形也被称为具有由凸势函数 $F$ 诱导的 Hessian 结构 [120] 的流形。由于我们构建了两个对偶仿射联络 ${}^{B_F}\nabla = {}^F\nabla$ 与 ${}^{B_F}\nabla^* = {}^F\nabla^* = {}^{F^*}\nabla$，我们可以如下构造一族 $\alpha$-几何：
 
@@ -22,7 +22,7 @@ $$
 
 我们现在考虑由参数统计模型诱导的信息流形。
 
-### 3.9 参数概率分布族的期望 $\alpha$-流形：$(\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{\alpha})$
+### 3.9 参数概率分布族的期望 $\alpha$-流形：$(\mathcal{P}, {}_{\mathcal{P}}g, {}_{\mathcal{P}}\nabla^{-\alpha}, {}_{\mathcal{P}}\nabla^{\alpha})$ { .tutor-section }
 
 非正式地说，期望流形是建立于正则参数分布族上的信息流形。在文献 [140] 中，它有时被称为“期望”流形或“期望”几何，因为度量张量 $g$ 与 Amari-Chentsov 立方张量 $C$ 的分量是用统计期望 $E_\cdot[\cdot]$ 表示的。
 
@@ -231,7 +231,7 @@ $${}_{\mathcal{P}}R_{ijkl} = \partial_i\Gamma^\alpha_{jk,l} - \partial_j\Gamma^\
 
 $${}^e_{\mathcal{M}}\Gamma = {}^m_{\mathcal{M}}\Gamma = {}^e_{\mathcal{E}}\Gamma = {}^m_{\mathcal{E}}\Gamma = 0. \tag{104}$$
 
-### 3.10 统计不变性的判据
+### 3.10 统计不变性的判据 { .tutor-section }
 
 迄今为止，我们已经解释了如何从一对共轭联络构建信息流形（或信息 α-流形）。随后我们介绍了获得这样一对共轭联络的两种方法：（1）从参数散度出发，或（2）使用预先定义的期望指数/混合联络。我们现在提出以下问题：哪种信息流形在统计学中是有意义的？我们可以将问题细化如下：
 
@@ -378,7 +378,7 @@ $$\alpha = 2f'''(1) + 3. \qquad (119)$$
 
 <!-- page 26 -->
 
-### 3.11 Fisher-Rao 期望黎曼流形：$(\mathcal{P}, {}_\mathcal{P}g)$
+### 3.11 Fisher-Rao 期望黎曼流形：$(\mathcal{P}, {}_\mathcal{P}g)$ { .tutor-section }
 
 从历史上看，对正则参数分布族 $\mathcal{P} = \{p_\theta(x)\}_\theta$ 的首次流形建模，是将 Fisher 信息矩阵（FIM）视为黎曼度量张量 $g$（见 [53, 111]），其形式为：
 
@@ -419,7 +419,7 @@ $$
 
 指数映射 $\exp_p$ 在点 $p \in M$ 处提供了一种将向量 $v \in T_p$ 映射回点 $\exp_p(v) \in M$ 的方式（在良定义的情况下）。指数映射可用于参数化一条测地线 $\gamma$，满足 $\gamma(0) = p$ 且单位切向量 $\dot{\gamma}(0) = v$：$t \mapsto \exp_p(tv)$。对于测地完备的流形，指数映射处处有定义。
 
-### 3.12 单调 $\alpha$-嵌入与度量规范自由度
+### 3.12 单调 $\alpha$-嵌入与度量规范自由度 { .tutor-section }
 
 FIM 的另一个常见的数学等价表达式 [25] 由下式给出：
 
@@ -484,7 +484,7 @@ $$D_{\rho,\tau}(p:q) = \int \left( f(\rho(p(x))) + f^*(\tau(q(x))) - \rho(p(x))\
 
 $$\begin{aligned} {}^{\rho,\tau}g_{ij}(\theta) &= \int (\partial_i \rho(p_\theta(x))) \, (\partial_j \tau(p_\theta(x))) \, \mathrm{d}\nu(x), & (133) \\ &= \int \rho'(p_\theta(x)) \tau'(p_\theta(x)) \, (\partial_i p_\theta(x)) \, (\partial_j p_\theta(x)) \, \mathrm{d}\nu(x), & (134) \\ &= \int f''(\rho(p_\theta(x))) \, (\partial_i \rho(p_\theta(x))) \, (\partial_j \rho(p_\theta(x))) \, \mathrm{d}\nu(x), & (135) \\ &= \int (f^*)''(\tau(p_\theta(x))) \, (\partial_i \tau(p_\theta(x))) \, (\partial_j \tau(p_\theta(x))) \, \mathrm{d}\nu(x). & (136) \end{aligned}$$
 
-### 3.13 对偶平坦空间与典范 Bregman 散度
+### 3.13 对偶平坦空间与典范 Bregman 散度 { .tutor-section }
 
 我们已描述了如何从任意严格凸且光滑的生成元 $F$ 构建一个对偶平坦空间：由 $F(\theta)$ 出发，利用 Riemannian Hessian 度量 $\nabla^2 F(\theta)$ 构建一个 Hessian 结构，而凸共轭 $F^*(\eta)$（通过 Legendre-Fenchel 对偶得到）则产生具有 Riemannian Hessian 度量 $\nabla^2 F^*(\eta)$ 的对偶 Hessian 结构。对偶联络 $\nabla$ 与 $\nabla^*$ 与度量相耦合。这些联络由它们各自的 Christoffel 符号 $\Gamma(\theta)=0$ 与 $\Gamma^*(\eta)=0$ 定义，表明它们是平坦联络。
 

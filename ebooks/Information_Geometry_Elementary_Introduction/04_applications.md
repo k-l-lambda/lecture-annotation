@@ -105,7 +105,7 @@ $$\chi_{\mathcal{C}}(\theta) := \int_{\mathcal{C}^*} \exp(-\omega(\theta))\mathr
 
 <!-- page 33 -->
 
-## 4.1 Riemannian 空间中的自然梯度
+## 4.1 Riemannian 空间中的自然梯度 { .tutor-section }
 
 Natural Gradient [6]（NG）是 Euclidean 几何中普通（Cartesian）梯度向在任意坐标系下分析的 Riemannian 空间中的梯度之延拓。我们解释自然梯度。
 
@@ -249,11 +249,11 @@ $$\tilde{I}(\lambda) = \frac{1}{n}\sum_{i=1}^{n} \nabla_\lambda l_\lambda(x_i)\b
 
 其中 $l_\lambda(x) := \log p_\lambda(x)$ 表示对数似然函数。注意，近似 FIM 可能是退化的，并且可能不遵循真实 FIM 的结构。例如，我们有 $\nabla_\mu l(x;\mu,\sigma^2) = \frac{x-\mu}{\sigma^2}$ 以及 $\nabla_{\sigma^2} = \frac{(x-\mu)^2}{2\sigma^4} - \frac{1}{2\sigma^2}$。近似 FIM $\tilde{I}(\lambda)$ 的非对角元素接近零但通常非零，尽管期望 FIM 是对角矩阵 $I(\mu,\sigma^2) = \mathrm{diag}\left(\frac{1}{\sigma^2}, \frac{1}{2\sigma^4}\right)$。因此，我们可以估计 FIM，直到非对角元素的绝对值小于给定的 $\epsilon > 0$。对于多元正态分布，我们有 $\nabla_\mu l(x;\mu,\Sigma) = \Sigma^{-1}(x-\mu)$ 以及 $\nabla_\Sigma l(x;\mu,\Sigma) = \frac{1}{2}\bigl(\nabla_\mu l(x;\mu,\Sigma)\nabla_\mu l(x;\mu,\Sigma)^\top - \Sigma^{-1}\bigr)$。
 
-### 4.2 对偶平坦流形的一些说明性应用
+### 4.2 对偶平坦流形的一些说明性应用 { .tutor-section }
 
 在本部分，我们描述如何利用对偶平坦结构来处理指数族 $\mathcal{E}$（在 §4.3 详述的假设检验问题中）以及混合族 $\mathcal{M}$（聚类统计混合 §4.4）。注意，对于一般的散度，$(\mathcal{E}, D)$ 与 $(\mathcal{M}, D)$ 均不是对偶平坦的。然而，当 $D = \mathrm{KL}$（即 Kullback-Leibler 散度）时，我们得到在计算上具有吸引力的对偶平坦空间，因为原始/对偶测地线在相应的全局仿射坐标系中是直线。
 
-### 4.3 对偶平坦指数族流形中的假设检验 $(\mathcal{E}, \mathrm{KL}^*)$
+### 4.3 对偶平坦指数族流形中的假设检验 $(\mathcal{E}, \mathrm{KL}^*)$ { .tutor-section }
 
 给定两个概率分布 $P_0 \sim p_0(x)$ 和 $P_1 \sim p_1(x)$，我们要求将一组独立同分布的观测值 $X_{1:n} = \{x_1,\ldots,x_n\}$ 分类为来自 $P_0$ 或 $P_1$？这是一个统计决策问题 [73]。例如，$P_0$ 可以代表信号分布，$P_1$ 代表噪声分布。图 11 展示了概率分布以及任何统计决策规则所犯下的不可避免的错误（在观测值 $x_1$ 和 $x_2$ 上）。
 
@@ -334,7 +334,7 @@ $$\mathrm{Bi}_m(P_1,P_2) = \{P \::\: F(\theta_1)-F(\theta_2)+\eta(P)^\top(\theta
 
 图 14：阶数 $D = 2$ 的混合族示例（3 个分量：Laplacian、Gaussian 和 Cauchy 前缀分布）。
 
-## 4.4 在双平坦混合族流形 $(\mathcal{M}, \mathrm{KL})$ 中对混合模型进行聚类
+## 4.4 在双平坦混合族流形 $(\mathcal{M}, \mathrm{KL})$ 中对混合模型进行聚类 { .tutor-section }
 
 给定一组 $k$ 个指定的统计分布 $p_0(x), \ldots, p_{k-1}(x)$，它们均具有相同的支撑集 $\mathcal{X}$（例如 $\mathbb{R}$），阶数为 $D = k - 1$ 的混合族 $\mathcal{M}$ 由所有这些分量分布的严格凸组合构成 [93]：
 

@@ -4,7 +4,7 @@ post-conference edited books [75, 74]。我们还提及了为纪念甘利俊一�
 
 致谢：FN 感谢 *Geometry In Machine Learning* 2018 年研讨会（GiMLi，http://gimli.cc/2018/）的组织者邀请其发表主题演讲，并特别感谢 Søren Hauberg 教授（丹麦技术大学，DTU）。本综述基于在 GiMLi 上所做的报告。我非常感谢 Stigler 教授（芝加哥大学，美国）和 Holevo 教授（斯捷克洛夫数学研究所，俄罗斯）就信息几何领域的一些历史方面向我提供反馈。最后，我要向 Gaëtan Hadjeres（索尼计算机科学实验室，巴黎）致以诚挚的谢意，感谢其仔细的校对与反馈。
 
-## A $f$-散度的 Monte Carlo 估计
+## A $f$-散度的 Monte Carlo 估计 { .tutor-section }
 
 设 $(X, F, \mu)$ 为概率空间 [60]，其中 $X$ 表示样本空间，$F$ 表示 $\sigma$-代数，$\mu$ 为参考正测度。对于凸生成元 $f:(0,\infty) \to \mathbb{R}$，其在 $1$ 处严格凸且满足 $f(1)=0$，两个关于正测度 $\mu$ 绝对连续的概率测度 $P$ 与 $Q$ 之间的 $f$-散度 [33, 90] 为
 

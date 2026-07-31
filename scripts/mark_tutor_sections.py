@@ -14,6 +14,12 @@ What counts as a real section (ebook chapters):
 
   ## 27.1 动力学演化的时间对称性        -> marked   (numbered section)
   ### 32.1 正则量子引力                 -> marked   (same, mis-levelled as h3)
+  ## 1 引言                              -> marked   (single-numbered, on a page with
+                                                     no N.x heading at all)
+  ## 4 信息几何的一些应用                -> skipped  (chapter intro: this page also
+                                                     carries 4.1, 4.2, 4.4)
+  ## 1、哲学是什么？                     -> skipped  (punctuated, not a bare integer)
+  ## B 多元高斯族：一个指数族             -> marked   (lettered appendix, same gate)
   ## 注释 / ## 注 释                     -> skipped  (endnotes container)
   ### §27.2 / ## § 25.3                  -> skipped  (per-section endnotes)
   ## 第二章 古代定理和现代问题           -> skipped  (running chapter title)
@@ -67,10 +73,29 @@ ATTR_RE = re.compile(r"(?P<body>\{[^{}\\]*\})[ \t]*$")
 # A numbered section: `27.1 …`, `27.10　…`, optionally `27.1. …`.
 NUMBERED_RE = re.compile(r"^\d+\.\d+[.．]?(?:[ \t　]|$)")
 
+# A single-integer section: `1 引言`, `7 结论`. Papers converted to markdown often
+# number their top-level sections without a subsection component, and a book whose
+# subheadings are untitled prose (`### 由相对熵推导`) then has *no* dotted heading at
+# all -- `Information_Geometry_Basics` scored 0 marks under NUMBERED_RE alone.
+#
+# The trailing-whitespace requirement is what keeps this narrow: `1、哲学是什么？`
+# (hexin-think) and `1．牛顿引力思想的简短回顾` (contemporary-physics-progress) both
+# carry a punctuation mark instead, so neither book's output changes. Measured across
+# ebooks/ + lectures/, this pattern matches only in the two Information_Geometry books.
+SINGLE_NUMBERED_RE = re.compile(r"^\d+(?:[ \t　]|$)")
+
 # A lecture 段落 unit: `段落 1：…`, or bare `段落 3` where the generator had no
 # title to give it. `段落` alone is not enough -- the number is what distinguishes
 # the unit heading from prose that happens to mention 段落.
 PARAGRAPH_RE = re.compile(r"^段落[ \t　]*\d+(?:[:：.．][ \t　]*\S|[ \t　]*$)")
+
+# A lettered appendix section: `A $f$-散度的 Monte Carlo 估计`, `B 多元高斯族`. Same
+# form as SINGLE_NUMBERED_RE and gated the same way; a paper's appendices are lettered
+# where its sections are numbered. Without this the two appendix pages of
+# `Information_Geometry_Elementary_Introduction` have no section at all -- not a
+# truncated one, no tutor entry on the page -- because each is one heading over 6-9 KB
+# of content. Restricted to a single capital so `Fisher-Rao …` is not an appendix.
+LETTERED_RE = re.compile(r"^[A-Z](?:[ \t　]|$)")
 
 # Endnote headings: `§27.2`, `§ 25.3`, `注释`, `注 释`, `注　释`.
 NOTES_RE = re.compile(r"^(?:§|注[ \t　]*释)")
@@ -90,6 +115,26 @@ def strip_attrs(text: str) -> tuple[str, str | None]:
     return text[: m.start()].rstrip(), m.group("body")
 
 
+def has_dotted_sections(markdown: str) -> bool:
+    """True if this page numbers sections as `N.x`, which demotes bare `N` to a title.
+
+    Decided per page, like `is_lecture_page`, and for the same reason: the two forms
+    mean different things *relative to each other*. On a page carrying `4.1`, `4.2`,
+    `4.4`, the bare `## 4 信息几何的一些应用` is that chapter's introduction, and marking
+    it would both add a section whose content is a summary of the sections below it and
+    -- by extent rule 2 (`content-marking.md` §3) -- end it at `4.1` anyway. On a page
+    with no dotted heading, bare `N` *is* the section unit.
+    """
+    for line in markdown.split("\n"):
+        m = HEADING_RE.match(line)
+        if not m:
+            continue
+        text, _ = strip_attrs(m.group("text"))
+        if len(m.group("hashes")) in MARKABLE_LEVELS and NUMBERED_RE.match(text):
+            return True
+    return False
+
+
 def is_lecture_page(markdown: str) -> bool:
     """True if this page's sections are 段落 units rather than numbered sections.
 
@@ -107,7 +152,7 @@ def is_lecture_page(markdown: str) -> bool:
     return False
 
 
-def classify(level: int, text: str, lecture: bool) -> tuple[bool, str]:
+def classify(level: int, text: str, lecture: bool, dotted: bool) -> tuple[bool, str]:
     """Return (should_mark, reason)."""
     if level not in MARKABLE_LEVELS:
         return False, f"h{level}: not a section heading"
@@ -122,6 +167,14 @@ def classify(level: int, text: str, lecture: bool) -> tuple[bool, str]:
         return False, "absorbed into the 段落 above it"
     if NUMBERED_RE.match(text):
         return True, "numbered section"
+    if SINGLE_NUMBERED_RE.match(text):
+        if dotted:
+            return False, "chapter intro (page numbers its sections N.x)"
+        return True, "single-numbered section"
+    if LETTERED_RE.match(text):
+        if dotted:
+            return False, "appendix intro (page numbers its sections N.x)"
+        return True, "lettered appendix"
     return False, "unnumbered"
 
 
@@ -153,8 +206,9 @@ def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, l
     marked = already = 0
     report: list[str] = []
     in_fence = False
-    # Decided once for the whole page, before marking anything.
+    # Both decided once for the whole page, before marking anything.
     lecture = is_lecture_page(original)
+    dotted = has_dotted_sections(original)
 
     for lineno, line in enumerate(lines, 1):
         stripped = line.lstrip()
@@ -169,7 +223,7 @@ def process_file(path: Path, show_skipped: bool) -> tuple[list[str], int, int, l
 
         level = len(m.group("hashes"))
         text, attrs = strip_attrs(m.group("text"))
-        should, reason = classify(level, text, lecture)
+        should, reason = classify(level, text, lecture, dotted)
 
         if attrs and MARK in attrs:
             already += 1
