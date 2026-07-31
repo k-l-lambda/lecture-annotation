@@ -1,0 +1,90 @@
+<!-- page 44 -->
+
+post-conference edited books [75, 74]。我们还提及了为纪念甘利俊一（Shun-ichi Amari）80 岁生日而编撰的著作 [13]。
+
+致谢：FN 感谢 *Geometry In Machine Learning* 2018 年研讨会（GiMLi，http://gimli.cc/2018/）的组织者邀请其发表主题演讲，并特别感谢 Søren Hauberg 教授（丹麦技术大学，DTU）。本综述基于在 GiMLi 上所做的报告。我非常感谢 Stigler 教授（芝加哥大学，美国）和 Holevo 教授（斯捷克洛夫数学研究所，俄罗斯）就信息几何领域的一些历史方面向我提供反馈。最后，我要向 Gaëtan Hadjeres（索尼计算机科学实验室，巴黎）致以诚挚的谢意，感谢其仔细的校对与反馈。
+
+## A $f$-散度的 Monte Carlo 估计
+
+设 $(X, F, \mu)$ 为概率空间 [60]，其中 $X$ 表示样本空间，$F$ 表示 $\sigma$-代数，$\mu$ 为参考正测度。对于凸生成元 $f:(0,\infty) \to \mathbb{R}$，其在 $1$ 处严格凸且满足 $f(1)=0$，两个关于正测度 $\mu$ 绝对连续的概率测度 $P$ 与 $Q$ 之间的 $f$-散度 [33, 90] 为
+
+$$I_f(P:Q) = I_f(p:q) = \int p(x) f\left(\frac{q(x)}{p(x)}\right) \mathrm{d}\mu(x), \tag{205}$$
+
+其中 $P=p\mathrm{d}\mu$，$Q=q\mathrm{d}\mu$（即 $p$ 与 $q$ 为关于 $\mu$ 的 Radon-Nikodym 导数）。我们使用如下约定：
+
+$$0f\left(\frac{0}{0}\right)=0, \quad f(0)=\lim_{u\to 0^+} f(u), \quad \forall a>0, 0f\left(\frac{a}{0}\right)=\lim_{u\to 0^+} uf\left(\frac{a}{u}\right)=a\lim_{u\to\infty}\frac{f(u)}{u}. \tag{206}$$
+
+当 $f(u)=-\log u$ 时，我们得到 Kullback-Leibler 散度（KLD）：
+
+$$D_{\mathrm{KL}}(p:q) = \int p(x) \log\frac{p(x)}{q(x)} \mathrm{d}\mu(x). \tag{207}$$
+
+KLD 通常难以得到闭式解，例如在统计混合模型之间 [96]。一种常用的技术是使用建议分布 $r$ 进行 Monte Carlo 采样来估计 KLD：
+
+$$\widehat{\mathrm{KL}}_n(p:q) = \frac{1}{n}\sum_{i=1}^n \frac{p(x_i)}{r(x_i)} \log\frac{p(x_i)}{q(x_i)}, \tag{208}$$
+
+其中 $x_1,\ldots,x_n \sim_{\mathrm{iid}} r$。当选择 $r=p$ 时，KLD 可估计为：
+
+$$\widehat{\mathrm{KL}}_n(p:q) = \frac{1}{n}\sum_{i=1}^n \log\frac{p(x_i)}{q(x_i)}. \tag{209}$$
+
+在温和条件下，Monte Carlo 估计量是一致的：$\lim_{n\to\infty} \widehat{\mathrm{KL}}_n(p:q) = \mathrm{KL}(p:q)$。
+
+在实践中，实现式 209 时会遇到一个问题：我们可能最终得到 $\widehat{\mathrm{KL}}_n(p:q) < 0$。这可能带来灾难性后果，因为程序实现的算法需要非负散度才能执行正确的工作流。式 209 的潜在负值问题源于 $\sum_i p(x_i) \neq 1$ 且 $\sum_i q(x_i) \neq 1$ 这一事实。规避此问题的一种方法是考虑扩展 $f$-散度：
+
+**定义 7**（扩展 $f$-散度）。*对于凸生成元 $f$，其在 $1$ 处严格凸且满足 $f(1)=0$，扩展 $f$-散度定义为*
+
+$$I_f^e(p:q) = \int p(x)\left(f\left(\frac{q(x)}{p(x)}\right) - f'(1)\left(\frac{q(x)}{p(x)}-1\right)\right) \mathrm{d}\mu(x). \tag{210}$$
+
+44
+
+
+<!-- page 45 -->
+
+确实，对于严格凸的生成函数 $f$，我们考虑\emph{标量Bregman散度}[23]：
+
+$$B_f(a:b) = f(a)-f(b)-(a-b)f'(b) \geq 0. \tag{211}$$
+
+在式211中令 $a = \frac{q(x)}{p(x)}$ 且 $b=1$，并利用 $f(1)=0$ 的事实，我们得到
+
+$$f\left(\frac{q(x)}{p(x)}\right) - \left(\frac{q(x)}{p(x)}-1\right)f'(1) \geq 0. \tag{212}$$
+
+因此我们定义\emph{扩展 $f$-散度}为
+
+$$I_f^e(p:q) = \int p(x) B_f\left(\frac{q(x)}{p(x)}:1\right) \mathrm{d}\mu(x) \geq 0. \tag{213}$$
+
+也就是说，扩展 $f$-散度的公式为
+
+$$I_f^e(p:q) = \int p(x)\left(f\left(\frac{q(x)}{p(x)}\right) - f'(1)\left(\frac{q(x)}{p(x)}-1\right)\right) \mathrm{d}\mu(x) \geq 0. \tag{214}$$
+
+然后，我们使用关于分布 $r$ 的积分的重要性采样来估计扩展 $f$-散度，使用 $n$ 个服从 $p$ 的独立同分布变量 $x_1,\ldots,x_n \sim_{\mathrm{iid}} p$ 如下：
+
+$$\hat{I}_{f,n}(p:q) = \frac{1}{n}\sum_{i=1}^n f\left(\frac{q(x_i)}{p(x_i)}\right) - f'(1)\left(\frac{q(x_i)}{p(x_i)}-1\right) \geq 0. \tag{215}$$
+
+例如，对于KLD，我们得到如下Monte Carlo估计量：
+
+$$\widehat{\mathrm{KL}}_n(p:q) = \frac{1}{n}\sum_{i=1}^n \left(\log\frac{p(x_i)}{q(x_i)} + \frac{q(x_i)}{p(x_i)}-1\right) \geq 0, \tag{216}$$
+
+因为扩展KLD为
+
+$$D_{\mathrm{KL}^e}(p:q) = \int\left(p(x)\log\frac{p(x)}{q(x)} + q(x) - p(x)\right)\mathrm{d}\mu(x). \tag{217}$$
+
+式216可以被解释为标量Itakura-Saito散度之和，因为Itakura-Saito散度是尺度不变的：$\widehat{\mathrm{KL}}_n(p:q) = \frac{1}{n}\sum_{i=1}^n D_{\mathrm{IS}}(p(x_i):q(x_i))$，其中标量Itakura-Saito散度为
+
+$$D_{\mathrm{IS}}(a:b) = D_{\mathrm{IS}}\left(\frac{a}{b}:1\right) = \frac{a}{b} - \log\frac{a}{b} - 1 \geq 0, \tag{218}$$
+
+这是生成函数 $f(u)=-\log u$ 对应的Bregman散度。
+
+注意，扩展 $f$-散度是关于生成函数
+
+$$f_e(u) = f(u) - f'(1)(u-1). \tag{219}$$
+
+的 $f$-散度。我们验证生成函数 $f_e$ 同时满足 $f_e(1)=0$ 和 $f_e'(1)=0$，并且有 $I_f^e(p:q)=I_{f_e}(p:q)$。因此 $D_{\mathrm{KL}^e}(p:q)=I_{f_{\mathrm{KL}}^e}(p:q)$，其中 $f_{\mathrm{KL}}^e(u)=-\log u + u - 1$。
+
+我们要指出的是，我们只需要标量函数在1处严格凸，即可保证 $B_f\left(\frac{a}{b}:1\right) \geq 0$。确实，我们可以使用Bregman散度的定义，将其推广到严格凸但不一定光滑的函数[50, 126]：
+
+$$B_f(x:y) = \max_{g(y)\in\partial f(y)} \{f(x)-f(y)-(x-y)g(y)\}, \tag{220}$$
+
+其中 $\partial f(y)$ 表示 $f$ 在 $y$ 处的次导数。
+
+此外，注意到对于 $\lambda > 0$ 有 $I_{\lambda f}(p:q) = \lambda I_f(p:q)$，我们可以强制要求 $f''(1)=1$，从而得到一个\emph{标准 $f$-散度}[8]，它具有性质 $I_f(p_\theta(x):p_{\theta+\mathrm{d}\theta}(x)) = \mathrm{d}\theta^\top I(\theta)\mathrm{d}\theta$，其中 $I(\theta)$ 表示密度参数族 $\{p_\theta\}_\theta$ 的Fisher信息矩阵。
+
+45
