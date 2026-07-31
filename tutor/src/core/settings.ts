@@ -55,6 +55,9 @@ export function defaultSettings(): Settings {
         // Classification, not thinking. Reasoning here buys nothing and this call
         // is on the critical path of every free-text turn.
         router: 'off',
+        // Weighing a transcript that already has scores and hit/missed points in
+        // it, not solving the physics again.
+        profiler: 'low',
       },
     },
     temperature: {
@@ -66,6 +69,8 @@ export function defaultSettings(): Settings {
         summarizer: 0.4,
         // Deterministic: the same sentence must route the same way twice.
         router: 0,
+        // It emits numbers. The same transcript should score the same way twice.
+        profiler: 0.1,
       },
     },
     roleModels: {},
@@ -83,6 +88,16 @@ export function defaultSettings(): Settings {
     showReasoning: 'off',
     requireAnalysis: false,
     callBudgetPerSession: 40,
+    /**
+     * The profiler's own allowance, kept off `callBudgetPerSession` on purpose: a
+     * background archive write must never be the reason the student cannot be
+     * asked another question. One call per step departure plus one at the end, so
+     * 8 covers a 5-step ladder with retries and inserted steps.
+     *
+     * The visible consequence is that `usage.calls` runs ahead of the budget meter's
+     * `budgetUsed`. That gap is these calls, and it is intended.
+     */
+    profilerBudget: 8,
     hintCap: 2,
     variantCap: 3,
     // Floor 1, not 3: a short lecture section often carries exactly one checkable
@@ -194,6 +209,9 @@ export function applySettings(raw: unknown, base = defaultSettings()): LoadResul
     settings.requireAnalysis = src['requireAnalysis'];
   }
   settings.callBudgetPerSession = clampInt(src['callBudgetPerSession'], settings.callBudgetPerSession, 5, 500);
+  // Floor 0: turning the branch off entirely is a legitimate setting, and it must
+  // degrade to "no archive updates", never to a stuck main line.
+  settings.profilerBudget = clampInt(src['profilerBudget'], settings.profilerBudget, 0, 100);
   settings.hintCap = clampInt(src['hintCap'], settings.hintCap, 0, 5);
   settings.variantCap = clampInt(src['variantCap'], settings.variantCap, 1, 10);
   settings.requestTimeoutMs = clampInt(src['requestTimeoutMs'], settings.requestTimeoutMs, 5_000, 600_000);

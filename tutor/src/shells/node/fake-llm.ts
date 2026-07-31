@@ -134,7 +134,50 @@ export class FakeLlm implements Llm {
         };
       case 'router':
         return this.#route(req);
+      case 'profiler':
+        return this.#profile(req);
     }
+  }
+
+  /**
+   * Derives `observed` from the step's own attempt records, so a fixture session
+   * produces mastery numbers that actually track how it went rather than a
+   * constant.
+   *
+   * This branch matters more than a fake usually does: before it existed the fake
+   * emitted only `submit_evaluation`, which reproduced the production bug exactly —
+   * `update_mastery` never ran, every archive read 没测过, and 355 tests passed
+   * anyway because none of them asserted a mastery record was written.
+   */
+  #profile(req: LlmRequest): LlmResponse {
+    const stepId = jsonField(req, 'step') as { stepId?: string } | undefined;
+    const kps = (jsonField(req, 'knowledgePoints') ?? []) as Array<{ kpId: string }>;
+    const attempts = (jsonField(req, 'attempts') ?? []) as Array<{ score: number | null }>;
+
+    // Last attempt wins, as the prompt instructs; 5 -> 1.0, 3 -> 0.6, none -> 0.5.
+    const last = attempts[attempts.length - 1];
+    const score = last && typeof last.score === 'number' ? last.score : null;
+    const observed = score === null ? 0.5 : Math.min(1, Math.max(0, score / 5));
+
+    return {
+      text: '',
+      toolCalls: [
+        toCall(
+          'update_mastery',
+          {
+            stepId: stepId?.stepId,
+            source: 'graded',
+            evidence: kps.map((k) => ({
+              kpId: k.kpId,
+              observed,
+              note: `第 ${attempts.length} 次作答得 ${score ?? '—'} 分`,
+            })),
+          },
+          0,
+        ),
+      ],
+      usage: USAGE,
+    };
   }
 
   /**

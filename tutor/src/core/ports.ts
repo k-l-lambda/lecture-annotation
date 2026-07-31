@@ -199,6 +199,24 @@ export type SessionEvent =
     }
   | { type: 'achievement'; name: string; description: string; basis: string; renamed: boolean }
   | { type: 'usage'; usage: Usage; budgetUsed: number; budgetTotal: number }
+  /**
+   * The concurrent profiler branch, which runs while the student is already
+   * reading the next question. Deliberately NOT a `notice`: a failed archive
+   * write changes nothing about the step in front of them, so it must not
+   * interrupt. Shells render this as a passive indicator.
+   *
+   * `attempt` counts from 1 and is carried so a retry is visible as a retry
+   * rather than as a second independent run.
+   */
+  | {
+      type: 'profile-update';
+      phase: 'running' | 'done' | 'failed';
+      stepTitle: string;
+      updated: Array<{ kpId: string; level: number; confidence: number }>;
+      attempt: number;
+      /** Why it failed, for the `failed` phase only. */
+      reason: string | null;
+    }
   | { type: 'tool'; role: RoleName; tool: string; ok: boolean; errors: string[] };
 
 export type EventSink = (event: SessionEvent) => void;

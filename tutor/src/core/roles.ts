@@ -242,7 +242,9 @@ export interface GraderInput {
  */
 export function buildGraderUser(input: GraderInput): string {
   const payload: Record<string, unknown> = {
-    task: '评分并调用 submit_evaluation；随后可调用 update_mastery 记录掌握度证据。',
+    // No mention of update_mastery any more: it was never reachable from here (it
+    // sat after the terminal tool) and the profiler owns it now.
+    task: '评分并调用 submit_evaluation。掌握度档案由 profiler 角色单独更新，不是你的工作。',
     questionId: input.questionId,
     question: input.question,
     setup: input.setup,
@@ -573,6 +575,67 @@ export function buildRouterUser(input: RouterInput): string {
       hintsRemaining: input.hintsRemaining,
       variantsRemaining: input.variantsRemaining,
       studentText: input.studentText,
+    },
+    null,
+    2,
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Profiler
+// ---------------------------------------------------------------------------
+
+export interface ProfilerInput {
+  step: Step;
+  /** Labels for the step's knowledge points, so `observed` is judged against a name. */
+  knowledgePoints: Array<{ kpId: string; label: string }>;
+  /** How the student left this step, which colours what the evidence means. */
+  departure: 'advance' | 'skip' | 'inserted' | 'session_end';
+}
+
+/**
+ * Deliberately excludes the section text and the analysis. Judging how well an
+ * answer showed mastery reads the *grading outcome* — score, points hit, points
+ * missed, misconceptions — not the source material; the grader already did the
+ * physics. Keeping this prompt small is what makes one extra call per step
+ * departure affordable.
+ *
+ * It does include every attempt, which is the whole reason this role can do a job
+ * the grader could not: the grader sees one answer and no history, so it cannot
+ * tell "right on the first try" from "right on the third after two hints".
+ */
+export function buildProfilerUser(input: ProfilerInput): string {
+  const step = input.step;
+  return JSON.stringify(
+    {
+      task: '回看这一步的全部记录，调用一次 update_mastery 写入每个知识点的掌握证据。',
+      step: {
+        stepId: step.id,
+        title: step.title,
+        goal: step.goal,
+        targetLevel: step.targetLevel,
+        passed: step.passed,
+        inserted: step.inserted,
+        isPrep: step.isPrep,
+      },
+      knowledgePoints: input.knowledgePoints,
+      departure: input.departure,
+      attempts: step.attempts.map((a, i) => ({
+        index: i,
+        variant: a.variant,
+        score: a.score,
+        hintsUsed: a.hintsUsed,
+        answerQuality: a.answerQuality,
+        pointsHit: a.pointsHit,
+        pointsMissed: a.pointsMissed,
+        misconceptions: a.misconceptions,
+        // What the tutor explained after grading. Understanding reached by being
+        // told is real evidence, but weaker — hence the `discussion` source.
+        discussedPoints: a.discussedPoints,
+        discussionTurns: a.discussion.length,
+      })),
+      stepIdNote:
+        'stepId 必须照抄上面的值：你返回时学生已经离开这一步了，省略会把证据记到错误的步骤上。',
     },
     null,
     2,

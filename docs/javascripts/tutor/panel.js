@@ -112,6 +112,15 @@
     var quickReplies = el("div", "tutor-quick");
     var choices = el("div", "tutor-choices");
     var usage = el("div", "tutor-usage");
+    /**
+     * The concurrent profiler branch's status. In the footer next to the usage
+     * meter, deliberately NOT in the message flow: it reports a background archive
+     * write, and a student who is mid-question gains nothing from being
+     * interrupted by it — least of all when it failed, since a failed write
+     * changes nothing about the step in front of them.
+     */
+    var profileStatus = el("div", "tutor-profile-status");
+    profileStatus.hidden = true;
 
     root.appendChild(header);
     root.appendChild(messages);
@@ -119,6 +128,7 @@
     root.appendChild(quickReplies);
     root.appendChild(choices);
     root.appendChild(composer);
+    root.appendChild(profileStatus);
     root.appendChild(usage);
     // Inside `.md-main__inner`, because on desktop the panel IS the second grid
     // column that `html.tutor-active` opens there — appended to `body` instead it
@@ -210,6 +220,9 @@
         case "usage":
           renderUsage(event);
           break;
+        case "profile-update":
+          renderProfileStatus(event);
+          break;
         case "tool":
           if (!event.ok) railView.setToolRetry(event.tool, event.errors);
           break;
@@ -229,6 +242,51 @@
         " · 输入 " + kilo(u.promptTokens) +
         " · 输出 " + kilo(u.completionTokens) +
         " · 思考 " + kilo(u.reasoningTokens);
+    }
+
+    var profileFade = null;
+
+    /**
+     * Success fades; failure stays. The asymmetry is the point — a completed write
+     * is worth one glance and then nothing, while a failed one is the only trace
+     * the student has that a step's evidence is missing from the archive.
+     *
+     * A retry (`attempt` > 1) is shown as a retry rather than as a fresh run, so
+     * two attempts do not read as two steps being profiled.
+     */
+    function renderProfileStatus(event) {
+      if (profileFade) {
+        clearTimeout(profileFade);
+        profileFade = null;
+      }
+      profileStatus.hidden = false;
+      profileStatus.classList.remove("tutor-profile-status--failed");
+      profileStatus.removeAttribute("title");
+
+      if (event.phase === "running") {
+        profileStatus.textContent =
+          event.attempt > 1
+            ? "● 更新学习档案…（第 " + event.attempt + " 次尝试）"
+            : "● 更新学习档案…";
+        return;
+      }
+
+      if (event.phase === "done") {
+        var n = (event.updated || []).length;
+        profileStatus.textContent = "✓ 学习档案已更新" + (n ? " · " + n + " 个知识点" : "");
+        profileFade = setTimeout(function () {
+          profileStatus.hidden = true;
+          profileFade = null;
+        }, 6000);
+        return;
+      }
+
+      profileStatus.classList.add("tutor-profile-status--failed");
+      profileStatus.textContent = "⚠ 学习档案未能更新（" + (event.stepTitle || "本步") + "）";
+      // The reason lives in the tooltip, not the label: it is a harness diagnostic,
+      // and putting it inline would make a background failure look like an error
+      // the student has to deal with.
+      if (event.reason) profileStatus.title = event.reason;
     }
 
     function kilo(n) {

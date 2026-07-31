@@ -16,6 +16,7 @@ import * as profile from './profile.ts';
 import {
   buildGraderUser,
   buildPlannerUser,
+  buildProfilerUser,
   buildQuestionerUser,
   buildSummarizerUser,
   buildTutorReplyMessages,
@@ -57,6 +58,16 @@ export interface SessionOptions {
 }
 
 export class SessionError extends Error {}
+
+/**
+ * Total tries for one profiler branch, retries included. Three because the branch
+ * is off the critical path — nobody is waiting — but each try still spends a call
+ * from `profilerBudget`, so it cannot loop.
+ */
+const PROFILER_ATTEMPTS = 3;
+
+/** Why a step was left, which colours what its evidence means. */
+type ProfilerDeparture = 'advance' | 'skip' | 'inserted' | 'session_end';
 
 export class TutorSession {
   #record: SessionRecord;
@@ -104,6 +115,34 @@ export class TutorSession {
    * cancelling is what you do to a turn that is running.
    */
   #inFlight: string | null = null;
+
+  /**
+   * Calls spent by the profiler branch, against `settings.profilerBudget` and
+   * deliberately NOT against `callBudgetPerSession`. A background archive write
+   * must never be the reason the student cannot be asked another question.
+   */
+  #profilerCalls = 0;
+
+  /**
+   * Profiler branches still in flight. Tracked, not awaited by the main line —
+   * that overlap is the entire point: the write happens while the student is
+   * already reading the next question.
+   *
+   * These deliberately do NOT pass through `#exclusive`. A profiler IS a second
+   * turn running concurrently, which is what `#exclusive` exists to refuse. What
+   * makes that safe is narrow, and each part is load-bearing:
+   *
+   *  - it never calls `#transition`, so it cannot move the state machine;
+   *  - its only tool is `update_mastery`, which writes to the store, not to
+   *    `#record.steps`;
+   *  - it names its step via `stepId`, captured at spawn, so a cursor move
+   *    mid-flight cannot make it attribute evidence to the wrong step.
+   *
+   * `flushProfilers()` awaits them, which is how a quit keeps its last write
+   * (`ui-spec.md` §6: "profile writes are flushed") and how tests avoid racing a
+   * detached promise.
+   */
+  #profilers = new Set<Promise<void>>();
 
   private constructor(
     record: SessionRecord,
@@ -189,6 +228,20 @@ export class TutorSession {
 
   get budgetExhausted(): boolean {
     return this.#logicalCalls >= this.#settings.callBudgetPerSession;
+  }
+
+  /**
+   * Main-line logical calls only. The profiler's calls are counted separately
+   * against `profilerBudget`, so this is deliberately smaller than
+   * `record.usage.calls` — the gap between the two IS the background branch.
+   */
+  get budgetUsed(): number {
+    return this.#logicalCalls;
+  }
+
+  /** Calls spent by the concurrent profiler branch, out of `profilerBudget`. */
+  get profilerCallsUsed(): number {
+    return this.#profilerCalls;
   }
 
   /** Serialised after every transition so a reload resumes at the last stable state. */
@@ -301,6 +354,10 @@ export class TutorSession {
   async #execute(role: RoleName, name: string, args: unknown): Promise<ToolResult> {
     const before = this.#record.state;
     const started = this.#clock.now();
+    // Captured before the tool runs: `insert_prerequisite_step` splices a step in at
+    // the cursor and points the cursor AT IT, so afterwards `currentStep` is the new
+    // prerequisite step, not the one being left.
+    const stepBefore = this.currentStep;
     const result = await executeTool(role, name, args, this.#toolContext());
 
     if (result.ok && name === 'analyze_section') this.#analyzePassed = true;
@@ -314,6 +371,16 @@ export class TutorSession {
     if (result.ok && name === 'insert_prerequisite_step') {
       const abandoned = this.#liveAttempt();
       if (abandoned) abandoned.exitChoice = 'remain';
+      // Backtracking is a step departure too, so whatever the student did show on
+      // the step being left is evidence — and it is the evidence most worth
+      // keeping, since it is what the tutor judged insufficient. `#liveAttempt()`
+      // is read before the cursor moves for the same reason the choose() sites
+      // spawn before `#advance()`.
+      //
+      // Guarded on `role !== 'profiler'` for form only: the profiler holds one
+      // tool. If it ever gained another, a profiler spawning a profiler would be
+      // a loop with no ceiling but the budget.
+      if (role !== 'profiler' && stepBefore) this.#spawnProfiler(stepBefore, 'inserted');
       this.#liveQuestionId = null;
       this.#pendingInsertedStep = true;
     }
@@ -888,14 +955,19 @@ export class TutorSession {
       return;
     }
 
+    // Spawned BEFORE `#advance()`, while `step` is still the step being left and
+    // the cursor has not moved. `#advance()` immediately starts the next question,
+    // so the profiler's call overlaps that latency instead of adding to it.
     if (choice === 'skip') {
       step.chipState = 'skipped';
+      this.#spawnProfiler(step, 'skip');
       await this.#advance();
       return;
     }
 
     // 'advance' always advances, even after a fail: the student decides, and the
     // failed step keeps its low mastery (harness.md §5).
+    this.#spawnProfiler(step, 'advance');
     await this.#advance();
   }
 
@@ -984,9 +1056,156 @@ export class TutorSession {
     return route;
   }
 
+  // -------------------------------------------------------------------------
+  // The profiler branch
+  // -------------------------------------------------------------------------
+
+  /**
+   * Starts a profiler branch for a step the student has just left, and returns
+   * immediately. Nothing awaits the returned work except `flushProfilers()`.
+   *
+   * Skips silently in two cases, both of which are correct rather than degraded:
+   * a step with no attempts has produced no evidence to weigh (a skipped step must
+   * not become a mastery write), and an exhausted `profilerBudget` means the
+   * archive goes stale rather than the session stalling.
+   */
+  #spawnProfiler(step: Step, departure: ProfilerDeparture): void {
+    // A graded attempt, not merely an attempt: `ask()` creates the attempt record
+    // when the question is posed, so `attempts.length > 0` is true the moment a
+    // question exists and says nothing about whether the student answered it.
+    // Skipping an unanswered question would otherwise file evidence built from an
+    // attempt whose score is null — inventing a measurement for work never done,
+    // and quietly moving the mastery that the achievement gate reads.
+    const graded = step.attempts.some((a) => a.score !== null);
+    if (!graded) return;
+    // A step with no knowledge points has nothing the profiler could write about,
+    // and `update_mastery` requires non-empty evidence — so without this guard the
+    // branch is guaranteed to fail its full retry count and spend three budget
+    // calls saying `evidence is empty`. Measured on the fake's prep step, which is
+    // answered but carries no kpIds; real prep steps can be the same.
+    if (step.knowledgePointIds.length === 0) return;
+    if (this.#profilerCalls >= this.#settings.profilerBudget) return;
+
+    const task = this.#runProfiler(step, departure)
+      // A detached promise must never surface as an unhandled rejection: this
+      // branch is invisible to the student by design, so it cannot be allowed to
+      // take down the shell that is mid-question.
+      .catch(() => {})
+      .finally(() => {
+        this.#profilers.delete(task);
+      });
+    this.#profilers.add(task);
+  }
+
+  /**
+   * Retries up to `PROFILER_ATTEMPTS` and then gives up quietly — the indicator
+   * carries the failure, no `notice` enters the dialogue. A missing archive write
+   * changes nothing about the step in front of the student, so interrupting them
+   * with it would cost more than it tells them.
+   */
+  async #runProfiler(step: Step, departure: ProfilerDeparture): Promise<void> {
+    const kps = await this.#store.getKnowledgePoints(step.knowledgePointIds);
+    const labels = new Map(kps.map((k) => [k.id, k.label]));
+
+    let lastError = '';
+    for (let attempt = 1; attempt <= PROFILER_ATTEMPTS; attempt += 1) {
+      if (this.#profilerCalls >= this.#settings.profilerBudget) {
+        lastError = lastError || 'profiler budget exhausted';
+        break;
+      }
+      this.#profilerCalls += 1;
+      this.#emit({
+        type: 'profile-update',
+        phase: 'running',
+        stepTitle: step.title,
+        updated: [],
+        attempt,
+        reason: null,
+      });
+
+      try {
+        const result = await runToolLoop({
+          role: 'profiler',
+          llm: this.#llm,
+          settings: this.#settings,
+          model: this.#modelFor('profiler'),
+          systemText: systemPrompt('profiler', this.#settings),
+          userText: buildProfilerUser({
+            step,
+            knowledgePoints: step.knowledgePointIds.map((kpId) => ({
+              kpId,
+              label: labels.get(kpId) ?? kpId,
+            })),
+            departure,
+          }),
+          execute: (name, args) => this.#execute('profiler', name, args),
+          // No `signal`: `abandon()` aborts the main line, and the last write is
+          // exactly what a quit must not lose (`flushProfilers` runs in `#finish`).
+        });
+        this.#addUsage(result.usage);
+
+        if (result.failure) {
+          lastError = result.failure;
+          continue;
+        }
+
+        const updated = await this.#masteryFor(step.knowledgePointIds);
+        this.#emit({
+          type: 'profile-update',
+          phase: 'done',
+          stepTitle: step.title,
+          updated,
+          attempt,
+          reason: null,
+        });
+        return;
+      } catch (err) {
+        lastError = err instanceof Error ? err.message : String(err);
+      }
+    }
+
+    this.#emit({
+      type: 'profile-update',
+      phase: 'failed',
+      stepTitle: step.title,
+      updated: [],
+      attempt: PROFILER_ATTEMPTS,
+      reason: lastError || 'profiler failed',
+    });
+  }
+
+  /** Effective mastery for the indicator, read back after the write landed. */
+  async #masteryFor(
+    kpIds: string[],
+  ): Promise<Array<{ kpId: string; level: number; confidence: number }>> {
+    const records = await this.#store.getMastery(kpIds);
+    const now = this.#clock.now();
+    return records.map((r) => {
+      const eff = profile.effective(r, now);
+      return {
+        kpId: r.kpId,
+        level: Math.round(eff.level * 100) / 100,
+        confidence: Math.round(eff.confidence * 100) / 100,
+      };
+    });
+  }
+
+  /**
+   * Awaits every in-flight profiler branch. Called by `#finish` so quitting keeps
+   * the last archive write, and by tests so an assertion is not racing a detached
+   * promise.
+   */
+  async flushProfilers(): Promise<void> {
+    while (this.#profilers.size > 0) {
+      await Promise.allSettled([...this.#profilers]);
+    }
+  }
+
   async #advance(): Promise<void> {
     const next = this.#record.cursor.stepIndex + 1;
     if (next >= this.#record.steps.length) {
+      // The last step's own departure was already spawned by the caller; this path
+      // only ends the session. `#finish` flushes whatever is still in flight.
       await this.#summarizeTurn();
       return;
     }
@@ -1091,6 +1310,16 @@ export class TutorSession {
   }
 
   async #finish(status: 'completed' | 'abandoned'): Promise<void> {
+    // The step the student is standing on when the session ends never had a
+    // departure, so it never got a branch. Quitting mid-step is the common way to
+    // leave, and the work done on that step is real evidence.
+    const last = this.currentStep;
+    if (last) this.#spawnProfiler(last, 'session_end');
+    // `ui-spec.md` §6: "profile writes are flushed" on quit. Awaited here and
+    // nowhere else on the main line, because this is the one moment where nobody
+    // is waiting on a next question.
+    await this.flushProfilers();
+
     this.#record.status = status;
     this.#record.endedAt = new Date(this.#clock.now()).toISOString();
     // Trim discussion to the last 20 turns; discussedPoints is kept in full

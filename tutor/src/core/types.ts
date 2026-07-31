@@ -43,7 +43,19 @@ export type RoleName =
   | 'grader'
   | 'tutor_reply'
   | 'summarizer'
-  | 'router';
+  | 'router'
+  /**
+   * Weighs a finished step's transcript into per-KP mastery evidence. The only
+   * role that may call `update_mastery`, and the only one that runs concurrently
+   * with the main line — see `#spawnProfiler`.
+   *
+   * It exists because the grader could not do this job. `update_mastery` was
+   * listed after `submit_evaluation` in the grader's prompt, and
+   * `submit_evaluation` is the grader's terminal tool, so the turn ended before
+   * the mastery write could happen. Measured across every exported live session:
+   * `submit_evaluation` 1, `update_mastery` 0. The whole profile read 没测过.
+   */
+  | 'profiler';
 
 export const ROLE_NAMES: readonly RoleName[] = [
   'planner',
@@ -52,6 +64,7 @@ export const ROLE_NAMES: readonly RoleName[] = [
   'tutor_reply',
   'summarizer',
   'router',
+  'profiler',
 ];
 
 /** harness.md §2. */
@@ -539,6 +552,8 @@ export interface Settings {
    */
   requireAnalysis: boolean;
   callBudgetPerSession: number;
+  /** Separate allowance for the concurrent profiler branch; 0 disables it. */
+  profilerBudget: number;
   hintCap: number;
   variantCap: number;
   stepRange: [number, number];

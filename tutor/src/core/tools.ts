@@ -461,8 +461,21 @@ function submitEvaluation(args: SubmitEvaluationArgs, ctx: ToolContext): ToolRes
 // ---------------------------------------------------------------------------
 
 async function updateMastery(args: UpdateMasteryArgs, ctx: ToolContext): Promise<ToolResult> {
-  const step = currentStep(ctx.session);
-  if (!step) return toolErr(['no current step.']);
+  // The profiler names its step, because it is spawned when a step is LEFT and
+  // returns after the cursor has already moved to the next one. Reading the cursor
+  // here would scope the evidence to the wrong step's knowledge points — rejecting
+  // the write outright, or (worse, if the two steps happen to share a kpId)
+  // attributing it to the next step's attempt, hints and score.
+  const step = args.stepId
+    ? (ctx.session.steps.find((s) => s.id === args.stepId) ?? null)
+    : currentStep(ctx.session);
+  if (!step) {
+    return toolErr(
+      args.stepId
+        ? [`unknown stepId '${args.stepId}'.`]
+        : ['no current step.'],
+    );
+  }
 
   const evidence = args.evidence ?? [];
   if (evidence.length === 0) return toolErr(['evidence is empty.']);
@@ -471,7 +484,7 @@ async function updateMastery(args: UpdateMasteryArgs, ctx: ToolContext): Promise
   const outOfScope = evidence.filter((e) => !allowed.has(e.kpId)).map((e) => e.kpId);
   if (outOfScope.length > 0) {
     return toolErr([
-      `these knowledge points are not targets of the current step: ${outOfScope.join(
+      `these knowledge points are not targets of step '${step.id}': ${outOfScope.join(
         ', ',
       )}. Only report evidence for ${[...allowed].join(', ')}.`,
     ]);

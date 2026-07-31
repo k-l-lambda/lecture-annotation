@@ -28,6 +28,7 @@ const ROLE_FILES = {
   tutor_reply: '04-tutor-reply.md',
   summarizer: '05-summarizer.md',
   router: '06-router.md',
+  profiler: '07-profiler.md',
 };
 
 const PREAMBLE = '00-shared-preamble.md';

@@ -739,6 +739,21 @@ html.tutor-fullscreen .tutor-choices {
   font-variant-numeric: tabular-nums;
 }
 
+/* The concurrent profiler branch. Same weight as the usage meter on purpose: it
+   reports background work, so it must read as status and never as a message. */
+.tutor-profile-status {
+  padding: 0 0.7rem 0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+}
+
+/* Distinguished by more than colour, per the same rule the notice levels follow:
+   the glyph in the label (✓ / ⚠) carries the state without relying on hue. */
+.tutor-profile-status--failed {
+  color: var(--md-typeset-del-color, #c62828);
+  cursor: help;
+}
+
 .tutor-resizer {
   position: absolute;
   inset-block: 0;

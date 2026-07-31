@@ -232,6 +232,24 @@ function makeSink(verbose: boolean) {
         say(colour(`  ! ${event.text}`));
         break;
       }
+      // Background branch: dim on success and only under -v, because the point of
+      // running it concurrently is that it does not compete with the question the
+      // student is reading. A failure prints regardless — it is the only sign that
+      // a step's evidence never reached the archive.
+      case 'profile-update':
+        if (event.phase === 'failed') {
+          say(yellow(`  ⚠ 档案未更新（${event.stepTitle}）：${event.reason ?? '原因未知'}`));
+        } else if (verbose) {
+          const detail =
+            event.phase === 'done'
+              ? `✓ 档案已更新 · ${event.updated.length} 个知识点` +
+                (event.updated.length
+                  ? ` [${event.updated.map((u) => `${u.kpId} ${u.level}`).join(', ')}]`
+                  : '')
+              : `● 更新档案…${event.attempt > 1 ? `（第 ${event.attempt} 次）` : ''}`;
+          say(dim(`  ${detail} — ${event.stepTitle}`));
+        }
+        break;
       case 'tool':
         if (event.ok) {
           if (verbose) say(dim(`  · ${event.role}/${event.tool} ok`));
@@ -484,6 +502,10 @@ async function main(): Promise<number> {
     );
     return status === 'completed' ? 0 : 1;
   } finally {
+    // `#finish` already flushes on a clean end, but this block also runs when the
+    // loop threw or the pipe hit EOF mid-session — and closing the store under a
+    // profiler that is still in flight would make it write into a closed database.
+    await session.flushProfilers().catch(() => {});
     input.close();
     store.close?.();
   }

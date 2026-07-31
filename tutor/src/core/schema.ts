@@ -81,6 +81,8 @@ export interface SubmitEvaluationArgs {
 }
 
 export interface UpdateMasteryArgs {
+  /** Omitted = the current step. Named explicitly by the concurrent profiler. */
+  stepId?: string;
   evidence: Array<{ kpId: string; observed: number; note?: string }>;
   source: 'graded' | 'discussion';
 }
@@ -379,10 +381,14 @@ const DECLARATIONS: Record<ToolName, ToolDeclaration> = {
   update_mastery: {
     name: 'update_mastery',
     description:
-      '写入本步知识点的掌握度证据。只能是当前步骤的知识点。source=discussion 时 observed 会被截到 0.6 且权重减半。',
+      '写入某一步知识点的掌握度证据。只能是该步骤自己的知识点。source=discussion 时 observed 会被截到 0.6 且权重减半。',
     parameters: {
       type: 'object',
       properties: {
+        // The profiler runs concurrently and returns after the cursor has already
+        // moved on, so it must name its step instead of inheriting the cursor.
+        // Omitted = the current step, which is what every pre-profiler caller meant.
+        stepId: str('这些证据属于哪一步。省略则表示当前步骤。'),
         evidence: {
           type: 'array',
           items: {
@@ -467,14 +473,22 @@ const DECLARATIONS: Record<ToolName, ToolDeclaration> = {
 export const ROLE_TOOLS: Record<RoleName, readonly ToolName[]> = {
   planner: ['get_student_profile', 'analyze_section', 'upsert_knowledge_points', 'set_steps'],
   questioner: ['ask_question'],
-  grader: ['submit_evaluation', 'update_mastery', 'insert_prerequisite_step'],
-  tutor_reply: ['insert_prerequisite_step', 'update_mastery'],
+  // `update_mastery` used to be here, and was unreachable: it was ordered after
+  // `submit_evaluation`, which ends the grader's turn. Now the profiler owns it,
+  // and owning it *alone* is the point — two roles writing MasteryRecords
+  // concurrently would race, and `putMastery` has no transaction around its
+  // read-modify-write.
+  grader: ['submit_evaluation', 'insert_prerequisite_step'],
+  tutor_reply: ['insert_prerequisite_step'],
   summarizer: ['propose_achievement', 'finish_session'],
   // The router classifies a student turn and writes nothing. It returns a small
   // JSON object as prose rather than calling a tool: a tool would cost a second
   // round-trip for a decision that fits in ~30 tokens, and this call sits in
   // front of every free-text turn, so its latency is felt directly.
   router: [],
+  // One tool, and it is terminal, so the turn cannot end without the write the
+  // grader kept skipping.
+  profiler: ['update_mastery'],
 };
 
 /**
@@ -488,6 +502,7 @@ export const ROLE_TERMINAL_TOOL: Record<RoleName, ToolName | null> = {
   tutor_reply: null,
   summarizer: 'finish_session',
   router: null,
+  profiler: 'update_mastery',
 };
 
 export function toolDeclaration(name: ToolName): ToolDeclaration {
