@@ -39,6 +39,14 @@ jobs:
         with:
           node-version: '22'
 
+      # ```lyl fences -> <div data-lilylet data-mei> (markdown-it plugin bridged into the
+      # Python-Markdown build; docs/javascripts/lilylet/player.js engraves and plays them)
+      - name: Prerender lilylet scores
+        run: |
+          cd scripts/lilylet
+          npm ci
+          node prerender.mjs ../../docs --strict
+
       - name: Build Tutor web assets
         run: |
           cd tutor

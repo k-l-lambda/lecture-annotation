@@ -1,0 +1,18 @@
+{
+  "name": "lecture-annotation-lilylet",
+  "private": true,
+  "type": "module",
+  "description": "Build-time lilylet rendering for the ebooks (markdown-it plugin bridged into the MkDocs pipeline) and the browser score player.",
+  "scripts": {
+    "prerender": "node prerender.mjs ../../docs",
+    "build:player": "node build-player.mjs",
+    "build:player:check": "node build-player.mjs --check"
+  },
+  "dependencies": {
+    "@k-l-lambda/lilylet-markdown": "0.1.68",
+    "markdown-it": "14.1.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.21.5"
+  }
+}

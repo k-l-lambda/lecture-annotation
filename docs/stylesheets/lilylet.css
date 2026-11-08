@@ -1,0 +1,42 @@
+/* Lilylet scores (scripts/lilylet): engraved on white paper in both color schemes,
+   controls follow the Material theme. Adapted from klblog's theme/yilia lilylet.css. */
+.lilylet-container {
+	margin: 1em 0 1.5em;
+	border: 1px solid var(--md-default-fg-color--lightest);
+	border-radius: 6px;
+	overflow: hidden;
+	background: var(--md-default-bg-color);
+}
+.lilylet-score { overflow-x: auto; padding: .6em; background: #fff; color: #1d1d1b; }
+.lilylet-score svg { display: block; max-width: none; height: auto; margin-inline: auto; }
+.lilylet-controls {
+	display: flex; gap: 10px; align-items: center; min-height: 28px;
+	padding: 6px 12px; border-top: 1px solid var(--md-default-fg-color--lightest);
+	font-size: .7rem; color: var(--md-default-fg-color--light);
+}
+.lilylet-controls button {
+	display: flex; align-items: center; justify-content: center;
+	flex: 0 0 28px; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 50%; cursor: pointer;
+}
+.lilylet-controls .lilylet-play { background: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
+.lilylet-controls .lilylet-play:hover { filter: brightness(1.12); }
+.lilylet-controls .lilylet-restart { background: transparent; color: var(--md-default-fg-color--light); }
+.lilylet-controls .lilylet-retry { width: auto; flex: none; padding: 0 10px; border-radius: 14px; background: var(--md-default-fg-color--lightest); color: inherit; }
+.lilylet-controls button:disabled { cursor: wait; opacity: .5; }
+.lilylet-controls :focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 2px; }
+.lilylet-time { white-space: nowrap; font-family: var(--md-code-font-family); font-variant-numeric: tabular-nums; }
+.lilylet-progress {
+	appearance: none; -webkit-appearance: none; flex: 1; min-width: 30px; height: 6px; margin: 0;
+	border-radius: 3px; cursor: pointer;
+	background: linear-gradient(to right, var(--md-primary-fg-color) var(--progress, 0%), var(--md-default-fg-color--lightest) var(--progress, 0%));
+}
+.lilylet-progress::-webkit-slider-thumb { appearance: none; width: 12px; height: 12px; border-radius: 50%; background: var(--md-primary-fg-color); }
+.lilylet-progress::-moz-range-thumb { width: 12px; height: 12px; border: 0; border-radius: 50%; background: var(--md-primary-fg-color); }
+.lilylet-status:empty { display: none; }
+.lilylet-source { border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .7rem; }
+.lilylet-source > summary { padding: 4px 12px; cursor: pointer; color: var(--md-default-fg-color--light); }
+.lilylet-source > pre { margin: 0; padding: 8px 12px; max-height: 20em; overflow: auto; font-size: .65rem; background: var(--md-code-bg-color); }
+@media (max-width: 480px) { .lilylet-controls { gap: 6px; flex-wrap: wrap; } .lilylet-status { flex-basis: 100%; } }
+/* color only the sounding noteheads */
+.lilylet-score .lilylet-note-active,
+.lilylet-score .lilylet-note-active use { fill: #e8590c !important; stroke: #e8590c !important; }
