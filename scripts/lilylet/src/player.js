@@ -41,10 +41,18 @@ function loadAudio() {
 		if (!window.musicWidgetsBrowser) await loadScript(asset('musicWidgetsBrowser.umd.min.js'));
 		const MidiAudio = window.musicWidgetsBrowser.MidiAudio;
 		await MidiAudio.loadPlugin({soundfontUrl: asset('soundfont/'), instrument: 'acoustic_grand_piano', targetFormat: 'mp3', api: 'webaudio'});
-		if (MidiAudio.empty && MidiAudio.empty()) throw new Error('Piano soundfont did not load');
+		// empty() / awaitWarmup() live on the active backend (MidiAudio.WebAudio), not on MidiAudio
+		const backend = MidiAudio.WebAudio || MidiAudio;
+		if (backend.empty && backend.empty()) throw new Error('Piano soundfont did not load');
+		MidiAudio.warmup = () => backend.awaitWarmup ? backend.awaitWarmup() : Promise.resolve();
 		return MidiAudio;
 	})().catch(error => {audio = null; throw error;});
 }
+// The AudioContext only resumes inside a user gesture, so it must already exist at the
+// first Play click: preload (download + decode, context stays suspended) once a playable
+// score is on screen.
+let audioReady = null;
+const preloadAudio = () => {loadAudio().then(A => {audioReady = A;}, () => {});};
 
 // One score plays at a time across the page.
 let active = null;
@@ -154,12 +162,13 @@ async function mount(root) {
 		}
 		const controller = {stop};
 		const start = async () => {
-			// resume the AudioContext inside the click gesture, before any await
-			const warm = audio ? audio.then(A => A.awaitWarmup && A.awaitWarmup()) : null;
-			play.disabled = true; status.textContent = audio ? '' : '正在加载钢琴音色…';
+			// resume the AudioContext synchronously inside the click gesture (it exists once
+			// the preload finished); a later resume() may be refused by Safari/Firefox
+			const warm = audioReady ? audioReady.warmup() : null;
+			play.disabled = true; status.textContent = audioReady ? '' : '正在加载钢琴音色…';
 			try {
 				const A = await loadAudio();
-				await Promise.race([warm || (A.awaitWarmup && A.awaitWarmup()), new Promise(r => setTimeout(r, 300))]);
+				await Promise.race([warm || A.warmup(), new Promise(r => setTimeout(r, 300))]);
 				status.textContent = '';
 				if (active && active !== controller) stopActive();
 				if (position >= data.duration) position = 0;
@@ -179,6 +188,7 @@ async function mount(root) {
 		restart.addEventListener('click', () => seek(0));
 		progress.addEventListener('input', () => seek(Number(progress.value)));
 		root._lilyletStop = stop;
+		preloadAudio();
 		refresh();
 	} catch (error) {
 		status.textContent = '曲谱无法显示：' + error.message;
