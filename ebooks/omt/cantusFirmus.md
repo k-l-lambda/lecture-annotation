@@ -9,8 +9,8 @@
 
 我们在严格声部进行中的第一批练习，就是写作良好、结构完善的定旋律。第一步是演奏并分析范例定旋律，例如下面这条由海因里希·申克（Heinrich Schenker）写的 C 大调定旋律。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/da93d4d902)
-
+<!-- trinket: https://trinket.io/embed/music/da93d4d902 -->
+<div class="omt-trinket" data-trinket="da93d4d902"><iframe src="../../../static/trinket/#da93d4d902" title="Schenker cantus firmus" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#da93d4d902" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 [这里](assets/counterpoint/cantusFirmi.pdf)还提供了其他许多范例。演奏这些范例，有助于在内心建立起对结构良好的定旋律的声音与手感的体会；而结构良好的定旋律的许多特征，也同样适用于其他音乐风格。（这些范例定旋律也可以作为我们二声部练习的起点。）
 
 从这些定旋律中可以看到，平稳、旋律完整性、多样性、朝向目标的运动这些一般音乐特性，是如何落实为具体特征的。以下特征是所有结构良好的定旋律所共有的：
@@ -46,8 +46,8 @@
 
 在从零开始写作定旋律之前，先试着围绕下面这个骨架构建一条结构良好的定旋律。其中已给出长度、起始音、倒数第二个音、结束音和高潮。请写出一条平稳、协和的旋律线条，体现上面列出的各项特征——既包括严格类别对位定旋律的具体特征，也包括调性旋律的一般特征。点击谱表即可听到旋律。每次改动后都一定要听一听。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/2df65adf8b)
-
+<!-- trinket: https://trinket.io/embed/music/2df65adf8b -->
+<div class="omt-trinket" data-trinket="2df65adf8b"><iframe src="../../../static/trinket/#2df65adf8b" title="Cantus Firmus (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#2df65adf8b" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 可下载的定旋律
 
 富克斯《*Gradus ad Parnassum*》中所有互不相同的定旋律，均以可编辑格式提供：

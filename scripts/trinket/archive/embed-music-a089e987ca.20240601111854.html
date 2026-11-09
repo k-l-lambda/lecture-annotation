@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Trinket: run code anywhere</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/cache-prefix-778c9cfb/img/icons/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/cache-prefix-778c9cfb/img/icons/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/cache-prefix-778c9cfb/img/icons/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/cache-prefix-778c9cfb/img/icons/apple-touch-icon-precomposed.png">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' href='https://trinket-vendor-assets.trinket.io/font-mfizz/2.0.1/css/font-mfizz.css' crossorigin='anonymous'>
+  <link rel="stylesheet" type="text/css" href="/cache-prefix-778c9cfb/css/embed.css" crossorigin="anonymous">
+  
+  
+
+  <script type="text/javascript">
+    trinket = {
+      config : {
+        apphostname       : 'trinket.io',
+        usersubdomains    :  true,
+        protocol          : 'https',
+        cachePrefix       : 'cache-prefix-',
+        prefixes          :  {"components":"cache-prefix-410d6d0a","js":"cache-prefix-778c9cfb","css":"cache-prefix-778c9cfb","img":"cache-prefix-778c9cfb","fonts":"cache-prefix-778c9cfb","partials":"cache-prefix-778c9cfb","skulpt":"50e5bcc6","models":null,"m0-2021":"m0-2021"},
+        components        :  {"ace-builds":"v1.2.6.1rc2","anchor-js":"2.0.0","angular-file-saver":"1.1.3","angular-notifyjs":"0.1.0","angular-ui-router":"0.2.11","angular-ui-tree":"2.0.10","angular-ui-utils":"0.1.1","angular-xeditable":"0.1.8","bluebird":"3.5.1","d3":"3.4.11","filereader":"107f68c3b9","file-saver.js":"1.20150507.2","font-mfizz":"2.0.1","gsap":"1.15.0","jquery-ui":"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1","jsdiff":"1.0.8","jszip":"3.1.4","jszip-utils":"dist","lazysizes":"1.5.0","lodash":"2.4.1","modernizr":"2.7.2","ng-file-upload":"1.2.6","ngInfiniteScroll":"1.1.2","notifyjs":"0.4.2","opal":"0.6.2","restangular":"1.3.1","speakingurl":"1.1.5","video.js":"5.20.4","yamljs":"0.1.5"},
+        vendorHost        : 'https://trinket-vendor-assets.trinket.io',
+        broadcastHostname : 'broadcastapp.trinket.io',
+        broadcastPort     : '',
+        broadcastProtocol : 'https',
+        python3_api       : 'https://python-code-aws.trinket.io',
+        java_api          : 'https://java-connect-aws.trinket.io',
+        R_api             : 'https://r-aws.trinket.io',
+        pygame_api        : 'https://pygame.trinket.io',
+        plans             : [{ "connect"  : "Connect"  },
+                             { "codeplus" : "Code+" }],
+        logClientCodeError : false,
+        logClientMetric   : false,
+        draftDebounce     : 2500,
+        autosaveDebounce  : 1000
+      }
+    };
+    
+    </script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js" type="text/javascript"></script>
+  <script src="/cache-prefix-410d6d0a/components/detectizr/dist/detectizr.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha1.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" type="text/javascript"></script>
+
+  <!--[if lte IE 9]>
+  <script type="text/javascript" src="/js/vendor/jQuery.XDomainRequest.js"></script>
+  <![endif]-->
+
+  
+  
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KW3JPB2M7P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-KW3JPB2M7P');
+    
+  </script>
+  
+  
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+function submitRecaptchaForm(formId) {
+  document.getElementById(formId).submit();
+}
+function submitContactForm() {
+  submitRecaptchaForm('contact-form');
+}
+function submitReportContentForm() {
+  document.getElementById('report-content-form').submit();
+}
+function submitPasswordResetForm() {
+  submitRecaptchaForm('password-reset-form');
+}
+function submitEmailForm(recaptcha) {
+  if (window.TrinketApp) {
+    window.TrinketApp.onSendEmailClick(recaptcha);
+  } else {
+    submitEmailModalForm(recaptcha);
+  }
+}
+function submitSignUpShortForm() {
+  submitRecaptchaForm('sign-up-short');
+}
+function submitSignUpLongForm() {
+  submitRecaptchaForm('sign-up-long');
+}
+function submitSignUpIndexForm() {
+  submitRecaptchaForm('sign-up-index');
+}
+function submitSignUpInterestForm() {
+  submitRecaptchaForm('interest-signup-form');
+}
+function submitEducatorForm() {
+  submitRecaptchaForm('submit-educator');
+}
+function submitM0RegistrationForm() {
+  $('#registration-form').trigger('submit');
+}
+function emailVerificationForm() {
+  $.ajax({
+    method: "POST",
+    url: "/api/users/verify-email",
+    data: { 'g-recaptcha-response': grecaptcha.getResponse() }
+  })
+  .done(function(result) {
+    if (result.success) {
+      $('#account').notify(
+        "Verification email sent."
+        , { position : 'top center', className : 'success' }
+      );
+    }
+    else {
+      $('#account').notify(
+        "There was a problem sending the verification email. Please try again."
+        , { position : 'top center', className : 'alert' }
+      );
+    }
+  })
+  .fail(function(err) {
+    $('#account').notify(
+      "There was a problem sending the verification email. Please try again."
+      , { position : 'top center', className : 'alert' }
+    );
+  });
+}
+</script>
+
+  
+</head>
+<body id="embed_content_music"
+      data-no-metrics="false"
+      data-assignment="false"
+      data-assignment-feedback="false"
+      data-view-only="false"
+      data-autofocus="true"
+      class="mode-standard  remixable"
+      
+       data-is-mobile="false">
+  <input id="whoami" type="hidden" value="">
+  
+  <input id="user" type='hidden' value=''>
+  
+  <script>
+    trinketObject = {"id":"53f62baf08fffc8a1d93cc11","code":"{&quot;schema&quot;:{&quot;time&quot;:&quot;2/2&quot;,&quot;staves&quot;:[{&quot;clef&quot;:&quot;treble&quot;,&quot;lyrics&quot;:&quot;on&quot;,&quot;label&quot;:&quot;counterpoint&quot;},{&quot;clef&quot;:&quot;alto&quot;,&quot;label&quot;:&quot;cantus firmus&quot;}],&quot;tempo&quot;:160,&quot;key&quot;:&quot;Dm&quot;,&quot;connector&quot;:&quot;final&quot;},&quot;notes&quot;:[&quot;d&#39;1 c&#39; b- a g f a c&#39;# d&#39;&quot;,&quot;d1 a g f e d f e d&quot;],&quot;lyrics&quot;:[&quot;&quot;]}","lang":"music","name":"First-Species Minor Error Detection (OMT)","description":null,"groupId":null,"_parent":"53f6283a08fffc8a1d93cbc9","_origin_id":null,"_owner":"5316547cce45519575a05a78","hash":"9564e37f882f92c4bf8e34ae0ec28afe96076b94","shortCode":"a089e987ca","lastUpdated":"2014-08-21T17:28:45.777Z","metrics":{"emailShares":1,"runs":49981,"linkViews":725,"linkShares":5,"forks":1570,"embedViews":326753,"embedShares":6},"lastView":{"viewType":"embedViews","viewedOn":"2024-06-01T11:18:54.377Z","referer":"https://openmusictheory.github.io/","address":"207.241.225.162"},"snapshot":"https://b47df67e6f4bca4beeb6-ee2b32fdf5f2b1e0d3cd029f976a924b.ssl.cf5.rackcdn.com/a089e987ca-1415289440837.png","assets":[],"displayOnly":null,"original":null,"settings":{"autofocusEnabled":true,"testsEnabled":false,"astro_pi_mission_submission":false},"submissionState":null,"submissionOpts":{},"submittedOn":null,"slug":"","published":false,"template":null};
+  
+    draftObject   = undefined;
+    
+  
+  </script>
+  <input id="shareType" type='hidden' value='music'>
+  <input id="proxy" type='hidden' value='https://trinket.io/proxy'/>
+
+  <div id="wrapper" class="off-canvas-wrap owner-view row" data-offcanvas>
+    <div class="trinket-wrapper inner-wrap">
+
+    
+
+      <nav id="menu" class="trinket-header " data-interface="top-menu">
+        <section class="left">
+          <div class="icon-bar left-menu-toggle">
+            <button class="item button menu-button left-off-canvas-toggle" data-action="menu.options" role="button" tabindex="0" aria-label="Open Menu">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </section>
+        <section class="left title-bar">
+          <span title="hosted by trinket.io" data-dropdown="brand-menu" aria-controls="brand-menu" aria-expanded="false">
+            <img class="show-for-large-up" src="/cache-prefix-778c9cfb/img/trinket-logo.png" alt="trinket logo" />
+            <img class="show-for-medium-down" src="/cache-prefix-778c9cfb/img/trinket-logo-circles.png" alt="trinket logo" />
+          </span>
+          
+          <ul id="brand-menu" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <li><a id="brand">View on trinket.io <i class="fa fa-external-link"></i></a></li>
+          </ul>
+          
+          
+          
+        </section>
+        <section class="mode-toolbar left" data-mode="interact" role="menubar">
+          <div class="icon-bar label-right">
+            
+<a class="menu-button item allow-original" data-action="code.play" data-tooltip aria-haspopup="true" title="Start the playback." data-options="disable_for_touch:true">
+  <i class="fa fa-play"></i>
+  <label class="show-for-large-up">Play</label>
+</a>
+<a class="menu-button item hide allow-original" data-action="code.pause" data-tooltip aria-haspopup="true" title="Pause the playback." data-options="disable_for_touch:true">
+  <i class="fa fa-pause"></i>
+  <label class="show-for-large-up">Pause</label>
+</a>
+<a class="menu-button item allow-original" data-action="code.stop" data-tooltip aria-haspopup="true" title="Stop the playback." data-options="disable_for_touch:true">
+  <i class="fa fa-stop"></i>
+  <label class="show-for-large-up">Stop</label>
+</a>
+
+            
+            <button class="show-for-medium-up button split item menu-button" data-action="sharing.social" data-dropdown="share-options" data-options="align:bottom" role="button" aria-label="Share Menu" aria-controls="share-options"><i class="fa fa-share-alt"></i><label id="share_button_label" class="show-for-large-up">Share</label><span data-dropdown="share-options" data-options="align:bottom" role="menu"></span></button>
+            
+            
+            
+          </div>
+        </section>
+        
+        <section class="mode-indicator right">
+          <div class="icon-bar">
+            <div class="item"><div id="draftMessage" class="hide draft-message"></div></div>
+            
+            
+            <!-- no user, remix if trinket.id, copy if inline -->
+            <a title="Remix this trinket."
+               class="save-it menu-button allow-original ui-option guest-option has-tip item right-off-canvas-toggle "
+               data-action="menu.user">
+              <i class="fa fa-save"></i>
+              <label class="show-for-medium-up">Remix</label>
+            </a>
+            <!-- user, no trinket.id -->
+            <a title="Save a copy of this trinket."
+               class="save-it create-copy menu-button allow-original ui-option user-option owner-option has-tip item  hide"
+               data-action="menu.upgrade">
+              <i class="fa fa-save"></i>
+              <label class="show-for-medium-up">Copy</label>
+            </a>
+            <!-- user, trinket.id -->
+            <a title="Remix this trinket."
+               class="save-it create-remix menu-button allow-original ui-option user-option owner-option has-tip item green-highlight hide"
+               data-action="menu.upgrade">
+              <i class="fa fa-code-fork"></i>
+              <label class="show-for-medium-up">Remix</label>
+            </a>
+            <!-- user, has remix, viewing remix -->
+            <a title="Save changes to your Remix."
+               class="save-it save-remix menu-button allow-original ui-option user-option owner-option has-tip item blue-highlight  hide"
+               data-action="menu.upgrade">
+              <i class="fa fa-save"></i>
+              <label class="show-for-medium-up">Save</label>
+            </a>
+            <!-- user, has remix, viewing original -->
+            <a title="Revert your Remix to this Original."
+               class="save-it revert-remix menu-button allow-original ui-option user-option owner-option has-tip item  hide"
+               data-action="menu.upgrade">
+              <i class="fa fa-fast-backward"></i>
+              <label class="show-for-medium-up">Restore</label>
+            </a>
+            
+          </div>
+          <div class="remix-switch item">
+            <input type="checkbox" name="remix-switch" class="remix-switch-checkbox" id="version-toggle" checked>
+            <label class="remix-switch-label" for="version-toggle">
+              <span class="remix-switch-inner"></span>
+              <span class="remix-switch-switch"></span>
+            </label>
+          </div>
+          
+          <div class="icon-bar">
+            <a class="item right-menu-toggle right-off-canvas-toggle menu-button" data-action="menu.user">
+              <i class="fa fa-user ui-option owner-option user-option hide"></i>
+              <i class="fa fa-sign-in ui-option guest-option"></i>
+            </a>
+          </div>
+          
+        </section>
+        
+      </nav>
+
+      <aside class="left-off-canvas-menu" data-interface="trinket-menu">
+  <ul class="off-canvas-list mode-menu" data-mode="interact">
+    
+    <li><label>Menu</label></li>
+    
+      <li>
+        <a class="menu-button" data-action="code.config"><i class="fa fa-cog"></i>Setup</a>
+        <a class="menu-button" data-action="code.cheatsheet"><i class="fa fa-file"></i>Cheatsheet</a>
+      </li>
+    
+    
+    <li>
+      <a class="reset-it menu-button" data-action="code.reset" title="Reset editor to original version" tabindex="0"><i class="fa fa-refresh"></i>Reset</a>
+    </li>
+    
+    <li>
+      <a class="menu-button" data-action="mode.fullscreen" data-no-analytics="true" title="Switch to fullscreen mode" tabindex="0"><i class="fa fa-expand"></i>Fullscreen</a>
+    </li>
+    
+    
+    
+    
+    <li><label>Sharing</label></li>
+    <li>
+      <a class="share-it menu-button" data-action="sharing.share" aria-controls="share-options" tabindex="0"><i class="fa fa-share"></i>Share</a>
+    </li>
+    <li>
+      <a class="embed-it menu-button" data-action="sharing.embed" tabindex="0"><i class="fa fa-code"></i>Embed</a>
+    </li>
+    <li>
+      <a class="email-it menu-button" data-action="sharing.email" tabindex="0"><i class="fa fa-envelope-o"></i>Email</a>
+    </li>
+    
+    
+    <li><label>Font Size</label></li>
+    <li>
+      <a class='menu-button font-size small-font left' data-action="code.fontsize" data-data="1em" tabindex="0" aria-label="Set font size to small" role="menuitem">aA</a>
+      <a class='menu-button font-size medium-font left' data-action="code.fontsize" data-data="1.5em" tabindex="0" aria-label="Set font size to medium" role="menuitem">aA</a>
+      <a class='menu-button font-size large-font left' data-action="code.fontsize" data-data="2em" tabindex="0" aria-label="Set font size to large" role="menuitem">aA</a>
+    </li>
+    
+  </ul>
+</aside>
+
+
+      
+      <aside class="right-off-canvas-menu" data-interface="user-menu" aria-hidden="true">
+        <ul id="userMenu" class="off-canvas-list"></ul>
+      </aside>
+      
+
+      <section class="trinket-content main-section" data-interface="content">
+        <div id="flashMessage" class="container hide">
+          <div id="flashContent"></div>
+        </div>
+        <div class="trinket-content-wrapper " role="main">
+          <div id="content-overlay" class="hide" data-interface="overlay"></div>
+          
+  <div class="notation-widget">
+    <div id="config" class="hide">
+      <textarea class="configuration" autocorrect="off" autocapitalize="off"></textarea>
+      <a class="menu-button closer" data-action="code.config"><i class="fa fa-times-circle-o"></i></a>
+    </div>
+    <div id="cheatsheet" class="hide">
+      <pre>
+# notes
+C to B = from bass clef C to B below middle C
+c to b = from middle c to the middle of treble clef
+
+# octaves
+CC to BB = each additional repeated note lowers the octave by 1 (limit 3)
+c' to b' = each additional repeated ' raises the octave by 1 (limit 5)
+
+# rests
+r = rest
+
+# chords
+&lt;a b c&gt; = can contain an arbitrary amount of notes
+
+# accidentals - valid on notes
+- = flat (limit 2 per note)
+# = sharp (limit 2 per note)
+n = natural (limit 1 per note)
+
+# durations - valid after chord, rest and note
+[0-9]+ = integer duration value
+.      = you can add a dot with or without an integer duration
+
+# ties - valid on notes and chords
+~ = ties to the next note
+
+# tuplets
+dup{a b}    = can contain any 2 notes
+trip{a b c} = can contain any 3 notes
+</pre>
+
+      <a class="menu-button closer" data-action="code.cheatsheet"><i class="fa fa-times-circle-o"></i></a>
+    </div>
+    <div id="viewer">
+      <div id="codeOutput" class="code-output">
+        <pre id="error-message" class="hide"></pre>
+        <canvas id="notation"></canvas>
+        <div class="play-cursor hide"></div>
+      </div>
+      <div id="editor">
+        <dl class="tabs">
+        </dl>
+        <div class="voice-inputs">
+          <input class="notes"       type="text" placeholder="enter notes here"  autocomplete="off" autocapitalize="off">
+          <input class="lyrics hide" type="text" placeholder="enter lyrics here" autocomplete="off" autocapitalize="off">
+        </div>
+      </div>
+      <div id="loading-message" class="hide">
+        <span class="message">Loading instruments <i class="fa fa-spin fa-spinner"></i></span>
+      </div>
+    </div>
+  </div>
+
+        </div>
+      </section>
+
+      <a class="exit-off-canvas"></a>
+
+    
+
+    </div>
+  </div>
+
+  
+  <script id="statusMessageTemplate" type="text/html">
+    <div id="statusMessages" aria-live="assertive" role="alert" tabindex=0 data-inteface="alert" data-alert class="alert-box {{type}}">
+      <div>{{message}}</div>
+      <a href="#" title="Close message" class="close" aria-label="Close Alert" role="button"><i class="fa fa-times-circle"></i></a>
+    </div>
+  </script>
+  
+
+  <!-- the response-indicator divs allow javascript to determine which responsive size is being applied -->
+  <div class="responsive-indicator show-for-small-only"  data-size="small"></div>
+  <div class="responsive-indicator show-for-medium-only" data-size="medium"></div>
+  <div class="responsive-indicator show-for-large-up"    data-size="large"></div>
+
+  
+
+  <div id="confirmResetModal" class="reveal-modal medium" data-reveal data-css-top="35">
+    <div class="row">
+      <h2 id="modalTitle">Are you sure?</h2>
+      <p class="lead">Resetting will undo all of your current changes.</p>
+      <a class="button caution menu-button allow-original" data-action="code.cancel-reset">Cancel</a>
+      <a class="button danger menu-button allow-original" data-action="code.confirm-reset">Yes, I am sure.</a>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+  </div>
+
+  <div id="controlRoomModal" class="reveal-modal large" data-reveal data-css-top="35" data-interface="control-room">
+    <p><strong>Broadcast Control Room</strong></p>
+  
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+
+  
+      
+  
+  <ul id="displayOptionTextList" class="hide">
+    <li data-value="">Show <span class="blocksOrCode">code</span> and output side-by-side (smaller screens will only show one at a time)</li>
+    <li data-value="outputOnly">Only show output (hide the <span class="blocksOrCode">code</span>)</li>
+    <li data-value="toggleCode">Only show <span class="blocksOrCode">code</span> or output (let users toggle between them)</li>
+  </ul>
+  <div id="shareModal" class="reveal-modal full" data-reveal data-css-top="0" data-offset="0" role="dialog" aria-label="Share Trinket Link Dialog">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="row">
+          <span class="modal-title" role="heading">Share Your Code!</span>
+        </div>
+        <form>
+          <div class="row">
+            <label for="shareURL"><i>Copy the link below to share your code</i></label>
+            <div id="shareUrl" class="faux-input" data-metric="linkShares" role="textbox" tabindex="0" aria-label="Copy this link to share your trinket."></div>
+          </div>
+          <div class="row">
+            <fieldset>
+              <legend>Customize</legend>
+              
+              
+              
+            </fieldset>
+          </div>
+        </form>
+        
+        <div id="share-pro-tip" class="row">
+
+<span class="label round"><i class="fa fa-info-circle"></i> pro tip</span>
+ You can save a copy for yourself with the <i class="fa fa-copy"></i> Copy or <i class="fa fa-save"></i> Remix button.
+</div>
+        
+      </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+  <div id="embedModal" class="reveal-modal full" data-reveal data-css-top="0" data-offset="0" role="dialog" aria-label="Embed Trinket Dialog">
+    <div class="row">
+      <span class="modal-title" role="heading">Embed Your Code!</span>
+    </div>
+    <form>
+      <div class="row">
+        <label for="embedCode">Embed this code on your site</label>
+      </div>
+      <div class="row">
+        <div class="small-12 columms">
+          <div id="embedCode" class="faux-input textarea" data-metric="embedShares" role="textbox" aria-multiline="false" tabindex="0" aria-label="Copy this embed code"></div>
+        </div>
+      </div>
+      <div class="row">
+        <fieldset>
+          <legend>Customize</legend>
+      
+      
+        </fieldset>
+      </div>
+    </form>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+  <div id="emailModal" class="reveal-modal full" data-reveal data-css-top="0" data-offset="0" role="dialog" aria-label="Email Trinket Dialog">
+    <div class="row first-row">
+     <span class="modal-title" role="heading">Email Your Code!</span>
+    </div>
+    <form id="emailModalForm" data-trinket-id="" role="form">
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <label class="inline" for="share-email">Send To</label>
+        </div>
+        <div class="small-12 medium-9 columns">
+          <input type="email" id="share-email" name="email" placeholder="What email address should we send the link to?" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <label class="inline" for="share-yourname">Your Name</label>
+        </div>
+        <div class="small-12 medium-9 columns">
+          <input type="text" id="share-yourname" name="yourname" placeholder="What is your name?" required />
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <label class="inline" for="share-youremail">Your Email</label>
+        </div>
+        <div class="small-12 medium-9 columns">
+          <input type="email" id="share-youremail" name="youremail" value="" placeholder="Your email address - so the recipient can reply to you" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 medium-3 columns">
+          <input id="emailToken" name="emailToken" type="hidden" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaG9ydENvZGUiOiJhMDg5ZTk4N2NhIiwiaWF0IjoxNzE3MjQwNzM0fQ.bm_7iEJFqdfA33VmFB56CoQTQVMI3_TL02QFMCeTG-8" />
+          <button class="g-recaptcha button success small" data-sitekey="6LfeVWAUAAAAAGUzuHoa5jZ94HDopyRiRrCWFbr3" data-callback="submitEmailForm" data-badge="bottomleft">Send</button>
+        </div>
+        <div id="emailAlert" class="small-12 medium-9 columns end hide"></div>
+      </div>
+    </form>
+    
+    <div class="row">
+
+<span class="label round"><i class="fa fa-info-circle"></i> pro tip</span>
+ You can save a copy for yourself with the <i class="fa fa-copy"></i> Copy or <i class="fa fa-save"></i> Remix button.
+</div>
+    
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+<div id="publishModal" class="reveal-modal full" data-reveal data-css-top="0" data-offset="0" role="dialog" aria-label="Publish Trinket Dialog">
+  <div class="row">
+    <span class="modal-title" role="heading">Publish Your Trinket!</span><br>
+    <span>View all of your published trinkets <a href="/published" target="_blank">here</a>!</span>
+  </div>
+  <form id="publishModalForm" data-trinket-id="" role="form">
+    <div class="row">
+      <div class="small-12 medium-3 columns">
+        <label class="inline" for="publish-slug">
+          Site Name <i class="fa fa-info-circle open" data-tooltip="" aria-haspopup="true" title="Name must be unique. Lowercase letters, numbers, and dashes are allowed."></i>
+        </label>
+      </div>
+      <div class="small-10 medium-5 columns">
+        <input type="text" id="publish-slug" name="slug" required />
+      </div>
+      <div class="small-2 medium-4 columns">
+        <i id="slug-icon-status"></i>
+      </div>
+    </div>
+    <div id="slug-status" class="row hide">
+      <div class="small-12 medium-offset-3 medium-5 columns end">
+        <label id="slug-status-text">test</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 medium-3 columns">
+        <label class="inline">Site URL</label>
+      </div>
+      <div class="small-12 medium-9 columns">
+        <p><a href="" id="published-url" target="_blank"></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 columns">
+        <a id="publishTrinket" class="button success small"><i class="fa fa-book"></i> <span id="publish-text">Publish</span></a>
+      </div>
+      <div class="small-6 columns">
+        <a id="unpublishTrinket" class="button caution small right">Unpublish</a>
+      </div>
+    </div>
+  </form>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="addToGroupModal" class="shared-modal reveal-modal full" data-reveal data-css-top="0" data-offset="0">
+  <div class="row">
+    <div id="add-to-group-messages"></div>
+    <h2>Add to Group</h2>
+  </div>
+  <div class="row">
+    <div class="medium-12 large-6 columns">
+      <section id="have-groups" class="hide">
+        <p>Decide which group to add this trinket below.</p>
+        <ul id="groups-list"></ul>
+      </section>
+      <section id="no-groups" class="hide">
+        <p>You don't have any groups that you can add a trinket to &mdash; try creating a new one!</p>
+      </section>
+    </div>
+    <div class="medium-12 large-6 columns">
+      <p>You can also create a new group.</p>
+      <form>
+        <div class="row">
+          <div class="small-12 columns">
+            <label>What's the Group name?</label>
+            <input type="text" name="name" placeholder="e.g. Introduction to Python" value="" required />
+
+            <label>What Description should show up on the page?</label>
+            <textarea name="description" rows="2" placeholder="What other information will group members need to know about this group?" required></textarea>
+
+            <label>Group code to let others join.</label>
+            <div class="faux-input" id="joinCode"></div>
+            <input type="hidden" name="joinCode" value="" />
+
+            <a id="createGroupAddTrinket" data-trinket-id="" class="button success tiny"><i></i> Create Group</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+
+  
+
+  
+
+  <div id="upgradeModal" class="reveal-modal full" data-reveal data-css-top="0" data-offset="0">
+    
+    
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
+  
+
+  <ul id="share-options" class="f-dropdown" data-dropdown-content role="menu">
+    <li role="menuitem"><a class="menu-button" data-action="sharing.email" role="button"><i class="fa fa-envelope"></i>Email</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.share" role="button"><i class="fa fa-link"></i>Link</a></li>
+    <li role="menuitem"><a class="menu-button" data-action="sharing.embed" role="button"><i class="fa fa-code"></i>Embed</a></li>
+    
+  </ul>
+
+  <ul id="group-share-options" class="f-dropdown" data-dropdown-content>
+    <li><a class="menu-button" data-action="sharing.group"><i class="fa fa-users"></i>with Group</a></li>
+  </ul>
+
+  
+
+  
+  <script id="restoreOriginalModalTemplate" type="text/html">
+    <div id="restoreOriginalModal" class="reveal-modal medium" data-reveal data-css-top="35">
+      <h2 id="modalTitle">Reset to the original?</h2>
+      <p class="lead">Resetting will undo all of your current changes.</p>
+      <a class="button small caution" data-action="reject">No, keep my remix.</a>
+      <a class="button small danger" data-action="confirm">Yes, reset to the original.</a>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+  </script>
+
+  <script id="unittest-error" type="text/template">
+    <li class="accordion-navigation">
+    <a href="#panel-{{testNumber}}">
+      <div class="row really-wrong">
+        <div class="small-9 column">
+          <p><i class="fa fa-angle-right fa-lg open-close-indicator"></i>{{shortDescription}}</p>
+        </div>
+        <div class="small-3 column">
+        <p class="text-center"><i class="fa fa-circle-o fa-lg"></i></p>
+        </div>
+      </div>
+    </a>
+    <div id="panel-{{testNumber}}" class="content">
+      <p>
+        <strong>Message:</strong> <pre>{{reason}}</pre>
+      </p>
+    </div>
+    </li>
+  </script>
+
+  <script id="unittest-fail" type="text/template">
+    <li class="accordion-navigation">
+    <a href="#panel-{{testNumber}}">
+      <div class="row really-wrong">
+        <div class="small-1 column text-centered">
+          <p><i class="fa fa-angle-right fa-lg open-close-indicator"></i></p>
+        </div>
+        <div class="small-9 column">
+          <p>{{shortDescription}}</p>
+        </div>
+        <div class="small-2 column">
+        <p class="text-center"><i class="fa fa-circle-o fa-lg"></i></p>
+        </div>
+      </div>
+    </a>
+    <div id="panel-{{testNumber}}" class="content">
+      <p>
+        <strong>Description:</strong> {{description}}
+      </p>
+      <p>
+        <strong>Message:</strong> {{reason}}
+      </p>
+    </div>
+    </li>
+  </script>
+
+  <script id="unittest-pass" type="text/template">
+    <li class="accordion-navigation">
+    <a href="#panel-{{testNumber}}">
+      <div class="row really-right">
+        <div class="small-1 column text-centered">
+          <p><i class="fa fa-angle-right fa-lg open-close-indicator"></i></p>
+        </div>
+        <div class="small-9 column">
+          <p>{{shortDescription}}</p>
+        </div>
+        <div class="small-2 column">
+        <p class="text-center"><i class="fa fa-check-circle fa-lg"></i></p>
+        </div>
+      </div>
+    </a>
+    <div id="panel-{{testNumber}}" class="content">
+      <p>
+        <strong>Description:</strong> {{description}}
+      </p>
+    </div>
+    </li>
+  </script>
+
+  <script id="guestMenuTemplate" type="text/html">
+    <li>
+      <form id="accountForm">
+        <span class='message hide'></span>
+        <input name="email"    type='email'    placeholder="Email"    required>
+        <input name="password" type='password' placeholder="Password" required>
+        <a id="login"    name="login"    class='button secondary small' data-action="login">Log In</a>
+        <!--<a id="register" name="register" class='button primary small'   data-action="signup">Create Account</a>-->
+      </form>
+    </li>
+  </script>
+
+  <script id="userMenuTemplate" type="text/html">
+    
+<li><label><i class="fa fa-external-link"></i>Links</label></li>
+<li>
+  <a class="ui-option owner-option" href="/library/trinkets/a089e987ca" target="_blank" tabindex="-1">
+    <i class="fa fa-info-circle"></i>View on trinket
+  </a>
+  <a href="/library/trinkets" target="_blank" tabindex="-1">
+    <i class="fa fa-book"></i>My Trinkets
+  </a>
+</li>
+
+
+  </script>
+
+  <script id="ownerMenuTemplate" type="text/html">
+    <li><label>Options</label></li>
+    <li>
+      <a data-mode="interact" class="right-menu-link menu-button" data-action="code.save">
+        <i class="fa fa-save"></i>Update Original
+      </a>
+    </li>
+    
+<li><label><i class="fa fa-external-link"></i>Links</label></li>
+<li>
+  <a class="ui-option owner-option" href="/library/trinkets/a089e987ca" target="_blank" tabindex="-1">
+    <i class="fa fa-info-circle"></i>View on trinket
+  </a>
+  <a href="/library/trinkets" target="_blank" tabindex="-1">
+    <i class="fa fa-book"></i>My Trinkets
+  </a>
+</li>
+
+
+  </script>
+
+  <script id="draftTextTemplate" type="text/html">
+    <a class="menu-button" data-action="code.reset" title="Reset"><i class="fa fa-refresh"></i></a> {{draftText}}
+  </script>
+
+  <script id="addInstructionsTemplate" type="text/html">
+    <p>Click the pencil icon to add instructions to your trinket. When anyone else views this trinket, they'll also be able to view them.</p>
+  </script>
+
+  <script id="editInstructionsTemplate" type="text/html">
+    <div id="embedded-instructions"></div>
+  </script>
+
+  <script id="addInlineCommentTemplate" type="text/html">
+    <div class="comment-wrapper">
+      <div class="comment-heading-container">
+        <div class="comment-avatar-container">
+          <img class="comment-avatar" src="{{avatar}}" width="40" height="40" />
+        </div>
+        <span class="new-comment-container">
+          <textarea class="inline-comment-text"></textarea>
+        </span>
+      </div>
+      <div class="new-comment-actions">
+        <a class="button tiny secondary save-inline-comment"><i class="fa fa-save"></i> Add Comment</a>
+        <a class="button tiny caution cancel-inline-comment">Cancel</a>
+      </div>
+    </div>
+  </script>
+
+  <script id="inlineCommentTemplate" type="text/html">
+    <div id="{{commentId}}" class="comment-wrapper">
+      <div class="comment-heading-container">
+        <div class="comment-avatar-container">
+          <img class="comment-avatar" src="{{avatar}}" width="40" height="40" />
+        </div>
+        <div class="comment-info-container">
+          <strong>{{username}}</strong>
+          {{commentActions}}
+        </div>
+      </div>
+      <div id="comment-container-{{commentId}}" class="comment-container">
+        {{comment}}
+      </div>
+      <div id="edit-comment-container-{{commentId}}" class="edit-comment-container hide">
+        <textarea id="edit-inline-comment-{{commentId}}" class="inline-comment-text"></textarea>
+      </div>
+    </div>
+  </script>
+
+  <script id="inlineCommentActions" type="text/html">
+    <div class="comment-actions-wrapper">
+      <a class="comment-actions move-comment-up disabled" data-file-index="{{index}}" data-comment-id="{{commentId}}" title="Move comment up"><i class="fa fa-angle-up"></i></a>
+      <a class="comment-actions move-comment-down disabled" data-file-index="{{index}}" data-comment-id="{{commentId}}" title="Move comment down"><i class="fa fa-angle-down"></i></a>
+      <a class="comment-actions" data-dropdown="comment-actions-{{commentId}}" title="More options"><i class="fa fa-ellipsis-v"></i></a>
+    </div>
+    <ul id="comment-actions-{{commentId}}" class="f-dropdown" data-dropdown-content>
+      <li><a class="edit-inline-comment" data-comment-id="{{commentId}}"><i class="fa fa-pencil fa-fw"></i> Edit comment</a></li>
+      <li><a class="confirm-remove-inline-comment" data-comment-id="{{commentId}}"><i class="fa fa-trash-o alert fa-fw"></i> Remove comment</a></li>
+    </ul>
+    <div class="confirm-remove-comment-container hide" id="confirm-remove-comment-container-{{commentId}}">
+      <strong>Remove this comment?</strong><br /><br />
+      <a class="confirm-remove-comment button tiny danger" data-file-index="{{index}}" data-comment-id="{{commentId}}"><i class="fa fa-trash-o"></i> Remove</a>
+      <a class="cancel-remove-comment button tiny caution" data-comment-id="{{commentId}}">Cancel</a>
+    </div>
+    <div class="update-comment-container hide" id="update-comment-container-{{commentId}}">
+      <a class="update-comment button tiny secondary" data-file-index="{{index}}" data-comment-id="{{commentId}}"><i class="fa fa-save"></i> Update</a>
+      <a class="cancel-update-comment button tiny caution" data-comment-id="{{commentId}}">Cancel</a>
+    </div>
+  </script>
+  <script id="inlineCommentDismiss" type="text/html">
+    <div class="comment-actions-wrapper">
+      <a class="comment-actions" data-dropdown="comment-actions-{{commentId}}"><i class="fa fa-ellipsis-v"></i></a>
+    </div>
+    <ul id="comment-actions-{{commentId}}" class="f-dropdown" data-dropdown-content>
+      <li><a class="confirm-remove-inline-comment" data-comment-id="{{commentId}}"><i class="fa fa-trash-o alert fa-fw"></i> Remove comment</a></li>
+    </ul>
+    <div class="confirm-remove-comment-container hide" id="confirm-remove-comment-container-{{commentId}}">
+      <strong>Remove this comment?</strong><br /><br />
+      <a class="confirm-remove-comment button tiny danger" data-file-index="{{index}}" data-comment-id="{{commentId}}"><i class="fa fa-trash-o"></i> Remove</a>
+      <a class="cancel-remove-comment button tiny caution" data-comment-id="{{commentId}}">Cancel</a>
+    </div>
+  </script>
+  
+
+  
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/localStorage/2.0.1/localStorage.min.js?swfURL=//cdnjs.cloudflare.com/ajax/libs/localStorage/2.0.1/localStorage.swf" type="text/javacript"></script>
+
+  
+  <script src='https://trinket-vendor-assets.trinket.io/jszip/3.1.4/dist/jszip.min.js' charset='utf-8'></script>
+  <script src='https://trinket-vendor-assets.trinket.io/jszip-utils/dist/jszip-utils.min.js' charset='utf-8'></script>
+  <!--[if IE]>
+  <script src="/cache-prefix-1717240734386dist/jszip-utils-ie.min.js" type="text/javascript"></script>
+  <![endif]-->
+  <script src='https://trinket-vendor-assets.trinket.io/file-saver.js/1.20150507.2/FileSaver.js' charset='utf-8'></script>
+  
+
+  <script src='https://trinket-vendor-assets.trinket.io/lodash/2.4.1/dist/lodash.min.js' charset='utf-8'></script>
+  <script src='https://trinket-vendor-assets.trinket.io/bluebird/3.5.1/js/browser/bluebird.min.js' charset='utf-8'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>
+
+  
+
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js' charset='utf-8'></script>
+  <script src='https://trinket-vendor-assets.trinket.io/yamljs/0.1.5/bin/yaml.js' charset='utf-8'></script>
+  
+  <script src="https://trinket-cdn.trinket.io/embed-music-3fc6b52b0a.js" type="text/javascript"></script>
+
+
+</body>
+</html>

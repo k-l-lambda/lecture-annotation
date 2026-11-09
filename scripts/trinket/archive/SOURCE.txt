@@ -1,0 +1,13 @@
+Archived Trinket music-embed front end (trinket.io shut down 2026-08-31).
+
+embed-music-a089e987ca.20240601111854.html
+  https://web.archive.org/web/20240601111854id_/https://trinket.io/embed/music/a089e987ca
+  (page skeleton; build.mjs derives static/trinket/index.html from it)
+embed-music-2a24c47621.js
+  https://web.archive.org/web/20260323175057id_/https://trinket-cdn.trinket.io/embed-music-2a24c47621.js
+  (VexFlow + MIDI.js + music-notation parser/widget + Trinket embed app; last build before shutdown)
+embed.css
+  https://web.archive.org/web/20240219151959id_/https://trinket.io/cache-prefix-778c9cfb/css/embed.css
+
+Trinket source is open source (CC0): https://github.com/trinketapp/trinket-oss
+VexFlow and MIDI.js are MIT licensed.

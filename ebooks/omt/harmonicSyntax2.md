@@ -22,12 +22,12 @@
 
 因此，延长上述 **T1–T3** 进行的经过和弦就会是一个属和弦（D 在 T 之前），低音为音级 2（音级 1 和 3 之间的经过音）：**D2**。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/026277e656)
-
+<!-- trinket: https://trinket.io/embed/music/026277e656 -->
+<div class="omt-trinket" data-trinket="026277e656"><iframe src="../../../static/trinket/#026277e656" title="Passing chord prolongation – functional bass" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#026277e656" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 常见的 **D2** 和弦有 **V<sup>6/4</sup>**、**V<sup>4/3</sup>** 和 **VII<sup>6</sup>**。因此，一个 **I–I<sup>6</sup>** 延长可以把它们用作经过和弦。下面这个 **T1 D2 T3** 进行使用一个 **viiº6** 来延长主功能。听一听这个例子，然后试着把这个进行改成一个声部配置正确的 **I V<sup>6/4</sup> I<sup>6</sup>** 进行。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/e02e8af4b3)
-
+<!-- trinket: https://trinket.io/embed/music/e02e8af4b3 -->
+<div class="omt-trinket" data-trinket="e02e8af4b3"><iframe src="../../../static/trinket/#e02e8af4b3" title="Copy of Passing chord prolongation – RN" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#e02e8af4b3" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 请注意，虽然低音中的音级 2 可以支持一个 **II** 和弦，但 **II** 是下属功能，因此它*不*被用作延长主功能的经过和弦。
 
 ## 对位延长——不完全辅助和弦
@@ -36,8 +36,8 @@
 
 在和声写作中，同样的效果由*不完全辅助和弦*（incomplete neighbor chord）获得。低音遵循与第二类对位相同的不完全辅助音模式，而这个对位和弦的功能与其对应的经过和弦相同。因此，低音中的替代模式会产生 **T1 D4 T3**，而不是经过性的 **T1 D2 T3**。（用罗马数字表示，这个进行几乎总是 **I V<sup>4/2</sup> I<sup>6</sup>**，正如下例所示。）
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/51a20e2c7a)
-
+<!-- trinket: https://trinket.io/embed/music/51a20e2c7a -->
+<div class="omt-trinket" data-trinket="51a20e2c7a"><iframe src="../../../static/trinket/#51a20e2c7a" title="Incomplete neighbor chord prolongation – functional bass" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#51a20e2c7a" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 对位延长——完全辅助和弦
 
 正如在第二类或第三类对位中，*辅助音*（neighbor tone）可以用来装饰一个单音并回到该音一样，*辅助和弦*（neighbor chord）在低音中使用辅助音运动来延长一种功能，并回到原来的低音音高。辅助和弦的功能遵循与经过和弦或不完全辅助和弦相同的原则。以下是一些辅助和弦延长的例子：
@@ -49,12 +49,12 @@
 
 这里是一个严格键盘风格的 **T1 D7 T1** 辅助延长。其中 **D7** 和弦的罗马数字和数字低音是什么？要把它变成 **T3 D4 T3**，你最少需要做几处改动？
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/e12906a55e)
-
+<!-- trinket: https://trinket.io/embed/music/e12906a55e -->
+<div class="omt-trinket" data-trinket="e12906a55e"><iframe src="../../../static/trinket/#e12906a55e" title="Complete neighbor chord prolongation" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#e12906a55e" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 正如第三类对位中有*双辅助音*（double neighbor）音型一样，和声也可以通过在低音中使用双辅助音型的两个和弦来延长。最常见的双辅助延长是 **T1 D2 D7 T1**（通常为 **I V4/3 V6/5 I**）。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/519c9f039d)
-
+<!-- trinket: https://trinket.io/embed/music/519c9f039d -->
+<div class="omt-trinket" data-trinket="519c9f039d"><iframe src="../../../static/trinket/#519c9f039d" title="Double neighbor chord prolongation" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#519c9f039d" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 对位延长——分割和弦与装饰和弦
 
 在第二类对位中，*音程分割*（interval subdivision）把强拍之间的一个大跳分成两个较小的跳进。同样地，*分割和弦*（divider chord）把变换低音延长中低音之间的一个大跳（或者低音中一个简单的八度跳进）分成两个较小的跳进。
@@ -67,14 +67,14 @@
 
 下面是一个香槟进行。它是哪一种版本（**I<sup>6</sup>** 还是 **III**）？必须改变哪一处才能形成另一种版本？这个进行"打破"了哪一条默认的声部进行规则？（注意，由于规则之间的冲突，这个进行总会打破那条规则，并且其旋律中总会是这些音级。）
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/6a403a3d21)
-
+<!-- trinket: https://trinket.io/embed/music/6a403a3d21 -->
+<div class="omt-trinket" data-trinket="6a403a3d21"><iframe src="../../../static/trinket/#6a403a3d21" title="Champagne progression" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#6a403a3d21" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 在 **T1 D5 T1** 和 **T1 S4 T1** 的情况下，同样的和声进行也可以在低音不改变音区的情况下出现。换言之，低音从 *do* 跳到 *sol* 或 *fa*，但又回到原来的低音。这时中间那个和弦的低音不再是分割一个大跳，而更像是第三类对位中的一个*装饰音*（embellishing tone）。（在第三类对位中，*装饰音*通过跳进到另一个协和音——通常相距三度或四度——再回到原音，来装饰另一个音。）因此，原本会是*分割和弦*的和弦，在这里就成了*装饰和弦*（embellishing chord）。
 
 下面是一个 **T1 D5 T1** *分割*延长。做哪一处改动就能使它成为一个*装饰和弦*延长？
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/a23ec68873)
-
+<!-- trinket: https://trinket.io/embed/music/a23ec68873 -->
+<div class="omt-trinket" data-trinket="a23ec68873"><iframe src="../../../static/trinket/#a23ec68873" title="Divider prolongation" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#a23ec68873" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 从属和声进行
 
 最后一种延长类型不是对位性的，而是包含典型 **T–(S)–D–T** 进行的较弱版本。当这样一个进行未能产生一个真正的终止——也就是说，它以 **D7–T1** 或 **D4–T3** 这样的对位和弦结束，或者用一个"阻碍解决" **D5–T6**（**V–VI**）代替终止性的 **D5–T1**——这个进行就被称为*从属和声进行*（subsidiary harmonic progression；这一术语来自 Edward Aldwell 和 Carl Schachter；Steven Laitz 把同样的进行称为*嵌入式乐句模型* embedded phrase model）。它之所以是"从属的"（或"嵌入的"），是因为它没有占据整个乐句，而是从属于（或嵌入于）一个更大的进行之中。
@@ -85,8 +85,8 @@
 
 例如，考虑下面这个可能的乐句和声进行：
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/69e6b9acb9)
-
+<!-- trinket: https://trinket.io/embed/music/69e6b9acb9 -->
+<div class="omt-trinket" data-trinket="69e6b9acb9"><iframe src="../../../static/trinket/#69e6b9acb9" title="Subsidiary harmonic progression" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#69e6b9acb9" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 第一次经历 **T–S–D–T** 循环的进行在回到 T 时并没有产生一个终止。然而，它也不能被说成是一种对位延长，因为它完全遵循了正常的功能循环。因此，它是一个从属进行。
 
 ![从属和声进行的分析示例](assets/harmony/subsidiaryProgression.png)
@@ -130,16 +130,17 @@
 
 另一种常见的模式是把 **IV**（**S**）用作 **I<sup>6</sup>**（**T**）的完全或不完全辅助和弦。常见的进行包括 **I IV I<sup>6</sup>** 和 **I<sup>6</sup> IV I<sup>6</sup>**。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/480c1acf9b)
-
+<!-- trinket: https://trinket.io/embed/music/480c1acf9b -->
+<div class="omt-trinket" data-trinket="480c1acf9b"><iframe src="../../../static/trinket/#480c1acf9b" title="Incomplete neighbor chord prolongation – S" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#480c1acf9b" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 同样常见的是对 **T1** 的*变换音型*延长：<strong>I–IV<sup>6/4</sup>–I</strong>。<strong>IV<sup>6/4</sup></strong> 可以被看作一个 **S** 和弦，但更恰当的做法往往只是把该和弦中低音之上的六度和四度看作五度和三度的辅助音。对这样的进行，只需在罗马数字下方标记 **T———** 即可。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/1e440d4768)
-
+<!-- trinket: https://trinket.io/embed/music/1e440d4768 -->
+<div class="omt-trinket" data-trinket="1e440d4768"><iframe src="../../../static/trinket/#1e440d4768" title="I IV I change-of-figure prolongation" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#1e440d4768" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 延长一个进行
 
 偶尔，一个对位和弦并不是用来延长单一功能，而是用来连接不同功能的和弦——换言之，用来延长一个进行。
 
 最常见的情况是低音线从 *do* 级进下行到 *sol*，这在小调中尤其常见。低音线 *do*–*te*–*le*–*sol* 由 **T1 D7 S6 D5** 配和声（通常为 **i v<sup>6</sup> iv<sup>6</sup> V**——在这个被称为"哀歌"（lament）的进行中，和弦的性质很重要）。在这个进行中，**S6** 是一个功能性的下属和弦，导向终止性的 **D5**。于是 **D7** 和弦只是一个连接 **T1** 与 **S6** 的经过和弦。为了标记这一点，在罗马数字分析下方的 **T** 和 **S** 之间画一个箭头。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/3b6de8a510)
+<!-- trinket: https://trinket.io/embed/music/3b6de8a510 -->
+<div class="omt-trinket" data-trinket="3b6de8a510"><iframe src="../../../static/trinket/#3b6de8a510" title="Lament progression" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#3b6de8a510" target="_blank" rel="noopener">全屏打开 ↗</a></div>

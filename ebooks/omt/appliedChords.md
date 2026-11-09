@@ -12,8 +12,8 @@
 
 *练习：改动下面片段中的一个音，把下属和弦变成副属和弦。你会给这个和弦标什么罗马数字和功能低音？*
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/c6b5004279)
-
+<!-- trinket: https://trinket.io/embed/music/c6b5004279 -->
+<div class="omt-trinket" data-trinket="c6b5004279"><iframe src="../../../static/trinket/#c6b5004279" title="Applied chords ex 1 (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#c6b5004279" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 这种和弦借用可以针对*主调中的任何大三和弦或小三和弦*发生。任何自然音三和弦都可以带一个副属和弦——一个半音变化的和弦，同时在以后面那个和弦为主和弦的调中起属和弦的作用。因此，示例进行 **F\#dim–G** 可以出现在 G 大三和弦所属的任何一个调中：G 大调、C 大调、D 大调、b 小调、a 小调或 e 小调。
 
 关于副属和弦，以下两点总是成立：
@@ -40,8 +40,8 @@
 
 下面是一段简短的键盘风格段落，其中包含两个不同的副属和弦，用罗马数字标注。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/45c20d9624)
-
+<!-- trinket: https://trinket.io/embed/music/45c20d9624 -->
+<div class="omt-trinket" data-trinket="45c20d9624"><iframe src="../../../static/trinket/#45c20d9624" title="Applied chords ex 2 - RNs (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#45c20d9624" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ### 关于功能低音记法的说明
 
 与[半音变化的下属和弦](alteredSubdominants.md)一样，每个副属和弦的功能低音符号都有两个要素。第一，在功能低音分析的常规一行上，有一个符号显示它在当前调中的功能和低音的音级（变化的低音音高加“+”或“–”），并用方括号括起来，表示该和弦是半音变化的。（无论半音变化出现在哪个声部，方括号都是必需的。）第二，在功能低音分析常规一行的下方，有一个符号标明该和弦所借用的调，以及该和弦在那个调中的功能低音符号。
@@ -50,9 +50,9 @@
 
 下面是与上面相同的例子，但用功能低音分析的上层一行替换了罗马数字。（Trinket 只支持一层歌词/和声分析。）哪些和弦需要第二层功能低音分析？那些符号会是什么？
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/9a8ff25f3c)
-
-（经过诠释的功能低音版本可以在[这里](https://trinket.io/music/406c96fec0)找到。）
+<!-- trinket: https://trinket.io/embed/music/9a8ff25f3c -->
+<div class="omt-trinket" data-trinket="9a8ff25f3c"><iframe src="../../../static/trinket/#9a8ff25f3c" title="Applied chords ex 2 - FB (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#9a8ff25f3c" target="_blank" rel="noopener">全屏打开 ↗</a></div>
+（经过诠释的功能低音版本可以在<span class="omt-trinket-gone">这里</span><!-- trinket: https://trinket.io/music/406c96fec0（未找到存档） -->找到。）
 
 ## 副属和弦中的音级
 

@@ -1,0 +1,1072 @@
+{
+ "026277e656": {
+  "name": "Passing chord prolongation – functional bass",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240323201351 trinket.io/embed/music/026277e656",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 d' c'",
+    "<g c'>2 <f b> <e g>",
+    "C2 D E"
+   ],
+   "lyrics": [
+    "T1 D2 T3"
+   ]
+  }
+ },
+ "043d342ffa": {
+  "name": "Consonant neighbor tone",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211613 trinket.io/embed/music/043d342ffa",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "g2 a g",
+    "c1 e"
+   ],
+   "lyrics": [
+    "5 6 3"
+   ]
+  }
+ },
+ "1e440d4768": {
+  "name": "I IV I change-of-figure prolongation",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093345 trinket.io/embed/music/1e440d4768",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 f' e'",
+    "<g c'>2 <a c'> <g c'>",
+    "C2 C C"
+   ],
+   "lyrics": [
+    "T — —"
+   ]
+  }
+ },
+ "22aa934458": {
+  "name": "Fourth-species example",
+  "pages": [
+   "fourthSpecies.md"
+  ],
+  "snapshot": "20220616152245 trinket.io/embed/music/22aa934458",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "r2 c'~ c' b~ b a~ a g~ g f e e'~ e' f'~ f' e'~ e' c'~ c' b c'1",
+    "c1 d f e f g a g e d c"
+   ],
+   "lyrics": [
+    "~ 8 7 6 4 3 4 3 2 1 3 6 5 6 7 6 8 6 7 6 8"
+   ]
+  }
+ },
+ "24c7f0ee8e": {
+  "name": "Skipped passing tone",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211612 trinket.io/embed/music/24c7f0ee8e",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "g2 b c'",
+    "B1 A"
+   ],
+   "lyrics": [
+    "6 8 3"
+   ]
+  }
+ },
+ "2df65adf8b": {
+  "name": "Cantus Firmus (OMT)",
+  "pages": [
+   "cantusFirmus.md"
+  ],
+  "snapshot": "20230314015307 trinket.io/embed/music/2df65adf8b",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "tempo": 160,
+    "key": "D",
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "alto"
+     }
+    ]
+   },
+   "notes": [
+    "d1 r r r b r r e d"
+   ],
+   "lyrics": []
+  }
+ },
+ "3b6de8a510": {
+  "name": "Lament progression",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093346 trinket.io/embed/music/3b6de8a510",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "Cm",
+    "tempo": 72,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' f' d'",
+    "<e- g>2 g <f c'> <g b>",
+    "C2 BB- AA- GG"
+   ],
+   "lyrics": [
+    "T → S D"
+   ]
+  }
+ },
+ "45c20d9624": {
+  "name": "Applied chords ex 2 - RNs (OMT)",
+  "pages": [
+   "appliedChords.md"
+  ],
+  "snapshot": "20210514045753 trinket.io/embed/music/45c20d9624",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 72,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2,
+      "lyrics": "on"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' e' f' f' d' e' d' c'1",
+    "<e g>2 g <g c'> <f c'> <a d'> <a c'> <g c'> <g b> <e g>1",
+    "c2 B B- A F F# G GG C1"
+   ],
+   "lyrics": [
+    "",
+    "~ 6 4/2 6 6 6/5 6/4 5/3 ~",
+    "I V V/IV IV ii V/V V ― I"
+   ]
+  }
+ },
+ "480c1acf9b": {
+  "name": "Incomplete neighbor chord prolongation – S",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093514 trinket.io/embed/music/480c1acf9b",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 f' g'",
+    "<g c'>2 <a c'> <g c'>",
+    "C2 F E"
+   ],
+   "lyrics": [
+    "T1 S4 T3"
+   ]
+  }
+ },
+ "4ea073d8f1": {
+  "name": "Meyer - 5-phase Prinner",
+  "pages": [
+   "schemata-improv.md"
+  ],
+  "snapshot": "20211017133723 trinket.io/embed/music/4ea073d8f1",
+  "code": {
+   "schema": {
+    "time": "2/4",
+    "key": "C",
+    "tempo": 112,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 b f' e' a' g' f' e'",
+    "C2 D BB C F E D4 GG C2"
+   ],
+   "lyrics": [
+    "Meyer ~ ~ ~ Prinner ~ ~ ~ IAC"
+   ]
+  }
+ },
+ "519c9f039d": {
+  "name": "Double neighbor chord prolongation",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093346 trinket.io/embed/music/519c9f039d",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 b f' e'",
+    "<e g>2 <f g> <g b> <g c'>",
+    "C2 D BB C"
+   ],
+   "lyrics": [
+    "T1 D2 D7 T1"
+   ]
+  }
+ },
+ "51a20e2c7a": {
+  "name": "Incomplete neighbor chord prolongation – functional bass",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240323201543 trinket.io/embed/music/51a20e2c7a",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 d' c'",
+    "<g c'>2 <g b> <e g>",
+    "C2 F E"
+   ],
+   "lyrics": [
+    "T1 D4 T3"
+   ]
+  }
+ },
+ "5764fe4a4b": {
+  "name": "Delay of melodic progression",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211613 trinket.io/embed/music/5764fe4a4b",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "g2 b a",
+    "e1 f"
+   ],
+   "lyrics": [
+    "3 5 3"
+   ]
+  }
+ },
+ "585810f762": {
+  "name": "First-Species Major Error Detection (OMT)",
+  "pages": [
+   "firstSpecies.md"
+  ],
+  "snapshot": "20220616152245 trinket.io/embed/music/585810f762",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "staves": [
+     {
+      "clef": "alto",
+      "lyrics": "on",
+      "label": "cantus firmus"
+     },
+     {
+      "clef": "bass",
+      "label": "counterpoint"
+     }
+    ],
+    "tempo": 160,
+    "key": "C",
+    "connector": "final"
+   },
+   "notes": [
+    "c1 d e f g d f e d c",
+    "c1 B A c d B A G B c"
+   ],
+   "lyrics": [
+    ""
+   ]
+  }
+ },
+ "69e6b9acb9": {
+  "name": "Subsidiary harmonic progression",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093517 trinket.io/embed/music/69e6b9acb9",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "Cm",
+    "tempo": 72,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "g'2 a'- g' g' f'4 e'- d'2 c'1",
+    "<c' e'->2 <c' f'> <b d'> c' <a- c'> <g b> <e- g>1",
+    "C2 F F E- F G C1"
+   ],
+   "lyrics": [
+    "T1 S4 D4 T3 S4 D5 T1"
+   ]
+  }
+ },
+ "6a403a3d21": {
+  "name": "Champagne progression",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093512 trinket.io/embed/music/6a403a3d21",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 f' g'",
+    "<g c'>2 <a c'> <g c'>",
+    "c2 A E"
+   ],
+   "lyrics": [
+    "T1 S6 T3"
+   ]
+  }
+ },
+ "827ad0b4a2": {
+  "name": "Change of register",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211613 trinket.io/embed/music/827ad0b4a2",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "g2 g' f'",
+    "e1 d"
+   ],
+   "lyrics": [
+    "3 3 3"
+   ]
+  }
+ },
+ "91c673df7c": {
+  "name": "Beethoven 57",
+  "pages": [
+   "trinket.md"
+  ],
+  "snapshot": "20220616152245 trinket.io/embed/music/91c673df7c",
+  "code": {
+   "schema": {
+    "time": "12/8",
+    "key": "Fm",
+    "tempo": 80,
+    "pickup": 3,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c4~ c16 A- F2.~ F4. A-4~ A-16 c f4. a-4~ a-16 c' f'4. f"
+   ],
+   "lyrics": [
+    "sol ~ me do ~ me ~ sol do me ~ sol do do"
+   ]
+  }
+ },
+ "9a8ff25f3c": {
+  "name": "Applied chords ex 2 - FB (OMT)",
+  "pages": [
+   "appliedChords.md"
+  ],
+  "snapshot": "20210514143935 trinket.io/embed/music/9a8ff25f3c",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 72,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2,
+      "lyrics": "on"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' e' f' f' d' e' d' c'1",
+    "<e g>2 g <g c'> <f c'> <a d'> <a c'> <g c'> <g b> <e g>1",
+    "c2 B B- A F F# G GG C1"
+   ],
+   "lyrics": [
+    "",
+    "~ 6 4/2 6 6 6/5 6/4 5/3 ~",
+    "T1 D7 [T-7] S6 S4 [S+4] D5 ― T1"
+   ]
+  }
+ },
+ "a089e987ca": {
+  "name": "First-Species Minor Error Detection (OMT)",
+  "pages": [
+   "firstSpecies.md",
+   "trinket.md"
+  ],
+  "snapshot": "20240601111854 trinket.io/embed/music/a089e987ca",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ],
+    "tempo": 160,
+    "key": "Dm",
+    "connector": "final"
+   },
+   "notes": [
+    "d'1 c' b- a g f a c'# d'",
+    "d1 a g f e d f e d"
+   ],
+   "lyrics": [
+    ""
+   ]
+  }
+ },
+ "a23ec68873": {
+  "name": "Divider prolongation",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240328093508 trinket.io/embed/music/a23ec68873",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' e'",
+    "<e g>2 <g b> <g c'>",
+    "c2 G C"
+   ],
+   "lyrics": [
+    "T1 D5 T1"
+   ]
+  }
+ },
+ "a63f2a06bc": {
+  "name": "Sol-Fa-Mi – Prinner – Simple PAC",
+  "pages": [
+   "schemata-improv.md"
+  ],
+  "snapshot": "20211017124543 trinket.io/embed/music/a63f2a06bc",
+  "code": {
+   "schema": {
+    "time": "2/4",
+    "key": "C",
+    "tempo": 112,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "g'2 f' f' e' a'4 g' f' e' d'2 c'",
+    "C2 D BB C F4 E D C GG2 C"
+   ],
+   "lyrics": [
+    "Sol-Fa-Mi ~ ~ ~ Prinner ~ ~ ~ Simple PAC"
+   ]
+  }
+ },
+ "a79b68de03": {
+  "name": "Interval subdivision",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211613 trinket.io/embed/music/a79b68de03",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "g2 c' e'",
+    "e1 c"
+   ],
+   "lyrics": [
+    "3 6 3"
+   ]
+  }
+ },
+ "bcc2fe55de": {
+  "name": "Jupiter – Passo Indietro – Compound PAC",
+  "pages": [
+   "schemata-improv.md"
+  ],
+  "snapshot": "20211017124708 trinket.io/embed/music/bcc2fe55de",
+  "code": {
+   "schema": {
+    "time": "2/4",
+    "key": "C",
+    "tempo": 112,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' f' e' a' g' e'4 d' c'2",
+    "C2 BB BB C F E G4 GG C2"
+   ],
+   "lyrics": [
+    "Jupiter ~ ~ ~ Passo-Indietro ~ ~ ~ PAC"
+   ]
+  }
+ },
+ "bd3da422f4": {
+  "name": "Second-species model",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20220120144952 trinket.io/embed/music/bd3da422f4",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "r2 g f g a b c' e' d' c' b d' c' f' e' f' g' g a b c'1",
+    "c1 d f e f g a g e d c"
+   ],
+   "lyrics": [
+    "~ 5 3 4 3 4 6 8 6 5 3 5 3 6 6 7 3 3 5 6 8"
+   ]
+  }
+ },
+ "c6b5004279": {
+  "name": "Applied chords ex 1 (OMT)",
+  "pages": [
+   "appliedChords.md"
+  ],
+  "snapshot": "20210513161326 trinket.io/embed/music/c6b5004279",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "Em",
+    "tempo": 72,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "g'2 g' g' f'# g'1",
+    "<b d'>2 d' <a e'> <c' d'> <b d'>1",
+    "GG2 BB C D GG1"
+   ],
+   "lyrics": [
+    "I I6 ii6/5 V7 I"
+   ]
+  }
+ },
+ "da93d4d902": {
+  "name": "Schenker cantus firmus",
+  "pages": [
+   "cantusFirmus.md"
+  ],
+  "snapshot": "20211017125717 trinket.io/embed/music/da93d4d902",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 180,
+    "connector": "brace single final",
+    "staves": [
+     {
+      "clef": "alto",
+      "voices": [
+       {
+        "lyrics": false
+       }
+      ]
+     }
+    ]
+   },
+   "notes": [
+    "c1 d f e f g a g e d c"
+   ],
+   "lyrics": []
+  }
+ },
+ "de54f539bb": {
+  "name": "Consonant passing tone",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211612 trinket.io/embed/music/de54f539bb",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "b2 c' d' s",
+    "e1 f"
+   ],
+   "lyrics": [
+    "5 6 6"
+   ]
+  }
+ },
+ "e02e8af4b3": {
+  "name": "Copy of Passing chord prolongation – RN",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240323201530 trinket.io/embed/music/e02e8af4b3",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 d' c'",
+    "<g c'>2 <f b> <e g>",
+    "C2 D E"
+   ],
+   "lyrics": [
+    "I viiº6 I6"
+   ]
+  }
+ },
+ "e12906a55e": {
+  "name": "Complete neighbor chord prolongation",
+  "pages": [
+   "harmonicSyntax2.md"
+  ],
+  "snapshot": "20240323201537 trinket.io/embed/music/e12906a55e",
+  "code": {
+   "schema": {
+    "time": "3/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "e'2 f' e'",
+    "<g c'>2 <g d'> <g c'>",
+    "C2 BB C"
+   ],
+   "lyrics": [
+    "T1 D7 T1"
+   ]
+  }
+ },
+ "ee80a49382": {
+  "name": "Jupiter – Passo Indietro – Compound HC",
+  "pages": [
+   "schemata-improv.md"
+  ],
+  "snapshot": "20211017134601 trinket.io/embed/music/ee80a49382",
+  "code": {
+   "schema": {
+    "time": "2/4",
+    "key": "C",
+    "tempo": 112,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' f' e' a' g' e' d'",
+    "C2 D BB C F E G GG"
+   ],
+   "lyrics": [
+    "Jupiter ~ ~ ~ Passo-Indietro ~ ~ HC"
+   ]
+  }
+ },
+ "ef1cff1ee3": {
+  "name": "Dissonant passing tone",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211612 trinket.io/embed/music/ef1cff1ee3",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' e' s",
+    "e1 c"
+   ],
+   "lyrics": [
+    "6 7 3"
+   ]
+  }
+ },
+ "f258be56b6": {
+  "name": "Substitution",
+  "pages": [
+   "secondSpecies.md"
+  ],
+  "snapshot": "20250110211612 trinket.io/embed/music/f258be56b6",
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 80,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "lyrics": "on",
+      "label": "counterpoint"
+     },
+     {
+      "clef": "alto",
+      "label": "cantus firmus"
+     }
+    ]
+   },
+   "notes": [
+    "g2 c' b",
+    "e1 f"
+   ],
+   "lyrics": [
+    "3 6 3"
+   ]
+  }
+ }
+}

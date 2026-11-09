@@ -2,8 +2,8 @@
 
 在第二类对位中，对位声部以二分音符进行，对抗以全音符写成的定旋律。这种 2:1 的节奏比例带来了两个新的“基本音乐问题”，一个是节拍上的，一个是和声上的：*强拍*与*弱拍*的区分，以及*经过音*（passing tone）这种不协和音的引入。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/bd3da422f4)
-
+<!-- trinket: https://trinket.io/embed/music/bd3da422f4 -->
+<div class="omt-trinket" data-trinket="bd3da422f4"><iframe src="../../../static/trinket/#bd3da422f4" title="Second-species model" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#bd3da422f4" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *申克（Heinrich Schenker）的一个第二类对位范例。*
 
 在第二类对位中引入和声不协和音，增加了音乐织体的变化。然而，它也带来了一种紧张感，必须用协和音来加以平衡以促进调性融合；同时，要保证进入和离开不协和音时的流畅，也需要格外留意。
@@ -66,38 +66,38 @@
 
 由于第二类对位中的所有不协和音都是经过音，你永远不会跳进或跳出一个不协和音，也不会在不协和音上改变方向，也不会有任何不协和音出现在下拍上。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/ef1cff1ee3)
-
+<!-- trinket: https://trinket.io/embed/music/ef1cff1ee3 -->
+<div class="omt-trinket" data-trinket="ef1cff1ee3"><iframe src="../../../static/trinket/#ef1cff1ee3" title="Dissonant passing tone" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#ef1cff1ee3" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 #### 协和弱拍
 
 *协和经过音*（consonant passing tone）从下拍到下拍勾勒出一个三度，其模式与不协和经过音相同，只是三个音（下拍、经过音、下拍）都与定旋律协和。协和经过音总是位于定旋律上方/下方的六度或纯五度。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/de54f539bb)
-
+<!-- trinket: https://trinket.io/embed/music/de54f539bb -->
+<div class="omt-trinket" data-trinket="de54f539bb"><iframe src="../../../static/trinket/#de54f539bb" title="Consonant passing tone" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#de54f539bb" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *替代*（substitution）同样从下拍到下拍勾勒出一个三度。不过，对位声部不是用级进填充它，而是跳进一个四度，然后向相反方向级进。之所以称为替代，是因为当一条线条需要额外的跳进或方向变化以增加变化时，它可以替代经过音。与协和经过音一样，对位声部中的三个音都必须与定旋律协和。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/f258be56b6)
-
+<!-- trinket: https://trinket.io/embed/music/f258be56b6 -->
+<div class="omt-trinket" data-trinket="f258be56b6"><iframe src="../../../static/trinket/#f258be56b6" title="Substitution" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#f258be56b6" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *跳越经过音*（skipped passing tone）从下拍到下拍勾勒出一个四度。弱拍音把这个四度分成一个三度和一个级进。同样，三个音程（下拍、跳越经过音、下拍）都与定旋律协和。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/24c7f0ee8e)
-
+<!-- trinket: https://trinket.io/embed/music/24c7f0ee8e -->
+<div class="omt-trinket" data-trinket="24c7f0ee8e"><iframe src="../../../static/trinket/#24c7f0ee8e" title="Skipped passing tone" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#24c7f0ee8e" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *音程分割*（interval subdivision）在相继下拍之间勾勒出一个五度或六度。下拍之间这个较大的协和旋律音程被分成两个较小的协和跳进。下拍之间的旋律五度会被分成两个三度；下拍之间的旋律六度会被分成一个三度和一个四度，或一个四度和一个三度。不仅三个*旋律*音程（两个音到音的音程以及下拍到下拍的音程）都必须是协和的，而且对位声部中的每个音都必须与定旋律协和。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/a79b68de03)
-
+<!-- trinket: https://trinket.io/embed/music/a79b68de03 -->
+<div class="omt-trinket" data-trinket="a79b68de03"><iframe src="../../../static/trinket/#a79b68de03" title="Interval subdivision" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#a79b68de03" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *音区转换*（change of register）是指从强拍到弱拍的一个较大的协和跳进（P5、六度或八度）之后，接一个反方向的级进。它用于在长段级进之后获得旋律变化、避免平行音程或其他问题，或者避开定旋律以保持独立性。它应当少用。并且一如既往，每个音都必须与定旋律协和。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/827ad0b4a2)
-
+<!-- trinket: https://trinket.io/embed/music/827ad0b4a2 -->
+<div class="omt-trinket" data-trinket="827ad0b4a2"><iframe src="../../../static/trinket/#827ad0b4a2" title="Change of register" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#827ad0b4a2" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *旋律进行的延迟*（delay of melodic progression）从下拍到下拍勾勒出一个级进。它包含从强拍到弱拍的一个三度跳进，然后向相反方向级进进入下一个下拍。之所以称为“延迟”，是因为它用来装饰原本是较慢的第一类对位式进行（从下拍到下拍的级进）。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/5764fe4a4b)
-
+<!-- trinket: https://trinket.io/embed/music/5764fe4a4b -->
+<div class="omt-trinket" data-trinket="5764fe4a4b"><iframe src="../../../static/trinket/#5764fe4a4b" title="Delay of melodic progression" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#5764fe4a4b" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *协和辅助音*（consonant neighbor tone）是指对位声部从下拍级进到弱拍，然后在下一个下拍回到原来的音高。如果第一个下拍与定旋律构成五度，协和辅助音就构成六度，反之亦然。
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/043d342ffa)
-
+<!-- trinket: https://trinket.io/embed/music/043d342ffa -->
+<div class="omt-trinket" data-trinket="043d342ffa"><iframe src="../../../static/trinket/#043d342ffa" title="Consonant neighbor tone" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#043d342ffa" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 演示
 
 在下面的视频中，我演示了写作第二类对位的过程。这段视频提供了关于作曲过程的新信息，也为上述规则和原则提供了具体示例。

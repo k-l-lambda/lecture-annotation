@@ -1,7 +1,9 @@
 # 使用 Trinket
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/a089e987ca)
+> 译注：trinket.io 已于 2026 年 8 月 31 日关闭，原书嵌入的交互式乐谱随之失效。本译本中的 trinket 曲谱数据取自 Internet Archive 的存档快照，由 Trinket 开源的原版前端在本站静态呈现，可播放、可修改；修改后点击“复制链接”可分享。原链接以注释形式保留在源文件中。全部曲谱见<a href="../../../static/trinket/list.html" target="_blank" rel="noopener">曲谱列表</a>。
 
+<!-- trinket: https://trinket.io/embed/music/a089e987ca -->
+<div class="omt-trinket" data-trinket="a089e987ca"><iframe src="../../../static/trinket/#a089e987ca" title="First-Species Minor Error Detection (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#a089e987ca" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 *错误检测练习，出自[创作第一类对位](firstSpecies.md)。*
 
 [Trinket](http://trinket.io) 是一种用于网页交互式乐谱记写的新工具。它可以添加到任何支持 iFrame 的网站中。Open Music Theory 中嵌入了若干音乐 trinket（随着本教材的扩充，还会有更多）。
@@ -54,4 +56,5 @@ ISO 第 6 八度用两个撇号（c''），第 7 八度用三个撇号（c'''）
 
 下面是一个使用了上述许多功能的示例。（国际读者，请原谅这里使用的是首调唱名法！）
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/91c673df7c)
+<!-- trinket: https://trinket.io/embed/music/91c673df7c -->
+<div class="omt-trinket" data-trinket="91c673df7c"><iframe src="../../../static/trinket/#91c673df7c" title="Beethoven 57" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#91c673df7c" target="_blank" rel="noopener">全屏打开 ↗</a></div>

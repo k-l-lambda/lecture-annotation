@@ -60,12 +60,12 @@
 
 ### 小调练习，对位声部在上方
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/a089e987ca)
-
+<!-- trinket: https://trinket.io/embed/music/a089e987ca -->
+<div class="omt-trinket" data-trinket="a089e987ca"><iframe src="../../../static/trinket/#a089e987ca" title="First-Species Minor Error Detection (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#a089e987ca" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ### 大调练习，对位声部在下方
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/585810f762)
-
+<!-- trinket: https://trinket.io/embed/music/585810f762 -->
+<div class="omt-trinket" data-trinket="585810f762"><iframe src="../../../static/trinket/#585810f762" title="First-Species Major Error Detection (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#585810f762" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 可下载练习
 
 选自富克斯（Fux）《*Gradus ad Parnassum*》（《艺术津梁》，第一部分，两声部）的第一类对位练习：

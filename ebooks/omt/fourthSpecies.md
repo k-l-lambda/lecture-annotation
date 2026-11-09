@@ -62,8 +62,8 @@
 
 下面是一首第四类对位的范例作品。其中有一处“违反”“规则”的地方。找出它，并尝试重写这个练习。你能写出一个比原作在音乐上更令人满意的“正确”答案吗？如果不能，你认为原因是什么？
 
-🖥 [Trinket 交互练习](https://trinket.io/embed/music/22aa934458)
-
+<!-- trinket: https://trinket.io/embed/music/22aa934458 -->
+<div class="omt-trinket" data-trinket="22aa934458"><iframe src="../../../static/trinket/#22aa934458" title="Fourth-species example" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#22aa934458" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 ## 可下载的练习
 
 选自富克斯（Fux）《艺术津梁》（*Gradus ad Parnassum*）的第四类对位练习（第一部分，两声部）：

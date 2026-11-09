@@ -5,7 +5,8 @@
  *               MIDI --timeline--> notes --music-widgets MidiAudio (piano soundfont)--> audio
  *
  * The score UI follows klblog's theme player (themes/yilia/midi-player/src/lilylet.js);
- * audio uses music-widgets' single-piano WebAudio backend (a 1.4 MB soundfont) instead of
+ * audio uses music-widgets' single-piano WebAudio backend with the site's shared MIDI.js soundfont
+ * (static/soundfont/, also used by the archived Trinket embeds; 1.4 MB) instead of
  * the 40 MB FluidSynth GM bank. Everything is loaded only when a score nears the viewport,
  * and audio only on the first Play click.
  *
@@ -38,9 +39,9 @@ function loadScript(src) {
 }
 function loadAudio() {
 	return audio ||= (async () => {
-		if (!window.musicWidgetsBrowser) await loadScript(asset('musicWidgetsBrowser.umd.min.js'));
+		if (!window.musicWidgetsBrowser) await loadScript(asset('../../static/vendor/music-widgets/1.0.10/musicWidgetsBrowser.umd.min.js'));
 		const MidiAudio = window.musicWidgetsBrowser.MidiAudio;
-		await MidiAudio.loadPlugin({soundfontUrl: asset('soundfont/'), instrument: 'acoustic_grand_piano', targetFormat: 'mp3', api: 'webaudio'});
+		await MidiAudio.loadPlugin({soundfontUrl: asset('../../static/soundfont/'), instrument: 'acoustic_grand_piano', targetFormat: 'mp3', api: 'webaudio'});
 		// empty() / awaitWarmup() live on the active backend (MidiAudio.WebAudio), not on MidiAudio
 		const backend = MidiAudio.WebAudio || MidiAudio;
 		if (backend.empty && backend.empty()) throw new Error('Piano soundfont did not load');
