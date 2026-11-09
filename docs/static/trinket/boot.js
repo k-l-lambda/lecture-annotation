@@ -39,7 +39,7 @@
 		description: null, assets: [], metrics: {}, settings: {autofocusEnabled: false, testsEnabled: false},
 	};
 	window.draftObject = undefined;
-	document.title = rec.name + (edited ? '（已修改）' : '') + ' · Open Music Theory';
+	document.title = rec.name + (rec.reconstructed ? '（重建）' : '') + (edited ? '（已修改）' : '') + ' · Open Music Theory';
 	// a new fragment means a different score: reload so the widget re-initialises cleanly
 	window.addEventListener('hashchange', function () { location.reload(); });
 })();

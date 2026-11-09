@@ -52,7 +52,7 @@
 
 <!-- trinket: https://trinket.io/embed/music/9a8ff25f3c -->
 <div class="omt-trinket" data-trinket="9a8ff25f3c"><iframe src="../../../static/trinket/#9a8ff25f3c" title="Applied chords ex 2 - FB (OMT)" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><a class="omt-trinket-open" href="../../../static/trinket/#9a8ff25f3c" target="_blank" rel="noopener">全屏打开 ↗</a></div>
-（经过诠释的功能低音版本可以在<span class="omt-trinket-gone">这里</span><!-- trinket: https://trinket.io/music/406c96fec0（未找到存档） -->找到。）
+（经过诠释的功能低音版本可以在<a class="omt-trinket-link" href="../../../static/trinket/#406c96fec0" target="_blank" rel="noopener">这里</a><!-- trinket: https://trinket.io/music/406c96fec0 -->找到。）
 
 ## 副属和弦中的音级
 

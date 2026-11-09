@@ -88,7 +88,7 @@
 下面是一个由 Sol-Fa-Mi – Prinner – Fa-Fi-Sol HC 构成的乐句（句子式）。
 
 <!-- trinket: https://trinket.io/embed/music/dcdfbf0994 -->
-<p class="omt-trinket-missing">（原交互式乐谱 trinket <code>dcdfbf0994</code> 随 trinket.io 关闭而失效，未找到存档。）</p>
+<div class="omt-trinket" data-trinket="dcdfbf0994"><iframe src="../../../static/trinket/#dcdfbf0994" title="Sol-Fa-Mi – Prinner – Fa-Fi-Sol HC" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe><span class="omt-trinket-note">原 trinket 未存档，此曲谱据上下文与录音重建</span><a class="omt-trinket-open" href="../../../static/trinket/#dcdfbf0994" target="_blank" rel="noopener">全屏打开 ↗</a></div>
 下面是同样的例子，但以一个简单的 PAC 结束。
 
 <!-- trinket: https://trinket.io/embed/music/a63f2a06bc -->

@@ -35,6 +35,7 @@ const block = (url, id) => {
 	const src = `${PLAYER}#${id}`;
 	return `${head}\n<div class="omt-trinket" data-trinket="${id}">` +
 		`<iframe src="${src}" title="${esc(rec.name)}" loading="lazy" allow="clipboard-write; fullscreen" allowfullscreen></iframe>` +
+		(rec.reconstructed ? '<span class="omt-trinket-note">原 trinket 未存档，此曲谱据上下文与录音重建</span>' : '') +
 		`<a class="omt-trinket-open" href="${src}" target="_blank" rel="noopener">全屏打开 ↗</a></div>`;
 };
 

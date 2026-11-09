@@ -221,6 +221,44 @@
    ]
   }
  },
+ "406c96fec0": {
+  "name": "Applied chords ex 2 - interpreted FB (OMT)",
+  "pages": [
+   "appliedChords.md"
+  ],
+  "snapshot": null,
+  "code": {
+   "schema": {
+    "time": "2/2",
+    "key": "C",
+    "tempo": 72,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble",
+      "voices": 2,
+      "lyrics": "on"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "c'2 d' e' f' f' d' e' d' c'1",
+    "<e g>2 g <g c'> <f c'> <a d'> <a c'> <g c'> <g b> <e g>1",
+    "c2 B B- A F F# G GG C1"
+   ],
+   "lyrics": [
+    "",
+    "~ 6 4/2 6 6 6/5 6/4 5/3 ~",
+    "T1 D7p [T-7]p S(6 4 [+4]) D5 ― T1"
+   ]
+  },
+  "reconstructed": true,
+  "evidence": "No archived copy found. Notes, figures and schema copied unchanged from sibling 9a8ff25f3c (FB version; identical to RN version 45c20d9624). Only the analysis line is rewritten as Quinn-style interpreted functional bass as defined in harmonicFunctions.md (parentheses = contrapuntal prolongation, lower-case postscripts p/n/i/d/e; model 'T(1 S6d 3) D2p 1) D5 T1'): V6 and V4/2/IV over the chromatic C-B-Bb-A bass are read as passing chords (p) from T1 to S6, and IV6-ii6-V6/5/V as one prolonged S zone. Score data: high confidence. Exact analysis tokens: low-medium confidence (author's real labels unknown)."
+ },
  "45c20d9624": {
   "name": "Applied chords ex 2 - RNs (OMT)",
   "pages": [
@@ -872,6 +910,43 @@
    ],
    "lyrics": []
   }
+ },
+ "dcdfbf0994": {
+  "name": "Sol-Fa-Mi – Prinner – Fa-Fi-Sol HC",
+  "pages": [
+   "schemata-improv.md"
+  ],
+  "snapshot": null,
+  "code": {
+   "schema": {
+    "time": "2/4",
+    "key": "C",
+    "tempo": 112,
+    "connector": "final",
+    "staves": [
+     {
+      "clef": "treble"
+     },
+     {
+      "clef": "bass",
+      "lyrics": "on"
+     }
+    ]
+   },
+   "notes": [
+    "g'2 f' f' e' a'4 g' f' e' d' d' b2",
+    "C2 D BB C F4 E D C FF FF# GG2"
+   ],
+   "lyrics": [
+    "Sol-Fa-Mi ~ ~ ~ Prinner ~ ~ ~ Fa-Fi-Sol ~ HC"
+   ]
+  },
+  "reconstructed": true,
+  "evidence": "No archived copy found. Bars 1-6 (Sol-Fa-Mi + fast Prinner) copied from sibling a63f2a06bc, which the page calls 'the same' phrase. Ending from media/schemata/SFM-Prinner-FFSHC.mp3 (Mark Arnett, 4/4 Alberti realization, same proportions; no PAC mp3 exists to diff against): after the Prinner's C chord the bass goes F2 (17.7s, ii6 with D4/A3/F4), F#2 (18.9s, V6/5/V with A/C/D), G2 (20.2s, V(7), held to end), durations ~1.2s/1.3s/2.5s+ = quarter, quarter, half, matching the Prinner's quarter-note chords (~1.2-1.4s each). D4 is re-struck at all three bass onsets and B3 is the last sustained tone, so melody = re-re-ti. Alternative melody d'4 c' b2 (re-do-ti): schemataSummary.md calls it the common one, and OMT 2e Pressbooks galant-schemas-summary ('Converging Cadence': melody mi-re-do-ti, bass mi-fa-fi-sol, figures 6 6/5 6/5 5, I ii V/V V) gives it as the model. In the recording, though, D4 is re-attacked on the fi beat and C4 enters only mid-chord (likely Alberti). The recording's fa chord contains C4, so it is ii6/5, which also matches the 2e figures. Bass and form: high confidence; melody over fi: medium; bass octave (FF vs F): medium.",
+  "alternative_notes": [
+   "g'2 f' f' e' a'4 g' f' e' d' c' b2",
+   "C2 D BB C F4 E D C FF FF# GG2"
+  ]
  },
  "de54f539bb": {
   "name": "Consonant passing tone",
