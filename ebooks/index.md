@@ -6,6 +6,7 @@
 
 - [通向实在之路](The_Road_to_Reality/index.md) — Roger Penrose, *The Road to Reality*
 - [当代物理学进展](contemporary-physics-progress/index.md)
+- [开放音乐理论（第二版）](omt-v2/index.md) — Mark Gotham 等，*Open Music Theory* 2e（可播放 lilylet 谱例）
 - [开放音乐理论](omt/index.md) — Kris Shaffer, Bryn Hughes, Brian Moseley, *Open Music Theory*（附可播放 lilylet 谱例）
 - [勋伯格和声学](Schoenberg_Arnold_Theory_of_Harmony-zh/index.md) — Arnold Schoenberg, *Theory of Harmony*
 - [思考：我的哲学与宗教观](hexin-think/index.md)
