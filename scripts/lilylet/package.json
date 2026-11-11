@@ -9,7 +9,7 @@
     "build:player:check": "node build-player.mjs --check"
   },
   "dependencies": {
-    "@k-l-lambda/lilylet-markdown": "0.1.68",
+    "@k-l-lambda/lilylet-markdown": "^0.1.70",
     "markdown-it": "14.1.0"
   },
   "devDependencies": {

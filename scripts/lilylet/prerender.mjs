@@ -26,8 +26,11 @@ const root = path.resolve(args.find((a) => !a.startsWith("--")) || "docs");
 const md = new MarkdownIt({ html: true });
 md.use(lilyletPlugin);
 
-// A fence at column 0: ```lyl, ```lilylet, ```lyl.play, ```lilylet.play.
-const FENCE = /^(`{3,}|~{3,})[ \t]*((?:lyl|lilylet)(?:\.play)?)[ \t]*\n([\s\S]*?)^\1[ \t]*$/gm;
+// A fence ```lyl, ```lilylet, ```lyl.play, ```lilylet.play, at column 0 or indented
+// inside a list item (closed at the same indent). An indented fence is rendered from
+// its dedented code and the container keeps the indent, so it stays in the list item.
+const FENCE = /^([ \t]*)(`{3,}|~{3,})[ \t]*((?:lyl|lilylet)(?:\.play)?)[ \t]*\n([\s\S]*?)^\1\2[ \t]*$/gm;
+const dedent = (code, ind) => code.split("\n").map((l) => (l.startsWith(ind) ? l.slice(ind.length) : l.trimStart())).join("\n");
 
 const walk = (dir, out = []) => {
 	for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -43,19 +46,20 @@ const failures = [];
 
 for (const file of walk(root)) {
 	const text = fs.readFileSync(file, "utf8");
-	if (!/^(?:`{3,}|~{3,})[ \t]*(?:lyl|lilylet)/m.test(text)) continue;
+	if (!/^[ \t]*(?:`{3,}|~{3,})[ \t]*(?:lyl|lilylet)/m.test(text)) continue;
 	const blocks = [];
 	for (const m of text.matchAll(FENCE)) blocks.push(m);
 	if (!blocks.length) continue;
 
 	// prerender() parses every fence in the document and caches the MEI; md.render()
 	// of a single fence then emits the finished container.
-	await prerender(md, text);
+	// (fed the dedented fences, so the cache keys match what md.render() sees below)
+	await prerender(md, blocks.map(([, ind, fence, info, code]) => `${fence}${info}\n${dedent(code, ind)}${fence}\n`).join("\n"));
 
 	let out = "", last = 0;
 	for (const m of blocks) {
-		const [whole, , info, code] = m;
-		let html = md.render("```" + info + "\n" + code + "```\n").trim();
+		const [whole, ind, , info, code] = m;
+		let html = md.render("```" + info + "\n" + dedent(code, ind) + "```\n").trim();
 		if (html.includes("lilylet-error")) {
 			const line = text.slice(0, m.index).split("\n").length;
 			failures.push(`${path.relative(root, file)}:${line}`);
@@ -63,7 +67,7 @@ for (const file of walk(root)) {
 		// Python-Markdown ends a raw HTML block at a blank line, and data-mei / data-source
 		// hold multi-line text: keep the whole container on one line.
 		html = html.replace(/\r?\n/g, "&#10;");
-		out += text.slice(last, m.index) + "\n" + html + "\n";
+		out += text.slice(last, m.index) + (ind ? "\n" + ind + html + "\n" : "\n" + html + "\n");
 		last = m.index + whole.length;
 		scores++;
 	}
