@@ -1,0 +1,2175 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/omt-v2/15-chapters-in-development/02-hypermeter2/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>超节拍（新版） - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/ebooks-section.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/tutor.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/lilylet.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/trinket.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#超节拍新版" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              超节拍（新版）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#概述" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        概述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="概述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#超拍的关联" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        超拍的关联
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#超节拍的例子" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        超节拍的例子
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="超节拍的例子">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#蕾哈娜diamonds超节拍与乐句划分" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        蕾哈娜《Diamonds》：超节拍与乐句划分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#披头士a-hard-days-night1964超节拍重复" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        披头士《A Hard Day's Night》（1964）：超节拍重复
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#超节拍节拍与拍感" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        超节拍、节拍与拍感
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hypermetric-disruptions-reinterpretation-and-repetition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        超节拍的中断：重新解释与重复
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="超节拍的中断：重新解释与重复">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#重新解释" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重新解释
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#重复" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重复
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#媒体署名" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        媒体署名
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="超节拍新版">超节拍（新版）<a class="headerlink" href="#超节拍新版" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>要点</strong></p>
+<ul>
+<li>超节拍（hypermeter）是一种听觉感知到的（不记写在谱面上的）节拍组织，在概念上处于比常规节拍更高的层级。</li>
+<li>超节拍存在于一个连续谱上：在某些音乐中，它可能很弱甚至不存在；在另一些音乐中（例如大多数舞曲），它可能很强、很清晰。</li>
+<li>四拍子是最常见的超节拍类型。</li>
+<li>超拍（hyperbeat）可以与音乐特征相关联：</li>
+<li>第 1 超拍：与开头相关联</li>
+<li>第 4 超拍：与结尾/终止式相关联</li>
+<li>第 2、3 超拍：与中段相关联</li>
+<li>规整的超节拍可以因重新解释和重复而被打断。</li>
+</ul>
+</blockquote>
+<p><a href="https://open.spotify.com/playlist/1DeMz9X1TzaVC0QPuvlwqE">章节播放列表</a></p>
+<h2 id="概述">概述<a class="headerlink" href="#概述" title="Permanent link">&para;</a></h2>
+<p>前缀"hyper-"意为"在上"或"高于"。超节拍是一种听觉感知到的（不记写在谱面上的）节拍组织，在概念上处于比常规节拍更高的层级。即使在有记谱的音乐中，超节拍也<em>不</em>被记写出来——它是你在察觉到比一小节更长的规则时间跨度时听到的东西。</p>
+<p>超节拍可靠地出现在舞曲中。例如，在蕾哈娜（Rihanna）2012 年的歌曲《Diamonds》中，四小节循环的和声进行（G–Bmi–A–A）标示出超节拍。每一次和弦循环的重复都开启一个新的超小节（hypermeasure）——请听它们分别开始于歌词"Find light in the beautiful …""You're a shooting star I see …""I knew that we'd become …"等句。在谱例 1 中，最下面一排彩色拱形表示各个超小节，每个超小节由四个超拍（小节）组成。</p>
+<p><a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_0/2021_1_9_3_47_670_uekj4"><img alt="这是蕾哈娜《Diamonds》的完整乐句图解，显示出这首歌完全规整的超节拍结构。所有乐句都是四小节，并标出了每个乐句的超拍。" src="../../media/2025/08/rhianna-diamonds-briformer-1-scaled.png" /></a></p>
+<p>谱例 1. <a href="https://open.spotify.com/track/1z9kQ14XBSN0r2v6fx4IdG?si=bba2ac977301403d">蕾哈娜《Diamonds》（2012）</a>的超节拍分析。点击查看互动谱例。</p>
+<p>和常规节拍一样，超节拍也可以是四拍子、三拍子或二拍子：</p>
+<ul>
+<li>四拍子：四小节（超拍）＝一个超小节</li>
+<li>三拍子：三小节（超拍）＝一个超小节</li>
+<li>二拍子：两小节（超拍）＝一个超小节</li>
+</ul>
+<p>四拍子是最常见的超节拍，二拍子较少见，三拍子最少见。我们通常因为某段时间跨度内发生的改变和/或重复而感知到超小节。在《Diamonds》中，这种触发是四小节和弦循环的重复，但还有其他方法。如果一段音乐包含一个四小节乐句及其紧接的重复，这段音乐可以听成两个四拍子超小节。同样，一个四小节乐句后接一个明显对比的四小节乐句，也可以产生两个四拍子超小节。</p>
+<p>和常规节拍一样，超节拍在一部作品中往往大致保持一致（例如始终是四拍子），但也可能出现不规整的长度，通常是由于<a href="../../04-form/04-expansion-and-contraction/">乐句扩展</a>技法造成超节拍的中断，详见<a href="#hypermetric-disruptions-reinterpretation-and-repetition">下文</a>。如果长度始终极不规整，一部作品或一段音乐可能就没有可感知的超节拍。而且一如既往，音乐中常常会出现歧义，对一首作品超节拍的不同解读都是可能的。</p>
+<h3 id="超拍的关联">超拍的关联<a class="headerlink" href="#超拍的关联" title="Permanent link">&para;</a></h3>
+<p>聆听常规节拍时，某些音乐特征与某些拍相关联，这使我们在节拍中有了方位感。例如，和弦变化通常发生在第 1 拍；反拍（backbeat）发生在第 2、4 拍。同样，在超节拍中，如果你知道该听什么，通常就能听出正在进行的是哪一个超拍。在四拍子超节拍中，你可以注意以下这些：</p>
+<ul>
+<li><strong>第 1 超拍：</strong> 与开头相关联。可以是新乐句或次一级乐句（subphrase）的开头，也可以是已经听过的乐句的重复。</li>
+<li><strong>第 4 超拍：</strong> 与结尾相关联。在有终止式的音乐中，终止式通常出现在第 4 超拍。</li>
+<li><strong>第 2、3 超拍：</strong> 与中段相关联。这两个超拍往往不像第 1、4 超拍那样容易辨认。在有终止式的音乐中，第 3 超拍可能让人感觉正导向第 4 超拍上的终止式。</li>
+</ul>
+<h2 id="超节拍的例子">超节拍的例子<a class="headerlink" href="#超节拍的例子" title="Permanent link">&para;</a></h2>
+<h3 id="蕾哈娜diamonds超节拍与乐句划分">蕾哈娜《Diamonds》：超节拍与乐句划分<a class="headerlink" href="#蕾哈娜diamonds超节拍与乐句划分" title="Permanent link">&para;</a></h3>
+<p>我们以《Diamonds》（谱例 1）引入超节拍，是因为它有清晰、规整的四拍子超节拍。但乐句与超节拍对齐的方式值得进一步留意。</p>
+<p>请注意，在主歌部分，蕾哈娜的乐句从每个超小节的第 1 超拍开始，但<em>并不</em>从节拍的强拍开始。而在每个副歌的最开头，她的唱句含有一个弱起，这个弱起确实引向节拍强拍与超节拍强拍的同时到达。节拍强拍、超节拍强拍与旋律重音三者对齐，强调了副歌的到来。</p>
+<p>🎼 <a href="https://musescore.com/user/32728834/scores/27040801">MuseScore 乐谱</a></p>
+<!-- embed-begin: https://musescore.com/user/32728834/scores/27040801 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/27040801/embed" title="MuseScore" loading="lazy" style="height: 563px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
+<p>谱例 2. <a href="https://open.spotify.com/track/1z9kQ14XBSN0r2v6fx4IdG?si=bba2ac977301403d">《Diamonds》</a>中的乐句在主歌（a，0:11）与副歌（b，0:51）中的节拍位置不同。</p>
+<h3 id="披头士a-hard-days-night1964超节拍重复">披头士《A Hard Day's Night》（1964）：超节拍重复<a class="headerlink" href="#披头士a-hard-days-night1964超节拍重复" title="Permanent link">&para;</a></h3>
+<p>这首歌同样包含四拍子超节拍。要听出它，请注意每个歌词乐句的开头（"It's been a hard …""But when I get home …""When I'm home …"）以及每个和声进行的开头（前两个乐句为 I–IV–I–♭VII–I，或称 G–C–G–F–G）。注意，除了最末一个乐句之外，四拍子超节拍在整首歌中都非常一致。</p>
+<p>在谱例 3 中，最末一个乐句的超拍计数是 <span class="arithmatex">\(\overbrace{1-2-3-4-\mathbf{3-4-3-4}}\)</span>，而我们原本期待的是再一次规整的 <span class="arithmatex">\(1-2-3-4\)</span> 超拍计数。在这个最末乐句中，与第 3、4 超拍对应的音乐在重复，于是我们感知到的是这两个超拍在重复，而不是从第 1 超拍的材料重新开始（超节拍重复，hypermetric repetition）。要听出这种解读，请比较每个 A 段的最后一个乐句，特别留意以"feel all right"或"feel okay"结尾的几行。它们在每个 A 段中只出现一次，但在最后一个 A 段中，它不断重复，而不是像之前那样继续进入到别的东西。</p>
+<p>把最后几个乐句标记为两个超小节 <span class="arithmatex">\((\overbrace{1-2-3-4}\quad\overbrace{1-2-3-4})\)</span>，也是对这段音乐的准确解读，但标记为重复的 3–4 的好处在于，超节拍分析能更好地反映音乐上的重复。</p>
+<p><a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_0/beatles_a_hard_days_night_hypermeter_01"><img alt="这是披头士《A Hard Day's Night》的超节拍分析。图中显示了歌曲的曲式，每个乐句都有四小节超节拍。歌曲最后一个乐句显示第 3、4 超拍在歌曲尾声处重复。" src="../../media/2025/08/beatles_a_hard_days_night_briformer_1-scaled.png" /></a></p>
+<p>谱例 3. 披头士（The Beatles）《<a href="https://open.spotify.com/track/5J2CHimS7dWYMImCHkEFaJ?si=5ae3f18b58ce4155">A Hard Day's Night</a>》（1964）的超节拍分析。点击查看互动谱例。</p>
+<h2 id="超节拍节拍与拍感">超节拍、节拍与拍感<a class="headerlink" href="#超节拍节拍与拍感" title="Permanent link">&para;</a></h2>
+<p>谱例 4 展示了斯科特·乔普林（Scott Joplin）《Harmony Club Waltz》（1896）的一个谱面片段，并标注了超节拍分析。标记超节拍时，本教材倾向于把每个计数（1、2、3、4 等）写在两行谱表之间，并把每个数字圈起来。（这个谱例还进一步标出"超小节 1""超小节 2"等，但在典型的超节拍分析中这既不必要也不常见——这里只是为了在谱例中看得更清楚。）</p>
+<p><a href="https://www.brianedwardjarvis.com/TheoryTopics/images/hypermeter_joplin_1.png"><img alt="这是斯科特·乔普林《Harmony Club Waltz》的乐谱，超拍标在小节的谱表之间，每个超小节用一个括号和标签分组，标明它属于哪个超小节。" src="../../media/2025/08/hypermeter_joplin_1.png" /></a></p>
+<!-- lilylet-begin: media/2025/08/hypermeter_joplin_1.png -->
+
+<div class="lilylet-container" data-lilylet data-playable data-source="[composer &quot;Scott Joplin&quot;]&#10;[staves &quot;{-}&quot;]&#10;&#10;\staff &quot;1&quot; \omit Score.TimeSignature \key bf \major \time 4/4 \clef &quot;treble&quot; \stemUp &lt;f bf d f&gt;4\arpeggio &lt;d f bf d&gt;\arpeggio \stemDown &lt;a&#039; c ef g&gt;\arpeggio &lt;a c ef f&gt;\arpeggio \\&#10;\staff &quot;2&quot; \clef &quot;bass&quot; \stemUp &lt;f,, f&#039;&gt;4 \stemDown &lt;bf bf&#039;&gt; \stemUp &lt;f f&#039;&gt; \stemDown &lt;f&#039; a c f&gt; | %1&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d f bf&gt;4 &lt;c ef g c&gt;8[ &lt;cs g&#039; cs&gt;] &lt;d fs a d&gt;4 &lt;d fs a d&gt;\fermata \bar &quot;.|:&quot; \\&#10;\staff &quot;2&quot; \stemDown &lt;bf, bf&#039;&gt;4 \stemUp &lt;g g&#039;&gt;8[ &lt;ef ef&#039;&gt;] &lt;d d&#039;&gt;4 &lt;d d&#039;&gt;\fermata \bar &quot;.|:&quot; | %2&#10;&#10;\staff &quot;1&quot; \undo \omit Score.TimeSignature \time 3/4 \tempo &quot;Waltz&quot; \stemDown &lt;a&#039; c ef&gt;2\segno^\markup &quot;Hypermeasure 1&quot; &lt;a c ef f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp f,,4^\markup &quot;1&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; | %3&#10;&#10;\staff &quot;1&quot; \stemDown &lt;a&#039; c ef g&gt;2 &lt;a c ef f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp f,,4^\markup &quot;2&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; | %4&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d&gt;2 &lt;bf d f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp bf,4^\markup &quot;3&quot; \stemDown &lt;f&#039; bf d&gt; &lt;f bf d&gt; | %5&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d g&gt;2 &lt;bf d f&gt;4 \\&#10;\staff &quot;2&quot; \stemDown d,4^\markup &quot;4&quot; &lt;f bf d&gt; &lt;f bf d&gt; | %6&#10;&#10;\staff &quot;1&quot; \stemDown &lt;a&#039; c ef a&gt;8[^\markup &quot;Hypermeasure 2&quot; &lt;a c ef a&gt;] &lt;a c ef a&gt;4. &lt;a c ef a&gt;8 \\&#10;\staff &quot;2&quot; \stemUp f,,4^\markup &quot;1&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; | %7&#10;&#10;\staff &quot;1&quot; \stemDown &lt;a&#039; c ef a&gt;2 &lt;a c ef g&gt;4 \\&#10;\staff &quot;2&quot; \stemUp f,,4^\markup &quot;2&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; | %8&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d g&gt;8[ &lt;bf d g&gt;] &lt;bf d g&gt;4. &lt;bf d g&gt;8 \\&#10;\staff &quot;2&quot; \stemUp bf,4^\markup &quot;3&quot; \stemDown &lt;f&#039; bf d&gt; &lt;f bf d&gt; | %9&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d g&gt;2. \\&#10;\staff &quot;2&quot; \stemDown d,4^\markup &quot;4&quot; &lt;f bf d&gt; &lt;f bf d&gt; | %10&#10;&#10;\staff &quot;1&quot; \stemDown &lt;a&#039; c ef&gt;2^\markup &quot;Hypermeasure 3&quot; &lt;a c ef f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp f,,4^\markup &quot;1&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; | %11&#10;&#10;\staff &quot;1&quot; \stemDown &lt;a&#039; c ef g&gt;2 &lt;a c ef f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp f,,4^\markup &quot;2&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; | %12&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d&gt;2 &lt;bf d f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp bf,4^\markup &quot;3&quot; \stemDown &lt;f&#039; bf d&gt; &lt;f bf d&gt; | %13&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; d g&gt;2 &lt;gs d&#039; f&gt;4 \\&#10;\staff &quot;2&quot; \stemUp bf,4^\markup &quot;4&quot; \stemDown &lt;f&#039; bf d&gt; \stemUp &lt;b,, b&#039;&gt; | %14&#10;&#10;\staff &quot;1&quot; \stemDown &lt;c&#039; f a&gt;8[^\markup &quot;Hypermeasure 4&quot; &lt;c f a&gt;] &lt;c f a&gt;2 \\&#10;\staff &quot;2&quot; \stemUp &lt;c,, c&#039;&gt;4^\markup &quot;1&quot; \stemDown &lt;a&#039;&#039; c f&gt; &lt;a c f&gt; | %15&#10;&#10;\staff &quot;1&quot; \stemDown &lt;bf&#039; e g&gt;8[ &lt;bf e g&gt;] &lt;bf e g&gt;2 \\&#10;\staff &quot;2&quot; \stemUp &lt;c,, c&#039;&gt;4^\markup &quot;2&quot; \stemDown &lt;bf&#039;&#039; c e&gt; &lt;bf c e&gt; | %16&#10;&#10;\staff &quot;1&quot; \stemDown f&#039;8[ c a&#039; f c a] \\&#10;\staff &quot;2&quot; \stemUp &lt;f,, f&#039;&gt;4^\markup &quot;3&quot; \stemDown &lt;a&#039; c f&gt; &lt;a c f&gt; | %17&#10;&#10;\staff &quot;1&quot; \stemUp f2. \bar &quot;:|.&quot; \\&#10;\staff &quot;2&quot; \stemUp &lt;f,, f&#039;&gt;4^\markup &quot;4&quot; \stemDown &lt;f&#039; a c ef&gt; &lt;f a c ef&gt; \bar &quot;:|.&quot; | %18" data-mei="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;mei xmlns=&quot;http://www.music-encoding.org/ns/mei&quot; meiversion=&quot;5.0&quot;&gt;&#10;    &lt;meiHead&gt;&#10;        &lt;fileDesc&gt;&#10;            &lt;titleStmt&gt;&#10;                &lt;composer&gt;Scott Joplin&lt;/composer&gt;&#10;            &lt;/titleStmt&gt;&#10;            &lt;pubStmt /&gt;&#10;        &lt;/fileDesc&gt;&#10;        &lt;encodingDesc&gt;&#10;            &lt;projectDesc&gt;&#10;                &lt;p&gt;Encoded with Lilylet MEIEncoder&lt;/p&gt;&#10;            &lt;/projectDesc&gt;&#10;        &lt;/encodingDesc&gt;&#10;    &lt;/meiHead&gt;&#10;    &lt;music&gt;&#10;        &lt;body&gt;&#10;            &lt;mdiv xml:id=&quot;mdiv-cf690000000001&quot;&gt;&#10;                &lt;score xml:id=&quot;score-cf690000000002&quot;&gt;&#10;                    &lt;scoreDef xml:id=&quot;scoredef-cf690000000003&quot; key.sig=&quot;2f&quot; meter.sym=&quot;common&quot; meter.count=&quot;4&quot; meter.unit=&quot;4&quot; meter.visible=&quot;false&quot;&gt;&#10;                        &lt;staffGrp xml:id=&quot;staffgrp-cf690000000006&quot; symbol=&quot;brace&quot; bar.thru=&quot;true&quot;&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-cf690000000004&quot; n=&quot;1&quot; lines=&quot;5&quot; clef.shape=&quot;G&quot; clef.line=&quot;2&quot; /&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-cf690000000005&quot; n=&quot;2&quot; lines=&quot;5&quot; clef.shape=&quot;F&quot; clef.line=&quot;4&quot; /&gt;&#10;                        &lt;/staffGrp&gt;&#10;                    &lt;/scoreDef&gt;&#10;                    &lt;section xml:id=&quot;section-cf690000000007&quot;&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000008&quot; n=&quot;1&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000009&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000010&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000011&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000012&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000013&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000014&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000015&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000016&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000017&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000018&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000019&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000020&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000021&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000022&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000023&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000024&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000025&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000026&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000027&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000028&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000029&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000030&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000031&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000032&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000033&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000034&quot; pname=&quot;f&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000035&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000036&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000037&quot; pname=&quot;b&quot; oct=&quot;2&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000038&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000039&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000040&quot; pname=&quot;f&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000041&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000042&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000043&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000044&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000045&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000046&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;arpeg xml:id=&quot;arpeg-cf690000000047&quot; plist=&quot;#chord-cf690000000011&quot; /&gt;&#10;                            &lt;arpeg xml:id=&quot;arpeg-cf690000000048&quot; plist=&quot;#chord-cf690000000016&quot; /&gt;&#10;                            &lt;arpeg xml:id=&quot;arpeg-cf690000000049&quot; plist=&quot;#chord-cf690000000021&quot; /&gt;&#10;                            &lt;arpeg xml:id=&quot;arpeg-cf690000000050&quot; plist=&quot;#chord-cf690000000026&quot; /&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000051&quot; n=&quot;2&quot; right=&quot;rptstart&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000052&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000053&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000054&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000055&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000056&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000057&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000058&quot; pname=&quot;b&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000059&quot;&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000060&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000061&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000062&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000063&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000064&quot; pname=&quot;c&quot; oct=&quot;6&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000065&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000066&quot; pname=&quot;c&quot; oct=&quot;5&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000067&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000068&quot; pname=&quot;c&quot; oct=&quot;6&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                    &lt;/beam&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000069&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000070&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000071&quot; pname=&quot;f&quot; oct=&quot;5&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000072&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000073&quot; pname=&quot;d&quot; oct=&quot;6&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000074&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000075&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000076&quot; pname=&quot;f&quot; oct=&quot;5&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000077&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000078&quot; pname=&quot;d&quot; oct=&quot;6&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000079&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000080&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000081&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000082&quot; pname=&quot;b&quot; oct=&quot;2&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000083&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000084&quot;&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000085&quot; dur=&quot;8&quot; stem.dir=&quot;up&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000086&quot; pname=&quot;g&quot; oct=&quot;2&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000087&quot; pname=&quot;g&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000088&quot; dur=&quot;8&quot; stem.dir=&quot;up&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000089&quot; pname=&quot;e&quot; oct=&quot;2&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000090&quot; pname=&quot;e&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                    &lt;/beam&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000091&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000092&quot; pname=&quot;d&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000093&quot; pname=&quot;d&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000094&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000095&quot; pname=&quot;d&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000096&quot; pname=&quot;d&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;fermata xml:id=&quot;fermata-cf690000000097&quot; startid=&quot;#chord-cf690000000074&quot; /&gt;&#10;                            &lt;fermata xml:id=&quot;fermata-cf690000000098&quot; startid=&quot;#chord-cf690000000094&quot; /&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;scoreDef xml:id=&quot;scoredef-cf690000000099&quot; meter.count=&quot;3&quot; meter.unit=&quot;4&quot; /&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000100&quot; n=&quot;3&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000101&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000102&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000103&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000104&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000105&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000106&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000107&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000108&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000109&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000110&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000111&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000112&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000113&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000114&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000115&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000116&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000117&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000118&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000119&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000120&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000121&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000122&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000123&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000124&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;tempo xml:id=&quot;tempo-cf690000000125&quot; tstamp=&quot;1&quot; staff=&quot;1&quot;&gt;Waltz&lt;/tempo&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000126&quot; tstamp=&quot;1&quot; place=&quot;above&quot; staff=&quot;1&quot;&gt;𝄋&lt;/dir&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000127&quot; startid=&quot;#chord-cf690000000103&quot; place=&quot;above&quot;&gt;Hypermeasure 1&lt;/dir&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000128&quot; startid=&quot;#note-cf690000000114&quot; place=&quot;above&quot;&gt;1&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000129&quot; n=&quot;4&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000130&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000131&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000132&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000133&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000134&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000135&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000136&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000137&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000138&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000139&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000140&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000141&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000142&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000143&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000144&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000145&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000146&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000147&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000148&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000149&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000150&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000151&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000152&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000153&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000154&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000155&quot; startid=&quot;#note-cf690000000144&quot; place=&quot;above&quot;&gt;2&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000156&quot; n=&quot;5&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000157&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000158&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000159&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000160&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000161&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000162&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000163&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000164&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000165&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000166&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000167&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000168&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;4&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000169&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000170&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000171&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000172&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000173&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000174&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000175&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000176&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000177&quot; startid=&quot;#note-cf690000000168&quot; place=&quot;above&quot;&gt;3&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000178&quot; n=&quot;6&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000179&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000180&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000181&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000182&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000183&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000184&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000185&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000186&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000187&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000188&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000189&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000190&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000191&quot; pname=&quot;d&quot; oct=&quot;3&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000192&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000193&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000194&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000195&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000196&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000197&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000198&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000199&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000200&quot; startid=&quot;#note-cf690000000191&quot; place=&quot;above&quot;&gt;4&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000201&quot; n=&quot;7&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000202&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000203&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000204&quot;&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000205&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000206&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000207&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000208&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000209&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000210&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000211&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000212&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000213&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000214&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                    &lt;/beam&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000215&quot; dur=&quot;4&quot; dots=&quot;1&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000216&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000217&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000218&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000219&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000220&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000221&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000222&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000223&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000224&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000225&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000226&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000227&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000228&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000229&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000230&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000231&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000232&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000233&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000234&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000235&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000236&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000237&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000238&quot; startid=&quot;#chord-cf690000000205&quot; place=&quot;above&quot;&gt;Hypermeasure 2&lt;/dir&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000239&quot; startid=&quot;#note-cf690000000227&quot; place=&quot;above&quot;&gt;1&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000240&quot; n=&quot;8&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000241&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000242&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000243&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000244&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000245&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000246&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000247&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000248&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000249&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000250&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000251&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000252&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000253&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000254&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000255&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000256&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000257&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000258&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000259&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000260&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000261&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000262&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000263&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000264&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000265&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000266&quot; startid=&quot;#note-cf690000000255&quot; place=&quot;above&quot;&gt;2&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000267&quot; n=&quot;9&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000268&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000269&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000270&quot;&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000271&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000272&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000273&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000274&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000275&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000276&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000277&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000278&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                    &lt;/beam&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000279&quot; dur=&quot;4&quot; dots=&quot;1&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000280&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000281&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000282&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000283&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000284&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000285&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000286&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000287&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000288&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000289&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;4&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000290&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000291&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000292&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000293&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000294&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000295&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000296&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000297&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000298&quot; startid=&quot;#note-cf690000000289&quot; place=&quot;above&quot;&gt;3&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000299&quot; n=&quot;10&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000300&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000301&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000302&quot; dur=&quot;2&quot; dots=&quot;1&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000303&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000304&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000305&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000306&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000307&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000308&quot; pname=&quot;d&quot; oct=&quot;3&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000309&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000310&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000311&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000312&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000313&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000314&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000315&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000316&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000317&quot; startid=&quot;#note-cf690000000308&quot; place=&quot;above&quot;&gt;4&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000318&quot; n=&quot;11&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000319&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000320&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000321&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000322&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000323&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000324&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000325&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000326&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000327&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000328&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000329&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000330&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000331&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000332&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000333&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000334&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000335&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000336&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000337&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000338&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000339&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000340&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000341&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000342&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000343&quot; startid=&quot;#chord-cf690000000321&quot; place=&quot;above&quot;&gt;Hypermeasure 3&lt;/dir&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000344&quot; startid=&quot;#note-cf690000000332&quot; place=&quot;above&quot;&gt;1&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000345&quot; n=&quot;12&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000346&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000347&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000348&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000349&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000350&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000351&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000352&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000353&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000354&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000355&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000356&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000357&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000358&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000359&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000360&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000361&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000362&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000363&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000364&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000365&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000366&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000367&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000368&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000369&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000370&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000371&quot; startid=&quot;#note-cf690000000360&quot; place=&quot;above&quot;&gt;2&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000372&quot; n=&quot;13&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000373&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000374&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000375&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000376&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000377&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000378&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000379&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000380&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000381&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000382&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000383&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000384&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;4&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000385&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000386&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000387&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000388&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000389&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000390&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000391&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000392&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000393&quot; startid=&quot;#note-cf690000000384&quot; place=&quot;above&quot;&gt;3&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000394&quot; n=&quot;14&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000395&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000396&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000397&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000398&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000399&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000400&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000401&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000402&quot; pname=&quot;g&quot; oct=&quot;4&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000403&quot; pname=&quot;d&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000404&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000405&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000406&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000407&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;4&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000408&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000409&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000410&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000411&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000412&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000413&quot; pname=&quot;b&quot; oct=&quot;1&quot; accid=&quot;n&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000414&quot; pname=&quot;b&quot; oct=&quot;2&quot; accid=&quot;n&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000415&quot; startid=&quot;#note-cf690000000407&quot; place=&quot;above&quot;&gt;4&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000416&quot; n=&quot;15&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000417&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000418&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000419&quot;&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000420&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000421&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000422&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000423&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000424&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000425&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000426&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000427&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                    &lt;/beam&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000428&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000429&quot; pname=&quot;c&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000430&quot; pname=&quot;f&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000431&quot; pname=&quot;a&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000432&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000433&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000434&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000435&quot; pname=&quot;c&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000436&quot; pname=&quot;c&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000437&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000438&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000439&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000440&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000441&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000442&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000443&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000444&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000445&quot; startid=&quot;#chord-cf690000000420&quot; place=&quot;above&quot;&gt;Hypermeasure 4&lt;/dir&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000446&quot; startid=&quot;#chord-cf690000000434&quot; place=&quot;above&quot;&gt;1&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000447&quot; n=&quot;16&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000448&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000449&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000450&quot;&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000451&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000452&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000453&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid=&quot;n&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000454&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                        &lt;chord xml:id=&quot;chord-cf690000000455&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot;&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000456&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000457&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                            &lt;note xml:id=&quot;note-cf690000000458&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                        &lt;/chord&gt;&#10;                                    &lt;/beam&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000459&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000460&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000461&quot; pname=&quot;e&quot; oct=&quot;5&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000462&quot; pname=&quot;g&quot; oct=&quot;5&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000463&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000464&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000465&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000466&quot; pname=&quot;c&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000467&quot; pname=&quot;c&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000468&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000469&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000470&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000471&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid=&quot;n&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000472&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000473&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000474&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000475&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;n&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000476&quot; startid=&quot;#chord-cf690000000465&quot; place=&quot;above&quot;&gt;2&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000477&quot; n=&quot;17&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000478&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000479&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;beam xml:id=&quot;beam-cf690000000480&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000481&quot; pname=&quot;f&quot; oct=&quot;5&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000482&quot; pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000483&quot; pname=&quot;a&quot; oct=&quot;5&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000484&quot; pname=&quot;f&quot; oct=&quot;5&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000485&quot; pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000486&quot; pname=&quot;a&quot; oct=&quot;4&quot; dur=&quot;8&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                    &lt;/beam&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000487&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000488&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000489&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000490&quot; pname=&quot;f&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000491&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000492&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000493&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000494&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000495&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000496&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000497&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000498&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000499&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000500&quot; startid=&quot;#chord-cf690000000489&quot; place=&quot;above&quot;&gt;3&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-cf690000000501&quot; n=&quot;18&quot; right=&quot;rptend&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000502&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000503&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-cf690000000504&quot; pname=&quot;f&quot; oct=&quot;4&quot; dur=&quot;2&quot; dots=&quot;1&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-cf690000000505&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-cf690000000506&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000507&quot; dur=&quot;4&quot; stem.dir=&quot;up&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000508&quot; pname=&quot;f&quot; oct=&quot;2&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000509&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000510&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000511&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000512&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000513&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000514&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-cf690000000515&quot; dur=&quot;4&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000516&quot; pname=&quot;f&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000517&quot; pname=&quot;a&quot; oct=&quot;3&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000518&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-cf690000000519&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;dir xml:id=&quot;dir-cf690000000520&quot; startid=&quot;#chord-cf690000000507&quot; place=&quot;above&quot;&gt;4&lt;/dir&gt;&#10;                        &lt;/measure&gt;&#10;                    &lt;/section&gt;&#10;                &lt;/score&gt;&#10;            &lt;/mdiv&gt;&#10;        &lt;/body&gt;&#10;    &lt;/music&gt;&#10;&lt;/mei&gt;&#10;"></div>
+
+<!-- lilylet-end -->
+<p>谱例 4. 斯科特·乔普林《Harmony Club Waltz》第 9–16 小节，超拍计数写在两行谱表之间（<a href="https://open.spotify.com/track/1A2Lc1129R4FrhOrdoKftx?si=54575d35db5341a0">0:26</a>）。</p>
+<p><a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=load_from_web_link_audio_file&amp;shared_briform_id=v_1_0/brian_custom/Joplin_-_HarmonyClubWaltz_Cropped_Regular_Speed"><img alt="谱例 5 . 斯科特·乔普林《Harmony Club Waltz》的常速版本。点击查看互动谱例。" src="../../media/2025/06/joplin-harmony-club-waltz-briformer-regular-speed-e1755793961185-300x46.png" /></a><em>谱例 5. 斯科特·乔普林《Harmony Club Waltz》的常速版本。点击查看互动谱例。</em></p>
+<p><a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=load_from_web_link_audio_file&amp;shared_briform_id=v_1_0/brian_custom/Joplin_-_HarmonyClubWaltz_Cropped_Double_Speed"><img alt="谱例 6 . 斯科特·乔普林《Harmony Club Waltz》的倍速版本。点击查看互动谱例。" src="../../media/2025/06/joplin-harmony-club-waltz-briformer-double-speed-e1755794024730-300x50.png" /></a><em>谱例 6. 斯科特·乔普林《Harmony Club Waltz》的倍速版本。点击查看互动谱例。</em></p>
+<p><a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=load_from_web_link_audio_file&amp;shared_briform_id=v_1_0/brian_custom/Joplin_-_HarmonyClubWaltz_Cropped_Half_Speed"><img alt="谱例 7 . 斯科特·乔普林《Harmony Club Waltz》的半速版本。点击查看互动谱例。" src="../../media/2025/06/joplin-harmony-club-waltz-briformer-half-speed-e1755794148910-300x48.png" /></a><em>谱例 7. 斯科特·乔普林《Harmony Club Waltz》的半速版本。点击查看互动谱例。</em></p>
+<p>谱例 5–7 是互动谱例，以三种不同的速度呈现谱例 4 中的音乐。请聆听各个版本（点击每张图片），试着用手臂指挥节拍，看看自己在每种速度下会与哪个层次的拍感（tactus）同步。尤其是倍速版与半速版之间，结果很可能不同：</p>
+<ul>
+<li>谱例 5：这是按本曲记谱的正常速度演奏的。你多半会照谱面指挥单三拍子。你也很可能轻松地感受到四小节超节拍。</li>
+<li>谱例 6：这个版本比正常速度快一倍。在这个速度下，你可能会把拍感转移到超拍上，按照复合四拍子或复合二拍子来指挥。实际上，你在指挥的是超节拍而不是记写的节拍。因此超节拍变得非常容易感知——甚至可能比记写的节拍更容易。</li>
+<li>谱例 7：这个版本比正常速度慢一半。在这个速度下，你的拍感可能会慢得几乎不舒服。由于拍感（以及拍）太慢，谱例 4 中记写的超节拍可能很难感知——时间跨度太长，难以同步。</li>
+</ul>
+<p>如果你听不出超节拍（无论是这个例子还是其他例子），请记住：超节拍是一种既可感知、又依赖解读的现象，你对它的感知会随速度而改变。正如你能在这些不同速度下听到不同层次的节拍，即使速度不变，你也能听到不同层次的节拍。你可能体验到的拍感上的知觉变化，不过是你的心智在与不同层次的节拍同步而已。</p>
+<h2 id="hypermetric-disruptions-reinterpretation-and-repetition">超节拍的中断：重新解释与重复<a class="headerlink" href="#hypermetric-disruptions-reinterpretation-and-repetition" title="Permanent link">&para;</a></h2>
+<h3 id="重新解释">重新解释<a class="headerlink" href="#重新解释" title="Permanent link">&para;</a></h3>
+<p>超节拍重新解释（hypermetric reinterpretation）是超节拍中断的一种类型，发生在单个超拍同时发挥两种作用的时候。几乎总是发生在乐句省略（phrase elision）处：一个超小节的结尾（第 4 超拍）同时是一个新超小节的开头（第 1 超拍）。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> 在分析中，我们用一个等号来标记：<span class="arithmatex">\(4=1\)</span>。带有重新解释的两个超小节，其计数可写成 <span class="arithmatex">\(1-2-3-\mathbf{4=1}-2-3-4\)</span>。</p>
+<p>以沃尔夫冈·莫扎特（Wolfgang Mozart）《第 21 钢琴协奏曲》K. 467 第一乐章（1785）为例。在谱例 8 中，第 12 小节处，第一个乐句的结尾与第二个乐句的开头相省略。注意发生超节拍重新解释的那一小节中写有 <span class="arithmatex">\(4=1\)</span> 的标记。第 3 超小节的音乐与第 2 超小节完全相同，因此第 2 超小节充当了第 3 超小节应如何进行的模型。请听第 12 小节如何仍在发挥第一个乐句结尾的作用，而新乐句同时接过来，清晰地给出新超小节的开头感。<a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_0/2021_1_9_22_9_974_nw1wx"><img alt="这是莫扎特《第 21 钢琴协奏曲》开头的乐句图解，显示了每个超拍。图中有一个省略号，把乐队的第 12 小节与连接部的第 1 小节连接起来。" src="../../media/2025/08/mozart-piano-concerto-no-21-hypermeter-briformer.png" /></a></p>
+<p>谱例 8. <a href="https://open.spotify.com/track/7tT9zTIefCCYR9lXO4pGdx?si=dd82979ec97d47b2">莫扎特《第 21 钢琴协奏曲》第一乐章</a>（1785）中乐队的呈示部。点击查看互动谱例。</p>
+<h3 id="重复">重复<a class="headerlink" href="#重复" title="Permanent link">&para;</a></h3>
+<p>超节拍重复（hypermetric repetition）是超节拍中断的另一种类型，表示一个超小节被扩展到超出预期的长度（例如从四小节变为五小节）。如果你说你听到了超节拍重复，意思是：你认为某个超小节内的一个或多个超拍被立即重复了。例如，除了 <span class="arithmatex">\(1-2-3-4\)</span> 之外，也可以是第 4 超拍重复 <span class="arithmatex">\((1-2-3-4-\mathbf{4})\)</span>，或者像《A Hard Day's Night》那样，第 3、4 超拍一起重复 <span class="arithmatex">\((1-2-3-4-\mathbf{3-4})\)</span>。当所涉及的音乐材料是此前陈述过的段落的变体时，超节拍重复通常最有说服力，因为相似的音频通常应当得到相似的解读。超节拍重复是超节拍中断的一种类型。</p>
+<p>在莫扎特《唐璜》（<em>Don Giovanni</em>）中的二重唱《那么，我们手挽手》（"Là ci darem la mano"）中，唐璜（Don Giovanni）唱了一个平行乐段；紧接着，采琳娜（Zerlina）唱了基本相同的平行乐段（歌词不同），但这一次最后的乐句被扩展了。比较唐璜的后乐句与采琳娜的后乐句：因为我们先听到唐璜的乐句，它就充当了采琳娜的版本听起来会怎样的模型；而采琳娜的版本随后违背了我们的预期，造成一种轻微的惊喜，把乐句从预期的四小节扩展到六小节。谱例 9 把这一扩展显示为超节拍重复，其中第 3、4 超拍被立即重复。它们略有变化，但终止功能与整体效果仍非常相似。标记 CAD 标出了那个曾被告知、随后被回避的终止式的位置，以及两小节之后被告知并被接受的 PAC 的位置。</p>
+<p><a href="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_0/2021_1_9_6_23_945_i5t08"><img alt="谱例 9 . 莫扎特《唐璜》中《那么，我们手挽手》第 1–18 小节。点击查看互动谱例。" src="../../media/2025/06/mozart-la_ci_darem_la_mano-don-giovanni-briformer-e1755798791119-1024x204.png" /></a><em>谱例 9. <a href="https://open.spotify.com/track/34Df5x8fH4cVWro8N5YokO?si=c9b09a205e634c51">莫扎特《唐璜》中《那么，我们手挽手》</a>（1787）第 1–18 小节。点击查看互动谱例。</em></p>
+<blockquote>
+<p>延伸阅读</p>
+</blockquote>
+<ul>
+<li>Rothstein, William. 1989. <em>Phrase Rhythm in Tonal Music</em>. New York, Schirmer Books.</li>
+</ul>
+<blockquote>
+<p>作业</p>
+</blockquote>
+<ul>
+<li>即将推出！</li>
+</ul>
+<h3 id="媒体署名">媒体署名<a class="headerlink" href="#媒体署名" title="Permanent link">&para;</a></h3>
+<ul>
+<li>joplin-harmony-club-waltz-briformer-regular-speed</li>
+<li>joplin-harmony-club-waltz-briformer-double-speed</li>
+<li>joplin-harmony-club-waltz-briformer-half-speed</li>
+<li>mozart-la_ci_darem_la_mano-don-giovanni-briformer</li>
+</ul>
+<hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>超节拍重新解释几乎总是发生在省略处，但并非所有省略都涉及超节拍重新解释。&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../../javascripts/lilylet/player.js"></script>
+      
+        <script src="../../../../javascripts/trinket-embed.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../../javascripts/tutor/vendor/marked.js"></script>
+      
+        <script src="../../../../javascripts/tutor/vendor/purify.js"></script>
+      
+        <script src="../../../../javascripts/tutor/tutor-core.js"></script>
+      
+        <script src="../../../../javascripts/tutor/widgets.js"></script>
+      
+        <script src="../../../../javascripts/tutor/messages.js"></script>
+      
+        <script src="../../../../javascripts/tutor/steprail.js"></script>
+      
+        <script src="../../../../javascripts/tutor/focus.js"></script>
+      
+        <script src="../../../../javascripts/tutor/settings-dialog.js"></script>
+      
+        <script src="../../../../javascripts/tutor/profile-drawer.js"></script>
+      
+        <script src="../../../../javascripts/tutor/panel.js"></script>
+      
+        <script src="../../../../javascripts/tutor/tutor.js"></script>
+      
+    
+  </body>
+</html>

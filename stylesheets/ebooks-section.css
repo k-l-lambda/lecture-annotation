@@ -1,0 +1,81 @@
+html.ebooks-section .md-sidebar--primary,
+html.ebooks-section .md-header__button[for="__drawer"] {
+  display: none !important;
+}
+
+html.ebooks-section .ebook-image-preview {
+  position: fixed;
+  z-index: 1000;
+  max-width: min(420px, 90vw);
+  max-height: 70vh;
+  padding: 0.4rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.35rem;
+  background: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z3);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.25rem);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+html.ebooks-section .ebook-image-preview--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html.ebooks-section .ebook-image-preview__image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(70vh - 0.8rem);
+  border-radius: 0.2rem;
+  transition: opacity 120ms ease;
+}
+
+/* While the new image is decoding, hide the (possibly stale) image and show a
+   spinner so the previous preview is not left visible. */
+html.ebooks-section .ebook-image-preview--loading {
+  min-width: 96px;
+  min-height: 96px;
+}
+
+html.ebooks-section .ebook-image-preview--loading .ebook-image-preview__image {
+  opacity: 0;
+}
+
+html.ebooks-section .ebook-image-preview--loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+  border: 3px solid var(--md-default-fg-color--lightest);
+  border-top-color: var(--md-primary-fg-color, var(--md-default-fg-color--light));
+  border-radius: 50%;
+  animation: ebook-image-preview-spin 0.7s linear infinite;
+}
+
+@keyframes ebook-image-preview-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html.ebooks-section .ebook-image-preview {
+    max-width: min(520px, calc(100vw - 1.5rem));
+    max-height: 60vh;
+  }
+
+  html.ebooks-section .ebook-image-preview__image {
+    max-height: calc(60vh - 0.8rem);
+  }
+}
+
+@media screen and (min-width: 76.25em) {
+  html.ebooks-section .md-content {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,2094 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="课程注解 - 自动生成的课程笔记与深度解析">
+      
+      
+      
+        <link rel="canonical" href="https://k-l-lambda.github.io/lecture-annotation/ebooks/omt/harmonicFunctions/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>和声功能 - Lecture Annotation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/ebooks-section.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/tutor.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/lilylet.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/trinket.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#和声功能" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="Lecture Annotation" class="md-header__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Lecture Annotation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              和声功能
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到暗色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到暗色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换到亮色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到亮色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Lecture Annotation" class="md-nav__button md-logo" aria-label="Lecture Annotation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Lecture Annotation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基于对称性的物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基于对称性的物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GsHnm-Q7wHQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 对称性：物理学的终极秘密
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-02NJOnDcSpM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 狭义相对论核心思想
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yqzjq6goYWQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 理解闵可夫斯基时空
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xiEGTlJDStw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 群论：对称性的语言
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-FdgRvHwxQ3o/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 二维旋转的两种数学表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Ec8TA0r5I20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 旋转矩阵和四元数：解构三维空间旋转
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-AbzcH_RIfkU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 从李群到李代数：连续对称性的生成元
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-dY8XXo0r4Es/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 李代数李群的抽象定义及其表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-V3bRPmsJ-Ik/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 SU2李代数有限维不可约表示：通向量子力学的隐秘通道
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-JRZfJJi6YuA/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 洛伦兹群O1,3：揭示时空对称性的数学结构
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-yIiK6C0CqJQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 洛伦兹群表示论：从生成元到外尔旋量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-tG4rh6bvmT4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 旋量形式体系和范德瓦尔登记号
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-r_iCQ3U8KJ4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 旋量对称性与场表示：从微观粒子到时空场论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-MCmp3QUStKE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 庞加莱群：基本粒子的数学指纹
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-T8Zxp9Nr34Y/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 物理学的万能框架：拉格朗日形式体系
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-se56XiBhic4/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 物理学深层逻辑：对称性和守恒律的纽带
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-myVqll47vZI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第17课 诺特定理：粒子伽利略Boost和场论平移对称性
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    李群李代数-梁灿彬
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    李群李代数-梁灿彬
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-mG3KzhwXS1k/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第24讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-LJQo6MWklDo/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第25讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-0T4wKkyWVeM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第26讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-GyD0_xA0fyU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第27讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-PE5KYG9U4LM/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第28讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-zYIIy2y-OnQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第29讲 酉群（续）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    量子场论-贾宇
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    量子场论-贾宇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-bfqAcaTjxjI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第64讲【相互作用量子化】Gell Mann Low公式的应用及 真空泡泡图
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-1i__ZnZHXV0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第65讲【相互作用量子化】两点关联函数 Kallen Lehmann谱表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-9fTHodxfvm0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第66讲【相互作用量子化】场强重整化常数 LSZ约化公式
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-_2G-v6mio3g/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第67讲【相互作用量子化】Z2的定义 振幅的软光子极限 eikonal近似 软定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-Yln20-XZcbU/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第68讲
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-W22-Yy0UFP0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第69讲【重整化理论】紫外发散 动量截断正规化 重整化之基本思路 以𝛷⁴模型为例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    现代经典物理学
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    现代经典物理学
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-BYKhAbcMMg8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第1课 物理定律的几何剧本
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-XT8CoS4083U/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第2课 张量的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-cssdpuXtJsg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第3课 张量的分量表示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-RYaLL-k_T64/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第4课 张量微积分的几何视角
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-VQLgViI2p20/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第5课 解读应力张量
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-qwCgsYJ5MRE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第6课 狭义相对论的几何观
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-h-cGRfMg0o0/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第7课 时空中的粒子动力学
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-WrFbRjuOdNw/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第8课 掌握时空语言：张量和指标体操
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-vb7k2MXbLGE/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第9课 洛伦兹变换：重塑时空认知
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YWU5tM5-4RI/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第10课 闵氏时空上微分和电动力学几何本质
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-wRx8DncELqc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第11课 闵氏时空的体积、积分与守恒律
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-xh4YtPDDEK8/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第12课 应力 能量张量和4 动量守恒
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-c5LLj0IMkmQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第13课 统计物理学与动理学理论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-YsO39CIizQQ/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第14课 相空间中的相对论分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-NLFv1ZeAvkg/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第15课 等离子体、光子和量子态三种不同粒子系统的分布函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../lectures/yt-ggNqDCZwJuc/lecture_notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第16课 热平衡分布函数：从理论到宇宙观测
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#共性写作时期的三种和声功能" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        共性写作时期的三种和声功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#确定和弦的功能" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        确定和弦的功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#和弦的标记" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和弦的标记
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="和声功能">和声功能<a class="headerlink" href="#和声功能" title="Permanent link">&para;</a></h1>
+<p>如果说一种音乐功能描述的是某个特定音乐要素在构成一个更大音乐单位时所起的作用，那么<em>和声功能描述的就是某个特定和弦在构成一个更大的和声进行时所起的作用</em>。每个和弦往往更多地出现在某些音乐情境中，也更多地进行到某些和弦。这些倾向共同作用，形成有意义的和声进行，而这些和声进行又可以构成音乐<em>乐句</em>、<em>主题</em>以及更大曲式单位的和声基础。</p>
+<p>一般而言，一个和弦的功能涉及属于它的音（它的<em>内部特征</em>）、往往位于它前后的和弦，以及它在一个音乐乐句进程中往往被使用的位置。</p>
+<p>和声功能理论建立在三条基本原则之上：</p>
+<ul>
+<li>和弦是音级的集合。</li>
+<li>每个音级都有其自身的倾向。</li>
+<li>一个和弦中各音级倾向的集体组合，就是该和弦的功能。</li>
+</ul>
+<p>（注意，这里并没有考虑<em>根音</em>和<em>性质</em>。）</p>
+<p>由于<a href="../tendency/">倾向是因风格而异的</a>，同一个和弦在不同音乐风格中可能具有不同的功能。例如，我们在古典音乐中看到的功能类型，与在公告牌（Billboard）排行榜上的流行/摇滚歌曲中看到的不同。而且，虽然有一些一般性的和声特征为大多数十八、十九世纪的西方作曲家所共有（我们称之为“共性写作时期”的惯例，common practice），但当我们更仔细地观察时，就会发现巴赫、莫扎特、勃拉姆斯等人在写作和声进行的方式上存在一些显著差异。</p>
+<p>我们对和声功能的初步探讨，将涉及为大多数十八、十九世纪西方作曲家所共有的一般性“共性写作”惯例。当我们探讨这一共性写作惯例内部的具体体裁、作曲家和作品时，我们将有机会探讨作曲家之间更细微的差异，也会超越共性写作时期的西方艺术音乐，纳入其他风格，比如流行/摇滚。</p>
+<h2 id="共性写作时期的三种和声功能">共性写作时期的三种和声功能<a class="headerlink" href="#共性写作时期的三种和声功能" title="Permanent link">&para;</a></h2>
+<p>在共性写作时期的音乐中，和声往往聚集在三个高层级的和声功能类别周围。这三个类别传统上称为<em>主</em>（<strong>T</strong>）、<em>下属</em>（<strong>S</strong>——也称<em>前属</em>，predominant，记作 <strong>P</strong> 或 <strong>PD</strong>）和<em>属</em>（<strong>D</strong>）。每种功能都有自己的特征音级，这些音级又有各自的特征倾向。而且每种功能都更多地参与某些类型的和弦进行。</p>
+<p>如果你已经熟悉罗马数字，一般可以把 <strong>I</strong>、<strong>III</strong> 和 <strong>VI</strong> 看作<em>主</em>，把 <strong>II</strong> 和 <strong>IV</strong> 看作<em>下属</em>，把 <strong>V</strong> 和 <strong>VII</strong> 看作<em>属</em>。（不过，正如你将在下文看到的，事情并不止于此。）</p>
+<p>为了直观地呈现这些功能类别，可以设想把 C 大调的常见三和弦排列在一个三度圈上。注意，每个和弦都位于与它共有音最多的两个三和弦之间——C 大三和弦（C、E、G）位于 E 小三和弦（E、G、B）和 A 小三和弦（A、C、E）之间，这两个和弦都与 C 大三和弦有两个共同音。</p>
+<p><img alt="排列在三度圈上的 C 大调自然音和弦。" src="../assets/harmony/circleOfThirds-leadSheet.png" /></p>
+<p>把这些和弦换成（C 大调中的）罗马数字，我们就能看到其功能。由于功能是由它们共有音的倾向决定的，而在这张图上和弦又是按共同音归组的，因此它们也就是按功能归组的。</p>
+<p><img alt="以罗马数字表示、排列在三度圈上并标出和声功能的任意大调自然音和弦。" src="../assets/harmony/circleOfThirds-functions.png" /></p>
+<p><em>排列在三度圈上、按和声功能标记的三和弦。</em></p>
+<p>有趣的是，在共性写作时期的音乐中，一个和弦的功能可以仅凭其内部特征（构成该和弦的音）来确定。并非所有风格都是如此。例如，在流行/摇滚音乐中，一个 <strong>IV</strong> 和弦可能因语境不同而表现出截然不同的功能倾向。但在古典音乐中，只要知道一个和弦中有哪些音，就足以确定它的一般和声功能，以及该和弦及其各个音的一般倾向。</p>
+<p>这些功能的语法属性将在别处讨论。下面只是更具体地说明如何确定共性写作时期音乐中一个和弦的功能。</p>
+<h2 id="确定和弦的功能">确定和弦的功能<a class="headerlink" href="#确定和弦的功能" title="Permanent link">&para;</a></h2>
+<p>三种和声功能——<em>主</em>（T）、<em>下属</em>（S）和<em>属</em>（D）——各有其特征音级。主功能的特征音级是 1、3、5、6 和 7。下属功能的特征音级是 1、2、3、4 和 6。属功能的特征音级是 2、4、5、6 和 7。</p>
+<p>伊恩·奎因（Ian Quinn，耶鲁大学的音乐理论家）进一步区分了这些音级，使用了功能<em>触发音</em>（triggers）、功能<em>关联音</em>（associates）和功能<em>不协和音</em>（dissonances）这几个类别。这些类别有助于我们理解那些音级属于不止一种功能的和弦的功能属性，以及某些音在和弦中的行为方式。它们也有助于我们理解哪些音级更具或较不具某种功能的特征——这在和弦不完整时有助于确定其功能。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">功能</th>
+<th style="text-align: left;">触发音</th>
+<th style="text-align: left;">关联音</th>
+<th style="text-align: left;">不协和音</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>T</strong></td>
+<td style="text-align: left;">1 和 3</td>
+<td style="text-align: left;">5 和 6</td>
+<td style="text-align: left;">5（如果 6 也存在）和 7</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: left;">4 和 6</td>
+<td style="text-align: left;">1 和 2</td>
+<td style="text-align: left;">1（如果 2 也存在）和 3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: left;">5 和 7</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">4 和 6</td>
+</tr>
+</tbody>
+</table>
+<p>用首调（movable-<em>do</em>）唱名表示：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">功能</th>
+<th style="text-align: left;">触发音</th>
+<th style="text-align: left;">关联音</th>
+<th style="text-align: left;">不协和音</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>T</strong></td>
+<td style="text-align: left;"><em>do</em> 和 <em>mi</em>/<em>me</em></td>
+<td style="text-align: left;"><em>sol</em> 和 <em>la</em>/<em>le</em></td>
+<td style="text-align: left;"><em>sol</em>（如果 <em>la</em>/<em>le</em> 也存在）和 <em>ti</em>/<em>te</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: left;"><em>fa</em> 和 <em>la</em>/<em>le</em></td>
+<td style="text-align: left;"><em>do</em> 和 <em>re</em></td>
+<td style="text-align: left;"><em>do</em>（如果 <em>re</em> 也存在）和 <em>mi</em>/<em>me</em></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: left;"><em>sol</em> 和 <em>ti</em>/<em>te</em></td>
+<td style="text-align: left;"><em>re</em></td>
+<td style="text-align: left;"><em>fa</em> 和 <em>la</em>/<em>le</em></td>
+</tr>
+</tbody>
+</table>
+<p>要确定一个和弦的功能，就找出包含该和弦全部音级的那种功能（不考虑变化音——也就是说，把 ♯4 当作普通的音级 4 来对待）。如果不止一种功能包含全部音级，就取和弦中触发音最多的那种功能。</p>
+<p>（目前）这条规则有一个例外：由音级 6、1 和 3 构成的和弦是一种特殊的主和弦，称为<em>不稳定化的主和弦</em>（destabilized tonic）。奎因为这个和弦使用了特殊的功能标记 <strong>Tx</strong>，而不只是 <strong>T</strong>。</p>
+<p>还要注意，由于 III<sup>7</sup> 和弦的音级并不完全属于三种功能中的任何一种，它可能视语境而表现得类似于 <strong>T</strong> 和弦或 <strong>D</strong> 和弦。它的自然音形式是一个罕见的和弦。</p>
+<p><a href="../assets/Handouts/HarmoniesByBassScaleDegree.pdf">这份讲义</a>将帮助你根据低音音级和/或罗马数字来确定和弦的功能。</p>
+<h2 id="和弦的标记">和弦的标记<a class="headerlink" href="#和弦的标记" title="Permanent link">&para;</a></h2>
+<p>我们将用两种方式按功能标记和弦。第一种是用罗马数字、通奏低音数字和功能标记来标记和弦。这样做时，把相应的罗马数字放在低音线<em>下方</em>，把通奏低音数字放在低音线<em>上方</em>（因为它代表的是上方声部），并把功能标记 <strong>T</strong>/<strong>S</strong>/<strong>D</strong> 放在罗马数字下方（不用 <strong>Tx</strong>；<strong>VI</strong> 和弦直接称为 <strong>T</strong>）。目前，这个标记可以简单地把 T、S 或 D 用于单个和弦；今后我们会稍微改变这种做法，以表示<a href="../harmonicSyntax2/">功能延长</a>。第一个例子显示的是单个和弦的功能，第二个例子显示的是功能延长。</p>
+<p><img alt="罗马数字与单个和弦的功能标记" src="../assets/harmony/RNsIndividualFunctions.png" /></p>
+<!-- lilylet-begin: assets/harmony/RNsIndividualFunctions.png -->
+
+<div class="lilylet-container" data-lilylet data-playable data-source="[staves &quot;{-}&quot;]&#10;&#10;\staff &quot;1&quot; \key d \major \numericTimeSignature \time 2/2 \clef &quot;treble&quot; \stemUp d&#039;2 e \\&#10;\staff &quot;1&quot; \stemDown &lt;fs b&gt;2 &lt;g b&gt; \\&#10;\staff &quot;2&quot; \clef &quot;bass&quot; b2 g&#10;^\figures { s2 &lt;6&gt; }&#10;\addlyrics { I IV }&#10;\addlyrics { T S } | %1&#10;&#10;\staff &quot;1&quot; \stemUp fs&#039;2 e \\&#10;\staff &quot;1&quot; \stemDown &lt;fs b&gt;2 &lt;fs as&gt; \\&#10;\staff &quot;2&quot; d,2 cs&#10;^\figures { &lt;6&gt;2 &lt;6+ 4 3&gt; }&#10;\addlyrics { I V }&#10;\addlyrics { T D } | %2&#10;&#10;\staff &quot;1&quot; \stemUp d&#039;2 cs \\&#10;\staff &quot;1&quot; \stemDown &lt;fs b&gt;2 &lt;e as&gt; \\&#10;\staff &quot;2&quot; b,2 fs&#039;&#10;^\figures { s2 &lt;7 _+&gt; }&#10;\addlyrics { I V }&#10;\addlyrics { T D } | %3&#10;&#10;\staff &quot;1&quot; &lt;d fs b&gt;1 \bar &quot;|.&quot; \\&#10;\staff &quot;2&quot; b,1 \bar &quot;|.&quot;&#10;\addlyrics { I }&#10;\addlyrics { T } | %4" data-mei="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;mei xmlns=&quot;http://www.music-encoding.org/ns/mei&quot; meiversion=&quot;5.0&quot;&gt;&#10;    &lt;meiHead&gt;&#10;        &lt;fileDesc&gt;&#10;            &lt;titleStmt&gt;&#10;            &lt;/titleStmt&gt;&#10;            &lt;pubStmt /&gt;&#10;        &lt;/fileDesc&gt;&#10;        &lt;encodingDesc&gt;&#10;            &lt;projectDesc&gt;&#10;                &lt;p&gt;Encoded with Lilylet MEIEncoder&lt;/p&gt;&#10;            &lt;/projectDesc&gt;&#10;        &lt;/encodingDesc&gt;&#10;    &lt;/meiHead&gt;&#10;    &lt;music&gt;&#10;        &lt;body&gt;&#10;            &lt;mdiv xml:id=&quot;mdiv-f2fc0000000001&quot;&gt;&#10;                &lt;score xml:id=&quot;score-f2fc0000000002&quot;&gt;&#10;                    &lt;scoreDef xml:id=&quot;scoredef-f2fc0000000003&quot; key.sig=&quot;2s&quot; meter.count=&quot;2&quot; meter.unit=&quot;2&quot;&gt;&#10;                        &lt;staffGrp xml:id=&quot;staffgrp-f2fc0000000006&quot; symbol=&quot;brace&quot; bar.thru=&quot;true&quot;&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-f2fc0000000004&quot; n=&quot;1&quot; lines=&quot;5&quot; clef.shape=&quot;G&quot; clef.line=&quot;2&quot; /&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-f2fc0000000005&quot; n=&quot;2&quot; lines=&quot;5&quot; clef.shape=&quot;F&quot; clef.line=&quot;4&quot; /&gt;&#10;                        &lt;/staffGrp&gt;&#10;                    &lt;/scoreDef&gt;&#10;                    &lt;section xml:id=&quot;section-f2fc0000000007&quot;&gt;&#10;                        &lt;measure xml:id=&quot;measure-f2fc0000000008&quot; n=&quot;1&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000009&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000010&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000011&quot; pname=&quot;d&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000012&quot; pname=&quot;e&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000013&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000014&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000015&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000016&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000017&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000018&quot; pname=&quot;g&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000019&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000020&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000021&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000022&quot; pname=&quot;b&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000023&quot; pname=&quot;g&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;IV&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;S&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-f2fc0000000024&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-f2fc0000000025&quot; n=&quot;2&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000026&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000027&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000028&quot; pname=&quot;f&quot; oct=&quot;5&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000029&quot; pname=&quot;e&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000030&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000031&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000032&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000033&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000034&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000035&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000036&quot; pname=&quot;a&quot; oct=&quot;4&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000037&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000038&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000039&quot; pname=&quot;d&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000040&quot; pname=&quot;c&quot; oct=&quot;3&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;V&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-f2fc0000000041&quot; staff=&quot;2&quot; tstamp=&quot;1&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                            &lt;harm xml:id=&quot;harm-f2fc0000000042&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;♯6&lt;/f&gt;&lt;f&gt;4&lt;/f&gt;&lt;f&gt;3&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-f2fc0000000043&quot; n=&quot;3&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000044&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000045&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000046&quot; pname=&quot;d&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000047&quot; pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000048&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000049&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000050&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000051&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000052&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000053&quot; pname=&quot;e&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000054&quot; pname=&quot;a&quot; oct=&quot;4&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000055&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000056&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000057&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000058&quot; pname=&quot;f&quot; oct=&quot;3&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;V&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-f2fc0000000059&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;7&lt;/f&gt;&lt;f&gt;♯&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-f2fc0000000060&quot; n=&quot;4&quot; right=&quot;end&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000061&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000062&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-f2fc0000000063&quot; dur=&quot;1&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000064&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000065&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-f2fc0000000066&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-f2fc0000000067&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-f2fc0000000068&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-f2fc0000000069&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;1&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                        &lt;/measure&gt;&#10;                    &lt;/section&gt;&#10;                &lt;/score&gt;&#10;            &lt;/mdiv&gt;&#10;        &lt;/body&gt;&#10;    &lt;/music&gt;&#10;&lt;/mei&gt;&#10;"></div>
+
+<!-- lilylet-end -->
+
+<p><img alt="罗马数字与功能延长标记" src="../assets/harmony/RNsFunctionalProlongation.png" /></p>
+<!-- lilylet-begin: assets/harmony/RNsFunctionalProlongation.png -->
+
+<div class="lilylet-container" data-lilylet data-playable data-source="[staves &quot;{-}&quot;]&#10;&#10;\staff &quot;1&quot; \key bf \major \numericTimeSignature \time 2/2 \clef &quot;treble&quot; \stemUp d&#039;2 c \\&#10;\staff &quot;1&quot; \stemDown &lt;f bf&gt;2 &lt;f a&gt; \\&#10;\staff &quot;2&quot; \clef &quot;bass&quot; bf,2 ef&#10;^\figures { s2 &lt;4 2&gt; }&#10;\addlyrics { I V }&#10;\addlyrics { T — } | %1&#10;&#10;\staff &quot;1&quot; \stemUp bf&#039;2 bf \\&#10;\staff &quot;1&quot; \stemDown &lt;f bf&gt;2 ef \\&#10;\staff &quot;2&quot; d,2 g&#10;^\figures { &lt;6&gt;2 &lt;6&gt; }&#10;\addlyrics { I IV }&#10;\addlyrics { — S } | %2&#10;&#10;\staff &quot;1&quot; \stemUp bf&#039;2 a \\&#10;\staff &quot;1&quot; \stemDown &lt;d f&gt;2 &lt;c ef&gt; \\&#10;\staff &quot;2&quot; f,2 f,&#10;^\figures { &lt;8 6 4&gt;2 &lt;7 5 3&gt; }&#10;\addlyrics { V — }&#10;\addlyrics { D — } | %3&#10;&#10;\staff &quot;1&quot; &lt;bf d bf&#039;&gt;1 \bar &quot;|.&quot; \\&#10;\staff &quot;2&quot; bf,1 \bar &quot;|.&quot;&#10;\addlyrics { I }&#10;\addlyrics { T } | %4" data-mei="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;mei xmlns=&quot;http://www.music-encoding.org/ns/mei&quot; meiversion=&quot;5.0&quot;&gt;&#10;    &lt;meiHead&gt;&#10;        &lt;fileDesc&gt;&#10;            &lt;titleStmt&gt;&#10;            &lt;/titleStmt&gt;&#10;            &lt;pubStmt /&gt;&#10;        &lt;/fileDesc&gt;&#10;        &lt;encodingDesc&gt;&#10;            &lt;projectDesc&gt;&#10;                &lt;p&gt;Encoded with Lilylet MEIEncoder&lt;/p&gt;&#10;            &lt;/projectDesc&gt;&#10;        &lt;/encodingDesc&gt;&#10;    &lt;/meiHead&gt;&#10;    &lt;music&gt;&#10;        &lt;body&gt;&#10;            &lt;mdiv xml:id=&quot;mdiv-3f720000000001&quot;&gt;&#10;                &lt;score xml:id=&quot;score-3f720000000002&quot;&gt;&#10;                    &lt;scoreDef xml:id=&quot;scoredef-3f720000000003&quot; key.sig=&quot;2f&quot; meter.count=&quot;2&quot; meter.unit=&quot;2&quot;&gt;&#10;                        &lt;staffGrp xml:id=&quot;staffgrp-3f720000000006&quot; symbol=&quot;brace&quot; bar.thru=&quot;true&quot;&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-3f720000000004&quot; n=&quot;1&quot; lines=&quot;5&quot; clef.shape=&quot;G&quot; clef.line=&quot;2&quot; /&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-3f720000000005&quot; n=&quot;2&quot; lines=&quot;5&quot; clef.shape=&quot;F&quot; clef.line=&quot;4&quot; /&gt;&#10;                        &lt;/staffGrp&gt;&#10;                    &lt;/scoreDef&gt;&#10;                    &lt;section xml:id=&quot;section-3f720000000007&quot;&gt;&#10;                        &lt;measure xml:id=&quot;measure-3f720000000008&quot; n=&quot;1&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000009&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000010&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000011&quot; pname=&quot;d&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000012&quot; pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000013&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-3f720000000014&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000015&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000016&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-3f720000000017&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000018&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000019&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000020&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000021&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000022&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000023&quot; pname=&quot;e&quot; oct=&quot;3&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;V&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-3f720000000024&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;4&lt;/f&gt;&lt;f&gt;2&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-3f720000000025&quot; n=&quot;2&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000026&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000027&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000028&quot; pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000029&quot; pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000030&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-3f720000000031&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000032&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000033&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000034&quot; pname=&quot;e&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000035&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000036&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000037&quot; pname=&quot;d&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000038&quot; pname=&quot;g&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;IV&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;S&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-3f720000000039&quot; staff=&quot;2&quot; tstamp=&quot;1&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                            &lt;harm xml:id=&quot;harm-3f720000000040&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-3f720000000041&quot; n=&quot;3&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000042&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000043&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000044&quot; pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000045&quot; pname=&quot;a&quot; oct=&quot;4&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000046&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-3f720000000047&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000048&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000049&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-3f720000000050&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000051&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000052&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000053&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000054&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000055&quot; pname=&quot;f&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;V&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000056&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-3f720000000057&quot; staff=&quot;2&quot; tstamp=&quot;1&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;8&lt;/f&gt;&lt;f&gt;6&lt;/f&gt;&lt;f&gt;4&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                            &lt;harm xml:id=&quot;harm-3f720000000058&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;7&lt;/f&gt;&lt;f&gt;5&lt;/f&gt;&lt;f&gt;3&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-3f720000000059&quot; n=&quot;4&quot; right=&quot;end&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000060&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000061&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-3f720000000062&quot; dur=&quot;1&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000063&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000064&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-3f720000000065&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-3f720000000066&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-3f720000000067&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-3f720000000068&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;1&quot; accid.ges=&quot;f&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;I&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                        &lt;/measure&gt;&#10;                    &lt;/section&gt;&#10;                &lt;/score&gt;&#10;            &lt;/mdiv&gt;&#10;        &lt;/body&gt;&#10;    &lt;/music&gt;&#10;&lt;/mei&gt;&#10;"></div>
+
+<!-- lilylet-end -->
+
+<p>标记和声进行的第二种方式，是奎因所说的<em>功能低音</em>（functional bass）。功能低音记号把和弦的功能（<strong>T</strong>、<strong>S</strong>、<strong>D</strong> 或 <strong>Tx</strong>）与一个表示其低音音级的阿拉伯数字结合起来。低音为 <em>do</em> 的主和弦记作 <strong>T1</strong>，低音为 <em>ti</em> 的属和弦记作 <strong>D7</strong>，依此类推。如果低音经过变化，就用 <strong>+</strong> 或 <strong>–</strong> 表示升高或降低（小调中的 <em>la</em> 和 <em>ti</em> 不算，因为 <em>le</em>、<em>la</em>、<em>te</em> 和 <em>ti</em> 都属于小调，不过如果你愿意，也可以为清楚起见使用 +/–）。如果和弦中任何地方有变化音，就把功能低音记号放在方括号内：<strong>[S6]</strong>、<strong>[S+4]</strong>、<strong>[T–7]</strong> 等。（关于常见的变化和弦，详见<a href="../alteredSubdominants/">变化下属和弦</a>、<a href="../appliedChords/">副属和弦</a>和<a href="../modalMixture/">调式交替</a>。）</p>
+<p><img alt="功能低音标记" src="../assets/harmony/FunctionalBassFunctions.png" /></p>
+<!-- lilylet-begin: assets/harmony/FunctionalBassFunctions.png -->
+
+<div class="lilylet-container" data-lilylet data-playable data-source="[staves &quot;{-}&quot;]&#10;&#10;\staff &quot;1&quot; \key bf \major \numericTimeSignature \time 2/2 \clef &quot;treble&quot; \stemUp d&#039;2 c \\&#10;\staff &quot;1&quot; \stemDown &lt;f bf&gt;2 &lt;f a&gt; \\&#10;\staff &quot;2&quot; \clef &quot;bass&quot; bf,2 ef&#10;^\figures { s2 &lt;4 2&gt; }&#10;\addlyrics { T1 D4 }&#10;\addlyrics { T — } | %1&#10;&#10;\staff &quot;1&quot; \stemUp bf&#039;2 bf \\&#10;\staff &quot;1&quot; \stemDown &lt;f bf&gt;2 ef \\&#10;\staff &quot;2&quot; d,2 g&#10;^\figures { &lt;6&gt;2 &lt;6&gt; }&#10;\addlyrics { T3 S6 }&#10;\addlyrics { — S } | %2&#10;&#10;\staff &quot;1&quot; \stemUp bf&#039;2 a \\&#10;\staff &quot;1&quot; \stemDown &lt;d f&gt;2 &lt;c ef&gt; \\&#10;\staff &quot;2&quot; f,2 f,&#10;^\figures { &lt;8 6 4&gt;2 &lt;7 5 3&gt; }&#10;\addlyrics { D5 — }&#10;\addlyrics { D — } | %3&#10;&#10;\staff &quot;1&quot; &lt;bf d bf&#039;&gt;1 \bar &quot;|.&quot; \\&#10;\staff &quot;2&quot; bf,1 \bar &quot;|.&quot;&#10;\addlyrics { T1 }&#10;\addlyrics { T } | %4" data-mei="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;mei xmlns=&quot;http://www.music-encoding.org/ns/mei&quot; meiversion=&quot;5.0&quot;&gt;&#10;    &lt;meiHead&gt;&#10;        &lt;fileDesc&gt;&#10;            &lt;titleStmt&gt;&#10;            &lt;/titleStmt&gt;&#10;            &lt;pubStmt /&gt;&#10;        &lt;/fileDesc&gt;&#10;        &lt;encodingDesc&gt;&#10;            &lt;projectDesc&gt;&#10;                &lt;p&gt;Encoded with Lilylet MEIEncoder&lt;/p&gt;&#10;            &lt;/projectDesc&gt;&#10;        &lt;/encodingDesc&gt;&#10;    &lt;/meiHead&gt;&#10;    &lt;music&gt;&#10;        &lt;body&gt;&#10;            &lt;mdiv xml:id=&quot;mdiv-20bf0000000001&quot;&gt;&#10;                &lt;score xml:id=&quot;score-20bf0000000002&quot;&gt;&#10;                    &lt;scoreDef xml:id=&quot;scoredef-20bf0000000003&quot; key.sig=&quot;2f&quot; meter.count=&quot;2&quot; meter.unit=&quot;2&quot;&gt;&#10;                        &lt;staffGrp xml:id=&quot;staffgrp-20bf0000000006&quot; symbol=&quot;brace&quot; bar.thru=&quot;true&quot;&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-20bf0000000004&quot; n=&quot;1&quot; lines=&quot;5&quot; clef.shape=&quot;G&quot; clef.line=&quot;2&quot; /&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-20bf0000000005&quot; n=&quot;2&quot; lines=&quot;5&quot; clef.shape=&quot;F&quot; clef.line=&quot;4&quot; /&gt;&#10;                        &lt;/staffGrp&gt;&#10;                    &lt;/scoreDef&gt;&#10;                    &lt;section xml:id=&quot;section-20bf0000000007&quot;&gt;&#10;                        &lt;measure xml:id=&quot;measure-20bf0000000008&quot; n=&quot;1&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000009&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000010&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000011&quot; pname=&quot;d&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000012&quot; pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000013&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-20bf0000000014&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000015&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000016&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-20bf0000000017&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000018&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000019&quot; pname=&quot;a&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000020&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000021&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000022&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T1&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000023&quot; pname=&quot;e&quot; oct=&quot;3&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D4&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-20bf0000000024&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;4&lt;/f&gt;&lt;f&gt;2&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-20bf0000000025&quot; n=&quot;2&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000026&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000027&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000028&quot; pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000029&quot; pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000030&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-20bf0000000031&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000032&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000033&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000034&quot; pname=&quot;e&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;down&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000035&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000036&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000037&quot; pname=&quot;d&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T3&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000038&quot; pname=&quot;g&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;S6&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;S&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-20bf0000000039&quot; staff=&quot;2&quot; tstamp=&quot;1&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                            &lt;harm xml:id=&quot;harm-20bf0000000040&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-20bf0000000041&quot; n=&quot;3&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000042&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000043&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000044&quot; pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;2&quot; accid.ges=&quot;f&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000045&quot; pname=&quot;a&quot; oct=&quot;4&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000046&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-20bf0000000047&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000048&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000049&quot; pname=&quot;f&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-20bf0000000050&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000051&quot; pname=&quot;c&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000052&quot; pname=&quot;e&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000053&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000054&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000055&quot; pname=&quot;f&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D5&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000056&quot; pname=&quot;f&quot; oct=&quot;2&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;—&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-20bf0000000057&quot; staff=&quot;2&quot; tstamp=&quot;1&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;8&lt;/f&gt;&lt;f&gt;6&lt;/f&gt;&lt;f&gt;4&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                            &lt;harm xml:id=&quot;harm-20bf0000000058&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;7&lt;/f&gt;&lt;f&gt;5&lt;/f&gt;&lt;f&gt;3&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-20bf0000000059&quot; n=&quot;4&quot; right=&quot;end&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000060&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000061&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-20bf0000000062&quot; dur=&quot;1&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000063&quot; pname=&quot;b&quot; oct=&quot;3&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000064&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-20bf0000000065&quot; pname=&quot;b&quot; oct=&quot;4&quot; accid.ges=&quot;f&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-20bf0000000066&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-20bf0000000067&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-20bf0000000068&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;1&quot; accid.ges=&quot;f&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T1&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;verse n=&quot;2&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                        &lt;/measure&gt;&#10;                    &lt;/section&gt;&#10;                &lt;/score&gt;&#10;            &lt;/mdiv&gt;&#10;        &lt;/body&gt;&#10;    &lt;/music&gt;&#10;&lt;/mei&gt;&#10;"></div>
+
+<!-- lilylet-end -->
+
+<p>奎因还提倡使用我所说的<em>诠释性功能低音</em>（interpreted functional bass）。这种命名法使用同样的记号，但用圆括号表示<a href="../harmonicSyntax2/"><em>对位性延长</em></a>，并用小写的后缀说明装饰和弦的对位作用（p 表示经过，n 表示辅助，i 表示不完全辅助，d 表示分隔，e 表示装饰——这些都是指低音声部的声部进行模式）。下面是一个诠释性功能低音的例子。</p>
+<p><img alt="诠释性功能低音" src="../assets/harmony/InterpretedFunctionalBass.png" /></p>
+<!-- lilylet-begin: assets/harmony/InterpretedFunctionalBass.png -->
+
+<div class="lilylet-container" data-lilylet data-playable data-source="[staves &quot;{-}&quot;]&#10;&#10;\staff &quot;1&quot; \key d \major \numericTimeSignature \time 2/2 \clef &quot;treble&quot; \stemUp d&#039;2 e \\&#10;\staff &quot;1&quot; \stemDown &lt;fs b&gt;2 &lt;g b&gt; \\&#10;\staff &quot;2&quot; \clef &quot;bass&quot; b2 g&#10;^\figures { s2 &lt;6&gt; }&#10;\addlyrics { T(1 S6d } | %1&#10;&#10;\staff &quot;1&quot; \stemUp fs&#039;2 e \\&#10;\staff &quot;1&quot; \stemDown &lt;fs b&gt;2 &lt;fs as&gt; \\&#10;\staff &quot;2&quot; d,2 cs&#10;^\figures { &lt;6&gt;2 &lt;6+ 4 3&gt; }&#10;\addlyrics { 3 D2p } | %2&#10;&#10;\staff &quot;1&quot; \stemUp d&#039;2 cs \\&#10;\staff &quot;1&quot; \stemDown &lt;fs b&gt;2 &lt;e as&gt; \\&#10;\staff &quot;2&quot; b,2 fs&#039;&#10;^\figures { s2 &lt;7 _+&gt; }&#10;\addlyrics { 1) D5 } | %3&#10;&#10;\staff &quot;1&quot; &lt;d fs b&gt;1 \bar &quot;|.&quot; \\&#10;\staff &quot;2&quot; b,1 \bar &quot;|.&quot;&#10;\addlyrics { T1 } | %4" data-mei="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;mei xmlns=&quot;http://www.music-encoding.org/ns/mei&quot; meiversion=&quot;5.0&quot;&gt;&#10;    &lt;meiHead&gt;&#10;        &lt;fileDesc&gt;&#10;            &lt;titleStmt&gt;&#10;            &lt;/titleStmt&gt;&#10;            &lt;pubStmt /&gt;&#10;        &lt;/fileDesc&gt;&#10;        &lt;encodingDesc&gt;&#10;            &lt;projectDesc&gt;&#10;                &lt;p&gt;Encoded with Lilylet MEIEncoder&lt;/p&gt;&#10;            &lt;/projectDesc&gt;&#10;        &lt;/encodingDesc&gt;&#10;    &lt;/meiHead&gt;&#10;    &lt;music&gt;&#10;        &lt;body&gt;&#10;            &lt;mdiv xml:id=&quot;mdiv-2b4d0000000001&quot;&gt;&#10;                &lt;score xml:id=&quot;score-2b4d0000000002&quot;&gt;&#10;                    &lt;scoreDef xml:id=&quot;scoredef-2b4d0000000003&quot; key.sig=&quot;2s&quot; meter.count=&quot;2&quot; meter.unit=&quot;2&quot;&gt;&#10;                        &lt;staffGrp xml:id=&quot;staffgrp-2b4d0000000006&quot; symbol=&quot;brace&quot; bar.thru=&quot;true&quot;&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-2b4d0000000004&quot; n=&quot;1&quot; lines=&quot;5&quot; clef.shape=&quot;G&quot; clef.line=&quot;2&quot; /&gt;&#10;                            &lt;staffDef xml:id=&quot;staffdef-2b4d0000000005&quot; n=&quot;2&quot; lines=&quot;5&quot; clef.shape=&quot;F&quot; clef.line=&quot;4&quot; /&gt;&#10;                        &lt;/staffGrp&gt;&#10;                    &lt;/scoreDef&gt;&#10;                    &lt;section xml:id=&quot;section-2b4d0000000007&quot;&gt;&#10;                        &lt;measure xml:id=&quot;measure-2b4d0000000008&quot; n=&quot;1&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000009&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000010&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000011&quot; pname=&quot;d&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000012&quot; pname=&quot;e&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000013&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000014&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000015&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000016&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000017&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000018&quot; pname=&quot;g&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000019&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000020&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000021&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000022&quot; pname=&quot;b&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T(1&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000023&quot; pname=&quot;g&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;S6d&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-2b4d0000000024&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-2b4d0000000025&quot; n=&quot;2&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000026&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000027&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000028&quot; pname=&quot;f&quot; oct=&quot;5&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000029&quot; pname=&quot;e&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000030&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000031&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000032&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000033&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000034&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000035&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000036&quot; pname=&quot;a&quot; oct=&quot;4&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000037&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000038&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000039&quot; pname=&quot;d&quot; oct=&quot;3&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;3&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000040&quot; pname=&quot;c&quot; oct=&quot;3&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D2p&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-2b4d0000000041&quot; staff=&quot;2&quot; tstamp=&quot;1&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;6&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                            &lt;harm xml:id=&quot;harm-2b4d0000000042&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;♯6&lt;/f&gt;&lt;f&gt;4&lt;/f&gt;&lt;f&gt;3&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-2b4d0000000043&quot; n=&quot;3&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000044&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000045&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000046&quot; pname=&quot;d&quot; oct=&quot;5&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000047&quot; pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot; stem.dir=&quot;up&quot; /&gt;&#10;                                &lt;/layer&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000048&quot; n=&quot;2&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000049&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000050&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000051&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000052&quot; dur=&quot;2&quot; stem.dir=&quot;down&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000053&quot; pname=&quot;e&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000054&quot; pname=&quot;a&quot; oct=&quot;4&quot; accid=&quot;s&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000055&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000056&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000057&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;2&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;1)&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000058&quot; pname=&quot;f&quot; oct=&quot;3&quot; dur=&quot;2&quot; accid.ges=&quot;s&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;D5&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;harm xml:id=&quot;harm-2b4d0000000059&quot; staff=&quot;2&quot; tstamp=&quot;2&quot; place=&quot;above&quot;&gt;&lt;fb&gt;&lt;f&gt;7&lt;/f&gt;&lt;f&gt;♯&lt;/f&gt;&lt;/fb&gt;&lt;/harm&gt;&#10;                        &lt;/measure&gt;&#10;                        &lt;measure xml:id=&quot;measure-2b4d0000000060&quot; n=&quot;4&quot; right=&quot;end&quot;&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000061&quot; n=&quot;1&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000062&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;chord xml:id=&quot;chord-2b4d0000000063&quot; dur=&quot;1&quot;&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000064&quot; pname=&quot;d&quot; oct=&quot;4&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000065&quot; pname=&quot;f&quot; oct=&quot;4&quot; accid.ges=&quot;s&quot; /&gt;&#10;                                        &lt;note xml:id=&quot;note-2b4d0000000066&quot; pname=&quot;b&quot; oct=&quot;4&quot; /&gt;&#10;                                    &lt;/chord&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                            &lt;staff xml:id=&quot;staff-2b4d0000000067&quot; n=&quot;2&quot;&gt;&#10;                                &lt;layer xml:id=&quot;layer-2b4d0000000068&quot; n=&quot;1&quot;&gt;&#10;                                    &lt;note xml:id=&quot;note-2b4d0000000069&quot; pname=&quot;b&quot; oct=&quot;2&quot; dur=&quot;1&quot;&gt;&#10;                                    &lt;verse n=&quot;1&quot;&gt;&#10;                                        &lt;syl wordpos=&quot;s&quot;&gt;T1&lt;/syl&gt;&#10;                                    &lt;/verse&gt;&#10;                                    &lt;/note&gt;&#10;                                &lt;/layer&gt;&#10;                            &lt;/staff&gt;&#10;                        &lt;/measure&gt;&#10;                    &lt;/section&gt;&#10;                &lt;/score&gt;&#10;            &lt;/mdiv&gt;&#10;        &lt;/body&gt;&#10;    &lt;/music&gt;&#10;&lt;/mei&gt;&#10;"></div>
+
+<!-- lilylet-end -->
+
+<p>在本书中，我们主要使用第一种方法，即罗马数字和（延长的）和声功能，因为这是北美音乐理论中最常见的方法。不过，功能低音有助于识别属于同一类的和弦。例如，在听写或记谱任务中，我们可能听到低音是 <em>re</em>，却不知道具体是哪个和弦。如果语境告诉我们它很可能是属和弦而不是下属和弦，我们就可以把它标记为 <strong>D2</strong>。这就排除了 <strong>II</strong>（一个下属和弦），但在我们能够最终确定之前，仍保留了多种属和弦的可能，比如 <strong>V<sup>6/4</sup></strong> 或 <strong>VII<sup>6</sup></strong>。同样，在写作时，有些模式可以使用 <strong>S4</strong>，具体的和弦（<strong>IV</strong> 或 <strong>II<sup>6</sup></strong>）由声部进行而不是和声语法决定；但在这些模式中，无论声部进行如何，<strong>D4</strong> 和弦（<strong>V<sup>4/2</sup></strong>）在语法上都是不恰当的。</p>
+<p>因此，在提到具体和弦时，我们会用罗马数字来标记和弦，用功能标记来诠释它们在语境中的作用。在提到更宽泛的和弦类别时，我们则更多地使用功能低音。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Powered by <a href="https://github.com/k-l-lambda/stream-polyglot">stream-polyglot</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/k-l-lambda/lecture-annotation" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://k-l-lambda.github.io/" target="_blank" rel="noopener" title="k-l-lambda.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224 24c0-13.3 10.7-24 24-24 145.8 0 264 118.2 264 264 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-119.3-96.7-216-216-216-13.3 0-24-10.7-24-24M80 96c26.5 0 48 21.5 48 48v224c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48c-8.8 0-16-7.2-16-16v-64c0-8.8 7.2-16 16-16 79.5 0 144 64.5 144 144s-64.5 144-144 144S32 447.5 32 368V144c0-26.5 21.5-48 48-48m168 0c92.8 0 168 75.2 168 168 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3-53.7-120-120-120-13.3 0-24-10.7-24-24s10.7-24 24-24"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../../javascripts/ebooks-section.js"></script>
+      
+        <script src="../../../javascripts/lilylet/player.js"></script>
+      
+        <script src="../../../javascripts/trinket-embed.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/marked.js"></script>
+      
+        <script src="../../../javascripts/tutor/vendor/purify.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor-core.js"></script>
+      
+        <script src="../../../javascripts/tutor/widgets.js"></script>
+      
+        <script src="../../../javascripts/tutor/messages.js"></script>
+      
+        <script src="../../../javascripts/tutor/steprail.js"></script>
+      
+        <script src="../../../javascripts/tutor/focus.js"></script>
+      
+        <script src="../../../javascripts/tutor/settings-dialog.js"></script>
+      
+        <script src="../../../javascripts/tutor/profile-drawer.js"></script>
+      
+        <script src="../../../javascripts/tutor/panel.js"></script>
+      
+        <script src="../../../javascripts/tutor/tutor.js"></script>
+      
+    
+  </body>
+</html>
