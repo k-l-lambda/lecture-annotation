@@ -45,6 +45,10 @@ modified: "2026-01-21"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5990266)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5990266 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5990266/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. (a–c) 生成五声音集的三种方式，以及 (d) 五声音集的一种轮换。
 
 五声音集从自然音集中去掉的，是构成半音的那两个音（如果用大调音阶级数来想，就是 $\hat{4}$ 和 $\hat{7}$）。没有半音，可以说使五声音集更容易轮换、也更容易作为一个音集来看待，而不必特别强调某个音为主音。音集中的任何一个成员都能轻易地充当调性中心。例如，谱例 1 的 (a) 中给出的音集有五种独特的调式，都是通过轮换音集、使每个音级依次成为主音而形成的：C 五声（C、D、E、G、A）、D 五声（D、E、G、A、C）、E 五声（E、G、A、C、D），等等。谱例 1 的 (d) 给出五声音集一种格外常见的轮换，被称为小调五声。
@@ -59,6 +63,10 @@ modified: "2026-01-21"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5990278)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5990278 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5990278/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 全音音集只有两个。把 WT<sub>1</sub> 升高半音移位，又会得到 WT<sub>0</sub>。
 
 ## 八声音集
@@ -66,6 +74,10 @@ modified: "2026-01-21"
 八声音集由全音与半音的交替构成，总共得到八个不同的音（谱例 3）。爵士音乐家称之为减音阶，因为它与[全减七和弦](../01-fundamentals/19-seventh-chords.md)十分契合。（当然，也可能有其他含有八个不同音的音阶，但被称为八声音阶的是这一个。）
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5990299)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5990299 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5990299/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 八声音集只有三个。
 
@@ -77,9 +89,17 @@ modified: "2026-01-21"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5992271)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5992271 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5992271/embed" title="MuseScore" loading="lazy" style="height: 575px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 八声音集包含许多三和弦和声。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5992316)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5992316 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5992316/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 肖邦 G 小调《叙事曲》（1836）中的八声音集。
 
@@ -89,11 +109,19 @@ modified: "2026-01-21"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6925856)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6925856 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6925856/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 可能的六声音集有四个。
 
 同样和八声音集一样，六声音集含有三和弦，但不会暗示某个特定的主和弦或本调。如谱例 7 所示，每个音集包含三个大三和弦、三个小三和弦和两个增三和弦。把相隔半音的两个增三和弦并置，是生成六声音阶的另一种方式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6925866)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6925866 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6925866/embed" title="MuseScore" loading="lazy" style="height: 575px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 六声音集中存在的三和弦。
 
@@ -102,6 +130,10 @@ modified: "2026-01-21"
 声学音集以[泛音列](https://en.wikipedia.org/wiki/Harmonic_series_(music))中最低的几个音程为基础。这一点之所以重要，是因为这些最低的音程与音乐协和的概念之间一直存在关联。其结果是一种类似大调音阶、但带有 $\uparrow\hat{4}$ 和 $\downarrow\hat{7}$ 的调式（谱例 8）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5992286)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5992286 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5992286/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 声学音阶由[泛音列](https://en.wikipedia.org/wiki/Harmonic_series_(music))的各音推衍而来。
 
@@ -126,6 +158,10 @@ modified: "2026-01-21"
 谱例 9. 梅西安的有限移位调式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6925817/s/nEWWaR)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6925817/s/nEWWaR -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6925817/s/nEWWaR/embed" title="MuseScore" loading="lazy" style="height: 620px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. 梅西安的有限移位调式，从 C 开始。
 

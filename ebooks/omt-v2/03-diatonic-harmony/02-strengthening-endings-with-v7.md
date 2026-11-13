@@ -20,9 +20,17 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224806)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224806 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224806/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 玛格丽特·卡森（Margaret Casson）《布谷鸟》（*The Cuckoo*）中一个含 V<sup>7</sup> 的完满正格终止
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224809)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224809 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224809/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 一个完满正格终止：(a) 只用三和弦；(b) 使用 V<sup>7</sup> 和弦。
 
@@ -33,6 +41,10 @@ modified: "2026-06-17"
 **谱例 3c** 中的解决——*re*（$\hat{2}$）上行到 *mi*（$\hat{3}$）——非常少见，主和弦中这样不寻常的重复（两个根音、两个三音）通常会导致声部进行上的问题。我们建议避免这种解决。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224872)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224872 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224872/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. V<sup>7</sup> 的默认解决。
 
@@ -61,6 +73,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224803)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224803 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224803/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 涉及不完全 V<sup>7</sup> 的替代解决。
 
 #### 导音下行跳进
@@ -68,6 +84,10 @@ modified: "2026-06-17"
 也可以从完整的 V<sup>7</sup> 得到完整的 I，但要做到这一点，我们必须允许某个倾向音不按预期解决。谱例 6 展示了如何通过导音下行跳进来做到这一点。[^1] 这里，*ti*（$\uparrow\hat{7}$）在内声部向下跳到 *sol*（$\hat{5}$）。这样做之所以可行，是因为：(1) *ti*（$\uparrow\hat{7}$）并不是不协和音；(2) *ti*（$\uparrow\hat{7}$）在内声部，因而不太引人注意；(3) *ti*（$\uparrow\hat{7}$）是在主和弦中能进行到 *sol*（$\hat{5}$）又不造成平行进行的最近的一个音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224804)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224804 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224804/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 涉及导音下行跳进的替代解决。
 
@@ -81,6 +101,10 @@ modified: "2026-06-17"
 谱例 7 总结了 V<sup>7</sup>–I 的三种可能解决方式。你也许注意到，我们没有讨论 V<sup>7</sup> 在半终止（HC）中的作用。V<sup>7</sup> 在半终止中远不如在三和弦中常见，因为半终止本身已经不稳定，加上七音会使它更加不稳定。由于这类终止式更多出现在浪漫主义音乐中，珍妮特·施马尔费尔特（Janet Schmalfeldt，2011，202）把涉及 V<sup>7</sup> 的半终止称为“19 世纪半终止”。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224814)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224814 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224814/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. V<sup>7</sup> 各种可能解决的总结。
 

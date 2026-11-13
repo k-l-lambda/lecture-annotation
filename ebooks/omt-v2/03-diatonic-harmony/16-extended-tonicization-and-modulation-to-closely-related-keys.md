@@ -34,6 +34,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279080)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6279080 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279080/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. Joseph Bologne《弦乐四重奏》第 4 号第一乐章中的直接转调，第 15–29 小节（[0:27-0:56](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=64f4bea79e2d4a21)）。
 
  
@@ -43,6 +47,10 @@ modified: "2025-07-15"
 作曲家可以用各种手法让转调更隐蔽，但最常见的方式之一是利用中介和弦。中介和弦（pivot chord）是同时属于本调与新调的单个自然音和弦。谱例 2 表明，分析中介和弦时使用一个特殊记号：上面的罗马数字表示该和弦在旧调中的身份，下面的罗马数字表示它在新调中的身份。在谱例 2 的第 6 小节，我们会说“iv<sup>7</sup> 变成 ii<sup>7</sup>”。寻找中介和弦没有一种总是奏效的单一方法，但有一个有用的策略：先按旧调分析，直到它说不通为止，然后退回一个和弦，试着把它当作中介和弦来分析。如果这个和弦也不能充当中介和弦，就再往前退一个和弦。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279089)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6279089 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279089/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. Josephine Lang《冬》（*Der Winter*）中的中介和弦转调，第 1–12 小节。
 
@@ -99,6 +107,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279114)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6279114 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279114/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 写作一个转调乐句。
 
 ## 离调与转调之比较
@@ -117,6 +129,10 @@ modified: "2025-07-15"
 2. 罗马数字在本调中不再具有功能意义，但即将到来的终止式仍然在本调中。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279128)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6279128 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279128/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. Joseph Bologne《弦乐四重奏》Op. 4 第二乐章中的扩展离调（[0:25-0:39](https://open.spotify.com/track/3s3cvSSegEQuXN8PFEclRy?si=53a66e715ef6480e)）。
 

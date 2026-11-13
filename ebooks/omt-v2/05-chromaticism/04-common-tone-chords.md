@@ -25,6 +25,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224659)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224659 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224659/embed" title="MuseScore" loading="lazy" style="height: 833px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 多个辅助音可以汇聚形成一个 CT<sup>o7</sup> 和弦。
 
 ## 构成 CT<sup>o7</sup> 和弦
@@ -46,12 +50,21 @@ modified: "2025-07-15"
 > 构成所要求的共同音和弦。
 >
 > 🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_dim_7_tonic_tonic_D_major&sm_2=brian_jarvis___OMT_common_tone_chords___ct_dim_7_tonic_tonic_F_major&sm_3=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triads_Eb_major)
+>
+> <!-- embed-begin: https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_dim_7_tonic_tonic_D_major&sm_2=brian_jarvis___OMT_common_tone_chords___ct_dim_7_tonic_tonic_F_major&sm_3=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triads_Eb_major -->
+> <div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_dim_7_tonic_tonic_D_major&amp;sm_2=brian_jarvis___OMT_common_tone_chords___ct_dim_7_tonic_tonic_F_major&amp;sm_3=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triads_Eb_major" title="Brian Jarvis" loading="lazy" style="height: 640px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+> <!-- embed-end -->
+>
 
 ## 分析时如何辨认 CT<sup>o7</sup>
 
 在实际语境中找出这个和弦，需要留意所有的全减七和弦。对每一个你找到的全减七和弦，判断它是否与其解决到的和弦共享一个共同音。如果没有，那么它应该是某种 vii<sup>o7</sup> 或[副属 vii<sup>o7</sup>](../03-diatonic-harmony/15-tonicization.md) 和弦。如果确实有共同音，那么它就是 CT<sup>o7</sup> 和弦。不过要记住，如果这个全减七和弦后面跟着 $\mathrm{cad.^6_4}$，你需要越过 $\mathrm{cad.^6_4}$ 的装饰，看它解决到哪个和弦，以判断是否存在共同音（见谱例 2）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224667)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224667 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224667/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. $\mathit{cad.^6_4}$ 可能产生一个与 CT<sup>o7</sup> 和弦无关的共同音。
 
@@ -60,6 +73,10 @@ modified: "2025-07-15"
 当 CT<sup>o7</sup> 和弦解决到 V<sup>7</sup> 而不是 V 三和弦时，V<sup>7</sup> 和弦的五音（*re*，$\hat2$）不被重复。相反，在 CT<sup>o7</sup> 中从 *re* 进行到 *mi* $(\hat2–\hat3)$ 的声部会继续上行到 V<sup>7</sup> 中的 *fa* $(\hat4)$。谱例 3 比较了解决到 V 的 *re–mi–re* $(\hat2-3-2)$ 线条与解决到 V<sup>7</sup> 的 *re–mi–fa* $(\hat2-\hat3-\hat4)$ 线条。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224768)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224768 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224768/embed" title="MuseScore" loading="lazy" style="height: 519px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 解决到 V 与解决到 V<sup>7</sup> 的完整辅助音 CT<sup>o7</sup> 之比较。
 
@@ -70,6 +87,11 @@ modified: "2025-07-15"
 > 构成所要求的共同音和弦。
 >
 > 🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triad_to_seventh_Bb_major&sm_2=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triad_to_seventh_E_major)
+>
+> <!-- embed-begin: https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triad_to_seventh_Bb_major&sm_2=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triad_to_seventh_E_major -->
+> <div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triad_to_seventh_Bb_major&amp;sm_2=brian_jarvis___OMT_common_tone_chords___ct_dim_7_dominant_triad_to_seventh_E_major" title="Brian Jarvis" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+> <!-- embed-end -->
+>
 
 ## 带不完全辅助音的 CT<sup>o7</sup>
 
@@ -78,6 +100,10 @@ CT<sup>o7</sup> 的前后常常是同一个和弦，形成 *x*−CT<sup>o7</sup>
 谱例 4 演示了这种情况。注意第一个 CT<sup>o7</sup> 前后是不同的和弦：先是 I，然后是 $\mathrm{V^4_3}$。箭头标出 CT<sup>o7</sup> 正在装饰哪个和弦。正如在完整辅助音 CT<sup>o7</sup> 的语境中一样，应着眼于被装饰的和弦，而不是前面的和弦。这一进行是对你曾在主和弦延长中遇到的 $\mathrm{I-V^4_3-I^6}$ 进行的扩展，只不过在每两个和弦之间用 CT<sup>o7</sup> 和弦填充空隙，使一个原本相当简单的进行变得色彩丰富得多。听谱例 4 时，试着把底层的 $\mathrm{I-V^4_3-I^6}$ 进行听作它的底层模型。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224771)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224771 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224771/embed" title="MuseScore" loading="lazy" style="height: 541px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 由两个不同的、含不完全辅助音的 CT<sup>o7</sup> 和弦加以装饰的主和弦扩展模式。
 
@@ -95,6 +121,10 @@ CT<sup>o7</sup> 的前后常常是同一个和弦，形成 *x*−CT<sup>o7</sup>
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224775)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6224775 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224775/embed" title="MuseScore" loading="lazy" style="height: 478px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. CT<sup>o7</sup> 与 CT<sup>+6</sup> 和弦的比较，两者均为完整辅助音。
 
  
@@ -104,6 +134,11 @@ CT<sup>o7</sup> 的前后常常是同一个和弦，形成 *x*−CT<sup>o7</sup>
 > 构成所要求的共同音和弦。
 >
 > 🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_aug_sixth_A_major&sm_2=brian_jarvis___OMT_common_tone_chords___ct_aug_sixth_D_minor)
+>
+> <!-- embed-begin: https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_aug_sixth_A_major&sm_2=brian_jarvis___OMT_common_tone_chords___ct_aug_sixth_D_minor -->
+> <div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_common_tone_chords___ct_aug_sixth_A_major&amp;sm_2=brian_jarvis___OMT_common_tone_chords___ct_aug_sixth_D_minor" title="Brian Jarvis" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+> <!-- embed-end -->
+>
 
 ## 音乐实例
 
@@ -111,11 +146,19 @@ Scott Joplin "The Sycamore"的引子展示了 CT<sup>o7</sup> 如何夹在 $\mat
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8395287)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8395287 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395287/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. Scott Joplin，["The Sycamore"](https://open.spotify.com/track/5872xvdold0kITo4BF3N19)，第 1–4 小节。在 $\mathit{cad.^6_4}$ 开始与其向 V<sup>7</sup> 的解决之间引入了一个 CT<sup>o7</sup>
 
 在谱例 7 中，肖邦（Frederic Chopin）在第 8 小节、一个主持续音上方进行的平行乐段结束处使用了 CT<sup>+6</sup>。这一实例是一个不完全辅助音式的共同音和弦，因为其前第 7 小节的和弦是主持续音上方的 V7。另注意肖邦把该和弦拼写为 C♭ 而不是 B♮。共同音和弦确实会出现拼写变体，但在这种情况下，B♮ 的拼写本可以更清楚地表明该音在那个声部中与前后各 C 的辅助音关系。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8395353)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8395353 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395353/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 肖邦（Frederic Chopin），[f 小调练习曲](https://open.spotify.com/track/2lIWd118llyZpo2obxHUaj) Op. 10 第 9 首，第 1–9 小节。第 8 小节在主持续音的语境中出现了一个 CT<sup>+6</sup>。
 

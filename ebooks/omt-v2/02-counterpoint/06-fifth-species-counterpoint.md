@@ -30,6 +30,10 @@ modified: "2026-07-24"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26283736)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26283736 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26283736/embed" title="MuseScore" loading="lazy" style="height: 410px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 带有常见装饰的一串延留音。
 
 请注意，如果把旋律线简化，把小节的第一个音延长为二分音符，你就正好回到了不加装饰的第四类延留音。
@@ -43,6 +47,10 @@ modified: "2026-07-24"
 谱例 2 给出了《帕纳索斯阶梯》（*Gradus ad Parnassum*）第一部分中第五类对位的完整示例，并（一如前文）标注了对位声部与定旋律所构成的音程。若要查看《帕纳索斯阶梯》全部示例的练习、解答与标注，请见[《帕纳索斯阶梯》练习](07-gradus-ad-parnassum-exercises.md)。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488244)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8488244 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488244/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 《帕纳索斯阶梯》中全部第五类对位练习。
 

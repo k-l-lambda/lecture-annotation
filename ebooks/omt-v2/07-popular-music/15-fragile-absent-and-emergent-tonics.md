@@ -30,6 +30,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5873668/s/s-CN6x)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5873668/s/s-CN6x -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5873668/s/s-CN6x/embed" title="MuseScore" loading="lazy" style="height: 850px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. [苏夫扬·史蒂文斯的《Oh God Where Are You Now? (In Pickerel Lake? Pigeon? Marquette? Mackinaw?)》](https://open.spotify.com/track/30bebFeiUEL6tqeNLjFGAE)使用脆弱主音。
 
 脆弱主音通常与孤独、脆弱和敏感的歌词主题相联系。谱例 1 中的苏夫扬·史蒂文斯这首歌就遵循这一原则：歌词中的叙述者似乎迫切渴望上帝的慰藉，因而处于脆弱状态。另一首用脆弱主音来强调脆弱感的歌曲，是[埃尔顿·约翰（Elton John）的《Somebody Saved My Life Tonight》](https://open.spotify.com/track/1mpiCCPEs2ksd2LRVFvAjC?si=-kpOAiMzTju_68BWuuoN_g)（1975）（参见 Spicer 2017）。
@@ -89,6 +93,10 @@ B♭ 和弦在这一进行随后的重复中在小三和弦与大三和弦之间
 凯蒂·佩里（Katy Perry）的《Last Friday Night》（2012）就是一首具有缺席主音的歌曲。它的进行非常常规——**IV–ii–vi–V**——但 I 从未出现。如谱例 3 所见，副歌的旋律强烈地勾勒出 F♯ 大调，反复出现下行的 $\hat3–\hat2–\hat1$（*mi*–*re*–*do*）线条。这条旋律结合人们对这一和弦进行的熟悉感，使 F♯ 听起来像主音，尽管它从未在伴奏中出现。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5873719)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5873719 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5873719/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. [凯蒂·佩里《Last Friday Night》](https://open.spotify.com/track/455AfCsOhhLPRc68sE01D8?si=DfGI_bLQRrKyvYWbCRIrKA)的副歌。
 

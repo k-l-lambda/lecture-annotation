@@ -28,6 +28,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839460)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839460 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839460/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 三和弦的完整通奏低音数字，以及和弦符号。
 
 如谱例 1 所示，原位三和弦在低音上方有三度和五度（标作“$\begin{smallmatrix}5\\3\end{smallmatrix}$”）。第一转位三和弦在低音上方有三度和六度（标作“$\begin{smallmatrix}6\\3\end{smallmatrix}$”），第二转位三和弦在低音上方有四度和六度（标作“$\begin{smallmatrix}6\\4\end{smallmatrix}$”）。在通奏低音中，较大的数字总是写在较小的数字上方。
@@ -35,6 +39,10 @@ modified: "2026-06-17"
 为了进一步节省时间（也节省纸面空间！），作曲家和音乐家把三和弦与七和弦的完整通奏低音数字加以简写。谱例 2 列出了我们今天通常使用的三和弦简写数字，以及相应的和弦符号：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839461)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839461 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839461/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 三和弦的简写通奏低音数字。
 
@@ -46,6 +54,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839462)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839462 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839462/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 几个带通奏低音数字的三和弦及其实现。
 
 如谱例 3 的第一小节所示，一个 E♭ 旁边没有任何通奏低音数字。因此我们可以认定，这里要实现的是原位 E♭ 大三和弦。这个和弦在下一小节被实现（用音符写出来）。在第 3 小节，低音 G 下方标有数字“<sup>6</sup>”。我们可以把这个标记理解为：在低音 G 上方实现六度和三度。这个和弦在下一小节实现（第一转位的 E♭ 大三和弦）。在第 5 小节，低音 B♭ 下方标有数字“$\begin{smallmatrix}6\\4\end{smallmatrix}$”。这个标记表示：在低音 B♭ 上方实现六度和四度。这个和弦在下一小节实现（第二转位的 E♭ 大三和弦）。
@@ -56,6 +68,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843780)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843780 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843780/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 七和弦的完整通奏低音数字，以及和弦符号。
 
 如谱例 4 的完整数字所示，原位七和弦在低音上方有三度、五度和七度。第一转位七和弦在低音上方有三度、五度和六度，第二转位七和弦在低音上方有三度、四度和六度。最后，第三转位七和弦在低音上方有二度、四度和六度。
@@ -64,6 +80,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843782/s/mesgHK)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843782/s/mesgHK -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843782/s/mesgHK/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 七和弦的简写数字。
 
 如谱例 5 所示，原位七和弦简写为上标数字“<sup>7</sup>”，而数字“$^6_5$”表示第一转位七和弦。第二转位七和弦用数字“$^4_3$”表示，数字“$^4_2$”则表示第三转位七和弦。有时在较老式的通奏低音记法中，第三转位七和弦只标一个上标“<sup>2</sup>”。
@@ -71,6 +91,10 @@ modified: "2026-06-17"
 实现转位七和弦的通奏低音，方式与实现三和弦类似。要实现一个转位七和弦，只需在低音上方写出所标的音程，同时记住完整数字通常已被简写。谱例 6 展示了几个七和弦的实现过程：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26579989)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26579989 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26579989/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 几个带通奏低音数字的七和弦及其实现。
 
@@ -82,11 +106,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6877976)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6877976 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6877976/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 带变音记号数字的实现。
 
 音乐家也会在数字上画斜线，或在数字前加正号，表示把该音升高半音。谱例 8 展示了这些符号及其实现：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6878013)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6878013 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6878013/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 带斜线和正号数字的实现。
 
@@ -94,11 +126,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6878023)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6878023 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6878023/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. 孤立变音记号的实现。
 
 通奏低音中还有一种常见的符号。横线表示给定低音上方之音发生变化，或和声发生变化。谱例 10 展示了几个带横线数字的实现：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26580793)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26580793 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26580793/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. 带横线数字的实现。
 
@@ -109,6 +149,10 @@ modified: "2026-06-17"
 罗马数字常与数字配合使用，以标示和弦转位和某些装饰音。例如，上标数字“<sup>6</sup>”可以与罗马数字“I”搭配，表示第一转位的主三和弦；而数字“$^4_3$”与罗马数字“V”搭配时，表示第二转位的属七和弦。不过，并非所有教师都在罗马数字旁使用数字，所以只有在教师明确要求时才这样做。谱例 11 展示了几个带数字的罗马数字的实现：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6869635)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6869635 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6869635/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 带数字的罗马数字的实现。
 

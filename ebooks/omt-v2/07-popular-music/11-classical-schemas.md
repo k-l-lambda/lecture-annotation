@@ -26,11 +26,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5826636)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5826636 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5826636/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. [恐怖海峡乐队，《Sultans of Swing》（1978）](https://open.spotify.com/track/37Tmv4NnfQeb0ZgUC4fOJj)
 
 谱例 2 展示了缪斯乐队（Muse）[《Thoughts of a Dying Atheist》](https://open.spotify.com/track/7LB6xhGZ0jCbP3PfUDA7yw)主歌的开头。要注意的是，*te* $(\downarrow\hat7)$ 由第二转位的 B♭ 大三和弦配置和声。可以把它理解为第二转位的 III 和弦，也可以像谱例中那样，理解为用两个上方辅助音装饰的 VII 和弦。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5825283)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5825283 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5825283/embed" title="MuseScore" loading="lazy" style="height: 555px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. [缪斯乐队，《Thoughts of a Dying Atheist》（2004）](https://open.spotify.com/track/7LB6xhGZ0jCbP3PfUDA7yw)
 
@@ -42,6 +50,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5825400)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5825400 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5825400/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. [水叮当乐队，《Barbie Girl》（1997）。](https://open.spotify.com/track/2RSOzvKUnfDDrb2nQPfpQU)
 
 缪斯乐队《Thoughts of a Dying Atheist》的主歌也包含一个四和弦的五度循环图式，紧接在上面讨论的哀悼图式之后。这一进行随即反复，回到最初的小调。不过在第二次经过时，这个哀悼–五度循环的模式引向了一个关系大调的副歌（把 III 和弦当作新的主音）。
@@ -51,6 +63,10 @@ modified: "2025-07-15"
 电台司令乐队（Radiohead）的《You and Whose Army?》（谱例 5）呈现了一个略为复杂的五度循环图式实例。这里得到的是该图式的半音化序列，其中每一对五度关系的和弦都在局部充当后一个和弦的副属 ii–V 进行，很像[爵士乐中的副属 ii–V 进行](../06-jazz/04-ii-v-i.md#chapter-2629-section-2)。与《Barbie Girl》一样，《You and Whose Army?》也是调性模糊的。五度循环图式推动音乐向前，却始终没有强有力地确认主音。E 大调和 C♯ 小调都是可行的解释，因此下面的分析把两者都给出了。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8520380)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8520380 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8520380/embed" title="MuseScore" loading="lazy" style="height: 730px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. [电台司令乐队，《You and Whose Army?》（2004）。](https://open.spotify.com/track/6UFvGJalSngqprmUJd59Eo)
 

@@ -54,6 +54,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514239)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514239 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514239/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. G 大调与 g 小调三和弦的罗马数字。
 
 如[三和弦](18-triads.md#triad-qualities-in-major-and-minor)一章所述，在小调中如果导音被升高，和弦的性质就会改变，罗马数字也随之改变：小 v 和弦变成大 V 和弦，下主音 VII 和弦变成减 vii<sup>o</sup> 和弦。这意味着小调中的罗马数字有时暗含升高的导音，所以请记住：在小调中看到 V 或 vii<sup>o</sup> 时，你用的就是升高的导音。
@@ -77,6 +81,10 @@ modified: "2026-06-17"
 谱例 6 列出了 G 大调和 g 小调音阶中的七和弦，同时用和弦符号和罗马数字（蓝色）加以标记。同样，这些调性作任何移调，罗马数字都不变。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514287)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514287 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514287/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 大调与小调中七和弦的罗马数字。
 
@@ -110,11 +118,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11765812)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11765812 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11765812/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. Louise Reichardt《Die Wiese》（1811）的罗马数字分析。
 
 谱例 8 是另一个罗马数字分析的例子。括号中的音是装饰音（不属于和声）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/19884595)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/19884595 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/19884595/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. Tommaso Giordani《Caro mio ben》（1785）的罗马数字分析。
 

@@ -29,17 +29,29 @@ modified: "2025-10-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11556457)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11556457 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11556457/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 移位不协和的说明。
 
 聆听谱例 2a 与 2b，人们很可能会默认把这些段落的开头听成 $\mathbf{^3_4}$ 小节中的第一拍，构成四小节的 $\mathbf{^3_4}$。在这两条线条所来自的真实乐曲——玛丽·雅埃尔（Marie Jaëll）的《即兴曲》（Impromptu）——中，这两条线条是同时出现的，但旋律相对低音线条错位，向前移动了一个八分音符（同样，移位指数为 +1♪）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11518048)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11518048 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11518048/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. [玛丽·雅埃尔《即兴曲》（1869；4:43）](https://open.spotify.com/track/1y1gtsKiOI5WwWzWDPWEAx?si=683e841d53454b61)中的移位不协和（+1♪）。
 
 谱例 3 提供了另一个例子，来自比尔·威瑟斯（Bill Withers）那首家喻户晓的「Lean on me」（1972）的[**B** 段](../07-popular-music/05-aaba-and-strophic-form.md#bridge)（1:45 与 2:36 处，对应歌词「you just call on me, brother, when you need a hand」）。这首歌的 **A** 段中，节拍与分组清晰明了，确立了听者的节拍期待。在 **B** 段，拍手声制造出强烈的移位不协和。[拍手声通常作为流行鼓点中军鼓的替代](../07-popular-music/02-drumbeats.md#non-snare-backbeats)，落在四拍子的第 2、4 拍上。但这里，拍手声落在每小节的第 2 与第 6 个八分音符上，暗示着一个提前了一个八分音符的反强拍（−1♪）。[^3] 这首歌的总体节拍也许从未陷入疑问，但这段落在节奏—节拍上的丰富性，可以用这些系统性的切分来理解：它们潜在地指向节拍的另类位移。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11556466)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11556466 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11556466/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. [比尔·威瑟斯「Lean on me」（2017；1:45）](https://open.spotify.com/track/3M8FzayQWtkvOhqMn2V4T2?si=ff01a693ebe24f80)中的移位不协和（−1♪）。方括号标出正文所讨论的位移。
 
@@ -49,11 +61,19 @@ modified: "2025-10-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11556445)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11556445 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11556445/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 分组不协和的说明。
 
 如谱例 4a 所示，2 层与 3 层的并置相当普遍，以至于有个专有名词：赫米奥拉（hemiola）。赫米奥拉是一种在西方早期艺术音乐中就已出现的分组不协和，例如格奥尔格·弗里德里希·亨德尔（G.F. Handel）《水上音乐》（*Water Music*）第 2 组曲第二乐章（《号角舞》，"Alla hornpipe"）中所示（谱例 5）。这类赫米奥拉在三拍子乐曲的重要终止处很常见：两小节三拍子（一个 3 层）可以改为理解成三组各两拍（一个 2 层）。这种不协和加剧了兴奋感，并强化了熟悉的终止和声进行所制造的那种张力与释放。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11517073)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11517073 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11517073/embed" title="MuseScore" loading="lazy" style="height: 560px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. [亨德尔《号角舞》（《水上音乐》第 2 组曲第二乐章；1733）](https://open.spotify.com/track/6Xq59xlhj1LzqfkU2BlPx3?si=de7ea945406e4c8a)中的赫米奥拉。第 9–10 小节表层节奏所暗示的 2 层（红色）与节拍的 3 层形成分组不协和。
 
@@ -64,6 +84,10 @@ modified: "2025-10-07"
 谱例 7 展示了卡尔文·哈里斯（Calvin Harris）「I'm Not Alone」（2009）中一段不完整的 3:4 分组不协和（十六分音符脉动）。这首歌总体上清晰的四拍子节拍，由四四拍的贝斯鼓和落在反强拍上的拍手声确立，但合成器与贝斯的即兴重复段从基于三个十六分音符的分组出发，制造出节拍不协和。注意，这个 3 层以一个长两个脉动的分组收尾，使得即兴重复段每隔一小节都落在强拍上。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11517730)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11517730 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11517730/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 合成器与贝斯中的 3 层与节拍和鼓点中的 4 层形成分组不协和，出自[卡尔文·哈里斯「I'm Not Alone」（2009；0:59）](https://open.spotify.com/track/07POri5O6Xu0aVZzlvOcpy?si=c2394022366c4ddf)。
 
@@ -78,6 +102,10 @@ modified: "2025-10-07"
 伊戈尔·斯特拉文斯基（Igor Stravinsky）——一个对节拍不协和和各种节奏上的惊喜尤为热衷的人——在《诗篇交响曲》（*Symphony of Psalms*）的「阿利路亚，赞美主」中用固定音型制造了分组不协和（谱例 9）。这段片段中低音声部由半音符构成，这些半音符本身与 $\mathbf{^3_2}$ 拍号并不冲突；但由四个音（E♭–B♭–F–B♭）构成的反复型式暗示着一个四拍的分组，与旋律和其他声部的三拍分组不吻合。请听两遍：第一遍，随着旋律[打](../01-fundamentals/10-simple-meter-and-time-signatures.md#conducting-patterns) $\mathbf{^3_2}$ 的指挥手势；第二遍，随着低音声部打 $\mathbf{^4_2}$。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11516206)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11516206 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11516206/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. 固定音型中的 4 层与其他声部中的 3 层形成分组不协和，出自[斯特拉文斯基《诗篇交响曲》「阿利路亚，赞美主」（6:37）](https://open.spotify.com/track/07BFov9J9WqEdXsaxwLymq?si=08297d6b9a1e4f32)。
 
@@ -97,6 +125,10 @@ modified: "2025-10-07"
 这种解读（你当然可以不同意）描述的是一个从（轻微的）张力走向释放的过程，这与这首摇篮曲的情绪完全吻合。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8897547)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8897547 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8897547/embed" title="MuseScore" loading="lazy" style="height: 1150px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. [勃拉姆斯「摇篮曲」（"Wiegenlied"，Op. 49，第 4 首）](https://open.spotify.com/track/6vS9gZwV3VAnboKW5mmiF1?si=8153871a0e51400e)中变化的节拍不协和。
 

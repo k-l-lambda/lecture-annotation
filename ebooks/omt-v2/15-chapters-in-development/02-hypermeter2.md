@@ -60,6 +60,10 @@ modified: "2026-01-31"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/27040801)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/27040801 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/27040801/embed" title="MuseScore" loading="lazy" style="height: 563px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. [《Diamonds》](https://open.spotify.com/track/1z9kQ14XBSN0r2v6fx4IdG?si=bba2ac977301403d)中的乐句在主歌（a，0:11）与副歌（b，0:51）中的节拍位置不同。
 
 ### 披头士《A Hard Day's Night》（1964）：超节拍重复

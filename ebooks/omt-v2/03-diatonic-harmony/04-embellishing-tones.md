@@ -24,6 +24,10 @@ modified: "2025-08-01"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6233992)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6233992 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6233992/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 玛丽亚·希曼诺夫斯卡《六首进行曲》第六进行曲中的装饰音（[0:00-0:16](https://open.spotify.com/track/1TUAHxfFiza4bVjpOFBOrM?si=5f616a08580b4d3d)）。
 
 ![谱例 2. 大多数装饰音常见的三音布局。](../media/2020/07/Generic_Embellishing_Tone_Layout.png)*谱例 2. 大多数装饰音常见的三音布局。*
@@ -41,9 +45,17 @@ modified: "2025-08-01"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234000)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234000 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234000/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 二声部织体中的经过音：(a) 上行；(b) 下行。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234003)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234003 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234003/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 二声部织体中的 (a) 上辅助音与 (b) 下辅助音。
 
@@ -53,17 +65,33 @@ modified: "2025-08-01"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234074)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234074 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234074/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 约瑟夫·布洛涅第四弦乐四重奏第一乐章第 5–9 小节中的一个倚音（[0:09-0:19](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=103ca4ed79484673)）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234078)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234078 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234078/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 玛格丽特·卡森《布谷鸟》中的一个逃逸音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234081)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234081 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234081/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 二声部织体中的倚音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234083)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234083 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234083/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 二声部织体中的逃逸音。
 
@@ -77,19 +105,35 @@ modified: "2025-08-01"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234088)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234088 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234088/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. 约瑟夫·布洛涅第四弦乐四重奏第一乐章第 47–49 小节中的延留音与一个倚留音（[1:30–1:36](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=224f011bf61f4cdd)）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234093)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234093 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234093/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 二声部织体中的 (a) 延留音与 (b) 倚留音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234090)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6234090 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234090/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 约瑟芬·朗（Josephine Lang）《致国王之子》（“Dem Königs-Sohn”）第 16–18 小节中的踏板音。
 
 与延留音、倚留音和踏板音一样，先现音也涉及静止音。但先现音是两音（而非三音）音型，其中一个和弦音提前以和弦外音的形式出现（谱例 12）。换言之，它“预先呈现”了自己随后将加入的和弦。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23270794)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23270794 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23270794/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 12. 约瑟芬·朗《回忆》（“Erinnerung”）第 29–30 小节中的一个先现音（[1:54–1:59](https://open.spotify.com/track/7KZZNqiUr7Uc3JlSH9rMyU?si=77cfde3110a343b6)）。
 

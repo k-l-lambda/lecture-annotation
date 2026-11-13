@@ -75,9 +75,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8414264)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8414264 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8414264/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 弗雷德里克·肖邦 A 大调波罗乃兹 Op. 40 第 1 首
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26265205)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26265205 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26265205/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 乔治·弗里德里希·亨德尔《耶弗他》（*Jephtha*）中的"Waft Her Angels"
 

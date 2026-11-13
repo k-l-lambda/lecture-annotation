@@ -31,6 +31,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719601)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5719601 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719601/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 当一个进行具有五度的根音进行时，可以把第一个和弦的性质改为属七，使其转变为副 V<sup>7</sup>。
 
 ## 调式混合
@@ -39,11 +43,19 @@ Cole Porter 的「All of You」是一首把调式混合内建于其中的作品�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719610)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5719610 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719610/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. Cole Porter 的「All of You」尽管主调是大调，却使用了一个小 iv 和弦（Fmi）和一个半减 ii 和弦（D<sup>∅7</sup>）。
 
 许多歌曲，如「All of You」，把混合内建于其和弦结构中。但混合和弦也可以用作即兴替换：自然音阶和弦进行中的一个和弦可以用它的同主音小调变体来替换，产生一种色彩变化，而不改变该和弦的整体功能。当被变化的音阶级数是*la* $(\hat6)$、因而被转化为*le* $(\downarrow\hat6)$ 时，混合替换效果最好。以谱例 3 的回转为例：可以不采用自然音阶版本，而是选择加入*le*$(\downarrow\hat6)$，以生成一些色彩更丰富的和声。这些特定的替换——把 ii<sup>7</sup> 变为 ii<sup>∅7</sup>，把 G<sup>7</sup> 变为 G<sup>7♭9</sup>——正是爵士中调式混合特别常见的用法。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5721622)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5721622 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5721622/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 当混合和弦涉及 $\mathit{\downarrow\hat6}$ 时最为有效。同一个和弦的混合版本与自然音阶版本具有相同的功能。
 
@@ -67,6 +79,10 @@ Cole Porter 的「All of You」是一首把调式混合内建于其中的作品�
 - 最常见的是每隔一个和弦用三全音替换，产生一条半音低音线和平滑的声部进行，如下面一行的配和声版本。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5721771)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5721771 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5721771/embed" title="MuseScore" loading="lazy" style="height: 1180px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 由于三全音替换可以取代任何副属和弦，在回转这样五度进行的进行中，可以先把和弦（在概念上）替换为它们的副和弦变体，再用三全音替换来制造一条半音低音线。
 

@@ -29,6 +29,10 @@ modified: "2026-04-06"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/25136911)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/25136911 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/25136911/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 嘟·沃普图式（左），以及用 ii 替换 IV 的常见变体（右）。
 
 这个循环性和弦进行式的名称来自它在 20 世纪 50 年代和 60 年代初摇滚抒情歌曲中的常见用法，例如[吉恩·钱德勒（Gene Chandler）的《Duke of Earl》](https://open.spotify.com/track/6Hy22YDN9HJMRlJP1LwnJy?si=fv7w9yseRUe2hs8V0dHRDQ)（1962）。不过，此后它一直频繁被使用：例子包括[丽贝卡·布莱克（Rebecca Black）的《Friday》](https://open.spotify.com/track/4fK6E2UywZTJIa5kWnCD6x?si=5FDAmsoETiO6ZQzg4CWYBg)（2011）的主歌与副歌，以及[邦妮·泰勒（Bonnie Tyler）的《Total Eclipse of the Heart》](https://open.spotify.com/track/5prTs2HAw2G4idHZyeFp8o?si=3SEREINnQcafYPKou2UheQ)（1983）的副歌（从 0:49 开始）。
@@ -43,6 +47,10 @@ modified: "2026-04-06"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769536)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5769536 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769536/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 酷玩乐队《Viva la Vida》中轮转的嘟·沃普进行。
 
 ## 唱作人 {#singer-songwriter}
@@ -50,6 +58,10 @@ modified: "2026-04-06"
 唱作人图式也许是所有四和弦图式中最有名的一种。这一图式常见的罗马数字分析是 **vi–IV–I–V**，在 C 大调中即 **Ami–F–C–G**，但以 I 开始的轮转也极为常见。此外，两种轮转都可以理解为主调是大调主音，也可以是关系小调主音。这一点通过谱例 3 最容易理解。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769538)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5769538 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769538/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 唱作人图式的两种常见轮转。
 
@@ -60,6 +72,10 @@ modified: "2026-04-06"
 这个进行的一个重要特点是，它本身并不能清楚地表明一个确定的主和弦。这种性质称为调性模糊（tonal ambiguity）。一个例子是[路易斯·冯西（Luis Fonsi）和洋基老爹（Daddy Yankee）的《Despacito》](https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A)（2017）。其和弦进行 Bmi–G–D–A，在不同的听者听来可能是 D 大调的 vi–IV–I–V，也可能是 B 小调的 i–VI–III–VII（谱例 4）。唱作人图式之所以模糊，一个原因在于其中没有正格终止：两个可能的终止性进行要么是变格的（IV–I），要么是级进的（VII–i）。没有强有力的和声终止式，听者也许只能依靠唱作人图式之前和之后的进行、循环中从哪个和弦开始和结束，以及旋律中的重要音高，来判断主和弦——如果判断得出来的话。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5810723)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5810723 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5810723/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 由于使用了调性模糊的唱作人图式，D 大调和 B 小调都可能是《[Despacito](https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A)》的主和弦。
 
@@ -93,6 +109,10 @@ modified: "2026-04-06"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769529)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5769529 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769529/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 跳房子图式，附“级进–级进–跳进”模式的标注。
 
 ### 小调中以 V 替换 VII
@@ -100,6 +120,10 @@ modified: "2026-04-06"
 一种特别常见的和声替换是把下主音 VII 和弦换成大三和弦 V，从而使 VI–VII–i–III 变成 VI–V–i–III，这种替换会促使听者把小调式的跳房子图式听成小调。这样做的歌曲之一是 [BLACKPINK 的《Love to Hate Me》](https://open.spotify.com/track/340UVheS8z3ncW9TTUhAbc?si=fWr9GnzZRT6MCfOvdkY68Q)（2020）。虽然这两个和弦的和声功能相同，它们的色彩却相当不同，因为小调中的大三和弦 V 使用 *ti*$(\hat7)$，而 VII 使用 *te*$(\downarrow\hat7)$。有些歌曲，如 [YNW Melly 的《Mixed Personalities》](https://open.spotify.com/track/6vWEAOUSxohKxhp0K1BsxL?si=HjEjPdv3QHyQPSagg1l1uA)，把这个 V 和弦转位，使跳房子图式的低音进行（级进–级进–跳进）保持不变，尽管根音进行已经改变（谱例 7）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769537)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5769537 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769537/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 以 V 替换 VII 的跳房子图式，即 VII 的 G 被 V 和弦的 G♯ 取代。
 
@@ -109,6 +133,10 @@ modified: "2026-04-06"
 
  
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769540)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5769540 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769540/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 每种图式都从不同的和弦接近大调主音。
 

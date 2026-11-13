@@ -28,6 +28,10 @@ modified: "2026-09-28"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26074258)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26074258 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26074258/embed" title="MuseScore" loading="lazy" style="height: 1100px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 音乐剧《吉普赛》（*Gypsy*）中《Some People》里的两个模进[(0:03–0:19)](https://open.spotify.com/track/3rgKm0aEds2t98kPP2Zzr2?si=087e6c8166f54d27)
 
 分析模进时，最困难的任务之一大概就是确定模型及其副本在哪里。初学分析的人常常把太短的东西认作某个模式的模型。记住模型通常应当包含不止一个和弦——往往是两个和弦——会有所帮助。谱例 2 说明了原因。谱例 2a 显示的模式只由圆形构成，而谱例 2b 显示的模式则是圆形与方形交替。在 2b 中，很容易辨认出被重复的是什么模式（圆–方）。在 2a 中则不清楚：每次都重复两个圆吗？三个？还是都算？模型到底是什么？
@@ -46,6 +50,10 @@ modified: "2026-09-28"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26074177)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26074177 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26074177/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. Isaac Albéniz《加泰罗尼亚》（*Catalonia*）中的下行五度模进，排练号 34–36。[(6:56–7:00)](https://youtu.be/DsQD95SKtck?si=TWrasoUcdqBCZcZ5)
 
 <!-- video-begin: https://youtu.be/DsQD95SKtck?si=TWrasoUcdqBCZcZ5 -->
@@ -58,6 +66,10 @@ modified: "2026-09-28"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/38246030)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/38246030 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/38246030/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. Amanda Maier《小提琴小品六首》第 6 首中的下行三度模进，第 162–169 小节。[(2:48–3:01)](https://open.spotify.com/track/63l8wCCALTXkA33W91NOd6?si=16c2d1a17c044969)
 
 ## 上行模进
@@ -67,6 +79,10 @@ modified: "2026-09-28"
 上行 5–6 模进模仿一个两和弦的模式，其方式是用所谓的“5–6 手法”（5–6 technique）在上方某一声部延长单个和弦。这里的 5–6 来自通奏低音，意思很简单：在低音上方五度的声部进行到低音上方六度。谱例 5 展示了一个上行 5–6 模进，谱例 8c 则展示了该模进的和声缩谱，突出了女高音声部中的 5–6 运动。注意在谱例 5 中，当 5 度进行到 6 度时，我们*可以*决定标出一个新的和弦。尽管我们倾向于少用罗马数字，但也给出了另一种分析，把每一个可能的纵向和音都标出来。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26074285)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26074285 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26074285/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. Antonio Vivaldi《小提琴协奏曲》Op. 8 第 4 号第二乐章中的上行 5–6 模进，第 11–13 小节。[(1:15–1:36)](https://open.spotify.com/track/4LTGZ03qAt7ZQ1Pqk97vgZ?si=769029400785426b)
 
@@ -86,13 +102,25 @@ modified: "2026-09-28"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26074351)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26074351 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26074351/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 写作下行五度模进。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26074324)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26074324 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26074324/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 写作下行三度模进。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26074309)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26074309 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26074309/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 写作上行 5–6 模进。
 

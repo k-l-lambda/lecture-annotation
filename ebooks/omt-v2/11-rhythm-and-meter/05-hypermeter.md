@@ -25,11 +25,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8422604)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8422604 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422604/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 贝多芬第九交响曲第四乐章开头四小节的超节拍，出自[「其他节奏基础」](../01-fundamentals/12-other-rhythmic-essentials.md)一章。
 
 现在，谱例 2 显示后面那个「ritmo de tre battute」段落（从第 152 小节起），并附有可比的「超节拍计数」以及（编辑所加的）双纵线，以显示每一组三个小节。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8891598)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8891598 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8891598/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 自第 152 小节起的三小节超节拍：「ritmo de tre battute」。
 
@@ -38,6 +46,10 @@ modified: "2025-07-15"
 最后，为了便于比较，谱例 3 把同一「ritmo de tre battute」段落明确改写为 $\mathbf{^9_4}$，从而把两个以三为组的节拍层级都放进记谱节拍之内。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11018989)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11018989 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11018989/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 谱例 2 中的三小节超节拍，改写为 $\mathit{^9_4}$。
 
@@ -60,6 +72,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11019235)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11019235 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11019235/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 贝多芬 Op. 111 中的三组以三为组（实际上就是 27！）。
 
 ## 合理的限度与节拍心理学
@@ -71,6 +87,10 @@ modified: "2025-07-15"
 读到这里的作曲家、理论家，尤其是作曲家兼理论家，也许会想到那些极端的例子。尽管节拍与曲式之间有着心理学上的界限，结构上的极限——*ne plus ultra*——又在哪里？换句话说，我们能把多少层以三为组叠在一起？Mark Gotham 的《谢尔宾斯基三角形》（“Sierpiński’s Triangle”，谱例 5）就是这样一部作品：从单个音一直到最高的曲式单位，每一个结构层级都以三成组。标题「谢尔宾斯基三角形」指的是一个三角形分形图案，它有着某种相同的结构。这部音乐作品是题名为《镶嵌》（*Tesselations*）的一组作品的第一乐章。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/8641586/scores/8920656)
+
+<!-- embed-begin: https://musescore.com/user/8641586/scores/8920656 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/8641586/scores/8920656/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 以三为组、层层到底（节拍与曲式皆然），作为 Mark Gotham《谢尔宾斯基三角形》的作曲方案（[下载总谱](https://imslp.org/wiki/Tessellations_(Gotham%2C_Mark))）。
 

@@ -33,6 +33,10 @@ modified: "2026-08-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225476)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225476 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225476/embed" title="MuseScore" loading="lazy" style="height: 781px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 一种和声省略：预期的和弦被抑制，代之以根音相同的属七和弦。
 
 ### 带全减七和弦的导音省略
@@ -41,11 +45,19 @@ modified: "2026-08-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225477)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225477 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225477/embed" title="MuseScore" loading="lazy" style="height: 297px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 功能等同的 V<sup>7</sup> 与 vii<sup>o7</sup> 和弦。
 
 谱例 3 含有一个这类导音省略的例子。注意谱例 1 与谱例 3 几乎完全相同，只是谱例 3 改用功能等同的全减七和弦（用 vii<sup>o7</sup> 而非 $\mathrm{V^6_5}$）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225479)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225479 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225479/embed" title="MuseScore" loading="lazy" style="height: 783px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 一种和声省略：预期的和弦被抑制，代之以与谱例 1 中属七和弦功能等同的全减七和弦。
 
@@ -55,6 +67,10 @@ modified: "2026-08-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225480)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225480 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225480/embed" title="MuseScore" loading="lazy" style="height: 853px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 常规解决与被省略解决的声部进行比较。
 
 ### 当导音位于低音时
@@ -62,6 +78,10 @@ modified: "2026-08-07"
 重要的是要记住，如果导音省略之前的导音位于低音，这就意味着低音会改变，使即将到来的和弦处于不同的转位。对于 V6、V65 和 viio7（以及罗马数字相同的任何副属和弦）来说，这是预料之中的，因为它们的低音都是导音。这种情况的常见进行是 $\mathrm{V^6_5-V^4_2/IV}$ 和 $\mathrm{V^6_5/V-V^4_2}$，如下面谱例 5 所示。在其他情况下，低音保持不变。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225481)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225481 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225481/embed" title="MuseScore" loading="lazy" style="height: 910px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 当导音位于低音并发生导音省略时，预期低音的改变。
 
@@ -71,6 +91,10 @@ modified: "2026-08-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225482)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225482 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225482/embed" title="MuseScore" loading="lazy" style="height: 781px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 根音升高式省略。
 
 ### $\mathrm{cad.^6_4}$ 版本
@@ -78,6 +102,10 @@ modified: "2026-08-07"
 含 $\mathrm{cad.^6_4}$ 的进行可以包含一种略有不同的根音升高式省略，因为预期中的根音确实随着 $\mathrm{cad.^6_4}$ 的到来而出现，但当 $^6_4$ 解决到 $\begin{smallmatrix}(7)\\5\\3\end{smallmatrix}$ 时，它却变成升高后的版本。谱例 7 说明了这种情况。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6225483)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6225483 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6225483/embed" title="MuseScore" loading="lazy" style="height: 784px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 涉及 $\mathit{cad.^6_4}$ 的根音升高式省略。
 
@@ -98,6 +126,10 @@ modified: "2026-08-07"
 第 9 小节再次重复这个准 $\mathrm{cad.^6_4}$ 和弦。这一次，它解决到一个以 C 为根音的和弦，但它仍然不是我们预期的原位主三和弦。相反，我们看到的是一处导音省略：属和弦的导音下行解决，使这个 C 和弦成为属七和弦（V<sup>7</sup>/IV）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8395434)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8395434 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395434/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 理查德·施特劳斯，["Zueignung"](https://open.spotify.com/track/7JrhfQSYMLDInj8x2X4IkF)，Op. 10 第 1 首，第 1–10 小节——单个乐句中的多处和声省略。
 

@@ -51,6 +51,10 @@ Maria Hester Park 作于 1796 年的 C 大调奏鸣曲 Op. 7 的末乐章，是�
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8404601)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8404601 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8404601/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 贝多芬（Ludwig van Beethoven），c 小调钢琴奏鸣曲 Op. 13，第 3 乐章——[点击查看乐谱（PDF）](https://viva.pressbooks.pub/app/uploads/sites/12/2022/07/pathetique2.pdf)
 
 ##### **A** 段（叠句）

@@ -101,6 +101,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8412926)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8412926 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8412926/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 🔊 [Mozart\_Sonata\_K\_310\_i.mp3](../media/2019/09/Mozart_Sonata_K_310_i.mp3)
 
 谱例 6. 莫扎特 a 小调钢琴奏鸣曲 K. 310 第一乐章。[点击查看 PDF 乐谱。](https://viva.pressbooks.pub/app/uploads/sites/12/2019/09/Mozart_KV_310.pdf)

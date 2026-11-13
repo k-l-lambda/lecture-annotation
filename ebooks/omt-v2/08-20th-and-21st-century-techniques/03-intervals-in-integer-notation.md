@@ -24,6 +24,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5706820)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5706820 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5706820/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 尽管 B♭ 和 A♯ 在键盘上是同一个键，小三度与增二度这两个音程在调性理论中是不同的。
 
 与之对照的是无调性音乐。由于无调性音乐没有调性，B♭ 与 A♯ 之间的区别不再重要。在这个语境中，音程 G–B♭ 与 G–A♯ *是*相同的。因此，我们将不使用“小三度”之类的调性音程名称，而是按音高或音级之间的半音数来计量音程。

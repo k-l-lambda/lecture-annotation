@@ -25,6 +25,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245135)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6245135 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245135/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 莫扎特《安魂曲》（*Requiem*）中《羔羊经》使用 vii<sup>o7</sup> 与 V<sup>7</sup> 的对比（[0:06–0:20](https://open.spotify.com/track/4HwQUYEHODAq2nr6ea2O7s?si=8D2dTz-0Svaw9BodLggqRg)）。
 
 在讨论这种替代如何起作用之前，有三点需要强调：
@@ -34,6 +38,10 @@ modified: "2025-07-15"
 3. 在大调中，导音七和弦如果不加改动，性质是半减七和弦（例如 C 大调中：B-D-F-A）。不过作曲家往往更偏爱全减七和弦的音响，所以我们几乎总是看到，大调中作曲家把和弦七音降低，使和弦成为全减七和弦（例如 C 大调中：B-D-F-A♭）（谱例 2）。两种都可以用，但 vii<sup>o7</sup> 比 vii<sup>∅7</sup> 常见得多，原因我们下面会看到。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245147)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6245147 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245147/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 导音七和弦不同性质的比较。
 
@@ -62,6 +70,10 @@ $\mathrm{vii^{o7}}$ 的几乎所有转位（外加 $\mathrm{vii^{o6}}$）都能�
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245159)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6245159 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245159/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 用 $\mathit{vii^{o6}}$、$\mathit{vii^{o7}}$ 及其转位写作。
 
 ## vii<sup>o</sup>4/2
@@ -70,6 +82,10 @@ $\mathrm{vii^{o7}}$ 的几乎所有转位（外加 $\mathrm{vii^{o6}}$）都能�
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245161)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6245161 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245161/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 使用 $\mathit{vii^{o}\begin{smallmatrix}4\\2\end{smallmatrix}}$。
 
 ## 把导音和弦用作半减七和弦
@@ -77,6 +93,10 @@ $\mathrm{vii^{o7}}$ 的几乎所有转位（外加 $\mathrm{vii^{o6}}$）都能�
 vii<sup>∅7</sup> 会带来 vii<sup>o7</sup> 所没有的声部进行难题，因为 *re* $(\hat{2})$ 与 *la* $(\hat{6})$ 之间是纯五度。这也许是作曲家偏爱 vii<sup>o7</sup> 而非 vii<sup>∅7</sup> 的另一个原因：用 ∅7 时，要当心平行五度，如谱例 7。避免平行五度的一个简便办法是，使用 vii<sup>∅7</sup> 或其转位时，始终确保 *re* $(\hat{2})$ 处于 *la* $(\hat{6})$ 之上。唯一无法照此办理的情况是 $\mathrm{vii^{∅}\begin{smallmatrix}6\\5\end{smallmatrix}}$，其中 *re* $(\hat{2})$ 在低音。虽然用 $\mathrm{vii^{∅}\begin{smallmatrix}6\\5\end{smallmatrix}}$ 也能避免平行进行，但我们建议干脆改用 $\mathrm{vii^{o}\begin{smallmatrix}6\\5\end{smallmatrix}}$ 或扩展 I<sup>6</sup>（如下文所示）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245166)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6245166 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245166/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 使用 $\mathit{vii^{∅7}}$ 及其转位。
 

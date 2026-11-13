@@ -38,6 +38,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/403299860346169)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/403299860346169 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/403299860346169/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [全三音组音列](https://musescore.com/user/30425053/scores/6793408/s/CovNzk)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
 既然所有标准音列都包含全部十二个音，而包含全部十一种音程的「全音程」音列也为人熟知、相当常见，那么你可以把全三音组音列看作这些熟悉属性的逻辑延伸。它们确实有用，因为用十二音作曲的目标就是追求最大的变化。
@@ -342,6 +346,10 @@ g,8^\markup "snap pizz."\!->\f r r4 r2 | %16
 总而言之，下面是本作品的一种实现。我们以自由的幻想曲开头（现在简称为「独奏」），接着是赋格段与无穷动，最后以一个更接近开头那种放松精神的短小段落收束。同样，每一步都有广泛的选择余地，从选择「自由」还是「严格」的做法，到实践中的具体实现。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/8641586/scores/6803044)
+
+<!-- embed-begin: https://musescore.com/user/8641586/scores/6803044 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/8641586/scores/6803044/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 [4x4x4x4](https://musescore.com/user/8641586/scores/6803044/s/O60h3c)，作者 [Mark.Gotham](https://musescore.com/user/8641586)
 

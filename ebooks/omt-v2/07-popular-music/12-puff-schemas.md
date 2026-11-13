@@ -58,6 +58,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6837912)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6837912 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6837912/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. I–III♯–IV 中的半音线。
 
 ## III♯–IV 作为阻碍进行

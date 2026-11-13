@@ -25,6 +25,10 @@ modified: "2025-07-15"
 *[Liber primus epigramatum](https://imslp.org/wiki/Liber_primus_epigramatum_(Lusitano%2C_Vicente))*[（点击此处查看 IMSLP 上的原始资料）](https://imslp.org/wiki/Liber_primus_epigramatum_(Lusitano%2C_Vicente))**。[^1]**
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8877717)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8877717 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8877717/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [Ave Spes Nostra](https://musescore.com/user/32728834/scores/8877717/s/bMJajn)，作者 [openmusictheory](https://musescore.com/user/32728834)
 
 在这段开头的段落中，一个为“Ave spes nostra”谱曲的“模仿点”（point of imitation）在全部五个声部出现。模仿是精确的，只有少量变化。第一个进入的声部从 F 开始，下行到 C，然后它把歌词重复了一遍，这次从 C 开始，以相似的旋律下行到 F，并在末尾多添一个音。其他声部要么模仿这一图样（F–C，然后 C–F），要么把这一对颠倒过来（C–F，然后 F–C）。

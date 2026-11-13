@@ -50,6 +50,10 @@ Lavengood（2020）补充了第五层：
 
 🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/auralayer/auralayer.html?load=v_0_0/demos/vulfpeck&iframe=true)
 
+<!-- embed-begin: https://brianedwardjarvis.com/auralayer/auralayer.html?load=v_0_0/demos/vulfpeck&iframe=true -->
+<div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/auralayer/auralayer.html?load=v_0_0/demos/vulfpeck&amp;iframe=true" title="Brian Jarvis" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. Vulfpeck“3 on E”（2020）中乐器的分层图。颜色对应乐器的功能层：新奇层（黄色）、旋律层（红色）、和声填充层（绿色）、功能低音层（蓝色）和显性节拍层（紫色）。
 
 🎧 [Spotify：3 on E](https://open.spotify.com/track/69rFDYwypeey2F9cDEL3da)
@@ -65,6 +69,10 @@ Lavengood（2020）补充了第五层：
 与显性节拍层一样，功能低音层是歌曲律动的重要组成部分，并构成音轨基础的一部分。注意在[上文](#3-on-e)的谱例 2 中，功能低音层（以蓝色表示）也像显性节拍层一样几乎贯穿全曲。与显性节拍层不同的是，功能低音层还承担着重要的音区与调性作用：提供低音频率，并界定歌曲的和声语境。在绝大多数流行歌曲中，功能低音层通过在每次换和弦的第 1 拍上演奏和弦根音，同时承担这两种作用（谱例 3）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/13130983)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/13130983 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/13130983/embed" title="MuseScore" loading="lazy" style="height: 540px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 在“[3 on E](https://open.spotify.com/track/69rFDYwypeey2F9cDEL3da?si=98fe203c3abc4bfe)”中，作为功能低音层的电贝斯既为律动提供了重要的节奏，又使和声清晰。经许可使用。
 

@@ -23,6 +23,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6238932)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6238932 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6238932/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 约瑟夫·布洛涅第四弦乐四重奏第一乐章第 45–47 小节中的 $cad.\mathit{^6_4}$（[1:26–1:30](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=c2d202263ec948bf)）。
 
 > **关于 $^6_4$ 和弦的说明。**
@@ -48,6 +52,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6239193)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6239193 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6239193/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 拼写 $cad.\mathit{^6_4}$。
 
 ### 终止四六和弦的声部进行
@@ -59,6 +67,10 @@ modified: "2025-07-15"
 加上七音同样直截了当：重复低音的那个声部向下级进，取得和弦的七音。这一运动由数字 8-7 表示（低音上方的八度下落到低音上方的七度）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6239528)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6239528 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6239528/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 解决 $cad.\mathit{^6_4}$。
 
@@ -72,6 +84,10 @@ modified: "2025-07-15"
 2. 进入（和离开）$\mathrm{cad.}^6_4$ 通常非常平滑。避免跳进到 $\mathrm{cad.}^6_4$ 的成员音。作曲家偶尔会跳进到低音上方的六度，但跳进到低音上方的四度相对罕见得多，因为它是不协和音，所以尤其应当避免。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6239535)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6239535 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6239535/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 进入 $cad.\mathit{^6_4}$。
 

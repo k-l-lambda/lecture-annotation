@@ -35,6 +35,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/184326268247666)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/184326268247666 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/184326268247666/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. [调性音列](https://musescore.com/user/30425053/scores/6667144/s/qzsint)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
 说到「调性序列主义」，调性的外在装饰并不限于音高：作曲家在其它参数上的做法同样重要。人们常指出（通常带批评意味），勋伯格早期的序列作品也许在音高领域使用了十二音技法，却仍采用调性的曲式、节奏和圆舞曲之类的体裁语汇。

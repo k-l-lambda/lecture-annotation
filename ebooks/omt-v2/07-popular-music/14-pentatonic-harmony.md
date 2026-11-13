@@ -31,6 +31,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5863931)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5863931 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5863931/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 五声音阶。
 
 ## “音阶级数冲突”，又称“交叉关系”
@@ -47,6 +51,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5863947)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5863947 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5863947/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 由五声音阶两种不同轮转衍生出的五声和声。
 
 ## 通过平行三和弦造成的“音阶级数”/“交叉关系”冲突
@@ -56,6 +64,10 @@ modified: "2025-07-15"
 谱例 3 展示了史蒂维·旺德（Stevie Wonder）[《Higher Ground》](https://open.spotify.com/track/0dMd4rilfd6gPbXaLpNYhu?si=4fcd67b593f347e0)（1973）的一个片段，其中贯穿性的和声循环可以理解为由五声音阶衍生而来。要注意，虽然第一个*和弦性质*有些模糊（至少可以说它基于平行大三和弦，无论是否附加额外音），低音却是完全清楚的。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5863978)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5863978 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5863978/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 史蒂维·旺德，《Higher Ground》（1973）。
 
@@ -97,6 +109,10 @@ modified: "2025-07-15"
 - *la* 与 *le* $(\hat6, \downarrow\hat6)$（以紫色标出）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11513893)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11513893 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11513893/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 《Hey Joe》的和弦进行，例如[吉米·亨德里克斯（1966）](https://open.spotify.com/track/0NWPxcsf5vdjdiFUI8NgkP)所录制的版本。
 

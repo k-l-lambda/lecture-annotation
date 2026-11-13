@@ -26,11 +26,19 @@ modified: "2025-07-15"
 
 🖥 [互动记谱（Brian Jarvis）](https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_14_42_259_3815j&iframe=true)
 
+<!-- embed-begin: https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_14_42_259_3815j&iframe=true -->
+<div class="omt-embed omt-embed-interactive"><iframe src="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_2/2023_8_2_14_42_259_3815j&amp;iframe=true" title="Brian Jarvis" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. Chuck Berry“School Day (Ring Ring Goes the Bell)”（1957）。
 
 虽然“School Day”完全由分节歌段构成，但需要注意的是，分节歌歌曲也可以包含所谓辅助段落，如前奏、尾奏和尾声。带辅助段落的分节歌歌曲，一个例子是 Patsy Cline 的“Faded Love”。听这首歌时请对照谱例 2 中的曲式图，注意前奏、尾奏和间奏并没有显著改变基本的分节歌形式。
 
 🖥 [互动记谱（Brian Jarvis）](https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_15_8_395_4vvwj&iframe=true)
+
+<!-- embed-begin: https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_15_8_395_4vvwj&iframe=true -->
+<div class="omt-embed omt-embed-interactive"><iframe src="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_2/2023_8_2_15_8_395_4vvwj&amp;iframe=true" title="Brian Jarvis" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. Patsy Cline“Faded Love”（1963）。
 
@@ -45,6 +53,10 @@ modified: "2025-07-15"
 例如，请听 the Beatles 的“I Want to Hold Your Hand”（谱例 3）。在一段简短的前奏之后，歌曲以两个分节歌段开始。然而，“Blue Suede Shoes”在此之后接的是器乐分节歌段，而 the Beatles 则在 0:52 进入桥段。这个新段落通过对比并暂时扣住主要的分节歌主题来积聚张力，直到该主题在 1:11 回归。注意，这首歌以分节歌段开始和结束，而分节歌段包含标题歌词。对很多人来说，它也是歌曲中更令人难忘的部分。因此，分节歌段仍然是主要段落。但现在它多了一个增添趣味与张力的次要段落，即桥段（还有一个辅助段落，即前奏，帮助歌曲起步）。
 
 🖥 [互动记谱（Brian Jarvis）](https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_15_21_488_tbk1e&iframe=true)
+
+<!-- embed-begin: https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_15_21_488_tbk1e&iframe=true -->
+<div class="omt-embed omt-embed-interactive"><iframe src="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_2/2023_8_2_15_21_488_tbk1e&amp;iframe=true" title="Brian Jarvis" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. The Beatles“I Want to Hold Your Hand”（1963）。
 

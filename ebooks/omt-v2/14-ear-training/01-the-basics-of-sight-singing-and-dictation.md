@@ -75,6 +75,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455859)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8455859 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455859/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 谱例 2 的斜线记谱与五线谱记谱。
 
 进行节奏听写时挥拍或打拍子也很有帮助。打拍子能让你听出一个音是否落在拍上——或者某一拍上是否有休止。挥拍则能帮助你判断哪些拍上有发声、延续和休止。
@@ -97,6 +101,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455769)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8455769 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455769/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 谱例 5–6 的五线谱记谱。
 
 进行旋律听写时挥拍或打拍子也很有帮助，原因与节奏听写时相同。
@@ -106,6 +114,10 @@ modified: "2026-06-17"
 原记谱法（protonotation）是一种基本记谱系统，出自 Gary Karpinski 的《练耳与视唱手册》（*Manual for Ear Training and Sight Singing*）。[^1] 这一系统也可以用来进行节奏听写和旋律听写，许多学生觉得它非常有帮助。谱例 8 展示了一条分别用原记谱法和五线谱记谱写出的旋律：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455748)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8455748 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455748/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 用原记谱法和五线谱记谱写出的旋律。
 
@@ -148,11 +160,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455691)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8455691 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455691/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 12. 一条原记谱法旋律的两种不同写法。
 
 谱例 13 展示了一条原记谱法旋律，它被写成三种不同的谱号、复拍子和调号。第一种写法用高音谱号，E♭ 大调，拍号下方的数字是 4。第二种写法用次中音谱号，C♯ 大调（与所给的调号不同），拍号下方的数字是 8。第三种写法用低音谱号，F 大调，拍号下方的数字是 1。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455655)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8455655 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455655/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 13. 一条原记谱法旋律的三种不同写法。
 

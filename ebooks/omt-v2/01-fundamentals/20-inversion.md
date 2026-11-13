@@ -22,6 +22,10 @@ modified: "2026-06-22"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839459)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839459 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839459/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 处于原位、第一转位和第二转位的 A 大三和弦。
 
 A 大三和弦由三个音构成：根音（A）、三音（C♯）和五音（E）。当三和弦按三度叠置（即"雪人形态"）时，我们说这个三和弦处于原位。原位的低音就是根音。根音不在低音的和弦称为转位和弦。如谱例 1 所示，当三音位于低音时，和弦处于第一转位；当五音位于低音时，我们说和弦处于第二转位。和弦符号后面跟一条斜线和一个字母名称，表示位于低音的音级。
@@ -89,6 +93,10 @@ A 大三和弦由三个音构成：根音（A）、三音（C♯）和五音（E
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839468)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839468 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839468/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 一个转位三和弦（第 1 小节）和原位三和弦（第 2 小节）。
 
 对第 1 小节中三和弦的四步识别过程如下：
@@ -101,6 +109,10 @@ A 大三和弦由三个音构成：根音（A）、三音（C♯）和五音（E
 谱例 5 展示了另一个转位三和弦（第 1 小节）和原位三和弦（第 2 小节）：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6876514)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6876514 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6876514/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 一个转位三和弦（第 1 小节）和原位三和弦（第 2 小节）。
 
@@ -118,6 +130,10 @@ A 大三和弦由三个音构成：根音（A）、三音（C♯）和五音（E
 与三和弦一样，七和弦也可以转位；换言之，它的根音不一定必须是低音。谱例 6 展示了一个 A<sup>7</sup> 和弦的原位、第一转位、第二转位和第三转位：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843779)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843779 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843779/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 七和弦的转位。
 
@@ -180,6 +196,10 @@ A 大三和弦由三个音构成：根音（A）、三音（C♯）和五音（E
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843787)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843787 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843787/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. 一个转位七和弦（第 1 小节）和原位七和弦（第 2 小节）。
 
 对第 1 小节中七和弦的五步识别过程如下：
@@ -193,6 +213,10 @@ A 大三和弦由三个音构成：根音（A）、三音（C♯）和五音（E
 谱例 10 展示了另一个转位七和弦及其识别过程：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6876617)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6876617 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6876617/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. 一个转位七和弦（第 1 小节）和原位七和弦（第 2 小节）。
 

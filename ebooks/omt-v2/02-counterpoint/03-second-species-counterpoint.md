@@ -29,6 +29,10 @@ modified: "2026-07-24"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488187)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8488187 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488187/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 《Gradus ad Parnassum》中的全部第二类对位练习。
 
 ## 对位线条

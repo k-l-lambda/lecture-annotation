@@ -24,6 +24,10 @@ Bon Jovi 的“Livin' on a Prayer”遵循典型的主歌–副歌曲式（谱�
 
 🖥 [互动记谱（Brian Jarvis）](https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_15_47_529_42evj&iframe=true)
 
+<!-- embed-begin: https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&shared_briform_id=v_1_2/2023_8_2_15_47_529_42evj&iframe=true -->
+<div class="omt-embed omt-embed-interactive"><iframe src="https://www.brianedwardjarvis.com/MusicTheoryWebApps/BriFormer/briformer_editor.html?activity_type=open_from_web_link_youtube&amp;shared_briform_id=v_1_2/2023_8_2_15_47_529_42evj&amp;iframe=true" title="Brian Jarvis" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. Bon Jovi“Livin' on a Prayer”（1986）。
 
 **循环**

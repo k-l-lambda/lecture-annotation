@@ -28,9 +28,17 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804531)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5804531 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804531/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 5–6 沙弗尔音型。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804559)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5804559 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804559/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 变格的 IV–I 音型。
 
@@ -38,17 +46,29 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804585)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5804585 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804585/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. Sam and Dave，[“Soul Man”（1967）。](https://open.spotify.com/track/4eGHlplaq1ME8oetnTuFFf)
 
 Wilson Pickett“In the Midnight Hour”的主歌中也可以找到类似的 I 与 IV 之间的往复（谱例 4）。也许并不令人意外，这条音轨的吉他手和贝斯手与“Soul Man”相同（分别是 Steve Cropper 和 Donald “Duck” Dunn）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804779)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5804779 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804779/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. Wilson Pickett，[“In the Midnight Hour”（1965）。](https://open.spotify.com/track/4NRQwaks9r58tTDvr4iEyv)
 
 当然，这类和弦进行并不限于灵魂乐和节奏布鲁斯。Neil Young 的“After the Gold Rush”开头（谱例 5）就有一个类似的进行（在“……drummers drummin'……”之后它有所偏离；另外请注意旋律音与和弦之间自始至终存在的错位）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804789)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5804789 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804789/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. Neil Young，[“After the Gold Rush”（1970）。](https://open.spotify.com/track/2anPa0qaFG1Nf0swkpfOQd)
 
@@ -62,6 +82,10 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/14849320)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/14849320 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/14849320/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. Green Day，[“Wake Me Up When September Ends”（2005）。](https://open.spotify.com/track/3ZffCQKLFLUvYM59XKLbVm)
 
 ## 双变格 {#double-plagal}
@@ -70,6 +94,10 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5807341)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5807341 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5807341/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. The Beatles，[“Hey Jude”（1968）。](https://open.spotify.com/track/0aym2LBJBk9DAYuHHutrIl)
 
 ## 扩展变格 {#extended-plagal}
@@ -77,6 +105,10 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 “副属 IV”和弦可以连续使用，类似于共性实践音乐中的下行五度进行。在 Jimi Hendrix 的“Hey Joe”（1966）中，主歌由三次按四度下行模式的变格运动构成，结果在 E 大调中得到进行 ♭VI–♭III–♭VII–IV–I。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5807378)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5807378 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5807378/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. Jimi Hendrix，[“Hey Joe”（1966）。](https://open.spotify.com/track/0NWPxcsf5vdjdiFUI8NgkP)
 

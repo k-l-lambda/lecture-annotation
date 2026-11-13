@@ -44,3 +44,6 @@
 /* video embeds (Open Music Theory 2nd edition) */
 .omt-video { position: relative; margin: 1em 0 1.2em; aspect-ratio: 16 / 9; background: #000; border-radius: 6px; overflow: hidden; }
 .omt-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+/* MuseScore and Brian Jarvis embeds (OMT 2nd edition); the height is set per iframe */
+.omt-embed { margin: .6em 0 1.2em; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; overflow: hidden; background: #fff; }
+.omt-embed iframe { display: block; width: 100%; border: 0; }

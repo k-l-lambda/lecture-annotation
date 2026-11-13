@@ -29,6 +29,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250658)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6250658 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250658/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 贝多芬钢琴奏鸣曲 Op. 14, no. 1 第一乐章第 50–57 小节中的 $\mathrm{pass.^6_4}$（[1:28-1:42](https://open.spotify.com/track/1TATwZjqU3I73RoGvWsVXA?si=c851bab266cd4f5b)）。
 
 **谱例 2a** 演示了写作 $\mathrm{pass.^6_4}$ 以扩展主和弦的步骤，**谱例 2b** 和 **2c** 则展示了 $\mathrm{pass.^6_4}$ 延长前属区域的几种方式。注意，这些进行每一个也都可以反向使用（例如 $\mathrm{I^6-pass.^6_4-I}$ 同样可行）。
@@ -42,6 +46,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250667)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6250667 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250667/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 用 pass.$\mathit{^6_4}$ 写作。
 
 ### 辅助 $^6_4$
@@ -49,6 +57,10 @@ modified: "2025-07-15"
 辅助（n.）$^6_4$ 由一个静止的低音构成，其上方有两个声部作上辅助音运动（谱例 3）。$\mathrm{n.^6_4}$ 有时被称为踏板 $^6_4$，这个名字反映了低音中的静止踏板音。它最常见于延长 I 或 V。**谱例 4a** 演示了写作 $\mathrm{n.^6_4}$ 以延长主和弦的步骤，**谱例 4b** 展示了延长 V 的声部进行。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250673)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6250673 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250673/embed" title="MuseScore" loading="lazy" style="height: 570px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 约瑟芬·朗《致国王之子》中的辅助 $\mathit{^6_4}$ 与琶音 $\mathit{^6_4}$。
 
@@ -61,6 +73,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250679)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6250679 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250679/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 用 $\mathit{n.^6_4}$ 写作。
 
 ### 琶音 $^6_4$
@@ -68,6 +84,10 @@ modified: "2025-07-15"
 琶音（arp.）$^6_4$ 通常产生于低音跳进到和弦五音、同时上方声部保持和弦的时候。它常见于例如终止处的低音琶音（谱例 3）或圆舞曲风格的伴奏（谱例 5）。与其他类型不同，$\mathrm{arp.^6_4}$ 通常不需要在分析中标出。谱例 5 用数字标出了它，但这样做并非必要——每个小节都可以直接标为 I。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250685)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6250685 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250685/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 索菲·德·奥古斯特·魏劳赫（Sophie de Auguste Weyrauch）《六首舞曲》第三首中的琶音 $\mathit{^6_4}$。
 

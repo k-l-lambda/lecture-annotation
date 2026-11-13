@@ -89,6 +89,10 @@ modified: "2026-07-24"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26285815)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26285815 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26285815/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 不同类型进行的示例。
 
 ## 写作定旋律
@@ -103,6 +107,10 @@ modified: "2026-07-24"
 谱例 3 收录了富克斯在《Gradus at Parnassum》中使用的全部定旋律：每种调式一条，在此分别置于两个声部的上方和下方。除了借此回顾富克斯所写定旋律的类型，你还可以用它来练习任何类别、任何调式，并把定旋律放在上方或下方声部。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/26285584)
+
+<!-- embed-begin: https://musescore.com/user/30425053/scores/26285584 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/26285584/embed" title="MuseScore" loading="lazy" style="height: 1100px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 出自《Gradus ad Parnassum》的定旋律。
 

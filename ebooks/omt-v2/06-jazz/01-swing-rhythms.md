@@ -68,6 +68,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8514608)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514608 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514608/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 带有摇摆八分音符与反拍重音的标准摇摆鼓点。
 
 跟着爵士乐曲打拍子时，试着跟着反拍重音打，而不是跟着强拍打。
@@ -81,6 +85,10 @@ modified: "2025-07-15"
 除了遮蔽拍点的重音，切分也可以通过休止符与延音线造成：例如，开始旋律线条时避开强拍。用休止符与延音线造成切分的一个例子见谱例 5。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6842546)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6842546 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6842546/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 卡拉·布莱（Carla Bley）[《Donkey》](https://open.spotify.com/track/65Hyx6iNbe1aKPlTiXxcYt?si=bb195e57f36c41b7)（1976）中的切分。
 

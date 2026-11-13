@@ -23,9 +23,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223755)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223755 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223755/embed" title="MuseScore" loading="lazy" style="height: 461px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 同主音大调与小调音阶及其唱名的比较。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223743)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223743 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223743/embed" title="MuseScore" loading="lazy" style="height: 461px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 同主音大调与小调音阶及其音级的比较。
 
@@ -35,9 +43,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223761)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223761 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223761/embed" title="MuseScore" loading="lazy" style="height: 484px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 同主音大调与小调和弦性质的比较。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223765)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223765 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223765/embed" title="MuseScore" loading="lazy" style="height: 488px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 同主音大调与小调罗马数字的比较。
 
@@ -49,6 +65,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223773)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223773 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223773/embed" title="MuseScore" loading="lazy" style="height: 304px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 常见的调式混合前属和弦：ii<sup>o6</sup>、ii<sup>∅7</sup> 与 iv。
 
 ### 改变和弦根音
@@ -56,6 +76,10 @@ modified: "2025-07-15"
 借用 *me* $(\downarrow\hat3)$ 和 *te* $(\downarrow\hat7)$ 同样常见。这些音级产生 ♭VI、♭III 和 ♭VII 和弦（谱例 6）。注意，当和弦根音从其在音阶中的原有位置改变时，会在罗马数字前加一个变音记号来表示这一变化。在这一语境中，这些变音记号并不字面表示"降"或"升"，而是表示根音比它在音阶中通常出现的位置降低（♭）或升高（♯）了一个半音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223780)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223780 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223780/embed" title="MuseScore" loading="lazy" style="height: 364px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 涉及根音变化的调式混合可能性。
 
@@ -66,12 +90,21 @@ modified: "2025-07-15"
 > 根据所给罗马数字构成和弦。特别注意和弦性质。
 >
 > 🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_modal_mixture___subdominant_minor_G_major&sm_2=brian_jarvis___OMT_modal_mixture___lowered_submediant_major_A_major&sm_3=brian_jarvis___OMT_modal_mixture___picardy_third_d_minor&sm_4=brian_jarvis___OMT_modal_mixture___supertonic_half_dim_1st_E_Major&sm_5=brian_jarvis___OMT_modal_mixture___lowered_mediant_major_B_major)
+>
+> <!-- embed-begin: https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_modal_mixture___subdominant_minor_G_major&sm_2=brian_jarvis___OMT_modal_mixture___lowered_submediant_major_A_major&sm_3=brian_jarvis___OMT_modal_mixture___picardy_third_d_minor&sm_4=brian_jarvis___OMT_modal_mixture___supertonic_half_dim_1st_E_Major&sm_5=brian_jarvis___OMT_modal_mixture___lowered_mediant_major_B_major -->
+> <div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_modal_mixture___subdominant_minor_G_major&amp;sm_2=brian_jarvis___OMT_modal_mixture___lowered_submediant_major_A_major&amp;sm_3=brian_jarvis___OMT_modal_mixture___picardy_third_d_minor&amp;sm_4=brian_jarvis___OMT_modal_mixture___supertonic_half_dim_1st_E_Major&amp;sm_5=brian_jarvis___OMT_modal_mixture___lowered_mediant_major_B_major" title="Brian Jarvis" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+> <!-- embed-end -->
+>
 
 ### 主和弦与属和弦
 
 在主和弦和属和弦上使用调式混合也是可能的（见谱例 7）。从 I 变为 i 是常见的手法，但从 V 变为 v 就不那么常见了。当大调中出现 v 时，它更可能表示一处[扩展离调或转调段落](../03-diatonic-harmony/16-extended-tonicization-and-modulation-to-closely-related-keys.md)，而不是单独一次调式混合。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223782)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223782 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223782/embed" title="MuseScore" loading="lazy" style="height: 383px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 主和弦与属和弦上的调式混合。
 
@@ -81,6 +114,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223786)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223786 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223786/embed" title="MuseScore" loading="lazy" style="height: 386px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. 自然音进行与前属区域采用调式混合的同一进行的比较。
 
 ## 皮卡第三度
@@ -88,6 +125,10 @@ modified: "2025-07-15"
 小调中调式混合最常见的用法叫*皮卡第三度*（picardy third），即一首小调作品或乐章以大三和弦形式的主和弦结束（谱例 9）。"皮卡"（picardy）这一名称的来源不明；这一手法在16、17世纪相当常见，但在18、19世纪不再流行。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223788)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223788 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223788/embed" title="MuseScore" loading="lazy" style="height: 428px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. 以皮卡第三度结束的和声进行。
 
@@ -97,6 +138,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223789)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6223789 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223789/embed" title="MuseScore" loading="lazy" style="height: 459px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 使用调式混合转调到远关系调的进行。
 
 ## 音乐实例
@@ -105,11 +150,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8403632)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8403632 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8403632/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 11. Camille Saint-Saëns，《参孙与达丽拉》（*Samson et Dalila*）第二幕，"Mon cœur s'ouvre à ta voix"（[片段从 1:36 开始](https://open.spotify.com/track/17bfepQ21fUYIoSoDZlndA?si=jV-oBtm3TCSJbgoqDZPbnQ)）。注意 B𝄫 借自同主音小调，形成调式混合。
 
 谱例 12 是调式混合更广泛的用法。调式混合自第三行谱表引入，一直持续到页面底部乐句结束为止。这造成从 E 大调到其同主音小调 e 小调的转调。请特别注意一个乐句从大调开始、却以同一主音的小调结束所产生的戏剧性效果。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8403782)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8403782 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8403782/embed" title="MuseScore" loading="lazy" style="height: 1400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 12. Alfredo Catalani，*La Wally* 第一幕，"Ebben? Ne andrò lontana"（[片段从 0:50 开始](https://open.spotify.com/track/65630JSKawmLrXSK6DGRmm?si=GTqMOYo6RASoREXjYoZE4Q)）。较大规模的调式混合，从第 14 小节开始。
 

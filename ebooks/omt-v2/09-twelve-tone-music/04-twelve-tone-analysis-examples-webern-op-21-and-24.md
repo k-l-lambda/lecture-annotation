@@ -31,6 +31,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/8171934)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/8171934 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/8171934/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. Op. 21 的音列，以及三音组与六音组的划分。
 
 韦伯恩常常选用你可以称之为“齐整”的音列形式，这部作品也不例外（见谱例 1）。这个音列整齐地分为两个相等的六音组，它们不仅是同一个音级集合的实例，而且是集合 6-1 的实例：半个半音阶。简言之，每一个六音组都填满了十二音空间中一半的完整半音音集。
@@ -169,6 +173,10 @@ modified: "2025-07-15"
 ### 音列
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/8171973)
+
+<!-- embed-begin: https://musescore.com/user/30425053/scores/8171973 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/8171973/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 韦伯恩《协奏曲》（Op. 24）的音列，以及三音组与六音组的划分。
 

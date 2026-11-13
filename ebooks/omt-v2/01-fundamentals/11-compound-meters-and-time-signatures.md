@@ -82,6 +82,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394558)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8394558 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394558/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 复二拍子中的数拍。
 
 在这一拍号中，每小节有两拍（6÷3=2），表示二拍子。每个附点四分音符（即一拍）得到一个数，用阿拉伯数字表示，与单拍子一样。对于长于一拍的音符（如谱例 3 第四小节的附点二分音符），那些没有被数出声的拍仍用括号写出。划分用音节「la」（第一划分）和「li」（第二划分）来数。正如谱例 3 最后一小节所示，十六分音符层面的进一步细分用「ta」来数，而八分音符细分上的「la」和「li」音节保持不变。
@@ -94,11 +98,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394447)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8394447 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394447/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
  谱例 4. (a) 复二拍子有两拍，(b) 复三拍子有三拍，(c) 复四拍子有四拍。
 
 与单拍子一样，因休止符和延音线而没有被实际奏出的拍要用括号写出，并且不数出声，如谱例 5 所示。不过，附点节奏不会像在单拍子中那样导致拍被写上括号，因为在复拍子中附点音符正是得到拍的音符。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296091)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6296091 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296091/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 不数出声的拍放在括号里。
 
@@ -114,6 +126,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394456)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8394456 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394456/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 同一个节奏用三种不同的拍单位写出：(a) 附点四分音符，(b) 附点二分音符，(c) 附点八分音符。
 
 这些节奏听起来完全一样，数法也完全一样。它们还都被视为复三拍子。各例的不同之处在于下方数字——哪个音符得到划分单位（八分音符、四分音符或十六分音符），这继而决定了拍单位。
@@ -123,6 +139,10 @@ modified: "2026-06-17"
 在复拍子中，符杠仍然按拍把音符连在一起；因此符杠在不同拍号中会有所变化。在谱例 7 的第一小节中，十六分音符六个一组，因为在 $\mathbf{^6_8}$ 拍号中六个十六分音符相当于一拍。在谱例 7 的第二小节中，十六分音符三个一组，因为在 $\mathbf{^{\:6}_{16}}$ 拍号中三个十六分音符相当于一拍。 
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394474)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8394474 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394474/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
  谱例 7. 两种不同节拍中的符杠。
 
@@ -141,6 +161,10 @@ modified: "2026-06-17"
 与单拍子一样，部分符杠（partial beam）可以用于混合的节奏组合。如果你还不熟悉这些约定，请特别注意谱例 9 中各音符的符杠连接方式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296096)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6296096 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296096/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
  谱例 9. 以八分音符为划分单位时最常见的几种部分符杠变体。
 

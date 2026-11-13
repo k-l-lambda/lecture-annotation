@@ -42,6 +42,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6595108)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6595108 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6595108/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 一个基本的 12 小节布鲁斯。
 
 这是 12 小节布鲁斯最简单的版本，但在这套进行之上存在着无数变化。最常见的附加之一是第二小节可能进行到 IV，然后在第三小节回到 I。另一个特别常见的花招是在进行的最后一两小节使用某种回转，从简单的 V<sup>7</sup> 和弦到完整的 III–VI–II–V 进行不等。很难找到一首布鲁斯乐曲对谱例 1 所示的基本形式完全不作改动。[Beatles 的「You Can't Do That」](https://open.spotify.com/track/5b9G4dtK3Tdguuy9BO3Nwo?si=7GMoz0VBQQiY8wrqopy7jA)（1964）几乎一模一样，但它在最后小节加了一个 V 和弦作为回转。
@@ -51,6 +55,10 @@ modified: "2025-07-15"
 由于 12 小节布鲁斯中的根音进行全部为五度和级进，和声中的声部进行可以非常平滑。通常，在布鲁斯歌曲中演奏和声的乐器会连接和弦的三音与七音，以形成平滑的声部进行，如谱例 2。（排列在[另一章](03-jazz-voicings.md)中有更多讨论。）
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/22734802)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/22734802 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/22734802/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 12 小节布鲁斯的一种简单排列，连接三音与七音，从而在全程产生级进的声部进行。
 
@@ -84,6 +92,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6610362)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6610362 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6610362/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 典型的小调布鲁斯。
 
 ## 爵士布鲁斯
@@ -95,6 +107,10 @@ modified: "2025-07-15"
 注意，爵士布鲁斯把典型的布鲁斯和声（即使用非属功能的属七和弦以及变格解决）与爵士和声图式混合在一起：具体来说，它使用了 [副 ii–V](04-ii-v-i.md)和回转。在第 8 小节，不是停留在主和声上，而是有一个副 ii–V 导向第 9 小节的 ii 和弦。而在第三乐句，标准布鲁斯的 V–IV–I 被换成了爵士中更常见的 ii–V–I。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6595125)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6595125 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6595125/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 爵士布鲁斯加入 ii–V 进行，取代了结构性的变格终止。
 

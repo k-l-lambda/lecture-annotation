@@ -1619,6 +1619,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/727981229895898)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/727981229895898 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/727981229895898/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [《曲目中的音列》](https://musescore.com/user/30425053/scores/6800466/s/Hr7UuD)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
 ## 选集

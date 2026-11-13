@@ -54,6 +54,10 @@ modified: "2026-09-24"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8391225/s/-79eyZ)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8391225/s/-79eyZ -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 一个动机的移位，有序与无序。
 
 从第 18 小节进入第 19 小节时，同一个动机以一种更隐蔽的方式得到保持（在谱例 2 中用红色标出）。这里被移位的是无序音级集合，而不是前面那个有序集合。这看起来也许不像前两组动机那样是移位，但如果把这些音高排成常规形式，被移位的音程关系就变得清楚了。
@@ -85,6 +89,10 @@ $\begin{alignat*}{2} && [3, 6, 8] \\ {}- && [11, 2, 4] \\ \hline && 4\ 4\ 4\
 与移位一样，倒影也常与联系相似对象的运动相关。谱例 3 中陈怡《多耶》（*Duo Ye*，2000）的段落就是一例：正如那些有移位关系的段落一样，这两个乐思具有相同的音程内容，所以我们的耳朵会把它们听成非常相似的东西。然而与移位不同，这两个乐思的音程内容排列方式并不相同：两者有相同的音程，但 [1, 4, 6] 这个集合把音程 3 放在下方而不是上方（谱例 4）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8391513)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8391513 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8391513/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. [2, 4, 7] 经倒影成为 [1, 4, 6]。
 

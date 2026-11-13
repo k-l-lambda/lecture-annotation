@@ -137,17 +137,29 @@ modified: "2026-10-06"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6293132)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6293132 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6293132/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 4/4 拍中的节奏。
 
 单二拍子只有两拍，单三拍子只有三拍，但划分的数法相同（谱例 11）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296048)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6296048 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296048/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 11. 单二拍子每小节两拍；单三拍子每小节三拍。
 
 与持续两拍或更多拍的音符一样，因休止符、连音线和附点而没有被奏出的拍，也不数出声。这些拍通常写在括号里，如谱例 12 所示：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296065)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6296065 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296065/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 12. 不数出声的拍放在括号里。
 
@@ -172,6 +184,10 @@ s4 s4 \stemDown _\markup "(2)" s4 | %3
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422379)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8422379 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422379/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 14. 同样的数拍节奏，分别写成（a）以四分音符为一拍、（b）以二分音符为一拍、（c）以八分音符为一拍和（d）以十六分音符为一拍。
 
 ## 符杠、符干、符尾与多小节休止符
@@ -179,6 +195,10 @@ s4 s4 \stemDown _\markup "(2)" s4 | %3
 符杠按拍把音符连接起来。如谱例 15 所示，这意味着符杠的组合方式随拍号而变。在第一小节中，十六分音符四个一组，因为在 $\mathbf{^4_4}$ 拍号中四个十六分音符相当于一拍。然而在第二小节中，十六分音符两个一组，因为在 $\mathbf{^4_8}$ 拍号中一拍只相当于两个十六分音符。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296072)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6296072 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296072/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 15. 两种不同节拍中的符杠。
 
@@ -228,6 +248,10 @@ g'8[ g16 g] g[ g g8] g4 \bar "||" | %4
 部分符杠可以用于混合节奏的组合，如谱例 20 所示。对于接触带符杠的乐谱较少的同学，这些符杠组合惯例有时看起来很奇怪。如果是这样，你要特别注意谱例 20 中符杠的组合方式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422418)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8422418 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422418/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 20. 部分符杠用于某些混合节奏的组合。
 

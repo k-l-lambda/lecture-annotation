@@ -216,9 +216,17 @@ ef,4-^ f-^ g-^ a-^ \bar "|" | %2
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6275123)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6275123 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6275123/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 13. 低音谱表上被反复记号包围的四个音。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6275124)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6275124 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6275124/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 14. 高音谱表上带第一结尾和第二结尾的反复记号。
 

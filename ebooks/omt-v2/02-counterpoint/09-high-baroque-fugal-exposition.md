@@ -131,6 +131,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8534750)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8534750 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8534750/embed" title="MuseScore" loading="lazy" style="height: 950px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 约翰·塞巴斯蒂安·巴赫的 c 小调赋格（BWV 847）的呈示部。
 
 注意：

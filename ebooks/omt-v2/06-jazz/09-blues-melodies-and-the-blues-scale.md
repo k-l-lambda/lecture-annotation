@@ -40,6 +40,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5742815)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5742815 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5742815/embed" title="MuseScore" loading="lazy" style="height: 820px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3.「Gulf Coast Blues」旋律中的呼应。
 
 ## 布鲁斯音阶
@@ -47,6 +51,10 @@ modified: "2025-07-15"
 正如布鲁斯的和声往往不固守某一个自然音阶的调、无视调性音乐的规范，其旋律也同样以半音化与之相配。布鲁斯音阶记写在谱例 4 的上一行谱表中，它试图把布鲁斯的旋律实践概括为一个音阶，供初学的即兴者作为旋律的基础。布鲁斯音阶本质上是一个小调五声音阶，加上一个导向 *sol* $(\hat5)$ 的半音经过音。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8515004)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8515004 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8515004/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. C 布鲁斯音阶与 C 大调的 I 与 V 和弦造成风格上的冲突。
 
@@ -59,6 +67,10 @@ modified: "2025-07-15"
 有些即兴者觉得构想一个大调布鲁斯音阶会有帮助。大调五声音阶与小调五声音阶之间的差别，与大调布鲁斯音阶和小调布鲁斯音阶之间的差别完全相同：大调布鲁斯音阶是关系小调布鲁斯音阶的轮转。从 *me* $(\downarrow\hat3)$ 开始这个布鲁斯音阶，你就得到关系大调的布鲁斯音阶。这些关系总结在谱例 5 中。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8515049)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8515049 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8515049/embed" title="MuseScore" loading="lazy" style="height: 440px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 把布鲁斯音阶轮转，从它的第二个音开始，就得到大调布鲁斯音阶。
 

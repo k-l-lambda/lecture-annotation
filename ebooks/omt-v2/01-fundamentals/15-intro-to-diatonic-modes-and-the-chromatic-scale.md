@@ -31,17 +31,29 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439799)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439799 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439799/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 带视唱唱名的 C 利底亚。
 
 次明亮的调式是伊奥尼亚调式。这一调式上行半音与全音的模式与大调音阶相同：W–W–H–W–W–W–H。谱例 3 展示了带视唱唱名的 C 伊奥尼亚。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439871)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439871 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439871/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 带视唱唱名的 C 伊奥尼亚。
 
 再下一个明亮的调式是混合利底亚调式，其上行半音与全音模式为 W–W–H–W–W–H–W。也可以把它看成降低了 $\hat{7}$ 的大调音阶。谱例 4 展示了带视唱唱名的 C 混合利底亚。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439772)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439772 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 带视唱唱名的 C 混合利底亚。
 
@@ -51,11 +63,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439892)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439892 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439892/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 带视唱唱名的 C 多利亚。
 
 下一个较暗淡的调式是爱奥利亚调式。爱奥利亚调式上行的半音与全音模式和自然小调音阶相同：W–H–W–W–H–W–W。谱例 6 展示了带视唱唱名的 C 爱奥利亚。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439928)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439928 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439928/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 带视唱唱名的 C 爱奥利亚。
 
@@ -63,11 +83,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439733)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439733 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439733/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 带视唱唱名的 C 弗里吉亚。
 
 最暗淡的调式是罗克里亚调式。罗克里亚调式上行的半音与全音模式是 H–W–W–H–W–W–W。它与自然小调音阶的模式相同，但降低了 $\hat{2}$（*ra*）并降低了 $\hat{5}$——$\hat{5}$ 的视唱唱名是 *se*。谱例 8 展示了带视唱唱名的 C 罗克里亚：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439829)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26439829 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439829/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 带视唱唱名的 C 罗克里亚。
 
@@ -76,6 +104,10 @@ modified: "2026-06-17"
 谱例 9 展示了所有不同调式的音阶级数与视唱唱名，按由明到暗（利底亚到罗克里亚）排列：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26438716)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26438716 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26438716/embed" title="MuseScore" loading="lazy" style="height: 1010px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. 从 C 开始、由明到暗排列的各调式及其音阶级数。
 
@@ -87,6 +119,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26419297)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26419297 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26419297/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 一个带视唱唱名的大调五声音集，其后是一个小调五声音集。
 
 你可以通过记住这些音集的视唱唱名模式，并把它们与从同一音开始的大调音阶相联系，来拼写这些音集。例如，如果你想拼写一个降 B 大调五声音集，你会先想到降 B 大调音阶，然后写出 *do*、*re*、*mi*、*sol*、*la* 和 *do*（$\hat1-\hat2-\hat3-\hat5-\hat6-\hat1$）：B♭–C–D–F–G–B♭。
@@ -96,6 +132,10 @@ modified: "2026-06-17"
 半音阶由十二个相邻的半音组成。[^1] 谱例 11 展示了三个半音阶：第一个从 C 开始，第二和第三个带有调号（A 和降 E）：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26441134)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26441134 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26441134/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 从 A 和降 E 开始的两个半音阶。
 

@@ -43,6 +43,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6827779)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6827779 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6827779/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 约瑟夫·布洛涅（Joseph Boulogne）、圣乔治骑士（Chevalier de Saint-George）《匿名恋人》（L’amant anonyme）第二幕“第六号芭蕾”中的两个终止式（[0:00–0:07](https://open.spotify.com/track/3OXzn1bVmfvj33Pf6kYfvh?si=yUFCPxiGR_yGgk30svbrKg)）。
 
 ## 正格终止（听起来是完满的！）
@@ -57,6 +61,10 @@ modified: "2025-07-15"
 	- V、I 或两者处于转位
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6617197)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6617197 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6617197/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 范妮·亨泽尔（Fanny Hensel）《远方》（“Ferne”）Op. 9, No. 2 中的一个不完满正格终止（IAC）（[0:00–0:14](https://open.spotify.com/track/7FntcviFpSkbT67SoPHVfq?si=G2NlQSZ0SaKFUJw906wshQ)）。
 
@@ -82,11 +90,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8391384)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8391384 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8391384/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. [舒伯特（Schubert）钢琴奏鸣曲 D. 845 第三乐章](https://open.spotify.com/track/1k64rvGui2IyN8Uwq98C2C?si=47fc096da0894f9b)中一个可能的 IAC。
 
 还有一个复杂之处：作曲家常常避免用符合 IAC 描述、但并不标记乐句结尾的进行来形成 PAC。在谱例 6 中，第 8 小节包含一个可能的 IAC，但当第 9 小节开始重复第 5 小节的材料时（比较第 9 小节的低音声部与第 5 小节的高声部），听起来这段音乐是在重新尝试走向终止，以获得比第 8 小节那个可能的 IAC 更强的结果。我们在乐谱上把这个标记划掉，以表示第 8 小节的终止被破坏了。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8391423)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8391423 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8391423/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. [贝多芬（Beethoven）钢琴奏鸣曲 Op. 2, no. 3 第一乐章第 1–13 小节](https://open.spotify.com/track/1ZULnG1rUN3PrrG6cpIzVg?si=0kxsSo1uTjKBo4L6sv9ftw)中对终止的回避。
 
@@ -134,17 +150,33 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/5772942)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5772942 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5772942/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 在大调中写作 PAC。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/5772904)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5772904 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5772904/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 在小调中写作 PAC。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/5772922)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5772922 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5772922/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. 在大调中写作 IAC。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/5772955)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5772955 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5772955/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. 在小调中写作 IAC。
 
@@ -165,9 +197,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/5772954)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5772954 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5772954/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 11. 在大调中写作 HC。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/5772897)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5772897 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5772897/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 12. 在小调中写作 HC。
 

@@ -35,6 +35,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5846453)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5846453 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5846453/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 方整切分把各音的起音提前半个节拍层级的时值。
 
 ### 记写方整切分
@@ -55,11 +59,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8674701)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8674701 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8674701/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 特雷西略节奏。
 
 在大多数流行 / 摇滚风格中，特雷西略其实比“真正的”三连音更常见，但真正的三连音也会出现，所以要注意区分两者。Jump, Little Children 的“Cathedrals”（1998）把两者并置在一起，是练习演奏和辨认特雷西略音型与真正三连音的极佳例子。在谱例 3 中可以看到，小提琴在吉他的方整八分音符之上演奏四分音符三连音，而三连音停下来之后，吉他开始了特雷西略式的重音音型。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8674494)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8674494 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8674494/embed" title="MuseScore" loading="lazy" style="height: 975px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. Jump, Little Children 的“Cathedrals”（[1:01](https://open.spotify.com/track/2wd52lU3agY0P3x2hxPYhm?si=651ab48646af4ce1)）。
 
@@ -68,6 +80,10 @@ modified: "2026-06-17"
 特雷西略音型还可以扩展：在谱例 4 中，3+3+2 被加倍，得到 3+3+3+3+2+2。Nicole Biamonte（2014）把这种音型称为*双特雷西略*（double tresillo）。在 U2 的[“Electric Co.”](https://open.spotify.com/track/2dIy0beOgV3XLuPLTbYeiB?si=wlPBjaFbSPW4XtykSuieSg)（1980）开头，吉他演奏按 3+3+3+3+2+2 分组的细分音符（十六分音符），踩镲演奏方整的细分音，底鼓则在其下演奏方整的拍（四分音符）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8515040)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8515040 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8515040/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 双特雷西略。
 

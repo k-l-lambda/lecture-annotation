@@ -37,6 +37,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8559071)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8559071 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8559071/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 ### **和声**
 
 在和声上，这首作品几乎通篇坚定地停留在 g 小调，不过珀塞尔沿途对几个调作了离调。离调的完整列表（大致）是：

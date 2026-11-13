@@ -21,6 +21,10 @@ modified: "2021-06-29"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6263572)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6263572 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6263572/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 用小二度等分八度（半音阶）。
 
 ### 大二度
@@ -29,6 +33,10 @@ modified: "2021-06-29"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6263580)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6263580 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6263580/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 用大二度等分八度（全音音阶）。
 
 ### 小三度
@@ -36,6 +44,10 @@ modified: "2021-06-29"
 按小三度进行的根音构成减七和弦。这类和弦进行最常见于如下情况：构成八度等分的每一个根音都被离调，或者被插入其间的和弦隔断。较为少见的情况是，构成等分的根音紧接着依次呈现。这类进行也与八声音阶（octatonic scale）有关联，八声音阶包含相互重叠的减七和弦。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6263587)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6263587 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6263587/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 用小三度等分八度，构成减七和弦
 
@@ -47,6 +59,10 @@ modified: "2021-06-29"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6263592)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6263592 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6263592/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 用大三度等分八度，构成增三和弦。
 
 ### 三全音
@@ -54,6 +70,10 @@ modified: "2021-06-29"
 等分八度的最后一种方法是通过三全音。这样做出来的和弦进行无非就是两个和弦，所以曲目中的实例多少有些琐碎。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6263596)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6263596 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6263596/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 用三全音等分八度。
 

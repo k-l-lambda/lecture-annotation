@@ -143,6 +143,10 @@ s2 | %6
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11095075)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11095075 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11095075/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 双簧管、大管与小提琴声部之间的交叠。
 
  
@@ -153,6 +157,10 @@ s2 | %6
 2. 看看下面亨泽尔（Hensel）C 大调序曲的片段。大管与大提琴的组合与本章讨论的内容有什么关系？
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11093566)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11093566 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11093566/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 [C 大调序曲——Fanny Hensel](https://musescore.com/user/32728834/scores/11093566/s/iqZf5q)，作者 [openmusictheory](https://musescore.com/user/32728834)
 

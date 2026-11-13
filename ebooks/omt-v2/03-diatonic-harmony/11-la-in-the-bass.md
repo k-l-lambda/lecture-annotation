@@ -35,9 +35,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6254923)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6254923 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6254923/embed" title="MuseScore" loading="lazy" style="height: 594px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. Josephine Lang《Arie》中通过 $\mathit{I-IV^6-V^6_5-I}$ 延长主和弦。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6254927)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6254927 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6254927/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. Josephine Lang《Lied》中通过 $\mathit{I-IV^6-I^6}$ 延长主和弦。
 
@@ -46,6 +54,10 @@ modified: "2025-07-15"
 写作 $\mathrm{I-IV^6-V^6_5-I}$ 可能很棘手，尤其是当 $\mathrm{IV^6}$ 进行到 $\mathrm{V^6}$ 时，因为既有平行五八度的危险，又有导音重复的危险。没有任何单条建议能保证你避开这些问题。写作 $\mathrm{I-IV^6-V^6_5-I}$ 时，女高声部线条 *do–do–re–do* $(\hat1-\hat1-\hat2-\hat1)$ 与 *mi–mi–fa–mi* $(\hat3-\hat3-\hat4-\hat3)$ 会有帮助，但你需要仔细检查平行进行。用 $\mathrm{V^6_5}$ 而不是 $\mathrm{V^6}$ 也能减轻一部分平行进行的危险（谱例 3）。要注意，这个进行在小调中效果不好，因为低音会从 *le* 到 *ti* $(\downarrow\hat6-\uparrow\hat7)$ 构成增二度。这一进行在小调中罕见出现时，会把 *le* 升高为 *la* $(\downarrow\hat6$ 变为 $\uparrow\hat6)$，以避免增二度（**谱例 3c** 与 **3d**）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6254942)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6254942 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6254942/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 写作 $\mathit{I-IV^6-V^6_5-I}$。
 
@@ -59,6 +71,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6254982)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6254982 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6254982/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 写作变格（IV<sup>6</sup>）。
 
 ## 在乐句中段
@@ -70,9 +86,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6254992)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6254992 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6254992/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. Bernhard Henrik Crussell《单簧管四重奏》Op. 7 第二乐章中的阻碍进行，第 66–72 小节（[5:06-5:38](https://open.spotify.com/track/44eNIUR22CLtueQNBC3Mw5?si=16677c7349af434a)）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6254997)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6254997 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6254997/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. Bernhard Henrik Crussell《单簧管四重奏》Op. 7 第二乐章第 1–4 小节中，vi 连接 **T** 与强 **PD** 区域（[0:00-0:18](https://open.spotify.com/track/44eNIUR22CLtueQNBC3Mw5?si=16677c7349af434a)）。
 
@@ -81,6 +105,10 @@ modified: "2025-07-15"
 当一个 V 和弦建立起对终止式的期待，却转而进行到一个出乎意料的、非主和弦的和声时，这就叫作阻碍进行（deceptive motion）。阻碍进行最常见的情形是 V<sup>(7)</sup> 进行到 vi 而不是 I，低音进行为 *sol*–*la* $(\hat5-\hat6)$。较少见的情形是，在阻碍进行中 *la* $(\hat6)$ 也可能由 IV<sup>6</sup> 而不是 vi 配和声。写作 V<sup>(7)</sup>–vi 的阻碍进行天生带有平行进行的危险，可以通过下面两件事来避免（谱例 7）：（1）照常解决 *ti*–*do* $(\hat7-\hat1)$；（2）让所有上方声部与低音反向（向下）进行。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6255078)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6255078 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6255078/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 写作阻碍进行。
 
@@ -94,6 +122,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6255083)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6255083 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6255083/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. 用 *la* $\mathit{(\hat6)}$ 把 **T** 连接到强 **PD** 区域。
 
 ## 在乐句结尾
@@ -105,6 +137,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6255087)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6255087 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6255087/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. Franz Schubert《五月之夜》（*Die Mainacht*）中的弗里几亚半终止，第 1–10 小节（[0:00-0:19](https://open.spotify.com/track/0cMXaclO8JfrGK9uwmIfLc?si=ce4f962e04f6417b)）。
 
 ### 弗里几亚半终止（PHC）
@@ -113,6 +149,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6255089)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6255089 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6255089/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 写作一个弗里几亚半终止。
 
 ### 终止式中由前属配和声的 *La* $(\hat6)$
@@ -120,6 +160,10 @@ modified: "2025-07-15"
 在终止的属和弦之前，低音中没有 *fa* $(\hat4)$、而 *la* $(\hat6)$ 由前属（通常是 vi 或 IV<sup>6</sup>）配和声的情形也是可以见到的（谱例 11）。不过，这比在终止式前见到低音 *fa* $(\hat4)$ 由强前属配和声要少见得多。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6255090)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6255090 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6255090/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. Joseph Haydn《弦乐四重奏》Op. 76 第 2 号第一乐章第 1–4 小节中，*La* $\mathit{(\hat6)}$ 作为强 **PD** 的“替身”（[0:00-0:08](https://open.spotify.com/track/6OqC7YMlzKxJTsmhqqrqcD?si=bd9d3992c77c4794)）。
 

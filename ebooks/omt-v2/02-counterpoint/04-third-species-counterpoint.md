@@ -26,6 +26,10 @@ modified: "2026-07-24"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488217)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8488217 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488217/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 《Gradus ad Parnassum》中的全部第三类对位练习。
 
 ## 对位线条
@@ -103,6 +107,10 @@ d1 \bar "|." | %4
 - *nota cambiata*（换音）是一个五音音型，从下拍到下拍勾勒出一个级进进行。它遵循谱例 3 所示的两种模式之一。要使 *nota cambiata* 有效，第一、第三和第五个音必须与定旋律协和。第二个音是不协和的，并会跳进到第三个音。然而，与双辅助音一样，这个整体模式使离开不协和音的跳进的负面效果减到最小：它被级进所包围，整体进行只是一个级进，而且不协和音与随后的下拍是同一个音高。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8487176)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8487176 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8487176/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. *nota cambiata* 的两种形式。从下拍到下拍，*nota cambiata* 可以填充（a）一个下行级进，或（b）一个上行级进。
 

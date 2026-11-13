@@ -30,9 +30,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268930)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6268930 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268930/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. Joseph Bologne《六首协奏四重奏》第 1 号第二乐章第 1–8 小节中的离调。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268934)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6268934 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268934/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. Joseph Bologne《六首协奏四重奏》第 1 号第二乐章第 3–4 小节中离调的缩谱。
 
@@ -44,9 +52,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268967)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6268967 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268967/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. Josephine Lang《Du gleichst dem klaren blanen See》第 21–24 小节中的离调。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268972)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6268972 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268972/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. Josephine Lang 作品中离调的缩谱。
 
@@ -145,9 +161,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270521)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6270521 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270521/embed" title="MuseScore" loading="lazy" style="height: 1200px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. [Joseph Bologne《弦乐四重奏》第 4 号第一乐章](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=0621ea7f9d254fc1)中对 IV 的离调，第 41–47 小节（1:18–1:30）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270540)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6270540 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270540/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. [Maria Szymanowska《小步舞曲》第 4 首](https://open.spotify.com/track/0wUvGycFjSFNSD2b8N9Hlo?si=9ffc380a726f4938)中对 ii 的离调，第 57–64 小节（1:48–1:55）。
 
@@ -157,6 +181,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270545)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6270545 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270545/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. Josephine Lang《Mag da draussen Sehnee》第 1–5 小节中被离调的阻碍进行。
 
 ## 在自然音进行中加入离调
@@ -164,6 +192,10 @@ modified: "2025-07-15"
 为离调写作声部的步骤与离调 V 时相同。不过，现在我们应当预期会看到对非属的大调与小调三和弦的离调。谱例 11 展示了一个自然音进行（a），以及在其中加入若干离调后的版本（b）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270553)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6270553 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270553/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 在自然音进行中加入离调。
 
@@ -182,6 +214,10 @@ modified: "2025-07-15"
 谱例 12 总结了副和弦与同根音自然音和弦的关系。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/23457127)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23457127 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23457127/embed" title="MuseScore" loading="lazy" style="height: 850px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 12. 自然音三和弦如何通过变化生成副 V<sup>7</sup> 和弦的总结。
 

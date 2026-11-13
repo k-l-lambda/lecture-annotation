@@ -176,15 +176,36 @@ const videoEmbed = url => {
 	return `<!-- video-begin: ${url} -->\n<div class="omt-video"><iframe src="${src}" title="video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>\n<!-- video-end -->`;
 };
 const VIDEO_URL = /https?:\/\/(?:www\.|m\.)?(?:youtube\.com|youtu\.be|vimeo\.com)\/[^\s)<>"\]]+/g;
-const OLD_VIDEO = /\n*[ \t]*<!-- video-begin: [^>]*-->\n[\s\S]*?<!-- video-end -->[ \t]*\n?/g;
+// Removes an earlier embed (video or score) with the blank / bare-`>` lines before it.
+const OLD_VIDEO = /(?:\n[ \t]*>?[ \t]*)*\n[ \t]*(?:>[ \t]*)?<!-- (?:video|embed)-begin: [^>]*-->\n[\s\S]*?<!-- (?:video|embed)-end -->[ \t]*(?:\n[ \t]*>[ \t]*(?=\n))?(?=\n|$)/g;
+
+// ---- MuseScore / Brian Jarvis embeds ----
+// The 2nd edition embeds these as iframes; the v2 conversion turned each into a link
+// line `🎼 [MuseScore score](…)` / `🖥 [Interactive notation (Brian Jarvis)](…)`. The
+// iframe heights of the online edition are kept in omt-v2-embeds.json (from the
+// Pressbooks API cache), keyed by the link target.
+const EMBED_HEIGHT = JSON.parse(fs.readFileSync(path.join(here, 'omt-v2-embeds.json'), 'utf8'));
+const EMBED_LINK = /(🎼|🖥) ?\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/g;
+const attr = v => v.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+const scoreEmbed = (mark, raw) => {
+	const url = raw.replace(/\\(.)/g, '$1');
+	let src, kind, height = EMBED_HEIGHT[url];
+	if (mark === '🎼' && /^https?:\/\/(?:www\.)?musescore\.com\/user\/\d+\/scores\/\d+(?:\/s\/[\w-]+)?$/.test(url)) {
+		src = `${url}/embed`; kind = 'musescore'; height ??= 394;
+	} else if (mark === '🖥' && /^https?:\/\/(?:www\.)?brianedwardjarvis\.com\//.test(url)) {
+		src = url; kind = 'interactive'; height ??= 600;
+	} else return null;
+	return `<!-- embed-begin: ${url} -->\n<div class="omt-embed omt-embed-${kind}"><iframe src="${attr(src)}" title="${kind === 'musescore' ? 'MuseScore' : 'Brian Jarvis'}" loading="lazy" style="height: ${height}px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>\n<!-- embed-end -->`;
+};
 
 const addVideos = text => {
 	const lines = text.replace(OLD_VIDEO, '\n').split('\n');
 	const out = [];
-	let fence = false, pending = [], ind = '';
+	let fence = false, pending = [], ind = '', quote = '';
 	const flush = () => {
-		for (const e of pending) out.push('', e.split('\n').map(l => ind + l).join('\n'));
-		if (pending.length) out.push('');
+		const blank = quote.trimEnd();
+		for (const e of pending) out.push(blank, e.split('\n').map(l => quote + ind + l).join('\n'));
+		if (pending.length) out.push(blank);
 		pending = [];
 	};
 	for (let i = 0; i < lines.length; i++) {
@@ -192,20 +213,28 @@ const addVideos = text => {
 		if (/^[ \t]*(```|~~~)/.test(line)) fence = !fence;
 		out.push(line);
 		if (fence || /^<!--/.test(line.trim())) continue;
-		for (const url of line.match(VIDEO_URL) || []) {
-			const e = videoEmbed(url.replace(/[.,;]+$/, ''));
+		const found = [
+			...(line.match(VIDEO_URL) || []).map(url => videoEmbed(url.replace(/[.,;]+$/, ''))),
+			...[...line.matchAll(EMBED_LINK)].map(m => scoreEmbed(m[1], m[2])),
+		];
+		for (const e of found) {
 			if (e && !pending.includes(e)) {
 				if (!pending.length) {
-					const item = line.match(/^([ \t]*)(?:[-*+]|\d+\.)\s/);
-					const lead = line.match(/^[ \t]*/)[0];
-					ind = item ? listIndent(item[1]) + '    ' : lead ? listIndent(lead) : '';
+					// inside a block quote the embed keeps the `>`; in a list item it is
+					// indented to the item's content; a stray leading space is not a list
+					const q = line.match(/^[ \t]*>[ \t]?/);
+					quote = q ? '> ' : '';
+					const body = q ? line.slice(q[0].length) : line;
+					const item = body.match(/^([ \t]*)(?:[-*+]|\d+\.)\s/);
+					const lead = body.match(/^[ \t]*/)[0];
+					ind = item ? listIndent(item[1]) + '    ' : width(lead) >= 2 ? listIndent(lead) : '';
 				}
 				pending.push(e);
 			}
 		}
 		// the embed goes after the paragraph / list item the link sits in
 		const next = lines[i + 1];
-		const endsBlock = next === undefined || next.trim() === '' || /^\s*([-*+]|\d+\.)\s/.test(next) || /^#/.test(next);
+		const endsBlock = next === undefined || /^[ \t]*>?[ \t]*$/.test(next) || /^\s*(>\s*)?([-*+]|\d+\.)\s/.test(next) || /^#/.test(next);
 		if (pending.length && endsBlock) flush();
 	}
 	flush();
@@ -216,6 +245,7 @@ const addVideos = text => {
 const PLACEHOLDER = /^([ \t]*)<!-- lilylet: (\S+) -->[ \t]*$/gm;
 const FILLED = /^([ \t]*)<!-- lilylet-begin: (\S+) -->\n[\s\S]*?^[ \t]*<!-- lilylet-end -->[ \t]*$/gm;
 let changed = 0, missing = 0, filled = 0, videos = 0, dropped = 0;
+const embeds = {};
 const media = new Set();
 const bookFiles = fs.existsSync(book) ? chapters().filter(f => fs.existsSync(path.join(book, f))) : [];
 // A translator may drop a placeholder line; the score is silent then, so report it.
@@ -238,6 +268,7 @@ for (const f of bookFiles) {
 	let s = before.replace(FILLED, fill).replace(PLACEHOLDER, fill);
 	s = addVideos(s);
 	videos += (s.match(/<!-- video-begin:/g) || []).length;
+	for (const m of s.matchAll(/<div class="omt-embed omt-embed-(\w+)"/g)) embeds[m[1]] = (embeds[m[1]] || 0) + 1;
 	for (const m of s.matchAll(/\]\(\.\.\/(media\/[^)\s]+)\)/g)) if (!MUSESCORE.test(m[1])) media.add(decodeURIComponent(m[1]));
 	if (s !== before) {
 		changed++;
@@ -253,5 +284,5 @@ for (const rel of media) {
 	copied++;
 	if (!check) { fs.mkdirSync(path.dirname(dst), {recursive: true}); fs.copyFileSync(src, dst); }
 }
-console.log(`sync: ${bookFiles.length} chapters, ${filled} score blocks, ${videos} videos, ${changed} files ${check ? 'stale' : 'written'}; media ${media.size} referenced, ${copied} ${check ? 'to copy' : 'copied'}, ${absent} missing; ${missing} placeholders without a score; ${dropped} lost in translation`);
+console.log(`sync: ${bookFiles.length} chapters, ${filled} score blocks, ${videos} videos, ${embeds.musescore || 0} MuseScore + ${embeds.interactive || 0} interactive embeds, ${changed} files ${check ? 'stale' : 'written'}; media ${media.size} referenced, ${copied} ${check ? 'to copy' : 'copied'}, ${absent} missing; ${missing} placeholders without a score; ${dropped} lost in translation`);
 if (check && (changed || copied)) process.exit(1);

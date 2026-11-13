@@ -22,6 +22,10 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937554)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937554 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937554/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 自然音下行五度序列。
 
 序列模型——根音按下行五度进行——在每一次后续复制中都向下移调一个二度。由于这个序列完全使用 G 大调内的和弦，根音运动在整个序列中并不完全一致。例如，IV 和弦与 vii° 和弦之间的根音运动是增四度，而其他每一对相邻和弦之间的根音运动不是纯五度就是纯四度。我们以这种方式在序列中「作弊」，是为了让音乐留在一个调内。如果相邻和弦根音之间的音程始终是纯五度／纯四度，根音进行就会是：G–C–F–B♭–E♭–A♭–D♭……依此类推。这个序列很快就会把音乐带出 G 大调，进入新的半音领域。它也就变成了半音序列。
@@ -36,17 +40,29 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937594)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937594 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937594/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 交替使用副属七和弦的自然音下行五度序列。
 
 反过来，如果我们让和弦根音的进行在整个序列中保持固定的音程模式，就能造出真正的半音序列。一个简便的方法是，把序列模型中的第二个和弦改为属七和弦，让它能副属到模型下一份复制的第一个和弦。谱例 3 中，模型第二个和弦现在变成了 F<sup>7</sup> 而不是自然音的 IV 和弦。我们把它理解为下一个和弦的 V<sup>7</sup>，而那个和弦本身又是一个属七和弦。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937629)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937629 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937629/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 以相互交叠的副属七和弦构成的半音下行五度序列。
 
 上述序列中的声部进行需要留意。由于每个和弦都被理解为下一个和弦的属七和弦，就不可能让导音与和弦七音都按常规解决。凡是以五度关系连接七和弦时都是如此，这里的声部进行需要*[省略解决（elided resolution）](05-harmonic-elision.md)*。你期待在属七和弦之后听到的那个和弦没有出现，取而代之的是一个与它根音相同的属七和弦。例如，我们期待 G<sup>7</sup> 和弦之后听到 C 或 Cm 和弦。省略解决的结果，是在原本期待的和弦位置上出现一个 C<sup>7</sup> 和弦。谱例 4 展示了省略解决的例子。谱例把期待中的 C 解决用括号标出。省略解决实质上把期待的和弦与随后的 C<sup>7</sup> 和弦「省略」在一起。某种意义上，我们在心里跳过了期待中的和弦，直接到了下一个属七和弦。这种省略的一个重要结果是：第一个属七和弦的导音 B 向下半音进行，成为新和弦的和弦七音。同样，当第一个属七和弦的和弦七音 F 向下半音进行时，它成为新的导音。这种导音／和弦七音的互换，对于使用交叠七和弦的和弦进行（比如上述序列）中正确的声部进行至关重要。此外，这类声部进行也是爵士和声学习的基础，你在本书其他部分会见到。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937661)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937661 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937661/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 属七和弦的省略解决。
 
@@ -56,15 +72,27 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937751)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937751 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937751/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 自然音上行 5–6 序列。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937755)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937755 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937755/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 半音化的自然音上行 5–6 序列，使用了副属和弦。
 
 上面两个谱例展示了自然音上行 5–6 序列（谱例 5）及其半音化变体（谱例 6）。请注意，两者在第二小节中都含有不一致的根音音程模式。具体说来，根音的模式原先是下行小三度接上行纯四度。第 2 小节第 1 拍到第 2 拍，和弦根音是 D 到 B♭——大三度。要让它成为真正的半音序列，就必须修正这个音程，使之与其他音程一致。因此，我们会把 B♭<sup>7</sup> 改成 B<sup>7</sup>。同样，我们会把 B<sup>7</sup> 之后的那个和弦改为根音为 E（而不是 E♭）的和弦，以保持按纯四度进行的根音进行（谱例 7）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937772)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937772 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 以副属和弦构成的半音上行级进序列。
 
@@ -76,19 +104,35 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21507970)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21507970 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21507970/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. [自然音下行三度序列。](https://musescore.com/user/32728834/scores/21507970/s/qIX9qG)
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937785)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937785 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937785/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. [从 D 大调转调到 C 大调的半音下行 5–6 序列。](https://musescore.com/user/32728834/scores/5937785/s/K3tHIa)
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937812)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5937812 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937812/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. 每个弱拍都使用转位和弦的半音下行 5–6 序列。序列在每个强拍上勾勒出全音音阶。
 
 熟悉的「帕赫贝尔」序列（谱例 8）可以用几种方式衍生出半音序列。这个序列的自然音版本，把根音按纯四度进行的运动与按大二度或小二度进行的运动交替起来。这个序列的完全半音化版本，把按二度进行的根音运动换成按小三度进行的根音运动（谱例 9）。这个版本的序列以大二度走遍八度，勾勒出全音音阶，并在结尾造成强烈的和声模糊感。例如，听谱例 10 时请注意，结束序列的 D 大三和弦听起来丝毫也不像主和弦，尽管名义上它就是主和弦。这个版本的序列在每个弱拍上也都使用转位和弦，形成一条半音下行的低音线。在下面的谱例 11 中，舒伯特（Schubert）用这个序列来延长主和弦。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20999587)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20999587 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20999587/embed" title="MuseScore" loading="lazy" style="height: 720px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 半音下行 5–6 序列。
 
@@ -98,11 +142,19 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20559166)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20559166 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20559166/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 12. 自然音平行 6/3 序列。
 
 这类序列常常与 7–6 延留音链搭配使用，如谱例 13 所示。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20559307)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20559307 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20559307/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 13. 带有 7–6 延留音链的自然音平行 6/3 序列。
 
@@ -110,11 +162,19 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20559394)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20559394 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20559394/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 14. 带有 7–6 延留音链的半音平行 6/3 序列。
 
 谱例 15 出自肖邦（Chopin）的《降 A 大调即兴曲》，展示了一个完全半音化的平行 6/3 和弦序列。每个和弦都是大三和弦，这些三和弦逐半音下行，直到到达 ii 和弦，随后把这一段落引向半终止。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20560195)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20560195 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20560195/embed" title="MuseScore" loading="lazy" style="height: 675px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 15. 完全半音化的平行 6/3 和弦序列。
 
@@ -124,11 +184,19 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20911636)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20911636 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20911636/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 16. 和弦在第二转位与原位之间交替的半音下行五度序列。
 
 我们在很早以前学过，属七和弦与减七和弦功能相同，许多情况下可以互相替代。在谱例 17 中，我们把前例所有的属七和弦都换成了低音相同的减七和弦。这些和弦的功能与对应的属七和弦相同——请注意每个和弦中的导音都与前例中的相同。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20911720)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20911720 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20911720/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 17. 用等价的减七和弦替换属七和弦的半音下行五度序列。
 
@@ -136,11 +204,19 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20914981)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20914981 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20914981/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 18. 作为转调载体的减七和弦半音序列。
 
 回到我们第一个半音下行五度序列的例子，我们还可以再次变化它，这次在每个和弦中使用降低的五音。如谱例 19 所示，当把序列模型的第一个和弦转位时，我们就得到一条半音下行的低音线，与使用减七和弦的变体十分相似。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20917744)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20917744 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20917744/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 19. 作为转调载体的减七和弦半音序列。
 
@@ -148,11 +224,19 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20917912)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20917912 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20917912/embed" title="MuseScore" loading="lazy" style="height: 710px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 20. 带降低五音的属七和弦序列。
 
 审视上述序列的另一个角度，是把序列模型中的每一对和弦视为一个整体单元，即在某一调性区域内由一个增六和弦加一个属七和弦构成。例如，虽然我们最初把序列的起始和弦认定为 F 的 V4/3，也可以把它看作导向降 B 调 V 级的法国增六和弦，如谱例 21 所示。这样做之所以成立，是因为法国增六和弦与减五音的属七和弦之间具有等音等价关系。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20919328)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20919328 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20919328/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 21. 带降低五音的属七和弦序列，被等音重新解释为法国增六和弦接属七和弦的连续进行。
 
@@ -160,9 +244,17 @@ modified: "2024-10-31"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21000682)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21000682 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21000682/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 22. 德国增六和弦接属七和弦的序列。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20999047)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/20999047 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20999047/embed" title="MuseScore" loading="lazy" style="height: 780px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 23. 肖邦《升 c 小调玛祖卡》Op. 30 No. 4 第 124–139 小节中德国增六和弦接属七和弦的序列。
 

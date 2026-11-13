@@ -167,6 +167,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/23335099)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23335099 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23335099/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. 可以用多个被接受的和弦符号来表达同样的音。哪一个更好取决于语境。
 
 记住这些问题，有助于理解和弦符号体系中的逻辑。尽管和弦符号变化很多，学几条规则就能帮你解读任何符号。

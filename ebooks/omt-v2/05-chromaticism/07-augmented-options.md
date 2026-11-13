@@ -63,6 +63,10 @@ R2. \\\\
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/27638568/scores/4985985)
 
+<!-- embed-begin: https://musescore.com/user/27638568/scores/4985985 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/27638568/scores/4985985/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [《天鹅之歌》D.957](https://musescore.com/user/27638568/scores/4985985)，[OpenScore Lieder](https://musescore.com/openscore-lieder-corpus) 提供
 
 这些和弦之间的小步移动，与"新黎曼"（Neo-Riemannian）和声方法中至关重要的"简约声部进行"（parsimonious voice leading）的一个关键部分有关，该方法试图解释19世纪后期变得更为常见的扩展调性关系。关于这一点，详见[新黎曼三和弦进行](https://viva.pressbooks.pub/openmusictheory/chapter/post-tonal-triadic-progressions/)。现在，让我们继续看一些增三和弦在实践中的例子。
@@ -184,6 +188,10 @@ e8 a cs^\markup "cresc." e4.
 以下是整首歌曲：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/27638568/scores/5101361)
+
+<!-- embed-begin: https://musescore.com/user/27638568/scores/5101361 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/27638568/scores/5101361/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 Hensel, Fanny (Mendelssohn) – 6 Lieder, Op.1, No.6 – Gondellied，[OpenScore LiederCorpus](https://musescore.com/openscore-lieder-corpus) 提供
 

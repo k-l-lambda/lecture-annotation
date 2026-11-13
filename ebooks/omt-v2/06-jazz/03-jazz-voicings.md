@@ -58,6 +58,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5689622)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5689622 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5689622/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 省略五音很常见，因为它不会显著改变音响。七音和根音则几乎从不省略。
 
 省略根音有可能动摇整个和弦。不过，如果演出团体中有贝斯手，你就可以在其他声部中有意省略根音。贝斯手通常会提供和声的根音，确保和弦听起来稳定。所以，谱例 2 中最后一个和弦，如果有贝斯手在这个排列下方弹一个 G，听起来就完全没有问题。
@@ -74,6 +78,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8514797/s/3GztpI)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514797/s/3GztpI -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514797/s/3GztpI/embed" title="MuseScore" loading="lazy" style="height: 540px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 平滑的声部进行使和弦听起来彼此相连。
 
 ## 爵士声部进行的范式
@@ -86,6 +94,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11095687/s/HZz7a0)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11095687/s/HZz7a0 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11095687/s/HZz7a0/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 3–7 声部进行范式应用于 ii–V–I 进行（左）和 V–IV–I 进行（右）。
 
 ### 三个上方声部：加入延伸音
@@ -94,11 +106,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11096065)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11096065 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11096065/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 三个上方声部的爵士排列范式。下面两个声部使用 3–7 范式；再加上一条连接九音与十三音的顶声部（蓝色标出），就形成了又一条平滑的线。
 
 延伸音常常从默认的大音程性质被变化。初学者很难知道何时该变化延伸音。作为起点，可以先用符合整体调性的延伸音，如谱例 5 那样——注意顶声部没有加任何变音记号。如果自然音阶版本的延伸音听起来不自然，就试着升高或降低该延伸音，让耳朵来引导你选择哪种变化听起来最好。谱例 6（[也可下载讲义](https://viva.pressbooks.pub/app/uploads/sites/12/2019/08/Common-chord-ext.pdf)）展示了某些性质的和弦最常用的延伸音，按从简单到复杂排列。但你不应从中随机挑选——听起来最合适的往往取决于周围的和弦，而不只取决于该和弦本身的性质。尝试这些延伸音，能帮助初学者培养对什么最有风格感的判断。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8514740)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514740 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514740/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 每种和弦性质常用的可加延伸音。
 

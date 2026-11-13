@@ -29,6 +29,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221729)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6221729 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221729/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 各种增六和弦概览。
 
 ## 语境
@@ -39,11 +43,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221834)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6221834 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221834/embed" title="MuseScore" loading="lazy" style="height: 465px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 增六度音程的标准声部进行。
 
 增六和弦是用半音化制造和声紧张的另一种策略。它们大多用作前属和声（不过也可以起装饰作用——见[共同音和弦](04-common-tone-chords.md)），并在终止点上直接引向原位 V。它们可以加强向半终止和正格终止推进的力度，V 和弦可以带七音和/或包含 $\mathrm{cad.^6_4}$。谱例 3 展示了三种类型在简单终止语境中的用法（正格终止版本）。注意，可以预期 *le* $(\downarrow\hat6)$ 会是该和弦的低音，但 *fi* $(\uparrow\hat4)$ 可以出现在任何其他声部。Ger<sup>+6</sup> 之后通常接 $\mathrm{cad.^6_4}$，用以抵消 G–D 与 F♯–C♯ 之间本会出现的平行纯五度；$\mathrm{cad.^6_4}$ 也可以跟在其他类型之后。在四声部织体中，Fr<sup>+6</sup> 和 Ger<sup>+6</sup> 不需要重复任何一个音；在只有三个不同音高的 It<sup>+6</sup> 中，通常会重复主音，因为它不是活跃的音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221757)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6221757 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221757/embed" title="MuseScore" loading="lazy" style="height: 1150px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 三种类型的增六和弦在终止语境中的用法。
 
@@ -54,12 +66,21 @@ modified: "2025-07-15"
 >  根据所给和弦符号构成和弦。
 >
 >  🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_augmented_sixths___french_A_major&sm_2=brian_jarvis___OMT_augmented_sixths___german_G_minor&sm_3=brian_jarvis___OMT_augmented_sixths___italian_B_minor)
+>
+> <!-- embed-begin: https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_augmented_sixths___french_A_major&sm_2=brian_jarvis___OMT_augmented_sixths___german_G_minor&sm_3=brian_jarvis___OMT_augmented_sixths___italian_B_minor -->
+> <div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_augmented_sixths___french_A_major&amp;sm_2=brian_jarvis___OMT_augmented_sixths___german_G_minor&amp;sm_3=brian_jarvis___OMT_augmented_sixths___italian_B_minor" title="Brian Jarvis" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+> <!-- embed-end -->
+>
 
 ## 与哀歌低音进行的联系
 
 当增六和弦位于半终止之前时，它们类似于弗里几亚半终止和/或哀歌低音（lament bass）进行，其中 iv<sup>6</sup> 和弦通过把 *fa* 替换为 *fi*（$\hat4$ 替换为 $\uparrow\hat4$）而被增六和弦取代。下面的例子展示了哀歌低音的几种版本，说明只需对标准的哀歌低音进行作一处小小的改动，就能引入增六和弦。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221776)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6221776 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221776/embed" title="MuseScore" loading="lazy" style="height: 678px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 在哀歌低音进行中用增六和弦取代 iv<sup>6</sup> 的例子。
 
@@ -73,6 +94,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221772)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6221772 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221772/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 大调中 Ger<sup>+6</sup> 和弦的另一种拼写。
 
 ## 德国减三和弦
@@ -80,6 +105,10 @@ modified: "2025-07-15"
 19世纪，作曲家们引入了 Ger<sup>+6</sup> 的一种变体，把 *fi* $(\uparrow\hat4)$ 而非 *le* $(\downarrow\hat6)$ 放在低音（谱例 6）。这使增六度音程转位，从而变成减三度。Ger<sup>o3</sup> 与 vii<sup>o7</sup>/V 非常相似——唯一的区别是 Ger<sup>o3</sup> 含有 *le* $(\downarrow\hat6)$，而 vii<sup>o7</sup>/V 含有 *la* $(\hat6)$——并且两者都解决到原位 V。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221766)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6221766 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221766/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. $\mathit{Ger^{o3}}$ 的使用。
 
@@ -90,12 +119,21 @@ modified: "2025-07-15"
 >  把所给增六和弦解决到指定的罗马数字。
 >
 >  🖥 [互动记谱（Brian Jarvis）](https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_augmented_sixths___resolution_french_Bb_major&sm_2=brian_jarvis___OMT_augmented_sixths___resolution_german_cad_64_D_minor&sm_3=brian_jarvis___OMT_augmented_sixths___resolution_german_cad_64_C_major)
+>
+> <!-- embed-begin: https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_augmented_sixths___resolution_french_Bb_major&sm_2=brian_jarvis___OMT_augmented_sixths___resolution_german_cad_64_D_minor&sm_3=brian_jarvis___OMT_augmented_sixths___resolution_german_cad_64_C_major -->
+> <div class="omt-embed omt-embed-interactive"><iframe src="https://brianedwardjarvis.com/MusicTheoryWebApps/staff_master/sm_iframe_container.html?sm_1=brian_jarvis___OMT_augmented_sixths___resolution_french_Bb_major&amp;sm_2=brian_jarvis___OMT_augmented_sixths___resolution_german_cad_64_D_minor&amp;sm_3=brian_jarvis___OMT_augmented_sixths___resolution_german_cad_64_C_major" title="Brian Jarvis" loading="lazy" style="height: 620px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+> <!-- embed-end -->
+>
 
 ## 音乐实例
 
 Ernesto Nazareth 的探戈"Remando"（谱例 7）在第 60 小节把 Ger<sup>+6</sup> 用作终止进行的一部分。注意从该小节开始级进下行的低音进行 *la–le–sol* $(\hat6-\downarrow\hat6-\hat5)$，这是一种在低音中以级进接近增六和弦的手法。这支舞曲的旋律有许多重音经过音，因此在这一语境下，Ger<sup>+6</sup> 期间的 C♯ 应视为装饰音。正如 Ger<sup>+6</sup> 的典型情况，其后的属和弦以 $\mathrm{cad.^6_4}$ 加以装饰。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26284273)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/26284273 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26284273/embed" title="MuseScore" loading="lazy" style="height: 990px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. Ernesto Nazareth，"Remando"（[1:48](https://open.spotify.com/track/2VTfAb62fnkbxgiM9a57sN?si=EC26Yy8oSrKpm5nYHV0IpQ)）。作为终止进行组成部分的德国增六和弦。
 

@@ -30,6 +30,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862120)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8862120 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862120/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 路易吉·诺诺（Luigi Nono）《中断的歌声》（*Il Canto Sospeso*）中的全音程音列。
 
 这个全音程音列的例子是所谓「祖母和弦」（Grandmother chord，归功于尼古拉斯·斯洛尼姆斯基 Nicolas Slonimsky）的一种线状排布。要产生这一连串音，先上行一个半音（音程级 1），再下行一个全音（音程级 10），然后继续交替使用奇数与偶数音程，奇数的音程逐渐增大、偶数的音程逐渐缩小。因此，所得的音的序列可以看作两个交错穿插的半音阶（如谱例 1 所示），它实质上是一个半音楔形，从而可以在调性作品中找到先例，例如巴赫（BWV 548）与肖斯塔科维奇（《二十四首前奏曲与赋格》Op. 87 第 15 首）的赋格。[^1]
@@ -43,6 +47,10 @@ modified: "2025-07-15"
 谱例 2 是安东·韦伯恩《弦乐四重奏》Op. 28 中的一个经典例子。音符下方的括号标出了三个属于同一集合类 (0123) 的离散四音组，即半音四音组。上方的连音线则显示出离散二音组中类似的统一性：它们全都是半音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862261)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8862261 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862261/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 安东·韦伯恩《弦乐四重奏》Op. 28 中的一个音列，被分割为离散片段。注意其中集合类与音程的数量十分有限。
 
@@ -63,6 +71,10 @@ modified: "2025-07-15"
 我们说这些四音组是*不变片段*（invariant segments）。它们之所以保持不变，是因为它们彼此之间的关系与两个音列之间的关系相同：由于这些四音组之间是 T<sub>8</sub> 关系，当整个音列被 T<sub>8</sub> 移位时，这些四音组就“保持不变”。换句话说，第一个四音组上移四个半音时，就*变成*了最后一个四音组，所以当整个音列按那个音程移位时，发生的是同一回事。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862222)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8862222 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862222/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 安东·韦伯恩《弦乐四重奏》Op. 28 中的片段不变性。
 
@@ -105,6 +117,10 @@ modified: "2025-07-15"
 谱例 4 再次展示韦伯恩 Op. 28 的音列（上方谱表），并通过把每一对音颠倒过来，造出一个新的音列（下方谱表）。后一种情况与前一种具有相同的二音组片段和四音组片段，但这些片段的内部顺序变了。按定义，我们仍然得到一个包含全部十二个音的音列，只是另一个音列。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862252)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8862252 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862252/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 从安东·韦伯恩《弦乐四重奏》Op. 28 的音列造出的部分重排音列。
 

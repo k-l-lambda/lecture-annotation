@@ -23,6 +23,10 @@ modified: "2026-07-24"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488241)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8488241 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488241/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 《帕纳索斯阶梯》中全部第四类对位练习。
 
 ## 延留音
@@ -44,6 +48,10 @@ modified: "2026-07-24"
 - 5–6 之类的其他进行也可以使用，但它们不构成不协和延留，因为被延留的音并不不协和。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/24640900)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/24640900 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/24640900/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 第四类对位中的各类延留音。
 

@@ -23,9 +23,17 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230930)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230930 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230930/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 用强前属和弦加强的结尾，见于玛丽亚·希曼诺夫斯卡（Maria Szymanowska）《六首钢琴进行曲》中的第六进行曲（[0:00-0:16](https://open.spotify.com/track/1TUAHxfFiza4bVjpOFBOrM?si=40e59982bdf04c16)）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230934)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230934 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230934/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 强前属和弦在乐句结尾处的位置。
 
@@ -34,6 +42,10 @@ modified: "2025-07-15"
 强前属这一段给写作增加了一定难度，因为平行八度和五度往往就出现在这里（谱例 3）。你需要仔细检查强前属和弦附近的写法，看有没有平行进行。一个有用的办法是尽量让更多上方声部与低音形成反向进行。由于低音要从 *fa* 上行到 *sol* $(\hat{4}-\hat5)$，这意味着上方声部最好向下进行。以下是写作正格终止的步骤。注意，如果你想写半终止，只需在结尾省去 I 和弦。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230937)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230937 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230937/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 强前属和弦区域中的平行进行。
 
@@ -51,6 +63,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230943)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230943 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230943/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 用 ii<sup>6</sup> 写作。
 
 ## 用 IV 写作
@@ -59,11 +75,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230948)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230948 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230948/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 所有声部同向运动造成的平行进行。
 
 用 IV 写作的步骤与 ii<sup>6</sup> 相同：写出完整的低音，从 V 出发向外写出完整的高声部，然后填充内声部（谱例 6）。在重复音方面有一点重要差别：ii<sup>6</sup> 和弦的重复相当灵活，因为它是第一转位和弦；而 IV 和弦几乎总是重复它的低音，因为它是原位和弦。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230949)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230949 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230949/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 用 IV 写作。
 
@@ -75,6 +99,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230956)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230956 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230956/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 用 ii 写作。
 
 ## 组合使用 IV 与 ii<sup>(6)</sup>
@@ -82,6 +110,10 @@ modified: "2025-07-15"
 有时作曲家会在乐句结尾的属和弦之前同时使用 IV 和 ii<sup>(6)</sup>。在这种情况下，ii 总是出现在 IV 之后。IV 和 ii<sup>(6)</sup> 虽然都是强前属，但 ii<sup>(6)</sup> 与紧随其后的 V 和弦有一种特殊关系：ii 的根音与 V 的根音相隔五度，就像 V 的根音与 I 的根音相隔五度一样（谱例 8）。这种根音关系使 ii 成为比 IV 更强的前属，这也是为什么在乐句结尾同时使用两者时，ii 总是出现在 IV 之后，而从不先于 IV。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6230968)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6230968 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6230968/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. ii–V（左）与 V–I（右）根音关系的比较。
 

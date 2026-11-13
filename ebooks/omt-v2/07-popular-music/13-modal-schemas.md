@@ -40,6 +40,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5973262)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5973262 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5973262/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 按主音的大调性或小调性分组的调式，虚线连音线把每个调式特有的色彩音与其大调 / 小调对应者连接起来。
 
 ## 调式和声的功能
@@ -145,6 +149,10 @@ c1^\markup "C mixolydian"^\markup "1̂" d^\markup "2̂" e^\markup "3̂" f^\marku
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8521067)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8521067 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8521067/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 双变格图式和混合利底亚终止图式是两个特别常见的混合利底亚和弦进行。
 
 ### 双变格 {#double-plagal}
@@ -187,6 +195,10 @@ g,4. g8 f4. f8 \bar "||" | %4
 你也许会把爱奥利亚调式等同于[自然小调音阶](https://viva.pressbooks.pub/openmusictheory/chapter/scales-and-scale-degrees-open-music-theory#natural-minor)。但作为一种调或音集，爱奥利亚与小调是不同的，因为爱奥利亚（在流行音乐中的用法）会突出使用 *le* 和 *te* $(\downarrow\hat6, \downarrow\hat7)$。这些色彩音级带来 ♭VI 和 ♭VII 和弦，它们是爱奥利亚调式的标志性和弦。（注意 ♭VI 和 ♭VII 的标记中使用降号，尽管它们在小调 / 爱奥利亚中是自然音——这是为了避免与 vii<sup>o</sup> 混淆。）爱奥利亚图式使用这两个和声中的一个或两个（谱例 6）。♭VI 和弦具有下属功能，♭VII 和弦具有属功能。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8520971)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8520971 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8520971/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 下主音交替、爱奥利亚交替、爱奥利亚终止和哀悼图式是四种常见的爱奥利亚和弦进行。
 
@@ -383,6 +395,10 @@ e,4 e8.[ e16]~ e8[ fs] a16[ b b,8] \bar ":|."
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8521022)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8521022 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8521022/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 12. 多利亚交替使用小三和弦 i 和大三和弦 IV，可以扩展为上行至 i<sup>7</sup> 的拱形。
 
 ## 利底亚：II♯
@@ -413,6 +429,10 @@ c1^\markup "lydian"^\markup "1̂" d^\markup "2̂" e^\markup "3̂" fs^\markup "�
 II♯ 可以具有下属功能或属功能，下面两个图式各用到其中一种（谱例 14）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8521043)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8521043 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8521043/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 14. II♯ 和弦是利底亚的特征和弦，下面两个图式都用到它。
 

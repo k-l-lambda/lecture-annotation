@@ -22,6 +22,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6252227)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6252227 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6252227/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 亨德尔（Handel）《弥赛亚》（*Messiah*）中《哈利路亚合唱》在完满正格终止之后的变格进行（[3:02-3:29](https://open.spotify.com/track/4TNCQyG2gmepsGoeLdRKn4?si=407f7e953dfe4dcd)）。
 
 > **变格进行与变格终止**
@@ -42,6 +46,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6252232)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6252232 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6252232/embed" title="MuseScore" loading="lazy" style="height: 390px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 用原位和弦写作变格进行。
 
 ## 在乐句开头写作变格进行
@@ -49,6 +57,10 @@ modified: "2025-07-15"
 虽然变格进行的原位版本（如谱例 2）有时也出现在乐句开头，但谱例 3 表明（IV）也可以进行到 I<sup>6</sup>。这里要当心（IV）与 I<sup>6</sup> 之间的平行进行：如果谱例 3 中的女低音不是进行到 B♭，而是进行到 G（括号中所示），就会与低音形成平行八度。记住，在乐句开头，主和弦由转位 V<sup>7</sup> 延长的情形远比由（IV）延长的情形常见得多。当你看到乐句开头的 *fa*–*mi*（$\hat4-\hat3$）时，你的直觉仍应是使用 $\mathrm{V^4_2-I^6}$ 而不是 $\mathrm{(IV)-I^6}$。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6252238)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6252238 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6252238/embed" title="MuseScore" loading="lazy" style="height: 390px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 用转位主和弦写作变格进行。
 

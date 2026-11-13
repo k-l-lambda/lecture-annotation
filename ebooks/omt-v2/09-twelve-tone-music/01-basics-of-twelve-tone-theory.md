@@ -49,6 +49,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6591448)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6591448 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6591448/embed" title="MuseScore" loading="lazy" style="height: 294px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 四种形式的半音阶：原形、逆行、倒影与逆行倒影。
 
 ### 原形
@@ -79,6 +83,10 @@ modified: "2025-07-15"
 
 现在我们已经掌握了基本观念，来看看它在真实的音乐语境中如何运作。我们使用同样的版式，以伊丽莎白·勒琴斯（Elisabeth Lutyens）《经文歌（哲学逻辑论说摘录）》（*Motet (Excerpta Tractati Logico-Philosophici)*）Op. 27 中的音列形式为例。[^4]
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6591521/s/kMwC4y)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6591521/s/kMwC4y -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" title="MuseScore" loading="lazy" style="height: 294px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. [伊丽莎白·勒琴斯《经文歌（哲学逻辑论说摘录）》Op. 27](https://open.spotify.com/track/1KHlQk1IYYZZocedHyughI?si=6fcda3cb90c1470a)中的音列形式。
 

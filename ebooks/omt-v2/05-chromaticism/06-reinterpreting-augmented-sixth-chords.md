@@ -98,9 +98,17 @@ modified: "2024-10-16"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8935623)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8935623 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8935623/embed" title="MuseScore" loading="lazy" style="height: 330px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 用 A 大调中的调式混合和弦（iv）作为枢轴和弦，从 A 大调转调到 F 大调。 
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8935767)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8935767 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8935767/embed" title="MuseScore" loading="lazy" style="height: 365px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 用 D♭ 大调中的调式混合和弦（♭VI<sup>6</sup>）作为枢轴和弦，从 D♭ 大调转调到 F♭ 大调。 
 
@@ -168,11 +176,19 @@ modified: "2024-10-16"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8935728)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8935728 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8935728/embed" title="MuseScore" loading="lazy" style="height: 330px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 用 A♭ 大调中的自然音和弦（vi）作为枢轴和弦，把它解释为 C 大调中的调式混合和弦（iv），从而从 A♭ 大调转调到 C 大调。 
 
 谱例 7 展示了勃拉姆斯（Brahms）《圆舞曲》Op. 39 第 14 首中一次有趣的半音转调。在这里，勃拉姆斯用局部调性 G 大调中自然音的 vii<sup>o6</sup> 和弦作为枢轴，转入 E 大调，把这个和弦重新解释为新调 E 大调中的调式混合和弦 ii<sup>o6</sup>。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/9010358)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/9010358 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/9010358/embed" title="MuseScore" loading="lazy" style="height: 440px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 用 G 大调中的自然音和弦（viio6）作为枢轴和弦，把它解释为 E 大调中的调式混合和弦（iio6），从而从 G 大调转调到 E 大调。 
 
@@ -182,11 +198,19 @@ modified: "2024-10-16"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/9014891)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/9014891 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/9014891/embed" title="MuseScore" loading="lazy" style="height: 225px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. 半音中音之间共享的共同音。 
 
 在歌曲"Widmung"中，罗伯特·舒曼（Robert Schumann）正是用这一手法从 A♭ 大调转调到与之有半音中音关系的 F♭ 大调（为清楚起见写作 E 大调）。在谱例 9 中，我们可以看到 A♭ 调通过第 13 小节的 PAC 得到了明确的确认。我们的耳朵紧抓住 A♭ 的到达，而它随后被重新解释为 G♯，即 E 大调主和弦的三音，并在几小节之后得到确认。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/12664156)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12664156 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12664156/embed" title="MuseScore" loading="lazy" style="height: 950px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. [舒曼（Robert Schumann），Op. 25 第 1 首，"Widmung"，第 10–17 小节](https://musescore.com/user/32728834/scores/12664156/s/4Jjygb)
 
@@ -196,6 +220,10 @@ modified: "2024-10-16"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/12667216)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12667216 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12667216/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. [把德国增六和弦改写为属七和弦，以及反过来](https://musescore.com/user/32728834/scores/12667216/s/Rqg7N8)
 
 谱例 10 提供了两个例子，说明属七和弦如何可以被重新解释为德国增六和弦，以及反过来。在谱例 10 的 a) 中，七音级进下行解决到主和弦的三音，而低音则跳进到主和弦的根音。此后，B♭ 被重新解释为 A♯，并级进上行解决。随着低音级进下行，这两个音都解决到 $\hat{5}$，由 E 大调中的终止四六和弦支撑。这种声部进行上的差异（七音级进下行解决，增六度向外解决到 $\hat{5}$）就是属七和弦与其等音等同的德国增六和弦之间的根本区别。
@@ -204,17 +232,29 @@ modified: "2024-10-16"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/12667603)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12667603 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12667603/embed" title="MuseScore" loading="lazy" style="height: 950px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [谱例 11. 贝多芬（Beethoven），D 大调小提琴协奏曲 Op. 61，第一乐章，第 280–304 小节](https://musescore.com/user/32728834/scores/12667603/s/agtET0)
 
 因此，如果你把一个属七和弦重新解释为增六和弦，并用它作为枢轴进入新调，所得的转调将向下半音。反过来，如果你把一个增六和弦重新解释为属七和弦，所得的转调将向上半音。谱例 12 展示的正是这种情况。在这里，海顿（Haydn）在 D 大调的德国增六和弦（B♭–D–F–G♯）上停留了三小节，通过使用延长记号，让听众在这和声上沉思玩味。这个和弦没有在 D 大调中解决，而是把 G♯ 重新解释为 A♭，向下半音解决到新主调 E♭ 大调主和弦的三音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/12743104)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12743104 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12743104/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [谱例 12. 海顿 D 大调钢琴三重奏 Hob. XV: 16，第一乐章，第 163–73 小节](https://musescore.com/user/32728834/scores/12743104/s/I9Jyzs)
 
 当然，你可以把这一窍门用于任何属七和弦（比如某个副属和弦），从而开辟出大量转调的可能性。谱例 13 展示了舒伯特（Schubert）把一个德国增六和弦重新解释为 V<sup>7</sup>/IV 和弦，从而从 C♯ 大调转调到 A 大调（这又是一次转调到有半音中音关系的调！）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/12680431)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12680431 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12680431/embed" title="MuseScore" loading="lazy" style="height: 825px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 [谱例 13. 舒伯特，《感伤的圆舞曲》Op. 50 第 13 首（D. 779），第 18–38 小节](https://musescore.com/user/32728834/scores/12680431/s/JlMShl)
 
@@ -224,17 +264,29 @@ modified: "2024-10-16"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/12743365)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12743365 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12743365/embed" title="MuseScore" loading="lazy" style="height: 325px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [谱例 14. 减七和弦的拼写改写](https://musescore.com/user/32728834/scores/12743365/s/yX9YAj)
 
 这一手法的经典例子见于贝多芬 c 小调钢琴奏鸣曲 Op. 13，即谱例 15。在这一段中，贝多芬用了几个减七和弦。我们听到的第一个减七和弦表现正常，起对属和弦离调的作用。第二次听到减七和弦时，我们听到的是 g 小调的局部减七和弦：F♯–A–C–E♭。这个和弦的表现同样符合预期，解决到第一转位的主和弦。下一小节我们又听到同一个和弦，但这一次贝多芬把它拼写为 F♯–A–C–D♯。新的拼写反映了和弦的新功能，其中 D♯ 充当新调 e 小调的导音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/21147820)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21147820 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21147820/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 15. [贝多芬 c 小调钢琴奏鸣曲 Op. 13，第一乐章，第 133–39 小节](https://musescore.com/user/32728834/scores/21147820/s/LtJAg5)。
 
 当然，这一手法可以用于任何减七和弦，而不只是局部调中自然音的那个。在谱例 16 中，勃拉姆斯制造了一种期待：第 5 小节的减七和弦将对属和弦离调。这种期待是通过前一小节听到的扩展离调建立起来的，正是在那里我们第一次听到这个减七和弦。在第 4 小节，这个和弦拼写为 A–C–E♭–G♭，起 E♭ 大调中属和弦的 viio7 的作用。在第 5 小节，我们又听到这个和弦。然而我们的期待落空了，因为该和弦反而解决到第一转位的 g 小三和弦。勃拉姆斯通过用不同的方式拼写这个和弦（尽管它等音等同）给了我们一个线索，暗示这可能会发生：A–C–E–F♯。它的拼写是考虑到预期中向 g 小调的解决，因为 F♯ 是新调中的导音。g 小调果然成为新的主调，并在几小节之后由终止式加以确认。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/21148363)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21148363 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21148363/embed" title="MuseScore" loading="lazy" style="height: 950px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 16.   [勃拉姆斯 Op. 57 第 2 首](https://musescore.com/user/32728834/scores/21148363/s/zt0WjR)
 

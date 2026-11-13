@@ -26,6 +26,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839451)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839451 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839451/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 两个三和弦，分别以旋律形式和和声形式展示。
 
 ![谱例 2. 一个雪人。](../media/2022/07/Snowperson.png)*谱例 2. 一个雪人。*
@@ -57,6 +61,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839452)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839452 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839452/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 不同性质的三和弦。
 
 ## 和弦符号
@@ -76,6 +84,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839453)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839453 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839453/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 展示四个三和弦及其和弦符号。
 
 ## 大调与小调中的三和弦性质 {#triad-qualities-in-major-and-minor}
@@ -84,11 +96,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514212)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514212 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514212/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 大调中的三和弦性质。
 
 谱例 7（G 小调）展示了小调音阶中三和弦性质的模式。注意，这个例子包含两个建立在 *sol* $(\hat5)$ 上的三和弦，以及两个建立在 *te*/*ti* $(\hat7/\uparrow\hat7)$ 上的三和弦——一个不含升高的导音（"自然小调"），一个含升高的导音（"和声小调"）。如谱例 7 所示，建立在 *do*、*fa* 和 *sol* $(\hat1,\ \hat4,$ 和 $\hat5)$（不含升高的导音）上的三和弦是小三和弦（用小写的"mi"表示）。建立在 *me*、*le* 和 *te* $(\hat3,\hat6,$ 和 $\hat7)$（不含升高的导音）上的三和弦是大三和弦。含升高导音、建立在 *sol* $(\hat5)$ 上的三和弦也是大三和弦。建立在 *re* 和 *ti* $(\hat2$ 和 $\uparrow\hat7)$（含升高的导音）上的三和弦是减三和弦（用上标度数符号表示）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8456477/s/Orwx2V)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8456477/s/Orwx2V -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8456477/s/Orwx2V/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 建立在自然小调音阶上的三和弦性质。
 
@@ -152,6 +172,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6876492)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6876492 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6876492/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 一个待识别的三和弦。
 
 要识别这个三和弦：
@@ -163,6 +187,10 @@ modified: "2026-06-17"
 让我们把同样的步骤应用于谱例 11 中的三和弦：
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839467)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839467 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839467/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 第二个待识别的三和弦。
 
@@ -177,6 +205,10 @@ modified: "2026-06-17"
 根据八度等价的原理，音的重复或间距不影响三和弦的识别。谱例 12 展示了几个不同的三和弦及其和弦符号。可以看到，无论是否有八度重复（谱例 12a），也无论是否采用音程距离较宽的开放间距（谱例 12b），这些三和弦的识别都是相同的。重复和开放间距可以结合使用，如谱例 12c 所示。为了识别带有重复和开放间距的三和弦，你需要把各音想象或写成没有任何重复的密集间距三和弦。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839470)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6839470 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839470/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 12. 重复不影响和弦符号。
 

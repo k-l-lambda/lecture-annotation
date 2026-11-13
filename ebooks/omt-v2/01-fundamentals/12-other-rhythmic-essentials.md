@@ -24,6 +24,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422541)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8422541 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422541/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 位于 (a) 拍层级、(b) 细分层级和 (c) 跨拍层级的三连音。
 
 三连音在许多不同体裁的音乐中都极为常见。LMFAO 的《Shots》（2009）就是一个例子。谱例 2 展示了这首歌副歌中反复出现的节奏，其中含有一个跨拍三连音：
@@ -54,6 +58,10 @@ modified: "2026-06-17"
 二连音是连音符的一种，它把复拍子中的一拍（或一个划分）分成两部分。记写二连音的方法是在二连音节奏上方写数字 2，如谱例 4 所示。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422571)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8422571 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422571/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 在二连音节奏上方写一个 2 来记写二连音。
 
@@ -102,6 +110,10 @@ bf'8[ a g] f4. r4. r4. \bar "|."
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422604)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8422604 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422604/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 贝多芬《第九交响曲》（1824）中「谐谑曲」的八个小节，附超节拍数。
 
 这段对超节拍的介绍极为简短。欲了解更多，你可以阅读《Open Music Theory》的作者之一 Brian Jarvis 所写的[超节拍](https://brianedwardjarvis.com/TheoryTopics/hypermeter.html)。
@@ -111,6 +123,10 @@ bf'8[ a g] f4. r4. r4. \bar "|."
 切分发生在出现非拍点节奏重音时（更多信息见[流行音乐中的节奏与节拍](../07-popular-music/01-rhythm-and-meter-in-pop-music.md)），如谱例 8 所示，它可以由延音线、附点、休止符和/或力度造成。第 1 小节中，延音线造成切分；第 2 小节中，节奏之所以切分，是因为同时有附点和延音线。第 3 小节的切分感由每拍开头的休止符造成。第 4 小节中，虽然每个划分上都有八分音符，非拍点的重音（力度）仍产生了切分。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296167)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6296167 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296167/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 切分节奏的不同例子。
 

@@ -33,6 +33,10 @@ modified: "2026-07-24"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488049)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8488049 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488049/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 《Gradus ad Parnassum》中的全部第一类对位练习。
 
 ## 开始与结束
@@ -57,6 +61,10 @@ modified: "2026-07-24"
 因此，倒数第二小节中两条线条之间要么是三度，要么是六度（谱例 2）。这一结尾公式称为*克劳苏拉·维拉*（clausula vera）。谱例 1 中的每个练习都以克劳苏拉·维拉结束。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8513480)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8513480 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8513480/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 克劳苏拉·维拉的示例。
 

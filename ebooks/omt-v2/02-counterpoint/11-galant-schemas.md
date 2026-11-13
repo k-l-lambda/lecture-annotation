@@ -93,6 +93,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350117)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/5350117 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350117/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [带和弦的帕蒂门托（partimento）原型](https://musescore.com/user/30425053/scores/5350117)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
 > 参考文献

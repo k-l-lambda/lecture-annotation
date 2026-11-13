@@ -24,6 +24,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/10006141)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/10006141 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/10006141/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. [Duke Ellington 的「Mood Indigo」](https://open.spotify.com/track/1Fo98RNzO78WnMtkZKZXMW?si=KvjZUQyPS8ywPG1OR54UcQ)前八小节的和弦。
 
 ## 装饰副和弦
@@ -34,6 +38,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719733)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5719733 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719733/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 在 C<sup>7</sup> 和弦前插入一个 G<sup>7</sup> 和弦，造成 C 的副属和弦，而它在「Mood Indigo」原有的和弦进行中并不存在。
 
 ### 副 ii<sup>7</sup>
@@ -43,6 +51,10 @@ ii–V–I 一章讨论了[副 ii–V–I](04-ii-v-i.md#applied-ii-vs) 的用法
 Duke Ellington 的「Mood Indigo」以 **B♭–C<sup>7</sup>–Cmi<sup>7</sup>–F<sup>7</sup>–B♭** 进行开始。开头的那个 C<sup>7</sup> 可以通过在它前面加一个 Gmi<sup>7</sup> 来装饰，造成一个临时的 ii–V，随后又进行到另一个 ii–V。在节奏上，这意味着把 C<sup>7</sup> 的时值切成两半，用副 ii 和弦替换前半。结果就是下文的谱例 3。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719690)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5719690 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719690/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 在 C<sup>7</sup> 和弦前插入一个 Gm<sup>7</sup> 和弦，造成 F 调中的 ii–V，而它在「Mood Indigo」原有的和弦进行中并不存在。
 
@@ -83,6 +95,10 @@ CT<sup>o7</sup> 可以用来延长任何和弦。在节奏上，这个和弦被�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/10006099/s/O6ycuv)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/10006099/s/O6ycuv -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/10006099/s/O6ycuv/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 一个 CT<sup>o7</sup> 装饰开头的 B♭ 和弦，插在占满全音符的和声的第 3 拍上。另一个 CT<sup>o7</sup> 装饰 C<sup>7</sup> 和弦，把 C<sup>7</sup> 推迟了半拍。
 
 ## 节奏与装饰和弦
@@ -90,6 +106,10 @@ CT<sup>o7</sup> 可以用来延长任何和弦。在节奏上，这个和弦被�
 要给和弦进行加入新和声，就必须改变进行的和声节奏（harmonic rhythm）。具体如何改变，取决于旋律的语境。谱例 6 标出了把每个装饰和弦塞进既有和弦进行所需的和声节奏变化。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/13782358)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/13782358 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/13782358/embed" title="MuseScore" loading="lazy" style="height: 810px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 为容纳所增加的装饰和声而调整和声节奏的几种方式。
 
@@ -104,6 +124,10 @@ CT<sup>o7</sup> 可以用来延长任何和弦。在节奏上，这个和弦被�
 谱例 7 用几种不同方式在 Duke Ellington 的「Mood Indigo」中显示 CT<sup>o7</sup>，说明了这一点。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6656170)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6656170 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6656170/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 装饰和弦可以（a）不写出来，由演奏者即兴；（b）写进和弦符号；（c）作为另一种配和声方式用括号标出。
 

@@ -29,11 +29,19 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12259201)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12259201 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12259201/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. [塞萨尔·弗兰克《交响变奏曲》（双钢琴改编版）第 170–172 小节](https://musescore.com/user/32728834)
 
 增五度的属和弦也可以用作副属和弦，你可以在谱例 2 中施特劳斯（Strauss）《蒂尔·艾伦施皮格尔的恶作剧》的片段中听到。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12259252)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12259252 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12259252/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. [理查德·施特劳斯《蒂尔·艾伦施皮格尔的恶作剧》（钢琴改编谱）](https://musescore.com/user/32728834/scores/12259252/s/e2hCwA)
 
@@ -41,11 +49,19 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12259285)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12259285 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12259285/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. [勃拉姆斯《第二钢琴协奏曲》第四乐章](https://musescore.com/user/32728834/scores/12259285/s/A7cwBr)
 
 请注意，增三和弦是对称和弦，可以有多种解释，因此没有适当的上下文就很难确定它的根音。谱例 3 中，勃拉姆斯清楚表明这个和弦的功能是降 B 的属和弦，但人们也很容易把低音重新解释为 A 增三和弦的根音。与减七和弦一样，增三和弦可以是通往远关系半音转调的途径。谱例 4 展示了 C 增三和弦的三种可能的等音解释与解决。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/9088466)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/9088466 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/9088466/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. [增三和弦属和弦的等音改写](https://musescore.com/user/32728834/scores/9088466/s/iFMvbd)
 
@@ -55,17 +71,29 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12272548)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12272548 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12272548/embed" title="MuseScore" loading="lazy" style="height: 720px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. [理查德·施特劳斯《莎乐美》排练号 117](https://musescore.com/user/32728834/scores/12272548/s/ImVHJR)
 
 与增三和弦、减七和弦一样，带减五度的属七和弦也是对称的。而且，这个和弦等同于法国增六和弦。当你把 V°7 和弦用在第二转位、让降五音留在低音声部下行级进解决时，这种等价关系就更清楚了。例如在 C 大调中，V°4/3 和弦与 F 大调的法国增六和弦完全相同。同样，V°4/3/V 等同于主调 C 大调中的法国增六和弦。从技术上说，原位、带减五度的属七和弦*也*等同于法国增六和弦，只是需要一些等音改写的处理才看得清楚。谱例 6 展示了所有这些等价关系。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/9101633)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/9101633 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/9101633/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. [带减五度的属七和弦及其等音对应和弦](https://musescore.com/user/32728834/scores/9101633/s/y0H5Bs)
 
 关于变化属和弦的讨论，最后请看谱例 7，出自柴可夫斯基（Tchaikovsky）《第五交响曲》第二乐章。在这一片段中，从半减七和弦与全减七和弦构成的半音泥潭中浮现出来的，是一个相当出人意料的自然音 ii7 和弦。这个和弦经级进运动，穿过另一个半减七和弦，解决到这一段的终止属和弦：一个 V°4/3 和弦。通常，终止属和弦只有在原位时才有效，但这个和弦恰恰是19世纪半音化与模糊性的象征。降五音像增六和弦那样下行级进，解决到 D 大调主音。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12273394)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12273394 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12273394/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. [柴可夫斯基《第五交响曲》第二乐章第 40–46 小节](https://musescore.com/user/32728834/scores/12273394/s/iQ4L8D)
 
@@ -74,6 +102,10 @@ modified: "2025-01-13"
 至此，我们只使用了构成三和弦或七和弦的和声。在根音七音之上继续叠置三度，既是可能的，而且许多浪漫主义时期及以后的作曲家确实这样做。不过，你只能叠到一定程度，之后就回到和弦的根音，如谱例 8a 所示。在爵士理论中，七音以上的和弦音称作*扩展音*（extensions），本书采用这一说法。重要的是，扩展音的意义取决于它的排列。谱例 8b 与 8c 给出了同样的四个音高的两种不同排列。在谱例 8b 中，和弦显然可以置于 C 大调 V13/7 的上下文中来理解。谱例 8c 则远没有那么清楚；它可以是 8b 中和弦的某种转位，我们也可以把它看作扩展的 iii 和弦。无论哪种情况，上下文都因和弦的排列而变得不清晰。正因如此，我们往往只在原位使用扩展和弦（因为扩展音真正是由和弦根音来定义的）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12280573)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12280573 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12280573/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. [扩展音的类型](https://musescore.com/user/32728834/scores/12280573/s/u-zJBF)
 
@@ -91,6 +123,10 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12500938)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12500938 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12500938/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. [扩展音的生成方式](https://musescore.com/user/32728834/scores/12500938/s/okGwec)
 
 ## 「假」扩展音与「真」扩展音
@@ -99,11 +135,19 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12501856)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12501856 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12501856/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. [罗伯特·舒曼《林中对话》，选自《歌曲集》Op. 39 No. 3，第 1–8 小节](https://musescore.com/user/32728834/scores/12501856/s/CyuCrc)
 
 在谱例 10 中，我们可以看到舒曼在这首歌的开头使用了属九和弦。九音被当作和弦音来对待，而不是装饰；请注意它是和弦内部的跳进引入的，直到和弦变化才解决。与此相比，谱例 11 中舒伯特用 F♭ 在第 5 小节制造了属音上方的一个九度。这个九度在和弦变化之前就下行级进解决。这是一个「假」九音的例子，更宜解释为强拍不协和音，而非「真」的和弦扩展音。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12522556)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12522556 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12522556/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. [舒伯特《即兴曲》Op. 90 No. 4，第 1–8 小节](https://musescore.com/user/32728834/scores/12522556/s/9pAfHu)
 
@@ -111,9 +155,17 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12523291)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12523291 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12523291/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 12. [舒伯特《高贵圆舞曲》D. 969 No. 4，第 1–8 小节](https://musescore.com/user/32728834/scores/12523291/s/20DEyp)
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12523381)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12523381 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12523381/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 13. [舒伯特《感伤圆舞曲》D. 779 No. 17，第 1–8 小节](https://musescore.com/user/32728834/scores/12523381/s/iPar8M)
 
@@ -123,6 +175,10 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12523876)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12523876 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12523876/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 14. [福雷《伊斯法罕的玫瑰》Op. 39 No. 4，第 1–14 小节](https://musescore.com/user/32728834/scores/12523876/s/5uKnDa)
 
 有时，和弦扩展音也可以用非属和弦上，如谱例 15 的情况。这里，ii 和弦带有七音，同时还有九音和十一音。十一音是作为「真正的」十一音呈现的，排列在七音与九音之上，这与上面福雷的例子不同——那里十一音写作四音（听起来更像未解决的延留音）。这样的排列在流行音乐中要常见得多，比如谱例 16 中 The Emotions 的歌曲。这里，属和弦呈现为「真正的」十一和弦，或者按许多流行乐手习惯的说法，是一个「IV 叠在 V 上」的和弦，即 F 大三和弦在 G 低音之上作响。
@@ -131,15 +187,27 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12524053)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12524053 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12524053/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 15. [门德尔松《仲夏夜之梦》Op. 21 序曲，第 450–458 小节](https://musescore.com/user/32728834/scores/12524053/s/SVxjDI)
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12524245)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12524245 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12524245/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 16. [The Emotions《Best of My Love》第 1–2 小节](https://musescore.com/user/32728834/scores/12524245/s/9En1Zn)
 
 像最后两个这样的例子进一步说明：扩展音是由排列与线性上下文来定义的，而且事实上，它们开始动摇三度和声里整个功能概念——究竟是由低音决定功能，还是由和弦的内容决定？最后一个例子，我们来看塞萨尔·弗兰克《A 大调小提琴奏鸣曲》优美的开头，见谱例 17。这个乐章在调性模糊中开始，在两个功能似乎被完全压制的和弦之间交替。开头的 V9 和弦「倒退」进行到一个看起来像是 ii13、并且还含十一音的和弦时，就失去了属功能的感觉。另一方面，人们也可以把这个和弦解释为第 1 小节所听到的同一个 V9 和弦的「转位」。当小提琴进入时，人们更有理由把第 2 小节的和弦听成 ii，这次还有小提琴上琶音的 b 小调三和弦作为支撑。最终，调性在 A 大调中稳定下来，到达主和弦。当然，主和弦因升 F 的存在而有所削弱——升 F 下行级进解决，却在提琴旋律中被悬置着。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/12524392)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/12524392 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/12524392/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 17. [弗兰克《A 大调小提琴奏鸣曲》第一乐章第 1–8 小节](https://musescore.com/user/32728834/scores/12524392/s/RHEZXU)
 

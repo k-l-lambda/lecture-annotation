@@ -28,6 +28,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6815731)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6815731 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6815731/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 一个上行的大调音阶。
 
 大调音阶总是起止于相同音名的两个音，相隔一个八度，而这一起止音决定音阶的名称。因此，谱例 1 描绘的是 C 大调音阶，因为它的第一个和最后一个音是 C。
@@ -41,6 +45,10 @@ modified: "2026-06-17"
 音阶的名称包括作用于第一个和最后一个音的任何变音记号。谱例 2 展示的是 B♭（降 B）大调音阶——而不是 B 大调音阶，后者会使用另一组不同的音高。注意，每个大调音阶中半音与全音的模式都相同，如谱例 1 和谱例 2 所示。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6823280)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6823280 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6823280/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 一个降 B 大调音阶。
 
@@ -97,6 +105,10 @@ R1 | %5
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8452298)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8452298 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8452298/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 一个 D 大调音阶。
 
 在音阶级数下方，谱例 3 还展示了命名大调音阶各音的另一种方法：视唱唱名（solfège）音节。视唱唱名（一套唱名音节）是命名大调音阶各音的另一种方法。音节 *do*、*re*、*mi*、*fa*、*sol*、*la* 和 *ti*（读作 doe、ray、me、fah、sew、lah、tea）可以用于任何大调音阶的前七个音；它们对应于音阶级数 $\hat{1}$、$\hat{2}$、$\hat{3}$、$\hat{4}$、$\hat{5}$、$\hat{6}$ 和 $\hat{7}$。最后一个音是 *do*（$\hat{1}$），因为它是对第一个音的重复。由于 *do*（$\hat{1}$）随大调音阶第一个音的不同而变化，这种视唱方法称为首调 *do*（movable *do*）。与之相对的是固定 *do*（fixed *do*）的唱名体系，其中 *do*（$\hat{1}$）永远是音级 C。
@@ -125,6 +137,10 @@ R1 | %5
 谱例 7 展示了这些音级名称用于一个 A♭ 大调音阶的情形：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8452340)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8452340 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8452340/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 一个标有音级名称的 A♭ 大调音阶。
 
@@ -352,6 +368,10 @@ s4 \bar "||" | %8
 如果大调对应于谱例 15 或 16 中的某一个调号，就称其为「实调」（real）。如果调号需要重升号或重降号，那个调号就是「虚调」（imaginary）。偶尔你可能会遇到虚调的音乐。谱例 17 展示了一个降 F 大调音阶；降 F 大调的调号是虚的，因为它需要用到 B𝄫。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6817049)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6817049 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6817049/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 17. 高音谱号中的降 F 大调音阶。
 

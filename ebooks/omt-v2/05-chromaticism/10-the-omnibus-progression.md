@@ -31,11 +31,19 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5941409)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5941409 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5941409/embed" title="MuseScore" loading="lazy" style="height: 340px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 综合进行通过导音与根音之间的半音声部交换来延长属和声。
 
 有些作曲家使用的综合进行变体，是把模式中的第二个和弦由属七和弦改为减七和弦。在这个版本中，第一个与第二个和弦之间有三个共同音保持不动。你可以在谱例 2 中看到这一变体。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21207871)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21207871 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21207871/embed" title="MuseScore" loading="lazy" style="height: 335px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. [把模式中第二个和弦换成减七和弦的综合进行变体。](https://musescore.com/user/32728834/scores/21207871/s/MazEtU)
 
@@ -43,17 +51,29 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21361027)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21361027 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21361027/embed" title="MuseScore" loading="lazy" style="height: 920px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. [勃拉姆斯《谐谑曲》Op. 4 第 31–49 小节中的两个综合进行](https://musescore.com/user/32728834/scores/21361027/s/XDM658)
 
 综合进行可以用来进入远关系调，并最终走遍整个八度（尽管理论上很少真的走完整个八度）。一旦到达新的原位属七和弦（即经过四个和弦后到达的那个），就找出新的导音，重新开始这一过程。在下面的谱例 4 中，序列每四个和弦「复位」一次，把那个和弦重新解释为新的属七和弦，从而让新的导音与低音（位于和弦根音上）作反向运动。例如，模式中的第四个和弦是 B♭<sup>7</sup>。在谱例 1 中，这个和弦被解释为德国增六和弦，半音声部交换再继续一个半音，就到达第一转位的 C 的属和弦（即上例中的和弦 5）。这一次，我们把 B♭<sup>7</sup> 重新解释为新的原位属七和弦，让新的导音与低音作半音声部交换，从头开始这个模式。这个和弦已被重新标为和弦 1，新的导音用蓝色标出。下例中的颜色标示出这个和弦在模式中的各次重新解释，以及低音与各个导音之间的声部交换。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21203566)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21203566 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21203566/embed" title="MuseScore" loading="lazy" style="height: 330px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. [走遍整个八度的综合进行。](https://musescore.com/user/32728834/scores/21203566/s/nfEoO6)
 
 在下面的谱例 5 中，肖邦把综合进行走了两轮，你可以通过谱表上方的红色、蓝色符头与数字来追踪。肖邦用的是以减七和弦作为和弦 2 的变体，从升 c 小调的原位属七和弦出发，经过综合进行到达 G 大调的原位属七和弦。然而有趣的是，肖邦接着把这个 D7 和弦的根音与五音都向下移半音，成为 A♭7 和弦的根音与五音，而这个 A♭7 作属和弦，把乐句结束在降 D 大调上——与我们出发时的主音相同（不过调式不同）！
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21361219)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21361219 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21361219/embed" title="MuseScore" loading="lazy" style="height: 925px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. [肖邦《降 D 大调夜曲》Op. 27 No. 2 中连续两轮的综合进行](https://musescore.com/user/32728834/scores/21361219/s/U6d_pv)
 
@@ -63,15 +83,27 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21226327)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21226327 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21226327/embed" title="MuseScore" loading="lazy" style="height: 335px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. [低音与上方声部发散、走遍一个八度的综合进行。](https://musescore.com/user/32728834/scores/21226327/s/kTxAc3)
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21393718)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21393718 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21393718/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. [从第一转位属七和弦开始的发散型综合进行](https://musescore.com/user/32728834/scores/21393718/s/_6QM3x)
 
 与这一手法的汇聚型版本很像，发散型综合进行也很少用来走遍整个八度，但我们确实能找到许多用它转入远关系调的例子。在谱例 8 中，穆索尔斯基（Mussorgsky）用综合进行走了两轮，转入 E 大调。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21376111)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/21376111 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21376111/embed" title="MuseScore" loading="lazy" style="height: 850px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. [经过两轮模式的发散型综合进行。](https://musescore.com/user/32728834/scores/21376111/s/xTwwqm)
 

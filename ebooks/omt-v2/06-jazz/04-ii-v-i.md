@@ -22,6 +22,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8519939)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8519939 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8519939/embed" title="MuseScore" loading="lazy" style="height: 445px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. “[Afternoon in Paris](https://open.spotify.com/track/1WKNhhhwZkfqJVmi5cuD2z?si=ImzDIMKkTGKawLjQSvoaQQ)”、“[All the Things You Are](https://open.spotify.com/track/3TSdkwPeUfvgLwNTF8gfC0?si=uR0y_o-ISU2pyzqDZOLmfg)”、“[My Funny Valentine](https://open.spotify.com/track/4l9hml2UCnxoNI3yCdL1BW?si=jLWDTWjQRHOB8IGMeuD-jw)”和“[Joy Spring](https://open.spotify.com/track/0sQ9ee2jJNTQgjy55Pse5H?si=iJ-taijeRv2_ln4aTkBUqA)”的终止都具有相似的和声进行：ii–V–I。
 
 所有例子都以完满正格终止（PAC）结束。但相似之处不止于此：每个 PAC 前面都有一个 ii 和弦。于是我们得到三个和弦，每一个都与下一个相隔五度。
@@ -29,6 +33,10 @@ modified: "2025-07-15"
 这个 ii–V–I 进行是爵士乐中最重要的进行之一。它可靠地出现在终止处，也作为贯穿整首乐曲的构件出现。当进行出现在大调中时，如谱例 1 的片段那样，这些和弦的性质是 mi7–7–ma7。当乐曲是小调时，调式的转变使和声性质变为 ∅7–7–mi7（无论在大调还是小调中，V 和弦都是大三和弦）。谱例 2 总结了这两种进行以及一种典型的声部进行模式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5709329)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5709329 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5709329/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 大调与小调中 ii–V–I 进行的典型和声与声部进行。
 
@@ -39,6 +47,10 @@ modified: "2025-07-15"
 ii–V–I 进行就是一个图式的例子。它出现得如此频繁，以至于有素养的听者能在许多形式中识别出这个图式。谱例 3 给出了一些变化形式的例子。在“[Misty](https://open.spotify.com/track/4uxsv9PjV3Yeyn51RdWvGJ?si=QzRm5WCVR-KJocw2MY5CIA)”中，ma<sup>7</sup> 和弦被一个 6 和弦取代（这在谱例 2 的“[My Funny Valentine](https://open.spotify.com/track/4l9hml2UCnxoNI3yCdL1BW?si=6gPNDx3cQ9qS3RtRL0wZFQ)”中也出现了）。在“[Prelude to a Kiss](https://open.spotify.com/track/48z5YXpqifAmKoLzaFOjHo?si=3w_PGbrYRhi_p9YGBw1qog)”中，通常为属性质的 V 和弦被增和弦取代（小七度保留）。在“[A Night in Tunisia](https://open.spotify.com/track/5fxJzPPvuvdhHypgme9cVX?si=2wu8PHxSRkKD3p-_th-eBQ)”中 V 和弦被变化了，但这一次是降低五音而非升高。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8519966)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8519966 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8519966/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 即使发生变化，ii–V–I 仍然可以被识别。
 
@@ -110,6 +122,10 @@ s2 \chords "Dmi7" s2 \chords "G7" | %25
 副 ii–V 一种特别常见的用法出现在所谓的「回转」（turnaround）中。从最宽泛的意义上说，回转是一种用来绕回原主和弦的进行，而实现这一点的典型进行是 I–vi–ii–V–I。利用副和弦的概念，我们可以用 V<sup>7</sup>/ii 取代 vi 和弦，因为二者根音相同。但我们也可以在那个 V<sup>7</sup> 前面加上它的 ii 和弦——实际上就是一个 ii/ii（二的二）。于是，回转中的 ii 和弦就被它自己的 ii–V–(I) 进行离调了。这种离调版本的回转是一种非常常见的变体（谱例 8）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5711118)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5711118 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5711118/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 回转图式有自然音阶和半音化两种变体。
 

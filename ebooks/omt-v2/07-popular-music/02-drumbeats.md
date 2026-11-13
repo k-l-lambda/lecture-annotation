@@ -67,6 +67,10 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/10460137)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/10460137 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/10460137/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 标准的摇滚鼓点：底鼓在第一、三拍，小鼓反拍在第二、四拍，踩镲演奏规则的八分音符。
 
 这些规则的例外往往也能讲得通。例如用脚踏板演奏踩镲时，符干可以朝上也可以朝下：朝上表示与其他镲类发声明示协同，朝下表示与双脚（也就是底鼓）协同。记写的鼓加花（drum fill）也是可能打破双声部规则的场合，因为这时规则的镲脉动常常会停下，好让鼓手用双手去演奏小鼓、嗵鼓等。
@@ -98,6 +102,10 @@ modified: "2025-01-13"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302333)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11302333 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302333/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. [Ella Fitzgerald 录制的“Fascinating Rhythm”（1959）](https://open.spotify.com/track/03whQz2AOGIKgNU3NQW6a0?si=bb7b24077f95405c)中踩镲上典型的爵士反拍。
 
 ### 半速与双倍速的律动感
@@ -110,11 +118,19 @@ Metallica 的“Trapped Under Ice”的主体律动是双倍速感（见**谱例
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302186)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11302186 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302186/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. [Metallica“Trapped Under Ice”（1984）](https://open.spotify.com/track/3lVAAVOkfNyCii1aLgH3JX?si=d95d361c588b4fc7)中的双倍速反拍。
 
 Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理想的速度区间正中。这首歌缓慢的反拍却只暗示 60 bpm 的速度——对多数听众来说太慢了（见谱例 8）。如果改按 119 bpm 的脉动来打拍子，我们听到的就是半速鼓点。缓慢的反拍（用拍手代替小鼓）、飞掠的十六分音符踩镲、切分的嗵鼓与木鱼（由同样快速的合成器固定音型支撑）之间的张力，让这个律动有一种破碎之感，既松弛又焦虑。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302207)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11302207 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302207/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. [Phil Collins“Take Me Home”（1985）](https://open.spotify.com/track/2s6wCS3vDZFPY9NOTlPXJZ?si=1e22036fca244dcf)中的半速反拍。
 
@@ -124,6 +140,10 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/15249751)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/15249751 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/15249751/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. [Bad Bunny“LA CANCIÓN”（2019）](https://open.spotify.com/track/0fea68AdmYNygeTGI4RC18?si=321cdfad870d445a)中的登波音型。
 
 ## 底鼓
@@ -132,11 +152,19 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11346568)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11346568 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11346568/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. [Blondie“Heart of Glass”（1978）](https://open.spotify.com/track/4v2rkl1mC3zVAz0nXMx9r4?si=d70e3f22c9bc4821)中四拍踩底加反拍的音型。
 
 在流行鼓点中，[切分](01-rhythm-and-meter-in-pop-music.md)出现在底鼓上的情况比出现在小鼓上更多。**谱例 11** 展示了 Kendrick Lamar 的“HUMBLE.”的鼓点：拍手提供了一以贯之的反拍，但底鼓上有大量的方整切分。注意，尽管别处有切分，底鼓仍稳稳地在每小节的第一拍进入。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302264)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11302264 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302264/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. [Kendrick Lamar“HUMBLE.”（2017）](https://open.spotify.com/track/131OLY5J8XyfGuSjXRiTRM?si=aedacd0be3c346e8)中的底鼓切分。部分踩镲上方的“o”表示镲片用脚踏板微微张开。小鼓位置上的“x”表示拍手。
 
@@ -148,9 +176,17 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/15052381)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/15052381 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/15052381/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 12. [肖战“Made to Love”（2020）](https://open.spotify.com/track/2pTdfCzO7W79Qy7DGfRgvK?si=7c9c418f19bb485e)中的十六分音符踩镲。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302321)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11302321 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302321/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 13. [Dream Theater“As I Am”（2003；0:55）](https://open.spotify.com/track/6hz6lrQtLcxOOjflnYjF9o?si=f602e72444ea4e01)中使用重音镲（中国镲与强音镲）的两个鼓点。
 
@@ -162,11 +198,19 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11374390)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11374390 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11374390/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 14. [Harold Melvin & the Blue Notes“If You Don't Know me By Now”（1972）](https://open.spotify.com/track/3NElqDNNnzvWYOwsbxLQKN?si=91327e962a814e29)中缓慢的复四拍子鼓点。
 
 在单三拍子中，无法让等长的底鼓与小鼓击打在每小节里交替出现。最常见的做法是把小鼓“反拍”推迟到每小节的第三拍；Paramore 的“That's What You Get”就是这样（见**谱例 15**）。在一段小鼓上兴高采烈地敲着“3 e + a”加花的引子之后，鼓组进入下面记写的律动。特雷西略式的底鼓节奏让一切保持趣味，同时又推迟了小鼓的击打。这首歌的第二段主歌（0:27）也值得注意：鼓转为基本摇滚鼓点（仿佛在四拍子里），而乐队其余部分仍延续此前确立的三拍子。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302192)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11302192 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302192/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 15. [Paramore“That's What You Get”（2007）](https://open.spotify.com/track/1JdKrFyoU05abww0Zv0ayQ?si=6b147ab14b2e46e4)中的 3/4 鼓点。
 

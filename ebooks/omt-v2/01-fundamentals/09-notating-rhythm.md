@@ -118,6 +118,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6805289/s/Qwz0ek)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6805289/s/Qwz0ek -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6805289/s/Qwz0ek/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 连音线连接前两个音符。
 
 你会想到连音线看起来像圆滑线（见[记谱的其他方面](07-other-aspects-of-notation.md)），这是对的。两者的区别在于：圆滑线连接不同音高的音符，表示用保持音（tenuto）的方式演奏或演唱这些音；而连音线连接同音高的音符，形成时值更长的音符。

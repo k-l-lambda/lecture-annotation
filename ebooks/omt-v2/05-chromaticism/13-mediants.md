@@ -33,6 +33,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/30425053/scores/8135649)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/8135649 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/8135649/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 按类型划分的中音关系和弦一览。
 
 ## 自然音中音（1 级）
@@ -81,6 +85,10 @@ modified: "2025-07-15"
 理论谈够了！最后以奥古斯塔·玛丽·安妮·霍尔梅斯（Augusta Mary Anne Holmès）一首歌曲中中音关系的美妙例子作结。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/27638568/scores/5879039)
+
+<!-- embed-begin: https://musescore.com/user/27638568/scores/5879039 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/27638568/scores/5879039/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 霍尔梅斯《L'Or》中的中音关系。
 

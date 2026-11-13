@@ -29,17 +29,29 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8418647/s/H5aOaq)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8418647/s/H5aOaq -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8418647/s/H5aOaq/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 一个和声音程和一个旋律音程。
 
 每个音程都有大小和性质。大小是谱面上两个音之间的距离，即两个音之间线与间的数目。大小用阿拉伯数字书写（2、3、4 等），但要说成序数词（二度、三度、四度、五度、六度、七度等）。数大小时始终从"一"开始。谱例 2 展示了 C 大调音阶内的八种大小。可以看到，这些大小用序数词标注，只有两个例外：位于同一条线或同一个间上的两个音之间的音程称为"同度"，而不是"一度"；相隔八条线或间的音称为"八度"，而不是"八度音程"。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8418638/s/e4jxEI)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8418638/s/e4jxEI -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8418638/s/e4jxEI/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 音程的大小。
 
 大小被认为是一般性的。换言之，无论给音加上什么变音记号，大小都始终不变。谱例 3 说明了这一点：尽管变音记号不同，但这些音程每一个都是三度（或"一般三度"），因为两个音之间有三条线或间。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8418665/s/n71TMI)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8418665/s/n71TMI -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8418665/s/n71TMI/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 3. 变音记号不影响音程的一般大小。
 
@@ -93,6 +105,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6836733/s/wud8Ld)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6836733/s/wud8Ld -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6836733/s/wud8Ld/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 两个音程。
 
 在谱例 5a 中，谱号是高音谱号，音是 F 和 C。以下是用"大调音阶"法识别该音程的方法：
@@ -129,6 +145,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8418677/s/-x_9Yz)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8418677/s/-x_9Yz -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8418677/s/-x_9Yz/embed" title="MuseScore" loading="lazy" style="height: 430px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 由（a）升高上方音和（b）降低下方音得到的增音程。
 
 减音程比纯音程或小音程小半音。在谱例 7a 的第一小节中，纯五度 F–C 通过把上方音降低到 C♭ 而缩小半音，形成减五度（也叫三全音，通常缩写为 d5 或 <sup>o</sup>5）。在第二小节中，G–E 构成大六度，当上方音降低半音时变成小六度。随后把上方音再次降低到 E𝄫 时，小六度就变成了减六度。注意，把音程缩小半音，会把纯音程和小音程变成减音程，却会把大音程变成小音程。
@@ -137,6 +157,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6836745)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6836745 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6836745/embed" title="MuseScore" loading="lazy" style="height: 430px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 7. 由（a）降低上方音和（b）升高下方音得到的减音程。
 
 谱例 8
@@ -144,6 +168,10 @@ modified: "2026-06-17"
  再次展示并总结了音程的相对大小。这个例子中的每个括号都比它左右相邻的括号大半音或小半音。在谱例 8a 中，通过用变音记号改变上方音来改变音程性质。可以看到，比纯音程或大音程大半音的音程是增音程；比大音程小半音的音程是小音程；比纯音程或小音程小半音的音程是减音程。谱例 8b 概括了与 8a 相同的性质，只是用变音记号改变的是下方音而不是上方音。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8418728/s/SPtiOU)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8418728/s/SPtiOU -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8418728/s/SPtiOU/embed" title="MuseScore" loading="lazy" style="height: 610px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 音程的相对大小：（a）改变上方音，（b）改变下方音。
 
@@ -266,6 +294,10 @@ modified: "2026-06-17"
 - 所有四度都是纯四度，只有一个例外：F–B，它是增四度（三全音）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6836757)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6836757 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6836757/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 14. 白键上的二度、三度和四度。
 

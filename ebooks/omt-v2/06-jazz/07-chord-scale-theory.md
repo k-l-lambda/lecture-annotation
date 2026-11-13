@@ -28,6 +28,10 @@ modified: "2024-08-19"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300405)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6300405 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300405/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. Dmi<sup>13</sup> 和弦与 D 多利亚音阶的音高完全相同。
 
 ## 基本的和弦—音阶关系
@@ -46,11 +50,19 @@ modified: "2024-08-19"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300394)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6300394 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300394/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. C 调 ii–V–I 进行中的和弦—音阶关系。
 
 初学的即兴者面对一首主要由 ii–V–I 进行构成的乐曲时，可以简单地在小七和弦上用多利亚调式、在属七和弦上用混合利底亚调式、在大七和弦上用伊奥尼亚调式。如谱例 4 所示，即兴旋律可以通过把和弦音放在强拍上来暗示和声，而一个七音调式可以看作一个四音七和弦加上三个经过音 $(\hat{2}$、$\hat{4}$、$\hat{6})$ 或延伸音（九音、十一音、十三音）。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300392)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6300392 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300392/embed" title="MuseScore" loading="lazy" style="height: 640px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. ii–V–I 的基本和弦—音阶关系，如用于 [Miles Davis 的「Tune Up」（1953）](https://open.spotify.com/track/6eTC4K6kgWb1uabLqrLAxW?si=LRIWFwNKR6CK02XgIwT2ug)时那样。
 
@@ -74,6 +86,10 @@ modified: "2024-08-19"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300399)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6300399 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300399/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. C 调中所有自然音阶和声的和弦—音阶关系。
 
 用与上文类似的方法，还可以从旋律小调、和声小调和和声大调的调式中推导出更多和弦—音阶关系。要了解更多，参见下文的[延伸阅读](#further-reading)。
@@ -93,6 +109,10 @@ modified: "2024-08-19"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300396)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6300396 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300396/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. 小七和弦的和弦—音阶选择。
 
 不过，重要的是要意识到，和弦—音阶理论并不意味着每次和弦变化时调都转调了。换句话说，这些和弦—音阶并不是调中心。由于每种调式暗示不同的延伸音，通过罗马数字分析确定和弦功能，有助于即兴者选择最契合调中心的和弦—音阶。
@@ -101,11 +121,19 @@ modified: "2024-08-19"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6301594)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6301594 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6301594/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 9. 这些和弦—音阶用于 [Bart Howard 的「Fly Me to the Moon」（1954）](https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa?si=eERTnc7BS5CDVy8oDFpitA)时，区分了同一性质的不同和弦，因为这些和弦仍具有不同的功能。
 
 谱例 10 是 John Coltrane 在[「Giant Steps」（1960）](https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw)上即兴独奏第一遍的转写，移调至降 B 调以适应次中音萨克斯。由于速度很快、调中心关系又不同寻常，Coltrane 即兴的旋律主要由琶音和音阶片段构成。注意他在大和弦上用伊奥尼亚调式，在属七和弦上用混合利底亚调式（第 9 小节中在 *do* 与 *te* ［$\hat{1}$ 与 $\downarrow\hat{7}$］之间加了一个经过音），在小和弦上用多利亚调式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300401)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6300401 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300401/embed" title="MuseScore" loading="lazy" style="height: 690px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 10. [John Coltrane 的「Giant Steps」（1960）](https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw)第一遍的转写。
 

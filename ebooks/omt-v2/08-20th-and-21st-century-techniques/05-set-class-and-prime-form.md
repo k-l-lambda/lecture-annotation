@@ -38,6 +38,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8648514)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8648514 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8648514/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 《主题与倒影》各段落之间的 T<sub>n</sub> 与 I<sub>n</sub> 关系。
 
 要迅速解释这几小串音为什么听起来都一样，我们可以说**它们都是同一个集合类的成员。**

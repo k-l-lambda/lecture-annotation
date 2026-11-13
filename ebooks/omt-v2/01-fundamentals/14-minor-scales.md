@@ -67,6 +67,10 @@ e'4. d8 d2 \bar "|."
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6825960)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6825960 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6825960/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 一个 g 自然小调音阶。（实际发声音阶为 f 自然小调。）
 
 你可以在下面的练习中练习识别自然小调音阶中的全音与半音：
@@ -87,6 +91,10 @@ e'4. d8 d2 \bar "|."
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6826003)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6826003 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6826003/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 一个 g 和声小调音阶。（实际发声音阶为 f 和声小调。）
 
 ## 旋律小调 {#melodic-minor}
@@ -95,11 +103,19 @@ e'4. d8 d2 \bar "|."
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8455586)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8455586 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455586/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 一个 g 旋律小调音阶。（实际发声音阶为 f 旋律小调。）
 
 谱例 6 展示了 C 音阶的四个版本——大调、自然小调、和声小调与旋律小调——并标出了音阶级数。仔细听这个谱例，注意各音阶之间的听觉差异。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8383329/s/WuOIXN)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8383329/s/WuOIXN -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8383329/s/WuOIXN/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 6. 大调、自然小调、和声小调与旋律小调音阶，均从 C 音开始。
 
@@ -108,6 +124,10 @@ e'4. d8 d2 \bar "|."
 小调的音阶级数、视唱唱名与音级名称和大调的对应内容相似，但并非完全相同。谱例 7 总结了三种小调音阶，并展示了各自对应的音阶级数和视唱唱名。注意，音阶级数与大调音阶中的相同。最下面一行是视唱唱名音节，它们在与大调音节不同的若干位置上作了改变，以反映小调音阶的全音与半音模式。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8383293)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8383293 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8383293/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 三种小调音阶的音阶级数与视唱唱名：a) 自然小调；b) 和声小调；c) 旋律小调。
 

@@ -24,11 +24,19 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240782)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240782 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240782/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 通过保持或重复和弦来延长。
 
 谱例 2 展示了乐句开头延长主和弦最常见方式的一个实例：在主三和弦之间插入转位的 V<sup>7</sup>。主和弦的影响感更强，因为 (1) 它处在比 V<sup>7</sup> 更强的拍子或超拍上；(2) 它至少一次以原位出现，而 V<sup>7</sup> 则处于较弱的转位。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240788)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240788 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240788/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. 克拉拉·舒曼（Clara Schumann）钢琴三重奏第三乐章第 1–2 小节中的主和弦延长（[0:00-0:08](https://open.spotify.com/track/0pdZEfxdMy5RAUIZfyshWA?si=33faa39a66d94271)）。
 
@@ -47,11 +55,19 @@ $\mathrm{V}^6_5$ 通常在 $\mathrm{I-V^6_5-I}$ 进行中延长原位 I（谱例
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240806)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240806 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240806/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 3. 涉及 $\mathit{V^6_5}$ 的主和弦延长。
 
 也可以用 V<sup>6</sup> 而非 $\mathrm{V}^6_5$ 来延长主和弦，不过这不那么常见（谱例 4）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6243345)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6243345 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6243345/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 涉及 $\mathit{V^6}$ 的主和弦延长。
 
@@ -61,6 +77,10 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11967037)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/11967037 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11967037/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 5. 涉及 $\mathit{V^4_2}$ 的主和弦延长。
 
 ### 用 V4/3 延长
@@ -69,15 +89,27 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240818)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240818 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240818/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 涉及 $\mathit{V^4_3}$ 的主和弦延长。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240825)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240825 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240825/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 较少见的、涉及 $\mathit{V^4_3}$ 的主和弦延长。
 
 用 $\mathrm{V}^4_3$ 写作还为“和弦七音 *fa*（$\hat{4}$）必须下行解决”这条规则提供了一个例外（谱例 8）。这里，*fa* 上行到 *sol*（$\hat4-\hat5$）。这一例外之所以可能，是因为低音与奏出 *mi*–*fa*–*sol*（$\hat3-\hat4-\hat5$）线条的上方声部形成了平行十度。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240833)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240833 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240833/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 8. 和弦七音典型解决的一个例外。
 
@@ -86,6 +118,10 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 把这些主和弦延长进行串联起来，作曲家就可以在乐句开头把主和弦的影响延长相当一段时间，如谱例 2。一个部分写出的例子见谱例 9。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240837)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6240837 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240837/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. 大范围的主和弦延长。
 

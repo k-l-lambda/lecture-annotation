@@ -64,11 +64,19 @@ modified: "2026-08-07"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23457877)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23457877 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23457877/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 莫扎特 g 小调第 25 交响曲第三乐章，小步舞曲。[下载本谱例的 PDF。](https://viva.pressbooks.pub/app/uploads/sites/12/2025/02/Mozart-Symphony-25-3rd.pdf)
 
 在 18 世纪，圆整二部曲式中 **A** 回归之前的半终止是相当常见的。然而在 19 世纪，作曲家也可能把这一界线叠接或加以模糊，正如肖邦在其 A 大调波罗乃兹 Op. 40 第 1 首第 1–24 小节的圆整二部曲式中，于第 16 与 17 小节之间所做的那样（谱例 5）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23459752)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23459752 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23459752/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 肖邦 A 大调波罗乃兹 Op. 40 第 1 首第 1–24 小节。[下载本谱例的 PDF。](https://viva.pressbooks.pub/app/uploads/sites/12/2025/02/rounded-binary-chopin.pdf)
 
@@ -92,6 +100,10 @@ modified: "2026-08-07"
 巴赫 e 小调鲁特琴组曲 BWV 996 中的布列舞曲（谱例 7）是第二反复段应标为 **A′** 的简易二部曲式的一个好例子。第二反复段中的音乐材料通篇都在延续第一反复段的乐思。请注意，第二反复段的中部并没有第一反复段开头材料的清楚回归，因此这不是圆整二部曲式的例子。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23459728)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23459728 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23459728/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. J. S. 巴赫 e 小调鲁特琴组曲 BWV 996 中的布列舞曲。[下载本谱例的 PDF](https://viva.pressbooks.pub/app/uploads/sites/12/2025/02/simple-binary-bach.pdf)。
 
@@ -118,6 +130,10 @@ modified: "2026-08-07"
 在较长的简易二部曲式中，平衡的材料可能相当可观。在多梅尼科·斯卡拉蒂（Domenico Scarlatti）的 A 大调奏鸣曲 K. 322（谱例 9）中，回归的材料将近 24 小节长——超过第一反复段的一半——并且靠耳朵很容易辨认。在斯卡拉蒂这部作品中，**（x）** 从第 21 小节中部开始，到第一反复段的末尾第 44 小节结束。这一材料在第二反复段的第 59 小节中部回归，一直延续到作品结束，其间有几处新的旋律装饰（例如比较第 26 小节与第 63 小节）。重要的是要注意，第二反复段中的 **（x）** 已被移回本调。换言之，当它最初在第一反复段中陈述时，**（x）** 处于 e 小调/E 大调，因此必须移回 A 调，才能使作品在同一种调上开始并结束。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23457517)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/23457517 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23457517/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. 多梅尼科·斯卡拉蒂 A 大调奏鸣曲 K. 322。[点击下载 PDF 乐谱。](https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/balanced-binary-example.pdf)
 

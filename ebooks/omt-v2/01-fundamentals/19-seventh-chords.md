@@ -26,6 +26,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843767)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843767 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843767/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 一个以旋律形式和和声形式写出的七和弦。
 
 ![谱例 2. 标出根音、三音、五音和七音的七和弦。点击放大。](../media/2020/05/chord-members.png)*谱例 2. 标出根音、三音、五音和七音的七和弦。点击放大。*
@@ -85,6 +89,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6850641)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6850641 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6850641/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 各种七和弦类型中七度与三和弦的性质。
 
 有时属七和弦会带半音变化（例如"增"七和弦）；你可以在[变音与扩展和弦](../05-chromaticism/11-altered-and-extended-dominant-chords.md)中读到更多相关内容。别忘了，当七和弦的根音带有变音记号时，要把该记号写进名称中。例如，B♭mi<sup>7</sup> 是含 B♭ 小三和弦和小七度的七和弦的和弦符号。同样，G♯<sup>ma7</sup> 是含 G♯ 大三和弦和大七度的七和弦的和弦符号。
@@ -92,6 +100,10 @@ modified: "2026-06-17"
 在和弦符号记法中，如果七和弦中最低的音不是和弦的根音而是别的音级，就加一条斜线，后面跟一个大写字母，表示低音（最低）声部中的音级。谱例 5 展示了一个 G 半减七和弦（G<sup>∅7</sup>）。在第一小节中，和弦以第一种位置出现；在第二小节中，和弦的七音（F）位于低音声部，因此和弦符号写作 G<sup>∅7</sup>/F。这个话题将在[转位](20-inversion.md)一章中有更多探讨。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843772)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843772 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. 两个七和弦。
 
@@ -105,11 +117,19 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514077)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514077 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514077/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. 大调中的七和弦性质。
 
 七和弦也可以建立在小调音阶的任何音上。谱例 7（G 小调）只包含一个建立在 *sol* $(\hat5)$ 上的七和弦和一个建立在 *ti* $(\hat7)$ 上的七和弦。这些七和弦通常含有升高的导音——即 *ti* 而不是 *te* $(\uparrow\hat7$ 而不是 $\hat7)$。在谱例 7 中，建立在 *do* 和 *fa* $(\hat1$ 和 $\hat4)$ 上的七和弦有小三和弦和小七度，而含升高导音、建立在 *sol* $(\hat5)$ 上的七和弦有大三和弦和小七度（属七和弦）。建立在 *me* 和 *le* $(\hat3$ 和 $\hat6)$ 上的七和弦有大三和弦和大七度，建立在 *re* $(\hat2)$ 上的是半减七和弦（含减三和弦和小七度），而建立在 *ti* $(\uparrow\hat7)$ 上的是全减七和弦（含减三和弦和减七度）。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514209)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8514209 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514209/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 小调中的七和弦性质。
 
@@ -178,6 +198,10 @@ modified: "2026-06-17"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843785/s/Ml4Mxs)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843785/s/Ml4Mxs -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843785/s/Ml4Mxs/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 10. 一个待识别的原位七和弦。
 
 要识别这个七和弦：
@@ -192,6 +216,10 @@ modified: "2026-06-17"
 与三和弦一样，七和弦的识别不受音的重复或开放间距（即使跨越多个谱号）的影响。谱例 11 展示了两个带重复、采用开放间距的不同七和弦。只需如前所述，把七和弦的各音想象或写成没有任何重复的密集间距，就能识别这些和弦。
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843788)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/6843788 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843788/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 11. 两个带重复、采用开放间距的七和弦。
 

@@ -21,6 +21,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/24655597)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/24655597 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/24655597/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. 在终止处改变配器，使终止更加醒目。
 
 [莫扎特 K. 453](https://viva.pressbooks.pub/app/uploads/sites/12/2019/07/Ai-Mozart-K453.pdf)

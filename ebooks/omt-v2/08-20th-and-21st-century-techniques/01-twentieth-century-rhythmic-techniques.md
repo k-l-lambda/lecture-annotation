@@ -31,6 +31,10 @@ modified: "2026-06-11"
 
 *🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7243425/s/GS6p1r)*
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7243425/s/GS6p1r -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7243425/s/GS6p1r/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 1. [斯蒂芬·桑德海姆（Stephen Sondheim）《Ladies In Their Sensitivities》（1979）](https://open.spotify.com/track/2tFynDMRSxj1ephdwFgX5E)中的不对称节拍。
 
 这首歌出自音乐剧《理发师陶德》（*Sweeny Todd*，1979），音乐由斯蒂芬·桑德海姆创作。$\mathbf{^5_8}$ 这种不太稳当的感觉强化了歌唱者焦虑的思绪：他是个仆人，正在向主人推荐刮胡子这件事，却又因自己社会地位的差异而犹豫不决。
@@ -38,6 +42,10 @@ modified: "2026-06-11"
 现在请听谱例 2，它同样是 $\mathbf{^5_8}$ 节拍。注意两拍的划分方式与前一个例子正好相反：第一拍分为两个八分音符，第二拍分为三个八分音符：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7397384)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7397384 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7397384/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 2. [罗尔夫·鲁丁（Rolf Rudin）《Aufbruch》（2008）](https://www.youtube.com/watch?v=guJqsbFDpDs&ab_channel=Bl%C3%A4serphilharmonieRhein-Maine.V.)第 141–149 小节中的不对称节拍。
 
@@ -61,6 +69,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7244349)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7244349 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7244349/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. [戴夫·布鲁贝克四重奏（the Dave Brubeck Quartet）创作的《Unsquare Dance》（1961）](https://open.spotify.com/track/2VUo8O3ymKRYNgj97ZG2kM)中的不对称节拍。
 
 这是戴夫·布鲁贝克四重奏《Unsquare Dance》（1961）的一个片段。典型的方舞（square dance）是四拍子；然而这首“不方的舞”（unsquare dance）用的是不对称节拍，偏离了听者的预期。注意这段节奏既可以写作 $\mathbf{^7_4}$，也可以写作 $\mathbf{^7_8}$，听起来却完全相同。
@@ -70,6 +82,10 @@ modified: "2026-06-11"
 以无节拍方式写成的音乐没有任何可感知的节拍。无节拍音乐可能有、也可能没有明确的拍号，并且不一定以严格的节拍风格演奏或演唱。换言之，音符仍然可以有节奏时值，但节奏时值可能并不形成可感知的拍子模式。这一技法可以给演奏者留下自行即兴和分句的余地，见于某些华彩段、自由即兴的段落、格里高利圣咏以及后调性音乐。请听谱例 5，这是一首没有拍号的后调性歌曲：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/25132750)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/25132750 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/25132750/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 5. [查尔斯·艾夫斯（Charles Ives）《The Cage》（约 1904）](https://open.spotify.com/episode/2w2x1k42sEvuoRnVKtaMGt)中的无节拍。
 
@@ -81,6 +97,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7930598)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7930598 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7930598/embed" title="MuseScore" loading="lazy" style="height: 445px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 6. [埃德加·瓦雷兹（Edgard Varèse）《Density 21.5》（1936）](https://open.spotify.com/track/46OC9eSTSaMoJRcizstJzu)第 1–8 小节中感知节拍与记谱节拍的差异。
 
 尽管《Density 21.5》（1936）写的是普通拍子（common time）的拍号，但由于各种切分、连音节奏以及被模糊掉的小节线，听者感知到的却是无节拍。
@@ -88,6 +108,10 @@ modified: "2026-06-11"
 不过在某些情况下，记谱的节拍与听觉感知的节拍并不相同，如谱例 7 所示：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8318699)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8318699 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8318699/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 7. 记谱节拍与作品听觉感知不同的情形。
 
@@ -99,6 +123,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8009242)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8009242 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8009242/embed" title="MuseScore" loading="lazy" style="height: 915px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 8. 图伊·圣乔治·塔克（Tui St. George Tucker）《安魂曲》（*Requiem*，1995）中《Libera Me》第 54–60 小节的变节拍。
 
 这是图伊·圣乔治·塔克《安魂曲》（1995）中《Libera Me》的第 54–60 小节。“Libera Me”的歌词充满恐惧地描绘末日审判：“主啊，在那可怕的日子，救我脱离永死”，本片段接续的歌词是“当诸天震动……”。塔克在音乐上部分地通过变节拍来描绘这种混乱，以这种节拍的不稳定来表现“诸天震动”。
@@ -106,6 +134,10 @@ modified: "2026-06-11"
 同样需要注意的是，节拍的细分可以从单拍子变为复拍子，或反过来，如谱例 9 所示：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7268387/s/ORHlO6)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7268387/s/ORHlO6 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7268387/s/ORHlO6/embed" title="MuseScore" loading="lazy" style="height: 770px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 9. [安德烈亚斯·马基斯（Andreas Markis）《Aegean Festival Overture》（1967）](https://www.youtube.com/watch?v=x9wytT7Dr2s&ab_channel=UniversityofNorthTexasCollegeConcerts)第 10–19 小节的变节拍。
 
@@ -135,6 +167,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8208440)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8208440 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8208440/embed" title="MuseScore" loading="lazy" style="height: 920px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 11. [莫里斯·拉威尔（Maurice Ravel）《F 大调弦乐四重奏》第二乐章（1902）](https://open.spotify.com/track/3uM3DuDXzmflZJosfBLRMd)中的多节拍。
 
 在《F 大调弦乐四重奏》（1902）的第二乐章中，拉威尔使用 $\mathbf{^6_8}$ 拍号，同时又暗示出一条 $\mathbf{^3_4}$ 的旋律。在这首作品的前七小节中，第一小提琴与大提琴暗示为 $\mathbf{^3_4}$ 拍号，而第二小提琴与中提琴则每隔一小节在 $\mathbf{^6_8}$ 与暗示的 $\mathbf{^3_4}$ 之间切换。从第 8 小节起，下方两件乐器按记谱的拍号演奏，上方两件乐器则暗示 $\mathbf{^3_4}$。
@@ -147,6 +183,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7370069)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7370069 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7370069/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 12. 保持拍的细分不变的节拍转调。
 
 注意八分音符的细分在 $\mathbf{^3_4}$ 与 $\mathbf{^9_8}$ 两种节拍之间保持不变。保持细分不变，是节拍转调的一种手法。
@@ -155,6 +195,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7370258)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7370258 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7370258/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 13. 保持拍不变的节拍转调。
 
 注意第一种节拍中四分音符的拍，变成了新节拍中附点四分音符的拍。在这种情况下，八分音符的细分变快了。
@@ -162,6 +206,10 @@ modified: "2026-06-11"
 现在请看埃利奥特·卡特（Elliott Carter）的作品《Canaries》语境中的节拍转调，见谱例 14：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7370744)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7370744 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7370744/embed" title="MuseScore" loading="lazy" style="height: 825px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 14. [埃利奥特·卡特《8 Pieces for 4 Timpani》（1949）中《Canaries》](https://open.spotify.com/track/6s6QmBwIVsTVy8b3RUAPy9)第 1–24 小节的节拍转调。
 
@@ -217,6 +265,10 @@ modified: "2026-06-11"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7375673)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7375673 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7375673/embed" title="MuseScore" loading="lazy" style="height: 405px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 19. 羽状音符。
 
 在谱例 19 中，第一行是加速，第二行是减速。羽状音符被视为一种扩展技法，最常出现于当代作品中，有时也包括华彩段和无节拍作品。由于节奏的加速或减速具有不可预测的性质，羽状音符通常不见于严格按节拍写成的作品。
@@ -226,6 +278,10 @@ modified: "2026-06-11"
 固定音型是一个反复出现的节奏性或音高性的音乐构思。这种重复可以是一小节，也可以是多小节。现在请听谱例 20，这是最著名的固定音型例子之一：
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/7365281)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/7365281 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/7365281/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 20. [古斯塔夫·霍尔斯特（Gustav Holst）《火星，战争使者》（1918）](https://open.spotify.com/track/0dXrZ47LxK2PHm4mjSlwgt)第 1–16 小节的固定音型。
 

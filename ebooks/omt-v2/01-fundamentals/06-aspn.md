@@ -62,6 +62,10 @@ ASPN 标记对于在钢琴键盘上找到具体的音非常有帮助。谱例 3 
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8395191/s/5sFqPN)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8395191/s/5sFqPN -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395191/s/5sFqPN/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 4. 四种谱号中音的 ASPN 标记。
 
 > 延伸阅读

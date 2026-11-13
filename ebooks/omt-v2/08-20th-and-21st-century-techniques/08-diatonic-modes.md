@@ -64,6 +64,10 @@ modified: "2025-07-15"
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8631327)
 
+<!-- embed-begin: https://musescore.com/user/32728834/scores/8631327 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8631327/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 谱例 2. 以乐谱形式概括历史上的教会调式。
 
 ## 20 世纪和 21 世纪的自然调式
@@ -92,6 +96,10 @@ modified: "2025-07-15"
 谱例 4 简要概括这些信息。调式按主和弦是大三和弦还是小三和弦分组，这有助于听觉上辨认调式段落（详见下文）。上行谱表展示的是 $\hat3$ 为主音上方大三度的调式（*do–**mi*）：大调、混合利底亚和利底亚。下行谱表展示的是 $\hat3$ 为主音上方小三度的调式（*do–**me*）：爱奥利亚、多利亚和弗里吉亚。虚线连音线把每种调式独有的色彩音与它的大调／小调对应者连接起来。
 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5973262)
+
+<!-- embed-begin: https://musescore.com/user/32728834/scores/5973262 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5973262/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 谱例 4. 按大调式与小调式主音分组的调式，色彩音以蓝色标出。
 

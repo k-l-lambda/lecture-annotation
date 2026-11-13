@@ -37,6 +37,10 @@ modified: "2025-07-15"
 
  🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350123)
 
+<!-- embed-begin: https://musescore.com/user/30425053/scores/5350123 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350123/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
+
 [由 $^6_3$ 而得的八度规则](https://musescore.com/user/30425053/scores/5350123)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
 ### 逐部分考察规则
@@ -60,6 +64,10 @@ modified: "2025-07-15"
  为中心。
 
  🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350126)
+
+<!-- embed-begin: https://musescore.com/user/30425053/scores/5350126 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350126/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 [逐部分的八度规则](https://musescore.com/user/30425053/scores/5350126)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
@@ -107,6 +115,10 @@ modified: "2025-07-15"
 - 下行：下行形式同样无需重启。2–3 模式构成一系列 $^4_2$ 到 <sup>6</sup> 的进行，就像重要的 V$^4_2$–I<sup>6</sup> 进行一样，只不过我们在这里保持自然音阶（即不为每个调作离调）。
 
  🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350121)
+
+<!-- embed-begin: https://musescore.com/user/30425053/scores/5350121 -->
+<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350121/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<!-- embed-end -->
 
 [音阶模进简编谱](https://musescore.com/user/30425053/scores/5350121)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
 
