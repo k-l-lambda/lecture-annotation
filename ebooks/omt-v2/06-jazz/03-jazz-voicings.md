@@ -59,7 +59,38 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5689622)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5689622 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5689622/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <b d g>1 \\
+\staff "2" \clef "bass" <g, f'>1 | %1
+
+\staff "1" s1 \\
+\staff "2" s1 | %2
+
+\staff "1" <b g'>1 \\
+\staff "2" <g, f'>1 | %3
+
+\staff "1" s1 \\
+\staff "2" s1 | %4
+
+\staff "1" <b g'>1 \\
+\staff "2" <g, g'>1 | %5
+
+\staff "1" s1 \\
+\staff "2" s1 | %6
+
+\staff "1" <b d>1 \\
+\staff "2" <f,, f'>1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5689622/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 省略五音很常见，因为它不会显著改变音响。七音和根音则几乎从不省略。
@@ -79,7 +110,27 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8514797/s/3GztpI)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514797/s/3GztpI -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514797/s/3GztpI/embed" title="MuseScore" loading="lazy" style="height: 540px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key f \major \numericTimeSignature \time 4/4 \clef "treble" d'2 d2 \\\
+\clef "treble_8" ef'2 e2 \\\
+\clef "bass" a2 bf2 \\\
+\clef "bass" f,2 c2 | %1
+
+g''2 d2 \\\
+ef'2 bf'2 \\\
+a2 e2 \\\
+f,2 c2 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514797/s/3GztpI/embed" title="MuseScore" loading="lazy" style="height: 540px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 平滑的声部进行使和弦听起来彼此相连。
@@ -107,7 +158,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11096065)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11096065 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11096065/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <f c' e>2 <f b e>2 \\
+\staff "2" \clef "bass" d,2 g2 | %1
+
+\staff "1" <e b' d>1 \\
+\staff "2" c,1 | %2
+
+\staff "1" <f b e>2 <ef a d>2 \\
+\staff "2" g2 f2 | %3
+
+\staff "1" <e bf' d>1 \\
+\staff "2" c,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11096065/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 三个上方声部的爵士排列范式。下面两个声部使用 3–7 范式；再加上一条连接九音与十三音的顶声部（蓝色标出），就形成了又一条平滑的线。
@@ -117,7 +190,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8514740)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514740 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514740/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 32/4 \clef "treble" <c e g b>1 <c e g a>1 <c e g b d>1 <c e g a d>1 <c e g b d f>1 <c e g b d fs>1 <c e g b d fs a>1 <c e g b d fs a>1 | %1
+
+\time 40/4 <c e g bf>1 <c e gs bf>1 <c e gs bf d>1 <c e gs bf df>1 <c e gs bf ds>1 <c e gs bf ds f>1 <c e gs bf ds fs>1 <c e gs bf ds fs a>1 <c e gs bf ds fs af>1 <c e gs bf df fs af>1 | %2
+
+\time 32/4 <c ef g bf>1 <c ef g bf>1 <c ef g a>1 <c ef g bf d>1 <c ef g bf d>1 <c ef g a d>1 <c ef g bf d f>1 <c ef g bf d f a>1 | %3
+
+\time 12/4 <c ef gf bf>1 <c ef gf bf d>1 <c ef gf bf d f>1 | %4
+
+\time 8/4 <c ef gf bff>1 <c ef gf bff>1 | %5
+
+\time 20/4 <c f g>1 <c d g>1 <c f g bf>1 <c f g bf d>1 <c f g bf d a'>1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514740/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 每种和弦性质常用的可加延伸音。

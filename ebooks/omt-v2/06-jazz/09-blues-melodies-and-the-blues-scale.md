@@ -41,7 +41,53 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5742815)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5742815 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5742815/embed" title="MuseScore" loading="lazy" style="height: 820px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key bf \major \defaultTimeSignature \time 4/4 \clef "treble" r8 bf8[ c8 cs8] d4 ef8[ f8~] \\\
+\clef "treble" R1 | %1
+
+f4 bf8[ f8] f4 ef8[ cs8] \\\
+R1 | %2
+
+d2 r2 \\\
+r8 c'16[ cs16] d16[ f16 g8] bf8[ g8] r8 fs8 | %3
+
+r2 r4 r8 f8 \\\
+<bf' g'>4 <a fs'>8[ <af f'>8~] <af f'>4 r4 | %4
+
+f4 ef4 f8 ef4. \\\
+R1 | %5
+
+r8 d8[ ef8 e8] f8 f4 f8 \\\
+R1 | %6
+
+cs8[ d8~] d2 r4 \\\
+r8 <g' g'>8[ <bf d f>8 <g g'>8] <a df f>8 <a df f>4 <g g'>8 | %7
+
+r2 r8 f8[ g8 af8] \\\
+<d' f>4 <g, g'>8[ <d' f>8~] <d f>4 r4 | %8
+
+a'4 g4 f8[ g8~] g4 \\\
+R1 | %9
+
+r8 d8[ ef8 e8] \tuplet 3/2 { f8[ f,8 df'8] } c8[ bf8~] \\\
+R1 | %10
+
+bf1 \\\
+r8 bf''8[ g8 f8] df8[ d8 f,8 g8] | %11
+
+R1 \\\
+bf'8 s2 s4 s8 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5742815/embed" title="MuseScore" loading="lazy" style="height: 820px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3.「Gulf Coast Blues」旋律中的呼应。
@@ -53,7 +99,23 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8515004)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8515004 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8515004/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 7/4 \clef "treble" c4 ef4 f4 fs4 g4 bf4 c4 \\\
+\clef "treble" <c e g bf>1. s4 | %1
+
+c4 ef4 f4 fs4 g4 bf4 c4 \\\
+<g' b d f>1. s4 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8515004/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. C 布鲁斯音阶与 C 大调的 I 与 V 和弦造成风格上的冲突。
@@ -69,7 +131,25 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8515049)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8515049 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8515049/embed" title="MuseScore" loading="lazy" style="height: 440px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 7/4 \clef "treble" c4 ef4 f4 fs4 g4 bf4 c4 | %1
+
+ef4 f4 fs4 g4 bf4 c4 ef4 | %2
+
+c4 ef4 f4 fs4 g4 bf4 c4 | %3
+
+c4 d4 ds4 e4 g4 a4 c4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8515049/embed" title="MuseScore" loading="lazy" style="height: 440px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 把布鲁斯音阶轮转，从它的第二个音开始，就得到大调布鲁斯音阶。

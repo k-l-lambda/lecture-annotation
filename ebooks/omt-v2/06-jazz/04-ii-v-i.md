@@ -23,7 +23,35 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8519939)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8519939 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8519939/embed" title="MuseScore" loading="lazy" style="height: 445px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" g'2~ g8[ bf8 af8 g8~] | %1
+
+g'1 | %2
+
+\key af \major df4 f4 af4 df4 | %3
+
+f'2 g2 | %4
+
+af''1 | %5
+
+\key ef \major f4. g8 f2 | %6
+
+ef1 | %7
+
+\key f \major f8[ d8 f8 bf8] \tuplet 5/4 { a16[ bf16 a16 f8] } d8[ c8] | %8
+
+f8[ c8 g'8 f8] r2 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8519939/embed" title="MuseScore" loading="lazy" style="height: 445px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. “[Afternoon in Paris](https://open.spotify.com/track/1WKNhhhwZkfqJVmi5cuD2z?si=ImzDIMKkTGKawLjQSvoaQQ)”、“[All the Things You Are](https://open.spotify.com/track/3TSdkwPeUfvgLwNTF8gfC0?si=uR0y_o-ISU2pyzqDZOLmfg)”、“[My Funny Valentine](https://open.spotify.com/track/4l9hml2UCnxoNI3yCdL1BW?si=jLWDTWjQRHOB8IGMeuD-jw)”和“[Joy Spring](https://open.spotify.com/track/0sQ9ee2jJNTQgjy55Pse5H?si=iJ-taijeRv2_ln4aTkBUqA)”的终止都具有相似的和声进行：ii–V–I。
@@ -35,7 +63,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5709329)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5709329 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5709329/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <f c' e>2 <f b e>2 \\
+\staff "2" \clef "bass" d,2 g2 | %1
+
+\staff "1" <e b' d>1 \\
+\staff "2" c,1 | %2
+
+\staff "1" \key ef \major <af' c f>2 <f b ef>2 \\
+\staff "2" d,2 g2 | %3
+
+\staff "1" <ef bf' d>1 \\
+\staff "2" c,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5709329/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 大调与小调中 ii–V–I 进行的典型和声与声部进行。
@@ -49,7 +99,29 @@ ii–V–I 进行就是一个图式的例子。它出现得如此频繁，以至
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8519966)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8519966 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8519966/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key f \major \numericTimeSignature \time 4/4 \clef "treble" af'8 c,4 c8 \tuplet 3/2 { d4 ef4 f4 } | %1
+
+ef1 | %2
+
+\key c \major d8[ e8 f8 gs8~] gs4 a8[ c,8~] | %3
+
+c1 | %4
+
+\key g \major b'8[ c8 b8 a8] f4-> ds8~[ e8->] | %5
+
+e1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8519966/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 即使发生变化，ii–V–I 仍然可以被识别。
@@ -124,7 +196,35 @@ s2 \chords "Dmi7" s2 \chords "G7" | %25
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5711118)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5711118 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5711118/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <e b' d>2 <g a c>2 \\
+\staff "2" \clef "bass" c,,2 a'2 | %1
+
+\staff "1" <f c' e>2 <f b e>2 \\
+\staff "2" d,,2 g2 | %2
+
+\staff "1" <e b' d>1 \\
+\staff "2" c,,1 | %3
+
+\staff "1" <g' d' fs>2 <g cs fs>2 \\
+\staff "2" e,,2 a2 | %4
+
+\staff "1" <f c' e>2 <f b e>2 \\
+\staff "2" d,,2 g2 | %5
+
+\staff "1" <e b' d>1 \\
+\staff "2" c,,1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5711118/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 回转图式有自然音阶和半音化两种变体。

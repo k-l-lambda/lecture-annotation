@@ -55,7 +55,21 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514239)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514239 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514239/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key g \major \omit Score.TimeSignature \numericTimeSignature \time 32/4 \clef "bass" <g, b d>1 <a c e>1 <b d fs>1 <c e g>1 <d fs a>1 <e g b>1 <fs a c>1 <g b d>1 | %1
+
+\key bf \major \time 40/4 <g, bf d>1 <a c ef>1 <bf d f>1 <c ef g>1 <d f a>1 <d fs a>1 <ef g bf>1 <fs a c>1 <fs a c>1 <g bf d>1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514239/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. G 大调与 g 小调三和弦的罗马数字。
@@ -83,7 +97,53 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514287)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514287 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514287/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key g \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "bass" <g, b d fs>1 | %1
+
+<a, c e g>1 | %2
+
+<b, d fs a>1 | %3
+
+<c, e g b>1 | %4
+
+<d, fs a c>1 | %5
+
+<e, g b d>1 | %6
+
+<fs, a c e>1 | %7
+
+<g b d fs>1 | %8
+
+\key bf \major <g, bf d f>1 | %9
+
+<a, c ef g>1 | %10
+
+<bf, d f a>1 | %11
+
+<c, ef g bf>1 | %12
+
+<d, f a c>1 | %13
+
+<d, fs a c>1 | %14
+
+<ef, g bf d>1 | %15
+
+<f, a c ef>1 | %16
+
+<fs, a c ef>1 | %17
+
+<g bf d f>1 | %18
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514287/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 大调与小调中七和弦的罗马数字。
@@ -119,7 +179,57 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11765812)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11765812 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11765812/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key c \major \numericTimeSignature \time 6/8 \partial 8 \clef "treble" e8 \\\
+\staff "1" \clef "treble" r8 \\
+\staff "2" \clef "bass" r8 | %1
+
+c'4 a8 e4 a8 \\\
+\staff "1" <c e a c>4 <c e a>8 <c e a>4 <c e a>8 \\
+\staff "2" <a, a'>4 a'8 a4 a8 | %2
+
+gs'4 a8 b4 b8 \\\
+\staff "1" <d e gs>4 <c e a>8 <b e gs>4 <d g b>8 \\
+\staff "2" b4 a8 e4 f8 | %3
+
+c'4 c8 d8[ f8 a8] \\\
+\staff "1" <c g' c>4 <c g' c>8 <f a d>4 <f a d>8 \\
+\staff "2" e,4 e8 f4 f8 | %4
+
+g''8[ a8 f8] e4 r8 \\\
+\staff "1" <f g d'>4 <f g d'>8 <e g c>4 r8 \\
+\staff "2" g4 g8 c4 r8 | %5
+
+e'8[ e8 e8] e4 gs,8 \\\
+\staff "1" r4 r8 <e gs>4 <e gs>8 \\
+\staff "2" r4 r8 d4 d8 | %6
+
+a'4 c8 b4 r8 \\\
+\staff "1" <e a>4 <a c>8 <gs b>4 r8 \\
+\staff "2" c4 a8 e4 r8 | %7
+
+e'8[ f8 e8] e4 gs,8 \\\
+\staff "1" r4 r8 <e gs>4 <e gs>8 \\
+\staff "2" r4 r8 d4 d8 | %8
+
+a'4 c8 b4 b8 \\\
+\staff "1" <e a>4 <a c>8 <gs b>4 <e gs b>8 \\
+\staff "2" c4 a8 e4 e8 | %9
+
+c'4 s2 \\\
+\staff "1" <e a c>4 s2 \\
+\staff "2" a4 s2 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11765812/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. Louise Reichardt《Die Wiese》（1811）的罗马数字分析。
@@ -129,7 +239,35 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/19884595)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/19884595 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/19884595/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key ef \major \defaultTimeSignature \time 4/4 \clef "treble" r2 ef'4 d8. c16 \\\
+\staff "1" \clef "treble" <bf ef>2 <ef g>4 <ef af>4 \\
+\staff "2" \clef "bass" <ef, g>2 ef4 f4 | %1
+
+bf'2 c4 bf8. af16 \\\
+\staff "1" \stemUp <ef bf'>2 <af c>4 <g bf>8.[ <f af>16] \\
+\staff "1" \stemDown s2 ef4 d4 \\
+\staff "2" g2 af4 bf4 | %2
+
+g'2 af4 g8 f8 \\\
+\staff "1" \stemUp ef2 af4 g8[ f8] \\
+\staff "1" \stemDown s2 <c ef>4 d4 \\
+\staff "2" c2 f,4 bf8[ af8] | %3
+
+bf'2 s2 \\\
+\staff "1" <bf ef bf'>2 s2 \\
+\staff "2" g2 s2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/19884595/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. Tommaso Giordani《Caro mio ben》（1785）的罗马数字分析。

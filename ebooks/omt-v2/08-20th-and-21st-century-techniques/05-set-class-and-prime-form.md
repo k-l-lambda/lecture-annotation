@@ -39,7 +39,36 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8648514)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8648514 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8648514/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 2/4 \clef "treble" \tempo "Allegro" bf'8 bf2~ c8[ ef8 d8] \\
+\staff "2" \clef "bass" bf2~ bf8[ af8 f8 gf8] | %1
+
+\staff "1" \time 5/8 \stemUp f'4 ef8 c8[ ef8] \\
+\staff "1" \stemDown b'2~ b8~ \\
+\staff "2" \stemUp b2~ b8~ \\
+\staff "2" \stemDown ef,4 f8 af8[ f8] | %2
+
+\staff "1" \time 3/8 \stemUp d'4 c8 \\
+\staff "1" \stemDown b'4. \\
+\staff "2" \stemUp b4. \\
+\staff "2" \stemDown gf4 af8 | %3
+
+\staff "1" \time 2/4 \tempo "Vivacissimo" f8 ef2~ bf'8->[ af8 g8] \\
+\staff "2" ef,2~ df8[ af8-> bf8 cf8] | %4
+
+\staff "1" f8 e4. g8[ af8->] <ef ef>8 \\
+\staff "2" df,8 e4.~ cf8[ bf8-> <ef ef>8] | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8648514/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 《主题与倒影》各段落之间的 T<sub>n</sub> 与 I<sub>n</sub> 关系。

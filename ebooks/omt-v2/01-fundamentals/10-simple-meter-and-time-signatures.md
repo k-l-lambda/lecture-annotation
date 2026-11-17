@@ -138,7 +138,29 @@ modified: "2026-10-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6293132)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6293132 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6293132/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" g'4 g4 g4 g4 | %1
+
+g'2 g2 | %2
+
+g'1 | %3
+
+g'8[ g8] g8[ g8] g8[ g8] g8[ g8] | %4
+
+g'16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] | %5
+
+g'32[ g32 g32 g32 g32 g32 g32 g32] g4 g2 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6293132/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 4/4 拍中的节奏。
@@ -148,7 +170,33 @@ modified: "2026-10-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296048)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6296048 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296048/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 2/4 \clef "treble" g'4 g4 | %1
+
+g'8[ g8] g8[ g8] | %2
+
+g'16[ g16 g16 g16] g16[ g16 g16 g16] | %3
+
+g'2 | %4
+
+\time 3/4 g'4 g4 g4 | %5
+
+g'8[ g8] g8[ g8] g8[ g8] | %6
+
+g'16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] | %7
+
+g'2. | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6296048/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 单二拍子每小节两拍；单三拍子每小节三拍。
@@ -158,7 +206,25 @@ modified: "2026-10-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296065)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6296065 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296065/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 3/4 \clef "treble" g'4 g4 g4~ | %1
+
+g'4 g4 r4 | %2
+
+g'4. g8 g4 | %3
+
+g'2. | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6296065/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 不数出声的拍放在括号里。
@@ -185,7 +251,41 @@ s4 s4 \stemDown _\markup "(2)" s4 | %3
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422379)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8422379 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422379/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" f'8[ f8] f8[ f8] f4 f4 | %1
+
+f'2 f2 | %2
+
+f'1 | %3
+
+\time 4/2 f'4 f4 f4 f4 f2 f2 | %4
+
+f'1 f1 | %5
+
+f'\breve | %6
+
+\time 4/8 f'16[ f16] f16[ f16] f8 f8 | %7
+
+f'4 f4 | %8
+
+f'2 | %9
+
+\time 1/4 f'32[ f32] f32[ f32] f16 f16 | %10
+
+f'8 f8 | %11
+
+f'4 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8422379/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 14. 同样的数拍节奏，分别写成（a）以四分音符为一拍、（b）以二分音符为一拍、（c）以八分音符为一拍和（d）以十六分音符为一拍。
@@ -197,7 +297,21 @@ s4 s4 \stemDown _\markup "(2)" s4 | %3
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296072)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6296072 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296072/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" f'8[ f8] f8[ f8] f16[ f16 f16 f16] f16[ f16 f16 f16] | %1
+
+\time 4/8 f'16[ f16] f16[ f16] f16[ f16] f16[ f16] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6296072/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 15. 两种不同节拍中的符杠。
@@ -250,7 +364,19 @@ g'8[ g16 g] g[ g g8] g4 \bar "||" | %4
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8422418)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8422418 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8422418/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" g'16[ g16 g8] c16[ c16 c8] g8[ g16 g16] c8[ c16 c16] g16[ g8 g16] c16[ c8 c16] g16[ g8.] c16[ c8.] | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8422418/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 20. 部分符杠用于某些混合节奏的组合。

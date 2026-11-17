@@ -48,7 +48,32 @@ modified: "2026-04-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769536)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5769536 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769536/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key af \major \numericTimeSignature \time 4/4 \partial 2. \clef "bass" c8 c4 s8 c4 \\
+\staff "2" \clef "bass" r2 r4 | %1
+
+\staff "1" c2. df8[ bf8~] \\
+\staff "2" df,4 df4 df4 df8[ ef8] | %2
+
+\staff "1" bf4 r4 r8 bf4 bf,8 \\
+\staff "2" r8 ef,8 r8 ef8 ef4 ef4 | %3
+
+\staff "1" bf4 bf8[ af8] c4 ef,8[ f8] \\
+\staff "2" af,4 af4 af4 af8[ f8] | %4
+
+\staff "1" r8 c8[ c8 c8] c8[ c8] c4 \\
+\staff "2" r8 f,,8 r8 f8 f4 f4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5769536/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 酷玩乐队《Viva la Vida》中轮转的嘟·沃普进行。
@@ -60,7 +85,41 @@ modified: "2026-04-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769538)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5769538 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769538/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <e a c>1 \\
+\staff "2" \clef "bass" a1 | %1
+
+\staff "1" <f a c>1 \\
+\staff "2" f,1 | %2
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" <d g b>1 \\
+\staff "2" g1 | %4
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %5
+
+\staff "1" <d g b>1 \\
+\staff "2" g1 | %6
+
+\staff "1" <e a c>1 \\
+\staff "2" a1 | %7
+
+\staff "1" <f a c>1 \\
+\staff "2" f,1 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5769538/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 唱作人图式的两种常见轮转。
@@ -74,7 +133,44 @@ modified: "2026-04-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5810723)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5810723 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5810723/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key d \major \numericTimeSignature \time 4/4 \clef "treble_8" b'4 r16 fs16[ b16 cs16] d16.[ e16. d16] cs16.[ b16. a16] \\\
+\clef "alto" a'1 | %1
+
+g'8.[ d'16~] d8[ d16 e16] d4 r4 \\\
+fs1 | %2
+
+d'8[ a8 d8 a8] d8[ a8] d8[ e16 cs16~] \\\
+cs1 | %3
+
+cs'8 r8 r4 r2 \\\
+g'1 | %4
+
+d'4 cs4 s2 \\\
+r2 s2 | %5
+
+b'8[ fs8] fs16[ fs16 fs16 fs16] fs16[ b16 b16 b16] b8[ a16 b16~] \\\
+a'1 | %6
+
+b'16[ g16] r8 g16[ g16 g16 g16] b16[ b16 b16 b16] b8[ cs16 d16~] \\\
+fs1 | %7
+
+d'16[ a16] r8 a16[ a16 a16 a16] a16[ d16 d16 d16] d8[ e16 e16~] \\\
+cs1 | %8
+
+e'16[ cs8.] r4 r2 \\\
+g'1 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5810723/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 由于使用了调性模糊的唱作人图式，D 大调和 B 小调都可能是《[Despacito](https://open.spotify.com/track/6habFhsOp2NvshLv26DqMb?si=o3mcQyYaS3u-jhnd6dkW6A)》的主和弦。
@@ -110,7 +206,29 @@ modified: "2026-04-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769529)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5769529 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769529/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <f a c>1 \\
+\staff "2" \clef "bass" f,,1 | %1
+
+\staff "1" <d g b>1 \\
+\staff "2" g,1 | %2
+
+\staff "1" <e a c>1 \\
+\staff "2" a,1 | %3
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5769529/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 跳房子图式，附“级进–级进–跳进”模式的标注。
@@ -122,7 +240,41 @@ modified: "2026-04-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769537)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5769537 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769537/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c f a>1 \\
+\staff "2" \clef "bass" f,,1 | %1
+
+\staff "1" <b e gs>1 \\
+\staff "2" e,,4 s2 s4 | %2
+
+\staff "1" <c e a>1 \\
+\staff "2" a,1 | %3
+
+\staff "1" <c e g>1 \\
+\staff "2" c,1 | %4
+
+\staff "1" <c f a>1 \\
+\staff "2" f,,1 | %5
+
+\staff "1" <b e b'>1 \\
+\staff "2" gs,4 s2 s4 | %6
+
+\staff "1" <c e a>1 \\
+\staff "2" a,1 | %7
+
+\staff "1" <c e g>1 \\
+\staff "2" c,1 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5769537/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 以 V 替换 VII 的跳房子图式，即 VII 的 G 被 V 和弦的 G♯ 取代。
@@ -135,7 +287,65 @@ modified: "2026-04-06"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5769540)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5769540 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5769540/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <e g c>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <e a c>1 \\
+\staff "2" a,1 | %2
+
+\staff "1" <f a c>1 \\
+\staff "2" f,,1 | %3
+
+\staff "1" <d g b>1 \\
+\staff "2" g,1 | %4
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %5
+
+\staff "1" s1 \\
+\staff "2" s1 | %6
+
+\staff "1" <e a c>1 \\
+\staff "2" a1 | %7
+
+\staff "1" <f a c>1 \\
+\staff "2" f,1 | %8
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %9
+
+\staff "1" <d g b>1 \\
+\staff "2" g1 | %10
+
+\staff "1" s1 \\
+\staff "2" s1 | %11
+
+\staff "1" s1 \\
+\staff "2" s1 | %12
+
+\staff "1" <f a c>1 \\
+\staff "2" f,,1 | %13
+
+\staff "1" <d g b>1 \\
+\staff "2" g,1 | %14
+
+\staff "1" <e a c>1 \\
+\staff "2" a,1 | %15
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5769540/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 每种图式都从不同的和弦接近大调主音。

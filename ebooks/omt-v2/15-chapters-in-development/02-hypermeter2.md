@@ -61,7 +61,35 @@ modified: "2026-01-31"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/27040801)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/27040801 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/27040801/embed" title="MuseScore" loading="lazy" style="height: 563px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key d \major \numericTimeSignature \time 4/4 \clef "treble" r4 r8 fs8 fs8[ b,16 b16] fs'16[ fs16 fs8] | %1
+
+fs4 fs8[ fs8] fs8[ fs16 fs16] e16[ e8.] | %2
+
+r4 e8[ e16 e16] r4 e8[ e16 e16] | %3
+
+r4 r8 d16[ d16] e8[ e8 e8 fs8] | %4
+
+r2 r8 b8 g'4 | %5
+
+fs4. e8 r4 g4 | %6
+
+fs4. e8 r8 b8[ g'8 fs8] | %7
+
+cs4. b8 r4 r8 b8 | %8
+
+fs8[ fs16 fs16~] fs8[ b,8] fs'8[ fs8 fs8 e8] | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/27040801/embed" title="MuseScore" loading="lazy" style="height: 563px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. [《Diamonds》](https://open.spotify.com/track/1z9kQ14XBSN0r2v6fx4IdG?si=bba2ac977301403d)中的乐句在主歌（a，0:11）与副歌（b，0:51）中的节拍位置不同。

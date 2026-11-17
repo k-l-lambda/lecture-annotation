@@ -22,6 +22,9 @@
  *         the 48 WTC fugue subjects become one labelled score each;
  *       - after every block that links a YouTube/Vimeo video, a video embed
  *         (<!-- video-begin: URL --> … <!-- video-end -->);
+ *       - after every MuseScore link, the score's iframe; when v2/lilylet/musescore has an
+ *         automatic Lilylet draft of it, a switch (data-omt-switch) showing the playable
+ *         draft by default and the MuseScore iframe on demand;
  *       - copies every ../media/… file the chapters reference (images, audio).
  *       Idempotent; --check reports what would change and exits 1 if anything is stale.
  */
@@ -187,11 +190,53 @@ const OLD_VIDEO = /(?:\n[ \t]*>?[ \t]*)*\n[ \t]*(?:>[ \t]*)?<!-- (?:video|embed)
 const EMBED_HEIGHT = JSON.parse(fs.readFileSync(path.join(here, 'omt-v2-embeds.json'), 'utf8'));
 const EMBED_LINK = /(🎼|🖥) ?\[[^\]]*\]\((https?:\/\/[^)\s]+)\)/g;
 const attr = v => v.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+// Automatic Lilylet drafts of the MuseScore first pages (openmusictheory-lilylet
+// v2/lilylet/musescore, scripts/svg there). Where one exists, the embed becomes a
+// switch: the playable Lilylet score is shown by default, the MuseScore iframe on demand.
+const MS_DRAFTS = (() => {
+	const p = path.join(v2, 'lilylet/musescore/MANIFEST.json');
+	const map = new Map();
+	if (!fs.existsSync(p)) return map;
+	for (const r of JSON.parse(fs.readFileSync(p, 'utf8')).files) {
+		const m = r.url.match(/\/user\/(\d+)\/scores\/(\d+)/);
+		if (m && r.lyl && r.page === 0) map.set(`${m[1]}_${m[2]}`, r);
+	}
+	return map;
+})();
+const draftScore = url => {
+	const m = url.match(/\/user\/(\d+)\/scores\/(\d+)/);
+	const r = m && MS_DRAFTS.get(`${m[1]}_${m[2]}`);
+	if (!r) return null;
+	// the importer's placeholder title would be engraved over the score
+	const code = fs.readFileSync(path.join(omt, r.lyl), 'utf8').replace(/^\[title [^\n]*\]\n/m, '').trim();
+	return { code, row: r };
+};
+const switchEmbed = (url, src, height, draft) => {
+	const q = draft.row.quality || {};
+	const note = `由 MuseScore 页面自动转写（仅第一页），未逐小节核对${q.grade && q.grade !== 'consistent' ? '；部分小节时值存疑' : ''}。`;
+	return [
+		`<!-- embed-begin: ${url} -->`,
+		`<div class="omt-switch" data-omt-switch>`,
+		`<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">${note}</span></div>`,
+		`<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">`,
+		'',
+		'```lyl.play',
+		draft.code,
+		'```',
+		'',
+		`</div>`,
+		`<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="${attr(src)}" title="MuseScore" loading="lazy" style="height: ${height}px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`,
+		`</div>`,
+		`<!-- embed-end -->`,
+	].join('\n');
+};
 const scoreEmbed = (mark, raw) => {
 	const url = raw.replace(/\\(.)/g, '$1');
 	let src, kind, height = EMBED_HEIGHT[url];
 	if (mark === '🎼' && /^https?:\/\/(?:www\.)?musescore\.com\/user\/\d+\/scores\/\d+(?:\/s\/[\w-]+)?$/.test(url)) {
 		src = `${url}/embed`; kind = 'musescore'; height ??= 394;
+		const draft = draftScore(url);
+		if (draft) return switchEmbed(url, src, height, draft);
 	} else if (mark === '🖥' && /^https?:\/\/(?:www\.)?brianedwardjarvis\.com\//.test(url)) {
 		src = url; kind = 'interactive'; height ??= 600;
 	} else return null;
@@ -269,6 +314,7 @@ for (const f of bookFiles) {
 	s = addVideos(s);
 	videos += (s.match(/<!-- video-begin:/g) || []).length;
 	for (const m of s.matchAll(/<div class="omt-embed omt-embed-(\w+)"/g)) embeds[m[1]] = (embeds[m[1]] || 0) + 1;
+	for (const m of s.matchAll(/<div class="omt-switch-pane omt-embed omt-embed-(\w+)"/g)) embeds[m[1]] = (embeds[m[1]] || 0) + 1, embeds.switch = (embeds.switch || 0) + 1;
 	for (const m of s.matchAll(/\]\(\.\.\/(media\/[^)\s]+)\)/g)) if (!MUSESCORE.test(m[1])) media.add(decodeURIComponent(m[1]));
 	if (s !== before) {
 		changed++;
@@ -284,5 +330,5 @@ for (const rel of media) {
 	copied++;
 	if (!check) { fs.mkdirSync(path.dirname(dst), {recursive: true}); fs.copyFileSync(src, dst); }
 }
-console.log(`sync: ${bookFiles.length} chapters, ${filled} score blocks, ${videos} videos, ${embeds.musescore || 0} MuseScore + ${embeds.interactive || 0} interactive embeds, ${changed} files ${check ? 'stale' : 'written'}; media ${media.size} referenced, ${copied} ${check ? 'to copy' : 'copied'}, ${absent} missing; ${missing} placeholders without a score; ${dropped} lost in translation`);
+console.log(`sync: ${bookFiles.length} chapters, ${filled} score blocks, ${videos} videos, ${embeds.musescore || 0} MuseScore (${embeds.switch || 0} with a Lilylet draft) + ${embeds.interactive || 0} interactive embeds, ${changed} files ${check ? 'stale' : 'written'}; media ${media.size} referenced, ${copied} ${check ? 'to copy' : 'copied'}, ${absent} missing; ${missing} placeholders without a score; ${dropped} lost in translation`);
 if (check && (changed || copied)) process.exit(1);

@@ -27,7 +27,21 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843767)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6843767 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843767/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "bass" c,4 e4 g4 b4 | %1
+
+<c, e g b>1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6843767/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 一个以旋律形式和和声形式写出的七和弦。
@@ -90,7 +104,27 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6850641)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6850641 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6850641/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <e gs b ds>1 | %1
+
+<e gs b d>1 | %2
+
+<e g b d>1 | %3
+
+<e g bf d>1 | %4
+
+<e g bf df>1 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6850641/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 各种七和弦类型中七度与三和弦的性质。
@@ -102,7 +136,21 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843772)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6843772 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "bass" <g, bf df f>1 | %1
+
+<f,, g bf df>1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6843772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 两个七和弦。
@@ -118,7 +166,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514077)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514077 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514077/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key g \major \omit Score.TimeSignature \numericTimeSignature \time 32/4 \clef "bass" <g, b d fs>1 <a c e g>1 <b d fs a>1 <c e g b>1 <d fs a c>1 <e g b d>1 <fs a c e>1 <g b d fs>1 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514077/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 大调中的七和弦性质。
@@ -128,7 +188,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514209)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514209 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514209/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key bf \major \omit Score.TimeSignature \numericTimeSignature \time 40/4 \clef "bass" <g, bf d f>1 <a c ef g>1 <bf d f a>1 <c ef g bf>1 <d f a c>1 <d fs a c>1 <ef g bf d>1 <fs a c ef>1 <fs a c ef>1 <g bf d f>1 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514209/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 小调中的七和弦性质。
@@ -218,7 +290,23 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6843788)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6843788 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6843788/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \defaultTimeSignature \time 4/4 \clef "treble" <d bf' f'>1 \\
+\staff "2" \clef "bass" <bf, f' af>1 | %1
+
+\staff "1" <d bf' g'>1 \\
+\staff "2" <ef,, ef' g>1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6843788/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 两个带重复、采用开放间距的七和弦。

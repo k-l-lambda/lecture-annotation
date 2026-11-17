@@ -27,7 +27,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839451)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6839451 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839451/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "bass" c,4 e4 g2 | %1
+
+<c, e g>1 | %2
+
+d,4 f4 a2 | %3
+
+<d, f a>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6839451/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 两个三和弦，分别以旋律形式和和声形式展示。
@@ -62,7 +80,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839452)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6839452 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839452/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <f a c>1 | %1
+
+<f af c>1 | %2
+
+<f af cf>1 | %3
+
+<f a cs>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6839452/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 不同性质的三和弦。
@@ -85,7 +121,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839453)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6839453 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839453/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "bass" <c, e g>1 | %1
+
+<c, ef g>1 | %2
+
+<ef, g c>1 | %3
+
+<g c ef>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6839453/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 展示四个三和弦及其和弦符号。
@@ -97,7 +151,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8514212)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8514212 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8514212/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key g \major \omit Score.TimeSignature \numericTimeSignature \time 32/4 \clef "bass" <g, b d>1 <a c e>1 <b d fs>1 <c e g>1 <d fs a>1 <e g b>1 <fs a c>1 <g b d>1 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8514212/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 大调中的三和弦性质。
@@ -107,7 +173,37 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8456477/s/Orwx2V)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8456477/s/Orwx2V -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8456477/s/Orwx2V/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key bf \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <g' bf d>1 | %1
+
+<a' c ef>1 | %2
+
+<bf' d f>1 | %3
+
+<c' ef g>1 | %4
+
+<d' f a>1 | %5
+
+<d' fs a>1 | %6
+
+<ef' g bf>1 | %7
+
+<f' a c>1 | %8
+
+<fs' a c>1 | %9
+
+<g'' bf d>1 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8456477/s/Orwx2V/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 建立在自然小调音阶上的三和弦性质。
@@ -173,7 +269,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6876492)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6876492 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6876492/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "bass" <d, fs a>1 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6876492/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 一个待识别的三和弦。
@@ -189,7 +297,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839467)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6839467 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839467/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" <cs' e g>1 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6839467/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 第二个待识别的三和弦。
@@ -207,7 +327,44 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6839470)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6839470 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6839470/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <e gs b e>1 \\
+\staff "2" \clef "bass" <e, gs b>1 | %1
+
+\staff "1" s1 \\
+\staff "2" s1 | %2
+
+\staff "1" <c e a c e a>1 \\
+\staff "2" <a, c e a>1 | %3
+
+\staff "1" gs'1 \\
+\staff "2" <e,, b''>1 | %4
+
+\staff "1" s1 \\
+\staff "2" s1 | %5
+
+\staff "1" <e c'>1 \\
+\staff "2" a,1 | %6
+
+\staff "1" <gs' b e>1 \\
+\staff "2" <e,, e' b'>1 | %7
+
+\staff "1" s1 \\
+\staff "2" s1 | %8
+
+\staff "1" <e a e' c'>1 \\
+\staff "2" <a, a'>1 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6839470/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 重复不影响和弦符号。

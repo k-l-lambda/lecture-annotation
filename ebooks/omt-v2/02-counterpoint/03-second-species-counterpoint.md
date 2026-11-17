@@ -30,7 +30,113 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488187)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8488187 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488187/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \defaultTimeSignature \time 2/2 \clef "treble" a'2 d2 \\\
+\clef "treble" d1 | %1
+
+a'2 b2 \\\
+f1 | %2
+
+c'2 g2 \\\
+e1 | %3
+
+a'2 d2 \\\
+d1 | %4
+
+b'2 c2 \\\
+g'1 | %5
+
+d'2 a2 \\\
+f1 | %6
+
+c'2 d2 \\\
+a'1 | %7
+
+e'2 b2 \\\
+g'1 | %8
+
+d'2 a2 \\\
+f1 | %9
+
+b'2 cs2 \\\
+e1 | %10
+
+d'1 \\\
+d1 | %11
+
+d1 \\\
+\clef "bass" r2 d,2 | %12
+
+f1 \\\
+d2 a2 | %13
+
+e1 \\\
+c2 a2 | %14
+
+d1 \\\
+b2 a2 | %15
+
+g'1 \\\
+g2 b2 | %16
+
+f1 \\\
+d2 e2 | %17
+
+a'1 \\\
+f2 c2 | %18
+
+g'1 \\\
+e2 b2 | %19
+
+f1 \\\
+d2 d,2 | %20
+
+e1 \\\
+a2 cs2 | %21
+
+d1 \\\
+d1 | %22
+
+r2 b'2 \\\
+\clef "treble" e1 | %23
+
+c'2 b2 \\\
+c1 | %24
+
+a'2 b2 \\\
+d1 | %25
+
+c'2 g2 \\\
+c1 | %26
+
+a'2 b2 \\\
+a1 | %27
+
+c'2 a2 \\\
+a'1 | %28
+
+b'2 d2 \\\
+g'1 | %29
+
+e'2 d2 \\\
+e1 | %30
+
+c'2 d2 \\\
+f1 | %31
+
+e'1 \\\
+e1 | %32
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8488187/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 《Gradus ad Parnassum》中的全部第二类对位练习。

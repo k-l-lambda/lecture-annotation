@@ -34,7 +34,81 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/30425053/scores/8135649)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/8135649 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/8135649/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c' e g>1~ | %1
+
+<b' e g>1 | %2
+
+<c' e g>1~ | %3
+
+<c' e a>1 | %4
+
+<a' c e>1~ | %5
+
+<a' c f>1 | %6
+
+<a' c e>1~ | %7
+
+<g' c e>1 | %8
+
+<c' e g>1~ | %9
+
+<bf' ef g>1 | %10
+
+<c' e g>1~ | %11
+
+<b' e gs>1 | %12
+
+<c' e g>1~ | %13
+
+<c' ef af>1 | %14
+
+<c' e g>1~ | %15
+
+<cs' e a>1 | %16
+
+<a' c e>1~ | %17
+
+<g' c ef>1 | %18
+
+<a' c e>1~ | %19
+
+<gs' cs e>1 | %20
+
+<a' c e>1~ | %21
+
+<af' c f>1 | %22
+
+<a' c e>1~ | %23
+
+<a' cs fs>1 | %24
+
+<c' e g>1 | %25
+
+<bf' ef gf>1 | %26
+
+<c' e g>1 | %27
+
+<cf' ef af>1 | %28
+
+<a' c e>1 | %29
+
+<gs' cs es>1 | %30
+
+<a' c e>1 | %31
+
+<as' cs fs>1 | %32
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/8135649/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 按类型划分的中音关系和弦一览。
@@ -87,7 +161,91 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/27638568/scores/5879039)
 
 <!-- embed-begin: https://musescore.com/user/27638568/scores/5879039 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/27638568/scores/5879039/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "bass" \tempo "Allegro maestoso" 2 = 54 \repeat tremolo 4 { as16 fs16 } \repeat tremolo 4 { a16 fs16 } \\
+\staff "2" \clef "bass" fs,,2 d8.[ a'16] d4 \\\
+s1 | %1
+
+\staff "1" \repeat tremolo 4 { as16 fs16 } \repeat tremolo 4 { a16 fs16 } \\
+\staff "2" fs,,2 d8.[ a'16] d4 \\\
+s1 | %2
+
+\staff "1" \repeat tremolo 4 { as16 fs16 } \repeat tremolo 4 { as16 fs16 } \\
+\staff "2" fs,,4 es2 e4~ \\\
+s1 | %3
+
+\staff "1" \repeat tremolo 4 { as16 fs16 } \repeat tremolo 4 { as16 fs16 } \\
+\staff "2" e,,4 ef4~ ef8[ d8 ef8 gf8] \\\
+s1 | %4
+
+\staff "1" \repeat tremolo 4 { b16 g16 } \repeat tremolo 4 { bf16 g16 } \\
+\staff "2" g,2 ef8.[ bf'16] ef4 \\\
+s1 | %5
+
+\staff "1" \repeat tremolo 4 { b16 g16 } \repeat tremolo 4 { bf16 g16 } \\
+\staff "2" g,2 ef8.[ bf'16] ef4 \\\
+s1 | %6
+
+\staff "1" \repeat tremolo 4 { b16 g16 } \repeat tremolo 4 { b16 g16 } \\
+\staff "2" g,4 fs2 f4~ \\\
+s1 | %7
+
+\staff "1" \repeat tremolo 4 { b16 g16 } \repeat tremolo 4 { b16 g16 } \\
+\staff "2" f,,4 e4~ e8[ ds8 e8 g8] \\\
+s1 | %8
+
+\staff "1" \repeat tremolo 4 { c16 af16 } \repeat tremolo 4 { cf16 af16 } \\
+\staff "2" af,2 ff8.[ cf'16] ff4 \\\
+s1 | %9
+
+\staff "1" \repeat tremolo 4 { c16 af16 } \repeat tremolo 4 { cf16 af16 } \\
+\staff "2" af,2 ff8.[ cf'16] ff4 \\\
+s1 | %10
+
+\staff "1" \repeat tremolo 4 { c32-> af32 } \repeat tremolo 4 { b32-> g32 } \repeat tremolo 4 { cs32-> a32 } \repeat tremolo 4 { c32-> af32 } \\
+\staff "2" af,8.[ c16] <e, e'>4 a8.[ cs16] <f, f'>4 \\\
+s1 | %11
+
+\staff "1" \repeat tremolo 4 { ds32-> b32 } \repeat tremolo 4 { d32-> bf32 } \repeat tremolo 4 { f'32-> df32 } \repeat tremolo 4 { e32-> c32 } \\
+\staff "2" b,8.[ ds16] <g, g'>4 df'8.[ f16] <a, a'>4 \\\
+s1 | %12
+
+\staff "1" \repeat tremolo 4 { f32-> df32 } \repeat tremolo 4 { e32-> c32 } \repeat tremolo 4 { f32-> df32 } <c e>8 r8 \\
+\staff "2" df,8.[ f16] <a, a'>4 df8.[ f16] <a, a'>4 \\\
+s1 | %13
+
+\staff "1" \clef "treble" <f g bf df f>4-> <e gs b e>4 <f gs bf df f>4-> <e gs b e>4-> \\
+\staff "2" <ef,,, ef'>4 \grace { b''16 c16 d16 } e8 <ef,, ef'>4 \grace { b''16 c16 d16 } e8 r4 \\\
+s1 | %14
+
+\staff "1" R1 \\
+\staff "2" \clef "treble" <g' a c ef g>4-> <fs as cs fs>4-> <as b d a'>4-> <af cs ef af>4-> \\\
+\clef "bass" <f,,, f'>4 \grace { c''16 d16 e16 } fs8 r8 <g,, g'>4 \grace { e''16 fs16 g16 } af8 r8 | %15
+
+\staff "1" R1 \\
+\staff "2" <b' cs g' b>4-> <bf d f bf>4 <cs ds a' cs>4-> <c e g c>4-> \\\
+<a,, a'>4 \grace { f''16 g16 a16 } bf8 r8 <b,, b'>4 \grace { g''16 a16 bf16 } c8 r8 | %16
+
+\staff "1" \key df \major f'2 f4. f8 \\
+\staff "2" <cf' f cf'>8 r8 \repeat tremolo 4 { f32 cf32 } \repeat tremolo 8 { f32 cf32 } \\\
+<df,, df'>8 r8 \clef "treble" \repeat tremolo 4 { f''32 af32 } \repeat tremolo 8 { f32 af32 } | %17
+
+\staff "1" f2~ f4 r8 df'8 \\
+\staff "2" \stemUp s2 s4 \repeat tremolo 4 { f'32 cf32 } \\
+\staff "2" \stemDown \repeat tremolo 4 { f'32 cf32 } df4-> cf4->~ cf8 r8 \\\
+\clef "treble" \stemUp \repeat tremolo 4 { f32 af32 } r4 r4 \repeat tremolo 4 { f32 af32 } \\
+\stemDown s4 df4-> cf4->~ cf4 | %18
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/27638568/scores/5879039/embed" title="MuseScore" loading="lazy" style="height: 1120px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 霍尔梅斯《L'Or》中的中音关系。

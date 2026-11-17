@@ -76,7 +76,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455859)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8455859 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455859/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" f2 f4 f4 | %1
+
+r4 f4 r4 f4 | %2
+
+f8[ f8 f8 f8] f4 f4 | %3
+
+f1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8455859/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 谱例 2 的斜线记谱与五线谱记谱。
@@ -102,7 +120,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455769)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8455769 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455769/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key f \major \numericTimeSignature \time 4/4 \clef "treble" f2 g4 a4 | %1
+
+r4 g'4 r4 f4 | %2
+
+e8[ f8 g8 e8] f4 g4 | %3
+
+f1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8455769/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 谱例 5–6 的五线谱记谱。
@@ -116,7 +152,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455748)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8455748 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455748/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key d \major \numericTimeSignature \time 4/4 \clef "treble" a'2 d,2 | %1
+
+a'4 g4 fs2 | %2
+
+d'4 cs8[ b8] a2 | %3
+
+g'4 fs8[ e8] d2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8455748/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 用原记谱法和五线谱记谱写出的旋律。
@@ -161,7 +215,33 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455691)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8455691 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455691/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key g \major \numericTimeSignature \time 6/8 \clef "bass" g,4. fs4. | %1
+
+g,8 r8 a8 b8 r8 c8 | %2
+
+d,4. r4. | %3
+
+g,2. | %4
+
+\key bf \major \time 6/4 \clef "alto" bf2. a2. | %5
+
+bf4 r4 c4 d4 r4 ef4 | %6
+
+f2. r2. | %7
+
+bf1. | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8455691/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 一条原记谱法旋律的两种不同写法。
@@ -171,7 +251,41 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8455655)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8455655 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455655/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \defaultTimeSignature \time 4/4 \clef "treble" ef4 r4 f4 g4 | %1
+
+bf'2 af8[ g8 f8 ef8] | %2
+
+bf2 ef4 g4 | %3
+
+bf'8 r8 g8 r8 ef2 | %4
+
+\numericTimeSignature \time 4/8 \clef "tenor" cs8 r8 ds8[ es8] | %5
+
+gs'4 fs16[ es16 ds16 cs16] | %6
+
+gs4 cs8[ es8] | %7
+
+gs'16 r16 es16 r16 cs4 | %8
+
+\key f \major \time 4/1 \clef "bass" f,1 r1 g1 a1 | %9
+
+c\breve bf2 a2 g2 f2 | %10
+
+c,\breve f1 a1 | %11
+
+c2 r2 a2 r2 f\breve | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8455655/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 13. 一条原记谱法旋律的三种不同写法。

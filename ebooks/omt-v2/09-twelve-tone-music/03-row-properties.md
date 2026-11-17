@@ -31,7 +31,19 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862120)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8862120 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862120/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" a'4 bf4 af4 b4 g4 c4 gf4 cs4 f,4 d'4 e,4 ds'4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8862120/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 路易吉·诺诺（Luigi Nono）《中断的歌声》（*Il Canto Sospeso*）中的全音程音列。
@@ -49,7 +61,19 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862261)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8862261 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862261/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" c'4 b4 d4 cs4 f4 fs4 ds4 e4 af4 g4 bf4 a4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8862261/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 安东·韦伯恩《弦乐四重奏》Op. 28 中的一个音列，被分割为离散片段。注意其中集合类与音程的数量十分有限。
@@ -73,7 +97,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862222)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8862222 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862222/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" c'4 b4 d4 cs4 | %1
+
+f'4 fs4 ds4 e4 | %2
+
+af''4 g4 bf4 a4 | %3
+
+e'4 ds4 fs4 f4 | %4
+
+a''4 bf4 g4 gs4 | %5
+
+c'4 b4 d4 cs4 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8862222/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 安东·韦伯恩《弦乐四重奏》Op. 28 中的片段不变性。
@@ -119,7 +165,21 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8862252)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8862252 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8862252/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" c'4 b4 d4 cs4 f4 fs4 ds4 e4 af4 g4 bf4 a4 | %1
+
+b'4 c4 cs4 d4 fs4 f4 e4 ds4 g4 gs4 a4 as4 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8862252/embed" title="MuseScore" loading="lazy" style="height: 525px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 从安东·韦伯恩《弦乐四重奏》Op. 28 的音列造出的部分重排音列。

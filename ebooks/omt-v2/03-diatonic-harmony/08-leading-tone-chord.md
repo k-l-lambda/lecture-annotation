@@ -26,7 +26,66 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245135)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6245135 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245135/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 3/4 \clef "treble" \stemUp r4 a'4 a4 \\
+\staff "1" \stemDown s4 f4 f4 \\
+\staff "2" \clef "bass" \stemUp r4 d4 a4 \\
+\staff "2" \stemDown s4 d,4 d4 | %1
+
+\staff "1" \stemUp bf'2. \\
+\staff "1" \stemDown g'2. \\
+\staff "2" \stemUp e2. \\
+\staff "2" \stemDown cs,2. | %2
+
+\staff "1" \stemUp a'4 r4 a4 \\
+\staff "1" \stemDown f4 s4 f4 \\
+\staff "2" \stemUp d4 r4 d4 \\
+\staff "2" \stemDown d,4 s4 d4 | %3
+
+\staff "1" \stemUp cs'2. \\
+\staff "1" \stemDown g'2. \\
+\staff "2" \stemUp bf2. \\
+\staff "2" \stemDown e,2. | %4
+
+\staff "1" \stemUp d'4 r4 s4 \\
+\staff "1" \stemDown f4 r4 s4 \\
+\staff "2" \stemUp a4 r4 s4 \\
+\staff "2" \stemDown f,4 r4 s4 | %5
+
+\staff "1" \stemUp r4 a'4 a4 \\
+\staff "1" \stemDown s4 f4 f4 \\
+\staff "2" \stemUp r4 d4 a4 \\
+\staff "2" \stemDown s4 d,4 d4 | %6
+
+\staff "1" a'2 g2. \\
+\staff "2" \stemUp e2. \\
+\staff "2" \stemDown cs,2. | %7
+
+\staff "1" \stemUp a'4 r4 a4 \\
+\staff "1" \stemDown f4 s4 f4 \\
+\staff "2" \stemUp d4 r4 d4 \\
+\staff "2" \stemDown d,4 s4 d4 | %8
+
+\staff "1" \stemUp cs'2. \\
+\staff "1" \stemDown g'2. \\
+\staff "2" \stemUp a2. \\
+\staff "2" \stemDown e,2. | %9
+
+\staff "1" \stemUp d'4 r4 s4 \\
+\staff "1" \stemDown f4 r4 s4 \\
+\staff "2" \stemUp a4 r4 s4 \\
+\staff "2" \stemDown f,4 r4 s4 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6245135/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 莫扎特《安魂曲》（*Requiem*）中《羔羊经》使用 vii<sup>o7</sup> 与 V<sup>7</sup> 的对比（[0:06–0:20](https://open.spotify.com/track/4HwQUYEHODAq2nr6ea2O7s?si=8D2dTz-0Svaw9BodLggqRg)）。
@@ -40,7 +99,21 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245147)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6245147 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245147/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "bass" <b, d f a>1 | %1
+
+<b, d f af>1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6245147/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 导音七和弦不同性质的比较。
@@ -71,7 +144,64 @@ $\mathrm{vii^{o7}}$ 的几乎所有转位（外加 $\mathrm{vii^{o6}}$）都能�
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245159)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6245159 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245159/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 3/4 \clef "treble" \stemUp b'4 cs4 b4 \\
+\staff "1" \stemDown fs4 fs4 fs4 \\
+\staff "2" \clef "bass" \stemUp d4 e4 d4 \\
+\staff "2" \stemDown b,4 as4 b4 | %1
+
+\staff "1" s2 s4 \\
+\staff "2" s2 s4 | %2
+
+\staff "1" \stemUp b'4 cs4 b4 \\
+\staff "1" \stemDown fs4 g4 fs4 \\
+\staff "2" \stemUp d4 e4 d4 \\
+\staff "2" \stemDown b,4 as4 b4 | %3
+
+\staff "1" \stemUp b'4 as4 b4 \\
+\staff "1" \stemDown fs4 fs4 fs4 \\
+\staff "2" \stemUp d4 e4 d4 \\
+\staff "2" \stemDown b,4 cs4 d4 | %4
+
+\staff "1" s2 s4 \\
+\staff "2" s2 s4 | %5
+
+\staff "1" \stemUp b'4 as4 b4 \\
+\staff "1" \stemDown fs4 g4 fs4 \\
+\staff "2" \stemUp d4 e4 d4 \\
+\staff "2" \stemDown b,4 cs4 d4 | %6
+
+\staff "1" s2 s4 \\
+\staff "2" s2 s4 | %7
+
+\staff "1" \stemUp d'4 cs4 b4 \\
+\staff "1" \stemDown fs4 e4 fs4 \\
+\staff "2" \stemUp b4 as4 b4 \\
+\staff "2" \stemDown b,4 cs4 d4 | %8
+
+\staff "1" \stemUp b'4 as4 b4 \\
+\staff "1" \stemDown fs4 fs4 fs4 \\
+\staff "2" \stemUp d4 cs4 b4 \\
+\staff "2" \stemDown b,4 e4 d4 | %9
+
+\staff "1" s2 s4 \\
+\staff "2" s2 s4 | %10
+
+\staff "1" \stemUp b'4 as4 b4 \\
+\staff "1" \stemDown fs4 g4 fs4 \\
+\staff "2" \stemUp d4 cs4 d4 \\
+\staff "2" \stemDown b,4 e4 d4 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6245159/embed" title="MuseScore" loading="lazy" style="height: 800px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 用 $\mathit{vii^{o6}}$、$\mathit{vii^{o7}}$ 及其转位写作。
@@ -83,7 +213,22 @@ $\mathrm{vii^{o7}}$ 的几乎所有转位（外加 $\mathrm{vii^{o6}}$）都能�
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6245161)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6245161 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6245161/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'2 fs4 fs4 \\
+\staff "1" \stemDown as'2 b4 as4 \\
+\staff "2" \clef "bass" \stemUp cs2 d4 cs4 \\
+\staff "2" \stemDown g2 fs2 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6245161/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 使用 $\mathit{vii^{o}\begin{smallmatrix}4\\2\end{smallmatrix}}$。

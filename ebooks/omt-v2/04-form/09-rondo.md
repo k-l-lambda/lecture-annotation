@@ -52,7 +52,92 @@ Maria Hester Park 作于 1796 年的 C 大调奏鸣曲 Op. 7 的末乐章，是�
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8404601)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8404601 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8404601/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \defaultTimeSignature \time 2/2 \partial 4. \clef "treble" \tempo "Allegro" g'8-.[ c8-. d8-.] \\
+\staff "2" \clef "bass" r8 r4 | %1
+
+\staff "1" ef'4. f8 d4. ef8 \\
+\staff "2" c,8[ ef8 g8 c8] c,8[ f8 g8 b8] | %2
+
+\staff "1" c'2 \grace { d16 } c8[ b8 c8 d8] \\
+\staff "2" c,8[ ef8 g8 c8] ef8[ g8 ef8 d8] | %3
+
+\staff "1" \grace { f'16 } ef8[ d8 ef8 f8] g4-. g4-. \\
+\staff "2" c8[ g'8 <c, ef>8 g'8] <b, d>8[ g'8 <af, c>8 g'8] | %4
+
+\staff "1" g''2. f8[ g8] \\
+\staff "2" g8[ b8 d8 g8] g,8[ b8 d8 g8] | %5
+
+\staff "1" \grace { f'16 g16 } af2 d,4 ef8[ f8] \\
+\staff "2" f,8[ af8 b8 d8] f,8[ af8 b8 d8] | %6
+
+\staff "1" \grace { ef'16 f16 } g2 c,4 c8[ d8] \\
+\staff "2" ef,8[ g8 c8 ef8] af,8[ c8 ef8 fs8] | %7
+
+\staff "1" ef'4-. ef8[ f8] d4-. d8[ ef8] \\
+\staff "2" g8[ c8 ef8 g8] g,8[ b8 d8 g8] | %8
+
+\staff "1" c'4 r4 r4 f8[ g8] \\
+\staff "2" r8 c,8[ ef8 g8] c4 r4 | %9
+
+\staff "1" <af' af'>2 d4 ef8[ f8] \\
+\staff "2" r8 f,,8[ b8 d8] f8[ af8 g8 f8] | %10
+
+\staff "1" <g' g'>2 c4 c8[ d8] \\
+\staff "2" r8 ef,,8[ g8 c8] ef8[ g8 af8 fs8] | %11
+
+\staff "1" ef'4-. ef8[ f8] d4-. d8[ ef8] \\
+\staff "2" g,8[ g'8 c8 g8] g,8[ g'8 b8 g8] | %12
+
+\staff "1" c'4-. bf'2 bf4~ \\
+\staff "2" c,8[ c'8 b8 c8] e,8[ c'8 g8 c8] | %13
+
+\staff "1" bf''8[ af8 g8 f8] ef8[ d8 c8 b8] \\
+\staff "2" f,8[ c'8 af8 c8] g8[ f'8 b,8 f'8] | %14
+
+\staff "1" c'4-. <c c'>2 bf'4~ \\
+\staff "2" af8[ ef'8 c8 ef8] g,8[ e'8 c8 e8] | %15
+
+\staff "1" bf''8[ af8 g8 f8] ef8[ d8 c8 b8] \\
+\staff "2" f,8[ f'8 c8 f8] g,8[ g'8 g,8 g'8] | %16
+
+\staff "1" c'4-. d4 \grace { c16 d16 } ef4-. <b d b'>4-. \\
+\staff "2" c4-. <g b>4-. <c, c'>4-. <g g'>4-. | %17
+
+\staff "1" <c' ef c'>4-. r4 r2 \\
+\staff "2" <c,, c'>4-. r4 r2 | %18
+
+\staff "1" <g c e>1 \\
+\staff "2" <bf,, bf'>1 | %19
+
+\staff "1" f8[ c'8 af8 f'8] c8[ af'8 f8 c'8] \\
+\staff "2" <af,, af'>4 r4 r2 | %20
+
+\staff "1" bf''8[ g8 e8 c8] bf8[ b8 c8 g8] \\
+\staff "2" r4 <e, c'>4 <e c'>4 <e c'>4 | %21
+
+\staff "1" bf'2 af4 r4 \\
+\staff "2" <f, c'>2. r4 | %22
+
+\staff "1" <f, bf d>1 \\
+\staff "2" <af,, af'>1 | %23
+
+\staff "1" ef8[ bf'8 g8 ef'8] bf8[ g'8 ef8 bf'8] \\
+\staff "2" <g,, g'>4 r4 r2 | %24
+
+\staff "1" af''8[ g8 f8 ef8] d8[ c8 bf8 af8] \\
+\staff "2" r4 <d, bf'>4 <d bf'>4 <d bf'>4 | %25
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8404601/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 贝多芬（Ludwig van Beethoven），c 小调钢琴奏鸣曲 Op. 13，第 3 乐章——[点击查看乐谱（PDF）](https://viva.pressbooks.pub/app/uploads/sites/12/2022/07/pathetique2.pdf)

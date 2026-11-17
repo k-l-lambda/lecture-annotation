@@ -32,7 +32,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/8171934)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/8171934 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/8171934/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 3/4 \clef "treble" a'4 fs4 g4 | %1
+
+gs'4 e4 f4 | %2
+
+b'4 bf4 d4 | %3
+
+df'4 c4 ef4 | %4
+
+\time 4/4 <fs g a>1 | %5
+
+<e f gs>1 | %6
+
+<as' b d>1 | %7
+
+<c' df ef>1 | %8
+
+\time 6/4 e4 f4 fs4 g4 gs4 a4 | %9
+
+\time 4/4 s1 | %10
+
+\time 6/4 as'4 b4 c4 cs4 d4 ds4 | %11
+
+\time 4/4 s1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/8171934/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. Op. 21 的音列，以及三音组与六音组的划分。
@@ -175,7 +209,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/8171973)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/8171973 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/8171973/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 3/4 \clef "treble" b'4 bf4 d4 | %1
+
+ef'4 g4 fs4 | %2
+
+gs''4 e4 f4 | %3
+
+c'4 cs4 a4 | %4
+
+\time 4/4 <as' b d>1 | %5
+
+<ds' fs g>1 | %6
+
+<e' f af>1 | %7
+
+<a' c df>1 | %8
+
+<as' b d ef fs g>1 | %9
+
+\time 3/4 <as' b>4 <d ef>4 <fs g>4 | %10
+
+\time 4/4 <gs' a c df e f>1 | %11
+
+\time 3/4 <gs' a>4 <c df>4 <e f>4 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/8171973/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 韦伯恩《协奏曲》（Op. 24）的音列，以及三音组与六音组的划分。

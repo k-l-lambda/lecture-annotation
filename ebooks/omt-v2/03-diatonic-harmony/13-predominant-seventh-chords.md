@@ -25,7 +25,40 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6260230)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6260230 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6260230/embed" title="MuseScore" loading="lazy" style="height: 594px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key f \major \defaultTimeSignature \time 4/4 \partial 4 \clef "treble" c'4 \\\
+\staff "1" \clef "treble" <c f c'>4 \\
+\staff "2" \clef "bass" <f,, c' a'>4 | %1
+
+d'4.-> c8 a4 f4 \\\
+\staff "1" \stemUp d'4. c8 <a, c a'>4 <a c f>4 \\
+\staff "1" \stemDown <c f>2 s2 \\
+\staff "2" <f,, c' a'>4 <f c' a'>4 <f c' f>4 <f c'>4 | %2
+
+c4. d8 c8 r8 f4 \\\
+\staff "1" s1 \\
+\staff "2" \stemUp <e, bf' c>4 <e bf' c>4 <e bf' c>4 <f a c>4 \\
+\staff "2" \stemDown <g, c>4 <g c>4 <g c>4 a4 | %3
+
+g'4 g4 g4 a8[ bf8] \\\
+\staff "1" s4 <g d' f>4 <g c f>4 <g c e>4 \\
+\staff "2" \stemUp <f, g d'>4 s2 s4 \\
+\staff "2" \stemDown bf,4 g4 c4 c,4 | %4
+
+a'2 s2 \\\
+\staff "1" <a c f>4 s2 s4 \\
+\staff "2" f,,4 s2 s4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6260230/embed" title="MuseScore" loading="lazy" style="height: 594px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. Josephine Lang《Dort hoch auf jenem Berge》中的一个前属七和弦
@@ -50,7 +83,55 @@ $\mathrm{ii^6_5}$ 常用来替代 $\mathrm{ii^6}$，也就是说，它常见于�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6260497)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6260497 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6260497/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp a'4 g4 g2 \\
+\staff "1" \stemDown f4 f4 e2 \\
+\staff "2" \clef "bass" \stemUp c4 d4 bf2 \\
+\staff "2" \stemDown a,4 bf4 c2 | %1
+
+\staff "1" <c f>1 \\
+\staff "2" <f,, a'>1 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" \stemUp f'4 f4 f4 e4 \\
+\staff "1" \stemDown a'4 g4 a4 g4 \\
+\staff "2" \stemUp c4 d4 c4 bf4 \\
+\staff "2" \stemDown f,,4 bf4 c2 | %4
+
+\staff "1" <f f'>1 \\
+\staff "2" <f,, a'>1 | %5
+
+\staff "1" \key af \major \stemUp f'4 f4 e2 \\
+\staff "1" \stemDown af'4 g4 g2 \\
+\staff "2" \stemUp c4 df4 c2 \\
+\staff "2" \stemDown f,,4 bf4 c2 | %6
+
+\staff "1" <af' f'>1 \\
+\staff "2" <f,, c''>1 | %7
+
+\staff "1" s1 \\
+\staff "2" s1 | %8
+
+\staff "1" \stemUp af'4 g4 af4 g4 \\
+\staff "1" \stemDown f4 f4 f4 e4 \\
+\staff "2" \stemUp c4 df4 c2 \\
+\staff "2" \stemDown af,4 bf4 c2 | %9
+
+\staff "1" <f af>1 \\
+\staff "2" <f,, c''>1 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6260497/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 写作 ii$\mathit{^6_5}$。
@@ -65,7 +146,55 @@ ii<sup>7</sup> 通常见于乐句接近结尾处（谱例 1）。除了遵循常
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6260500)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6260500 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6260500/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp f'4 f4 e2 \\
+\staff "1" \stemDown c'4 bf4 bf2 \\
+\staff "2" \clef "bass" \stemUp c4 d4 c2 \\
+\staff "2" \stemDown a,4 g4 c2 | %1
+
+\staff "1" <a' f'>1 \\
+\staff "2" <f,, c''>1 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" \stemUp c'4 bf4 bf2 \\
+\staff "1" \stemDown f4 f4 e2 \\
+\staff "2" \stemUp f,4 g4 g2 \\
+\staff "2" \stemDown a,4 g4 c2 | %4
+
+\staff "1" <c a'>1 \\
+\staff "2" <f,, f'>1 | %5
+
+\staff "1" \key af \major \stemUp f'4 f4 f4 e4 \\
+\staff "1" \stemDown c'4 bf4 af4 g4 \\
+\staff "2" \stemUp c4 df4 c4 bf4 \\
+\staff "2" \stemDown af,4 g4 c2 | %6
+
+\staff "1" <f f'>1 \\
+\staff "2" <f,, af'>1 | %7
+
+\staff "1" s1 \\
+\staff "2" s1 | %8
+
+\staff "1" \stemUp <f f>4 g4 af4 g4 \\
+\staff "1" \stemDown f2 f4 e4 \\
+\staff "2" \stemUp c4 bf4 c4 bf4 \\
+\staff "2" \stemDown af,4 g4 c2 | %9
+
+\staff "1" <c f>1 \\
+\staff "2" <f,, af'>1 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6260500/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 写作 ii<sup>7</sup>。
@@ -77,7 +206,40 @@ $\mathrm{ii^4_2}$ 通常在乐句开头通过进行 $\mathrm{I-ii^4_2-V^6_5-I}$ 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6260504)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6260504 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6260504/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp a'2 bf2 \\
+\staff "1" \stemDown f2 g2 \\
+\staff "2" \clef "bass" \stemUp c2 d2 \\
+\staff "2" \stemDown f,2 f2 | %1
+
+\staff "1" \stemUp bf'2 a2 \\
+\staff "1" \stemDown g'2 f2 \\
+\staff "2" \stemUp c2 c2 \\
+\staff "2" \stemDown e,2 f2 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" \key af \major \stemUp f'2 g2 \\
+\staff "1" \stemDown af'2 bf2 \\
+\staff "2" \stemUp c2 df2 \\
+\staff "2" \stemDown f,2 f2 | %4
+
+\staff "1" \stemUp g''2 f2 \\
+\staff "1" \stemDown g'2 af2 \\
+\staff "2" \stemUp c2 c2 \\
+\staff "2" \stemDown e,2 f2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6260504/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 写作 ii$\mathit{^4_2}$。
@@ -89,7 +251,40 @@ $\mathrm{ii^4_3}$ 相对少见。它出现时，通常是在乐句结尾代替�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6260506)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6260506 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6260506/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp a'2 g2 \\
+\staff "1" \stemDown f2 f2 \\
+\staff "2" \clef "bass" \stemUp c2 bf2 \\
+\staff "2" \stemDown f,2 d2 | %1
+
+\staff "1" \stemUp g'2 s2 \\
+\staff "1" \stemDown e2 <f f>2 \\
+\staff "2" \stemUp bf2 a2 \\
+\staff "2" \stemDown c,2 f2 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" \key af \major \stemUp f'2 f2 \\
+\staff "1" \stemDown af'2 g2 \\
+\staff "2" \stemUp c2 bf2 \\
+\staff "2" \stemDown f,2 df2 | %4
+
+\staff "1" \stemUp f'4 e4 f2 \\
+\staff "1" \stemDown af'4 g4 f2 \\
+\staff "2" \stemUp c4 bf4 af2 \\
+\staff "2" \stemDown c,4 c4 f2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6260506/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 写作 ii$\mathit{^4_3}$。
@@ -101,7 +296,59 @@ $\mathrm{ii^4_3}$ 相对少见。它出现时，通常是在乐句结尾代替�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6260511)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6260511 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6260511/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp f'2 f2 \\
+\staff "1" \stemDown a'2 a2 \\
+\staff "2" \clef "bass" \stemUp c2 d2 \\
+\staff "2" \stemDown a,2 bf2 | %1
+
+\staff "1" \stemUp e'2 f2 \\
+\staff "1" \stemDown g'2 f2 \\
+\staff "2" \stemUp bf2 a2 \\
+\staff "2" \stemDown c,2 f2 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" \stemUp a'4 a4 a4 g4 \\
+\staff "1" \stemDown f4 f4 d4 e4 \\
+\staff "2" \stemUp c4 c4 bf4 bf4 \\
+\staff "2" \stemDown f,4 d4 bf4 c4 | %4
+
+\staff "1" <c f>1 \\
+\staff "2" <f, a>1 | %5
+
+\staff "1" \key af \major \stemUp f'2 f2 \\
+\staff "1" \stemDown af'2 af2 \\
+\staff "2" \stemUp c2 df2 \\
+\staff "2" \stemDown f,2 bf,2 | %6
+
+\staff "1" \stemUp e'2 f2 \\
+\staff "1" \stemDown g'2 f2 \\
+\staff "2" \stemUp bf2 af2 \\
+\staff "2" \stemDown c,2 f2 | %7
+
+\staff "1" s1 \\
+\staff "2" s1 | %8
+
+\staff "1" \stemUp af'4 af4 g4 g4 \\
+\staff "1" \stemDown f4 f4 f4 e4 \\
+\staff "2" \stemUp c4 c4 bf4 bf4 \\
+\staff "2" \stemDown f,4 df4 bf4 c4 | %9
+
+\staff "1" <c f>1 \\
+\staff "2" <f, af>1 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6260511/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 写作 IV<sup>7</sup> 与 vi<sup>7</sup>。

@@ -32,7 +32,35 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719601)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5719601 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719601/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <e g b d>2 <e g a c>2 \\
+\staff "2" \clef "bass" c,,2 a'2 | %1
+
+\staff "1" <f a c e>2 <f g b e>2 \\
+\staff "2" d,,2 g2 | %2
+
+\staff "1" <e g b d>1 \\
+\staff "2" c,,1 | %3
+
+\staff "1" <e g b d>2 <e g a cs>2 \\
+\staff "2" c,,2 a'2 | %4
+
+\staff "1" <fs a c e>2 <f g b e>2 \\
+\staff "2" d,,2 g2 | %5
+
+\staff "1" <e g b d>1 \\
+\staff "2" c,,1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5719601/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 当一个进行具有五度的根音进行时，可以把第一个和弦的性质改为属七，使其转变为副 V<sup>7</sup>。
@@ -44,7 +72,37 @@ Cole Porter 的「All of You」是一首把调式混合内建于其中的作品�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719610)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5719610 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719610/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" r4 c4 d4 e4 \\\
+\staff "1" \clef "treble" R1 \\
+\staff "2" \clef "bass" R1 | %1
+
+f2. e4 \\\
+\staff "1" r4 <c d f>8[ <c d f>8] r2 \\
+\staff "2" d,4 f4 a4 f4 | %2
+
+e2. g,4 \\\
+\staff "1" r4 <a c e>8[ <a c e>8~] r2 \\
+\staff "2" d,4 g4 f4 d4 | %3
+
+af2. f'4 \\\
+\staff "1" r4 <af c d>8[ <af c d>8~] r2 \\
+\staff "2" f,4 g4 af4 bf4 | %4
+
+f2. d4 \\\
+\staff "1" r4 <c d f>8[ <c d f>8~] r2 \\
+\staff "2" c4 f,4 bf4 af4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5719610/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. Cole Porter 的「All of You」尽管主调是大调，却使用了一个小 iv 和弦（Fmi）和一个半减 ii 和弦（D<sup>∅7</sup>）。
@@ -54,7 +112,35 @@ Cole Porter 的「All of You」是一首把调式混合内建于其中的作品�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5721622)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5721622 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5721622/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <e g b d>2 <e g a c>2 \\
+\staff "2" \clef "bass" c,,2 a'2 | %1
+
+\staff "1" <f a c e>2 <f a b d>2 \\
+\staff "2" d,,2 g2 | %2
+
+\staff "1" <e g b d>1 \\
+\staff "2" c,,1 | %3
+
+\staff "1" <e g b d>2 <e g a c>2 \\
+\staff "2" c,,2 a'2 | %4
+
+\staff "1" <f af c e>2 <f af b d>2 \\
+\staff "2" d,,2 g2 | %5
+
+\staff "1" <e g b d>1 \\
+\staff "2" c,,1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5721622/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 当混合和弦涉及 $\mathit{\downarrow\hat6}$ 时最为有效。同一个和弦的混合版本与自然音阶版本具有相同的功能。
@@ -81,7 +167,53 @@ Cole Porter 的「All of You」是一首把调式混合内建于其中的作品�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5721771)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5721771 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5721771/embed" title="MuseScore" loading="lazy" style="height: 1180px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <e g b d>2 <e g a c>2 \\
+\staff "2" \clef "bass" c,,2 a'2 | %1
+
+\staff "1" <f a c e>2 <f g b e>2 \\
+\staff "2" d,,2 g2 | %2
+
+\staff "1" <e g a c>1 \\
+\staff "2" c,,1 | %3
+
+\staff "1" <e g b d>2 <e g a cs>2 \\
+\staff "2" c,,2 a'2 | %4
+
+\staff "1" <fs a c e>2 <f g b e>2 \\
+\staff "2" d,,2 g2 | %5
+
+\staff "1" <e g a c>1 \\
+\staff "2" c,,1 | %6
+
+\staff "1" <b' d e g>2 <g df' f>2 \\
+\staff "2" c,,2 ef2 | %7
+
+\staff "1" <fs c' e>2 <f cf' ef>2 \\
+\staff "2" d,,2 df2 | %8
+
+\staff "1" <e b' d>1 \\
+\staff "2" c,,1 | %9
+
+\staff "1" <b' d e g>2 <g cs fs>2 \\
+\staff "2" c,,2 a'2 | %10
+
+\staff "1" <gf' c f>2 <f b e>2 \\
+\staff "2" af,2 g2 | %11
+
+\staff "1" <e a d>1 \\
+\staff "2" c,,1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5721771/embed" title="MuseScore" loading="lazy" style="height: 1180px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 由于三全音替换可以取代任何副属和弦，在回转这样五度进行的进行中，可以先把和弦（在概念上）替换为它们的副和弦变体，再用三全音替换来制造一条半音低音线。

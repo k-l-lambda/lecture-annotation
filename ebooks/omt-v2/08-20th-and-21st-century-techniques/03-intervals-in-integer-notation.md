@@ -25,7 +25,49 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5706820)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5706820 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5706820/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key bf \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp bf'2 c2 \\
+\stemDown g'2 a2 \\\
+\clef "bass" \stemUp d2 ef2 \\
+\stemDown g,2 c2 | %1
+
+\stemUp a'2 bf2 \\
+\stemDown fs2 g2 \\\
+\stemUp d2 d2 \\
+\stemDown d,2 g,2 | %2
+
+s1 \\\
+s1 | %3
+
+<g' bf>2 <g as>2 \\\
+s1 | %4
+
+\key d \major \stemUp as'2 b2 \\
+\stemDown g'2 fs2 \\\
+\stemUp cs2 b2 \\
+\stemDown e,2 d2 | %5
+
+\stemUp as'2 b2 \\
+\stemDown fs2 fs2 \\\
+\stemUp e2 d2 \\
+\stemDown cs,2 b2 | %6
+
+s1 \\\
+s1 | %7
+
+s1 \\\
+s1 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5706820/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 尽管 B♭ 和 A♯ 在键盘上是同一个键，小三度与增二度这两个音程在调性理论中是不同的。

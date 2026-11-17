@@ -43,7 +43,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6595108)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6595108 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6595108/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" <c e g bf>1 | %1
+
+s1 | %2
+
+s1 | %3
+
+s1 | %4
+
+<f a c ef>1 | %5
+
+s1 | %6
+
+<c e g bf>1 | %7
+
+s1 | %8
+
+<g' b d f>1 | %9
+
+<f a c ef>1 | %10
+
+<c e g bf>1 | %11
+
+s1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6595108/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 一个基本的 12 小节布鲁斯。
@@ -57,7 +91,53 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/22734802)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/22734802 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/22734802/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <e bf'>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %2
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %4
+
+\staff "1" <ef a>1 \\
+\staff "2" f,,1 | %5
+
+\staff "1" <ef a>1 \\
+\staff "2" f,,1 | %6
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %7
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %8
+
+\staff "1" <f b>1 \\
+\staff "2" g,1 | %9
+
+\staff "1" <ef a>1 \\
+\staff "2" f,,1 | %10
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %11
+
+\staff "1" <e bf'>1 \\
+\staff "2" c,1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/22734802/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 12 小节布鲁斯的一种简单排列，连接三音与七音，从而在全程产生级进的声部进行。
@@ -93,7 +173,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6610362)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6610362 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6610362/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" <c ef g bf>1 | %1
+
+s1 | %2
+
+s1 | %3
+
+s1 | %4
+
+<f af c ef>1 | %5
+
+s1 | %6
+
+<c ef g bf>1 | %7
+
+s1 | %8
+
+<d f af c>1 | %9
+
+<g' b d f>1 | %10
+
+<c ef g bf>1 | %11
+
+s1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6610362/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 典型的小调布鲁斯。
@@ -109,7 +223,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6595125)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6595125 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6595125/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" <c e g bf>1 | %1
+
+<f a c ef>1 | %2
+
+<c e g bf>1 | %3
+
+<c e g bf>1 | %4
+
+<f a c ef>1 | %5
+
+<f a c ef>1 | %6
+
+<c e g bf>1 | %7
+
+<e g b d>2 <a, cs e g>2 | %8
+
+<d f a c>1 | %9
+
+<g' b d f>1 | %10
+
+<c e g>2 <a' cs e g>2 | %11
+
+<d f a c>2 <g b d f>2 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6595125/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 爵士布鲁斯加入 ii–V 进行，取代了结构性的变格终止。

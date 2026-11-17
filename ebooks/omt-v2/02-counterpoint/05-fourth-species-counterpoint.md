@@ -24,7 +24,143 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488241)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8488241 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488241/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \defaultTimeSignature \time 2/2 \clef "treble" r2 a'2~ \\
+\staff "2" \clef "treble" d1 | %1
+
+\staff "1" a'2 d2~ \\
+\staff "2" f1 | %2
+
+\staff "1" d'2 c2~ \\
+\staff "2" e1 | %3
+
+\staff "1" c'2 bf2~ \\
+\staff "2" d1 | %4
+
+\staff "1" b'2 g2 \\
+\staff "2" g'1 | %5
+
+\staff "1" a'2 c2~ \\
+\staff "2" f1 | %6
+
+\staff "1" c'2 f2~ \\
+\staff "2" a'1 | %7
+
+\staff "1" f'2 e2~ \\
+\staff "2" g'1 | %8
+
+\staff "1" e'2 d2~ \\
+\staff "2" f1 | %9
+
+\staff "1" d'2 cs2 \\
+\staff "2" e1 | %10
+
+\staff "1" d'1 \\
+\staff "2" d1 | %11
+
+\staff "1" d1 \\
+\staff "2" \clef "treble_8" r2 d2~ | %12
+
+\staff "1" f1 \\
+\staff "2" d2 d'2~ | %13
+
+\staff "1" e1 \\
+\staff "2" d'2 c2~ | %14
+
+\staff "1" d1 \\
+\staff "2" c'2 b2~ | %15
+
+\staff "1" g'1 \\
+\staff "2" b'2 e2~ | %16
+
+\staff "1" f1 \\
+\staff "2" e'2 d2~ | %17
+
+\staff "1" a'1 \\
+\staff "2" d'2 f2~ | %18
+
+\staff "1" g'1 \\
+\staff "2" f'2 e2~ | %19
+
+\staff "1" f1 \\
+\staff "2" e'2 d2~ | %20
+
+\staff "1" e1 \\
+\staff "2" d'2 cs2 | %21
+
+\staff "1" d1 \\
+\staff "2" d'1 | %22
+
+\staff "1" r2 e'2~ \\
+\staff "2" \clef "treble" e1 | %23
+
+\staff "1" e'2 c2~ \\
+\staff "2" c1 | %24
+
+\staff "1" c'2 b2 \\
+\staff "2" d1 | %25
+
+\staff "1" c'2 e,2~ \\
+\staff "2" c1 | %26
+
+\staff "1" e2 f2~ \\
+\staff "2" a1 | %27
+
+\staff "1" f2 c'2~ \\
+\staff "2" a'1 | %28
+
+\staff "1" c'2 b2~ \\
+\staff "2" g'1 | %29
+
+\staff "1" b'2 e2~ \\
+\staff "2" e1 | %30
+
+\staff "1" e'2 d2 \\
+\staff "2" f1 | %31
+
+\staff "1" e'1 \\
+\staff "2" e1 | %32
+
+\staff "1" e1 \\
+\staff "2" \clef "treble_8" r2 e2~ | %33
+
+\staff "1" c1 \\
+\staff "2" e2 a2~ | %34
+
+\staff "1" d1 \\
+\staff "2" a'2 g2~ | %35
+
+\staff "1" c1 \\
+\staff "2" g'2 f2~ | %36
+
+\staff "1" a1 \\
+\staff "2" f2 d2~ | %37
+
+\staff "1" a'1 \\
+\staff "2" d2 d'2~ | %38
+
+\staff "1" g'1 \\
+\staff "2" d'2 c2~ | %39
+
+\staff "1" e1 \\
+\staff "2" c'2 e2~ | %40
+
+\staff "1" f1 \\
+\staff "2" e'2 d2 | %41
+
+\staff "1" e1 \\
+\staff "2" e'1 | %42
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8488241/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 《帕纳索斯阶梯》中全部第四类对位练习。
@@ -50,7 +186,40 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/24640900)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/24640900 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/24640900/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \defaultTimeSignature \time 4/4 \clef "treble" \stemUp r2 d'2~ \\
+\stemDown f1 | %1
+
+\stemUp d'2 cs2 \\
+\stemDown e1 | %2
+
+<d d'>1 | %3
+
+\stemUp f'1 \\
+\stemDown r2 d'2~ | %4
+
+e'1 d2 cs2 | %5
+
+<d' d>1 | %6
+
+\stemUp d'2 d2~ \\
+\stemDown d4 e4 f4 g4 | %7
+
+\stemUp d'2 cs2 \\
+\stemDown a'1 | %8
+
+<d d'>1 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/24640900/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 第四类对位中的各类延留音。

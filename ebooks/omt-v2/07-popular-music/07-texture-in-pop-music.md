@@ -71,7 +71,41 @@ Lavengood（2020）补充了第五层：
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/13130983)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/13130983 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/13130983/embed" title="MuseScore" loading="lazy" style="height: 540px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key e \major \numericTimeSignature \time 4/4 \clef "bass" e,,4-. e4-. e4-. r16 fs'16-.[ fss16-. gs16~] | %1
+
+gs8[ e8-.] b8-. r16 cs16-. d16-.[ cs16-. d16-. cs16-.] d16-.[ e8.] | %2
+
+e,,4-. e4-. e4-. r16 fs'16-.[ fss16-. gs16~] | %3
+
+gs8[ a8-.] b8-. r16 cs16-. d16-.[ cs16-. b16-. a16-.] gs16[ e'8.] | %4
+
+a,4-. a4-. a4-. r16 b'16-.[ bs16-. cs16~] | %5
+
+cs8[ a8-.] e8-. r16 fs16-. g16-.[ fs16-. g16-. fs16-.] g16-.[ a8.] | %6
+
+a,4-. a4-. a4-. r16 b'16-.[ bs16-. cs16~] | %7
+
+cs8[ d8-.] e8-. r16 fs16-. g16-.[ fs16-. e16-. d16-.] cs16[ a'8.] | %8
+
+a,4-. a4-. a4-. r16 b'16-.[ bs16-. cs16~] | %9
+
+cs8[ a8-.] e8-. r16 fs16-. g16-.[ fs16-. g16-. fs16-.] g16-.[ a8.] | %10
+
+a,4-. a4-. a4-. r16 a16[ as16 b16->~] | %11
+
+b,2 r2 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/13130983/embed" title="MuseScore" loading="lazy" style="height: 540px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 在“[3 on E](https://open.spotify.com/track/69rFDYwypeey2F9cDEL3da?si=98fe203c3abc4bfe)”中，作为功能低音层的电贝斯既为律动提供了重要的节奏，又使和声清晰。经许可使用。

@@ -83,7 +83,29 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394558)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8394558 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394558/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 6/8 \clef "treble" g'4. g4. | %1
+
+g'8[ g8 g8] g8[ g8 g8] | %2
+
+g'4 g8 g8 g4 | %3
+
+g'2. | %4
+
+g'8[ g8 g8] g8[ g8 g8] | %5
+
+g'16[ g16 g16 g16 g16 g16] g16[ g16 g16 g16 g16 g16] | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8394558/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 复二拍子中的数拍。
@@ -99,7 +121,39 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394447)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8394447 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394447/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 6/8 \clef "treble" g'4. g4. | %1
+
+g'8[ g8 g8] g8[ g8 g8] | %2
+
+g'16[ g16 g16 g16 g16 g16] g4. | %3
+
+g'2. | %4
+
+\time 9/8 g'4. g4. g4. | %5
+
+g'8[ g8 g8] g2. | %6
+
+g'2. g4. | %7
+
+g'2.~ g4. | %8
+
+\time 12/8 g'8 g4 g8[ g8 g8] g4 g8 g4. | %9
+
+g'2. g2. | %10
+
+g'1. | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8394447/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
  谱例 4. (a) 复二拍子有两拍，(b) 复三拍子有三拍，(c) 复四拍子有四拍。
@@ -109,7 +163,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296091)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6296091 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296091/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 6/4 \clef "treble" g'2. g4.~ g4. | %1
+
+g'2. r4. r4. | %2
+
+g'4.~ g8 r8 r8 g2. | %3
+
+g'1. | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6296091/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 不数出声的拍放在括号里。
@@ -127,7 +199,35 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394456)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8394456 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394456/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 9/8 \clef "treble" g'8[ g8 g8] g8[ g8 g8] g4. | %1
+
+g'2. g4. | %2
+
+g'2. g4. | %3
+
+\time 9/4 g'4 g4 g4 g4 g4 g4 g2. | %4
+
+g'1. g2. | %5
+
+g'1. g2. | %6
+
+\time 9/16 g'16[ g16 g16] g16[ g16 g16] g8. | %7
+
+g'4. g8. | %8
+
+g'4. g8. | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8394456/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 同一个节奏用三种不同的拍单位写出：(a) 附点四分音符，(b) 附点二分音符，(c) 附点八分音符。
@@ -141,7 +241,21 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8394474)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8394474 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8394474/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 6/8 \clef "treble" g'8[ g8 g8] g16[ g16 g16 g16 g16 g16] | %1
+
+\time 6/1 g'16[ g16 g16] g16[ g16 g16] s\breve s\breve s1 s2 s8 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8394474/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
  谱例 7. 两种不同节拍中的符杠。
@@ -163,7 +277,23 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6296096)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6296096 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6296096/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 6/8 \clef "treble" g'16[ g16 g8 g8] g8[ g16 g16 g8] | %1
+
+g'8[ g8 g16 g16] g8[ g16 g8 g16] | %2
+
+g'16[ g8 g16 g8] g16[ g8 g8 g16] | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6296096/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
  谱例 9. 以八分音符为划分单位时最常见的几种部分符杠变体。

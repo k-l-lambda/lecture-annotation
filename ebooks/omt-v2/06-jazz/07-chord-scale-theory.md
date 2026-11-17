@@ -29,7 +29,21 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300405)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6300405 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300405/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <d f a c e g b>1 | %1
+
+\time 28/4 d1 e1 f1 g1 a1 b1 c1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6300405/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. Dmi<sup>13</sup> 和弦与 D 多利亚音阶的音高完全相同。
@@ -51,7 +65,23 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300394)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6300394 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300394/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 28/4 \clef "treble" d1 e1 f1 g1 a1 b1 c1 | %1
+
+g'1 a1 b1 c1 d1 e1 f1 | %2
+
+c1 d1 e1 f1 g1 a1 b1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6300394/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. C 调 ii–V–I 进行中的和弦—音阶关系。
@@ -61,7 +91,49 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300392)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6300392 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300392/embed" title="MuseScore" loading="lazy" style="height: 640px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" e8[ fs8 g8 a8] b8[ cs8] d4 | %1
+
+a'8[ b8 cs8 d8] e8[ fs8] g4 | %2
+
+d8[ e8 fs8 g8] a8[ b8] cs4 | %3
+
+d8[ e8 fs8 g8] a8[ b8] cs4 | %4
+
+d8[ e8 f8 g8] a8[ b8] c4 | %5
+
+g'8[ a8 b8 c8] d8[ e8] f4 | %6
+
+c8[ d8 e8 f8] g8[ a8] b4 | %7
+
+c8[ d8 e8 f8] g8[ a8] b4 | %8
+
+c8[ d8 ef8 f8] g8[ a8] bf4 | %9
+
+f8[ g8 a8 bf8] c8[ d8] ef4 | %10
+
+bf8[ c8 d8 ef8] f8[ g8] a4 | %11
+
+bf8[ c8 d8 ef8] f8[ g8] a4 | %12
+
+e8[ fs8 g8 a8] b8[ cs8] d4 | %13
+
+f8[ g8 a8 bf8] c8[ d8] ef4 | %14
+
+bf8[ c8 d8 ef8] f8[ g8] a4 | %15
+
+a'8[ b8 cs8 d8] e8[ fs8] g4 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6300392/embed" title="MuseScore" loading="lazy" style="height: 640px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. ii–V–I 的基本和弦—音阶关系，如用于 [Miles Davis 的「Tune Up」（1953）](https://open.spotify.com/track/6eTC4K6kgWb1uabLqrLAxW?si=LRIWFwNKR6CK02XgIwT2ug)时那样。
@@ -87,7 +159,31 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300399)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6300399 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300399/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 28/4 \clef "treble" c1 d1 e1 f1 g1 a1 b1 | %1
+
+d1 e1 f1 g1 a1 b1 c1 | %2
+
+e1 f1 g1 a1 b1 c1 d1 | %3
+
+f1 g1 a1 b1 c1 d1 e1 | %4
+
+g'1 a1 b1 c1 d1 e1 f1 | %5
+
+a'1 b1 c1 d1 e1 f1 g1 | %6
+
+b'1 c1 d1 e1 f1 g1 a1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6300399/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. C 调中所有自然音阶和声的和弦—音阶关系。
@@ -110,7 +206,23 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300396)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6300396 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300396/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 28/4 \clef "treble" a'1 b1 c1 d1 e1 fs1 g1 | %1
+
+a'1 bf1 c1 d1 e1 f1 g1 | %2
+
+a'1 b1 c1 d1 e1 f1 g1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6300396/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 小七和弦的和弦—音阶选择。
@@ -122,7 +234,29 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6301594)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6301594 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6301594/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 28/4 \clef "treble" a'1 b1 c1 d1 e1 f1 g1 | %1
+
+d1 e1 f1 g1 a1 b1 c1 | %2
+
+g'1 a1 b1 c1 d1 e1 f1 | %3
+
+c1 d1 e1 f1 g1 a1 b1 | %4
+
+f1 g1 a1 b1 c1 d1 e1 | %5
+
+b'1 c1 d1 e1 f1 g1 a1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6301594/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 这些和弦—音阶用于 [Bart Howard 的「Fly Me to the Moon」（1954）](https://open.spotify.com/track/2dR5WkrpwylTuT3jRWNufa?si=eERTnc7BS5CDVy8oDFpitA)时，区分了同一性质的不同和弦，因为这些和弦仍具有不同的功能。
@@ -132,7 +266,51 @@ modified: "2024-08-19"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6300401)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6300401 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6300401/embed" title="MuseScore" loading="lazy" style="height: 690px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" ef'8[ gf8 bf8 df8] c4. bf8 | %1
+
+af''8[ f8] df4 e8[ gf8 af8 b8] | %2
+
+a''8[ e8] cs4 d8[ bf8 a8 g8] | %3
+
+f8[ g8 a8 bf8] c8[ d8 e8 f8] | %4
+
+fs'8[ d8 b8 a8] gs8[ f'8 e8 d8] | %5
+
+cs'8[ e8 a8 cs8] e,8[ g8 bf8 d8] | %6
+
+f'8[ g8 a8 c8] gf8[ bf8 c8 ef8] | %7
+
+c''4 bf8[ af8] r2 | %8
+
+c''8[ b8 bf8 a8] g8[ f8 e8 d8] | %9
+
+c'8[ bf'8 a8 e8] g8[ f8 e8 g8] | %10
+
+fs'8[ d8 b8 fs8] a8[ fs8 gs8 f'8] | %11
+
+e'8[ d8 cs8 b8] a8[ b8 cs8 e8] | %12
+
+f'8[ ef8 df8 c8~] c8[ af8 bf8 c8] | %13
+
+df'8[ ef8 f8 af8] c8[ b8 bf8 af8] | %14
+
+g''4 r4 a8[ af8 g8 e8] | %15
+
+f'8[ g8 a8 c8] f8[ c8] r4 | %16
+
+r4 r8 c''16[ df16] c4. af8 | %17
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6300401/embed" title="MuseScore" loading="lazy" style="height: 690px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. [John Coltrane 的「Giant Steps」（1960）](https://open.spotify.com/track/47vmcuvMWFIsMaiHFIGSIu?si=7J6GVelvRLeQibTalUNOTw)第一遍的转写。

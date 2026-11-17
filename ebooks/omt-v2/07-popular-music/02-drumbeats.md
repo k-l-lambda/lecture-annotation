@@ -68,7 +68,20 @@ modified: "2025-01-13"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/10460137)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/10460137 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/10460137/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp g''8[ g8 g8 g8] g8[ g8 g8 g8] \\
+\stemDown f4 c'4 f,4 c'4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/10460137/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 标准的摇滚鼓点：底鼓在第一、三拍，小鼓反拍在第二、四拍，踩镲演奏规则的八分音符。
@@ -103,7 +116,21 @@ modified: "2025-01-13"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302333)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11302333 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302333/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \tempo 4 = 117 \grace { c'16 c16 } f,4 d8[ c'8] r4 d,8[ c'8] | %1
+
+r8 c'8[ d,8 c'8] c8 <d, f>4. | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11302333/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. [Ella Fitzgerald 录制的“Fascinating Rhythm”（1959）](https://open.spotify.com/track/03whQz2AOGIKgNU3NQW6a0?si=bb7b24077f95405c)中踩镲上典型的爵士反拍。
@@ -119,7 +146,20 @@ Metallica 的“Trapped Under Ice”的主体律动是双倍速感（见**谱例
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302186)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11302186 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302186/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp \tempo 4 = 160 g''8[ g8 g8 g8] g8[ g8 g8 g8] \\
+\stemDown f16[ f16 <f c'>16 f16] f16[ f16 <f c'>16 f16] f16[ f16 <f c'>16 f16] f16[ f16 <f c'>16 f16] | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11302186/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. [Metallica“Trapped Under Ice”（1984）](https://open.spotify.com/track/3lVAAVOkfNyCii1aLgH3JX?si=d95d361c588b4fc7)中的双倍速反拍。
@@ -129,7 +169,27 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302207)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11302207 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302207/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp g''16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] \\
+\stemDown f4 r4 c'4 r4 \\\
+\clef "percussion" \stemUp e'8[ e16] s16 b4 e8.[ e16] r8 e16[ e16] \\
+\stemDown a'8[ a16 <a b>16] s16 a8[ a16] s4 a16[ a16 a8] | %1
+
+\stemUp g''16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] \\
+\stemDown f4 r4 c'4 r4 \\\
+\stemUp e'8[ d8] r4 e8.[ e16] r8 e16[ e16] \\
+\stemDown a'8[ a16 a16] s16 a8[ a16] s4 a16[ a16 a8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11302207/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. [Phil Collins“Take Me Home”（1985）](https://open.spotify.com/track/2s6wCS3vDZFPY9NOTlPXJZ?si=1e22036fca244dcf)中的半速反拍。
@@ -141,7 +201,19 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/15249751)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/15249751 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/15249751/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \tempo 4 = 88 f8.[ c'16] f,8[ c'8] f,8.[ c'16] f,8[ c'8] | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/15249751/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. [Bad Bunny“LA CANCIÓN”（2019）](https://open.spotify.com/track/0fea68AdmYNygeTGI4RC18?si=321cdfad870d445a)中的登波音型。
@@ -153,7 +225,20 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11346568)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11346568 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11346568/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp \tempo 4 = 114 r8 g''8 r8 g8 r8 g8 r8 g8 \\
+\stemDown f4 <f c'>4 f4 <f c'>4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11346568/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. [Blondie“Heart of Glass”（1978）](https://open.spotify.com/track/4v2rkl1mC3zVAz0nXMx9r4?si=d70e3f22c9bc4821)中四拍踩底加反拍的音型。
@@ -163,7 +248,23 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302264)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11302264 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302264/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp \tempo 4 = 75 g''8 g4 g8 g32[ g16. g16 g16] g16[ g16 g16 g16] \\
+\stemDown f4 c'8.[ f,16] r16 f8[ f16] c'8[ f,8] | %1
+
+\stemUp g''8 g4 g8 g16[ g16 g16 g16] g16[ g16 g16 g16] \\
+\stemDown f16[ f8.] c'8.[ f,16] r16 f8[ f16] <f c'>8[ f8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11302264/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. [Kendrick Lamar“HUMBLE.”（2017）](https://open.spotify.com/track/131OLY5J8XyfGuSjXRiTRM?si=aedacd0be3c346e8)中的底鼓切分。部分踩镲上方的“o”表示镲片用脚踏板微微张开。小鼓位置上的“x”表示拍手。
@@ -177,7 +278,20 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/15052381)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/15052381 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/15052381/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp \tempo 4 = 94 g''16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] g16[ g16 g16 g16] \\
+\stemDown r4 c'4 r4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/15052381/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. [肖战“Made to Love”（2020）](https://open.spotify.com/track/2pTdfCzO7W79Qy7DGfRgvK?si=7c9c418f19bb485e)中的十六分音符踩镲。
@@ -185,7 +299,26 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302321)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11302321 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302321/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp \tempo 4 = 98 <a'' b>4 b4 b4 b4 \\
+\stemDown f4. f8 c'4. f,8 | %1
+
+\stemUp b''4 b4 b4 b4 \\
+\stemDown r4. f8 c'2 | %2
+
+\stemUp \tempo 4 = 131 a''4 a4 a4 a4 \\
+\stemDown f4 c'4 f,4 c'4 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11302321/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 13. [Dream Theater“As I Am”（2003；0:55）](https://open.spotify.com/track/6hz6lrQtLcxOOjflnYjF9o?si=f602e72444ea4e01)中使用重音镲（中国镲与强音镲）的两个鼓点。
@@ -199,7 +332,20 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11374390)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11374390 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11374390/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 6/4 \clef "percussion" \stemUp \tempo "Swing 16ths" 4. = 31 f'8[ f8 f8] f8[ f8 f8] f8[ f8 f8] f8[ f8 f8] \\
+\stemDown f4. c'8 r8 r16 f,16 f4. c'8 r8 r16 f,16 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11374390/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 14. [Harold Melvin & the Blue Notes“If You Don't Know me By Now”（1972）](https://open.spotify.com/track/3NElqDNNnzvWYOwsbxLQKN?si=91327e962a814e29)中缓慢的复四拍子鼓点。
@@ -209,7 +355,20 @@ Phil Collins 的“Take Me Home”速度为 119 bpm，正处于基本拍最理�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11302192)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11302192 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11302192/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 3/4 \clef "percussion" \stemUp \tempo 4 = 131 g''8[ g8] g8[ g8] g8[ g8] \\
+\stemDown f8.[ f8. f8] c'4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11302192/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 15. [Paramore“That's What You Get”（2007）](https://open.spotify.com/track/1JdKrFyoU05abww0Zv0ayQ?si=6b147ab14b2e46e4)中的 3/4 鼓点。

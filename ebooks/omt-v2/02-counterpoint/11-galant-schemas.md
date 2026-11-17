@@ -94,7 +94,153 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350117)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/5350117 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350117/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,"]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" c'1 \\\
+\clef "treble" <e g c>1 \\\
+\clef "bass" c1 | %1
+
+g''1 \\\
+<d g d'>1 \\\
+b1 | %2
+
+c'1 \\\
+<e a c>1 \\\
+a1 | %3
+
+c'1 \\\
+<g' c c>1 \\\
+e,1 | %4
+
+c'1 \\\
+<e g c>1 \\\
+c,1 | %5
+
+d'1 \\\
+<g' g d'>1 \\\
+b,1 | %6
+
+e'1 \\\
+<g' c e>1 \\\
+c,1 | %7
+
+g''1 \\\
+<c' e g>1 \\\
+c,1 | %8
+
+f'1 \\\
+<a' d f>1 \\\
+d,1 | %9
+
+f'1 \\\
+<g' d' f>1 \\\
+b,1 | %10
+
+e'1 \\\
+<g' c e>1 \\\
+c,1 | %11
+
+c'1 \\\
+<e g c>1 \\\
+c,1 | %12
+
+b'1 \\\
+<f g b>1 \\\
+d,1 | %13
+
+f'1 \\\
+<f g d'>1 \\\
+b,1 | %14
+
+e'1 \\\
+<e g c>1 \\\
+c,1 | %15
+
+a''1 \\\
+<f a c>1 \\\
+f,1 | %16
+
+g''1 \\\
+<c g' c>1 \\\
+e,1 | %17
+
+f'1 \\\
+<f a c>2 <f f b>2 \\\
+d,2 d2 | %18
+
+e'1 \\\
+<e g c>1 \\\
+c,1 | %19
+
+e'1 \\\
+<e g c>1 \\\
+c1 | %20
+
+d'1 \\\
+<g' g d'>1 \\\
+b1 | %21
+
+c'1 \\\
+<e g c>2 <f fs c'>2 \\\
+a2 a2 | %22
+
+b'1 \\\
+<d g b>1 \\\
+g1 | %23
+
+g''1 \\\
+<a' e' g>1 \\\
+cs,1 | %24
+
+f'1 \\\
+<a' d f>1 \\\
+d,1 | %25
+
+f'1 \\\
+<g' d' f>1 \\\
+b,1 | %26
+
+e'1 \\\
+<g' c e>1 \\\
+c,1 | %27
+
+c'2 bf2 \\\
+<c g' c>1 \\\
+e,1 | %28
+
+a'1 \\\
+<c a' c>1 \\\
+f,1 | %29
+
+d'2 c2 \\\
+<d a' d>1 \\\
+fs,1 | %30
+
+b'1 \\\
+<d b' d>1 \\\
+g1 | %31
+
+g'1 \\\
+<g' b d>1 \\\
+g,1 | %32
+
+b'1 \\\
+<f b d>1 \\\
+g,1 | %33
+
+d'1 \\\
+<f b d>1 \\\
+g,1 | %34
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/5350117/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [带和弦的帕蒂门托（partimento）原型](https://musescore.com/user/30425053/scores/5350117)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)

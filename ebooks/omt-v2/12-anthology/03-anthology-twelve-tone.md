@@ -1620,7 +1620,31 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/727981229895898)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/727981229895898 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/727981229895898/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" c4 g'4 fs4 ef4 b'4 f4 gs4 e4 bf'4 a4 cs,4 d4 | %1
+
+c4 e4 gs4 ef4 b'4 g4 cs,4 a'4 f4 d4 bf'4 fs4 | %2
+
+c4 g'4 d4 cs4 bf'4 a4 ef4 gs4 f4 e4 b'4 fs4 | %3
+
+c4 a'4 f4 bf4 d,4 fs4 ef4 b'4 gs4 e4 cs4 g'4 | %4
+
+c4 b'4 a4 gs4 f4 ef4 e4 cs4 d4 g4 bf4 fs4 | %5
+
+c4 g'4 fs4 d4 b'4 f4 ef4 cs4 gs'4 a4 e4 bf'4 | %6
+
+c4 d4 g4 b4 bf4 cs,4 fs4 f4 ef4 e4 gs4 a4 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/727981229895898/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [《曲目中的音列》](https://musescore.com/user/30425053/scores/6800466/s/Hr7UuD)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)

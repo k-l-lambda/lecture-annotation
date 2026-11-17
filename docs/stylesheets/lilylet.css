@@ -47,3 +47,15 @@
 /* MuseScore and Brian Jarvis embeds (OMT 2nd edition); the height is set per iframe */
 .omt-embed { margin: .6em 0 1.2em; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; overflow: hidden; background: #fff; }
 .omt-embed iframe { display: block; width: 100%; border: 0; }
+/* Lilylet / MuseScore switch (OMT 2nd edition): the Lilylet draft by default, the MuseScore iframe on demand */
+.omt-switch { margin: .6em 0 1.2em; }
+.omt-switch-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin-bottom: 4px; font-size: .7rem; }
+.omt-switch-bar button {
+	padding: 2px 12px; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 14px; cursor: pointer;
+	background: transparent; color: var(--md-default-fg-color--light); font: inherit;
+}
+.omt-switch-bar button[aria-selected="true"] { background: var(--md-primary-fg-color); border-color: var(--md-primary-fg-color); color: var(--md-primary-bg-color); }
+.omt-switch-bar button:focus-visible { outline: 2px solid var(--md-accent-fg-color); outline-offset: 2px; }
+.omt-switch-note { color: var(--md-default-fg-color--light); font-size: .65rem; }
+.omt-switch-pane > .lilylet-container { margin-top: 0; }
+.omt-switch-pane.omt-embed { margin: 0; }

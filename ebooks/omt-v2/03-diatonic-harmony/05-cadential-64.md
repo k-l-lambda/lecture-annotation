@@ -53,7 +53,51 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6239193)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6239193 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6239193/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" a,2 | %1
+
+\staff "1" s2 \\
+\staff "2" s2 | %2
+
+\staff "1" d'2 \\
+\staff "2" a,2 | %3
+
+\staff "1" s2 \\
+\staff "2" s2 | %4
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown fs2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %5
+
+\staff "1" \key f \major s2 \\
+\staff "2" a,2 | %6
+
+\staff "1" s2 \\
+\staff "2" s2 | %7
+
+\staff "1" d'2 \\
+\staff "2" a,2 | %8
+
+\staff "1" s2 \\
+\staff "2" s2 | %9
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6239193/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 拼写 $cad.\mathit{^6_4}$。
@@ -69,7 +113,43 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6239528)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6239528 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6239528/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp d'4 cs4 \\
+\staff "1" \stemDown fs4 e4 \\
+\staff "2" \clef "bass" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %1
+
+\staff "1" s2 \\
+\staff "2" s2 | %2
+
+\staff "1" \stemUp fs'4 e4 \\
+\staff "1" \stemDown a'4 g4 \\
+\staff "2" \stemUp d4 cs4 \\
+\staff "2" \stemDown a,2 | %3
+
+\staff "1" \key f \major \stemUp d'4 cs4 \\
+\staff "1" \stemDown f4 e4 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %4
+
+\staff "1" s2 \\
+\staff "2" s2 | %5
+
+\staff "1" \stemUp f'4 e4 \\
+\staff "1" \stemDown a'4 g4 \\
+\staff "2" \stemUp d4 cs4 \\
+\staff "2" \stemDown a,2 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6239528/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 解决 $cad.\mathit{^6_4}$。
@@ -86,7 +166,63 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6239535)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6239535 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6239535/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp d'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \clef "bass" \stemUp b2 \\
+\staff "2" \stemDown g,2 | %1
+
+\staff "1" \stemUp d'4 cs4 \\
+\staff "1" \stemDown fs4 e4 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \stemUp g''2 \\
+\staff "1" \stemDown b'2 \\
+\staff "2" \stemUp e2 \\
+\staff "2" \stemDown g,2 | %4
+
+\staff "1" \stemUp fs'4 e4 \\
+\staff "1" \stemDown a'4 g4 \\
+\staff "2" \stemUp d4 cs4 \\
+\staff "2" \stemDown a,2 | %5
+
+\staff "1" \key f \major \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown g,2 | %6
+
+\staff "1" \stemUp d'4 cs4 \\
+\staff "1" \stemDown f4 e4 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %7
+
+\staff "1" s2 \\
+\staff "2" s2 | %8
+
+\staff "1" \stemUp g''2 \\
+\staff "1" \stemDown bf'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown g,2 | %9
+
+\staff "1" \stemUp f'4 e4 \\
+\staff "1" \stemDown a'4 g4 \\
+\staff "2" \stemUp d4 cs4 \\
+\staff "2" \stemDown a,2 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6239535/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 进入 $cad.\mathit{^6_4}$。

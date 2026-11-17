@@ -65,7 +65,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8631327)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8631327 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8631327/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" d4 e4 f4 g4 a4 b4 c4 d4 | %1
+
+a4 b4 c4 d4 e4 f4 g4 a4 | %2
+
+e4 f4 g4 a4 b4 c4 d4 e4 | %3
+
+b4 c4 d4 e4 f4 g4 a4 b4 | %4
+
+f4 g4 a4 b4 c4 d4 e4 f4 | %5
+
+c4 d4 e4 f4 g4 a4 b4 c4 | %6
+
+g'4 a4 b4 c4 d4 e4 f4 g4 | %7
+
+d4 e4 f4 g4 a4 b4 c4 d4 | %8
+
+a'4 b4 c4 d4 e4 f4 g4 a4 | %9
+
+e4 f4 g4 a4 b4 c4 d4 e4 | %10
+
+c4 d4 e4 f4 g4 a4 b4 c4 | %11
+
+g'4 a4 b4 c4 d4 e4 f4 g4 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8631327/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 以乐谱形式概括历史上的教会调式。
@@ -98,7 +132,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5973262)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5973262 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5973262/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" c4 d4 e4 f4 g4 a4 b4 c4 | %1
+
+c4 d4 e4 f4 g4 a4 bf4 c4 | %2
+
+c4 d4 e4 fs4 g4 a4 b4 c4 | %3
+
+\key ef \major c4 d4 ef4 f4 g4 af4 bf4 c4 | %4
+
+c4 d4 ef4 f4 g4 a4 bf4 c4 | %5
+
+c4 df4 ef4 f4 g4 af4 bf4 c4 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5973262/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 按大调式与小调式主音分组的调式，色彩音以蓝色标出。

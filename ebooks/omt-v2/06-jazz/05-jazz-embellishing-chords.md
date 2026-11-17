@@ -25,7 +25,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/10006141)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/10006141 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/10006141/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \numericTimeSignature \time 4/4 \clef "treble" <f g bf d>1 \\
+\staff "2" \clef "bass" bf,1 | %1
+
+\staff "1" <e g bf d>1 \\
+\staff "2" c,1 | %2
+
+\staff "1" <ef g bf d>2 <ef a d>2 \\
+\staff "2" c,2 f,2 | %3
+
+\staff "1" <d a' c>1 \\
+\staff "2" bf,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/10006141/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. [Duke Ellington 的「Mood Indigo」](https://open.spotify.com/track/1Fo98RNzO78WnMtkZKZXMW?si=KvjZUQyPS8ywPG1OR54UcQ)前八小节的和弦。
@@ -39,7 +61,33 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719733)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5719733 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719733/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key bf \major \numericTimeSignature \time 4/4 \clef "treble" d'2 cs4 d4 \\\
+\staff "1" \clef "treble" <f g bf>2 <f g b>2 \\
+\staff "2" \clef "bass" bf,2 g2 | %1
+
+d'1 \\\
+\staff "1" <e g bf>1 \\
+\staff "2" c,1 | %2
+
+f'2 cs2 \\\
+\staff "1" <ef g bf d>2 <ef a df>2 \\
+\staff "2" c,2 f,2 | %3
+
+d'1 \\\
+\staff "1" <d g c>1 \\
+\staff "2" bf,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5719733/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 在 C<sup>7</sup> 和弦前插入一个 G<sup>7</sup> 和弦，造成 C 的副属和弦，而它在「Mood Indigo」原有的和弦进行中并不存在。
@@ -53,7 +101,29 @@ Duke Ellington 的「Mood Indigo」以 **B♭–C<sup>7</sup>–Cmi<sup>7</sup>�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5719690)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5719690 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5719690/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \numericTimeSignature \time 4/4 \clef "treble" <f g bf d>1 \\
+\staff "2" \clef "bass" bf,1 | %1
+
+\staff "1" <f g bf d>2 <e g bf d>2 \\
+\staff "2" g,2 c2 | %2
+
+\staff "1" <ef g bf d>2 <ef a d>2 \\
+\staff "2" c,2 f,2 | %3
+
+\staff "1" <d a' c>1 \\
+\staff "2" bf,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5719690/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 在 C<sup>7</sup> 和弦前插入一个 Gm<sup>7</sup> 和弦，造成 F 调中的 ii–V，而它在「Mood Indigo」原有的和弦进行中并不存在。
@@ -108,7 +178,65 @@ CT<sup>o7</sup> 可以用来延长任何和弦。在节奏上，这个和弦被�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/13782358)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/13782358 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/13782358/embed" title="MuseScore" loading="lazy" style="height: 810px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key bf \major \numericTimeSignature \time 4/4 \clef "treble" d'2 cs4 d4 \\\
+\staff "1" \clef "treble" <f g bf>1 \\
+\staff "2" \clef "alto" a1 | %1
+
+d'1 \\\
+\staff "1" <e g bf>1 \\
+\staff "2" bf1 | %2
+
+d'2 cs4 d4 \\\
+\staff "1" <f g bf>2 <f g b>2 \\
+\staff "2" a2 f2 | %3
+
+d'1 \\\
+\staff "1" <e g bf>1 \\
+\staff "2" bf1 | %4
+
+d'2 cs4 d4 \\\
+\staff "1" <f g bf>2 <f g bf>2 \\
+\staff "2" a2 f2 | %5
+
+d'1 \\\
+\staff "1" <e g bf>1 \\
+\staff "2" bf1 | %6
+
+s1 \\\
+\staff "1" s1 \\
+\staff "2" s1 | %7
+
+d'2 cs4 d4 \\\
+\staff "1" <f g bf>1 \\
+\staff "2" a1 | %8
+
+d'1 \\\
+\staff "1" <f g bf>2 <e g bf>2 \\
+\staff "2" f,2 bf2 | %9
+
+s1 \\\
+\staff "1" s1 \\
+\staff "2" s1 | %10
+
+d'2 cs4 d4 \\\
+\staff "1" <f g bf>1 \\
+\staff "2" a1 | %11
+
+d'1 \\\
+\staff "1" <ds fs a>2 <e g bf>2 \\
+\staff "2" bf1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/13782358/embed" title="MuseScore" loading="lazy" style="height: 810px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 为容纳所增加的装饰和声而调整和声节奏的几种方式。
@@ -126,7 +254,41 @@ CT<sup>o7</sup> 可以用来延长任何和弦。在节奏上，这个和弦被�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6656170)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6656170 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6656170/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key bf \major \numericTimeSignature \time 4/4 \clef "treble" d'2 cs4 d4 | %1
+
+d'1 | %2
+
+f'2 cs2 | %3
+
+d'1 | %4
+
+d'2 cs4 d4 | %5
+
+d'1 | %6
+
+f'2 cs2 | %7
+
+d'1 | %8
+
+d'2 cs4 d4 | %9
+
+d'1 | %10
+
+f'2 cs2 | %11
+
+d'1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6656170/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 装饰和弦可以（a）不写出来，由演奏者即兴；（b）写进和弦符号；（c）作为另一种配和声方式用括号标出。

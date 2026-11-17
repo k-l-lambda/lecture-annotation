@@ -29,7 +29,19 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804531)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804531 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804531/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" <c g'>8->-.[ <c g'>8 <c a'>8->-. <c a'>8] <c g'>8->-.[ <c g'>8 <c a'>8->-. <c a'>8] | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5804531/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 5–6 沙弗尔音型。
@@ -37,7 +49,29 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804559)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804559 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804559/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <c e g>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <c f a>1 \\
+\staff "2" f,1 | %2
+
+\staff "1" <c e g>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" <c f a>1 \\
+\staff "2" f,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5804559/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 变格的 IV–I 音型。
@@ -47,7 +81,23 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804585)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804585 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804585/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key g \major \numericTimeSignature \time 4/4 \clef "treble_8" <b' d g>16 r16 r16 <b d g>16 r16 <d g b>16[ <d g b>8] <d g b>8-.[ <c e a>8-. <b d g>8-.] r8 \\\
+\clef "bass" g8[ g16 e16~] e16[ e16 d8] c8[ c8 d8 e8] | %1
+
+<b' d g>16 r16 r16 <b d g>16 r16 <d g b>16[ <d g b>16 <d g b>16] <d g b>8-.[ <c e a>8-. <b d g>8-.] r8 \\\
+g8[ g16 e16~] e16[ e16 d8] c8[ c8 d8 e8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5804585/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. Sam and Dave，[“Soul Man”（1967）。](https://open.spotify.com/track/4eGHlplaq1ME8oetnTuFFf)
@@ -57,7 +107,23 @@ Wilson Pickett“In the Midnight Hour”的主歌中也可以找到类似的 I �
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804779)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804779 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804779/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key e \major \numericTimeSignature \time 4/4 \clef "treble_8" r4 <gs' b e>4 r4 <e a cs>4 \\\
+\clef "bass" e,,4 gs8[ b8] a8[ a8 cs8 e8] | %1
+
+r4 <gs' b e>4 r4 <e a cs>4 \\\
+e,,4 gs8[ b8] a8[ a8 cs8 e8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5804779/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. Wilson Pickett，[“In the Midnight Hour”（1965）。](https://open.spotify.com/track/4NRQwaks9r58tTDvr4iEyv)
@@ -67,7 +133,37 @@ Wilson Pickett“In the Midnight Hour”的主歌中也可以找到类似的 I �
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5804789)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804789 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5804789/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key d \major \numericTimeSignature \time 4/4 \partial 4 \clef "treble" d8[ e8] \\\
+\staff "1" \clef "treble" r4 \\
+\staff "2" \clef "bass" r4 | %1
+
+fs8[ fs8 fs8 fs8] fs4 e8[ e8~] \\\
+\staff "1" <a d e>8 <a d fs>4 <a d fs>8~ <a d fs>8[ d8 a8 g8~] \\
+\staff "2" d,4 d4 d2 | %2
+
+e8 d4 d4 d8[ d8 e8] \\\
+\staff "1" <g b d>8 <g b d>4 g8~ g8 g4 d'8 \\
+\staff "2" g,4 d'4 g,4 d'4 | %3
+
+fs8 fs4 fs8~ fs8[ e8 d8 d8~] \\\
+\staff "1" <a d e>8[ <a d fs>8 <a d fs>8 <d fs a>8] <a d fs>8 <a d e>4 <b d>8~ \\
+\staff "2" d,4 d4 d4 d4 | %4
+
+d8 r8 r4 r2 \\\
+\staff "1" <b d>4. g8~ g8 g4 d'8 \\
+\staff "2" g,4 g4 g4 g4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5804789/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. Neil Young，[“After the Gold Rush”（1970）。](https://open.spotify.com/track/2anPa0qaFG1Nf0swkpfOQd)
@@ -83,7 +179,41 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/14849320)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/14849320 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/14849320/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key g \major \numericTimeSignature \time 4/4 \clef "treble" a'4. b8~ b8 b4. \\\
+\clef "treble_8" g'8[ g8 d'8 g,8] g8 d'4. | %1
+
+a'4 b8[ b8~] b4 r8 e,8 \\\
+fs8[ g8 d'8 fs,8] g8 d'4. | %2
+
+a'4 b8[ b8~] b8[ g8~ g8 d'8] \\\
+e8[ g8 d'8 e,8] g8 d'4. | %3
+
+e'8[ d8~] d8[ b16 a16] g4 r4 \\\
+d8[ g8 d'8 d,8] g8 d'4. | %4
+
+d'4 c8[ g8~] g4 r4 \\\
+c8[ c'8 <c e>8 c8] c,8[ <c' e>8] r8 c8 | %5
+
+d'4 c8[ g8~] g8[ a8~ a8 b8~] \\\
+c8[ c'8 ef8 c8] c,8[ <c' ef>8] r8 c8 | %6
+
+b'4 r4 r2 \\\
+g'8[ g8 <d' g>8 g,8] g8 <d' g>4. | %7
+
+R1 \\\
+g'8[ g8 <d' g>8 g,8] g8 <d' g>4. | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/14849320/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. Green Day，[“Wake Me Up When September Ends”（2005）。](https://open.spotify.com/track/3ZffCQKLFLUvYM59XKLbVm)
@@ -95,7 +225,33 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5807341)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5807341 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5807341/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key f \major \numericTimeSignature \time 4/4 \clef "treble_8" f2 a4 c4 \\\
+\staff "1" \clef "treble" <c f a>8[ <c f a>8 <c f a>8 <c f a>8] <c f a>8[ <c f a>8 <c f a>8 <c f a>8] \\
+\staff "2" \clef "bass" f,1 | %1
+
+g''16[ f16 g8] f2. \\\
+\staff "1" <ef g bf>8[ <ef g bf>8 <ef g bf>8 <ef g bf>8] <ef g bf>8[ <ef g bf>8 <ef g bf>8 <ef g bf>8] \\
+\staff "2" ef,1 | %2
+
+g''16[ f16 g8] f2 ef16[ d8.] \\\
+\staff "1" <d f bf>8[ <d f bf>8 <d f bf>8 <d f bf>8] <d f bf>8[ <d f bf>8 <d f bf>8 <d f bf>8] \\
+\staff "2" bf,1 | %3
+
+c'1 \\\
+\staff "1" <c f a>8[ <c f a>8 <c f a>8 <c f a>8] <c f a>8[ <c f a>8 <c f a>8 <c f a>8] \\
+\staff "2" f,,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5807341/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. The Beatles，[“Hey Jude”（1968）。](https://open.spotify.com/track/0aym2LBJBk9DAYuHHutrIl)
@@ -107,7 +263,29 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5807378)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5807378 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5807378/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble_8" r4 r16 b'16[ c8] b4 b4 \\\
+\clef "bass" c,4 r8 c8 g4 b8[ c8] | %1
+
+r4 r8. d16 a'16[ a16 a16 a16] a16[ a16] r8 \\\
+d,4 r8 d8 a4 d8[ ds8] | %2
+
+g'16[ d16 e8] d4 r2 \\\
+e,4 e4 e8[ b16 d16~] d16[ b16 d8] | %3
+
+R1 \\\
+e,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5807378/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. Jimi Hendrix，[“Hey Joe”（1966）。](https://open.spotify.com/track/0NWPxcsf5vdjdiFUI8NgkP)

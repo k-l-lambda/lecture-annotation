@@ -35,7 +35,57 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279080)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6279080 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279080/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" R1 \\\
+\clef "treble" g'4. af16[ g16] d4 f4 \\\
+\clef "alto" ef4 r4 b4 r4 \\\
+\clef "bass" c4 r4 r4 g,4 | %1
+
+g'4. af16[ g16] d4 f4 \\\
+ef4. f16[ ef16] b4 d4 \\\
+c4 r4 r2 \\\
+c,8[ ef8 g8 g8] g8-.[ g8-. g8-. g8-.] | %2
+
+ef4. f16[ ef16] b4 d4 \\\
+c4 r4 d2 \\\
+g'4. af16[ g16] d4 f4 \\\
+g8-.[ g8-. g8-. g8-.] g8-.[ g8-. g8-. g8-.] | %3
+
+c4 r4 f2 \\\
+ef8[ g8 g8-. g8-.] g8-.[ g8-. g8-. g8-.] \\\
+ef4. f16[ ef16] b4 d4 \\\
+g4. af16[ g16] d4 f4 | %4
+
+ef8[ g8 g8-. g8-.] g8-.[ g8-. g8-. g8-.] \\\
+g'4. af16[ g16] d4 f4 \\\
+c4 r4 f2 \\\
+ef,4. f16[ ef16] b4 d4 | %5
+
+r8 c16[ b16] c16[ b16 c16 b16] c8[ d8 ef8 fs8] \\\
+ef8[ c16 b16] c16[ b16 c16 b16] c8[ d8 ef8 fs8] \\\
+ef8[ c16 b16] c16[ b16 c16 b16] c8[ d8 ef8 fs8] \\\
+c,8[ c16 b16] c16[ b16 c16 b16] c8[ d8 ef8 fs8] | %6
+
+g'4 g,8.[ g16] g4 r4 \\\
+g'4 g,8.[ g16] g4 r4 \\\
+g'4 g,8.[ g16] g4 r4 \\\
+g4 g,8.[ g16] g4 r4 | %7
+
+ef'2 bf4. c8 \\\
+g8[ bf8 ef8 bf8] g8[ bf8 ef8 bf8] \\\
+g'2. g,4 \\\
+ef,4 ef4 ef4 ef4 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6279080/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. Joseph Bologne《弦乐四重奏》第 4 号第一乐章中的直接转调，第 15–29 小节（[0:27-0:56](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=64f4bea79e2d4a21)）。
@@ -49,7 +99,69 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279089)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6279089 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279089/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key af \major \defaultTimeSignature \time 4/4 \partial 4 \clef "treble" c4 \\\
+\staff "1" \clef "treble" r4 \\
+\staff "2" \clef "bass" r4 | %1
+
+c'4. c8 c4 c4 \\\
+\staff "1" r4 <c f af>4 <f af c>4 <c f af>4 \\
+\staff "2" <f,, f'>2 r2 | %2
+
+c'4. bf8 bf4 af4 \\\
+\staff "1" r4 <g df' f>4 <df f g>4 <g df' f>4 \\
+\staff "2" <bf,, bf'>2 r2 | %3
+
+af'4 g4 f4 r8 e8 \\\
+\staff "1" r4 <g bf>4 <bf c>4 <g bf>4 \\
+\staff "2" <c,, c'>2 r2 | %4
+
+f4 c4 r4 c4 \\\
+\staff "1" r4 <f, af>4 <af c>4 <f af>4 \\
+\staff "2" f,,2 r2 | %5
+
+c'4. c8 df4 c4 \\\
+\staff "1" r4 <f, c' ef>4 <c ef f>4 <f c' ef>4 \\
+\staff "2" <a,, a'>2 r2 | %6
+
+c'4. bf8 bf4 af4 \\\
+\staff "1" r4 <f, bf df>4 <bf df f>4 <f bf df>4 \\
+\staff "2" <bf,, bf'>2 r2 | %7
+
+af'4 g4 f4 g4 \\\
+\staff "1" r4 <bf df>4 <df ef>4 <bf df>4 \\
+\staff "2" <ef,, ef'>2 r2 | %8
+
+af'2 ef4 r4 \\\
+\staff "1" r4 <af c>4 <c ef>4 ef'8[ f8] \\
+\staff "2" af,4 ef'4 af4 ef4 | %9
+
+R1 \\\
+\staff "1" ef'4 bf4 ef,4 ef'8[ f8] \\
+\staff "2" af,4 ef'4 <g df'>4 ef4 | %10
+
+R1 \\\
+\staff "1" ef'4 bf4 ef,4 df'8[ c8] \\
+\staff "2" af,4 ef'4 <g df'>4 ef4 | %11
+
+R1 \\\
+\staff "1" c'4. bf8 af4 bf4 \\
+\staff "2" af,4 af1 ef'4 g4 ef4 | %12
+
+R1 \\\
+\staff "1" c'4. af8 ef4 <ef ef'>4 \\
+\staff "2" af,4 ef'4 g4 ef4 | %13
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6279089/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. Josephine Lang《冬》（*Der Winter*）中的中介和弦转调，第 1–12 小节。
@@ -108,7 +220,35 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279114)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6279114 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279114/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp ef'4 f4 ef4 ef4 \\
+\staff "1" \stemDown g'4 af4 g4 g4 \\
+\staff "2" \clef "bass" \stemUp bf4 bf4 bf4 c4 \\
+\staff "2" \stemDown ef,4 d4 ef4 c4 | %1
+
+\staff "1" \stemUp ef'2 d2 \\
+\staff "1" \stemDown a'2 bf2 \\
+\staff "2" \stemUp c2 bf2 \\
+\staff "2" \stemDown f,2 g2 | %2
+
+\staff "1" \stemUp c'4 bf4 bf4 a4 \\
+\staff "1" \stemDown g'2 f4 ef4 \\
+\staff "2" \stemUp c2 d4 c4 \\
+\staff "2" \stemDown ef,2 f2 | %3
+
+\staff "1" <d bf'>1 \\
+\staff "2" <bf, bf'>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6279114/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 写作一个转调乐句。
@@ -131,7 +271,97 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6279128)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6279128 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6279128/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key ef \major \numericTimeSignature \time 2/4 \clef "treble" bf'8-.[ ef8 d8 ef8] \\\
+\clef "treble" g'8 r8 r4 \\\
+\clef "alto" ef4 r4 \\\
+\clef "bass" ef,4 r8 g8 | %1
+
+f4. c'8 \\\
+f4. af8 \\\
+c4 r4 \\\
+af2 | %2
+
+c'8[ bf8] r8 d,8 \\\
+af'8[ g8] r8 af,8 \\\
+bf2 \\\
+bf4 bf,4 | %3
+
+d4 ef8 r8 \\\
+af4 g8 r8 \\\
+bf4. r8 \\\
+ef,8[ bf8 ef,8] r8 | %4
+
+c'4. df8 \\\
+g'4 af4 \\\
+e4 f4 \\\
+R2 | %5
+
+c'4. df8 \\\
+g'4 af4 \\\
+e4 f4 \\\
+R2 | %6
+
+c'8[ g'8 c,8 bf8] \\\
+g'2 \\\
+e2 \\\
+r4 r8 c,8 | %7
+
+bf'4 af4 \\\
+r8 c8[ f8 g8] \\\
+c8[ g8 af8 bf8] \\\
+f,8[ c8 f,8] r8 | %8
+
+af''4. g8 \\\
+af'4. g8~ \\\
+c4. bf8 \\\
+r8 f,8 f,4 | %9
+
+\grace { g''8 } f4. ef8 \\\
+g'8 f4. \\\
+af4. g8 \\\
+r8 f,8 f,4 | %10
+
+ef'8[ d8 d8 c8] \\\
+ef8[ d8 d8 c8] \\\
+af4 a4 \\\
+r8 f,8 fs4 | %11
+
+b'4 g'8[ f8] \\\
+b4 r4 \\\
+g4 r8 g'8 \\\
+g4 r8 g8 | %12
+
+f'8[ ef8 d8 c8] \\\
+c2 \\\
+af'2 \\\
+af2 | %13
+
+b'4 g'8[ f8] \\\
+d4 g8[ f8] \\\
+g'4 r4 \\\
+g4 r4 | %14
+
+f'8-.[ ef8-. d8-. c8-.] \\\
+f8-.[ ef8-. d8-. c8-.] \\\
+R2 \\\
+R2 | %15
+
+g''4 g,4 \\\
+g'4 g,4 \\\
+g4 g4 \\\
+g,4 r4 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6279128/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. Joseph Bologne《弦乐四重奏》Op. 4 第二乐章中的扩展离调（[0:25-0:39](https://open.spotify.com/track/3s3cvSSegEQuXN8PFEclRy?si=53a66e715ef6480e)）。

@@ -90,7 +90,50 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26285815)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26285815 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26285815/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" g'1 \\
+\staff "2" \clef "bass" g1 | %1
+
+\staff "1" a'1 \\
+\staff "2" f,1 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" a'1 \\
+\staff "2" a1 | %4
+
+\staff "1" g'1 \\
+\staff "2" e,1 | %5
+
+\staff "1" s1 \\
+\staff "2" s1 | %6
+
+\staff "1" g'1 \\
+\staff "2" e,1 | %7
+
+\staff "1" f1 \\
+\staff "2" d,1 | %8
+
+\staff "1" s1 \\
+\staff "2" s1 | %9
+
+\staff "1" a'1 \\
+\staff "2" f,1 | %10
+
+\staff "1" b'1 \\
+\staff "2" f,1 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26285815/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 不同类型进行的示例。
@@ -109,7 +152,215 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/26285584)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/26285584 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/26285584/embed" title="MuseScore" loading="lazy" style="height: 1100px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" s1 \\
+\staff "2" \clef "bass" d,1 | %1
+
+\staff "1" s1 \\
+\staff "2" f,1 | %2
+
+\staff "1" s1 \\
+\staff "2" e,1 | %3
+
+\staff "1" s1 \\
+\staff "2" d,1 | %4
+
+\staff "1" s1 \\
+\staff "2" g1 | %5
+
+\staff "1" s1 \\
+\staff "2" f,1 | %6
+
+\staff "1" s1 \\
+\staff "2" a1 | %7
+
+\staff "1" s1 \\
+\staff "2" g1 | %8
+
+\staff "1" s1 \\
+\staff "2" f,1 | %9
+
+\staff "1" s1 \\
+\staff "2" e,1 | %10
+
+\staff "1" s1 \\
+\staff "2" d,1 | %11
+
+\staff "1" d1 \\
+\staff "2" s1 | %12
+
+\staff "1" f1 \\
+\staff "2" s1 | %13
+
+\staff "1" e1 \\
+\staff "2" s1 | %14
+
+\staff "1" d1 \\
+\staff "2" s1 | %15
+
+\staff "1" g'1 \\
+\staff "2" s1 | %16
+
+\staff "1" f1 \\
+\staff "2" s1 | %17
+
+\staff "1" a'1 \\
+\staff "2" s1 | %18
+
+\staff "1" g'1 \\
+\staff "2" s1 | %19
+
+\staff "1" f1 \\
+\staff "2" s1 | %20
+
+\staff "1" e1 \\
+\staff "2" s1 | %21
+
+\staff "1" d1 \\
+\staff "2" s1 | %22
+
+\staff "1" s1 \\
+\staff "2" e,1 | %23
+
+\staff "1" s1 \\
+\staff "2" c,1 | %24
+
+\staff "1" s1 \\
+\staff "2" d,1 | %25
+
+\staff "1" s1 \\
+\staff "2" c,1 | %26
+
+\staff "1" s1 \\
+\staff "2" a,1 | %27
+
+\staff "1" s1 \\
+\staff "2" a1 | %28
+
+\staff "1" s1 \\
+\staff "2" g1 | %29
+
+\staff "1" s1 \\
+\staff "2" e,1 | %30
+
+\staff "1" s1 \\
+\staff "2" f,1 | %31
+
+\staff "1" s1 \\
+\staff "2" e,1 | %32
+
+\staff "1" e1 \\
+\staff "2" s1 | %33
+
+\staff "1" c1 \\
+\staff "2" s1 | %34
+
+\staff "1" d1 \\
+\staff "2" s1 | %35
+
+\staff "1" c1 \\
+\staff "2" s1 | %36
+
+\staff "1" a1 \\
+\staff "2" s1 | %37
+
+\staff "1" a'1 \\
+\staff "2" s1 | %38
+
+\staff "1" g'1 \\
+\staff "2" s1 | %39
+
+\staff "1" e1 \\
+\staff "2" s1 | %40
+
+\staff "1" f1 \\
+\staff "2" s1 | %41
+
+\staff "1" e1 \\
+\staff "2" s1 | %42
+
+\staff "1" s1 \\
+\staff "2" f,1 | %43
+
+\staff "1" s1 \\
+\staff "2" g1 | %44
+
+\staff "1" s1 \\
+\staff "2" a1 | %45
+
+\staff "1" s1 \\
+\staff "2" f,1 | %46
+
+\staff "1" s1 \\
+\staff "2" d,1 | %47
+
+\staff "1" s1 \\
+\staff "2" e,1 | %48
+
+\staff "1" s1 \\
+\staff "2" f,1 | %49
+
+\staff "1" s1 \\
+\staff "2" c1 | %50
+
+\staff "1" s1 \\
+\staff "2" a1 | %51
+
+\staff "1" s1 \\
+\staff "2" f,1 | %52
+
+\staff "1" s1 \\
+\staff "2" g1 | %53
+
+\staff "1" s1 \\
+\staff "2" f,1 | %54
+
+\staff "1" f1 \\
+\staff "2" s1 | %55
+
+\staff "1" g'1 \\
+\staff "2" s1 | %56
+
+\staff "1" a'1 \\
+\staff "2" s1 | %57
+
+\staff "1" f1 \\
+\staff "2" s1 | %58
+
+\staff "1" d1 \\
+\staff "2" s1 | %59
+
+\staff "1" e1 \\
+\staff "2" s1 | %60
+
+\staff "1" f1 \\
+\staff "2" s1 | %61
+
+\staff "1" c'1 \\
+\staff "2" s1 | %62
+
+\staff "1" a'1 \\
+\staff "2" s1 | %63
+
+\staff "1" f1 \\
+\staff "2" s1 | %64
+
+\staff "1" g'1 \\
+\staff "2" s1 | %65
+
+\staff "1" f1 \\
+\staff "2" s1 | %66
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/26285584/embed" title="MuseScore" loading="lazy" style="height: 1100px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 出自《Gradus ad Parnassum》的定旋律。

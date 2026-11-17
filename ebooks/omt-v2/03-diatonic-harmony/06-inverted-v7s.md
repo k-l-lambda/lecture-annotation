@@ -25,7 +25,36 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240782)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240782 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240782/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 4/4 \clef "treble" <d b'>1~ \\
+\staff "2" \clef "bass" <g, g'>1~ | %1
+
+\staff "1" <d b'>1 \\
+\staff "2" <g, g'>1 | %2
+
+\staff "1" s1 \\
+\staff "2" s1 | %3
+
+\staff "1" \stemUp b'4 b4 b4 b4 \\
+\staff "1" \stemDown d4 d4 d4 d4 \\
+\staff "2" \stemUp g4 g4 g4 g4 \\
+\staff "2" \stemDown g,4 g4 g4 g4 | %4
+
+\staff "1" \stemUp b'4 b4 b4 b4 \\
+\staff "1" \stemDown d4 d4 d4 d4 \\
+\staff "2" \stemUp g4 g4 g4 g4 \\
+\staff "2" \stemDown g,4 g4 g4 g4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240782/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 通过保持或重复和弦来延长。
@@ -35,7 +64,23 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240788)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240788 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240788/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 6/8 \clef "treble" d'4.~ d8[ c8. a16] \\
+\staff "2" \clef "bass" g,,8[ <d'' g b>8 <g b d>8] c,,8[ <d' fs a>8 <fs a d>8] | %1
+
+\staff "1" a'4 g8~ g8[ <c, fs a>8 <b g' b>8] \\
+\staff "2" b,,8[ <d g b>8 <g b d>8] <b d>8[ <a d>8 <g d'>8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240788/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 克拉拉·舒曼（Clara Schumann）钢琴三重奏第三乐章第 1–2 小节中的主和弦延长（[0:00-0:08](https://open.spotify.com/track/0pdZEfxdMy5RAUIZfyshWA?si=33faa39a66d94271)）。
@@ -56,7 +101,73 @@ $\mathrm{V}^6_5$ 通常在 $\mathrm{I-V^6_5-I}$ 进行中延长原位 I（谱例
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240806)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240806 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240806/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" g4 fs4 | %1
+
+\staff "1" s2 \\
+\staff "2" g2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" b'4 c4 \\
+\staff "2" g4 fs4 | %4
+
+\staff "1" b'2 \\
+\staff "2" g2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp b'4 c4 \\
+\staff "1" \stemDown g'4 a4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 fs4 | %7
+
+\staff "1" \stemUp b'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown g2 | %8
+
+\staff "1" \key bf \major s2 \\
+\staff "2" g4 fs4 | %9
+
+\staff "1" s2 \\
+\staff "2" g2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" g'4 a4 \\
+\staff "2" g4 fs4 | %12
+
+\staff "1" g'2 \\
+\staff "2" g2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp g'4 a4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp bf4 c4 \\
+\staff "2" \stemDown g4 fs4 | %15
+
+\staff "1" \stemUp g'2 \\
+\staff "1" \stemDown d2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown g2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240806/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 涉及 $\mathit{V^6_5}$ 的主和弦延长。
@@ -66,7 +177,73 @@ $\mathrm{V}^6_5$ 通常在 $\mathrm{I-V^6_5-I}$ 进行中延长原位 I（谱例
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6243345)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6243345 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6243345/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" g4 fs4 | %1
+
+\staff "1" s2 \\
+\staff "2" g2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" b'4 a4 \\
+\staff "2" g4 fs4 | %4
+
+\staff "1" g'2 \\
+\staff "2" g2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp b'4 a4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp <g g>4 a4 \\
+\staff "2" \stemDown s4 fs,4 | %7
+
+\staff "1" \stemUp g'2 \\
+\staff "1" \stemDown d2 \\
+\staff "2" \stemUp b2 \\
+\staff "2" \stemDown g2 | %8
+
+\staff "1" \key bf \major s2 \\
+\staff "2" g4 fs4 | %9
+
+\staff "1" s2 \\
+\staff "2" g2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" g'4 a4 \\
+\staff "2" g4 fs4 | %12
+
+\staff "1" g'2 \\
+\staff "2" g2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp g'4 a4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp bf4 a4 \\
+\staff "2" \stemDown g4 fs4 | %15
+
+\staff "1" \stemUp g'2 \\
+\staff "1" \stemDown d2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown g2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6243345/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 涉及 $\mathit{V^6}$ 的主和弦延长。
@@ -78,7 +255,72 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11967037)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11967037 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11967037/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" g4 c4 | %1
+
+\staff "1" s2 \\
+\staff "2" b2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" b'4 a4 \\
+\staff "2" g4 c4 | %4
+
+\staff "1" g'2 \\
+\staff "2" b2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp b'4 a4 \\
+\staff "1" \stemDown g'4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 c4 | %7
+
+\staff "1" <g' g>2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown b2 | %8
+
+\staff "1" \key bf \major s2 \\
+\staff "2" g4 c4 | %9
+
+\staff "1" s2 \\
+\staff "2" bf2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" bf'4 a4 \\
+\staff "2" g4 c4 | %12
+
+\staff "1" d'2 \\
+\staff "2" bf2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp bf'4 a4 \\
+\staff "1" \stemDown g'4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 c4 | %15
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown bf2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11967037/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 涉及 $\mathit{V^4_2}$ 的主和弦延长。
@@ -90,7 +332,72 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240818)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240818 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240818/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" g4 a4 | %1
+
+\staff "1" s2 \\
+\staff "2" b2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" g'4 fs4 \\
+\staff "2" g4 a4 | %4
+
+\staff "1" g'2 \\
+\staff "2" b2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp g'4 fs4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp b4 c4 \\
+\staff "2" \stemDown g4 a4 | %7
+
+\staff "1" \stemUp g'2 \\
+\staff "1" \stemDown d2 \\
+\staff "2" <b b>2 | %8
+
+\staff "1" \key bf \major s2 \\
+\staff "2" g4 a4 | %9
+
+\staff "1" s2 \\
+\staff "2" bf2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" bf'4 c4 \\
+\staff "2" g4 a4 | %12
+
+\staff "1" bf'2 \\
+\staff "2" bf2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp bf'4 c4 \\
+\staff "1" \stemDown g'4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 a4 | %15
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown bf2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240818/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 涉及 $\mathit{V^4_3}$ 的主和弦延长。
@@ -98,7 +405,73 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240825)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240825 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240825/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" g4 a4 | %1
+
+\staff "1" s2 \\
+\staff "2" g2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" g'4 fs4 \\
+\staff "2" g4 a4 | %4
+
+\staff "1" g'2 \\
+\staff "2" g2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp g'4 fs4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp b4 c4 \\
+\staff "2" \stemDown g4 a4 | %7
+
+\staff "1" \stemUp g'2 \\
+\staff "1" \stemDown d2 \\
+\staff "2" \stemUp b2 \\
+\staff "2" \stemDown g2 | %8
+
+\staff "1" \key bf \major s2 \\
+\staff "2" g4 a4 | %9
+
+\staff "1" s2 \\
+\staff "2" g2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" bf'4 c4 \\
+\staff "2" g4 a4 | %12
+
+\staff "1" bf'2 \\
+\staff "2" g2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp bf'4 c4 \\
+\staff "1" \stemDown g'4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 a4 | %15
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown g2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240825/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 较少见的、涉及 $\mathit{V^4_3}$ 的主和弦延长。
@@ -108,7 +481,73 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240833)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240833 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240833/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" g4 a4 | %1
+
+\staff "1" s2 \\
+\staff "2" b2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" b'4 c4 \\
+\staff "2" g4 a4 | %4
+
+\staff "1" d'2 \\
+\staff "2" b2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp b'4 c4 \\
+\staff "1" \stemDown g'4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 a4 | %7
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown b2 | %8
+
+\staff "1" \key bf \major s2 \\
+\staff "2" g4 a4 | %9
+
+\staff "1" s2 \\
+\staff "2" bf2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" bf'4 c4 \\
+\staff "2" g4 a4 | %12
+
+\staff "1" d'2 \\
+\staff "2" bf2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp bf'4 c4 \\
+\staff "1" \stemDown g'4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown g4 a4 | %15
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown bf2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240833/embed" title="MuseScore" loading="lazy" style="height: 558px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 和弦七音典型解决的一个例外。
@@ -120,7 +559,27 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6240837)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240837 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6240837/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp b'4 c4 b4 c4 \\
+\staff "1" \stemDown d4 d4 d4 d4 \\
+\staff "2" \clef "bass" \stemUp g4 a4 g4 fs4 \\
+\staff "2" \stemDown g,4 fs4 g4 a4 | %1
+
+\staff "1" \stemUp d'4 c4 b2 \\
+\staff "1" \stemDown d4 d4 d2 \\
+\staff "2" \stemUp g4 a4 g2 \\
+\staff "2" \stemDown b,4 fs4 g2 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6240837/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 大范围的主和弦延长。

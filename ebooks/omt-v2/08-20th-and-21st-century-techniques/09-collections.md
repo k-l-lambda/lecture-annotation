@@ -46,7 +46,25 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5990266)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5990266 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5990266/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 6/4 \clef "treble" c4 d4 e4 g4 a4 c4 | %1
+
+\time 1/4 <c g' d' a' e'>4 | %2
+
+\time 6/4 gf'4 af4 bf4 df4 ef4 gf4 | %3
+
+ef4 gf4 af4 bf4 df4 ef4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5990266/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. (a–c) 生成五声音集的三种方式，以及 (d) 五声音集的一种轮换。
@@ -64,7 +82,23 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5990278)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5990278 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5990278/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 7/4 \clef "treble" c4 d4 e4 fs4 gs4 as4 c4 | %1
+
+cs4 ds4 f4 g4 a4 b4 cs4 | %2
+
+d4 e4 fs4 gs4 as4 c4 d4 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5990278/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 全音音集只有两个。把 WT<sub>1</sub> 升高半音移位，又会得到 WT<sub>0</sub>。
@@ -76,7 +110,25 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5990299)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5990299 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5990299/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 9/4 \clef "treble" c4 cs4 ds4 e4 fs4 g4 a4 bf4 c4 | %1
+
+cs4 d4 e4 f4 g4 gs4 as4 b4 cs4 | %2
+
+d4 ef4 f4 fs4 gs4 a4 b4 c4 d4 | %3
+
+ds4 e4 fs4 g4 a4 as4 c4 cs4 ds4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5990299/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 八声音集只有三个。
@@ -90,7 +142,67 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5992271)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5992271 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5992271/embed" title="MuseScore" loading="lazy" style="height: 575px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" c4 df4 ef4 e4 fs4 g4 a4 bf4 | %1
+
+\time 4/4 <c e g>1 | %2
+
+<c ef g>1 | %3
+
+<ef g bf>1 | %4
+
+<ef gf bf>1 | %5
+
+<fs as cs>1 | %6
+
+<fs a cs>1 | %7
+
+<a' cs e>1 | %8
+
+<a' c e>1 | %9
+
+<c e g bf>1 | %10
+
+<c ef g bf>1 | %11
+
+<ef g bf df>1 | %12
+
+<ef gf bf df>1 | %13
+
+<fs as cs e>1 | %14
+
+<fs a cs e>1 | %15
+
+<a' cs e g>1 | %16
+
+<a' c e g>1 | %17
+
+<bs ds fs as>1 | %18
+
+<bs ds fs a>1 | %19
+
+<ds fs a cs>1 | %20
+
+<ds fs a c>1 | %21
+
+<fs a c e>1 | %22
+
+<fs a c ef>1 | %23
+
+<a' c ef g>1 | %24
+
+<a' c ef gf>1 | %25
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5992271/embed" title="MuseScore" loading="lazy" style="height: 575px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 八声音集包含许多三和弦和声。
@@ -98,7 +210,32 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5992316)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5992316 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5992316/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 9/4 \clef "treble" bf4 cf4 cs4 d4 e4 f4 g4 af4 bf4 \\\
+s\breve s4 | %1
+
+\time 6/4 bf4 \clef "treble" bf8[ d8 cf8 d8] cs8[ f8 d8 af'8 e8 af8] \\\
+\clef "bass" bf,,4 r2 <bf' f' af>4 r2 | %2
+
+\clef "treble" f8[ cf'8 g8 cf8 af8 d8] bf8[ d8 cf8 d8 cs8 f8] \\\
+<f, af d>4 r2 <af d f>4 r2 | %3
+
+d'8[ af'8 e8 af8 f8 cf'8] g8[ cf8 af8 d8 bf8 d8] \\\
+\clef "treble" <bf f' af>4 r2 <f' af d>4 r2 | %4
+
+cf'8[ d8 cs8 f8 d8 af'8] e8[ af8 f8 cf'8 g8 cf8] \\\
+<af' d f>4 r2 <bf f' af>4 r2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5992316/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 肖邦 G 小调《叙事曲》（1836）中的八声音集。
@@ -110,7 +247,25 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6925856)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6925856 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6925856/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 7/4 \clef "treble" c4 df4 e4 f4 gs4 a4 c4 | %1
+
+cs4 d4 f4 gf4 a4 bf4 cs4 | %2
+
+d4 ef4 fs4 g4 as4 b4 d4 | %3
+
+ds4 e4 g4 af4 b4 c4 ds4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6925856/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 可能的六声音集有四个。
@@ -120,7 +275,35 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6925866)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6925866 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6925866/embed" title="MuseScore" loading="lazy" style="height: 575px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 7/4 \clef "treble" c4 df4 e4 f4 gs4 a4 c4 | %1
+
+\time 4/4 <cs es gs>1 | %2
+
+<cs e gs>1 | %3
+
+<f a c>1 | %4
+
+<f af c>1 | %5
+
+<a' cs e>1 | %6
+
+<a' c e>1 | %7
+
+<c e gs>1 | %8
+
+<df f a>1 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6925866/embed" title="MuseScore" loading="lazy" style="height: 575px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 六声音集中存在的三和弦。
@@ -132,7 +315,23 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5992286)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5992286 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5992286/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 28/4 \clef "treble" e1 g1 bf1 c1 d1 e1 fs1 \\
+\staff "2" \clef "bass" c,,1 c'1 g'1 c1 s\breve s1 | %1
+
+\staff "1" \time 8/4 c4 d4 e4 fs4 g4 a4 bf4 c4 \\
+\staff "2" s\breve | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5992286/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 声学音阶由[泛音列](https://en.wikipedia.org/wiki/Harmonic_series_(music))的各音推衍而来。
@@ -160,7 +359,31 @@ modified: "2026-01-21"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6925817/s/nEWWaR)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6925817/s/nEWWaR -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6925817/s/nEWWaR/embed" title="MuseScore" loading="lazy" style="height: 620px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 7/4 \clef "treble" c4 d4 e4 fs4 gs4 as4 c4 | %1
+
+\time 9/4 c4 cs4 ds4 e4 fs4 g4 a4 bf4 c4 | %2
+
+\time 10/4 c4 d4 ds4 e4 fs4 g4 gs4 as4 b4 c4 | %3
+
+\time 9/4 c4 df4 e4 f4 fs4 g4 as4 b4 c4 | %4
+
+\time 7/4 c4 df4 f4 fs4 g4 b4 c4 | %5
+
+\time 9/4 c4 d4 e4 f4 fs4 gs4 as4 b4 c4 | %6
+
+\time 11/4 c4 cs4 d4 ds4 e4 fs4 g4 gs4 a4 b4 c4 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6925817/s/nEWWaR/embed" title="MuseScore" loading="lazy" style="height: 620px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 梅西安的有限移位调式，从 C 开始。

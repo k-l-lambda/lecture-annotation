@@ -30,7 +30,46 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250658)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6250658 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250658/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key e \major \numericTimeSignature \time 4/4 \clef "treble" r4 <ds fs>4-! <e as>4-! <fs b>4-! \\
+\staff "2" \clef "bass" r4 <b, fs'>4-! <cs fs>4-! <ds fs>4-! | %1
+
+\staff "1" \stemUp ds'4. cs8 b4-! as4-! \\
+\staff "1" \stemDown <e gs>2 fs4 fs4 \\
+\staff "2" <e, gs cs>2 <fs ds'>4-! <fs cs'>4-! | %2
+
+\staff "1" \stemUp s4 b'4-! cs4-! ds4-! \\
+\staff "1" \stemDown fs4 fs4 fs4 fs4 \\
+\staff "2" r4 <ds, b'>4-! <cs as'>4-! <b b'>4-! | %3
+
+\staff "1" \stemUp fs'4. e8 ds4-! cs4-! \\
+\staff "1" \stemDown gs'2 fs4 fs4 \\
+\staff "2" \stemUp ds4. cs8 b4-! as4-! \\
+\staff "2" \stemDown e,2 fs4 fs4 | %4
+
+\staff "1" <fs fs'>4-! <fs b fs'>4-! <fs as cs fs>4-! <fs b ds fs>4-! \\
+\staff "2" r4 <ds, fs b>4-! <cs e as>4-! <b ds b'>4-! | %5
+
+\staff "1" <fss fss'>4 <gs gs'>4 r2 \\
+\staff "2" <e,, gs cs e>4 r4 r2 | %6
+
+\staff "1" R1 \\
+\staff "2" \stemUp r4 <e, as>4 r2 \\
+\staff "2" \stemDown fs,,4 r4 s2 | %7
+
+\staff "1" R1 \\
+\staff "2" b,,2 r2 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6250658/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 贝多芬钢琴奏鸣曲 Op. 14, no. 1 第一乐章第 50–57 小节中的 $\mathrm{pass.^6_4}$（[1:28-1:42](https://open.spotify.com/track/1TATwZjqU3I73RoGvWsVXA?si=c851bab266cd4f5b)）。
@@ -47,7 +86,71 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250667)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6250667 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250667/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" d,4 e4 | %1
+
+\staff "1" s2 \\
+\staff "2" f,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" s2 \\
+\staff "2" <e, a cs e>2 | %4
+
+\staff "1" s2 \\
+\staff "2" s2 | %5
+
+\staff "1" f'4 e4 \\
+\staff "2" d,4 e4 | %6
+
+\staff "1" d'2 \\
+\staff "2" f,2 | %7
+
+\staff "1" s2 \\
+\staff "2" s2 | %8
+
+\staff "1" \stemUp f'4 e4 \\
+\staff "1" \stemDown a'4 a4 \\
+\staff "2" \stemUp d4 cs4 \\
+\staff "2" \stemDown d,4 e4 | %9
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown f,2 | %10
+
+\staff "1" \stemUp g'4 f4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp bf4 a4 \\
+\staff "2" \stemDown g,4 a4 | %11
+
+\staff "1" \stemUp g'2 \\
+\staff "1" \stemDown d2 \\
+\staff "2" \stemUp g2 \\
+\staff "2" \stemDown bf,2 | %12
+
+\staff "1" \stemUp g'4 a4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp g4 f4 \\
+\staff "2" \stemDown bf,4 a4 | %13
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp e,2 \\
+\staff "2" \stemDown g,2 | %14
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6250667/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 用 pass.$\mathit{^6_4}$ 写作。
@@ -59,7 +162,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250673)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6250673 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250673/embed" title="MuseScore" loading="lazy" style="height: 570px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \defaultTimeSignature \time 4/4 \clef "treble" c2-^~ c8[ c16-. c16-.] c8-.[ c8-.] \\
+\staff "2" \clef "bass" R1 | %1
+
+\staff "1" e2->~ e8[ c16-. c16-.] c8-.[ g8-.] \\
+\staff "2" R1 | %2
+
+\staff "1" c2->~ c8[ c16-. c16-.] c8-.[ c8-.] \\
+\staff "2" R1 | %3
+
+\staff "1" e8[ c16 c16] c8[ g8] c8[ g8 c8 e8] \\
+\staff "2" R1 | %4
+
+\staff "1" <d g>4. <e g>16[ <e g>16] <d g>4. <g c>16[ <g c>16] \\
+\staff "2" <g b>4. <g c>16[ <g c>16] <g b>4. <g e'>16[ <g e'>16] | %5
+
+\staff "1" <g' b>4. <g c g'>16[ <g c g'>16] <g b g'>4 <c e g c>4 \\
+\staff "2" <g d'>4. <g e'>16[ <g e'>16] <g d'>4 <g, c e g>4 | %6
+
+\staff "1" <b' d g b>4. <b d g b>8 <b d g b>8.[ <d g b d>16] <d g b d>8.[ <g b d g>16] \\
+\staff "2" <g, b d g>4. <d d'>8 <d d'>8.[ <b b'>16] <b b'>8.[ <g g'>16] | %7
+
+\staff "1" <g'' b d g>4-^ r4 r2 \\
+\staff "2" <g,, g'>4 <g' g'>4 r2 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6250673/embed" title="MuseScore" loading="lazy" style="height: 570px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 约瑟芬·朗《致国王之子》中的辅助 $\mathit{^6_4}$ 与琶音 $\mathit{^6_4}$。
@@ -74,7 +211,62 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250679)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6250679 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250679/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" s2 \\
+\staff "2" \clef "bass" d,4 d4 | %1
+
+\staff "1" s2 \\
+\staff "2" d,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" s2 \\
+\staff "2" \stemUp <g bf d>2 \\
+\staff "2" \stemDown d,2 | %4
+
+\staff "1" s2 \\
+\staff "2" s2 | %5
+
+\staff "1" d'4 d4 \\
+\staff "2" d,4 d4 | %6
+
+\staff "1" d'2 \\
+\staff "2" d,2 | %7
+
+\staff "1" s2 \\
+\staff "2" s2 | %8
+
+\staff "1" \stemUp d'4 d4 \\
+\staff "1" \stemDown f4 g4 \\
+\staff "2" \stemUp a4 bf4 \\
+\staff "2" \stemDown d,4 d4 | %9
+
+\staff "1" \stemUp d'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown d,2 | %10
+
+\staff "1" \stemUp cs'4 d4 \\
+\staff "1" \stemDown e4 f4 \\
+\staff "2" \stemUp a4 a4 \\
+\staff "2" \stemDown a,4 a4 | %11
+
+\staff "1" \stemUp cs'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown a,2 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6250679/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 用 $\mathit{n.^6_4}$ 写作。
@@ -86,7 +278,23 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6250685)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6250685 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6250685/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 3/8 \clef "treble" e'16[ c16 e8 g8] \\
+\staff "2" \clef "bass" <c, e>8[ g'8 g8] | %1
+
+\staff "1" e'16[ c16 e8 g8] \\
+\staff "2" <c, e>8[ g'8 g8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6250685/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 索菲·德·奥古斯特·魏劳赫（Sophie de Auguste Weyrauch）《六首舞曲》第三首中的琶音 $\mathit{^6_4}$。

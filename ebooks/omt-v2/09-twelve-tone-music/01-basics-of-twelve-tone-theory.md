@@ -50,7 +50,25 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6591448)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6591448 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6591448/embed" title="MuseScore" loading="lazy" style="height: 294px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" c4 cs4 d4 ef4 e4 f4 fs4 g4 gs4 a4 bf4 b4 | %1
+
+b'4 bf4 a4 gs4 g4 fs4 f4 e4 ef4 d4 cs4 c4 | %2
+
+\clef "bass" c4 b4 bf4 a4 gs4 g4 fs4 f4 e4 ef4 d4 cs4 | %3
+
+cs,4 d4 ef4 e4 f4 fs4 g4 gs4 a4 bf4 b4 c4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6591448/embed" title="MuseScore" loading="lazy" style="height: 294px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 四种形式的半音阶：原形、逆行、倒影与逆行倒影。
@@ -85,7 +103,25 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6591521/s/kMwC4y)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6591521/s/kMwC4y -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" title="MuseScore" loading="lazy" style="height: 294px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" c4 b'4 ef,4 g4 gs4 e4 d4 fs4 f4 cs4 a'4 bf4 | %1
+
+bf'4 a4 cs,4 f4 fs4 d4 e4 gs4 g4 ef4 b'4 c,4 | %2
+
+c4 cs4 a'4 f4 e4 gs4 bf4 fs4 g4 b4 ef,4 d4 | %3
+
+d4 ef4 b'4 g4 fs4 bf4 gs4 e4 f4 a4 cs,4 c4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6591521/s/kMwC4y/embed" title="MuseScore" loading="lazy" style="height: 294px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. [伊丽莎白·勒琴斯《经文歌（哲学逻辑论说摘录）》Op. 27](https://open.spotify.com/track/1KHlQk1IYYZZocedHyughI?si=6fcda3cb90c1470a)中的音列形式。

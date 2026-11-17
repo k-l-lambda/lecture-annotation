@@ -32,7 +32,45 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5863931)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5863931 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5863931/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key bf \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" g1 bf1 | %1
+
+\time 4/4 c1 | %2
+
+d1 | %3
+
+f1 | %4
+
+bf1 | %5
+
+c1 | %6
+
+d1 | %7
+
+f1 | %8
+
+g'1 | %9
+
+\time 5/4 g4 bf4 c4 d4 f4 | %10
+
+bf4 c4 d4 f4 g4 | %11
+
+c4 d4 f4 g4 bf4 | %12
+
+d4 f4 g4 bf4 c4 | %13
+
+f4 g4 bf4 c4 d4 | %14
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5863931/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 五声音阶。
@@ -52,7 +90,25 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5863947)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5863947 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5863947/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 5/4 \clef "treble" <c e g>4 <ef g bf>4 <f a c>4 <g b d>4 <bf d f>4 | %1
+
+\time 1/4 <c' e g>4 | %2
+
+\time 5/4 <c e g>4 <ef g bf>4 <f a c>4 <af c ef>4 <bf d f>4 | %3
+
+\time 1/4 <c' e g>4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5863947/embed" title="MuseScore" loading="lazy" style="height: 350px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 由五声音阶两种不同轮转衍生出的五声和声。
@@ -66,7 +122,25 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5863978)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5863978 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5863978/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "bass" ef,,8[ ef'8 ef,8 ef'8] gf,8[ gf'8 af,8 af'8] | %1
+
+ef,,8[ ef'8 ef,8 ef'8] gf,8[ gf'8 af,8 af'8] | %2
+
+ef,,8[ ef'8 ef,8 ef'8] gf,8[ gf'8 af,8 af'8] | %3
+
+ef,,8[ ef'8 ef,8 ef'8] gf,8[ gf'8 af,8 af'8] | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5863978/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 史蒂维·旺德，《Higher Ground》（1973）。
@@ -111,7 +185,27 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/11513893)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11513893 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11513893/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 1/4 \clef "treble" <c e g>4 | %1
+
+<g' b d>4 | %2
+
+<d fs a>4 | %3
+
+<a' cs e>4 | %4
+
+<e gs b>4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11513893/embed" title="MuseScore" loading="lazy" style="height: 250px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 《Hey Joe》的和弦进行，例如[吉米·亨德里克斯（1966）](https://open.spotify.com/track/0NWPxcsf5vdjdiFUI8NgkP)所录制的版本。

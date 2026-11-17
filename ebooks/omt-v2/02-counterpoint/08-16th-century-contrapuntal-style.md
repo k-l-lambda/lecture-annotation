@@ -26,7 +26,53 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8877717)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8877717 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8877717/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key f \major \numericTimeSignature \time 4/2 \clef "treble" r1 c'1~ c1 bf1 a1. g4 f4 g1 f1 \\\
+s\breve \\\
+s\breve \\\
+s\breve \\\
+s\breve | %1
+
+\clef "treble_8" r1 f'1~ f1 e1 d1. c4 bf4 \\\
+s\breve \\\
+s\breve \\\
+s\breve \\\
+s\breve | %2
+
+\clef "bass" f,\breve e1 d1~ d2 c4 bf4 c1 \\\
+s\breve \\\
+s\breve \\\
+s\breve \\\
+s\breve | %3
+
+r1 c1 bf1 a1~ \\\
+s\breve \\\
+s\breve \\\
+s\breve \\\
+s\breve | %4
+
+r1 f,1~ \\\
+s\breve \\\
+s\breve \\\
+s\breve \\\
+s\breve | %5
+
+\clef "treble" f'\breve e1 d1~ d2 c4 bf4 c1 \\\
+\clef "treble_8" c'1 r1 c1 bf1 a1. g4 f4 g\breve \\\
+\clef "bass" c\breve bf1 a1~ a2 g4 f4 g1 r1 r2 c2~ c2 c2 d2 bf2 \\\
+\clef "bass" a2 g4 f4 g1 f\breve f\breve e1 d1 \\\
+\clef "bass" f,1 e1 d1. c4 bf4 c1 r1 c1 bf1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8877717/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [Ave Spes Nostra](https://musescore.com/user/32728834/scores/8877717/s/bMJajn)，作者 [openmusictheory](https://musescore.com/user/32728834)

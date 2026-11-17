@@ -26,7 +26,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6258824)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6258824 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6258824/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <ds' fs>8[ <e g>8 <e g>8 <ds fs>8] <e g>8[ <e g>8 <ds fs>8 <e g>8] \\
+\staff "2" \clef "bass" c,8[ c'8 c,8 c'8] e,8[ e'8 e,8 e'8] | %1
+
+\staff "1" <f' a>8[ <e gs>8 <f a>8 \grace { <f a>8 } <g b>8~] <g b>8[ <f a>8 <e g>8 <d f>8] \\
+\staff "2" f,8[ f'8 f,8 g8] r2 | %2
+
+\staff "1" <ds' fs>8[ <e g>8 <e g>8 <ds fs>8] <e g>8[ <e g>8 <ds fs>8 <e g>8] \\
+\staff "2" c,8[ c'8 c,8 c'8] e,8[ e'8 e,8 e'8] | %3
+
+\staff "1" <f' a>8[ <e gs>8 <f a>8 <gs b>8] r8 <c, d>8 <fs gs>4 \\
+\staff "2" f,8[ f'8 f,8 g8] r2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6258824/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 近藤浩治（Koji Kondo）《超级马力欧兄弟 3》中的《运动主题》里的 iii 和弦（[4:19–4:24](https://open.spotify.com/track/7xGGMrIo22rfpoaFmV1dVd?si=2a9edd4390574f8b)）。
@@ -42,7 +64,63 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6258834)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6258834 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6258834/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key b \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp b'4 as4 \\
+\staff "1" \stemDown fs4 fs4 \\
+\staff "2" \clef "bass" \stemUp ds4 ds4 \\
+\staff "2" \stemDown b,4 ds4 | %1
+
+\staff "1" \stemUp gs'4 fs4 \\
+\staff "1" \stemDown e4 cs4 \\
+\staff "2" \stemUp b4 as4 \\
+\staff "2" \stemDown e,4 fs4 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \stemUp ds'4 ds4 \\
+\staff "1" \stemDown fs4 fs4 \\
+\staff "2" \stemUp b4 as4 \\
+\staff "2" \stemDown b,4 ds4 | %4
+
+\staff "1" \stemUp cs'4 as4 \\
+\staff "1" \stemDown e4 cs4 \\
+\staff "2" \stemUp gs4 <fs fs>4 \\
+\staff "2" \stemDown e,4 s4 | %5
+
+\staff "1" \key d \major \stemUp b'4 a4 \\
+\staff "1" \stemDown fs4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown b,4 d4 | %6
+
+\staff "1" \stemUp g'4 fs4 \\
+\staff "1" \stemDown e4 e4 \\
+\staff "2" \stemUp b4 as4 \\
+\staff "2" \stemDown e,4 fs4 | %7
+
+\staff "1" s2 \\
+\staff "2" s2 | %8
+
+\staff "1" \stemUp d'4 d4 \\
+\staff "1" \stemDown fs4 fs4 \\
+\staff "2" \stemUp b4 a4 \\
+\staff "2" \stemDown b,4 d4 | %9
+
+\staff "1" \stemUp cs'4 as4 \\
+\staff "1" \stemDown e4 e4 \\
+\staff "2" \stemUp g4 <fs fs>4 \\
+\staff "2" \stemDown e,4 s4 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6258834/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 写作 iii 进行到强前属。
@@ -52,7 +130,40 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6258844)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6258844 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6258844/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key b \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp ds'4 ds4 \\
+\staff "1" \stemDown fs4 fs4 \\
+\staff "2" \clef "bass" \stemUp b4 as4 \\
+\staff "2" \stemDown b,4 ds4 | %1
+
+\staff "1" \stemUp cs'2 \\
+\staff "1" \stemDown fs2 \\
+\staff "2" \stemUp as2 \\
+\staff "2" \stemDown fs,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \key d \major \stemUp b'4 a4 \\
+\staff "1" \stemDown fs4 fs4 \\
+\staff "2" \stemUp d4 d4 \\
+\staff "2" \stemDown b,4 d4 | %4
+
+\staff "1" \stemUp as'2 \\
+\staff "1" \stemDown fs2 \\
+\staff "2" \stemUp cs2 \\
+\staff "2" \stemDown fs,2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6258844/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 写作 iii 进行到 V。

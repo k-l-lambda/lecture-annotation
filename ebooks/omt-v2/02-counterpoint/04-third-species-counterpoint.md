@@ -27,7 +27,113 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488217)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8488217 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488217/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \defaultTimeSignature \time 2/2 \clef "treble" d4 e4 f4 g4 \\
+\staff "2" \clef "treble" d1 | %1
+
+\staff "1" a'4 b4 c4 d4 \\
+\staff "2" f1 | %2
+
+\staff "1" e'4 d4 b4 c4 \\
+\staff "2" e1 | %3
+
+\staff "1" d'4 c4 bf4 a4 \\
+\staff "2" d1 | %4
+
+\staff "1" bf'4 c4 d4 e4 \\
+\staff "2" g'1 | %5
+
+\staff "1" f'4 f,4 a4 b4 \\
+\staff "2" f1 | %6
+
+\staff "1" c'4 a4 bf4 c4 \\
+\staff "2" a'1 | %7
+
+\staff "1" bf'4 a4 g4 bf4 \\
+\staff "2" g'1 | %8
+
+\staff "1" a'4 d,4 e4 f4 \\
+\staff "2" f1 | %9
+
+\staff "1" g'4 a4 b4 cs4 \\
+\staff "2" e1 | %10
+
+\staff "1" d'1 \\
+\staff "2" d1 | %11
+
+\staff "1" d1 \\
+\staff "2" \clef "treble_8" d4 e4 f4 g4 | %12
+
+\staff "1" f1 \\
+\staff "2" a'4 d,4 a'4 b4 | %13
+
+\staff "1" e1 \\
+\staff "2" c'4 b4 g4 a4 | %14
+
+\staff "1" d1 \\
+\staff "2" b'4 a4 g4 f4 | %15
+
+\staff "1" g'1 \\
+\staff "2" e4 e'4 b4 c4 | %16
+
+\staff "1" f1 \\
+\staff "2" d'4 a4 d,4 e4 | %17
+
+\staff "1" a'1 \\
+\staff "2" f4 g4 a4 b4 | %18
+
+\staff "1" g'1 \\
+\staff "2" c'4 d4 e4 c4 | %19
+
+\staff "1" f1 \\
+\staff "2" d'4 a4 d,4 d'4 | %20
+
+\staff "1" e1 \\
+\staff "2" cs'4 a4 b4 cs4 | %21
+
+\staff "1" d1 \\
+\staff "2" d'1 | %22
+
+\staff "1" b'4 g4 a4 b4 \\
+\staff "2" e'1 | %23
+
+\staff "1" c'4 b4 a4 g4 \\
+\staff "2" c'1 | %24
+
+\staff "1" f4 g4 a4 b4 \\
+\staff "2" d'1 | %25
+
+\staff "1" c'4 e,4 f4 g4 \\
+\staff "2" c'1 | %26
+
+\staff "1" a'4 c4 e4 d4 \\
+\staff "2" a'1 | %27
+
+\staff "1" c'4 b4 a4 c4 \\
+\staff "2" a''1 | %28
+
+\staff "1" b'4 d4 b4 a4 \\
+\staff "2" g''1 | %29
+
+\staff "1" g'4 b4 c4 b4 \\
+\staff "2" e'1 | %30
+
+\staff "1" a'4 b4 c4 d4 \\
+\staff "2" f'1 | %31
+
+\staff "1" e'1 \\
+\staff "2" e'1 | %32
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8488217/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 《Gradus ad Parnassum》中的全部第三类对位练习。
@@ -109,7 +215,29 @@ d1 \bar "|." | %4
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8487176)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8487176 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8487176/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" d'4 c4 a4 b4 \\\
+\clef "bass" d,1 | %1
+
+c'1 \\\
+e,1 | %2
+
+d'4 e4 g4 f4 \\\
+b,1 | %3
+
+e'1 \\\
+c,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8487176/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. *nota cambiata* 的两种形式。从下拍到下拍，*nota cambiata* 可以填充（a）一个下行级进，或（b）一个上行级进。

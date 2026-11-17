@@ -23,7 +23,57 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6252227)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6252227 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6252227/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key d \major \numericTimeSignature \time 4/4 \clef "treble" r4 r4 a'4 a4 \\\
+\clef "treble" r4 r4 fs4 fs8.[ g16] \\\
+\clef "treble" r4 r4 d'4 d8.[ e16] \\\
+\clef "bass" r4 r4 d,4 d4 | %1
+
+d'4 r8 a8 a4 a4 \\\
+a'4 r8 fs8 fs4 fs8.[ g16] \\\
+fs'4 r8 d8 d4 d8.[ e16] \\\
+d4 r8 d,8 d4 d4 | %2
+
+d'4 r4 a4 a4 \\\
+a'4 r4 fs4 fs4 \\\
+fs'4 r4 d4 d4 \\\
+d4 r4 d,4 d4 | %3
+
+d'4 r8 a8 a4 a4 \\\
+a'4 r8 fs8 fs4 fs8.[ g16] \\\
+fs'4 r8 d8 d4 d8.[ e16] \\\
+d4 r8 d,8 d4 d4 | %4
+
+d'4 r4 r4 a4 \\\
+a'4 r4 r4 fs4 \\\
+fs'4 r4 r4 d4 \\\
+d4 r8 d,8 d'4 fs,4 | %5
+
+d'4 fs4 b,4 d4 \\\
+fs4 fs4 d4 a'4 \\\
+d'4 a4 b4 a4 \\\
+b4 d,4 g4 fs8[ fs8] | %6
+
+g''4 fs8 e8 e2 \\\
+e4 a8 a8 a2 \\\
+cs'4 d8 d8 d4 cs4 \\\
+e,4 d8 d8 a'2 | %7
+
+d'4 r4 d4 d4 \\\
+a'4 r8 a8 b8 a8 r8 a8 \\\
+d'4 r8 d8 g8 fs8 r8 d8 \\\
+d,4 r8 fs8 g8 d8 r8 fs8 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6252227/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 亨德尔（Handel）《弥赛亚》（*Messiah*）中《哈利路亚合唱》在完满正格终止之后的变格进行（[3:02-3:29](https://open.spotify.com/track/4TNCQyG2gmepsGoeLdRKn4?si=407f7e953dfe4dcd)）。
@@ -47,7 +97,27 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6252232)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6252232 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6252232/embed" title="MuseScore" loading="lazy" style="height: 390px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp ef'2 \\
+\staff "1" \stemDown af'2 \\
+\staff "2" \clef "bass" \stemUp c2 \\
+\staff "2" \stemDown af2 | %1
+
+\staff "1" \stemUp ef'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown ef,2 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6252232/embed" title="MuseScore" loading="lazy" style="height: 390px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 用原位和弦写作变格进行。

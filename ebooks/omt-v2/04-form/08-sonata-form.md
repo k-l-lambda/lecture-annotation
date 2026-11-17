@@ -102,7 +102,69 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8412926)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8412926 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8412926/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \defaultTimeSignature \time 4/4 \clef "treble" \tempo "Allegro maestoso" \grace { d'8 } e4 e8.[ e16] e4 c8.[ a16] \\
+\staff "2" \clef "bass" <a c e>8[ <a c e>8 <a c e>8 <a c e>8] <a c e>8[ <a c e>8 <a c e>8 <a c e>8] | %1
+
+\staff "1" \grace { a'16 } gs4 gs2 d'8.[ b16] \\
+\staff "2" <a b d e>8[ <a b d e>8 <a b d e>8 <a b d e>8] <a b d e>8[ <a b d e>8 <a b d e>8 <a b d e>8] | %2
+
+\staff "1" e'4 e8.[ e16] e8[ f16 e16] d16[ c16 b16 a16] \\
+\staff "2" <a c e>8[ <a c e>8 <a c e>8 <a c e>8] <a c e>8[ <a c e>8 <a c e>8 <a c e>8] | %3
+
+\staff "1" \grace { a'16 } gs4 gs2 d'8.[ b16] \\
+\staff "2" <a b d e>8[ <a b d e>8 <a b d e>8 <a b d e>8] <a b d e>8[ <a b d e>8 <a b d e>8 <a b d e>8] | %4
+
+\staff "1" <c' e>8.[ <a c>16] <c e>4 r8 <a c>8-.[ <b d>8-. <c e>8-.] \\
+\staff "2" <a c e>8 a8[ e8 c8] a4 r4 | %5
+
+\staff "1" <cs' e>4 <d f>8 r8 r8 <g, b>8-.[ <a c>8-. <b d>8-.] \\
+\staff "2" r4 <f, a c d>4~ <g b d>8 r8 r4 | %6
+
+\staff "1" <b' ds>4 <c e>8 r8 r8 <f, a>8-.[ <gs b>8-. <a c>8-.] \\
+\staff "2" r4 <e, g b c>4~ <f a c>8 r8 r4 | %7
+
+\staff "1" c'8.[ b16 f'8. d16] c8.[ e16 d8. b16] \\
+\staff "2" r4 <d, f b>4 <e a c>4 <e gs b>4 | %8
+
+\staff "1" \grace { d'8 } e4 e8.[ e16] e8[ f16 e16] d16[ c16 b16 a16] \\
+\staff "2" <a c e>8[ <a c e>8 <a c e>8 <a c e>8] <a c e>8[ <a c e>8 <a c e>8 <a c e>8] | %9
+
+\staff "1" a'8[ gs8] gs4~ gs8.[ gs16 d'8. b16] \\
+\staff "2" <a b d f>8[ <a b d f>8 <a b d f>8 <a b d f>8] <a b d f>8[ <a b d f>8 <a b d f>8 <a b d f>8] | %10
+
+\staff "1" e'4 e8.[ e16] ds16[ e16 f16 e16] d16[ c16 b16 a16] \\
+\staff "2" <a c e>8[ <a c e>8 <a c e>8 <a c e>8] <a c e>8[ <a c e>8 <a c e>8 <a c e>8] | %11
+
+\staff "1" c'8[ bf8] bf4~ bf8.[ e16 g8. bf16-.] \\
+\staff "2" <g bf c e>8[ <g bf c e>8 <g bf c e>8 <g bf c e>8] <g bf c e>8[ <g c e>8 <g bf c e>8 <g bf c e>8] | %12
+
+\staff "1" bf''8[ a8 f8-. d8-.] d8[ cs8 e8-. g8-.] \\
+\staff "2" <f, c' f>8[ <f c' f>8 <f a d>8 <f a d>8] <e g a>8[ <e g a>8 <e a cs>8 <e a cs>8] | %13
+
+\staff "1" g''8[ fs8] r8 f8 r8 ds8 r8 e8 \\
+\staff "2" <d, a' d>4 <b d g>4 <c g'>4 <a' c>4 | %14
+
+\staff "1" e'8[ d8] d4. e16[ d16] \grace { d16 } c8[ b16 c16] \\
+\staff "2" f,8[ a8 f8 a8] f8[ a8 fs8 a8] | %15
+
+\staff "1" b'4 g'8.[ g16] g4 g4 \\
+\staff "2" g16[ d'16 b16 d16] g,16[ d'16 b16 d16] g,16[ ef'16 c16 ef16] g,16[ f'16 d16 f16] | %16
+
+\staff "1" \stemUp c''4. bf16[ af16] g4 fs4 \\
+\staff "1" \stemDown c'1 \\
+\staff "2" g16[ ef'16 c16 ef16] g,16[ ef'16 c16 ef16] g,16[ ef'16 c16 ef16] g,16[ ef'16 c16 ef16] | %17
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8412926/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 🔊 [Mozart\_Sonata\_K\_310\_i.mp3](../media/2019/09/Mozart_Sonata_K_310_i.mp3)

@@ -63,7 +63,25 @@ ASPN 标记对于在钢琴键盘上找到具体的音非常有帮助。谱例 3 
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8395191/s/5sFqPN)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8395191/s/5sFqPN -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395191/s/5sFqPN/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" c4 d4 e4 f4 g4 a4 b4 c4 | %1
+
+\clef "bass" c,4 d4 e4 f4 g4 a4 b4 c4 | %2
+
+\clef "alto" f,4 g4 a4 bf4 c4 d4 e4 f4 | %3
+
+\clef "tenor" d,4 e4 fs4 g4 a4 b4 cs4 d4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8395191/s/5sFqPN/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 四种谱号中音的 ASPN 标记。

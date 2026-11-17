@@ -64,7 +64,85 @@ R2. \\\\
 🎼 [MuseScore 乐谱](https://musescore.com/user/27638568/scores/4985985)
 
 <!-- embed-begin: https://musescore.com/user/27638568/scores/4985985 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/27638568/scores/4985985/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key bf \major \numericTimeSignature \time 3/4 \clef "treble" \tempo "Etwas geschwind" R2. \\\
+\staff "1" \clef "bass" <g bf>32[ d'32 <g, bf>32 d'32 <g, bf>32 d'32 <g, bf>32 d'32] <g, bf>32[ d'32 <g, bf>32 d'32 <g, bf>32 d'32 <g, bf>32 d'32] <g, bf>32[ d'32 <g, bf>32 d'32 <g, bf>32 d'32 <g, bf>32 d'32] \\
+\staff "2" \clef "bass" <g,, g'>4 <g g'>4 r8. <bf bf'>16 | %1
+
+R2. \\\
+\staff "1" <fs, bf>32[ d'32 <fs, bf>32 d'32 <fs, bf>32 d'32 <fs, bf>32 d'32] \repeat tremolo 8 { <g, bf>32 d'32 } \\
+\staff "2" <fs,,, fs'>4 <g g'>4 r8. <bf bf'>16 | %2
+
+R2. \\\
+\staff "1" <fs, bf>32[ d'32 <fs, bf>32 d'32 <fs, bf>32 d'32 <fs, bf>32 d'32] \repeat tremolo 8 { <g, bf>32 d'32 } \\
+\staff "2" <fs,,, fs'>4 <g g'>4 r8. d'16 | %3
+
+r4 r4 r8. d16 \\\
+\staff "1" \repeat tremolo 12 { <g bf>32 d'32 } \\
+\staff "2" <g,, g'>4 <g g'>4 r8. d'16 | %4
+
+g'4.. g16 g8. bf16 \\\
+\staff "1" \repeat tremolo 12 { <g bf>32 d'32 } \\
+\staff "2" <g,, g'>2 <g g'>8.[ <bf bf'>16] | %5
+
+fs4 fs4 r8. d16 \\\
+\staff "1" \repeat tremolo 12 { <a c>32 d32 } \\
+\staff "2" <fs,,, fs'>4 <fs fs'>4 r8. d'16 | %6
+
+g'4.. d'16 bf8. g16 \\\
+\staff "1" \repeat tremolo 12 { <g bf>32 d'32 } \\
+\staff "2" <g,, g'>4.. <g g'>16 <g g'>8.[ <bf bf'>16] | %7
+
+fs4 fs4 d8. d16 \\\
+\staff "1" \repeat tremolo 12 { <a c>32 d32 } \\
+\staff "2" <fs,,, fs'>4 <fs fs'>4 r8. d'16 | %8
+
+bf'2 g4 \\\
+\staff "1" \repeat tremolo 12 { <g bf>32 d'32 } \\
+\staff "2" <bf,, bf'>2 <g g'>4 | %9
+
+ef'4.. d16 c8. bf16 \\\
+\staff "1" \repeat tremolo 8 { <g a>32 c32 } <g bf>32[ d'32 <g, bf>32 d'32 <g, bf>32 d'32 <g, bf>32 d'32] \\
+\staff "2" <ef,, ef'>4.. <d d'>16 <c c'>8.[ <bf bf'>16] | %10
+
+a'4 a4 d8. d16 \\\
+\staff "1" \repeat tremolo 8 { <g c>32 ef'32 } <fs, c'>32[ d'32 <fs, c'>32 d'32 <fs, c'>32 d'32 <fs, c'>32 d'32] \\
+\staff "2" <a,, a'>2 <d d'>8.[ <d d'>16] | %11
+
+bf'4 g8. g16 ef'8. ef16 \\\
+\staff "1" \repeat tremolo 8 { <g bf>32 d'32 } <g, a>32[ c32 <g a>32 c32 <g a>32 c32 <g a>32 c32] \\
+\staff "2" <g,, g'>4.. <g g'>16 <ef' ef'>8.[ <ef ef'>16] | %12
+
+a'2 d8. d16 \\\
+\staff "1" \repeat tremolo 8 { <g c>32 ef'32 } <fs, c'>32[ d'32 <fs, c'>32 d'32 <fs, c'>32 d'32 <fs, c'>32 d'32] \\
+\staff "2" <a,, a'>2 <d d'>8.[ <d d'>16] | %13
+
+bf'4 g4 r4 \\\
+\staff "1" \repeat tremolo 12 { <g bf>32 d'32 } \\
+\staff "2" <g,, g'>4 <g g'>4 r8. <bf bf'>16 | %14
+
+r4 r4 r8 g'8 \\\
+\staff "1" <fs, bf>32[ d'32 <fs, bf>32 d'32 <fs, bf>32 d'32 <fs, bf>32 d'32] \repeat tremolo 2 { <g, bf>8 d'8 } \\
+\staff "2" <fs,,, fs'>4 <g g'>4 r8 <g g'>8 | %15
+
+g'4. g8 g8 g8 \\\
+\staff "1" \repeat tremolo 12 { <g bf>32 d'32 } \\
+\staff "2" <g,, g'>4. <g g'>8[ <g g'>8 <g g'>8] | %16
+
+gs'8. gs16 gs4 r8 gs8 \\\
+\staff "1" \repeat tremolo 12 { <f, b>32 d'32 } \\
+\staff "2" <gs,, gs'>8.[ <gs gs'>16] <gs gs'>4 r8 <gs gs'>8 | %17
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/27638568/scores/4985985/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [《天鹅之歌》D.957](https://musescore.com/user/27638568/scores/4985985)，[OpenScore Lieder](https://musescore.com/openscore-lieder-corpus) 提供
@@ -190,7 +268,69 @@ e8 a cs^\markup "cresc." e4.
 🎼 [MuseScore 乐谱](https://musescore.com/user/27638568/scores/5101361)
 
 <!-- embed-begin: https://musescore.com/user/27638568/scores/5101361 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/27638568/scores/5101361/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key a \major \numericTimeSignature \time 6/8 \clef "treble" \tempo "Allegretto" R2. \\\
+\staff "1" \clef "treble" cs'16[ e16 a16 b16 cs16 b16] a16[ e16 cs16 a16 e16 a16] \\
+\staff "2" \clef "bass" a,8[ e'8 a8] <cs e>4. | %1
+
+R2. \\\
+\staff "1" cs'16[ e16 a16 b16 cs16 b16] a16[ e16 cs16 a16 e16 a16] \\
+\staff "2" a,8[ e'8 a8] <cs e>4. | %2
+
+e8 a8 b8 cs4. \\\
+\staff "1" cs'16[ e16 a16 b16 cs16 b16] a16[ e16 cs16 a16 e16 a16] \\
+\staff "2" a,8[ e'8 a8] <cs e>4. | %3
+
+<e e>8 <a a>8 cs8 e4. \\\
+\staff "1" cs'16[ e16 a16 b16 cs16 b16] a16[ e16 cs16 a16 e16 a16] \\
+\staff "2" a,8[ e'8 a8] <cs e g>4. | %4
+
+e'8 cs8 as8 fs4 e8 \\\
+\staff "1" as'16[ cs16 e16 as16 cs16 b16] as16[ e16 cs16 as16 fs16 as16] \\
+\staff "2" fs,,8[ fs'8 as8] <cs fs>4. | %5
+
+d4. r4 r8 \\\
+\staff "1" b'16[ d16 fs16 b16 d16 cs16] b16[ fs16 d16 b16 fs16 as16] \\
+\staff "2" b,8[ fs'8 b8] <d fs>4. | %6
+
+fs8 b8 cs8 d4 cs8 \\\
+\staff "1" b'16[ d16 fs16 b16 d16 cs16] b16[ fs16 d16 b16 fs16 as16] \\
+\staff "2" b,8[ d8 fs8] <d' fs>4. | %7
+
+b'4 d8 fs4 fs8 \\\
+\staff "1" b'16[ d16 fs16 b16 d16 cs16] b16[ fs16 d16 b16 fs16 d16] \\
+\staff "2" gs,8[ gs'8 b8] <d fs>4. | %8
+
+fs'8[ e8] cs8 a8[ e8] cs'8 \\\
+\staff "1" cs16[ e16 a16 cs16 e16 a16] cs16[ b16 a16 e16 cs16 a16] \\
+\staff "2" a,8[ e'8 a8] <cs e>4. | %9
+
+b'4. r4 r8 \\\
+\staff "1" gs'16[ b16 e16 gs16 b16 a16] gs16[ e16 b16 gs16 e16 fs16] \\
+\staff "2" e,,8[ e'8 gs8] <b e>4. | %10
+
+r4 r8 r4 e8 \\\
+\staff "1" gs'16[ b16 e16 gs16 b16 a16] gs16[ e16 b16 gs16 e16 d16] \\
+\staff "2" e,,8[ e'8 gs8] <b e>4. | %11
+
+e'4 c8 a4 c8 \\\
+\staff "1" c16[ e16 a16 c16 e16 a16] c16[ b16 a16 e16 c16 a16] \\
+\staff "2" e,,8[ e'8 a8] <c e>4. | %12
+
+b'4 gs8 e4 r8 \\\
+\staff "1" gs'16[ b16 e16 gs16 b16 a16] gs16[ e16 b16 gs16 e16 b16] \\
+\staff "2" e,,8[ e'8 gs8] <b e>4. | %13
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/27638568/scores/5101361/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 Hensel, Fanny (Mendelssohn) – 6 Lieder, Op.1, No.6 – Gondellied，[OpenScore LiederCorpus](https://musescore.com/openscore-lieder-corpus) 提供

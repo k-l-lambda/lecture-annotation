@@ -31,7 +31,45 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26283736)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26283736 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26283736/embed" title="MuseScore" loading="lazy" style="height: 410px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp b'2 e2~ \\
+\stemDown g'1 | %1
+
+\stemUp e'4 d4 d2~ \\
+\stemDown f1 | %2
+
+\stemUp d'4 g,4 c2 \\
+\stemDown e1 | %3
+
+\stemUp c'4 b8[ a8] b2 \\
+\stemDown d1 | %4
+
+<c c'>1 | %5
+
+\stemUp b'2 e2~ \\
+\stemDown g'1 | %6
+
+\stemUp e'2 d2~ \\
+\stemDown f1 | %7
+
+\stemUp d'2 c2 \\
+\stemDown e1 | %8
+
+\stemUp c'2 b2 \\
+\stemDown d1 | %9
+
+<c c'>1 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26283736/embed" title="MuseScore" loading="lazy" style="height: 410px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 带有常见装饰的一串延留音。
@@ -49,7 +87,113 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488244)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8488244 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488244/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \defaultTimeSignature \time 2/2 \clef "treble" r2 a'2~ \\
+\staff "2" \clef "treble" d1 | %1
+
+\staff "1" a'4 d,4 e4 f4 \\
+\staff "2" f1 | %2
+
+\staff "1" g'4 f4 e4 g4 \\
+\staff "2" e1 | %3
+
+\staff "1" f4 d4 d'2~ \\
+\staff "2" d1 | %4
+
+\staff "1" d'4 c4 bf4 g4 \\
+\staff "2" g'1 | %5
+
+\staff "1" a'4 b4 c2~ \\
+\staff "2" f1 | %6
+
+\staff "1" c'2 f2~ \\
+\staff "2" a'1 | %7
+
+\staff "1" f'4 e8[ d8] e2~ \\
+\staff "2" g'1 | %8
+
+\staff "1" e'4 a,4 d2~ \\
+\staff "2" f1 | %9
+
+\staff "1" d'2 cs2 \\
+\staff "2" e1 | %10
+
+\staff "1" d'1 \\
+\staff "2" d1 | %11
+
+\staff "1" \clef "treble_8" d'1 \\
+\staff "2" \clef "treble_8" r2 d'2~ | %12
+
+\staff "1" f'1 \\
+\staff "2" d'2 a4 b4 | %13
+
+\staff "1" e'1 \\
+\staff "2" c'4 g4 c2~ | %14
+
+\staff "1" d'1 \\
+\staff "2" c'4 b8[ a8] b4 a4 | %15
+
+\staff "1" g''1 \\
+\staff "2" g'4 a4 b4 c4 | %16
+
+\staff "1" f'1 \\
+\staff "2" d'4 a4 d2~ | %17
+
+\staff "1" a''1 \\
+\staff "2" d'4 e4 f2~ | %18
+
+\staff "1" g''1 \\
+\staff "2" f'4 e8[ d8] e2~ | %19
+
+\staff "1" f'1 \\
+\staff "2" e'4 a,4 d2~ | %20
+
+\staff "1" e'1 \\
+\staff "2" d'2 cs2 | %21
+
+\staff "1" d'1 \\
+\staff "2" d'1 | %22
+
+\staff "1" \clef "treble" r2 e'2~ \\
+\staff "2" \clef "treble" e1 | %23
+
+\staff "1" e'4 d4 c4 b4 \\
+\staff "2" c1 | %24
+
+\staff "1" a'4 g4 f4 d4 \\
+\staff "2" d1 | %25
+
+\staff "1" e4 g4 c2~ \\
+\staff "2" c1 | %26
+
+\staff "1" c'4 b4 a4 g4 \\
+\staff "2" a1 | %27
+
+\staff "1" f2 c'2~ \\
+\staff "2" a'1 | %28
+
+\staff "1" c'4 b8[ a8] b4 a4 \\
+\staff "2" g'1 | %29
+
+\staff "1" g'4 e4 e'2~ \\
+\staff "2" e1 | %30
+
+\staff "1" e'2 d2 \\
+\staff "2" f1 | %31
+
+\staff "1" e'1 \\
+\staff "2" e1 | %32
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8488244/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 《帕纳索斯阶梯》中全部第五类对位练习。

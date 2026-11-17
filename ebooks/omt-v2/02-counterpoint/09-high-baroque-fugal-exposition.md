@@ -132,7 +132,61 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8534750)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8534750 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8534750/embed" title="MuseScore" loading="lazy" style="height: 950px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,"]
+
+\key ef \major \defaultTimeSignature \time 4/4 \clef "treble" R1 \\\
+\clef "treble" r8 c'16[ b16] c8[ g8] af8[ c16 b16] c8[ d8] \\\
+\clef "bass" R1 | %1
+
+R1 \\\
+g'8[ c16 b16] c8[ d8] f,16[ g16] af4 g16[ f16] \\\
+R1 | %2
+
+r8 g''16[ fs16] g8[ c,8] ef8[ g16 fs16] g8[ a8] \\\
+ef16[ c'16 b16 a16] g16[ f16 ef16 d16] c8[ ef'8 d8 c8] \\\
+R1 | %3
+
+d'8[ g16 fs16] g8[ a8] c,16[ d16] ef4 d16[ c16] \\\
+bf'8[ a8 bf8 c8] fs,8[ g8 a8 fs8] \\\
+R1 | %4
+
+bf'8[ ef16 d16] ef8[ g,8] af8[ f'16 ef16] f8[ a,8] \\\
+g'4 r16 c,16[ d16 ef16] f16[ g16 af8~] af16[ d,16 ef16 f16] \\\
+R1 | %5
+
+bf'8[ g'16 f16] g8[ b,8] c8[ d16 ef16] f4~ \\\
+g'16[ a16 bf8~] bf16[ ef,16 f16 g16] af16[ g16 f16 ef16] d8[ c'16 b16] \\\
+R1 | %6
+
+f'8[ ef16 d16] c16[ bf16 af16 g16] f8[ af'8 g8 f8] \\\
+c'4 r4 r8 f8 ef8[ d8] \\\
+r8 c16[ b16] c8[ g8] af8[ c16 b16] c8[ d8] | %7
+
+ef'8[ d8 ef8 f8] b,8[ c8 d8 b8] \\\
+r8 af'8 g8[ f8] g8[ f16 ef16] f8[ d8] \\\
+g8[ c16 b16] c8[ d8] f,16[ g16] af4 g16[ f16] | %8
+
+c'8[ g'16 fs16] g8[ d8] ef4 r8 e8 \\\
+g'4 r8 b8 c8[ c16 b16] c8[ g8] \\\
+ef,16[ c'16 b16 a16] g16[ f16 ef16 d16] c16[ d16 ef16 d16] c16[ bf16 af16 g16] | %9
+
+f'8[ f16 e16] f8[ c8] d4. d8 \\\
+af'4 r8 a8 bf8[ bf16 a16] bf8[ f8] \\\
+f,,16[ bf'16 af16 g16] f16[ ef16 d16 c16] bf16[ c16 d16 c16] bf16[ af16 g16 f16] | %10
+
+ef'4 s2 s4 \\\
+g'4 s2 s4 \\\
+ef,,4 s2 s4 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8534750/embed" title="MuseScore" loading="lazy" style="height: 950px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 约翰·塞巴斯蒂安·巴赫的 c 小调赋格（BWV 847）的呈示部。

@@ -55,7 +55,32 @@ modified: "2026-09-24"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8391225/s/-79eyZ)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8391225/s/-79eyZ -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 6/4 \clef "treble" \stemUp <d' g d'>1. \\
+\staff "1" \stemDown r4 <d g d'>4 <e a e'>4 <b' e b'>4 <d g d'>4 <e a e'>4~ \\
+\staff "2" \clef "bass" \stemUp r4 <d, g>4 <e a>4 <b' e>4 <d g>4 <e a>4~ \\
+\staff "2" \stemDown <g,, d' g>1. | %1
+
+\staff "1" \stemUp <fs' gs ds' gs>1.-- \\
+\staff "1" \stemDown r4 <ds, b' ds fs>4 <fs cs' ds gs>4 <ds' fs b ds>4 <fs, cs' ds gs>4 <ds b' ds fs>4 \\
+\staff "2" \stemUp <fs, gs b fs' gs>1.-- b4 \\
+\staff "2" \stemDown r8 b,,8 fs'8[ b,8 fs'8] b,8[ fs'8 fs'8] gs8[ fs8 b,8~] b8[ fs8 b,8] fs'8[ b,8 fs'8] | %2
+
+\staff "1" \stemUp <ef' bf' ef>1. \\
+\staff "1" \stemDown r4 <bf f' g bf>4 <c ef g c>4 <f g bf f'>4 <bf, f' g bf>4 <c ef g c>4 \\
+\staff "2" \stemUp <ef,,, ef>8.--[ ef'8 bf'8~] bf8[ bf8 ef8~] ef8[ ef8 bf'8] d16[ c16 bf8] bf,8[ ef,8~] ef8[ bf8 ef,8] \\
+\staff "2" \stemDown s2 s4 <ef, g>4-- r8 s4 s8 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8391225/s/-79eyZ/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 一个动机的移位，有序与无序。
@@ -91,7 +116,36 @@ $\begin{alignat*}{2} && [3, 6, 8] \\ {}- && [11, 2, 4] \\ \hline && 4\ 4\ 4\
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8391513)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8391513 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8391513/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 3/4 \clef "treble" \tempo "Largo" 4 = 40 e4-^ cs2-^ \\
+\staff "2" \clef "bass" R2. | %1
+
+\staff "1" \tempo "Allegro" 4 = 120 R2. \\
+\staff "2" \stemUp r8 <bf, d>8 <bf d>8[ <bf e>8] <b g'>4 \\
+\staff "2" \stemDown <df,, af'>2->~ <df af'>4 | %2
+
+\staff "1" \time 2/4 R2 \\
+\staff "2" <b, g'>8 <df, af'>8 <cs' e>4-> <a b>4.-> d8 | %3
+
+\staff "1" R2 \\
+\staff "2" <bf, e>8-> <df, af'>4.-> d'8 e8[ <b g'>8->~] <df, af'>8->~ | %4
+
+\staff "1" \time 3/4 \tempo "ad lib." r8 e8-^ cs4.-^ fs8-^ \\
+\staff "2" <b, g'>8 <d, a'>8 r8 r4 r4 | %5
+
+\staff "1" cs4-^ e2-^ \\
+\staff "2" R2. | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8391513/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. [2, 4, 7] 经倒影成为 [1, 4, 6]。

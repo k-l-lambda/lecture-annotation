@@ -26,7 +26,92 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224659)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224659 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224659/embed" title="MuseScore" loading="lazy" style="height: 833px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c g' e'>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <c fs e'>1 \\
+\staff "2" c,1 | %2
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" s1 \\
+\staff "2" s1 | %4
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %5
+
+\staff "1" <c g' ds'>1 \\
+\staff "2" c,1 | %6
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %7
+
+\staff "1" s1 \\
+\staff "2" s1 | %8
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %9
+
+\staff "1" <c a' e'>1 \\
+\staff "2" c,1 | %10
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %11
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %12
+
+\staff "1" <c fs ds'>1 \\
+\staff "2" c,1 | %13
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %14
+
+\staff "1" s1 \\
+\staff "2" s1 | %15
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %16
+
+\staff "1" <c a' ds>1 \\
+\staff "2" c,1 | %17
+
+\staff "1" <c g' e'>1 \\
+\staff "2" c,1 | %18
+
+\staff "1" s1 \\
+\staff "2" s1 | %19
+
+\staff "1" <c g' g e'>1 \\
+\staff "2" c,1 | %20
+
+\staff "1" <c fs a e'>1 \\
+\staff "2" c,1 | %21
+
+\staff "1" <c g' g e'>1 \\
+\staff "2" c,1 | %22
+
+\staff "1" <c g' g e'>1 \\
+\staff "2" c,1 | %23
+
+\staff "1" <c fs a ds>1 \\
+\staff "2" c,1 | %24
+
+\staff "1" <c g' g e'>1 \\
+\staff "2" c,1 | %25
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224659/embed" title="MuseScore" loading="lazy" style="height: 833px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 多个辅助音可以汇聚形成一个 CT<sup>o7</sup> 和弦。
@@ -63,7 +148,50 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224667)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224667 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224667/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <a' c f>1 \\
+\staff "2" \clef "bass" f,1 | %1
+
+\staff "1" <a' c ef>1 \\
+\staff "2" fs,1 | %2
+
+\staff "1" <g' b d>1 \\
+\staff "2" g1 | %3
+
+\staff "1" s1 \\
+\staff "2" s1 | %4
+
+\staff "1" <a' c f>1 \\
+\staff "2" f,1 | %5
+
+\staff "1" <a' c ef>1 \\
+\staff "2" fs,1 | %6
+
+\staff "1" <g' c e>2 <g b d>2 \\
+\staff "2" g1 | %7
+
+\staff "1" s1 \\
+\staff "2" s1 | %8
+
+\staff "1" <d b' d>1 \\
+\staff "2" g1 | %9
+
+\staff "1" <e as cs>1 \\
+\staff "2" g1 | %10
+
+\staff "1" <d b' d>1 \\
+\staff "2" g1 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224667/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. $\mathit{cad.^6_4}$ 可能产生一个与 CT<sup>o7</sup> 和弦无关的共同音。
@@ -75,7 +203,38 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224768)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224768 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224768/embed" title="MuseScore" loading="lazy" style="height: 519px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <f d' f>1 \\
+\staff "2" \clef "bass" bf,1 | %1
+
+\staff "1" <g' cs e>1 \\
+\staff "2" bf,1 | %2
+
+\staff "1" <f d' f>1 \\
+\staff "2" bf,1 | %3
+
+\staff "1" s1 \\
+\staff "2" s1 | %4
+
+\staff "1" <f d' f>1 \\
+\staff "2" bf,1 | %5
+
+\staff "1" <g' cs e>1 \\
+\staff "2" bf,1 | %6
+
+\staff "1" <af' d f>1 \\
+\staff "2" bf,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224768/embed" title="MuseScore" loading="lazy" style="height: 519px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 解决到 V 与解决到 V<sup>7</sup> 的完整辅助音 CT<sup>o7</sup> 之比较。
@@ -102,7 +261,32 @@ CT<sup>o7</sup> 的前后常常是同一个和弦，形成 *x*−CT<sup>o7</sup>
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224771)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224771 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224771/embed" title="MuseScore" loading="lazy" style="height: 541px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <g' c e>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <g' as e'>1 \\
+\staff "2" cs,1 | %2
+
+\staff "1" <g' b f'>1 \\
+\staff "2" d,1 | %3
+
+\staff "1" <a' c fs>1 \\
+\staff "2" ds,1 | %4
+
+\staff "1" <g' c g'>1 \\
+\staff "2" e,1 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224771/embed" title="MuseScore" loading="lazy" style="height: 541px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 由两个不同的、含不完全辅助音的 CT<sup>o7</sup> 和弦加以装饰的主和弦扩展模式。
@@ -122,7 +306,38 @@ CT<sup>o7</sup> 的前后常常是同一个和弦，形成 *x*−CT<sup>o7</sup>
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224775)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224775 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224775/embed" title="MuseScore" loading="lazy" style="height: 478px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <fs a a>1 \\
+\staff "2" \clef "bass" d,1 | %1
+
+\staff "1" <es gs b>1 \\
+\staff "2" d,1 | %2
+
+\staff "1" <fs a a>1 \\
+\staff "2" d,1 | %3
+
+\staff "1" s1 \\
+\staff "2" s1 | %4
+
+\staff "1" <fs a a>1 \\
+\staff "2" d,1 | %5
+
+\staff "1" <es gs bf>1 \\
+\staff "2" d,1 | %6
+
+\staff "1" <fs a a>1 \\
+\staff "2" d,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224775/embed" title="MuseScore" loading="lazy" style="height: 478px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. CT<sup>o7</sup> 与 CT<sup>+6</sup> 和弦的比较，两者均为完整辅助音。
@@ -147,7 +362,32 @@ Scott Joplin "The Sycamore"的引子展示了 CT<sup>o7</sup> 如何夹在 $\mat
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8395287)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8395287 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395287/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" \tempo "Tempo di Marcia." d'8.[ a16] d16[ e16 d8] \\
+\staff "2" \clef "bass" d8.[ a16] d16[ e16 d8] | %1
+
+\staff "1" g'8[ a16 b16~] b16[ d,16 g16 b16] \\
+\staff "2" g8[ a16 b16~] b16[ d,16 g16 b16] | %2
+
+\staff "1" <g' b d>4 <gs b d>8[ <gs b d>8] \\
+\staff "2" d16[ d,16 ds16 e16] es8[ es8] | %3
+
+\staff "1" <a' c d>4 <d fs a d>8 r8 \\
+\staff "2" fs,4 <d, d'>8->[ <d d'>8] | %4
+
+\staff "1" <g' b>16[ d'16 b16 g16~] g16[ d'16 b16 g16] \\
+\staff "2" <g, g'>8[ <d' g b>8] <b b'>8[ <d d'>8] | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8395287/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. Scott Joplin，["The Sycamore"](https://open.spotify.com/track/5872xvdold0kITo4BF3N19)，第 1–4 小节。在 $\mathit{cad.^6_4}$ 开始与其向 V<sup>7</sup> 的解决之间引入了一个 CT<sup>o7</sup>
@@ -157,7 +397,44 @@ Scott Joplin "The Sycamore"的引子展示了 CT<sup>o7</sup> 如何夹在 $\mat
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8395353)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8395353 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8395353/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key af \major \numericTimeSignature \time 6/8 \clef "treble" r8 f8-.[ g8-.] r8 af8-.[ bf8-.] \\
+\staff "2" \clef "bass" f,,16[ c'16 af'16 c,16 bf'16 c,16] f,16[ c'16 c'16 c,16 df'16 c,16] | %1
+
+\staff "1" r8 c'8-.[ df8-.] c8-.[ af'8-. g8-.] \\
+\staff "2" f,,16[ c'16 c'16 c,16 bf'16 c,16] f,16[ c'16 af'16 c,16 bf'16 c,16] | %2
+
+\staff "1" f'8-.[ c8-. df8-.] c8-.[ af8-. f8-.] \\
+\staff "2" f,,16[ c'16 af'16 c,16 bf'16 c,16] f,16[ c'16 af'16 c,16 c'16 c,16] | %3
+
+\staff "1" c2.-^ \\
+\staff "2" f,,16[ c'16 g'16 c,16 af'16 c,16] f,16[ c'16 bf'16 c,16 g'16 c,16] | %4
+
+\staff "1" r8 f8-.[ g8-.] r8 af8-.[ bf8-.] \\
+\staff "2" f,,16[ c'16 af'16 c,16 bf'16 c,16] f,16[ c'16 c'16 c,16 df'16 c,16] | %5
+
+\staff "1" r8 c'8-.[ df8-.] c8-.[ c'8-. af8-.] \\
+\staff "2" f,,16[ c'16 c'16 c,16 bf'16 c,16] f,16[ c'16 af'16 c,16 c'16 c,16] | %6
+
+\staff "1" g''8-.[ c,8-. df8-.] c8-.[ g8-. c,8-.] \\
+\staff "2" f,,16[ c'16 bf'16 c,16 g'16 c,16] f,16[ c'16 bf'16 c,16 g'16 c,16] | %7
+
+\staff "1" f16[ g16] af2-> r8 \\
+\staff "2" f,,16[ cf'16 af'16 cf,16 df'16 cf,16] f,16[ cf'16 af'16 cf,16 df'16 cf,16] | %8
+
+\staff "1" r8 f8-.[ g8-.] r8 af8-.[ bf8-.] \\
+\staff "2" f,,16[ c'16 af'16 c,16 bf'16 c,16] f,16[ c'16 c'16 c,16 df'16 c,16] | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8395353/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 肖邦（Frederic Chopin），[f 小调练习曲](https://open.spotify.com/track/2lIWd118llyZpo2obxHUaj) Op. 10 第 9 首，第 1–9 小节。第 8 小节在主持续音的语境中出现了一个 CT<sup>+6</sup>。

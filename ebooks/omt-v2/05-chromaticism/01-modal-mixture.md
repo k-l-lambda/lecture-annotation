@@ -24,7 +24,49 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223755)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223755 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223755/embed" title="MuseScore" loading="lazy" style="height: 461px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" c1 | %1
+
+d1 | %2
+
+e1 | %3
+
+f1 | %4
+
+g'1 | %5
+
+a'1 | %6
+
+b'1 | %7
+
+c'1 | %8
+
+c1 | %9
+
+d1 | %10
+
+ef1 | %11
+
+f1 | %12
+
+g'1 | %13
+
+af'1 | %14
+
+bf'1 | %15
+
+c'1 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223755/embed" title="MuseScore" loading="lazy" style="height: 461px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 同主音大调与小调音阶及其唱名的比较。
@@ -32,7 +74,49 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223743)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223743 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223743/embed" title="MuseScore" loading="lazy" style="height: 461px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" c1 | %1
+
+d1 | %2
+
+e1 | %3
+
+f1 | %4
+
+g'1 | %5
+
+a'1 | %6
+
+b'1 | %7
+
+c'1 | %8
+
+c1 | %9
+
+d1 | %10
+
+ef1 | %11
+
+f1 | %12
+
+g'1 | %13
+
+af'1 | %14
+
+bf'1 | %15
+
+c'1 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223743/embed" title="MuseScore" loading="lazy" style="height: 461px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 同主音大调与小调音阶及其音级的比较。
@@ -44,7 +128,49 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223761)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223761 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223761/embed" title="MuseScore" loading="lazy" style="height: 484px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c e g>1 | %1
+
+<d f a>1 | %2
+
+<e g b>1 | %3
+
+<f a c>1 | %4
+
+<g' b d>1 | %5
+
+<a' c e>1 | %6
+
+<b' d f>1 | %7
+
+<c' e g>1 | %8
+
+<c ef g>1 | %9
+
+<d f af>1 | %10
+
+<ef g bf>1 | %11
+
+<f af c>1 | %12
+
+<g' bf d>1 | %13
+
+<af' c ef>1 | %14
+
+<bf' d f>1 | %15
+
+<c' ef g>1 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223761/embed" title="MuseScore" loading="lazy" style="height: 484px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 同主音大调与小调和弦性质的比较。
@@ -52,7 +178,49 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223765)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223765 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223765/embed" title="MuseScore" loading="lazy" style="height: 488px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c e g>1 | %1
+
+<d f a>1 | %2
+
+<e g b>1 | %3
+
+<f a c>1 | %4
+
+<g' b d>1 | %5
+
+<a' c e>1 | %6
+
+<b' d f>1 | %7
+
+<c' e g>1 | %8
+
+<c ef g>1 | %9
+
+<d f af>1 | %10
+
+<ef g bf>1 | %11
+
+<f af c>1 | %12
+
+<g' bf d>1 | %13
+
+<af' c ef>1 | %14
+
+<bf' d f>1 | %15
+
+<c' ef g>1 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223765/embed" title="MuseScore" loading="lazy" style="height: 488px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 同主音大调与小调罗马数字的比较。
@@ -66,7 +234,33 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223773)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223773 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223773/embed" title="MuseScore" loading="lazy" style="height: 304px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "bass" <f, a d>1 | %1
+
+<f, af d>1 | %2
+
+<f, a c>1 | %3
+
+<f, af c>1 | %4
+
+<d, f a c>1 | %5
+
+<d, f af c>1 | %6
+
+<f, a c d>1 | %7
+
+<f, af c d>1 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223773/embed" title="MuseScore" loading="lazy" style="height: 304px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 常见的调式混合前属和弦：ii<sup>o6</sup>、ii<sup>∅7</sup> 与 iv。
@@ -78,7 +272,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223780)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223780 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223780/embed" title="MuseScore" loading="lazy" style="height: 364px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "bass" <a, c e>1 | %1
+
+<af, c ef>1 | %2
+
+\key a \major <cs, e gs>1 | %3
+
+<c, e g>1 | %4
+
+\key f \major <e, g bf>1 | %5
+
+<ef, g bf>1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223780/embed" title="MuseScore" loading="lazy" style="height: 364px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 涉及根音变化的调式混合可能性。
@@ -103,7 +319,25 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223782)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223782 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223782/embed" title="MuseScore" loading="lazy" style="height: 383px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "bass" <c, e g>1 | %1
+
+<c, ef g>1 | %2
+
+<g, b d>1 | %3
+
+<g, bf d>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223782/embed" title="MuseScore" loading="lazy" style="height: 383px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 主和弦与属和弦上的调式混合。
@@ -115,7 +349,44 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223786)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223786 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223786/embed" title="MuseScore" loading="lazy" style="height: 386px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <a' c f>1 \\
+\staff "2" \clef "bass" f,1 | %1
+
+\staff "1" <a' d f>1 \\
+\staff "2" d,1 | %2
+
+\staff "1" <bf' d g>1 \\
+\staff "2" bf,1 | %3
+
+\staff "1" <g' c e>1 \\
+\staff "2" c,1 | %4
+
+\staff "1" s1 \\
+\staff "2" s1 | %5
+
+\staff "1" <a' c f>1 \\
+\staff "2" f,1 | %6
+
+\staff "1" <af' df f>1 \\
+\staff "2" df,1 | %7
+
+\staff "1" <bf' df g>1 \\
+\staff "2" bf,1 | %8
+
+\staff "1" <g' c e>1 \\
+\staff "2" c,1 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223786/embed" title="MuseScore" loading="lazy" style="height: 386px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 自然音进行与前属区域采用调式混合的同一进行的比较。
@@ -127,7 +398,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223788)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223788 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223788/embed" title="MuseScore" loading="lazy" style="height: 428px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <d g bf>1 \\
+\staff "2" \clef "bass" g1 | %1
+
+\staff "1" <ef a c>1 \\
+\staff "2" c,1 | %2
+
+\staff "1" <d g bf>2 <c fs a>2 \\
+\staff "2" d,1 | %3
+
+\staff "1" <b g' g>1 \\
+\staff "2" g,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223788/embed" title="MuseScore" loading="lazy" style="height: 428px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 以皮卡第三度结束的和声进行。
@@ -139,7 +432,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6223789)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6223789 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6223789/embed" title="MuseScore" loading="lazy" style="height: 459px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <f bf d>2 <f a ef'>2 \\
+\staff "2" \clef "bass" bf,2 c2 | %1
+
+\staff "1" <f bf f'>1 \\
+\staff "2" d,1 | %2
+
+\staff "1" <gf' bf ef>1 \\
+\staff "2" ef,1 | %3
+
+\staff "1" <af' ef' gf>1 \\
+\staff "2" c,1 | %4
+
+\staff "1" <af' df f>1 \\
+\staff "2" df,1 | %5
+
+\staff "1" <gf' bf ef>1 \\
+\staff "2" gf,1 | %6
+
+\staff "1" <f af df>2 <gf af c>2 \\
+\staff "2" af,1 | %7
+
+\staff "1" <f af df>1 \\
+\staff "2" df,1 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6223789/embed" title="MuseScore" loading="lazy" style="height: 459px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 使用调式混合转调到远关系调的进行。
@@ -151,7 +478,37 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8403632)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8403632 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8403632/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key df \major \defaultTimeSignature \time 4/4 \clef "treble" df'2~ df8[ c8] bf8[ bff8] \\\
+\staff "1" \clef "treble" r8 <f, af>8[ <af df>8 <df f>8] <f af>4 r4 \\
+\staff "2" \clef "bass" <df,, df'>4 s4 r2 | %1
+
+af'2~ af8[ g8] gf8[ f8] \\\
+\staff "1" r8 <af df>8[ <df f>8 <f af>8] <af df>4 r4 \\
+\staff "2" <f,, f'>4 r4 r2 | %2
+
+f2~ f8[ ef8] d8[ ef8] \\\
+\staff "1" r8 <gf df'>8[ <df' ef>8 <ef gf>8] <gf df'>4 r4 \\
+\staff "2" <bff, bff'>4 r4 r2 | %3
+
+gf'2 c,4 r4 \\\
+\staff "1" r8 <gf c>8[ <c ef>8 <ef gf>8] <gf c>4 <c ef gf af>4 \\
+\staff "2" <af, af'>4 r4 r2 | %4
+
+df'2~ df8[ c8] bf8[ bff8] \\\
+\staff "1" r8 <f, af>8[ <af df>8 <df f>8] <f af>4 r4 \\
+\staff "2" <df,, df'>4 r4 r2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8403632/embed" title="MuseScore" loading="lazy" style="height: 500px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. Camille Saint-Saëns，《参孙与达丽拉》（*Samson et Dalila*）第二幕，"Mon cœur s'ouvre à ta voix"（[片段从 1:36 开始](https://open.spotify.com/track/17bfepQ21fUYIoSoDZlndA?si=jV-oBtm3TCSJbgoqDZPbnQ)）。注意 B𝄫 借自同主音小调，形成调式混合。
@@ -161,7 +518,93 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8403782)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8403782 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8403782/embed" title="MuseScore" loading="lazy" style="height: 1400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key e \major \numericTimeSignature \time 3/4 \clef "treble" b'4. b8-- b8--[ b8--] \\\
+\staff "1" \clef "treble" \stemUp b'2 b4 \\
+\staff "1" \stemDown a'4~ a8[ gs16 fs16] gs8[ fs8] \\
+\staff "2" \clef "bass" \stemUp r8 b8-. b4-. a4~ \\
+\staff "2" \stemDown b,2 b4 | %1
+
+b'4-- b8[ b8] b8[ b8] \\\
+\staff "1" \stemUp \grace { fs16 gs16 } b2. \\
+\staff "1" \stemDown gs'8[ e8] <gs, e'>8[ <b gs'>8 <e b'>8 <gs e'>8] \\
+\staff "2" \stemUp a8[ gs8] s2 \\
+\staff "2" \stemDown e,,2. | %2
+
+a'4-- a8[ gs16 fs16] gs8[ gs8] \\\
+\staff "1" \stemUp b'2 b4 \\
+\staff "1" \stemDown a'4~ a8[ gs16 fs16] gs8[ fs8] \\
+\staff "2" \stemUp r8 b8-. b4-. a4 \\
+\staff "2" \stemDown b,2 b4 | %3
+
+\grace { fs16 gs16 } fs8[ e8] e4~ e8 r8 \\\
+\staff "1" \stemUp \grace { fs16 gs16 } b2. \\
+\staff "1" \stemDown gs'8[ e8] <gs, e'>8[ <b gs'>8 <e b'>8 <gs e'>8] \\
+\staff "2" \stemUp a8[ gs8] s2 \\
+\staff "2" \stemDown e,,2. | %4
+
+e'4. e16[ e16] ds16-.[ cs16-. b16-. ds16-.] \\\
+\staff "1" \stemUp e'4. e8 ds16-.[ cs16-. b16 ds16-.] \\
+\staff "1" \stemDown r8 <e gs>8 <e gs>4 <e gs>4 \\
+\staff "2" \stemUp r8 gs8 gs2 \\
+\staff "2" \stemDown cs,2 b4 | %5
+
+e'4 e4 cs4-- \\\
+\staff "1" \stemUp e'4. e8 b16-.[ a16-. gs16 <b b>16-.~] \\
+\staff "1" \stemDown r8 <e a>8 <e a>4 gs16[ fs16 e16] s16 \\
+\staff "2" \stemUp r8 cs8 cs4 b4 \\
+\staff "2" \stemDown a,2 e'4 | %6
+
+b'4 r8 b16[ b16] b8[ b8] \\\
+\staff "1" \stemUp b'2 b4 \\
+\staff "1" \stemDown a'4~ a8[ gs16 fs16] gs8[ fs8] \\
+\staff "2" \stemUp r8 b8-. b4-. a4 \\
+\staff "2" \stemDown b,2 b4 | %7
+
+b'4 b8 r8 r8 e8 \\\
+\staff "1" \stemUp \grace { fs16 gs16 } b2. \\
+\staff "1" \stemDown gs'8[ e8] <gs, e'>8[ <b gs'>8 <e b'>8 <gs e'>8] \\
+\staff "2" \stemUp a8[ gs8] s2 \\
+\staff "2" \stemDown e,,2. | %8
+
+fs'4. fs8 fs8.[ fs16] \\\
+\staff "1" fs'4--~ fs16[ e16-. c16-. a16-.] fs16-. r16 fs'8 \\
+\staff "2" \stemUp r8 <c e>8 <c e>4~ <c e>16 r16 r8 \\
+\staff "2" \stemDown a,2. | %9
+
+g''4.-> g8 g8.[ e16] \\\
+\staff "1" g''4-- g16[ e16-. cs16-. as16-.] g16-. r16 g8 \\
+\staff "2" \stemUp r8 <cs e>8 <cs e>4~ <cs e>16 r16 r8 \\
+\staff "2" \stemDown as,2. | %10
+
+b'4 b8 r8 a8[ c8] \\\
+\staff "1" <g' b>4--~ <g b>8[ <fs a>16 <e g>16] <fs a>8[ <a c>8] \\
+\staff "2" \stemUp r8 b8-. b2-.~ \\
+\staff "2" \stemDown b,2.~ | %11
+
+b'8[ d8] d8\fermata r8 g,8[ e8] \\\
+\staff "1" <g' b>8-.[ <b d>8-.] \tuplet 5/4 { <b d>8--\fermata } \tuplet 5/4 { s32 } \tuplet 5/4 { <a c>16[ <g b>16 <fs a>16] } <e g>8[ <b e>8] \\
+\staff "2" <b, b'>8[ <b b'>8-.] <b b'>4--\fermata r8 g8 | %12
+
+e8[ fs16 g16] fs4.. e16 \\\
+\staff "1" \stemUp e16-.[ e16 fs16 g16] <a, ds fs>4..-- <gs e'>16 \\
+\staff "1" \stemDown c4 s2 \\
+\staff "2" a,4 \grace { b,8 } b'2 | %13
+
+e4~ e8 s4 s8 \\\
+\staff "1" <g e'>4~ <g e'>16 r16 s4 s8 \\
+\staff "2" e,,4~ e16 r16 s4 s8 | %14
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8403782/embed" title="MuseScore" loading="lazy" style="height: 1400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. Alfredo Catalani，*La Wally* 第一幕，"Ebben? Ne andrò lontana"（[片段从 0:50 开始](https://open.spotify.com/track/65630JSKawmLrXSK6DGRmm?si=GTqMOYo6RASoREXjYoZE4Q)）。较大规模的调式混合，从第 14 小节开始。

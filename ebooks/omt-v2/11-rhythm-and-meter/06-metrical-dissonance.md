@@ -30,7 +30,29 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11556457)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11556457 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11556457/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" c'4 c4 g'4 g4 \\
+\staff "2" \clef "bass" c,4 g4 c4 e4 | %1
+
+\staff "1" a''4 a4 g2 \\
+\staff "2" f,4 c4 e4 c4 | %2
+
+\staff "1" r8 c'4 c8~ c8 g'4 g8~ \\
+\staff "2" c,4 g4 c4 e4 | %3
+
+\staff "1" g''8 a4 a8 g2 \\
+\staff "2" f,4 c4 e4 c4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11556457/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 移位不协和的说明。
@@ -40,7 +62,38 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11518048)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11518048 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11518048/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 12/4 \clef "bass" <fs,,, fs'>2. <f f'>2. <a a'>4 <b b'>4 <c c'>4 <b b'>4 <a a'>4 <b b'>4 \\\
+s\breve s1 | %1
+
+\clef "treble" <a' c ds a'>4 <b b'>4 <c c'>4 \grace { <b b'>16 <c c'>16 } <b f' b>4 <a a'>4 <b b'>4 <c e c'>4 <b e b'>4 <a e' a>4 <f a ds f>2. \\\
+\clef "bass" <a c ds>4 b4 c4 \grace { b16 c16 } <f, b>4 a4 b4 <c, e c'>4 <b e b'>4 <a e' a>4 <f' a ds>2. | %2
+
+\time 3/4 r8 <a' c ds a'>4 <b b'>4 <c c'>8~ \\\
+\stemUp r8 <a c ds>4 b4 c8~ \\
+\stemDown <fs,,, fs'>2. | %3
+
+<c' c'>8 \grace { <b b'>16 <c c'>16 } <b f' b>4 <a a'>4 <b b'>8~ \\\
+\stemUp c8 \grace { b16 c16 } <f, b>4 a4 b8~ \\
+\stemDown <f,,, f'>2. | %4
+
+<b' b'>8 <c e c'>4 <b e b'>4 <a e' a>8~ \\\
+\stemUp b8 <c, e c'>4 <b e b'>4 <a e' a>8~ \\
+\stemDown <a,, a'>4 <b b'>4 <c c'>4 | %5
+
+<a' e' a>8 <f a d f>2~ <f a d f>8 \\\
+<b,, b'>4 <a' e' a>8 <f' a d>2 <a,, a'>4 <b b'>4 r8 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11518048/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. [玛丽·雅埃尔《即兴曲》（1869；4:43）](https://open.spotify.com/track/1y1gtsKiOI5WwWzWDPWEAx?si=683e841d53454b61)中的移位不协和（+1♪）。
@@ -50,7 +103,25 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11556466)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11556466 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11556466/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" \stemUp g''8[ g8 g8 g8] g8[ g8 g8 g8] \\
+\stemDown r8 c'4 r8 r8 c4 r8 \\\
+\clef "bass" c,8 r8 r4 c'4 r8 g,16[ a16] | %1
+
+\stemUp g''8[ g8 g8 g8] g8[ g8 g8 g8] \\
+\stemDown r8 c'4 r8 r8 c4 r8 \\\
+c,8 r8 r4 c'4 r8 g,16[ a16] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11556466/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. [比尔·威瑟斯「Lean on me」（2017；1:45）](https://open.spotify.com/track/3M8FzayQWtkvOhqMn2V4T2?si=ff01a693ebe24f80)中的移位不协和（−1♪）。方括号标出正文所讨论的位移。
@@ -62,7 +133,32 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11556445)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11556445 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11556445/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 3/4 \clef "percussion" a'2 a4~ \\\
+\clef "percussion" b'2. | %1
+
+a'4 a2 \\\
+b'2. | %2
+
+\time 2/4 a'4. a8~ \\\
+b'4 r4 | %3
+
+a'4 a4~ \\\
+b'4 r4 | %4
+
+a'8 a4. \\\
+b'4 r4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11556445/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 分组不协和的说明。
@@ -72,7 +168,65 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11517073)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11517073 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11517073/embed" title="MuseScore" loading="lazy" style="height: 560px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 3/2 \clef "treble" \stemUp a'2 d2 e2 \\
+\staff "1" \stemDown fs2 a2 cs2 \\
+\staff "2" \clef "bass" d,2 fs2 a2 | %1
+
+\staff "1" \stemUp fs'4 d2 e4 fs4 d4 \\
+\staff "1" \stemDown d'4 a2 cs4 d4 a4 \\
+\staff "2" d4 fs,2 a4 d4 fs,4 | %2
+
+\staff "1" \stemUp e'4 a2 e4 fs4 e8[ d8] \\
+\staff "1" \stemDown cs'4 e2 cs4 d4 a4 \\
+\staff "2" a4 cs2 a4 d4 fs,4 | %3
+
+\staff "1" \stemUp e'4 a2 e4 fs4 e8[ d8] \\
+\staff "1" \stemDown cs'4 e2 cs4 d4 a4 \\
+\staff "2" a4 cs2 a4 d4 fs,4 | %4
+
+\staff "1" \stemUp e'4 s2 a4 a4 a4 \\
+\staff "1" \stemDown cs'4 <a a>2 cs4 a4 cs4 \\
+\staff "2" a2 r4 a4 fs4 a4 | %5
+
+\staff "1" \stemUp a''4 g8[ fs8] g4 g4 g4 g4 \\
+\staff "1" \stemDown d'2 r4 b4 g4 b4 \\
+\staff "2" b2 r4 g4 e4 g4 | %6
+
+\staff "1" \stemUp g''4 fs8[ e8] fs4 <fs a>4 <fs a>4 <fs a>4 \\
+\staff "1" \stemDown cs'2 a2 a2 \\
+\staff "2" a2 r4 fs4 d4 fs4 | %7
+
+\staff "1" \stemUp <fs' a>4 <e g>8[ <d fs>8] g4 g4 g4 g4 \\
+\staff "1" \stemDown b'2 r4 <b e>4 <b e>4 <b e>4 \\
+\staff "2" g2 r4 e4 g4 e4 | %8
+
+\staff "1" \stemUp g''2. a4 fs4 e4 \\
+\staff "1" \stemDown <a' cs>2. <a cs>4 <a d>2 \\
+\staff "2" a2. a4 d2~ | %9
+
+\staff "1" \stemUp fs'4 g4 e2. d4 \\
+\staff "1" \stemDown <a' d>4 <b d>4 <e, d'>2 <a cs>2 \\
+\staff "2" d4 g,4 a2 a,2 | %10
+
+\staff "1" \stemUp <a' d>2 d2 e2 \\
+\staff "1" \stemDown d2 fs2 a2 \\
+\staff "2" d,1 r2 | %11
+
+\staff "1" \stemUp fs'4 d2 e4 fs4 d4 \\
+\staff "1" \stemDown d'4 fs,2 a4 d4 fs,4 \\
+\staff "2" R1. | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11517073/embed" title="MuseScore" loading="lazy" style="height: 560px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. [亨德尔《号角舞》（《水上音乐》第 2 组曲第二乐章；1733）](https://open.spotify.com/track/6Xq59xlhj1LzqfkU2BlPx3?si=de7ea945406e4c8a)中的赫米奥拉。第 9–10 小节表层节奏所暗示的 2 层（红色）与节拍的 3 层形成分组不协和。
@@ -86,7 +240,27 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11517730)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11517730 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11517730/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key gf \major \numericTimeSignature \time 4/4 \clef "bass" \stemUp bf8.[ bf8. <bf df>8. <bf df>8.] <bf ef>8 r8 \\
+\stemDown af,8.[ af8. bf8. bf8.] cf8.[ cf16~] \\\
+\clef "percussion" \stemUp r8 g''8 r8 g8 r8 g8 r8 g8 \\
+\stemDown f4 <f c'>4 f4 <f c'>4 | %1
+
+\stemUp r2 <bf ef>8.[ <af df>8. <af cf>8] \\
+\stemDown cf,8[ cf8. cf8.] cf8.[ cf8. df8] \\\
+\stemUp r8 g''8 r8 g8 r8 g8 r8 g8 \\
+\stemDown f4 <f c'>4 f4 <f c'>4 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11517730/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 合成器与贝斯中的 3 层与节拍和鼓点中的 4 层形成分组不协和，出自[卡尔文·哈里斯「I'm Not Alone」（2009；0:59）](https://open.spotify.com/track/07POri5O6Xu0aVZzlvOcpy?si=c2394022366c4ddf)。
@@ -104,7 +278,35 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11516206)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11516206 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11516206/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key ef \major \numericTimeSignature \time 3/2 \clef "treble" \tempo 2 = 40 ef'2 d2 c4 d4 \\\
+\clef "bass" ef,2 bf2 f2 | %1
+
+ef'2 d2 c4 d4 \\\
+bf,2 ef2 bf2 | %2
+
+ef'2 d2 c4 d4 \\\
+f,,2 bf2 ef2 | %3
+
+ef'2 d2 c4 df4 \\\
+bf,2 f2 bf2 | %4
+
+d'2 df2 c2 \\\
+ef,2 bf2 f2 | %5
+
+c'1. \\\
+bf,2 ef2 bf2 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11516206/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 固定音型中的 4 层与其他声部中的 3 层形成分组不协和，出自[斯特拉文斯基《诗篇交响曲》「阿利路亚，赞美主」（6:37）](https://open.spotify.com/track/07BFov9J9WqEdXsaxwLymq?si=08297d6b9a1e4f32)。
@@ -127,7 +329,74 @@ modified: "2025-10-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8897547)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8897547 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8897547/embed" title="MuseScore" loading="lazy" style="height: 1150px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \numericTimeSignature \time 3/4 \partial 8 \clef "treble" \tempo "Zart bewegt" <g' bf>8~ \\
+\staff "2" \clef "bass" r8 | %1
+
+\staff "1" <g' bf>8[ <ef g>8] <g bf>4 r8 <g bf>8~ \\
+\staff "2" ef,,4 g'4 bf,4 | %2
+
+\staff "1" <g' bf>8[ <ef g>8] <g bf>4 r8 <g bf>8~ \\
+\staff "2" ef,,4 g'4 bf,4 | %3
+
+\staff "1" <g' bf>8 <ef g>4 bf4 <g' bf>8~ \\
+\staff "2" ef,,4 g'4 bf,4 | %4
+
+\staff "1" <g' bf>8 <ef g>4 bf4 <g' bf>8~ \\
+\staff "2" ef,,4 g'4 bf,4 | %5
+
+\staff "1" <g' bf>8 <ef' g>4 <ef g>4 <ef g>8~ \\
+\staff "2" ef,,4 bf''4 bf,4 | %6
+
+\staff "1" <ef' g>8 <d af'>4 <af d>4 <g bf>8~ \\
+\staff "2" ef,,4 f'4 bf,4 | %7
+
+\staff "1" <g' bf>8 <f af>4 <bf, f'>4 <af' c>8~ \\
+\staff "2" ef,,4 f'4 bf,4 | %8
+
+\staff "1" <af' c>8 <f af>4 <bf, f'>4 <af' c>8~ \\
+\staff "2" ef,,4 f'4 bf,4 | %9
+
+\staff "1" <af' c>8 <f af>4 <af d>4 <af f'>8~ \\
+\staff "2" ef,,4 bf''4 bf,4 | %10
+
+\staff "1" <af' f'>8 <g ef'>4 <g bf>4 <ef df' ef>8~ \\
+\staff "2" ef,,4 bf''4 bf,4 | %11
+
+\staff "1" <ef d' ef>8[ <af c>8] <c ef>4. <af c>8 \\
+\staff "2" ef,,4 af'4 af,4 | %12
+
+\staff "1" <g' bf>8[ <ef g>8] <g bf>4. <ef g>8 \\
+\staff "2" ef,,4 g'4 bf,4 | %13
+
+\staff "1" <d f>8[ <bf d>8 <d f>8 <af c>8 <d f>8 <g, bf>8] \\
+\staff "2" ef,,4 f'4 bf,4 | %14
+
+\staff "1" <ef g>2 r8 <ef df' ef>8~ \\
+\staff "2" ef,,4 g'4 bf,4 | %15
+
+\staff "1" <ef d' ef>8[ <af c>8] <c ef>4. <af c>8 \\
+\staff "2" ef,,4 af'4 af,4 | %16
+
+\staff "1" <g' bf>8[ <ef g>8] <g bf>4. <ef g>8 \\
+\staff "2" ef,,4 g'4 bf,4 | %17
+
+\staff "1" <d f>8[ bf'8 <ef, g>8 c'8 <f, af>8 d'8] \\
+\staff "2" ef,,4 bf''4 bf,4 | %18
+
+\staff "1" <g' bf ef>2 r8 s8 \\
+\staff "2" ef,,4 <bf' ef g>4 r8 s8 | %19
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8897547/embed" title="MuseScore" loading="lazy" style="height: 1150px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. [勃拉姆斯「摇篮曲」（"Wiegenlied"，Op. 49，第 4 首）](https://open.spotify.com/track/6vS9gZwV3VAnboKW5mmiF1?si=8153871a0e51400e)中变化的节拍不协和。

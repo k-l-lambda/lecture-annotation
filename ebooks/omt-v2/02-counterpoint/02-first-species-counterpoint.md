@@ -34,7 +34,179 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8488049)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8488049 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8488049/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \defaultTimeSignature \time 2/2 \clef "treble" a'1 \\\
+\clef "treble" d1 | %1
+
+a'1 \\\
+f1 | %2
+
+g'1 \\\
+e1 | %3
+
+a'1 \\\
+d1 | %4
+
+b'1 \\\
+g'1 | %5
+
+c'1 \\\
+f1 | %6
+
+c'1 \\\
+a'1 | %7
+
+b'1 \\\
+g'1 | %8
+
+d'1 \\\
+f1 | %9
+
+cs'1 \\\
+e1 | %10
+
+d'1 \\\
+d1 | %11
+
+d1 \\\
+\clef "treble_8" d1 | %12
+
+f1 \\\
+d1 | %13
+
+e1 \\\
+a'1 | %14
+
+d1 \\\
+f1 | %15
+
+g'1 \\\
+e1 | %16
+
+f1 \\\
+d1 | %17
+
+a'1 \\\
+f1 | %18
+
+g'1 \\\
+c'1 | %19
+
+f1 \\\
+d'1 | %20
+
+e1 \\\
+cs'1 | %21
+
+d1 \\\
+d'1 | %22
+
+b'1 \\\
+\clef "treble" e1 | %23
+
+c'1 \\\
+c1 | %24
+
+f1 \\\
+d1 | %25
+
+g'1 \\\
+c1 | %26
+
+a'1 \\\
+a1 | %27
+
+c'1 \\\
+a'1 | %28
+
+b'1 \\\
+g'1 | %29
+
+e'1 \\\
+e1 | %30
+
+d'1 \\\
+f1 | %31
+
+e'1 \\\
+e1 | %32
+
+e1 \\\
+\clef "treble_8" e1 | %33
+
+c1 \\\
+a'1 | %34
+
+d1 \\\
+d1 | %35
+
+c1 \\\
+e1 | %36
+
+a1 \\\
+f1 | %37
+
+a'1 \\\
+f1 | %38
+
+g'1 \\\
+c'1 | %39
+
+e1 \\\
+c'1 | %40
+
+f1 \\\
+d'1 | %41
+
+e1 \\\
+e'1 | %42
+
+f1 \\\
+f1 | %43
+
+e1 \\\
+g'1 | %44
+
+c1 \\\
+a'1 | %45
+
+f1 \\\
+f1 | %46
+
+f1 \\\
+d1 | %47
+
+g'1 \\\
+e1 | %48
+
+a'1 \\\
+f1 | %49
+
+g'1 \\\
+c'1 | %50
+
+c1 \\\
+a'1 | %51
+
+f1 \\\
+f1 | %52
+
+e1 \\\
+g'1 | %53
+
+f1 \\\
+f1 | %54
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8488049/embed" title="MuseScore" loading="lazy" style="height: 900px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 《Gradus ad Parnassum》中的全部第一类对位练习。
@@ -63,7 +235,50 @@ modified: "2026-07-24"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8513480)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8513480 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8513480/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" e1 \\\
+\clef "bass" cs,1 | %1
+
+d1 \\\
+d,1 | %2
+
+s1 \\\
+s1 | %3
+
+e1 \\\
+cs1 | %4
+
+d1 \\\
+d1 | %5
+
+s1 \\\
+s1 | %6
+
+cs1 \\\
+e,1 | %7
+
+d1 \\\
+d,1 | %8
+
+s1 \\\
+s1 | %9
+
+cs'1 \\\
+e,1 | %10
+
+d'1 \\\
+d,1 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8513480/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 克劳苏拉·维拉的示例。

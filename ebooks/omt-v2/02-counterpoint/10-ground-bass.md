@@ -38,7 +38,97 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8559071)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8559071 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8559071/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,"]
+
+\key bf \major \numericTimeSignature \time 3/4 \clef "treble" d'4 ef4. ef8 \\\
+\clef "treble" R2. \\\
+\clef "bass" g2. | %1
+
+ef'4 d4 g4 \\\
+R2. \\\
+f,2. | %2
+
+g''16[ bf16 a16 g16] fs4. g8 \\\
+g'4 bf4. bf8 \\\
+ef,2. | %3
+
+fs'4. fs8 g4 \\\
+bf'4 a4 d4 \\\
+d,4. c8 bf4 | %4
+
+a''8[ g8] g4. fs8 \\\
+d'16[ ef16 d16 c16] bf4. a8 \\\
+c,4 d2 | %5
+
+g''4 bf4 g4 \\\
+bf'4 g4 r4 \\\
+g2. | %6
+
+a''4 d,4 r4 \\\
+d'4 f4 d4 \\\
+f,2. | %7
+
+g'4 bf4 g4 \\\
+g''4 g,4 r4 \\\
+ef,2. | %8
+
+d'4 a4 bf4 \\\
+d4 fs4 d4 \\\
+d,4. c8 bf4 | %9
+
+e8[ f8] fs4. g8 \\\
+a'4 d,4 d'4 \\\
+c,4 d2 | %10
+
+g'4 r4 d'4 \\\
+ef'4 a,4 bf4 \\\
+g2. | %11
+
+ef'4 a,4 bf4 \\\
+c'4 c,4 d'4 \\\
+f,2. | %12
+
+c'4 fs,4 g4 \\\
+d'8.[ ef16] c4. d8 \\\
+ef,2. | %13
+
+a'4 d4 g4 \\\
+fs2 bf4 \\\
+d,4. c8 bf4 | %14
+
+g''4 f8.[ ef16] d8.[ c16] \\\
+a'8[ g8] g4. fs8 \\\
+c,4 d2 | %15
+
+b'4 cs4. cs8 \\\
+g'4 a4. a8 \\\
+g2. | %16
+
+d'4. e8 f8[ d8] \\\
+a'4 a4 d4 \\\
+f,2. | %17
+
+g''4 fs4. g8 \\\
+d'4 bf8.[ bf16] a8.[ g16] \\\
+ef,2. | %18
+
+a''4 d,4 r4 \\\
+fs4. fs8 g4 \\\
+d,4. c8 bf4 | %19
+
+r4 d'8.[ e16] f4 \\\
+a'2 d,4 \\\
+c,4 d2 | %20
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8559071/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 ### **和声**

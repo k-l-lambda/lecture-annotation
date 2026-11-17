@@ -23,7 +23,27 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937554)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937554 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937554/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp b'4 c4 a4 b4 \\
+\staff "1" \stemDown g'4 g4 fs4 fs4 \\
+\staff "2" \clef "bass" \stemUp d4 e4 c4 d4 \\
+\staff "2" \stemDown g4 c,4 fs4 b,4 | %1
+
+\staff "1" \stemUp g'4 a4 fs4 g4 \\
+\staff "1" \stemDown e4 e4 d4 d4 \\
+\staff "2" \stemUp b4 c4 a4 b4 \\
+\staff "2" \stemDown e,4 a,4 d4 g,4 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937554/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 自然音下行五度序列。
@@ -41,7 +61,27 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937594)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937594 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937594/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp b'4 c4 as4 b4 \\
+\staff "1" \stemDown d,4 g'4 g4 fs4 fs4 \\
+\staff "2" \clef "bass" \stemUp s4 e4 e4 d4 \\
+\staff "2" \stemDown g4 c,4 fs4 b,4 | %1
+
+\staff "1" \stemUp gs'4 a4 fs4 g4 \\
+\staff "1" \stemDown e4 e4 d4 d4 \\
+\staff "2" \stemUp d4 c4 c4 b4 \\
+\staff "2" \stemDown e,4 a,4 d4 g,4 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937594/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 交替使用副属七和弦的自然音下行五度序列。
@@ -51,7 +91,33 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937629)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937629 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937629/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp b'4 bf4 a4 af4 \\
+\staff "1" \stemDown <f g>4 <e g>4 <ef f>4 <d f>4 \\
+\staff "2" \clef "bass" g4 c,4 f4 bf,4 | %1
+
+\staff "1" \stemUp g'4 gf4 f4 ff4 \\
+\staff "1" \stemDown <df ef>4 <c ef>4 <cf df>4 <bf df>4 \\
+\staff "2" ef,4 af,4 df4 gf,4 | %2
+
+\staff "1" \stemUp ds4 d4 cs4 c4 \\
+\staff "1" \stemDown <a b>4 s2 s4 \\
+\staff "2" \stemUp b,4 e,4 a4 d,4 \\
+\staff "2" \stemDown s4 <bs' d>4 <b c>4 <a c>4 | %3
+
+\staff "1" <g g b>1 \\
+\staff "2" g,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937629/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 以相互交叠的副属七和弦构成的半音下行五度序列。
@@ -61,7 +127,20 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937661)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937661 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937661/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 9/4 \clef "treble" <d f b>1 <c e c'>4 <c e bf'>1 \\
+\staff "2" \clef "bass" g1 c,4 c1 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937661/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 属七和弦的省略解决。
@@ -73,7 +152,30 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937751)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937751 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937751/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp f4 g4 g4 a4 \\
+\staff "1" \stemDown d4 d4 ef4 ef4 \\
+\staff "2" \clef "bass" \stemUp bf4 bf4 c4 c4 \\
+\staff "2" \stemDown bf,4 g4 c4 a4 | %1
+
+\staff "1" \stemUp a'4 bf4 bf4 a4 \\
+\staff "1" \stemDown f4 f4 g4 f4 \\
+\staff "2" \stemUp d4 d4 ef4 ef4 \\
+\staff "2" \stemDown d,4 bf4 ef4 f4 | %2
+
+\staff "1" <f bf>1 \\
+\staff "2" <bf, d'>1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937751/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 自然音上行 5–6 序列。
@@ -81,7 +183,30 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937755)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937755 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937755/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp f4 g4 g4 a4 \\
+\staff "1" \stemDown d4 f4 ef4 g4 \\
+\staff "2" \clef "bass" \stemUp bf4 b4 c4 cs4 \\
+\staff "2" \stemDown bf,4 g4 c4 a4 | %1
+
+\staff "1" \stemUp a'4 bf4 bf4 a4 \\
+\staff "1" \stemDown f4 af4 g4 f4 \\
+\staff "2" \stemUp d4 d4 ef4 ef4 \\
+\staff "2" \stemDown d,4 bf4 ef4 f4 | %2
+
+\staff "1" <f bf>1 \\
+\staff "2" <bf, d'>1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937755/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 半音化的自然音上行 5–6 序列，使用了副属和弦。
@@ -91,7 +216,30 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937772)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937772 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp f4 g4 g4 a4 \\
+\staff "1" \stemDown d4 f4 e4 g4 \\
+\staff "2" \clef "bass" \stemUp bf4 b4 c4 cs4 \\
+\staff "2" \stemDown bf,4 g4 c4 a4 | %1
+
+\staff "1" \stemUp a'4 b4 b4 b4 \\
+\staff "1" \stemDown fs4 a4 gs4 gs4 \\
+\staff "2" \stemUp d4 ds4 e4 d4 \\
+\staff "2" \stemDown d,4 b4 e4 e4 | %2
+
+\staff "1" <e a>1 \\
+\staff "2" <a, cs'>1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 以副属和弦构成的半音上行级进序列。
@@ -105,7 +253,28 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21507970)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/21507970 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21507970/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp fs'4 e4 d4 cs4 \\
+\staff "1" \stemDown <a' d>4 <a cs>4 <fs b>4 <fs a>4 \\
+\staff "2" \clef "bass" d4 a4 b4 fs4 | %1
+
+\staff "1" \stemUp b'4 a4 g4 g4 \\
+\staff "1" \stemDown <d g>4 <d fs>4 <b e>4 <cs e>4 \\
+\staff "2" g4 d4 e4 a4 | %2
+
+\staff "1" <a d fs>1 \\
+\staff "2" d,1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/21507970/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. [自然音下行三度序列。](https://musescore.com/user/32728834/scores/21507970/s/qIX9qG)
@@ -113,7 +282,28 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937785)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937785 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937785/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp fs'4 e4 e4 d4 \\
+\staff "1" \stemDown <a' d>4 <a cs>4 <g c>4 <g b>4 \\
+\staff "2" \clef "bass" d4 a4 c4 g4 | %1
+
+\staff "1" \stemUp d'4 c4 d4 d4 \\
+\staff "1" \stemDown <f bf>4 <f a>4 <fs c'>4 <f b>4 \\
+\staff "2" bf4 f4 af4 g4 | %2
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937785/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. [从 D 大调转调到 C 大调的半音下行 5–6 序列。](https://musescore.com/user/32728834/scores/5937785/s/K3tHIa)
@@ -121,7 +311,32 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5937812)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5937812 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5937812/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp fs'4 e4 e4 d4 \\
+\staff "1" \stemDown <a' d>4 a4 <g c>4 g4 \\
+\staff "2" \clef "bass" d4 cs4 c4 b4 | %1
+
+\staff "1" \stemUp d'4 c4 c4 bf4 \\
+\staff "1" \stemDown <f bf>4 f4 <ef af>4 ef4 \\
+\staff "2" bf4 a4 af4 g4 | %2
+
+\staff "1" \stemUp bf'4 af4 gs4 fs4 \\
+\staff "1" \stemDown <df gf>4 df4 <b e>4 b4 \\
+\staff "2" gf4 f4 e4 ds4 | %3
+
+\staff "1" <a d fs>1 \\
+\staff "2" d,1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5937812/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 每个弱拍都使用转位和弦的半音下行 5–6 序列。序列在每个强拍上勾勒出全音音阶。
@@ -131,7 +346,67 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20999587)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20999587 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20999587/embed" title="MuseScore" loading="lazy" style="height: 720px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key g \major \numericTimeSignature \time 3/4 \clef "treble" r4 r8. d'16-. b8.-.[ e16-.] \\\
+\clef "treble" b'2. \\\
+\clef "alto" <d, d'>2. \\\
+\clef "bass" g,2. | %1
+
+e'2 d8 r8 \\\
+a'2. \\\
+<d, d'>2. \\\
+fs,,2. | %2
+
+r4 r8. c'16-. a8.-.[ d16-.] \\\
+a'2. \\\
+<c, c'>2. \\\
+f,,2. | %3
+
+d'2 c8 r8 \\\
+g'2. \\\
+<c, c'>2. \\\
+e,,2. | %4
+
+r4 r8. bf'16-. a8.-.[ g16-.] \\\
+g'2. \\\
+bf2. \\\
+ef,,2. | %5
+
+d'4 e2 \\\
+g'4 g2 \\\
+b4 c2 \\\
+d,,4 c2 | %6
+
+d'4 a4 d4 \\\
+g'2 fs4 \\\
+a2. \\\
+d,,2. | %7
+
+d'4 e4. g8 \\\
+g'4 g2 \\\
+b4 c2 \\\
+d,,4 c2 | %8
+
+d'4 a4 d4 \\\
+g'2 fs4 \\\
+a2. \\\
+d,,2. | %9
+
+d'2. \\\
+b'2. \\\
+g32[ g'32 g32 g32 g32 g32 g32 g32] g2 \\\
+r4 r8. s4 s16 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20999587/embed" title="MuseScore" loading="lazy" style="height: 720px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 半音下行 5–6 序列。
@@ -143,7 +418,34 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20559166)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20559166 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20559166/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'4 f4 e2 \\
+\staff "1" \stemDown f,4 c''4 d,,4 c''4 e,,2 b''2 \\
+\staff "2" \clef "bass" a2 g2 | %1
+
+\staff "1" \stemUp d'2 c2 \\
+\staff "1" \stemDown a'2 g2 \\
+\staff "2" \stemUp d2 e2 \\
+\staff "2" \stemDown f,2 e2 | %2
+
+\staff "1" \stemUp b'2 a2 \\
+\staff "1" \stemDown f2 fs2 \\
+\staff "2" \stemUp b2 c2 \\
+\staff "2" \stemDown d,2 ds2 | %3
+
+\staff "1" <e gs>1 \\
+\staff "2" <e, b'>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20559166/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 自然音平行 6/3 序列。
@@ -153,7 +455,35 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20559307)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20559307 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20559307/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'4 f4~ f4 e4~ \\
+\staff "1" \stemDown f,4 c''4 d,,4 c''4 b2 \\
+\staff "2" \clef "bass" \stemUp s2 d4 e4 \\
+\staff "2" \stemDown a2 g2 | %1
+
+\staff "1" \stemUp e'4 d4~ d4 c4 \\
+\staff "1" \stemDown a'2 g2 \\
+\staff "2" \stemUp c4 d4 b4 c4 \\
+\staff "2" \stemDown f,2 e2 | %2
+
+\staff "1" \stemUp c'4 b4 a2 \\
+\staff "1" \stemDown f2 fs2 \\
+\staff "2" \stemUp a4 b4 c2 \\
+\staff "2" \stemDown d,2 ds2 | %3
+
+\staff "1" <e gs>1 \\
+\staff "2" <e, b'>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20559307/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 13. 带有 7–6 延留音链的自然音平行 6/3 序列。
@@ -163,7 +493,35 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20559394)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20559394 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20559394/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'4 f4~ f4 e4~ \\
+\staff "1" \stemDown f,4 c''4 d,,4 c''4 b4 b4 \\
+\staff "2" \clef "bass" \stemUp s2 d4 e4 \\
+\staff "2" \stemDown a2 gs4 g4 | %1
+
+\staff "1" \stemUp e'4 d4~ d4 c4 \\
+\staff "1" \stemDown a'4 a4 gs4 g4 \\
+\staff "2" \stemUp c4 d4 b4 c4 \\
+\staff "2" \stemDown fs,4 f4 es4 e4 | %2
+
+\staff "1" \stemUp c'4 b4 a2 \\
+\staff "1" \stemDown gf'4 f4 fs2 \\
+\staff "2" \stemUp a4 b4 c2 \\
+\staff "2" \stemDown ef,4 d4 ds2 | %3
+
+\staff "1" <e gs>1 \\
+\staff "2" <e, b'>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20559394/embed" title="MuseScore" loading="lazy" style="height: 300px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 14. 带有 7–6 延留音链的半音平行 6/3 序列。
@@ -173,7 +531,33 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20560195)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20560195 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20560195/embed" title="MuseScore" loading="lazy" style="height: 675px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key af \major \numericTimeSignature \time 4/4 \clef "treble" c'8[ b8 c8] <ff ff>8->[ bf,8 cf8] <ef ef>8->[ a,8 bf8] <eff eff>8->[ af,8 bff8] \\
+\staff "2" \clef "bass" <af af>8[ ef'8 c8] <af af>8[ ff'8 cf8] <g g>8[ ef'8 bf8] <gf gf>8[ eff'8 bff8] | %1
+
+\staff "1" <df' df>8->[ g,8 af8] <eff' eff>8->[ af,8 bff8] <df df>8->[ g,8 af8] <c c>8[ fs,8 g8] \\
+\staff "2" <f, f>8[ df'8 af8] <gf gf>8[ eff'8 bff8] <f f>8[ df'8 af8] <e e>8[ c'8 g8] | %2
+
+\staff "1" <b' b>8[ f8 fs8] <c' c>8[ fs,8 g8] <cf cf>8[ f,8 gf8] <bf bf>8[ e,8 f8] \\
+\staff "2" <ds, ds>8[ b'8 fs8] <e e>8[ c'8 g8] <ef ef>8[ cf'8 gf8] <d d>8[ bf'8 f8] | %3
+
+\staff "1" f8[ g8 af8] bf8[ c8 df8] c4 bf4 \\
+\staff "2" <df, df>8[ bf'8 f8] bf,8[ df'8 f,8] \tuplet 3/2 { ef8[ c'8 af8] } \tuplet 3/2 { ef8[ df'8 g,8] } | %4
+
+\staff "1" \stemUp ef'4 ff4 ef4 eff4 df4 cf4 cf4 bff4~ bff4 df4 cf4 bff4 \\
+\staff "1" \stemDown c'4 cf4 bf4 bff4 af4 g4 gf4 f4~ f4 af4 gf4 \\
+\staff "2" af4 af4 g4 gf4 f4 e4 ef4 d4 df4 bf4 ef2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20560195/embed" title="MuseScore" loading="lazy" style="height: 675px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 15. 完全半音化的平行 6/3 和弦序列。
@@ -185,7 +569,44 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20911636)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20911636 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20911636/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'2 ef2 \\
+\staff "1" \stemDown <bf' c>2 <a c>2 \\
+\staff "2" \clef "bass" g2 f2 | %1
+
+\staff "1" \stemUp d'2 df2 \\
+\staff "1" \stemDown <af' bf>2 <g bf>2 \\
+\staff "2" f,2 ef2 | %2
+
+\staff "1" \stemUp c'2 cf2 \\
+\staff "1" \stemDown <gf' af>2 <f af>2 \\
+\staff "2" ef,2 df2 | %3
+
+\staff "1" \stemUp as'2 a2 \\
+\staff "1" \stemDown <e fs>2 <ds fs>2 \\
+\staff "2" cs,2 b2 | %4
+
+\staff "1" \stemUp gs'2 g2 \\
+\staff "1" \stemDown <d e>2 <cs e>2 \\
+\staff "2" b,2 a2 | %5
+
+\staff "1" \stemUp fs2 f2 \\
+\staff "1" \stemDown <c d>2 <b d>2 \\
+\staff "2" a,2 g2 | %6
+
+\staff "1" <g c e>1 \\
+\staff "2" c,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20911636/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 16. 和弦在第二转位与原位之间交替的半音下行五度序列。
@@ -195,7 +616,44 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20911720)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20911720 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20911720/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'2 ef2 \\
+\staff "1" \stemDown <bf' df>2 <a c>2 \\
+\staff "2" \clef "bass" g2 gf2 | %1
+
+\staff "1" \stemUp d'2 df2 \\
+\staff "1" \stemDown <af' cf>2 <g bf>2 \\
+\staff "2" f,2 ff2 | %2
+
+\staff "1" \stemUp c'2 b2 \\
+\staff "1" \stemDown <gf' a>2 <es gs>2 \\
+\staff "2" ef,2 d2 | %3
+
+\staff "1" \stemUp as'2 a2 \\
+\staff "1" \stemDown <e g>2 <ds fs>2 \\
+\staff "2" cs,2 c2 | %4
+
+\staff "1" \stemUp gs'2 g2 \\
+\staff "1" \stemDown <d f>2 <cs e>2 \\
+\staff "2" b,2 bf2 | %5
+
+\staff "1" \stemUp fs2 f2 \\
+\staff "1" \stemDown <c ef>2 <b d>2 \\
+\staff "2" a,2 g2 | %6
+
+\staff "1" <g c e>1 \\
+\staff "2" c,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20911720/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 17. 用等价的减七和弦替换属七和弦的半音下行五度序列。
@@ -205,7 +663,40 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20914981)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20914981 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20914981/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key af \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp f4 e4 f4. c'8 \\
+\staff "1" \stemDown s2 c4 f4 \\
+\staff "2" \clef "bass" \stemUp c8[ af8 bf8 g8] af2 \\
+\staff "2" \stemDown c,2 f4 af4~ | %1
+
+\staff "1" \stemUp b'8 f4 e8~ e8 bf'4 a8~ \\
+\staff "1" \stemDown d2~ d4 df4~ \\
+\staff "2" af4 af4 g2 | %2
+
+\staff "1" \stemUp af'8 ef4 d8~ d8 af'4 g8~ \\
+\staff "1" \stemDown df4 c4~ c4 b4~ \\
+\staff "2" fs,2 f2 | %3
+
+\staff "1" \stemUp g'8 df4 c8~ c8 g'4 fs8~ \\
+\staff "1" \stemDown bf4 bf4~ bf4 a4~ \\
+\staff "2" \stemUp r2 c2 \\
+\staff "2" \stemDown e,2 ef2 | %4
+
+\staff "1" \stemUp f4 s2 s4 \\
+\staff "1" \stemDown af4 s2 s4 \\
+\staff "2" \stemUp d4 s2 s4 \\
+\staff "2" \stemDown d,4 s2 s4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20914981/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 18. 作为转调载体的减七和弦半音序列。
@@ -215,7 +706,44 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20917744)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20917744 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20917744/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'2 ef2 \\
+\staff "1" \stemDown <bf' c>2 <a cf>2 \\
+\staff "2" \clef "bass" gf2 f2 | %1
+
+\staff "1" \stemUp d'2 df2 \\
+\staff "1" \stemDown <af' bf>2 <g bff>2 \\
+\staff "2" ff,2 ef2 | %2
+
+\staff "1" \stemUp c'2 cf2 \\
+\staff "1" \stemDown <gf' af>2 <f aff>2 \\
+\staff "2" eff,2 df2 | %3
+
+\staff "1" \stemUp as'2 a2 \\
+\staff "1" \stemDown <e fs>2 <ds f>2 \\
+\staff "2" c,2 b2 | %4
+
+\staff "1" \stemUp gs'2 g2 \\
+\staff "1" \stemDown <d e>2 <cs ef>2 \\
+\staff "2" bf,2 a2 | %5
+
+\staff "1" \stemUp fs2 f2 \\
+\staff "1" \stemDown <c d>2 <b df>2 \\
+\staff "2" af,2 g2 | %6
+
+\staff "1" <g c e>1 \\
+\staff "2" c,,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20917744/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 19. 作为转调载体的减七和弦半音序列。
@@ -235,7 +763,44 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20919328)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20919328 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20919328/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'2 ef2 \\
+\staff "1" \stemDown <bf' c>2 <a c>2 \\
+\staff "2" \clef "bass" gf2 f2 | %1
+
+\staff "1" \stemUp d'2 df2 \\
+\staff "1" \stemDown <af' bf>2 <g bf>2 \\
+\staff "2" ff,2 ef2 | %2
+
+\staff "1" \stemUp c'2 cf2 \\
+\staff "1" \stemDown <gf' af>2 <f af>2 \\
+\staff "2" eff,2 df2 | %3
+
+\staff "1" \stemUp as'2 a2 \\
+\staff "1" \stemDown <e fs>2 <ds fs>2 \\
+\staff "2" c,2 b2 | %4
+
+\staff "1" \stemUp gs'2 g2 \\
+\staff "1" \stemDown <d e>2 <cs e>2 \\
+\staff "2" bf,2 a2 | %5
+
+\staff "1" \stemUp fs2 f2 \\
+\staff "1" \stemDown <c d>2 <b d>2 \\
+\staff "2" af,2 g2 | %6
+
+\staff "1" <g c e>1 \\
+\staff "2" c,,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20919328/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 21. 带降低五音的属七和弦序列，被等音重新解释为法国增六和弦接属七和弦的连续进行。
@@ -245,7 +810,44 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/21000682)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/21000682 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/21000682/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" \stemUp e'2 ef2 \\
+\staff "1" \stemDown <bf' df>2 <a c>2 \\
+\staff "2" \clef "bass" gf2 f2 | %1
+
+\staff "1" \stemUp d'2 df2 \\
+\staff "1" \stemDown <af' cf>2 <g bf>2 \\
+\staff "2" ff,2 ef2 | %2
+
+\staff "1" \stemUp c'2 cf2 \\
+\staff "1" \stemDown <gf' bff>2 <f af>2 \\
+\staff "2" eff,2 df2 | %3
+
+\staff "1" \stemUp as'2 a2 \\
+\staff "1" \stemDown <e g>2 <ds fs>2 \\
+\staff "2" c,2 b2 | %4
+
+\staff "1" \stemUp gs'2 g2 \\
+\staff "1" \stemDown <d f>2 <cs e>2 \\
+\staff "2" bf,2 a2 | %5
+
+\staff "1" \stemUp fs2 f2 \\
+\staff "1" \stemDown <c ef>2 <b d>2 \\
+\staff "2" af,2 g2 | %6
+
+\staff "1" <g c e>1 \\
+\staff "2" c,,1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/21000682/embed" title="MuseScore" loading="lazy" style="height: 260px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 22. 德国增六和弦接属七和弦的序列。
@@ -253,7 +855,74 @@ modified: "2024-10-31"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/20999047)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/20999047 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/20999047/embed" title="MuseScore" loading="lazy" style="height: 780px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key e \major \numericTimeSignature \time 3/4 \clef "treble" <bs' ds>8 r16 <as cs>16 <bs ds>4 <cs e>4 \\
+\staff "2" \clef "bass" <gs ds' fs>4 <gs ds' fs>4 <cs e>4 | %1
+
+\staff "1" <bs' ds>8.[ <as cs>16] <bs ds>4 <cs e>4 \\
+\staff "2" <gs ds'>4 <gs ds'>4 <cs e>4 | %2
+
+\staff "1" <bs' ds>8[ <as cs>8] <bs ds>4 <cs e>4 \\
+\staff "2" <gs ds'>4 <gs ds'>4 <cs e>4 | %3
+
+\staff "1" <bs' ds>8[ <as cs>8] <bs ds>4 <cs e>4 \\
+\staff "2" <gs ds'>4 <gs ds'>4 <fss cs' e>4 | %4
+
+\staff "1" <bs' ds>8[ <as cs>8] <bs ds>4 <cs e>4 \\
+\staff "2" <gs ds'>4 <gs ds'>4 <g cs e>4 | %5
+
+\staff "1" \grace { ds'8 } <as cs>8.[ <gss bs>16] <as cs>4 <a c>4 \\
+\staff "2" <fs, cs' e>4 <fs cs' e>4 <f c' ef>4 | %6
+
+\staff "1" \grace { cs'8 } <gs b>8.[ <fss as>16] <gs b>4 <g bf>4 \\
+\staff "2" <e, b' d>4 <e b' d>4 <ef bf' df>4 | %7
+
+\staff "1" \grace { b'8 } <fs a>8.[ <es gs>16] <fs a>4 <f af>4 \\
+\staff "2" <d, a' c>4 <d a' c>4 <df af' cf>4 | %8
+
+\staff "1" \grace { a'8 } <e g>8.[ <ds fs>16] <e g>4 <ds fs>4 \\
+\staff "2" <c, g' bf>4 <c g' bf>4 <b fs' a>4 | %9
+
+\staff "1" \stemUp fs2 e8[ ds8] \\
+\staff "1" \stemDown cs2.-> \\
+\staff "2" \stemUp fs,2. \\
+\staff "2" \stemDown a,8.[ gs16] a4 ds,4 | %10
+
+\staff "1" \stemUp fs8.[ fs16] ds4 cs'4 \\
+\staff "1" \stemDown cs2. \\
+\staff "2" \stemUp fs,2.-> \\
+\staff "2" \stemDown a,8.[ gs16] a4 ds,4 | %11
+
+\staff "1" \stemUp fs2 e8[ ds8] \\
+\staff "1" \stemDown cs2. \\
+\staff "2" \stemUp fs,2.-> \\
+\staff "2" \stemDown a,8.[ gs16] a4 ds,4 | %12
+
+\staff "1" \stemUp fs8.[ fs16] ds4 ds'4 \\
+\staff "1" \stemDown cs2 s4 \\
+\staff "2" \stemUp fs,2-> r4 \\
+\staff "2" \stemDown a,8.[ gs16] a4 s4 | %13
+
+\staff "1" cs'8[ a8] fs4 ds4 \\
+\staff "2" s2 s4 | %14
+
+\staff "1" s2 s4 \\
+\staff "2" cs8[ a8] fs4 cs4 | %15
+
+\staff "1" s2 s4 \\
+\staff "2" \stemUp e,2.\fermata \\
+\staff "2" \stemDown <cs,, gs'>2.\fermata | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/20999047/embed" title="MuseScore" loading="lazy" style="height: 780px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 23. 肖邦《升 c 小调玛祖卡》Op. 30 No. 4 第 124–139 小节中德国增六和弦接属七和弦的序列。

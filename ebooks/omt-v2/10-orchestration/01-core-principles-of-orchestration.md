@@ -144,7 +144,53 @@ s2 | %6
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11095075)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11095075 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11095075/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,,,,"]
+
+\key c \major \numericTimeSignature \time 3/4 \clef "treble" ef'4 r4 r4 \\\
+\clef "treble" r16 <g' bf>16-.[ <g bf>16-.] r16 r16 <g bf>16-.[ <g bf>16-.] r16 r16 <af cf>16-.[ <af cf>16-.] r16 \\\
+\clef "treble" <g' bf>4 r4 f'4 \\\
+\clef "bass" r8 r16 \clef "tenor" <bf df>16-.[ <cf ef>16-.] r16 r16 <cf ef>16-.[ <df f>16-.] r16 r16 <df f>16-. \\\
+\clef "treble" \stemUp r16 ef16[ g16 bf16] r8 g16[ bf16] r8 af16[ cf16] \\
+\stemDown r8. bf16 cf16[ ef16] r8 df16[ f16] r8 \\\
+\clef "bass" R2. \\\
+\clef "bass" R2. | %1
+
+R2. \\\
+r16 <bf' df>16-.[ <bf df>16-.] r16 r16 <cf ef>16-.[ <cf ef>16-.] r16 r16 <df ff>16-.[ <df ff>16-.] r16 \\\
+ef'4. r8 df4 \\\
+\clef "tenor" <ef g>16-. r16 r16 <ef g>16-.[ <f af>16-.] r16 r16 <f af>16-.[ <g bf>16-.] r16 r16 <g bf>16-. \\\
+\stemUp r8 bf'16[ df16] r8 cf16[ ef16] r8 df16[ ff16] \\
+\stemDown ef16[ g16] r8 f16[ af16] r8 g16[ bf16] r8 \\\
+r8 \clef "tenor" bf8[ df8 ef8] ff8[ ef8] \\\
+R2. | %2
+
+R2. \\\
+r16 <cf' ef>16-.[ <cf ef>16-.] r16 r16 <bf df>16-.[ <bf df>16-.] r16 r16 <af cf>16-.[ <af cf>16-.] r16 \\\
+ef'4. r8 f16[ g16 f8] \\\
+<f af>16-. r16 r16 <f af>16-.[ <ef g>16-.] r16 r16 <ef g>16-.[ <df f>16-.] r16 r16 <d f>16-. \\\
+\stemUp r8 c'16[ ef16] r8 bf16[ df16] r8 af16[ c16] \\
+\stemDown f16[ af16] r8 ef16[ g16] r8 d16[ f16] r8 \\\
+\clef "tenor" df8[ cf8] bf8[ df16-- cf16--] bf8--[ af8] \\\
+ef,4 r4 r4 | %3
+
+R2. \\\
+r16 <g' bf>16-.[ <g bf>16-.] r16 r16 <af cf>16-.[ <af cf>16-.] r16 r16 <af cf>16-.[ <af cf>16-.] r16 \\\
+g''8-- ef4. d8[ d8] \\\
+<cf ef>16-. r16 r16 <cf ef>16-.[ <d f>16-.] r16 r16 <d f>16-.[ <d f>16-.] r16 r16 <d f>16-. \\\
+\stemUp r8 f16[ bf16] r8 af16[ cf16] r8 af16[ cf16] \\
+\stemDown cf16[ ef16] r8 df16\trill[ ff16] r8 d16[ f16] r8 \\\
+g4 af4~ af8[ g16-- af16--] \\\
+r4 ef,4 r4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11095075/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 双簧管、大管与小提琴声部之间的交叠。
@@ -159,7 +205,62 @@ s2 | %6
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/11093566)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11093566 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/11093566/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,,,"]
+
+\key c \major \defaultTimeSignature \time 4/4 \clef "bass" R1 \\\
+\clef "treble" r4 r8 f''16[ f16] f8[ d16 d16] d8[ bf16 bf16] \\\
+\clef "treble" r8 d16[ d16] d4:16 d2:16 \\\
+\clef "alto" r8 bf16[ bf16] bf4:16 bf2:16 \\\
+\clef "bass" r8 f,16[ f16] f4:16 f2:16 \\\
+\clef "alto" af4 r4 r2 | %1
+
+R1 \\\
+bf''8[ f16 f16] f8[ d16 d16] d8[ bf8 f8 d8] \\\
+d2:16 d2:16 \\\
+bf2:16 bf2:16 \\\
+f,2:16 f2:16 \\\
+R1 | %2
+
+\stemUp bf4. a8 bf4. a8 \\
+\stemDown bf,4. a8 bf4. a8 \\\
+bf4 r4 r2 \\\
+f2:16 f2:16 \\\
+d2:16 d2:16 \\\
+bf4:16 bf16[ bf16 a16 a16] bf4:16 bf16[ bf16 a16 a16] \\\
+R1 | %3
+
+\stemUp bf8[ a8 bf8 a8] bf8[ a8 bf8 b8] \\
+\stemDown bf,8[ a8 bf8 a8] bf8[ a8 bf8 b8] \\\
+R1 \\\
+f2:16 f4:16 f16[ f16 g16 g16] \\\
+d2:16 d2:16 \\\
+bf16[ bf16 a16 a16] bf16[ bf16 a16 a16] bf16[ bf16 a16 a16] bf16[ bf16 b16 b16] \\\
+R1 | %4
+
+\stemUp c4 r4 s2 \\
+\stemDown c,4 s4 r2 \\\
+r4 r8 g'''16[ g16] g8[ ef16 ef16] ef8[ c16 c16] \\\
+ef2:16 ef2:16 \\\
+c2:16 c2:16 \\\
+g2:16 g2:16 \\\
+b,8 r8 r4 r2 | %5
+
+R1 \\\
+c''8[ g16 g16] g8[ ef16 ef16] ef8[ c8 g8 ef8] \\\
+ef2:16 ef2:16 \\\
+c2:16 c2:16 \\\
+g2:16 g2:16 \\\
+R1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/11093566/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [C 大调序曲——Fanny Hensel](https://musescore.com/user/32728834/scores/11093566/s/iqZf5q)，作者 [openmusictheory](https://musescore.com/user/32728834)

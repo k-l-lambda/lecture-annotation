@@ -68,7 +68,25 @@ e'4. d8 d2 \bar "|."
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6825960)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6825960 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6825960/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" g'4 a4 bf4 c4 | %1
+
+d'4 ef4 f4 g4 | %2
+
+f'4 ef4 d4 c4 | %3
+
+bf'4 a4 g2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6825960/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 一个 g 自然小调音阶。（实际发声音阶为 f 自然小调。）
@@ -92,7 +110,25 @@ e'4. d8 d2 \bar "|."
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6826003)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6826003 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6826003/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" g'4 a4 bf4 c4 | %1
+
+d'4 ef4 fs4 g4 | %2
+
+fs'4 ef4 d4 c4 | %3
+
+bf'4 a4 g2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6826003/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 一个 g 和声小调音阶。（实际发声音阶为 f 和声小调。）
@@ -104,7 +140,25 @@ e'4. d8 d2 \bar "|."
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8455586)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8455586 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8455586/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" g'4 a4 bf4 c4 | %1
+
+d'4 e4 fs4 g4 | %2
+
+f'4 ef4 d4 c4 | %3
+
+bf'4 a4 g2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8455586/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 一个 g 旋律小调音阶。（实际发声音阶为 f 旋律小调。）
@@ -114,7 +168,33 @@ e'4. d8 d2 \bar "|."
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8383329/s/WuOIXN)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8383329/s/WuOIXN -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8383329/s/WuOIXN/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" c4 d4 e4 f4 g4 a4 b4 c4 | %1
+
+c'4 b4 a4 g4 f4 e4 d4 c4 | %2
+
+\key ef \major c4 d4 ef4 f4 g4 af4 bf4 c4 | %3
+
+c'4 bf4 af4 g4 f4 ef4 d4 c4 | %4
+
+c4 d4 ef4 f4 g4 af4 b4 c4 | %5
+
+c'4 b4 af4 g4 f4 ef4 d4 c4 | %6
+
+c4 d4 ef4 f4 g4 a4 b4 c4 | %7
+
+c'4 bf4 af4 g4 f4 ef4 d4 c4 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8383329/s/WuOIXN/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 大调、自然小调、和声小调与旋律小调音阶，均从 C 音开始。
@@ -126,7 +206,29 @@ e'4. d8 d2 \bar "|."
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8383293)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8383293 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8383293/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" d4 e4 f4 g4 a4 bf4 c4 d4 | %1
+
+d'4 c4 bf4 a4 g4 f4 e4 d4 | %2
+
+d4 e4 f4 g4 a4 bf4 cs4 d4 | %3
+
+d'4 cs4 bf4 a4 g4 f4 e4 d4 | %4
+
+d4 e4 f4 g4 a4 b4 cs4 d4 | %5
+
+d'4 c4 bf4 a4 g4 f4 e4 d4 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8383293/embed" title="MuseScore" loading="lazy" style="height: 630px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 三种小调音阶的音阶级数与视唱唱名：a) 自然小调；b) 和声小调；c) 旋律小调。

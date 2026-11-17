@@ -39,7 +39,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/403299860346169)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/403299860346169 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/403299860346169/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" c4 d4 fs4 bf4 f4 ef4 gs4 a4 b4 g4 e4 cs4 \\
+\staff "2" \clef "bass" <c, d fs>4 <d fs bf>4 <f gf bf>4 <ef f bf>4 <ef f af>4 <ef gs a>4 <gs a b>4 <g a b>4 <e g b>4 <cs e g>4 <bs cs e>4 <bs cs d>4 | %1
+
+\staff "1" c4 d4 fs4 bf4 b4 a4 af4 ef4 f4 cs4 e4 g4 \\
+\staff "2" <c, d fs>4 <d fs bf>4 <fs as b>4 <a bf cf>4 <gs a b>4 <ds gs a>4 <ef f af>4 <df ef f>4 <cs e f>4 <cs e g>4 <c e g>4 <c d g>4 | %2
+
+\staff "1" c4 d4 fs4 bf4 g4 e4 b'4 a4 gs4 ef4 f4 cs4 \\
+\staff "2" <c, d fs>4 <d fs bf>4 <fs g bf>4 <e g bf>4 <e g b>4 <e a b>4 <gs a b>4 <ds gs a>4 <ef f af>4 <df ef f>4 <c df f>4 <bs cs d>4 | %3
+
+\staff "1" c4 d4 fs4 bf4 cs,4 e4 f4 ef4 gs4 a4 b4 g4 \\
+\staff "2" <c, d fs>4 <d fs bf>4 <df gf bf>4 <cs e bf'>4 <cs e f>4 <ds e f>4 <ef f af>4 <ds gs a>4 <gs a b>4 <g a b>4 <g b c>4 <g c d>4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/403299860346169/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [全三音组音列](https://musescore.com/user/30425053/scores/6793408/s/CovNzk)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
@@ -348,7 +370,57 @@ g,8^\markup "snap pizz."\!->\f r r4 r2 | %16
 🎼 [MuseScore 乐谱](https://musescore.com/user/8641586/scores/6803044)
 
 <!-- embed-begin: https://musescore.com/user/8641586/scores/6803044 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/8641586/scores/6803044/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" \tempo "I. Solo. Very slow and free." 4 = 72 fs''1~ \\\
+\clef "treble" d'1~ \\\
+\clef "alto" c,16--[ d16-- fs8--] r4 r4 r8 c'8-. \\\
+\clef "bass" c,1~ | %1
+
+f''1 \\\
+d'1 \\\
+r8 d8-. r8 fs8-. r4 r8 c,16[ d16] \\\
+c,1 | %2
+
+\time 5/8 R1 \\\
+R1 \\\
+fs,8--[ c'16 d16] fs8[ c,16-- d16 fs16 bf16] \\\
+R1 | %3
+
+\time 4/4 s1 \\\
+s1 \\\
+s1 \\\
+s1 | %4
+
+bf'1 \\\
+fs1 \\\
+d,4-- fs4-- bf4-- r4 \\\
+d1 | %5
+
+r4 bf'8 r8 bf4 r4 \\\
+r4 fs8 r8 fs4 r4 \\\
+r8 d8[ gf8 bf8] gf8[ bf,8 f'8] r8 \\\
+r4 d,8 r8 f4 r4 | %6
+
+\time 5/4 r4 bf'8 r8 af8 r8 r8 af4 r8 \\\
+r4 ef8 r8 ef8 r8 r8 ef4 r8 \\\
+r8 bf'8[ f8 ef8] f8[ ef8 af,8 ef'8 af,8 a8] \\\
+r4 f,8 r8 f8 r8 r8 a4 r8 | %7
+
+\time 4/4 s1 \\\
+s1 \\\
+s1 \\\
+s1 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/8641586/scores/6803044/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [4x4x4x4](https://musescore.com/user/8641586/scores/6803044/s/O60h3c)，作者 [Mark.Gotham](https://musescore.com/user/8641586)

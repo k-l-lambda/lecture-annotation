@@ -38,7 +38,257 @@ modified: "2025-07-15"
  🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350123)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/5350123 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350123/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" <e a>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <f b>1 \\
+\staff "2" d,1 | %2
+
+\staff "1" <g' c>1 \\
+\staff "2" e,1 | %3
+
+\staff "1" <a' d>1 \\
+\staff "2" f,1 | %4
+
+\staff "1" <b' e>1 \\
+\staff "2" g1 | %5
+
+\staff "1" <c' f>1 \\
+\staff "2" a1 | %6
+
+\staff "1" <d' g>1 \\
+\staff "2" b1 | %7
+
+\staff "1" <e' a>1 \\
+\staff "2" c1 | %8
+
+\staff "1" <e' a>1 \\
+\staff "2" c1 | %9
+
+\staff "1" <d' g>1 \\
+\staff "2" b1 | %10
+
+\staff "1" <c' f>1 \\
+\staff "2" a1 | %11
+
+\staff "1" <b' e>1 \\
+\staff "2" g1 | %12
+
+\staff "1" <a' d>1 \\
+\staff "2" f,1 | %13
+
+\staff "1" <g' c>1 \\
+\staff "2" e,1 | %14
+
+\staff "1" <f b>1 \\
+\staff "2" d,1 | %15
+
+\staff "1" <e a>1 \\
+\staff "2" c,1 | %16
+
+\staff "1" <e c'>1 \\
+\staff "2" c,1 | %17
+
+\staff "1" <f b>1 \\
+\staff "2" d,1 | %18
+
+\staff "1" <g' c>1 \\
+\staff "2" e,1 | %19
+
+\staff "1" <a' d>1 \\
+\staff "2" f,1 | %20
+
+\staff "1" <b' e>1 \\
+\staff "2" g1 | %21
+
+\staff "1" <c' f>1 \\
+\staff "2" a1 | %22
+
+\staff "1" <d' g>1 \\
+\staff "2" b1 | %23
+
+\staff "1" <e' g>1 \\
+\staff "2" c1 | %24
+
+\staff "1" <e' g>1 \\
+\staff "2" c1 | %25
+
+\staff "1" <d' g>1 \\
+\staff "2" b1 | %26
+
+\staff "1" <c' f>1 \\
+\staff "2" a1 | %27
+
+\staff "1" <b' e>1 \\
+\staff "2" g1 | %28
+
+\staff "1" <a' d>1 \\
+\staff "2" f,1 | %29
+
+\staff "1" <g' c>1 \\
+\staff "2" e,1 | %30
+
+\staff "1" <f b>1 \\
+\staff "2" d,1 | %31
+
+\staff "1" <e c'>1 \\
+\staff "2" c,1 | %32
+
+\staff "1" <e c'>1 \\
+\staff "2" c,1 | %33
+
+\staff "1" <f b>1 \\
+\staff "2" d,1 | %34
+
+\staff "1" <g' c>1 \\
+\staff "2" e,1 | %35
+
+\staff "1" <a' d>1 \\
+\staff "2" f,1 | %36
+
+\staff "1" <b' d>1 \\
+\staff "2" g1 | %37
+
+\staff "1" <c' f>1 \\
+\staff "2" a1 | %38
+
+\staff "1" <d' g>1 \\
+\staff "2" b1 | %39
+
+\staff "1" <e' g>1 \\
+\staff "2" c1 | %40
+
+\staff "1" <e' g>1 \\
+\staff "2" c1 | %41
+
+\staff "1" <d' g>1 \\
+\staff "2" b1 | %42
+
+\staff "1" <c' f>1 \\
+\staff "2" a1 | %43
+
+\staff "1" <b' d>1 \\
+\staff "2" g1 | %44
+
+\staff "1" <a' d>1 \\
+\staff "2" f,1 | %45
+
+\staff "1" <g' c>1 \\
+\staff "2" e,1 | %46
+
+\staff "1" <f b>1 \\
+\staff "2" d,1 | %47
+
+\staff "1" <e c'>1 \\
+\staff "2" c,1 | %48
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %49
+
+\staff "1" <f g b>1 \\
+\staff "2" d,1 | %50
+
+\staff "1" <e g c>1 \\
+\staff "2" e,1 | %51
+
+\staff "1" <d a' c>1 \\
+\staff "2" f,1 | %52
+
+\staff "1" <d g b>1 \\
+\staff "2" g1 | %53
+
+\staff "1" <f f c'>1 \\
+\staff "2" a1 | %54
+
+\staff "1" <f g d'>1 \\
+\staff "2" b1 | %55
+
+\staff "1" <e g c>1 \\
+\staff "2" c1 | %56
+
+\staff "1" <e g c>1 \\
+\staff "2" c1 | %57
+
+\staff "1" <d g d'>1 \\
+\staff "2" b1 | %58
+
+\staff "1" <d fs c'>1 \\
+\staff "2" a1 | %59
+
+\staff "1" <d g b>1 \\
+\staff "2" g1 | %60
+
+\staff "1" <d g b>1 \\
+\staff "2" f,1 | %61
+
+\staff "1" <e g c>1 \\
+\staff "2" e,1 | %62
+
+\staff "1" <f g b>1 \\
+\staff "2" d,1 | %63
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %64
+
+\staff "1" <c e a>1 \\
+\staff "2" a,1 | %65
+
+\staff "1" <d e gs>1 \\
+\staff "2" b,1 | %66
+
+\staff "1" <c e a>1 \\
+\staff "2" c,1 | %67
+
+\staff "1" <b f' a>1 \\
+\staff "2" d,1 | %68
+
+\staff "1" <b e gs>1 \\
+\staff "2" e,1 | %69
+
+\staff "1" <d d a'>1 \\
+\staff "2" fs,1 | %70
+
+\staff "1" <d e b'>1 \\
+\staff "2" gs1 | %71
+
+\staff "1" <c e a>1 \\
+\staff "2" a1 | %72
+
+\staff "1" <c e a>1 \\
+\staff "2" a1 | %73
+
+\staff "1" <b e b'>1 \\
+\staff "2" g1 | %74
+
+\staff "1" <b ds a'>1 \\
+\staff "2" f,1 | %75
+
+\staff "1" <b e gs>1 \\
+\staff "2" e,1 | %76
+
+\staff "1" <b e gs>1 \\
+\staff "2" d,1 | %77
+
+\staff "1" <c e a>1 \\
+\staff "2" c,1 | %78
+
+\staff "1" <d e gs>1 \\
+\staff "2" b,1 | %79
+
+\staff "1" <c e a>1 \\
+\staff "2" a,1 | %80
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/5350123/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [由 $^6_3$ 而得的八度规则](https://musescore.com/user/30425053/scores/5350123)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
@@ -66,7 +316,161 @@ modified: "2025-07-15"
  🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350126)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/5350126 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350126/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" c1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" b1 \\
+\staff "2" d,1 | %2
+
+\staff "1" c1 \\
+\staff "2" e,1 | %3
+
+\staff "1" c1 \\
+\staff "2" f,1 | %4
+
+\staff "1" b1 \\
+\staff "2" g1 | %5
+
+\staff "1" c1 \\
+\staff "2" a1 | %6
+
+\staff "1" d1 \\
+\staff "2" b1 | %7
+
+\staff "1" c1 \\
+\staff "2" c1 | %8
+
+\staff "1" e1 \\
+\staff "2" c,1 | %9
+
+\staff "1" f1 \\
+\staff "2" d,1 | %10
+
+\staff "1" e1 \\
+\staff "2" e,1 | %11
+
+\staff "1" d1 \\
+\staff "2" f,1 | %12
+
+\staff "1" d1 \\
+\staff "2" g1 | %13
+
+\staff "1" f1 \\
+\staff "2" a1 | %14
+
+\staff "1" f1 \\
+\staff "2" b1 | %15
+
+\staff "1" e1 \\
+\staff "2" c1 | %16
+
+\staff "1" g'1 \\
+\staff "2" c,1 | %17
+
+\staff "1" g'1 \\
+\staff "2" d,1 | %18
+
+\staff "1" g'1 \\
+\staff "2" e,1 | %19
+
+\staff "1" a'1 \\
+\staff "2" f,1 | %20
+
+\staff "1" g'1 \\
+\staff "2" g1 | %21
+
+\staff "1" f1 \\
+\staff "2" a1 | %22
+
+\staff "1" g'1 \\
+\staff "2" b1 | %23
+
+\staff "1" g'1 \\
+\staff "2" c1 | %24
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %25
+
+\staff "1" <f g b>1 \\
+\staff "2" d,1 | %26
+
+\staff "1" <e g c>1 \\
+\staff "2" e,1 | %27
+
+\staff "1" <d a' c>1 \\
+\staff "2" f,1 | %28
+
+\staff "1" <d g b>1 \\
+\staff "2" g1 | %29
+
+\staff "1" <f f c'>1 \\
+\staff "2" a1 | %30
+
+\staff "1" <f g d'>1 \\
+\staff "2" b1 | %31
+
+\staff "1" <e g c>1 \\
+\staff "2" c1 | %32
+
+\staff "1" <g' c e>1 \\
+\staff "2" c,1 | %33
+
+\staff "1" <g' b f'>1 \\
+\staff "2" d,1 | %34
+
+\staff "1" <g' c e>1 \\
+\staff "2" e,1 | %35
+
+\staff "1" <a' c d>1 \\
+\staff "2" f,1 | %36
+
+\staff "1" <g' b d>1 \\
+\staff "2" g1 | %37
+
+\staff "1" <f c' f>1 \\
+\staff "2" a1 | %38
+
+\staff "1" <g' d' f>1 \\
+\staff "2" b1 | %39
+
+\staff "1" <g' c e>1 \\
+\staff "2" c1 | %40
+
+\staff "1" <c' e g>1 \\
+\staff "2" c,1 | %41
+
+\staff "1" <b' f' g>1 \\
+\staff "2" d,1 | %42
+
+\staff "1" <c' e g>1 \\
+\staff "2" e,1 | %43
+
+\staff "1" <c' d a'>1 \\
+\staff "2" f,1 | %44
+
+\staff "1" <b' d g>1 \\
+\staff "2" g1 | %45
+
+\staff "1" <c' f f>1 \\
+\staff "2" a1 | %46
+
+\staff "1" <d' f g>1 \\
+\staff "2" b1 | %47
+
+\staff "1" <c' e g>1 \\
+\staff "2" c1 | %48
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/5350126/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [逐部分的八度规则](https://musescore.com/user/30425053/scores/5350126)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)
@@ -117,7 +521,125 @@ modified: "2025-07-15"
  🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/5350121)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/5350121 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/5350121/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "treble" <c e a>1 \\\
+\clef "bass" c,1 | %1
+
+<d f b>1 \\\
+d,1 | %2
+
+<e g c>1 \\\
+e,1 | %3
+
+<f a d>1 \\\
+f,1 | %4
+
+<g' b e>1 \\\
+g1 | %5
+
+<a' c f>1 \\\
+a1 | %6
+
+<b' d g>1 \\\
+b1 | %7
+
+<c' e a>1 \\\
+c1 | %8
+
+<c' e a>1 \\\
+c1 | %9
+
+<b' d g>1 \\\
+b1 | %10
+
+<a' c f>1 \\\
+a1 | %11
+
+<g' b e>1 \\\
+g1 | %12
+
+<f a d>1 \\\
+f,1 | %13
+
+<e g c>1 \\\
+e,1 | %14
+
+<d f b>1 \\\
+d,1 | %15
+
+<c e a>1 \\\
+c,1 | %16
+
+\stemUp g'4 a2 b4~ \\
+\stemDown e2 f2 \\\
+c,2 d2 | %17
+
+\stemUp b'4 c2 d4~ \\
+\stemDown g'2 a2 \\\
+e,2 f2 | %18
+
+\stemUp d'4 e2 f4~ \\
+\stemDown b'2 c2 \\\
+g2 a2 | %19
+
+\stemUp f'4 g4 g2 \\
+\stemDown d'2 e2 \\\
+b2 c2 | %20
+
+<e' g>2 <d g>2 \\\
+c2 b2 | %21
+
+<c' e>2 <b e>2 \\\
+a2 g2 | %22
+
+<a' c>2 <g c>2 \\\
+f,2 e2 | %23
+
+<f b>2 <e c'>2 \\\
+d,2 c2 | %24
+
+\stemUp r4 c'4. b8 d4~ \\
+\stemDown e2 f2 \\\
+c,2 d2 | %25
+
+\stemUp d'8[ c8] e4. d8 f4~ \\
+\stemDown g'2 a2 \\\
+e,2 f2 | %26
+
+\stemUp f'8[ e8] g4. f8 a4~ \\
+\stemDown b'2 c2 \\\
+g2 a2 | %27
+
+\stemUp a''4 g4 g2 \\
+\stemDown d'2 e2 \\\
+b2 c2 | %28
+
+\stemUp g''4 a2 g4~ \\
+\stemDown e'2 d2 \\\
+c2 b2 | %29
+
+\stemUp g''4 f2 e4~ \\
+\stemDown c'2 b2 \\\
+a2 g2 | %30
+
+\stemUp e'4 d2 c4~ \\
+\stemDown a'2 g2 \\\
+f,2 e2 | %31
+
+\stemUp c'4 b4 c2 \\
+\stemDown f2 e2 \\\
+d,2 c2 | %32
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/5350121/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 [音阶模进简编谱](https://musescore.com/user/30425053/scores/5350121)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)

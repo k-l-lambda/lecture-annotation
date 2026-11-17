@@ -95,7 +95,34 @@ B♭ 和弦在这一进行随后的重复中在小三和弦与大三和弦之间
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5873719)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5873719 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5873719/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key fs \major \numericTimeSignature \time 4/4 \clef "treble" fs8 r8 as8[ as8] as8[ gs8 gs8 fs8] | %1
+
+fs8 r8 as8[ as8] as8[ gs8 gs8 fs8] | %2
+
+\stemUp fs4 fs8 as8[ as8] \grace { fs8 } as8[ gs8 \grace { cs,8 as'8 } gs8 \grace { gs8 } fs8] \\
+\stemDown r8 s2 s4 s8 | %3
+
+gs'8 r8 as4 gs8 fs4 fs8~ | %4
+
+fs8 r8 r4 r8 fs8[ fs8 cs'8~] | %5
+
+cs'2. ds8[ as8~] | %6
+
+as'4 r4 r2 | %7
+
+r4 as'4 gs8 fs4 fs8 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5873719/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. [凯蒂·佩里《Last Friday Night》](https://open.spotify.com/track/455AfCsOhhLPRc68sE01D8?si=DfGI_bLQRrKyvYWbCRIrKA)的副歌。

@@ -76,7 +76,55 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/8414264)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8414264 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8414264/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key a \major \numericTimeSignature \time 3/4 \clef "treble" \tempo "Allegro con brio" <a cs a'>8 r16 <cs e>16 <cs e>8 r16 <cs e>16 <d fs>16-.[ <d gs>16-. <d a'>16-. <d b'>16-.] \\
+\staff "2" \clef "bass" <a,, e' a>8 r16 <a' e' a>16 <a e' a>8 r16 <a e' a>16 <a e' b'>16-.[ <a e' b'>16-. <a e' b'>16-. <a e' b'>16-.] | %1
+
+\staff "1" <cs cs'>8.[ <cs a'>16] <cs a'>8 s4 s8 \\
+\staff "2" \stemUp gs16[ a16 b16] a8-.[ e8-.] s4 s16 \\
+\staff "2" \stemDown <a, e' a>8.[ <a e' a>16] <a e' a>8 gs16[ a16 b16] a8-.[ e8-.] | %2
+
+\staff "1" <cs cs'>8 r16 <cs a'>16 <cs a'>8 r16 <cs gs'>16 <cs a'>16-.[ <cs a' b>16-. <cs a' cs>16-. <cs a' d>16-.] \\
+\staff "2" <a,, a'>8 r16 <a' e' a>16 <a e' a>8 r16 <a e' a>16 <a e' a>16-.[ <a e' a>16-. <a e' a>16-. <a e' a>16-.] | %3
+
+\staff "1" <ds a' fs'>8.[ <e a e'>16] <e a e'>8 s4 s8 \\
+\staff "2" \stemUp gs16[ a16 bs16] a8-.[ e8-.] s4 s16 \\
+\staff "2" \stemDown <a, ds fs bs>8.[ <e' a cs>16] <e a cs>8 gs,16[ a16 b16] a8-.[ e8-.] | %4
+
+\staff "1" <cs' es cs'>8-. \tuplet 3/2 { <gs cs gs'>16[ <gs cs gs'>16 <gs cs gs'>16] } <gs cs gs'>8[ <gs cs gs'>8] <as ds as'>16-.[ <bs bs'>16-. <cs gs' cs>16-. <ds ds'>16-.] \\
+\staff "2" <gs,, gs'>8-. <es'' gs cs es>16[ <es gs cs es>16 <es gs cs es>16] <es gs cs es>8[ <es gs cs es>8] <fs gs bs ds>8[ <gs,, gs'>8] | %5
+
+\staff "1" <es' cs' es>8.[ <cs cs'>16-.] <cs cs'>8-.[ <cs cs'>16-. <cs cs'>16-.] <cs cs'>16-.[ <cs cs'>16-. <cs cs'>16-. <cs cs'>16-.] \\
+\staff "2" cs,,8.[ <cs' cs'>16-.] <cs cs'>8-.[ <cs cs'>16-. <cs cs'>16-.] <cs cs'>16-.[ <cs cs'>16-. <cs cs'>16-. <cs cs'>16-.] | %6
+
+\staff "1" <cs' cs'>8[ <b fs' b>16. <b fs' b>32] <b fs' b>8[ <cs cs'>8] <e a e'>8[ <d d'>16 <cs cs'>16] \\
+\staff "2" \stemUp s2 e8[ d8] \\
+\staff "2" \stemDown <cs, cs'>8[ <d fs b>16. <d fs b>32] <d fs b>8[ <e gs cs>8] <fs a>4 | %7
+
+\staff "1" <b' b'>8-.[ <b e b'>16. <cs cs'>32] <b e b'>4 <a a'>8 r8 \\
+\staff "2" <e, gs d'>8-.[ <e gs d' e>8] <e gs d' e>4 <a cs e>8 r8 | %8
+
+\staff "1" <a' b ds fs b>8 r16 <a b ds fs>16 <a b ds fs>8 <gs e' gs>8-. s4 \\
+\staff "2" \stemUp <b,, b'>8[ <b' b'>16] as'16[ b16 cs16 b8] <e,, e'>8 s8 \\
+\staff "2" \stemDown r16 <b, b'>8 as16[ b16 cs16 b8] s4 | %9
+
+\staff "1" \tuplet 5/4 { <a' b ds fs b>8->-. } \tuplet 5/4 { s32 } \tuplet 5/4 { <a b ds fs>16-. } \tuplet 5/4 { s64 } \tuplet 5/4 { <a b ds fs>16-. } \tuplet 5/4 { s64 } \tuplet 5/4 { <a b ds fs>16-. } <a b ds fs>8-. \tuplet 5/4 { s4 } <gs ds' gs>8 \\
+\staff "2" \stemUp <b,, b'>8[ <b' b'>16 <b b'>16 <b b'>16] as'16[ b16 cs16 b8] <b,, b'>8 \\
+\staff "2" \stemDown <b, b'>8 s8 s16 as16[ b16 cs16 b8] s8 | %10
+
+\staff "1" <e gs cs e>8[ <e gs cs e>16-. <e gs cs e>16-.] <a cs a'>8[ <gs cs gs'>8 <fs cs' fs>8 <fs gs bs ds gs>8] \\
+\staff "2" <cs,, cs'>8[ <cs cs'>16-. <cs cs'>16-.] <fs, fs'>8[ <gs gs'>8 <a a'>8 <gs gs'>8] | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8414264/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 弗雷德里克·肖邦 A 大调波罗乃兹 Op. 40 第 1 首
@@ -84,7 +132,60 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26265205)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26265205 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26265205/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,,{-}"]
+
+\key g \major \defaultTimeSignature \time 4/4 \clef "treble" \tempo "Andante Larghetto" 8 = 84 b16.[ g'32 b,16. g'32] b,16.[ g'32 b,16. g'32] g,16.[ g'32 g,16. g'32] c,16.[ a'32 c,16. a'32] \\\
+\clef "treble" d4. g16[ d16] e8[ e8 fs8 fs8] \\\
+\clef "alto" d4. g16[ d16] e8[ e8 fs8 fs8] \\\
+\clef "bass" g8[ g8 g8 g8] c,8[ c8 a8 a8] \\\
+\staff "1" \clef "treble" <b d>4. <b g'>16[ d16] <c e>8[ <c e>8 <c fs>8 <c fs>8] \\
+\staff "2" \clef "bass" g,16.[ g'32 g,16. g'32] g,16.[ g'32 g,16. g'32] c,16.[ g'32 c,16. g'32] a,16.[ a'32 a,16. a'32] | %1
+
+d16.[ b'32 d,16. b'32] d,16.[ b'32 d,16. b'32] e,16.[ a32 e16. a32] fs16.[ c'32 c16. b32] \\\
+g'8[ g,8] g'4~ g8[ g8 fs8 fs8] \\\
+g'8[ g,8] g'4~ g8[ g8 fs8 fs8] \\\
+g,8[ g8 b8 b8] c8[ c8 d8 d8] \\\
+\staff "1" <b g'>8[ g8] g'4~ g8[ <e g>8] <d fs>16.[ c'32 <fs, c'>16. b32] \\
+\staff "2" g,16.[ d'32 g,16. d'32] b16.[ g'32 b,16. g'32] c,16.[ a'32 c,16. a'32] d,8[ d8] | %2
+
+b'16.[ d32 d16. g32] g8[ a,8~] a16[ c16 c16 e16] e16[ d16 d16 c16] \\\
+g'8[ b8 e,8 e8] fs8[ fs8 fs8 fs8] \\\
+d8[ g8 g8 g8] fs8[ a8 a8 a8] \\\
+g8[ g8 c,8 c8] d8[ d8 d8 d8] \\\
+\staff "1" \stemUp s2 a'16[ c16 c16 e16] e16[ d16 d16 c16] \\
+\staff "1" \stemDown <g' b>16.[ d'32 <b d>16. g'32] <e g>8[ <e, a>8] fs8[ a8 a8 a8] \\
+\staff "2" g8[ g8 <c, g'>8 <c g'>8] <d fs>8[ <d fs>8 <d fs>8 <d fs>8] | %3
+
+b'16.[ d32 d16. g32] g8[ a,8] a16[ c16 c16 e16] e16[ d16 d16 c16] \\\
+d8[ b'8 e,8 e8] a8[ a8] c16[ b16 b16 a16] \\\
+g'8[ g8 g8 g8] g8[ fs8 fs8 fs8] \\\
+g8[ g8 c,8 c8] d8[ d8 d8 d8] \\\
+\staff "1" <g' b>16.[ d'32 <b d>16. g'32] <e g>8[ <e, a>8] a16[ c16 <a c>16 e'16] <c e>16[ <b d>16 <b d>16 <a c>16] \\
+\staff "2" g8[ g8 <c, g'>8 <c g'>8] <d fs>8[ <d fs>8 <d fs>8 <d fs>8] | %4
+
+b'8[ a16 c16] b16[ d16 c16 e16] fs,16[ a16 g16 b16] a16[ c16 b16 d16] \\\
+g'8[ a16 c16] b16[ d16 c16 e16] fs,16[ a16 g16 b16] a16[ c16 b16 d16] \\\
+d8[ d8 d8 a'8] a,4 d8[ g8] \\\
+g8[ fs8 g8 a8] d,8[ e8 fs8 g8] \\\
+\staff "1" <g' b>8[ a16 c16] b16[ d16 c16 e16] fs,16[ a16 g16 b16] a16[ c16 b16 d16] \\
+\staff "2" g8[ <fs d'>8 <g d'>8 a8] <d, a'>8[ <e a>8 <fs d'>8 <g d'>8] | %5
+
+c'16[ e16 d16 fs16] e16[ g16 fs16 a16] d,8[ e32 fs32 g16] fs8.[ g16] \\\
+c'16[ e16 d16 fs16] e16[ g16 fs16 a16] d,8[ c16 b16] a8.[ c16] \\\
+fs8[ g8 g8 c8] g8[ c,8 a'8 d,8] \\\
+a8[ b8 c8 a8] b8[ c8 d8 d,8] \\\
+\staff "1" c'16[ e16 d16 fs16] e16[ g16 fs16 a16] d,8[ <c e>32 fs32 <b, g'>16] <a fs'>8.[ g'16] \\
+\staff "2" <a fs'>8[ <b g'>8 <c g'>8 <a c>8] <b g'>8[ c8 d8 d,8] | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26265205/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 乔治·弗里德里希·亨德尔《耶弗他》（*Jephtha*）中的"Waft Her Angels"

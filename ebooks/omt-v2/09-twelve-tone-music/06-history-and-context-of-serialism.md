@@ -36,7 +36,31 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/30425053/scores/184326268247666)
 
 <!-- embed-begin: https://musescore.com/user/30425053/scores/184326268247666 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/30425053/scores/184326268247666/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 12/4 \clef "treble" g4 bf4 d4 fs4 a4 c4 e4 gs4 b4 cs4 ef4 f4 | %1
+
+\time 20/4 <g bf d>1~ <d' fs a>1~ <a' c e>1~ <e' gs b>1 b'4 cs4 ef4 f4 | %2
+
+\time 12/4 a'4 bf4 e4 b4 fs4 d'4 f4 c4 g4 af4 df4 ef4 | %3
+
+<e a bf>4 <cf ff bf>4 <e fs b>4 <d fs b>4 <d f f>4 <c d f>4 <c f g>4 <c g' af>4 <df g af>4 <cs ds gs>4 <cs ds a'>4 <ef a bf>4 | %4
+
+a'4 d4 b4 e,4 cs'4 fs,4 gs4 ds'4 f4 bf,4 g'4 c,4 | %5
+
+<a' b d>4 <b d e>4 <b cs e>4 <cs e fs>4 <fs, gs cs>4 <ds fs gs>4 <ef f af>4 <ef f bf>4 <f g bf>4 <g bf c>4 <g a c>4 <a c d>4 | %6
+
+<a' b d e>1 <fs gs cs ds>1 <f g bf c>1 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/30425053/scores/184326268247666/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. [调性音列](https://musescore.com/user/30425053/scores/6667144/s/qzsint)，作者 [FourScoreAndMore](https://musescore.com/fourscoreandmore)

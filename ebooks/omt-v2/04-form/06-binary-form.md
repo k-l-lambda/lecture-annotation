@@ -65,7 +65,116 @@ modified: "2026-08-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23457877)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/23457877 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23457877/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,,,,"]
+
+\key bf \major \numericTimeSignature \time 3/4 \clef "treble" g'4 d4 g4 \\\
+\clef "treble" R2. \\\
+\clef "treble" c'4 g4 c4 \\\
+\clef "treble" g'4 d4 g4 \\\
+\clef "treble" g'4 d4 g4 \\\
+\clef "alto" g'4 d4 g4 \\\
+\clef "bass" g4-. d4-. g4-. | %1
+
+bf'2 c8[ a8] \\\
+<c' c>2 <d d>4 \\\
+r4 r4 f'8[ d8] \\\
+bf'2 c8[ a8] \\\
+bf'2 c8[ a8] \\\
+bf'2 c8[ a8] \\\
+bf2 c8[ a8] | %2
+
+g'4 fs4 g4 \\\
+R2. \\\
+c'4 r4 c4 \\\
+g'4 fs4 g4 \\\
+g'4 fs4 g4 \\\
+g'4 fs4 g4 \\\
+g4 fs4 g4 | %3
+
+a'8[ fs8] d4 r4 \\\
+R2. \\\
+d'4 g,4 r4 \\\
+a'8[ fs8] d4 r4 \\\
+a'8[ fs8] d4 r4 \\\
+a'8[ fs8] d4 r4 \\\
+a8[ fs8] d4 r4 | %4
+
+R2. \\\
+R2. \\\
+R2. \\\
+c'4 c4 c4 \\\
+g'4 g4 g4 \\\
+ef4 ef4 ef4 \\\
+R2. | %5
+
+R2. \\\
+R2. \\\
+R2. \\\
+b'4. c16[ d16] c4 \\\
+f2 g4 \\\
+d2 ef4 \\\
+R2. | %6
+
+R2. \\\
+R2. \\\
+R2. \\\
+ef'4 ef4 ef4 \\\
+g'4 g4 g4 \\\
+c4 c4 c4 \\\
+R2. | %7
+
+R2. \\\
+R2. \\\
+R2. \\\
+d'4. ef16[ f16] ef4 \\\
+g'2 g4 \\\
+b2 c4 \\\
+R2. | %8
+
+<d' g>4 <d g>4 <d g>4 \\\
+<c' e>4 <c e>4 <c e>4 \\\
+<c' c>4 <c c>4 <c c>4 \\\
+g''4 g4 g4 \\\
+d8[ d'8] d,8[ d'8] d,8[ d'8] \\\
+bf'4 bf4 bf4 \\\
+bf4 bf4 bf4 | %9
+
+<c' fs>4 <fs c'>4 <g bf>4-. \\\
+\stemUp f'4 e4 s4 \\
+\stemDown d'2 <c c>4 \\\
+<d' f>4 <g, d'>4 <c, c'>4 \\\
+fs'4 c'4 bf4-. \\\
+ef'8[ c8] a8[ fs8] g8[ g,8] \\\
+a'4 d,4 ef4 \\\
+a4 d,4 ef4 | %10
+
+\stemUp \grace { bf''16 } a4 g4 fs4 \\
+\stemDown ef'8[ c8] bf4 a4 \\\
+r4 <e c'>4 <e e>4 \\\
+r4 <g' c>4 <g, d''>4 \\\
+\grace { bf''16 } a4 g4 fs4 \\\
+ef8[ c8] bf8[ d8] c8[ a8] \\\
+c4 d4 d,4 \\\
+c,4 d4 d,4 | %11
+
+\stemUp g''2 r4 \\
+\stemDown g'2 s4 \\\
+<c e>2 r4 \\\
+<c ef>2 r4 \\\
+g''2 r4 \\\
+g2 r4 \\\
+g4 d'4 g4 \\\
+g,4 d'4 g4 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/23457877/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 莫扎特 g 小调第 25 交响曲第三乐章，小步舞曲。[下载本谱例的 PDF。](https://viva.pressbooks.pub/app/uploads/sites/12/2025/02/Mozart-Symphony-25-3rd.pdf)
@@ -75,7 +184,58 @@ modified: "2026-08-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23459752)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/23459752 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23459752/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key a \major \numericTimeSignature \time 3/4 \clef "treble" \tempo "Allegro con brio" <a cs a'>8 r16 <cs e>16 <cs e>8 r16 <cs e>16 <d fs>16-.[ <d gs>16-. <d a'>16-. <d b'>16-.] \\
+\staff "2" \clef "bass" <a,, a'>8 r16 <a' e' a>16 <a e' a>8 r16 <a e' a>16 <a e' b'>16-.[ <a e' b'>16-. <a e' b'>16-. <a e' b'>16-.] | %1
+
+\staff "1" <cs cs'>8.[ <cs a'>16] <cs a'>8-. s4 s8 \\
+\staff "2" \stemUp gs16[ a16 b16] a8-.[ e8-.] s4 s16 \\
+\staff "2" \stemDown <a, e' a>8.[ <a e' a>16] <a e' a>8 gs16[ a16 b16] a8-.[ e8-.] | %2
+
+\staff "1" <cs cs'>8 r16 <cs a'>16 <cs a'>8 r16 <cs gs'>16 <cs a'>16-.[ <cs a' b>16-. <cs a' cs>16-. <d a' d>16-.] \\
+\staff "2" <a,, a'>8 r16 <a' e' a>16 <a e' a>8 r16 <a e' a>16 <a e' b'>16-.[ <a e' b'>16-. <a e' b'>16-. <a e' b'>16-.] | %3
+
+\staff "1" <ds a' fs'>8.[ <e a e'>16] <e a e'>8 s4 s8 \\
+\staff "2" \stemUp gs16[ a16 b16] a8-.[ e8-.] s4 s16 \\
+\staff "2" \stemDown <a, ds fs bs>8.[ <e' a cs>16] <e a cs>8 gs,16[ a16 b16] a8-.[ e8-.] | %4
+
+\staff "1" <cs' es cs'>8-. \tuplet 3/2 { <gs cs gs'>16[ <gs cs gs'>16 <gs cs gs'>16] } <gs cs gs'>8[ <gs cs gs'>8] <as ds as'>16-.[ <bs bs'>16-. <cs gs' cs>16-. <ds ds'>16-.] \\
+\staff "2" <gs,, gs'>8 \tuplet 3/2 { <es'' gs cs es>16[ <es gs cs es>16 <es gs cs es>16] } <es gs cs es>8[ <es gs cs es>8] <fs gs bs ds>8[ <gs,, gs'>8] | %5
+
+\staff "1" <es' cs' es>8.-.[ <cs cs'>16-.] <cs cs'>8-.[ <cs cs'>16-. <cs cs'>16-.] <cs cs'>16-.[ <cs cs'>16-. <cs cs'>16-. <cs cs'>16-.] \\
+\staff "2" cs,,8.[ <cs' cs'>16-.] <cs cs'>8-.[ <cs cs'>16-. <cs cs'>16-.] <cs cs'>16-.[ <cs cs'>16-. <cs cs'>16-. <cs cs'>16-.] | %6
+
+\staff "1" <cs' cs'>8[ <b fs' b>16. <b fs' b>32] <d fs b>8[ <cs cs'>8] <e a e'>8[ <d d'>16 <cs cs'>16] \\
+\staff "2" \stemUp s2 e8[ d8] \\
+\staff "2" \stemDown <cs, cs'>8[ <d fs b>16. <d fs b>32] <d fs b>8[ <e gs cs>8] <fs a>4 | %7
+
+\staff "1" <b' b'>8[ <b e b'>16. <b cs'>32] <b e b'>4 <a a'>8 r8 \\
+\staff "2" <e, gs d'>8[ <e gs d' e>8] <e gs d' e>4 <a cs e>8 r8 | %8
+
+\staff "1" <a' b ds fs b>8 r16 <a b ds fs>16 <a b ds fs>8 <gs e' gs>8-. s4 \\
+\staff "2" \stemUp as16[ b16 cs16 b8] <e,, e'>8 s4 s16 \\
+\staff "2" \stemDown <b,, b'>8 r16 <b' b'>16 <b b'>8 as16[ b16 cs16 b8] s16 | %9
+
+\staff "1" <a' b ds fs b>8-. \tuplet 3/2 { <a b ds fs>16-.[ <a b ds fs>16-. <a b ds fs>16-.] } <a b ds fs>8 <gs ds' gs>8 s4 \\
+\staff "2" \stemUp <b,, b'>8 as''16[ b16 cs16 b8-.] <b,, b'>8 s8 s16 \\
+\staff "2" \stemDown <b, b'>16[ <b b'>16 <b b'>16] <b b'>8 as16[ b16 cs16 b8-.] s8 | %10
+
+\staff "1" <e gs cs e>8[ <e gs cs e>16-. <e gs cs e>16-.] <a cs a'>8[ <gs cs gs'>8 <fs cs' fs>8 <fs gs bs ds gs>8] \\
+\staff "2" <cs,, cs'>8[ <cs cs'>16 <cs cs'>16] <fs, fs'>8[ <gs gs'>8 <a a'>8 <gs gs'>8] | %11
+
+\staff "1" <e gs cs e>8[ <cs ds fss as cs ds>8] <bs ds gs bs>8 <ds ds'>16[ <ds ds'>16] <ds ds'>16[ <ds ds'>16 <ds ds'>16 <ds ds'>16] \\
+\staff "2" <cs,, cs'>8[ <ds ds'>8] <gs gs'>8 <ds ds'>16[ <ds ds'>16] <ds ds'>16[ <ds ds'>16 <ds ds'>16 <ds ds'>16] | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/23459752/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 肖邦 A 大调波罗乃兹 Op. 40 第 1 首第 1–24 小节。[下载本谱例的 PDF。](https://viva.pressbooks.pub/app/uploads/sites/12/2025/02/rounded-binary-chopin.pdf)
@@ -102,7 +262,111 @@ modified: "2026-08-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23459728)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/23459728 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23459728/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \defaultTimeSignature \time 2/2 \partial 4 \clef "treble" e8[ fs8] \\
+\staff "2" \clef "bass" g,8[ fs8] | %1
+
+\staff "1" g'4 fs8[ e8] ds4 e8[ fs8] \\
+\staff "2" e,,4 a4 b4 a4 | %2
+
+\staff "1" b4 cs8[ ds8] e4 s4 \\
+\staff "2" \stemUp g,4 fs4 e4 d''8[ c8] \\
+\staff "2" \stemDown s2 s4 fs,,4 | %3
+
+\staff "1" s1 \\
+\staff "2" \stemUp b4 a8[ g8] fs4 g8[ a8] \\
+\staff "2" \stemDown g,4 a4 b4 a4 | %4
+
+\staff "1" s2 s4 e8[ fs8] \\
+\staff "2" \stemUp b8[ a8 g8 fs8] e4 s4 \\
+\staff "2" \stemDown g,4 b4 e,8[ fs8 g8 fs8] | %5
+
+\staff "1" g'4 fs8[ e8] ds4 e8[ fs8] \\
+\staff "2" e,,4 a4 b4 a4 | %6
+
+\staff "1" b4 cs8[ ds8] e4 s4 \\
+\staff "2" \stemUp g,4 fs4 e4 d''8[ c8] \\
+\staff "2" \stemDown s2 s4 fs,,4 | %7
+
+\staff "1" s1 \\
+\staff "2" \stemUp b4 a8[ g8] fs4. g8 \\
+\staff "2" \stemDown g,4 c4 d4 d,4 | %8
+
+\staff "1" s1 \\
+\staff "2" \stemUp <b, d g>2. s4 \\
+\staff "2" \stemDown g,2 s2 | %9
+
+\staff "1" s1 \\
+\staff "2" \stemUp b8[ g8] s2 s4 \\
+\staff "2" \stemDown g,4 s2 s4 | %10
+
+\staff "1" s2 s4 g'8[ d8] \\
+\staff "2" \stemUp d4 a8[ c8] b4 s4 \\
+\staff "2" \stemDown fs,,4 d4 g4 b4 | %11
+
+\staff "1" e4 b8[ d8] c4 s4 \\
+\staff "2" \stemUp s2 s4 b8[ a8] \\
+\staff "2" \stemDown c,4 gs4 a4 d4 | %12
+
+\staff "1" s1 \\
+\staff "2" \stemUp gs4 a8[ b8] c4 b8[ a8] \\
+\staff "2" \stemDown e,4 a,4 e'4 e,4 | %13
+
+\staff "1" s1 \\
+\staff "2" \stemUp a2. d8[ a8] \\
+\staff "2" \stemDown a,8[ b8 a8 g8] fs4 d4 | %14
+
+\staff "1" g'8[ d8] e4 b8[ d8] s4 \\
+\staff "2" \stemUp b4 gs,4 s2 \\
+\staff "2" \stemDown g,4 b4 c4 s4 | %15
+
+\staff "1" c4 a'8[ e8] fs4 cs8[ e8] \\
+\staff "2" a,4 cs4 d4 as4 | %16
+
+\staff "1" d4 cs8[ b8] as4. b8 \\
+\staff "2" b,4 e4 fs4 fs,4 | %17
+
+\staff "1" b2. b'8[ fs8] \\
+\staff "2" b,8[ as8 b8 cs8] ds4 b4 | %18
+
+\staff "1" gs'4 fs8[ e8] a4 e8[ g8] \\
+\staff "2" e,4 d4 cs4 a4 | %19
+
+\staff "1" fs4 e8[ d8] g4 d8[ f8] \\
+\staff "2" d,4 c4 b4 g4 | %20
+
+\staff "1" e4 a8[ e8] fs4 cs8[ e8] \\
+\staff "2" c,4 b4 a4 fs4 | %21
+
+\staff "1" ds4 b2 e8[ b8] \\
+\staff "2" b,4. c8 b8[ a8] gs4 | %22
+
+\staff "1" c4 d8[ fs,,8] s2 \\
+\staff "2" \stemUp s2 b4 c8[ g8] \\
+\staff "2" \stemDown a,8[ e'8] fs4 g,8[ ds'8] e4 | %23
+
+\staff "1" s1 \\
+\staff "2" \stemUp a4 b8[ fs8] g4 fs8[ e8] \\
+\staff "2" \stemDown fs,,8[ cs'8] ds4 e,4 a4 | %24
+
+\staff "1" s1 \\
+\staff "2" \stemUp ds,4 e8[ fs8] g4 fs8[ e8] \\
+\staff "2" \stemDown b,4 a4 b2 | %25
+
+\staff "1" s1 \\
+\staff "2" \stemUp e,2. s4 \\
+\staff "2" \stemDown e,,2. s4 | %26
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/23459728/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. J. S. 巴赫 e 小调鲁特琴组曲 BWV 996 中的布列舞曲。[下载本谱例的 PDF](https://viva.pressbooks.pub/app/uploads/sites/12/2025/02/simple-binary-bach.pdf)。
@@ -132,7 +396,107 @@ modified: "2026-08-07"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23457517)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/23457517 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23457517/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key a \major \defaultTimeSignature \time 2/2 \clef "treble" \tempo "Allegro" e'2 e2 \\
+\staff "2" \clef "bass" R1 | %1
+
+\staff "1" e'2. a8[ e8] \\
+\staff "2" a2 cs2 | %2
+
+\staff "1" \grace { gs''16 } fs4 e8[ d8] cs4 b4 \\
+\staff "2" d2 e2 | %3
+
+\staff "1" cs'8[ d8] e4 r4 a8[ cs,8] \\
+\staff "2" a2 a,2 | %4
+
+\staff "1" \grace { e'16 } d4 cs8[ b8] a4 gs4 \\
+\staff "2" d,2 e2 | %5
+
+\staff "1" a'4 e4 r4 cs'8[ e8] \\
+\staff "2" a,2 a'2 | %6
+
+\staff "1" d'4 b4 e,4 d'4 \\
+\staff "2" a2 gs2 | %7
+
+\staff "1" d'4 cs4 r4 cs8[ e8] \\
+\staff "2" a2 a2 | %8
+
+\staff "1" d'4 b'2 d,4 \\
+\staff "2" a2 gs2 | %9
+
+\staff "1" d'4 cs4 r4 a'8[ cs,8] \\
+\staff "2" a2 cs,2 | %10
+
+\staff "1" b'4 fs'2 a,4 \\
+\staff "2" d,2 ds2 | %11
+
+\staff "1" a'4 gs4 r4 e'8[ b8] \\
+\staff "2" e,2 e2 | %12
+
+\staff "1" b'4 fs'2 a,4 \\
+\staff "2" ds,2 ds2 | %13
+
+\staff "1" a'4 gs4 r4 e'8[ b8] \\
+\staff "2" e,2 e'2 | %14
+
+\staff "1" b'4 b4 b4 e8[ gs,8] \\
+\staff "2" d2 d2 | %15
+
+\staff "1" gs'4 a4 r4 e'8[ a,8] \\
+\staff "2" cs2 cs2 | %16
+
+\staff "1" a'4 b4 r4 e8[ b8] \\
+\staff "2" gs2 gs2 | %17
+
+\staff "1" b'4 cs4 r4 a'8[ cs,8] \\
+\staff "2" a2 a2 | %18
+
+\staff "1" ds'4 b'8[ ds,8] ds4 b'8[ ds,8] \\
+\staff "2" a2 a2 | %19
+
+\staff "1" e'4 b'8[ e,8] fs4 b8[ fs8] \\
+\staff "2" gs2 ds2 | %20
+
+\staff "1" gs''4 a8[ b8] a8[ gs8 fs8 e8] \\
+\staff "2" e,2 a2 | %21
+
+\staff "1" ds'4 b4 r4 b'8[ g8] \\
+\staff "2" b2 r2 | %22
+
+\staff "1" g''4 g4 g4 g4 \\
+\staff "2" e2 d2 | %23
+
+\staff "1" \grace { a''16 } g8[ fs8] e4 r4 b'8[ e,8] \\
+\staff "2" c2 c2 | %24
+
+\staff "1" e'4 e4 e4 e4 \\
+\staff "2" g2 g2 | %25
+
+\staff "1" e'8[ d8] c4 c'2~ \\
+\staff "2" a2 a2 | %26
+
+\staff "1" cs''4 b8[ a8] g8[ fs8 e8 ds8] \\
+\staff "2" b2 b,2 | %27
+
+\staff "1" e'2 r4 b8[ g8] \\
+\staff "2" e,2 e2 | %28
+
+\staff "1" g'4 g4 g4 g4 \\
+\staff "2" e2 d2 | %29
+
+\staff "1" gs'4 a2 e'8[ c8] \\
+\staff "2" c2 c2 | %30
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/23457517/embed" title="MuseScore" loading="lazy" style="height: 1000px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 多梅尼科·斯卡拉蒂 A 大调奏鸣曲 K. 322。[点击下载 PDF 乐谱。](https://viva.pressbooks.pub/app/uploads/sites/12/2019/06/balanced-binary-example.pdf)

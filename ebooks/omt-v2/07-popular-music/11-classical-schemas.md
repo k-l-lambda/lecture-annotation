@@ -27,7 +27,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5826636)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5826636 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5826636/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key f \major \numericTimeSignature \time 4/4 \clef "treble_8" a'8[ d,8 g8 f8] g4 f4 \\\
+\clef "treble_8" <d a' d f a>4 <d a' d f>8-^-. <d a' d f a>4~ <d a' d f a>8[ <c g' c e>8-^-. <c g' c e>8~] | %1
+
+f8[ d8 f8 d8] f4 d8[ e8~] \\\
+<c g' c e>8[ <c g' c e>8 <bf f' bf d>8-^-. <bf f' bf d>8] <bf f' bf d>4 <bf f' bf d>8-^-.[ <a e' a cs e a>8] | %2
+
+e8 a,4. r2 \\\
+<a e' a cs e a>8[ <a e' a cs e a>8 <a e' a cs e a>8-^-. <a e' a cs e a>8~] <a e' a cs e a>8[ <a e' a cs e a>8 <a e' a cs e a>8-^-. <a e' a cs e a>8] | %3
+
+R1 \\\
+<a e' a cs e a>8[ <e' g a e'>16 <e g a e'>16] <e g a e'>8[ <e g a e'>8~] <e g a e'>8[ <e g a e'>8 <e g a e'>8 <e g a e'>8] | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5826636/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. [恐怖海峡乐队，《Sultans of Swing》（1978）](https://open.spotify.com/track/37Tmv4NnfQeb0ZgUC4fOJj)
@@ -37,7 +59,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5825283)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5825283 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5825283/embed" title="MuseScore" loading="lazy" style="height: 555px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key bf \major \numericTimeSignature \time 4/4 \clef "treble" d8[ d'8 bf8 g8] d'8[ bf8 g8 d'8] \\\
+\clef "bass" g8[ g8 g8 g8] g8[ g8 g8 g8] | %1
+
+bf'8[ g8 d'8 bf8] g8[ d'8 bf8 g8] \\\
+g8[ g8 g8 g8] g8[ g8 g8 g8] | %2
+
+d8[ d'8 bf8 f8] d'8[ bf8 f8 d'8] \\\
+f,8[ f8 f8 f8] f8[ f8 f8 f8] | %3
+
+bf'8[ f8 d'8 bf8] f8[ d'8 bf8 f8] \\\
+f,8[ f8 f8 f8] f8[ f8 f8 f8] | %4
+
+ef8[ ef'8 bf8 g8] ef'8[ bf8 g8 ef'8] \\\
+ef,8[ ef8 ef8 ef8] ef8[ ef8 ef8 ef8] | %5
+
+bf'8[ g8 ef'8 bf8] g8[ ef'8 bf8 g8] \\\
+ef,8[ ef8 ef8 ef8] ef8[ ef8 ef8 ef8] | %6
+
+<d g a>8[ d'8 a8 g8] d'8[ a8 g8 a8] \\\
+d,8[ d8 d8 d8] d8[ d8 d8 d8] | %7
+
+d8[ d'8 a8 fs8] d'8[ a8 fs8 g8] \\\
+d,8[ d8 d8 d8] d8[ d8 d8 d8] | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5825283/embed" title="MuseScore" loading="lazy" style="height: 555px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. [缪斯乐队，《Thoughts of a Dying Atheist》（2004）](https://open.spotify.com/track/7LB6xhGZ0jCbP3PfUDA7yw)
@@ -51,7 +107,23 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5825400)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5825400 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5825400/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key e \major \numericTimeSignature \time 4/4 \clef "treble" gs'8[ e8 gs8 cs8] a4 r4 \\\
+\clef "bass" cs8.[ cs8. fs8] r8 fs8 r16 fs8 r16 | %1
+
+fs8[ ds8 fs8 b8] gs4 fs8[ e8] \\\
+b8.[ b8. b8] r8 e8 r16 e8 r16 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5825400/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. [水叮当乐队，《Barbie Girl》（1997）。](https://open.spotify.com/track/2RSOzvKUnfDDrb2nQPfpQU)
@@ -65,7 +137,47 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8520380)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8520380 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8520380/embed" title="MuseScore" loading="lazy" style="height: 730px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key e \major \numericTimeSignature \time 4/4 \clef "treble_8" r4 as'8[ gs8] r2 \\\
+\clef "treble_8" <ds as' ds fs as>4 <ds as' ds>8 r8 <gs, ds' gs bs>4 <gs ds' gs bs ds>4 | %1
+
+r4 gs'8[ as8] r2 \\\
+<cs gs' cs e gs>4 <cs gs' cs>8 r8 <fs, cs' fs as>4 <fs cs' fs as cs>4 | %2
+
+r4 b'8[ gs8] fs8[ e8] r4 \\\
+<b fs' b d fs>4 <b fs' b>8 r8 <e, b' e gs>4 <e b' e gs b>4 | %3
+
+cs4 e4 gs8[ fs8 e8 cs8] \\\
+<a e' a cs>4 <a e' a cs e>4 <cs gs' cs e>2 | %4
+
+r4 as'8[ gs8] r2 \\\
+<ds as' ds fs as>4 <ds as' ds>8 r8 <gs, ds' gs bs>4 <gs ds' gs bs ds>4 | %5
+
+r4 gs'8[ as8] r2 \\\
+<cs gs' cs e gs>4 <cs gs' cs>8 r8 <fs, cs' fs as>4 <fs cs' fs as cs>4 | %6
+
+r4 b'8[ gs8] fs8[ e8] r4 \\\
+<b fs' b d fs>4 <b fs' b>8 r8 <e, b' e gs>4 <e b' e gs b>4 | %7
+
+r4. gs'8.[ fs16 e8] r4 \\\
+<a e' a cs>4 <a e' a cs e>4 <cs gs' cs e>2 | %8
+
+r4 b'8 gs4. fs16[ e8] r16 \\\
+<e, b' e gs>4 <e b' e gs>4 <a e' a cs>4 <a e' a cs e>4 | %9
+
+r4. gs'8.[ fs16 e8] r4 \\\
+e'8[ cs8 a8 e8] <cs gs' cs e>4 <cs gs' cs e>4 | %10
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8520380/embed" title="MuseScore" loading="lazy" style="height: 730px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. [电台司令乐队，《You and Whose Army?》（2004）。](https://open.spotify.com/track/6UFvGJalSngqprmUJd59Eo)

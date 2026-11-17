@@ -31,7 +31,57 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268930)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6268930 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268930/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key bf \major \numericTimeSignature \time 3/4 \clef "treble" bf'4-. bf4-. bf4-. \\\
+\clef "treble" d4-. d4-. d4-. \\\
+\clef "alto" d2. \\\
+\clef "bass" bf4 a4 g4 | %1
+
+bf'4. c8 d4 \\\
+d4. ef8 f4 \\\
+d4 c4 bf4 \\\
+f,4 ef4 d4 | %2
+
+c'4 ef8[ d8 c8 bf8] \\\
+g'4-. g4-. g4-. \\\
+c2.~ \\\
+ef,2 e4 | %3
+
+bf'4 a8[ f8 g8 a8] \\\
+f4. f8 ef8[ c8] \\\
+c2. \\\
+f,2. | %4
+
+bf'4-. bf4-. bf4-. \\\
+d4-. d4-. d4-. \\\
+d2. \\\
+bf4 a4 g4 | %5
+
+bf'4. c8 d4 \\\
+d4. ef8 f4 \\\
+d4 c4 bf4 \\\
+f,4 ef4 d4 | %6
+
+g'8[ ef'16 c16] bf4 a4 \\\
+ef4 d4 c4 \\\
+ef4 f4 ef4 \\\
+ef,4 f4 f,4 | %7
+
+c'2 bf4 \\\
+bf2 r4 \\\
+d2 r4 \\\
+bf,2 r4 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6268930/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. Joseph Bologne《六首协奏四重奏》第 1 号第二乐章第 1–8 小节中的离调。
@@ -39,7 +89,40 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268934)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6268934 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268934/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp bf'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \clef "bass" \stemUp c2 \\
+\staff "2" \stemDown e,2 | %1
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \key bf \major \stemUp bf'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown e,2 | %4
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6268934/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. Joseph Bologne《六首协奏四重奏》第 1 号第二乐章第 3–4 小节中离调的缩谱。
@@ -53,7 +136,37 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268967)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6268967 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268967/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key c \major \defaultTimeSignature \time 4/4 \clef "treble" e4 e8. e16 bf'4 r8 c,8 \\\
+\staff "1" \clef "treble" e4 e8.[ e16] <bf c e bf'>8[ <bf c e>8 <bf c e>8 <bf c>8] \\
+\staff "2" \clef "bass" \stemUp e,8[ <g bf c>8 <e g bf c>8 <g bf c>8] g4. e8 \\
+\staff "2" \stemDown <c,, c'>2 <g' c>2 | %1
+
+c4. a'8 a4 b8 c8 \\\
+\staff "1" c4. a'8 <a, a'>8[ <c f>8 <b b'>8 <c ef a c>8] \\
+\staff "2" \stemUp c,8[ <f a>8 <f a>8 a8] s2 \\
+\staff "2" \stemDown <f,,, f'>2 <f' f'>4 <fs fs'>4 | %2
+
+c'8[ b8 a8] g8 f8 d8 a8. b16 \\\
+\staff "1" <c e g c>8[ <b b'>8 <a a'>8 <g g'>8] s2 \\
+\staff "2" \stemUp s2 <f, b f'>8[ <d d'>8 <a a'>8 <b b'>8] \\
+\staff "2" \stemDown <g, c e g>2 g2 | %3
+
+c2 r2 \\\
+\staff "1" s1 \\
+\staff "2" \stemUp <e, c'>4 s4 r2 \\
+\staff "2" \stemDown <c,, c'>8[ <e' g>8 <e g>8 <e g>8] r2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6268967/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. Josephine Lang《Du gleichst dem klaren blanen See》第 21–24 小节中的离调。
@@ -61,7 +174,66 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6268972)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6268972 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6268972/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp c'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \clef "bass" \stemUp ef2 \\
+\staff "2" \stemDown fs,2 | %1
+
+\staff "1" \stemUp b'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown g2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \key c \major \stemUp c'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp ef2 \\
+\staff "2" \stemDown fs,2 | %4
+
+\staff "1" \stemUp b'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown g2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp c'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp ef2 \\
+\staff "2" \stemDown fs,2 | %7
+
+\staff "1" \stemUp c'4 b4 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp e4 d4 \\
+\staff "2" \stemDown g2 | %8
+
+\staff "1" s2 \\
+\staff "2" s2 | %9
+
+\staff "1" \stemUp c'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp ef2 \\
+\staff "2" \stemDown fs,2 | %10
+
+\staff "1" \stemUp c'4 b4 \\
+\staff "1" \stemDown g'4 f4 \\
+\staff "2" \stemUp e4 d4 \\
+\staff "2" \stemDown g2 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6268972/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. Josephine Lang 作品中离调的缩谱。
@@ -162,7 +334,52 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270521)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6270521 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270521/embed" title="MuseScore" loading="lazy" style="height: 1200px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" ef4 r4 r4 df'4 \\\
+\clef "treble" g16-.[ ef'16 d16 ef16] g16-.[ ef16 d16 ef16] bf'16-.[ ef,16 d16 ef16] ef'16-.[ ef,16 d16 ef16] \\\
+\clef "alto" bf4 r4 g'4 bf4 \\\
+\clef "bass" ef,4 ef,4 r2 | %1
+
+c'4 c4 r4 bf,8[ af8] \\\
+af16-.[ ef'16 d16 ef16] af16-.[ ef16 d16 ef16] c'16-.[ ef,16 d16 ef16] ef'16-.[ ef,16 d16 ef16] \\\
+af'4 af4 r4 af8[ c8] \\\
+ef,4 ef,4 r2 | %2
+
+g16-.[ ef'16 d16 ef16] g16-.[ ef16 d16 ef16] bf'16-.[ ef,16 d16 ef16] ef'16-.[ ef,16 d16 ef16] \\\
+bf'2 df,2 \\\
+bf'8[ g8] g4 bf,2 \\\
+ef,2 g2 | %3
+
+af16-.[ ef'16 d16 ef16] af16-.[ ef16 d16 ef16] c'16-.[ ef,16 d16 ef16] ef'16-.[ ef,16 d16 ef16] \\\
+c2 af2 \\\
+af2 ef2 \\\
+af2. c4 | %4
+
+g16-.[ ef'16 f16 ef16] g16[ ef16 af16 ef16] bf'16[ ef,16 c'16 ef,16] d'16[ ef,16 ef'16 ef,16] \\\
+bf4 r4 r2 \\\
+g4 r4 r2 \\\
+ef4 r4 r2 | %5
+
+c'16[ d16 ef16 d16] ef16[ c16 bf16 af16] g4 f4\trill \\\
+ef8[ ef8 ef8 ef8] ef8[ ef8 d8 d8] \\\
+c2 bf4 af4 \\\
+af4 af4 bf4 bf,4 | %6
+
+ef8-. r8 r4 r2 \\\
+ef4 r4 r2 \\\
+g4 r4 r2 \\\
+ef,4 r4 r2 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6270521/embed" title="MuseScore" loading="lazy" style="height: 1200px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. [Joseph Bologne《弦乐四重奏》第 4 号第一乐章](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=0621ea7f9d254fc1)中对 IV 的离调，第 41–47 小节（1:18–1:30）。
@@ -170,7 +387,41 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270540)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6270540 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270540/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \numericTimeSignature \time 3/4 \clef "treble" f'4 r8 \tuplet 3/2 { f8[ g8] } \tuplet 3/2 { a8[ g8 f8] } \\
+\staff "2" \clef "treble" a4 <c ef f>4 <c ef f>4 | %1
+
+\staff "1" bf''16[ d16 g16 f16] ef16[ d16 c16 bf16] a16[ c16 bf16 g16] \\
+\staff "2" bf4 <d f>4 <d f>4 | %2
+
+\staff "1" f'4 r8 \tuplet 3/2 { f8[ g8] } \tuplet 3/2 { a8[ g8 f8] } \\
+\staff "2" a4 <c ef f>4 <c ef f>4 | %3
+
+\staff "1" \tuplet 3/2 { e''8[ g8 f8] } \tuplet 3/2 { cs8[ ef8 d8] } bf4 \\
+\staff "2" bf4 <d f>4 <d f>4 | %4
+
+\staff "1" b''4 r8 \tuplet 3/2 { b8[ c8] } \tuplet 3/2 { \grace { ef8 } d8[ c8 b8] } \\
+\staff "2" r4 <f af d>4 <f af d>4 | %5
+
+\staff "1" \tuplet 3/2 { d''8[ c8 c8] } r8 \tuplet 3/2 { g8[ a8] } \tuplet 3/2 { \grace { c8 } bf8[ a8 g8] } \\
+\staff "2" <ef g c>4 <e bf' df>4 r4 | %6
+
+\staff "1" \tuplet 3/2 { \grace { a''8 } g8[ f8 f8] } r8 \tuplet 3/2 { f8[ g8] } \tuplet 3/2 { \grace { bf8 } a8[ g8 f8] } \\
+\staff "2" <f bf d>4 <f c' ef>4 r4 | %7
+
+\staff "1" \tuplet 3/2 { bf''8[ d8 f,8] } \tuplet 3/2 { bf8[ d,8 f8] } bf,4 \\
+\staff "2" <bf' d>4 r2 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6270540/embed" title="MuseScore" loading="lazy" style="height: 650px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. [Maria Szymanowska《小步舞曲》第 4 首](https://open.spotify.com/track/0wUvGycFjSFNSD2b8N9Hlo?si=9ffc380a726f4938)中对 ii 的离调，第 57–64 小节（1:48–1:55）。
@@ -182,7 +433,37 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270545)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6270545 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270545/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key df \major \numericTimeSignature \time 3/4 \clef "treble" R2. \\\
+\staff "1" \clef "treble" r16 f,16[ af16 df16] f16[ df16 af16 f16] gf'16[ df16 bf16 gf16] \\
+\staff "2" \clef "bass" <df,, df'>2 <bf bf'>4 | %1
+
+R2. \\\
+\staff "1" r16 af16[ df16 f16] af16[ f16 df16 af16] bf'16[ ef,16 df16 bf16] \\
+\staff "2" <f,,, f'>2 <gf gf'>4 | %2
+
+R2. \\\
+\staff "1" r16 c16[ ef16 gf16] c16[ gf16 ef16 c16] c'16[ f,16 ef16 c16] \\
+\staff "2" <af,, af'>4 <a a'>2 | %3
+
+R2. \\\
+\staff "1" df'16[ bf16 f16 df16] df'16[ bf16 ef,16 df16] c'16[ af16 ef16 c16] \\
+\staff "2" <bf,, bf'>4 <gf gf'>4 <af af'>4 | %4
+
+R2. \\\
+\staff "1" df'16[ f,,16 af16 df16] f16[ df16 af16 f16] r4 \\
+\staff "2" df,,2 r4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6270545/embed" title="MuseScore" loading="lazy" style="height: 750px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. Josephine Lang《Mag da draussen Sehnee》第 1–5 小节中被离调的阻碍进行。
@@ -194,7 +475,60 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/6270553)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6270553 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6270553/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \clef "bass" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %1
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown d,2 | %2
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp d2 \\
+\staff "2" \stemDown bf,2 | %3
+
+\staff "1" \stemUp a'4 g4 \\
+\staff "1" \stemDown f4 e4 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown c,2 | %4
+
+\staff "1" s2 \\
+\staff "2" s2 | %5
+
+\staff "1" \stemUp a'4 a4 \\
+\staff "1" \stemDown c4 cs4 \\
+\staff "2" \stemUp s4 g4 \\
+\staff "2" \stemDown <f, f>4 e4 | %6
+
+\staff "1" \stemUp a'4 a4 \\
+\staff "1" \stemDown d4 ef4 \\
+\staff "2" \stemUp f,4 fs4 \\
+\staff "2" \stemDown d,4 c4 | %7
+
+\staff "1" \stemUp g'4 f4 \\
+\staff "1" \stemDown d4 d4 \\
+\staff "2" \stemUp g4 g4 \\
+\staff "2" \stemDown bf,4 b4 | %8
+
+\staff "1" \stemUp f4 e4 \\
+\staff "1" \stemDown c2 \\
+\staff "2" \stemUp a4 g4 \\
+\staff "2" \stemDown c,2 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6270553/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 在自然音进行中加入离调。
@@ -216,7 +550,73 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/23457127)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/23457127 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23457127/embed" title="MuseScore" loading="lazy" style="height: 850px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" <c e g>1 <c e g b>1 | %1
+
+<c e g>1 <c e g bf>1 | %2
+
+<d f a>1 <d f a c>1 | %3
+
+<d fs a>1 <d fs a c>1 | %4
+
+<e g b>1 <e g b d>1 | %5
+
+<e gs b>1 <e gs b d>1 | %6
+
+<f a c>1 <f a c e>1 | %7
+
+<fs as cs>1 <fs as cs e>1 | %8
+
+<g' b d>1 <g b d f>1 | %9
+
+<g' b d>1 <g b d f>1 | %10
+
+<a' c e>1 <a c e g>1 | %11
+
+<a' cs e>1 <a cs e g>1 | %12
+
+<b' d f>1 <b d f a>1 | %13
+
+<b' ds fs>1 <b ds fs a>1 | %14
+
+<a c e>1 <a c e g>1 | %15
+
+<a cs e>1 <a cs e g>1 | %16
+
+<b d f>1 <b d f a>1 | %17
+
+<b ds fs>1 <b ds fs a>1 | %18
+
+<c e g>1 <c e g b>1 | %19
+
+<c e g>1 <c e g bf>1 | %20
+
+<d f a>1 <d f a c>1 | %21
+
+<d fs a>1 <d fs a c>1 | %22
+
+<e g b>1 <e g b d>1 | %23
+
+<e gs b>1 <e gs b d>1 | %24
+
+<f a c>1 <f a c e>1 | %25
+
+<fs as cs>1 <fs as cs e>1 | %26
+
+<g' b d>1 <g b d f>1 | %27
+
+<g' b d>1 <g b d f>1 | %28
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/23457127/embed" title="MuseScore" loading="lazy" style="height: 850px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 自然音三和弦如何通过变化生成副 V<sup>7</sup> 和弦的总结。

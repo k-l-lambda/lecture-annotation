@@ -30,7 +30,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221729)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221729 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221729/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" ds'1 \\
+\staff "2" \clef "bass" f,,1 | %1
+
+\staff "1" <a' ds>1 \\
+\staff "2" <f,, a'>1 | %2
+
+\staff "1" <a' ds>1 \\
+\staff "2" <f,, b'>1 | %3
+
+\staff "1" <a' ds>1 \\
+\staff "2" <f,, c''>1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6221729/embed" title="MuseScore" loading="lazy" style="height: 625px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 各种增六和弦概览。
@@ -44,7 +66,23 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221834)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221834 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221834/embed" title="MuseScore" loading="lazy" style="height: 465px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" ds'1 \\
+\staff "2" \clef "bass" f,,1 | %1
+
+\staff "1" e'1 \\
+\staff "2" e,,1 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6221834/embed" title="MuseScore" loading="lazy" style="height: 465px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 增六度音程的标准声部进行。
@@ -54,7 +92,53 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221757)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221757 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221757/embed" title="MuseScore" loading="lazy" style="height: 1150px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <d fs b>1 \\
+\staff "2" \clef "bass" b,1 | %1
+
+\staff "1" <b es b'>1 \\
+\staff "2" g,1 | %2
+
+\staff "1" <cs fs as>1 \\
+\staff "2" fs,,1 | %3
+
+\staff "1" <d fs b>1 \\
+\staff "2" b,1 | %4
+
+\staff "1" <d fs b>1 \\
+\staff "2" b,1 | %5
+
+\staff "1" <cs es b'>1 \\
+\staff "2" g,1 | %6
+
+\staff "1" <cs fs as>1 \\
+\staff "2" fs,,1 | %7
+
+\staff "1" <d fs b>1 \\
+\staff "2" b,1 | %8
+
+\staff "1" <d fs b>1 \\
+\staff "2" b,1 | %9
+
+\staff "1" <d es b'>1 \\
+\staff "2" g,1 | %10
+
+\staff "1" <d fs b>2 <cs fs as>2 \\
+\staff "2" fs,,1 | %11
+
+\staff "1" <d fs b>1 \\
+\staff "2" b,1 | %12
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6221757/embed" title="MuseScore" loading="lazy" style="height: 1150px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 三种类型的增六和弦在终止语境中的用法。
@@ -79,7 +163,71 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221776)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221776 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221776/embed" title="MuseScore" loading="lazy" style="height: 678px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c' ef>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <d' g>1 \\
+\staff "2" bf,1 | %2
+
+\staff "1" <c' f>1 \\
+\staff "2" af,1 | %3
+
+\staff "1" <b' g'>1 \\
+\staff "2" g,1 | %4
+
+\staff "1" s1 \\
+\staff "2" s1 | %5
+
+\staff "1" <c' ef>1 \\
+\staff "2" c,1 | %6
+
+\staff "1" <d' g>1 \\
+\staff "2" bf,1 | %7
+
+\staff "1" <c' fs>1 \\
+\staff "2" af,1 | %8
+
+\staff "1" <b' g'>1 \\
+\staff "2" g,1 | %9
+
+\staff "1" <c' ef>1 \\
+\staff "2" c,1 | %10
+
+\staff "1" <d' g>1 \\
+\staff "2" bf,1 | %11
+
+\staff "1" <c' f>2 <c fs>2 \\
+\staff "2" af,1 | %12
+
+\staff "1" <b' g'>1 \\
+\staff "2" g,1 | %13
+
+\staff "1" s1 \\
+\staff "2" s1 | %14
+
+\staff "1" <g' c ef>1 \\
+\staff "2" c,1 | %15
+
+\staff "1" <g' d' g>1 \\
+\staff "2" bf,1 | %16
+
+\staff "1" <c' d fs>1 \\
+\staff "2" af,1 | %17
+
+\staff "1" <b' d g>1 \\
+\staff "2" g,1 | %18
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6221776/embed" title="MuseScore" loading="lazy" style="height: 678px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 在哀歌低音进行中用增六和弦取代 iv<sup>6</sup> 的例子。
@@ -95,7 +243,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221772)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221772 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221772/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key g \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <b' d g>1 \\
+\staff "2" \clef "bass" g1 | %1
+
+\staff "1" <as' cs g'>1 \\
+\staff "2" ef,1 | %2
+
+\staff "1" <b' d g>2 <a d fs>2 \\
+\staff "2" d,1 | %3
+
+\staff "1" <b' d g>1 \\
+\staff "2" g1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6221772/embed" title="MuseScore" loading="lazy" style="height: 400px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 大调中 Ger<sup>+6</sup> 和弦的另一种拼写。
@@ -107,7 +277,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6221766)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221766 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6221766/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key bf \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <bf' d g>1 \\
+\staff "2" \clef "bass" g1 | %1
+
+\staff "1" <bf' ef g>1 \\
+\staff "2" cs,1 | %2
+
+\staff "1" <a' d fs>1 \\
+\staff "2" d,1 | %3
+
+\staff "1" <bf' d g>1 \\
+\staff "2" g1 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6221766/embed" title="MuseScore" loading="lazy" style="height: 420px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. $\mathit{Ger^{o3}}$ 的使用。
@@ -132,7 +324,65 @@ Ernesto Nazareth 的探戈"Remando"（谱例 7）在第 60 小节把 Ger<sup>+6<
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/26284273)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26284273 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26284273/embed" title="MuseScore" loading="lazy" style="height: 990px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 2/4 \clef "treble" r16 <g' a>16[ <g a>16 <g a>16] r16 <g cs>16[ fs'16-> <g, cs>16] \\
+\staff "2" \clef "bass" <a, a'>8.[ <g' a cs>16] cs,8[ <g' a cs>8] | %1
+
+\staff "1" e'16->[ fs,16 a16 <fs a d>16-.] r16 <d gs>16[ cs'16-> <d, gs>16] \\
+\staff "2" d,8.[ <fs a d>16] <f, f'>8[ <f f'>8] | %2
+
+\staff "1" b'16->[ cs,16 g'16 <cs, g' a>16-.] r16 <cs g'>16[ cs'16-> <cs, g'>16] \\
+\staff "2" <e,, e'>8.[ <e e'>16] <a, a'>8[ <a a'>8] | %3
+
+\staff "1" b'16->[ d,16 fs16 <d fs a>16-.] r16 fs16[ d16 b16] \\
+\staff "2" <d,, d'>8.[ <d d'>16] <fs fs'>8[ <fs fs'>8] | %4
+
+\staff "1" r16 <g' a>16[ <g a>16 <g a>16] r16 <fs cs'>16[ fs'16-> <fs, cs'>16] \\
+\staff "2" <a, a'>8.[ <g' a cs>16] <as, as'>8[ <fs' as e'>8] | %5
+
+\staff "1" e'16->[ fs,16 b16 <fs b d>16] r16 cs'16[ e16 d16] \\
+\staff "2" <b, b'>8.[ <fs' b d>16] <fs b d>8[ <fs b d>8] | %6
+
+\staff "1" cs'16->[ cs,16 fs16 <cs fs a cs>16] r16 <b es gs>16[ b'16 a16] \\
+\staff "2" cs,,8.[ cs'16] cs,8.[ cs'16] | %7
+
+\staff "1" fs16->[ a,16 cs16 <a cs fs>16] r16 fs'16[ g16 gs16] \\
+\staff "2" fs,,,8.[ fs'16] fs,4 | %8
+
+\staff "1" r16 <g' a>16[ <g a>16 <g a>16] r16 <g cs>16[ fs'16-> <g, cs>16] \\
+\staff "2" <a, a'>8.[ <g' a cs>16] cs,8[ <g' a cs>8] | %9
+
+\staff "1" e'16->[ fs,16 a16 <fs a d>16-.] r16 <d gs>16[ cs'16-> <d, gs>16] \\
+\staff "2" d,8.[ <fs a d>16] <f, f'>8[ <f f'>8] | %10
+
+\staff "1" b'16->[ cs,16 g'16 <cs, g' a>16-.] r16 <cs g'>16[ cs'16-> <cs, g'>16] \\
+\staff "2" <e,, e'>8.[ <e e'>16] <a, a'>8[ <a a'>8] | %11
+
+\staff "1" b'16[ d,16 fs16 <d fs a>16-.] r16 fs16[ d16 b16] \\
+\staff "2" <d,, d'>8.[ <d d'>16] <fs fs'>8[ <fs fs'>8] | %12
+
+\staff "1" r16 <g' a>16[ <g a>16 <g a>16] r16 <fs cs'>16[ fs'16-> <fs, cs'>16] \\
+\staff "2" <a, a'>8.[ <g' a cs>16] <as, as'>8[ <fs' as e'>8] | %13
+
+\staff "1" e'16->[ fs,16 b16 <fs b d>16] r16 <d f gs>16[ cs'16 <d, f gs>16] \\
+\staff "2" <b, b'>8.[ <fs' b d>16] <bf, f' gs>8[ <bf f' gs>8] | %14
+
+\staff "1" b'16->[ d,16 fs16 <d fs a>16] r16 <g, cs>16[ fs'16-> e16] \\
+\staff "2" <a, fs' a>8.[ <a fs' a>16] a,8[ a'8] | %15
+
+\staff "1" d16->[ fs,16 a16 <fs a d>16] r16 fs'16[ g16 gs16] \\
+\staff "2" d,,8.[ a16] d4 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26284273/embed" title="MuseScore" loading="lazy" style="height: 990px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. Ernesto Nazareth，"Remando"（[1:48](https://open.spotify.com/track/2VTfAb62fnkbxgiM9a57sN?si=EC26Yy8oSrKpm5nYHV0IpQ)）。作为终止进行组成部分的德国增六和弦。

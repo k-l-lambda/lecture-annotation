@@ -41,7 +41,29 @@ modified: "2025-07-15"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5973262)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5973262 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5973262/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 8/4 \clef "treble" c4 d4 e4 f4 g4 a4 b4 c4 | %1
+
+c4 d4 e4 f4 g4 a4 bf4 c4 | %2
+
+c4 d4 e4 fs4 g4 a4 b4 c4 | %3
+
+\key ef \major c4 d4 ef4 f4 g4 af4 bf4 c4 | %4
+
+c4 d4 ef4 f4 g4 a4 bf4 c4 | %5
+
+c4 df4 ef4 f4 g4 af4 bf4 c4 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5973262/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 按主音的大调性或小调性分组的调式，虚线连音线把每个调式特有的色彩音与其大调 / 小调对应者连接起来。
@@ -150,7 +172,32 @@ c1^\markup "C mixolydian"^\markup "1̂" d^\markup "2̂" e^\markup "3̂" f^\marku
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8521067)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8521067 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8521067/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <f bf d>1 \\
+\staff "2" \clef "bass" bf1 | %1
+
+\staff "1" <f a c>1 \\
+\staff "2" f,1 | %2
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %4
+
+\staff "1" <d f bf>1 \\
+\staff "2" bf,1 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8521067/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 双变格图式和混合利底亚终止图式是两个特别常见的混合利底亚和弦进行。
@@ -197,7 +244,56 @@ g,4. g8 f4. f8 \bar "||" | %4
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8520971)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8520971 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8520971/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <ef g c>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <d f bf>1 \\
+\staff "2" bf,1 | %2
+
+\staff "1" <ef g c>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" \time 1/4 <d f bf>4 \\
+\staff "2" bf,4 | %4
+
+\staff "1" \time 4/4 <c ef af>1 \\
+\staff "2" af,1 | %5
+
+\staff "1" \time 1/4 <d f bf>4 \\
+\staff "2" bf,4 | %6
+
+\staff "1" \time 4/4 <c ef af>1 \\
+\staff "2" af,1 | %7
+
+\staff "1" <d f bf>1 \\
+\staff "2" bf,1 | %8
+
+\staff "1" <e g c>1 \\
+\staff "2" c,1 | %9
+
+\staff "1" <ef g c>1 \\
+\staff "2" c,1 | %10
+
+\staff "1" <d f bf>1 \\
+\staff "2" bf,1 | %11
+
+\staff "1" <c ef af>1 \\
+\staff "2" af,1 | %12
+
+\staff "1" <bf d g>1 \\
+\staff "2" g,1 | %13
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8520971/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 下主音交替、爱奥利亚交替、爱奥利亚终止和哀悼图式是四种常见的爱奥利亚和弦进行。
@@ -396,7 +492,35 @@ e,4 e8.[ e16]~ e8[ fs] a16[ b b,8] \bar ":|."
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8521022)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8521022 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8521022/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key ef \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <c ef g>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <c f a>1 \\
+\staff "2" f,1 | %2
+
+\staff "1" <ef g>1 \\
+\staff "2" c,1 | %3
+
+\staff "1" <f a>1 \\
+\staff "2" f,1 | %4
+
+\staff "1" <g' bf>1 \\
+\staff "2" c,1 | %5
+
+\staff "1" <f a>1 \\
+\staff "2" f,1 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8521022/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 多利亚交替使用小三和弦 i 和大三和弦 IV，可以扩展为上行至 i<sup>7</sup> 的拱形。
@@ -431,7 +555,32 @@ II♯ 可以具有下属功能或属功能，下面两个图式各用到其中�
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8521043)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8521043 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8521043/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" <g' c e>1 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" <fs a d>1 \\
+\staff "2" d,1 | %2
+
+\staff "1" <a' d fs>1 \\
+\staff "2" d,1 | %3
+
+\staff "1" <a' c f>1 \\
+\staff "2" f,1 | %4
+
+\staff "1" <g' c e>1 \\
+\staff "2" c,1 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8521043/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 14. II♯ 和弦是利底亚的特征和弦，下面两个图式都用到它。

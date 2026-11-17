@@ -32,7 +32,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439799)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439799 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439799/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 d4 e4 fs4 g4 a4 b4 c4 b4 a4 g4 fs4 e4 d4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439799/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 带视唱唱名的 C 利底亚。
@@ -42,7 +54,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439871)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439871 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439871/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 d4 e4 f4 g4 a4 b4 c4 b4 a4 g4 f4 e4 d4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439871/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 带视唱唱名的 C 伊奥尼亚。
@@ -52,7 +76,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439772)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439772 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 d4 e4 f4 g4 a4 bf4 c4 bf4 a4 g4 f4 e4 d4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439772/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 带视唱唱名的 C 混合利底亚。
@@ -64,7 +100,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439892)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439892 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439892/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 d4 ef4 f4 g4 a4 bf4 c4 bf4 a4 g4 f4 ef4 d4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439892/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 带视唱唱名的 C 多利亚。
@@ -74,7 +122,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439928)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439928 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439928/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 d4 ef4 f4 g4 af4 bf4 c4 bf4 af4 g4 f4 ef4 d4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439928/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 带视唱唱名的 C 爱奥利亚。
@@ -84,7 +144,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439733)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439733 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439733/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 df4 ef4 f4 g4 af4 bf4 c4 bf4 af4 g4 f4 ef4 df4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439733/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 带视唱唱名的 C 弗里吉亚。
@@ -94,7 +166,19 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26439829)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26439829 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26439829/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key ef \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 df4 ef4 f4 gf4 af4 bf4 c4 bf4 af4 gf4 f4 ef4 df4 c4 | %1
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26439829/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 带视唱唱名的 C 罗克里亚。
@@ -106,7 +190,31 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26438716)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26438716 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26438716/embed" title="MuseScore" loading="lazy" style="height: 1010px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 15/4 \clef "treble" c4 d4 e4 fs4 g4 a4 b4 c4 b4 a4 g4 fs4 e4 d4 c4 | %1
+
+c4 d4 e4 f4 g4 a4 b4 c4 b4 a4 g4 f4 e4 d4 c4 | %2
+
+c4 d4 e4 f4 g4 a4 bf4 c4 bf4 a4 g4 f4 e4 d4 c4 | %3
+
+\key ef \major c4 d4 ef4 f4 g4 a4 bf4 c4 bf4 a4 g4 f4 ef4 d4 c4 | %4
+
+c4 d4 ef4 f4 g4 af4 bf4 c4 bf4 af4 g4 f4 ef4 d4 c4 | %5
+
+c4 df4 ef4 f4 g4 af4 bf4 c4 bf4 af4 g4 f4 ef4 df4 c4 | %6
+
+c4 df4 ef4 f4 gf4 af4 bf4 c4 bf4 af4 gf4 f4 ef4 df4 c4 | %7
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26438716/embed" title="MuseScore" loading="lazy" style="height: 1010px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 从 C 开始、由明到暗排列的各调式及其音阶级数。
@@ -120,7 +228,21 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26419297)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26419297 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26419297/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key gf \major \omit Score.TimeSignature \numericTimeSignature \time 11/4 \clef "treble" gf'4 af4 bf4 df4 ef4 gf4 ef4 df4 bf4 af4 gf4 | %1
+
+\key d \major d4 e4 fs4 a4 b4 d4 b4 a4 fs4 e4 d4 | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26419297/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 一个带视唱唱名的大调五声音集，其后是一个小调五声音集。
@@ -134,7 +256,29 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/26441134)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26441134 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/26441134/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 13/4 \clef "treble" c4 cs4 d4 ds4 e4 f4 fs4 g4 gs4 a4 as4 b4 c4 | %1
+
+c'4 b4 bf4 a4 af4 g4 gf4 f4 e4 ef4 d4 df4 c4 | %2
+
+\key a \major a'4 as4 b4 bs4 cs4 d4 ds4 e4 es4 fs4 fss4 gs4 a4 | %3
+
+a''4 gs4 g4 fs4 f4 e4 ef4 d4 cs4 c4 b4 bf4 a4 | %4
+
+\key ef \major ef4 e4 f4 fs4 g4 af4 a4 bf4 b4 c4 cs4 d4 ef4 | %5
+
+ef'4 d4 df4 c4 cf4 bf4 bff4 af4 g4 gf4 f4 ff4 ef4 | %6
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/26441134/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 从 A 和降 E 开始的两个半音阶。

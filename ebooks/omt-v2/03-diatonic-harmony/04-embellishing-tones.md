@@ -25,7 +25,53 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6233992)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6233992 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6233992/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key d \major \numericTimeSignature \time 2/4 \partial 8 \clef "treble" s8 \\
+\staff "2" \clef "bass" \stemUp a16.[ a32] \\
+\staff "2" \stemDown a,16.[ a32] | %1
+
+\staff "1" s2 \\
+\staff "2" \stemUp <fs, d'>8[ a16. a32] <fs d'>8[ <a fs'>8] \\
+\staff "2" \stemDown <d,, d'>8[ a'16. a32] <d, d'>8 r8 | %2
+
+\staff "1" s4 s8 <d fs>16[ <e g>16] \\
+\staff "2" \stemUp <fs, d'>8[ a16. a32] <fs d'>8 r8 \\
+\staff "2" \stemDown <d,, d'>8[ a'16. a32] <d, d'>8 r8 | %3
+
+\staff "1" <fs a>8-![ <d fs>16 <e g>16] <fs a>8[ <d a' d>8] \\
+\staff "2" d,8[ d,8] d'8[ fs8->] | %4
+
+\staff "1" <g' b>8-![ <e g>16 <fs a>16] <g b>8[ <e b' e>8] \\
+\staff "2" g8[ g,8] g'8[ gs8->] | %5
+
+\staff "1" <a' cs>8[ <a cs>16 <b d>16] <cs e>8[ <a e' a>8] \\
+\staff "2" a8[ a,8] a'8[ cs8->] | %6
+
+\staff "1" <d' fs>8[ <a e'>8] <fs d'>8 <d fs>16[ <e g>16] \\
+\staff "2" d8-.[ a8-.] d,8 r8 | %7
+
+\staff "1" <fs a>8 <d fs>4 <d a' d>8 \\
+\staff "2" d,8[ \grace { d,8 } d'16 cs16] d16[ e16 fs16 d16] | %8
+
+\staff "1" <g' b>8 <e g>4 <e g e'>8~ \\
+\staff "2" <g g>8[ \grace { g,8 } g'16 fs16] g16[ a16 b16 g16] | %9
+
+\staff "1" <e a cs>8 <e' g a>4 <g a e'>8 \\
+\staff "2" <a a>8[ a16 gs16] a16[ b16 cs16 a16] | %10
+
+\staff "1" <fs' d'>8[ <fs d'>16 <fs d'>16] <fs d'>8 s8 \\
+\staff "2" <d, d d'>8[ <d d'>16 <d d'>16] <d d'>8 s8 | %11
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6233992/embed" title="MuseScore" loading="lazy" style="height: 700px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 玛丽亚·希曼诺夫斯卡《六首进行曲》第六进行曲中的装饰音（[0:00-0:16](https://open.spotify.com/track/1TUAHxfFiza4bVjpOFBOrM?si=5f616a08580b4d3d)）。
@@ -46,7 +92,26 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234000)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234000 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234000/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" e'4 d4 c2 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" s1 \\
+\staff "2" s1 | %2
+
+\staff "1" c'4 d4 e2 \\
+\staff "2" c,1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234000/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. 二声部织体中的经过音：(a) 上行；(b) 下行。
@@ -54,7 +119,26 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234003)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234003 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234003/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 4/4 \clef "treble" e4 f4 e2 \\
+\staff "2" \clef "bass" c,1 | %1
+
+\staff "1" s1 \\
+\staff "2" s1 | %2
+
+\staff "1" c4 b4 c2 \\
+\staff "2" c,1 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234003/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 二声部织体中的 (a) 上辅助音与 (b) 下辅助音。
@@ -66,7 +150,42 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234074)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234074 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234074/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" c2. ef4 \\\
+\clef "treble" g8[ ef'8 c8 ef8] g,8[ ef'8 c8 ef8] \\\
+\clef "alto" ef,1 \\\
+\clef "bass" r4 c4 c,4 c4 | %1
+
+d2. f4 \\\
+g8[ d'8 b8 d8] g,8[ d'8 b8 d8] \\\
+f,1 \\\
+r4 g4 b4 g4 | %2
+
+ef4 ef16[ d16 ef16 f16] g4 c,4 \\\
+g8[ ef'8 c8 ef8] g,8[ ef'8 c8 ef8] \\\
+g1 \\\
+c2 r4 ef,4 | %3
+
+ef8[ d8] c2 b4 \\\
+af8[ c8 af8 c8] g8[ c8 g8 ef'8] \\\
+af2 g4 g4 \\\
+f,4 f4 g4 g,4 | %4
+
+c2 r2 \\\
+ef8[ f8 g8 af8] g8[ ef8 f8 d8] \\\
+c8[ d8 ef8 f8] ef8[ c8 d8 b8] \\\
+c,2. g'4 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234074/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 约瑟夫·布洛涅第四弦乐四重奏第一乐章第 5–9 小节中的一个倚音（[0:09-0:19](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=103ca4ed79484673)）。
@@ -74,7 +193,33 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234078)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234078 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234078/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" ef4. f8 g4 ef4 \\\
+\staff "1" \clef "treble" g8[ bf8 ef8 bf8] g8[ bf8 ef8 bf8] \\
+\staff "2" \clef "bass" ef,,2 ef'2 | %1
+
+af'4 c4 bf2 \\\
+\staff "1" af8[ c8 ef8 c8] g8[ bf8 ef8 bf8] \\
+\staff "2" ef,,2 ef'2 | %2
+
+ef'4. c8 bf4. g8 \\\
+\staff "1" af8[ c8 ef8 c8] g8[ bf8 ef8 bf8] \\
+\staff "2" af,2 bf2 | %3
+
+f8[ ef8 f8 g8] ef2 \\\
+\staff "1" f,8[ af8 d8 af8] g8[ bf8 ef8 bf8] \\
+\staff "2" bf,,4 bf'4 ef,4 ef'4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234078/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 玛格丽特·卡森《布谷鸟》中的一个逃逸音。
@@ -82,7 +227,32 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234081)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234081 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234081/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 2/4 \clef "treble" g'2 \\
+\staff "2" \clef "bass" c,2 | %1
+
+\staff "1" c'4 b4 \\
+\staff "2" g,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" d'2 \\
+\staff "2" g2 | %4
+
+\staff "1" b'4 c4 \\
+\staff "2" c,2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234081/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. 二声部织体中的倚音。
@@ -90,7 +260,32 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234083)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234083 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234083/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 2/4 \clef "treble" c'4. d8 \\
+\staff "2" \clef "bass" c,2 | %1
+
+\staff "1" b'2 \\
+\staff "2" g2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" c'4. b8 \\
+\staff "2" c,2 | %4
+
+\staff "1" d'2 \\
+\staff "2" g2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234083/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 8. 二声部织体中的逃逸音。
@@ -106,7 +301,32 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234088)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234088 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234088/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,"]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" ef8-.[ g8 af8 c8] bf4. d,8 \\\
+\clef "treble" ef'4 r4 r8 af,,4 af8 \\\
+\clef "alto" g4 r4 r8 f4 f8 \\\
+\clef "bass" ef,4 r4 bf4 bf'4 | %1
+
+ef8-.[ g8 af8 c8] bf4. d,8 \\\
+g4 r4 r8 af4 af8 \\\
+ef,4 r4 r8 f4 f8 \\\
+ef,4 r4 bf4 bf'4 | %2
+
+d2 ef4 r4 \\\
+af2 g4 r4 \\\
+f,2 ef4 r4 \\\
+ef,4 bf4 ef,4 r4 | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234088/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 9. 约瑟夫·布洛涅第四弦乐四重奏第一乐章第 47–49 小节中的延留音与一个倚留音（[1:30–1:36](https://open.spotify.com/track/1ULeiOZtuBKhTKiWYZtghD?si=224f011bf61f4cdd)）。
@@ -114,7 +334,32 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234093)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234093 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234093/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key c \major \numericTimeSignature \time 2/4 \clef "treble" c'2~ \\
+\staff "2" \clef "bass" c,2 | %1
+
+\staff "1" c'4 b4 \\
+\staff "2" g2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" b'2~ \\
+\staff "2" g2 | %4
+
+\staff "1" b'4 c4 \\
+\staff "2" c,2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234093/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 10. 二声部织体中的 (a) 延留音与 (b) 倚留音。
@@ -122,7 +367,30 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6234090)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6234090 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6234090/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key c \major \defaultTimeSignature \time 4/4 \clef "treble" r2 r8 g'8 f'8. e16 \\\
+\staff "1" \clef "treble" <b d g>4 <g' g'>8.[ <g g'>16] <g g'>8 g8[ f'8. e16] \\
+\staff "2" \clef "bass" g4 <g,, g'>8.[ <g g'>16] <g g'>4 r8. g''16~ | %1
+
+d'4 c4 b4 a4 \\\
+\staff "1" <g' d'>4 <g c>4 <f b>4 <f a>4 \\
+\staff "2" <g f'>4 <g e'>4 <g d'>4 <g c>4 | %2
+
+g'2. s4 \\\
+\staff "1" g'4. f2 \grace { b8 } a8 <f g>4 \\
+\staff "2" \stemUp b4. c8 s2 \\
+\staff "2" \stemDown g2 <g b>8[ <g, g'>16 <g g'>16] <g g'>8[ <g g'>8] | %3
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6234090/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 11. 约瑟芬·朗（Josephine Lang）《致国王之子》（“Dem Königs-Sohn”）第 16–18 小节中的踏板音。
@@ -132,7 +400,25 @@ modified: "2025-08-01"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/23270794)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/23270794 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/23270794/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key gf \major \defaultTimeSignature \time 4/4 \clef "treble" \tempo 4 = 80 f2.. ef8 \\\
+\staff "1" \clef "treble" <cf ef af cf>2 <bf d af' bf>4. <bf bf'>8 \\
+\staff "2" \clef "bass" \grace { bf,,8 } <bf' f' af>2 <bf, bf' f' af>2 | %1
+
+ef2 r2 \\\
+\staff "1" <ef g>2 <c c'>8[ <bf bf'>8 <af af'>8 <g g'>8] <bf d>2 <f f'>4 <f f'>8[ <bf bf'>8] \\
+\staff "2" ef,,8[ bf'8 ef8 bf8] af8[ bf8 a8 bf8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/23270794/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 12. 约瑟芬·朗《回忆》（“Erinnerung”）第 29–30 小节中的一个先现音（[1:54–1:59](https://open.spotify.com/track/7KZZNqiUr7Uc3JlSH9rMyU?si=77cfde3110a343b6)）。

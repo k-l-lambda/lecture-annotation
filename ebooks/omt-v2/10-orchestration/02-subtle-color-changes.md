@@ -22,7 +22,98 @@ modified: "2025-07-15"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/24655597)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/24655597 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/24655597/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",,,,,,"]
+
+\key g \major \defaultTimeSignature \time 4/4 \partial 4 \clef "treble" b'8-.[ c8-.] \\\
+\clef "treble" r4 \\\
+\clef "bass" r4 \\\
+\clef "treble" r4 \\\
+\clef "treble" \stemUp b'8-.[ c8-.] \\
+\stemDown g'8-.[ a8-.] \\\
+\clef "alto" r4 \\\
+\clef "bass" r4 | %1
+
+d'4 d4 d4 g4 \\\
+R1 \\\
+R1 \\\
+R1 \\\
+\stemUp d'4 d4 d4 g4 \\
+\stemDown b'8[ g8 d8 g8] b8[ g8 d'8 b8] \\\
+g'2 r2 \\\
+g2 r2 | %2
+
+\grace { g''16 } fs4-. fs4-. \grace { a16 } g4-. g4-. \\\
+R1 \\\
+R1 \\\
+R1 \\\
+\stemUp \grace { g''16 } fs4-. fs4-. \grace { a16 } g4-. g4-. \\
+\stemDown c'8[ a8 d,8 c'8] b8[ g8 d8 b'8] \\\
+d2 g2 \\\
+d,2 g2 | %3
+
+\grace { b''16 } a4-. a4-. a8[ b8 c8 a8] \\\
+r2 <fs a>8[ <g b>8 <a c>8 <fs a>8] \\\
+r2 <fs, a>8[ <g b>8 <a c>8 <fs a>8] \\\
+r2 <d d>2 \\\
+\stemUp \grace { b''16 } a4-. a4-. a8[ b8 c8 a8] \\
+\stemDown e'8[ c8 a8 g8] fs8[ g8 a8 fs8] \\\
+c2 d2 \\\
+c,2 d2 | %4
+
+b''2 r4 d8[ b8] \\\
+<g' b>2 r2 \\\
+<g b>2 r2 \\\
+<g d'>2 r2 \\\
+\stemUp b''2 r4 d8[ b8] \\
+\stemDown g'8[ d8 b8 d8] g8[ d8 b'8 g8] \\\
+g4 g'4 g,4 r4 \\\
+g,4 g'4 g,4 r4 | %5
+
+a''4 a4 a4 b4 \\\
+R1 \\\
+R1 \\\
+R1 \\\
+\stemUp a''4 a4 a4 b4 \\
+\stemDown fs8[ g8 a8 g8] fs8[ e8 ds8 fs8] \\\
+d2. b4 \\\
+d,2. b4 | %6
+
+\grace { a''16 } g4-. g4-. \grace { g16 } fs4-. fs4-. \\\
+R1 \\\
+R1 \\\
+R1 \\\
+\stemUp \grace { a''16 } g4-. g4-. \grace { g16 } fs4-. fs4-. \\
+\stemDown e8[ d8 cs8 e8] a,8[ a'8 d,8 fs8] \\\
+e4 a,4 d4 b4 \\\
+e,4 a,4 d4 b4 | %7
+
+\grace { fs'16 } e4-. e4-. cs'8[ d8 e8 cs8] \\\
+r2 <cs' e>8[ <d fs>8 <e g>8 <cs e>8] \\\
+r2 <e, cs'>8[ <fs d'>8 <g e'>8 <e cs'>8] \\\
+r2 <a' a>2 \\\
+\stemUp \grace { fs'16 } e4-. e4-. cs8[ d8 e8 cs8] \\
+\stemDown b8[ b'8 g8 fs8] e8[ fs8 g8 e8] \\\
+g2 a2 \\\
+g,2 a2 | %8
+
+d''2 r4 s4 \\\
+d'2 r4 s4 \\\
+<d, d'>2 r4 s4 \\\
+<d a'>2 r4 s4 \\\
+\stemUp d'2 r4 s4 \\
+\stemDown fs8[ g8 a8 fs8] d4 s4 \\\
+d4 d'4 d,4 s4 \\\
+d,4 d'4 d,4 s4 | %9
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/24655597/embed" title="MuseScore" loading="lazy" style="height: 1115px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 在终止处改变配器，使终止更加醒目。

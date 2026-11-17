@@ -21,7 +21,33 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224806)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224806 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224806/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ",{-}"]
+
+\key ef \major \numericTimeSignature \time 4/4 \clef "treble" ef4. f8 g4 ef4 \\\
+\staff "1" \clef "treble" g8[ bf8 ef8 bf8] g8[ bf8 ef8 bf8] \\
+\staff "2" \clef "bass" ef,,2 ef'2 | %1
+
+af'4 c4 bf2 \\\
+\staff "1" af8[ c8 ef8 c8] g8[ bf8 ef8 bf8] \\
+\staff "2" ef,,2 ef'2 | %2
+
+ef'4. c8 bf4. g8 \\\
+\staff "1" af8[ c8 ef8 c8] g8[ bf8 ef8 bf8] \\
+\staff "2" af,2 bf2 | %3
+
+f8[ ef8 f8 g8] ef2 \\\
+\staff "1" f,8[ af8 d8 af8] g8[ bf8 ef8 bf8] \\
+\staff "2" bf,,4 bf'4 ef,4 ef'4 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224806/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 玛格丽特·卡森（Margaret Casson）《布谷鸟》（*The Cuckoo*）中一个含 V<sup>7</sup> 的完满正格终止
@@ -29,7 +55,40 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224809)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224809 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224809/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \clef "bass" \stemUp c2 \\
+\staff "2" \stemDown c,2 | %1
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %4
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown f,2 | %5
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224809/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 一个完满正格终止：(a) 只用三和弦；(b) 使用 V<sup>7</sup> 和弦。
@@ -43,7 +102,53 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224872)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224872 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224872/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \clef "bass" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %1
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown f,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \key af \major \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %4
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp af2 \\
+\staff "2" \stemDown f,2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \key f \major \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %7
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown f,2 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224872/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. V<sup>7</sup> 的默认解决。
@@ -74,7 +179,56 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224803)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224803 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224803/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \clef "bass" \stemUp c2 \\
+\staff "2" \stemDown c,2 | %1
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %2
+
+\staff "1" \key af \major \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown c,2 | %3
+
+\staff "1" \stemUp af'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %4
+
+\staff "1" \key f \major \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp e2 \\
+\staff "2" \stemDown c,2 | %5
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown d,2 f'2 \\
+\staff "2" f,2 | %6
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %7
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown f,2 | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224803/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 5. 涉及不完全 V<sup>7</sup> 的替代解决。
@@ -86,7 +240,37 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224804)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224804 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224804/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp g''2 \\
+\staff "1" \stemDown bf'2 \\
+\staff "2" \clef "bass" \stemUp e2 \\
+\staff "2" \stemDown c,2 | %1
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %2
+
+\staff "1" \key af \major \stemUp g''2 \\
+\staff "1" \stemDown bf'2 \\
+\staff "2" \stemUp e2 \\
+\staff "2" \stemDown c,2 | %3
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown af'2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224804/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 6. 涉及导音下行跳进的替代解决。
@@ -103,7 +287,89 @@ modified: "2026-06-17"
 🎼 [MuseScore 乐谱](https://musescore.com/user/32728834/scores/6224814)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6224814 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/6224814/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves "{-}"]
+
+\staff "1" \key f \major \numericTimeSignature \time 2/4 \clef "treble" \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \clef "bass" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %1
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp a2 \\
+\staff "2" \stemDown f,2 | %2
+
+\staff "1" s2 \\
+\staff "2" s2 | %3
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown c,2 | %4
+
+\staff "1" \stemUp a'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %5
+
+\staff "1" s2 \\
+\staff "2" s2 | %6
+
+\staff "1" \stemUp g''2 \\
+\staff "1" \stemDown bf'2 \\
+\staff "2" \stemUp e2 \\
+\staff "2" \stemDown c,2 | %7
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown a'2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %8
+
+\staff "1" \key af \major \stemUp e'2 \\
+\staff "1" \stemDown g'2 \\
+\staff "2" \stemUp bf2 \\
+\staff "2" \stemDown c,2 | %9
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp af2 \\
+\staff "2" \stemDown f,2 | %10
+
+\staff "1" s2 \\
+\staff "2" s2 | %11
+
+\staff "1" \stemUp bf'2 \\
+\staff "1" \stemDown e2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown c,2 | %12
+
+\staff "1" \stemUp af'2 \\
+\staff "1" \stemDown f2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %13
+
+\staff "1" s2 \\
+\staff "2" s2 | %14
+
+\staff "1" \stemUp g''2 \\
+\staff "1" \stemDown bf'2 \\
+\staff "2" \stemUp e2 \\
+\staff "2" \stemDown c,2 | %15
+
+\staff "1" \stemUp f'2 \\
+\staff "1" \stemDown af'2 \\
+\staff "2" \stemUp c2 \\
+\staff "2" \stemDown f,2 | %16
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/6224814/embed" title="MuseScore" loading="lazy" style="height: 600px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 7. V<sup>7</sup> 各种可能解决的总结。

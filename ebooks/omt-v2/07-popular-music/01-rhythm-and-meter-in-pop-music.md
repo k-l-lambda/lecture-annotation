@@ -36,7 +36,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/5846453)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5846453 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/5846453/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" d'4 d4 d4 d4 | %1
+
+d'8[ d8~ d8 d8~] d8[ d8~ d8 d8] | %2
+
+d'8[ d8 d8 d8] d8[ d8 d8 d8] | %3
+
+d'16[ d8 d16~] d16[ d8 d16~] d16[ d8 d16~] d16[ d8 d16] | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/5846453/embed" title="MuseScore" loading="lazy" style="height: 550px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 1. 方整切分把各音的起音提前半个节拍层级的时值。
@@ -60,7 +78,25 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8674701)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8674701 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8674701/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \numericTimeSignature \time 4/4 \clef "percussion" d'4. d4. d4 | %1
+
+d'8.[ d8. d8] d8.[ d8. d8] | %2
+
+d'4. d8~ d4 d4 | %3
+
+d'8.[ d16~] d8[ d8] d8.[ d16~] d8[ d8] | %4
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8674701/embed" title="MuseScore" loading="lazy" style="height: 394px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 2. 特雷西略节奏。
@@ -70,7 +106,43 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8674494)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8674494 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8674494/embed" title="MuseScore" loading="lazy" style="height: 975px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ","]
+
+\key a \major \numericTimeSignature \time 4/4 \clef "treble_8" a2 d4 fs4 \\\
+\clef "treble_8" <a d fs>8->[ <a d fs>8 <a d fs>8 <a d fs>8] <a d fs>8[ <a d fs>8] <a d fs>8->[ <a d fs>16 <a d fs>16] | %1
+
+e4 gs8[ a8] b4 a4 \\\
+<a d e gs>8->[ <a d e gs>8 <a d e gs>8 <a d e gs>8] <a d e gs>8[ <a d e gs>8] <a d e gs>8->[ <a d e gs>16 <a d e gs>16] | %2
+
+\stemDown d'1 \\
+\stemUp r2 \tuplet 3/2 { \clef "treble" <a' cs>4~ <a b>4 <fs a>4 } \\\
+<a d fs>8->[ <a d fs>8 <a d fs>8 <a d fs>8] <a d fs>8[ <a d fs>8] <a d fs>8->[ <a d fs>16 <a d fs>16] | %3
+
+\clef "treble" \stemUp \tuplet 3/2 { <e gs>4 <fs a>4 <cs e>4 } d4~ <d fs>4~ \\
+\stemDown a1 \\\
+<a d e gs>8->[ <a d e gs>8 <a d e gs>8 <a d e gs>8] <a d e gs>8[ <a d e gs>8] <a d e gs>8->[ <a d e gs>16 <a d e gs>16] | %4
+
+<d fs>4 \clef "treble" fs8[ fs8] fs4 a8[ gs8~] \\\
+<a d fs>8->[ <a d fs>8 <a d fs>8 <a d fs>8->] <a d fs>8[ <a d fs>8] <a d fs>8->[ <a d fs>16 <a d fs>16] | %5
+
+\clef "treble" gs'4 gs8[ gs8] gs4 b8[ a8~] \\\
+<a d e gs>8->[ <a d e gs>8 <a d e gs>8 <a d e gs>8->] <a d e gs>8[ <a d e gs>8] <a d e gs>8->[ <a d e gs>16 <a d e gs>16] | %6
+
+\clef "treble_8" a'8[ e8 e8 e8] e4 gs8[ fs8~] \\\
+<a cs e a>8->[ <a cs e a>8 <a cs e a>8 <a cs e a>8->] <a cs e a>8[ <a cs e a>8] <a cs e a>8->[ <a cs e a>16 <a cs e a>16] | %7
+
+fs4 fs8[ fs8] fs4 a4 \\\
+<a d fs a>8->[ <a d fs a>8 <a d fs a>8 <a d fs a>8->] <a d fs a>8[ <a d fs a>8] <a d fs a>8->[ <a d fs a>16 <a d fs a>16] | %8
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8674494/embed" title="MuseScore" loading="lazy" style="height: 975px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 3. Jump, Little Children 的“Cathedrals”（[1:01](https://open.spotify.com/track/2wd52lU3agY0P3x2hxPYhm?si=651ab48646af4ce1)）。
@@ -82,7 +154,21 @@ modified: "2026-06-17"
 🎼 [MuseScore 曲谱](https://musescore.com/user/32728834/scores/8515040)
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8515040 -->
-<div class="omt-embed omt-embed-musescore"><iframe src="https://musescore.com/user/32728834/scores/8515040/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+<div class="omt-switch" data-omt-switch>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
+
+```lyl.play
+[staves ""]
+
+\key c \major \omit Score.TimeSignature \numericTimeSignature \time 4/4 \clef "treble" d'8.[ d8. d8.] d8.[ d8 d8] | %1
+
+d'8.[ d16~] d8[ d8~] d16[ d8.] d8[ d8] | %2
+```
+
+</div>
+<div class="omt-switch-pane omt-embed omt-embed-musescore" role="tabpanel" data-pane="musescore" hidden><iframe data-src="https://musescore.com/user/32728834/scores/8515040/embed" title="MuseScore" loading="lazy" style="height: 450px" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+</div>
 <!-- embed-end -->
 
 谱例 4. 双特雷西略。
