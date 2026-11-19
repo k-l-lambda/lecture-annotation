@@ -31,7 +31,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221729 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -67,7 +67,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221834 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -93,7 +93,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221757 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -164,7 +164,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221776 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -244,7 +244,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221772 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -278,7 +278,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6221766 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -325,7 +325,7 @@ Ernesto Nazareth 的探戈"Remando"（谱例 7）在第 60 小节把 Ger<sup>+6<
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/26284273 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play

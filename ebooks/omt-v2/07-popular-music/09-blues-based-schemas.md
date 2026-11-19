@@ -30,7 +30,7 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804531 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -50,7 +50,7 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804559 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -82,7 +82,7 @@ IV 和弦在共性实践曲目中固然是极其常见的 前属 / 下属 和弦
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804585 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -108,7 +108,7 @@ Wilson Pickett“In the Midnight Hour”的主歌中也可以找到类似的 I �
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804779 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -134,7 +134,7 @@ e,,4 gs8[ b8] a8[ a8 cs8 e8] | %2
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5804789 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -180,7 +180,7 @@ Green Day 的“Wake Me Up When September Ends”（谱例 6）同时表现出�
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/14849320 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -226,7 +226,7 @@ g'8[ g8 <d' g>8 g,8] g8 <d' g>4. | %8
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5807341 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -264,7 +264,7 @@ c'1 \\\
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/5807378 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play

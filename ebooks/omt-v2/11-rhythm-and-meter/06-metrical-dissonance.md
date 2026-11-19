@@ -31,7 +31,7 @@ modified: "2025-10-07"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11556457 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -63,7 +63,7 @@ modified: "2025-10-07"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11518048 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -104,7 +104,7 @@ s\breve s1 | %1
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11556466 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -134,7 +134,7 @@ c,8 r8 r4 c'4 r8 g,16[ a16] | %2
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11556445 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -169,7 +169,7 @@ b'4 r4 | %5
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11517073 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -241,7 +241,7 @@ b'4 r4 | %5
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11517730 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -279,7 +279,7 @@ b'4 r4 | %5
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11516206 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -330,7 +330,7 @@ bf,2 ef2 bf2 | %6
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/8897547 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对；部分小节时值存疑。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play

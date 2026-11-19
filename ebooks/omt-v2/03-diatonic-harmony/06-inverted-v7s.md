@@ -26,7 +26,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240782 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -65,7 +65,7 @@ modified: "2025-07-15"
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240788 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -102,7 +102,7 @@ $\mathrm{V}^6_5$ 通常在 $\mathrm{I-V^6_5-I}$ 进行中延长原位 I（谱例
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240806 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -178,7 +178,7 @@ $\mathrm{V}^6_5$ 通常在 $\mathrm{I-V^6_5-I}$ 进行中延长原位 I（谱例
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6243345 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -256,7 +256,7 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/11967037 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -333,7 +333,7 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240818 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -406,7 +406,7 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240825 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -482,7 +482,7 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240833 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
@@ -560,7 +560,7 @@ $\mathrm{V}^4_2$ 通常帮助我们从原位进行到第一转位的 I，即 $\m
 
 <!-- embed-begin: https://musescore.com/user/32728834/scores/6240837 -->
 <div class="omt-switch" data-omt-switch>
-<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button><span class="omt-switch-note">由 MuseScore 页面自动转写（仅第一页），未逐小节核对。</span></div>
+<div class="omt-switch-bar" role="tablist"><button type="button" role="tab" aria-selected="true" data-pane="lilylet">Lilylet 乐谱</button><button type="button" role="tab" aria-selected="false" data-pane="musescore">MuseScore</button></div>
 <div class="omt-switch-pane" role="tabpanel" data-pane="lilylet" markdown="1">
 
 ```lyl.play
